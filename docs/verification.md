@@ -37,25 +37,25 @@ For formal checks install Lean 4.22.0 separately and supply its executable:
 python -I -B verify.py --lean /path/to/lean
 ```
 
-The default runner registers 18 executable jobs: 13 Python jobs and five Node
-jobs. Supplying `--lean` adds the formal job, giving 19. These are registration
+The default runner registers 20 executable jobs: 13 Python jobs and seven Node
+jobs. Supplying `--lean` adds the formal job, giving 21. These are registration
 counts; the fresh aggregate receipt records what a particular execution ran
 and whether it passed.
 
 Without `--lean`, formal checking is explicitly `NOT_RUN`, including its entry
-in `checks`. The optional `--python-only` flag omits all five Node jobs:
-`atlas`, `atlas_view`, `rule_lab_model`, `rule_lab_presentation` and
-`lens_lab_model`. Each omitted
+in `checks`. The optional `--python-only` flag omits all seven Node jobs:
+`atlas`, `atlas_view`, `rule_lab_model`, `rule_lab_presentation`,
+`lens_lab_model`, `music_lens_model` and `music_lens_audio`. Each omitted
 job receives its own `NOT_RUN` entry and reason. The two-path Python job still
 runs, as does the fixed-gap checker. This gives 13 requested jobs, or 14 if
 `--lean` is also supplied.
 
 The aggregate `requested_checks` list identifies the requested execution scope;
 PASS requires every listed job to pass. The top-level `node` status covers all
-five Node jobs, and `node_suites` names them. The compatibility field `atlas`
+seven Node jobs, and `node_suites` names them. The compatibility field `atlas`
 continues to report the Atlas model job alone; it cannot certify `atlas_view`
-or any Rule Lab or Lens Lab job. Formal status remains separate. Missing Node fails a
-requested full run before any child suite starts; it never silently becomes
+or any Rule Lab, Lens Lab or Music Lens job. Formal status remains separate.
+Missing Node fails a requested full run before any child suite starts; it never silently becomes
 a Python-only success. A successful limited run establishes only the scopes
 it actually executed.
 
@@ -76,6 +76,8 @@ it actually executed.
 | `experimental/rule-lab/model.test.cjs` (`rule_lab_model`) | Independent string-table rule oracle, finite seed/boundary evolution, transform/readout fibers and trial-division sieve comparisons | The [Rule Lab](../experimental/rule-lab/README.md) states the exact finite model and hostile cases; no unbounded prime classifier or physical model is established. |
 | `experimental/rule-lab/presentation.test.cjs` (`rule_lab_presentation`) | Pure seed, block-summary, aperture and camera calculations, plus static JavaScript/HTML wiring checks | Separate presentation-helper coverage; does not execute the actual interface. Browser rendering, interactions, downloads, storage and accessibility remain NOT_RUN_UI. |
 | `experimental/lens-lab/verify.cjs` (`lens_lab_model`) | Fresh execution of the adjacent `model.test.js` suite with independent coordinate expectations and canonical renderer values | 16 pure model tests: 648,000 locked transitions for one nonuniform fixture, 3,600 duplicate/wrap signature checks, 5,400 unlocked edits, projection/admission controls and browser/CommonJS export compatibility. The [Lens Lab contract](../experimental/lens-lab/README.md) gives the finite boundary; this does not enumerate all `360^5` tuples or execute the browser interface. |
+| `experimental/music-lens/verify.cjs` (`music_lens_model`) | Fresh adjacent model replay with independent absolute-pitch admission and canonical event/tuning expectations | 1,200 states, 734,400 candidate pitch-target checks and 895,298 assertions cover three representative phrases at all 25 roots and 16 phases, inverse/readout fixtures and admission controls. The [Music Lens contract](../experimental/music-lens/README.md) gives the finite boundary; the full source-state product is not enumerated. |
+| `experimental/music-lens/verify-audio.cjs` (`music_lens_audio`) | Fresh adjacent transport tests with fake clocks and an audio API fixture | Nine deterministic tests cover admission, visual fallback, loop timing, edit/mute cancellation, pending activation races, permission failure, visibility stopping and stalled scheduling. Browser acoustic output, subjective listening and UI behavior are not tested by this suite. |
 | `checks/formal.py` | Fresh Lean elaboration and axiom inventory | The 20 declarations listed in [formal proof scope](formal-proofs.md), using an external trusted Lean toolchain |
 
 Counts describe the implemented census families. They are not separate
@@ -151,3 +153,14 @@ including A, pointer drag, keyboard ranges, independent lens controls,
 collapse and restore, Reset, and narrow/wide layouts. These checks and any
 recorded visual review do not become automatic UI coverage in the aggregate
 receipt.
+
+Music Lens has separate aggregate jobs for its model and audio transport.
+The model wrapper requires a completed JSON summary with PASS and the exact
+declared state, pitch-target and assertion counts. The audio wrapper requires
+a completed TAP summary with all nine tests passing and none failed,
+cancelled, skipped or marked TODO. Both start fresh processes, replace any
+prior receipt with PENDING, and compare tested-source hashes before and after.
+The [dated browser review](../experimental/music-lens/REVIEW.md) covers the
+tested interactions and desktop/390-pixel layouts. Those observations remain
+separate from the aggregate's `NOT_RUN_UI` and acoustic `NOT_RUN` fields;
+they do not establish recorded acoustic output or subjective listening quality.

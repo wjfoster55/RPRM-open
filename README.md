@@ -31,7 +31,7 @@ continuations. The core makes observational sufficiency and incomplete
 source recovery precise. Identifying a physical source remains a further
 modeling and experimental task.
 
-This release candidate contains the full mathematical book, eight executable
+This release candidate contains the full mathematical book, nine executable
 experimental packs, formal proofs of selected laws, and an interactive 2D
 Mechanical Motion Atlas. Three separate research specifications propose
 unexecuted scientific comparisons. Each result states its scope. The broad
@@ -72,8 +72,9 @@ are part of the mathematical contract, not annotations added after solving.
 | [Glossary](docs/glossary.md) | Definitions and links for the working vocabulary, including named constructions |
 | [Proof donut](docs/proof-donut.md) | Coverage, compatible constraints and finite proof certificates; executable mutual checks |
 | [Bounded Fermat proof](docs/fermat.md) | The min(a,b)≤4000 theorem, full argument and finite certificate replay; the independent unrestricted RPRM derivation remains open |
-| [Eight executable packs](experimental/README.md) | Primes, rays, music, lattice conformations, synthetic question selection, two-path calculations, Rule Lab and Lens Lab |
+| [Nine executable packs](experimental/README.md) | Primes, rays, symbolic music, lattice conformations, synthetic question selection, two-path calculations, Rule Lab, Lens Lab and Music Lens |
 | [Lens Lab](experimental/lens-lab/index.html) · [Model and replay](experimental/lens-lab/README.md) | An offline playground that retains five ordered phases through color, curve and geometry displays |
+| [Music Lens](experimental/music-lens/index.html) · [Model and replay](experimental/music-lens/README.md) | An offline six-note playground with piano-roll, pitch-class and rhythm views, plus optional synthesized sound |
 | [Three research proposals](research-packs/README.md) | Folding dynamics, BRCA1 cellular function and immune mechanisms; data-driven and scientific comparisons remain unexecuted |
 | [Handbook assessments](agent-tests/README.md) | Versioned questions, answer keys, grading and bounded comprehension evidence |
 | [Initial states and origins](docs/origins.md) | Generative models, zero/balance distinctions, and the premises needed for a physical interpretation |
@@ -111,6 +112,12 @@ Open [Lens Lab](experimental/lens-lab/index.html) directly in a browser to
 move one retained five-point relationship through several visual lenses.
 Its [contract and replay](experimental/lens-lab/README.md) distinguish the
 invertible source coordinates from the lossy displays.
+
+Open [Music Lens](experimental/music-lens/index.html) to transpose and reshape
+a six-note phrase, rotate its rhythm, and compare three views of the same
+retained events. Playback works visually, with optional sound enabled by a
+button; its [contract and replay](experimental/music-lens/README.md) state
+the bounded model, tuning and separate transport checks.
 
 Run all executable Python and Node checks (Node.js 18 or newer):
 

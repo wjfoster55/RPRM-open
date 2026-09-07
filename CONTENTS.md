@@ -77,7 +77,7 @@ claimed by the 2D application.
 
 ## Experimental starter packs
 
-All eight [executable packs](experimental/README.md) are explicitly experimental.
+All nine [executable packs](experimental/README.md) are explicitly experimental.
 Each contains a README, a model and finite checks with independent comparisons.
 Their mathematical, implementation and application boundaries remain distinct.
 
@@ -91,6 +91,7 @@ Their mathematical, implementation and application boundaries remain distinct.
 | [Exact two-path lab](experimental/two-path-lab/README.md) | Rational-component density matrices, channels, joint/conditional readouts and a coherence receiver; 31 tests | Supplied quantum models and finite fixtures; no physical experiment or arbitrary slit geometry |
 | [Rule Lab](experimental/rule-lab/README.md) | Paired cellular automata, seven relation views, retained block summaries and addressed finite prime comparisons | Model/helper checks do not verify browser interaction or establish an unbounded prime predictor |
 | [Lens Lab](experimental/lens-lab/README.md) · [Open playground](experimental/lens-lab/index.html) | Five ordered phases, invertible anchor/residue coordinates, locked or individual edits, and color/curve/geometry displays | 16 pure model tests cover the stated finite families; browser review is separate, and display pixels do not recover the source |
+| [Music Lens](experimental/music-lens/README.md) · [Open playground](experimental/music-lens/index.html) | Six labelled note events, bounded pitch edits, cyclic rhythm transforms, three visual views and optional synthesized playback | 1,200 representative model states and nine deterministic transport tests; browser review is separate, with no perceptual or acoustic validation |
 
 ## Unexecuted research proposals
 

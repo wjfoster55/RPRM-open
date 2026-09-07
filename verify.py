@@ -21,6 +21,8 @@ NODE_CHECKS = (
     ("rule_lab_model", "experimental/rule-lab/model.test.cjs"),
     ("rule_lab_presentation", "experimental/rule-lab/presentation.test.cjs"),
     ("lens_lab_model", "experimental/lens-lab/verify.cjs"),
+    ("music_lens_model", "experimental/music-lens/verify.cjs"),
+    ("music_lens_audio", "experimental/music-lens/verify-audio.cjs"),
 )
 
 
@@ -34,7 +36,7 @@ def source_snapshot():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--lean", help="Lean 4.22.0 executable; omitted formal checks are recorded NOT_RUN")
-    parser.add_argument("--python-only", action="store_true", help="Explicitly omit all five Node checks: Atlas model/view, Rule Lab model/presentation and Lens Lab model")
+    parser.add_argument("--python-only", action="store_true", help="Explicitly omit all seven Node checks: Atlas model/view, Rule Lab model/presentation, Lens Lab model and Music Lens model/audio")
     args = parser.parse_args()
     output = ROOT / ".artifacts"
     output.mkdir(exist_ok=True)
@@ -98,7 +100,7 @@ def run_requested(args, parser, output):
             receipt.update(status="FAIL", node="FAIL", atlas="FAIL", formal="NOT_RUN", error="Node.js missing",
                            source_unchanged=before == source_snapshot(), finished_utc=datetime.now(timezone.utc).isoformat())
             publish()
-            parser.error("Node.js is required for Atlas, Rule Lab and Lens Lab verification; --python-only requests a limited run")
+            parser.error("Node.js is required for Atlas, Rule Lab, Lens Lab and Music Lens verification; --python-only requests a limited run")
         jobs.extend((name, [node, str(ROOT / path)]) for name, path in NODE_CHECKS)
     jobs.extend(formal_jobs)
     for name, command in jobs:
