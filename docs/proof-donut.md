@@ -41,6 +41,53 @@ and `a=u*w` is exact. Forgetting which w was used admits `1^2*2=2`, a false
 cube completion. Three binary constraints `x=y`, `y=z`, `z=1-x` also have
 inhabited local projections while their joint fiber is empty.
 
+## Inferring an unvisited position from retained observations
+
+An observation lane may expose only part of a shared source. Write its map
+as `O_i` and its observed value as `o_i`. Within an admitted source grammar H,
+the compatible completions are
+
+`H_o = {h in H : O_i(h)=o_i for every supplied lane i}`.
+
+Alternating which lane is observed or which port is requested can add useful
+constraints. Retain the earlier constraints and the same source identity.
+Adding an observation intersects the previous fiber with one more condition;
+it cannot create new compatible completions. If the observations are faithful
+and the source belongs to H, the actual source remains in that intersection.
+
+For a requested unvisited value Q(h), compute its values over the complete
+remaining fiber. If the fiber is nonempty and every completion gives the same
+Q, that value is forced even if several full sources remain possible. If Q
+varies, identify the missing distinction and choose another observation.
+This is the precise inference step behind using retained views, or shadows,
+to settle an unobserved port. The views must constrain one joint completion.
+
+A square gives a concrete positive example. On `[-1,1]^2`, suppose the law is
+multiaffine: `f(x,y)=a+b*x+c*y+d*x*y`, with real coefficients. Four corner
+values determine every interior value by interpolation. In particular,
+
+`f(0,0) = (f(-1,-1)+f(-1,1)+f(1,-1)+f(1,1))/4`.
+
+No separate visit to the center is needed. Averaging the four expressions
+cancels the x, y and xy terms and leaves a. The full interpolation formula
+uses weights `(1+epsilon*x)*(1+eta*y)/4` on corner `(epsilon,eta)`, for
+`epsilon,eta in {-1,1}`. Those weights are nonnegative and sum to one in the
+square, so positive corner values imply positivity throughout it.
+
+The exact extent of the observations matters. Visiting only the opposite
+corners `(-1,-1)` and `(1,1)` does not determine the other corners or center,
+even in this same grammar: `f=1` and `f=x*y` both give 1 at those two visits,
+but their center values are 1 and 0. A diagonal route alone has not supplied
+the missing constraints.
+
+The law matters too. If quadratic terms in each coordinate are admitted,
+`1` and `1-(1-x*x)*(1-y*y)` agree on the entire square boundary but differ
+at the center. The same surrounding observations then leave the center open.
+These examples establish when indirect inference succeeds and expose exactly
+what a stronger inference would need. A finite checker can enumerate a
+declared finite H; the interpolation identity proves the separate general
+statement for multiaffine functions.
+
 ## What the executable checks
 
 [The module](../rprm/proof_donut.py) works from complete finite tables. It
@@ -104,6 +151,54 @@ RPRM. To ask a stronger consistency question, supply the exact axiom set and
 the model or metatheoretic proof it requires. Checking a certificate cannot
 assume its intended conclusion inside an adapter.
 
+## A prime-region certificate
+
+The [square-frontier construction](../experimental/primes/square-frontier.md)
+supplies a second application with an expanding carrier. Its state is the
+bound B together with the complete increasing list of primes through B.
+The requested answer is the prime/composite status of every integer through
+B^2, retaining a divisor for each composite.
+
+The certificate has three connected parts:
+
+1. Establish that the initial prime list is complete.
+2. Classify the entire next region and compare each answer with an independent
+   census of integer divisors. Check every returned factor. The aperture
+   checker verifies equality of the two complete classification relations.
+3. Carry the complete resulting list into the next state, check B'=B^2,
+   and use the path checker to verify the actual sequence of states.
+
+The [executable audit](../checks/prime_frontier.py) instantiates the path
+`5 -> 25 -> 625 -> 390625`. These are declared demonstration bounds; the
+general continuation rule is the factor theorem: a composite at most B^2
+has a prime factor at most B. That theorem supplies the induction step for
+every finite stage. The finite path is expanding and is not a closed orbit.
+
+The audit also connects the resulting prime list to every bundled Fermat
+auxiliary pair. It then checks their full residue conditions separately.
+This makes an actual dependency inspectable: prime classification supplies
+ingredients to the auxiliary lemma. To exclude Fermat solutions in a new
+region, a corresponding zero-exclusion argument is still required.
+
+## Choose transformations for the stated relation
+
+A finite transformation family belongs to a specified carrier and relation.
+Enumerating all its members can exhaust that family. It does not establish
+that this family covers every intended mathematical case. Its size follows
+from its definition; there is no universal requirement of 24 moves.
+
+For example, in `a^n+b^n=c^n`, exchanging the two positive summands preserves
+the equation. Exchanging b and c while leaving their equation roles fixed
+does not: it asks whether `a^n+c^n=b^n`. Transporting the equation roles and
+values together can instead give a faithful new presentation, provided the
+map and inverse are retained. The exponent port also has its own role;
+moving a root value into it requires a separate mathematical contract.
+
+A useful audit therefore states each move, its inverse or forgotten fiber,
+its admitted inputs, and the exact requested answer it preserves. Repeated
+presentations may expose a missing seam or a simpler argument. The number
+of presentations does not multiply the evidence or force an empty fiber.
+
 ## Why a finite enclosure can support a theorem
 
 **Invariant rule.** Suppose every intended source has a finite construction
@@ -153,6 +248,7 @@ From the repository root:
 python -I -B checks/proof_donut.py
 python -I -O -B checks/proof_donut.py
 python -I -B examples/proof_donut.py
+python -I -B checks/prime_frontier.py
 ```
 
 `checks/proof_donut.py --output /absolute/path/proof-donut.json` also writes

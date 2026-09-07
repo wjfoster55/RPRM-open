@@ -19,8 +19,12 @@ to classify integers through B^2, and the resulting complete list supports
 the next stage. It includes the outside-boundary composite 49 and identifies
 exactly what this mechanism contributes to the Fermat auxiliary argument.
 This is established sieve reasoning presented through the RPRM contracts.
-The document supplies a general theorem and pseudocode; the executable
-reference below retains its separately stated small bounds.
+The [square-frontier implementation](square_frontier.py) and its
+[independent proof-donut audit](../../checks/prime_frontier.py) exercise the
+complete expansion `5 -> 25 -> 625 -> 390625`, including every bundled
+Fermat auxiliary prime and its separate residue obligations. The general
+theorem is the written factor-bound argument; the executable checks its
+declared finite instances and deliberately corrupted certificates.
 
 [model.py](model.py) provides a conventional Lucas-Lehmer reference capped at
 exponents 2 through 31, independent trial division within a declared bound,
@@ -30,6 +34,7 @@ answers and checks the constructor and scale coordinates.
 
 ```sh
 python -I -B experimental/primes/check.py
+python -I -B checks/prime_frontier.py
 ```
 
 The digit tool knows the exact word is `1` followed by N zeros. It does not

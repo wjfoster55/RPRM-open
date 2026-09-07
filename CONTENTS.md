@@ -66,7 +66,7 @@ tracing, music, protein and question selection also include worked examples.
 
 | Pack | Delivered tool | Open application boundary |
 |---|---|---|
-| [Primes](experimental/primes/README.md) | Compact numeral queries, scale coordinates, small conventional Lucas–Lehmer reference | No new prime certificate or established algorithmic advantage |
+| [Primes](experimental/primes/README.md) | Compact numeral queries, scale coordinates, small conventional Lucas–Lehmer reference, certified square-frontier expansion with an independent proof-donut audit | No record-prime certificate or established algorithmic advantage; finite expansion does not close the unrestricted Fermat derivation |
 | [Ray tracing](experimental/ray-tracing/README.md) | Exact rational toy geometry and retained relation updates | Bounded 2D scenes; no production renderer speedup |
 | [Music](experimental/music/README.md) | Exact symbolic pitch, assignment and cyclic event relations | No perceptual or acoustic validation |
 | [Protein folding](experimental/protein-folding/README.md) | Newly proposed exhaustive H/P lattice toy through eight residues | No molecular conformation prediction |

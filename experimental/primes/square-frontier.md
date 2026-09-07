@@ -78,9 +78,12 @@ does not establish those premises by itself.
 
 This mechanism can certify the primes used in the
 [auxiliary-prime argument](../../docs/fermat.md#auxiliary-primes-the-precise-first-case-theorem).
-That is a concrete mathematical dependency. The current Fermat checker uses
-ordinary trial division for those finite primality checks; it does not call
-an iterative square-frontier implementation from this pack.
+That is a concrete mathematical dependency. The
+[frontier audit](../../checks/prime_frontier.py) reconstructs complete prime
+lists along `5 -> 25 -> 625 -> 390625`, verifies them through independent
+integer-divisor enumeration, and checks that every bundled auxiliary p and q
+belongs to the resulting list. The original Fermat checker retains its own
+ordinary trial division, and the audit also reruns its residue obligations.
 
 For an odd prime exponent p and a distinct auxiliary prime q, that argument additionally
 requires the complete nonzero pth-power residue set R modulo q, with
@@ -99,3 +102,22 @@ certificate for the current question, prove that one stage supplies the
 next stage's premises, and invoke induction on that same property. For
 primes the property is complete prime/composite classification. A Fermat
 continuation needs a corresponding zero-exclusion invariant.
+
+## Reproduce the finite enclosure
+
+Run from the repository root:
+
+```sh
+python -I -B checks/prime_frontier.py
+```
+
+The [producer](square_frontier.py) and the checker are separate implementations.
+The checker uses the generic [proof-donut APIs](../../docs/proof-donut.md#a-prime-region-certificate)
+for complete classification relations and the
+actual stage path. A classification comparison includes every integer in the
+declared region; a prime count alone would not identify an omitted or
+substituted value. Returned composite factors are checked separately.
+
+Corrupted lists, boundary errors, false prime verdicts and invalid stage
+transitions are retained as rejection controls. The finite receipt states
+what was computed. It does not stand in for the general induction proof.
