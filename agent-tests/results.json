@@ -1,0 +1,443 @@
+{
+  "schema": "rprm-handbook-assessment-results/v1",
+  "date": "2026-09-06",
+  "evidence_grade": "manual assessment of three fixed responses; no universal comprehension claim",
+  "respondent_model": {
+    "exact_version": null,
+    "reason": "No exact model version was captured; no model override was set."
+  },
+  "isolation": {
+    "fresh_contexts": true,
+    "inherited_project_conversation": false,
+    "inputs": "one handbook version and its question file",
+    "ordinary_prior_mathematics_permitted": true,
+    "source_restrictions": "instructional",
+    "os_sandbox_enforced": false,
+    "limitations": "Root observed fresh context setup; respondents declared two-input use. General platform instructions and prior mathematical knowledge were not removed. These are not independent sandbox telemetry receipts."
+  },
+  "grading": {
+    "method": "manual against pre-response criteria",
+    "initial_grader": "release editor",
+    "second_grader": "independent mathematical review",
+    "second_grader_blind_to_initial_total": false,
+    "agreement": true,
+    "critical_error_definition": "Substantive failure of a designated question boundary; neither response required a borderline judgment.",
+    "visibility_detail": "A/B initial totals were known before the second review. C initial total was shared after the second reviewer first read the response but before its final score record. No blinded or double-blind grading is claimed."
+  },
+  "assessments": [
+    {
+      "id": "A",
+      "handbook": {
+        "path": "handbooks/v1.md",
+        "version": "1",
+        "sha256": "258e3bf92dcfee0cfa99eb0a8ff63cc2979185b5ba112f91852bef67b771de15"
+      },
+      "questions": {
+        "path": "questions-a.md",
+        "sha256": "cd2616a07df701d6cdc707f8b89ff911502b0066675245089a1ea685c48002ad",
+        "matches_assessed_bytes": true
+      },
+      "response": {
+        "path": "responses/a.md",
+        "sha256": "319ab8698502dbd098ac3af8b037f36d3f1f5a22d005eff7f70d475b4c1a6706",
+        "sanitization": "Only execution/source-location header removed and public title added; mathematical answers and omission discussion retained."
+      },
+      "original_frozen_rubric_sha256": "2b198e50dacf8dc1023fc80d96acab1e1b47f598c9a3a16bf0f7e3d51056f366",
+      "public_rubric_path": "rubrics.md",
+      "answer_key_path": "answer-key-a.md",
+      "score": 40,
+      "maximum": 40,
+      "acceptance_threshold": 36,
+      "critical_questions": [
+        3,
+        6,
+        13,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "critical_errors": [],
+      "accepted": true,
+      "items": [
+        {
+          "question": 1,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Nine complete zero-product pairs; readout 0 distinguished from source uniqueness."
+        },
+        {
+          "question": 2,
+          "score": 2,
+          "maximum": 2,
+          "reason": "True empty assignment is singleton; false row has no completion."
+        },
+        {
+          "question": 3,
+          "score": 2,
+          "maximum": 2,
+          "reason": "At least two witnesses with OPEN completeness; no unsupported MANY."
+        },
+        {
+          "question": 4,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Correct endpoint and two triples; loss scoped to witness receiver."
+        },
+        {
+          "question": 5,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Both false marginal pairs identified and joint constraint restored."
+        },
+        {
+          "question": 6,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Enabledness mismatch explicitly rejects the operational quotient."
+        },
+        {
+          "question": 7,
+          "score": 2,
+          "maximum": 2,
+          "reason": "One-letter witness and unequal successor summaries; empty word checked."
+        },
+        {
+          "question": 8,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Empty word and two present-observation classes retained."
+        },
+        {
+          "question": 9,
+          "score": 2,
+          "maximum": 2,
+          "reason": "One future class versus three retained old-summary classes."
+        },
+        {
+          "question": 10,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Three-tag lower bound and attainable construction; reuse justified."
+        },
+        {
+          "question": 11,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Unequal exact class masses prevent merge despite equal support."
+        },
+        {
+          "question": 12,
+          "score": 2,
+          "maximum": 2,
+          "reason": "DPE stated with desired equation and inverse/domain obligations."
+        },
+        {
+          "question": 13,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Source true, target false, encoded-image universal guard correct."
+        },
+        {
+          "question": 14,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Constructor and bit-cost scope; canonical word width caveat handled."
+        },
+        {
+          "question": 15,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Four types distinguished; missing geometric construction identified."
+        },
+        {
+          "question": 16,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Bit 0 recovered; unknown-error detection separated from correction."
+        },
+        {
+          "question": 17,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Majority conditional on error guarantee; shared-source alternative retained."
+        },
+        {
+          "question": 18,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Finite invariant plus source/transition bridge; circular self-check rejected."
+        },
+        {
+          "question": 19,
+          "score": 2,
+          "maximum": 2,
+          "reason": "2047 factorization and explicit-output cost distinguish representation from primality."
+        },
+        {
+          "question": 20,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Scoped first-order semantics; toy biological model does not inherit physical solution."
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "handbook": {
+        "path": "handbooks/v2.md",
+        "version": "2",
+        "sha256": "7bd5b14677f376744a862d8ec901523eb47e1be61b1596fa9aa384e551797c63"
+      },
+      "questions": {
+        "path": "questions-b.md",
+        "sha256": "56b28a5fb49d246accbb60fa9d1f7eb6c4b26d0fb82d49d367b32f5bf1f522e9",
+        "matches_assessed_bytes": true
+      },
+      "response": {
+        "path": "responses/b.md",
+        "sha256": "663cb11a58ddab90cb56a1e3291802f5c9b47f6fbf7df3f77d8fc347de2326f6",
+        "sanitization": "Only execution/source-location header removed and public title added; mathematical answers and omission discussion retained."
+      },
+      "original_frozen_rubric_sha256": "4bbac12e4b27f090c2120fd73fb68cfe62787360626cba7331c4ad42d6f29b0f",
+      "public_rubric_path": "rubrics.md",
+      "answer_key_path": "answer-key-b.md",
+      "score": 24,
+      "maximum": 24,
+      "acceptance_threshold": 22,
+      "critical_questions": [
+        2,
+        3,
+        4,
+        7,
+        11,
+        12
+      ],
+      "critical_errors": [],
+      "accepted": true,
+      "items": [
+        {
+          "question": 1,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Zero-coefficient branch returns all reals or NONE without division."
+        },
+        {
+          "question": 2,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Existence transfers; uniqueness/reconstruction need fiber injectivity."
+        },
+        {
+          "question": 3,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Typed equality corrected; no unprovided source merge assumed."
+        },
+        {
+          "question": 4,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Empty fiber does not determine an actual-source readout."
+        },
+        {
+          "question": 5,
+          "score": 2,
+          "maximum": 2,
+          "reason": "ab shortest; both reasonable readings of initial summary handled."
+        },
+        {
+          "question": 6,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Sets, multisets, and declared probability weights distinguished."
+        },
+        {
+          "question": 7,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Two errors under either truth value prove no lawful row."
+        },
+        {
+          "question": 8,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Endpoint equivalence separated from count and full trace."
+        },
+        {
+          "question": 9,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Tag sufficiency separated from charged preprocessing and amortized cost."
+        },
+        {
+          "question": 10,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Integer family proved in both directions; result categories correctly overlap."
+        },
+        {
+          "question": 11,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Finite agreement scoped; external held-out test and permutation control proposed."
+        },
+        {
+          "question": 12,
+          "score": 2,
+          "maximum": 2,
+          "reason": "Five connected sentences give valid bridge, failed enabledness example, and physical limit."
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "handbook": {
+        "path": "handbooks/v3.md",
+        "version": "3",
+        "sha256": "8cb6c22e698fe3cd888bb36100cb0b6e8153c5b33f0a14bad38e5ed28baec8ef"
+      },
+      "questions": {
+        "path": "questions-c.md",
+        "sha256": "7bebfd1418baba3c5dda31d4d57fd84f5b34811ce30170a4fbaf5f9e0aca0e35",
+        "matches_assessed_bytes": true
+      },
+      "response": {
+        "path": "responses/c.md",
+        "sha256": "a5d5bf754c47aee5c3406ade7f11f28c0b1e6663469aedc80972efb03850a807",
+        "sanitization": "Only execution/source-location header removed and public title added; mathematical answers and omission discussion retained."
+      },
+      "original_frozen_rubric_sha256": "9ea176aaa7f90608bcdb58e65840a62781044b35cee12d49b89649b64ba29c1a",
+      "public_rubric_path": "rubrics.md",
+      "answer_key_path": "answer-key-c.md",
+      "scoring_rule": "One point for the correct concrete result and one for exact scope and premises per question.",
+      "score": 24,
+      "maximum": 24,
+      "acceptance_threshold": 22,
+      "critical_questions": [
+        6,
+        7,
+        9,
+        12
+      ],
+      "critical_errors": [],
+      "accepted": true,
+      "items": [
+        {
+          "question": 1,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Both complete addition fibers and all six false marginal pairs are correct; distinct contracts stated."
+        },
+        {
+          "question": 2,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Integer square fibers complete; converse, image restriction, and source restriction distinguished."
+        },
+        {
+          "question": 3,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Endpoint receiver preserved; exact two-path case distinguished from nonexhaustive examples and selected-witness recovery."
+        },
+        {
+          "question": 4,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Three least-refinement classes and two-tag optimum proved; empty source and cost boundary explicit."
+        },
+        {
+          "question": 5,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Three future singleton classes; a and empty-word shortest witnesses; present quotient rejected."
+        },
+        {
+          "question": 6,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Infinite action enumeration and undecidable equality correctly rejected; exact complete finite-table premises stated."
+        },
+        {
+          "question": 7,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Failure separated from Success(NONE); enabledness mismatch rejects the merge."
+        },
+        {
+          "question": 8,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Local set-valued support agreement separated from stochastic mass mismatch and fuller obligations."
+        },
+        {
+          "question": 9,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "True/false/true quantifier comparison correct; faithful presentation not a general decision algorithm."
+        },
+        {
+          "question": 10,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Erased bit 1 and four compatible originals proved complete; source truth needs separate premise."
+        },
+        {
+          "question": 11,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Exact huge value, length, last position/digit, bit-cost scope, no dimension upgrade, and 2047 factorization correct."
+        },
+        {
+          "question": 12,
+          "score": 2,
+          "maximum": 2,
+          "concrete_result_score": 1,
+          "scope_and_premises_score": 1,
+          "reason": "Agreement only; no unproved correctness or circular soundness; biological bridge and concrete reopen record explicit."
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Three responses do not establish universal comprehension or arbitrary theorem-proving ability.",
+    "No no-handbook control isolates a causal learning effect.",
+    "A, B, and C used different handbook versions and question sets; their totals are not a paired improvement estimate.",
+    "Published questions and keys are no longer unseen for readers who inspect them.",
+    "C supplied the complete current V3 handbook but tested only its twelve stated questions, not every possible use of the book."
+  ],
+  "current_handbook": {
+    "version": "3",
+    "path": "../AGENT_HANDBOOK.md",
+    "sha256_at_review": "8cb6c22e698fe3cd888bb36100cb0b6e8153c5b33f0a14bad38e5ed28baec8ef",
+    "matches_assessed_version_bytes": true,
+    "assessment": "C",
+    "complete_book_supplied": true,
+    "all_possible_content_or_uses_tested": false,
+    "change_from_v2": "Makes finite complete state/action tables and exact decidable comparisons explicit for finite algorithms."
+  }
+}

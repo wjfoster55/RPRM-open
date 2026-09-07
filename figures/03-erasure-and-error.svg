@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="361.24217pt" height="144.422438pt" viewBox="0 0 361.24217 144.422438" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>RPRM</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 144.422438 
+L 361.24217 144.422438 
+L 361.24217 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 21.261352 88.637807 
+L 44.058896 88.637807 
+Q 45.325426 88.637807 45.325426 86.846668 
+L 45.325426 57.740668 
+Q 45.325426 55.94953 44.058896 55.94953 
+L 21.261352 55.94953 
+Q 19.994822 55.94953 19.994822 57.740668 
+L 19.994822 86.846668 
+Q 19.994822 88.637807 21.261352 88.637807 
+z
+" clip-path="url(#p3394b7c29e)" style="fill: #ffffff; stroke: #176b83; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 57.674096 88.637807 
+L 80.47164 88.637807 
+Q 81.73817 88.637807 81.73817 86.846668 
+L 81.73817 57.740668 
+Q 81.73817 55.94953 80.47164 55.94953 
+L 57.674096 55.94953 
+Q 56.407566 55.94953 56.407566 57.740668 
+L 56.407566 86.846668 
+Q 56.407566 88.637807 57.674096 88.637807 
+z
+" clip-path="url(#p3394b7c29e)" style="fill: #ffffff; stroke: #176b83; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 94.08684 88.637807 
+L 116.884384 88.637807 
+Q 118.150915 88.637807 118.150915 86.846668 
+L 118.150915 57.740668 
+Q 118.150915 55.94953 116.884384 55.94953 
+L 94.08684 55.94953 
+Q 92.82031 55.94953 92.82031 57.740668 
+L 92.82031 86.846668 
+Q 92.82031 88.637807 94.08684 88.637807 
+z
+" clip-path="url(#p3394b7c29e)" style="fill: #ffffff; stroke: #176b83; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 130.499584 88.637807 
+L 153.297129 88.637807 
+Q 154.563659 88.637807 154.563659 86.846668 
+L 154.563659 57.740668 
+Q 154.563659 55.94953 153.297129 55.94953 
+L 130.499584 55.94953 
+Q 129.233054 55.94953 129.233054 57.740668 
+L 129.233054 86.846668 
+Q 129.233054 88.637807 130.499584 88.637807 
+z
+" clip-path="url(#p3394b7c29e)" style="fill: #ffffff; stroke: #ac4c38; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="32.660124" y="74.631559" transform="rotate(-0 32.660124 74.631559)">1</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="69.072868" y="74.631559" transform="rotate(-0 69.072868 74.631559)">0</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="105.485612" y="74.631559" transform="rotate(-0 105.485612 74.631559)">1</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="141.898356" y="74.631559" transform="rotate(-0 141.898356 74.631559)">?</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="89.653984" y="112.594284" transform="rotate(-0 89.653984 112.594284)">Even parity forces the missing bit to 0.</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="92.82031" y="14.798438" transform="rotate(-0 92.82031 14.798438)">A labeled erasure</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_6">
+    <path d="M 203.325073 88.637807 
+L 226.122617 88.637807 
+Q 227.389147 88.637807 227.389147 86.846668 
+L 227.389147 57.740668 
+Q 227.389147 55.94953 226.122617 55.94953 
+L 203.325073 55.94953 
+Q 202.058543 55.94953 202.058543 57.740668 
+L 202.058543 86.846668 
+Q 202.058543 88.637807 203.325073 88.637807 
+z
+" clip-path="url(#pa4ee386ab3)" style="fill: #ffffff; stroke: #ac4c38; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 239.737817 88.637807 
+L 262.535361 88.637807 
+Q 263.801891 88.637807 263.801891 86.846668 
+L 263.801891 57.740668 
+Q 263.801891 55.94953 262.535361 55.94953 
+L 239.737817 55.94953 
+Q 238.471287 55.94953 238.471287 57.740668 
+L 238.471287 86.846668 
+Q 238.471287 88.637807 239.737817 88.637807 
+z
+" clip-path="url(#pa4ee386ab3)" style="fill: #ffffff; stroke: #ac4c38; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 276.150561 88.637807 
+L 298.948105 88.637807 
+Q 300.214636 88.637807 300.214636 86.846668 
+L 300.214636 57.740668 
+Q 300.214636 55.94953 298.948105 55.94953 
+L 276.150561 55.94953 
+Q 274.884031 55.94953 274.884031 57.740668 
+L 274.884031 86.846668 
+Q 274.884031 88.637807 276.150561 88.637807 
+z
+" clip-path="url(#pa4ee386ab3)" style="fill: #ffffff; stroke: #ac4c38; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 312.563305 88.637807 
+L 335.360849 88.637807 
+Q 336.62738 88.637807 336.62738 86.846668 
+L 336.62738 57.740668 
+Q 336.62738 55.94953 335.360849 55.94953 
+L 312.563305 55.94953 
+Q 311.296775 55.94953 311.296775 57.740668 
+L 311.296775 86.846668 
+Q 311.296775 88.637807 312.563305 88.637807 
+z
+" clip-path="url(#pa4ee386ab3)" style="fill: #ffffff; stroke: #ac4c38; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="214.723845" y="74.631559" transform="rotate(-0 214.723845 74.631559)">1</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="251.136589" y="74.631559" transform="rotate(-0 251.136589 74.631559)">0</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="287.549333" y="74.631559" transform="rotate(-0 287.549333 74.631559)">1</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="323.962077" y="74.631559" transform="rotate(-0 323.962077 74.631559)">1</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(212.80208 109.701461)">Odd parity detects an error.</text>
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(190.019424 119.903786)">It does not identify which bit changed.</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="274.884031" y="14.798438" transform="rotate(-0 274.884031 14.798438)">An unknown changed position</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3394b7c29e">
+   <rect x="13.66217" y="20.798437" width="158.316279" height="116.424"/>
+  </clipPath>
+  <clipPath id="pa4ee386ab3">
+   <rect x="195.725891" y="20.798437" width="158.316279" height="116.424"/>
+  </clipPath>
+ </defs>
+</svg>

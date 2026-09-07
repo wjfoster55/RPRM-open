@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="354.78pt" height="144.684pt" viewBox="0 0 354.78 144.684" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>RPRM</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 144.684 
+L 354.78 144.684 
+L 354.78 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 21.787714 61.05072 
+L 99.588857 61.05072 
+Q 101.533886 61.05072 101.533886 59.3136 
+L 101.533886 33.2568 
+Q 101.533886 31.51968 99.588857 31.51968 
+L 21.787714 31.51968 
+Q 19.842686 31.51968 19.842686 33.2568 
+L 19.842686 59.3136 
+Q 19.842686 61.05072 21.787714 61.05072 
+z
+" clip-path="url(#pedf954eb30)" style="fill: #ffffff; stroke: #176b83; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 21.787714 119.67852 
+L 99.588857 119.67852 
+Q 101.533886 119.67852 101.533886 117.9414 
+L 101.533886 91.8846 
+Q 101.533886 90.14748 99.588857 90.14748 
+L 21.787714 90.14748 
+Q 19.842686 90.14748 19.842686 91.8846 
+L 19.842686 117.9414 
+Q 19.842686 119.67852 21.787714 119.67852 
+z
+" clip-path="url(#pedf954eb30)" style="fill: #ffffff; stroke: #176b83; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 172.527429 61.05072 
+L 250.328571 61.05072 
+Q 252.2736 61.05072 252.2736 59.3136 
+L 252.2736 33.2568 
+Q 252.2736 31.51968 250.328571 31.51968 
+L 172.527429 31.51968 
+Q 170.5824 31.51968 170.5824 33.2568 
+L 170.5824 59.3136 
+Q 170.5824 61.05072 172.527429 61.05072 
+z
+" clip-path="url(#pedf954eb30)" style="fill: #ffffff; stroke: #176b83; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 172.527429 119.67852 
+L 250.328571 119.67852 
+Q 252.2736 119.67852 252.2736 117.9414 
+L 252.2736 91.8846 
+Q 252.2736 90.14748 250.328571 90.14748 
+L 172.527429 90.14748 
+Q 170.5824 90.14748 170.5824 91.8846 
+L 170.5824 117.9414 
+Q 170.5824 119.67852 172.527429 119.67852 
+z
+" clip-path="url(#pedf954eb30)" style="fill: #ffffff; stroke: #176b83; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(57.831489 43.222212)">p</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(45.839692 54.02397)">now: 0</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(57.831489 101.850012)">q</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(45.839692 112.65177)">now: 0</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(209.578078 43.22186)">r</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(190.784953 54.024321)">after a: 1</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(208.571203 101.84966)">q</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(190.784953 112.652121)">after a: 0</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 104.018712 46.2852 
+Q 136.059248 46.2852 166.534537 46.2852 
+" style="fill: none; stroke: #176b83; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 162.934537 44.4852 
+L 166.534537 46.2852 
+L 162.934537 48.0852 
+" style="fill: none; stroke: #176b83; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="136.058143" y="38.717685" transform="rotate(-0 136.058143 38.717685)">action a</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 104.018712 104.913 
+Q 136.059248 104.913 166.534537 104.913 
+" style="fill: none; stroke: #176b83; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 162.934537 103.113 
+L 166.534537 104.913 
+L 162.934537 106.713 
+" style="fill: none; stroke: #176b83; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="136.058143" y="97.345485" transform="rotate(-0 136.058143 97.345485)">action a</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(264.173817 65.108712)">Same present</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(298.954286 77.110666)"/>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #142d3a" transform="translate(260.374598 89.1134)">Different future</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #142d3a" x="172.527429" y="133.1412" transform="rotate(-0 172.527429 133.1412)">Merging p and q preserves the present but cannot preserve this update.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pedf954eb30">
+   <rect x="7.2" y="7.2" width="340.38" height="130.284"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Mechanical Motion Atlas — 2D</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="kernel.js"></script>
+  <script defer src="math-export.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to workspace</a>
+  <header class="masthead">
+    <div><p class="eyebrow">20 ideal models / a finite 2D workspace</p><h1>Mechanical Motion Atlas</h1><p class="intro">Follow a phase. Compare what each mechanism preserves.</p></div>
+    <nav aria-label="Atlas resources"><a href="README.md">Guide &amp; scope</a><a href="../docs/core.md">Mathematical framework</a></nav>
+  </header>
+  <main id="workspace" tabindex="-1">
+    <div class="workspace-grid">
+      <aside class="panel library" aria-labelledby="library-title">
+        <div class="section-heading"><h2 id="library-title">Mechanisms</h2><span id="layer-count" class="count"></span></div>
+        <label for="search">Find a mechanism</label><input id="search" type="search" autocomplete="off" placeholder="Name, formula or family">
+        <label for="preset">Starting comparison</label>
+        <select id="preset"><option value="paths">Travel &amp; rectification</option><option value="joints">CV &amp; Cardan joints</option><option value="gears">Gear ratios</option><option value="linkages">Planar linkages</option><option value="gates">Gates &amp; dwells</option><option value="all">All twenty</option></select>
+        <div class="button-row compact"><button id="show-all" type="button">Show all</button><button id="show-none" type="button">Clear layers</button></div>
+        <p class="hint">Check a layer to show it. Choose its name to inspect it.</p>
+        <div id="mechanism-list"></div><p id="no-results" hidden>No mechanisms match this search.</p>
+      </aside>
+      <div class="main-column">
+        <section class="panel plot-panel">
+          <div class="plot-top"><div><p class="eyebrow">Workspace</p><h2 id="view-title">Traces</h2></div>
+            <fieldset class="view-picker"><legend class="sr-only">Display view</legend><label><input type="radio" name="view" value="trace" checked><span>Traces</span></label><label><input type="radio" name="view" value="phase"><span>Phase portrait</span></label><label><input type="radio" name="view" value="mechanism"><span>Mechanism</span></label></fieldset>
+          </div>
+          <div class="plot-options">
+            <div><label for="receiver">Readout</label><select id="receiver"><option value="output">Output channel</option><option value="hidden">Hidden channel</option></select></div>
+            <div><label for="scale">Plot scale</label><select id="scale"><option value="layer">Normalize each layer</option><option value="shared">One shared normalization</option><option value="raw">Raw coordinates</option></select></div>
+            <div><label for="span">Observed interval</label><select id="span"><option value="0.5">0 – ½ turn</option><option value="1">0 – 1 turn</option><option value="2" selected>0 – 2 turns</option><option value="4">0 – 4 turns</option><option value="8">0 – 8 turns</option><option value="16">0 – 16 turns</option></select></div>
+          </div>
+          <figure class="plot-figure"><canvas id="plot" role="img" aria-label="Selected mechanism traces. Raw current readouts and sampled data are available in the tables below."></canvas><figcaption id="plot-caption">Each line is a sampled display channel. Normalization forgets its original scale and offset.</figcaption></figure>
+          <div id="legend" class="legend"></div>
+          <div class="transport"><button id="play" class="primary" type="button">Play</button><button id="reset" type="button">Reset</button><div class="time-control"><label for="time">Input time <output id="time-value" for="time">0.000 turns</output></label><input id="time" type="range" min="0" max="2" step="0.001" value="0"></div><div class="speed-control"><label for="speed">Speed</label><select id="speed"><option value="0.1">0.1 turn/s</option><option value="0.25" selected>0.25 turn/s</option><option value="0.5">0.5 turn/s</option><option value="1">1 turn/s</option></select></div></div>
+          <p id="motion-note" class="hint">Starts paused. Playback stops at the end of the admitted interval.</p>
+        </section>
+        <section class="panel inspector" aria-labelledby="inspect-name">
+          <div class="inspector-heading"><div><p class="eyebrow">Inspecting</p><h2 id="inspect-name"></h2></div><span id="inspect-family" class="pill"></span></div>
+          <div class="inspector-grid"><div><p id="inspect-formula" class="equation"></p><p id="inspect-fidelity"></p><p id="inspect-fiber" class="hint"></p></div><div class="parameter-controls"><label for="aperture">Model parameter <output id="aperture-value" for="aperture"></output></label><input id="aperture" type="range" min="0" max="1" step="0.01" value="0.45"><p id="parameter-label" class="hint"></p><label for="offset">Phase-shifted display</label><select id="offset"><option value="0">No shift</option><option value="0.25">+¼ turn</option><option value="0.5">+½ turn</option><option value="0.75">+¾ turn</option></select><p class="hint">Shifted curves end when their input reaches the observed endpoint.</p><button id="add-focus" type="button">Add to builder</button></div></div>
+        </section>
+      </div>
+    </div>
+    <section class="panel readouts"><div class="section-heading"><h2>Readouts at the current time</h2><button id="csv-export" type="button">Export sampled CSV</button></div><p class="hint">Values retain raw scale. Slopes are finite differences per radian; a seam has no reported slope. A shifted layer can leave the admitted interval.</p><div class="table-wrap"><table><caption class="sr-only">Visible mechanisms at the selected input time</caption><thead><tr><th scope="col">Mechanism</th><th scope="col">Parameter</th><th scope="col">Input turns</th><th scope="col">Raw channel</th><th scope="col">Sampled slope</th></tr></thead><tbody id="readout-body"></tbody></table></div>
+      <details><summary>Sample table for the inspected mechanism</summary><p class="hint">Twenty-one evenly spaced readouts from the retained sample record. CSV contains every retained sample.</p><div class="table-wrap"><table><caption id="sample-caption">Inspected sampled channel</caption><thead><tr><th scope="col">Display turns</th><th scope="col">Input turns</th><th scope="col">Raw channel</th><th scope="col">Sampled slope</th></tr></thead><tbody id="sample-body"></tbody></table></div></details>
+    </section>
+    <section class="panel builder" aria-labelledby="builder-title">
+      <div class="section-heading"><div><p class="eyebrow">Typed composition</p><h2 id="builder-title">Build a mechanism chain</h2></div><span id="builder-disposition" class="pill"></span></div>
+      <p>Connect model outputs through matching ports. The motor supplies an unwrapped input phase. A missing adapter remains an open edge.</p>
+      <div class="builder-toolbar"><div><label for="component">Component</label><select id="component"></select></div><button id="add-component" class="primary" type="button">Add component</button><button id="builder-reset" type="button">Reset chain</button><div><label for="builder-preset">Connected example</label><select id="builder-preset"><option value="reduction">Motor → gear → worm → rack</option><option value="joint">Motor → Cardan → rectifier</option><option value="linkage">Motor → Chebyshev path</option><option value="carry">Two-input carry cell</option></select></div></div>
+      <p id="builder-help" class="hint">A chain has one incoming edge per component. The carry example demonstrates a two-input graph. Editing the graph is manual.</p>
+      <ol id="graph-nodes" class="graph-nodes"></ol>
+      <div class="table-wrap"><table><caption>Current typed component results</caption><thead><tr><th scope="col">Node</th><th scope="col">Port</th><th scope="col">Value</th><th scope="col">Disposition</th></tr></thead><tbody id="graph-results"></tbody></table></div>
+      <div class="button-row"><button id="python-export" type="button">Export Python</button><button id="latex-export" type="button">Export LaTeX</button><button id="graph-export" type="button">Export graph JSON</button></div><p class="hint">Portable exports evaluate the 38 registered ideal component types on this finite interval. They retain the clean graph and parameters. Unknown operations remain OPEN. They do not compute general inverse fibers or forces.</p>
+    </section>
+    <section class="panel exchange"><div><h2>Keep this experiment</h2><p>The workspace file stores only these model settings and your clean graph. Import restores a paused experiment.</p></div><div class="button-row"><button id="workspace-export" class="primary" type="button">Export workspace JSON</button><button id="workspace-import" type="button">Import workspace JSON</button><button id="png-export" type="button">Export plot PNG</button><input id="import-file" type="file" accept="application/json,.json" hidden></div></section>
+    <p id="status" class="status" role="status"></p>
+  </main>
+  <footer><p>Finite ideal kinematics and sampled views. Drawings are schematic; normalization and projection can lose information. No torque, wear, collision or general physical inverse is computed.</p><p>Runs from local files. No account, network requests, cookies or external libraries.</p></footer>
+  <noscript><p class="status">JavaScript is required for the interactive atlas. Its mathematical definitions and Python checkers are available alongside this page.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.artifacts/
+__pycache__/
+*.py[cod]
+*.olean
+*.ilean
+.venv/
+node_modules/
+.DS_Store
