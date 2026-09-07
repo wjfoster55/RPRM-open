@@ -2,6 +2,11 @@
 
 Documentation: CC0-1.0.
 
+The general relations below use a variable range H. The value 4000 belongs
+to the completed bounded certificate, rather than to the definition of the
+Fermat relation. A new range or representation must state which proof
+obligations it inherits and which remain to be established.
+
 **Theorem proved below.** If `a,b,c` are positive integers and `n>2` is an
 integer, then
 
@@ -99,6 +104,44 @@ a<b\le\left\lfloor\sqrt{\left\lfloor\frac{a^3-1}{3d}\right\rfloor}\right\rfloor,
 
 This justifies bounded exhaustive verification. The proof for `H=4000`
 will instead eliminate most of that carrier symbolically.
+
+### Variable ranges and representation changes
+
+Let C_H contain the primitive ordered integer candidates satisfying the
+displayed necessary bounds, with c=b+d and a<=H. Each C_H is finite and
+C_H is contained in C_(H+1). Every hypothetical positive integer solution
+reduces to a candidate in some C_H. The general construction uses H as an
+input; no special change in the equation occurs at 4000 or 4001.
+
+The zero-exclusion certificate below is established at H=4000. Its auxiliary
+prime coverage, seam ceilings and surviving fifth/tenth-power branch lists
+depend on that range. Substituting a larger H into the general bounds does
+not establish those certificate premises for the larger range. A uniform
+proof must exclude the zero fiber for every H, or supply another argument
+covering every remaining candidate, such as a proved descent.
+
+A change of representation can remove large displayed coordinates while
+preserving the precise problem. On jointly primitive triples a<b<c, retain
+the exponent n and set x=a/c, y=b/c as exact rational numbers. The image is
+the rational triangle 0<x<y<1. Let L be the least common multiple of the
+reduced denominators of x and y. The inverse is
+
+$$a=Lx,\qquad b=Ly,\qquad c=L.$$
+
+For a source triple, this least common denominator is
+c/gcd(a,b,c)=c. Conversely, minimality of L makes the reconstructed triple
+jointly primitive. Thus the chart is bijective on the stated carrier.
+Requiring pairwise coprimality adds that condition to its rational image;
+general nonprimitive triples additionally need their common scale retained.
+
+The equation becomes x^n+y^n=1, and the source range becomes Lx<=H.
+The normalized residual is (a^n+b^n-c^n)/L^n, so zero is preserved exactly.
+Across the unrestricted chart, the coordinates stay below one while their
+denominators remain unbounded.
+For example, primitive triples (a,a+1,a+2) map to denominators L=a+2.
+A rounded picture or a fixed denominator grid therefore cannot replace this
+exact rational carrier. This chart supplies a lawful change of representation;
+a contradiction valid for its entire admitted image is a further obligation.
 
 ## A separate bound for every exponent at least 100
 
