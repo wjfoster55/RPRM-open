@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Lens Lab · RPRM</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="model.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#playground">Skip to playground</a>
+  <header class="masthead">
+    <a class="brand" href="#"><svg viewBox="0 0 34 34" aria-hidden="true"><rect x="3" y="3" width="19" height="19" rx="4"/><rect x="11" y="11" width="19" height="19" rx="4"/></svg><strong>RPRM</strong><span>/</span> Lens Lab</a>
+    <span class="preview">Interactive example</span>
+  </header>
+  <main id="playground" tabindex="-1">
+    <section class="hero">
+      <div><p class="eyebrow">An experiment in keeping things together</p><h1>One move.<br>A whole new view.</h1></div>
+      <div class="intro"><p>A swatch can be more than a color.<br>Drag a point. Its relationships travel with it—through a palette, a curve, and a little world.</p><a href="#how-it-works">Meet the lens <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <div class="scene-bar"><span>Start somewhere</span><div class="presets" aria-label="Starting scenes"><button type="button" data-preset="studio" aria-pressed="true"><span class="preset-dot studio"></span>Playful studio</button><button type="button" data-preset="dusk" aria-pressed="false"><span class="preset-dot dusk"></span>After hours</button><button type="button" data-preset="citrus" aria-pressed="false"><span class="preset-dot citrus"></span>Citrus garden</button></div><button type="button" id="reset" class="text-button">Reset <span aria-hidden="true">↺</span></button></div>
+    <div class="workspace">
+      <section class="controller">
+        <div class="panel-heading"><div><p class="eyebrow">One shared source</p><h2>The relationship wheel</h2></div><span class="tiny-mark" aria-hidden="true">✳</span></div>
+        <p class="controller-hint" id="wheel-hint">Drag any lettered point. Or select a point below and use the slider.</p>
+        <div class="wheel-wrap"><svg id="wheel" viewBox="0 0 320 320" role="img" aria-labelledby="wheel-title wheel-description"><title id="wheel-title">Five linked phase points</title><desc id="wheel-description">Each point has an angle. Moving together keeps every relative angle. Equivalent keyboard controls follow the diagram.</desc><defs><pattern id="wheel-grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.6" fill="#b7d0bc" opacity=".16"/></pattern></defs><rect width="320" height="320" fill="url(#wheel-grid)"/><circle cx="160" cy="160" r="120" fill="none" stroke="#577366" stroke-width="1"/><circle cx="160" cy="160" r="82" fill="none" stroke="#577366" stroke-dasharray="2 6"/><path d="M160 24V296 M24 160H296" stroke="#577366" opacity=".6"/><g id="wheel-links"></g><g id="wheel-nodes"></g><circle cx="160" cy="160" r="39" fill="#142c25" stroke="#577366"/><text x="160" y="155" class="wheel-center-label" text-anchor="middle">RELATION</text><text x="160" y="177" id="wheel-mode" class="wheel-center-value" text-anchor="middle">locked</text></svg></div>
+        <div id="point-pickers" class="point-pickers" aria-label="Select a point"></div>
+        <div class="control-label"><label for="phase">Move point <span id="selected-letter">A</span></label><span id="phase-value">232°</span></div>
+        <input type="range" id="phase" min="0" max="359" value="232" step="1" aria-describedby="wheel-hint">
+        <button type="button" class="lock-button" id="lock" aria-pressed="true"><span id="lock-icon" aria-hidden="true">↔</span><span id="lock-label">Move together</span><span id="lock-state">ON</span></button>
+        <p class="mode-hint" id="mode-hint">The offsets stay fixed. Every point moves by the same amount.</p>
+        <div class="residue"><div><span>Offsets from A</span><span id="relation-state">Preserved</span></div><p id="offsets">0° · 48° · 126° · 172° · 278°</p></div>
+      </section>
+      <div class="views">
+        <section class="view palette-view"><div class="view-heading"><h2><span>01</span> Color</h2><span class="view-note">phase → hue</span></div><div id="palette" class="palette" aria-label="Linked palette"></div><div class="view-controls"><div><div class="control-label"><label for="saturation">Saturation</label><span id="saturation-value">68%</span></div><input id="saturation" type="range" min="0" max="100" value="68"></div><div><div class="control-label"><label for="lightness">Lightness</label><span id="lightness-value">62%</span></div><input id="lightness" type="range" min="20" max="80" value="62"></div></div><p class="caption">Same spacing, a different palette. Select any swatch.</p></section>
+        <section class="view curve-view"><div class="view-heading"><h2><span>02</span> Curves</h2><span class="view-note">phase → wave offset</span></div><svg id="waves" class="drawing" viewBox="0 0 460 160" role="img" aria-labelledby="waves-title"><title id="waves-title">Five waves with linked phase offsets</title><path d="M20 20V140 M20 80H440 M125 20V140 M230 20V140 M335 20V140 M440 20V140" stroke="#dce2d8" stroke-width="1"/><g id="wave-paths"></g><g id="wave-dots"></g></svg><div class="view-controls"><div><div class="control-label"><label for="amplitude">Height</label><span id="amplitude-value">70%</span></div><input id="amplitude" type="range" min="0" max="100" value="70"></div><div><div class="control-label"><label for="cycles">Cycles</label><span id="cycles-value">1</span></div><input id="cycles" type="range" min="1" max="4" value="1"></div></div><p class="caption" id="wave-caption">Move the wheel to slide all five curves together.</p></section>
+        <section class="view geometry-view"><div class="view-heading"><h2><span>03</span> Geometry</h2><span class="view-note">phase → position</span></div><svg id="geometry" class="drawing geometry" viewBox="0 0 460 160" role="img" aria-labelledby="geometry-title"><title id="geometry-title">A constellation of five linked points</title><defs><pattern id="geo-grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r=".8" fill="#c9d4c4"/></pattern></defs><rect width="460" height="160" fill="url(#geo-grid)"/><g id="orbit-rings"></g><g id="orbit-links"></g><g id="orbit-points"></g></svg><div class="view-controls"><div><div class="control-label"><label for="radius">Spread</label><span id="radius-value">75%</span></div><input id="radius" type="range" min="0" max="100" value="75"></div><div><div class="control-label"><label for="rotation">View rotation</label><span id="rotation-value">0°</span></div><input id="rotation" type="range" min="0" max="359" value="0"></div></div><p class="caption" id="geometry-caption">Turn this view without changing the source or the other lenses.</p></section>
+        <section class="view composition-view"><div class="view-heading"><h2><span>04</span> Composition</h2><span class="view-note">the lenses, together</span></div><div id="composition" class="composition"><svg id="composition-art" viewBox="0 0 460 230" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="composition-title"><title id="composition-title">Five ellipses combining the palette, wave shapes, and linked geometry</title><g id="composition-shapes"></g></svg></div><p class="caption">Color, curves, and geometry meet in one small design.</p></section>
+      </div>
+    </div>
+    <section class="explanation" id="how-it-works"><div><p class="eyebrow">Behind the play</p><h2>Keep the relation.<br>Change the view.</h2></div><div><p>The source is five ordered points on a 360-step circle. We keep one anchor and each point’s offset from it. Moving the anchor rebuilds all five points while preserving their relative angles.</p><p>Each lens gives those same points a different job: hue, wave offset, or position. Its own controls change that mapping. The composition combines all three.</p><details><summary>Try breaking the lock—and see what a view can forget</summary><div class="detail-body"><p><strong>Move one:</strong> turn off “Move together,” then drag a point. Its relationships change; the other four points stay put.</p><p><strong>Flatten a view:</strong> set curve Height or geometry Spread to zero. Different points now land on the same output. The source still keeps their offsets, so raising the control brings them back.</p><p><strong>The exact rule:</strong> <code>point[i] = (anchor + offset[i]) mod 360</code>. Retaining the anchor and ordered offsets reconstructs the tuple. Offsets alone leave 360 possible anchors. Colors and screen pixels are display adapters; they are not an inverse for the source.</p><a href="README.md">Read the model, scope, and verification instructions ↗</a></div></details></div></section>
+    <p id="announcement" class="visually-hidden" role="status"></p>
+    <noscript><p>This playground needs JavaScript. Its source and model explanation are in the adjacent README.</p></noscript>
+  </main>
+  <footer><span>RPRM / Lens Lab</span><span>A local experiment · no network required</span><a href="README.md">Model &amp; notes ↗</a></footer>
+</body>
+</html>

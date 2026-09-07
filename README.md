@@ -31,7 +31,7 @@ continuations. The core makes observational sufficiency and incomplete
 source recovery precise. Identifying a physical source remains a further
 modeling and experimental task.
 
-This release candidate contains the full mathematical book, seven executable
+This release candidate contains the full mathematical book, eight executable
 experimental packs, formal proofs of selected laws, and an interactive 2D
 Mechanical Motion Atlas. Three separate research specifications propose
 unexecuted scientific comparisons. Each result states its scope. The broad
@@ -72,7 +72,8 @@ are part of the mathematical contract, not annotations added after solving.
 | [Glossary](docs/glossary.md) | Definitions and links for the working vocabulary, including named constructions |
 | [Proof donut](docs/proof-donut.md) | Coverage, compatible constraints and finite proof certificates; executable mutual checks |
 | [Bounded Fermat proof](docs/fermat.md) | The min(a,b)≤4000 theorem, full argument and finite certificate replay; the independent unrestricted RPRM derivation remains open |
-| [Seven executable packs](experimental/README.md) | Primes, rays, music, lattice conformations, synthetic question selection, two-path calculations and Rule Lab |
+| [Eight executable packs](experimental/README.md) | Primes, rays, music, lattice conformations, synthetic question selection, two-path calculations, Rule Lab and Lens Lab |
+| [Lens Lab](experimental/lens-lab/index.html) · [Model and replay](experimental/lens-lab/README.md) | An offline playground that retains five ordered phases through color, curve and geometry displays |
 | [Three research proposals](research-packs/README.md) | Folding dynamics, BRCA1 cellular function and immune mechanisms; data-driven and scientific comparisons remain unexecuted |
 | [Handbook assessments](agent-tests/README.md) | Versioned questions, answer keys, grading and bounded comprehension evidence |
 | [Initial states and origins](docs/origins.md) | Generative models, zero/balance distinctions, and the premises needed for a physical interpretation |
@@ -105,6 +106,11 @@ python -I -B examples/fixed_gap.py
 Open [atlas/index.html](atlas/index.html) in a modern browser for the local
 Mechanical Motion Atlas. Its JavaScript modules are included locally; the
 mathematical tools do not require an account or network service.
+
+Open [Lens Lab](experimental/lens-lab/index.html) directly in a browser to
+move one retained five-point relationship through several visual lenses.
+Its [contract and replay](experimental/lens-lab/README.md) distinguish the
+invertible source coordinates from the lossy displays.
 
 Run all executable Python and Node checks (Node.js 18 or newer):
 

@@ -7,7 +7,7 @@ tools, a baseline and a result that would count against the proposal.
 
 Use this area with the self-contained [agent handbook](../AGENT_HANDBOOK.md).
 The [main definitions](../docs/core.md) and [operations](../docs/operations.md)
-give the formal contracts. This directory contains seven executable packs.
+give the formal contracts. This directory contains eight executable packs.
 A pack can be useful before an empirical result exists; it must say which
 result is missing.
 
@@ -20,12 +20,13 @@ result is missing.
 | [Context and communication](context-communication/README.md) | Which next question separates a declared finite hypothesis family? | Newly proposed synthetic deterministic model; no empirical psychology result |
 | [Exact two-path lab](two-path-lab/README.md) | Which phase, channel and conditional questions survive a retained quantum-state description? | Rational-component model with 31 tests and independent matrix comparisons; no physical experiment |
 | [Rule Lab](rule-lab/README.md) | What survives rule transforms, binary views and block summaries under explicit seeds, boundaries and addresses? | Pure model and presentation-helper checks; browser behavior remains unverified, and finite prime comparisons do not establish an unbounded predictor |
+| [Lens Lab](lens-lab/README.md) · [Open playground](lens-lab/index.html) | What survives when one retained five-point relationship is moved through color, curve and geometry displays? | Written coordinate and translation identities plus 16 pure model tests; manual browser checks are separate, and the displays make no source-inverse or physical-equivalence claim |
 
 Three [separate research specifications](../research-packs/README.md) concern
 folding dynamics, BRCA1 cellular function and immune evidence and mechanisms.
 They are unexecuted proposals with mathematical controls and evaluation
 contracts. They report no data-driven predictive result, biological efficacy
-or clinical outcome, and are not counted among these seven executable packs.
+or clinical outcome, and are not counted among these eight executable packs.
 
 The index expands only when a pack contains a concrete contract and a usable
 test plan or executable. It is not a list of promised solved applications.
