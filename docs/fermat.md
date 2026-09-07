@@ -311,6 +311,14 @@ fail the complete census. The data establish the lemma's premises for
 this finite prime range. They do not supply auxiliary primes for every
 odd prime, and do not by themselves exclude the second case `p|xyz`.
 
+The [square-frontier prime mechanism](../experimental/primes/square-frontier.md)
+shows how a complete certified prime list can support successive larger
+regions by a uniform factor theorem. It can supply the primality premises
+for p and q. The two full residue-image conditions above, their coverage
+over the required exponents, and the second-case exclusion remain separate
+obligations. Extending a prime-classification region establishes that
+classification property; its use here must retain the Fermat target.
+
 ## Valuations and the original root cap
 
 For odd prime `p`, distinct integers `X,Y` with `p` not dividing `XY` and

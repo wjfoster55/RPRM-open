@@ -13,6 +13,15 @@ question? The cost of obtaining the label matters as much as its size.
 
 ## What the pack contains
 
+[Certified square-frontier expansion](square-frontier.md) gives a complete
+written coverage and iteration proof: primes certified through B suffice
+to classify integers through B^2, and the resulting complete list supports
+the next stage. It includes the outside-boundary composite 49 and identifies
+exactly what this mechanism contributes to the Fermat auxiliary argument.
+This is established sieve reasoning presented through the RPRM contracts.
+The document supplies a general theorem and pseudocode; the executable
+reference below retains its separately stated small bounds.
+
 [model.py](model.py) provides a conventional Lucas-Lehmer reference capped at
 exponents 2 through 31, independent trial division within a declared bound,
 exact digit access for a specified zero-run constructor, and the invertible
