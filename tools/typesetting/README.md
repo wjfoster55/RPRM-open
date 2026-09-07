@@ -20,6 +20,8 @@ Otherwise supply their installed paths with `--pandoc PATH --tectonic PATH`. No 
 
 `--prepare-only` retains the parsed source, adapted representation and LaTeX without compiling. `--edition release` changes the cover and footer label; it does not publish or certify the text. Review the manuscript's status and reserved sections before choosing that label. Changing the label does not remove draft text.
 
+A manuscript byline in the form `**Author: Name**` supplies the cover author and final PDF author metadata. The build receipt records that name, and the manuscript hash binds it to the output. The cover also includes the companion repository's readable, clickable address.
+
 Every invocation owns a new `.artifacts/paper/<build-id>/` directory. An optional `--build-id NAME` chooses a new directory name; existing directories are rejected. The tool leaves the distributed `RPRM-Manifesto.pdf` unchanged. Its new `RPRM-Manifesto.pdf`, the body, cover, intermediate representations, logs, dependency rules and `BUILD.json` remain in the generated directory. Copy a reviewed output to the root only after checking the exact result.
 
 ## What the conversion changes

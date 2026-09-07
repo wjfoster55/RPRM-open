@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  To reference this work, cite the companion manuscript below. Reuse does not
+  require attribution under the original-material licenses.
+type: software
+title: RPRM-open
+authors:
+  - family-names: Foster
+    given-names: William J
+version: 1.0.0
+repository-code: https://github.com/wjfoster55/RPRM-open
+license:
+  - 0BSD
+  - CC0-1.0
+preferred-citation:
+  type: report
+  title: "The RPRM Manifesto: A Relational Framework for Mathematical Unification"
+  authors:
+    - family-names: Foster
+      given-names: William J
+  year: 2026
+  version: 1.0.0
+  doi: 10.5281/zenodo.22644688
+  url: https://doi.org/10.5281/zenodo.22644688
+  publisher:
+    name: Zenodo

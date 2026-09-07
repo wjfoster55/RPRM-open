@@ -5,13 +5,13 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.colors import HexColor
 
 
-def build_cover(destination, fonts, edition="review"):
+def build_cover(destination, fonts, edition="review", author=""):
     for name, filename in (("CoverSans", "DejaVuSans.ttf"), ("CoverSansBold", "DejaVuSans-Bold.ttf")):
         pdfmetrics.registerFont(TTFont(name, str(fonts / filename)))
     width, height = 504, 720
     c = canvas.Canvas(str(destination), pagesize=(width, height), invariant=1, pageCompression=1)
     c.setTitle("The RPRM Manifesto")
-    c.setAuthor("")
+    c.setAuthor(author)
     c.setSubject("A relational framework for mathematical unification")
     ink, teal = HexColor("#172B36"), HexColor("#176B83")
     c.setFillColor(HexColor("#FCFCFA"))
@@ -30,6 +30,9 @@ def build_cover(destination, fonts, edition="review"):
     c.setFont("CoverSans", 13)
     c.drawString(left, 417, "A relational framework")
     c.drawString(left, 397, "for mathematical unification")
+    if author:
+        c.setFont("CoverSans", 12)
+        c.drawString(left, 352, author)
     c.setFont("CoverSans", 9.2)
     c.drawString(left, 162, "Definitions, proofs, applications and proposed tests")
     c.setStrokeColor(HexColor("#C8D2D6"))
@@ -41,5 +44,9 @@ def build_cover(destination, fonts, edition="review"):
     else:
         c.drawString(left, 117, "Original material is freely reusable under the accompanying licenses.")
     c.drawString(left, 102, "The scope and evidence grade of each result are stated in the text.")
+    c.setFillColor(teal)
+    repository = "https://github.com/wjfoster55/RPRM-open"
+    c.drawString(left, 80, "github.com/wjfoster55/RPRM-open")
+    c.linkURL(repository, (left, 78, 220, 90), relative=0, thickness=0)
     c.showPage()
     c.save()

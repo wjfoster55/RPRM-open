@@ -2,6 +2,8 @@
 
 *A relational framework for mathematical unification*
 
+**Author: William J Foster**
+
 **RPRM means Relational Pressure Retention Model.** The name comes from the
 motivating physics idea: observable behavior may arise from an underlying
 relational organization, with pressure and retention playing roles in how
@@ -11,7 +13,9 @@ and laws; the name itself does not establish them. Part I, section 7,
 introduces the relational-layer proposal, developed further in the gravity
 and black-hole chapters.
 
-**Version 1 — review edition.**
+**Version 1 — first edition.**
+
+**DOI:** [10.5281/zenodo.22644688](https://doi.org/10.5281/zenodo.22644688)
 
 This edition includes the revised relational-layer account, two developed molecular research proposals, and the author's afterword. Mathematical results and proposed scientific extensions retain their stated evidence and scope.
 
@@ -19,7 +23,7 @@ RPRM organizes mathematical objects, representations and operations around the q
 
 The physical proposal behind this work is that observable objects, forces and geometry may be manifestations of an underlying relational organization. The mathematical core gives a language for specifying that organization and proving what its observable descriptions retain. Establishing which such organization describes nature requires a physical model and evidence. The distinction between those two tasks is part of the proposal itself.
 
-Part I states the framework and its central laws. Part II develops the mathematical core. Part III applies it to arithmetic and declared mathematical or scientific models. Part IV develops research bridges and proposed tests. The appendices supply a special-term reference, the complete Fermat certificate and a guide to evidence and reproduction. The [companion repository](https://github.com/wjfoster55/RPRM-open) contains the executable examples, Mechanical Motion Atlas, agent handbook, layperson guide and experimental packs.
+Part I states the framework and its central laws. Part II develops the mathematical core. Part III applies it to arithmetic and declared mathematical or scientific models. Part IV develops research bridges and proposed tests. The appendices supply a special-term reference, the complete Fermat certificate and a guide to evidence and reproduction. The companion repository at [github.com/wjfoster55/RPRM-open](https://github.com/wjfoster55/RPRM-open) contains the executable examples, Mechanical Motion Atlas, agent handbook, layperson guide and experimental packs.
 
 ## Contents
 
@@ -251,6 +255,8 @@ $$
 The unmeasured difference $z-x=5$ is forced for every member. The closed difference cycle $(y-x)+(z-y)+(x-z)=0$ checks compatibility, while no absolute coordinate is determined: adding one common offset changes none of the observations. Thus a relation can be known exactly without choosing a unique underlying assignment. The specified difference law earns this inference. Applying the example to physical measurements would still require a model of those measurements and their uncertainty.
 
 The physics chapters use this proposal as a research direction. Gravity asks which relations suffice to describe coupled motion and whether a separately specified relational evolution can derive that motion. Black holes ask how internal continuation, accessible observations and causal escape can differ. In both cases, the task is to specify the underlying candidate, derive its observable behavior and identify what could distinguish it from competing descriptions. A successful reformulation may already organize knowledge usefully; a new physical explanation must earn its additional claim.
+
+**Structure and meaning.** RPRM does not assign intrinsic significance, purpose or intention to a number, pattern or physical relation. In a formal model, symbols receive their mathematical interpretation from supplied definitions and context. Preserving that interpretation does not determine what the modeled event means to a person or community. Meaning in that personal, cultural or existential sense lies outside what the core mathematics determines. A model of communication can study a specified interpretation through additional assumptions and evidence; that interpretation does not follow from structure alone. This boundary leaves broader philosophical questions open.
 
 ### 8. From the core to the complete argument
 
@@ -4502,7 +4508,7 @@ I see RPRM as a culmination of shared human effort. It was only possible because
 
 To anyone I may have offended along the way, I am genuinely sorry. That was never my intention. To the friends and family I may have distanced myself from during this time, I apologize.
 
-I'd like to close with a few personal thoughts. I believe we are moving from an age defined by information into an age defined by collaboration. Over the past two months, this work consisted almost entirely of me talking to ChatGPT and Claude. My mathematics education never went beyond algebra. I couldn't give you a proper explanation of sine or cosine, and science wasn't my strength in school either. For me, this was a journey of intuition guiding intelligence.
+I'd like to close with a few personal thoughts. I believe we are moving from an age defined by information into an age defined by collaboration. Over the past two months, this work consisted almost entirely of me talking to ChatGPT and Claude. My mathematics education never went beyond algebra. I couldn't give you a proper explanation of sine or cosine, and science wasn't my strength in school either. For me, this was a journey of bringing intuition and intelligence together. In this project, that happened through conversations with AI. The broader idea is that intuition, careful analysis, experience, philosophy and imagination can help each other.
 
 As someone who often struggles to express himself, I also want to offer a heartfelt thank-you to everyone whose work has made GPTs and other language models possible. You've given people another way to express themselves, and that has meant a great deal to me.
 
@@ -4511,6 +4517,8 @@ That experience has left me believing that far more people can contribute to mat
 My hope is that RPRM helps people identify their problems more accurately and, through that, find better solutions. I also believe it can help us distinguish numerology from meaningful, testable relationships by asking what a pattern actually tells us and how we could check it. That is all I wish for it.
 
 I love you all. Thank you.
+
+**AI assistance.** The author developed this work through conversations with ChatGPT (OpenAI) and Claude (Anthropic). Codex (OpenAI) assisted with drafting, editing, implementation, checks and typesetting.
 
 ## Bibliography
 

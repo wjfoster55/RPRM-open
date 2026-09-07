@@ -135,7 +135,7 @@ def transform(ast):
         if display and previous and previous.get("t") == "Para":
             output.append(raw(r"\nopagebreak[4]"))
             receipt["page_guards"].append({"target": plain(block), "treatment": "Keep display with the preceding paragraph's last lines."})
-        if block.get("t") == "Header" and block["c"][0] >= 4 and i not in reservations:
+        if block.get("t") == "Header" and (block["c"][0] >= 4 or plain(block) == "8. From the core to the complete argument") and i not in reservations:
             output.append(raw(r"\Needspace{7\baselineskip}"))
             receipt["page_guards"].append({"target": plain(block), "treatment": "Reserve seven lines for a subsection heading and its opening."})
         if block.get("t") == "Para" and plain(block).startswith(("Theorem ", "Proposition ", "Lemma ", "Corollary ")) and not (previous and previous.get("t") == "Header") and i not in reservations:

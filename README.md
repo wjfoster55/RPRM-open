@@ -13,6 +13,12 @@ and distinguishes it from the mathematical results proved here.
 afterword. The PDF has completed its layout review; exact source and build
 inputs are recorded in [DOCUMENT_BUILD.json](DOCUMENT_BUILD.json).
 
+**Paper and companion material:** [Read or download the paper](RPRM-Manifesto.pdf)
+or use its permanent identifier, [10.5281/zenodo.22644688](https://doi.org/10.5281/zenodo.22644688).
+The paper links back to
+[this repository](https://github.com/wjfoster55/RPRM-open) on its cover and in
+its opening pages. [CITATION.cff](CITATION.cff) supplies the paper's citation.
+
 RPRM describes mathematical problems through their carriers, relations,
 operations, observations, and missing information. Its purpose is to connect
 existing mathematics while preserving what each source system means. An

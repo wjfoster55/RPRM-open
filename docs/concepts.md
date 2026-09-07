@@ -14,6 +14,17 @@ paired-string examples. The [reader's guide](../LAYPERSON_GUIDE.md) supplies
 a gentler entry point, and the [agent handbook](../AGENT_HANDBOOK.md) gives
 a reusable reasoning procedure.
 
+## Structure and meaning
+
+RPRM does not assign intrinsic significance, purpose or intention to a number,
+pattern or physical relation. A formal model supplies definitions and a context
+for interpreting its symbols. Preserving that interpretation does not decide
+what an event means to a person or community. Personal, cultural and existential
+meaning lie outside what the core mathematics determines. Studying a specified
+interpretation requires its own assumptions and evidence; broader philosophical
+questions remain open. The [opening account in the book](../MANIFESTO.md#7-the-relational-layer-proposal-and-limits-of-observation)
+states this boundary alongside the relational-layer proposal.
+
 ## Value, written form, address and operation
 
 Take 1000. As an integer it is one thousand. As a base-ten numeral it has four

@@ -103,6 +103,11 @@ def main():
         receipt["inputs"] = before
         raw = (ROOT / "MANIFESTO.md").read_bytes()
         text = raw.decode("utf-8")
+        authors = re.findall(r"^\*\*Author: ([^*\r\n]+)\*\*\r?$", text, re.M)
+        if len(authors) > 1:
+            raise ValueError("The manuscript must not contain more than one author byline")
+        author = authors[0] if authors else ""
+        receipt["author"] = author
         (out / "fonts").mkdir()
         (out / "images").mkdir()
         figures = []
@@ -205,7 +210,7 @@ def main():
             from pypdf import PdfReader, PdfWriter
             from pypdf.constants import PageLabelStyle
             cover = load_module("rprm_print_cover", HERE / "cover.py")
-            cover.build_cover(out / "cover.pdf", out / "fonts", args.edition)
+            cover.build_cover(out / "cover.pdf", out / "fonts", args.edition, author)
             body_reader = PdfReader(out / "reading.pdf")
             # Clone the complete body catalog so named destinations and their
             # annotations remain together; importing pages alone can drop links.
@@ -236,7 +241,7 @@ def main():
             writer.add_outline_item("Cover", 0)
             writer.set_page_label(0, 0, prefix="Cover")
             writer.set_page_label(1, len(writer.pages)-1, style=PageLabelStyle.DECIMAL, start=1)
-            writer.add_metadata({"/Title": "The RPRM Manifesto", "/Author": "", "/Subject": "A relational framework for mathematical unification", "/Creator": "RPRM manuscript build", "/CreationDate": "D:20260907000000Z", "/ModDate": "D:20260907000000Z"})
+            writer.add_metadata({"/Title": "The RPRM Manifesto", "/Author": author, "/Subject": "A relational framework for mathematical unification", "/Creator": "RPRM manuscript build", "/CreationDate": "D:20260907000000Z", "/ModDate": "D:20260907000000Z"})
             for notice in ("DejaVu.txt", "STIXTwo-OFL.txt", "AMS-MSAM10-OFL.txt"):
                 writer.add_attachment(notice, (ROOT / "LICENSES" / notice).read_bytes())
             final_path = out / "RPRM-Manifesto.pdf"
