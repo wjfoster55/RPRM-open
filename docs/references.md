@@ -8,7 +8,7 @@ not endorsements of RPRM or proofs of every claim made here.
 The full book's [bibliography](../MANIFESTO.md#bibliography) supplies the
 broader reading list for the expanded argument. It separates
 [standard mathematics](../MANIFESTO.md#mathematical-definitions-and-standard-theory),
-[established Fermat attribution](../MANIFESTO.md#established-fermat-attribution),
+[established Fermat attribution in the supplementary study](fermat-study.md#established-fermat-attribution),
 [supplied models and computational constructions](../MANIFESTO.md#standard-models-and-computational-constructions),
 [empirical starting points](../MANIFESTO.md#empirical-context-and-experimental-starting-points),
 and [historical antecedents](../MANIFESTO.md#historical-antecedents-and-further-reading).

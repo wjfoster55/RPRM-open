@@ -9,12 +9,12 @@ retention. It remains the name of the whole framework. The
 and distinguishes it from the mathematical results proved here.
 
 **Current reading edition:** [MANIFESTO.md](MANIFESTO.md) and the
-[155-page PDF](RPRM-Manifesto.pdf) contain the revised text and the author's
+[140-page PDF](RPRM-Manifesto.pdf) contain the revised text and the author's
 afterword. The PDF has completed its layout review; exact source and build
 inputs are recorded in [DOCUMENT_BUILD.json](DOCUMENT_BUILD.json).
 
 **Paper and companion material:** [Read or download the paper](RPRM-Manifesto.pdf)
-or use its permanent identifier, [10.5281/zenodo.22650379](https://doi.org/10.5281/zenodo.22650379).
+or use its permanent identifier, [10.5281/zenodo.22650670](https://doi.org/10.5281/zenodo.22650670).
 The paper links back to
 [this repository](https://github.com/wjfoster55/RPRM-open) on its cover and in
 its opening pages. [CITATION.cff](CITATION.cff) supplies the paper's citation.
@@ -61,7 +61,7 @@ are part of the mathematical contract, not annotations added after solving.
 
 | Start here | Contents |
 |---|---|
-| [Main book](MANIFESTO.md) · [Reading PDF](RPRM-Manifesto.pdf) | Four connected parts, appendices and the author's afterword; 155 PDF pages including the cover |
+| [Main book](MANIFESTO.md) · [Reading PDF](RPRM-Manifesto.pdf) | Four connected parts, appendices and the author's afterword; 140 PDF pages including the cover |
 | [Core definitions](docs/core.md) | Carriers, ports, apertures, receivers, fibers, representations and affine coordinates |
 | [Reader's guide](LAYPERSON_GUIDE.md) | A self-contained introduction using ordinary examples |
 | [Agent handbook](AGENT_HANDBOOK.md) | Version 6: core reasoning, relational-layer scope, worked applications and a reusable procedure |
@@ -71,7 +71,6 @@ are part of the mathematical contract, not annotations added after solving.
 | [Unification](docs/unification.md) | Faithful relational presentation of supplied many-sorted structures; explicit preservation proofs and scope |
 | [Glossary](docs/glossary.md) | Definitions and links for the working vocabulary, including named constructions |
 | [Proof donut](docs/proof-donut.md) | Coverage, compatible constraints and finite proof certificates; executable mutual checks |
-| [Fermat application](docs/fermat.md) | Global zero-exclusion inherited from established FLT through faithful RPRM adapters, plus the independent min(a,b)≤4000 proof and finite certificate replay; no new independent FLT proof |
 | [Nine executable packs](experimental/README.md) | Primes, rays, symbolic music, lattice conformations, synthetic question selection, two-path calculations, Rule Lab, Lens Lab and Music Lens |
 | [Lens Lab](experimental/lens-lab/index.html) · [Model and replay](experimental/lens-lab/README.md) | An offline playground that retains five ordered phases through color, curve and geometry displays |
 | [Music Lens](experimental/music-lens/index.html) · [Model and replay](experimental/music-lens/README.md) | An offline six-note playground with piano-roll, pitch-class and rhythm views, plus optional synthesized sound |
@@ -84,8 +83,9 @@ are part of the mathematical contract, not annotations added after solving.
 | [Included tools](CONTENTS.md) | API inventory and development status |
 | [Agent instructions](AGENTS.md) | A small starting contract for agents using or extending RPRM |
 
-The book contains 87 written theorem, proposition, lemma and corollary
-statements, including four opening statements restated in the chapters.
+The main book contains 73 written theorem, proposition, lemma and corollary
+statements; the supplementary study retains 14 more. The combined 87 include
+four opening statements restated in the chapters.
 The [formal scope](docs/formal-proofs.md) is exactly 20 selected Lean
 declarations. These counts describe different evidence.
 
@@ -101,7 +101,6 @@ Run the finite examples from this directory with Python 3.10 or newer:
 ```sh
 python -I -B examples/quickstart.py
 python -I -B examples/proof_donut.py
-python -I -B examples/fixed_gap.py
 ```
 
 Open [atlas/index.html](atlas/index.html) in a modern browser for the local
@@ -129,6 +128,12 @@ Add `--lean /path/to/lean` with Lean 4.22.0 to re-elaborate the formal proofs.
 Without that argument, the aggregate receipt explicitly records the formal
 suite as `NOT_RUN`. Fresh receipts go into `.artifacts/`; they are not source
 files and are not accepted as substitutes for executing the checks.
+
+The supplementary [independent Fermat study](docs/fermat-study.md) retains
+the bounded result for positive integer roots with n>2 and min(a,b)≤4000,
+and its certificate. Its unrestricted independent goal remains open.
+The [runnable reference](docs/fermat.md) documents the existing fixed-gap
+tool and finite replay.
 
 ## Freedom to reuse
 

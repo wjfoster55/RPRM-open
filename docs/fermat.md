@@ -1,21 +1,21 @@
-# Fermat: inherited global closure and an independent bounded proof
+# Supplementary Fermat research: bounded proof and runnable reference
 
 Documentation: CC0-1.0.
 
-The book's [Chapter III.2](../MANIFESTO.md#iii2-a-bounded-side-fermat-theorem)
-gives the expanded argument, and its
-[certificate appendix](../MANIFESTO.md#certificate-appendix-iii2-the-auxiliary-prime-premises)
-prints all 302 auxiliary-prime premises. This reference gives the inherited
-global closure, preserves the independent bounded proof, and supplies its
-direct replay route below.
+The supplementary [independent study](fermat-study.md#iii2-a-bounded-side-fermat-theorem)
+contains the complete former chapter and its
+[certificate appendix](fermat-study.md#certificate-appendix-iii2-the-auxiliary-prime-premises),
+including all 302 auxiliary-prime premises. The book retains a short scope
+and proof summary. This runnable reference preserves the bounded argument,
+the fixed-gap interface and the direct replay route below.
 
 The general relations below use a variable range H. The value 4000 belongs
 to the completed bounded certificate, rather than to the definition of the
 Fermat relation. A new range or representation must state which proof
 obligations it inherits and which remain to be established.
 
-**Independent bounded theorem proved below.** If `a,b,c` are positive
-integers and `n>2` is an integer, then
+**Theorem proved below.** If `a,b,c` are positive integers and `n>2` is an
+integer, then
 
 $$\min(a,b)\le4000\quad\Longrightarrow\quad a^n+b^n\ne c^n.$$
 
@@ -31,22 +31,22 @@ exclusions for exponents divisible by three or four, a first-case exclusion
 for every odd prime through 1999, and a necessary root bound for every
 exponent at least 100.
 
-The global RPRM zero-fiber is also closed, by explicitly inheriting
-established Fermat's Last Theorem from [Wiles's paper](https://annals.math.princeton.edu/1995/141-3/p01)
-and its [Taylor–Wiles companion](https://annals.math.princeton.edu/1995/141-3/p02)
-through the exact source and target-preserving adapters proved below.
-This is a completed application of established FLT, not a new independent
-proof of that theorem. The bounded argument does not use global FLT as a
-premise, and no novelty claim is made for its classical ingredients.
+The independent unrestricted RPRM derivation remains **OPEN**. Its missing
+step is an arithmetic exclusion or a descent for the remaining primitive prime cases
+beyond the bounded theorem. Fermat's Last Theorem itself is established
+mathematics; see [Wiles's paper](https://annals.math.princeton.edu/1995/141-3/p01).
+That theorem is not used as a premise here. Importing its conclusion would
+not complete this independent research goal. No novelty claim is made for
+the classical ingredients.
 
-The independent bounded proof uses integer and rational arithmetic, prime
-factorization, well-ordering, a justified Eisenstein-integer factorization,
-and a finite table of auxiliary primes. [The checker](../checks/fermat.py) reconstructs
+The proof uses integer and rational arithmetic, prime factorization,
+well-ordering, a justified Eisenstein-integer factorization, and a finite
+table of auxiliary primes. [The checker](../checks/fermat.py) reconstructs
 every residue in that table and verifies the stated finite arithmetic
 premises. It is not a formal verification of the prose. The repository's
 separate Lean proofs do not formalize this Fermat argument.
 
-The expanded chapter also proves [Theorem III.2.3, the fixed-gap decision](../MANIFESTO.md#an-exact-decision-for-every-fixed-gap-aperture).
+The supplementary study also proves [Theorem III.2.3, the fixed-gap decision](fermat-study.md#an-exact-decision-for-every-fixed-gap-aperture).
 For supplied integer `n≥2` and positive integer gaps `s,d`, it decides the
 complete positive-integer fiber of
 `D(a)=a^n+(a+s)^n-(a+s+d)^n=0` inside the derived bracket
@@ -55,9 +55,8 @@ with the proved endpoint signs, excludes both integer tails after the final
 adjacent bracket. The answer is NONE or ONE; `(n,s,d)=(2,1,1)` returns `a=3`.
 The [fixed-gap tool](../rprm/fixed_gap.py) implements this per-aperture
 decision, with a [registered independent check](../checks/fixed_gap.py)
-and a [command-line example](../examples/fixed_gap.py). These implementation
-checks do not prove unrestricted FLT. The inherited theorem separately
-gives NONE for every `n>2` and positive gap pair, as proved below.
+and a [command-line example](../examples/fixed_gap.py). It does not assert
+that every gap pair is empty or establish unrestricted FLT.
 
 ### Use the fixed-gap decision
 
@@ -188,9 +187,9 @@ input; no special change in the equation occurs at 4000 or 4001.
 The zero-exclusion certificate below is established at H=4000. Its auxiliary
 prime coverage, seam ceilings and surviving fifth/tenth-power branch lists
 depend on that range. Substituting a larger H into the general bounds does
-not establish those certificate premises for the larger range. The global
-closure below instead inherits established FLT for every H, with the
-original positive-integer source retained.
+not establish those certificate premises for the larger range. A uniform
+proof must exclude the zero fiber for every H, or supply another argument
+covering every remaining candidate, such as a proved descent.
 
 A change of representation can remove large displayed coordinates while
 preserving the precise problem. On jointly primitive triples a<b<c, retain
@@ -212,8 +211,8 @@ Across the unrestricted chart, the coordinates stay below one while their
 denominators remain unbounded.
 For example, primitive triples (a,a+1,a+2) map to denominators L=a+2.
 A rounded picture or a fixed denominator grid therefore cannot replace this
-exact rational carrier. This chart supplies a lawful change of representation.
-The inherited theorem below excludes equality on its entire admitted source image.
+exact rational carrier. This chart supplies a lawful change of representation;
+a contradiction valid for its entire admitted image is a further obligation.
 
 ## A separate bound for every exponent at least 100
 
@@ -552,9 +551,7 @@ the branch `5|a`.
 Primitive normalization, every exponent, and both parity branches have
 now been covered. This completes the theorem for `min(a,b)<=4000`.
 
-<a id="what-transport-earns-and-what-remains-open"></a>
-
-## What transport earns, and the inherited global closure
+## What transport earns, and what remains open
 
 For fixed roots, retain `s=a+b` and `q=a^2+b^2`. Then `t=(s^2-q)/2=ab`
 and the power sums satisfy
@@ -584,36 +581,27 @@ propagate upward in root size. Three summands already give
 near equality `6^3+8^3-9^3=-1` retains its nonzero residual under a
 faithful transport. These controls refute those particular shortcuts.
 
-**Inherited global theorem.** For all positive integers `a,b,c` and every
-integer `n>2`,
+After exponent reduction, the remaining hypothetical counterexample
+can be primitive with odd prime exponent `p>=5`, ordered positive
+roots, and smaller root above 4000. For `p<=1999`, a root must be
+divisible by `p`; larger prime exponents require additional premises
+for either case. One sufficient completion lemma would construct,
+from every such solution, another primitive positive solution of
+the same exponent with strictly smaller smaller root. It must prove
+integer landing, preservation of the equation, and strict decrease.
+Well-ordering would then finish the argument. Such a construction
+has not been supplied here.
 
-$$a^n+b^n\ne c^n.$$
-
-**Proof and source adapter.** Let `X` be exactly that source carrier and
-`D(a,b,c,n)=a^n+b^n-c^n`. Its identity map into the positive-integer
-statement of established FLT preserves every root, exponent and operation;
-that theorem therefore gives `D^-1({0})=∅` on all of `X`, with
-no height restriction. For any admitted invertible complete chart
-`F:X→F(X)`, transport the target as `D_F=D∘F^-1`. Then
-`D_F^-1({0})=F(D^-1({0}))=∅`. Quantifiers are restricted to the
-exact image `F(X)`, including its integer-root guard. A sufficient Fold
-has the same conclusion when its zero predicate factors exactly through
-the retained source image. This proves complete NONE fibers in the faithful
-RPRM representations; it does not assert that arbitrary real chart points
-are integer-root sources.
-
-For the fixed-gap aperture, the source map is
-`a↦(a,a+s,a+s+d,n)` with positive integers `a,s,d` and integer `n>=2`.
-Across all such gaps, its inverse on strictly ordered positive integer
-roots `a<b<c` is `(a,b-a,c-b,n)`. The bisection theorem returns
-adjacent integers `L,U` with `D(L)<0<=D(U)`; since `D(0)<0`, `U>0`.
-Established FLT gives `D(U)!=0` for `n>2`, hence `D(U)>0` and the complete
-integer fiber is NONE for every positive gap pair. The `n=2,s=d=1`
-control still returns `U=3` and ONE, preserving `3^2+4^2=5^2`. On a
-consistent source at `n>2`, the complete squared residual is likewise
-`(a^n+b^n-c^n)^2>0`. The global conclusion uses the explicitly credited
-established theorem; neither a [proof-donut audit](proof-donut.md), the
-finite checker nor the repository's Lean declarations proves FLT by itself.
+Homogeneity `D_n(ka,kb,kc)=k^n*D_n(a,b,c)` does not supply that descent:
+division by two lands in integers only when all roots are even.
+New primitive triples in the next band remain an obligation.
+Similarly, a sum of squares of residual and transport errors is
+nonnegative, but on a consistent source it reduces to
+`(a^n+b^n-c^n)^2`. Proving it strictly positive is the outstanding
+zero-exclusion problem. A [proof-donut audit](proof-donut.md) can
+check supplied finite carriers and preservation rules; it cannot
+certify this missing universal statement by referring to its own
+success label.
 
 ## Replay and evidence scope
 
@@ -637,7 +625,7 @@ mathematical proof. The contracts remain active under Python `-O`.
 | 1,998 exponent classifications | Complete finite exponent range derived from `a<=4000` |
 | Fifth-branch and tenth-factor enumeration | Complete finite carriers derived in the written proof |
 | Hostile controls | Rejection of specified malformed certificates and failed implications |
-| Established FLT plus exact source and target adapters | Complete global zero-exclusion for positive integer roots and every n>2; an inherited theorem application |
+| Unrestricted same-target RPRM descent | OPEN |
 
 For primary comparison formalizations of the classical ingredients,
 see Mathlib's [exponent three](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/FLT/Three.html),

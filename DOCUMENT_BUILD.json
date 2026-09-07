@@ -5,10 +5,10 @@
   "pdf": "RPRM-Manifesto.pdf",
   "current_text_matches_recorded_pdf": true,
   "edition": "release",
-  "source_sha256": "35861abcc2679bd18c8018b518cabe6ebb07728651fbe3383c2f1d0d82bfb9f8",
-  "pdf_sha256": "051091f88a75f25263faaaac24687b07f7f17fc87d3751e961d2ee30539f7b63",
-  "pages": 155,
-  "body_pages": 154,
+  "source_sha256": "407e38a55d5731377dcd1f2667bfb90cb3bada740cf3a16553a5f81b1d9922e6",
+  "pdf_sha256": "d8e0d3cdc010d83febd14ba6055493caaa04b3a00c09230e24f086f3edc6637b",
+  "pages": 140,
+  "body_pages": 139,
   "source_date_epoch": 1788739200,
   "toolchain": {
     "pandoc": {
@@ -29,7 +29,7 @@
     "LICENSES/AMS-MSAM10-OFL.txt": "76f4f5fd8e26649ece2335f55f20fe43eebf791efb33a5565ce1b7015dc34a43",
     "LICENSES/DejaVu.txt": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e",
     "LICENSES/STIXTwo-OFL.txt": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a",
-    "MANIFESTO.md": "35861abcc2679bd18c8018b518cabe6ebb07728651fbe3383c2f1d0d82bfb9f8",
+    "MANIFESTO.md": "407e38a55d5731377dcd1f2667bfb90cb3bada740cf3a16553a5f81b1d9922e6",
     "figures/01-joint-aperture.png": "d464eaf5ea7ea959f300760edcc95d84a8551bdbdc2f19287de73db3243903ad",
     "figures/01-joint-aperture.svg": "8603c5ffedceb3cd1f0609681905d5a841ed1db4440b11a14421ef28722c8cef",
     "figures/02-future-distinction.png": "1ffe932ba8848ed91def45ca9af1d4a3c44bd80fe367e4da953d3e577249358a",
@@ -60,62 +60,62 @@
   },
   "repository_links": [
     {
-      "page": 55,
-      "source": "rprm/fixed_gap.py",
-      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/rprm/fixed_gap.py"
+      "page": 54,
+      "source": "docs/fermat-study.md",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/docs/fermat-study.md"
     },
     {
-      "page": 55,
-      "source": "examples/fixed_gap.py",
-      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/examples/fixed_gap.py"
+      "page": 54,
+      "source": "docs/fermat-study.md",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/docs/fermat-study.md"
     },
     {
-      "page": 55,
-      "source": "examples/fixed_gap.py",
-      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/examples/fixed_gap.py"
+      "page": 54,
+      "source": "docs/fermat.md",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/docs/fermat.md"
     },
     {
-      "page": 55,
-      "source": "checks/fixed_gap.py",
-      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/checks/fixed_gap.py"
-    },
-    {
-      "page": 134,
+      "page": 122,
       "source": "research-packs/folding-dynamics/README.md",
       "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/folding-dynamics/README.md"
     },
     {
-      "page": 134,
+      "page": 122,
       "source": "research-packs/folding-dynamics/README.md",
       "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/folding-dynamics/README.md"
     },
     {
-      "page": 136,
+      "page": 124,
       "source": "research-packs/brca1-function/README.md",
       "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/brca1-function/README.md"
     },
     {
-      "page": 136,
+      "page": 124,
       "source": "research-packs/immune-mechanisms/README.md",
       "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/immune-mechanisms/README.md"
     },
     {
-      "page": 136,
+      "page": 124,
       "source": "research-packs/README.md",
       "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/README.md"
     },
     {
-      "page": 136,
+      "page": 124,
       "source": "research-packs/README.md",
       "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/README.md"
+    },
+    {
+      "page": 131,
+      "source": "docs/fermat-study.md",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/docs/fermat-study.md"
     }
   ],
   "layout_review": {
     "status": "PASS",
-    "pages": 155,
-    "method": "All 155 pages rendered at 90 dpi. Full-width bodies of 145 pages match the reviewed predecessor exactly above the final 55 pixel footer band. All ten changed pages visually inspected: 2, 13, 54, 65, 66, 137, 138, 139, 140, 153. Every body folio checked independently; compiler reports no overflow, missing glyph, or undefined control.",
-    "scope": "Typography, page breaks, equations, tables, DOI, Fermat attribution and inherited proof statements. No new arithmetic formal verification."
+    "pages": 140,
+    "method": "All140pages rendered at90dpi. Full body and side-margin pixels of126pages exactly match the previously reviewed155page edition;14changed pages visually inspected. All139body folios checked. Canonical-LF rebuild produced an identical PDF SHA256.",
+    "scope": "Typography, page breaks, formula and table legibility, new version/DOI, shortened arithmetic scope, companion-study links, contents and bibliography. Not a mathematical proof or external scientific replication."
   },
-  "scope": "Exact binding of version 1.0.1 distributed PDF to current manuscript and selected build inputs. Publication and mathematical scope are separately recorded.",
+  "scope": "Exact binding of the distributed corrected PDF to the current manuscript and selected build inputs. Detailed independent bounded arithmetic and its certificate are retained separately in docs/fermat-study.md. Document verification does not close the independent unrestricted Fermat question.",
   "author": "William J Foster"
 }

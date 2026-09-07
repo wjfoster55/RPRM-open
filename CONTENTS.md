@@ -15,7 +15,7 @@ external scholarly work is cited where used.
 | [Core](rprm/core.py) | Question refinement, lift–motion–landing, vacancy swaps | Declared maps and finite state carriers |
 | [Core](rprm/core.py) | Atomic state successor with validation and stale-parent rejection | In-process reference behavior; no distributed service or persistence promise |
 | [Futures](rprm/futures.py) | Shortlex-least separating word, canonical finite future quotient, least stable refinement retaining an old summary | Finite deterministic partial machines; failure is an explicit observation tag |
-| [Fixed-gap decision](rprm/fixed_gap.py) | Exact integer bracket, bisection, complete NONE/ONE fiber and reconstructed equation inputs | Each supplied n>=2 and positive s,d; global n>2 exclusion is inherited separately; no fixed hardware/time guarantee |
+| [Fixed-gap decision](rprm/fixed_gap.py) | Exact integer bracket, bisection, complete NONE/ONE fiber and reconstructed equation inputs | Each supplied n>=2 and positive s,d; no uniform FLT proof or fixed hardware/time guarantee |
 | [Proof donut](rprm/proof_donut.py) | Fiber/readout disposition, aperture transport, invariant induction, descent, paths/cycles and quotient certificates | Complete finite built-in carriers and tables; no circular soundness certificate |
 | [Unification checker](checks/unification.py) | Small first-order syntax translation and independent semantic evaluation | A bounded executable example of the written general translation theorem |
 
@@ -39,10 +39,10 @@ claimed by the 2D application.
 
 ## Proof and concept coverage
 
-- The [full book](MANIFESTO.md) contains 87 written theorem, proposition,
-  lemma and corollary statements: four opening statements and 83 chapter-numbered
-  statements. Opening restatements are included in that count; it is not a
-  count of distinct new theorems or formal declarations.
+- The [main book](MANIFESTO.md) contains 73 written theorem, proposition,
+  lemma and corollary statements; the supplementary study retains 14 more.
+  The combined 87 include four opening restatements; this is not a count of
+  distinct new theorems or formal declarations.
 - [Core](docs/core.md), [operations](docs/operations.md) and
   [unification](docs/unification.md) give definitions, written proofs and
   counterexamples. The glossary is a navigation layer over these and other
@@ -56,20 +56,9 @@ claimed by the 2D application.
 - [Relational layer](docs/relational-layer.md) states the physical proposal,
   the precise observation limit and complete counterexamples to inferring a
   unique hidden source or permanent invisibility from closure alone.
-- [Fermat application](docs/fermat.md) closes the global zero-fiber by
-  explicitly inheriting established FLT through source and target-preserving
-  RPRM adapters. Its independent bounded argument proves exclusion when
-  min(a,b)<=4000 for every n>2; its [checker](checks/fermat.py) replays the finite certificates
-  used by that reduction. This is not a new independent proof of FLT.
-- The book's [fixed-gap theorem](MANIFESTO.md#an-exact-decision-for-every-fixed-gap-aperture)
-  proves a complete integer decision for each supplied exponent and positive
-  gap pair. Its [executable decision](examples/fixed_gap.py) and
-  [registered checker](checks/fixed_gap.py) now accompany the written proof;
-  their finite checks retain their implementation scope. Established FLT
-  separately proves NONE for every n>2 and positive gap pair.
 - The [main book](MANIFESTO.md), [PDF edition](RPRM-Manifesto.pdf),
   [reader's guide](LAYPERSON_GUIDE.md) and [agent handbook](AGENT_HANDBOOK.md)
-  offer connected entry points. The 155-page review PDF includes the current
+  offer connected entry points. The 140-page review PDF includes the current
   revised text and the author's afterword, with completed layout review and
   [exact source/build bindings](DOCUMENT_BUILD.json).
   [Six figures](figures/README.md) show small examples and failure cases.
@@ -85,7 +74,7 @@ Their mathematical, implementation and application boundaries remain distinct.
 
 | Pack | Delivered tool | Open application boundary |
 |---|---|---|
-| [Primes](experimental/primes/README.md) | Compact numeral queries, scale coordinates, small conventional Lucas–Lehmer reference, certified square-frontier expansion with an independent proof-donut audit | No record-prime certificate or established algorithmic advantage; finite prime expansion is separate from the inherited global Fermat theorem |
+| [Primes](experimental/primes/README.md) | Compact numeral queries, scale coordinates, small conventional Lucas–Lehmer reference, certified square-frontier expansion with an independent proof-donut audit | No record-prime certificate or established algorithmic advantage |
 | [Ray tracing](experimental/ray-tracing/README.md) | Exact rational toy geometry and retained relation updates | Bounded 2D scenes; no production renderer speedup |
 | [Music](experimental/music/README.md) | Exact symbolic pitch, assignment and cyclic event relations | No perceptual or acoustic validation |
 | [Protein folding](experimental/protein-folding/README.md) | Newly proposed exhaustive H/P lattice toy through eight residues | No molecular conformation prediction |
@@ -94,6 +83,22 @@ Their mathematical, implementation and application boundaries remain distinct.
 | [Rule Lab](experimental/rule-lab/README.md) | Paired cellular automata, seven relation views, retained block summaries and addressed finite prime comparisons | Model/helper checks do not verify browser interaction or establish an unbounded prime predictor |
 | [Lens Lab](experimental/lens-lab/README.md) · [Open playground](experimental/lens-lab/index.html) | Five ordered phases, invertible anchor/residue coordinates, locked or individual edits, and color/curve/geometry displays | 16 pure model tests cover the stated finite families; browser review is separate, and display pixels do not recover the source |
 | [Music Lens](experimental/music-lens/README.md) · [Open playground](experimental/music-lens/index.html) | Six labelled note events, bounded pitch edits, cyclic rhythm transforms, three visual views and optional synthesized playback | 1,200 representative model states and nine deterministic transport tests; browser review is separate, with no perceptual or acoustic validation |
+
+## Supplementary arithmetic research
+
+The [independent Fermat study](docs/fermat-study.md) contains the complete
+bounded-side argument and certificate appendix. For positive integer roots,
+it excludes equality when min(a,b)<=4000 and the integer exponent n>2.
+The unrestricted independent derivation remains OPEN; the established FLT
+proof is a comparison reference, not a premise completing that goal.
+The [runnable reference](docs/fermat.md) documents the unchanged finite
+[certificate checker](checks/fermat.py).
+
+The study's [fixed-gap theorem](docs/fermat-study.md#an-exact-decision-for-every-fixed-gap-aperture)
+decides the complete integer fiber for each supplied n>=2 and positive
+gap pair. Its [executable decision](examples/fixed_gap.py) and
+[registered checker](checks/fixed_gap.py) retain their per-aperture and
+finite-test scopes; they do not prove uniform exclusion for every n>2.
 
 ## Unexecuted research proposals
 

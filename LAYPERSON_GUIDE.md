@@ -163,19 +163,12 @@ seven. Forty-nine is caught by seven times seven. Repeating the proved
 construction extends the certified region. The useful result is the
 coverage argument and its repeatable rule.
 
-The revised Fermat chapter is a longer example. It proves that positive
-integer solutions to a^n+b^n=c^n are impossible when n is an integer greater
-than two and the smaller of a and b is at most 4000. That condition limits
-one input. The proof handles every larger value of the other input and
-every admitted exponent through derived restrictions and complete remaining
-cases. It is not a table that stops every variable at 4000.
-
-The chapter also closes the unrestricted question by explicitly using
-Wiles's established Fermat theorem and its Taylor–Wiles companion. It
-shows that the RPRM source and its faithfully transported views preserve
-that same question, so the global no-solution conclusion carries through.
-This completes the application without claiming a new independent proof
-of Fermat's theorem. The bounded result retains its own supplied argument.
+For a longer optional example, the [independent Fermat study](docs/fermat-study.md)
+proves that a^n+b^n=c^n has no positive integer solution when the integer
+exponent exceeds two and the smaller of a,b is at most 4000. The other
+input and exponent have no separate assumed cap. The independent argument
+does not yet cover all larger inputs. The established Fermat theorem is
+credited separately; using its proof would not finish this independent study.
 
 ## Looking carefully at the science examples
 
