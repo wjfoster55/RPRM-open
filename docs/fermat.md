@@ -7,6 +7,12 @@ integer, then
 
 $$\min(a,b)\le4000\quad\Longrightarrow\quad a^n+b^n\ne c^n.$$
 
+In words: the smaller of the two input bases a and b is at most four thousand.
+The number 4000 bounds that smaller base, not its nth power. For example,
+bases 17 and 1,000,000 fall within this statement for every integer exponent
+above two. This bounded statement alone does not cover pairs where both
+bases exceed 4000; the additional all-height results below cover some of them.
+
 There is no separate assumed upper bound on `b`, `c`, or `n`. Those bounds
 are derived from the smaller root. The argument also proves all-height
 exclusions for exponents divisible by three or four, a first-case exclusion

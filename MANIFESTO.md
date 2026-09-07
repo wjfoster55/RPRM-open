@@ -270,7 +270,7 @@ their foundations independently.
 
 The revised Fermat note supplies a substantial bounded-side application:
 there are no positive integer solutions of `a^n+b^n=c^n` with n>2 and
-`min(a,b)<=4000`, with no separate bound on the larger input or exponent.
+the smaller of a and b at most 4000, with no separate bound on the larger input or exponent.
 Its proof combines an all-exponent reduction, classical cubic and quartic
 descents, explicit arithmetic bounds and finite auxiliary-prime certificates.
 The complete argument and replay boundary are in [Fermat](docs/fermat.md).
@@ -280,11 +280,6 @@ That theorem is established mathematics; the unrestricted RPRM derivation
 remains open. A corrected transport must move the target condition along
 with the coordinates. A negative intermediate expression alone cannot
 replace the original equality or establish a contradiction.
-
-The prime pack makes another useful boundary visible: a record-size expression
-is a candidate until primality is certified. The retained large expression
-`2^150003647−1` has no primality certificate in the inspected work. It belongs
-to an experimental search direction, not to a list of discovered primes.
 
 ## 8. Applications and origins
 
