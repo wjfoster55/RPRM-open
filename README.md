@@ -14,7 +14,7 @@ afterword. The PDF has completed its layout review; exact source and build
 inputs are recorded in [DOCUMENT_BUILD.json](DOCUMENT_BUILD.json).
 
 **Paper and companion material:** [Read or download the paper](RPRM-Manifesto.pdf)
-or use its permanent identifier, [10.5281/zenodo.22650670](https://doi.org/10.5281/zenodo.22650670).
+or use its permanent identifier, [10.5281/zenodo.22650748](https://doi.org/10.5281/zenodo.22650748).
 The paper links back to
 [this repository](https://github.com/wjfoster55/RPRM-open) on its cover and in
 its opening pages. [CITATION.cff](CITATION.cff) supplies the paper's citation.

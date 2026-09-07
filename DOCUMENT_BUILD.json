@@ -5,8 +5,8 @@
   "pdf": "RPRM-Manifesto.pdf",
   "current_text_matches_recorded_pdf": true,
   "edition": "release",
-  "source_sha256": "407e38a55d5731377dcd1f2667bfb90cb3bada740cf3a16553a5f81b1d9922e6",
-  "pdf_sha256": "d8e0d3cdc010d83febd14ba6055493caaa04b3a00c09230e24f086f3edc6637b",
+  "source_sha256": "1970db936f6b448c869e563559955e3199fdf688fceb9962fe2d47466510922e",
+  "pdf_sha256": "a9d0c83456281ffa59fbf0c90394d18399bdca98dbc90d337df3ec8f1226e958",
   "pages": 140,
   "body_pages": 139,
   "source_date_epoch": 1788739200,
@@ -29,7 +29,7 @@
     "LICENSES/AMS-MSAM10-OFL.txt": "76f4f5fd8e26649ece2335f55f20fe43eebf791efb33a5565ce1b7015dc34a43",
     "LICENSES/DejaVu.txt": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e",
     "LICENSES/STIXTwo-OFL.txt": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a",
-    "MANIFESTO.md": "407e38a55d5731377dcd1f2667bfb90cb3bada740cf3a16553a5f81b1d9922e6",
+    "MANIFESTO.md": "1970db936f6b448c869e563559955e3199fdf688fceb9962fe2d47466510922e",
     "figures/01-joint-aperture.png": "d464eaf5ea7ea959f300760edcc95d84a8551bdbdc2f19287de73db3243903ad",
     "figures/01-joint-aperture.svg": "8603c5ffedceb3cd1f0609681905d5a841ed1db4440b11a14421ef28722c8cef",
     "figures/02-future-distinction.png": "1ffe932ba8848ed91def45ca9af1d4a3c44bd80fe367e4da953d3e577249358a",
@@ -113,7 +113,7 @@
   "layout_review": {
     "status": "PASS",
     "pages": 140,
-    "method": "All140pages rendered at90dpi. Full body and side-margin pixels of126pages exactly match the previously reviewed155page edition;14changed pages visually inspected. All139body folios checked. Canonical-LF rebuild produced an identical PDF SHA256.",
+    "method": "All 140 pages rendered at 90dpi. Full body and side-margin pixels of 138 pages exactly match the reviewed 1.0.2 edition; the version/DOI page and corrected supplementary-study pointer page were visually inspected. All 139 body folios checked. The prior 1.0.2 review covered the complete relocation.",
     "scope": "Typography, page breaks, formula and table legibility, new version/DOI, shortened arithmetic scope, companion-study links, contents and bibliography. Not a mathematical proof or external scientific replication."
   },
   "scope": "Exact binding of the distributed corrected PDF to the current manuscript and selected build inputs. Detailed independent bounded arithmetic and its certificate are retained separately in docs/fermat-study.md. Document verification does not close the independent unrestricted Fermat question.",

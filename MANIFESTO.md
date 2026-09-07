@@ -13,9 +13,9 @@ and laws; the name itself does not establish them. Part I, section 7,
 introduces the relational-layer proposal, developed further in the gravity
 and black-hole chapters.
 
-**Version 1.0.2 — independent research scope correction.**
+**Version 1.0.3 — independent research scope correction.**
 
-**DOI:** [10.5281/zenodo.22650670](https://doi.org/10.5281/zenodo.22650670)
+**DOI:** [10.5281/zenodo.22650748](https://doi.org/10.5281/zenodo.22650748)
 
 This edition includes the revised relational-layer account, two developed molecular research proposals, and the author's afterword. Mathematical results and proposed scientific extensions retain their stated evidence and scope.
 
@@ -1454,7 +1454,7 @@ R_{p,q}\cap(1-R_{p,q})=\varnothing,
 $$
 
 Its conclusion excludes primitive nonzero integer solutions of
-$x^p+y^p=z^p$ in the first case $p\nmid xyz$. The next chapter proves that implication. Here the dependency is explicit: the frontier supplies primality of $p$ and $q$; full residue-image construction supplies the two additional premises.
+$x^p+y^p=z^p$ in the first case $p\nmid xyz$. The supplementary study proves that implication. Here the dependency is explicit: the frontier supplies primality of $p$ and $q$; full residue-image construction supplies the two additional premises.
 
 These premises cannot be replaced by primality. For $(p,q)=(3,19)$, the power image is $\{1,7,8,11,12,18\}$, and its intersection with $1-R_{p,q}$ is $\{8,12\}$, although $3$ is absent from the image. The first condition fails. The stored finite checks also give $(13,443)$: the intersection is empty but $13$ belongs to the power image, so the second condition fails. Even the form $q=2kp+1$, satisfied by both examples, does not supply these conditions.
 
