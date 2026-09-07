@@ -1,7 +1,7 @@
 {
-  "schema": "rprm-handbook-assessment-results/v1",
-  "date": "2026-09-06",
-  "evidence_grade": "manual assessment of three fixed responses; no universal comprehension claim",
+  "schema": "rprm-handbook-assessment-results/v2",
+  "date": "2026-09-07",
+  "evidence_grade": "Manual scoring of five fixed responses against their own frozen criteria; no universal comprehension or causal learning claim.",
   "respondent_model": {
     "exact_version": null,
     "reason": "No exact model version was captured; no model override was set."
@@ -14,15 +14,6 @@
     "source_restrictions": "instructional",
     "os_sandbox_enforced": false,
     "limitations": "Root observed fresh context setup; respondents declared two-input use. General platform instructions and prior mathematical knowledge were not removed. These are not independent sandbox telemetry receipts."
-  },
-  "grading": {
-    "method": "manual against pre-response criteria",
-    "initial_grader": "release editor",
-    "second_grader": "independent mathematical review",
-    "second_grader_blind_to_initial_total": false,
-    "agreement": true,
-    "critical_error_definition": "Substantive failure of a designated question boundary; neither response required a borderline judgment.",
-    "visibility_detail": "A/B initial totals were known before the second review. C initial total was shared after the second reviewer first read the response but before its final score record. No blinded or double-blind grading is claimed."
   },
   "assessments": [
     {
@@ -181,7 +172,16 @@
           "maximum": 2,
           "reason": "Scoped first-order semantics; toy biological model does not inherit physical solution."
         }
-      ]
+      ],
+      "grading": {
+        "method": "manual against pre-response criteria",
+        "initial_grader": "release editor",
+        "second_grader": "independent mathematical review",
+        "second_grader_blind_to_initial_total": false,
+        "agreement": true,
+        "critical_error_definition": "Substantive failure of a designated question boundary; neither response required a borderline judgment.",
+        "visibility_detail": "A/B initial totals were known before the second review. C initial total was shared after the second reviewer first read the response but before its final score record. No blinded or double-blind grading is claimed."
+      }
     },
     {
       "id": "B",
@@ -289,7 +289,16 @@
           "maximum": 2,
           "reason": "Five connected sentences give valid bridge, failed enabledness example, and physical limit."
         }
-      ]
+      ],
+      "grading": {
+        "method": "manual against pre-response criteria",
+        "initial_grader": "release editor",
+        "second_grader": "independent mathematical review",
+        "second_grader_blind_to_initial_total": false,
+        "agreement": true,
+        "critical_error_definition": "Substantive failure of a designated question boundary; neither response required a borderline judgment.",
+        "visibility_detail": "A/B initial totals were known before the second review. C initial total was shared after the second reviewer first read the response but before its final score record. No blinded or double-blind grading is claimed."
+      }
     },
     {
       "id": "C",
@@ -420,24 +429,263 @@
           "scope_and_premises_score": 1,
           "reason": "Agreement only; no unproved correctness or circular soundness; biological bridge and concrete reopen record explicit."
         }
-      ]
+      ],
+      "grading": {
+        "method": "manual against pre-response criteria",
+        "initial_grader": "release editor",
+        "second_grader": "independent mathematical review",
+        "second_grader_blind_to_initial_total": false,
+        "agreement": true,
+        "critical_error_definition": "Substantive failure of a designated question boundary; neither response required a borderline judgment.",
+        "visibility_detail": "A/B initial totals were known before the second review. C initial total was shared after the second reviewer first read the response but before its final score record. No blinded or double-blind grading is claimed."
+      }
+    },
+    {
+      "id": "D",
+      "handbook": {
+        "path": "handbooks/v4.md",
+        "version": "4",
+        "sha256": "5df739f414cedb097a2833ec829f01d5f21a277611c9ae75b3ded1f6cb1f3661",
+        "matches_assessed_bytes": true
+      },
+      "questions": {
+        "path": "questions-d.md",
+        "sha256": "83a6789645be6c971e2db388a2f46ccf3f80223c52bf0f5928fbf48b42c0ef3e",
+        "matches_assessed_bytes": true
+      },
+      "response": {
+        "path": "responses/d.md",
+        "sha256": "e8496af6e666be524b3165f3071f780984a8d0d2d26a08c843392df0094db9d0",
+        "original_assessed_response_sha256": "46032974c8745080889cb311526ca8693a5f72880b9c450a06bfe20aed78d84b",
+        "matches_original_response_bytes": false,
+        "sanitization": "The final execution declaration was removed; a public title was added. Every preceding mathematical answer byte is unchanged."
+      },
+      "original_frozen_rubric_sha256": "6c6407f1d8640429d1d3fe67de8ba6e288ffc70464c8ee5f3e6ca2b8eba85943",
+      "public_rubric_path": "rubric-d.md",
+      "public_rubric_sha256": "6c6407f1d8640429d1d3fe67de8ba6e288ffc70464c8ee5f3e6ca2b8eba85943",
+      "public_rubric_matches_frozen_bytes": true,
+      "score": 79,
+      "maximum": 80,
+      "acceptance_threshold": null,
+      "accepted": null,
+      "acceptance_note": "No separate threshold is supplied by the frozen record; report the criterion score without inventing one.",
+      "status": "SCORED_WITH_ONE_MISSING_EXPLANATION",
+      "items": [
+        {
+          "question": 1,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 2,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 3,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 4,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 5,
+          "score": 3,
+          "maximum": 4,
+          "deductions": [
+            "The answer correctly gives length three, both execution outcomes and the n-1 bound. It does not explain the rubric's specific block-count reason: the added failure state also adds an initially separate observation block. Citing the handbook bound and noting that four is looser is not that derivation."
+          ]
+        },
+        {
+          "question": 6,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 7,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 8,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 9,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 10,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 11,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 12,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 13,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 14,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 15,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 16,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 17,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 18,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 19,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 20,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        }
+      ],
+      "grading": {
+        "method": "Release editor manually compared every answer with four frozen criteria per question; no criterion changed after the response.",
+        "second_grader": null,
+        "second_grader_status": "Not recorded for this assessment.",
+        "blind_grading_claimed": false
+      },
+      "scope": "Twenty-question assessment of the expanded handbook; one requested proof explanation omitted.",
+      "scientific_execution": false
+    },
+    {
+      "id": "E",
+      "handbook": {
+        "path": "handbooks/v5.md",
+        "version": "5",
+        "sha256": "7c0704a203a5867f75f44ac96f4c6925b4556c8a21e907afc8eae35fb7cc8812",
+        "matches_assessed_bytes": true
+      },
+      "questions": {
+        "path": "questions-e.md",
+        "sha256": "c8793537c2a9869c87eab27aecd32cf970dc6161ac095bfa9d215ca131e1eaaa",
+        "matches_assessed_bytes": true
+      },
+      "response": {
+        "path": "responses/e.md",
+        "sha256": "1b823c15d9147494d805f5ea93588e57c6bd0ffadd441418271cff88f1a36b2a",
+        "original_assessed_response_sha256": "ffa312f976a7ed1b0a1cd21f469307ccfc2693805efea476f5cc71b6f3b48404",
+        "matches_original_response_bytes": false,
+        "sanitization": "The final execution declaration was removed; the original title was retained. Every preceding mathematical answer byte is unchanged."
+      },
+      "original_frozen_rubric_sha256": "f05a66047f5204919466e14e4d4633686bdc912fc9988d242c1bb1e65738b3ab",
+      "public_rubric_path": "rubric-e.md",
+      "public_rubric_sha256": "f05a66047f5204919466e14e4d4633686bdc912fc9988d242c1bb1e65738b3ab",
+      "public_rubric_matches_frozen_bytes": true,
+      "score": 16,
+      "maximum": 16,
+      "acceptance_threshold": null,
+      "accepted": null,
+      "acceptance_note": "No separate threshold is supplied by the frozen record; report the criterion score without inventing one.",
+      "status": "PASS_TARGETED_FOLLOWUP",
+      "items": [
+        {
+          "question": 1,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 2,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 3,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 4,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        }
+      ],
+      "grading": {
+        "method": "Release editor manually compared every answer with four frozen criteria per question; no criterion changed after the response.",
+        "second_grader": null,
+        "second_grader_status": "Not recorded for this assessment.",
+        "blind_grading_claimed": false
+      },
+      "scope": "Four new questions targeting three known clarity edits; not an independently selected general benchmark, repeat of D, or paired improvement measure.",
+      "scientific_execution": false
     }
   ],
   "limits": [
-    "Three responses do not establish universal comprehension or arbitrary theorem-proving ability.",
+    "Five fixed responses do not establish universal comprehension or arbitrary theorem-proving ability.",
     "No no-handbook control isolates a causal learning effect.",
-    "A, B, and C used different handbook versions and question sets; their totals are not a paired improvement estimate.",
-    "Published questions and keys are no longer unseen for readers who inspect them.",
-    "C supplied the complete current V3 handbook but tested only its twelve stated questions, not every possible use of the book."
+    "Different question sets and handbook versions do not support a paired score-improvement estimate.",
+    "Published questions and rubrics are no longer unseen for a reader who inspects them.",
+    "D remains 79/80 on version 4. E's 16/16 addresses four targeted questions on version 5, not every possible use of the current handbook.",
+    "Hash or link checks validate packet bindings, not comprehension or the truth of all framework claims."
   ],
   "current_handbook": {
-    "version": "3",
+    "version": "5",
     "path": "../AGENT_HANDBOOK.md",
-    "sha256_at_review": "8cb6c22e698fe3cd888bb36100cb0b6e8153c5b33f0a14bad38e5ed28baec8ef",
+    "sha256_at_review": "7c0704a203a5867f75f44ac96f4c6925b4556c8a21e907afc8eae35fb7cc8812",
     "matches_assessed_version_bytes": true,
-    "assessment": "C",
+    "assessment": "E",
     "complete_book_supplied": true,
     "all_possible_content_or_uses_tested": false,
-    "change_from_v2": "Makes finite complete state/action tables and exact decidable comparisons explicit for finite algorithms."
+    "scope": "Four targeted follow-up questions only; the broader D result belongs to version 4.",
+    "change_from_v4": "Adds the partition-count bound explanation and clarifies strict version advancement and acceleration-vector versus radial-coordinate derivatives."
   }
 }

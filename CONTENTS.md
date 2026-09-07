@@ -24,9 +24,9 @@ and agreement between independently implemented quotient checkers.
 
 ## Mechanical Motion Atlas
 
-The [2D atlas](atlas/index.html) provides ideal mechanism laws, a typed
-component builder, equations and export. Its own [README](atlas/README.md)
-documents exactly which outputs, projections and numerical approximations
+The [2D atlas](atlas/index.html) provides twenty registered mechanism laws,
+a typed builder with 38 component types, equations and export. Its own
+[README](atlas/README.md) documents exactly which outputs, projections and numerical approximations
 are implemented. A sampled picture is a receiver of the law's output; it is
 not interchangeable with the full state or an exact inverse.
 
@@ -38,6 +38,10 @@ claimed by the 2D application.
 
 ## Proof and concept coverage
 
+- The [full book](MANIFESTO.md) contains 87 written theorem, proposition,
+  lemma and corollary statements: four opening statements and 83 chapter-numbered
+  statements. Opening restatements are included in that count; it is not a
+  count of distinct new theorems or formal declarations.
 - [Core](docs/core.md), [operations](docs/operations.md) and
   [unification](docs/unification.md) give definitions, written proofs and
   counterexamples. The glossary is a navigation layer over these and other
@@ -52,17 +56,22 @@ claimed by the 2D application.
   result for min(a,b)<=4000 and every n>2. Its [checker](checks/fermat.py)
   replays finite certificates used by the written reduction. The unrestricted
   RPRM proof remains open.
-- The [main paper](MANIFESTO.md), [PDF](RPRM-Manifesto.pdf),
+- The book's [fixed-gap theorem](MANIFESTO.md#an-exact-decision-for-every-fixed-gap-aperture)
+  proves a complete integer decision for each supplied exponent and positive
+  gap pair. It is a written theorem, not an additional registered checker or
+  a uniform exclusion of every gap pair.
+- The [main book](MANIFESTO.md), [PDF edition](RPRM-Manifesto.pdf),
   [reader's guide](LAYPERSON_GUIDE.md) and [agent handbook](AGENT_HANDBOOK.md)
-  offer connected entry points. [Four figures](figures/README.md) show complete
-  small examples and failure cases. [Handbook assessments](agent-tests/README.md)
-  retain the tested versions and bounded comprehension evidence.
+  offer connected entry points. The PDF contains 156 pages including the cover.
+  [Six figures](figures/README.md) show small examples and failure cases.
+  [Handbook assessments](agent-tests/README.md) retain version 5's targeted
+  E result (16/16), version 4's broader D result (79/80), and historical A–C.
 
 ## Experimental starter packs
 
-All five [packs](experimental/README.md) are explicitly experimental. Each
-contains a README, executable model and independent finite checker. Ray
-tracing, music, protein and question selection also include worked examples.
+All seven [executable packs](experimental/README.md) are explicitly experimental.
+Each contains a README, a model and finite checks with independent comparisons.
+Their mathematical, implementation and application boundaries remain distinct.
 
 | Pack | Delivered tool | Open application boundary |
 |---|---|---|
@@ -71,6 +80,19 @@ tracing, music, protein and question selection also include worked examples.
 | [Music](experimental/music/README.md) | Exact symbolic pitch, assignment and cyclic event relations | No perceptual or acoustic validation |
 | [Protein folding](experimental/protein-folding/README.md) | Newly proposed exhaustive H/P lattice toy through eight residues | No molecular conformation prediction |
 | [Context and communication](experimental/context-communication/README.md) | Newly proposed synthetic hypothesis fibers and question selection | No psychological or therapeutic efficacy claim |
+| [Exact two-path lab](experimental/two-path-lab/README.md) | Rational-component density matrices, channels, joint/conditional readouts and a coherence receiver; 31 tests | Supplied quantum models and finite fixtures; no physical experiment or arbitrary slit geometry |
+| [Rule Lab](experimental/rule-lab/README.md) | Paired cellular automata, seven relation views, retained block summaries and addressed finite prime comparisons | Model/helper checks do not verify browser interaction or establish an unbounded prime predictor |
+
+## Unexecuted research proposals
+
+The separate [research specifications](research-packs/README.md) cover
+[folding dynamics](research-packs/folding-dynamics/README.md),
+[BRCA1 cellular function](research-packs/brca1-function/README.md) and
+[immune evidence and mechanisms](research-packs/immune-mechanisms/README.md).
+They supply questions, finite mathematical controls, proposed comparisons and
+rejecting outcomes. Data acquisition, fitting and scientific evaluation remain
+unexecuted. They are not three additional executable packs and report no
+biological efficacy, clinical result or individual-risk prediction.
 
 Further geometry, infinite-state algorithms, automatic certificate discovery,
 and physical modeling can be added by supplying their own carriers, proofs,

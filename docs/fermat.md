@@ -2,6 +2,12 @@
 
 Documentation: CC0-1.0.
 
+The book's [Chapter III.2](../MANIFESTO.md#iii2-a-bounded-side-fermat-theorem)
+gives the expanded argument, and its
+[certificate appendix](../MANIFESTO.md#certificate-appendix-iii2-the-auxiliary-prime-premises)
+prints all 302 auxiliary-prime premises. This reference preserves the bounded
+proof and the direct replay route below.
+
 The general relations below use a variable range H. The value 4000 belongs
 to the completed bounded certificate, rather than to the definition of the
 Fermat relation. A new range or representation must state which proof
@@ -37,6 +43,16 @@ table of auxiliary primes. [The checker](../checks/fermat.py) reconstructs
 every residue in that table and verifies the stated finite arithmetic
 premises. It is not a formal verification of the prose. The repository's
 separate Lean proofs do not formalize this Fermat argument.
+
+The expanded chapter also proves [Theorem III.2.3, the fixed-gap decision](../MANIFESTO.md#an-exact-decision-for-every-fixed-gap-aperture).
+For supplied integer `n≥2` and positive integer gaps `s,d`, it decides the
+complete positive-integer fiber of
+`D(a)=a^n+(a+s)^n-(a+s+d)^n=0` inside the derived bracket
+`0≤a≤2n(s+d)`. Strict increase of `D(a)/a^n` on positive real `a`, together
+with the proved endpoint signs, excludes both integer tails after the final
+adjacent bracket. The answer is NONE or ONE; `(n,s,d)=(2,1,1)` returns `a=3`.
+This written per-aperture decision does not assert that every gap pair is
+empty and is not an additional registered executable in the current checker.
 
 ## The relation and the retained carrier
 

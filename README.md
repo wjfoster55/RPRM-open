@@ -8,10 +8,11 @@ existing mathematics while preserving what each source system means. An
 explicit change of representation can expose a different question, explain
 why information was lost, or show exactly what must be retained to continue.
 
-This first release candidate contains a mathematical account, executable
-finite tools, formal proofs of selected laws, and an interactive 2D Mechanical
-Motion Atlas. Each result states its scope. The broad unifying aim is supported
-by specific preservation theorems; it is not a claim that every mathematical
+This release candidate contains the full mathematical book, seven executable
+experimental packs, formal proofs of selected laws, and an interactive 2D
+Mechanical Motion Atlas. Three separate research specifications propose
+unexecuted scientific comparisons. Each result states its scope. The broad
+unifying aim is supported by specific preservation theorems; it is not a claim that every mathematical
 problem has been solved or that a physical theory of everything follows.
 
 ## One law, several questions
@@ -37,24 +38,35 @@ are part of the mathematical contract, not annotations added after solving.
 
 | Start here | Contents |
 |---|---|
-| [Main paper](MANIFESTO.md) · [PDF](RPRM-Manifesto.pdf) | A concise connected argument with four mathematical figures |
+| [Main book](MANIFESTO.md) · [PDF edition](RPRM-Manifesto.pdf) | The connected argument in four parts, with six mathematical figures; 156 pages including the cover |
 | [Core definitions](docs/core.md) | Carriers, ports, apertures, receivers, fibers, representations and affine coordinates |
 | [Reader's guide](LAYPERSON_GUIDE.md) | A self-contained introduction using ordinary examples |
-| [Agent handbook](AGENT_HANDBOOK.md) | The self-contained core reasoning contract, assessed with unseen questions |
+| [Agent handbook](AGENT_HANDBOOK.md) | Version 5: core reasoning, worked applications, evidence boundaries and a reusable procedure |
 | [Conceptual bridge](docs/concepts.md) | Multiple number descriptions, three plus one, errors, teachers and paired strands |
 | [Operations](docs/operations.md) | Typed operations, exact quotients, shortest distinctions, stable repair and compilation |
 | [Unification](docs/unification.md) | Faithful relational presentation of supplied many-sorted structures; explicit preservation proofs and scope |
 | [Glossary](docs/glossary.md) | Definitions and links for the working vocabulary, including named constructions |
 | [Proof donut](docs/proof-donut.md) | Coverage, compatible constraints and finite proof certificates; executable mutual checks |
-| [Revised Fermat proof](docs/fermat.md) | The bounded-side theorem, full argument and finite certificate replay; unrestricted RPRM route open |
-| [Experimental packs](experimental/README.md) | Primes, ray tracing, music, lattice conformations and synthetic question selection, each with exact scope |
-| [Handbook assessments](agent-tests/README.md) | Reusable unseen-question tests, answer keys, grading and tested versions |
+| [Bounded Fermat proof](docs/fermat.md) | The min(a,b)≤4000 theorem, full argument and finite certificate replay; the independent unrestricted RPRM derivation remains open |
+| [Seven executable packs](experimental/README.md) | Primes, rays, music, lattice conformations, synthetic question selection, two-path calculations and Rule Lab |
+| [Three research proposals](research-packs/README.md) | Folding dynamics, BRCA1 cellular function and immune mechanisms; data-driven and scientific comparisons remain unexecuted |
+| [Handbook assessments](agent-tests/README.md) | Versioned questions, answer keys, grading and bounded comprehension evidence |
 | [Initial states and origins](docs/origins.md) | Generative models, zero/balance distinctions, and the premises needed for a physical interpretation |
 | [Verification](docs/verification.md) | Reproduction commands, coverage, hostile controls and trust boundaries |
 | [Formal proofs](docs/formal-proofs.md) | The exact 20 Lean declarations and their relation to the written mathematics |
 | [References](docs/references.md) | Established mathematical context and scholarly credit |
 | [Included tools](CONTENTS.md) | API inventory and development status |
 | [Agent instructions](AGENTS.md) | A small starting contract for agents using or extending RPRM |
+
+The book contains 87 written theorem, proposition, lemma and corollary
+statements, including four opening statements restated in the chapters.
+The [formal scope](docs/formal-proofs.md) is exactly 20 selected Lean
+declarations. These counts describe different evidence.
+
+The current handbook's [assessment E](agent-tests/results.md) scored 16/16
+on four targeted follow-up questions. Assessment D scored 79/80 on twenty
+broader questions using version 4; assessment C belongs to historical version 3.
+The scores do not establish a controlled improvement or universal comprehension.
 
 Run the finite examples from this directory with Python 3.10 or newer:
 

@@ -1,0 +1,10 @@
+{
+  "schema": "two-path-public-source-inventory/v1",
+  "scope": "SHA-256 binding of distributable source bytes; not an execution receipt.",
+  "files": {
+    "model.py": "09f2fad19a14a54b9ff1676533c5c965b6a1a6aa7155d52f54ac0e789f735c62",
+    "test_model.py": "8340f3489ae965ab4689051396e590450a5759634ba23614e28563d11d86b511",
+    "README.md": "8a52e5dc624ae9b8f80d2778c4a4927ee2f8755c9b3efb7f3e9722c0b3366726",
+    "TEST_CONTRACT.md": "4b181f01bd66ffa291eea513829d2c8d6ef57dbe1206b31ad003630d3fe9dbf9"
+  }
+}

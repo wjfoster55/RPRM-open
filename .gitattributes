@@ -2,7 +2,17 @@
 *.png binary
 *.pdf binary
 *.woff2 binary
+*.otf binary
+*.ttf binary
 # Preserve exact font-notice and assessed-response bytes, and SVG generator formatting.
 LICENSES/DejaVu.txt -whitespace
 agent-tests/responses/*.md -whitespace
 figures/*.svg -whitespace
+# Keep the exact reviewed figure and laboratory bytes used by hash bindings.
+figures/*.svg -text
+experimental/rule-lab/** -text -whitespace
+LICENSES/STIXTwo-OFL.txt whitespace=-blank-at-eol
+LICENSES/AMS-MSAM10-OFL.txt whitespace=-blank-at-eol
+# Preserve the frozen generator and extracted TeX preamble's final blank line.
+tools/build_two_path_figures.py whitespace=-blank-at-eof
+tools/typesetting/preamble.tex whitespace=-blank-at-eof

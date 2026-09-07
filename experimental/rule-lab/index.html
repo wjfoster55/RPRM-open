@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RPRM · Rule Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="model.js" defer></script>
+  <script src="presentation.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <header><p class="eyebrow">RPRM / Experimental instruments / 02</p>
+    <h1>Rule Lab</h1>
+    <p class="intro">Two rules. One declared relation. Every base cell retained.</p>
+    <p class="notice"><strong>Experimental pattern exploration.</strong> Summary colors and finite comparisons describe the chosen carrier. They do not establish a prime-generating rule, a physical law, or a performance advantage.</p>
+    <p class="hint">Presentation status · <strong>NOT_RUN_UI:</strong> browser rendering, interaction and export behavior have not been verified. Pure model and presentation checks are separate.</p>
+  </header>
+  <noscript>This instrument requires JavaScript. The adjacent README documents its model and checks.</noscript>
+  <div class="workspace">
+  <form id="setup" class="panel">
+    <h2>Construct the pair</h2>
+    <fieldset><legend>Rules</legend>
+      <label for="rule-preset">Rule preset</label><select id="rule-preset"><option value="">Choose a preset…</option><option value="mirror">30 / 86 — left/right mirror</option><option value="custom">30 / 83 — custom comparison</option></select>
+      <label for="rule-a">Rule A</label><input id="rule-a" type="number" value="30" min="0" max="255" step="1" required>
+      <label for="transform">Rule B relation</label><select id="transform"><option value="mirror">Mirror A left to right</option><option value="same">Same rule</option><option value="complement">Complement A's output</option><option value="conjugate">Swap black and white</option><option value="custom">Custom rule</option></select>
+      <label for="rule-b">Custom rule B</label><input id="rule-b" type="number" value="86" min="0" max="255" step="1" disabled required>
+      <p class="hint">Rule 0 is valid. Output complement changes the rule's result. A black/white swap complements its inputs and result. Rule 83 is not Rule 30's mirror.</p>
+    </fieldset>
+    <fieldset><legend>Carrier and initial state</legend>
+      <div class="two"><div><label for="width">Columns</label><input id="width" type="number" min="1" max="257" step="1" value="65" required></div><div><label for="rows">Rows, including seed</label><input id="rows" type="number" min="1" max="512" step="1" value="96" required></div></div>
+      <label for="seed-mode">Seed A preset</label><select id="seed-mode"><option value="single">Single center</option><option value="pair">Center and right neighbor</option><option value="triplet">Centered triplet</option><option value="echo">Echo offsets −21, −7, 0, 7, 21</option><option value="random">Reproducible random band</option><option value="centered">Custom centered bits</option><option value="exact">Exact full-width bits</option></select>
+      <label for="seed">Custom binary bits</label><textarea id="seed" rows="2" maxlength="257" aria-describedby="seed-help" spellcheck="false" disabled>1</textarea>
+      <p id="seed-help" class="hint">Centered input: 1 to width bits, aligned at floor(width/2). Exact input: one bit per column. Other cells are zero; fixed preset offsets outside the carrier are clipped.</p>
+      <div class="two"><div><label for="random-density">Band density %</label><input id="random-density" type="number" min="0" max="100" step="1" value="35" required disabled></div><div><label for="random-key">Random key</label><input id="random-key" type="number" min="0" max="4294967295" step="1" value="1" required disabled></div></div>
+      <p class="hint">Random band radius = floor(0.38 × width). The displayed density is a sampling probability; the realized seed count may differ. Keys and exact seeds are exported.</p>
+      <label for="seed-b">Seed B relation</label><select id="seed-b"><option value="same">Same seed</option><option value="mirror">Mirror seed A</option><option value="complement">Complement seed A</option></select>
+      <label for="boundary">Boundary</label><select id="boundary"><option value="zero">Outside inputs always 0</option><option value="periodic">Periodic ring</option></select>
+      <p class="hint">Rows include the seed. Changing a rule alone does not guarantee a transformed trajectory; seed and boundary choices also matter.</p>
+    </fieldset>
+    <fieldset><legend>Prime-address comparison</legend>
+      <label for="start">First address</label><input id="start" type="number" min="0" max="1000000" step="1" value="0" required>
+      <p class="hint">Address = first address + row × columns + column. Indices start at 0. This is an explicit chosen labeling.</p>
+      <label for="positive">Which view values predict prime?</label><select id="positive"><option value="1">Value 1</option><option value="nonzero">Any nonzero value</option><option value="3">Value 3 (both in four-state view)</option><option value="0">Value 0</option></select>
+    </fieldset>
+    <button type="submit" class="primary">Generate & compare</button>
+    <p id="status" role="status" aria-live="polite"></p>
+  </form>
+  <section class="results" aria-label="Generated results">
+    <div class="panel toolbar">
+      <div><label for="view">Relation view</label><select id="view"><option>A</option><option>B</option><option selected>XOR</option><option value="equality">Agreement</option><option>AND</option><option>OR</option><option value="four-state">Four states</option></select></div>
+      <div><label for="display">Drawing</label><select id="display"><option value="relation">Relation values / summaries</option><option value="comparison">Prime comparison, exact cells</option><option value="truth">Certified prime labels, exact cells</option></select></div>
+      <div><label for="palette">Relation / truth palette</label><select id="palette"><option value="midnight">Midnight</option><option value="paper">Paper</option><option value="ember">Ember</option><option value="neon">Neon</option></select></div>
+    </div>
+    <section class="panel" aria-labelledby="result-title"><h2 id="result-title">Generated pair</h2><p id="result-meta"></p>
+      <div class="toolbar camera-tools">
+        <button id="zoom-out" type="button" aria-label="Zoom out">−</button><button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+        <div><label for="scale">CSS pixels / base cell</label><input id="scale" type="number" min="0.002" max="64" step="any" value="6" required></div>
+        <button id="fit" type="button">Fit all</button><button id="center" type="button">Center</button>
+      </div>
+      <div class="viewport"><canvas id="grid" width="600" height="540" tabindex="0" aria-label="Rule Lab drawing. Arrow keys pan; plus and minus zoom; F fits; C centers. Use the exact row and column inspector for text data." aria-describedby="camera-help">Use the row and column inspector for exact cells and block summaries.</canvas></div>
+      <div class="pan-controls" aria-label="Pan camera"><button type="button" data-pan="-100,0">Pan left</button><button type="button" data-pan="100,0">Pan right</button><button type="button" data-pan="0,-100">Pan up</button><button type="button" data-pan="0,100">Pan down</button></div>
+      <p id="camera-help" class="hint">Drag to pan; click to inspect the exact cell under the pointer, even within a coarse block. Ctrl + wheel zooms around the pointer. Plain wheel scrolls the page. While the drawing has focus: arrows pan, +/− zoom, F fits, C centers, G generates; 0–7 requests a manual level, clipped to this carrier's maximum. Controls and the numeric inspector provide alternatives to gestures.</p>
+      <p id="legend" class="legend"></p>
+      <p class="hint">Row 0 is the seed; time advances downward. Camera zoom changes the view, never the stored base. At less than one pixel per base cell, exact-level drawing is visually undersampled; use summaries or zoom in to inspect.</p>
+    </section>
+    <section class="panel" aria-labelledby="hierarchy-title"><h2 id="hierarchy-title">Retained block hierarchy</h2>
+      <div class="toolbar"><div><label for="block-base">Block base / residue modulus</label><select id="block-base"><option value="3">3</option><option value="7">7</option><option value="9">9</option></select></div>
+        <div><label for="summary">Summary receiver</label><select id="summary"><option value="density">Density</option><option value="closure">Uniform closure / mixed</option><option value="majority">Majority (ties → 1)</option><option value="parity">Count parity</option><option value="pressure">Edge pressure</option><option value="residue">Count residue</option></select></div>
+        <div><label for="manual-level">Manual level</label><input id="manual-level" type="number" min="0" max="6" step="1" value="0" disabled></div>
+      </div>
+      <div class="checks"><label><input id="auto-level" type="checkbox" checked> Automatic zip / unzip with zoom</label><label><input id="block-lines" type="checkbox"> Draw block borders when visible</label></div>
+      <p id="hierarchy-status" role="status"></p>
+      <details><summary>Exact meaning of every summary</summary>
+        <p>Level ℓ partitions the retained relation into origin-aligned squares of side base<sup>ℓ</sup>, clipped at the right and bottom boundaries. Each level counts the original cells directly. It never summarizes a previous summary. Level 0 shows exact codes. Automatic mode chooses the smallest level whose block spans at least 0.9 CSS pixel, stopping when one block covers the carrier. Manual levels have no hidden automatic override.</p>
+        <table><caption>Declared block readouts; four-state code = A + 2B</caption><thead><tr><th scope="col">Receiver</th><th scope="col">Binary relation</th><th scope="col">Four-state relation</th></tr></thead><tbody>
+          <tr><td>Density</td><td>Ones / retained area</td><td>A density and B density separately</td></tr>
+          <tr><td>Uniform closure</td><td>All 0 or all 1; otherwise mixed</td><td>One identical code throughout; otherwise mixed</td></tr>
+          <tr><td>Majority</td><td>1 if at least half the cells are 1</td><td>Threshold A and B separately; ties go to 1</td></tr>
+          <tr><td>Parity</td><td>Count mod 2</td><td>A count mod 2 and B count mod 2</td></tr>
+          <tr><td>Count residue</td><td>Count mod selected base</td><td>A count and B count mod selected base</td></tr>
+          <tr><td>Edge pressure</td><td colspan="2">For each block cell, count unequal orthogonal neighbors inside the entire retained window; divide their sum by 4 × block area. Internal unequal pairs count twice. Neighbors across a block edge count if retained. Exterior and periodic wrap edges are omitted by this receiver, independently of the update boundary.</td></tr>
+        </tbody></table>
+        <p class="hint">These readouts forget cell locations; majority, parity, residue and closure also discard counts. Colors blend the declared values; they are not inverse maps. The original base grids remain the reopen route. Uniform block closure is different from aperture second-difference closure below.</p>
+      </details>
+      <h3>Selected block, all readouts</h3><p id="block-description"></p>
+      <div class="scroll" tabindex="0" aria-label="Scrollable data table"><table><caption>Exact summary values at the active relation level; four-state pairs are A / B</caption><thead><tr><th scope="col">Receiver</th><th scope="col">Value</th></tr></thead><tbody id="block-summaries"></tbody></table></div>
+    </section>
+    <section class="panel" aria-labelledby="counts-title"><h2 id="counts-title">All exact comparison outcomes</h2>
+      <p id="predicate"></p><div id="counts" class="counts"></div><p id="metrics"></p>
+      <p class="hint">Every count uses the exact finite address map, independently of camera, palette and summaries. Exploring many rules or labels on this data is not held-out validation. Always-nonprime accuracy is a class-imbalance baseline. No map or positive-code subset is optimized automatically.</p>
+    </section>
+    <section class="panel" aria-labelledby="inspector-title"><h2 id="inspector-title">Inspect a complete 3 × 3 aperture</h2>
+      <form id="inspect-form" class="inline"><div><label for="inspect-row">Exact row</label><input id="inspect-row" type="number" min="0" step="1" value="1" required></div><div><label for="inspect-column">Exact column</label><input id="inspect-column" type="number" min="0" step="1" value="32" required></div><button type="submit">Inspect</button></form>
+      <p id="selection" role="status" aria-live="polite"></p>
+      <div class="scroll" tabindex="0" aria-label="Scrollable data table"><table><caption>All nine roles, including explicit boundary and missing-time slots</caption><thead><tr><th scope="col">Role</th><th scope="col">Requested row, column</th><th scope="col">Source</th><th scope="col">Address</th><th scope="col">A</th><th scope="col">B</th><th scope="col">Relation</th><th scope="col">Prime label</th><th scope="col">Outcome</th></tr></thead><tbody id="cells"></tbody></table></div>
+      <p class="hint">Periodic spatial slots wrap within the supplied width and may repeat a source cell. Fixed-exterior slots have A = B = 0; agreement therefore has value 1 there. They carry no integer address. Rows before the seed or beyond the last retained row remain UNKNOWN under either boundary; time never wraps.</p>
+      <h3>Declared inspection law: u − 2v + w = 0</h3>
+      <div class="scroll" tabindex="0" aria-label="Scrollable data table"><table><caption>Four center-crossing radial checks and four boundary-side lateral checks</caption><thead><tr><th scope="col">Line</th><th scope="col">Residual</th><th scope="col">Disposition</th></tr></thead><tbody id="residuals"></tbody></table></div>
+      <p id="closure-status" class="diagnostic" role="status"></p><p id="differences"></p>
+      <details><summary>What “counterfeit central closure” means</summary><p>All four radial residuals vanish while at least one lateral residual is nonzero. This is a mathematical distinction between two receivers. For the four-state aperture <code>[0,1,0; 1,1,1; 2,1,2]</code>, all radial residuals are 0 but the top and bottom lateral residuals are −2 and +2. It is a synthetic admissible code example, not a claim that a selected automaton produces it. A fully known binary aperture cannot exhibit this distinction: each opposite pair must equal twice its binary center, forcing all nine values to agree. Unknown time slots never count as passing checks.</p></details>
+      <h3>CA update law, checked separately</h3>
+      <div class="scroll" tabindex="0" aria-label="Scrollable data table"><table><caption>Previous-row left / center / right inputs for the selected exact cell</caption><thead><tr><th scope="col">Grid</th><th scope="col">Rule</th><th scope="col">Parent bits</th><th scope="col">Rule output</th><th scope="col">Observed center</th></tr></thead><tbody id="update-check"></tbody></table></div>
+      <p class="hint">The arithmetic inspection law operates on the chosen numeric relation codes. Relabeling codes can change its residuals. Passing it is not proof of automaton reversibility, a CA update law, primality or a physical mechanism.</p>
+    </section>
+    <details class="panel"><summary>Rule tables, exact seeds and portable exports</summary><pre id="rules"></pre><pre id="exact-seeds"></pre>
+      <div class="buttons"><button id="download" type="button">Download full experiment JSON</button><button id="download-settings" type="button">Download settings JSON</button><button id="copy-settings" type="button">Copy settings</button><button id="download-png" type="button">Download viewport PNG</button></div>
+      <label for="settings-text">Generated settings copy fallback</label><textarea id="settings-text" rows="5" readonly spellcheck="false"></textarea>
+      <p id="export-status" role="status"></p>
+      <p class="hint">Full JSON includes exact seeds, A/B grids, relation, certified prime truth, outcomes and metrics. Settings include complete model inputs, current view, camera and summary contract; pending experiment form changes are excluded. Replay the exported <code>modelInput</code> with <code>RPRMRuleLab.generatePair</code>, then apply the exported view and comparison arguments. There is no settings importer in this iteration.</p>
+      <p class="hint">PNG is the current viewport drawing only, including the selection outline; it can be cropped or aggregated. It does not contain the exact grid, text labels or the certificate. Pair it with settings or full JSON. Notes are exported separately.</p>
+      <p class="hint">Random-band generator: begin at the exported unsigned key; for each band column from left to right update <code>word = (1664525 × word + 1013904223) mod 2³²</code>, and write 1 if <code>word / 2³² &lt; density / 100</code>. This reproducible UI convenience is not a statistical-quality claim. The pure model receives only the resulting exact array.</p>
+    </details>
+    <section class="panel" aria-labelledby="notes-title"><h2 id="notes-title">Local working notes</h2><label for="notes">Notes for this browser context</label><textarea id="notes" rows="5" maxlength="100000" placeholder="Record a setting, a question, or a counterexample…"></textarea>
+      <div class="buttons"><button id="save-notes" type="button">Save locally</button><button id="download-notes" type="button">Download notes text</button></div>
+      <p id="notes-status" role="status">Notes are saved only when you choose Save locally. No network transfer is used.</p>
+      <p class="hint">Local-file storage can be unavailable or change between browsers. A downloaded text copy is portable. Notes are separate from generated experiment data.</p>
+    </section>
+  </section>
+  </div>
+  <footer>Rule Lab · Model and controls: <a href="README.md">README</a> · <a href="README.md#verification-status">Verification status: NOT_RUN_UI</a> · Zero and one are nonprime, not composite.</footer>
+</main>
+</body>
+</html>

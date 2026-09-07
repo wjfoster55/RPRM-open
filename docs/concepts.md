@@ -8,6 +8,12 @@ useful application. The idea is to make a change of question explicit enough
 that it can be used, checked and challenged. Several descriptions can be true
 of one object while answering different questions about it.
 
+The expanded treatment is [Chapter II.6 of the book](../MANIFESTO.md#ii6-operational-coordinates-and-conceptual-models).
+This reference keeps the short number-description, parity, learning and
+paired-string examples. The [reader's guide](../LAYPERSON_GUIDE.md) supplies
+a gentler entry point, and the [agent handbook](../AGENT_HANDBOOK.md) gives
+a reusable reasoning procedure.
+
 ## Value, written form, address and operation
 
 Take 1000. As an integer it is one thousand. As a base-ten numeral it has four

@@ -5,6 +5,12 @@ written proof below. Formal and finite-test coverage is stated separately in
 [verification.md](verification.md). Established constructions and their derived
 compositions are not assigned mathematical novelty by these operator names.
 
+The book develops the corresponding arguments in
+[II.2, representation and repair](../MANIFESTO.md#ii2-what-a-representation-preserves),
+[II.3, transport and shared interfaces](../MANIFESTO.md#ii3-a-common-relational-language-that-preserves-its-sources),
+and [II.4, all finite futures](../MANIFESTO.md#ii4-future-equivalence-distinction-and-stable-repair).
+The contracts and O-numbered anchors below remain the detailed operator reference.
+
 ## Reading an operator contract
 
 An operator occurrence consists of a name/expression, context version, typed inputs, semantic kind, admission condition, and denotation. Its advertised guarantee also names its receiver, retained witnesses, inverse or complete fiber, and coverage. These are different fields: neither a name nor a filled contract proves the advertised guarantee.

@@ -6,6 +6,11 @@ source mathematics can be expressed through typed relations without changing
 the truth of its statements. Its further results explain when apertures,
 operations and distinct source systems can share an interface.
 
+For the connected book treatment, see
+[Chapter II.3](../MANIFESTO.md#ii3-a-common-relational-language-that-preserves-its-sources).
+The U01–U05 results below retain their own hypotheses and stable reference
+anchors; selected formal identities are listed in [formal-proofs.md](formal-proofs.md).
+
 These results use established mathematical constructions. RPRM's proposed
 contribution here is their explicit organization around context, direction,
 receivers, retained distinctions and continuation. A new name for a familiar

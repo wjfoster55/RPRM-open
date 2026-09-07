@@ -1,48 +1,35 @@
 # Recorded results and their limits
 
-All three fixed responses met their respective predeclared acceptance criteria. A second manual mathematical review agreed with the release editor's scores. The second reviewer knew the initial A/B totals before reviewing those responses; the C total was shared after its initial reading but before its final score record. This was an independent assessment of the answers, **not blinded or double-blind inter-rater scoring**.
+A, B and C met their respective predeclared acceptance criteria. D scored 79/80; E scored 16/16 on a targeted follow-up. D and E have no separately recorded acceptance threshold, so none is supplied retroactively.
 
-| Run | Exact handbook | Questions | Score | Critical errors | Decision |
-| --- | --- | --- | --- | --- | --- |
-| A | [Version 1](handbooks/v1.md) | [20 core questions](questions-a.md) | 40/40 | None | Meets 36/40 criterion |
-| B | [Version 2](handbooks/v2.md) | [12 transfer questions](questions-b.md) | 24/24 | None | Meets 22/24 criterion |
-| C | [Version 3](handbooks/v3.md) | [12 final-version questions](questions-c.md) | 24/24 | None | Meets 22/24 criterion |
+| Run | Exact handbook | Questions | Score | Grading outcome |
+|---|---|---|---|---|
+| A | [Version 1](handbooks/v1.md) | [20 core questions](questions-a.md) | 40/40 | Meets the declared 36/40 criterion; no critical error |
+| B | [Version 2](handbooks/v2.md) | [12 transfer questions](questions-b.md) | 24/24 | Meets the declared 22/24 criterion; no critical error |
+| C | [Version 3](handbooks/v3.md) | [12 finite-algorithm questions](questions-c.md) | 24/24 | Meets the declared 22/24 criterion; no critical error |
+| D | [Version 4](handbooks/v4.md) | [20 expanded questions](questions-d.md) | 79/80 | One explanation criterion missing in question 5 |
+| E | [Version 5](handbooks/v5.md) | [Four targeted questions](questions-e.md) | 16/16 | All sixteen frozen criteria satisfied |
 
-Every answer earned 2/2. C separately awards one point for the concrete answer and one for its scope and premises; every component earned its point. The [JSON record](results.json) supplies each score and its reason. The [public rubric](rubrics.md), answer keys, and mathematical responses [A](responses/a.md), [B](responses/b.md), and [C](responses/c.md) make the decisions inspectable. Public rubric prose expands the original frozen scoring notes; its byte identity is not substituted for the historical rubric hash.
+The [JSON record](results.json) retains every item score, original input hash, public response hash and grading scope. All A–C scores and deductions are preserved. Their second mathematical reviewer agreed with the release editor, with access to the initial totals as documented there; no blinded grading is claimed. D and E were graded by the release editor against their own frozen rubrics. No second-grader result is recorded for those two runs.
 
-## Inputs bound to the recorded runs
+## The retained deduction and follow-up
 
-The supplied handbook and question bytes are retained without change in this packet. SHA-256 identifies the bytes, not their truth or a respondent's isolation.
+D question 5 gives the correct shortest word, both outputs and the n−1 bound. It does not derive the requested block-count reason: adding the failure state also adds an initially separate observation block. Citing the bound and noting that a larger bound is looser does not supply that derivation. It earned 3/4; the other nineteen answers earned 4/4. The original answer and this deduction remain inspectable in [response D](responses/d.md) and [rubric D](rubric-d.md).
 
-| Input | SHA-256 |
-| --- | --- |
-| `handbooks/v1.md` | `258e3bf92dcfee0cfa99eb0a8ff63cc2979185b5ba112f91852bef67b771de15` |
-| `questions-a.md` | `cd2616a07df701d6cdc707f8b89ff911502b0066675245089a1ea685c48002ad` |
-| `handbooks/v2.md` | `7bd5b14677f376744a862d8ec901523eb47e1be61b1596fa9aa384e551797c63` |
-| `questions-b.md` | `56b28a5fb49d246accbb60fa9d1f7eb6c4b26d0fb82d49d367b32f5bf1f522e9` |
-| `handbooks/v3.md` | `8cb6c22e698fe3cd888bb36100cb0b6e8153c5b33f0a14bad38e5ed28baec8ef` |
-| `questions-c.md` | `7bebfd1418baba3c5dda31d4d57fd84f5b34811ce30170a4fbaf5f9e0aca0e35` |
+Version 5 adds that counting explanation and clarifies two further points: accepted version stamps must strictly increase, and inward vector acceleration is different from the second derivative of radial distance. E used four new questions about those known clarity changes with a fresh respondent context. Its complete derivations earned 16/16 under [rubric E](rubric-e.md). This is a targeted follow-up, not an independently selected general benchmark, a repeat of D, or evidence that every use of version 5 has been tested.
 
-## What changed between versions
+## Exact versions and portable exports
 
-Response A correctly answered all questions and suggested four useful clarifications. Version 2 added an infinite-fiber parameterization with a coverage argument, an attaining construction for the repair-tag bound including the empty source, concrete reopen-record contents, and a digit-index/bit-cost convention.
+All five versioned handbooks and question files retain their assessed bytes. D and E's public rubrics also retain the original frozen bytes. A–C's public rubric prose expands the historical frozen notes without substituting its hash for theirs. Each original hash is recorded alongside the actual published file binding.
 
-B used a fresh context and different questions with version 2. It correctly addressed transfer cases, including a zero interpolation coefficient, a lossy abstract singleton, typed Boolean/integer equality, incompatible reports, and a synthetic external-validation proposal. Question B5 ambiguously describes the initial summary classes; the respondent identified this and answered both readings correctly. The answer key preserves that qualification instead of retroactively tightening the scored question.
+The public D response adds only a title and removes its final execution declaration. The E response retains its original title and removes its final input/tool declaration. Every preceding mathematical answer byte is unchanged. Public response hashes therefore differ from the original response hashes; both are recorded. Source paths, internal task identities and private scoring files are not part of this packet.
 
-Version 3 made the effective finite state/action-table premises explicit. C then received the complete third version and new questions, including a direct test of infinite action enumeration and undecidable observation equality. It answered all twelve correctly. Question C3 exhibits two paths without stating exhaustiveness; the response correctly distinguishes a complete two-path source from two examples in a larger source.
+Version 2 followed four clarifications suggested in A. Version 3 made complete finite state/action tables and exact decidable comparisons explicit. Version 4 expanded the mathematical handbook; version 5 makes the three clarifications above. The [current handbook](../AGENT_HANDBOOK.md) is exactly the version-5 file supplied in E. C's former match to the then-current version 3 is historical.
 
-At this review, the live [agent handbook](../AGENT_HANDBOOK.md) and the assessed version-3 copy are byte-identical with SHA-256 `8cb6c22e698fe3cd888bb36100cb0b6e8153c5b33f0a14bad38e5ed28baec8ef`. This binds C to the current book's actual bytes; it does not mean twelve questions test every statement or possible use of the book. Future edits require their own version record.
+## Context and evidence limits
 
-## Isolation and respondent metadata
+Each respondent started in a fresh context without inherited project conversation and was instructed to use only the supplied handbook, its questions and ordinary mathematical reasoning. Rubrics, prior responses, other project files and external references were excluded by instruction. Respondents declared their limited input/tool use. This was context separation with instructional restrictions, not operating-system sandbox enforcement or independent telemetry proving every possible host access absent. General platform instructions and prior mathematical knowledge were not removed.
 
-All three respondents were started in fresh contexts with no inherited project conversation. Each was supplied only its exact handbook and question-file locator, with instructions not to read other project files, rubrics, prior responses, tasks, or web sources. All responses declared that only those two inputs and ordinary mathematical reasoning were used. The release editor observed the fresh-context setup.
+The exact respondent model version was not captured. No model-level reproducibility, blind grading or causal learning effect is claimed. There was no no-handbook control. These different question sets and handbook versions do not yield a paired improvement estimate. Published questions and keys are no longer unseen for anyone who reads them.
 
-These were **instructional restrictions, not operating-system sandbox enforcement**. General platform instructions and prior mathematical knowledge were not removed. The retained declarations and observed setup are not an independently instrumented proof that no other information could have been available.
-
-No model override was set. The exact respondent model version was not captured and is reported as unavailable rather than inferred. This limits exact model-level reproduction. The scored response files here retain the mathematical answers and ambiguity reports, with execution headers and source-location details removed.
-
-## Strongest supported conclusion
-
-These respondents produced correct, appropriately scoped answers to these 44 questions under the recorded input instructions. The results support usability of the tested handbook versions for these bounded exercises, including the current version's explicit finite-algorithm premises. They do not establish universal comprehension, general theorem-proving ability, mastery of every application, or correctness of all RPRM mathematics.
-
-Ordinary prior mathematical knowledge was permitted. There was no no-handbook control, so passing does not show that the handbook caused the respondent to learn each concept. The three runs also differ in both questions and handbook version; their scores do not measure a controlled improvement. Use the [repeat protocol](README.md#repeat-the-assessment) and newly frozen questions for further evidence.
+The results support usability of these exact handbook versions for these bounded exercises, including a retained missing explanation. They do not establish universal comprehension, mastery of every application, general theorem-proving ability, or correctness of all RPRM mathematics. Use the [repeat protocol](README.md#repeat-the-assessment) and newly frozen questions for further evidence.

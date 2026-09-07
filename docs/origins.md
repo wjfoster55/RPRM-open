@@ -5,6 +5,16 @@ its starting state, the rules that can act on it, and the observations that
 matter. This makes assumptions about a beginning available for inspection.
 A physical account of the universe's beginning asks for additional evidence.
 
+The book develops specific models in
+[III.8, return depth and black holes](../MANIFESTO.md#iii8-return-depth-exterior-observations-and-black-holes),
+[III.9, two-path interference](../MANIFESTO.md#iii9-two-path-interference-and-retained-coherence),
+and [III.10, gravity, magnetic motion and expansion](../MANIFESTO.md#iii10-gravity-magnetic-motion-and-cosmic-expansion).
+Their supplied equations and written representation results do not establish
+a new physical origin mechanism. In particular, the
+[physical bridge for return depth](../MANIFESTO.md#the-physical-bridge-that-remains-open)
+remains open. The initial-state distinctions below apply before such a bridge
+has been supplied.
+
 ## What a model starts with
 
 One precise finite setup is

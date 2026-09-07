@@ -9,6 +9,11 @@ The method is useful for checking RPRM claims themselves. The supplied rules
 and ordinary mathematical proof principles remain visible when it does so.
 Its implementation passing tests does not certify all its own claims.
 
+The book's [Chapter II.5](../MANIFESTO.md#ii5-four-lane-abduction-and-proof-donut-certificates)
+develops four-lane inference, joint witnesses, interpolation and continuation
+proofs. This reference retains the executable certificate contracts and small
+mutual-use and prime-region examples; each keeps its stated finite coverage.
+
 ## The aperture and its enclosure
 
 An aperture supplies given inputs `g` in G, a witness carrier W(g), a relation

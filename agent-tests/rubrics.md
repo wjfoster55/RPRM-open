@@ -25,3 +25,7 @@ Assessment C question 3 exhibits two paths without explicitly declaring that the
 The final request for handbook omissions is diagnostic and does not add points. Preserve such feedback even when the scored answers pass. A full score does not show that no clarification would help a future reader.
 
 For a future assessment, freeze any additional scoring detail before seeing responses. A threshold is a declared acceptance convention for the supplied questions; it is not a mathematical theorem about general competence.
+
+## Expanded and targeted assessments
+
+[D's frozen rubric](rubric-d.md) awards four criteria per question over twenty questions. [E's frozen rubric](rubric-e.md) awards four criteria per question over four targeted follow-up questions. These two files retain their actual frozen bytes. Neither record supplies a separate acceptance threshold or designated critical-question list; report the criterion scores without inventing those conventions. D's missing explanation and 79/80 total remain unchanged. E's 16/16 does not replace that result.

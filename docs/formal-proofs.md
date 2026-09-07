@@ -1,5 +1,14 @@
 # Formal proof scope
 
+The [full book](../MANIFESTO.md) contains 87 written theorem, proposition,
+lemma and corollary statements: four opening statements, restated in the
+chapters, and 83 chapter-numbered statements. The formal scope is exactly
+the 20 declarations below. This is not a count of 87 distinct new theorems,
+nor a claim that every written statement has been formalized. The book's
+[evidence appendix](../MANIFESTO.md#evidence-by-result-family) maps result
+families to their evidence, and [its declaration table](../MANIFESTO.md#the-twenty-formal-declarations)
+lists the same twenty formal identities.
+
 The repository contains two Lean source files, pinned by `lean-toolchain` to
 Lean 4.22.0. Both import only `Init`. The replay compiles fresh copies of the
 source, makes warnings errors, checks the complete expected axiom-report

@@ -1,0 +1,120 @@
+{
+  "schema": "rprm.typesetting-assets.v1",
+  "assets": [
+    {
+      "path": "figures/01-joint-aperture.svg",
+      "sha256": "8603c5ffedceb3cd1f0609681905d5a841ed1db4440b11a14421ef28722c8cef",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/01-joint-aperture.png",
+      "sha256": "d464eaf5ea7ea959f300760edcc95d84a8551bdbdc2f19287de73db3243903ad",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/02-future-distinction.svg",
+      "sha256": "ef448cf00d194954cd93324137b3064c2e55986dd9b96c0fb1f5aba8bd1baab5",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/02-future-distinction.png",
+      "sha256": "1ffe932ba8848ed91def45ca9af1d4a3c44bd80fe367e4da953d3e577249358a",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/03-erasure-and-error.svg",
+      "sha256": "ab3510a4db6b7d16f2a0552cc15de9429398eeebd647d444df399b5cb50777bc",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/03-erasure-and-error.png",
+      "sha256": "0c93ff99229f2b53a4837419efed81e7882e85df4aebeddec9f25732b64125ee",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/04-number-descriptions.svg",
+      "sha256": "10e7bf603a4904caa29717e7304270d84c901b5893dc1c6db181ea17c1916a47",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/04-number-descriptions.png",
+      "sha256": "4e2e056934d7d2ebeabbefc2af0430f45040c6f558865fe34e7beb1b036c945f",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/two_path_complete_controls.svg",
+      "sha256": "935dbd41e052353cb07ea4e47ce7bf1bf21640740931b8eb0e14d668267097e1",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/two_path_complete_controls.pdf",
+      "sha256": "c1fc21062f997fd54a71bfe2b7c53eed67ac226cfad5255e9b421d02ab74d776",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/two_path_eraser_weights.svg",
+      "sha256": "c0ab89937b9205d2ef3ee6aa2f1e51c6131a2fc247a2c179442a3da09bf98118",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "figures/two_path_eraser_weights.pdf",
+      "sha256": "139537be4c0b8cbf69a21e086feca35af18d9816c53eb7086668a4c3d34b525b",
+      "license": "CC0-1.0 (original figure); embedded font programs retain their own licenses"
+    },
+    {
+      "path": "tools/typesetting/fonts/STIXTwoMath-Regular.otf",
+      "sha256": "3a5f3f26f40d5698b3c62dd085d48d6663696a3f80825aab8b553d5097518e8c",
+      "license_notice": "LICENSES/STIXTwo-OFL.txt"
+    },
+    {
+      "path": "tools/typesetting/fonts/STIXTwoText-Regular.otf",
+      "sha256": "c4864ca6ec071c2d31d0d8309001faa1ee3517fffb53a31a405a697b71f52ca1",
+      "license_notice": "LICENSES/STIXTwo-OFL.txt"
+    },
+    {
+      "path": "tools/typesetting/fonts/STIXTwoText-Bold.otf",
+      "sha256": "7ef76c666a6704f76ed3fa27bcdda55b36e558b5c2c93b49b03d854db96bdeb5",
+      "license_notice": "LICENSES/STIXTwo-OFL.txt"
+    },
+    {
+      "path": "tools/typesetting/fonts/STIXTwoText-Italic.otf",
+      "sha256": "cd64481fd10b69469074a3a8172fb5a22cb4116941d8aceafb8c77756b563df8",
+      "license_notice": "LICENSES/STIXTwo-OFL.txt"
+    },
+    {
+      "path": "tools/typesetting/fonts/STIXTwoText-BoldItalic.otf",
+      "sha256": "90e88f2ac79d6c00a5ce2d8446bfdf9457aed6afc1159cde33262979d82c8586",
+      "license_notice": "LICENSES/STIXTwo-OFL.txt"
+    },
+    {
+      "path": "tools/typesetting/fonts/DejaVuSans.ttf",
+      "sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22",
+      "license_notice": "LICENSES/DejaVu.txt"
+    },
+    {
+      "path": "tools/typesetting/fonts/DejaVuSans-Bold.ttf",
+      "sha256": "b184b89e3c1075f22f6b71575b6fc20d4972b3cfd3b23322ca6fd596dcaef167",
+      "license_notice": "LICENSES/DejaVu.txt"
+    },
+    {
+      "path": "tools/typesetting/fonts/DejaVuSans-Oblique.ttf",
+      "sha256": "ccdf74b350f11fd3dd5774de50e5e6346a1a5da1f5b7d5fb83590665e97a5213",
+      "license_notice": "LICENSES/DejaVu.txt"
+    },
+    {
+      "path": "tools/typesetting/fonts/DejaVuSansMono.ttf",
+      "sha256": "602ec86b8948cfcd956482fe64f94c36c867770149ef2f791d4613f443bcecb3",
+      "license_notice": "LICENSES/DejaVu.txt"
+    }
+  ],
+  "embedded_external_font": {
+    "name": "MSAM10",
+    "version": "003.002",
+    "font_sha256": "f2e3b470b988a46272125e917531690d3c4d03ac7238f112b07337f972a537fa",
+    "provider": "Tectonic TeX support bundle",
+    "notice": "LICENSES/AMS-MSAM10-OFL.txt",
+    "standalone_font_bundled": false
+  },
+  "stix_source": "https://github.com/stipub/stixfonts/releases/tag/v2.13b171",
+  "ams_source": "https://ctan.org/pkg/amsfonts"
+}

@@ -99,6 +99,33 @@ with a stated reason that those reports constrain the truth independently
 or satisfy a known error bound. Internal consistency alone is not external
 authenticity.
 
+## What an unseen part can tell us
+
+Suppose a table records the possible pairs (0,0) and (1,1). You have not
+learned which pair is present, but you already know the two values are equal.
+The whole situation is uncertain while that one question is settled.
+
+Now list the possible first values separately from the possible second
+values. Each list contains 0 and 1. If you combine the lists freely, you
+accidentally admit (0,1) and (1,0). A summary has lost the relationship that
+made the equality answer certain. Keeping the possibilities together is
+what the book means by keeping a **joint fiber**.
+
+The four observation lanes use the same principle. Each lane supplies a
+specified view of one source. Keep the views together, and every new
+observation can rule out incompatible possibilities. An unvisited value is
+known when at least one possibility remains and every remaining possibility
+gives it the same value. If none remain, the model and observations conflict.
+The law connecting the views does the work.
+
+The paper gives a geometric example on a square. Restrict the surface to a
+formula that is linear in either coordinate when the other is fixed. Its
+four corner heights determine the surface throughout that square; the center
+is their average. If the corners are all above zero, the surface is above
+zero everywhere inside the square and on its boundary. Allow a more general
+surface, however, and a depression can hide between the same corners. The example includes both constructions. That makes the boundary
+of the inference visible, instead of asking readers to trust the picture.
+
 ## How the proof donut helps
 
 The proof donut is a way of organizing the checks around an open question.
@@ -114,6 +141,75 @@ not establish an unstated connection to a physical system.
 This is also how a negative result stays useful. A failed check can identify
 the exact missing distinction, incorrect map or unsupported assumption.
 That gives the next attempt something concrete to repair.
+
+## How a finite argument reaches farther
+
+A finite calculation can contribute to an unlimited statement when a proof
+explains why it covers the rest. Think of a rule for climbing a ladder:
+show how to reach its first rung, and show that being on any admitted rung
+lets you reach the next. The argument is about every step allowed by the
+rule, even though an actual climb uses only finitely many steps.
+
+The prime chapter gives an arithmetic version. If you know every prime up
+to seven, those primes can mark every composite number through forty-nine.
+Why? Every composite in that interval has a prime factor no larger than
+seven. Forty-nine is caught by seven times seven. Repeating the proved
+construction extends the certified region. The useful result is the
+coverage argument and its repeatable rule.
+
+The revised Fermat chapter is a longer example. It proves that positive
+integer solutions to a^n+b^n=c^n are impossible when n is an integer greater
+than two and the smaller of a and b is at most 4000. That condition limits
+one input. The proof handles every larger value of the other input and
+every admitted exponent through derived restrictions and complete remaining
+cases. It is not a table that stops every variable at 4000.
+
+Conventional mathematics already proves Fermat's Last Theorem without that
+smaller-input condition. The book credits that work. Its separate RPRM
+route to an unrestricted proof still has a precise missing step. The
+bounded result can stand on its supplied argument without pretending that
+remaining step has been found.
+
+## Looking carefully at the science examples
+
+The physical chapters begin with stated scientific models and ask which
+representations keep their predictions. That produces mathematical results
+within those models. A further proposal about how nature works needs its
+own connection to measurements.
+
+For gravity, attraction tells us how velocity changes. It does not require
+an object to be moving inward at that instant. A circular orbit is a useful
+control: gravity points toward the center while the instantaneous motion
+points along the orbit. An object moving outward can also slow under
+attraction. Keeping position, velocity and the force law makes the question
+precise. Calling all three situations simply 'drift toward something' would
+lose distinctions the model needs.
+
+The two-path example gives another kind of useful reduction. For a stated
+family of interference measurements, two real numbers retain the entire
+phase pattern. The chapter derives why that is enough, and shows an
+operation after which it is no longer enough. It also keeps selected
+outcomes together with their frequencies. If two equally likely selected
+groups have plus-output rates 90% and 10%, their combined rate is 50%.
+Showing only the first group would answer a different question.
+
+The black-hole chapter separates a mathematical return process from a
+specified spacetime model. Connecting them physically remains a research
+question. Likewise, carrying from one numeral position to the next is an
+exact arithmetic operation, but its threshold changes with the numeral
+base. To identify it with a cosmic event, we would need an explanation of
+which physical quantity changes and what predicts that change.
+
+The research section applies the same care to information lost in molecular
+and other models. Two source states can share a label while having different
+next-step probabilities. A smaller model must preserve those probabilities
+if it is meant to predict the future. A demonstrated failure of that kind
+can identify useful information to retain. Whether retaining it improves a
+real scientific prediction is a further experiment.
+
+These examples are meant to be useful even when a proposed extension fails.
+The book supplies exact successes, explicit counterexamples and open tests.
+The broader ambition is pursued through those individual results.
 
 ## What is established, and what is proposed
 
@@ -140,7 +236,8 @@ starting assumptions and the observations that could distinguish models.
 
 ## Where to go next
 
-Read the main paper for the compact argument, the [conceptual chapter](docs/concepts.md)
+Read Part I of the main paper for the opening argument and the later chapters
+for full proofs, applications and research questions. Use the [conceptual chapter](docs/concepts.md)
 for a fuller bridge between the examples and the mathematics, and the
 [core definitions](docs/core.md) for exact contracts. The [agent handbook](AGENT_HANDBOOK.md)
 is self-contained for agents and technically curious readers. [Verification](docs/verification.md)

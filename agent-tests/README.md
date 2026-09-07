@@ -1,16 +1,18 @@
 # Handbook comprehension assessments
 
-This packet makes three small handbook assessments inspectable and reusable. It contains the questions, scoring criteria, scored answers, exact handbook versions, and the limits of the resulting evidence.
+This packet retains five bounded handbook assessments: questions, frozen criteria, scored mathematical answers, exact handbook versions and evidence limits.
 
-| Assessment | Handbook actually supplied | Result | Evidence |
-| --- | --- | --- | --- |
-| [A: core concepts](questions-a.md) | [Version 1](handbooks/v1.md) | 40/40; acceptance criterion met | One respondent, 20 questions, manual grading |
-| [B: transfer cases](questions-b.md) | [Version 2](handbooks/v2.md) | 24/24; acceptance criterion met | A fresh respondent, 12 different questions, manual grading |
-| [C: final-version cases](questions-c.md) | [Version 3](handbooks/v3.md) | 24/24; acceptance criterion met | A fresh respondent, 12 questions, manual grading |
+| Assessment | Supplied handbook | Result | Scope |
+|---|---|---|---|
+| [A: core concepts](questions-a.md) | [Version 1](handbooks/v1.md) | 40/40; declared criterion met | 20 questions |
+| [B: transfer cases](questions-b.md) | [Version 2](handbooks/v2.md) | 24/24; declared criterion met | 12 new questions |
+| [C: finite-algorithm cases](questions-c.md) | [Version 3](handbooks/v3.md) | 24/24; declared criterion met | 12 new questions |
+| [D: expanded handbook](questions-d.md) | [Version 4](handbooks/v4.md) | 79/80 | 20 questions; one requested explanation omitted |
+| [E: targeted clarity follow-up](questions-e.md) | [Version 5](handbooks/v5.md) | 16/16 | Four new questions targeting three known clarity changes |
 
-See [the results and limitations](results.md), [machine-readable metadata](results.json), [rubrics](rubrics.md), and the answer keys [A](answer-key-a.md), [B](answer-key-b.md), and [C](answer-key-c.md). The scored mathematical responses are retained as [A](responses/a.md), [B](responses/b.md), and [C](responses/c.md), with source-location and execution headers removed.
+The current [agent handbook](../AGENT_HANDBOOK.md) is byte-identical to version 5. E received that complete file, but tested only its four stated questions. D's broader result remains attached to version 4. The two scores do not measure a controlled improvement.
 
-Version 2 addressed four clarifications suggested by response A. Version 3 then made finite complete state and action tables with exact comparisons explicit for its finite algorithms. C supplied that complete third version, including a question testing those premises. At the recorded review, it was byte-identical to the current [agent handbook](../AGENT_HANDBOOK.md). Its 12 answers do not test every possible use of the book. Results belong to the exact supplied versions, not automatically to every later handbook revision.
+See [results and limits](results.md), [machine-readable bindings and item scores](results.json), and [rubrics](rubrics.md). Mathematical responses are retained for [A](responses/a.md), [B](responses/b.md), [C](responses/c.md), [D](responses/d.md) and [E](responses/e.md). The supplied handbook and question bytes remain unchanged. Response execution declarations were removed as described in each result; every mathematical answer was retained.
 
 ## Repeat the assessment
 
@@ -24,6 +26,6 @@ Version 2 addressed four clarifications suggested by response A. Version 3 then 
 
 Once these questions or keys have been read, they are no longer unseen material for that respondent. Use newly frozen transfer questions for a new held-out assessment. Repeating a published test can check consistency or regressions, but should not be described as fresh blind evidence.
 
-The three recorded passes show that these respondents produced correct, scoped answers to these questions while instructed to use the supplied handbook and ordinary mathematics. They do not establish universal comprehension, mastery of every domain, an arbitrary theorem prover, or the framework's correctness. They also do not compare learning gains against a no-handbook control.
+The recorded responses support use of the tested handbook versions for these bounded exercises under the supplied-input instructions. They do not establish universal comprehension, an arbitrary theorem prover, a learning gain over a no-handbook control, or correctness of every framework claim. Automatic repository verification checks reproducible artifacts; it does not repeat these comprehension assessments.
 
 All original material in this directory is offered under CC0-1.0.

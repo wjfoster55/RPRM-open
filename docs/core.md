@@ -2,6 +2,12 @@
 
 A relational framework for mathematical unification.
 
+For the connected exposition, begin with [Part I of the book](../MANIFESTO.md#part-i-the-object-the-question-and-what-must-survive).
+Chapters [II.1](../MANIFESTO.md#ii1-relations-occurrence-and-exact-completion)
+and [II.2](../MANIFESTO.md#ii2-what-a-representation-preserves) develop
+complete fibers, recovery and sufficient representations. This reference
+keeps the detailed definitions and section anchors used by the tools.
+
 ## 1. The purpose and the mathematical claim
 
 RPRM aims to connect mathematical representations, methods and constructions
@@ -129,9 +135,9 @@ A **role** is a named position in a specified relation or construction. A
 **port** is a role together with its type and declared interface behavior.
 For a relation with a finite port set `I`, the assignment type is
 
-\[
+$$
 \operatorname{Asn}(I)=\prod_{i\in I}|\tau_i|.
-\]
+$$
 
 An occurrence can be assigned to a port through a typed map. Multiple roles
 may reference the same occurrence only when the incidence model permits it.
@@ -162,9 +168,9 @@ equal while their expression trees and computation traces differ.
 
 A **typed relation** is a specified subset
 
-\[
+$$
 R\subseteq\operatorname{Asn}(I).
-\]
+$$
 
 The relation itself does not choose an input/output direction. A direction
 selects which ports are supplied and which are requested. A partial typed
@@ -173,10 +179,10 @@ not a distinguished numerical value, an empty collection or an error result.
 
 For a vacant block `A=I\setminus K`, define the complete joint fiber
 
-\[
+$$
 \operatorname{Fib}(R,K,\eta)
 =\{r|_A:r\in R,\ r|_K=\eta\}.
-\]
+$$
 
 When no completion exists, its disposition is `NONE`. A singleton is
 `ONE(a)`. More than one completion is `MANY(F)` with the complete family `F`
@@ -210,10 +216,10 @@ a universal operation. Each use names one of the following profiles.
 
 A **relation aperture** is the record
 
-\[
+$$
 \mathsf{Apt}_{rel}=(\Theta,R,I,K,\eta,A,\rho),
 \qquad A=I\setminus K.
-\]
+$$
 
 `R,I,τ` are retained, `η` is the supplied typed environment, and `ρ` is an
 explicit readout on the missing assignment carrier. The full answer is the
@@ -239,9 +245,9 @@ An **observation aperture** supplies a probe family `Q_p:X→B_p`, a selected
 probe `p`, an admitted source or source fiber, and the requested answer type.
 For fixed `p`, its graph
 
-\[
+$$
 G_{Q_p}=\{(x,b):b=Q_p(x)\}
-\]
+$$
 
 turns the output question into a relation aperture. This is an explicit
 encoding, not an assertion that observing a source and physically opening a
@@ -362,11 +368,11 @@ reached value may contain one or many states.
 
 For a question `Q:X→Y`, the central factorization theorem remains:
 
-\[
+$$
 \exists g:C(X)\to Y,\quad Q=g\circ C\text{ on }X
 \quad\Longleftrightarrow\quad
 Cx=Cy\Rightarrow Qx=Qy.
-\]
+$$
 
 The decoder is unique on `C(X)`. This characterizes exact sufficiency, not
 computability, physical accessibility, byte size or speed. A receiver can
@@ -410,9 +416,9 @@ cost of that store need their own assumptions.
 
 Given `C:X→Z` and a separating question `Q:X→B`, the representation
 
-\[
+$$
 C'(x)=(C(x),Q(x))
-\]
+$$
 
 has kernel `ker C∩ker Q`. It is the **coarsest refinement** retaining the old
 representation and that question: any representation decoding both has a
@@ -450,9 +456,9 @@ Suppose component states `x∈X` and `y∈Y` have boundary observations `b_X(x)`
 and `b_Y(y)`. Supply a compatibility relation `M` and any interface maps.
 The admissible attachment carrier is
 
-\[
+$$
 J=\{(x,y,m):m\text{ is a declared witness that }M(b_X(x),b_Y(y))\}.
-\]
+$$
 
 When compatibility is a Boolean predicate with no extra witness data, retain
 `(x,y)` and the precise matched-interface record. When several witness choices
@@ -559,10 +565,10 @@ its domain onto `X`. The lift is injective, but the landing may be lossy.
 
 For an internal operation `H:D_H→Y`, the landed operation is
 
-\[
+$$
 T=P\circ H\circ L,
 \quad D_T=\{x:Lx\in D_H,\ H(Lx)\in D_P\}.
-\]
+$$
 
 **LIFT–SPIN–LAND** is this pattern with the intended target and preservation
 obligation supplied. “Spin” names the declared internal operation, not a
@@ -709,9 +715,9 @@ proofs retain their original hypotheses.
 **Grade: established elementary algebra, with written proof.** Work over the
 reals and declare an admitted subset for each port of
 
-\[
+$$
 x=(1-u)L+uR.
-\]
+$$
 
 The four single-port fibers are as follows. Intersect every generic answer
 with that missing port's admitted set.

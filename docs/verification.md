@@ -36,9 +36,25 @@ For formal checks install Lean 4.22.0 separately and supply its executable:
 python -I -B verify.py --lean /path/to/lean
 ```
 
-Without `--lean`, formal checking is explicitly `NOT_RUN`. The optional
-`--python-only` flag requests a limited run without the Node atlas checks.
-A successful limited run establishes only the scopes it actually executed.
+The default runner registers 16 executable jobs: 12 Python jobs and four Node
+jobs. Supplying `--lean` adds the formal job, giving 17. These are registration
+counts, not a report that this expanded candidate has passed a fresh aggregate
+run or committed-byte replay; those integration runs remain pending.
+
+Without `--lean`, formal checking is explicitly `NOT_RUN`, including its entry
+in `checks`. The optional `--python-only` flag omits all four Node jobs:
+`atlas`, `atlas_view`, `rule_lab_model` and `rule_lab_presentation`. Each omitted
+job receives its own `NOT_RUN` entry and reason. The two-path Python job still
+runs. This gives 12 requested jobs, or 13 if `--lean` is also supplied.
+
+The aggregate `requested_checks` list identifies the requested execution scope;
+PASS requires every listed job to pass. The top-level `node` status covers all
+four Node jobs, and `node_suites` names them. The compatibility field `atlas`
+continues to report the Atlas model job alone; it cannot certify `atlas_view`
+or either Rule Lab job. Formal status remains separate. Missing Node fails a
+requested full run before any child suite starts; it never silently becomes
+a Python-only success. A successful limited run establishes only the scopes
+it actually executed.
 
 ## What is checked
 
@@ -50,9 +66,12 @@ A successful limited run establishes only the scopes it actually executed.
 | `checks/proof_donut.py` | Complete finite certificate families and a separate core quotient implementation | 256 aperture, 256 induction, 512 descent and 4,096 quotient comparisons; named hostile and admission controls |
 | `checks/fermat.py` | Integer arithmetic and auxiliary-prime certificate verification | 302 certificates, 1,998 exponents and the finite branches in the [written proof](fermat.md); the checker alone is not its all-exponent reduction |
 | `checks/prime_frontier.py` | Square-frontier producer versus complete integer-divisor census; proof-donut aperture/path audits; Fermat auxiliary dependencies | The stages `5 -> 25 -> 625 -> 390625`, full classification and factor witnesses, 302 auxiliary pairs and deliberate certificate failures; the unbounded continuation uses the separate written factor theorem |
-| `experimental/*/check.py` | Independent finite reference comparisons for all five packs | Exact scopes, costs and counterexamples are in the [experimental index](../experimental/README.md) and each pack; no empirical application claim |
+| `experimental/*/check.py` | Independent finite reference comparisons for the five original packs | Exact scopes, costs and counterexamples are in the [experimental index](../experimental/README.md) and each pack; no empirical application claim |
+| `experimental/two-path-lab/test_model.py` (`experimental_two_path`) | Frozen exact probabilities and independent full-matrix contractions versus the declared rational model and coherence receiver | 31 finite fixture tests, including 48 marker/phase/output entries, nine three-output probabilities, channel and conditional-marginal controls; see the [two-path contract](../experimental/two-path-lab/README.md). No physical experiment or arbitrary slit geometry is tested. |
 | `checks/atlas/verify.js` | Exact contract checks and numerical conformance for the extracted mechanism and export code | See the emitted receipt and [atlas documentation](../atlas/README.md); finite numerical tests do not certify physical dynamics |
 | `checks/atlas/view-checks.js` | Actual app code with finite DOM/Canvas stubs, import/export payloads and seam controls | Code-level checks only; browser, visual layout and accessibility behavior remain NOT_RUN |
+| `experimental/rule-lab/model.test.cjs` (`rule_lab_model`) | Independent string-table rule oracle, finite seed/boundary evolution, transform/readout fibers and trial-division sieve comparisons | The [Rule Lab](../experimental/rule-lab/README.md) states the exact finite model and hostile cases; no unbounded prime classifier or physical model is established. |
+| `experimental/rule-lab/presentation.test.cjs` (`rule_lab_presentation`) | Pure seed, block-summary, aperture and camera calculations, plus static JavaScript/HTML wiring checks | Separate presentation-helper coverage; does not execute the actual interface. Browser rendering, interactions, downloads, storage and accessibility remain NOT_RUN_UI. |
 | `checks/formal.py` | Fresh Lean elaboration and axiom inventory | The 20 declarations listed in [formal proof scope](formal-proofs.md), using an external trusted Lean toolchain |
 
 Counts describe the implemented census families. They are not separate
@@ -91,16 +110,23 @@ The [unification](unification.md), [proof-donut](proof-donut.md) and
 ## Reading and visual checks
 
 The [handbook assessments](../agent-tests/README.md) preserve questions, keys,
-exact tested versions and manually graded results from three fresh agent tasks.
+exact tested versions and manually graded results for their recorded tasks.
 They measure the tested questions and agents; they do not establish universal
 comprehension. The conceptual chapter and experimental packs retain their
 application assumptions locally so that jumping directly to a file does not
 remove its scope.
 
-The four paper figures show complete small examples and separating failures.
-Rebuild them with `python -I -B tools/build_figures.py` (matplotlib), then build
-the paper with `python -I -B tools/build_paper.py` (matplotlib, ReportLab, pypdf).
-These optional packages are not required by the mathematical checks. The PDF
-was rendered and its pages visually inspected; this is layout review, not a
-mathematical proof. The Atlas has code-level DOM/Canvas stub checks, but actual
-browser interaction, visual layout and accessibility review remain NOT_RUN.
+The complete book uses six explanatory figures, including two plots of
+supplied two-path probabilities. The [book build](../tools/typesetting/README.md)
+documents its Pandoc, Tectonic, Python and font dependencies. Run
+`python -I -B tools/build_paper.py` to produce a fresh source-bound output
+under `.artifacts/paper/`; the command leaves the distributed PDF unchanged.
+Its receipt records the exact selected inputs and generated PDF. Typesetting
+dependencies are separate from the Python and Node mathematical checks.
+
+The final PDF's source binding, rendered pages and page-review record must
+refer to the same selected version. A layout review is not a mathematical
+proof, and a passing model test does not certify a PDF. The Atlas has
+code-level DOM/Canvas stub checks; Rule Lab has pure presentation-helper and
+static wiring checks. Actual browser interaction, visual layout and
+accessibility review remain NOT_RUN for the Atlas and NOT_RUN_UI for Rule Lab.

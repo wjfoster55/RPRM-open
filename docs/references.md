@@ -5,6 +5,17 @@ receiver or workflow do not establish priority over related constructions.
 The references below identify relevant antecedents and background; they are
 not endorsements of RPRM or proofs of every claim made here.
 
+The full book's [bibliography](../MANIFESTO.md#bibliography) supplies the
+broader reading list for the expanded argument. It separates
+[standard mathematics](../MANIFESTO.md#mathematical-definitions-and-standard-theory),
+[established Fermat attribution](../MANIFESTO.md#established-fermat-attribution),
+[supplied models and computational constructions](../MANIFESTO.md#standard-models-and-computational-constructions),
+[empirical starting points](../MANIFESTO.md#empirical-context-and-experimental-starting-points),
+and [historical antecedents](../MANIFESTO.md#historical-antecedents-and-further-reading).
+The entries below retain the more specific context for the core, operator
+and implementation references. A citation to empirical literature does not
+report execution of this repository's research proposals.
+
 - **E. F. Codd, “A Relational Model of Data for Large Shared Data Banks” (1970).**
   The original relational-model paper develops n-ary relations and operations
   while separating data from a chosen representation. This is relevant to the

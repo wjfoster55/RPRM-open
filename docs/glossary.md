@@ -11,6 +11,13 @@ injective; a strict FOLD is lossy. FIVE.future, TRACEBACK.loss and
 TRACEBACK.preimage have distinct witness contracts. Each entry links to its
 definition or theorem, with no external context required.
 
+The book's [short reference guide](../MANIFESTO.md#reference-guide-special-terms-and-where-to-find-them)
+provides a compact route through its core and applied terms, including clamp
+transport, return depth, the coherence receiver and strong lumpability. This
+glossary retains the detailed core/operator entries and their existing anchors.
+Symbols are local to each supplied model: their carrier, units and equations
+fix their meaning, even when another chapter reuses the same letter.
+
 <a id="supp-aba-failure"></a>
 
 ### ABA failure
@@ -302,6 +309,9 @@ See [Core section 16](core.md#16-evidence-seals-inheritance-and-atomic-successor
 ### Clamp
 
 In the affine relation x=(1-u)L+uR, the oriented endpoints L,R form a clamp. Noncollapsed clamps transport values through the same retained parameter u; see core section 19.
+
+Here clamp transport is an invertible affine change of endpoint description,
+not numerical clipping; see [Theorem II.1.2](../MANIFESTO.md#the-affine-chart-including-its-collapsed-cases).
 
 All four single-port fibers retain their exact generic, singular and admission cases. Invertible value transport requires both endpoint pairs to be noncollapsed.
 
@@ -779,7 +789,7 @@ See [Core section 12](core.md#12-closure-and-frontiers-have-distinct-senses).
 
 ### Future equivalence
 
-For a fixed deterministic partial system and all finite action words, two states are equivalent if every word returns the same tagged observation. The class map is the minimal sufficient future representation of O05F.
+For a fixed deterministic partial system and all finite action words in its admitted alphabet, including the empty word, two states are equivalent if every word returns the same tagged observation. Failure is distinct from every successful output. The class map is the minimal sufficient future representation of O05F and [book Chapter II.4](../MANIFESTO.md#ii4-future-equivalence-distinction-and-stable-repair).
 
 A restricted language requires its own closure assumptions. A more detailed future-sufficient summary can still fail to update exactly.
 
