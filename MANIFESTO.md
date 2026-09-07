@@ -13,9 +13,9 @@ and laws; the name itself does not establish them. Part I, section 7,
 introduces the relational-layer proposal, developed further in the gravity
 and black-hole chapters.
 
-**Version 1 — first edition.**
+**Version 1.0.1 — first edition, Fermat clarification.**
 
-**DOI:** [10.5281/zenodo.22644688](https://doi.org/10.5281/zenodo.22644688)
+**DOI:** [10.5281/zenodo.22650379](https://doi.org/10.5281/zenodo.22650379)
 
 This edition includes the revised relational-layer account, two developed molecular research proposals, and the author's afterword. Mathematical results and proposed scientific extensions retain their stated evidence and scope.
 
@@ -267,7 +267,7 @@ $$
 \quad\Longrightarrow\quad a^n+b^n\ne c^n.
 $$
 
-for positive integers $a,b,c$ and integer $n$. Only the smaller input base is initially bounded. Its proof and complete auxiliary-prime certificate supply the remaining coverage. Fermat's Last Theorem is established mathematics; the independent unrestricted RPRM derivation remains OPEN.
+for positive integers $a,b,c$ and integer $n$. Only the smaller input base is initially bounded. Its proof and complete auxiliary-prime certificate supply the remaining coverage for that independent argument. The full Fermat application is closed by explicitly inheriting the established Fermat theorem through the exact source and gap-coordinate maps in Chapter III.2. This global conclusion uses the credited classical proof; it is not a new independent proof of Fermat's Last Theorem.
 
 Applications then examine ideal mechanisms, exact rays, symbolic music, finite learning and shape models, rule patterns, and supplied physical models. Each carries its source assumptions into its preservation result. Part IV develops finite minimax and stochastic-aggregation tests and uses them to formulate molecular research proposals. Those proposals and the open physical bridges have stated completion conditions; their mathematical examples do not establish an empirical benefit.
 
@@ -1478,7 +1478,7 @@ $$
 $$
 There is no independently assumed bound on $b$, $c$, or $n$.
 
-The proof combines elementary shell inequalities, classical descents for exponents three and four, prime valuations, and a complete finite table of auxiliary primes. The table and its verification procedure appear in Certificate Appendix III.2. These established ingredients and their bounded synthesis make no historical priority claim. Fermat's Last Theorem is already established mathematics; it is not a premise of this argument. The unrestricted independent RPRM route remains an open research question.
+The proof combines elementary shell inequalities, classical descents for exponents three and four, prime valuations, and a complete finite table of auxiliary primes. The table and its verification procedure appear in Certificate Appendix III.2. These established ingredients and their bounded synthesis make no historical priority claim. The bounded argument does not assume full Fermat's Last Theorem. At the end of the chapter, the unrestricted application is closed separately by explicitly inheriting that established theorem and proving its exact connection to the source residual and fixed-gap endpoint. The global dependency belongs to the classical Wiles and Taylor--Wiles proof tradition credited in the references.
 
 We first prove a different result that clarifies how a finite boundary can decide an unbounded aperture: with exponent and both gaps supplied, an exact bracket decides every positive integer smaller base. This does not assume that its answer must be empty.
 
@@ -1932,11 +1932,11 @@ But $c^2=257^2=66049<5^9$, a contradiction. These cases exhaust the possible par
 
 **Completion of Theorem III.2.1.** Normalize by Lemma III.2.2, retaining $a\leq4000$. Lemmas III.2.8–III.2.9 exclude exponents divisible by four or three. Proposition III.2.12 reduces every remaining exponent to five or ten, and Lemmas III.2.13–III.2.14 exclude both. Therefore no source in the stated smaller-base carrier has zero discrepancy. $\square$
 
-#### What the certificates establish and what remains open
+#### Certificate scope and the completed global application
 
 The retained finite computation checks the 302 complete auxiliary images, totaling 4,052,680 source powers and 3,936 distinct image elements summed over their moduli. It separately classifies all 1,998 integers $n=3,\ldots,2000$, evaluates 32,319 admitted fifth-branch inputs across 11 nonempty branches, and enumerates 25 positive divisor pairs across the derived tenth-power seam cases. Its passing receipt is evidence for those finite premises and implementation checks. It is not a proof-assistant formalization of this prose. The preceding proofs explain why the finite premises cover the initially unbounded $b,c,n$ ports.
 
-The fixed-gap theorem has its own written universal proof and separate finite implementation evidence. Its corrected reparameterization includes $w=0$. Neither its finite checks nor the bounded-side certificate proves a uniform empty answer for all larger root and prime/gap parameters.
+The fixed-gap theorem has its own written universal proof and separate finite implementation evidence. Its corrected reparameterization includes $w=0$. Its finite checks and the bounded-side certificate retain exactly those scopes. For $n>2$, the uniform empty answer for all root and gap parameters follows from the explicitly inherited theorem below.
 
 Coordinate preservation likewise does not imply exclusion. For two retained roots, let $s=a+b$, $q=a^2+b^2$, and $t=(s^2-q)/2=ab$. Their power sums obey
 $$
@@ -1946,9 +1946,15 @@ because each root satisfies $X^2-sX+t=0$. The source image requires $2q-s^2=h^2$
 
 Even complete determination of $S_n$ leaves the target $S_n-c^n=0$ to decide. Under an invertible linear change $v\mapsto Jv$, a target row must move as $\ell\mapsto\ell J^{-1}$; then $(\ell J^{-1})(Jv)=\ell v$. Reading an isolated component after discarding the target or its complementary terms changes the question. Similarly, the shell discrepancies at $(5,6,7;3)$ and $(6,7,8;3)$ are $-2$ and 47, so a sign at one root height does not propagate upward without a proved law. The near equality $6^3+8^3-9^3=-1$ remains nonzero under faithful transport.
 
-For the independent unrestricted route, it remains to exclude every hypothetical primitive positive solution at odd prime exponent $p\geq5$ beyond this bounded theorem. For $p\leq1999$, the existing auxiliary table already forces the second case, in which one root is divisible by $p$. Larger primes require additional first-case premises as well. One sufficient completion would map every remaining hypothetical zero to another positive integer zero at the same exponent and strictly smaller integer height, with primitivity restored lawfully. Well-ordering would then contradict a least counterexample. Scaling or dividing displayed coordinates does not supply such an integer return, and the cubic ring's factorization law cannot be inherited by a new ring without proof.
+**Established input (Fermat's Last Theorem).** For every integer $n>2$ and positive integers $a,b,c$, one has $a^n+b^n\ne c^n$. We inherit this established result from the classical proof credited to Wiles and its Taylor--Wiles companion. Its full arithmetic proof is an external dependency, not a conclusion of the finite certificates above.
 
-The fixed-gap bracket offers another precise target: prove that its nonnegative endpoint is strictly positive for every surviving prime/gap tuple, using independent arithmetic restrictions. The bracket already decides each supplied aperture; a uniform proof that every such answer is NONE is the remaining quantifier. The established full Fermat theorem and this open obligation in an independent derivation are different statements.
+**Global closure in the retained relation.** For $R(a,b,c,n,D)$ with $D=a^n+b^n-c^n$, the inherited theorem gives $D\ne0$ at every admitted source. Thus the complete $D=0$ fiber is NONE, with no bound on any root or on $n>2$. The source adapter is the identity on the positive integer roots and common exponent, so it has an identity inverse and loses no structure. This is theorem inheritance on its stated domain, rather than extrapolation from the cap 4000.
+
+The gap map $(a,s,d,n)\mapsto(a,a+s,a+s+d,n)$ is a bijection onto positive integer triples $a<b<c$ at the retained exponent $n$, with inverse $s=b-a$, $d=c-b$. It preserves the residual exactly. Consequently every supplied $n>2,s,d>0$ has empty positive-integer $a$ fiber. In particular, Theorem III.2.3 returns adjacent endpoints with $D(L)<0\le D(U)$ and $U\ge1$. The established theorem applied to $(U,U+s,U+s+d)$ gives $D(U)\ne0$, hence $D(U)>0$. This proves the universal strict endpoint inequality.
+
+More generally, for an admitted invertible chart $F$ with transported target $D_F=D\circ F^{-1}$, the zero fiber on its retained source image is $D_F^{-1}(0)=F(D^{-1}(0))=\varnothing$. A sufficient Fold inherits the same conclusion when its proved receiver preserves the zero predicate on the reached image. No conclusion is licensed for arbitrary ambient points outside that image. The source roots and exponent remain part of the applicability conditions. At $n=2$, $(3,4,5)$ still gives a zero, so that case is correctly outside the inherited exclusion. $\square$
+
+The Fermat application is therefore complete through an explicitly credited established theorem and exact RPRM adapters. The independent argument printed above remains the bounded theorem and its stated all-height subresults; it is not relabeled a new independent proof of unrestricted FLT. The Python checks and the repository's 20 selected Lean declarations retain their documented scopes and do not formally verify the external arithmetic proof.
 
 ### III.3. Ideal mechanisms: law, state, and display
 
@@ -4163,15 +4169,11 @@ The two developed studies make the scientific obligation concrete. A dynamics re
 
 The useful next question is often more specific than whether the framework “applies.” A representation can be correct but expensive to construct; a current answer can be preserved while a later action is lost; a physical interpretation can share a diagram with a mathematical model without yet supplying a map between them. Each direction below names the missing result and an outcome that would defeat the proposed advance.
 
-#### Arithmetic: close the remaining quantifier
+#### Arithmetic: inherit the completed theorem and retain proof provenance
 
-The bounded-side Fermat proof and fixed-gap decision theorem answer different complete questions. The first excludes $a^n+b^n=c^n$ for positive integers $a,b,c$, integer $n>2$, and $\min(a,b)\le4000$. The second, for supplied integers $n\ge2$ and $s,d>0$, decides every positive integer $a$ satisfying $a^n+(a+s)^n=(a+s+d)^n$. Neither result alone supplies the further uniform empty-fiber conclusion for every surviving prime/gap tuple.
+The Fermat application is complete in Chapter III.2: the established theorem gives the global empty source fiber, and the exact gap adapter gives the strict positive bracket endpoint for every $n>2,s,d>0$. The bounded-side derivation and fixed-gap decision retain their independent proofs and their separate computational evidence. A new independent derivation of unrestricted FLT is not claimed or required for this completed application.
 
-One sufficient continuation of the independent unrestricted route would be an explicit descent. For every hypothetical primitive positive solution at an odd prime exponent $p\ge5$ remaining outside the bounded theorem, construct another positive integer solution at the same exponent and strictly smaller positive integer height. State the height, restore primitivity if needed, and prove all source and target conditions. Well-ordering would then give a contradiction. A smaller real coordinate or rescaled drawing does not satisfy the integer-return condition.
-
-A second sufficient route would establish a uniform exclusion at the exact fixed-gap bracket for every surviving prime/gap tuple. The bracket already decides each tuple. The missing work is a mathematical restriction forcing its answer to be NONE throughout the claimed parameter family. A prime-sieving frontier supplies certified prime labels; it does not supply that power-sum exclusion merely by covering more integers.
-
-The source-to-target discrepancy must remain visible in either route. If an adapter changes the equation, exponent, positive-integer domain or target readout, it needs an explicit return to the original question. A proposed descent fails if it leaves the admitted integers, changes the exponent without lawful transport, or cannot prove strict decrease. These are conditions on a proposed proof mechanism. Fermat's Last Theorem itself is established; what remains open here is this independent derivation.
+Future work may seek different proofs or formalize the written adapters. Such work changes the proof dependency being studied; it is not needed to settle the Fermat existence question again. An alternative descent would have to preserve positive integer roots and the equation while strictly reducing a well-ordered height. A new representation must likewise preserve its target and actual source image. These requirements explain what an alternative proof would owe without leaving the release's Fermat conclusion unresolved.
 
 #### Prime computation: charge for entering the useful representation
 
@@ -4542,7 +4544,7 @@ The entries distinguish sources for definitions and standard theory, original re
 
 **Wiles, Andrew (1995).** [“Modular elliptic curves and Fermat's Last Theorem”](https://annals.math.princeton.edu/1995/141-3/p01). *Annals of Mathematics*, second series, 141(3), pp. 443–551. DOI: [10.2307/2118559](https://doi.org/10.2307/2118559). This is the principal publication for the established modularity route to Fermat's Last Theorem, credited in connection with Chapter III.2.
 
-**Taylor, Richard, and Andrew Wiles (1995).** [“Ring-theoretic properties of certain Hecke algebras”](https://annals.math.princeton.edu/1995/141-3/p02). *Annals of Mathematics*, second series, 141(3), pp. 553–572. DOI: [10.2307/2118560](https://doi.org/10.2307/2118560). This companion contribution belongs with the Wiles attribution. The two publications identify the established proof tradition; Chapter III.2 separately states the scope and dependencies of its bounded-side derivation. Neither citation closes the manuscript's open independent unrestricted route.
+**Taylor, Richard, and Andrew Wiles (1995).** [“Ring-theoretic properties of certain Hecke algebras”](https://annals.math.princeton.edu/1995/141-3/p02). *Annals of Mathematics*, second series, 141(3), pp. 553–572. DOI: [10.2307/2118560](https://doi.org/10.2307/2118560). This companion contribution belongs with the Wiles attribution. Chapter III.2 explicitly inherits the established full Fermat theorem through this classical proof tradition and shows its exact source-residual and gap-coordinate adapters. The independent bounded derivation has separate dependencies; the global inherited application makes no new independent-proof or local formal-verification claim.
 
 ### Standard models and computational constructions
 

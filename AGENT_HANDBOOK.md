@@ -364,9 +364,12 @@ min(a,b) ≤ 4000  implies  a^n + b^n ≠ c^n.
 There is no additional independent cap on b,c or n. The proof derives finite
 remaining branches from that smaller-base condition and supplies their
 premises. This handbook states its scope; it does not reproduce the long
-descent and certificate proof. Fermat's Last Theorem is already established
-in conventional mathematics. The manuscript's independent unrestricted
-derivation remains OPEN.
+descent and certificate proof. The manuscript also closes the unrestricted
+zero-fiber by inheriting Wiles's established Fermat theorem, with its
+Taylor–Wiles companion, through the identity source map and faithful RPRM
+target transport. For all positive integer a,b,c and integer n>2,
+`a^n+b^n!=c^n`. This global application is complete; it is not a new
+independent proof of FLT.
 
 A different proved aperture fixes integer n≥2 and positive integer gaps
 s,d. Define `D(a)=a^n+(a+s)^n-(a+s+d)^n`. On positive real a, D(a)/a^n
@@ -380,18 +383,21 @@ Binary search for the first integer k with D(k)≥0 therefore gives ONE(k)
 if D(k)=0, and NONE otherwise. Strict monotonicity of the normalized sign
 excludes every other positive integer, not merely the searched segment.
 
-The existence of this per-tuple decision does not prove every tuple returns
-NONE. At n=2,s=1,d=1 it returns ONE(3), since 3²+4²=5². A fifth-power example
+The inherited Fermat theorem gives D(k)!=0 at every positive integer k
+when n>2. Thus the nonnegative endpoint has D(k)>0 and the complete fiber
+is NONE for every such gap pair. At n=2,s=1,d=1 the decision still returns
+ONE(3), since 3²+4²=5². A fifth-power example
 n=5,s=2,d=1 has D(11)=-5480 and D(12)=27281 and therefore returns NONE for
 every positive integer a. A reparameterization w=a-1 admits w=0. Excluding
 that endpoint changes the source problem.
 
-A proposed unrestricted descent must send every hypothetical remaining
-integer zero to another admitted integer zero at the same exponent with
-strictly smaller positive integer height, or justify any alternative
-transport. Shrinking a real coordinate is insufficient. A general uniform
-exclusion must cover all remaining tuples; the finite bracket alone does
-not supply that exclusion.
+Let X contain all tuples (a,b,c,n) with positive integer roots and integer
+n>2, and set `D(a,b,c,n)=a^n+b^n-c^n`. For an admitted invertible chart F,
+the transported target is `D_F=D∘F^-1` on F(X). Hence its zero-fiber is
+`F(D^-1({0}))`, which is empty by the inherited theorem. The exact source-image
+guard is essential: arbitrary real chart points are not integer-root sources.
+The finite bracket and implementation checks supply their stated decision
+guarantees; the global exclusion has the separately credited FLT dependency.
 
 Repeating decimals and physical infinities have separate meanings. The
 partial decimals 0.3,0.33,0.333,... converge to the finite value 1/3. Their
@@ -581,9 +587,10 @@ increases for positive a. The derived bound `M=2*n*(s+d)` has
 `D(L)<0<=D(U)`: the complete fiber is ONE(U) if D(U)=0 and NONE otherwise.
 Zero is only a sign sentinel. For `(n,s,d)=(2,1,1)` the result is ONE(3),
 giving `(3,4,5)`; for `(5,2,1)` it is NONE with endpoints 11,12 and residuals
--5480,27281. This decides every height for each supplied aperture. It does
-not prove the common NONE answer for all n>2 and all gap pairs. Input types
-and domains must be admitted; interruption or exhausted resources means
+-5480,27281. This decides every height for each supplied aperture. The common
+NONE answer for all n>2 and all gap pairs additionally follows from the
+established FLT dependency in section 10, not from these finite checks.
+Input types and domains must be admitted; interruption or exhausted resources means
 unfinished computation, never mathematical NONE. Exact integers have real
 time and memory costs despite the absence of an arbitrary height cutoff.
 

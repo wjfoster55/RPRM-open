@@ -170,11 +170,12 @@ one input. The proof handles every larger value of the other input and
 every admitted exponent through derived restrictions and complete remaining
 cases. It is not a table that stops every variable at 4000.
 
-Conventional mathematics already proves Fermat's Last Theorem without that
-smaller-input condition. The book credits that work. Its separate RPRM
-route to an unrestricted proof still has a precise missing step. The
-bounded result can stand on its supplied argument without pretending that
-remaining step has been found.
+The chapter also closes the unrestricted question by explicitly using
+Wiles's established Fermat theorem and its Taylor–Wiles companion. It
+shows that the RPRM source and its faithfully transported views preserve
+that same question, so the global no-solution conclusion carries through.
+This completes the application without claiming a new independent proof
+of Fermat's theorem. The bounded result retains its own supplied argument.
 
 ## Looking carefully at the science examples
 

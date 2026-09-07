@@ -7,7 +7,7 @@ title: RPRM-open
 authors:
   - family-names: Foster
     given-names: William J
-version: 1.0.0
+version: 1.0.1
 repository-code: https://github.com/wjfoster55/RPRM-open
 license:
   - 0BSD
@@ -19,8 +19,8 @@ preferred-citation:
     - family-names: Foster
       given-names: William J
   year: 2026
-  version: 1.0.0
-  doi: 10.5281/zenodo.22644688
-  url: https://doi.org/10.5281/zenodo.22644688
+  version: 1.0.1
+  doi: 10.5281/zenodo.22650379
+  url: https://doi.org/10.5281/zenodo.22650379
   publisher:
     name: Zenodo

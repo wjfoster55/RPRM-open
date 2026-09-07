@@ -15,7 +15,7 @@ external scholarly work is cited where used.
 | [Core](rprm/core.py) | Question refinement, lift–motion–landing, vacancy swaps | Declared maps and finite state carriers |
 | [Core](rprm/core.py) | Atomic state successor with validation and stale-parent rejection | In-process reference behavior; no distributed service or persistence promise |
 | [Futures](rprm/futures.py) | Shortlex-least separating word, canonical finite future quotient, least stable refinement retaining an old summary | Finite deterministic partial machines; failure is an explicit observation tag |
-| [Fixed-gap decision](rprm/fixed_gap.py) | Exact integer bracket, bisection, complete NONE/ONE fiber and reconstructed equation inputs | Each supplied n>=2 and positive s,d; no uniform FLT proof or fixed hardware/time guarantee |
+| [Fixed-gap decision](rprm/fixed_gap.py) | Exact integer bracket, bisection, complete NONE/ONE fiber and reconstructed equation inputs | Each supplied n>=2 and positive s,d; global n>2 exclusion is inherited separately; no fixed hardware/time guarantee |
 | [Proof donut](rprm/proof_donut.py) | Fiber/readout disposition, aperture transport, invariant induction, descent, paths/cycles and quotient certificates | Complete finite built-in carriers and tables; no circular soundness certificate |
 | [Unification checker](checks/unification.py) | Small first-order syntax translation and independent semantic evaluation | A bounded executable example of the written general translation theorem |
 
@@ -56,15 +56,17 @@ claimed by the 2D application.
 - [Relational layer](docs/relational-layer.md) states the physical proposal,
   the precise observation limit and complete counterexamples to inferring a
   unique hidden source or permanent invisibility from closure alone.
-- [Revised Fermat proof](docs/fermat.md) establishes the stated bounded-side
-  result for min(a,b)<=4000 and every n>2. Its [checker](checks/fermat.py)
-  replays finite certificates used by the written reduction. The unrestricted
-  RPRM proof remains open.
+- [Fermat application](docs/fermat.md) closes the global zero-fiber by
+  explicitly inheriting established FLT through source and target-preserving
+  RPRM adapters. Its independent bounded argument proves exclusion when
+  min(a,b)<=4000 for every n>2; its [checker](checks/fermat.py) replays the finite certificates
+  used by that reduction. This is not a new independent proof of FLT.
 - The book's [fixed-gap theorem](MANIFESTO.md#an-exact-decision-for-every-fixed-gap-aperture)
   proves a complete integer decision for each supplied exponent and positive
   gap pair. Its [executable decision](examples/fixed_gap.py) and
   [registered checker](checks/fixed_gap.py) now accompany the written proof;
-  these do not establish a uniform exclusion of every gap pair.
+  their finite checks retain their implementation scope. Established FLT
+  separately proves NONE for every n>2 and positive gap pair.
 - The [main book](MANIFESTO.md), [PDF edition](RPRM-Manifesto.pdf),
   [reader's guide](LAYPERSON_GUIDE.md) and [agent handbook](AGENT_HANDBOOK.md)
   offer connected entry points. The 155-page review PDF includes the current
@@ -83,7 +85,7 @@ Their mathematical, implementation and application boundaries remain distinct.
 
 | Pack | Delivered tool | Open application boundary |
 |---|---|---|
-| [Primes](experimental/primes/README.md) | Compact numeral queries, scale coordinates, small conventional Lucas–Lehmer reference, certified square-frontier expansion with an independent proof-donut audit | No record-prime certificate or established algorithmic advantage; finite expansion does not close the unrestricted Fermat derivation |
+| [Primes](experimental/primes/README.md) | Compact numeral queries, scale coordinates, small conventional Lucas–Lehmer reference, certified square-frontier expansion with an independent proof-donut audit | No record-prime certificate or established algorithmic advantage; finite prime expansion is separate from the inherited global Fermat theorem |
 | [Ray tracing](experimental/ray-tracing/README.md) | Exact rational toy geometry and retained relation updates | Bounded 2D scenes; no production renderer speedup |
 | [Music](experimental/music/README.md) | Exact symbolic pitch, assignment and cyclic event relations | No perceptual or acoustic validation |
 | [Protein folding](experimental/protein-folding/README.md) | Newly proposed exhaustive H/P lattice toy through eight residues | No molecular conformation prediction |

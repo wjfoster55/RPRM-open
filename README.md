@@ -14,7 +14,7 @@ afterword. The PDF has completed its layout review; exact source and build
 inputs are recorded in [DOCUMENT_BUILD.json](DOCUMENT_BUILD.json).
 
 **Paper and companion material:** [Read or download the paper](RPRM-Manifesto.pdf)
-or use its permanent identifier, [10.5281/zenodo.22644688](https://doi.org/10.5281/zenodo.22644688).
+or use its permanent identifier, [10.5281/zenodo.22650379](https://doi.org/10.5281/zenodo.22650379).
 The paper links back to
 [this repository](https://github.com/wjfoster55/RPRM-open) on its cover and in
 its opening pages. [CITATION.cff](CITATION.cff) supplies the paper's citation.
@@ -71,7 +71,7 @@ are part of the mathematical contract, not annotations added after solving.
 | [Unification](docs/unification.md) | Faithful relational presentation of supplied many-sorted structures; explicit preservation proofs and scope |
 | [Glossary](docs/glossary.md) | Definitions and links for the working vocabulary, including named constructions |
 | [Proof donut](docs/proof-donut.md) | Coverage, compatible constraints and finite proof certificates; executable mutual checks |
-| [Bounded Fermat proof](docs/fermat.md) | The min(a,b)≤4000 theorem, full argument and finite certificate replay; the independent unrestricted RPRM derivation remains open |
+| [Fermat application](docs/fermat.md) | Global zero-exclusion inherited from established FLT through faithful RPRM adapters, plus the independent min(a,b)≤4000 proof and finite certificate replay; no new independent FLT proof |
 | [Nine executable packs](experimental/README.md) | Primes, rays, symbolic music, lattice conformations, synthetic question selection, two-path calculations, Rule Lab, Lens Lab and Music Lens |
 | [Lens Lab](experimental/lens-lab/index.html) · [Model and replay](experimental/lens-lab/README.md) | An offline playground that retains five ordered phases through color, curve and geometry displays |
 | [Music Lens](experimental/music-lens/index.html) · [Model and replay](experimental/music-lens/README.md) | An offline six-note playground with piano-roll, pitch-class and rhythm views, plus optional synthesized sound |
