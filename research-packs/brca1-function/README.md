@@ -14,6 +14,11 @@ The authors' GEO record lists a processed supplementary spreadsheet and links ra
 
 The primary task, **F-sequence**, predicts the published cellular-function score $Y_F$ from sequence and annotation inputs. A secondary task, **R-sequence**, predicts the published RNA-expression score $Y_R$ from those inputs. Each has its own eligible rows, fitted model and evaluation. Missing RNA scores do not become zeros or inferred normal values.
 
+The source's Figure 4 excludes exon 18 from RNA measurements. The RNA task
+therefore cannot inherit the complete function-score population or its
+evaluation folds without its own eligibility check. [Findlay et al., primary
+study figures](https://pubmed.ncbi.nlm.nih.gov/30209399/)
+
 An optional **F-with-RNA** task would predict $Y_F$ after an RNA measurement is supplied. It is an assay-augmented task with additional experimental input, and must be compared with ordinary models receiving that same measurement. It is unavailable under the current pack. Before opening it, the measurement lineage must establish an independent predictor/target construction: overlapping raw count normalization or shared experimental noise must not create a shortcut. An independently measured RNA assay or adequately justified independent replicate construction would be required. RNA measurements and every feature derived from them are forbidden inputs to R-sequence.
 
 The preprocessing manifest must preserve a dependency graph for each derived column. Target scores, target-derived classes, post-selection annotations and descendants of target measurements are excluded from predictor features. Clinical labels are unnecessary for these tasks and are not imported.

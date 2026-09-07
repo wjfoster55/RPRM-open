@@ -15,6 +15,7 @@ checks. The browser application has its own local JavaScript sources.
 python -I -B verify.py
 python -I -B examples/quickstart.py
 python -I -B examples/proof_donut.py
+python -I -B examples/fixed_gap.py --n 2 --s 1 --d 1
 ```
 
 The root runner starts every requested checker afresh, requires a successful
@@ -80,6 +81,14 @@ unchanged observations, safe-looking plots and agreement between two pieces
 of code are not substitutes for the stated correctness obligations.
 
 ## Hostile cases matter
+
+The [fixed-gap checker](../checks/fixed_gap.py) independently enumerates
+every integer in the derived brackets of 252 supplied apertures, compares
+the normalized residual exactly, checks the bisection receipts and rejects
+invalid types and domains. It retains the nonempty n=2 case and empty
+fifth-power example. These finite implementation checks accompany the
+written all-height decision proof; they do not establish uniform emptiness
+over every n>2 and every gap pair.
 
 The checks exercise loss of middle-witness identity, independent marginals
 misread as a joint relation, quantification outside an encoded image, a

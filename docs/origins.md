@@ -5,6 +5,14 @@ its starting state, the rules that can act on it, and the observations that
 matter. This makes assumptions about a beginning available for inspection.
 A physical account of the universe's beginning asks for additional evidence.
 
+The [relational-layer proposal](relational-layer.md) supplies the broader
+motivation: observed behavior may be a sufficient description of an
+underlying relational process whose full state is not recoverable through
+that description. Its complete examples distinguish inferred properties,
+unresolved source alternatives and new observations that break an old
+equivalence. That mathematical possibility does not select a unique
+physical source or prove permanent inaccessibility.
+
 The book develops specific models in
 [III.8, return depth and black holes](../MANIFESTO.md#iii8-return-depth-exterior-observations-and-black-holes),
 [III.9, two-path interference](../MANIFESTO.md#iii9-two-path-interference-and-retained-coherence),

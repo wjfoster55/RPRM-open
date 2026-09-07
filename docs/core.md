@@ -31,6 +31,14 @@ when its map, admission and correctness are supplied. Expressibility alone
 does not solve the question or prove a cheaper algorithm. The framework's
 unifying purpose and each proved unification bridge are distinct assertions.
 
+The separate [relational-layer proposal](relational-layer.md) gives
+“underlying” a physical research meaning: observable behavior may arise from
+relations and continuations in a source model. Exact closure of a description
+can leave that source nonidentifiable through the admitted observations.
+It does not establish the existence of a physical substrate or make its
+distinctions inaccessible to every possible intervention. Part I, section 7,
+states this proposal before the gravity and black-hole applications.
+
 The term **theory** here means the definitions, admitted structures and laws
 in this version. It does not designate an additional physical law. “Unifies
 all human mathematics” would require a specified class of source mathematics,

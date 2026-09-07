@@ -71,7 +71,7 @@ def run_requested(args, parser, output):
     before = source_snapshot()
     receipt["source_hashes"] = before
     jobs = [(name, [sys.executable, "-I", "-B", str(ROOT / "checks" / (name + ".py"))])
-            for name in ("core", "unification", "futures", "proof_donut", "fermat", "prime_frontier")]
+            for name in ("core", "unification", "futures", "proof_donut", "fermat", "fixed_gap", "prime_frontier")]
     jobs += [("experimental_" + name.replace("-", "_"),
               [sys.executable, "-I", "-B", str(ROOT / "experimental" / name / "check.py")])
              for name in ("primes", "ray-tracing", "music", "protein-folding", "context-communication")]

@@ -18,6 +18,17 @@ glossary retains the detailed core/operator entries and their existing anchors.
 Symbols are local to each supplied model: their carrier, units and equations
 fix their meaning, even when another chapter reuses the same letter.
 
+### RPRM and the relational layer
+
+**RPRM** expands to **Relational Pressure Retention Model**. Its name comes
+from the motivating physics proposal. The **relational layer** is a proposed
+underlying organization of states, relations and continuations whose
+observable behavior would describe physical phenomena. The
+[dedicated account](relational-layer.md) distinguishes the mathematical
+observation limit from a claim of physical existence or permanent
+inaccessibility. Pressure and retention acquire precise meanings only in a
+specified model with its variables, units and laws.
+
 <a id="supp-aba-failure"></a>
 
 ### ABA failure

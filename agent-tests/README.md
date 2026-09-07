@@ -1,6 +1,6 @@
 # Handbook comprehension assessments
 
-This packet retains five bounded handbook assessments: questions, frozen criteria, scored mathematical answers, exact handbook versions and evidence limits.
+This packet retains six bounded handbook assessments: questions, frozen criteria, scored mathematical answers, exact handbook versions and evidence limits.
 
 | Assessment | Supplied handbook | Result | Scope |
 |---|---|---|---|
@@ -9,10 +9,11 @@ This packet retains five bounded handbook assessments: questions, frozen criteri
 | [C: finite-algorithm cases](questions-c.md) | [Version 3](handbooks/v3.md) | 24/24; declared criterion met | 12 new questions |
 | [D: expanded handbook](questions-d.md) | [Version 4](handbooks/v4.md) | 79/80 | 20 questions; one requested explanation omitted |
 | [E: targeted clarity follow-up](questions-e.md) | [Version 5](handbooks/v5.md) | 16/16 | Four new questions targeting three known clarity changes |
+| [F: relational-layer transfer](questions-f.md) | [Version 6](handbooks/v6.md) | 24/24 | Six questions; frozen-key arithmetic erratum disclosed |
 
-The current [agent handbook](../AGENT_HANDBOOK.md) is byte-identical to version 5. E received that complete file, but tested only its four stated questions. D's broader result remains attached to version 4. The two scores do not measure a controlled improvement.
+The current [agent handbook](../AGENT_HANDBOOK.md) is byte-identical to [version 6](handbooks/v6.md). [Assessment F](questions-f.md) scored 24/24 on six targeted transfer questions, using the [frozen rubric](rubric-f.md) with a disclosed [arithmetic erratum](rubric-f-erratum.md). E remains attached to version 5 and D to version 4. Different questions and versions do not measure a controlled improvement.
 
-See [results and limits](results.md), [machine-readable bindings and item scores](results.json), and [rubrics](rubrics.md). Mathematical responses are retained for [A](responses/a.md), [B](responses/b.md), [C](responses/c.md), [D](responses/d.md) and [E](responses/e.md). The supplied handbook and question bytes remain unchanged. Response execution declarations were removed as described in each result; every mathematical answer was retained.
+See [results and limits](results.md), [machine-readable bindings and item scores](results.json), and [rubrics](rubrics.md). Mathematical responses are retained for [A](responses/a.md), [B](responses/b.md), [C](responses/c.md), [D](responses/d.md) [E](responses/e.md) and [F](responses/f.md). The supplied handbook and question bytes remain unchanged. Response execution declarations were removed as described in each result; every mathematical answer was retained.
 
 ## Repeat the assessment
 

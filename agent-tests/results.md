@@ -1,6 +1,6 @@
 # Recorded results and their limits
 
-A, B and C met their respective predeclared acceptance criteria. D scored 79/80; E scored 16/16 on a targeted follow-up. D and E have no separately recorded acceptance threshold, so none is supplied retroactively.
+A, B and C met their respective predeclared acceptance criteria. D scored 79/80; E scored 16/16 on a targeted follow-up. F scored 24/24 on six targeted transfer questions and meets its declared 22/24 plus critical-question criterion, with a disclosed key correction. D and E have no separately recorded acceptance threshold, so none is supplied retroactively.
 
 | Run | Exact handbook | Questions | Score | Grading outcome |
 |---|---|---|---|---|
@@ -9,10 +9,19 @@ A, B and C met their respective predeclared acceptance criteria. D scored 79/80;
 | C | [Version 3](handbooks/v3.md) | [12 finite-algorithm questions](questions-c.md) | 24/24 | Meets the declared 22/24 criterion; no critical error |
 | D | [Version 4](handbooks/v4.md) | [20 expanded questions](questions-d.md) | 79/80 | One explanation criterion missing in question 5 |
 | E | [Version 5](handbooks/v5.md) | [Four targeted questions](questions-e.md) | 16/16 | All sixteen frozen criteria satisfied |
+| F | [Version 6](handbooks/v6.md) | [Six transfer questions](questions-f.md) | 24/24 | Declared criterion met; key erratum retained |
 
 The [JSON record](results.json) retains every item score, original input hash, public response hash and grading scope. All A–C scores and deductions are preserved. Their second mathematical reviewer agreed with the release editor, with access to the initial totals as documented there; no blinded grading is claimed. D and E were graded by the release editor against their own frozen rubrics. No second-grader result is recorded for those two runs.
 
 ## The retained deduction and follow-up
+
+F received version 6 and six new transfer questions. Two graders separately
+recorded 24/24 before comparing their grades. Both identified the same
+arithmetic error in the frozen rubric: for n=2,s=2,d=2, the named bound is
+16, not 32. The respondent correctly derived 16. The original
+[rubric](rubric-f.md) is unchanged, with the [post-response erratum](rubric-f-erratum.md)
+and correct credit explicitly recorded. F supplies targeted comprehension
+evidence; it is not a controlled improvement estimate or a new science result.
 
 D question 5 gives the correct shortest word, both outputs and the n−1 bound. It does not derive the requested block-count reason: adding the failure state also adds an initially separate observation block. Citing the bound and noting that a larger bound is looser does not supply that derivation. It earned 3/4; the other nineteen answers earned 4/4. The original answer and this deduction remain inspectable in [response D](responses/d.md) and [rubric D](rubric-d.md).
 
@@ -20,11 +29,11 @@ Version 5 adds that counting explanation and clarifies two further points: accep
 
 ## Exact versions and portable exports
 
-All five versioned handbooks and question files retain their assessed bytes. D and E's public rubrics also retain the original frozen bytes. A–C's public rubric prose expands the historical frozen notes without substituting its hash for theirs. Each original hash is recorded alongside the actual published file binding.
+All six versioned handbooks and question files retain their assessed bytes. D and E's public rubrics also retain the original frozen bytes. A–C's public rubric prose expands the historical frozen notes without substituting its hash for theirs. Each original hash is recorded alongside the actual published file binding.
 
 The public D response adds only a title and removes its final execution declaration. The E response retains its original title and removes its final input/tool declaration. Every preceding mathematical answer byte is unchanged. Public response hashes therefore differ from the original response hashes; both are recorded. Source paths, internal task identities and private scoring files are not part of this packet.
 
-Version 2 followed four clarifications suggested in A. Version 3 made complete finite state/action tables and exact decidable comparisons explicit. Version 4 expanded the mathematical handbook; version 5 makes the three clarifications above. The [current handbook](../AGENT_HANDBOOK.md) is exactly the version-5 file supplied in E. C's former match to the then-current version 3 is historical.
+Version 2 followed four clarifications suggested in A. Version 3 made complete finite state/action tables and exact decidable comparisons explicit. Version 4 expanded the mathematical handbook; version 5 makes the three clarifications above. Version 6 adds the relational-layer proposal, full-name origin, domain-matching requirement, scientific comparison scope and executable fixed-gap decision. The [current handbook](../AGENT_HANDBOOK.md) is exactly the version-6 file supplied in F. E's match to version 5 and C's former match to version 3 remain historical.
 
 ## Context and evidence limits
 

@@ -1,5 +1,11 @@
 # A reader's guide to RPRM
 
+RPRM means **Relational Pressure Retention Model**. The name comes from the
+physics idea that motivated the work: observable behavior may arise from
+underlying relations, with pressure and retention involved in their change
+and persistence. The name is retained; the science sections explain the
+proposal and what remains to establish it.
+
 RPRM asks a practical question: **what do we need to keep in order to answer
 the question we actually care about?** It uses mathematics to make that
 question precise, especially when we change how a problem is represented.
@@ -171,6 +177,28 @@ bounded result can stand on its supplied argument without pretending that
 remaining step has been found.
 
 ## Looking carefully at the science examples
+
+The idea motivating these chapters is that what we observe may be the
+visible behavior of an underlying organization of relations. That is the
+**relational-layer proposal**. The word “underlying” means that this
+organization would explain the behavior; it does not mean an extra place
+underneath space.
+
+The mathematics explains how a description can be sufficient for every
+question it is meant to answer while leaving details of its source hidden.
+Suppose a display alternates between zero and one. One model has only that
+display state. Another has the same display plus an unseen bit that also
+flips. Watching the display forever cannot choose between those two models
+under their stated rules. A new interaction that copies the unseen bit to
+the display could distinguish them. The original observations therefore
+establish neither that the extra bit exists nor that it could never be
+observed.
+
+That is the role of abduction here: propose possible relational sources,
+work out their consequences and ask what the evidence actually distinguishes.
+Several explanations may remain, even when they agree on something useful.
+The [relational-layer guide](docs/relational-layer.md) develops this example
+and connects it to gravity and black holes.
 
 The physical chapters begin with stated scientific models and ask which
 representations keep their predictions. That produces mathematical results

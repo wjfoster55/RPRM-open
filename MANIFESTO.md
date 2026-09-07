@@ -2,9 +2,22 @@
 
 *A relational framework for mathematical unification*
 
+**RPRM means Relational Pressure Retention Model.** The name comes from the
+motivating physics idea: observable behavior may arise from an underlying
+relational organization, with pressure and retention playing roles in how
+its states change and persist. We retain that name for the framework as a
+whole. Each physical model must give those terms precise variables, units
+and laws; the name itself does not establish them. Part I, section 7,
+introduces the relational-layer proposal, developed further in the gravity
+and black-hole chapters.
+
 **Version 1 — review edition.**
 
+**Text revision in progress.** This Markdown includes changes made after the 156-page reading PDF. That PDF remains the earlier review snapshot; it will be rebuilt after the text and author afterword are settled.
+
 RPRM organizes mathematical objects, representations and operations around the questions they must preserve. This book develops that proposal through explicit definitions, proofs, complete examples and failed inferences. Its unifying claim concerns a common relational presentation of specified mathematical structures. Physical and biological applications retain their stated models and open experimental obligations.
+
+The physical proposal behind this work is that observable objects, forces and geometry may be manifestations of an underlying relational organization. The mathematical core gives a language for specifying that organization and proving what its observable descriptions retain. Establishing which such organization describes nature requires a physical model and evidence. The distinction between those two tasks is part of the proposal itself.
 
 Part I states the framework and its central laws. Part II develops the mathematical core. Part III applies it to arithmetic and declared mathematical or scientific models. Part IV develops research bridges and proposed tests. The appendices supply a special-term reference, the complete Fermat certificate and a guide to evidence and reproduction. The [companion repository](https://github.com/wjfoster55/RPRM-open) contains the executable examples, Mechanical Motion Atlas, agent handbook, layperson guide and experimental packs.
 
@@ -219,7 +232,27 @@ The same exact-image construction transports complete aperture fibers bijectivel
 
 This is a precise unification result for the supplied structural and logical scope. Its carriers can be infinite; the terminating table algorithms earlier require finite effective carriers. The presentation preserves and reflects source formula truth. Source proof obligations remain available for the later arguments; translating formal derivations would additionally require a specified proof system and translated assumptions. Broader source classes and stronger receivers enter through further specified bridges.
 
-### 7. From the core to the complete argument
+### 7. The relational layer: proposal and limits of observation
+
+RPRM proposes that physical descriptions may arise from underlying relations and their lawful continuations. On this reading, an observed object is an identifiable pattern of relations at a given observational scale; a force or geometry describes how those patterns can change together. **Relational layer** names this proposed explanatory structure. It does not specify a location beneath space, an additional spatial dimension, a material substance or a particular network unless a model supplies those choices.
+
+The core results make one part of this idea precise. A representation can be complete for its observations and operations while leaving its source incompletely determined. When Theorem 2 applies, equal summaries give the same retained responses after every finite sequence of admitted actions. Distinct source states may therefore remain indistinguishable throughout that entire observational contract. Closure of the description means that its retained behavior can be continued without reopening the source; it does not mean that the source has vanished or that every question about it has been answered.
+
+This is the exact sense in which a relational source can be accessible through its consequences while not being uniquely recoverable from them. Given a family of candidate sources and a record of observations, abduction proposes and compares the compatible explanations. A property shared by every member of the complete nonempty fiber is then conditionally determined, even when the source itself remains MANY. A preferred explanation, a uniquely forced property and a uniquely identified source are different outcomes.
+
+The limit is relative to the admitted observations and interventions. Adding an observation can split an old fiber; adding an action can expose a distinction through its future effects. A claim that no possible physical experiment could ever distinguish two sources would need a justified account of all such experiments. The closure theorems do not supply that account or prove the existence of an additional physical layer. If several candidate mechanisms agree on every admitted prediction, those predictions alone do not select one mechanism as the real source.
+
+A small positive example shows what inference can retain. Admit real coordinates $x,y,z$ and the difference observations $y-x=2$ and $z-y=3$. Their complete joint fiber is
+
+$$
+\{(a,a+2,a+5):a\in\mathbb R\}.
+$$
+
+The unmeasured difference $z-x=5$ is forced for every member. The closed difference cycle $(y-x)+(z-y)+(x-z)=0$ checks compatibility, while no absolute coordinate is determined: adding one common offset changes none of the observations. Thus a relation can be known exactly without choosing a unique underlying assignment. The specified difference law earns this inference. Applying the example to physical measurements would still require a model of those measurements and their uncertainty.
+
+The physics chapters use this proposal as a research direction. Gravity asks which relations suffice to describe coupled motion and whether a separately specified relational evolution can derive that motion. Black holes ask how internal continuation, accessible observations and causal escape can differ. In both cases, the task is to specify the underlying candidate, derive its observable behavior and identify what could distinguish it from competing descriptions. A successful reformulation may already organize knowledge usefully; a new physical explanation must earn its additional claim.
+
+### 8. From the core to the complete argument
 
 Part II develops the central laws through complete fibers, faithful translations, future quotients, stable repair and proof-donut certificates. Part III begins with certified prime frontiers and two arithmetic results: an exact decision for each supplied exponent-and-gap aperture, and the bounded-side theorem
 
@@ -1261,7 +1294,7 @@ Exactly one changed bit makes the syndrome one, detecting an error. It does not 
 
 **Figure II.6.2.** Under the even-parity law, the labeled fourth-position erasure `101?` has the unique completion `1010`. The right panel instead shows received `1011`. If exactly one bit changed, its four possible lawful originals are `0011`, `1111`, `1001`, and `1010`. Odd parity detects the error but does not locate it.
 
-#### Four teachers and a sharp two-query bound
+#### One teacher, four possible rules
 
 Let a teacher implement one fixed function $h:\{0,1\}\to\{0,1\}$. The complete hypothesis carrier has four members:
 
@@ -1494,6 +1527,8 @@ $$
 At termination $U=L+1$. If $D(U)=0$, return the unique source $(U,U+s,U+s+d,n)$. Otherwise both signs are strict. Every positive integer is at most $L$ or at least $U$; strict increase of $F$ excludes both tails. If $L=0$, the lower positive-integer tail is simply empty. $\square$
 
 The bound is derived afresh from the supplied parameters. The theorem proves complete integer existence and reconstruction for each aperture, without a universal root cap. The positive-real and positive-integer fibers are different: the former is always ONE, while integer landing can be NONE. For $n=2,s=d=1$, the actual square equality $(3,4,5)$ returns ONE.
+
+The companion repository implements this decision in [the fixed-gap tool](rprm/fixed_gap.py), with a [runnable example](examples/fixed_gap.py) and [independent finite checks](checks/fixed_gap.py). It returns the complete fiber and its signed bracket for supplied parameters. Its implementation evidence supports this algorithm at the tested cases; the written proof above supplies the all-height coverage. Resource exhaustion or interruption remains unfinished computation.
 
 **Corollary III.2.4 (one unbounded fifth-power family).** For every integer $w\geq0$,
 $$
@@ -2997,6 +3032,10 @@ An outward observation can remain unchanged while an internal process continues.
 
 The return and graph results are written mathematical constructions using the relation and preservation methods of Part II. The spacetime calculation uses an established model from general relativity. A physical derivation of that model from the return construction remains **OPEN**. No new gravitational law or empirical black-hole result is asserted.
 
+The relational-layer proposal gives these calculations their shared question: can a source keep undergoing lawful changes while an exterior description closes on a smaller set of observable relations? The model below answers that question exactly for its own address receiver. Its internal depth changes while the address remains fixed. This illustrates observational sufficiency with an unresolved source, the distinction developed in Part I, section 7. It supplies a candidate way to organize the black-hole question; identifying that candidate with physical spacetime requires the later bridge.
+
+A causal horizon and an information-losing representation must also be distinguished. In the supplied Schwarzschild model, the horizon concerns which future-directed causal paths can reach the exterior; it is not merely a choice to stop recording a coordinate. The ingoing chart is regular at the horizon. Whether a feature is accessible therefore depends on the observer and permitted paths, while loss through a chosen representation depends on the readout. [Tong, §§6.1.2–6.1.3](https://davidtong.org/teaching/general-relativity/grhtml/S6)
+
 #### An open return with alternating sides
 
 Consider a C-shaped return whose ends do not rejoin at the same lifted source state. Its unmatched return is handed to a deeper level on the complementary side; that side then hands the return onward. The smallest algebraic model needed here retains the alternating side, depth, projected address, and live return receipt. It does not yet supply a geometric embedding of the C-shaped path.
@@ -3302,6 +3341,8 @@ In particular, the radial calculation is not a general event-horizon theorem for
 #### The physical bridge that remains OPEN
 
 The return recurrence has exact forward behavior; the graph construction has a complete finite outward receiver; the supplied spacetime has a directed coordinate equivalence and a regular ingoing metric. Combining them into a physical explanation requires additional structure at identifiable places.
+
+For the relational-layer hypothesis, three questions must be answered separately. First, does a proposed source law reproduce the chosen exterior observations? Second, which source properties are common to all explanations compatible with those observations? Third, does any available measurement distinguish the proposed law from alternatives? A complete answer to the first question can leave the other two open. The hidden depth in the return construction is an explicit model coordinate, not a quantity inferred to exist in a physical black hole merely because the exterior address is unchanged.
 
 A prospective collective model must first give a configuration carrier $X_{\mathrm{loc}}$, its admitted interactions, and the full successor sets or updates. The C-gap side alternation, retained depth, and live return obligation must have explicit roles in that law. Neighbor recruitment must follow from it. An exterior-free region obtained by removing escape transitions by instruction would not demonstrate the proposed emergence.
 
@@ -3722,6 +3763,8 @@ A new physical prediction would instead require an explicit different preparatio
 
 **Supplied physical models, exact changes of description, and open mechanism questions.** The calculations below organize conventional dynamics through explicit states, receivers and preservation conditions. The radial quotient and magnetic trajectories are derived in full. The final section formulates a carry-based cosmological proposal and the additional structure needed to test it.
 
+The relational-layer proposal is that the coupled behavior represented by a force law could arise from a more basic organization of states and their allowed changes. Its first mathematical question is modest and exact: which relations already suffice to continue the motion at the chosen observational scale? Its further physical question is whether an independently specified relational law explains why those equations hold. The radial calculation answers the first question within Newtonian mechanics and gives the second a concrete target.
+
 #### Gravity: the relative state and a useful exact receiver
 
 For an isolated Newtonian pair of positive point masses, let $\mathbf r\ne0$ be their relative position, $\mathbf v=\dot{\mathbf r}$, and $\mu=G(m_1+m_2)>0$. The relative equation is
@@ -3777,6 +3820,23 @@ $$
 is constant: its derivative is $u(-\mu/r^2)+\mu u/r^2=0$. If $u>0$ initially and $\mathcal E>0$, then $u^2=2\mathcal E+2\mu/r$ cannot reach zero. Separation keeps increasing while the acceleration remains attractive. These are exact controls against identifying attraction with inevitable approach.
 
 The new research question is whether a recovered RPRM local interaction rule yields this equation, a controlled approximation to it, or a different prediction. It must specify its physical state, time, units, interaction composition and conserved quantities. Encoding the existing equation proves a reformulation; deriving that equation from separately motivated premises would be a further result. A first comparison should include radial infall, circular motion and positive-energy escape using the same frozen rule and parameters.
+
+Write a prospective relational state as $s\in S$, its evolution as $\Psi_t$, and its measured radial description as $C(s)=(r,u,j)$. If $\Phi_t$ denotes the supplied radial flow, the proposed exact bridge must satisfy
+
+$$
+C(\Psi_t(s))=\Phi_t(C(s))
+$$
+
+for every admitted state and time where evolution is defined. An exact operational bridge must also match domains throughout its stated comparison regime:
+
+$$
+s\in\operatorname{dom}\Psi_t
+\iff C(s)\in\operatorname{dom}\Phi_t.
+$$
+
+The intended initial radial states must be covered by $C$. Equality only while both trajectories happen to exist would not preserve their failure or stopping behavior. An approximate bridge must state its domain guarantees, error bound and regime. The clock and gravitational parameter must have physical interpretations; reproducing a picture of approach does not determine them. If the source law is defined by copying the radial flow, the equation establishes an encoding. A derivation from independently motivated premises must identify those premises and show the equation follows.
+
+When this bridge holds, states with the same $C(s)$ have identical radial futures under the admitted evolution. The radial measurements can then determine relational properties constant on that fiber while leaving other source details unresolved. This is a precise role for abduction: compare candidate source laws through what they force and what would separate them. Orientation is already an instructive control. It is forgotten by the radial receiver but may be measured by a finer spatial receiver; its absence from the quotient does not make it universally unobservable. Nor does radial equivalence establish that an additional microscopic layer exists.
 
 #### Magnetic motion: orientation matters
 
@@ -4005,36 +4065,91 @@ $$
 $$
 Each microscopic next-block row is at total variation $1/8$ from its assigned candidate row, so $\varepsilon=1/8$ is exact on these four states. At step two the theorem gives a marginal bound $1/4$. At eight steps its bound is already one and gives no useful discrimination. A successful finite-horizon approximation must earn the particular horizon it advertises.
 
-#### Four scientific questions with distinct endpoints
+#### Two developed scientific proposals
 
-The following proposals use these tests as constraints on possible methods. They are new research formulations here; no historical biological discovery is attributed to them.
+The two experiments below ask what a representation must retain to answer a declared scientific question. In the first, the answer is a probability distribution over future states. In the second, it is a cellular assay score. Their common structure is explicit: supply the source model or observations, name the receiver, exhibit a distinction lost by a proposed grouping, and test whether retaining that distinction earns a useful improvement.
 
-| Question | Supplied source and endpoint | Proposed representation test | Result needed for an added-value claim |
-|---|---|---|---|
-| Amino-acid substitutions and stability | Quality-filtered small-domain mutation records; the source assay's folding free-energy change, with conditions, uncertainty and sign retained | Compare a context-poor substitution description with declared sequence/structure context; audit merged answers and fit the same decoder family under matched splits | Better held-out assay prediction or proved retention at lower total cost, reported as separate hypotheses |
-| Folding dynamics | A fixed simulation model and lag, with complete trajectory lineage and a defined state assignment | Test within-block transition-distribution agreement, compare an explicit reduced chain and retain the state needed by chosen observables | Held-out transition and kinetic fidelity within a frozen tolerance and horizon, with full construction/sampling cost |
-| Cancer-relevant cellular function | One defined BRCA1 variant assay, with nucleotide, transcript, protein and functional readouts distinguished | Compare protein-only context with admissible RNA/variant context without using the prediction target as an input | A replicated improvement for the declared assay and variant class under leakage controls |
-| Immune mechanism discrimination | Published NFKB1 and CTLA4 mechanisms, their measured pathway observations and unresolved alternatives | Identify which observations distinguish mechanisms collapsed by a broad antibody-deficiency label | An auditable mechanism evidence map first; quantitative discrimination only if suitable independent data become available |
+**Both proposals are unexecuted.** The preceding finite calculations are mathematical controls. The following designs have produced no new trajectory analysis, fitted predictor, biological validation or measured performance gain.
 
-The stability proposal has a concrete starting source in the cDNA-display proteolysis study of Tsuboyama and colleagues. The source's filtering and measurement assumptions determine admission; a lattice contact score cannot be relabeled as its experimental free energy. Structure, thermodynamic stability and cellular abundance remain distinct endpoints. [Tsuboyama et al. (2023)](https://www.nature.com/articles/s41586-023-06328-6).
+#### Folding dynamics: when can a smaller state preserve the future?
 
-The dynamics proposal can begin with a published small-protein model such as the NTL9 study by Voelz and colleagues, subject to acquiring the actual reusable trajectory inputs. Matching a reduced process to that simulation establishes fidelity to its supplied model. Matching an independently measured physical observable is a further comparison. [Voelz et al. (2010)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2835335/).
+A description of a conformation can be adequate for one current observable and inadequate for its subsequent behavior. The question is therefore not simply whether two structures look similar. At a stated sampling lag, do states given the same reduced description have the same probabilities for the future events we intend to predict?
 
-For the cancer-relevant proposal, the BRCA1 saturation-editing study supplies a defined cellular-function setting and RNA information. Its nucleotide-level variants must retain transcript context where the question requires it. An assay prediction is not a tumor-growth, treatment or individual-risk outcome. [Findlay et al. (2018)](https://www.nature.com/articles/s41586-018-0461-z).
+The NTL9 study by Voelz and colleagues provides a concrete source lead: it combines molecular simulation with a Markov state model. The proposed experiment would begin by obtaining appropriately reusable trajectory inputs and reproducing the relevant source analysis. Agreement with those simulations would establish fidelity to that supplied model; a physical claim would require a further comparison with an independently measured observable. [Voelz et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20070076/).
 
-The immune proposal begins with two separately established mechanisms. The NFKB1 study links altered transcript/protein processing with p50 insufficiency in its studied families. The CTLA4 study concerns a different regulatory pathway. A shared phenotype does not make those molecular routes identical, and a mechanism list must retain unresolved alternatives and missing assays. The first proposed output is a reconstruction of published evidence, without person-level records. [Fliegauf et al. (2015)](https://pubmed.ncbi.nlm.nih.gov/26279205/), [Kuehn et al. (2014)](https://pubmed.ncbi.nlm.nih.gov/25213377/).
+**The supplied problem.** Fix one simulation setting, its state assignment, one lag and a finite microscopic state set $S$. Retain the model settings, trajectory ancestry, saved times and state-assignment rule. Select an initial partition $\mathcal P_0$ that preserves the current readouts required by the question. For a target-reaching question, for example, membership in the target must be constant within each initial block. There is no freedom to improve a score by merging the target with its complement and thereby changing the question.
 
-#### What an experiment must freeze
+The proposed reduced state retains exactly the distinctions needed for those readouts and their declared continuation. For a complete supplied transition matrix, compare each state's probabilities of entering every current block. Split a block whenever two of its states disagree, retain the disagreeing rows as a witness, and repeat. Since the finite procedure only splits blocks, it eventually stops. The supporting dynamics specification proves that this gives the coarsest stable refinement of the starting partition under exact comparisons. At the final partition, Proposition IV.1.2 supplies the reduced transition law. This is conventional strong lumpability and partition refinement; an RPRM name does not make it a new molecular algorithm.
 
-A reproducible comparison fixes its source version, admitted rows, exclusions, feature map, decoder or transition estimator, baseline, evaluation split, primary endpoint, tolerance and computation accounting before inspecting final outcomes. Those objects determine the tested proposition. Their concrete pack specifications accompany the proposed studies; missing dataset access or an unfilled parameter remains visible before execution.
+**The existing example makes the experiment's failure mode concrete.** For the complete four-state matrices already displayed in this chapter, the probabilities of entering $A=\{a,b\}$ and $B=\{c,d\}$ are:
 
-For mutation effects, separate homologous domains before feature selection and model fitting, and keep repeated measurements and related variants in their declared groups. Report domain-level performance and uncertainty alongside pooled scores. A larger set of features can improve a fitted baseline through conventional methods; calling that improvement relational would not establish a distinct contribution. The comparison must identify the actual added feature, retained dependency or reduction, and include its ordinary counterpart.
+| Starting state | Next-block probabilities under $P$: $A,B$ | Under $\widetilde P$: $A,B$ |
+|---|---|---|
+| $a$ | $3/4,\ 1/4$ | $3/4,\ 1/4$ |
+| $b$ | $3/4,\ 1/4$ | $1,\ 0$ |
+| $c$ | $1/4,\ 3/4$ | $1/4,\ 3/4$ |
+| $d$ | $1/4,\ 3/4$ | $0,\ 1$ |
 
-For dynamics, hold out entire trajectories or independently justified blocks rather than treating adjacent frames as independent samples. State the lag, sampling limitations and any unobserved states. Test the chosen reduced model against an unreduced analysis supplied with the same trajectories, and charge for forming the representation as well as propagating it. Exact equality on a finite fitted matrix and evidence about a physical process are separately reported results.
+For $P$, both states in either block agree, so the two-state reduction is exact. Starting at $a$, it gives probability $3/8$ of being in $B$ after two steps, just as the microscopic calculation does. For $\widetilde P$, $a$ and $b$ already disagree about the next step despite sharing description $A$. Both initial blocks must split, and this repair returns four singleton states: it correctly declines that compression. Both original matrices have stationary block occupancies $(1/2,1/2)$, so matching those occupancies would miss the failure. These letters and probabilities are synthetic; none is assigned a molecular identity.
 
-For cellular or immune endpoints, identify the assay that supplies an input and the assay that supplies the target. A target score or a downstream copy of it cannot be smuggled into the feature map. Where only aggregate publications are available, the immediate product is a cited mechanism map; it cannot support donor-level cross-validation. Abstention and multiple compatible mechanisms are lawful outputs when observations leave a nontrivial fiber.
+**The empirical comparison.** Fit the state assignment and transition estimator on development trajectories, or use a separately supplied assignment whose provenance is retained. Keep whole independent trajectory groups out of fitting and parameter selection; restarted segments sharing a parent run remain together. Count only within-trajectory lagged transitions. A state with no observed outgoing transitions has an unknown row, not an automatically justified self-loop. Unobserved states, short trajectories and inadequate sampling remain explicit limitations.
 
-These proposals give the broader ambition a concrete first step. A receiver collision can refute a specific sufficiency claim; a preserved transition law can certify a specified reduction; an independent measurement can test a proposed biological benefit. The completed mathematical core supplies those questions and their exact criteria. The scientific result must come from the particular model, experiment and outcome that answer them.
+Compare three methods given the same trajectories, lag and source features: the unreduced finite model, ordinary Markov-state coarse graining, and the proposed refinement or declared approximate reduction. Freeze a common outcome space, such as the original observable blocks of $\mathcal P_0$, before evaluation. Every method must predict probabilities for those same events on the same held-out transition pairs. A refined model can sum its probabilities back to the original blocks. Scoring different methods on their own different partitions would compare different questions.
+
+Use a frozen held-out probability score, such as average negative log likelihood, together with calibration for the same events. Estimate uncertainty with the trajectory dependence preserved. Any smoothing rule must be selected during development and applied consistently; an observed transition assigned probability zero cannot be repaired after seeing its evaluation score. For a separate kinetic claim, also freeze the target, finite horizon and observable. A finite-time occupancy is not an infinite mean first-passage time.
+
+Exact refinement of an estimated matrix may yield little compression. An approximate model must then announce a different contract. For a completely supplied finite matrix, report every row's discrepancy and the maximum $\varepsilon$ of Proposition IV.1.3. Its guarantee is about block marginals through the chosen horizon. In the chapter's failed example, $\varepsilon=1/8$ permits a two-step bound $1/4$; at eight steps the bound reaches one and no longer distinguishes useful performance. An estimate from sampled trajectories does not establish the same all-state bound for an unknown physical process.
+
+Charge for state construction, fitting, refinement, retained source information, storage and repeated queries. Report prediction fidelity and total cost separately. The candidate earns an efficiency claim only if its claimed fidelity holds while its complete cost improves against an ordinary matched method.
+
+**What would reject the proposal?** One unequal pair of aggregate rows rejects an advertised exact quotient. A fitted quotient that fails held-out transition predictions does not establish simulation fidelity. A reduction that needs every original state may preserve the mathematics while failing the useful-compression hypothesis. A benefit that disappears under trajectory separation, a common scoring carrier or full cost accounting rejects the claimed added value. Insufficient sampling gives an unresolved result, not a successful reduction.
+
+The immediate deliverable would be a source-bound partition and transition model, or an explicit failure, with separating states, complete fitted residuals and held-out results. Obtaining and validating the trajectory inputs, fixing the lag and estimator, selecting the horizon and tolerances, and implementing the comparison remain outstanding. The [folding-dynamics specification](research-packs/folding-dynamics/README.md) retains the full protocol.
+
+#### BRCA1 cellular function: which context does the assay question require?
+
+A protein-level description and a nucleotide-level record do not retain the same distinctions. The proposed question is narrow: can a representation preserve useful information for predicting a specified BRCA1 cellular-function score while using fewer retained features or producing a better audited comparison?
+
+Findlay and colleagues reported function scores for 3,893 single-nucleotide variants across 13 selected BRCA1 exons in a HAP1 cellular setting, with separate RNA measurements. This supplies a defined assay context for the proposal. It does not make the function score a measurement of tumor growth, treatment response or individual cancer risk. RNA coverage is also incomplete: the study's sequence-function map excludes exon 18 from RNA measurements. [Findlay et al. (2018), Figures 1, 2 and 4](https://pubmed.ncbi.nlm.nih.gov/30209399/).
+
+**Choose the answer before choosing the inputs.** The primary experiment predicts the published cellular-function score from admitted sequence and reference annotations. A separate RNA-score prediction would have its own eligible records and target; it is not silently pooled with the first task. Measured RNA is not an input to this sequence-only function experiment. Adding an RNA measurement would create a different, assay-augmented task and would require independent input/target construction and matched baselines receiving that same measurement.
+
+The source carrier is the finite set of records passing the declared source filters, with valid reference and transcript mappings. It is not all BRCA1 variants. Retain the score definition, experimental context, uncertainty where supplied and measurement dependencies. Missing scores remain missing. Exclude target-derived classifications, copies of the target measurements and record identifiers from predictors.
+
+**The existing synthetic example shows exactly what a retained distinction can do.** Use four abstract records, a coarse representation $C_0$, an additional flag $h$, and scores in arbitrary units:
+
+| Record | $C_0$ | Flag $h$ | Score |
+|---|---|---:|---:|
+| $\alpha$ | P | 0 | 0 |
+| $\beta$ | P | 1 | 2 |
+| $\gamma$ | Q | 0 | 5 |
+| $\delta$ | Q | 0 | 5 |
+
+The coarse P fiber merges answers zero and two. Proposition IV.1.1 therefore gives unavoidable worst error one for any decoder using only $C_0$; predictions one and five attain that bound on the two fibers. Adding $h$ splits P while leaving the two Q records together. Every resulting fiber has a constant score, so the minimum worst error on this supplied carrier becomes zero.
+
+If P is observed but $h$ is missing, the compatible answers remain $\{0,2\}$. Filling the missing flag with zero would discard a live alternative. Conversely, assigning each record a unique identifier also produces zero observed fiber error. That apparent success demonstrates why this audit cannot replace prediction of unseen records. The table does not identify actual variants, and $h$ is not asserted to represent a measured biological mechanism.
+
+**The candidate rule and fair comparison.** The repository specification supplies a coarse consequence/protein/domain representation and four optional context groups: nucleotide identity, splice-distance class, reference-sequence context and finer position. Their 16 subsets form a finite search family. The proposed rule selects a low-cost representation whose development fibers meet a fixed answer-loss budget and retain sufficient sharing between distinct variants. Ordinary feature selection receives exactly those same candidates, available inputs, decoder family and search budget.
+
+As an initial design, the supporting specification uses a fiber-error budget of one quarter of the training score's interquartile range and requires at least half of eligible development records to belong to fibers containing at least two distinct variants. Replicates of one variant do not count as that sharing. These are declared experimental choices, not biological thresholds. If the scale is zero or undefined, or no representation satisfies the criteria, the corresponding selection remains OPEN. A more detailed representation is not automatically admitted merely because it memorizes every record.
+
+Keep each variant and its replicates together. Use outer held-out exons, with feature selection, preprocessing and regularization chosen only within the remaining exons. Freeze the chosen model before predicting an outer exon. Report each exon and the pooled result, with a separate domain-transfer stress test. These tests do not establish transfer to unassayed regions.
+
+Compare a training-median predictor, an ordinary all-admissible-feature model, and conventional subset selection. A protein-only comparison belongs on the common eligible missense subset, with both methods scored on the same rows; it cannot be used as an artificially deprived baseline for the entire variant population. Full-task comparisons use their own common eligible population. The advantage attributable to a context feature and the advantage attributable to the proposed selection rule are separate claims.
+
+The primary endpoint is held-out mean absolute error in assay-score units, reported with equal-exon aggregation as well as a pooled score. Record every missing fold, singleton fraction and exclusion. A post hoc fiber audit on held-out scores may explain a collision, but those scores cannot be used to select the representation, refit its decoder or manufacture midpoint predictions.
+
+For a retention-at-lower-cost claim, the initial specification sets a noninferiority margin of 0.05 times each fold's training score interquartile range; its paired normalized error difference must satisfy the frozen one-sided uncertainty criterion, and total resource savings must survive construction and fitting costs. Predictive superiority instead requires an uncertainty bound below zero against the matched comparator. Fix the uncertainty method before evaluation and report the limited number of independent exon groups. Any planned but unavailable outer fold prevents a full-cohort claim.
+
+**What would reject the proposal?** A reproducible difference between scores merged by a representation rejects exact score retention on that admitted carrier; interpreting it physically also needs the assay uncertainty. An apparent prediction gain that vanishes when exons are separated, relies on target-derived inputs, or is reproduced by ordinary feature selection at equal or lower cost does not establish an RPRM advantage. A record-identifying representation is a deliberate negative control for generalization. Missing observations, failed selection and empty evaluation groups cannot be counted as successful predictions.
+
+The useful outcome could be a smaller representation with demonstrated retention at lower cost, a predictive improvement under matched inputs, or a precise counterexample showing which proposed representation fails. None has yet been obtained. Source-file acquisition and reuse checks, validated column and transcript mapping, frozen comparison settings, fitted models and prediction tables remain outstanding. The [BRCA1 cellular-function specification](research-packs/brca1-function/README.md) supplies the detailed experiment record.
+
+#### Supporting proposals and completion
+
+The [immune-mechanism evidence specification](research-packs/immune-mechanisms/README.md) remains a separate supporting proposal. Its current task is to retain source-supported alternatives and missing observations; it does not yet have the joint quantitative benchmark needed for a predictive comparison. The [research index](research-packs/README.md) distinguishes these unexecuted specifications from executable synthetic packs.
+
+The two developed studies make the scientific obligation concrete. A dynamics representation must preserve the requested future at its declared lag and horizon. An assay representation must preserve the relevant distinctions and earn its predictive or cost claim on unseen admissible records. The finite mathematics tells us what would count as success or failure. The scientific comparison must still supply the evidence.
 
 ### IV.2. Further questions with explicit completion conditions
 
@@ -4429,7 +4544,7 @@ The entries distinguish sources for definitions and standard theory, original re
 
 **NASA Science (undated).** [“Big Bang and the Evolution of the Universe”](https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/big-bang-and-the-evolution-of-the-universe/). Institutional overview in the Physics of the Cosmos program. It supplies accessible observational context for Chapter III.10's discussion of the hot early universe and cosmic microwave background. This is an institutional synthesis, not an original experimental paper or a theory of ultimate origin.
 
-**Tsuboyama, Kotaro, et al. (2023).** [“Mega-scale experimental analysis of protein folding stability in biology and design”](https://www.nature.com/articles/s41586-023-06328-6). *Nature* 620, pp. 434–444. DOI: 10.1038/s41586-023-06328-6. The cDNA-display proteolysis study supplies a measured-stability starting point for Chapter IV.1's proposed representation experiments. Its assay conditions and filtering assumptions remain part of that endpoint.
+**Tsuboyama, Kotaro, et al. (2023).** [“Mega-scale experimental analysis of protein folding stability in biology and design”](https://www.nature.com/articles/s41586-023-06328-6). *Nature* 620, pp. 434–444. DOI: 10.1038/s41586-023-06328-6. This study is retained as further reading in the repository's additional leads. No stability experiment or reviewed stability specification is included in the developed main-book proposals.
 
 **Voelz, Vincent A., Gregory R. Bowman, Kyle Beauchamp, and Vijay S. Pande (2010).** [“Molecular simulation of ab initio protein folding for a millisecond folder NTL9(1–39)”](https://pmc.ncbi.nlm.nih.gov/articles/PMC2835335/). *Journal of the American Chemical Society* 132(5), pp. 1526–1528. DOI: 10.1021/ja9090353. This original simulation study is the dynamics source lead in Chapter IV.1. Its citation does not imply that the manuscript has acquired the trajectories or performed a new kinetic validation.
 

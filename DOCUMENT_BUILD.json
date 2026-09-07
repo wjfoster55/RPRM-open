@@ -56,5 +56,8 @@
     "tools/typesetting/layout_ast.py": "ab82443d55080e383c1028366dec9b273a9a9897a66a63967a2498630f3e9e56",
     "tools/typesetting/preamble.tex": "fe51c54dd35d75e15fbff285bc8d8dcfc0582505b043b4be6227d960ca20b588"
   },
-  "scope": "Recorded identity of the supplied review-edition document and selected conversion inputs. Rebuild to obtain a fresh execution record. This file does not certify mathematical correctness, experimental efficacy or the layout of a future build."
+  "scope": "Historical binding of the supplied 156-page review PDF and its source/input bytes at source_commit. Current MANIFESTO.md contains subsequent reader revisions. PDF regeneration and layout review are deferred until the text and author afterword are settled; this record does not claim that the current text matches the PDF.",
+  "status": "EARLIER_REVIEW_PDF_CURRENT_TEXT_REVISED",
+  "source_commit": "32944af196d43fd2f73dfaf06daec77927d1f737",
+  "current_text_matches_recorded_pdf": false
 }

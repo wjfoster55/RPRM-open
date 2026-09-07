@@ -4,7 +4,7 @@ The build preserves the manuscript's mathematical notation through Pandoc's pars
 
 This optional document build is separate from `verify.py`. A successful conversion is not a theorem proof or a completed visual review.
 
-[DOCUMENT_BUILD.json](../../DOCUMENT_BUILD.json) identifies the supplied Markdown/PDF pair and its selected build inputs. Rebuilding creates a fresh receipt for the new output; it does not update that distributed record automatically.
+[DOCUMENT_BUILD.json](../../DOCUMENT_BUILD.json) identifies the earlier review Markdown/PDF pair at its recorded source commit and its selected build inputs. The working manuscript now contains reader revisions; rebuilding is deferred until the text is settled. Rebuilding creates a fresh receipt for the new output; it does not update that distributed record automatically.
 
 ## Dependencies and command
 

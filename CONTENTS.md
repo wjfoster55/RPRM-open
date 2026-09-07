@@ -15,6 +15,7 @@ external scholarly work is cited where used.
 | [Core](rprm/core.py) | Question refinement, lift–motion–landing, vacancy swaps | Declared maps and finite state carriers |
 | [Core](rprm/core.py) | Atomic state successor with validation and stale-parent rejection | In-process reference behavior; no distributed service or persistence promise |
 | [Futures](rprm/futures.py) | Shortlex-least separating word, canonical finite future quotient, least stable refinement retaining an old summary | Finite deterministic partial machines; failure is an explicit observation tag |
+| [Fixed-gap decision](rprm/fixed_gap.py) | Exact integer bracket, bisection, complete NONE/ONE fiber and reconstructed equation inputs | Each supplied n>=2 and positive s,d; no uniform FLT proof or fixed hardware/time guarantee |
 | [Proof donut](rprm/proof_donut.py) | Fiber/readout disposition, aperture transport, invariant induction, descent, paths/cycles and quotient certificates | Complete finite built-in carriers and tables; no circular soundness certificate |
 | [Unification checker](checks/unification.py) | Small first-order syntax translation and independent semantic evaluation | A bounded executable example of the written general translation theorem |
 
@@ -52,20 +53,26 @@ claimed by the 2D application.
   and expose hostile cases. Their passing counts are finite evidence.
 - [Origins](docs/origins.md) offers mathematical initial-state and generative
   models. The physical interpretation remains an open modeling question.
+- [Relational layer](docs/relational-layer.md) states the physical proposal,
+  the precise observation limit and complete counterexamples to inferring a
+  unique hidden source or permanent invisibility from closure alone.
 - [Revised Fermat proof](docs/fermat.md) establishes the stated bounded-side
   result for min(a,b)<=4000 and every n>2. Its [checker](checks/fermat.py)
   replays finite certificates used by the written reduction. The unrestricted
   RPRM proof remains open.
 - The book's [fixed-gap theorem](MANIFESTO.md#an-exact-decision-for-every-fixed-gap-aperture)
   proves a complete integer decision for each supplied exponent and positive
-  gap pair. It is a written theorem, not an additional registered checker or
-  a uniform exclusion of every gap pair.
+  gap pair. Its [executable decision](examples/fixed_gap.py) and
+  [registered checker](checks/fixed_gap.py) now accompany the written proof;
+  these do not establish a uniform exclusion of every gap pair.
 - The [main book](MANIFESTO.md), [PDF edition](RPRM-Manifesto.pdf),
   [reader's guide](LAYPERSON_GUIDE.md) and [agent handbook](AGENT_HANDBOOK.md)
-  offer connected entry points. The PDF contains 156 pages including the cover.
+  offer connected entry points. The PDF is the earlier 156-page review
+  snapshot; the revised Markdown will be typeset after the text is settled.
   [Six figures](figures/README.md) show small examples and failure cases.
-  [Handbook assessments](agent-tests/README.md) retain version 5's targeted
-  E result (16/16), version 4's broader D result (79/80), and historical A–C.
+  [Handbook assessments](agent-tests/README.md) retain version 6's targeted
+  F result (24/24, with a disclosed key erratum), version 5's E result
+  (16/16), version 4's broader D result (79/80), and historical A–C.
 
 ## Experimental starter packs
 

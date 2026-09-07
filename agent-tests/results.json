@@ -1,7 +1,7 @@
 {
   "schema": "rprm-handbook-assessment-results/v2",
   "date": "2026-09-07",
-  "evidence_grade": "Manual scoring of five fixed responses against their own frozen criteria; no universal comprehension or causal learning claim.",
+  "evidence_grade": "Manual scoring of six fixed responses against their own criteria, with a disclosed arithmetic erratum in F's frozen key; no universal comprehension or causal learning claim.",
   "respondent_model": {
     "exact_version": null,
     "reason": "No exact model version was captured; no model override was set."
@@ -667,10 +667,111 @@
       },
       "scope": "Four new questions targeting three known clarity edits; not an independently selected general benchmark, repeat of D, or paired improvement measure.",
       "scientific_execution": false
+    },
+    {
+      "id": "F",
+      "handbook": {
+        "path": "handbooks/v6.md",
+        "version": "6",
+        "sha256": "34ace5eefa6997b7aa5acc712e42f43ef92cdeb81a4f1e5b94cc52c12a3201d6",
+        "matches_assessed_bytes": true
+      },
+      "questions": {
+        "path": "questions-f.md",
+        "sha256": "a5ec41c6339d8bfe65242dc8fa1dfda3f8ffe7ef8bdf25c7527a85e95451e388",
+        "matches_assessed_bytes": true
+      },
+      "response": {
+        "path": "responses/f.md",
+        "sha256": "6fee51c7b3694ac2f1cdb54c39b2e2072a4c96563568be6281750e5ccaeb6711",
+        "original_assessed_response_sha256": "07a53ec1756c6bdc0a518c422a3ddae2153a053c6ff7b49426f10cca3d391c4b",
+        "matches_original_response_bytes": false,
+        "sanitization": "Removed only the final separator and actual-input/tool declaration; preceding mathematical answers and concept assessment are unchanged."
+      },
+      "original_frozen_rubric_sha256": "31ab34bca7c866c953971cfdbabd4747d1a3a3ac7b62e2bb5a6624ce87ca5902",
+      "public_rubric_path": "rubric-f.md",
+      "public_rubric_sha256": "31ab34bca7c866c953971cfdbabd4747d1a3a3ac7b62e2bb5a6624ce87ca5902",
+      "public_rubric_matches_frozen_bytes": true,
+      "rubric_erratum": {
+        "path": "rubric-f-erratum.md",
+        "sha256": "248946c56e5dce6bd5ff6c9aa83feb735e40f5f0f6dc2feaed2758a0f375b6df",
+        "identified_after_response": true,
+        "correction": "Q6's frozen key says M=32; the correct derived bound is M=16. The respondent correctly computed 16 and receives credit. Frozen key bytes, question and threshold are preserved."
+      },
+      "score": 24,
+      "maximum": 24,
+      "acceptance_threshold": 22,
+      "critical_questions": [
+        1,
+        2,
+        3
+      ],
+      "critical_errors": [],
+      "accepted": true,
+      "status": "PASS_TARGETED_TRANSFER",
+      "items": [
+        {
+          "question": 1,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 2,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 3,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 4,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 5,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        },
+        {
+          "question": 6,
+          "score": 4,
+          "maximum": 4,
+          "deductions": []
+        }
+      ],
+      "grading": {
+        "method": "Release editor manually scored every response criterion and corrected an arithmetic error in the frozen key transparently; root grade recorded before comparison with a second grader.",
+        "second_grader": {
+          "score": 24,
+          "maximum": 24,
+          "all_item_scores": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "root_score_seen_before_grading": false,
+          "agrees_on_key_erratum": true
+        },
+        "second_grader_status": "Separate item grading agreed; both graders recorded their grades before comparison. No blinded-study claim.",
+        "blind_grading_claimed": false
+      },
+      "scope": "Six targeted transfer questions for the relational-layer revision, partial-domain control, scientific evidence and fixed-gap decision; no paired improvement or general competence estimate.",
+      "scientific_execution": false
     }
   ],
   "limits": [
-    "Five fixed responses do not establish universal comprehension or arbitrary theorem-proving ability.",
+    "Six fixed responses do not establish universal comprehension or arbitrary theorem-proving ability.",
     "No no-handbook control isolates a causal learning effect.",
     "Different question sets and handbook versions do not support a paired score-improvement estimate.",
     "Published questions and rubrics are no longer unseen for a reader who inspects them.",
@@ -678,14 +779,14 @@
     "Hash or link checks validate packet bindings, not comprehension or the truth of all framework claims."
   ],
   "current_handbook": {
-    "version": "5",
+    "version": "6",
     "path": "../AGENT_HANDBOOK.md",
-    "sha256_at_review": "7c0704a203a5867f75f44ac96f4c6925b4556c8a21e907afc8eae35fb7cc8812",
+    "sha256_at_review": "34ace5eefa6997b7aa5acc712e42f43ef92cdeb81a4f1e5b94cc52c12a3201d6",
     "matches_assessed_version_bytes": true,
-    "assessment": "E",
-    "complete_book_supplied": true,
+    "assessment": "F",
+    "complete_handbook_supplied": true,
     "all_possible_content_or_uses_tested": false,
-    "scope": "Four targeted follow-up questions only; the broader D result belongs to version 4.",
-    "change_from_v4": "Adds the partition-count bound explanation and clarifies strict version advancement and acceleration-vector versus radial-coordinate derivatives."
+    "scope": "Six targeted transfer questions; earlier scores retain their historical versions.",
+    "change_from_v5": "Full name and physical origin; relational-layer proposal and relative observation limits; exact domain matching; two scientific proposals and executable fixed-gap scope."
   }
 }

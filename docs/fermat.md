@@ -51,8 +51,61 @@ complete positive-integer fiber of
 `0≤a≤2n(s+d)`. Strict increase of `D(a)/a^n` on positive real `a`, together
 with the proved endpoint signs, excludes both integer tails after the final
 adjacent bracket. The answer is NONE or ONE; `(n,s,d)=(2,1,1)` returns `a=3`.
-This written per-aperture decision does not assert that every gap pair is
-empty and is not an additional registered executable in the current checker.
+The [fixed-gap tool](../rprm/fixed_gap.py) implements this per-aperture
+decision, with a [registered independent check](../checks/fixed_gap.py)
+and a [command-line example](../examples/fixed_gap.py). It does not assert
+that every gap pair is empty or establish unrestricted FLT.
+
+### Use the fixed-gap decision
+
+From the repository root:
+
+```sh
+python -I -B examples/fixed_gap.py --n 2 --s 1 --d 1
+python -I -B examples/fixed_gap.py --n 5 --s 2 --d 1
+python -I -B checks/fixed_gap.py --output /absolute/path/to/checkout/.artifacts/fixed-gap-check.json
+```
+
+The checker requires an absolute `.json` destination. Within the repository
+it writes only under `.artifacts`, accepts only a fresh path or the aggregate
+runner's exact PENDING placeholder, and rejects every preexisting external
+output before writing.
+
+The example writes a new receipt under `.artifacts/fixed-gap/` by default;
+`--output /path/to/new.json` selects a fresh path and rejects an existing
+file. Its execution status is COMPLETE with a nested NONE or ONE fiber,
+ERROR for a failed execution, or PENDING if interrupted before publication.
+An incomplete run never reports an empty fiber. Each completed receipt binds
+the executed module, admission helpers and example by SHA-256; those hashes
+identify source bytes and do not prove their correctness.
+
+For library use, `from rprm.fixed_gap import decide_fixed_gap` supplies
+`decide_fixed_gap(n, s, d)`. Inputs must be exact Python integers with
+`n>=2,s>0,d>0`; bool, floats, integer subclasses and coercions are rejected
+with `AdmissionError`. The returned `fiber` is a tuple of all admitted `a`
+values. For ONE, `source` reconstructs `(a,a+s,a+s+d,n)`. The receipt also
+retains the derived bound, initial and final signed brackets, and every
+midpoint evaluation. Zero is only a sentinel, not a positive source.
+The square example returns `(3,)`; the fifth-power example returns `()`
+with `D(11)=-5480` and `D(12)=27281`.
+
+The bisection keeps `D(L)<0<=D(U)` and finishes at `U=L+1`, even if an
+earlier midpoint is an exact root. It requires at most
+`ceil(log2(2*n*(s+d)))` midpoint evaluations, plus two initial endpoint
+evaluations. This counts exact power evaluations, not their bit complexity
+or wall time. Python integers avoid rounding and fixed-width overflow,
+but very large inputs can exhaust time, memory or integer-to-text limits.
+The library propagates such failures; it has no mathematical height cutoff
+or timeout that could be mistaken for a completed decision.
+
+The focused check compares every integer in the derived brackets for
+`n=2..8,s=1..6,d=1..6` using independent repeated multiplication, replays
+all recorded bisection invariants, checks exact quadratic fibers with
+large integers, and rejects malformed/domain inputs. It retains a case
+where raw `D` decreases: only the normalized residual is asserted to be
+strictly increasing. These are finite implementation checks of the written
+general decision argument, not a formal proof of that argument or a test
+of every gap pair. The fixed-gap suite is also requested by `verify.py`.
 
 ## The relation and the retained carrier
 

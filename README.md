@@ -2,11 +2,27 @@
 
 **A relational framework for mathematical unification.**
 
+**RPRM stands for Relational Pressure Retention Model.** The name comes from
+the motivating physics proposal about underlying relations, pressure and
+retention. It remains the name of the whole framework. The
+[relational-layer account](docs/relational-layer.md) explains that motivation
+and distinguishes it from the mathematical results proved here.
+
+**Current text revision:** [MANIFESTO.md](MANIFESTO.md) contains the latest
+reader revisions. The 156-page PDF is the earlier review snapshot; its next
+build awaits the completed text and author afterword.
+
 RPRM describes mathematical problems through their carriers, relations,
 operations, observations, and missing information. Its purpose is to connect
 existing mathematics while preserving what each source system means. An
 explicit change of representation can expose a different question, explain
 why information was lost, or show exactly what must be retained to continue.
+
+Its [relational-layer proposal](docs/relational-layer.md) asks whether
+observable physical behavior arises from underlying relations and lawful
+continuations. The core makes observational sufficiency and incomplete
+source recovery precise. Identifying a physical source remains a further
+modeling and experimental task.
 
 This release candidate contains the full mathematical book, seven executable
 experimental packs, formal proofs of selected laws, and an interactive 2D
@@ -38,10 +54,11 @@ are part of the mathematical contract, not annotations added after solving.
 
 | Start here | Contents |
 |---|---|
-| [Main book](MANIFESTO.md) · [PDF edition](RPRM-Manifesto.pdf) | The connected argument in four parts, with six mathematical figures; 156 pages including the cover |
+| [Main book](MANIFESTO.md) · [Earlier reading PDF](RPRM-Manifesto.pdf) | Current revised text in four parts; the earlier PDF has 156 pages including the cover |
 | [Core definitions](docs/core.md) | Carriers, ports, apertures, receivers, fibers, representations and affine coordinates |
 | [Reader's guide](LAYPERSON_GUIDE.md) | A self-contained introduction using ordinary examples |
-| [Agent handbook](AGENT_HANDBOOK.md) | Version 5: core reasoning, worked applications, evidence boundaries and a reusable procedure |
+| [Agent handbook](AGENT_HANDBOOK.md) | Version 6: core reasoning, relational-layer scope, worked applications and a reusable procedure |
+| [Relational layer](docs/relational-layer.md) | The physical proposal, what closed observations can reveal, complete examples and distinguishing controls |
 | [Conceptual bridge](docs/concepts.md) | Multiple number descriptions, three plus one, errors, teachers and paired strands |
 | [Operations](docs/operations.md) | Typed operations, exact quotients, shortest distinctions, stable repair and compilation |
 | [Unification](docs/unification.md) | Faithful relational presentation of supplied many-sorted structures; explicit preservation proofs and scope |
@@ -63,7 +80,9 @@ statements, including four opening statements restated in the chapters.
 The [formal scope](docs/formal-proofs.md) is exactly 20 selected Lean
 declarations. These counts describe different evidence.
 
-The current handbook's [assessment E](agent-tests/results.md) scored 16/16
+Handbook version 6's [assessment F](agent-tests/results.md) scored 24/24 on
+six targeted transfer questions, with a disclosed correction to its frozen
+answer key. Version 5's assessment E scored 16/16
 on four targeted follow-up questions. Assessment D scored 79/80 on twenty
 broader questions using version 4; assessment C belongs to historical version 3.
 The scores do not establish a controlled improvement or universal comprehension.
@@ -73,6 +92,7 @@ Run the finite examples from this directory with Python 3.10 or newer:
 ```sh
 python -I -B examples/quickstart.py
 python -I -B examples/proof_donut.py
+python -I -B examples/fixed_gap.py
 ```
 
 Open [atlas/index.html](atlas/index.html) in a modern browser for the local

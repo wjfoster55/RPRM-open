@@ -12,6 +12,13 @@ own proposal. A mathematical review of a specification does not establish
 that an eventual implementation is correct or that its scientific hypothesis
 is true.
 
+The main text develops **folding dynamics** and **BRCA1 cellular function**:
+the first tests preservation of future probabilities, the second retention
+of context needed for a specified assay answer. Immune mechanisms remain a
+supporting specification. [Additional leads](additional-leads.md) also
+preserve the earlier stability-study pointer as further reading; it is not
+a fourth reviewed specification or an executable pack.
+
 | Pack | Concrete question | Current state |
 |---|---|---|
 | [Folding dynamics](folding-dynamics/README.md) | Which aggregation of a supplied finite transition model retains the declared dynamics, and what does a coarser representation lose? | Written refinement argument and complete synthetic controls reviewed; data, fitting and scientific comparison unexecuted. |
