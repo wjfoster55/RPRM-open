@@ -13,7 +13,7 @@ and black-hole chapters.
 
 **Version 1 — review edition.**
 
-**Text revision in progress.** This Markdown includes changes made after the 156-page reading PDF. That PDF remains the earlier review snapshot; it will be rebuilt after the text and author afterword are settled.
+This edition includes the revised relational-layer account, two developed molecular research proposals, and the author's afterword. Mathematical results and proposed scientific extensions retain their stated evidence and scope.
 
 RPRM organizes mathematical objects, representations and operations around the questions they must preserve. This book develops that proposal through explicit definitions, proofs, complete examples and failed inferences. Its unifying claim concerns a common relational presentation of specified mathematical structures. Physical and biological applications retain their stated models and open experimental obligations.
 
@@ -48,7 +48,7 @@ Part I states the framework and its central laws. Part II develops the mathemati
 - [Reference guide. Special terms and where to find them](#reference-guide-special-terms-and-where-to-find-them)
 - [Certificate Appendix III.2. The auxiliary-prime premises](#certificate-appendix-iii2-the-auxiliary-prime-premises)
 - [Evidence Appendix. Proof, implementation and reproduction](#evidence-appendix-proof-implementation-and-reproduction)
-- [Reserved author afterword and acknowledgments](#reserved-author-afterword-and-acknowledgments)
+- [Author afterword and acknowledgments](#author-afterword-and-acknowledgments)
 - [Bibliography](#bibliography)
 
 ## Part I. The object, the question, and what must survive
@@ -3884,7 +3884,7 @@ A useful RPRM application could organize the minimum state needed for each of th
 
 #### Cosmic expansion and a carry proposal
 
-A conventional expanding-universe model uses a scale factor $a(t)>0$, taken here to have dimensions of length. In a spatially flat FLRW chart with dimensionless comoving coordinates $\boldsymbol\chi$,
+A conventional expanding-universe model uses a scale factor $a(t)>0$, taken here to have dimensions of length. Use dimensionless comoving coordinates $\boldsymbol\chi$ in a spatially flat FLRW chart:
 
 $$
 ds^2=-c^2dt^2+a(t)^2d\boldsymbol\chi^2.
@@ -4464,13 +4464,13 @@ python -I -B examples/quickstart.py
 python -I -B examples/proof_donut.py
 ```
 
-The default runner requests sixteen suites: twelve Python suites and four Node.js suites. Supplying Lean 4.22.0 adds the seventeenth suite, which checks the twenty formal declarations:
+The default runner requests seventeen suites: thirteen Python suites and four Node.js suites. Supplying Lean 4.22.0 adds the eighteenth suite, which checks the twenty formal declarations:
 
 ```sh
 python -I -B verify.py --lean /path/to/lean
 ```
 
-Without that argument, formal checking is explicitly not run. The `--python-only` option requests twelve suites, or thirteen when Lean is also supplied, and explicitly marks the four Node.js suites as not run. Rule Lab and the two-path model are registered in the common runner. Their folders also document direct commands and exact model boundaries. See the companion [verification guide](https://github.com/wjfoster55/RPRM-open/blob/main/docs/verification.md) for dependencies, receipts and failure behavior.
+Without that argument, formal checking is explicitly not run. The `--python-only` option requests thirteen suites, or fourteen when Lean is also supplied, and explicitly marks the four Node.js suites as not run. The fixed-gap checker, Rule Lab and the two-path model are registered in the common runner. Their folders also document direct commands and exact model boundaries. See the companion [verification guide](https://github.com/wjfoster55/RPRM-open/blob/main/docs/verification.md) for dependencies, receipts and failure behavior.
 
 A **cold replay** executes a fresh local checkout of specified committed bytes. It records the revision, inputs, runtime identity, outputs and result, and compares the executed files with their Git object bytes. A file hash is an identity check. It does not prove the program implements the intended theorem, that a finite family covers a larger source, or that a model describes nature.
 
@@ -4494,9 +4494,23 @@ Synthetic controls test algorithms and reveal failed inferences. A simulation re
 
 Figures depict supplied formulas or complete declared examples. Their captions identify quantities, settings, comparison cases and the evidence represented. Numerical plotting, page rendering and visual inspection test presentation; they do not replace an algebraic proof. Conversely, an algebraically correct formula does not establish that its printed figure is legible or correctly labeled. Both obligations belong in a finished release, with their actual review status recorded separately.
 
-## Reserved author afterword and acknowledgments
+## Author afterword and acknowledgments
 
-One or two pages are reserved for text supplied by the author. No personal account or acknowledgment list is invented here.
+I'd like to start by thanking my wife, Mi Young, and my dog, Luna, for being with me through this, and all the musicians whose music kept me company along the way.
+
+I see RPRM as a culmination of shared human effort. It was only possible because of the work of scientists, researchers, philosophers, artists, workers and countless others. I truly believe everyone contributed in some way, even without knowing it. I was just the person crazy enough to try to put the pieces together. Beyond that, I don't want to claim credit for any of the ideas presented here. I want this work to be freely available for everyone to use, change and build on. I just wanted it out in the world.
+
+To anyone I may have offended along the way, I am genuinely sorry. That was never my intention. To the friends and family I may have distanced myself from during this time, I apologize.
+
+I'd like to close with a few personal thoughts. I believe we are moving from an age defined by information into an age defined by collaboration. Over the past two months, this work consisted almost entirely of me talking to ChatGPT and Claude. My mathematics education never went beyond algebra. I couldn't give you a proper explanation of sine or cosine, and science wasn't my strength in school either. For me, this was a journey of intuition guiding intelligence.
+
+As someone who often struggles to express himself, I also want to offer a heartfelt thank-you to everyone whose work has made GPTs and other language models possible. You've given people another way to express themselves, and that has meant a great deal to me.
+
+That experience has left me believing that far more people can contribute to mathematics, science and other fields than we currently make room for. People bring different ways of noticing, questioning and understanding things. I think we have much more to gain from helping those abilities work together.
+
+My hope is that RPRM helps people identify their problems more accurately and, through that, find better solutions. I also believe it can help us distinguish numerology from meaningful, testable relationships by asking what a pattern actually tells us and how we could check it. That is all I wish for it.
+
+I love you all. Thank you.
 
 ## Bibliography
 

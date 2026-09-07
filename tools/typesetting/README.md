@@ -4,7 +4,7 @@ The build preserves the manuscript's mathematical notation through Pandoc's pars
 
 This optional document build is separate from `verify.py`. A successful conversion is not a theorem proof or a completed visual review.
 
-[DOCUMENT_BUILD.json](../../DOCUMENT_BUILD.json) identifies the earlier review Markdown/PDF pair at its recorded source commit and its selected build inputs. The working manuscript now contains reader revisions; rebuilding is deferred until the text is settled. Rebuilding creates a fresh receipt for the new output; it does not update that distributed record automatically.
+[DOCUMENT_BUILD.json](../../DOCUMENT_BUILD.json) identifies the distributed Markdown/PDF pair and its selected build inputs by exact hashes. It also records the completed layout review for that output. Rebuilding creates a fresh receipt; it does not update the distributed record automatically.
 
 ## Dependencies and command
 
@@ -24,7 +24,11 @@ Every invocation owns a new `.artifacts/paper/<build-id>/` directory. An optiona
 
 ## What the conversion changes
 
-The source's navigation list becomes a linked print table of contents, with the source headings retained. The cover carries the book title. Long inline mathematical lists receive reversible break opportunities after top-level commas. Two tables receive explicit column widths; two short comparisons receive page-space reservations. Each explanatory image stays with its supplied caption, printed once. DOI tokens gain reversible line-break opportunities. These are recorded presentation changes, not substitutions for the equations, table cells or proof statements.
+The source's navigation list becomes a linked print table of contents, with the source headings retained. The cover carries the book title. Chapter openings and numbered subsections have separate pagination rules. Long inline mathematical lists receive reversible break opportunities after top-level commas; two short equalities stay unbroken. Proof-ending symbols stay with their preceding text.
+
+Three tables receive explicit column widths. Table introductions, short comparisons, statement openings and selected closing arguments receive page-space reservations. Two chapters use slightly tighter paragraph and display spacing, with the body font and line spacing retained. Each explanatory image stays with its supplied caption, printed once. DOI tokens gain reversible line-break opportunities. These are recorded presentation changes, not substitutions for the equations, table cells or proof statements.
+
+In the PDF, links to companion repository files open their GitHub pages, so downloading the PDF alone does not leave those links pointing to absent local files. The builder checks that each relative target exists inside the checkout before translating it. Internal book navigation stays within the PDF. The repository remains private until its owner explicitly changes its visibility; link conversion does not publish it.
 
 `ASSETS.json` names every selected font, figure and print input with its SHA-256. Update a changed asset's binding deliberately and review its output. The selected before/after input hashes must agree; a persistent difference fails the build. The log check rejects overfull boxes, missing characters and undefined controls; it cannot detect every possible rendering error. The output status remains `BUILT_PENDING_LAYOUT_REVIEW` until an actual review of the resulting pages supplies separate evidence.
 

@@ -67,8 +67,9 @@ claimed by the 2D application.
   these do not establish a uniform exclusion of every gap pair.
 - The [main book](MANIFESTO.md), [PDF edition](RPRM-Manifesto.pdf),
   [reader's guide](LAYPERSON_GUIDE.md) and [agent handbook](AGENT_HANDBOOK.md)
-  offer connected entry points. The PDF is the earlier 156-page review
-  snapshot; the revised Markdown will be typeset after the text is settled.
+  offer connected entry points. The 155-page review PDF includes the current
+  revised text and the author's afterword, with completed layout review and
+  [exact source/build bindings](DOCUMENT_BUILD.json).
   [Six figures](figures/README.md) show small examples and failure cases.
   [Handbook assessments](agent-tests/README.md) retain version 6's targeted
   F result (24/24, with a disclosed key erratum), version 5's E result

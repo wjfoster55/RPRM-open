@@ -8,9 +8,10 @@ retention. It remains the name of the whole framework. The
 [relational-layer account](docs/relational-layer.md) explains that motivation
 and distinguishes it from the mathematical results proved here.
 
-**Current text revision:** [MANIFESTO.md](MANIFESTO.md) contains the latest
-reader revisions. The 156-page PDF is the earlier review snapshot; its next
-build awaits the completed text and author afterword.
+**Current reading edition:** [MANIFESTO.md](MANIFESTO.md) and the
+[155-page PDF](RPRM-Manifesto.pdf) contain the revised text and the author's
+afterword. The PDF has completed its layout review; exact source and build
+inputs are recorded in [DOCUMENT_BUILD.json](DOCUMENT_BUILD.json).
 
 RPRM describes mathematical problems through their carriers, relations,
 operations, observations, and missing information. Its purpose is to connect
@@ -54,7 +55,7 @@ are part of the mathematical contract, not annotations added after solving.
 
 | Start here | Contents |
 |---|---|
-| [Main book](MANIFESTO.md) · [Earlier reading PDF](RPRM-Manifesto.pdf) | Current revised text in four parts; the earlier PDF has 156 pages including the cover |
+| [Main book](MANIFESTO.md) · [Reading PDF](RPRM-Manifesto.pdf) | Four connected parts, appendices and the author's afterword; 155 PDF pages including the cover |
 | [Core definitions](docs/core.md) | Carriers, ports, apertures, receivers, fibers, representations and affine coordinates |
 | [Reader's guide](LAYPERSON_GUIDE.md) | A self-contained introduction using ordinary examples |
 | [Agent handbook](AGENT_HANDBOOK.md) | Version 6: core reasoning, relational-layer scope, worked applications and a reusable procedure |

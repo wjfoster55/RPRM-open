@@ -34,13 +34,21 @@ def raw(value):
 
 def transform(ast):
     result = copy.deepcopy(ast)
-    receipt = {"inline_math_breaks": [], "table_widths": [], "figures": [], "compact_table_space": []}
+    receipt = {"inline_math_breaks": [], "table_widths": [], "figures": [], "compact_table_space": [], "page_guards": [], "qed_spacing": [], "inline_math_keeps": []}
 
     def walk(node):
         if isinstance(node, list):
             for item in node:
                 walk(item)
         elif isinstance(node, dict):
+            if node.get("t") == "Para":
+                c = node["c"]
+                if len(c) >= 2 and c[-2].get("t") == "Space" and (
+                    (c[-1].get("t") == "Math" and c[-1]["c"][1] == r"\square")
+                    or (c[-1].get("t") == "Str" and c[-1]["c"] == "∎")
+                ):
+                    receipt["qed_spacing"].append({"paragraph": plain(c), "treatment": "Nonbreaking space before the proof-ending symbol."})
+                    c[-2] = {"t": "RawInline", "c": ["latex", r"\nobreakspace{}"]}
             if node.get("t") == "Math" and node["c"][0]["t"] == "InlineMath":
                 old = node["c"][1]
                 new = inline_breaks(old)
@@ -60,23 +68,84 @@ def transform(ast):
                     for col, width in zip(c[2], widths):
                         col[1] = {"t": "ColWidth", "c": width}
                     receipt["table_widths"].append({"header": header, "widths": widths})
+                if header.startswith("Manuscript result family") and len(c[2]) == 3:
+                    widths = [.24, .34, .42]
+                    for col, width in zip(c[2], widths):
+                        col[1] = {"t": "ColWidth", "c": width}
+                    receipt["table_widths"].append({"header": header, "widths": widths})
             for val in node.values():
                 walk(val)
 
     walk(result)
     blocks, output, i = result["blocks"], [], 0
+    # These two short equalities crossed a page turn in the reviewed output.
+    # Keep each existing Math node in a text box; its equation bytes are unchanged.
+    keep_math = {r"\varepsilon\lambda\gamma^3=x+y\omega", "x=m+(n+1)(M-m)/2"}
+    for block in blocks:
+        if block.get("t") != "Para":
+            continue
+        inlines = []
+        for node in block["c"]:
+            if node.get("t") == "Math" and node["c"][1] in keep_math:
+                inlines.extend([{"t": "RawInline", "c": ["latex", r"\mbox{"]}, node, {"t": "RawInline", "c": ["latex", "}"]}])
+                receipt["inline_math_keeps"].append(node["c"][1])
+            else:
+                inlines.append(node)
+        block["c"] = inlines
+    # Move each space reservation before the introduction (and its heading,
+    # when adjacent). Reserving after that text can strand it on the prior page.
+    reservations = {}
+    table_lines = {"Neighborhood": 10, "Complete supplied graph": 10,
+                   "Operation or lossy description": 25, "StepOrbit": 17,
+                   "Row t": 19, "FunctionLower integer": 11,
+                   "WordComplete path": 13, "Work category": 13}
+    for table_i, block in enumerate(blocks):
+        if block.get("t") != "Table":
+            continue
+        header = plain(block["c"][3])
+        lines = next((n for prefix,n in table_lines.items() if header.startswith(prefix)), 5)
+        start = table_i
+        if start and blocks[start-1].get("t") == "Para":
+            start -= 1
+            lines += max(2, (len(plain(blocks[start]))+69)//70)
+        if start and blocks[start-1].get("t") == "Header":
+            start -= 1
+            lines += 3
+        reservations[start] = max(reservations.get(start, 0), lines)
+        receipt["compact_table_space"].append({"header": header, "reserved_baselines": lines, "treatment": "Reserve space before the table introduction and any adjacent heading; inspect actual pagination."})
+    closing_groups = {"III.5.5. A timing adapter and its precise receiver": 32,
+                      "Standard models and computational constructions": 9,
+                      "Proposition II.2.4": 22,
+                      "For the independent unrestricted route,": 20,
+                      "For each row, the proved normalized or raw monotonicity": 9}
+    for block_i, block in enumerate(blocks):
+        if block.get("t") not in ("Header", "Para"):
+            continue
+        text = plain(block)
+        for prefix, lines in closing_groups.items():
+            if text.startswith(prefix):
+                reservations[block_i] = max(reservations.get(block_i, 0), lines)
+                receipt["page_guards"].append({"target": prefix, "reserved_baselines": lines, "treatment": "Keep the short closing argument or paired endpoint calculation together."})
     while i < len(blocks):
         block = blocks[i]
+        previous = blocks[i-1] if i else None
+        if i in reservations:
+            output.append(raw(r"\Needspace{" + str(reservations[i]) + r"\baselineskip}"))
+        display = block.get("t") == "Para" and any(x.get("t") == "Math" and x["c"][0]["t"] == "DisplayMath" for x in block["c"])
+        if display and previous and previous.get("t") == "Para":
+            output.append(raw(r"\nopagebreak[4]"))
+            receipt["page_guards"].append({"target": plain(block), "treatment": "Keep display with the preceding paragraph's last lines."})
+        if block.get("t") == "Header" and block["c"][0] >= 4 and i not in reservations:
+            output.append(raw(r"\Needspace{7\baselineskip}"))
+            receipt["page_guards"].append({"target": plain(block), "treatment": "Reserve seven lines for a subsection heading and its opening."})
+        if block.get("t") == "Para" and plain(block).startswith(("Theorem ", "Proposition ", "Lemma ", "Corollary ")) and not (previous and previous.get("t") == "Header") and i not in reservations:
+            output.append(raw(r"\Needspace{6\baselineskip}"))
+            receipt["page_guards"].append({"target": plain(block)[:150], "treatment": "Reserve six lines for a statement opening."})
         if block.get("t") == "Table":
             header = plain(block["c"][3])
-            content = plain(block)
-            rule_comparison = header.startswith("Neighborhood") and "Color-conjugate rule 135" in content
-            escape_comparison = header.startswith("Complete supplied graph") and "Indefinite continuation" in header
-            if rule_comparison or escape_comparison:
-                # Reserve the measured compact table's space before longtable starts.
-                # This changes pagination only; table nodes and cells are retained.
-                output.append(raw(r"\Needspace{10\baselineskip}"))
-                receipt["compact_table_space"].append({"header": header, "reserved_baselines": 10, "treatment": "Keep the short comparison together; verify in the rendered successor."})
+            if previous and previous.get("t") == "Para":
+                output.append(raw(r"\nopagebreak[4]"))
+                receipt["page_guards"].append({"target": header, "treatment": "Keep table opening with its introduction."})
         if block.get("t") != "Figure":
             output.append(block)
             i += 1

@@ -1,12 +1,14 @@
 {
   "schema": "rprm.distributed-document.v1",
-  "edition": "review",
+  "status": "SOURCE_MATCHING_LAYOUT_REVIEWED",
   "source": "MANIFESTO.md",
   "pdf": "RPRM-Manifesto.pdf",
-  "source_sha256": "043546d0b855c56547e7578815380ed72b996c25d301b4e6c157421f3feccbd7",
-  "pdf_sha256": "2918c6163c8499a3e83f280a13a9e19f01dfe192829b4ede8ac232ecd9f51c31",
-  "pages": 156,
-  "body_pages": 155,
+  "current_text_matches_recorded_pdf": true,
+  "edition": "review",
+  "source_sha256": "e37ad6f68601be3c1a78dca14042662774c3d1bcf682b68d0de8d0779c47fa56",
+  "pdf_sha256": "6a3b92f67226fdd525b561aac8b5bfd07c7cfb9c6405a56696489d0fedf90f1e",
+  "pages": 155,
+  "body_pages": 154,
   "source_date_epoch": 1788739200,
   "toolchain": {
     "pandoc": {
@@ -27,7 +29,7 @@
     "LICENSES/AMS-MSAM10-OFL.txt": "76f4f5fd8e26649ece2335f55f20fe43eebf791efb33a5565ce1b7015dc34a43",
     "LICENSES/DejaVu.txt": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e",
     "LICENSES/STIXTwo-OFL.txt": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a",
-    "MANIFESTO.md": "043546d0b855c56547e7578815380ed72b996c25d301b4e6c157421f3feccbd7",
+    "MANIFESTO.md": "e37ad6f68601be3c1a78dca14042662774c3d1bcf682b68d0de8d0779c47fa56",
     "figures/01-joint-aperture.png": "d464eaf5ea7ea959f300760edcc95d84a8551bdbdc2f19287de73db3243903ad",
     "figures/01-joint-aperture.svg": "8603c5ffedceb3cd1f0609681905d5a841ed1db4440b11a14421ef28722c8cef",
     "figures/02-future-distinction.png": "1ffe932ba8848ed91def45ca9af1d4a3c44bd80fe367e4da953d3e577249358a",
@@ -42,7 +44,7 @@
     "figures/two_path_eraser_weights.svg": "c0ab89937b9205d2ef3ee6aa2f1e51c6131a2fc247a2c179442a3da09bf98118",
     "tools/build_paper.py": "2cec7f3a9ec593601f77f653837f4a1a468001f3a793422df1a8c11a11a90abb",
     "tools/typesetting/ASSETS.json": "23d47eeea238e7408b977ab41b09e17d774eb234d8e0199b5770a49fd425435a",
-    "tools/typesetting/build.py": "2784d394842462cb1a97dcd36023df9b6df0765bd7e105b80f270bbf8a20a818",
+    "tools/typesetting/build.py": "ac5b2ed22d7506c78bb9fabf5423b571f40df852de954c3f5cc86b30fd907fe2",
     "tools/typesetting/cover.py": "bbe9d0a1aa09926c5436011d28b7ac95c13f79c7cc195294972d729f631e1fcb",
     "tools/typesetting/fonts/DejaVuSans-Bold.ttf": "b184b89e3c1075f22f6b71575b6fc20d4972b3cfd3b23322ca6fd596dcaef167",
     "tools/typesetting/fonts/DejaVuSans-Oblique.ttf": "ccdf74b350f11fd3dd5774de50e5e6346a1a5da1f5b7d5fb83590665e97a5213",
@@ -53,11 +55,66 @@
     "tools/typesetting/fonts/STIXTwoText-BoldItalic.otf": "90e88f2ac79d6c00a5ce2d8446bfdf9457aed6afc1159cde33262979d82c8586",
     "tools/typesetting/fonts/STIXTwoText-Italic.otf": "cd64481fd10b69469074a3a8172fb5a22cb4116941d8aceafb8c77756b563df8",
     "tools/typesetting/fonts/STIXTwoText-Regular.otf": "c4864ca6ec071c2d31d0d8309001faa1ee3517fffb53a31a405a697b71f52ca1",
-    "tools/typesetting/layout_ast.py": "ab82443d55080e383c1028366dec9b273a9a9897a66a63967a2498630f3e9e56",
-    "tools/typesetting/preamble.tex": "fe51c54dd35d75e15fbff285bc8d8dcfc0582505b043b4be6227d960ca20b588"
+    "tools/typesetting/layout_ast.py": "47aa511fb99d202aa150cb09ee44608753915cabc9030fb2240926075655b73b",
+    "tools/typesetting/preamble.tex": "128fb13aee30d772172403aec24fb3e6025dc1de52d4b6c792f3e4b532883b12"
   },
-  "scope": "Historical binding of the supplied 156-page review PDF and its source/input bytes at source_commit. Current MANIFESTO.md contains subsequent reader revisions. PDF regeneration and layout review are deferred until the text and author afterword are settled; this record does not claim that the current text matches the PDF.",
-  "status": "EARLIER_REVIEW_PDF_CURRENT_TEXT_REVISED",
-  "source_commit": "32944af196d43fd2f73dfaf06daec77927d1f737",
-  "current_text_matches_recorded_pdf": false
+  "repository_links": [
+    {
+      "page": 55,
+      "source": "rprm/fixed_gap.py",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/rprm/fixed_gap.py"
+    },
+    {
+      "page": 55,
+      "source": "examples/fixed_gap.py",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/examples/fixed_gap.py"
+    },
+    {
+      "page": 55,
+      "source": "examples/fixed_gap.py",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/examples/fixed_gap.py"
+    },
+    {
+      "page": 55,
+      "source": "checks/fixed_gap.py",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/checks/fixed_gap.py"
+    },
+    {
+      "page": 134,
+      "source": "research-packs/folding-dynamics/README.md",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/folding-dynamics/README.md"
+    },
+    {
+      "page": 134,
+      "source": "research-packs/folding-dynamics/README.md",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/folding-dynamics/README.md"
+    },
+    {
+      "page": 136,
+      "source": "research-packs/brca1-function/README.md",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/brca1-function/README.md"
+    },
+    {
+      "page": 136,
+      "source": "research-packs/immune-mechanisms/README.md",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/immune-mechanisms/README.md"
+    },
+    {
+      "page": 136,
+      "source": "research-packs/README.md",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/README.md"
+    },
+    {
+      "page": 136,
+      "source": "research-packs/README.md",
+      "destination": "https://github.com/wjfoster55/RPRM-open/blob/main/research-packs/README.md"
+    }
+  ],
+  "layout_review": {
+    "status": "PASS",
+    "pages": 155,
+    "method": "Complete rendered-page review, followed by exact rendered-body pixel comparisons to reviewed predecessors and fresh inspection of every changed page. Page-number footers and navigation checked separately.",
+    "scope": "Typography, page breaks, native equation presentation, table rows and headings, six figure/caption pairs, author afterword and bibliography. Internal agent review; not external scientific replication or a theorem certificate."
+  },
+  "scope": "Exact binding of the distributed review PDF to current manuscript and selected build inputs. Hashes identify bytes; the build and layout review do not enlarge any mathematical or scientific claim."
 }

@@ -37,16 +37,17 @@ For formal checks install Lean 4.22.0 separately and supply its executable:
 python -I -B verify.py --lean /path/to/lean
 ```
 
-The default runner registers 16 executable jobs: 12 Python jobs and four Node
-jobs. Supplying `--lean` adds the formal job, giving 17. These are registration
-counts, not a report that this expanded candidate has passed a fresh aggregate
-run or committed-byte replay; those integration runs remain pending.
+The default runner registers 17 executable jobs: 13 Python jobs and four Node
+jobs. Supplying `--lean` adds the formal job, giving 18. These are registration
+counts; the fresh aggregate receipt records what a particular execution ran
+and whether it passed.
 
 Without `--lean`, formal checking is explicitly `NOT_RUN`, including its entry
 in `checks`. The optional `--python-only` flag omits all four Node jobs:
 `atlas`, `atlas_view`, `rule_lab_model` and `rule_lab_presentation`. Each omitted
 job receives its own `NOT_RUN` entry and reason. The two-path Python job still
-runs. This gives 12 requested jobs, or 13 if `--lean` is also supplied.
+runs, as does the fixed-gap checker. This gives 13 requested jobs, or 14 if
+`--lean` is also supplied.
 
 The aggregate `requested_checks` list identifies the requested execution scope;
 PASS requires every listed job to pass. The top-level `node` status covers all

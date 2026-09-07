@@ -14,6 +14,7 @@ import shutil
 import subprocess
 import sys
 import uuid
+from urllib.parse import quote, unquote, urlsplit
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -126,6 +127,7 @@ def main():
         layout = load_module("rprm_print_layout", HERE / "layout_ast.py")
         adapted, layout_changes = layout.transform(ast)
         blocks, skip_contents, first_part_chapter = [], False, False
+        compact_chapter = False
         header_changes = []
         for node in adapted["blocks"]:
             if node.get("t") == "Header":
@@ -142,7 +144,10 @@ def main():
                 skip_contents = False
                 newlevel = max(1, level-1)
                 is_part = title.startswith("Part ")
-                is_chapter = bool(re.match(r"(?:II|III|IV)\.\d+\.", title))
+                is_chapter = level == 3 and bool(re.match(r"(?:II|III|IV)\.\d+\.", title))
+                if compact_chapter and (newlevel == 1 or is_chapter):
+                    blocks.append(layout.raw(r"\clearpage\endgroup"))
+                    compact_chapter = False
                 if newlevel == 1 or (is_chapter and not first_part_chapter):
                     blocks.append(layout.raw(r"\clearpage"))
                 if is_part:
@@ -150,12 +155,18 @@ def main():
                 elif is_chapter:
                     first_part_chapter = False
                 node["c"][0] = newlevel
+                if is_chapter and title.startswith(("II.2.", "IV.1.")):
+                    blocks.append(layout.raw(r"\begingroup\setlength{\parskip}{3.5pt plus 1pt minus .5pt}\setlength{\abovedisplayskip}{8pt plus 2pt minus 3pt}\setlength{\belowdisplayskip}{8pt plus 2pt minus 3pt}"))
+                    compact_chapter = True
+                    header_changes.append({"title": title, "treatment": "Slightly tighter paragraph/display spacing to absorb short chapter-ending spillover; body font and leading unchanged."})
                 if title == "Bibliography":
-                    blocks.append(layout.raw(r"\fontsize{9.5}{12.5}\selectfont"))
+                    blocks.append(layout.raw(r"\fontsize{9.5}{12}\selectfont\setlength{\parskip}{4pt plus .5pt minus .5pt}"))
                 header_changes.append({"title": title, "source_level": level, "typeset_level": newlevel})
             elif skip_contents:
                 continue
             blocks.append(node)
+        if compact_chapter:
+            blocks.append(layout.raw(r"\clearpage\endgroup"))
         adapted["blocks"] = blocks
         (out / "reading.layout.ast.json").write_text(json.dumps(adapted, ensure_ascii=False), encoding="utf-8")
         (out / "LAYOUT_TRANSFORMS.json").write_text(json.dumps({"source": layout_changes, "headings": header_changes}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -200,7 +211,27 @@ def main():
             # annotations remain together; importing pages alone can drop links.
             writer = PdfWriter(clone_from=body_reader)
             writer.insert_page(PdfReader(out / "cover.pdf").pages[0], 0)
-            from pypdf.generic import ArrayObject, NameObject
+            from pypdf.generic import ArrayObject, NameObject, TextStringObject
+            repository_links = []
+            for page_number, page in enumerate(writer.pages, 1):
+                for annotation in page.get("/Annots", []):
+                    action = annotation.get_object().get("/A")
+                    if not action or action.get("/S") != "/URI":
+                        continue
+                    uri = str(action.get("/URI", ""))
+                    parsed = urlsplit(uri)
+                    if parsed.scheme or parsed.netloc or not parsed.path:
+                        continue
+                    relative = Path(unquote(parsed.path))
+                    target = (ROOT / relative).resolve(strict=True)
+                    if relative.is_absolute() or not target.is_relative_to(ROOT) or not target.is_file() or parsed.query:
+                        raise ValueError("Unsupported repository link in PDF: " + uri)
+                    destination = "https://github.com/wjfoster55/RPRM-open/blob/main/" + quote(target.relative_to(ROOT).as_posix(), safe="/")
+                    if parsed.fragment:
+                        destination += "#" + parsed.fragment
+                    action[NameObject("/URI")] = TextStringObject(destination)
+                    repository_links.append({"page": page_number, "source": uri, "destination": destination})
+            receipt["repository_links"] = repository_links
             writer._root_object[NameObject("/OpenAction")] = ArrayObject([writer.pages[0].indirect_reference, NameObject("/Fit")])
             writer.add_outline_item("Cover", 0)
             writer.set_page_label(0, 0, prefix="Cover")
