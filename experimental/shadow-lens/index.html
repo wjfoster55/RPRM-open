@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1c20">
+  <title>Light &amp; Shadow · RPRM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="model.js" defer></script>
+  <script src="presentation.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#size">Skip to controls</a>
+  <div class="shell">
+    <header>
+      <div><p class="eyebrow">RPRM / Linked playgrounds</p><h1>Light &amp; Shadow</h1></div>
+      <p class="header-note">One shadow swatch. Three scenes that stay in sync.</p>
+      <button id="reset" class="quiet" type="button">Reset</button>
+    </header>
+    <main>
+      <section class="source-board" aria-labelledby="sharedTitle">
+        <div class="swatch-block">
+          <div class="source-heading"><h2 id="sharedTitle">Shared shadow</h2><span class="link-badge">↳ 3 scenes</span></div>
+          <svg id="swatch" viewBox="0 0 340 240" role="img" aria-labelledby="swatchTitle"><title id="swatchTitle">Editable shared shadow swatch</title><g id="swatchContent"></g></svg>
+          <p>Drag the swatch. All three scenes follow.</p>
+        </div>
+        <div class="source-controls">
+          <div class="source-copy"><h2>Change one thing. Watch all three.</h2><p>Each cutout reshapes to make the same shadow. Colored points keep the connection visible.</p></div>
+          <div class="shared-fields">
+            <div class="field"><label for="shape">Shape</label><select id="shape"><option value="0">Kite</option><option value="1">Chevron</option><option value="2">Wing</option></select></div>
+            <div class="field"><div class="label-row"><label for="size">Size</label><output id="sizeOut" for="size">100%</output></div><input id="size" type="range" min="40" max="120" step="1" value="100"></div>
+            <div class="field"><div class="label-row"><label for="centerX">Position X</label><output id="centerXOut" for="centerX">0</output></div><input id="centerX" type="range" min="-50" max="50" step="1" value="0"></div>
+            <div class="field"><div class="label-row"><label for="centerY">Position Y</label><output id="centerYOut" for="centerY">0</output></div><input id="centerY" type="range" min="-50" max="50" step="1" value="0"></div>
+          </div>
+          <p id="activity" class="activity">Shared swatch connected to 3 scenes</p>
+        </div>
+      </section>
+      <div class="branch" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="reading-bar">
+        <div class="view-selector"><span>Read all three with</span><div role="group" aria-label="Observation light"><button id="viewA" type="button" aria-pressed="true">Light A</button><button id="viewB" type="button" aria-pressed="false">Light B</button></div></div>
+        <strong id="relationStatus">3 scenes · 1 matching shadow</strong>
+      </div>
+      <p id="relationHint" class="relation-hint">Every cutout is fitted to the swatch above.</p>
+      <div class="scene-grid">
+        <article class="scene-card scene-0">
+          <div class="scene-heading"><h2><span class="scene-number">1</span> Scene 1</h2><span class="linked-label">↳ linked to swatch</span></div>
+          <div class="height-row"><label for="depth0">Height</label><input id="depth0" aria-label="Scene 1 height" type="range" min="2" max="8" step="1" value="2"><output id="depthOut0" for="depth0">20</output></div>
+          <p id="cutoutScale0" class="scale-note">Cutout size 80% of shadow</p>
+          <svg id="stage0" class="scene-svg" viewBox="0 0 900 590" role="img" aria-labelledby="stageTitle0"><title id="stageTitle0">Scene 1 fitted to the shared shadow</title><g id="stageContent0"></g></svg>
+          <div class="observation">
+            <div class="observation-heading"><span id="observationLabel0">Shadow under A</span><strong id="match0">= shared swatch</strong></div>
+            <svg id="observed0" class="observed-svg" viewBox="0 0 340 240" role="img" aria-label="Observed shadow of scene 1"><g id="observedContent0"></g></svg>
+          </div>
+        </article>
+        <article class="scene-card scene-1">
+          <div class="scene-heading"><h2><span class="scene-number">2</span> Scene 2</h2><span class="linked-label">↳ linked to swatch</span></div>
+          <div class="height-row"><label for="depth1">Height</label><input id="depth1" aria-label="Scene 2 height" type="range" min="2" max="8" step="1" value="5"><output id="depthOut1" for="depth1">50</output></div>
+          <p id="cutoutScale1" class="scale-note">Cutout size 50% of shadow</p>
+          <svg id="stage1" class="scene-svg" viewBox="0 0 900 590" role="img" aria-labelledby="stageTitle1"><title id="stageTitle1">Scene 2 fitted to the shared shadow</title><g id="stageContent1"></g></svg>
+          <div class="observation">
+            <div class="observation-heading"><span id="observationLabel1">Shadow under A</span><strong id="match1">= shared swatch</strong></div>
+            <svg id="observed1" class="observed-svg" viewBox="0 0 340 240" role="img" aria-label="Observed shadow of scene 2"><g id="observedContent1"></g></svg>
+          </div>
+        </article>
+        <article class="scene-card scene-2">
+          <div class="scene-heading"><h2><span class="scene-number">3</span> Scene 3</h2><span class="linked-label">↳ linked to swatch</span></div>
+          <div class="height-row"><label for="depth2">Height</label><input id="depth2" aria-label="Scene 3 height" type="range" min="2" max="8" step="1" value="8"><output id="depthOut2" for="depth2">80</output></div>
+          <p id="cutoutScale2" class="scale-note">Cutout size 20% of shadow</p>
+          <svg id="stage2" class="scene-svg" viewBox="0 0 900 590" role="img" aria-labelledby="stageTitle2"><title id="stageTitle2">Scene 3 fitted to the shared shadow</title><g id="stageContent2"></g></svg>
+          <div class="observation">
+            <div class="observation-heading"><span id="observationLabel2">Shadow under A</span><strong id="match2">= shared swatch</strong></div>
+            <svg id="observed2" class="observed-svg" viewBox="0 0 340 240" role="img" aria-label="Observed shadow of scene 3"><g id="observedContent2"></g></svg>
+          </div>
+        </article>
+      </div>
+      <details class="advanced">
+        <summary>Move the shared light &amp; inspect the relation</summary>
+        <div class="advanced-controls">
+          <div class="field"><div class="label-row"><label for="lightX">Light X</label><output id="lightXOut" for="lightX">−40</output></div><input id="lightX" type="range" min="-80" max="80" step="1" value="-40"></div>
+          <div class="field"><div class="label-row"><label for="lightY">Light Y</label><output id="lightYOut" for="lightY">30</output></div><input id="lightY" type="range" min="-80" max="80" step="1" value="30"></div>
+          <button id="raysToggle" type="button" aria-pressed="true">Show rays</button>
+          <p>Drag a lamp in any scene to move all lamps. Drag one cutout up or down to change only its height.</p>
+        </div>
+        <p>These are three selected scenes from the family that fits the target. A alone cannot tell their heights apart. B reveals height, while the absolute lamp position remains undetermined. The same coordinate scale is used for every observation, under either light. The lamps represent separate exposures.</p>
+        <p>Within this model's grid, a fixed A shadow fits 181,447 sources. The three examples above are not the full family. Geometry uses ordinary central projection; glow and color are illustrative.</p>
+      </details>
+      <p id="error" role="status"></p><p id="live" class="visually-hidden" aria-live="polite" aria-atomic="true"></p>
+      <noscript><p>This playground needs JavaScript. Enable it, then reload.</p></noscript>
+    </main>
+    <footer><span>One shared constraint, several possible scenes.</span><nav aria-label="Model documentation"><a href="README.md">How it works ↗</a><a href="MODEL.md">Exact model ↗</a></nav></footer>
+  </div>
+</body>
+</html>
