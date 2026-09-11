@@ -1,0 +1,95 @@
+{
+  "n_rows": 15475,
+  "n_panel_view_groups": 13,
+  "hard_error_total": 0,
+  "hard_error_counts_by_panel_view": [
+    {
+      "panel": "RC_noiseless",
+      "view": "present_plus_plan",
+      "n_rows": 220,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RC_noiseless",
+      "view": "raw_union_plus_plan",
+      "n_rows": 220,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RC_noiseless",
+      "view": "two_voltage_lag_plus_plan",
+      "n_rows": 220,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RC_noiseless",
+      "view": "window_mean_spread_plus_plan",
+      "n_rows": 220,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RC_noisy",
+      "view": "present_plus_plan",
+      "n_rows": 660,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RC_noisy",
+      "view": "raw_union_plus_plan",
+      "n_rows": 660,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RC_noisy",
+      "view": "two_voltage_lag_plus_plan",
+      "n_rows": 660,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RC_noisy",
+      "view": "window_mean_spread_plus_plan",
+      "n_rows": 660,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RLC",
+      "view": "current_readout_plus_plan",
+      "n_rows": 2391,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RLC",
+      "view": "present_plus_plan",
+      "n_rows": 2391,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RLC",
+      "view": "raw_union_plus_plan",
+      "n_rows": 2391,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RLC",
+      "view": "two_voltage_lag_plus_plan",
+      "n_rows": 2391,
+      "hard_error_sum": 0
+    },
+    {
+      "panel": "RLC",
+      "view": "window_mean_spread_plus_plan",
+      "n_rows": 2391,
+      "hard_error_sum": 0
+    }
+  ],
+  "all_hard_errors_zero": true,
+  "threshold": 0.5,
+  "operation": "SAVED_ROW_REAGGREGATION",
+  "rule": "hard prediction = 1 if p >= 0.5 else 0; error if prediction != label",
+  "learner_gzip": {
+    "path": "pc1/LEARNER_ORIGIN_PREDICTIONS.csv.gz",
+    "sha256": "b2f2ebee8162a564184569c025d222b9b5128d8aa90f90dc0811cb186bab37d1",
+    "bytes": 59454
+  },
+  "source_csv_sha256_pin": "69e19af411e50424e719264f3ef732e11c0517fd89066f598bb4b9452834755d"
+}

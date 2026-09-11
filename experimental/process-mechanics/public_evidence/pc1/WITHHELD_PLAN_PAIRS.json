@@ -1,0 +1,438 @@
+{
+  "record_type": "WITHHELD_PLAN_COMPACT_PAIRS",
+  "evidence_grade": "SOURCE_REPORTED_EXTRACT",
+  "operation_for_downstream": "SAVED_ROW_REAGGREGATION",
+  "prior": {
+    "0.0": 0.5,
+    "1.0": 0.5
+  },
+  "clipping": {
+    "rule": "clip predicted probability to [1e-6, 1-1e-6] before squared loss",
+    "eps": 1e-06,
+    "note": "Equal prior 1/2 on two release labels; agreeing rows use hard 0/1 then clip; conflicting rows use p=0.5"
+  },
+  "n_pairs": 60,
+  "pairs": [
+    {
+      "v0": 0.65,
+      "index": 50,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.65,
+      "index": 60,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.65,
+      "index": 70,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.65,
+      "index": 80,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.65,
+      "index": 90,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.65,
+      "index": 100,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.65,
+      "index": 110,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.65,
+      "index": 120,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.65,
+      "index": 130,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.65,
+      "index": 140,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.65,
+      "index": 150,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.65,
+      "index": 160,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.65,
+      "index": 170,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.65,
+      "index": 180,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.65,
+      "index": 190,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.75,
+      "index": 50,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.75,
+      "index": 60,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.75,
+      "index": 70,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.75,
+      "index": 80,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.75,
+      "index": 90,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.75,
+      "index": 100,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.75,
+      "index": 110,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.75,
+      "index": 120,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.75,
+      "index": 130,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.75,
+      "index": 140,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.75,
+      "index": 150,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.75,
+      "index": 160,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.75,
+      "index": 170,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.75,
+      "index": 180,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.75,
+      "index": 190,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.85,
+      "index": 50,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.85,
+      "index": 60,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.85,
+      "index": 70,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.85,
+      "index": 80,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.85,
+      "index": 90,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.85,
+      "index": 100,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.85,
+      "index": 110,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.85,
+      "index": 120,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.85,
+      "index": 130,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.85,
+      "index": 140,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.85,
+      "index": 150,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.85,
+      "index": 160,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.85,
+      "index": 170,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.85,
+      "index": 180,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.85,
+      "index": 190,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.95,
+      "index": 50,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.95,
+      "index": 60,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.95,
+      "index": 70,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.95,
+      "index": 80,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.95,
+      "index": 90,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.95,
+      "index": 100,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.95,
+      "index": 110,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.95,
+      "index": 120,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.95,
+      "index": 130,
+      "label_release0": 0,
+      "label_release1": 0,
+      "conflicting": false
+    },
+    {
+      "v0": 0.95,
+      "index": 140,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.95,
+      "index": 150,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.95,
+      "index": 160,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.95,
+      "index": 170,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.95,
+      "index": 180,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    },
+    {
+      "v0": 0.95,
+      "index": 190,
+      "label_release0": 1,
+      "label_release1": 0,
+      "conflicting": true
+    }
+  ],
+  "source_headline_sha256": "37a8353b21d10336b0084d0f74b44b37c157c08c1b5dae8edafde65413d98c23"
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "rprm.process-mechanics.document-build.v2",
+  "status": "BUILT",
+  "edition": "0.3",
+  "layout_revision": "A1-PUBLICATION; working-paper release metadata only",
+  "metadata": {
+    "title": "The Right Answer Is Not Enough",
+    "subtitle": "RPRM Process Mechanics: What Scientific Descriptions Must Preserve",
+    "author": "William J Foster",
+    "author-given-names": "William J",
+    "author-family-names": "Foster",
+    "date": "11 September 2026",
+    "version": "0.3",
+    "status": "Working paper",
+    "pdf-filename": "The-Right-Answer-Is-Not-Enough.pdf",
+    "doi": "10.5281/zenodo.22709682",
+    "url": "https://zenodo.org/records/22709682",
+    "license": "CC0-1.0"
+  },
+  "metadata_source": "MANUSCRIPT.md YAML header",
+  "title": "The Right Answer Is Not Enough: RPRM Process Mechanics: What Scientific Descriptions Must Preserve",
+  "author": "William J Foster",
+  "built_at_utc": "2026-09-11T13:56:48.934801+00:00",
+  "source_date_epoch": 1789084800,
+  "pages": 41,
+  "inputs": {
+    "MANUSCRIPT.md": "c4a60a79a1ed23690f61df6a0e35c705ce141e7187452de09bffb11952b9270e",
+    "APPENDICES.md": "4d3596a2a8b43061baa34a79712ad4ad29493e09d49042aef5fca09e0d9e7e94",
+    "BIBLIOGRAPHY.md": "8c225dceacbd28aab6507d735a5e6a5c87f2e08474daf132b7420a9f8c938897",
+    "preamble.tex": "3755299530e5c14a3dbd255d791aec0d1ff7dc2d3030fdf6fba1325302774fd2",
+    "build_paper.py": "c5c1606282911dcc5ab8ec77a6cf29806e95e999590d867e1ac7d18367986c96",
+    "figures/triangle.pdf": "9780b8980c68f48288123f695780efb277e7fb5e94fc92058fe2cf81ac61ddeb",
+    "figures/chain-continuation.pdf": "9408837a994d538b791db940078176b5bf95676d8f8b710e4e04fd6d93a8d0a5"
+  },
+  "pdf": "The-Right-Answer-Is-Not-Enough.pdf",
+  "pdf_sha256": "97de1e6e688fab05a83aef981fb39a97e0f381447ff90b5b2e08d240135eac62",
+  "canonical_sources": [
+    "MANUSCRIPT.md",
+    "APPENDICES.md",
+    "BIBLIOGRAPHY.md"
+  ],
+  "template_is_immutable_during_build": true,
+  "font_files_bundled": true,
+  "font_directory_in_companion": "tools/typesetting/fonts",
+  "font_files": {
+    "STIXTwoText-Regular.otf": "c4864ca6ec071c2d31d0d8309001faa1ee3517fffb53a31a405a697b71f52ca1",
+    "STIXTwoText-Bold.otf": "7ef76c666a6704f76ed3fa27bcdda55b36e558b5c2c93b49b03d854db96bdeb5",
+    "STIXTwoText-Italic.otf": "cd64481fd10b69469074a3a8172fb5a22cb4116941d8aceafb8c77756b563df8",
+    "STIXTwoText-BoldItalic.otf": "90e88f2ac79d6c00a5ce2d8446bfdf9457aed6afc1159cde33262979d82c8586",
+    "STIXTwoMath-Regular.otf": "3a5f3f26f40d5698b3c62dd085d48d6663696a3f80825aab8b553d5097518e8c",
+    "DejaVuSans.ttf": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22",
+    "DejaVuSans-Bold.ttf": "b184b89e3c1075f22f6b71575b6fc20d4972b3cfd3b23322ca6fd596dcaef167",
+    "DejaVuSans-Oblique.ttf": "ccdf74b350f11fd3dd5774de50e5e6346a1a5da1f5b7d5fb83590665e97a5213",
+    "DejaVuSansMono.ttf": "602ec86b8948cfcd956482fe64f94c36c867770149ef2f791d4613f443bcecb3"
+  },
+  "toolchain": {
+    "pandoc": "pandoc 3.11",
+    "tectonic": "Tectonic 0.17.0"
+  },
+  "python": "3.12.14",
+  "commands": [
+    [
+      "python",
+      "build_paper.py",
+      "--pandoc",
+      "<pandoc-executable>",
+      "--tectonic",
+      "<tectonic-executable>",
+      "--font-dir",
+      "../../tools/typesetting/fonts",
+      "--outdir",
+      "<disposable-build-directory>"
+    ]
+  ],
+  "tex_warnings": {
+    "overfull": 0,
+    "missing_glyph": 0,
+    "undefined_reference": 0
+  },
+  "layout_review": {
+    "status": "PASS",
+    "pdf_sha256": "97de1e6e688fab05a83aef981fb39a97e0f381447ff90b5b2e08d240135eac62",
+    "receipt": "LAYOUT_REVIEW.json",
+    "pages_inspected": 41,
+    "newly_inspected_pages": [
+      1,
+      38,
+      39
+    ],
+    "remaining_pages_matched_to_prior_review": 38
+  },
+  "verification_scope": "Publication-metadata-only successor. Main body, five proof blocks, 29 displayed mathematics blocks, all inline mathematics, all six tables, bibliography and both figure PDFs are unchanged. Only the appendix DOI provenance sentence changed outside the metadata header. All 41 pages rendered; three changed pages inspected and 38 render-identical pages inherited from the completed prepublication visual review. Scientific tests and experiments were not rerun. The local build performs no publication operation.",
+  "publication_approved": true,
+  "publication_status_at_build": "Release metadata ready; record operation is separate",
+  "doi": "10.5281/zenodo.22709682",
+  "record_url": "https://zenodo.org/records/22709682",
+  "license": "CC0-1.0",
+  "publication_event_performed": false,
+  "pdf_structural_check": {
+    "status": "PASS",
+    "receipt": "PDF_CHECKS.json",
+    "pdf_sha256": "97de1e6e688fab05a83aef981fb39a97e0f381447ff90b5b2e08d240135eac62"
+  }
+}

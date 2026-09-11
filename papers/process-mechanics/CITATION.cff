@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this working paper, please cite the record below."
+title: "The Right Answer Is Not Enough: RPRM Process Mechanics: What Scientific Descriptions Must Preserve"
+version: "0.3"
+doi: "10.5281/zenodo.22709682"
+url: "https://zenodo.org/records/22709682"
+license: "CC0-1.0"
+authors:
+  - family-names: "Foster"
+    given-names: "William J"
+preferred-citation:
+  type: report
+  title: "The Right Answer Is Not Enough: RPRM Process Mechanics: What Scientific Descriptions Must Preserve"
+  authors:
+    - family-names: "Foster"
+      given-names: "William J"
+  year: 2026
+  version: "0.3"
+  doi: "10.5281/zenodo.22709682"
+  url: "https://zenodo.org/records/22709682"
+  notes: "Working-paper date: 11 September 2026. Original prose and figures: CC0-1.0."

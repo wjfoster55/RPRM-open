@@ -16,3 +16,8 @@ LICENSES/AMS-MSAM10-OFL.txt whitespace=-blank-at-eol
 # Preserve the frozen generator and extracted TeX preamble's final blank line.
 tools/build_two_path_figures.py whitespace=-blank-at-eof
 tools/typesetting/preamble.tex whitespace=-blank-at-eof
+
+# Preserve reviewed process-mechanics bytes and source/hash bindings.
+papers/process-mechanics/** -text
+experimental/process-mechanics/** -text
+rprm/process_mechanics/** -text

@@ -135,6 +135,10 @@ and its certificate. Its unrestricted independent goal remains open.
 The [runnable reference](docs/fermat.md) documents the existing fixed-gap
 tool and finite replay.
 
+## Process-mechanics working paper
+
+[*The Right Answer Is Not Enough*](papers/process-mechanics/The-Right-Answer-Is-Not-Enough.pdf) develops RPRM Process Mechanics through circuit, interval, and partial-measurement cases. It asks what a description must preserve for a question, an update, and the next inference. [Source and build](papers/process-mechanics/README.md), [claim mapping](papers/process-mechanics/CLAIM_ID_MANIFEST.json), and [public companion verification](experimental/process-mechanics/README.md) are included. This is a separate working paper, version 0.3 (11 September 2026), DOI [10.5281/zenodo.22709682](https://doi.org/10.5281/zenodo.22709682). Its evidence includes sufficient-state and hard-decision nulls, model-conditional successes and a partial reconstruction. It does not inherit the Manifesto DOI.
+
 ## Freedom to reuse
 
 Original software is under [0BSD](LICENSE); original prose, diagrams and data

@@ -1,0 +1,28 @@
+{
+  "kit_id": "process-mechanics/circuits",
+  "version": "0.1.0",
+  "claim_ids": ["PC-CONT-01", "PC-INPUT-01", "PC-STATE-01", "PC-NULL-01", "PC-EST-01"],
+  "evidence_grade": {
+    "PC-CONT-01": "REPRODUCED_PUBLIC_PORT",
+    "PC-INPUT-01": "REPRODUCED_PUBLIC_PORT",
+    "PC-STATE-01": "REPRODUCED_PUBLIC_PORT",
+    "PC-NULL-01": "NEW_ILLUSTRATIVE_DEMO",
+    "PC-EST-01": "UNMAPPED"
+  },
+  "model_scope": "Synthetic RC and overdamped series RLC; not hardware",
+  "inputs": ["declared R/C/L", "known or withheld drive plan", "timed voltages"],
+  "output_semantics": "event label 0/1; reconstructed current; SINGULAR_OBSERVATION_MAP; SKIP_OPTIONAL_DEPENDENCY",
+  "source_ids": {
+    "content_commit": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+    "repository": "wjfoster55/rprm-protein-folding"
+  },
+  "replay_command": "python -I -B experimental/process-mechanics/circuits/check.py",
+  "expected_result_path": "experimental/process-mechanics/circuits/expected/demo_receipt.json",
+  "verification_scope": "Finite synthetic fixtures; RLC requires optional numpy/scipy",
+  "limitations": [
+    "No hardware result",
+    "No general noisy-RLC guarantee",
+    "PC-EST-01 noisy LS panel not packaged in this kit"
+  ],
+  "rights": "Original kit software 0BSD; original text/example data CC0"
+}

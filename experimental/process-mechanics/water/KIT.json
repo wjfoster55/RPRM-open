@@ -1,0 +1,26 @@
+{
+  "kit_id": "process-mechanics/water",
+  "version": "0.1.0",
+  "claim_ids": ["W-COMP-01", "W-TRUST-01", "W-REUSE-01"],
+  "evidence_grade": {
+    "W-COMP-01": "REPRODUCED_PUBLIC_PORT",
+    "W-TRUST-01": "REPRODUCED_PUBLIC_PORT",
+    "W-REUSE-01": "NEW_ILLUSTRATIVE_DEMO"
+  },
+  "model_scope": "Exact synthetic latent laws on half-open (t0,t1]; fixture times in [0,12]; no hydraulic field claim",
+  "inputs": ["laws.py catalogue", "parent interval (4,8]", "equal and mixed partitions"],
+  "output_semantics": "JOIN_OK structural join; OPEN_MISSING_CHILD; REJECT_*; direct analytic comparator",
+  "source_ids": {
+    "content_commit": "90bf41040076af2b448ff5f52c512bbcbb0f2e26",
+    "repository": "wjfoster55/rprm-water"
+  },
+  "replay_command": "python -I -B experimental/process-mechanics/water/check.py",
+  "expected_result_path": "experimental/process-mechanics/water/expected/demo_receipt.json",
+  "verification_scope": "Exact Fraction arithmetic composition and spoof control; not a physical water trial",
+  "limitations": [
+    "Not 76 independent physical trials",
+    "JOIN_OK does not certify child truth",
+    "W-REUSE-01 here is a local context demo, not an independent PR14 audit"
+  ],
+  "rights": "Original kit software 0BSD; original text/example data CC0; third-party sources retain their terms"
+}

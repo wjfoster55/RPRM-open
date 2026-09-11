@@ -1,0 +1,99 @@
+{
+  "schema": "rprm.process-mechanics.source-manifest.v1",
+  "edition": "0.3",
+  "metadata_source": "MANUSCRIPT.md YAML header",
+  "doi": "10.5281/zenodo.22709682",
+  "files": [
+    {
+      "path": "APPENDICES.md",
+      "bytes": 22421,
+      "sha256": "4d3596a2a8b43061baa34a79712ad4ad29493e09d49042aef5fca09e0d9e7e94"
+    },
+    {
+      "path": "BIBLIOGRAPHY.md",
+      "bytes": 5877,
+      "sha256": "8c225dceacbd28aab6507d735a5e6a5c87f2e08474daf132b7420a9f8c938897"
+    },
+    {
+      "path": "build_paper.py",
+      "bytes": 21803,
+      "sha256": "c5c1606282911dcc5ab8ec77a6cf29806e95e999590d867e1ac7d18367986c96"
+    },
+    {
+      "path": "BUILD_README.md",
+      "bytes": 4600,
+      "sha256": "2ee5740941c770ad5ff036bf07fb71e5f7ec0623e9ede8d6399f05652900a248"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 804,
+      "sha256": "c720f1340997235a8ee5f0c7a83f574a5f1d7c4df2ef41037dad395fff7b4884"
+    },
+    {
+      "path": "CLAIM_ID_MANIFEST.json",
+      "bytes": 11467,
+      "sha256": "f2bdae8fd08a95f02a50b9d6e44f592a07dc67f82792a7c98b3d4e39d22be465"
+    },
+    {
+      "path": "CORRECTIONS.md",
+      "bytes": 1637,
+      "sha256": "b6df86bc1881338b0cdd06f216248edd54683e04388f8c3dc11dc29811ccfc99"
+    },
+    {
+      "path": "DOCUMENT_BUILD.json",
+      "bytes": 4812,
+      "sha256": "515ce22882fa03b15573a98465075e67c48dc7683d22df7c7d606d827de16b74"
+    },
+    {
+      "path": "figures/chain-continuation.pdf",
+      "bytes": 44437,
+      "sha256": "9408837a994d538b791db940078176b5bf95676d8f8b710e4e04fd6d93a8d0a5"
+    },
+    {
+      "path": "figures/triangle.pdf",
+      "bytes": 43958,
+      "sha256": "9780b8980c68f48288123f695780efb277e7fb5e94fc92058fe2cf81ac61ddeb"
+    },
+    {
+      "path": "LAYOUT_REVIEW.json",
+      "bytes": 11043,
+      "sha256": "284076d35528550f48a00ae14b7c7ae5b35b0c27e06bd8e529e05e799e042e27"
+    },
+    {
+      "path": "MANUSCRIPT.md",
+      "bytes": 74250,
+      "sha256": "c4a60a79a1ed23690f61df6a0e35c705ce141e7187452de09bffb11952b9270e"
+    },
+    {
+      "path": "PDF_CHECKS.json",
+      "bytes": 28405,
+      "sha256": "21c8747dd3b076232fe07996841ac5f3840aed59cb11b23328e181a55478c91f"
+    },
+    {
+      "path": "preamble.tex",
+      "bytes": 4503,
+      "sha256": "3755299530e5c14a3dbd255d791aec0d1ff7dc2d3030fdf6fba1325302774fd2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2180,
+      "sha256": "ca681c313248d9db3eeb9dd92b6e0c78d66d39aa4cbe6b09291d1303291f69a3"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 34,
+      "sha256": "776ba396e2847bf857ef04bcf34101fea96f844d27c1e78c8be4035f604f67fb"
+    },
+    {
+      "path": "The-Right-Answer-Is-Not-Enough.pdf",
+      "bytes": 304898,
+      "sha256": "97de1e6e688fab05a83aef981fb39a97e0f381447ff90b5b2e08d240135eac62"
+    },
+    {
+      "path": "ZENODO_METADATA.json",
+      "bytes": 3699,
+      "sha256": "e4cb13ebbb80342b777b7c1d39f9c812dc1e703a30ba61a1375c9ba964d6b3d9"
+    }
+  ],
+  "excludes": "This manifest only."
+}

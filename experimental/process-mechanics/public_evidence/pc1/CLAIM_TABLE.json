@@ -1,0 +1,215 @@
+{
+  "record_type": "CLAIM_TABLE_FROM_PUBLIC_SAVED_ROWS",
+  "operations": {
+    "SOURCE_REPORTED_EXTRACT": "MATCHED_INFO_HEADLINE / PR13 / C1 status card fields",
+    "SAVED_ROW_REAGGREGATION": "derived below from public CSV.gz and pair rows",
+    "not_done_here": [
+      "model regeneration",
+      "learner refitting",
+      "source-trajectory resimulation",
+      "independent PR14 audit replay",
+      "C1 figure redigitization"
+    ]
+  },
+  "inputs": {
+    "LEARNER_ORIGIN_PREDICTIONS.csv.gz": {
+      "path": "pc1/LEARNER_ORIGIN_PREDICTIONS.csv.gz",
+      "sha256": "b2f2ebee8162a564184569c025d222b9b5128d8aa90f90dc0811cb186bab37d1",
+      "evidence_grade": "SAVED_ROW_EXPORT"
+    },
+    "OBSERVER_ORIGIN_RECORDS.csv.gz": {
+      "path": "pc1/OBSERVER_ORIGIN_RECORDS.csv.gz",
+      "sha256": "56b15641fc2966684c798f8511700a71dd8d513fe9fc999503031da34fc35848",
+      "evidence_grade": "SAVED_ROW_EXPORT"
+    },
+    "WITHHELD_PLAN_PAIRS.json": {
+      "path": "pc1/WITHHELD_PLAN_PAIRS.json",
+      "sha256": "629b292a1a904c09c54bdbeec9f4fdd45b0ffb1cbb54e25080041a1361f01dc5",
+      "evidence_grade": "SOURCE_REPORTED_EXTRACT"
+    },
+    "MATCHED_INFO_HEADLINE.json": {
+      "path": "pc1/MATCHED_INFO_HEADLINE.json",
+      "sha256": "86b1909d3f5a9768293741a13802c73e9439ac6e18ee0c80be314c4dc3b34275",
+      "evidence_grade": "SOURCE_REPORTED_EXTRACT",
+      "note": "Compared to recomputation; not copied as the sole arithmetic support"
+    },
+    "PR13_TRUST_EXTRACT.json": {
+      "path": "water/PR13_TRUST_EXTRACT.json",
+      "sha256": "11e64a9260a20660fec79161c924aa61346843493fc47610525df51688d92924",
+      "evidence_grade": "SOURCE_REPORTED_EXTRACT"
+    },
+    "MEASUREMENT_STATUS.json": {
+      "path": "c1/MEASUREMENT_STATUS.json",
+      "sha256": "ab8dc20d2f3fb152c017b66d71cb28feae9bd252915c25d2361384abd5ed9921",
+      "evidence_grade": "SOURCE_REPORTED_EXTRACT"
+    }
+  },
+  "derived": {
+    "evidence_grade": "SAVED_ROW_REAGGREGATION",
+    "hard_decisions": {
+      "n_rows": 15475,
+      "n_panel_view_groups": 13,
+      "hard_error_total": 0,
+      "hard_error_counts_by_panel_view": [
+        {
+          "panel": "RC_noiseless",
+          "view": "present_plus_plan",
+          "n_rows": 220,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RC_noiseless",
+          "view": "raw_union_plus_plan",
+          "n_rows": 220,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RC_noiseless",
+          "view": "two_voltage_lag_plus_plan",
+          "n_rows": 220,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RC_noiseless",
+          "view": "window_mean_spread_plus_plan",
+          "n_rows": 220,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RC_noisy",
+          "view": "present_plus_plan",
+          "n_rows": 660,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RC_noisy",
+          "view": "raw_union_plus_plan",
+          "n_rows": 660,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RC_noisy",
+          "view": "two_voltage_lag_plus_plan",
+          "n_rows": 660,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RC_noisy",
+          "view": "window_mean_spread_plus_plan",
+          "n_rows": 660,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RLC",
+          "view": "current_readout_plus_plan",
+          "n_rows": 2391,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RLC",
+          "view": "present_plus_plan",
+          "n_rows": 2391,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RLC",
+          "view": "raw_union_plus_plan",
+          "n_rows": 2391,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RLC",
+          "view": "two_voltage_lag_plus_plan",
+          "n_rows": 2391,
+          "hard_error_sum": 0
+        },
+        {
+          "panel": "RLC",
+          "view": "window_mean_spread_plus_plan",
+          "n_rows": 2391,
+          "hard_error_sum": 0
+        }
+      ],
+      "all_hard_errors_zero": true,
+      "threshold": 0.5,
+      "operation": "SAVED_ROW_REAGGREGATION",
+      "rule": "hard prediction = 1 if p >= 0.5 else 0; error if prediction != label"
+    },
+    "observer_metrics": {
+      "observer_rows": 3271,
+      "RC_noisy_rows": 660,
+      "LS_state_MSE": 1.3533488125594924e-05,
+      "raw_MSE": 0.002857149706791507,
+      "past_mean_MSE": 0.0037714200726415015,
+      "RLC_rows": 2391,
+      "max_stored_current_error": 1.317305639569888e-16,
+      "operation": "SAVED_ROW_REAGGREGATION"
+    },
+    "withheld_plan": {
+      "n_pairs": 60,
+      "n_conflicting_pairs": 24,
+      "n_branch_rows": 120,
+      "unclipped_mixture_brier": 0.1,
+      "clipped_mixture_brier": 0.1000000000006,
+      "ambiguous_subset_squared_loss": 0.25,
+      "operation": "SAVED_ROW_REAGGREGATION",
+      "clipping_eps": 1e-06
+    }
+  },
+  "headline_numbers": {
+    "PC-STATE-01_rlc_rows_recomputed": 2391,
+    "PC-STATE-01_max_abs_i_error_recomputed": 1.317305639569888e-16,
+    "PC-STATE-01_max_abs_i_error_source_reported": 1.3042952135000618e-16,
+    "PC-EST-01_finite_window_LS_MSE_recomputed": 1.3533488125594924e-05,
+    "PC-EST-01_raw_measurement_MSE_recomputed": 0.002857149706791507,
+    "PC-EST-01_plain_past_mean_MSE_recomputed": 0.0037714200726415015,
+    "PC-EST-01_finite_window_LS_event_n_source_reported": 660,
+    "PC-INPUT-01_n_pairs_recomputed": 60,
+    "PC-INPUT-01_n_conflicting_pairs_recomputed": 24,
+    "PC-INPUT-01_unclipped_mixture_brier_recomputed": 0.1,
+    "PC-INPUT-01_clipped_mixture_brier_recomputed": 0.1000000000006,
+    "PC-INPUT-01_prior_mixture_brier_source_reported": 0.10000000000060001,
+    "PC-NULL-01_n_rows_recomputed": 15475,
+    "PC-NULL-01_hard_error_total_recomputed": 0,
+    "W-TRUST-01_joined": [
+      "10",
+      "10"
+    ],
+    "W-TRUST-01_exact": [
+      "9",
+      "11"
+    ],
+    "W-TRUST-01_primary_11_5": false,
+    "C-MEAS-01_status": "ACCEPTED_PARTIAL",
+    "C-MEAS-01_primary_doi": "10.1038/ncomms5048"
+  },
+  "consistency_checks": {
+    "learner_rows_15475": true,
+    "hard_errors_zero": true,
+    "observer_rows_3271": true,
+    "rc_noisy_rows_660": true,
+    "rlc_rows_2391": true,
+    "pairs_60": true,
+    "conflicts_24": true,
+    "pair_array_len_matches": true,
+    "unclipped_brier_is_0_1": true,
+    "reported_brier_matches_recomputed_clipped": true,
+    "reported_conflicts_match_recomputed": true,
+    "reported_n_pairs_match_recomputed": true,
+    "reported_ls_mse_matches_recomputed": true,
+    "reported_raw_mse_matches_recomputed": true,
+    "reported_past_mse_matches_recomputed": true,
+    "reported_rlc_n_matches": true,
+    "reported_rlc_max_err_near_recomputed": true,
+    "optional_csv_verify_ok": true
+  },
+  "optional_csv_verify": {
+    "path_present": false,
+    "note": "pass --verify-csv to fail on hash mismatch against the pinned source"
+  },
+  "artifacts_written": {
+    "hard_decision_counts.json": "pc1/hard_decision_counts.json",
+    "HARD_DECISION_SUMMARY.json": "pc1/HARD_DECISION_SUMMARY.json"
+  },
+  "boundary": "Saved-row reaggregation only. Does not establish that upstream predictors used their claimed inputs, nor regenerate source trajectories."
+}

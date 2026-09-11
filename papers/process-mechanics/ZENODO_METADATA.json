@@ -1,0 +1,44 @@
+{
+  "schema": "rprm.zenodo-release-metadata.v1",
+  "title": "The Right Answer Is Not Enough: RPRM Process Mechanics: What Scientific Descriptions Must Preserve",
+  "resource_type": "publication-workingpaper",
+  "version": "0.3",
+  "publication_date": "2026-09-11",
+  "publication_state": "RELEASE_METADATA_READY",
+  "doi": "10.5281/zenodo.22709682",
+  "record_url": "https://zenodo.org/records/22709682",
+  "creators": [
+    {
+      "family_name": "Foster",
+      "given_names": "William J"
+    }
+  ],
+  "language": "eng",
+  "keywords": [
+    "RPRM",
+    "information preservation",
+    "process mechanics",
+    "scientific representation",
+    "sufficient statistics",
+    "reproducible research"
+  ],
+  "license": "CC0-1.0",
+  "software_license": "0BSD",
+  "third_party_terms": "See LICENSING.md and THIRD_PARTY_NOTICES.md; the project licenses do not relicense third-party material.",
+  "publisher": "Zenodo",
+  "repository_url": "https://github.com/wjfoster55/RPRM-open",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.22650748",
+      "scheme": "doi",
+      "relation": "cites",
+      "resource_type": "publication-workingpaper"
+    }
+  ],
+  "description_paragraphs": [
+    "Scientific descriptions become useful through the work they let us do next: predict a response, combine observations, or reuse a result. A correct answer to one question can nevertheless discard a distinction that the next question requires. This paper develops RPRM Process Mechanics as a human-guided method for finding and testing those distinctions. It connects the choice of a representation to three obligations: preserving continuation, composing evidence about compatible sources, and reusing conclusions under the conditions that support them. Measurement interpretation connects the calculation back to the scientific quantity being requested.",
+    "The mathematical core specializes established factorization results, gives conditions for resolving a question from joint records, and distinguishes logical resolution from probabilistic improvement. Development cases show how these distinctions change the appropriate next step. In known-equation circuits, present state can suffice, timed observations can improve estimation or recover hidden current, and an unprovided future input can remain unresolved. Exact interval summaries compose across 76 law-partition comparisons, while a structurally accepted false summary exposes the limits of a correct Boolean answer. A biological-figure reconstruction retains useful partial results while identifying missing calibration and sampling relations. These are worked diagnoses, not a demonstrated comparative advantage. Existing proposals for protein-folding dynamics and BRCA1 cellular function show how the same reasoning could guide harder applications: test which distinctions a reduced description must retain for the desired behavior or measurement. Those molecular comparisons remain unexecuted. The aim is a usable connection between mathematical sufficiency and the scientific choice of what to retain, what to measure, and what to do next.",
+    "This separate working paper accompanies The RPRM Manifesto (DOI: 10.5281/zenodo.22650748). The companion archive includes editable manuscript and build files, public evidence, and reproducible verification code. Original prose, diagrams, and data are CC0 1.0; original software is 0BSD. Third-party material retains its identified terms; see the accompanying licensing and notices."
+  ],
+  "metadata_note": "Prepared for the authorized release. This metadata file does not attest that the external publication operation has occurred."
+}

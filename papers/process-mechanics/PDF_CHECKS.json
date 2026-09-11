@@ -1,0 +1,1305 @@
+{
+  "schema": "rprm.a1-pdf-checks.v1",
+  "status": "PASS",
+  "pdf_sha256": "97de1e6e688fab05a83aef981fb39a97e0f381447ff90b5b2e08d240135eac62",
+  "page_count": 41,
+  "metadata": {
+    "/Creator": "Local Pandoc and Tectonic build",
+    "/Title": "The Right Answer Is Not Enough: RPRM Process Mechanics: What Scientific Descriptions Must Preserve",
+    "/Subject": "Methods and development calibration; working paper 0.3",
+    "/Author": "William J Foster",
+    "/Producer": "xdvipdfmx (0.1)",
+    "/CreationDate": "D:20260911000000-00'00'"
+  },
+  "fonts": {
+    "/IHAIZV+DejaVuSans": {
+      "subtype": "/Type0",
+      "embedded": true,
+      "to_unicode": true
+    },
+    "/BZIVMZ+STIXTwoText-Bold-Identity-H": {
+      "subtype": "/Type0",
+      "embedded": true,
+      "to_unicode": true
+    },
+    "/IXFAWU+STIXTwoText-Regular-Identity-H": {
+      "subtype": "/Type0",
+      "embedded": true,
+      "to_unicode": true
+    },
+    "/TQTHRL+DejaVuSans-Bold": {
+      "subtype": "/Type0",
+      "embedded": true,
+      "to_unicode": true
+    },
+    "/YEUUOC+STIXTwoText-Italic-Identity-H": {
+      "subtype": "/Type0",
+      "embedded": true,
+      "to_unicode": true
+    },
+    "/AKHCZK+STIXTwoMath-Regular-Identity-H": {
+      "subtype": "/Type0",
+      "embedded": true,
+      "to_unicode": true
+    },
+    "/CAFSZL+MSAM10": {
+      "subtype": "/Type1",
+      "embedded": true,
+      "to_unicode": true
+    },
+    "/VDVGTR+DejaVuSansMono": {
+      "subtype": "/Type0",
+      "embedded": true,
+      "to_unicode": true
+    },
+    "/AAAAAA+DejaVuSans": {
+      "subtype": "/TrueType",
+      "embedded": true,
+      "to_unicode": true
+    },
+    "/AAAAAA+DejaVuSans-Bold": {
+      "subtype": "/TrueType",
+      "embedded": true,
+      "to_unicode": true
+    }
+  },
+  "bookmarks": [
+    {
+      "title": "Abstract",
+      "page": 1
+    },
+    {
+      "title": "1. A correct answer can hide a broken description",
+      "page": 2
+    },
+    {
+      "title": "2. From a promising analogy to a testable obligation",
+      "page": 3
+    },
+    {
+      "title": "2.1 Begin with the task, then choose the description",
+      "page": 3
+    },
+    {
+      "title": "2.2 Let the proposal be broad and the test be precise",
+      "page": 4
+    },
+    {
+      "title": "3. Preserve the answer, or preserve the ability to continue",
+      "page": 5
+    },
+    {
+      "title": "3.1 What one answer requires",
+      "page": 5
+    },
+    {
+      "title": "3.2 What later actions require",
+      "page": 7
+    },
+    {
+      "title": "3.3 Inference itself has a state",
+      "page": 8
+    },
+    {
+      "title": "4. Evidence must meet in the same possible source",
+      "page": 9
+    },
+    {
+      "title": "4.1 Resolve the question without pretending to recover everything",
+      "page": 9
+    },
+    {
+      "title": "4.2 Why joint records cannot be replaced by independent lists",
+      "page": 10
+    },
+    {
+      "title": "4.3 A high probability is a different kind of answer",
+      "page": 11
+    },
+    {
+      "title": "5. Compose correct parts, then decide what can be reused",
+      "page": 13
+    },
+    {
+      "title": "5.1 Time composition keeps the candidate fixed",
+      "page": 13
+    },
+    {
+      "title": "5.2 Structural compatibility is a premise check",
+      "page": 14
+    },
+    {
+      "title": "5.3 Reuse carries a statement and its conditions",
+      "page": 14
+    },
+    {
+      "title": "6. Three cases, different useful outcomes",
+      "page": 15
+    },
+    {
+      "title": "6.1 Circuits: four reasons a history may or may not help",
+      "page": 15
+    },
+    {
+      "title": "6.2 Intervals: the positive theorem and its trust boundary",
+      "page": 18
+    },
+    {
+      "title": "6.3 Measurement: a number can be computable before its meaning is established",
+      "page": 20
+    },
+    {
+      "title": "6.4 What changes in the next scientific step",
+      "page": 21
+    },
+    {
+      "title": "7. The method's place among established approaches",
+      "page": 22
+    },
+    {
+      "title": "8. From worked diagnoses to harder scientific questions",
+      "page": 24
+    },
+    {
+      "title": "8.1 Protein folding: a correct score is not yet a continuing model",
+      "page": 24
+    },
+    {
+      "title": "8.2 Biological function: retain the context that makes the question answerable",
+      "page": 26
+    },
+    {
+      "title": "8.3 Separate information, algorithms, and implementation",
+      "page": 27
+    },
+    {
+      "title": "8.4 Match the evidence to the statement",
+      "page": 27
+    },
+    {
+      "title": "8.5 Conclusion: a description should leave us able to continue",
+      "page": 29
+    },
+    {
+      "title": "Appendix A. Resolution, composition, and probability",
+      "page": 30
+    },
+    {
+      "title": "A.1 When a bundle of observations resolves a question",
+      "page": 30
+    },
+    {
+      "title": "A.2 Why correct interval summaries compose",
+      "page": 31
+    },
+    {
+      "title": "A.3 The squared-loss identity",
+      "page": 32
+    },
+    {
+      "title": "Appendix B. Circuit derivations and saved scores",
+      "page": 34
+    },
+    {
+      "title": "B.1 Known input makes the RC state sufficient",
+      "page": 34
+    },
+    {
+      "title": "B.2 Two timed voltages and one current",
+      "page": 35
+    },
+    {
+      "title": "B.3 Probability scores and hard decisions",
+      "page": 35
+    },
+    {
+      "title": "Appendix C. Claim traceability and reproduction",
+      "page": 36
+    },
+    {
+      "title": "C.1 Ten retained claims, with their evidence grades",
+      "page": 36
+    },
+    {
+      "title": "C.2 Source anchors and available artifacts",
+      "page": 37
+    },
+    {
+      "title": "C.3 Reproduction and the limits of replay",
+      "page": 38
+    },
+    {
+      "title": "Assistance disclosure",
+      "page": 40
+    },
+    {
+      "title": "References",
+      "page": 40
+    }
+  ],
+  "named_destinations": [
+    "AMS.10",
+    "AMS.12",
+    "AMS.15",
+    "AMS.17",
+    "AMS.18",
+    "AMS.20",
+    "AMS.23",
+    "AMS.24",
+    "AMS.29",
+    "AMS.44",
+    "AMS.45",
+    "AMS.46",
+    "AMS.48",
+    "AMS.49",
+    "AMS.50",
+    "AMS.51",
+    "AMS.53",
+    "AMS.54",
+    "AMS.55",
+    "AMS.58",
+    "AMS.59",
+    "AMS.60",
+    "AMS.62",
+    "AMS.63",
+    "AMS.64",
+    "AMS.65",
+    "AMS.7",
+    "AMS.8",
+    "Doc-Start",
+    "Item.1",
+    "Item.2",
+    "Item.3",
+    "Item.4",
+    "Item.5",
+    "Item.6",
+    "Item.7",
+    "Item.8",
+    "figure.caption.31",
+    "figure.caption.37",
+    "page.1",
+    "page.10",
+    "page.11",
+    "page.12",
+    "page.13",
+    "page.14",
+    "page.15",
+    "page.16",
+    "page.17",
+    "page.18",
+    "page.19",
+    "page.2",
+    "page.20",
+    "page.21",
+    "page.22",
+    "page.23",
+    "page.24",
+    "page.25",
+    "page.26",
+    "page.27",
+    "page.28",
+    "page.29",
+    "page.3",
+    "page.30",
+    "page.31",
+    "page.32",
+    "page.33",
+    "page.34",
+    "page.35",
+    "page.36",
+    "page.37",
+    "page.38",
+    "page.39",
+    "page.4",
+    "page.40",
+    "page.41",
+    "page.5",
+    "page.6",
+    "page.7",
+    "page.8",
+    "page.9",
+    "section*.1",
+    "section*.13",
+    "section*.2",
+    "section*.21",
+    "section*.27",
+    "section*.34",
+    "section*.35",
+    "section*.42",
+    "section*.5",
+    "section*.56",
+    "section*.67",
+    "section*.71",
+    "section*.72",
+    "section*.73",
+    "section*.74",
+    "section*.75",
+    "section*.76",
+    "section*.77",
+    "section*.78",
+    "section*.79",
+    "section*.80",
+    "section*.81",
+    "section*.82",
+    "section*.83",
+    "section*.84",
+    "section*.85",
+    "section*.86",
+    "section*.87",
+    "section*.88",
+    "subsection*.11",
+    "subsection*.14",
+    "subsection*.16",
+    "subsection*.19",
+    "subsection*.22",
+    "subsection*.25",
+    "subsection*.26",
+    "subsection*.28",
+    "subsection*.3",
+    "subsection*.30",
+    "subsection*.32",
+    "subsection*.33",
+    "subsection*.36",
+    "subsection*.38",
+    "subsection*.39",
+    "subsection*.4",
+    "subsection*.40",
+    "subsection*.41",
+    "subsection*.43",
+    "subsection*.47",
+    "subsection*.52",
+    "subsection*.57",
+    "subsection*.6",
+    "subsection*.61",
+    "subsection*.66",
+    "subsection*.68",
+    "subsection*.69",
+    "subsection*.70",
+    "subsection*.9",
+    "table.1",
+    "table.2",
+    "table.3",
+    "table.4",
+    "table.5",
+    "table.6"
+  ],
+  "links": [
+    {
+      "page": 1,
+      "kind": "URI",
+      "target": "https://doi.org/10.5281/zenodo.22709682"
+    },
+    {
+      "page": 2,
+      "kind": "internal",
+      "target": "section*.73",
+      "resolved": true
+    },
+    {
+      "page": 3,
+      "kind": "internal",
+      "target": "section*.73",
+      "resolved": true
+    },
+    {
+      "page": 6,
+      "kind": "internal",
+      "target": "section*.73",
+      "resolved": true
+    },
+    {
+      "page": 8,
+      "kind": "internal",
+      "target": "section*.73",
+      "resolved": true
+    },
+    {
+      "page": 10,
+      "kind": "internal",
+      "target": "section*.77",
+      "resolved": true
+    },
+    {
+      "page": 14,
+      "kind": "internal",
+      "target": "section*.76",
+      "resolved": true
+    },
+    {
+      "page": 15,
+      "kind": "internal",
+      "target": "section*.81",
+      "resolved": true
+    },
+    {
+      "page": 18,
+      "kind": "internal",
+      "target": "section*.82",
+      "resolved": true
+    },
+    {
+      "page": 20,
+      "kind": "internal",
+      "target": "section*.80",
+      "resolved": true
+    },
+    {
+      "page": 20,
+      "kind": "internal",
+      "target": "section*.83",
+      "resolved": true
+    },
+    {
+      "page": 20,
+      "kind": "internal",
+      "target": "section*.80",
+      "resolved": true
+    },
+    {
+      "page": 22,
+      "kind": "internal",
+      "target": "section*.74",
+      "resolved": true
+    },
+    {
+      "page": 22,
+      "kind": "internal",
+      "target": "section*.75",
+      "resolved": true
+    },
+    {
+      "page": 23,
+      "kind": "internal",
+      "target": "section*.78",
+      "resolved": true
+    },
+    {
+      "page": 23,
+      "kind": "internal",
+      "target": "section*.77",
+      "resolved": true
+    },
+    {
+      "page": 23,
+      "kind": "internal",
+      "target": "section*.76",
+      "resolved": true
+    },
+    {
+      "page": 23,
+      "kind": "internal",
+      "target": "section*.79",
+      "resolved": true
+    },
+    {
+      "page": 24,
+      "kind": "internal",
+      "target": "section*.73",
+      "resolved": true
+    },
+    {
+      "page": 24,
+      "kind": "internal",
+      "target": "section*.73",
+      "resolved": true
+    },
+    {
+      "page": 24,
+      "kind": "internal",
+      "target": "section*.87",
+      "resolved": true
+    },
+    {
+      "page": 25,
+      "kind": "internal",
+      "target": "section*.73",
+      "resolved": true
+    },
+    {
+      "page": 25,
+      "kind": "internal",
+      "target": "section*.88",
+      "resolved": true
+    },
+    {
+      "page": 26,
+      "kind": "internal",
+      "target": "section*.85",
+      "resolved": true
+    },
+    {
+      "page": 26,
+      "kind": "internal",
+      "target": "section*.73",
+      "resolved": true
+    },
+    {
+      "page": 26,
+      "kind": "internal",
+      "target": "section*.86",
+      "resolved": true
+    },
+    {
+      "page": 36,
+      "kind": "internal",
+      "target": "section*.84",
+      "resolved": true
+    },
+    {
+      "page": 37,
+      "kind": "internal",
+      "target": "section*.82",
+      "resolved": true
+    },
+    {
+      "page": 38,
+      "kind": "URI",
+      "target": "https://doi.org/10.5281/zenodo.22650748"
+    },
+    {
+      "page": 38,
+      "kind": "URI",
+      "target": "https://doi.org/10.5281/zenodo.22650748"
+    },
+    {
+      "page": 40,
+      "kind": "URI",
+      "target": "https://doi.org/10.5281/zenodo.22650748"
+    },
+    {
+      "page": 40,
+      "kind": "URI",
+      "target": "https://www.di.ens.fr/~cousot/COUSOTpapers/POPL77.shtml"
+    },
+    {
+      "page": 40,
+      "kind": "URI",
+      "target": "https://doi.org/10.1007/10722167_15"
+    },
+    {
+      "page": 40,
+      "kind": "URI",
+      "target": "https://web.stanford.edu/class/cs357/cegar.pdf"
+    },
+    {
+      "page": 40,
+      "kind": "URI",
+      "target": "https://arxiv.org/abs/1106.0478"
+    },
+    {
+      "page": 40,
+      "kind": "URI",
+      "target": "https://arxiv.org/abs/1010.3091v2"
+    },
+    {
+      "page": 40,
+      "kind": "URI",
+      "target": "https://doi.org/10.1115/1.3662552"
+    },
+    {
+      "page": 40,
+      "kind": "URI",
+      "target": "https://doi.org/10.1073/pnas.44.7.671"
+    },
+    {
+      "page": 40,
+      "kind": "URI",
+      "target": "https://authors.library.caltech.edu/records/pggy5-n0t48"
+    },
+    {
+      "page": 40,
+      "kind": "URI",
+      "target": "https://doi.org/10.1038/ncomms5048"
+    },
+    {
+      "page": 41,
+      "kind": "URI",
+      "target": "https://doi.org/10.1021/ja9090353"
+    },
+    {
+      "page": 41,
+      "kind": "URI",
+      "target": "https://doi.org/10.1038/s41586-018-0461-z"
+    },
+    {
+      "page": 41,
+      "kind": "URI",
+      "target": "https://doi.org/10.1021/ma00200a030"
+    },
+    {
+      "page": 41,
+      "kind": "URI",
+      "target": "https://doi.org/10.1239/jap/1421763331"
+    },
+    {
+      "page": 41,
+      "kind": "URI",
+      "target": "https://arxiv.org/abs/1212.4375v6"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2161,
+      "render": {
+        "path": "page-01.png",
+        "sha256": "dffb2d6b49364d322a910395ba25ac5118b392498a3a80f319cd7589a80aebe4",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 2,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 3135,
+      "render": {
+        "path": "page-02.png",
+        "sha256": "3a64419979008bfbdc47aebb84e690364eccbf735b710762a81ea844820aed3b",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 3,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2715,
+      "render": {
+        "path": "page-03.png",
+        "sha256": "c22eca98cd8acd4e416df7139d5aebc01a353d15fe3299b2854a90fa947ca4e9",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 4,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2769,
+      "render": {
+        "path": "page-04.png",
+        "sha256": "62da9048f198292b9e6219984315c8382ffbf8e27a015d7c017b57409e3e7f15",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 5,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2226,
+      "render": {
+        "path": "page-05.png",
+        "sha256": "e2e8724f0c05e3358c0d6362d6edd81deff793558fbdeeab11cadef9b02764ea",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 6,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2324,
+      "render": {
+        "path": "page-06.png",
+        "sha256": "8c37ceb7c82646d79a9dfc43b9df4bd94f63c31ec5a6403ca6ee6c46966befdb",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 7,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2562,
+      "render": {
+        "path": "page-07.png",
+        "sha256": "5377b5b8ec7f206f4dbd3648bf7f1e4a0ea23b5dd0b6f0e6e62f9c6d7a347912",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 8,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2505,
+      "render": {
+        "path": "page-08.png",
+        "sha256": "463122ad25ffd71d972feef93b28a4afd1d3fb947327ae90d43b44b79a1ba4cc",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 9,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2635,
+      "render": {
+        "path": "page-09.png",
+        "sha256": "02be4c638a5362954b23e5de0a9988b3704a340053b604f4faaf6fb2a678b668",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 10,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2107,
+      "render": {
+        "path": "page-10.png",
+        "sha256": "dd56dc9d12cf340549ea163b2c7c0ec230a9bd33dc469a1d9155b71b20fdf636",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 11,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2795,
+      "render": {
+        "path": "page-11.png",
+        "sha256": "64cb1e20411ab3073b73a704cbbdb02c992b2edb3f58b6fa1204b36693e33f49",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 12,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2256,
+      "render": {
+        "path": "page-12.png",
+        "sha256": "307a7e68ab0c5b92bb0476b942bf2ea19c6697acf96a9b48f6eb0f56d2c553ce",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 13,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2331,
+      "render": {
+        "path": "page-13.png",
+        "sha256": "69c81c224b5a0c9bd73182f9ad5a0941818e857a1d3b84aa7579cf54123690f1",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 14,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2844,
+      "render": {
+        "path": "page-14.png",
+        "sha256": "1baaffc2dece90b01fb6cef38063b207d9b796dc4794c7046d66e1096a888d07",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 15,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2844,
+      "render": {
+        "path": "page-15.png",
+        "sha256": "ebaca7eee69ca31582fdb3682275b0cbe2e5ca4c9993d6e47f0945abb4efe32d",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 16,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2786,
+      "render": {
+        "path": "page-16.png",
+        "sha256": "4afb6378e37a5d1eeb832f54e9620dece82986ebf8e62abfe3f32bb1e1ca15d4",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 17,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 3048,
+      "render": {
+        "path": "page-17.png",
+        "sha256": "d76de3e66aaaac992fc4e8730d20027fa9b0e835d2176c1cc06cc66c6811aa32",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 18,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2405,
+      "render": {
+        "path": "page-18.png",
+        "sha256": "010be5d8f1dd1c158e3125c243e23459f2a0b76a0bb3401752dd270b4d9860e7",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 19,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2317,
+      "render": {
+        "path": "page-19.png",
+        "sha256": "1cda41dd760f96a1f56cef65e4d90da23d8f84e5fcfb899333fa2bea69b6de56",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 20,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2184,
+      "render": {
+        "path": "page-20.png",
+        "sha256": "777fd051193040f55e8af9ca97f93567c957402e45c975d388855b13d0f83b5a",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 21,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2604,
+      "render": {
+        "path": "page-21.png",
+        "sha256": "61c2e9012b20787282479d63de82b13039781344012b567059ca9248c2e3bcb9",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 22,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 3133,
+      "render": {
+        "path": "page-22.png",
+        "sha256": "b43cad93bfcc518abb4f8d7a57a5555701fb40ef3a24c80736da4a996890c0b2",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 23,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 3142,
+      "render": {
+        "path": "page-23.png",
+        "sha256": "e4e44c5e034b9a62a5ca050d131c57690b578d85d7f54fba2dfeb328204d54ef",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 24,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2563,
+      "render": {
+        "path": "page-24.png",
+        "sha256": "dc9085f9b0bfe5006519adfd75f257fce359e17f369b15216b4fbc45491bdde4",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 25,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2535,
+      "render": {
+        "path": "page-25.png",
+        "sha256": "4cac402a9f7e2f8cc42043070cba41589252a2d61b7931bdf79251b24bee475b",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 26,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2976,
+      "render": {
+        "path": "page-26.png",
+        "sha256": "137ce0e35fa1cf685fc7a29c8f9b6f16d240db22e8e0728f10fa0a35e1e6bb3b",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 27,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2630,
+      "render": {
+        "path": "page-27.png",
+        "sha256": "3a720d199d47eabf43ce43b7fd8832bc3738ff201d66aa55bda6668f32fbb270",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 28,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 1250,
+      "render": {
+        "path": "page-28.png",
+        "sha256": "bec1041b984e46441c87bfab44041319af40ebb6fd92d6c861171e3afd9612b5",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 29,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2308,
+      "render": {
+        "path": "page-29.png",
+        "sha256": "9b82d2118e243ec6b7f0cba15d264eca71720decd665a1e55ad6a894f4cc797b",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 30,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2033,
+      "render": {
+        "path": "page-30.png",
+        "sha256": "729595d820d7e6b07e77e62a03411675aa1c0ec1a56cf608d73619ed33499663",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 31,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2096,
+      "render": {
+        "path": "page-31.png",
+        "sha256": "bc3a952c3ad00882a97fb9fc63504c0ba4ccd8391a628f0e993df9d9dc14ed10",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 32,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2038,
+      "render": {
+        "path": "page-32.png",
+        "sha256": "0a3d6de83509f034aa0488837e2616bfedecc846bdee627d382886b902153cac",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 33,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 1504,
+      "render": {
+        "path": "page-33.png",
+        "sha256": "46af8e80a9d9649fb1472ade424b688b8846aa7dd42ec2c8e507d172761cd92b",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 34,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 1714,
+      "render": {
+        "path": "page-34.png",
+        "sha256": "e6ec17c5f39bf30af7f86dc028be830348e4cb9a65e1c7587d7bf4c23e2a9619",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 35,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 1643,
+      "render": {
+        "path": "page-35.png",
+        "sha256": "efd721744b29c1902a02fbb9c2f2b55f98be89343344d9acb38200663eb8de94",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 36,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2314,
+      "render": {
+        "path": "page-36.png",
+        "sha256": "c71a0fa87d711c44bb86a747393529aea9ef61846bdff59f200abe94b1d74159",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 37,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2096,
+      "render": {
+        "path": "page-37.png",
+        "sha256": "6114ad3a9f64a046bab5c324ddcdef777051dcf7ab8255afc8d954489ac3cdfe",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 38,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2852,
+      "render": {
+        "path": "page-38.png",
+        "sha256": "211ce8dd9650c93354d124afad263d05011bf9cb67ac137ec033cfa86742ad76",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 39,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 2562,
+      "render": {
+        "path": "page-39.png",
+        "sha256": "babf0394d2cd12d19768d64fe7a53f0a126eb0803988b871041db98e4652ef7c",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 40,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 3173,
+      "render": {
+        "path": "page-40.png",
+        "sha256": "fc452c4e489695f5d59da0d3a29afacdeee5a50e1ab983169b39a07219fd31a8",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    },
+    {
+      "page": 41,
+      "points": [
+        540.0,
+        756.0
+      ],
+      "extracted_characters": 1988,
+      "render": {
+        "path": "page-41.png",
+        "sha256": "020c7c00ac9ffc3e5afa240524f027de7225bec612f7014dc398ae281f19d5f0",
+        "pixels": [
+          975,
+          1365
+        ]
+      }
+    }
+  ],
+  "out_of_page_characters": [],
+  "issues": [],
+  "limits": [
+    "Programmatic link target resolution; remote URL availability and GUI clicks not tested.",
+    "No PDF/UA certification, screen-reader audit, physical print proof or cross-viewer check.",
+    "Bounding-box checks do not establish absence of every collision; see separate visual review."
+  ]
+}

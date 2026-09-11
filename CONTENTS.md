@@ -115,3 +115,9 @@ Further geometry, infinite-state algorithms, automatic certificate discovery,
 and physical modeling can be added by supplying their own carriers, proofs,
 admission checks and counterexamples. They are not silently covered by the
 existing executable or formal receipts.
+
+## Process mechanics
+
+- [The Right Answer Is Not Enough](papers/process-mechanics/README.md): working paper 0.3, three canonical source files and PDF/build; DOI [10.5281/zenodo.22709682](https://doi.org/10.5281/zenodo.22709682).
+- [Companion kits and public evidence](experimental/process-mechanics/README.md): saved-row arithmetic, examples and scoped verification.
+- [Shared adapters](rprm/process_mechanics/): explicit context, candidate, interval and measurement contracts.

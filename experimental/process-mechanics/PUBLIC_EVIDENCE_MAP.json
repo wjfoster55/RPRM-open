@@ -1,0 +1,173 @@
+{
+  "map_version": "I2-0.1.0-public",
+  "note": "Public paths only. Saved-row CSV.gz support SAVED_ROW_REAGGREGATION; producer headlines are SOURCE_REPORTED_EXTRACT for comparison. Teaching demos remain separate.",
+  "public_baseline": "ec438fe9934d33a3354b09aabf742aaf7fae5ab2",
+  "claims": {
+    "W-COMP-01": {
+      "public_code": [
+        "experimental/process-mechanics/water/laws.py",
+        "experimental/process-mechanics/water/example.py",
+        "rprm/process_mechanics/intervals.py"
+      ],
+      "public_receipts": [
+        "experimental/process-mechanics/water/expected/demo_receipt.json"
+      ],
+      "replay": "python -I -B experimental/process-mechanics/water/check.py",
+      "receipt_generator": "python -I -B experimental/process-mechanics/water/example.py",
+      "source_identity": {
+        "repository": "wjfoster55/rprm-water",
+        "content_commit": "90bf41040076af2b448ff5f52c512bbcbb0f2e26"
+      },
+      "paper_sections": "5.1; 6.2; A.2; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "W-TRUST-01": {
+      "public_code": [
+        "experimental/process-mechanics/water/example.py"
+      ],
+      "public_receipts": [
+        "experimental/process-mechanics/water/expected/demo_receipt.json"
+      ],
+      "public_evidence": [
+        "experimental/process-mechanics/public_evidence/water/PR13_TRUST_EXTRACT.json"
+      ],
+      "frozen_numbers": {
+        "joined": [
+          "10",
+          "10"
+        ],
+        "exact": [
+          "9",
+          "11"
+        ],
+        "primary_11_5": false
+      },
+      "paper_sections": "5.2; 6.2; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "W-REUSE-01": {
+      "status": "PRODUCER_REPORTED",
+      "operation": "producer_reported",
+      "public_code": [
+        "experimental/process-mechanics/water/example.py"
+      ],
+      "note": "Local context-mismatch demo is NEW_ILLUSTRATIVE_DEMO; PR14 24/24 audit not independently replayed.",
+      "paper_sections": "5.3; 6.2; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "PC-CONT-01": {
+      "public_code": [
+        "experimental/process-mechanics/circuits/circuit_model.py",
+        "experimental/process-mechanics/circuits/example.py"
+      ],
+      "public_receipts": [
+        "experimental/process-mechanics/circuits/expected/demo_receipt.json"
+      ],
+      "replay": "python -I -B experimental/process-mechanics/circuits/check.py",
+      "receipt_generator": "python -I -B experimental/process-mechanics/circuits/example.py",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "PC-INPUT-01": {
+      "public_code": [
+        "experimental/process-mechanics/circuits/example.py"
+      ],
+      "public_receipts": [
+        "experimental/process-mechanics/circuits/expected/demo_receipt.json"
+      ],
+      "public_evidence": [
+        "experimental/process-mechanics/public_evidence/pc1/WITHHELD_PLAN_PAIRS.json",
+        "experimental/process-mechanics/public_evidence/pc1/MATCHED_INFO_HEADLINE.json",
+        "experimental/process-mechanics/public_evidence/pc1/reaggregate_tables.py"
+      ],
+      "note": "Conflicts and mixture Brier recomputed from compact pairs + prior/clipping; producer Brier compared and must match.",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "PC-STATE-01": {
+      "public_code": [
+        "experimental/process-mechanics/circuits/circuit_model.py"
+      ],
+      "public_evidence": [
+        "experimental/process-mechanics/public_evidence/pc1/OBSERVER_ORIGIN_RECORDS.csv.gz",
+        "experimental/process-mechanics/public_evidence/pc1/MATCHED_INFO_HEADLINE.json"
+      ],
+      "optional_dependency": "numpy, scipy",
+      "note": "n=2391 and max current error recomputed from observer CSV.gz; producer extract compared within tolerance.",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "PC-NULL-01": {
+      "status": "SAVED_ROW_REAGGREGATION",
+      "public_evidence": [
+        "experimental/process-mechanics/public_evidence/pc1/LEARNER_ORIGIN_PREDICTIONS.csv.gz",
+        "experimental/process-mechanics/public_evidence/pc1/HARD_DECISION_SUMMARY.json",
+        "experimental/process-mechanics/public_evidence/pc1/reaggregate_tables.py"
+      ],
+      "public_code": [
+        "experimental/process-mechanics/circuits/example.py"
+      ],
+      "note": "Hard errors recomputed from public learner CSV.gz (p/label at 0.5). Circuits example remains NEW_ILLUSTRATIVE_DEMO.",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "PC-EST-01": {
+      "status": "SAVED_ROW_REAGGREGATION",
+      "operation": "SAVED_ROW_REAGGREGATION",
+      "public_evidence": [
+        "experimental/process-mechanics/public_evidence/pc1/OBSERVER_ORIGIN_RECORDS.csv.gz",
+        "experimental/process-mechanics/public_evidence/pc1/MATCHED_INFO_HEADLINE.json",
+        "experimental/process-mechanics/public_evidence/pc1/reaggregate_tables.py"
+      ],
+      "public_code": [
+        "experimental/process-mechanics/circuits/example.py"
+      ],
+      "note": "LS/raw/past MSE recomputed from public observer CSV.gz; producer headline retained for consistency check. Not model regeneration.",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "C-CAL-01": {
+      "status": "NEW_ILLUSTRATIVE_DEMO",
+      "public_code": [
+        "experimental/process-mechanics/cancer-models/"
+      ],
+      "paper_sections": "6.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "C-MEAS-01": {
+      "status": "ACCEPTED_PARTIAL",
+      "public_evidence": [
+        "experimental/process-mechanics/public_evidence/c1/MEASUREMENT_STATUS.json"
+      ],
+      "public_code": [
+        "experimental/process-mechanics/cancer-models/",
+        "experimental/process-mechanics/extras/units-calibration/",
+        "rprm/process_mechanics/measurement.py"
+      ],
+      "c1_figure": "ACCEPTED_PARTIAL_NOT_REPLAYED_HERE",
+      "primary_citation_doi": "10.1038/ncomms5048",
+      "note": "No publisher images; bounded status/protocol export only.",
+      "paper_sections": "6.3, Table 4; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    }
+  },
+  "paper": {
+    "title": "The Right Answer Is Not Enough",
+    "subtitle": "RPRM Process Mechanics: What Scientific Descriptions Must Preserve",
+    "edition": "0.3",
+    "status": "WORKING_PAPER",
+    "pdf": "papers/process-mechanics/The-Right-Answer-Is-Not-Enough.pdf",
+    "citation": "papers/process-mechanics/CITATION.cff",
+    "canonical_sources": [
+      "papers/process-mechanics/MANUSCRIPT.md",
+      "papers/process-mechanics/APPENDICES.md",
+      "papers/process-mechanics/BIBLIOGRAPHY.md"
+    ],
+    "claim_table": "Table 6, Appendix C.1",
+    "claim_table_source": "papers/process-mechanics/APPENDICES.md#c1-ten-retained-claims-with-their-evidence-grades",
+    "working_paper_date": "2026-09-11",
+    "doi": "10.5281/zenodo.22709682",
+    "url": "https://zenodo.org/records/22709682",
+    "license": "CC0-1.0"
+  }
+}

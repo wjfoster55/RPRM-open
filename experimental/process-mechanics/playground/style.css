@@ -1,0 +1,70 @@
+:root {
+  --bg: #f3efe6;
+  --ink: #1c241c;
+  --muted: #5c675c;
+  --line: #c9c2b4;
+  --accent: #2f5d50;
+  --panel: #fffdf8;
+  --warn: #7a3e1d;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 0%, #e7f0ea 0%, transparent 40%),
+    radial-gradient(circle at 90% 10%, #f0e6d8 0%, transparent 35%),
+    var(--bg);
+}
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: white; padding: .5rem; }
+.masthead, footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .9rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+footer { border-bottom: 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+.brand { color: inherit; text-decoration: none; font-weight: 700; letter-spacing: .02em; }
+.preview, .eyebrow { color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: .72rem; }
+main { max-width: 980px; margin: 0 auto; padding: 1.25rem; }
+.hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.1; margin: .2rem 0 0; }
+.banner {
+  margin: 1rem 0;
+  padding: .75rem 1rem;
+  border: 1px dashed var(--warn);
+  color: var(--warn);
+  background: #fff8f1;
+}
+.grid { display: grid; gap: 1rem; }
+@media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr 1fr; } }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 1rem;
+  min-height: 16rem;
+}
+.panel h2 { margin: 0 0 .4rem; font-size: 1.05rem; }
+label, select, input, button { font: inherit; }
+.controls { display: grid; gap: .55rem; margin: .8rem 0; }
+button, .text-button {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: white;
+  padding: .45rem .7rem;
+  cursor: pointer;
+}
+.text-button { background: transparent; color: var(--accent); }
+output, pre {
+  display: block;
+  white-space: pre-wrap;
+  background: #f7f4ee;
+  border: 1px solid var(--line);
+  padding: .6rem;
+  min-height: 5.5rem;
+  font-size: .86rem;
+}
+.toolbar { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }

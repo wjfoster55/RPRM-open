@@ -1,0 +1,26 @@
+{
+  "kit_id": "process-mechanics/protein-folding",
+  "version": "0.1.0",
+  "claim_ids": ["UNMAPPED"],
+  "evidence_grade": {
+    "lattice_toy": "ORIGINAL_ACCEPTED_IN_RPRM_OPEN",
+    "geometry_witness": "REPRODUCED_PUBLIC_PORT",
+    "folding_dynamics_research": "UNEXECUTED_RESEARCH_PROPOSAL"
+  },
+  "model_scope": "Finite HP square-lattice toy length 1..8; separate from molecular-series circuit work",
+  "inputs": ["existing experimental/protein-folding/model.py"],
+  "output_semantics": "minimizer fiber disposition; geometry/continuation witness",
+  "source_ids": {
+    "lattice_pack": "experimental/protein-folding/",
+    "research_pack": "research-packs/folding-dynamics/"
+  },
+  "replay_command": "python -I -B experimental/process-mechanics/protein-folding/check.py",
+  "expected_result_path": "experimental/process-mechanics/protein-folding/expected/demo_receipt.json",
+  "verification_scope": "Reuses public lattice pack; does not replay private molecular run3",
+  "limitations": [
+    "Not atomistic folding",
+    "Circuit kit is not molecular validation",
+    "Research-pack comparisons remain unexecuted"
+  ],
+  "rights": "Original kit software 0BSD; original text CC0; lattice pack retains repository terms"
+}

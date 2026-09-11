@@ -1,0 +1,58 @@
+{
+  "claim_ids": [
+    "PC-CONT-01",
+    "PC-INPUT-01",
+    "PC-STATE-01",
+    "PC-NULL-01",
+    "PC-EST-01"
+  ],
+  "evidence_grade": {
+    "PC-CONT-01": "REPRODUCED_PUBLIC_PORT",
+    "PC-EST-01": "REAGGREGATED_PUBLIC_EXTRACT",
+    "PC-INPUT-01": "REPRODUCED_PUBLIC_PORT",
+    "PC-NULL-01": "NEW_ILLUSTRATIVE_DEMO",
+    "PC-STATE-01": "REPRODUCED_PUBLIC_PORT"
+  },
+  "evidence_notes": {
+    "PC-EST-01": "Historical noisy LS MSE reaggregated from public_evidence/pc1/MATCHED_INFO_HEADLINE.json; not model regeneration. Full panel support is the allowlisted extract, not this toy demo.",
+    "PC-NULL-01": "Present-state sufficiency under known plan shown; not the 15475-row hard-decision null"
+  },
+  "kit_id": "process-mechanics/circuits",
+  "known_plan_null": {
+    "event": 1,
+    "identical_replay": true,
+    "note": "Noiseless RC with known plan needs no extra history beyond present state"
+  },
+  "rlc": {
+    "observation_count": 2,
+    "singular_map": {
+      "F01": 0.0,
+      "status": "SINGULAR_OBSERVATION_MAP"
+    },
+    "status": "ok",
+    "two_v_recon": {
+      "F01": 1.9653065068060365,
+      "abs_err": 9.974659986866641e-18,
+      "status": "ok"
+    },
+    "units": {
+      "C": "F",
+      "L": "H",
+      "R": "ohm",
+      "i": "A",
+      "t": "s",
+      "v": "V"
+    },
+    "zeta": 3.162277660168379
+  },
+  "source_content_commit": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+  "version": "0.1.0",
+  "withheld_plan": {
+    "differ": true,
+    "labA": 1,
+    "labB": 0,
+    "note": "Identical observed past; unprovided future release yields opposite labels",
+    "prefix_equal": true,
+    "v_now": 0.9883000389335521
+  }
+}

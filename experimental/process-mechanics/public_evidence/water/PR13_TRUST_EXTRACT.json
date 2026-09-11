@@ -1,0 +1,53 @@
+{
+  "record_type": "ALLOWLISTED_FROZEN_EXTRACT_FOR_W_TRUST_01",
+  "operation": "arithmetic_reaggregation",
+  "claim_id": "W-TRUST-01",
+  "note": "Frozen joined/exact numbers from PR13 existing-review extract; not a fresh PR13 execution.",
+  "source": {
+    "relative_under_private_inputs": "water_w1/WATER_W1_EVIDENCE_PACKET_v1/receipts/PR13_existing_review_extract.json",
+    "sha256": "1778f5fbec52ac600e8fb33b4112f97999f970344332805b3d892d194b35950b",
+    "source_archive_sha256": "184b39ac386a753277892c6f1acf84f8255476646ef948f88f72bda153c38d97",
+    "source_member_sha256": "14ee7e360c251b63440f7928b77993b8cd5f10ce5c215c01d37252fe7e78767c",
+    "reviewed_head": "90bf41040076af2b448ff5f52c512bbcbb0f2e26",
+    "scientific_source_identifier": "90bf41040076af2b448ff5f52c512bbcbb0f2e26",
+    "repository": "wjfoster55/rprm-water"
+  },
+  "declared_endpoint_spoof": {
+    "status": "JOIN_OK",
+    "joined": {
+      "infimum": "10",
+      "supremum": "10",
+      "reaches_ge_11_5": false,
+      "computation_tag": "joined"
+    },
+    "exact": {
+      "infimum": "9",
+      "supremum": "11",
+      "reaches_ge_11_5": false,
+      "computation_tag": "exact"
+    },
+    "analytic_match": false,
+    "threshold_11_spoof": false,
+    "threshold_11_exact": true,
+    "primary_11_5_unchanged": true,
+    "candidate_id": "triangle_p4_phi0",
+    "interval": [
+      "4",
+      "8"
+    ]
+  },
+  "public_map_frozen_numbers": {
+    "joined": [
+      "10",
+      "10"
+    ],
+    "exact": [
+      "9",
+      "11"
+    ],
+    "primary_11_5": false
+  },
+  "license_provenance": {
+    "rights_note": "Synthetic law + receipt numbers; no publisher images. Companion kit CC0 for this extract."
+  }
+}

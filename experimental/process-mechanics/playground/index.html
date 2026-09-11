@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Process Mechanics Playground · RPRM</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="model.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#playground">Skip to playground</a>
+  <header class="masthead">
+    <a class="brand" href="#">RPRM / Process Mechanics</a>
+    <span class="preview">Offline sandbox</span>
+  </header>
+  <main id="playground" tabindex="-1">
+    <section class="hero">
+      <p class="eyebrow">Companion playground</p>
+      <h1>Same display.<br>Different next step.</h1>
+      <p>Three local demos for continuation, joint filtering, and context reuse. No account, network, or CDN.</p>
+    </section>
+    <p class="banner" id="edit-banner" hidden>Sandbox edit active — exports are NEW_ILLUSTRATIVE_DEMO, not recomputed paper evidence.</p>
+    <div class="toolbar">
+      <button type="button" id="reset">Reset</button>
+      <button type="button" id="export" class="text-button">Export JSON</button>
+      <span id="scope-label">Scope: teaching sandbox</span>
+    </div>
+    <div class="grid">
+      <section class="panel" aria-labelledby="c1">
+        <h2 id="c1">1. Continuation</h2>
+        <p>Two states can share a rank display while their successors diverge. Color is a sufficient control.</p>
+        <div class="controls">
+          <label for="seed">Seed value <span id="seed-value">10</span></label>
+          <input id="seed" type="range" min="0" max="18" value="10" step="1">
+        </div>
+        <output id="out-continuation" for="seed"></output>
+      </section>
+      <section class="panel" aria-labelledby="c2">
+        <h2 id="c2">2. Same participant join</h2>
+        <p>Complete candidates survive joint filters. Mixing fragments invents a false empty or false survivor story.</p>
+        <div class="controls">
+          <label><input type="checkbox" id="mix-false" checked> Use cross-candidate pair</label>
+          <button type="button" id="run-join">Join observations</button>
+        </div>
+        <output id="out-join"></output>
+      </section>
+      <section class="panel" aria-labelledby="c3">
+        <h2 id="c3">3. Reuse or reopen</h2>
+        <p>Change source/plan/interval context and watch a cached reason invalidate.</p>
+        <div class="controls">
+          <label for="plan">Request plan
+            <select id="plan">
+              <option value="planA">planA</option>
+              <option value="planB">planB</option>
+            </select>
+          </label>
+          <button type="button" id="run-reuse">Check reuse</button>
+        </div>
+        <output id="out-reuse"></output>
+      </section>
+    </div>
+    <pre id="export-box" hidden></pre>
+    <p id="announcement" class="visually-hidden" role="status"></p>
+    <noscript><p>JavaScript is required. Model notes are in README.md.</p></noscript>
+  </main>
+  <footer>
+    <span>RPRM / process-mechanics playground</span>
+    <span>UI review: mark NOT_RUN unless browser-tested</span>
+    <a href="README.md">Notes</a>
+  </footer>
+</body>
+</html>

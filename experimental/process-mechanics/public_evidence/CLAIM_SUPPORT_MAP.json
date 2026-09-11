@@ -1,0 +1,236 @@
+{
+  "map_version": "I2-0.1.0-public-evidence",
+  "note": "Per-claim public support. SOURCE_REPORTED_EXTRACT vs SAVED_ROW_REAGGREGATION vs illustrative demos kept distinct.",
+  "claims": {
+    "PC-CONT-01": {
+      "source_evidence_grade": "ACCEPTED_SCOPED",
+      "scientific_source_identifier": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+      "operation_reproducible_type": "implementation_replay",
+      "public_paths": [
+        "experimental/process-mechanics/circuits/circuit_model.py",
+        "experimental/process-mechanics/circuits/example.py",
+        "experimental/process-mechanics/circuits/expected/demo_receipt.json"
+      ],
+      "public_hashes": {},
+      "limitations": "Teaching demo is not the historical 220-origin noiseless panel; historical support remains domain return + receipt.",
+      "license_provenance": "Kit original 0BSD/CC0",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "PC-EST-01": {
+      "source_evidence_grade": "ACCEPTED_SCOPED",
+      "scientific_source_identifier": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+      "operation_reproducible_type": "SAVED_ROW_REAGGREGATION",
+      "status": "SAVED_ROW_REAGGREGATION",
+      "public_paths": [
+        "experimental/process-mechanics/public_evidence/pc1/OBSERVER_ORIGIN_RECORDS.csv.gz",
+        "experimental/process-mechanics/public_evidence/pc1/reaggregate_tables.py",
+        "experimental/process-mechanics/public_evidence/pc1/MATCHED_INFO_HEADLINE.json"
+      ],
+      "public_hashes": {
+        "LEARNER_ORIGIN_PREDICTIONS.csv.gz": "b2f2ebee8162a564184569c025d222b9b5128d8aa90f90dc0811cb186bab37d1",
+        "OBSERVER_ORIGIN_RECORDS.csv.gz": "56b15641fc2966684c798f8511700a71dd8d513fe9fc999503031da34fc35848",
+        "WITHHELD_PLAN_PAIRS.json": "629b292a1a904c09c54bdbeec9f4fdd45b0ffb1cbb54e25080041a1361f01dc5",
+        "MATCHED_INFO_HEADLINE.json": "86b1909d3f5a9768293741a13802c73e9439ac6e18ee0c80be314c4dc3b34275"
+      },
+      "headline": {
+        "finite_window_LS_MSE_recomputed": 1.353348812559492e-05,
+        "n_origins": 660
+      },
+      "limitations": "Recomputed from public observer rows; producer extract compared. Not regeneration/refitting.",
+      "license_provenance": "Synthetic circuit simulation receipt numbers; allowlisted extract under companion kit CC0 documentation terms. Full private review archive not republished.",
+      "producer_extract_grade": "SOURCE_REPORTED_EXTRACT",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "PC-STATE-01": {
+      "source_evidence_grade": "ACCEPTED_SCOPED",
+      "scientific_source_identifier": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+      "operation_reproducible_type": "SAVED_ROW_REAGGREGATION",
+      "public_paths": [
+        "experimental/process-mechanics/public_evidence/pc1/OBSERVER_ORIGIN_RECORDS.csv.gz",
+        "experimental/process-mechanics/public_evidence/pc1/MATCHED_INFO_HEADLINE.json",
+        "experimental/process-mechanics/circuits/circuit_model.py"
+      ],
+      "public_hashes": {
+        "LEARNER_ORIGIN_PREDICTIONS.csv.gz": "b2f2ebee8162a564184569c025d222b9b5128d8aa90f90dc0811cb186bab37d1",
+        "OBSERVER_ORIGIN_RECORDS.csv.gz": "56b15641fc2966684c798f8511700a71dd8d513fe9fc999503031da34fc35848",
+        "WITHHELD_PLAN_PAIRS.json": "629b292a1a904c09c54bdbeec9f4fdd45b0ffb1cbb54e25080041a1361f01dc5",
+        "MATCHED_INFO_HEADLINE.json": "86b1909d3f5a9768293741a13802c73e9439ac6e18ee0c80be314c4dc3b34275"
+      },
+      "headline": {
+        "n": 2391,
+        "max_abs_i_error_recomputed": 1.317305639569888e-16,
+        "max_abs_i_error_source_reported": 1.3042952135000618e-16
+      },
+      "limitations": "Saved-row max current error vs producer extract within tolerance; local demo illustrative only.",
+      "license_provenance": "Synthetic circuit simulation receipt numbers; allowlisted extract under companion kit CC0 documentation terms. Full private review archive not republished.",
+      "producer_extract_grade": "SOURCE_REPORTED_EXTRACT",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "PC-INPUT-01": {
+      "source_evidence_grade": "ACCEPTED_SCOPED",
+      "scientific_source_identifier": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+      "operation_reproducible_type": "SAVED_ROW_REAGGREGATION",
+      "public_paths": [
+        "experimental/process-mechanics/public_evidence/pc1/WITHHELD_PLAN_PAIRS.json",
+        "experimental/process-mechanics/public_evidence/pc1/reaggregate_tables.py",
+        "experimental/process-mechanics/public_evidence/pc1/MATCHED_INFO_HEADLINE.json"
+      ],
+      "public_hashes": {
+        "LEARNER_ORIGIN_PREDICTIONS.csv.gz": "b2f2ebee8162a564184569c025d222b9b5128d8aa90f90dc0811cb186bab37d1",
+        "OBSERVER_ORIGIN_RECORDS.csv.gz": "56b15641fc2966684c798f8511700a71dd8d513fe9fc999503031da34fc35848",
+        "WITHHELD_PLAN_PAIRS.json": "629b292a1a904c09c54bdbeec9f4fdd45b0ffb1cbb54e25080041a1361f01dc5",
+        "MATCHED_INFO_HEADLINE.json": "86b1909d3f5a9768293741a13802c73e9439ac6e18ee0c80be314c4dc3b34275"
+      },
+      "headline": {
+        "n_pairs": 60,
+        "n_conflicting_pairs": 24,
+        "clipped_mixture_brier": 0.10000000000060001
+      },
+      "limitations": "Brier recomputed from pair labels/prior/clipping; altered producer headline alone must fail consistency.",
+      "license_provenance": "Synthetic circuit simulation receipt numbers; allowlisted extract under companion kit CC0 documentation terms. Full private review archive not republished.",
+      "producer_extract_grade": "SOURCE_REPORTED_EXTRACT",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "PC-NULL-01": {
+      "source_evidence_grade": "ACCEPTED_NULL",
+      "scientific_source_identifier": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+      "operation_reproducible_type": "SAVED_ROW_REAGGREGATION",
+      "public_paths": [
+        "experimental/process-mechanics/public_evidence/pc1/LEARNER_ORIGIN_PREDICTIONS.csv.gz",
+        "experimental/process-mechanics/public_evidence/pc1/HARD_DECISION_SUMMARY.json",
+        "experimental/process-mechanics/public_evidence/pc1/reaggregate_tables.py"
+      ],
+      "public_hashes": {
+        "LEARNER_ORIGIN_PREDICTIONS.csv.gz": "b2f2ebee8162a564184569c025d222b9b5128d8aa90f90dc0811cb186bab37d1",
+        "OBSERVER_ORIGIN_RECORDS.csv.gz": "56b15641fc2966684c798f8511700a71dd8d513fe9fc999503031da34fc35848",
+        "WITHHELD_PLAN_PAIRS.json": "629b292a1a904c09c54bdbeec9f4fdd45b0ffb1cbb54e25080041a1361f01dc5",
+        "MATCHED_INFO_HEADLINE.json": "86b1909d3f5a9768293741a13802c73e9439ac6e18ee0c80be314c4dc3b34275"
+      },
+      "headline": {
+        "n_rows": 15475,
+        "hard_error_total": 0
+      },
+      "limitations": "Hard errors from public gzip using p/label; teaching demo must not substitute.",
+      "license_provenance": "Synthetic learner prediction summary; allowlisted reaggregation. Full CSV retained private unless separately authorized.",
+      "status": "SAVED_ROW_REAGGREGATION",
+      "producer_extract_grade": "SOURCE_REPORTED_EXTRACT",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "W-COMP-01": {
+      "source_evidence_grade": "ACCEPTED_SCOPED",
+      "scientific_source_identifier": "90bf41040076af2b448ff5f52c512bbcbb0f2e26",
+      "operation_reproducible_type": "implementation_replay",
+      "public_paths": [
+        "experimental/process-mechanics/water/laws.py",
+        "experimental/process-mechanics/water/example.py",
+        "experimental/process-mechanics/water/expected/demo_receipt.json",
+        "rprm/process_mechanics/intervals.py"
+      ],
+      "public_hashes": {},
+      "limitations": "Local replay of catalogue composition; not 76 independent physical trials.",
+      "license_provenance": "Kit original 0BSD/CC0; port reviewed against private source",
+      "paper_sections": "5.1; 6.2; A.2; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "W-TRUST-01": {
+      "source_evidence_grade": "ACCEPTED_COUNTEREXAMPLE",
+      "scientific_source_identifier": "90bf41040076af2b448ff5f52c512bbcbb0f2e26",
+      "operation_reproducible_type": "arithmetic_reaggregation",
+      "public_paths": [
+        "experimental/process-mechanics/public_evidence/water/PR13_TRUST_EXTRACT.json",
+        "experimental/process-mechanics/water/example.py",
+        "experimental/process-mechanics/water/expected/demo_receipt.json"
+      ],
+      "public_hashes": {
+        "PR13_TRUST_EXTRACT.json": "11e64a9260a20660fec79161c924aa61346843493fc47610525df51688d92924"
+      },
+      "headline": {
+        "joined": [
+          "10",
+          "10"
+        ],
+        "exact": [
+          "9",
+          "11"
+        ],
+        "primary_11_5": false
+      },
+      "limitations": "Frozen PR13 extract numbers; local demo checks the same joined/exact ranges. Not a general untrusted-receipt verifier.",
+      "license_provenance": "Synthetic law + receipt numbers; no publisher images. Companion kit CC0 for this extract.",
+      "paper_sections": "5.2; 6.2; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1",
+      "historical_source_hashes": {
+        "source_PR13_existing_review_extract.json": "1778f5fbec52ac600e8fb33b4112f97999f970344332805b3d892d194b35950b"
+      }
+    },
+    "W-REUSE-01": {
+      "source_evidence_grade": "SOURCE_REPORTED_RECEIPT_LOCATED",
+      "scientific_source_identifier": "40ed3e5a584a46cd020f8a3ea61ca63d2ef7f3c7",
+      "operation_reproducible_type": "producer_reported",
+      "status": "PRODUCER_REPORTED",
+      "public_paths": [
+        "experimental/process-mechanics/water/example.py"
+      ],
+      "public_hashes": {},
+      "limitations": "PR14 remains producer-reported; no independent 24/24 behavioral replay performed for I1. Local context-mismatch demo is illustrative only.",
+      "license_provenance": "Illustrative demo 0BSD/CC0; PR14 audit receipt stays private/producer-reported",
+      "paper_sections": "5.3; 6.2; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1",
+      "composition_source_identifier": "90bf41040076af2b448ff5f52c512bbcbb0f2e26"
+    },
+    "C-CAL-01": {
+      "source_evidence_grade": "ACCEPTED_CALIBRATION_NULL",
+      "scientific_source_identifier": "a0538e8b50bdacd36af4c4af32b35c4b1a81d6be",
+      "operation_reproducible_type": "illustrative_demo",
+      "public_paths": [
+        "experimental/process-mechanics/cancer-models/"
+      ],
+      "public_hashes": {},
+      "limitations": "Synthetic six-candidate easy D-reading null; not held-out biology.",
+      "license_provenance": "Kit original 0BSD/CC0",
+      "paper_sections": "6.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    "C-MEAS-01": {
+      "source_evidence_grade": "ACCEPTED_PARTIAL",
+      "scientific_source_identifier": "a0538e8b50bdacd36af4c4af32b35c4b1a81d6be",
+      "operation_reproducible_type": "status_export_partial",
+      "status": "ACCEPTED_PARTIAL",
+      "public_paths": [
+        "experimental/process-mechanics/public_evidence/c1/MEASUREMENT_STATUS.json"
+      ],
+      "public_hashes": {
+        "MEASUREMENT_STATUS.json": "ab8dc20d2f3fb152c017b66d71cb28feae9bd252915c25d2361384abd5ed9921"
+      },
+      "primary_citation_doi": "10.1038/ncomms5048",
+      "limitations": "PARTIAL only; failed scale/coverage/sampling obligations retained; no publisher images; no redigitization.",
+      "license_provenance": "Status/protocol export only (CC0 companion docs). Liang figure pixels/overlays omitted; rights unresolved for republication.",
+      "paper_sections": "6.3, Table 4; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    }
+  },
+  "paper": {
+    "title": "The Right Answer Is Not Enough",
+    "subtitle": "RPRM Process Mechanics: What Scientific Descriptions Must Preserve",
+    "edition": "0.3",
+    "status": "WORKING_PAPER",
+    "pdf": "papers/process-mechanics/The-Right-Answer-Is-Not-Enough.pdf",
+    "citation": "papers/process-mechanics/CITATION.cff",
+    "canonical_sources": [
+      "papers/process-mechanics/MANUSCRIPT.md",
+      "papers/process-mechanics/APPENDICES.md",
+      "papers/process-mechanics/BIBLIOGRAPHY.md"
+    ],
+    "claim_table": "Table 6, Appendix C.1",
+    "claim_table_source": "papers/process-mechanics/APPENDICES.md#c1-ten-retained-claims-with-their-evidence-grades",
+    "working_paper_date": "2026-09-11",
+    "doi": "10.5281/zenodo.22709682",
+    "url": "https://zenodo.org/records/22709682",
+    "license": "CC0-1.0"
+  }
+}

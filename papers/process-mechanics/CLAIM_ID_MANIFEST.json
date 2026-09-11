@@ -1,0 +1,246 @@
+{
+  "schema": "rprm.process-mechanics.claim-id-manifest/v1",
+  "manuscript": "papers/process-mechanics/MANUSCRIPT.md",
+  "bibliography": "papers/process-mechanics/BIBLIOGRAPHY.md",
+  "note": "The ten short labels appear in Table 6 / Appendix C.1. Full ledger IDs, unchanged source identities and public evidence paths are recorded here. Teaching demos do not substitute for historical evidence.",
+  "claims": [
+    {
+      "short_label": "PC-CONT",
+      "full_id": "PC-CONT-01",
+      "status": "ACCEPTED_SCOPED",
+      "table_status_token": "Scoped",
+      "lane": "circuits",
+      "scientific_source_identifier_full": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+      "scientific_source_identifier_display": "d2e63b56d79d",
+      "public_evidence_paths": [
+        "experimental/process-mechanics/circuits/circuit_model.py",
+        "experimental/process-mechanics/circuits/example.py",
+        "experimental/process-mechanics/circuits/expected/demo_receipt.json"
+      ],
+      "public_support_note": "Teaching demo is not the historical 220-origin noiseless panel.",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    {
+      "short_label": "PC-EST",
+      "full_id": "PC-EST-01",
+      "status": "ACCEPTED_SCOPED",
+      "table_status_token": "Scoped",
+      "lane": "circuits",
+      "scientific_source_identifier_full": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+      "scientific_source_identifier_display": "d2e63b56d79d",
+      "public_evidence_paths": [
+        "experimental/process-mechanics/public_evidence/pc1/MATCHED_INFO_HEADLINE.json",
+        "experimental/process-mechanics/public_evidence/pc1/reaggregate_tables.py",
+        "experimental/process-mechanics/public_evidence/CLAIM_SUPPORT_MAP.json",
+        "experimental/process-mechanics/public_evidence/pc1/OBSERVER_ORIGIN_RECORDS.csv.gz"
+      ],
+      "public_support_note": "Reaggregation of historical matched-info receipt; not model regeneration or refitting.",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    {
+      "short_label": "PC-STATE",
+      "full_id": "PC-STATE-01",
+      "status": "ACCEPTED_SCOPED",
+      "table_status_token": "Scoped",
+      "lane": "circuits",
+      "scientific_source_identifier_full": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+      "scientific_source_identifier_display": "d2e63b56d79d",
+      "public_evidence_paths": [
+        "experimental/process-mechanics/public_evidence/pc1/MATCHED_INFO_HEADLINE.json",
+        "experimental/process-mechanics/circuits/circuit_model.py",
+        "experimental/process-mechanics/public_evidence/CLAIM_SUPPORT_MAP.json",
+        "experimental/process-mechanics/public_evidence/pc1/OBSERVER_ORIGIN_RECORDS.csv.gz"
+      ],
+      "public_support_note": "Historical n=2391 panel via extract; local demo is illustrative only.",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    {
+      "short_label": "PC-INPUT",
+      "full_id": "PC-INPUT-01",
+      "status": "ACCEPTED_SCOPED",
+      "table_status_token": "Scoped",
+      "lane": "circuits",
+      "scientific_source_identifier_full": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+      "scientific_source_identifier_display": "d2e63b56d79d",
+      "public_evidence_paths": [
+        "experimental/process-mechanics/public_evidence/pc1/MATCHED_INFO_HEADLINE.json",
+        "experimental/process-mechanics/circuits/example.py",
+        "experimental/process-mechanics/public_evidence/CLAIM_SUPPORT_MAP.json",
+        "experimental/process-mechanics/public_evidence/pc1/WITHHELD_PLAN_PAIRS.json"
+      ],
+      "public_support_note": "Compact pair summary shipped; teaching twin is not the 60-pair panel.",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    {
+      "short_label": "PC-NULL",
+      "full_id": "PC-NULL-01",
+      "status": "ACCEPTED_NULL",
+      "table_status_token": "Null",
+      "lane": "circuits",
+      "scientific_source_identifier_full": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+      "scientific_source_identifier_display": "d2e63b56d79d",
+      "public_evidence_paths": [
+        "experimental/process-mechanics/public_evidence/pc1/HARD_DECISION_SUMMARY.json",
+        "experimental/process-mechanics/public_evidence/pc1/reaggregate_tables.py",
+        "experimental/process-mechanics/public_evidence/CLAIM_SUPPORT_MAP.json",
+        "experimental/process-mechanics/public_evidence/pc1/LEARNER_ORIGIN_PREDICTIONS.csv.gz"
+      ],
+      "public_support_note": "Hard-decision arithmetic uses the public saved-row CSV.gz and labels; teaching demos do not substitute for this null.",
+      "paper_sections": "6.1; B.1–B.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    {
+      "short_label": "W-COMP",
+      "full_id": "W-COMP-01",
+      "status": "ACCEPTED_SCOPED",
+      "table_status_token": "Scoped",
+      "lane": "water",
+      "scientific_source_identifier_full": "90bf41040076af2b448ff5f52c512bbcbb0f2e26",
+      "scientific_source_identifier_display": "90bf41040076",
+      "public_evidence_paths": [
+        "experimental/process-mechanics/water/laws.py",
+        "experimental/process-mechanics/water/example.py",
+        "experimental/process-mechanics/water/expected/demo_receipt.json",
+        "rprm/process_mechanics/intervals.py"
+      ],
+      "public_support_note": "Local replay of catalogue composition; not 76 independent physical trials.",
+      "paper_sections": "5.1; 6.2; A.2; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    {
+      "short_label": "W-TRUST",
+      "full_id": "W-TRUST-01",
+      "status": "ACCEPTED_COUNTEREXAMPLE",
+      "table_status_token": "Counterex.",
+      "lane": "water",
+      "scientific_source_identifier_full": "90bf41040076af2b448ff5f52c512bbcbb0f2e26",
+      "scientific_source_identifier_display": "90bf41040076",
+      "public_evidence_paths": [
+        "experimental/process-mechanics/public_evidence/water/PR13_TRUST_EXTRACT.json",
+        "experimental/process-mechanics/water/example.py",
+        "experimental/process-mechanics/water/expected/demo_receipt.json",
+        "experimental/process-mechanics/public_evidence/CLAIM_SUPPORT_MAP.json"
+      ],
+      "public_support_note": "Frozen PR13 extract numbers; local demo checks the same joined/exact ranges.",
+      "paper_sections": "5.2; 6.2; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    {
+      "short_label": "W-REUSE",
+      "full_id": "W-REUSE-01",
+      "status": "SOURCE_REPORTED_RECEIPT_LOCATED",
+      "table_status_token": "Source-reported",
+      "lane": "water",
+      "scientific_source_identifier_full": "40ed3e5a584a46cd020f8a3ea61ca63d2ef7f3c7",
+      "scientific_source_identifier_display": "40ed3e5a584a",
+      "composition_source_identifier_full": "90bf41040076af2b448ff5f52c512bbcbb0f2e26",
+      "public_evidence_paths": [
+        "experimental/process-mechanics/water/example.py"
+      ],
+      "public_support_note": "Producer-reported; no independent 24/24 behavioral replay for I1. Local context-mismatch demo is illustrative only.",
+      "paper_sections": "5.3; 6.2; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    {
+      "short_label": "C-CAL",
+      "full_id": "C-CAL-01",
+      "status": "ACCEPTED_CALIBRATION_NULL",
+      "table_status_token": "Null",
+      "lane": "measurement",
+      "scientific_source_identifier_full": "a0538e8b50bdacd36af4c4af32b35c4b1a81d6be",
+      "scientific_source_identifier_display": "a0538e8b50bd",
+      "content_commit_full": "2fbc5984a86f26e99dcc71ea8ffc778682ee4fee",
+      "content_commit_display": "2fbc5984a86f",
+      "public_evidence_paths": [
+        "experimental/process-mechanics/cancer-models/"
+      ],
+      "public_support_note": "Synthetic six-candidate easy D-reading null; not held-out biology.",
+      "paper_sections": "6.3; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    },
+    {
+      "short_label": "C-MEAS",
+      "full_id": "C-MEAS-01",
+      "status": "ACCEPTED_PARTIAL",
+      "table_status_token": "Partial",
+      "lane": "measurement",
+      "scientific_source_identifier_full": "a0538e8b50bdacd36af4c4af32b35c4b1a81d6be",
+      "scientific_source_identifier_display": "a0538e8b50bd",
+      "content_commit_full": "2fbc5984a86f26e99dcc71ea8ffc778682ee4fee",
+      "content_commit_display": "2fbc5984a86f",
+      "primary_citation": {
+        "key": "Liang2014",
+        "authors": "Liang et al.",
+        "doi": "10.1038/ncomms5048",
+        "note": "Primary citation for the figure used in C1; PARTIAL reconstruction; images not republished."
+      },
+      "public_evidence_paths": [
+        "experimental/process-mechanics/public_evidence/c1/MEASUREMENT_STATUS.json",
+        "experimental/process-mechanics/public_evidence/CLAIM_SUPPORT_MAP.json"
+      ],
+      "public_support_note": "PARTIAL only; no publisher images; no redigitization.",
+      "paper_sections": "6.3, Table 4; C.1",
+      "paper_claim_table": "Table 6 / Appendix C.1"
+    }
+  ],
+  "proposed_or_untested": [
+    {
+      "short_label": "H-METHOD",
+      "full_id": "H-METHOD-01",
+      "status": "PROPOSED_R2_DRAFT",
+      "body_treatment": "Appendix C / manifest only; not in Table 6"
+    },
+    {
+      "short_label": "H-TRANSFER",
+      "full_id": "H-TRANSFER-01",
+      "status": "NOT_TESTED",
+      "body_treatment": "Appendix C / manifest only; prospective evaluation not authorized or run"
+    },
+    {
+      "short_label": "H-ALGO",
+      "full_id": "H-ALGO-01",
+      "status": "NOT_ESTABLISHED",
+      "body_treatment": "Appendix C / manifest only; not counted as accepted empirical result"
+    },
+    {
+      "short_label": "H-BIO",
+      "full_id": "H-BIO-01",
+      "status": "NOT_EXECUTED",
+      "body_treatment": "Appendix C / manifest only; no cancer-mechanism claim"
+    }
+  ],
+  "public_evidence_root": "experimental/process-mechanics/public_evidence/",
+  "reaggregation_entrypoints": [
+    "experimental/process-mechanics/public_evidence/pc1/reaggregate_tables.py"
+  ],
+  "edition": "0.3",
+  "paper": {
+    "title": "The Right Answer Is Not Enough",
+    "subtitle": "RPRM Process Mechanics: What Scientific Descriptions Must Preserve",
+    "edition": "0.3",
+    "status": "WORKING_PAPER",
+    "pdf": "papers/process-mechanics/The-Right-Answer-Is-Not-Enough.pdf",
+    "citation": "papers/process-mechanics/CITATION.cff",
+    "canonical_sources": [
+      "papers/process-mechanics/MANUSCRIPT.md",
+      "papers/process-mechanics/APPENDICES.md",
+      "papers/process-mechanics/BIBLIOGRAPHY.md"
+    ],
+    "claim_table": "Table 6, Appendix C.1",
+    "claim_table_source": "papers/process-mechanics/APPENDICES.md#c1-ten-retained-claims-with-their-evidence-grades",
+    "working_paper_date": "2026-09-11",
+    "doi": "10.5281/zenodo.22709682",
+    "url": "https://zenodo.org/records/22709682",
+    "license": "CC0-1.0"
+  },
+  "appendices": "papers/process-mechanics/APPENDICES.md",
+  "canonical_sources": [
+    "papers/process-mechanics/MANUSCRIPT.md",
+    "papers/process-mechanics/APPENDICES.md",
+    "papers/process-mechanics/BIBLIOGRAPHY.md"
+  ]
+}

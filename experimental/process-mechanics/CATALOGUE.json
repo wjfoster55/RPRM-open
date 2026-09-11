@@ -1,0 +1,22 @@
+{
+  "family": "experimental/process-mechanics",
+  "version": "0.1.0",
+  "baseline_public_commit": "ec438fe9934d33a3354b09aabf742aaf7fae5ab2",
+  "kits": [
+    {"kit_id": "process-mechanics/water", "path": "water/", "claim_ids": ["W-COMP-01", "W-TRUST-01", "W-REUSE-01"]},
+    {"kit_id": "process-mechanics/circuits", "path": "circuits/", "claim_ids": ["PC-CONT-01", "PC-INPUT-01", "PC-STATE-01", "PC-NULL-01", "PC-EST-01"]},
+    {"kit_id": "process-mechanics/protein-folding", "path": "protein-folding/", "claim_ids": ["UNMAPPED"]},
+    {"kit_id": "process-mechanics/cancer-models", "path": "cancer-models/", "claim_ids": ["C-CAL-01", "C-MEAS-01"]},
+    {"kit_id": "process-mechanics/playground", "path": "playground/", "claim_ids": ["UNMAPPED"]},
+    {"kit_id": "process-mechanics/extras/retry-identity", "path": "extras/retry-identity/", "claim_ids": ["UNMAPPED"]},
+    {"kit_id": "process-mechanics/extras/units-calibration", "path": "extras/units-calibration/", "claim_ids": ["C-MEAS-01"]}
+  ],
+  "shared_modules": ["rprm/process_mechanics/"],
+  "excluded_interpretations": [
+    "No field-water safety or Navier-Stokes claim",
+    "No hardware circuit certification",
+    "No atomistic folding solution",
+    "No clinical cancer tool or malignant-transformation evidence",
+    "Sandbox playground edits are not paper revalidation"
+  ]
+}

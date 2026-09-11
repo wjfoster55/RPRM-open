@@ -1,0 +1,508 @@
+{
+  "record_type": "ALLOWLISTED_EXTRACT_OF_HISTORICAL_MATCHED_INFO_RECEIPT",
+  "operation": "arithmetic_reaggregation",
+  "note": "Producer/historical matched-info headline fields retained for comparison. Independent arithmetic support is SAVED_ROW_REAGGREGATION from public CSV.gz / pairs via reaggregate_tables.py; this file alone is not an independently recomputed MSE.",
+  "source": {
+    "relative_under_private_inputs": "pc1/pr10_review/submitted/MATCHED_INFO_RESULTS.json",
+    "sha256": "b39d39ef099f383a69c6a54cbc2d56d6d4b6d75e4c1f8eace654a78969cdf102",
+    "bytes": 30088,
+    "scientific_source_identifier": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd",
+    "repository": "wjfoster55/rprm-protein-folding"
+  },
+  "preexec": {
+    "protocol_sha256": "672026adbd1ff8cc1fb4a43c83020d1e69f276d9da5a4f2213d5e46d881f90e6",
+    "run_matched_info_scout.py": "10b39d715ba419d51d304a3096e9c1d17bde5c5c59ec0797dfb58142a03ddb16",
+    "circuit_core.py": "c47e2579f21cb6660b3f1fe8cc062d10a6038a6b9f9b4c0170d448d1c8f5950d"
+  },
+  "protocol_sha256_post": "672026adbd1ff8cc1fb4a43c83020d1e69f276d9da5a4f2213d5e46d881f90e6",
+  "protocol_hash_unchanged": true,
+  "cases": {
+    "RLC_voltage_only_known_plan": {
+      "two_voltage_affine_observer": {
+        "brier": 1.0000000000314496e-12,
+        "n": 2391,
+        "n_pos": 224,
+        "n_neg": 2167,
+        "base_rate": 0.09368465077373483,
+        "log_loss": 1.000000500029089e-06,
+        "max_abs_i_reconstruction_error": 1.3042952135000618e-16,
+        "n_event_disagreements": 0,
+        "lag_dt_s": 2.4999999999999998e-06,
+        "F01": 1.9653065068060365
+      },
+      "n_train_sources": 50,
+      "n_dev_sources": 32,
+      "interpretation": "Current hidden; two-voltage reconstruction is equation-aware same-info baseline; current_readout is separate budget."
+    },
+    "RC_noisy_known_plan": {
+      "state_MSE": {
+        "raw_measurement": 0.002857149706791507,
+        "plain_past_mean_excl_current": 0.0037714200726415023,
+        "finite_window_LS": 1.3533488125594892e-05,
+        "note": "State MSE separate from event Brier; plain mean is NOT claimed better denoiser."
+      },
+      "finite_window_LS_event": {
+        "brier": 1.000000000033984e-12,
+        "n": 660,
+        "n_pos": 120,
+        "n_neg": 540,
+        "base_rate": 0.18181818181818182,
+        "log_loss": 1.000000500029089e-06
+      },
+      "n_train_sources": 10,
+      "n_dev_noise_episodes": 24,
+      "interpretation": "Same known plan; LS uses known forced response + measurements."
+    },
+    "RC_withheld_future_plan": {
+      "n_pairs": 60,
+      "n_conflicting_pairs": 24,
+      "prior": {
+        "0.0": 0.5,
+        "1.0": 0.5
+      },
+      "prior_mixture_metrics": {
+        "brier": 0.10000000000060001,
+        "n": 120,
+        "n_pos": 24,
+        "n_neg": 96,
+        "base_rate": 0.2,
+        "log_loss": 0.27725947222427816
+      },
+      "past_only_equal": true,
+      "pair_summary_compact": [
+        {
+          "v0": 0.65,
+          "index": 50,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.65,
+          "index": 60,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.65,
+          "index": 70,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.65,
+          "index": 80,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.65,
+          "index": 90,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.65,
+          "index": 100,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.65,
+          "index": 110,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.65,
+          "index": 120,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.65,
+          "index": 130,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.65,
+          "index": 140,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.65,
+          "index": 150,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.65,
+          "index": 160,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.65,
+          "index": 170,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.65,
+          "index": 180,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.65,
+          "index": 190,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.75,
+          "index": 50,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.75,
+          "index": 60,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.75,
+          "index": 70,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.75,
+          "index": 80,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.75,
+          "index": 90,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.75,
+          "index": 100,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.75,
+          "index": 110,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.75,
+          "index": 120,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.75,
+          "index": 130,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.75,
+          "index": 140,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.75,
+          "index": 150,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.75,
+          "index": 160,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.75,
+          "index": 170,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.75,
+          "index": 180,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.75,
+          "index": 190,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.85,
+          "index": 50,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.85,
+          "index": 60,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.85,
+          "index": 70,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.85,
+          "index": 80,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.85,
+          "index": 90,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.85,
+          "index": 100,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.85,
+          "index": 110,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.85,
+          "index": 120,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.85,
+          "index": 130,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.85,
+          "index": 140,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.85,
+          "index": 150,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.85,
+          "index": 160,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.85,
+          "index": 170,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.85,
+          "index": 180,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.85,
+          "index": 190,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.95,
+          "index": 50,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.95,
+          "index": 60,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.95,
+          "index": 70,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.95,
+          "index": 80,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.95,
+          "index": 90,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.95,
+          "index": 100,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.95,
+          "index": 110,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.95,
+          "index": 120,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.95,
+          "index": 130,
+          "label_release0": 0,
+          "label_release1": 0,
+          "conflicting": false
+        },
+        {
+          "v0": 0.95,
+          "index": 140,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.95,
+          "index": 150,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.95,
+          "index": 160,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.95,
+          "index": 170,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.95,
+          "index": 180,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        },
+        {
+          "v0": 0.95,
+          "index": 190,
+          "label_release0": 1,
+          "label_release1": 0,
+          "conflicting": true
+        }
+      ],
+      "interpretation": "Identical pasts with opposite unannounced plans; plan revelation is a separate information change."
+    }
+  },
+  "license_provenance": {
+    "rights_note": "Synthetic circuit simulation receipt numbers; allowlisted extract under companion kit CC0 documentation terms. Full private review archive not republished.",
+    "excluded": [
+      "private git history",
+      "chat exports",
+      "full review archives",
+      "tokenized URLs",
+      "author-request drafts"
+    ]
+  },
+  "evidence_grade": "SOURCE_REPORTED_EXTRACT"
+}

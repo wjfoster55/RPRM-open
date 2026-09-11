@@ -1,0 +1,359 @@
+{
+  "schema": "rprm.process-mechanics.layout-review.v1",
+  "status": "PASS",
+  "pdf_sha256": "97de1e6e688fab05a83aef981fb39a97e0f381447ff90b5b2e08d240135eac62",
+  "pages_rendered": 41,
+  "pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "newly_inspected_pages": [
+    1,
+    38,
+    39
+  ],
+  "inherited_by_exact_render_identity": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    40,
+    41
+  ],
+  "prior_pdf_sha256": "7dce3c0529a93baefcd8cbdf50f7de769b7b04fc6bf4d06a4fb68857ef06f1bf",
+  "renderer": "Poppler pdftoppm",
+  "dpi": 130,
+  "method": "All 41 pages rendered. Changed pages 1, 38 and 39 were viewed at full-page resolution. The remaining 38 PNGs are byte-identical to the corresponding pages in the completed, hash-bound prepublication visual review.",
+  "findings": [
+    "Cover DOI, author, date and working-paper edition are legible and separated.",
+    "The shortened DOI provenance sentence and Appendix C.3 reflow fit cleanly on pages 38-39.",
+    "All other page images, including figures, equations, tables, conclusion and repeated footers, are byte-identical to the reviewed prepublication pages."
+  ],
+  "issues_remaining": [],
+  "pages": [
+    {
+      "page": 1,
+      "render_sha256": "dffb2d6b49364d322a910395ba25ac5118b392498a3a80f319cd7589a80aebe4",
+      "reviewed": true,
+      "basis": "Viewed at full-page resolution in release-metadata pass"
+    },
+    {
+      "page": 2,
+      "render_sha256": "3a64419979008bfbdc47aebb84e690364eccbf735b710762a81ea844820aed3b",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 3,
+      "render_sha256": "c22eca98cd8acd4e416df7139d5aebc01a353d15fe3299b2854a90fa947ca4e9",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 4,
+      "render_sha256": "62da9048f198292b9e6219984315c8382ffbf8e27a015d7c017b57409e3e7f15",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 5,
+      "render_sha256": "e2e8724f0c05e3358c0d6362d6edd81deff793558fbdeeab11cadef9b02764ea",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 6,
+      "render_sha256": "8c37ceb7c82646d79a9dfc43b9df4bd94f63c31ec5a6403ca6ee6c46966befdb",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 7,
+      "render_sha256": "5377b5b8ec7f206f4dbd3648bf7f1e4a0ea23b5dd0b6f0e6e62f9c6d7a347912",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 8,
+      "render_sha256": "463122ad25ffd71d972feef93b28a4afd1d3fb947327ae90d43b44b79a1ba4cc",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 9,
+      "render_sha256": "02be4c638a5362954b23e5de0a9988b3704a340053b604f4faaf6fb2a678b668",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 10,
+      "render_sha256": "dd56dc9d12cf340549ea163b2c7c0ec230a9bd33dc469a1d9155b71b20fdf636",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 11,
+      "render_sha256": "64cb1e20411ab3073b73a704cbbdb02c992b2edb3f58b6fa1204b36693e33f49",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 12,
+      "render_sha256": "307a7e68ab0c5b92bb0476b942bf2ea19c6697acf96a9b48f6eb0f56d2c553ce",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 13,
+      "render_sha256": "69c81c224b5a0c9bd73182f9ad5a0941818e857a1d3b84aa7579cf54123690f1",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 14,
+      "render_sha256": "1baaffc2dece90b01fb6cef38063b207d9b796dc4794c7046d66e1096a888d07",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 15,
+      "render_sha256": "ebaca7eee69ca31582fdb3682275b0cbe2e5ca4c9993d6e47f0945abb4efe32d",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 16,
+      "render_sha256": "4afb6378e37a5d1eeb832f54e9620dece82986ebf8e62abfe3f32bb1e1ca15d4",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 17,
+      "render_sha256": "d76de3e66aaaac992fc4e8730d20027fa9b0e835d2176c1cc06cc66c6811aa32",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 18,
+      "render_sha256": "010be5d8f1dd1c158e3125c243e23459f2a0b76a0bb3401752dd270b4d9860e7",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 19,
+      "render_sha256": "1cda41dd760f96a1f56cef65e4d90da23d8f84e5fcfb899333fa2bea69b6de56",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 20,
+      "render_sha256": "777fd051193040f55e8af9ca97f93567c957402e45c975d388855b13d0f83b5a",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 21,
+      "render_sha256": "61c2e9012b20787282479d63de82b13039781344012b567059ca9248c2e3bcb9",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 22,
+      "render_sha256": "b43cad93bfcc518abb4f8d7a57a5555701fb40ef3a24c80736da4a996890c0b2",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 23,
+      "render_sha256": "e4e44c5e034b9a62a5ca050d131c57690b578d85d7f54fba2dfeb328204d54ef",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 24,
+      "render_sha256": "dc9085f9b0bfe5006519adfd75f257fce359e17f369b15216b4fbc45491bdde4",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 25,
+      "render_sha256": "4cac402a9f7e2f8cc42043070cba41589252a2d61b7931bdf79251b24bee475b",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 26,
+      "render_sha256": "137ce0e35fa1cf685fc7a29c8f9b6f16d240db22e8e0728f10fa0a35e1e6bb3b",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 27,
+      "render_sha256": "3a720d199d47eabf43ce43b7fd8832bc3738ff201d66aa55bda6668f32fbb270",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 28,
+      "render_sha256": "bec1041b984e46441c87bfab44041319af40ebb6fd92d6c861171e3afd9612b5",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 29,
+      "render_sha256": "9b82d2118e243ec6b7f0cba15d264eca71720decd665a1e55ad6a894f4cc797b",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 30,
+      "render_sha256": "729595d820d7e6b07e77e62a03411675aa1c0ec1a56cf608d73619ed33499663",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 31,
+      "render_sha256": "bc3a952c3ad00882a97fb9fc63504c0ba4ccd8391a628f0e993df9d9dc14ed10",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 32,
+      "render_sha256": "0a3d6de83509f034aa0488837e2616bfedecc846bdee627d382886b902153cac",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 33,
+      "render_sha256": "46af8e80a9d9649fb1472ade424b688b8846aa7dd42ec2c8e507d172761cd92b",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 34,
+      "render_sha256": "e6ec17c5f39bf30af7f86dc028be830348e4cb9a65e1c7587d7bf4c23e2a9619",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 35,
+      "render_sha256": "efd721744b29c1902a02fbb9c2f2b55f98be89343344d9acb38200663eb8de94",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 36,
+      "render_sha256": "c71a0fa87d711c44bb86a747393529aea9ef61846bdff59f200abe94b1d74159",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 37,
+      "render_sha256": "6114ad3a9f64a046bab5c324ddcdef777051dcf7ab8255afc8d954489ac3cdfe",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 38,
+      "render_sha256": "211ce8dd9650c93354d124afad263d05011bf9cb67ac137ec033cfa86742ad76",
+      "reviewed": true,
+      "basis": "Viewed at full-page resolution in release-metadata pass"
+    },
+    {
+      "page": 39,
+      "render_sha256": "babf0394d2cd12d19768d64fe7a53f0a126eb0803988b871041db98e4652ef7c",
+      "reviewed": true,
+      "basis": "Viewed at full-page resolution in release-metadata pass"
+    },
+    {
+      "page": 40,
+      "render_sha256": "fc452c4e489695f5d59da0d3a29afacdeee5a50e1ab983169b39a07219fd31a8",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    },
+    {
+      "page": 41,
+      "render_sha256": "020c7c00ac9ffc3e5afa240524f027de7225bec612f7014dc398ae281f19d5f0",
+      "reviewed": true,
+      "basis": "Byte-identical to the reviewed prepublication page"
+    }
+  ],
+  "not_performed": [
+    "Physical print proof",
+    "PDF/UA or screen-reader certification",
+    "Cross-viewer GUI audit",
+    "Second-machine build"
+  ],
+  "publication_event_performed": false
+}

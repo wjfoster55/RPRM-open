@@ -1,0 +1,55 @@
+{
+  "record_type": "BOUNDED_MEASUREMENT_STATUS_CARD",
+  "claim_id": "C-MEAS-01",
+  "status": "ACCEPTED_PARTIAL",
+  "measurement_disposition": "PARTIAL_RECONSTRUCTION",
+  "operation": "unmapped",
+  "note": "C1 remains PARTIAL. This card exports bounded status and measurement-protocol limits only. No publisher figure images, no redigitization, no Pilot 05.2.",
+  "scientific_source_identifier": {
+    "repository": "wjfoster55/rprm-cancer-research",
+    "tip": "a0538e8b50bdacd36af4c4af32b35c4b1a81d6be",
+    "content_commit": "2fbc5984a86f26e99dcc71ea8ffc778682ee4fee"
+  },
+  "primary_citation": {
+    "placeholder_key": "Liang2014_ncomms5048",
+    "authors": "Liang et al.",
+    "doi": "10.1038/ncomms5048",
+    "role": "Primary citation for the figure used in C1; images not republished here.",
+    "images_included": false
+  },
+  "failed_obligations": [
+    {
+      "id": "MAIN_PLOT_AU_SCALE",
+      "status": "FAILED",
+      "detail": "Main-plot vertical calibration in publication a.u. units was not established."
+    },
+    {
+      "id": "DAMAGED_CAFFEINE_TERMINAL_WINDOW",
+      "status": "FAILED",
+      "detail": "Damaged+caffeine terminal tip unrecovered; ~1.27 h gap to isolated final detection."
+    },
+    {
+      "id": "ASYNCHRONOUS_TERMINAL_WINDOW",
+      "status": "FAILED",
+      "detail": "Asynchronous group incomplete; ~1.56 h fitted coverage, not a recovered three-hour terminal window."
+    },
+    {
+      "id": "SAMPLING_EQUIVALENCE",
+      "status": "FAILED",
+      "detail": "Exclusion of a final raster sample was not demonstrated equivalent to excluding the paper original last observation."
+    },
+    {
+      "id": "PUBLISHER_IMAGE_EXPORT",
+      "status": "BLOCKED_BY_RIGHTS",
+      "detail": "No publisher figure images packaged; figure lane closed for public export."
+    }
+  ],
+  "retained_limits": [
+    "Pixel-space approximate slopes are not substitutes for publication a.u./hour slopes.",
+    "Result is a measurement-admissibility limit, not a biology null or malignancy finding.",
+    "H-BIO-01 remains NOT_EXECUTED."
+  ],
+  "license_provenance": {
+    "rights_note": "Status/protocol export only (CC0 companion docs). Liang figure pixels/overlays omitted; rights unresolved for republication."
+  }
+}

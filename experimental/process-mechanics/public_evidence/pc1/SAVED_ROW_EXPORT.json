@@ -1,0 +1,27 @@
+{
+  "record_type": "PUBLIC_SAVED_ROW_EXPORT",
+  "evidence_grade": "SAVED_ROW_EXPORT",
+  "note": "Minimally sufficient public slices of synthetic PC1 saved rows. Supports SAVED_ROW_REAGGREGATION. Not trajectory regeneration.",
+  "learner": {
+    "public_path": "pc1/LEARNER_ORIGIN_PREDICTIONS.csv.gz",
+    "n_rows": 15475,
+    "source_bytes": 2041659,
+    "source_sha256": "69e19af411e50424e719264f3ef732e11c0517fd89066f598bb4b9452834755d",
+    "public_gzip_bytes": 59454,
+    "fields": ["panel", "view", "source_id", "noise_rep", "origin_index", "time_s", "label", "p", "brier"]
+  },
+  "observer": {
+    "public_path": "pc1/OBSERVER_ORIGIN_RECORDS.csv.gz",
+    "n_rows": 3271,
+    "source_bytes": 386778,
+    "source_sha256": "8f6447cd8ee0f107290fe474262f7a38ab7547bd1489a59f2684d931f1870bc5",
+    "public_gzip_bytes": 54937,
+    "fields": ["panel", "source_id", "noise_rep", "origin_index", "time_s", "label", "hard_prediction", "state_error_kind", "state_error_value", "raw_voltage_squared_error", "past_mean_squared_error"]
+  },
+  "withheld_pairs": {
+    "public_path": "pc1/WITHHELD_PLAN_PAIRS.json",
+    "n_pairs": 60,
+    "evidence_grade": "SOURCE_REPORTED_EXTRACT"
+  },
+  "scientific_source_identifier": "d2e63b56d79d3c620e8aec8121adf18bcb7395bd"
+}

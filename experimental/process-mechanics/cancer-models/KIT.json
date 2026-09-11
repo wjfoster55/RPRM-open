@@ -1,0 +1,27 @@
+{
+  "kit_id": "process-mechanics/cancer-models",
+  "version": "0.1.0",
+  "claim_ids": ["C-CAL-01", "C-MEAS-01"],
+  "evidence_grade": {
+    "C-CAL-01": "NEW_ILLUSTRATIVE_DEMO",
+    "C-MEAS-01": "NEW_ILLUSTRATIVE_DEMO",
+    "c1_figure_reconstruction": "ACCEPTED_PARTIAL_NOT_REPLAYED_HERE"
+  },
+  "model_scope": "Finite synthetic six-candidate filter; no patient data",
+  "inputs": ["catalogue.py", "independent abs tol 0.01"],
+  "output_semantics": "RESOLVED/AMBIGUOUS/EMPTY_FAMILY/OPEN_INCOMPLETE/ADMISSION_ERROR; PARTIAL measurement admission",
+  "source_ids": {
+    "pattern_source": "rprm-cancer-research observation-value / candidate-workbench patterns",
+    "c1_content_commit": "a0538e8b50bdacd36af4c4af32b35c4b1a81d6be"
+  },
+  "replay_command": "python -I -B experimental/process-mechanics/cancer-models/check.py",
+  "expected_result_path": "experimental/process-mechanics/cancer-models/expected/demo_receipt.json",
+  "verification_scope": "Synthetic teaching fixtures only; C1 figure lane not reopened",
+  "limitations": [
+    "Not clinical",
+    "Not biological landmark evidence",
+    "Empty family is not no-event",
+    "No author contact / no new Liang extraction"
+  ],
+  "rights": "Original kit software 0BSD; original text/example data CC0; do not copy publisher figure images"
+}

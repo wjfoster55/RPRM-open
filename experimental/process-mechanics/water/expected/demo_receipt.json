@@ -1,0 +1,46 @@
+{
+  "all_positive_pass": true,
+  "claim_ids": [
+    "W-COMP-01",
+    "W-TRUST-01",
+    "W-REUSE-01"
+  ],
+  "evidence_grade": {
+    "W-COMP-01": "REPRODUCED_PUBLIC_PORT",
+    "W-REUSE-01": "NEW_ILLUSTRATIVE_DEMO",
+    "W-TRUST-01": "REPRODUCED_PUBLIC_PORT"
+  },
+  "evidence_notes": {
+    "W-COMP-01": "19 laws x (2,4,8 equal + mixed) replayed locally against direct exact bounds",
+    "W-REUSE-01": "local context-mismatch rejection demo; not independent PR14 audit replay",
+    "W-TRUST-01": "triangle_p4_phi0 endpoint spoof checked against frozen PR13 extract numbers"
+  },
+  "kit_id": "process-mechanics/water",
+  "positive_comparisons": 76,
+  "reuse": {
+    "changed_contract_join": "REJECT_CONTRACT_MISMATCH",
+    "missing_child": "OPEN_MISSING_CHILD",
+    "same_context_join": "JOIN_OK"
+  },
+  "source_content_commit": "90bf41040076af2b448ff5f52c512bbcbb0f2e26",
+  "spoof": {
+    "analytic_match": false,
+    "candidate_id": "triangle_p4_phi0",
+    "exact": {
+      "infimum": "9",
+      "reaches_ge_11": true,
+      "reaches_ge_11_5": false,
+      "supremum": "11"
+    },
+    "join_status": "JOIN_OK",
+    "joined": {
+      "infimum": "10",
+      "reaches_ge_11": false,
+      "reaches_ge_11_5": false,
+      "supremum": "10"
+    },
+    "note": "JOIN_OK with wrong contents; auxiliary reach-11 differs; primary 11.5 stays false",
+    "primary_11_5_unchanged": true
+  },
+  "version": "0.1.0"
+}

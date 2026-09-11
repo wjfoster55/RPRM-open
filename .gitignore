@@ -6,3 +6,6 @@ __pycache__/
 .venv/
 node_modules/
 .DS_Store
+
+# Local review bundles and research handoffs are not public release inputs.
+.local/
