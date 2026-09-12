@@ -1,0 +1,3 @@
+{"status": "FAIL", "control": "missing-receipt", "error": "ValueError: packaged files missing: ['experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope_02.json']"}
+
+STDERR:

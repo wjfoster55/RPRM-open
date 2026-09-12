@@ -1,0 +1,170 @@
+{
+  "register": "RCF01-core-recovery",
+  "version": "RCF01-envelope-1",
+  "survival_rule": "IDs may be refined, split, linked, or superseded, but not silently removed.",
+  "entries": [
+    {
+      "id": "RCF-P1",
+      "source_anchors": [
+        "sources/PRESTIGE-AND-NUMBER-OPERATIONS.md U00 U10 U23-U25 U33",
+        "The retained self-promotion constructor",
+        "Prestige as acquired usable knowledge"
+      ],
+      "original_meaning": "A completed relational course can appear as one while retaining a relationship/route to its construction; packaging as one does not establish operational reuse.",
+      "formal_candidate": "Promoted envelope: visible label, retained C2 or graph summary, admitted contract, carrier/frame/version, cold reopen route. Exact reuse requires answer agreement plus enabledness and successor descent.",
+      "evidence_status": "FINITE_TEST_PASS on cube arithmetic, reopen/refuse, coherent transport, and label-vs-history; not the full 1-to-9 lifecycle",
+      "counterexamples": [
+        "Equal outward label 'one' with different winding history",
+        "C2 collision of h+x+y versus h+x+y+hxy under flip_h/fiving_slice"
+      ],
+      "unformalized_remainder": "Acquisition of closure; which questions to admit; 1-to-9 route; uniform operation lift across grades",
+      "artifact_links": [
+        "experiments/core_recovery_bridge_01/prestige_envelope.py",
+        "experiments/core_recovery_bridge_01/PROOFS.md"
+      ]
+    },
+    {
+      "id": "RCF-P2",
+      "source_anchors": ["U15-U16", "Reflected reincarnation", "Completed-block dependency distance"],
+      "original_meaning": "Moving up, folding back, returning at a different tier/orientation, retaining access; lower dependencies constrain the next outer move.",
+      "formal_candidate": "Not newly contracted this round. Keep cycle/grade/depth coordinates separate.",
+      "evidence_status": "DEFERRED_PRESERVED",
+      "counterexamples": ["Using one coordinate as another"],
+      "unformalized_remainder": "Third name; universal tier-transition law",
+      "artifact_links": ["research/core-recovery-01/CONCEPT_REGISTER.md"]
+    },
+    {
+      "id": "RCF-P3",
+      "source_anchors": ["U34-U38"],
+      "original_meaning": "Regroup a complex process at several scales for a rough outline, then refine where remaining possibilities matter.",
+      "formal_candidate": "Not exact completed-closure. No general procedure validated here.",
+      "evidence_status": "DEFERRED_NOT_RUN",
+      "counterexamples": ["Treating approximate grouping as exact reusable closure"],
+      "unformalized_remainder": "Finite trajectory-family procedure; uncertainty/depth/cost remain distinct",
+      "artifact_links": ["research/core-recovery-01/CONCEPT_REGISTER.md"]
+    },
+    {
+      "id": "RCF-F1",
+      "source_anchors": [
+        "Fiving, 0/5 A/B, and waiting after five-to-seven",
+        "Finite fiving donor and its exact inverse",
+        "RPRM_HALF_DECADE_FIVING_AB_LIFT_01"
+      ],
+      "original_meaning": "0/5 as weaving/splice positions and A/B at the next view; a five-step operation can return a coarse view while retaining a stronger distinction.",
+      "formal_candidate": "d=5h+r; +5 mod 10 toggles h, preserves r. Strong n=10w+5h+r. Adapter A_r(h,x,y)=(5h+r,x,y) to cube bit flip. Not F5.",
+      "evidence_status": "DONOR_RERUN_PLUS_ADAPTER_TESTS",
+      "counterexamples": ["+4 adapter", "two finite fivings treated as strong identity", "omitted winding"],
+      "unformalized_remainder": "Generic half-turn uniqueness; unrecorded sixing; bridge to Double-Stamp restart",
+      "artifact_links": [
+        "experiments/core_recovery_bridge_01/prestige_envelope.py",
+        "research/core-recovery-01/DONOR_RECONCILIATION.md"
+      ]
+    },
+    {
+      "id": "RCF-F2",
+      "source_anchors": [
+        "amendment 0.11 FIVE_IS_SAFE type-finding",
+        "RPRM_DOUBLE_STAMP_SEAM_MIDPOINT_01"
+      ],
+      "original_meaning": "Locate the typed sense of five as a lawful process boundary; distinguish waiting at a state from passing through a seam/event. Type-finding, not numerology or physical safety.",
+      "formal_candidate": "A5->B6->C7 with authored STATE/EVENT/dwell. Split and midpoint transitions. Vertex-count shortcut rejected.",
+      "evidence_status": "DONOR_RERUN_PLUS_ENABLEDNESS_TESTS",
+      "counterexamples": ["A5 and B6 share quotient vertex count 3 but not dwell", "count==5 shortcut"],
+      "unformalized_remainder": "Uniform restart adapter; 1/3/5/7 waiting law; physical safety",
+      "artifact_links": [
+        "experiments/core_recovery_bridge_01/prestige_envelope.py",
+        "research/core-recovery-01/DONOR_RECONCILIATION.md"
+      ]
+    },
+    {
+      "id": "RCF-F3",
+      "source_anchors": ["RPRM-CONCEPT-RECOVERY.md §6", "paper-coverage audit"],
+      "original_meaning": "A future operation sequence can distinguish states merged by a proposed Fold.",
+      "formal_candidate": "flip_h/fiving_slice as one separating continuation on C2 fibers. Name does not equate RCF-F1 or RCF-F2.",
+      "evidence_status": "ONE_EXPLICIT_SEPARATOR_TESTED; general distinguishing-sequence search NOT_RUN",
+      "counterexamples": ["Repeated old B2 probes add no new distinction"],
+      "unformalized_remainder": "General shortest-future search on this envelope",
+      "artifact_links": ["experiments/core_recovery_bridge_01/check_envelope.py PE04 PE17"]
+    },
+    {
+      "id": "RCF-C1",
+      "source_anchors": [
+        "CUBES-AND-PI-CURVES.md §1",
+        "RPRM_GRADED_SCAR_CUBE_02",
+        "Direct user formulation of equation dimensionality and abduction"
+      ],
+      "original_meaning": "Lower/rebuild descriptions while making relationships and otherwise hidden possibilities inspectable.",
+      "formal_candidate": "Anchored finite-product interpolation on {0,1}^3; C2 retains degree<=2; B2 site closure under + and *.",
+      "evidence_status": "WRITTEN_PROOF plus FINITE_TEST all 256 Boolean tables and 65536 pairs; donor rerun",
+      "counterexamples": ["Hostile: C2 plus flip_h reaches omitted vertex for arbitrary laws"],
+      "unformalized_remainder": "Unknown-law interpolation from inadequate data; continuous recovery",
+      "artifact_links": [
+        "experiments/core_recovery_bridge_01/PROOFS.md",
+        "research/core-recovery-01/DONOR_RECONCILIATION.md"
+      ]
+    },
+    {
+      "id": "RCF-C2",
+      "source_anchors": ["CUBES-AND-PI-CURVES.md §2", "cube abduction space is a quotient of blind modes"],
+      "original_meaning": "Not merely a missing central number; expose families of completions the current checks cannot decide.",
+      "formal_candidate": "Center-only versus full-line second-difference kernels; n=3 extra center-blind dimension 10.",
+      "evidence_status": "SECONDARY; original checker located; not the primary envelope experiment",
+      "counterexamples": ["Center-only checks miss the antipodal counterfeit"],
+      "unformalized_remainder": "Attach distinction witness to the same promotion/reopen interface",
+      "artifact_links": ["research/core-recovery-01/DONOR_RECONCILIATION.md"]
+    },
+    {
+      "id": "RCF-C3",
+      "source_anchors": ["CUBES-AND-PI-CURVES.md §§3-5"],
+      "original_meaning": "Reusable constructions and operational translations, not only a cube picture.",
+      "formal_candidate": "LawCube F2 ANF is a different field/order from Q-interpolation C2. Not rebuilt.",
+      "evidence_status": "INTERFACE_INVENTORY; no compiler rebuild",
+      "counterexamples": ["F2 coefficient arithmetic is not the rational cube used here"],
+      "unformalized_remainder": "Shared I/O with LawCube/RelationForge/Full Zip",
+      "artifact_links": ["research/core-recovery-01/DONOR_RECONCILIATION.md"]
+    },
+    {
+      "id": "RCF-N1",
+      "source_anchors": ["Preserved assistant correction: computational grouping versus origin", "Every three inside nine", "U25"],
+      "original_meaning": "Inspect operations available through a numerical structure; numerals can have multiple specified roles.",
+      "formal_candidate": "Not newly contracted. Keep grouping versus origin distinct.",
+      "evidence_status": "DEFERRED_NOT_RUN",
+      "counterexamples": ["Inventing the inverse 5/6/7/8 dictionary"],
+      "unformalized_remainder": "Complete inverse dictionary; 1/3/5/7 waiting rule; 3x3 grouping transport",
+      "artifact_links": ["research/core-recovery-01/CONCEPT_REGISTER.md"]
+    },
+    {
+      "id": "RCF-R1",
+      "source_anchors": ["ZERO-AND-RAILS.md", "recovery overview §7"],
+      "original_meaning": "Signed offsets, cut/winding transport, common/relative decomposition.",
+      "formal_candidate": "Winding and coherent-transport controls only in RCF01.",
+      "evidence_status": "RELATED_CONTROLS_ONLY",
+      "counterexamples": ["Exact rechart as physical necessity"],
+      "unformalized_remainder": "Full rails/moving-gap/lens-locking experiment",
+      "artifact_links": ["research/core-recovery-01/CONCEPT_REGISTER.md"]
+    },
+    {
+      "id": "RCF-PI1",
+      "source_anchors": ["CUBES-AND-PI-CURVES.md §7", "Circle Compiler addendum"],
+      "original_meaning": "Operational/equation intent for a flexible curve law, not a replacement decimal for pi.",
+      "formal_candidate": "Not executed in RCF01. Metric-addressed circle transport kept distinct from moving-frame branch.",
+      "evidence_status": "DEFERRED_PRESERVED",
+      "counterexamples": ["Substituting decimal pi-window work for the curve law"],
+      "unformalized_remainder": "Circle Compiler Candidate execution",
+      "artifact_links": ["research/core-recovery-01/CONCEPT_REGISTER.md"]
+    },
+    {
+      "id": "RCF-AD1",
+      "source_anchors": [
+        "absolute-distinction/ABSOLUTE_DISTINCTION_APPLICATIONS_HANDOFF.md",
+        "CURSOR_REVIEW_REPAIR.md §C"
+      ],
+      "original_meaning": "AD inspects admitted distinctions and roles. Prestige's layered object is not the no-exemption policy. F5 vs Z/6Z is not historical Five/Six.",
+      "formal_candidate": "Proposed bridge: inspect a retained distinction, an operation, a changed receiver, and a repair. Not a replacement AD definition.",
+      "evidence_status": "EDITORIAL_NOTE_AFTER_EVIDENCE",
+      "counterexamples": ["Superseded prestige/Five/Six semantic table in old RETURN_TO_WILLIAM.md"],
+      "unformalized_remainder": "Owning AD thread retains paper control",
+      "artifact_links": ["research/core-recovery-01/RETURN_TO_WILLIAM.md"]
+    }
+  ]
+}

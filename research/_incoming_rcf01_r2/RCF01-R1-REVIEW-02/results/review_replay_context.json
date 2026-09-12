@@ -1,0 +1,14 @@
+{
+  "cmd": [
+    "/opt/pyvenv/bin/python",
+    "-B",
+    "/mnt/data/RCF01-R1-REVIEW-02/cleanroom/run_portable.py",
+    "--output-dir",
+    "/mnt/data/RCF01-R1-REVIEW-02/results/replay"
+  ],
+  "cwd": "/mnt/data",
+  "PYTHONPATH": "unset",
+  "seconds": 74.58844963199999,
+  "exit": 0,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+}

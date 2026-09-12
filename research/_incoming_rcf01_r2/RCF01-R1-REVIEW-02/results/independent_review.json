@@ -1,0 +1,453 @@
+{
+  "scope": "Reviewer-created exposed development checks, not a full-program proof",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "package": "/mnt/data/RCF01-R1-REVIEW-02/cleanroom",
+  "source_sha256": "0edf6572fd2c0319d443250caa342e091593fe919dca1c0d66416bcfb3d2d720",
+  "checks": {
+    "composition_positive": {
+      "status": "PASS",
+      "hot_reads_delta": 0,
+      "recipe_constructions_delta": 2,
+      "product_degree_bounds": [
+        1,
+        2,
+        3
+      ],
+      "flipped_B2": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    },
+    "composed_dependency_mutations": {
+      "status": "PASS",
+      "corrupted": {
+        "disposition": "NONE",
+        "status": "INVALID_DEPENDENCY",
+        "witness": "cold_sha256 mismatch"
+      },
+      "deleted": {
+        "disposition": "OPEN",
+        "status": "UNRESOLVED",
+        "witness": "cold path missing"
+      }
+    },
+    "rational_composition_oracle": {
+      "status": "PASS",
+      "seed": 6112026,
+      "constructed_steps": 96,
+      "value_comparisons": 768,
+      "reference": "direct Fraction table arithmetic, direct input indexing"
+    },
+    "hidden_boolean_addition_class_escape": {
+      "status": "DEFECT_REPRODUCED",
+      "input": "p=multiply(multiply(boolean unit h, boolean unit x), boolean unit y); add(p,p)",
+      "retained": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "declared_family": "boolean_cube",
+      "actual_omitted": "2",
+      "expected_family": "rational_cube",
+      "after_flip_family": "boolean_cube",
+      "after_flip_readout_011": "2",
+      "boolean_helper_claim": {
+        "disposition": "MANY",
+        "members": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      "significance": "numeric summary is correct, but advertised full-output family excludes its actual output"
+    },
+    "generic_map_contract_gate": {
+      "status": "INTERFACE_GAP_REPRODUCED",
+      "named": {
+        "disposition": "NONE",
+        "status": "UNSUPPORTED",
+        "witness": "map not in contract"
+      },
+      "generic": {
+        "disposition": "ONE",
+        "status": "EXACT",
+        "witness": {
+          "closed_on_B2": false,
+          "used_cold": true
+        }
+      },
+      "map": "flip_h",
+      "boundary": "No mathematical wrong answer; helper needs an explicit unchecked-reference or admitted-public role"
+    },
+    "generic_map_degree_bound": {
+      "status": "DEFECT_REPRODUCED",
+      "mapping": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "input_degree": 1,
+      "advertised_output_bound": 1,
+      "actual_output": "hx",
+      "actual_degree": 2,
+      "boundary": "This map is not a coordinate flip/clamp; generic helper permits it and advertises degree_bound=1"
+    },
+    "coherent_transport_cost": {
+      "status": "OBSERVATION",
+      "result": {
+        "disposition": "ONE",
+        "status": "EXACT",
+        "witness": {
+          "receiver": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "coherent": true,
+          "used_cold": true
+        }
+      },
+      "cold_reads": 1,
+      "correct_values": [
+        [
+          0,
+          "1"
+        ],
+        [
+          1,
+          "0"
+        ],
+        [
+          2,
+          "3"
+        ],
+        [
+          3,
+          "2"
+        ],
+        [
+          4,
+          "5"
+        ],
+        [
+          5,
+          "4"
+        ],
+        [
+          7,
+          "6"
+        ]
+      ],
+      "note": "Correct, but reopens available backing before checking that the transported receiver is already hot-sufficient; not a speed improvement claim."
+    },
+    "manifest": {
+      "status": "PASS",
+      "listed": 67,
+      "checks": [
+        {
+          "path": "CONTENTS.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-01/README.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-01/RETURN_TO_WILLIAM.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-01/DONOR_RECONCILIATION.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-01/FORMAL_BRIDGE_NOTE.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-01/CONCEPT_REGISTER.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-01/CONCEPT_REGISTER.json",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-01/CONCEPT_REGISTER.source.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-01/check_ids.py",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-01/provenance/STARTER_PROTOCOL.json",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-01/sources/RPRM-CONCEPT-RECOVERY.zip",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-r1/STATUS_CORRECTIONS.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-r1/README.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-r1/check_export.py",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-r1/run_portable.py",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-r1/build_export.py",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/README.md",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/prestige_envelope.py",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/check_envelope.py",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/PROTOCOL.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/PROOFS.md",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope_02.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/env_control_omit.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/env_control_duplicate.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/env_control_unexpected.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/env_control_reorder.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/donor_fiving_verify.txt",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/donor_double_stamp_verify.txt",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/donor_graded_scar.txt",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/donor_ternary_bridge.txt",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01/runs/donor_prestige_examples.txt",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/README.md",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/prestige_envelope.py",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/check_envelope.py",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/PROTOCOL.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/PROTOCOL.inherited.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/PROOFS.md",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/runs/envelope_r1.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/runs/envelope_r1_02.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/runs/envelope_r1_omit.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/runs/envelope_r1_duplicate.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/runs/envelope_r1_unexpected.json",
+          "ok": true
+        },
+        {
+          "path": "experiments/core_recovery_bridge_01_r1/runs/envelope_r1_reorder.json",
+          "ok": true
+        },
+        {
+          "path": "rprm/__init__.py",
+          "ok": true
+        },
+        {
+          "path": "rprm/core.py",
+          "ok": true
+        },
+        {
+          "path": "RPRM-CORE-FORMALIZATION-01/CURSOR_START_HERE.md",
+          "ok": true
+        },
+        {
+          "path": "RPRM-CORE-FORMALIZATION-01/README.md",
+          "ok": true
+        },
+        {
+          "path": "RPRM-CORE-FORMALIZATION-01/check_bridge.py",
+          "ok": true
+        },
+        {
+          "path": "RPRM-CORE-FORMALIZATION-01/PROTOCOL.json",
+          "ok": true
+        },
+        {
+          "path": "RPRM-CORE-FORMALIZATION-01/MANIFEST.json",
+          "ok": true
+        },
+        {
+          "path": "RPRM-CORE-FORMALIZATION-01/runs/cursor_rcf01_starter.json",
+          "ok": true
+        },
+        {
+          "path": "RPRM-CORE-FORMALIZATION-01/runs/control_omit.json",
+          "ok": true
+        },
+        {
+          "path": "RPRM-CORE-FORMALIZATION-01/runs/control_duplicate.json",
+          "ok": true
+        },
+        {
+          "path": "RPRM-CORE-FORMALIZATION-01/runs/control_unexpected.json",
+          "ok": true
+        },
+        {
+          "path": "RPRM-CORE-FORMALIZATION-01/runs/control_reorder.json",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-r1/RETURN_TO_WILLIAM_R1.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-r1/INVENTORY.md",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-r1/provenance/source_identities.json",
+          "ok": true
+        },
+        {
+          "path": "research/core-recovery-r1/CLEANROOM_REPLAY.json",
+          "ok": true
+        },
+        {
+          "path": "review/RCF01-REVIEW-01/CURSOR_REVIEW_REPAIR.md",
+          "ok": true
+        },
+        {
+          "path": "review/RCF01-REVIEW-01/REVIEW.md",
+          "ok": true
+        },
+        {
+          "path": "review/RCF01-REVIEW-01/README.md",
+          "ok": true
+        },
+        {
+          "path": "review/RCF01-REVIEW-01/MANIFEST.json",
+          "ok": true
+        },
+        {
+          "path": "review/RCF01-REVIEW-01/review_extra_checks.py",
+          "ok": true
+        },
+        {
+          "path": "run_portable.py",
+          "ok": true
+        },
+        {
+          "path": "README.md",
+          "ok": true
+        }
+      ]
+    }
+  }
+}

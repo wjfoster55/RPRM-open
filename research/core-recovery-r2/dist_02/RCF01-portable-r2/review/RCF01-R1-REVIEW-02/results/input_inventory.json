@@ -1,0 +1,743 @@
+{
+  "input_path": "/mnt/data/core-recovery-r1.zip",
+  "sha256": "5a9e7b0c9aeeda7cc9bdc0ed9c2abffed2ea0788e7c5c4b10d77e750a0f780b8",
+  "crc": null,
+  "members": [
+    {
+      "path": "core-recovery-r1/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/build_export.py",
+      "bytes": 8737
+    },
+    {
+      "path": "core-recovery-r1/check_export.py",
+      "bytes": 7928
+    },
+    {
+      "path": "core-recovery-r1/CLEANROOM_REPLAY.json",
+      "bytes": 1007
+    },
+    {
+      "path": "core-recovery-r1/dist/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/CONTENTS.md",
+      "bytes": 10263
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/check_envelope.py",
+      "bytes": 31755
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/prestige_envelope.py",
+      "bytes": 25708
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/PROOFS.md",
+      "bytes": 4612
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/PROTOCOL.json",
+      "bytes": 2208
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/README.md",
+      "bytes": 616
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope.json",
+      "bytes": 12849
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope_02.json",
+      "bytes": 13373
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/donor_double_stamp_verify.txt",
+      "bytes": 626
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/donor_fiving_verify.txt",
+      "bytes": 928
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/donor_graded_scar.txt",
+      "bytes": 46058
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/donor_prestige_examples.txt",
+      "bytes": 224
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/donor_ternary_bridge.txt",
+      "bytes": 12688
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/env_control_duplicate.json",
+      "bytes": 13261
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/env_control_omit.json",
+      "bytes": 12761
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/env_control_reorder.json",
+      "bytes": 13376
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/env_control_unexpected.json",
+      "bytes": 13440
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/check_envelope.py",
+      "bytes": 41146
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/prestige_envelope.py",
+      "bytes": 32092
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/PROOFS.md",
+      "bytes": 6814
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/PROTOCOL.inherited.json",
+      "bytes": 2208
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/PROTOCOL.json",
+      "bytes": 3903
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/README.md",
+      "bytes": 533
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1.json",
+      "bytes": 16032
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1_02.json",
+      "bytes": 16488
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1_duplicate.json",
+      "bytes": 16036
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1_omit.json",
+      "bytes": 15539
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1_reorder.json",
+      "bytes": 16491
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1_unexpected.json",
+      "bytes": 16555
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/MANIFEST.json",
+      "bytes": 11926
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/README.md",
+      "bytes": 448
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/check_ids.py",
+      "bytes": 995
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/CONCEPT_REGISTER.json",
+      "bytes": 10462
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/CONCEPT_REGISTER.md",
+      "bytes": 3212
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/CONCEPT_REGISTER.source.md",
+      "bytes": 11499
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/DONOR_RECONCILIATION.md",
+      "bytes": 4671
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/FORMAL_BRIDGE_NOTE.md",
+      "bytes": 13006
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/provenance/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/provenance/STARTER_PROTOCOL.json",
+      "bytes": 1372
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/README.md",
+      "bytes": 885
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/RETURN_TO_WILLIAM.md",
+      "bytes": 10474
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/sources/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-01/sources/RPRM-CONCEPT-RECOVERY.zip",
+      "bytes": 122269
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-r1/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-r1/build_export.py",
+      "bytes": 8506
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-r1/check_export.py",
+      "bytes": 7928
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-r1/INVENTORY.md",
+      "bytes": 1415
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-r1/provenance/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-r1/provenance/source_identities.json",
+      "bytes": 2312
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-r1/README.md",
+      "bytes": 461
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-r1/RETURN_TO_WILLIAM_R1.md",
+      "bytes": 6744
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-r1/run_portable.py",
+      "bytes": 4340
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/research/core-recovery-r1/STATUS_CORRECTIONS.md",
+      "bytes": 2094
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/review/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/review/RCF01-REVIEW-01/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/review/RCF01-REVIEW-01/CURSOR_REVIEW_REPAIR.md",
+      "bytes": 9420
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/review/RCF01-REVIEW-01/MANIFEST.json",
+      "bytes": 3464
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/review/RCF01-REVIEW-01/README.md",
+      "bytes": 1318
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/review/RCF01-REVIEW-01/REVIEW.md",
+      "bytes": 11370
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/review/RCF01-REVIEW-01/review_extra_checks.py",
+      "bytes": 6734
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/rprm/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/rprm/core.py",
+      "bytes": 13550
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/rprm/__init__.py",
+      "bytes": 101
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/check_bridge.py",
+      "bytes": 16512
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/CURSOR_START_HERE.md",
+      "bytes": 17655
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/MANIFEST.json",
+      "bytes": 3909
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/PROTOCOL.json",
+      "bytes": 1372
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/README.md",
+      "bytes": 3761
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/control_duplicate.json",
+      "bytes": 4782
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/control_omit.json",
+      "bytes": 4633
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/control_reorder.json",
+      "bytes": 5014
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/control_unexpected.json",
+      "bytes": 5078
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/cursor_rcf01_starter.json",
+      "bytes": 5011
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1/run_portable.py",
+      "bytes": 4340
+    },
+    {
+      "path": "core-recovery-r1/dist/RCF01-portable-r1.zip",
+      "bytes": 312987
+    },
+    {
+      "path": "core-recovery-r1/dist_02/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/CONTENTS.md",
+      "bytes": 10263
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/check_envelope.py",
+      "bytes": 31755
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/prestige_envelope.py",
+      "bytes": 25708
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/PROOFS.md",
+      "bytes": 4612
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/PROTOCOL.json",
+      "bytes": 2208
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/README.md",
+      "bytes": 616
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope.json",
+      "bytes": 12849
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope_02.json",
+      "bytes": 13373
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/donor_double_stamp_verify.txt",
+      "bytes": 626
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/donor_fiving_verify.txt",
+      "bytes": 928
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/donor_graded_scar.txt",
+      "bytes": 46058
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/donor_prestige_examples.txt",
+      "bytes": 224
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/donor_ternary_bridge.txt",
+      "bytes": 12688
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/env_control_duplicate.json",
+      "bytes": 13261
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/env_control_omit.json",
+      "bytes": 12761
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/env_control_reorder.json",
+      "bytes": 13376
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01/runs/env_control_unexpected.json",
+      "bytes": 13440
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/check_envelope.py",
+      "bytes": 41146
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/prestige_envelope.py",
+      "bytes": 32092
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/PROOFS.md",
+      "bytes": 6814
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/PROTOCOL.inherited.json",
+      "bytes": 2208
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/PROTOCOL.json",
+      "bytes": 3903
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/README.md",
+      "bytes": 533
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1.json",
+      "bytes": 16032
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1_02.json",
+      "bytes": 16488
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1_duplicate.json",
+      "bytes": 16036
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1_omit.json",
+      "bytes": 15539
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1_reorder.json",
+      "bytes": 16491
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/experiments/core_recovery_bridge_01_r1/runs/envelope_r1_unexpected.json",
+      "bytes": 16555
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/MANIFEST.json",
+      "bytes": 12097
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/README.md",
+      "bytes": 448
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/check_ids.py",
+      "bytes": 995
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/CONCEPT_REGISTER.json",
+      "bytes": 10462
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/CONCEPT_REGISTER.md",
+      "bytes": 3212
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/CONCEPT_REGISTER.source.md",
+      "bytes": 11499
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/DONOR_RECONCILIATION.md",
+      "bytes": 4671
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/FORMAL_BRIDGE_NOTE.md",
+      "bytes": 13006
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/provenance/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/provenance/STARTER_PROTOCOL.json",
+      "bytes": 1372
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/README.md",
+      "bytes": 885
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/RETURN_TO_WILLIAM.md",
+      "bytes": 10474
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/sources/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-01/sources/RPRM-CONCEPT-RECOVERY.zip",
+      "bytes": 122269
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/build_export.py",
+      "bytes": 8737
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/check_export.py",
+      "bytes": 7928
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/CLEANROOM_REPLAY.json",
+      "bytes": 553
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/INVENTORY.md",
+      "bytes": 1415
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/provenance/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/provenance/source_identities.json",
+      "bytes": 2312
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/README.md",
+      "bytes": 461
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/RETURN_TO_WILLIAM_R1.md",
+      "bytes": 7479
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/run_portable.py",
+      "bytes": 4407
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/research/core-recovery-r1/STATUS_CORRECTIONS.md",
+      "bytes": 2094
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/review/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/review/RCF01-REVIEW-01/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/review/RCF01-REVIEW-01/CURSOR_REVIEW_REPAIR.md",
+      "bytes": 9420
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/review/RCF01-REVIEW-01/MANIFEST.json",
+      "bytes": 3464
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/review/RCF01-REVIEW-01/README.md",
+      "bytes": 1318
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/review/RCF01-REVIEW-01/REVIEW.md",
+      "bytes": 11370
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/review/RCF01-REVIEW-01/review_extra_checks.py",
+      "bytes": 6734
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/rprm/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/rprm/core.py",
+      "bytes": 13550
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/rprm/__init__.py",
+      "bytes": 101
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/check_bridge.py",
+      "bytes": 16512
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/CURSOR_START_HERE.md",
+      "bytes": 17655
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/MANIFEST.json",
+      "bytes": 3909
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/PROTOCOL.json",
+      "bytes": 1372
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/README.md",
+      "bytes": 3761
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/control_duplicate.json",
+      "bytes": 4782
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/control_omit.json",
+      "bytes": 4633
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/control_reorder.json",
+      "bytes": 5014
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/control_unexpected.json",
+      "bytes": 5078
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/RPRM-CORE-FORMALIZATION-01/runs/cursor_rcf01_starter.json",
+      "bytes": 5011
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1/run_portable.py",
+      "bytes": 4407
+    },
+    {
+      "path": "core-recovery-r1/dist_02/RCF01-portable-r1.zip",
+      "bytes": 313937
+    },
+    {
+      "path": "core-recovery-r1/INVENTORY.md",
+      "bytes": 1415
+    },
+    {
+      "path": "core-recovery-r1/provenance/",
+      "bytes": 0
+    },
+    {
+      "path": "core-recovery-r1/provenance/source_identities.json",
+      "bytes": 2312
+    },
+    {
+      "path": "core-recovery-r1/README.md",
+      "bytes": 461
+    },
+    {
+      "path": "core-recovery-r1/RETURN_TO_WILLIAM_R1.md",
+      "bytes": 7845
+    },
+    {
+      "path": "core-recovery-r1/run_portable.py",
+      "bytes": 4407
+    },
+    {
+      "path": "core-recovery-r1/STATUS_CORRECTIONS.md",
+      "bytes": 2094
+    }
+  ]
+}

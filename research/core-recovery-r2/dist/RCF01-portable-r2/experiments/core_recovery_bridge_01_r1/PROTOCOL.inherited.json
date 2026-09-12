@@ -1,0 +1,63 @@
+{
+  "version": "RCF01-envelope-1",
+  "evidence_class": "EXPOSED_CONSTRUCTED_DEVELOPMENT_CASES_NOT_HOLDOUT",
+  "frozen_before_first_envelope_execution": true,
+  "workspace_root": "C:\\github\\RPRM-open",
+  "workspace_head": "4f5c8145a1d9389f28079ef63a385e406122fd34",
+  "required_case_ids": [
+    "PE01_INDEPENDENT_CUBE_KERNEL",
+    "PE02_COMPACT_ARITHMETIC",
+    "PE03_HARMLESS_OMISSION",
+    "PE04_OPERATION_INSUFFICIENCY",
+    "PE05_COLD_REOPEN_REPAIR",
+    "PE06_MISSING_COLD_REFUSAL",
+    "PE07_STALE_COLD_REJECT",
+    "PE08_COHERENT_TRANSPORT",
+    "PE09_MISMATCHED_TRANSPORT",
+    "PE10_WINDING_HISTORY",
+    "PE11_EQUAL_LABEL_DISTINCT",
+    "PE12_DWELL_ENABLEDNESS",
+    "PE13_COUNT_SHORTCUT_REJECT",
+    "PE14_WRONG_ADAPTER",
+    "PE15_COMPOSITION_POSITIVE",
+    "PE16_BROKEN_COMPOSITION",
+    "PE17_REDUNDANT_VS_NEW_PROBE",
+    "PE18_FULL_COEFF_TRANSFORM",
+    "PE19_BASELINE_COMPARISON",
+    "PE20_CONSTRAINED_CLASS",
+    "PE21_RPRM_QUOTIENT",
+    "PE22_CONCEPT_ID_COVERAGE"
+  ],
+  "state_families": [
+    "rational_cube_tables",
+    "boolean_cube_laws",
+    "double_stamp_states"
+  ],
+  "site_order": "integer masks 0..7, least-significant bit h, next x, next y",
+  "retained_masks": [0, 1, 2, 3, 4, 5, 6],
+  "omitted_mask": 7,
+  "finite_fiving": "d=5*h+r; F(d)=(d+5) mod 10; not F5 arithmetic",
+  "strong_fiving": "(w,h,r) -> (w+h, 1-h, r); two steps increment winding",
+  "double_stamp_labels": "donor A5/B6/C7 with authored dwell; not count==5",
+  "outcomes": {
+    "fiber": ["NONE", "ONE", "MANY", "OPEN"],
+    "status": ["EXACT", "REOPEN_REQUIRED", "UNRESOLVED", "UNSUPPORTED", "INVALID_DEPENDENCY"]
+  },
+  "aggregate_controls": {
+    "none": "exit 0 and PASS",
+    "reorder": "exit 0 and PASS",
+    "omit": "nonzero exit and FAIL",
+    "duplicate": "nonzero exit and FAIL",
+    "unexpected": "nonzero exit and FAIL"
+  },
+  "not_claimed": [
+    "novelty of interpolation or factorization",
+    "full lifecycle of Prestige One",
+    "physical safety",
+    "universal compression or runtime improvement",
+    "equivalence of fiving splice and Double-Stamp restart",
+    "unseen confirmation of Absolute Distinction",
+    "third prestige species",
+    "complete inverse-number dictionary"
+  ]
+}

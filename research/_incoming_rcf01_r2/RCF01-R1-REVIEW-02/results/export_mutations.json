@@ -1,0 +1,59 @@
+[
+  {
+    "control": "id-only",
+    "cmd": [
+      "/opt/pyvenv/bin/python",
+      "-B",
+      "/mnt/data/RCF01-R1-REVIEW-02/cleanroom/research/core-recovery-r1/check_export.py",
+      "--root",
+      "/mnt/data/RCF01-R1-REVIEW-02/cleanroom",
+      "--layout",
+      "export",
+      "--control",
+      "id-only",
+      "--work",
+      "/mnt/data/RCF01-R1-REVIEW-02/results/export_mutation_id-only"
+    ],
+    "exit": 2,
+    "stdout": "{\"status\": \"FAIL\", \"control\": \"id-only\", \"error\": \"ValueError: empty required fields: [{'id': 'RCF-P1', 'field': 'original_meaning'}, {'id': 'RCF-P1', 'field': 'source_anchors'}, {'id': 'RCF-P1', 'field': 'formal_candidate'}, {'id': 'RCF-P1', 'field': 'evidence_status'}, {'id': 'RCF-P1', 'field': 'unformalized_remainder'}, {'id': 'RCF-P1', 'field': 'unformalized_remainder'}, {'id': 'RCF-P2', 'field': 'original_meaning'}, {'id': 'RCF-P2', 'field': 'source_anchors'}, {'id': 'RCF-P2', 'field': 'formal_candidate'}, {'id': 'RCF-P2', 'field': 'evidence_status'}, {'id': 'RCF-P2', 'field': 'unformalized_remainder'}, {'id': 'RCF-P2', 'field': 'unformalized_remainder'}, {'id': 'RCF-P3', 'field': 'original_meaning'}, {'id': 'RCF-P3', 'field': 'source_anchors'}, {'id': 'RCF-P3', 'field': 'formal_candidate'}, {'id': 'RCF-P3', 'field': 'evidence_status'}, {'id': 'RCF-P3', 'field': 'unformalized_remainder'}, {'id': 'RCF-P3', 'field': 'unformalized_remainder'}, {'id': 'RCF-F1', 'field': 'original_meaning'}, {'id': 'RCF-F1', 'field': 'source_anchors'}, {'id': 'RCF-F1', 'field': 'formal_candidate'}, {'id': 'RCF-F1', 'field': 'evidence_status'}, {'id': 'RCF-F1', 'field': 'unformalized_remainder'}, {'id': 'RCF-F1', 'field': 'unformalized_remainder'}, {'id': 'RCF-F2', 'field': 'original_meaning'}, {'id': 'RCF-F2', 'field': 'source_anchors'}, {'id': 'RCF-F2', 'field': 'formal_candidate'}, {'id': 'RCF-F2', 'field': 'evidence_status'}, {'id': 'RCF-F2', 'field': 'unformalized_remainder'}, {'id': 'RCF-F2', 'field': 'unformalized_remainder'}, {'id': 'RCF-F3', 'field': 'original_meaning'}, {'id': 'RCF-F3', 'field': 'source_anchors'}, {'id': 'RCF-F3', 'field': 'formal_candidate'}, {'id': 'RCF-F3', 'field': 'evidence_status'}, {'id': 'RCF-F3', 'field': 'unformalized_remainder'}, {'id': 'RCF-F3', 'field': 'unformalized_remainder'}, {'id': 'RCF-C1', 'field': 'original_meaning'}, {'id': 'RCF-C1', 'field': 'source_anchors'}, {'id': 'RCF-C1', 'field': 'formal_candidate'}, {'id': 'RCF-C1', 'field': 'evidence_status'}, {'id': 'RCF-C1', 'field': 'unformalized_remainder'}, {'id': 'RCF-C1', 'field': 'unformalized_remainder'}, {'id': 'RCF-C2', 'field': 'original_meaning'}, {'id': 'RCF-C2', 'field': 'source_anchors'}, {'id': 'RCF-C2', 'field': 'formal_candidate'}, {'id': 'RCF-C2', 'field': 'evidence_status'}, {'id': 'RCF-C2', 'field': 'unformalized_remainder'}, {'id': 'RCF-C2', 'field': 'unformalized_remainder'}, {'id': 'RCF-C3', 'field': 'original_meaning'}, {'id': 'RCF-C3', 'field': 'source_anchors'}, {'id': 'RCF-C3', 'field': 'formal_candidate'}, {'id': 'RCF-C3', 'field': 'evidence_status'}, {'id': 'RCF-C3', 'field': 'unformalized_remainder'}, {'id': 'RCF-C3', 'field': 'unformalized_remainder'}, {'id': 'RCF-N1', 'field': 'original_meaning'}, {'id': 'RCF-N1', 'field': 'source_anchors'}, {'id': 'RCF-N1', 'field': 'formal_candidate'}, {'id': 'RCF-N1', 'field': 'evidence_status'}, {'id': 'RCF-N1', 'field': 'unformalized_remainder'}, {'id': 'RCF-N1', 'field': 'unformalized_remainder'}, {'id': 'RCF-R1', 'field': 'original_meaning'}, {'id': 'RCF-R1', 'field': 'source_anchors'}, {'id': 'RCF-R1', 'field': 'formal_candidate'}, {'id': 'RCF-R1', 'field': 'evidence_status'}, {'id': 'RCF-R1', 'field': 'unformalized_remainder'}, {'id': 'RCF-R1', 'field': 'unformalized_remainder'}, {'id': 'RCF-PI1', 'field': 'original_meaning'}, {'id': 'RCF-PI1', 'field': 'source_anchors'}, {'id': 'RCF-PI1', 'field': 'formal_candidate'}, {'id': 'RCF-PI1', 'field': 'evidence_status'}, {'id': 'RCF-PI1', 'field': 'unformalized_remainder'}, {'id': 'RCF-PI1', 'field': 'unformalized_remainder'}, {'id': 'RCF-AD1', 'field': 'original_meaning'}, {'id': 'RCF-AD1', 'field': 'source_anchors'}, {'id': 'RCF-AD1', 'field': 'formal_candidate'}, {'id': 'RCF-AD1', 'field': 'evidence_status'}, {'id': 'RCF-AD1', 'field': 'unformalized_remainder'}, {'id': 'RCF-AD1', 'field': 'unformalized_remainder'}]\"}\n",
+    "stderr": ""
+  },
+  {
+    "control": "missing-source",
+    "cmd": [
+      "/opt/pyvenv/bin/python",
+      "-B",
+      "/mnt/data/RCF01-R1-REVIEW-02/cleanroom/research/core-recovery-r1/check_export.py",
+      "--root",
+      "/mnt/data/RCF01-R1-REVIEW-02/cleanroom",
+      "--layout",
+      "export",
+      "--control",
+      "missing-source",
+      "--work",
+      "/mnt/data/RCF01-R1-REVIEW-02/results/export_mutation_missing-source"
+    ],
+    "exit": 2,
+    "stdout": "{\"status\": \"FAIL\", \"control\": \"missing-source\", \"error\": \"ValueError: packaged files missing: ['experiments/core_recovery_bridge_01_r1/prestige_envelope.py']\"}\n",
+    "stderr": ""
+  },
+  {
+    "control": "missing-receipt",
+    "cmd": [
+      "/opt/pyvenv/bin/python",
+      "-B",
+      "/mnt/data/RCF01-R1-REVIEW-02/cleanroom/research/core-recovery-r1/check_export.py",
+      "--root",
+      "/mnt/data/RCF01-R1-REVIEW-02/cleanroom",
+      "--layout",
+      "export",
+      "--control",
+      "missing-receipt",
+      "--work",
+      "/mnt/data/RCF01-R1-REVIEW-02/results/export_mutation_missing-receipt"
+    ],
+    "exit": 2,
+    "stdout": "{\"status\": \"FAIL\", \"control\": \"missing-receipt\", \"error\": \"ValueError: packaged files missing: ['experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope_02.json']\"}\n",
+    "stderr": ""
+  }
+]

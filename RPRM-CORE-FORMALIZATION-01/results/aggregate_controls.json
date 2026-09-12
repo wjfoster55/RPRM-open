@@ -1,0 +1,40 @@
+{
+  "actual_subprocess_runs": [
+    {
+      "control": "none",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "status": "PASS",
+      "receipt": "results/assistant_development.json"
+    },
+    {
+      "control": "reorder",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "status": "PASS",
+      "receipt": "results/aggregate_reorder.json"
+    },
+    {
+      "control": "omit",
+      "returncode": 2,
+      "expected_returncode": 2,
+      "status": "FAIL",
+      "receipt": "results/aggregate_omit.json"
+    },
+    {
+      "control": "duplicate",
+      "returncode": 2,
+      "expected_returncode": 2,
+      "status": "FAIL",
+      "receipt": "results/aggregate_duplicate.json"
+    },
+    {
+      "control": "unexpected",
+      "returncode": 2,
+      "expected_returncode": 2,
+      "status": "FAIL",
+      "receipt": "results/aggregate_unexpected.json"
+    }
+  ],
+  "all_expected": true
+}

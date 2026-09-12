@@ -1,0 +1,655 @@
+{
+  "checker_sha256": "635e28f19db32a74bc9689a8f92783904a0ab21aa171c5f75dcaadc8b1b417f9",
+  "control": "omit",
+  "coverage_error": "Coverage mismatch: missing={'PE28_GENERIC_MAP_INTERFACE'}, extra=set()",
+  "evidence_class": "CURSOR_RCF01_ENVELOPE_DEVELOPMENT_CHECK_NOT_HOLDOUT",
+  "historical_RPRM_verifiers_rerun": false,
+  "meter": {
+    "checks": 10,
+    "cold_reads": 122,
+    "constructions": 144,
+    "hot_ops": 171,
+    "invalidations": 4,
+    "reopenings": 122,
+    "storage_bytes": 7777
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "protocol_sha256": "33ea582ebd832869c204cac061360899c8e9b7b39b5c668adb1ea2f7b61d8508",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "results": [
+    {
+      "case_id": "PE01_INDEPENDENT_CUBE_KERNEL",
+      "data": {
+        "complete_boolean_tables": 256,
+        "independent_product_samples": 64,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "method": "submask_walk_plus_B2_pointwise",
+        "structured_rational_tables": 32
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE02_COMPACT_ARITHMETIC",
+      "data": {
+        "full_table_access_in_compact_operators": false,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "operations": [
+          "pointwise_addition",
+          "pointwise_multiplication"
+        ],
+        "ordered_law_pairs": 65536,
+        "positive_reuse": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE03_HARMLESS_OMISSION",
+      "data": {
+        "affine_tables": 16,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "omitted_forced": 0,
+        "scope": "degree-at-most-1 laws on the three-cube; not arbitrary tables",
+        "successful_simplification": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE04_OPERATION_INSUFFICIENCY",
+      "data": {
+        "after_fiving_readout": [
+          3,
+          4
+        ],
+        "fiber": "MANY",
+        "hot_status": "REOPEN_REQUIRED",
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "same_present_readout": [
+          2,
+          2
+        ],
+        "this_expected_refutation_is_a_successful_test": true,
+        "verdict_on_C2_fiving_lift": "REFUTED"
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE05_COLD_REOPEN_REPAIR",
+      "data": {
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "omitted_f1": "4",
+        "repaired": true,
+        "used_cold": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE06_MISSING_COLD_REFUSAL",
+      "data": {
+        "boolean_example_fiber": "MANY",
+        "disposition": "MANY",
+        "fiber_size": 2,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "status": "REOPEN_REQUIRED",
+        "witness": {
+          "omitted_site": 7,
+          "reason": "no cold artifact"
+        }
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE07_STALE_COLD_REJECT",
+      "data": {
+        "altered_bytes_status": "INVALID_DEPENDENCY",
+        "deleted_status": "UNRESOLVED",
+        "did_not_set_valid_false_only": true,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "physically_mutated": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE08_COHERENT_TRANSPORT",
+      "data": {
+        "bijections": 48,
+        "hot_identity_without_cold": true,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "result": "seven transported observations remain sufficient"
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE09_MISMATCHED_TRANSPORT",
+      "data": {
+        "fixed_receiver_separates": true,
+        "frame_mismatch_detected": true,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "renaming_storage_is_not_transport": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE10_WINDING_HISTORY",
+      "data": {
+        "finite_return_is_strong_return": false,
+        "lifted_states_checked": 70,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "two_step_history": {
+          "end": [
+            1,
+            0,
+            0
+          ],
+          "start": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE11_EQUAL_LABEL_DISTINCT",
+      "data": {
+        "equal_outward_one": true,
+        "history_distinguished": true,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "permitted_operation_set_not_identified_by_label": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE12_DWELL_ENABLEDNESS",
+      "data": {
+        "dwell": {
+          "A5": true,
+          "B6": false,
+          "C7": true
+        },
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "quotient": {
+          "A5": [
+            3,
+            2,
+            0
+          ],
+          "B6": [
+            3,
+            3,
+            1
+          ],
+          "C7": [
+            4,
+            3,
+            0
+          ]
+        },
+        "safety_is": "authored process admission",
+        "vertex_count_only": "REFUTED_FOR_DWELL"
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE13_COUNT_SHORTCUT_REJECT",
+      "data": {
+        "actual": {
+          "A5": true,
+          "B6": false
+        },
+        "count_equals_3_shortcut": {
+          "A5": true,
+          "B6": true
+        },
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "shortcut_rejected": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE14_WRONG_ADAPTER",
+      "data": {
+        "adapter_rejected_by_mapping": true,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "numeral_5_collision": true,
+        "plus4_disagreements": 40,
+        "shared_operation_set": false
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE15_COMPOSITION_POSITIVE",
+      "data": {
+        "cube_add_then_clamp": true,
+        "intermediate_enabledness": {
+          "A5": true,
+          "B6": false,
+          "C7": true
+        },
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "stamp_path": [
+          "A5",
+          "B6",
+          "C7",
+          "A5"
+        ]
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE16_BROKEN_COMPOSITION",
+      "data": {
+        "actual_dwell_on_B6": "UNSUPPORTED",
+        "component_local_pass": true,
+        "composed_dwell_via_count": true,
+        "cross_frame_add": "UNSUPPORTED",
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        }
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE17_REDUNDANT_VS_NEW_PROBE",
+      "data": {
+        "disposition": "MANY",
+        "distinguishing_site_mask": 7,
+        "fibers": 128,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "redundant_probes_per_fiber": 7
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE18_FULL_COEFF_TRANSFORM",
+      "data": {
+        "law_map_pairs": 2560,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "runtime_advantage_claimed": false,
+        "sometimes_requires_every_original_value": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE19_BASELINE_COMPARISON",
+      "data": {
+        "admitted_without_cold_status": "REOPEN_REQUIRED",
+        "compact_refuses_flip_without_cold": true,
+        "full_lookups": 6,
+        "full_table_computes_flip": true,
+        "memo_hits": 1,
+        "memo_is_ordinary_caching": true,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "methods_agree_on_B2_arithmetic": true,
+        "outside_contract_status": "UNSUPPORTED",
+        "rprm_label_not_required_to_win": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE20_CONSTRAINED_CLASS",
+      "data": {
+        "affine_cases": 16,
+        "hostile_outside_scope": "degree <= 1 laws remain exact on C2 under flip_h",
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "proposition_scope": "all maps X->Y, Y has two values",
+        "universal_compression_failure_not_assumed": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE21_RPRM_QUOTIENT",
+      "data": {
+        "clamp_h_0": "ACCEPT",
+        "flip_h": "REJECT",
+        "flip_h_reason": "successor",
+        "helper": "rprm.core.deterministic_quotient",
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        }
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE22_CONCEPT_ID_COVERAGE",
+      "data": {
+        "count": 13,
+        "ids": [
+          "RCF-P1",
+          "RCF-P2",
+          "RCF-P3",
+          "RCF-F1",
+          "RCF-F2",
+          "RCF-F3",
+          "RCF-C1",
+          "RCF-C2",
+          "RCF-C3",
+          "RCF-N1",
+          "RCF-R1",
+          "RCF-PI1",
+          "RCF-AD1"
+        ],
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        }
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE23_COMPOSED_PRODUCT_CHAIN",
+      "data": {
+        "affine_inherited_after_hx": false,
+        "chain": "multiply(multiply(unit(h), unit(x)), unit(y))",
+        "cold_reads_delta": 0,
+        "constructions_delta": 3,
+        "degree_bounds": {
+          "h": 1,
+          "hx": 2,
+          "p": 3
+        },
+        "hot_c2": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "hot_ops_delta": 2,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "zero_pad_is_not_the_composed_law": true
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE24_COMPOSED_FLIP_BRANCHES",
+      "data": {
+        "admitted_no_backing": {
+          "disposition": "MANY",
+          "status": "REOPEN_REQUIRED"
+        },
+        "arith_contract": "UNSUPPORTED",
+        "backed_product": {
+          "readout_011": "1",
+          "status": "EXACT",
+          "used_composed_recipe": true,
+          "zero_law_readout_011": "0"
+        },
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        }
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE25_COMPOSED_CORRUPT_DEPENDENCY",
+      "data": {
+        "corrupted_operand_status": "INVALID_DEPENDENCY",
+        "deleted_operand_status": "UNRESOLVED",
+        "did_not_infer_zero_from_hot_c2": true,
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        }
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE26_OUTPUT_CLASS_AND_FIBERS",
+      "data": {
+        "boolean_source_fiber_of_zero_c2": "MANY(2) via boolean_fiber_for_compact, not this add result",
+        "coherent_identity_on_product": "EXACT",
+        "hot_independent_sum": {
+          "api_counts": "unique_C2_output_summary",
+          "api_fiber": "ONE",
+          "api_status": "EXACT",
+          "candidate_propagation": "OUTSIDE_THIS_API",
+          "mathematical_independent_full_sums": [
+            "0",
+            "hxy",
+            "2hxy"
+          ],
+          "self_add_full_sums": [
+            "0",
+            "2hxy"
+          ]
+        },
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "q_addition_family": "rational_cube",
+        "site_h_value": "2"
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "PE27_HIDDEN_ADDITION_FAMILY",
+      "data": {
+        "backed_omitted": "2",
+        "backed_sum_family": "rational_cube",
+        "cold_reads_delta": 0,
+        "constructions_delta": 12,
+        "flip_family": "rational_cube",
+        "flip_readout_011": "2",
+        "hot_omitted": "REOPEN_REQUIRED",
+        "hot_product_family": "boolean_cube",
+        "hot_sum_family": "rational_cube",
+        "invalid_boolean_claim": "rejected",
+        "meter": {
+          "checks": 10,
+          "cold_reads": 122,
+          "constructions": 144,
+          "hot_ops": 171,
+          "invalidations": 4,
+          "reopenings": 122,
+          "storage_bytes": 7777
+        },
+        "mixed_add_family": "rational_cube",
+        "unique_c2_vs_boolean_fiber": {
+          "boolean_source_fiber": "MANY",
+          "c2_fiber": "ONE",
+          "candidate_propagation": "OUTSIDE_THIS_API"
+        }
+      },
+      "outcome": "PASS"
+    }
+  ],
+  "source_sha256": "bebf2c25d26f2ecf92e3366082aaf38f4d379e18ac06ea0f1d9294ecc64ee3a8",
+  "status": "FAIL"
+}

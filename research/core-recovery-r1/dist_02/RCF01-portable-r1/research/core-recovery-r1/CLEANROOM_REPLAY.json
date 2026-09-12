@@ -1,0 +1,21 @@
+{
+  "extract": "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r1_cleanroom",
+  "command": "python -B run_portable.py --output-dir runs/cleanroom_01",
+  "pythonpath": "empty",
+  "overall_exit": 0,
+  "envelope_26": 0,
+  "omit": 2,
+  "duplicate": 2,
+  "unexpected": 2,
+  "reorder": 0,
+  "check_ids": 0,
+  "check_export": 0,
+  "starter_12": 0,
+  "mutations": {
+    "id-only": 2,
+    "missing-source": 2,
+    "missing-receipt": 2
+  },
+  "first_zip_sha256": "aada35a24c136d323531c1288667b131aa209a3e26b572af9dab6c41577b01e5",
+  "donor_replay": "NOT_REPLAYED"
+}

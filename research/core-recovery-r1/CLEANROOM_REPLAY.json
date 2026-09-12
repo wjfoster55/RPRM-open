@@ -1,0 +1,28 @@
+{
+  "first_extract": "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r1_cleanroom",
+  "first_zip": "C:\\github\\RPRM-open\\research\\core-recovery-r1\\dist\\RCF01-portable-r1.zip",
+  "first_zip_sha256": "aada35a24c136d323531c1288667b131aa209a3e26b572af9dab6c41577b01e5",
+  "official_extract": "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r1_cleanroom_02",
+  "official_zip": "C:\\github\\RPRM-open\\research\\core-recovery-r1\\dist_02\\RCF01-portable-r1.zip",
+  "official_zip_sha256": "53d1e8761aeca98d26cb3732150af7a31ed109aad4e1c9187b3e4dc192315cea",
+  "command": "python -B run_portable.py --output-dir runs/cleanroom_02",
+  "pythonpath": "empty",
+  "overall_exit": 0,
+  "jobs": {
+    "envelope_26": 0,
+    "omit": 2,
+    "duplicate": 2,
+    "unexpected": 2,
+    "reorder": 0,
+    "check_ids": 0,
+    "check_export": 0,
+    "starter_12": 0
+  },
+  "outputs_under_extract_root": true,
+  "mutations": {
+    "id-only": 2,
+    "missing-source": 2,
+    "missing-receipt": 2
+  },
+  "donor_replay": "NOT_REPLAYED"
+}

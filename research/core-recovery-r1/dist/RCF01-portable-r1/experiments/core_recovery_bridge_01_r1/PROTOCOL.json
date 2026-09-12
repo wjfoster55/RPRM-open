@@ -1,0 +1,91 @@
+{
+  "version": "RCF01-envelope-1-r1",
+  "inherits": "RCF01-envelope-1",
+  "inherited_protocol": "PROTOCOL.inherited.json",
+  "evidence_class": "EXPOSED_CONSTRUCTED_DEVELOPMENT_CASES_NOT_HOLDOUT",
+  "frozen_before_first_envelope_execution": false,
+  "not_retroactive_preregistration": true,
+  "workspace_root": "C:\\github\\RPRM-open",
+  "workspace_head_at_repair": "4f5c8145a1d9389f28079ef63a385e406122fd34",
+  "required_case_ids": [
+    "PE01_INDEPENDENT_CUBE_KERNEL",
+    "PE02_COMPACT_ARITHMETIC",
+    "PE03_HARMLESS_OMISSION",
+    "PE04_OPERATION_INSUFFICIENCY",
+    "PE05_COLD_REOPEN_REPAIR",
+    "PE06_MISSING_COLD_REFUSAL",
+    "PE07_STALE_COLD_REJECT",
+    "PE08_COHERENT_TRANSPORT",
+    "PE09_MISMATCHED_TRANSPORT",
+    "PE10_WINDING_HISTORY",
+    "PE11_EQUAL_LABEL_DISTINCT",
+    "PE12_DWELL_ENABLEDNESS",
+    "PE13_COUNT_SHORTCUT_REJECT",
+    "PE14_WRONG_ADAPTER",
+    "PE15_COMPOSITION_POSITIVE",
+    "PE16_BROKEN_COMPOSITION",
+    "PE17_REDUNDANT_VS_NEW_PROBE",
+    "PE18_FULL_COEFF_TRANSFORM",
+    "PE19_BASELINE_COMPARISON",
+    "PE20_CONSTRAINED_CLASS",
+    "PE21_RPRM_QUOTIENT",
+    "PE22_CONCEPT_ID_COVERAGE",
+    "PE23_COMPOSED_PRODUCT_CHAIN",
+    "PE24_COMPOSED_FLIP_BRANCHES",
+    "PE25_COMPOSED_CORRUPT_DEPENDENCY",
+    "PE26_OUTPUT_CLASS_AND_FIBERS"
+  ],
+  "original_case_count": 22,
+  "successor_case_count": 26,
+  "new_case_ids": [
+    "PE23_COMPOSED_PRODUCT_CHAIN",
+    "PE24_COMPOSED_FLIP_BRANCHES",
+    "PE25_COMPOSED_CORRUPT_DEPENDENCY",
+    "PE26_OUTPUT_CLASS_AND_FIBERS"
+  ],
+  "state_families": [
+    "rational_cube_tables",
+    "boolean_cube_laws",
+    "double_stamp_states"
+  ],
+  "site_order": "integer masks 0..7, least-significant bit h, next x, next y",
+  "retained_masks": [0, 1, 2, 3, 4, 5, 6],
+  "omitted_mask": 7,
+  "finite_fiving": "this round's finite model: d=5*h+r; F(d)=(d+5) mod 10; not F5 arithmetic and not the whole source fiving concept",
+  "strong_fiving": "(w,h,r) -> (w+h, 1-h, r); two steps increment winding",
+  "double_stamp_labels": "donor A5/B6/C7 with authored dwell; not count==5",
+  "status_meanings": {
+    "NONE": "named object being counted is empty: admitted successors, verified backing artifacts, or query outputs as stated on the Result",
+    "ONE": "exactly one of the named object: usually a unique C2 output summary or unique verified table, not automatically a unique full law",
+    "MANY": "more than one named object: Boolean C2 source laws, or other declared fibers",
+    "OPEN": "admitted question whose remaining information does not yet determine a closed fiber",
+    "EXACT": "the returned value is justified by admitted hot data or a verified backing/recipe",
+    "REOPEN_REQUIRED": "operation is admitted but the hot summary is insufficient",
+    "UNRESOLVED": "an expected backing path is missing",
+    "UNSUPPORTED": "operation is outside the envelope contract",
+    "INVALID_DEPENDENCY": "present backing bytes/frame/hash do not match the promised construction; this is not a proof that the mathematical candidate family is empty"
+  },
+  "outcomes": {
+    "fiber": ["NONE", "ONE", "MANY", "OPEN"],
+    "status": ["EXACT", "REOPEN_REQUIRED", "UNRESOLVED", "UNSUPPORTED", "INVALID_DEPENDENCY"]
+  },
+  "aggregate_controls": {
+    "none": "exit 0 and PASS",
+    "reorder": "exit 0 and PASS",
+    "omit": "nonzero exit and FAIL",
+    "duplicate": "nonzero exit and FAIL",
+    "unexpected": "nonzero exit and FAIL"
+  },
+  "not_claimed": [
+    "novelty of interpolation or factorization",
+    "full lifecycle of Prestige One",
+    "physical safety",
+    "universal compression or runtime improvement",
+    "equivalence of fiving splice and Double-Stamp restart",
+    "unseen confirmation of Absolute Distinction",
+    "third prestige species",
+    "complete inverse-number dictionary",
+    "that this round's C10 fiving model is the whole source fiving concept",
+    "explicit candidate-family propagation for Q-sums"
+  ]
+}

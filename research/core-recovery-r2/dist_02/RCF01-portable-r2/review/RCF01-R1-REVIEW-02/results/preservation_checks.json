@@ -1,0 +1,69 @@
+{
+  "prior_research_files": [
+    {
+      "old_member": "core-recovery-01/check_ids.py",
+      "new_path": "research/core-recovery-01/check_ids.py",
+      "exists": true,
+      "bytes_unchanged": true
+    },
+    {
+      "old_member": "core-recovery-01/CONCEPT_REGISTER.json",
+      "new_path": "research/core-recovery-01/CONCEPT_REGISTER.json",
+      "exists": true,
+      "bytes_unchanged": true
+    },
+    {
+      "old_member": "core-recovery-01/CONCEPT_REGISTER.md",
+      "new_path": "research/core-recovery-01/CONCEPT_REGISTER.md",
+      "exists": true,
+      "bytes_unchanged": true
+    },
+    {
+      "old_member": "core-recovery-01/CONCEPT_REGISTER.source.md",
+      "new_path": "research/core-recovery-01/CONCEPT_REGISTER.source.md",
+      "exists": true,
+      "bytes_unchanged": true
+    },
+    {
+      "old_member": "core-recovery-01/DONOR_RECONCILIATION.md",
+      "new_path": "research/core-recovery-01/DONOR_RECONCILIATION.md",
+      "exists": true,
+      "bytes_unchanged": true
+    },
+    {
+      "old_member": "core-recovery-01/FORMAL_BRIDGE_NOTE.md",
+      "new_path": "research/core-recovery-01/FORMAL_BRIDGE_NOTE.md",
+      "exists": true,
+      "bytes_unchanged": true
+    },
+    {
+      "old_member": "core-recovery-01/provenance/STARTER_PROTOCOL.json",
+      "new_path": "research/core-recovery-01/provenance/STARTER_PROTOCOL.json",
+      "exists": true,
+      "bytes_unchanged": true
+    },
+    {
+      "old_member": "core-recovery-01/README.md",
+      "new_path": "research/core-recovery-01/README.md",
+      "exists": true,
+      "bytes_unchanged": false
+    },
+    {
+      "old_member": "core-recovery-01/RETURN_TO_WILLIAM.md",
+      "new_path": "research/core-recovery-01/RETURN_TO_WILLIAM.md",
+      "exists": true,
+      "bytes_unchanged": true
+    },
+    {
+      "old_member": "core-recovery-01/sources/RPRM-CONCEPT-RECOVERY.zip",
+      "new_path": "research/core-recovery-01/sources/RPRM-CONCEPT-RECOVERY.zip",
+      "exists": true,
+      "bytes_unchanged": true
+    }
+  ],
+  "original_recovery_zip_unchanged": true,
+  "original_recovery_sha256": "7887e3a0518d8ac849f23305ed0e3a70abfe80ba160b786fc44ae0ad08e516f2",
+  "original_concept_register_unchanged": true,
+  "original_register_sha256": "36f059195564fcc58a6a7f49e24eb5d736607ed85eff38a9a9b6ffda257558e2",
+  "official_portable_zip_sha256": "53d1e8761aeca98d26cb3732150af7a31ed109aad4e1c9187b3e4dc192315cea"
+}

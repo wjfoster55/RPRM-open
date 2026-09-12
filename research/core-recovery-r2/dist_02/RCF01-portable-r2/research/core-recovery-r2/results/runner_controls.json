@@ -1,0 +1,286 @@
+{
+  "scope": "Actual run_portable.py exercised in disposable copies with explicitly substituted fast mathematical subjobs; NOT a rerun of mathematical cases. Unmodified full replay is separate. Fixture checker/export/id scripts are labelled AGGREGATOR FIXTURE and are not hashed by check_export.py.",
+  "cases": [
+    {
+      "case": "good_run",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02\\good_run\\package\\run_portable.py",
+        "--output-dir",
+        "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02\\good_run\\run"
+      ],
+      "exit_code": 0,
+      "reported_status": "PASS",
+      "printed_status": "PASS",
+      "reported_scope": "envelope_controls_ids_export_starter",
+      "job_exit_codes": [
+        {
+          "name": "envelope",
+          "exit_code": 0
+        },
+        {
+          "name": "omit",
+          "exit_code": 2
+        },
+        {
+          "name": "duplicate",
+          "exit_code": 2
+        },
+        {
+          "name": "unexpected",
+          "exit_code": 2
+        },
+        {
+          "name": "reorder",
+          "exit_code": 0
+        },
+        {
+          "name": "ids",
+          "exit_code": 0
+        },
+        {
+          "name": "export",
+          "exit_code": 0
+        },
+        {
+          "name": "starter",
+          "exit_code": 0
+        }
+      ],
+      "verdict_failures": [],
+      "scope": "AGGREGATOR FIXTURE; NOT MATHEMATICAL EXECUTION",
+      "harness_ok": true,
+      "harness_reason": "PASS"
+    },
+    {
+      "case": "starter_failure",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02\\starter_failure\\package\\run_portable.py",
+        "--output-dir",
+        "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02\\starter_failure\\run"
+      ],
+      "exit_code": 2,
+      "reported_status": "FAIL",
+      "printed_status": "FAIL",
+      "reported_scope": "envelope_controls_ids_export_starter",
+      "job_exit_codes": [
+        {
+          "name": "envelope",
+          "exit_code": 0
+        },
+        {
+          "name": "omit",
+          "exit_code": 2
+        },
+        {
+          "name": "duplicate",
+          "exit_code": 2
+        },
+        {
+          "name": "unexpected",
+          "exit_code": 2
+        },
+        {
+          "name": "reorder",
+          "exit_code": 0
+        },
+        {
+          "name": "ids",
+          "exit_code": 0
+        },
+        {
+          "name": "export",
+          "exit_code": 0
+        },
+        {
+          "name": "starter",
+          "exit_code": 7
+        }
+      ],
+      "verdict_failures": [
+        {
+          "job": "starter",
+          "reason": "exit 7"
+        }
+      ],
+      "scope": "AGGREGATOR FIXTURE; NOT MATHEMATICAL EXECUTION",
+      "harness_ok": true,
+      "harness_reason": "starter counted"
+    },
+    {
+      "case": "export_failure",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02\\export_failure\\package\\run_portable.py",
+        "--output-dir",
+        "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02\\export_failure\\run"
+      ],
+      "exit_code": 2,
+      "reported_status": "FAIL",
+      "printed_status": "FAIL",
+      "reported_scope": "envelope_controls_ids_export_starter",
+      "job_exit_codes": [
+        {
+          "name": "envelope",
+          "exit_code": 0
+        },
+        {
+          "name": "omit",
+          "exit_code": 2
+        },
+        {
+          "name": "duplicate",
+          "exit_code": 2
+        },
+        {
+          "name": "unexpected",
+          "exit_code": 2
+        },
+        {
+          "name": "reorder",
+          "exit_code": 0
+        },
+        {
+          "name": "ids",
+          "exit_code": 0
+        },
+        {
+          "name": "export",
+          "exit_code": 2
+        },
+        {
+          "name": "starter",
+          "exit_code": 0
+        }
+      ],
+      "verdict_failures": [
+        {
+          "job": "export",
+          "reason": "exit 2"
+        }
+      ],
+      "scope": "AGGREGATOR FIXTURE; NOT MATHEMATICAL EXECUTION",
+      "harness_ok": true,
+      "harness_reason": "export counted"
+    },
+    {
+      "case": "negative_control_unrelated_crash",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02\\negative_control_unrelated_crash\\package\\run_portable.py",
+        "--output-dir",
+        "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02\\negative_control_unrelated_crash\\run"
+      ],
+      "exit_code": 2,
+      "reported_status": "FAIL",
+      "printed_status": "FAIL",
+      "reported_scope": "envelope_controls_ids_export_starter",
+      "job_exit_codes": [
+        {
+          "name": "envelope",
+          "exit_code": 0
+        },
+        {
+          "name": "omit",
+          "exit_code": 1
+        },
+        {
+          "name": "duplicate",
+          "exit_code": 1
+        },
+        {
+          "name": "unexpected",
+          "exit_code": 1
+        },
+        {
+          "name": "reorder",
+          "exit_code": 0
+        },
+        {
+          "name": "ids",
+          "exit_code": 0
+        },
+        {
+          "name": "export",
+          "exit_code": 0
+        },
+        {
+          "name": "starter",
+          "exit_code": 0
+        }
+      ],
+      "verdict_failures": [
+        {
+          "job": "omit",
+          "reason": "missing output"
+        },
+        {
+          "job": "duplicate",
+          "reason": "missing output"
+        },
+        {
+          "job": "unexpected",
+          "reason": "missing output"
+        }
+      ],
+      "scope": "AGGREGATOR FIXTURE; NOT MATHEMATICAL EXECUTION",
+      "harness_ok": true,
+      "harness_reason": "crash distinguished from coverage rejection"
+    },
+    {
+      "case": "skip_starter",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02\\skip_starter\\package\\run_portable.py",
+        "--output-dir",
+        "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02\\skip_starter\\run",
+        "--skip-starter"
+      ],
+      "exit_code": 0,
+      "reported_status": "PASS",
+      "printed_status": "PASS",
+      "reported_scope": "envelope_controls_ids_export_starter_skipped",
+      "job_exit_codes": [
+        {
+          "name": "envelope",
+          "exit_code": 0
+        },
+        {
+          "name": "omit",
+          "exit_code": 2
+        },
+        {
+          "name": "duplicate",
+          "exit_code": 2
+        },
+        {
+          "name": "unexpected",
+          "exit_code": 2
+        },
+        {
+          "name": "reorder",
+          "exit_code": 0
+        },
+        {
+          "name": "ids",
+          "exit_code": 0
+        },
+        {
+          "name": "export",
+          "exit_code": 0
+        }
+      ],
+      "verdict_failures": [],
+      "scope": "AGGREGATOR FIXTURE; NOT MATHEMATICAL EXECUTION",
+      "harness_ok": true,
+      "harness_reason": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

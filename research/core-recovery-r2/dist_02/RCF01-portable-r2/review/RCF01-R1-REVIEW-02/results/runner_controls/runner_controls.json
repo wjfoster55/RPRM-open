@@ -1,0 +1,74 @@
+{
+  "scope": "Actual unmodified run_portable.py exercised in disposable copies with explicitly substituted fast mathematical subjobs; NOT a rerun of mathematical cases. Unmodified full replay is separate.",
+  "cases": [
+    {
+      "case": "starter_failure",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/run_portable.py",
+        "--output-dir",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run"
+      ],
+      "exit_code": 0,
+      "reported_status": "PASS",
+      "job_exit_codes": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        7
+      ],
+      "finding": "Starter exit 7 is absent from aggregate ok; PASS / exit 0."
+    },
+    {
+      "case": "export_failure",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/export_failure/package/run_portable.py",
+        "--output-dir",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/export_failure/run"
+      ],
+      "exit_code": 2,
+      "reported_status": "PASS",
+      "job_exit_codes": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "finding": "Export validator correctly exits 2 and aggregate exits 2, but reported summary status remains PASS."
+    },
+    {
+      "case": "negative_control_unrelated_crash",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/negative_control_unrelated_crash/package/run_portable.py",
+        "--output-dir",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/negative_control_unrelated_crash/run"
+      ],
+      "exit_code": 0,
+      "reported_status": "PASS",
+      "job_exit_codes": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "finding": "Negative child crashes exit 1, and no coverage-rejection report is emitted, yet any nonzero exit satisfies the aggregate."
+    }
+  ]
+}

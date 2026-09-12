@@ -1,0 +1,94 @@
+{
+  "package": "RCF01-REVIEW-01",
+  "scope": "Review of available documents and original starter; new Cursor prototype not provided",
+  "files": {
+    "CURSOR_REVIEW_REPAIR.md": {
+      "bytes": 9420,
+      "sha256": "540bacadb1625a0d912272e1c5f21176a123dc1dd9ff8fc8d254db0dd66e6e3f"
+    },
+    "README.md": {
+      "bytes": 1318,
+      "sha256": "026ce4524278a7941d53cb3cf2aba17f89bcfa90b4e0d9b0ed91d5f61a5aac21"
+    },
+    "REVIEW.md": {
+      "bytes": 11370,
+      "sha256": "abc10952d2b60a04f926f7494c60af763cf397646e6d03b124f4870be7abcf50"
+    },
+    "baseline/PROTOCOL.json": {
+      "bytes": 1372,
+      "sha256": "5a559ffe129f669da4e9be1be531d9fe293dabf105110dbc81cef90c56cf4504"
+    },
+    "baseline/check_bridge.py": {
+      "bytes": 16512,
+      "sha256": "92e1be0ade3db207f16657a8234369097c0cedf755c5286c11b2305556f63466"
+    },
+    "results/independent_review.json": {
+      "bytes": 2180,
+      "sha256": "177cc32a9f6888db229d38c3e90833ca301afb9cde3d31c5d72aa6ab3bbcae29"
+    },
+    "results/inventory_and_hashes.json": {
+      "bytes": 4440,
+      "sha256": "cb6fba0813009765f33abec28d899646a2ab29941cad17b6e36260b8fae4b827"
+    },
+    "results/starter_control_duplicate.json": {
+      "bytes": 4587,
+      "sha256": "77672801db14b5130704db86c608ecc48f907546125a6e44b9bb47635935dd37"
+    },
+    "results/starter_control_omit.json": {
+      "bytes": 4446,
+      "sha256": "46733140b4c84349e33b6c01cc67b7d833763790af9315c216dc93bc07e245a1"
+    },
+    "results/starter_control_reorder.json": {
+      "bytes": 4816,
+      "sha256": "6f677b51c78c54426cb2db936d9c7bb99d855260372957362961d296dccd4ad1"
+    },
+    "results/starter_control_unexpected.json": {
+      "bytes": 4880,
+      "sha256": "a61133230bcc2f630447cccc588915844b22502f56729a3ed6e4954512379401"
+    },
+    "results/starter_controls.json": {
+      "bytes": 2525,
+      "sha256": "5891e7b0f86ee8686dfe8bdb01bd765eb319baa6e811f1108e65b159ec8218c7"
+    },
+    "results/starter_replay.json": {
+      "bytes": 4813,
+      "sha256": "3be208c6afce1a6e3f168fb7d2a50b808a75e744fbe00a0ae8062db774b0c947"
+    },
+    "returned-notes/CONCEPT_REGISTER.json": {
+      "bytes": 10462,
+      "sha256": "8843b2a054bf8c727ce2757c29196227e6a2779df6cd62aa9391628925015be0"
+    },
+    "returned-notes/CONCEPT_REGISTER.md": {
+      "bytes": 3212,
+      "sha256": "43ab94d98dabeb81caeefa3eb295c93c2dc228d2ed8b4d53ff6297b2e5e5ad32"
+    },
+    "returned-notes/CONCEPT_REGISTER.source.md": {
+      "bytes": 11499,
+      "sha256": "36f059195564fcc58a6a7f49e24eb5d736607ed85eff38a9a9b6ffda257558e2"
+    },
+    "returned-notes/DONOR_RECONCILIATION.md": {
+      "bytes": 4671,
+      "sha256": "360e9474feec13424a7b1f508580049a8ab15ca0da4979eca10172ce2e30da4a"
+    },
+    "returned-notes/FORMAL_BRIDGE_NOTE.md": {
+      "bytes": 13006,
+      "sha256": "435f15a070e4941dfeeedc36763125e15da3ac9154b75f956cb784f6a168053f"
+    },
+    "returned-notes/README.md": {
+      "bytes": 804,
+      "sha256": "edc1c7a2e32fdbf82e2e825e0841b2780629fd3ff54cb86d5e02e43cc7c799da"
+    },
+    "returned-notes/RETURN_TO_WILLIAM.md": {
+      "bytes": 10474,
+      "sha256": "b5bfe4add6eda48756110ac82e20db1cc9dab0690a5b0ba4796d381df497b1d1"
+    },
+    "returned-notes/check_ids.py": {
+      "bytes": 995,
+      "sha256": "339691dde45794d7b07fd520aa2df87fbef6c26df1b27b44df619bbdd736016a"
+    },
+    "review_extra_checks.py": {
+      "bytes": 6734,
+      "sha256": "34c6a2519027695a140416b8297e75690258b92c52afbfe79d721f9ff93fda63"
+    }
+  }
+}

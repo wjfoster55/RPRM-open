@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "paper_source_pdf_bindings": 6,
+  "local_links_checked": 88,
+  "sources_indexed": 60,
+  "selected_original_user_text_hashes_checked": 19,
+  "prestige_agent_qa": {
+    "status": "PASS",
+    "source_records_checked": 42,
+    "local_links_checked": 52,
+    "quoted_legacy_windows_links_normalized_for_check": 2,
+    "report_chars": 100248,
+    "report_sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843",
+    "issues": []
+  },
+  "errors": [],
+  "not_run": "Historical research experiment suites; PDF rebuild/layout review; external publication."
+}

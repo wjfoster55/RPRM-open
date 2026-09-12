@@ -1,0 +1,32 @@
+{
+  "carrier_id": "BOOL_CUBE_Q_n3",
+  "family": "rational_cube",
+  "frame_id": "mask_lsb_h_then_x_then_y",
+  "full_coeffs": [
+    "0",
+    "1",
+    "2",
+    "0",
+    "4",
+    "0",
+    "0",
+    "0"
+  ],
+  "full_table": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "history": [
+    [
+      "winding",
+      1
+    ]
+  ],
+  "version": "RCF01-envelope-1"
+}

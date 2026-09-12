@@ -1,0 +1,940 @@
+{
+  "schema": "rprm-concept-recovery-source-index/v1",
+  "prepared_for": "William",
+  "recorded_at_utc": "2026-09-12T00:44:23.287939+00:00",
+  "scope": "Local research recovery, no paper edit or publication. Hashes bind bytes, not truth.",
+  "main_document": "RPRM-CONCEPT-RECOVERY.md",
+  "paper_checks": [
+    {
+      "path": "C:\\github\\RPRM-open\\MANIFESTO.md",
+      "sha256": "1970db936f6b448c869e563559955e3199fdf688fceb9962fe2d47466510922e",
+      "expected": "1970db936f6b448c869e563559955e3199fdf688fceb9962fe2d47466510922e",
+      "match": true
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\RPRM-Manifesto.pdf",
+      "sha256": "a9d0c83456281ffa59fbf0c90394d18399bdca98dbc90d337df3ec8f1226e958",
+      "expected": "a9d0c83456281ffa59fbf0c90394d18399bdca98dbc90d337df3ec8f1226e958",
+      "match": true
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\papers\\process-mechanics\\The-Right-Answer-Is-Not-Enough.pdf",
+      "sha256": "97de1e6e688fab05a83aef981fb39a97e0f381447ff90b5b2e08d240135eac62",
+      "expected": "97de1e6e688fab05a83aef981fb39a97e0f381447ff90b5b2e08d240135eac62",
+      "match": true
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\papers\\process-mechanics\\MANUSCRIPT.md",
+      "sha256": "c4a60a79a1ed23690f61df6a0e35c705ce141e7187452de09bffb11952b9270e",
+      "expected": "c4a60a79a1ed23690f61df6a0e35c705ce141e7187452de09bffb11952b9270e",
+      "match": true
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\papers\\process-mechanics\\APPENDICES.md",
+      "sha256": "4d3596a2a8b43061baa34a79712ad4ad29493e09d49042aef5fca09e0d9e7e94",
+      "expected": "4d3596a2a8b43061baa34a79712ad4ad29493e09d49042aef5fca09e0d9e7e94",
+      "match": true
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\papers\\process-mechanics\\BIBLIOGRAPHY.md",
+      "sha256": "8c225dceacbd28aab6507d735a5e6a5c87f2e08474daf132b7420a9f8c938897",
+      "expected": "8c225dceacbd28aab6507d735a5e6a5c87f2e08474daf132b7420a9f8c938897",
+      "match": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\22\\rollout-2026-08-22T15-25-36-01a02b5d-65e3-72d3-9126-e18ed101e2d3.jsonl",
+      "bytes": 424968140,
+      "binding": "See message-level locators/text hashes in companion receipts; whole evolving log not hashed."
+    },
+    {
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "bytes": 201920270,
+      "binding": "See message-level locators/text hashes in companion receipts; whole evolving log not hashed."
+    },
+    {
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T10-32-34-01a04937-473d-74e2-91cb-a397a3df079b.jsonl",
+      "bytes": 165548985,
+      "binding": "See message-level locators/text hashes in companion receipts; whole evolving log not hashed."
+    },
+    {
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T15-32-56-01a078a3-812c-7722-9c9c-58ccd8ee28ee.jsonl",
+      "bytes": 104344837,
+      "binding": "See message-level locators/text hashes in companion receipts; whole evolving log not hashed."
+    },
+    {
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T14-58-21-01a082d0-91a4-7a31-a46e-aa30fd1bf08f.jsonl",
+      "bytes": 30518975,
+      "binding": "See message-level locators/text hashes in companion receipts; whole evolving log not hashed."
+    },
+    {
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T15-41-08-01a082f7-b99f-7140-8293-4d751069ac1e.jsonl",
+      "bytes": 90728054,
+      "binding": "See message-level locators/text hashes in companion receipts; whole evolving log not hashed."
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "bytes": 1838190,
+      "sha256": "be7b068f327cafba446f059a009a272abb1a59fa085bc9aaa97b8bf4add995d3"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\QM_THEORY_DEVELOPMENT_CHAT_2_FULL_EXPORT_2026-08-19.zip",
+      "bytes": 844738,
+      "sha256": "959754af58d9f633f414451eb0a3a2c8c64cf76833a319eaaa33223a27405100"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\RPRM_MATHEMATICAL_TOOLKIT_CONSOLIDATED_STILL_POINT_0_2.md",
+      "bytes": 77455,
+      "sha256": "ab6a014822d0c06821e851287defbfbe0d7d261e7c82bf32d096c04e60cc4c14"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\chatgpt_file2.txt",
+      "bytes": 7890,
+      "sha256": "a0a837f7a7d04499098e4ee197c9d0672a34a9ae37380ac7187ee76586c04aff"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\chatgptpro6log.txt",
+      "bytes": 62012,
+      "sha256": "f26fd5a83ad13ecf3ddb10a47920020444b5d32f78a5ad73d933520ba6a8a4bb"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\rprm_consolidated\\RPRM_EXHAUSTIVE_HANDOFF_2026-08-19.md",
+      "bytes": 26999,
+      "sha256": "919c95495c68cdc5f774a04882dabd1dffb4b0d6c32098ba353cca78ee3a1976"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_BRIDGE_FAMILIES_FULL_REREAD_UNDERSTANDING_PACKET_2026-08-12.md",
+      "bytes": 27499,
+      "sha256": "d38ef532b2ace34fb71114b4e29338ecd1bf466914424f862912be2eb6bce2c7"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_CENTERED_CUBE_SPHERE_POLAR_PORT_SCOUT_0_1_SHADOW.md",
+      "bytes": 23860,
+      "sha256": "3516cfb48e31f41a95346fa65a68dabe14b28539d698baea444362f4b4df3227"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_CENTERED_HALF_FILLING_ZERO_SCOUT_0_1_SHADOW.md",
+      "bytes": 13700,
+      "sha256": "68c247d903ca25e211760084c3ad79d37b95a9747e4f7ee085c4fdf405be909c"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_CURVE_FRAME_THREE_WITH_TWO_HOSTILE_AUDIT_0_1_SHADOW.md",
+      "bytes": 22369,
+      "sha256": "b58b38ac5978d3b94fd5c5a04183262a467592f345b719720b313cc5b4c67383"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_FOLD_LINEAGE_DYADIC_ADDRESS_AND_LOCALIZATION_SCOUT_0_1_SHADOW.md",
+      "bytes": 27269,
+      "sha256": "45368d0fa14abd55ca4bcf9feedc4a30f7ebb7aa009f353f41307d1dba0a89eb"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_HILBERT_DIAGONAL_AIMER_AND_NEGATIVE_RETURN_SCOUT_0_1_SHADOW.md",
+      "bytes": 38114,
+      "sha256": "155e1c4161fa925728be6b6225d3c8ceb46c62ae18091a3e818a5e7826a48193"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1\\SOURCE_MEMO_EXISTING_TERNARY_CUBE_RECEIVER_2026-08-12.md",
+      "bytes": 3344,
+      "sha256": "b16ef80b51006b23e0ef2f8760897b17c60a17efe004f83a5ecc770d08075ed9"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1\\USER_STEERING_AMENDMENTS_0_10_FIVING_SAFE_SPINE.md",
+      "bytes": 4431,
+      "sha256": "957d8ae2f46f54a1e08960ff84b76cd16507ba3079c12cbd728cd7e6c242b083"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1\\USER_STEERING_AMENDMENTS_0_11_FIVE_SAFE_TYPE_FINDING.md",
+      "bytes": 5157,
+      "sha256": "d5d9e69c270926bbcf9805bfb3d07ee657ea74b37f2787095172e22357e276ea"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1\\USER_STEERING_AMENDMENTS_0_36_TERNARY_CUBE_ABDUCTION_LAUNCHPAD.md",
+      "bytes": 4785,
+      "sha256": "fcff2f53bfeec75168be2888f5dd0635652cd98588ddaa41d7193bb0c45f1da2"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_ROTATED_ABDUCTION_CUBE_ATLAS_AND_MOVING_RECEIVER_SCOUT_0_1_SHADOW.md",
+      "bytes": 43050,
+      "sha256": "2877ee347c1c7125c68323bc639bc0562dc44862aeb577af076e08f47c9e4edd"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_TERNARY_CLOCKWORK_LAYOUT_AND_MULTIGRADING_SCOUT_0_1_SHADOW.md",
+      "bytes": 33472,
+      "sha256": "0252d799c3f1eb0d8c2b25e5b99bd13ec2c34b8f05cffab6be54c3b847ecbef9"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_ABDUCTIVE_CARRIER_LIFT_01\\RESULTS_SUMMARY.md",
+      "bytes": 6659,
+      "sha256": "4a219c248ceb79495d6567d8d54985c6fa2b8afbf5e1f4e7056193c3107d51fa"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_FULL_ZIP_HYPERCUBE_LADDER_01\\RESULTS_SUMMARY.md",
+      "bytes": 3453,
+      "sha256": "ea9b6fa8f811d8a4bc78ae3e965783537d5ca459627b5855d3f5715329de8e81"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_GRADED_SCAR_CUBE_01\\RESULTS_SUMMARY.md",
+      "bytes": 3026,
+      "sha256": "0d77eb1cb48b8942614164f8fc90f6275ccbe14887bf25425ad3b0b604153b53"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_GRADED_SCAR_CUBE_02\\NOTE.md",
+      "bytes": 28336,
+      "sha256": "3c3c4c441212dde2c8b581da72527b604f3edb05273ba0dd6aa732bc009cec0d"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_GRADED_SCAR_CUBE_02\\RESULTS_SUMMARY.md",
+      "bytes": 4231,
+      "sha256": "cf44925014cd9b360c4aab882452c1e0189c814900d797c0356008fe7970a3be"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_HALF_DECADE_FIVING_AB_LIFT_01\\RESULTS_SUMMARY.md",
+      "bytes": 1914,
+      "sha256": "ae34a3ab8a6bf05a30486b789b28605e09abb44e05a6878af981fcb710c8fe89"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_MATHSEED_0_1\\zero_cube\\RESULTS_SUMMARY.md",
+      "bytes": 5967,
+      "sha256": "34a46fe83a1e321087bbcfebf8ff15daff98c8b13ea60ba2594fb03b45e4b416"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_MOVING_VACANCY_WEAVE_01\\RESULTS_SUMMARY.md",
+      "bytes": 3828,
+      "sha256": "33fa6abcd35ddfd48a5dfc314ebba4410f98353fe519c9d0e9fa1f8565e94b4c"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_SEAM_ZERO_FOUNDATION_TILE_01\\README.md",
+      "bytes": 1414,
+      "sha256": "8b0288e8a82d21142c0502fad66b45cb6c4301b7958d9e7b1c5e87a490f1f874"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_TERNARY_DIMENSIONAL_LADDER_01\\RESULTS_SUMMARY.md",
+      "bytes": 5742,
+      "sha256": "5716f276864e3821c101712b0661adb569a1f79cf8a36a7996465c643d52bdfe"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\math-discoveries\\entries\\e6affe80-92bd-4069-9f31-ca6ddc1844a2--seam-zero-6-bar-4-to-0-bar-1-oriented-foundation-translator.md",
+      "bytes": 8273,
+      "sha256": "6f4c4367d33429a3f42a6f5a1f20f39da5a9c45d0c21ed5e63ee89f4579bb714"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\HISTORY_AND_NAMES.md",
+      "bytes": 11389,
+      "sha256": "21c35588ed3e09b991e4500cee4bb0a6b3f1eb4351595e939849c0f43d705a43"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\MATH_AUDIT.md",
+      "bytes": 41056,
+      "sha256": "4898ee1a90d54fe019302bf2691fc0a449d745aed80c11a2ce6303d941a8b578"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\PUBLISHED_COVERAGE.md",
+      "bytes": 13316,
+      "sha256": "8886cf0d399ce4effdd6b2d16436bf24b9a13dd9a2dd2e27262c460f8395d07f"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\README.md",
+      "bytes": 4074,
+      "sha256": "83cadc1b789ab8a37c1c32cdcee8f28637abb63914430d0e193d509fd1a23124"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\REVIEW_DRAFT.md",
+      "bytes": 8962,
+      "sha256": "9c0065e1a707150a1f5baa10c4ed2ddb624935ca5595a79b133be430108f858c"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\SOURCE_RECEIPTS.json",
+      "bytes": 4305,
+      "sha256": "33f38a645db79e5304698681960b2fa0af794e122f1fdfbd54501cabb92eee30"
+    },
+    {
+      "path": "C:\\github\\LawCube\\README.md",
+      "bytes": 8841,
+      "sha256": "0170d4c7310c5e269ec3d1ced59081aa8715fd5a78f0dbd9adee4a6e5cde9fad"
+    },
+    {
+      "path": "C:\\github\\LawCube\\verification\\FINAL_VERIFICATION.md",
+      "bytes": 6953,
+      "sha256": "b7e2544b3a20be4a1c5ef766d929d6e09c18f159d9f38e6e89176511e6bba1da"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_CTHULHU_ZERO_PATH_MOTOR_AUDIT_08\\POST_FREEZE_PRESTIGE_ONE.md",
+      "bytes": 2103,
+      "sha256": "77fa6be1d638761cbcd72434783bd51b1db5e09daad3e627455fefa7253e1de1"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_CTHULHU_ZERO_X_FRAME_SEAM_AUDIT_12\\POST_FREEZE_SELF_PROMOTION.md",
+      "bytes": 1745,
+      "sha256": "7c221db9ff9e2904938fd0bbcde822e66a75ac17983e552af65e9cb7aa5f47ac"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "bytes": 24454,
+      "sha256": "3cdf80b16c3b62d04e73c58d3c684c001d8b7e9184c5d0bdbc1c56f4f577daa4"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RELATION_RESIDUAL_LENS_LOCK_CUT_ROTATION_AUDIT_105\\REPORT.md",
+      "bytes": 5545,
+      "sha256": "8bdcba47cf9ef2ec25d1a26d145b8140473c20874953c1dfb0c78a20db1be3a6"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\patient-one\\WILLIAM_CONTRACT.md",
+      "bytes": 4945,
+      "sha256": "b727dfe885e58a20edab55769f54541bbfda5e62deb8c2c96d9a995cfe95ecf2"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\research\\RPRM_OPERATIONAL_LAYER_FOUNDATION_AND_PRIME_PROGRAM_2026-08-28.md",
+      "bytes": 67280,
+      "sha256": "ce02b13d6b18b33eb58c56c106650b7237f06b68924c9a27343ea69a9c394146"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\MANIFESTO.md",
+      "bytes": 358920,
+      "sha256": "1970db936f6b448c869e563559955e3199fdf688fceb9962fe2d47466510922e"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\RPRM-Manifesto.pdf",
+      "bytes": 993395,
+      "sha256": "a9d0c83456281ffa59fbf0c90394d18399bdca98dbc90d337df3ec8f1226e958"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\atlas\\kernel.js",
+      "bytes": 42869,
+      "sha256": "2f30e6f2dc7c000a0e464162644836ad95f9ea1e8591d5a5f05eac5de661fefc"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\docs\\operations.md",
+      "bytes": 40793,
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\docs\\proof-donut.md",
+      "bytes": 14408,
+      "sha256": "7efda177fc3f4500842c88a7556dde6be3724b1f9194ee449da51c8ebcf5070a"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\papers\\process-mechanics\\APPENDICES.md",
+      "bytes": 22421,
+      "sha256": "4d3596a2a8b43061baa34a79712ad4ad29493e09d49042aef5fca09e0d9e7e94"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\papers\\process-mechanics\\BIBLIOGRAPHY.md",
+      "bytes": 5877,
+      "sha256": "8c225dceacbd28aab6507d735a5e6a5c87f2e08474daf132b7420a9f8c938897"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\papers\\process-mechanics\\MANUSCRIPT.md",
+      "bytes": 74250,
+      "sha256": "c4a60a79a1ed23690f61df6a0e35c705ce141e7187452de09bffb11952b9270e"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\papers\\process-mechanics\\The-Right-Answer-Is-Not-Enough.pdf",
+      "bytes": 304898,
+      "sha256": "97de1e6e688fab05a83aef981fb39a97e0f381447ff90b5b2e08d240135eac62"
+    },
+    {
+      "path": "C:\\github\\RelationForge\\README.md",
+      "bytes": 7495,
+      "sha256": "e3dbc9266f889fcf65ef885478e79dbb4972abda638bcfb2cefd09defd262671"
+    },
+    {
+      "path": "C:\\github\\RelationForge\\verification\\FINAL_VERIFICATION.md",
+      "bytes": 3585,
+      "sha256": "f91a94e443ba77c22cb0d3299b18c7f41b9cba44a308ac3bfb6764cd2cda9932"
+    }
+  ],
+  "local_links": [
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_GRADED_SCAR_CUBE_02\\NOTE.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_GRADED_SCAR_CUBE_02\\RESULTS_SUMMARY.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_GRADED_SCAR_CUBE_01\\RESULTS_SUMMARY.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_MATHSEED_0_1\\zero_cube\\RESULTS_SUMMARY.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\github\\LawCube\\README.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\github\\LawCube\\verification\\FINAL_VERIFICATION.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\github\\RelationForge\\README.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\github\\RelationForge\\verification\\FINAL_VERIFICATION.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_FULL_ZIP_HYPERCUBE_LADDER_01\\RESULTS_SUMMARY.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_TERNARY_CLOCKWORK_LAYOUT_AND_MULTIGRADING_SCOUT_0_1_SHADOW.md",
+      "line": 636,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_ABDUCTIVE_CARRIER_LIFT_01\\RESULTS_SUMMARY.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1\\USER_STEERING_AMENDMENTS_0_36_TERNARY_CUBE_ABDUCTION_LAUNCHPAD.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1\\SOURCE_MEMO_EXISTING_TERNARY_CUBE_RECEIVER_2026-08-12.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\github\\RPRM-foam-development\\patient-one\\WILLIAM_CONTRACT.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_BRIDGE_FAMILIES_FULL_REREAD_UNDERSTANDING_PACKET_2026-08-12.md",
+      "line": 363,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_MOVING_VACANCY_WEAVE_01\\RESULTS_SUMMARY.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_TERNARY_DIMENSIONAL_LADDER_01\\RESULTS_SUMMARY.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_SEAM_ZERO_FOUNDATION_TILE_01\\README.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\math-discoveries\\entries\\e6affe80-92bd-4069-9f31-ca6ddc1844a2--seam-zero-6-bar-4-to-0-bar-1-oriented-foundation-translator.md",
+      "line": 62,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_HILBERT_DIAGONAL_AIMER_AND_NEGATIVE_RETURN_SCOUT_0_1_SHADOW.md",
+      "line": 308,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_CURVE_FRAME_THREE_WITH_TWO_HOSTILE_AUDIT_0_1_SHADOW.md",
+      "line": 19,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_ROTATED_ABDUCTION_CUBE_ATLAS_AND_MOVING_RECEIVER_SCOUT_0_1_SHADOW.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_CENTERED_CUBE_SPHERE_POLAR_PORT_SCOUT_0_1_SHADOW.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "CUBES-AND-PI-CURVES.md",
+      "path": "C:\\github\\RPRM-open\\docs\\proof-donut.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\22\\rollout-2026-08-22T15-25-36-01a02b5d-65e3-72d3-9126-e18ed101e2d3.jsonl",
+      "line": 9398,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\22\\rollout-2026-08-22T15-25-36-01a02b5d-65e3-72d3-9126-e18ed101e2d3.jsonl",
+      "line": 32978,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\22\\rollout-2026-08-22T15-25-36-01a02b5d-65e3-72d3-9126-e18ed101e2d3.jsonl",
+      "line": 36929,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\22\\rollout-2026-08-22T15-25-36-01a02b5d-65e3-72d3-9126-e18ed101e2d3.jsonl",
+      "line": 37142,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 6866,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7062,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7150,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7170,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7226,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7256,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7282,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7523,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7827,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T10-32-34-01a04937-473d-74e2-91cb-a397a3df079b.jsonl",
+      "line": 1966,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T10-32-34-01a04937-473d-74e2-91cb-a397a3df079b.jsonl",
+      "line": 22431,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T10-32-34-01a04937-473d-74e2-91cb-a397a3df079b.jsonl",
+      "line": 22472,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T15-32-56-01a078a3-812c-7722-9c9c-58ccd8ee28ee.jsonl",
+      "line": 11516,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T14-58-21-01a082d0-91a4-7a31-a46e-aa30fd1bf08f.jsonl",
+      "line": 1201,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T14-58-21-01a082d0-91a4-7a31-a46e-aa30fd1bf08f.jsonl",
+      "line": 1421,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T15-41-08-01a082f7-b99f-7140-8293-4d751069ac1e.jsonl",
+      "line": 1436,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "line": 5357,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "line": 6485,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "line": 11221,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "line": 11957,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "line": 25573,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "line": 26362,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "line": 28316,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\Downloads\\chatgptpro6log.txt",
+      "line": 984,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\Downloads\\chatgptpro6log.txt",
+      "line": 986,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1\\USER_STEERING_AMENDMENTS_0_10_FIVING_SAFE_SPINE.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1\\USER_STEERING_AMENDMENTS_0_11_FIVE_SAFE_TYPE_FINDING.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_HALF_DECADE_FIVING_AB_LIFT_01\\RESULTS_SUMMARY.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_CTHULHU_ZERO_PATH_MOTOR_AUDIT_08\\POST_FREEZE_PRESTIGE_ONE.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_CTHULHU_ZERO_X_FRAME_SEAM_AUDIT_12\\POST_FREEZE_SELF_PROMOTION.md",
+      "line": 1,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\github\\RPRM-foam-development\\research\\RPRM_OPERATIONAL_LAYER_FOUNDATION_AND_PRIME_PROGRAM_2026-08-28.md",
+      "line": 682,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "line": 10,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "line": 93,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "line": 208,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "line": 241,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "line": 332,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_CURVE_FRAME_THREE_WITH_TWO_HOSTILE_AUDIT_0_1_SHADOW.md",
+      "line": 19,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\HISTORY_AND_NAMES.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\REVIEW_DRAFT.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\PUBLISHED_COVERAGE.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\SOURCE_RECEIPTS.json",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\MATH_AUDIT.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\HISTORY_AND_NAMES.md",
+      "line": 53,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T15-32-56-01a078a3-812c-7722-9c9c-58ccd8ee28ee.jsonl",
+      "line": 11654,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T15-32-56-01a078a3-812c-7722-9c9c-58ccd8ee28ee.jsonl",
+      "line": 11901,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T15-32-56-01a078a3-812c-7722-9c9c-58ccd8ee28ee.jsonl",
+      "line": 11939,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\REVIEW_DRAFT.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\README.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\recovered-concepts\\PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\recovered-concepts\\ZERO-AND-RAILS.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\recovered-concepts\\CUBES-AND-PI-CURVES.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\recovered-concepts\\PAPER-COVERAGE-AUDIT.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\recovered-concepts\\ORIGINAL-CONVERSATION-PASSAGES.md",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\recovered-concepts\\SOURCE-INDEX.json",
+      "line": null,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\MANIFESTO.md",
+      "line": 1199,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\MANIFESTO.md",
+      "line": 908,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\MANIFESTO.md",
+      "line": 546,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\docs\\operations.md",
+      "line": 300,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\github\\RPRM-open\\atlas\\kernel.js",
+      "line": 354,
+      "exists": true
+    },
+    {
+      "from": "RPRM-CONCEPT-RECOVERY.md",
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\HISTORY_AND_NAMES.md",
+      "line": null,
+      "exists": true
+    }
+  ],
+  "packet_files": [
+    {
+      "file": "CUBES-AND-PI-CURVES.md",
+      "bytes": 53235,
+      "sha256": "526ab16ba66addb1e6ebade597a2470f44d83761705f29333e4ee439c5c9ef0e"
+    },
+    {
+      "file": "ORIGINAL-CONVERSATION-PASSAGES.md",
+      "bytes": 41117,
+      "sha256": "9c77b6b6aaf3c79020d18ea803cca45e34001315a6da7ac76c48419f445a2800"
+    },
+    {
+      "file": "ORIGINAL-CONVERSATION-SOURCES.json",
+      "bytes": 81435,
+      "sha256": "5cb9c32007394484f97772989faae71f35ca4a0653e94dcf827a1bdc67646e36"
+    },
+    {
+      "file": "PAPER-COVERAGE-AUDIT.md",
+      "bytes": 17833,
+      "sha256": "55467ec717480ce4719288387c9664b4e66d27c36888a53e3769fbab5caf3550"
+    },
+    {
+      "file": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "bytes": 102093,
+      "sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843"
+    },
+    {
+      "file": "PRESTIGE-SOURCE-RECEIPTS.json",
+      "bytes": 15264,
+      "sha256": "8e1bef1e67eac5068c1760b3c6b5bf106048f9640dd0028f7f7a93c585841928"
+    },
+    {
+      "file": "RPRM-CONCEPT-RECOVERY.md",
+      "bytes": 28752,
+      "sha256": "5cd1318d303f89fd587692e7d9d5d87f96c285441fa6f530ea70a73047737829"
+    },
+    {
+      "file": "ZERO-AND-RAILS.md",
+      "bytes": 16721,
+      "sha256": "82b33805d899cbdd64232dbfc4f87bf979098232bd2ed8a16a494dbf8156a57d"
+    }
+  ],
+  "prestige_source_receipts": "PRESTIGE-SOURCE-RECEIPTS.json",
+  "original_user_records": "ORIGINAL-CONVERSATION-SOURCES.json",
+  "memory_fabric": {
+    "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+    "historical_recorded_at": "2026-08-30T23:59:00Z",
+    "queries": [
+      {
+        "packet": "packet:a179f6fb1f7fdfe6a65a379eb4f957fbbeb4e726e0bf78e93abbb45910a84dce",
+        "objective": "prestige reincarnated ascended ones",
+        "lexical_matches": 19,
+        "omitted": 13
+      },
+      {
+        "packet": "packet:e677a434bf04c2e1a6f4937fe14ba4783654310d42d233c91be363331eca41c7",
+        "objective": "\"math rail\" \"physics rail\" \"0.6\" \"0.4\"",
+        "lexical_matches": 838,
+        "omitted": 832
+      }
+    ],
+    "limitations": "Lexical candidate/byte-bounded snapshot. Not full-corpus coverage; direct local sources supplemented retrieval. One omission search and one expansion were made on the prestige packet; expansion was irrelevant to the target."
+  }
+}

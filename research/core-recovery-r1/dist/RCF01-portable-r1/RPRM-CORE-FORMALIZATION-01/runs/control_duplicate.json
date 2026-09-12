@@ -1,0 +1,174 @@
+{
+  "control": "duplicate",
+  "coverage_error": "Duplicate emitted case IDs.",
+  "evidence_class": "ASSISTANT_OR_LOCAL_DEVELOPMENT_CHECK_NOT_HOLDOUT",
+  "historical_RPRM_verifiers_rerun": false,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "protocol_sha256": "5a559ffe129f669da4e9be1be531d9fe293dabf105110dbc81cef90c56cf4504",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "results": [
+    {
+      "case_id": "CB01_ROUNDTRIP",
+      "data": {
+        "complete_boolean_tables": 256,
+        "structured_rational_tables": 32
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB02_FIBERS",
+      "data": {
+        "members_per_fiber": 2,
+        "summary_fibers": 128,
+        "unresolved_site_mask": 7
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB03_ARITHMETIC",
+      "data": {
+        "full_table_access_in_compact_operators": false,
+        "operations": [
+          "pointwise_addition",
+          "pointwise_multiplication"
+        ],
+        "ordered_law_pairs": 65536
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB04_FIVING_ADAPTER",
+      "data": {
+        "adapter": "A_r(h,x,y)=(5*h+r,x,y)",
+        "adapter_cases": 40,
+        "residue_slices": 5,
+        "scope": "finite display; not the strong winding state or Double-Stamp safety"
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB05_WINDING",
+      "data": {
+        "finite_return_is_strong_return": false,
+        "lifted_states_checked": 70,
+        "two_steps": "(w,h,r)->(w+1,h,r)"
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB06_OPERATION_COLLISION",
+      "data": {
+        "after_fiving_readout": [
+          3,
+          4
+        ],
+        "after_pullback": "x*y-h*x*y",
+        "hidden_term": "h*x*y",
+        "same_present_readout": [
+          2,
+          2
+        ],
+        "this_expected_refutation_is_a_successful_test": true,
+        "verdict_on_C2_fiving_lift": "REFUTED"
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB07_MAP_CLASSIFICATION",
+      "data": {
+        "all_same_summary_pairs_checked_per_map": 128,
+        "map_verdicts": {
+          "clamp_h_0": "LIFTS",
+          "clamp_h_1": "DOES_NOT_LIFT",
+          "clamp_x_0": "LIFTS",
+          "clamp_x_1": "DOES_NOT_LIFT",
+          "clamp_y_0": "LIFTS",
+          "clamp_y_1": "DOES_NOT_LIFT",
+          "flip_h": "DOES_NOT_LIFT",
+          "flip_x": "DOES_NOT_LIFT",
+          "flip_y": "DOES_NOT_LIFT",
+          "identity": "LIFTS",
+          "perm_012": "LIFTS",
+          "perm_021": "LIFTS",
+          "perm_102": "LIFTS",
+          "perm_120": "LIFTS",
+          "perm_201": "LIFTS",
+          "perm_210": "LIFTS"
+        }
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB08_REPAIR",
+      "data": {
+        "law_map_pairs": 4096,
+        "laws": 256,
+        "maps": 16,
+        "repair": "retain the missing coefficient (equivalently the missing site value)",
+        "runtime_advantage_claimed": false
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB09_MINIMAL_REPAIR",
+      "data": {
+        "closed_supersets": 1,
+        "initial_sites": 7,
+        "least_operation_closed_sites": 8,
+        "scope": "all arbitrary laws on this carrier; retained-site summary family",
+        "subsets_examined": 256
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB10_DISTINGUISHING_PROBE",
+      "data": {
+        "distinguishing_site_mask": 7,
+        "redundant_probes_per_fiber": 7,
+        "repaired_distinct_boolean_laws": 256
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB11_ENABLEDNESS",
+      "data": {
+        "declared_dwell_permissions": {
+          "A5": true,
+          "B6": false,
+          "C7": true
+        },
+        "quotient_vertices_edges_inversions": {
+          "A5": [
+            3,
+            2,
+            0
+          ],
+          "B6": [
+            3,
+            3,
+            1
+          ],
+          "C7": [
+            4,
+            3,
+            0
+          ]
+        },
+        "safety_is": "authored process admission, not a physical safety result",
+        "source_verifier_replayed": false,
+        "vertex_count_only_summary": "REFUTED_FOR_DWELL"
+      },
+      "outcome": "PASS"
+    },
+    {
+      "case_id": "CB01_ROUNDTRIP",
+      "data": {
+        "complete_boolean_tables": 256,
+        "structured_rational_tables": 32
+      },
+      "outcome": "PASS"
+    }
+  ],
+  "source_sha256": "92e1be0ade3db207f16657a8234369097c0cedf755c5286c11b2305556f63466",
+  "status": "FAIL"
+}

@@ -1,0 +1,300 @@
+{
+  "schema": "rprm-historical-concept-recovery/v1",
+  "recorded_on": "2026-09-11",
+  "receipts": [
+    {
+      "turn_id": "673126fa8552",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\22\\rollout-2026-08-22T15-25-36-01a02b5d-65e3-72d3-9126-e18ed101e2d3.jsonl",
+      "line": 9398,
+      "timestamp": "2026-08-23T19:16:26.434Z",
+      "text_sha256": "673126fa8552c02bb4f40383d08f90dd08272babcc4f9c424d69473a762bda99"
+    },
+    {
+      "turn_id": "2604bc45ddb2",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\22\\rollout-2026-08-22T15-25-36-01a02b5d-65e3-72d3-9126-e18ed101e2d3.jsonl",
+      "line": 32978,
+      "timestamp": "2026-08-25T08:32:44.628Z",
+      "text_sha256": "2604bc45ddb2066fdf6776e5d1925ca5b2b74fc358f5e844156a07f3b0ed8803"
+    },
+    {
+      "turn_id": "1a791e34657b",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\22\\rollout-2026-08-22T15-25-36-01a02b5d-65e3-72d3-9126-e18ed101e2d3.jsonl",
+      "line": 36929,
+      "timestamp": "2026-08-25T12:17:02.928Z",
+      "text_sha256": "1a791e34657b2aa73485b907aa2a2004b2b07c480011d7f99e9b424c645220c3"
+    },
+    {
+      "turn_id": "cc2a9bf6dfce",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\22\\rollout-2026-08-22T15-25-36-01a02b5d-65e3-72d3-9126-e18ed101e2d3.jsonl",
+      "line": 37142,
+      "timestamp": "2026-08-25T12:31:23.030Z",
+      "text_sha256": "cc2a9bf6dfcef54f4d9900b5fc3b7d488735d6945f3a7e3b985f5ab2bece3ab0"
+    },
+    {
+      "turn_id": "4bf1dc457cac",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 6866,
+      "timestamp": "2026-08-26T19:28:22.497Z",
+      "text_sha256": "4bf1dc457cacf81fd5adf114bbb3b4364368cc3cae7c602e10d794356797ddb1"
+    },
+    {
+      "turn_id": "6ab921363369",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7062,
+      "timestamp": "2026-08-26T19:38:08.430Z",
+      "text_sha256": "6ab9213633694ea7a71c7c0d2264124acf599d51906a524dc4628e26a791e26d"
+    },
+    {
+      "turn_id": "4d4d23332f71",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7150,
+      "timestamp": "2026-08-26T19:41:43.971Z",
+      "text_sha256": "4d4d23332f714274212dbb31ef92522f0f23f1f4c0261c3ccc3e79101f09a8a1"
+    },
+    {
+      "turn_id": "d5f94866f60e",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7170,
+      "timestamp": "2026-08-26T19:42:24.308Z",
+      "text_sha256": "d5f94866f60ed7e640564f25e08a9559ab51b20a2d4c0bc9aa670e3de479e236"
+    },
+    {
+      "turn_id": "fc1e338d2b9d",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7226,
+      "timestamp": "2026-08-26T19:44:24.715Z",
+      "text_sha256": "fc1e338d2b9d74198f48dd305603dd5c4f3b3de4c127d8cb3965bbadefe5f5bf"
+    },
+    {
+      "turn_id": "92cf693bee91",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7256,
+      "timestamp": "2026-08-26T19:44:54.305Z",
+      "text_sha256": "92cf693bee91d7a15c5a4473a8151f38d299de6cfaf3ed3251a17edaf8c0a03f"
+    },
+    {
+      "turn_id": "0af8b9e87dab",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7282,
+      "timestamp": "2026-08-26T19:45:49.856Z",
+      "text_sha256": "0af8b9e87dab888a7a5f2599febc42e14fa427e47cb2f120ef4396f07f1e9bc2"
+    },
+    {
+      "turn_id": "b33dcc876524",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7523,
+      "timestamp": "2026-08-26T19:55:03.695Z",
+      "text_sha256": "b33dcc876524781241207fa0db65d7d328c07c7eb8f5d15a43d85e5ca10575ba"
+    },
+    {
+      "turn_id": "8d5c1a9cdee9",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\26\\rollout-2026-08-26T06-57-53-01a03e26-00b7-7760-be71-0a7f6e2aa2ea.jsonl",
+      "line": 7827,
+      "timestamp": "2026-08-26T20:11:13.810Z",
+      "text_sha256": "8d5c1a9cdee93ec6ed7705b29abb2619258fd145495982e5fe5d56f7ea5b5f9d"
+    },
+    {
+      "turn_id": "09be3a701e28",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T10-32-34-01a04937-473d-74e2-91cb-a397a3df079b.jsonl",
+      "line": 1966,
+      "timestamp": "2026-08-28T18:00:10.677Z",
+      "text_sha256": "09be3a701e284768a92a1529306c1a2f0cebc5df3fac02f6ba4963983de23d5b"
+    },
+    {
+      "turn_id": "3379890f3510",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T10-32-34-01a04937-473d-74e2-91cb-a397a3df079b.jsonl",
+      "line": 22431,
+      "timestamp": "2026-08-30T13:03:13.565Z",
+      "text_sha256": "3379890f3510ffce6ff47ea8b6ee0ad60dffd1862507f0635781bf8f9f5d35c7"
+    },
+    {
+      "turn_id": "17885167bb84",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\28\\rollout-2026-08-28T10-32-34-01a04937-473d-74e2-91cb-a397a3df079b.jsonl",
+      "line": 22472,
+      "timestamp": "2026-08-30T13:08:21.317Z",
+      "text_sha256": "17885167bb849019b0df79830917cc608cb8905ce96c6b9ccf692c7474e7ae00"
+    },
+    {
+      "turn_id": "feaacc0ad590",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T15-32-56-01a078a3-812c-7722-9c9c-58ccd8ee28ee.jsonl",
+      "line": 11516,
+      "timestamp": "2026-09-07T17:12:58.183Z",
+      "text_sha256": "feaacc0ad590ff538212deb72f35a04dea548ce6fb1a27ed9a14e080441258ae"
+    },
+    {
+      "turn_id": "6614a93a39ff",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T14-58-21-01a082d0-91a4-7a31-a46e-aa30fd1bf08f.jsonl",
+      "line": 1201,
+      "timestamp": "2026-09-08T23:20:43.828Z",
+      "text_sha256": "6614a93a39ffae3e81d0e57f906b57ffc3124e69e9874368492c3f3fdc518ceb"
+    },
+    {
+      "turn_id": "adb0a3764d4a",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T14-58-21-01a082d0-91a4-7a31-a46e-aa30fd1bf08f.jsonl",
+      "line": 1421,
+      "timestamp": "2026-09-08T23:48:27.585Z",
+      "text_sha256": "adb0a3764d4ae39db153cf18fff5a9b363c4099ba265b9f50aa812d2b81eac0f"
+    },
+    {
+      "turn_id": "40e1a0051524",
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\09\\08\\rollout-2026-09-08T15-41-08-01a082f7-b99f-7140-8293-4d751069ac1e.jsonl",
+      "line": 1436,
+      "timestamp": "2026-09-09T00:09:47.694Z",
+      "text_sha256": "40e1a00515243256b52c594eb9f09d267bc59cb51266e0343878228bf9f3a611"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "start_line": 5357,
+      "end_line": 5357,
+      "sha256": "be7b068f327cafba446f059a009a272abb1a59fa085bc9aaa97b8bf4add995d3",
+      "passage_sha256": "e257012b232d2f225f4966370a348c957e4eac9bd9c5cf3ea9ce8089f3acf716"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "start_line": 6485,
+      "end_line": 6485,
+      "sha256": "be7b068f327cafba446f059a009a272abb1a59fa085bc9aaa97b8bf4add995d3",
+      "passage_sha256": "2ef429fb2e4a53e91f3374b56b2476a707e7ca7a83fbca191cdde737f9b8cb41"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "start_line": 11221,
+      "end_line": 11221,
+      "sha256": "be7b068f327cafba446f059a009a272abb1a59fa085bc9aaa97b8bf4add995d3",
+      "passage_sha256": "81df4db01754c4aa4d068f226fc65c642e4372afcf3efd1438d190b624aba6a8"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "start_line": 11957,
+      "end_line": 11957,
+      "sha256": "be7b068f327cafba446f059a009a272abb1a59fa085bc9aaa97b8bf4add995d3",
+      "passage_sha256": "f8c5770867870f193bd1a00f2930203d1f85216cb88eac922f8d67b972dc954e"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "start_line": 25573,
+      "end_line": 25573,
+      "sha256": "be7b068f327cafba446f059a009a272abb1a59fa085bc9aaa97b8bf4add995d3",
+      "passage_sha256": "db70fdc444101f1926685413579a512fdb3495e6de4b22f71709de8f4360663d"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "start_line": 26362,
+      "end_line": 26390,
+      "sha256": "be7b068f327cafba446f059a009a272abb1a59fa085bc9aaa97b8bf4add995d3",
+      "passage_sha256": "816cf3682f98f9b898df9b7cbdb1cffc8339f1b6de69c7209efb4e1f5971de08"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\Investigate RPRM bridge families CHATLOG.txt",
+      "start_line": 28316,
+      "end_line": 28413,
+      "sha256": "be7b068f327cafba446f059a009a272abb1a59fa085bc9aaa97b8bf4add995d3",
+      "passage_sha256": "f7f64298f5153e3ae62a04b587b6004ccf848cd074fb105ec83845c59c81ea37"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\chatgptpro6log.txt",
+      "start_line": 984,
+      "end_line": 984,
+      "sha256": "f26fd5a83ad13ecf3ddb10a47920020444b5d32f78a5ad73d933520ba6a8a4bb",
+      "passage_sha256": "807bd9e8b93108656407ff352dce8f1d5a663e7edb44a62c098fa8147f3f7bdf"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\Downloads\\chatgptpro6log.txt",
+      "start_line": 986,
+      "end_line": 1035,
+      "sha256": "f26fd5a83ad13ecf3ddb10a47920020444b5d32f78a5ad73d933520ba6a8a4bb",
+      "passage_sha256": "3793e8bfe182d7848a85f8bd910565f9ed6c487625cef4f76be2545b1655dd34"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1\\USER_STEERING_AMENDMENTS_0_10_FIVING_SAFE_SPINE.md",
+      "start_line": 1,
+      "end_line": 131,
+      "sha256": "957d8ae2f46f54a1e08960ff84b76cd16507ba3079c12cbd728cd7e6c242b083",
+      "passage_sha256": "592d26558b33446ee9c26564dd5bfe26ac5d3005821685cee5be0407dea51163"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1\\USER_STEERING_AMENDMENTS_0_11_FIVE_SAFE_TYPE_FINDING.md",
+      "start_line": 1,
+      "end_line": 131,
+      "sha256": "d5d9e69c270926bbcf9805bfb3d07ee657ea74b37f2787095172e22357e276ea",
+      "passage_sha256": "7bc2636a0f6217a8c853efb9782ae397a2f539c45f9282f4f41ba15f6132c759"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\experiments\\RPRM_HALF_DECADE_FIVING_AB_LIFT_01\\RESULTS_SUMMARY.md",
+      "start_line": 1,
+      "end_line": 36,
+      "sha256": "ae34a3ab8a6bf05a30486b789b28605e09abb44e05a6878af981fcb710c8fe89",
+      "passage_sha256": "9f6946c1a2a86d766e9dbebea3770e7f1ffed3e216d2c48896a606f72cd80baa"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_CTHULHU_ZERO_PATH_MOTOR_AUDIT_08\\POST_FREEZE_PRESTIGE_ONE.md",
+      "start_line": 1,
+      "end_line": 54,
+      "sha256": "77fa6be1d638761cbcd72434783bd51b1db5e09daad3e627455fefa7253e1de1",
+      "passage_sha256": "58420af84d3baa84b058c24c9c062277debeaa918fa3b118e3247743b38c8f3d"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_CTHULHU_ZERO_X_FRAME_SEAM_AUDIT_12\\POST_FREEZE_SELF_PROMOTION.md",
+      "start_line": 1,
+      "end_line": 30,
+      "sha256": "7c221db9ff9e2904938fd0bbcde822e66a75ac17983e552af65e9cb7aa5f47ac",
+      "passage_sha256": "68aab52a5f80027ce11329320dc6f537f2b81156be10beb09a5c4553a558aea4"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\research\\RPRM_OPERATIONAL_LAYER_FOUNDATION_AND_PRIME_PROGRAM_2026-08-28.md",
+      "start_line": 682,
+      "end_line": 730,
+      "sha256": "ce02b13d6b18b33eb58c56c106650b7237f06b68924c9a27343ea69a9c394146",
+      "passage_sha256": "721e44720b21eb041198d33f0adbb78b1df274eb0ad7011752cb268179fad309"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "start_line": 10,
+      "end_line": 37,
+      "sha256": "3cdf80b16c3b62d04e73c58d3c684c001d8b7e9184c5d0bdbc1c56f4f577daa4",
+      "passage_sha256": "36a6ef907a4b044e1987a70c4d26b8fb9260c7dcd916a6fafbccd3039f9e5cde"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "start_line": 93,
+      "end_line": 108,
+      "sha256": "3cdf80b16c3b62d04e73c58d3c684c001d8b7e9184c5d0bdbc1c56f4f577daa4",
+      "passage_sha256": "a81a71f04a90f07e15dfc52f502ad4b301e2fd0a6e53d0d09ef639cee547c1fa"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "start_line": 208,
+      "end_line": 240,
+      "sha256": "3cdf80b16c3b62d04e73c58d3c684c001d8b7e9184c5d0bdbc1c56f4f577daa4",
+      "passage_sha256": "e53c498ff1c2a9c229c8a9aa7d402d431be24d366dcb2f97a8e62e00f537766e"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "start_line": 241,
+      "end_line": 331,
+      "sha256": "3cdf80b16c3b62d04e73c58d3c684c001d8b7e9184c5d0bdbc1c56f4f577daa4",
+      "passage_sha256": "275558797b95127b0c29ecfc716757444eaf4f174fe9aa446e040f86c2c0a0bd"
+    },
+    {
+      "path": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_RECEIVER_UNCERTAINTY_ANTI_APERTURE_AUDIT_55\\POSTFREEZE_PRESTIGE_PARITY_LADDER_CANDIDATE.md",
+      "start_line": 332,
+      "end_line": 368,
+      "sha256": "3cdf80b16c3b62d04e73c58d3c684c001d8b7e9184c5d0bdbc1c56f4f577daa4",
+      "passage_sha256": "6475cc5010695a678555cf17e7ee8b110ed18b92d893f1d4c67198fe2374b52c"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\Quantum Research\\RPRM_CURVE_FRAME_THREE_WITH_TWO_HOSTILE_AUDIT_0_1_SHADOW.md",
+      "start_line": 19,
+      "end_line": 64,
+      "sha256": "b58b38ac5978d3b94fd5c5a04183262a467592f345b719720b313cc5b4c67383",
+      "passage_sha256": "f0723a682a9b455b95feae14899e082a29ef165fa246bcf0a1747c8e4de8abea"
+    },
+    {
+      "path": "C:\\Users\\bkbee\\OneDrive\\DOCUME~1-DESKTOP-06BJRV0-219031\\ChatGPT\\RPRM Alpha\\research\\prestige-one-2026-09-07\\HISTORY_AND_NAMES.md",
+      "start_line": 53,
+      "end_line": 107,
+      "sha256": "21c35588ed3e09b991e4500cee4bb0a6b3f1eb4351595e939849c0f43d705a43",
+      "passage_sha256": "8edb04c42fa5b74f41a53195d46e54292918a45c04235c902f7cc635ce7589ea"
+    }
+  ]
+}

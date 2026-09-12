@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "export_root": "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package",
+  "envelope_source_sha256": "0edf6572fd2c0319d443250caa342e091593fe919dca1c0d66416bcfb3d2d720",
+  "protocol_sha256": "e7b9f81fbf1e55db9960cf4b22b305927bfad231019c950d8bf10e6e3910950d",
+  "inherited_protocol_sha256": "381ff518623ae6c4ee95db287787c444bf8ded57a5b2e48fe60d27ae1c040c56",
+  "rprm_core_sha256": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
+  "jobs": [
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/experiments/core_recovery_bridge_01_r1/check_envelope.py",
+        "--output",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/envelope_r1.json",
+        "--work",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/work/env",
+        "--control",
+        "none"
+      ],
+      "cwd": "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/experiments/core_recovery_bridge_01_r1",
+      "exit_code": 0,
+      "seconds": 0.836,
+      "stdout": "{\"status\": \"PASS\", \"scope\": \"AGGREGATOR FIXTURE\"}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/experiments/core_recovery_bridge_01_r1/check_envelope.py",
+        "--output",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/envelope_r1_omit.json",
+        "--work",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/work/env_omit",
+        "--control",
+        "omit"
+      ],
+      "cwd": "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/experiments/core_recovery_bridge_01_r1",
+      "exit_code": 2,
+      "seconds": 0.7779,
+      "stdout": "{\"status\": \"FAIL\", \"scope\": \"AGGREGATOR FIXTURE\"}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/experiments/core_recovery_bridge_01_r1/check_envelope.py",
+        "--output",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/envelope_r1_duplicate.json",
+        "--work",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/work/env_duplicate",
+        "--control",
+        "duplicate"
+      ],
+      "cwd": "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/experiments/core_recovery_bridge_01_r1",
+      "exit_code": 2,
+      "seconds": 0.8024,
+      "stdout": "{\"status\": \"FAIL\", \"scope\": \"AGGREGATOR FIXTURE\"}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/experiments/core_recovery_bridge_01_r1/check_envelope.py",
+        "--output",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/envelope_r1_unexpected.json",
+        "--work",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/work/env_unexpected",
+        "--control",
+        "unexpected"
+      ],
+      "cwd": "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/experiments/core_recovery_bridge_01_r1",
+      "exit_code": 2,
+      "seconds": 0.8213,
+      "stdout": "{\"status\": \"FAIL\", \"scope\": \"AGGREGATOR FIXTURE\"}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/experiments/core_recovery_bridge_01_r1/check_envelope.py",
+        "--output",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/envelope_r1_reorder.json",
+        "--work",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/work/env_reorder",
+        "--control",
+        "reorder"
+      ],
+      "cwd": "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/experiments/core_recovery_bridge_01_r1",
+      "exit_code": 0,
+      "seconds": 0.989,
+      "stdout": "{\"status\": \"PASS\", \"scope\": \"AGGREGATOR FIXTURE\"}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/research/core-recovery-01/check_ids.py"
+      ],
+      "cwd": "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/research/core-recovery-01",
+      "exit_code": 0,
+      "seconds": 0.9286,
+      "stdout": "{\"status\": \"PASS\", \"ids\": [\"RCF-P1\", \"RCF-P2\", \"RCF-P3\", \"RCF-F1\", \"RCF-F2\", \"RCF-F3\", \"RCF-C1\", \"RCF-C2\", \"RCF-C3\", \"RCF-N1\", \"RCF-R1\", \"RCF-PI1\", \"RCF-AD1\"], \"count\": 13}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/research/core-recovery-r1/check_export.py",
+        "--root",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package",
+        "--layout",
+        "export"
+      ],
+      "cwd": "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package",
+      "exit_code": 0,
+      "seconds": 0.7475,
+      "stdout": "{\n  \"control\": \"none\",\n  \"layout\": \"export\",\n  \"register\": {\n    \"deferred\": [\n      \"RCF-P2\",\n      \"RCF-P3\",\n      \"RCF-F3\",\n      \"RCF-N1\",\n      \"RCF-PI1\"\n    ],\n    \"executed_artifact_ok\": [\n      {\n        \"id\": \"RCF-P1\",\n        \"link\": \"experiments/core_recovery_bridge_01/prestige_envelope.py\"\n      },\n      {\n        \"id\": \"RCF-P1\",\n        \"link\": \"experiments/core_recovery_bridge_01/PROOFS.md\"\n      },\n      {\n        \"id\": \"RCF-F1\",\n        \"link\": \"experiments/core_recovery_bridge_01/prestige_envelope.py\"\n      },\n      {\n        \"id\": \"RCF-F1\",\n        \"link\": \"research/core-recovery-01/DONOR_RECONCILIATION.md\"\n      },\n      {\n        \"id\": \"RCF-F2\",\n        \"link\": \"experiments/core_recovery_bridge_01/prestige_envelope.py\"\n      },\n      {\n        \"id\": \"RCF-F2\",\n        \"link\": \"research/core-recovery-01/DONOR_RECONCILIATION.md\"\n      },\n      {\n        \"id\": \"RCF-C1\",\n        \"link\": \"experiments/core_recovery_bridge_01/PROOFS.md\"\n      },\n      {\n        \"id\": \"RCF-C1\",\n        \"link\": \"research/core-recovery-01/DONOR_RECONCILIATION.md\"\n      },\n      {\n        \"id\": \"RCF-C2\",\n        \"link\": \"research/core-recovery-01/DONOR_RECONCILIATION.md\"\n      },\n      {\n        \"id\": \"RCF-C3\",\n        \"link\": \"research/core-recovery-01/DONOR_RECONCILIATION.md\"\n      },\n      {\n        \"id\": \"RCF-R1\",\n        \"link\": \"research/core-recovery-01/CONCEPT_REGISTER.md\"\n      },\n      {\n        \"id\": \"RCF-AD1\",\n        \"link\": \"research/core-recovery-01/RETURN_TO_WILLIAM.md\"\n      }\n    ],\n    \"files_present_boolean_not_accepted\": true,\n    \"ids\": [\n      \"RCF-P1\",\n      \"RCF-P2\",\n      \"RCF-P3\",\n      \"RCF-F1\",\n      \"RCF-F2\",\n      \"RCF-F3\",\n      \"RCF-C1\",\n      \"RCF-C2\",\n      \"RCF-C3\",\n      \"RCF-N1\",\n      \"RCF-R1\",\n      \"RCF-PI1\",\n      \"RCF-AD1\"\n    ]\n  },\n  \"status\": \"PASS\",\n  \"tree\": {\n    \"missing\": [],\n    \"required_files\": [\n      \"run_portable.py\",\n      \"MANIFEST.json\",\n      \"research/core-recovery-01/CONCEPT_REGISTER.json\",\n      \"research/core-recovery-01/CONCEPT_REGISTER.source.md\",\n      \"research/core-recovery-01/check_ids.py\",\n      \"research/core-recovery-01/sources/RPRM-CONCEPT-RECOVERY.zip\",\n      \"experiments/core_recovery_bridge_01/prestige_envelope.py\",\n      \"experiments/core_recovery_bridge_01/check_envelope.py\",\n      \"experiments/core_recovery_bridge_01/PROTOCOL.json\",\n      \"experiments/core_recovery_bridge_01/PROOFS.md\",\n      \"experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope.json\",\n      \"experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope_02.json\",\n      \"experiments/core_recovery_bridge_01_r1/prestige_envelope.py\",\n      \"experiments/core_recovery_bridge_01_r1/check_envelope.py\",\n      \"experiments/core_recovery_bridge_01_r1/PROTOCOL.json\",\n      \"experiments/core_recovery_bridge_01_r1/runs/envelope_r1.json\",\n      \"experiments/core_recovery_bridge_01_r1/runs/envelope_r1_02.json\",\n      \"rprm/core.py\",\n      \"rprm/__init__.py\"\n    ]\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/RPRM-CORE-FORMALIZATION-01/check_bridge.py",
+        "--output",
+        "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/run/starter_replay.json"
+      ],
+      "cwd": "/mnt/data/RCF01-R1-REVIEW-02/results/runner_controls/starter_failure/package/RPRM-CORE-FORMALIZATION-01",
+      "exit_code": 7,
+      "seconds": 0.7449,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "donor_replay": "NOT_REPLAYED; historical logs only"
+}

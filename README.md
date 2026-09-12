@@ -81,6 +81,9 @@ are part of the mathematical contract, not annotations added after solving.
 | [Formal proofs](docs/formal-proofs.md) | The exact 20 Lean declarations and their relation to the written mathematics |
 | [References](docs/references.md) | Established mathematical context and scholarly credit |
 | [Included tools](CONTENTS.md) | API inventory and development status |
+| [Core recovery RCF01](research/core-recovery-01/README.md) | Recovered Prestige One, fiving, and cube register plus a bounded envelope experiment; not a paper edit |
+| [RCF01 R1 review repair](research/core-recovery-r1/RETURN_TO_WILLIAM_R1.md) | Portable export of the existing experiment plus a bounded composition/status repair; not a new campaign |
+| [RCF01 R2 guard repair](research/core-recovery-r2/README.md) | Family, map-interface, and aggregate-runner guards on the reviewed R1 implementation; not a new campaign |
 | [Agent instructions](AGENTS.md) | A small starting contract for agents using or extending RPRM |
 
 The main book contains 73 written theorem, proposition, lemma and corollary

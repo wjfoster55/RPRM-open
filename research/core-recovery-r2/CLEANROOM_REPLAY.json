@@ -1,0 +1,40 @@
+{
+  "python": "3.14.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "PYTHONPATH": null,
+  "extract": "C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_cleanroom",
+  "command": "python -B run_portable.py --output-dir C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_cleanroom_out",
+  "overall_exit": 0,
+  "status": "PASS",
+  "reported_scope": "envelope_controls_ids_export_starter",
+  "jobs": {
+    "envelope": {"exit": 0, "seconds": 17.1562, "cases": "28/28"},
+    "omit": {"exit": 2, "seconds": 16.7216, "receipt": "Coverage mismatch missing PE28"},
+    "duplicate": {"exit": 2, "seconds": 16.6535, "receipt": "Duplicate emitted case IDs"},
+    "unexpected": {"exit": 2, "seconds": 16.7006, "receipt": "Coverage mismatch UNDECLARED"},
+    "reorder": {"exit": 0, "seconds": 16.7323, "cases": 28},
+    "ids": {"exit": 0, "seconds": 0.0645, "ids": 13},
+    "export": {"exit": 0, "seconds": 0.1149},
+    "starter": {"exit": 0, "seconds": 1.9633, "cases": "12/12"}
+  },
+  "official_zip": {
+    "path": "C:\\github\\RPRM-open\\research\\core-recovery-r2\\dist_02\\RCF01-portable-r2.zip",
+    "sha256": "f33d4dfa04b4451dc3b847bd06121c9a0d1601413939e765c8e42f954102926c"
+  },
+    "path": "C:\\github\\RPRM-open\\research\\core-recovery-r2\\dist\\RCF01-portable-r2.zip",
+    "sha256": "a06247f926b4e5834b1bf7a5ff995b65207399d31b294e359350ed33ef7d6487",
+    "role": "historical first packaging; not the active ZIP"
+  },
+  "runner_harness": {
+    "command": "python -B research/core-recovery-r2/check_runner.py --package <extract> --output-dir C:\\Users\\bkbee\\Downloads\\RCF01-portable-r2_runner_02",
+    "exit": 0,
+    "status": "PASS",
+    "not_mathematical_evidence": true
+  },
+  "export_mutations": {
+    "id-only": 2,
+    "missing-source": 2,
+    "missing-receipt": 2
+  },
+  "donor_replay": "NOT_REPLAYED; historical logs only"
+}

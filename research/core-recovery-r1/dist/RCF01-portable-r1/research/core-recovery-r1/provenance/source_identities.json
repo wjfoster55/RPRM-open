@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-09-11",
+  "workspace": "C:\\github\\RPRM-open",
+  "git_head": "4f5c8145a1d9389f28079ef63a385e406122fd34",
+  "git_head_note": "matches the prior RCF01 report; working tree still has uncommitted RCF01 and R1 files",
+  "review_zip": {
+    "path": "C:\\Users\\bkbee\\Downloads\\RCF01-REVIEW-01.zip",
+    "sha256": "EA6FC79CA7CFC1AEFD12FD321F11811642ACC1B432E18351A4B47B8E74A0454D"
+  },
+  "frozen_original": {
+    "prestige_envelope.py": "0e93e04d6aaa47419712110f69216dcd5bbf8ae98f0c5b5d2f22a6ad3999a1c3",
+    "check_envelope.py": "2544874728e7461bac8b57e08469cd689838c76cf6c96ef8c51ef87aa117730e",
+    "PROTOCOL.json": "381ff518623ae6c4ee95db287787c444bf8ded57a5b2e48fe60d27ae1c040c56",
+    "PROOFS.md": "d7d3eb4f858f4275fdcd5e70c500a70fc043117caba3435c19e18daa2914bdf8",
+    "cursor_rcf01_envelope.json": "ee44d1d0e734e89196b3d34a1e1e345647b9630f50450d24e29d3822fdf66323",
+    "cursor_rcf01_envelope_02.json": "c9246334d99eb2dabd7e325a46be69d577b3670793057a1b844980d5df2306e7",
+    "CONCEPT_REGISTER.source.md": "36f059195564fcc58a6a7f49e24eb5d736607ed85eff38a9a9b6ffda257558e2",
+    "RPRM-CONCEPT-RECOVERY.zip": "7887e3a0518d8ac849f23305ed0e3a70abfe80ba160b786fc44ae0ad08e516f2",
+    "rprm.core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
+    "check_bridge.py": "92e1be0ade3db207f16657a8234369097c0cedf755c5286c11b2305556f63466"
+  },
+  "successor_r1": {
+    "prestige_envelope.py": "0edf6572fd2c0319d443250caa342e091593fe919dca1c0d66416bcfb3d2d720",
+    "check_envelope.py": "22c44904ad180bcbb81de506e020b9ae14d5104f2d28652918143f38bec9323c",
+    "PROTOCOL.json": "e7b9f81fbf1e55db9960cf4b22b305927bfad231019c950d8bf10e6e3910950d",
+    "PROTOCOL.inherited.json": "381ff518623ae6c4ee95db287787c444bf8ded57a5b2e48fe60d27ae1c040c56",
+    "envelope_r1.json_development_FAIL_checker": "3c653b1e02efba385c7c52302462116aed5a133e434c1e21ece83e3ff0115610",
+    "envelope_r1_02.json_PASS_checker": "22c44904ad180bcbb81de506e020b9ae14d5104f2d28652918143f38bec9323c",
+    "envelope_r1.json": "35465242d8181c7cfa08f246c21f513b65cba7b5fbcdf13acebcf7902971ae9c",
+    "envelope_r1_02.json": "f26b68cfe166b8e0362f0985ba6e984b74f25d9f600521c85f550c9909d8fcdf"
+  },
+  "note": "Frozen original bytes were not overwritten. Successor protocol is not retroactive preregistration."
+}

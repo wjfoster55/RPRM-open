@@ -1,0 +1,239 @@
+#!/usr/bin/env python3
+"""Build the RCF01-R2 portable ZIP from this workspace. No secrets, no traversal."""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import shutil
+import stat
+import zipfile
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[2]
+OUT_DIR = Path(__file__).resolve().parent / "dist"
+STAGING_NAME = "RCF01-portable-r2"
+SKIP_NAMES = {".env", "credentials.json", ".git"}
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def refuse_outside(root: Path, path: Path) -> Path:
+    resolved = path.resolve()
+    resolved.relative_to(root.resolve())
+    if resolved.is_symlink():
+        raise RuntimeError(f"symlink refused: {path}")
+    return resolved
+
+
+FILES = [
+    "CONTENTS.md",
+    "research/core-recovery-01/README.md",
+    "research/core-recovery-01/RETURN_TO_WILLIAM.md",
+    "research/core-recovery-01/DONOR_RECONCILIATION.md",
+    "research/core-recovery-01/FORMAL_BRIDGE_NOTE.md",
+    "research/core-recovery-01/CONCEPT_REGISTER.md",
+    "research/core-recovery-01/CONCEPT_REGISTER.json",
+    "research/core-recovery-01/CONCEPT_REGISTER.source.md",
+    "research/core-recovery-01/check_ids.py",
+    "research/core-recovery-01/provenance/STARTER_PROTOCOL.json",
+    "research/core-recovery-01/sources/RPRM-CONCEPT-RECOVERY.zip",
+    "research/core-recovery-r1/STATUS_CORRECTIONS.md",
+    "research/core-recovery-r1/README.md",
+    "research/core-recovery-r1/check_export.py",
+    "research/core-recovery-r1/RETURN_TO_WILLIAM_R1.md",
+    "research/core-recovery-r2/README.md",
+    "research/core-recovery-r2/GUARD_CORRECTIONS.md",
+    "research/core-recovery-r2/check_export.py",
+    "research/core-recovery-r2/check_runner.py",
+    "research/core-recovery-r2/run_portable.py",
+    "research/core-recovery-r2/build_export.py",
+    "experiments/core_recovery_bridge_01/README.md",
+    "experiments/core_recovery_bridge_01/prestige_envelope.py",
+    "experiments/core_recovery_bridge_01/check_envelope.py",
+    "experiments/core_recovery_bridge_01/PROTOCOL.json",
+    "experiments/core_recovery_bridge_01/PROOFS.md",
+    "experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope.json",
+    "experiments/core_recovery_bridge_01/runs/cursor_rcf01_envelope_02.json",
+    "experiments/core_recovery_bridge_01/runs/env_control_omit.json",
+    "experiments/core_recovery_bridge_01/runs/env_control_duplicate.json",
+    "experiments/core_recovery_bridge_01/runs/env_control_unexpected.json",
+    "experiments/core_recovery_bridge_01/runs/env_control_reorder.json",
+    "experiments/core_recovery_bridge_01/runs/donor_fiving_verify.txt",
+    "experiments/core_recovery_bridge_01/runs/donor_double_stamp_verify.txt",
+    "experiments/core_recovery_bridge_01/runs/donor_graded_scar.txt",
+    "experiments/core_recovery_bridge_01/runs/donor_ternary_bridge.txt",
+    "experiments/core_recovery_bridge_01/runs/donor_prestige_examples.txt",
+    "experiments/core_recovery_bridge_01_r1/README.md",
+    "experiments/core_recovery_bridge_01_r1/prestige_envelope.py",
+    "experiments/core_recovery_bridge_01_r1/check_envelope.py",
+    "experiments/core_recovery_bridge_01_r1/PROTOCOL.json",
+    "experiments/core_recovery_bridge_01_r1/PROTOCOL.inherited.json",
+    "experiments/core_recovery_bridge_01_r1/PROOFS.md",
+    "experiments/core_recovery_bridge_01_r1/runs/envelope_r1.json",
+    "experiments/core_recovery_bridge_01_r1/runs/envelope_r1_02.json",
+    "experiments/core_recovery_bridge_01_r1/runs/envelope_r1_omit.json",
+    "experiments/core_recovery_bridge_01_r1/runs/envelope_r1_duplicate.json",
+    "experiments/core_recovery_bridge_01_r1/runs/envelope_r1_unexpected.json",
+    "experiments/core_recovery_bridge_01_r1/runs/envelope_r1_reorder.json",
+    "experiments/core_recovery_bridge_01_r2/README.md",
+    "experiments/core_recovery_bridge_01_r2/prestige_envelope.py",
+    "experiments/core_recovery_bridge_01_r2/check_envelope.py",
+    "experiments/core_recovery_bridge_01_r2/PROTOCOL.json",
+    "experiments/core_recovery_bridge_01_r2/PROTOCOL.inherited.json",
+    "experiments/core_recovery_bridge_01_r2/PROOFS.md",
+    "experiments/core_recovery_bridge_01_r2/runs/envelope_r2.json",
+    "experiments/core_recovery_bridge_01_r2/runs/envelope_r2_02.json",
+    "experiments/core_recovery_bridge_01_r2/runs/envelope_r2_omit.json",
+    "experiments/core_recovery_bridge_01_r2/runs/envelope_r2_duplicate.json",
+    "experiments/core_recovery_bridge_01_r2/runs/envelope_r2_unexpected.json",
+    "experiments/core_recovery_bridge_01_r2/runs/envelope_r2_reorder.json",
+    "rprm/__init__.py",
+    "rprm/core.py",
+    "RPRM-CORE-FORMALIZATION-01/CURSOR_START_HERE.md",
+    "RPRM-CORE-FORMALIZATION-01/README.md",
+    "RPRM-CORE-FORMALIZATION-01/check_bridge.py",
+    "RPRM-CORE-FORMALIZATION-01/PROTOCOL.json",
+    "RPRM-CORE-FORMALIZATION-01/MANIFEST.json",
+    "RPRM-CORE-FORMALIZATION-01/runs/cursor_rcf01_starter.json",
+    "RPRM-CORE-FORMALIZATION-01/runs/control_omit.json",
+    "RPRM-CORE-FORMALIZATION-01/runs/control_duplicate.json",
+    "RPRM-CORE-FORMALIZATION-01/runs/control_unexpected.json",
+    "RPRM-CORE-FORMALIZATION-01/runs/control_reorder.json",
+]
+
+OPTIONAL = [
+    "research/core-recovery-r2/RETURN_TO_WILLIAM_R2.md",
+    "research/core-recovery-r2/CLEANROOM_REPLAY.json",
+    "research/core-recovery-r2/provenance/source_identities.json",
+]
+
+REVIEW_ROOT = Path(__file__).resolve().parent / "review" / "RCF01-R1-REVIEW-02"
+REVIEW_FILES = [
+    "CURSOR_RCF01_R2.md",
+    "REVIEW.md",
+    "README.md",
+    "MANIFEST.json",
+    "independent_review.py",
+    "review_runner_controls.py",
+]
+
+
+def copy_file(src: Path, dest: Path) -> dict:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dest)
+    data = dest.read_bytes()
+    return {"path": str(dest), "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+
+def add_tree(staging: Path, src_root: Path, dest_rel: Path, manifest_files: dict, missing: list) -> None:
+    if not src_root.is_dir():
+        missing.append(str(dest_rel) + " (missing review tree)")
+        return
+    for path in sorted(src_root.rglob("*")):
+        if path.is_dir():
+            continue
+        rel = dest_rel / path.relative_to(src_root)
+        dest = staging / rel
+        refuse_outside(staging, dest.parent)
+        copy_file(path, dest)
+        manifest_files[rel.as_posix()] = {"bytes": dest.stat().st_size, "sha256": sha256(dest)}
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--out-dir", type=Path, default=OUT_DIR)
+    args = parser.parse_args()
+    out_dir = args.out_dir
+    if out_dir.exists():
+        raise SystemExit("out-dir already exists; choose a fresh successor directory")
+    staging = out_dir / STAGING_NAME
+    staging.mkdir(parents=True)
+    manifest_files = {}
+    missing = []
+    for rel in FILES:
+        src = refuse_outside(REPO, REPO / rel)
+        if src.name in SKIP_NAMES:
+            raise RuntimeError(f"secret-like name refused: {rel}")
+        if not src.is_file():
+            missing.append(rel)
+            continue
+        dest = staging / rel
+        refuse_outside(staging, dest.parent)
+        copy_file(src, dest)
+        manifest_files[rel.replace("\\", "/")] = {"bytes": dest.stat().st_size, "sha256": sha256(dest)}
+    for rel in OPTIONAL:
+        src = REPO / rel
+        if src.is_file():
+            dest = staging / rel
+            copy_file(src, dest)
+            manifest_files[rel.replace("\\", "/")] = {"bytes": dest.stat().st_size, "sha256": sha256(dest)}
+        else:
+            missing.append(rel + " (optional, not yet present)")
+    if REVIEW_ROOT.is_dir():
+        for name in REVIEW_FILES:
+            src = REVIEW_ROOT / name
+            if not src.is_file():
+                missing.append(f"review/RCF01-R1-REVIEW-02/{name}")
+                continue
+            dest = staging / "review" / "RCF01-R1-REVIEW-02" / name
+            copy_file(src, dest)
+            key = f"review/RCF01-R1-REVIEW-02/{name}"
+            manifest_files[key] = {"bytes": dest.stat().st_size, "sha256": sha256(dest)}
+        results = REVIEW_ROOT / "results"
+        if results.is_dir():
+            add_tree(staging, results, Path("review/RCF01-R1-REVIEW-02/results"), manifest_files, missing)
+    shutil.copy2(REPO / "research" / "core-recovery-r2" / "run_portable.py", staging / "run_portable.py")
+    manifest_files["run_portable.py"] = {
+        "bytes": (staging / "run_portable.py").stat().st_size,
+        "sha256": sha256(staging / "run_portable.py"),
+    }
+    readme = staging / "README.md"
+    readme.write_text(
+        "# RCF01 portable export R2\n\n"
+        "This is the one active R2 portable package. Frozen RCF01 and R1 sources\n"
+        "are included as historical trees, not as nested active exports.\n\n"
+        "Clean-room replay (from this extracted directory, existing Python only,\n"
+        "PYTHONPATH unset):\n\n"
+        "    python -B run_portable.py --output-dir runs/cleanroom_r2\n\n"
+        "Runner-only aggregation fixtures (not mathematical evidence):\n\n"
+        "    python -B research/core-recovery-r2/check_runner.py --package . --output-dir runs/runner_r2\n\n"
+        "Protocol `RCF01-envelope-1-r2`: original 22 cases, R1 PE23–PE26, plus PE27–PE28.\n",
+        encoding="utf-8",
+    )
+    manifest_files["README.md"] = {"bytes": readme.stat().st_size, "sha256": sha256(readme)}
+    payload = {
+        "package": "RCF01-portable-r2",
+        "inherits": "RCF01-envelope-1-r1",
+        "original": "RCF01-envelope-1",
+        "not_retroactive_preregistration": True,
+        "workspace_head_recorded": "4f5c8145a1d9389f28079ef63a385e406122fd34",
+        "files": manifest_files,
+        "missing_optional_or_unavailable": missing,
+        "non_replayable_donors": [
+            "experiments/core_recovery_bridge_01/runs/donor_*.txt are historical local logs; donor trees are not packaged"
+        ],
+    }
+    (staging / "MANIFEST.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    zip_path = out_dir / "RCF01-portable-r2.zip"
+    with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+        for path in sorted(staging.rglob("*")):
+            if path.is_dir():
+                continue
+            refuse_outside(staging, path)
+            if path.is_symlink() or stat.S_ISLNK(path.lstat().st_mode):
+                raise RuntimeError(f"symlink refused in zip: {path}")
+            zf.write(path, path.relative_to(staging).as_posix())
+    print(json.dumps({
+        "zip": str(zip_path),
+        "sha256": sha256(zip_path),
+        "files": len(manifest_files),
+        "missing": missing,
+    }, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

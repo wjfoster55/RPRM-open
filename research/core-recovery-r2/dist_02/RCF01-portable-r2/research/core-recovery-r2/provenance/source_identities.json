@@ -1,0 +1,26 @@
+{
+  "workspace_head": "4f5c8145a1d9389f28079ef63a385e406122fd34",
+  "review_zip": {
+    "path": "C:\\Users\\bkbee\\Downloads\\RCF01-R1-REVIEW-02.zip",
+    "sha256": "9e9db1721d2e255aa697bf58e10c11c6f2f2e66b29507207968b092c446e3a64"
+  },
+  "frozen_unchanged": {
+    "original_envelope": "0e93e04d6aaa47419712110f69216dcd5bbf8ae98f0c5b5d2f22a6ad3999a1c3",
+    "original_protocol": "381ff518623ae6c4ee95db287787c444bf8ded57a5b2e48fe60d27ae1c040c56",
+    "original_fail": "ee44d1d0e734e89196b3d34a1e1e345647b9630f50450d24e29d3822fdf66323",
+    "original_pass": "c9246334d99eb2dabd7e325a46be69d577b3670793057a1b844980d5df2306e7",
+    "r1_envelope": "0edf6572fd2c0319d443250caa342e091593fe919dca1c0d66416bcfb3d2d720",
+    "r1_checker": "22c44904ad180bcbb81de506e020b9ae14d5104f2d28652918143f38bec9323c",
+    "r1_protocol": "e7b9f81fbf1e55db9960cf4b22b305927bfad231019c950d8bf10e6e3910950d",
+    "r1_official_zip": "53d1e8761aeca98d26cb3732150af7a31ed109aad4e1c9187b3e4dc192315cea",
+    "concept_register_json": "8843b2a054bf8c727ce2757c29196227e6a2779df6cd62aa9391628925015be0",
+    "concept_register_source_md": "36f059195564fcc58a6a7f49e24eb5d736607ed85eff38a9a9b6ffda257558e2",
+    "rprm_core": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b"
+  },
+  "r2_successor": {
+    "envelope": "bebf2c25d26f2ecf92e3366082aaf38f4d379e18ac06ea0f1d9294ecc64ee3a8",
+    "checker": "635e28f19db32a74bc9689a8f92783904a0ab21aa171c5f75dcaadc8b1b417f9",
+    "protocol": "33ea582ebd832869c204cac061360899c8e9b7b39b5c668adb1ea2f7b61d8508",
+    "run_portable": "46ef570e0cef28b41fd735985e5aa72cf6a41af42e93913118c686551e9239da"
+  }
+}

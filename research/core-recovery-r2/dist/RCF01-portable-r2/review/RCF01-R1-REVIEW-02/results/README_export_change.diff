@@ -1,0 +1,10 @@
+--- first_return/README.md
++++ portable_export/README.md
+@@ -10,6 +10,7 @@
+ - Register: `CONCEPT_REGISTER.md` / `CONCEPT_REGISTER.json` / `check_ids.py`
+ - Experiment: `C:\github\RPRM-open\experiments\core_recovery_bridge_01\`
+ - Return: `RETURN_TO_WILLIAM.md`
++- Successor review repair (does not replace this folder): `../core-recovery-r1/`
+ 
+ No RPRM context ticket was compiled or sealed for this Cursor run.
+ The named source root is the unpacked package plus the copied recovery ZIP.
