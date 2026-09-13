@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-09-12T20:50:50.087980+00:00",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "source_snapshot": {
+    "work/bockstein_readout.py": "4461c6c7ebc1f6c98671545ca7b36ac1a6d8752ca916a728ab256539d9a0d01e",
+    "work/operational_shadow.py": "bcf7fbc5b468ba04dff43a5b1f17362ce809055821869bed3a4fafc798f3a4f0",
+    "work/padic_height.py": "814d864a6785d9122f86d379398f9c18bcf213f98936bd1c74d6fe0b8d909fda",
+    "work/padic_height_readback.py": "9f4c8a10acf79d0d223ca60aee88936198a3a8ec0c445eb74e221ba16f19bb05",
+    "work/rational_ec.py": "e7b78d2a5495334bfd7229b955db0679e1453935c4c1b80ec309b19b0e672246",
+    "work/run_operational.py": "1dde86147fd30182ede15ca0460d3229515eeeb2b316c489a2f32f6c257eb960",
+    "input_source/cm_action.py": "c2df97cc98feaad094149ac491c23d6c7df37006e9cb5c1d16b2c2816590368a",
+    "input_source/trace125.py": "f1f9eb8039d9088f0d0e1e318771b880c58e3578c0e7457e55e2ab641c12699a"
+  },
+  "saved_evidence_copied_as_input": false,
+  "jobs": [
+    {
+      "name": "height",
+      "exit_code": 0,
+      "elapsed_seconds": 0.14071700000204146,
+      "log": "logs/height.log",
+      "log_sha256": "508c63d4839e04065bcaa3961d0fd180da15dd8ee4708f875d47a21f4ec75eb0"
+    },
+    {
+      "name": "independent_height",
+      "exit_code": 0,
+      "elapsed_seconds": 0.13702309998916462,
+      "log": "logs/independent_height.log",
+      "log_sha256": "a4dc51a879a4e44e37b24275cbc0508e3ca5585b4c762321f9d4275cb6c36e3d"
+    },
+    {
+      "name": "arithmetic_vector",
+      "exit_code": 0,
+      "elapsed_seconds": 0.1458864000160247,
+      "log": "logs/arithmetic_vector.log",
+      "log_sha256": "22be496b40828f27f65f6ac2bb53c8bbcd130eacddbca25d021df3b121bfe757"
+    },
+    {
+      "name": "operational_shadow",
+      "exit_code": 0,
+      "elapsed_seconds": 27.63583339995239,
+      "log": "logs/operational_shadow.log",
+      "log_sha256": "56adbea717faf5111c7bdcb20147a1f0bcda079dd74d1aea896d96e60c44eb48"
+    }
+  ],
+  "status": "ALL_NEW_EXACT_CALCULATIONS_VERIFIED",
+  "full_BSD": "OPEN",
+  "total_Sha": "OPEN",
+  "MST_determinant_mod5": 3,
+  "operational_partition_counts": [
+    2048,
+    4096,
+    4096
+  ],
+  "W_div5_coordinates_mod5": [
+    0,
+    3
+  ],
+  "elapsed_seconds": 28.105602099967655,
+  "evidence_files": {
+    "evidence/bockstein_readout.json": "a4e22286008b6baf3987325eae35bd50c2f416ee0144849c0e00a345805c7817",
+    "evidence/operational_shadow.json": "006ea8f80f61a734258146d91a6f46cf3ae2fdbb675f4419f37131b812c33d91",
+    "evidence/padic_height.json": "d36cf769204be707d9d73b20752247ca5844675c4376edb513599de069a8814c",
+    "evidence/padic_height_readback.json": "08524b97dad3a175fe75658482bf9f4c073a8a6535017555fe20a5aa3e28efec"
+  }
+}

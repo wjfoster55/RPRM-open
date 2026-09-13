@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "free_index": 1,
+  "height_bound": 987,
+  "raw_pairs": 61225,
+  "reduced_abscissas": 38205,
+  "affine_points": 25,
+  "all_points_have_exact_membership_witnesses": true,
+  "P_height": [
+    "2512877833/1000000000",
+    "2513028381/1000000000"
+  ],
+  "Q_height": [
+    "754646641/250000000",
+    "377342139/125000000"
+  ],
+  "B_pairing": [
+    "348557887/500000000",
+    "697341597/1000000000"
+  ],
+  "regulator_interval": [
+    "3549526981/500000000",
+    "3550100817/500000000"
+  ],
+  "output": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\evidence\\generator.json"
+}
+
+STDERR:

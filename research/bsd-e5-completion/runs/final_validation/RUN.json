@@ -1,0 +1,77 @@
+{
+  "started_utc": "2026-09-12T18:28:23.408618+00:00",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "commands": [
+    {
+      "stage": "import",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\work\\verify_import.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\runs\\final_validation\\review_import.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.22405540000181645,
+      "source_sha256": "de32f6a84bf5a4e16c68626e4200af35a2290facd202953d93afb84d18cf5e28"
+    },
+    {
+      "stage": "generator",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\work\\generator_check.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\runs\\final_validation\\generator.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.12186319997999817,
+      "source_sha256": "6325b393ed5064483724c7e88c0855c56e42eeeb2d70f132c3a82b118155b0ad"
+    },
+    {
+      "stage": "factors",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\work\\bsd_factors.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\runs\\final_validation\\bsd_factors.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.2519937999895774,
+      "source_sha256": "626a64df5515644281b54f42cb8cbd93592b813e5d37c59faccc41ea6a8ba490"
+    },
+    {
+      "stage": "coordinates",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\work\\coordinate_check.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\runs\\final_validation\\coordinates.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.12844360002782196,
+      "source_sha256": "642d21d6044ca54f45ba7ba53e2b2134fa9a13258f21a076411d824e2b7470ad"
+    },
+    {
+      "stage": "integration",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\work\\final_check.py",
+        "--input-dir",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\runs\\final_validation",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\runs\\final_validation\\final_check.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.2095786000136286,
+      "source_sha256": "3933d8d6ef0539190baf9bbc81f8d14f3cc7bdfe1674095987b61dad66c97ffd"
+    }
+  ],
+  "scope": "Fresh bounded continuation computations; prior accepted analytic/descent proofs reused with source identity, not rerun. Cited theorems retain their written source audit.",
+  "finished_utc": "2026-09-12T18:28:24.514277+00:00",
+  "status": "ALL_STAGES_COMPLETED"
+}

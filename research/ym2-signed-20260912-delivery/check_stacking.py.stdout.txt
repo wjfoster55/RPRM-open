@@ -1,0 +1,2 @@
+PASS: complete product-basis controls; receipt compared_without_writing
+{"complete_basis_eigenvectors": 90, "complete_sum_fibers": 42, "cubes": 12, "off_diagonal_orthogonality_controls": 465}

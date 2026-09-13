@@ -1,0 +1,564 @@
+{
+  "schema": "rprm-context-compile-view/v1",
+  "packet_id": "packet:d96316463e66a528f24574b05076c0ddd39c917a41d6323e3e30e30b0dbbf57a",
+  "packet_schema": "rprm-context-packet/v1",
+  "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+  "receiver": {
+    "schema": "rprm-memory-receiver/v1",
+    "objective": "vaulting blockchain ledger Full Zip pi rail FLICK past present future",
+    "namespace": "rprm-alpha",
+    "operations": [],
+    "contradiction_mode": "CURRENT",
+    "allowed_record_kinds": [
+      "CLAIM",
+      "OBSERVATION",
+      "RELATION"
+    ],
+    "allowed_authorities": [
+      "FROZEN_LOCAL_BYTES",
+      "LOCAL_OCCURRENCE",
+      "OFFICIAL_RECORD",
+      "PRIMARY_SOURCE",
+      "SECONDARY_SOURCE",
+      "UNVERIFIED"
+    ],
+    "as_of": null,
+    "as_known": null,
+    "max_payload_bytes": 16000,
+    "max_candidates": 48,
+    "graph_depth": 1,
+    "output_schema": "text/context",
+    "model_receipt": "unspecified",
+    "tokenizer_receipt": "NONE_BYTE_BUDGET"
+  },
+  "receiver_sha256": "f0cc93b8a2319a8cc24734c4bb129a9207db1f3d255e539d75dfdc6972f3a6e7",
+  "compiler": {
+    "version": "rcmf-stage1-0.1",
+    "code_sha256": "62217cf808cc2b84213a637f6e0010d619164cf143d331c5e97de26e5ce1a7b2",
+    "python": "3.14.5",
+    "sqlite": "3.50.4",
+    "search": "SQLITE_FTS5_POLICY_LOCAL_BM25_THEN_RECORD_ID",
+    "search_projection_sha256": "d4fb557b8fbf611496c3e46e571c98f327e83d1d5813c32c0544cd900b9a29f1",
+    "search_projection_policy": "REBUILT_FROM_AUTHORITY_BEFORE_COMPILE",
+    "embedding_lane": "OMITTED_NOT_IMPLEMENTED"
+  },
+  "query_terms": [
+    "vaulting",
+    "blockchain",
+    "ledger",
+    "full",
+    "zip",
+    "pi",
+    "rail",
+    "flick",
+    "past",
+    "present",
+    "future"
+  ],
+  "match_fiber": {
+    "disposition": "MANY",
+    "cardinality": 625,
+    "scope": "policy-visible lexical matches before packet packing"
+  },
+  "receiver_sufficiency": {
+    "disposition": "OPEN",
+    "cardinality": null,
+    "scope": "answer plus declared downstream operation family",
+    "missing": [
+      "finite receiver certificate",
+      "transition-descent census"
+    ]
+  },
+  "strong_reconstruction": {
+    "disposition": "OPEN",
+    "cardinality": null,
+    "scope": "full authority snapshot from the hot packet",
+    "missing": [
+      "all authority records outside packet members",
+      "complete snapshot manifest"
+    ]
+  },
+  "members": [
+    {
+      "member_id": "member:ff643560b1ac6325842620f504a0caa826ae19810d1c9626848362f4a521d250",
+      "record_id": "occurrence:a1c0a688651e0890ded76ed99a0664483fb1753c175ced72c05898c40a7a77b8",
+      "record_kind": "OBSERVATION",
+      "title": "7. Full closure and live seam",
+      "retrieval_rank": 1,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## 7. Full closure and live seam\n\n```text\nROOT -> SELECT(supplied sigma) -> TYPE -> SOLVE/EXECUTE\n     -> PROVE/TEST CAR-or-FOLD AND DESCENT -> REFINE or CLOSE/PROMOTE\n     -> SEAL -> FLICK -> FOLD/INHERIT -> REOPEN.\n```\n\nThe selection port remains explicit:\n\n```text\nsigma = (target, lens, branch, future, stopping rule, landing rule, authority).\n```\n\nA live seam remains `EVENT` until certified. Closure state and closure event are separate receivers. Publication is one atomic `FLICK` from a sealed prior root; failed landing leaves that prior root current, and `INHERIT` reopens only the affected dependency cone. Evidence closes by intersection, `V(E)=intersection_(e in E) S_e`; repetition is idempotent, and same-root views may refine a fiber without adding ancestry.\n\n`EXACT`: typed finite completion; selected ordered-dyad `0|1` CAR; finite codebook addressing; finite deterministic receiver factorization/descent and the stated target/strong repair-alphabet minima; supplied finite-group residue; supplied radix trichotomy; supplied canonical finite path.  \n`SCOPED`: affine, geometric, prime, pi, and domain adapters on named carriers.  \n`OPEN`: global kernel minimality; target/law/topology authorship; one universal repair/composition rule; unbounded, continuous, stochastic, quantum, or physical closure.\n\n**Strongest lawful totality:** RPRM is currently a finite typed calculus of construction, completion, lawful loss, future-preserving change, stated receiver-specific repair minima, atomic closure, and receipt-preserving reopen. Its universal generative and physical extensions remain open.\n",
+      "excerpt_utf8_bytes": 1610,
+      "excerpt_sha256": "8810f8028f4ff3d970f64ff676c00342b1ba6fff11ebeacb62258119d72dd34d",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:a1c0a688651e0890ded76ed99a0664483fb1753c175ced72c05898c40a7a77b8",
+        "event_id": "event:c7e38b271479c3931e64304b6439700906f9850ce949b3ccca88f48676756757",
+        "blob_sha256": "f5c56c6bca5256cc9216f1ded9c767b383827a54c985e1595f2b2a8335432be7",
+        "byte_length": 8598,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_ONE_PAGE_MATHEMATICAL_CLOSURE.md",
+        "source_byte_start": 6988,
+        "source_byte_end": 8598,
+        "slice_sha256": "8810f8028f4ff3d970f64ff676c00342b1ba6fff11ebeacb62258119d72dd34d",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T17:00:07.622304Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 6988,
+      "exact_source_byte_end": 8598
+    },
+    {
+      "member_id": "member:0844b0286df86a3a8ff9eebec537d79e2c0b5e7a3a5b8e619e63ecfa828e0803",
+      "record_id": "occurrence:e0ae309cac7a5faa7e0e942217b83acf3acc9b3929078363a8f6112a259b7512",
+      "record_kind": "OBSERVATION",
+      "title": "Evidence and boundary",
+      "retrieval_rank": 2,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## Evidence and boundary\n\n- The identities for `C_d`, `u_d`, `z_d`, `rho_d`, `2^d`, and the exact ZIP fibers are elementary finite theorems; the four displayed levels are direct finite instances.\n- The four page meanings—aperture, orientation, incidence, and future/descent—are a `SCOPED` presentation synthesis over named RPRM receivers.\n- The five-occurrence layout example is a receiver hostile only.\n- The geometry, prime, and Pi strips are separately supplied adapters.\n- The binary product/cardinality/ZIP theorem is exact for every supplied finite `d`. Extending this artifact's four semantic page roles beyond `d=3`, adding a nonbinary coordinate, treating a dependent bit as a new dimension, claiming physical dimensionality, or asserting a universal learning/development order is `OPEN` or `OPEN_NEW_CARRIER`.\n\n**Strongest lawful conclusion.** This four-page ladder is a scoped human-readable presentation projection of the current closure sheet. It preserves the exact finite ZIP/UNZIP fiber law and the target/descent checks, while leaving the full strong packet as the explicit reopen source.\n",
+      "excerpt_utf8_bytes": 1110,
+      "excerpt_sha256": "8dd17d521c659b34a029beb0004234a35a53f809e85a513882dfa92d97d66b58",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:e0ae309cac7a5faa7e0e942217b83acf3acc9b3929078363a8f6112a259b7512",
+        "event_id": "event:8eedacf8666d2bca0d20e36cd93f50a99a8ffefde8a3264edec95666b672c6dd",
+        "blob_sha256": "ce9a49d5f59b40954634b7e86c347ff7e5743443e19b37db7d1a62ac1a4b2ada",
+        "byte_length": 8580,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_DIMENSIONAL_UNZIP_0_TO_3.md",
+        "source_byte_start": 7470,
+        "source_byte_end": 8580,
+        "slice_sha256": "8dd17d521c659b34a029beb0004234a35a53f809e85a513882dfa92d97d66b58",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T17:38:45.951388Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 7470,
+      "exact_source_byte_end": 8580
+    },
+    {
+      "member_id": "member:65747eecd86e761cb5c958325f2a504bcdf8cfbbe85c328c4e12cb724c415b9e",
+      "record_id": "occurrence:efe3a614d01b5e084bfb550e2893e18fad305ccf2b2256ba856f26e443c1ad3b",
+      "record_kind": "OBSERVATION",
+      "title": "Page 3 — Descent: ask whether the Fold survives a move",
+      "retrieval_rank": 3,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## Page 3 — Descent: ask whether the Fold survives a move\n\n**Exact claim.** A Fold is safe for a named target and admitted future exactly when the target is constant on present fibers and every admitted operation preserves those fibers.\n\nType the third coordinate through a supplied phase codebook:\n\n```text\nC_3=C_2 x B\nphi:B <-> {before,after}; phi(0)=before; phi(1)=after\nid x phi displays the phase coordinate\nz_2(x,b)=x\nq(x)=q(y) => tau(x)=tau(y)         [target factorization]\nq(x)=q(y) => q(Tx)=q(Ty)           [operation descent]\n```\n\n- `KEEP`: strong carrier `X`, quotient `q`, target `tau`, operation/future `T`, finite boundary, cold receipt.\n- `OPEN`: the before/after coordinate and the question whether the Fold survives `T`.\n- `ZIP`: target `ONE` may coexist with strong `MANY`, but only after factorization and descent pass.\n- `BREAK`: find `x,y` with `q(x)=q(y)` but `q(Tx)!=q(Ty)`. The Fold then loses future behavior and must be refined.\n\n**Three-factor grouping.** On supplied finite sets, `|A x B x C|=|A||B||C|`. This is an iterated product count, not a physical-volume theorem until a measure or cell-volume adapter is supplied.\n\n**Page-three reveal.** `pi_const` is not born in dimension three. A supplied Euclidean sphere inherits the plane’s rotation/metric constant, for example `V=(4/3)pi_const r^3`. Current RPRM Pi work remains a separate hash-pinned finite Pi Cell; tail navigation moves inside a supplied root and generates no digit content.\n\n**Prime break.** `|C_d|=2^d` counts fixed-width binary words. After supplying an integer-value chart, the prime-valued receiver has\n\n```text\n|{w in C_d : val_d(w) is prime}| = PrimeCount(2^d-1).\n```\n\nPrimality appears only after that value chart and a divisibility receiver; it is not the number of unique `0|1` displays.\n\n",
+      "excerpt_utf8_bytes": 1801,
+      "excerpt_sha256": "134bffbbdd3d85e8f6a12286803480beeb5e67a0f57135552393ce5f104a46ef",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:efe3a614d01b5e084bfb550e2893e18fad305ccf2b2256ba856f26e443c1ad3b",
+        "event_id": "event:8eedacf8666d2bca0d20e36cd93f50a99a8ffefde8a3264edec95666b672c6dd",
+        "blob_sha256": "ce9a49d5f59b40954634b7e86c347ff7e5743443e19b37db7d1a62ac1a4b2ada",
+        "byte_length": 8580,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_DIMENSIONAL_UNZIP_0_TO_3.md",
+        "source_byte_start": 5309,
+        "source_byte_end": 7110,
+        "slice_sha256": "134bffbbdd3d85e8f6a12286803480beeb5e67a0f57135552393ce5f104a46ef",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T17:38:45.951388Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 5309,
+      "exact_source_byte_end": 7110
+    },
+    {
+      "member_id": "member:427eddcdffcb5a5d123936b0a4c52e4454a2f14de1e7f92e8105062cc4a3c149",
+      "record_id": "occurrence:d78df932640d7c5762764835acbcb6f1dc95e43db46c03c75a17062846c3fa32",
+      "record_kind": "OBSERVATION",
+      "title": "lenses.json — part 2",
+      "retrieval_rank": 4,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "965e665dd9e887ccc6cdb4a\"\r\n    },\r\n    {\r\n      \"id\": \"109be46f-22af-4a90-936f-c986c5887013\",\r\n      \"record_type\": \"lens\",\r\n      \"status\": \"candidate\",\r\n      \"claim_grade\": \"finite_test\",\r\n      \"title\": \"Finite Minimal-Completion Signatures and Decimal-Pi Two-Rail Bounds\",\r\n      \"summary\": \"On two disjoint frozen finite carriers, minimum typed repair fibers give proof-carrying completion signatures, while exact decimal-pi prefix and complement rails form nested one-unit enclosures with an involutive shadow and deterministic payload-level inverse.\",\r\n      \"contexts\": [\r\n        \"minimal-completion\",\r\n        \"minimum-repair-fiber\",\r\n        \"decimal-pi\",\r\n        \"two-rail-bounds\",\r\n        \"complement-involution\",\r\n        \"bounded-abduction\"\r\n      ],\r\n      \"carrier\": \"tagged disjoint union of additive deficits 0 through 9 under a declared repair language and decimal boundary states (n,p,q) for layers 0 through 160\",\r\n      \"operation\": \"enumerate least-cost repair words on the deficit branch; on the decimal branch apply F_d(n,p,q)=(n+1,10p+d,10q+9-d), its payload-level inverse, and J_n(p)=10^n-1-p\",\r\n      \"receiver\": \"branch-tagged minimum-repair disposition and certificate on the deficit carrier; exact rational enclosure and witnessed/inferred rail identity on the decimal carrier\",\r\n      \"input_type\": \"frozen target, operators, costs, word equivalence, receiver and expression tree; or a full certified decimal boundary payload plus its certified next digit\",\r\n      \"output_type\": \"NONE/ONE/MANY minimum-repair fiber with bound certificate; or a nested decimal boundary with deterministic predecessor\",\r\n      \"claim_ceiling\": \"Exact only for the declared additive languages on deficits 0 through 9 and the first 160 certified decimal layers; no cross-branch identification, universal equation compiler, pi digit generator, intrinsic digit seam, authentication, analytic theorem, or RH implication.\",\r\n      \"targets\": [],\r\n      \"source_file\": \"109be46f-22af-4a90-936f-c986c5887013--finite-minimal-completion-sign",
+      "excerpt_utf8_bytes": 2048,
+      "excerpt_sha256": "30bcd0c44c028a0d16da331ea8f4eb6a5118581bb92d5bdac6a6f20620c2338a",
+      "truncated_before": true,
+      "truncated_after": true,
+      "source_receipt": {
+        "occurrence_id": "occurrence:d78df932640d7c5762764835acbcb6f1dc95e43db46c03c75a17062846c3fa32",
+        "event_id": "event:0cf3a86ab447521f9c87355ac69c7b274880a70dc3b1f5adb526eed27b379d42",
+        "blob_sha256": "4c51d816c06f58df2fc1a8f676766b6e1daafdb36b408ce164b8593ddec909b1",
+        "byte_length": 84294,
+        "media_type": "application/json",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/knowledge/lenses.json",
+        "source_byte_start": 3913,
+        "source_byte_end": 8001,
+        "slice_sha256": "ba2e3519854732802990c558a80196fff4606ea8ac7bcf76e8fd5e9f43878450",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-22T22:32:17.100427Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 4434,
+      "exact_source_byte_end": 6482
+    },
+    {
+      "member_id": "member:f7b9fd9c2ba8fc25d10661d69ed83cd7afe228bf1d6d62565aeccbabd41bcd18",
+      "record_id": "occurrence:0404225365ef0b3826ee7f8aaf1af0d0b94365f0dc457ea050f994a3ea07efda",
+      "record_kind": "OBSERVATION",
+      "title": "4. Operational overlay of the rooted mechanisms",
+      "retrieval_rank": 5,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## 4. Operational overlay of the rooted mechanisms\n\n| Rooted family | Literal carrier | Receiver operation | What survives | What is forgotten / fiber | Future or hostile result | Recurrent missing port |\n|---|---|---|---|---|---|---|\n| CAD / *Loss* | four ordered panels; minimal people/stroke counts `1,2,2,2` | full comic occurrence -> ordered relational skeleton | recognition target | drawing, dialogue, story, exact people and scene; inverse `MANY` | count-only selector collides with ordinary controls | source-native RPRM attribution |\n| zero-one loss | ordered binary pairs with matrix `[[0,1],[1,0]]` | `(truth,prediction) -> equality/inequality` | binary correctness | error direction and class identity; two `MANY(2)` fibers | with one binary anchor, equality is the complete residue and can be a `CAR`; without it, it is a Fold | typed anchor and target |\n| *Is This a Pigeon?* | two title surfaces, question mark present/absent; one pre-existing body | title/address -> body | destination body | exact title route; inverse `MANY(2)` | `1234|qwer|1234|qwer|4` is a keyboard-address carrier, not a numeral decoder | provenance-preserving reopen |\n| Five timeline | exact member intervals, five rows, decimal axis, count/run ledgers | occupancy -> count -> delete zero -> collapse runs | nested restoration valleys | dates, identities, duration, duplicate runs, sign; large `MANY` fibers | selected bar topology fails canonical Loss; durations are all distinct | source-native target, operator, and selector |\n| `1221 -> 464` | oriented four-digit word `1221` | `F(w)=(length(w), digit-sum(w), length(w))` | length and digit sum | word identity; inverse `MANY(6)`, palindrome restriction `MANY(2)` | retained orientation/source receipt reopens one occurrence | why this profile is selected in a new artifact |\n| Eye-Able rail | `165+10k`, `0<=k<=24`, endpoint `405` | plus-only coordinate projection and clamped UI state | residue `5`, ordered step index under the rail | other integer routes and full UI/drag state | multiple routes lan",
+      "excerpt_utf8_bytes": 2048,
+      "excerpt_sha256": "5c73684d52bd35184b4fcab0a71bf6d5597affe752d6f1a4d7e119e01cab1c5e",
+      "truncated_before": false,
+      "truncated_after": true,
+      "source_receipt": {
+        "occurrence_id": "occurrence:0404225365ef0b3826ee7f8aaf1af0d0b94365f0dc457ea050f994a3ea07efda",
+        "event_id": "event:91866fb00459c26a819c7cfd5ceec911b8ef760f507e2cdd708d36beb006df5e",
+        "blob_sha256": "3af116eafee47e8fba4714a6d63b1174ffa93b5079de84fc7fa42a3d5e96a71b",
+        "byte_length": 24564,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_CROSS_ARTIFACT_OPERATIONAL_NUMBER_ATLAS_2026-08-30.md",
+        "source_byte_start": 6368,
+        "source_byte_end": 10387,
+        "slice_sha256": "6596e839f5e0e3cc5a6a123521f16bcd68799a26aa5947286d86cf505a5da071",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T16:23:40.989220Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 6368,
+      "exact_source_byte_end": 8416
+    },
+    {
+      "member_id": "member:e08b3185bf83d4496b035432fd58dfeb809a45a43c8ec08267fff94885ea4be6",
+      "record_id": "occurrence:8bdecbb4cac720422b0e723261c30109d2b394ab0d5d6f562017e407341c41ae",
+      "record_kind": "OBSERVATION",
+      "title": "18. Local RPRM basis",
+      "retrieval_rank": 6,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## 18. Local RPRM basis\n\nThe direct local donors are:\n\n- [`atlas/FOUNDATION.md`](../atlas/FOUNDATION.md) — typed carriers, receiver-\n  relative folds, aperture, exact fibers, cold reopen, and evidence ceilings;\n- [`atlas/CLAIM_LEDGER.md`](../atlas/CLAIM_LEDGER.md) — established Alpha claims\n  and the current no-model-intelligence ceiling;\n- [`experiments/RPRM_MINIMAL_RECEIVER_APERTURE_AUDIT_54/REPORT.md`](../experiments/RPRM_MINIMAL_RECEIVER_APERTURE_AUDIT_54/REPORT.md)\n  — minimum receiver aperture and adaptive probing;\n- [`experiments/RPRM_FINITE_STATE_COMPACT_INDEX_PEEK_AUDIT_68/REPORT.md`](../experiments/RPRM_FINITE_STATE_COMPACT_INDEX_PEEK_AUDIT_68/REPORT.md)\n  — present versus future-sufficient finite receivers;\n- [`experiments/RPRM_PERSISTENT_RAY_MERKLE_RECEIVER_AUDIT_75/REPORT.md`](../experiments/RPRM_PERSISTENT_RAY_MERKLE_RECEIVER_AUDIT_75/REPORT.md)\n  — compact present Peek, arbitrary future updates, immutable structural\n  sharing, and exact dependency cones;\n- [`experiments/RPRM_TARGET_RELATIVE_TWO_SHADOW_PEEK_AUDIT_85/REPORT.md`](../experiments/RPRM_TARGET_RELATIVE_TWO_SHADOW_PEEK_AUDIT_85/REPORT.md)\n  — target-`ONE` from a strong-state-`MANY` fiber;\n- [`experiments/RPRM_FINITE_RECEIVER_PRODUCT_PHASE_FACTOR_AUDIT_137/THEOREM.md`](../experiments/RPRM_FINITE_RECEIVER_PRODUCT_PHASE_FACTOR_AUDIT_137/THEOREM.md)\n  — joint receiver kernel refinement, exact repair tags, and operation descent;\n- [`brain/NARI_QUANTUM_BRAIN_ASSESSMENT.md`](../brain/NARI_QUANTUM_BRAIN_ASSESSMENT.md)\n  — the current boundary between context/state engineering and unestablished\n  intelligence claims;\n- [`patient-one/shadow-will/RUN_01_PATIENT_ONE.md`](../patient-one/shadow-will/RUN_01_PATIENT_ONE.md)\n  — earliest-invented-choice and falsifier discipline.\n\nThe registered lenses consulted before composition include typed operation\ndimension/receiver factorization, receiver-saturation and descended transition,\ntyped information aperture, typed contextual mathematics, and finite minimum-\ncompletion paths in [`knowledg",
+      "excerpt_utf8_bytes": 2048,
+      "excerpt_sha256": "1f72d9d454cfbd554a89f29ae5b722031985a80a9e1fa1bd8bab6bb7883f23f3",
+      "truncated_before": false,
+      "truncated_after": true,
+      "source_receipt": {
+        "occurrence_id": "occurrence:8bdecbb4cac720422b0e723261c30109d2b394ab0d5d6f562017e407341c41ae",
+        "event_id": "event:afda67bef0d7d9af4418d5e1c0986d306485c76a2b7a0b0c9bd9ad237c1d8309",
+        "blob_sha256": "72faaddae195d2dcc74df5ac75fb886847701985274bc79fea8801b54c2b73a1",
+        "byte_length": 52054,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_RECEIVER_COMPILED_MEMORY_FABRIC_SCOUT_2026-08-30.md",
+        "source_byte_start": 46824,
+        "source_byte_end": 48921,
+        "slice_sha256": "766d0a9226ba9a44f0e156c4217bb332d25040f0c1d16895906f5e2918a48baa",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-31T03:43:08.773286Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 46824,
+      "exact_source_byte_end": 48872
+    },
+    {
+      "member_id": "member:21d5152e16877a14f5b3a489793c5311a5f2428b4305f1844e4349510f535622",
+      "record_id": "occurrence:e6a04313a764e3bc748be68d0839af6dcf102ddc88119182d643d83e7760ac62",
+      "record_kind": "OBSERVATION",
+      "title": "7. Bottom-up evidence map — part 4",
+      "retrieval_rank": 7,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "Canonical Alpha anchors are the [Foundation](../atlas/FOUNDATION.md),\n[Claim Ledger](../atlas/CLAIM_LEDGER.md), and\n[lens catalog](../knowledge/lenses.json). The double-slit Gram construction is\npreserved in the historical read-only source\n`C:\\github\\RPRMResearch\\RPRM_METROIDVANIA_RELATION_ATLAS_01\\NOTE.md`,\nsection 2.4.\n\nThe prime and pi work matters because it repeatedly catches type errors and\nfalse hidden domain meanings. It does not erase a number's ordinary arithmetic\nidentity, and it is not evidence that primes or digits secretly encode\nparticles, constants, or physical dimensions.\n\n---\n\n",
+      "excerpt_utf8_bytes": 602,
+      "excerpt_sha256": "6b305175bb9dc3ea6e9112a007c183edfdafa9be99ea3f0a6e13303a5eb04238",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:e6a04313a764e3bc748be68d0839af6dcf102ddc88119182d643d83e7760ac62",
+        "event_id": "event:6832039e98206779eca56909486546726cde49af32eb4f5740363c75110a5b88",
+        "blob_sha256": "b230fd2c3c9c66484583fa925b5a8aaba5bc1cd4ffeda579eb6feb719a06411a",
+        "byte_length": 160319,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_RELATIONAL_UNIFICATION_PROGRAM_DRAFT_0_1_2026-08-28.md",
+        "source_byte_start": 89446,
+        "source_byte_end": 90048,
+        "slice_sha256": "6b305175bb9dc3ea6e9112a007c183edfdafa9be99ea3f0a6e13303a5eb04238",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-29T17:22:12.100604Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 89446,
+      "exact_source_byte_end": 90048
+    },
+    {
+      "member_id": "member:32195fe4de04da35e80dcd41808b088f136b0d09bdf01f54c8f879435550a9a1",
+      "record_id": "occurrence:114d2a7a8155b538929ff2041b326401dff23264f3f9f8a0c066a08cbf98ef22",
+      "record_kind": "OBSERVATION",
+      "title": "Page 2 - JOINT COORDINATE",
+      "retrieval_rank": 8,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## Page 2 - JOINT COORDINATE\n\n`W_2=W_1 x B` has four addresses by definition: the second coordinate freely ranges over `B` above every first-coordinate value. The dependent subset `S={00,11} subsetneq W_2` has only two states and is not the full product carrier.\n\n- `KEEP`: first coordinate, both codebooks, axis order, and receiver.\n- `OPEN`: independently supplied second coordinate.\n- `ZIP`: `z_1(ab)=a`; fibers are `{00,01}` and `{10,11}`.\n- `BREAK`: a drawn perpendicular authors neither independence nor incidence. Incidence requires a supplied relation `I subseteq B x B`.\n\nFor a static target `tau:W_2->Z`, projection is a static target-Fold exactly when `tau` is constant on each `z_1` fiber. Future safety is a separate test.\n\n",
+      "excerpt_utf8_bytes": 737,
+      "excerpt_sha256": "26c9e934b7370b4ae18eb3011c39e3b29fb450751f8f985ecda322a176a55f0b",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:114d2a7a8155b538929ff2041b326401dff23264f3f9f8a0c066a08cbf98ef22",
+        "event_id": "event:dacc6a71f631ddc15f0a0b6ee1123e70741deee958a8346909f329c25e1f3b2a",
+        "blob_sha256": "246448ce460a26dba7711140e5e2c2883945d20e86242a3d6a014ac3d9ac5b8d",
+        "byte_length": 6162,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_DIMENSIONAL_UNZIP_0_TO_3_V2.md",
+        "source_byte_start": 3448,
+        "source_byte_end": 4185,
+        "slice_sha256": "26c9e934b7370b4ae18eb3011c39e3b29fb450751f8f985ecda322a176a55f0b",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T20:36:39.638329Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 3448,
+      "exact_source_byte_end": 4185
+    },
+    {
+      "member_id": "member:58bcb13efa70ca78be66ff4f085b0fba268ff6c45c37cc469de4611b0dc08157",
+      "record_id": "occurrence:262875c740ef74e793f42ab2ffe6b46a1796410ef9af53a5879b00fffbbf76fb",
+      "record_kind": "OBSERVATION",
+      "title": "3 - receiver-safe Fold",
+      "retrieval_rank": 9,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": " o q          for every T in mathcal T.\n```\n\nStrong reopening requires\n\n```text\n(q,kappa):X->Y x K is injective.\n```\n\nThen:\n\n- `q` is a `CAR` when `q` itself is injective;\n- `q` is an RPRM `FOLD` only when it is noninjective, the target and every admitted future descend, and the cold key remains retained;\n- failure of target factorization or operation descent requires `REFINE`, not cosmetic ZIP.\n\n**Hostile.** On the raw word coordinate let `X=W_3`, `q=z_2`, `tau=q`, and\n\n```text\nT(b1b2b3)=b3b1b2.\n```\n\nAlthough the static target factors,\n\n```text\nq(000)=q(001)=00,\nq(T000)=00,\nq(T001)=10.\n```\n\nThe present fiber splits after `T`; the projection is not future-safe. In a closed packet carrier, the cold key must additionally retain the forgotten suffix and every receipt/status field required for strong reopening.\n\n",
+      "excerpt_utf8_bytes": 820,
+      "excerpt_sha256": "fbbf579529ac397d7186e2dae15d43705ddb53e52430714e6b6fc076fa6990b3",
+      "truncated_before": true,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:262875c740ef74e793f42ab2ffe6b46a1796410ef9af53a5879b00fffbbf76fb",
+        "event_id": "event:225cfe379bc295b41da4a0f5c2501722049d6b6e7e1928296bb4c7450b358f08",
+        "blob_sha256": "db8a24801157c5eff668a5eff983c1cff0bf729670a72be02bcf6d4ce79dc801",
+        "byte_length": 5889,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_DIMENSIONAL_UNZIP_0_TO_3_V3.md",
+        "source_byte_start": 3431,
+        "source_byte_end": 4577,
+        "slice_sha256": "f53fac36b98be58d8e1c21d0055c9e9fd1319ba3190e1cd8dd07de73302aed3e",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T20:40:06.415949Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 3757,
+      "exact_source_byte_end": 4577
+    },
+    {
+      "member_id": "member:889eb1f294773c067b2fe614c3de83f1c7276cbdccea3ce865d150bc8b970db3",
+      "record_id": "occurrence:9e854f7a73e4bb26ba2279980b1d0ea2b42146a580c801b8850d1476e9d3d436",
+      "record_kind": "OBSERVATION",
+      "title": "Page 2 — Incidence: cross two kept distinctions",
+      "retrieval_rank": 10,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "xact claim.** Crossing two independently retained ordered axes creates four addressed cells; projecting one axis is lawful for a target exactly when the target is constant on every merged fiber.\n\n```text\nC_2=C_1 x B={00,01,10,11}\nz_1(0b)=0; z_1(1b)=1\neach ZIP fiber=MANY(2)\nJ is a strong CAR iff J is injective\niff |J^-1(y)|=1 for every y in J(X)\n```\n\n- `KEEP`: two codebooks, axis order, address/incidence, target receiver.\n- `OPEN`: the joint receiver and the relation between coordinates.\n- `ZIP`: one-axis projection is a Fold only when `ker(z)<=ker(tau)` and the dropped-bit receipt remains cold.\n- `BREAK`: a drawn perpendicular does not create an independent coordinate. If the second coordinate is determined by the first, it is redundant encoding; if the receiver ignores it, it should Fold away.\n\n**Grouping branch on supplied finite sets.** Disjoint union gives cardinality addition, `|A disjoint-union B|=|A|+|B|`; Cartesian product gives cardinality multiplication, `|A x B|=|A||B|`. These operations are not generated merely by drawing a square. Ordinary binary arithmetic needs a value chart and a carry enclosure; `1+1=10_2` already leaves fixed level `C_1`.\n\n**Scoped geometry branch.** With a Euclidean plane, metric, continuum, and circle supplied, `pi_const=C/D`. The raw four-word carrier contains no `pi_const`.\n\n",
+      "excerpt_utf8_bytes": 1335,
+      "excerpt_sha256": "ed8a20902509bd74d7fc9efa0c958f826f370bf5793f85f0db25a925147f6f73",
+      "truncated_before": true,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:9e854f7a73e4bb26ba2279980b1d0ea2b42146a580c801b8850d1476e9d3d436",
+        "event_id": "event:8eedacf8666d2bca0d20e36cd93f50a99a8ffefde8a3264edec95666b672c6dd",
+        "blob_sha256": "ce9a49d5f59b40954634b7e86c347ff7e5743443e19b37db7d1a62ac1a4b2ada",
+        "byte_length": 8580,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_DIMENSIONAL_UNZIP_0_TO_3.md",
+        "source_byte_start": 3917,
+        "source_byte_end": 5309,
+        "slice_sha256": "38e6241cb7a89464f3c5f9c67222cdba50165ea8584e1e37e3785a138873a7d4",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T17:38:45.951388Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 3974,
+      "exact_source_byte_end": 5309
+    },
+    {
+      "member_id": "member:0908b5ea026eb85fecc6f02cfa3b839cae090bd699ea2a88c5504db4b3acf3d0",
+      "record_id": "occurrence:d367fdb791a484d661b4eacb1b0c1e5cef5db41dc7e77c2dc3d86dfc15105b28",
+      "record_kind": "OBSERVATION",
+      "title": "Finite research results retained — part 15",
+      "retrieval_rank": 11,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "UPPER/LOWER` and two exact seam\r\n  reseeds.  The corrected frozen producer passes 13,495,633 checks and 28\r\n  hostiles; a package-free verifier independently rebuilds all seven roots.\r\n- Audit 78's tower witness uses `O=10^(10^100)`, `L=10^O`, and three copies of\r\n  `floor(10*10^L/97)` without materializing the address, length, factors,\r\n  product, or prefix.  Its three 64-character lane Peeks begin\r\n  `226679...`, `092493...`, and `410597...`; the two 8+8 seam Peeks are\r\n  `71739275|71244027` and `84170562|84609054`.  Generic released live state\r\n  has `q*s*t` classes and minimum width the least `D` with `B^D>=q*s*t`; for\r\n  `97^3`, the exact minimum Peek is the six-character `226679`.  That live\r\n  state remains distinct from construction identity: numerator product 1000\r\n  has `MANY(52)` ordered triples in `0..96`.  Across all `97^3` uniform\r\n  sources, only 41,820 integer products occur and zero has 27,937 preimages;\r\n  no entropy, unpredictability, factorization, or security conclusion follows.\r\n- Audit 79 opens an exact relational Peek on the actual Monster order-seven\r\n  seam.  For two frozen 500-axis lists under `a` and `a^-1`, eighteen exact\r\n  operator-relative scalar coordinates reduce the full 250,000-pair outer\r\n  surface to 23 cross-pairs over 19 shared signatures.  All 23 raw\r\n  transporter differences fail `s*a*s=a^-1`, but the receiver deliberately\r\n  forgets the inner `H=2^(1+23).Co2` correction.  The result is therefore 23\r\n  exact proof obligations with disposition `OPEN_NEW_CARRIER`, not a Monster\r\n  inverter and not `NONE`.\r\n- Audit 80 makes the post-seven carry split exact.  A commuting binary\r\n  coordinate extends `C7` to `C14`; an inverting binary coordinate extends it\r\n  to `D14`; retaining both yields `C2 x D14` with 28 states.  Relative to the\r\n  frozen CTblLib fusion data, Audit79'",
+      "excerpt_utf8_bytes": 1841,
+      "excerpt_sha256": "4ea2ebb77ec60225704c28fd374250a5fc1c65f4d836fa55cb78a2757f56e53c",
+      "truncated_before": true,
+      "truncated_after": true,
+      "source_receipt": {
+        "occurrence_id": "occurrence:d367fdb791a484d661b4eacb1b0c1e5cef5db41dc7e77c2dc3d86dfc15105b28",
+        "event_id": "event:6dfc6f9a262220ceeaff9bfd790b2163b8aaf5bf3e95bc3e5a7562008ab4326b",
+        "blob_sha256": "a427d9ff423c16a2ddc46ce716d50b58ce0fc7d53beda6c413ca6bbdc7fb9a82",
+        "byte_length": 168354,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/atlas/CLAIM_LEDGER.md",
+        "source_byte_start": 59554,
+        "source_byte_end": 63640,
+        "slice_sha256": "52a58dd4590c07d48f866bb309ef47df8c2fbb123b8c525a54af03fe08943d65",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T05:33:53.285561Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 59983,
+      "exact_source_byte_end": 61824
+    }
+  ],
+  "omission_summary": {
+    "count": 614,
+    "by_reason": [
+      {
+        "reason": "CANDIDATE_CAP",
+        "count": 577
+      },
+      {
+        "reason": "PAYLOAD_BUDGET",
+        "count": 37
+      }
+    ],
+    "search_operation": "search_omissions(packet_id, objective, max_results)"
+  },
+  "visible_conflicts": [],
+  "open_seams": [
+    {
+      "seam": "RECEIVER_SUFFICIENCY",
+      "missing": [
+        "finite receiver signature over the strong candidate carrier",
+        "transition-descent receipts for every declared downstream operation"
+      ],
+      "trigger": "A finite task carrier and operation family are supplied."
+    },
+    {
+      "seam": "EMBEDDING_LANE",
+      "missing": [
+        "named embedding model, version, index root, and adapter"
+      ],
+      "trigger": "A frozen equal-budget embedding baseline is admitted."
+    },
+    {
+      "seam": "CANDIDATE_CAP",
+      "missing": [
+        "candidates or graph neighbors beyond the declared cap"
+      ],
+      "trigger": "Increase max_candidates under a new receiver request."
+    },
+    {
+      "seam": "PAYLOAD_OR_CANDIDATE_OMISSIONS",
+      "missing": [
+        "omitted record payloads"
+      ],
+      "trigger": "Call expand_context with the emitted handle."
+    }
+  ],
+  "costs": {
+    "support_width": 9,
+    "touch_count": 625,
+    "probe_count": 2,
+    "packet_width_bytes": 16000,
+    "probe_cost": {
+      "n": 2,
+      "d": 1
+    }
+  },
+  "budget": {
+    "kind": "UTF8_EXCERPT_PAYLOAD_BYTES",
+    "maximum": 16000,
+    "used": 16000,
+    "candidate_cap": 48,
+    "graph_depth": 1
+  },
+  "cold_reopen": {
+    "member_roots": [
+      "member:ff643560b1ac6325842620f504a0caa826ae19810d1c9626848362f4a521d250",
+      "member:0844b0286df86a3a8ff9eebec537d79e2c0b5e7a3a5b8e619e63ecfa828e0803",
+      "member:65747eecd86e761cb5c958325f2a504bcdf8cfbbe85c328c4e12cb724c415b9e",
+      "member:427eddcdffcb5a5d123936b0a4c52e4454a2f14de1e7f92e8105062cc4a3c149",
+      "member:f7b9fd9c2ba8fc25d10661d69ed83cd7afe228bf1d6d62565aeccbabd41bcd18",
+      "member:e08b3185bf83d4496b035432fd58dfeb809a45a43c8ec08267fff94885ea4be6",
+      "member:21d5152e16877a14f5b3a489793c5311a5f2428b4305f1844e4349510f535622",
+      "member:32195fe4de04da35e80dcd41808b088f136b0d09bdf01f54c8f879435550a9a1",
+      "member:58bcb13efa70ca78be66ff4f085b0fba268ff6c45c37cc469de4611b0dc08157",
+      "member:889eb1f294773c067b2fe614c3de83f1c7276cbdccea3ce865d150bc8b970db3",
+      "member:0908b5ea026eb85fecc6f02cfa3b839cae090bd699ea2a88c5504db4b3acf3d0"
+    ],
+    "omitted_member_count": 614,
+    "operations": [
+      "search_omissions",
+      "expand_context",
+      "read_packet"
+    ]
+  },
+  "claim_ceiling": "This bounded view preserves the canonical packet identity and every admitted excerpt. It omits the full omission manifest; use search_omissions, expand_context, or read_packet for an exact cold reopen. It does not establish source truth, semantic answer sufficiency, or model intelligence."
+}

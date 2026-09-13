@@ -1,0 +1,2533 @@
+{
+  "status": "P_HINGE_COMMUTATION_AND_CARRY_CONJUGATION_CHECKED",
+  "source_sha256": "9fd72e9a53e8401d5a8cb2043505334e2255cfcfcea220a60018538deeb02b6d",
+  "existing_P_images": [
+    5,
+    9,
+    8,
+    3,
+    6,
+    0,
+    4,
+    7,
+    2,
+    1
+  ],
+  "all_100_word_rows": [
+    {
+      "word": "00",
+      "P_word": "55",
+      "F_word": "00",
+      "P_after_F": "55",
+      "F_after_P": "55"
+    },
+    {
+      "word": "01",
+      "P_word": "59",
+      "F_word": "010",
+      "P_after_F": "595",
+      "F_after_P": "595"
+    },
+    {
+      "word": "02",
+      "P_word": "58",
+      "F_word": "020",
+      "P_after_F": "585",
+      "F_after_P": "585"
+    },
+    {
+      "word": "03",
+      "P_word": "53",
+      "F_word": "030",
+      "P_after_F": "535",
+      "F_after_P": "535"
+    },
+    {
+      "word": "04",
+      "P_word": "56",
+      "F_word": "040",
+      "P_after_F": "565",
+      "F_after_P": "565"
+    },
+    {
+      "word": "05",
+      "P_word": "50",
+      "F_word": "050",
+      "P_after_F": "505",
+      "F_after_P": "505"
+    },
+    {
+      "word": "06",
+      "P_word": "54",
+      "F_word": "060",
+      "P_after_F": "545",
+      "F_after_P": "545"
+    },
+    {
+      "word": "07",
+      "P_word": "57",
+      "F_word": "070",
+      "P_after_F": "575",
+      "F_after_P": "575"
+    },
+    {
+      "word": "08",
+      "P_word": "52",
+      "F_word": "080",
+      "P_after_F": "525",
+      "F_after_P": "525"
+    },
+    {
+      "word": "09",
+      "P_word": "51",
+      "F_word": "090",
+      "P_after_F": "515",
+      "F_after_P": "515"
+    },
+    {
+      "word": "10",
+      "P_word": "95",
+      "F_word": "101",
+      "P_after_F": "959",
+      "F_after_P": "959"
+    },
+    {
+      "word": "11",
+      "P_word": "99",
+      "F_word": "11",
+      "P_after_F": "99",
+      "F_after_P": "99"
+    },
+    {
+      "word": "12",
+      "P_word": "98",
+      "F_word": "121",
+      "P_after_F": "989",
+      "F_after_P": "989"
+    },
+    {
+      "word": "13",
+      "P_word": "93",
+      "F_word": "131",
+      "P_after_F": "939",
+      "F_after_P": "939"
+    },
+    {
+      "word": "14",
+      "P_word": "96",
+      "F_word": "141",
+      "P_after_F": "969",
+      "F_after_P": "969"
+    },
+    {
+      "word": "15",
+      "P_word": "90",
+      "F_word": "151",
+      "P_after_F": "909",
+      "F_after_P": "909"
+    },
+    {
+      "word": "16",
+      "P_word": "94",
+      "F_word": "161",
+      "P_after_F": "949",
+      "F_after_P": "949"
+    },
+    {
+      "word": "17",
+      "P_word": "97",
+      "F_word": "171",
+      "P_after_F": "979",
+      "F_after_P": "979"
+    },
+    {
+      "word": "18",
+      "P_word": "92",
+      "F_word": "181",
+      "P_after_F": "929",
+      "F_after_P": "929"
+    },
+    {
+      "word": "19",
+      "P_word": "91",
+      "F_word": "191",
+      "P_after_F": "919",
+      "F_after_P": "919"
+    },
+    {
+      "word": "20",
+      "P_word": "85",
+      "F_word": "202",
+      "P_after_F": "858",
+      "F_after_P": "858"
+    },
+    {
+      "word": "21",
+      "P_word": "89",
+      "F_word": "212",
+      "P_after_F": "898",
+      "F_after_P": "898"
+    },
+    {
+      "word": "22",
+      "P_word": "88",
+      "F_word": "22",
+      "P_after_F": "88",
+      "F_after_P": "88"
+    },
+    {
+      "word": "23",
+      "P_word": "83",
+      "F_word": "232",
+      "P_after_F": "838",
+      "F_after_P": "838"
+    },
+    {
+      "word": "24",
+      "P_word": "86",
+      "F_word": "242",
+      "P_after_F": "868",
+      "F_after_P": "868"
+    },
+    {
+      "word": "25",
+      "P_word": "80",
+      "F_word": "252",
+      "P_after_F": "808",
+      "F_after_P": "808"
+    },
+    {
+      "word": "26",
+      "P_word": "84",
+      "F_word": "262",
+      "P_after_F": "848",
+      "F_after_P": "848"
+    },
+    {
+      "word": "27",
+      "P_word": "87",
+      "F_word": "272",
+      "P_after_F": "878",
+      "F_after_P": "878"
+    },
+    {
+      "word": "28",
+      "P_word": "82",
+      "F_word": "282",
+      "P_after_F": "828",
+      "F_after_P": "828"
+    },
+    {
+      "word": "29",
+      "P_word": "81",
+      "F_word": "292",
+      "P_after_F": "818",
+      "F_after_P": "818"
+    },
+    {
+      "word": "30",
+      "P_word": "35",
+      "F_word": "303",
+      "P_after_F": "353",
+      "F_after_P": "353"
+    },
+    {
+      "word": "31",
+      "P_word": "39",
+      "F_word": "313",
+      "P_after_F": "393",
+      "F_after_P": "393"
+    },
+    {
+      "word": "32",
+      "P_word": "38",
+      "F_word": "323",
+      "P_after_F": "383",
+      "F_after_P": "383"
+    },
+    {
+      "word": "33",
+      "P_word": "33",
+      "F_word": "33",
+      "P_after_F": "33",
+      "F_after_P": "33"
+    },
+    {
+      "word": "34",
+      "P_word": "36",
+      "F_word": "343",
+      "P_after_F": "363",
+      "F_after_P": "363"
+    },
+    {
+      "word": "35",
+      "P_word": "30",
+      "F_word": "353",
+      "P_after_F": "303",
+      "F_after_P": "303"
+    },
+    {
+      "word": "36",
+      "P_word": "34",
+      "F_word": "363",
+      "P_after_F": "343",
+      "F_after_P": "343"
+    },
+    {
+      "word": "37",
+      "P_word": "37",
+      "F_word": "373",
+      "P_after_F": "373",
+      "F_after_P": "373"
+    },
+    {
+      "word": "38",
+      "P_word": "32",
+      "F_word": "383",
+      "P_after_F": "323",
+      "F_after_P": "323"
+    },
+    {
+      "word": "39",
+      "P_word": "31",
+      "F_word": "393",
+      "P_after_F": "313",
+      "F_after_P": "313"
+    },
+    {
+      "word": "40",
+      "P_word": "65",
+      "F_word": "404",
+      "P_after_F": "656",
+      "F_after_P": "656"
+    },
+    {
+      "word": "41",
+      "P_word": "69",
+      "F_word": "414",
+      "P_after_F": "696",
+      "F_after_P": "696"
+    },
+    {
+      "word": "42",
+      "P_word": "68",
+      "F_word": "424",
+      "P_after_F": "686",
+      "F_after_P": "686"
+    },
+    {
+      "word": "43",
+      "P_word": "63",
+      "F_word": "434",
+      "P_after_F": "636",
+      "F_after_P": "636"
+    },
+    {
+      "word": "44",
+      "P_word": "66",
+      "F_word": "44",
+      "P_after_F": "66",
+      "F_after_P": "66"
+    },
+    {
+      "word": "45",
+      "P_word": "60",
+      "F_word": "454",
+      "P_after_F": "606",
+      "F_after_P": "606"
+    },
+    {
+      "word": "46",
+      "P_word": "64",
+      "F_word": "464",
+      "P_after_F": "646",
+      "F_after_P": "646"
+    },
+    {
+      "word": "47",
+      "P_word": "67",
+      "F_word": "474",
+      "P_after_F": "676",
+      "F_after_P": "676"
+    },
+    {
+      "word": "48",
+      "P_word": "62",
+      "F_word": "484",
+      "P_after_F": "626",
+      "F_after_P": "626"
+    },
+    {
+      "word": "49",
+      "P_word": "61",
+      "F_word": "494",
+      "P_after_F": "616",
+      "F_after_P": "616"
+    },
+    {
+      "word": "50",
+      "P_word": "05",
+      "F_word": "505",
+      "P_after_F": "050",
+      "F_after_P": "050"
+    },
+    {
+      "word": "51",
+      "P_word": "09",
+      "F_word": "515",
+      "P_after_F": "090",
+      "F_after_P": "090"
+    },
+    {
+      "word": "52",
+      "P_word": "08",
+      "F_word": "525",
+      "P_after_F": "080",
+      "F_after_P": "080"
+    },
+    {
+      "word": "53",
+      "P_word": "03",
+      "F_word": "535",
+      "P_after_F": "030",
+      "F_after_P": "030"
+    },
+    {
+      "word": "54",
+      "P_word": "06",
+      "F_word": "545",
+      "P_after_F": "060",
+      "F_after_P": "060"
+    },
+    {
+      "word": "55",
+      "P_word": "00",
+      "F_word": "55",
+      "P_after_F": "00",
+      "F_after_P": "00"
+    },
+    {
+      "word": "56",
+      "P_word": "04",
+      "F_word": "565",
+      "P_after_F": "040",
+      "F_after_P": "040"
+    },
+    {
+      "word": "57",
+      "P_word": "07",
+      "F_word": "575",
+      "P_after_F": "070",
+      "F_after_P": "070"
+    },
+    {
+      "word": "58",
+      "P_word": "02",
+      "F_word": "585",
+      "P_after_F": "020",
+      "F_after_P": "020"
+    },
+    {
+      "word": "59",
+      "P_word": "01",
+      "F_word": "595",
+      "P_after_F": "010",
+      "F_after_P": "010"
+    },
+    {
+      "word": "60",
+      "P_word": "45",
+      "F_word": "606",
+      "P_after_F": "454",
+      "F_after_P": "454"
+    },
+    {
+      "word": "61",
+      "P_word": "49",
+      "F_word": "616",
+      "P_after_F": "494",
+      "F_after_P": "494"
+    },
+    {
+      "word": "62",
+      "P_word": "48",
+      "F_word": "626",
+      "P_after_F": "484",
+      "F_after_P": "484"
+    },
+    {
+      "word": "63",
+      "P_word": "43",
+      "F_word": "636",
+      "P_after_F": "434",
+      "F_after_P": "434"
+    },
+    {
+      "word": "64",
+      "P_word": "46",
+      "F_word": "646",
+      "P_after_F": "464",
+      "F_after_P": "464"
+    },
+    {
+      "word": "65",
+      "P_word": "40",
+      "F_word": "656",
+      "P_after_F": "404",
+      "F_after_P": "404"
+    },
+    {
+      "word": "66",
+      "P_word": "44",
+      "F_word": "66",
+      "P_after_F": "44",
+      "F_after_P": "44"
+    },
+    {
+      "word": "67",
+      "P_word": "47",
+      "F_word": "676",
+      "P_after_F": "474",
+      "F_after_P": "474"
+    },
+    {
+      "word": "68",
+      "P_word": "42",
+      "F_word": "686",
+      "P_after_F": "424",
+      "F_after_P": "424"
+    },
+    {
+      "word": "69",
+      "P_word": "41",
+      "F_word": "696",
+      "P_after_F": "414",
+      "F_after_P": "414"
+    },
+    {
+      "word": "70",
+      "P_word": "75",
+      "F_word": "707",
+      "P_after_F": "757",
+      "F_after_P": "757"
+    },
+    {
+      "word": "71",
+      "P_word": "79",
+      "F_word": "717",
+      "P_after_F": "797",
+      "F_after_P": "797"
+    },
+    {
+      "word": "72",
+      "P_word": "78",
+      "F_word": "727",
+      "P_after_F": "787",
+      "F_after_P": "787"
+    },
+    {
+      "word": "73",
+      "P_word": "73",
+      "F_word": "737",
+      "P_after_F": "737",
+      "F_after_P": "737"
+    },
+    {
+      "word": "74",
+      "P_word": "76",
+      "F_word": "747",
+      "P_after_F": "767",
+      "F_after_P": "767"
+    },
+    {
+      "word": "75",
+      "P_word": "70",
+      "F_word": "757",
+      "P_after_F": "707",
+      "F_after_P": "707"
+    },
+    {
+      "word": "76",
+      "P_word": "74",
+      "F_word": "767",
+      "P_after_F": "747",
+      "F_after_P": "747"
+    },
+    {
+      "word": "77",
+      "P_word": "77",
+      "F_word": "77",
+      "P_after_F": "77",
+      "F_after_P": "77"
+    },
+    {
+      "word": "78",
+      "P_word": "72",
+      "F_word": "787",
+      "P_after_F": "727",
+      "F_after_P": "727"
+    },
+    {
+      "word": "79",
+      "P_word": "71",
+      "F_word": "797",
+      "P_after_F": "717",
+      "F_after_P": "717"
+    },
+    {
+      "word": "80",
+      "P_word": "25",
+      "F_word": "808",
+      "P_after_F": "252",
+      "F_after_P": "252"
+    },
+    {
+      "word": "81",
+      "P_word": "29",
+      "F_word": "818",
+      "P_after_F": "292",
+      "F_after_P": "292"
+    },
+    {
+      "word": "82",
+      "P_word": "28",
+      "F_word": "828",
+      "P_after_F": "282",
+      "F_after_P": "282"
+    },
+    {
+      "word": "83",
+      "P_word": "23",
+      "F_word": "838",
+      "P_after_F": "232",
+      "F_after_P": "232"
+    },
+    {
+      "word": "84",
+      "P_word": "26",
+      "F_word": "848",
+      "P_after_F": "262",
+      "F_after_P": "262"
+    },
+    {
+      "word": "85",
+      "P_word": "20",
+      "F_word": "858",
+      "P_after_F": "202",
+      "F_after_P": "202"
+    },
+    {
+      "word": "86",
+      "P_word": "24",
+      "F_word": "868",
+      "P_after_F": "242",
+      "F_after_P": "242"
+    },
+    {
+      "word": "87",
+      "P_word": "27",
+      "F_word": "878",
+      "P_after_F": "272",
+      "F_after_P": "272"
+    },
+    {
+      "word": "88",
+      "P_word": "22",
+      "F_word": "88",
+      "P_after_F": "22",
+      "F_after_P": "22"
+    },
+    {
+      "word": "89",
+      "P_word": "21",
+      "F_word": "898",
+      "P_after_F": "212",
+      "F_after_P": "212"
+    },
+    {
+      "word": "90",
+      "P_word": "15",
+      "F_word": "909",
+      "P_after_F": "151",
+      "F_after_P": "151"
+    },
+    {
+      "word": "91",
+      "P_word": "19",
+      "F_word": "919",
+      "P_after_F": "191",
+      "F_after_P": "191"
+    },
+    {
+      "word": "92",
+      "P_word": "18",
+      "F_word": "929",
+      "P_after_F": "181",
+      "F_after_P": "181"
+    },
+    {
+      "word": "93",
+      "P_word": "13",
+      "F_word": "939",
+      "P_after_F": "131",
+      "F_after_P": "131"
+    },
+    {
+      "word": "94",
+      "P_word": "16",
+      "F_word": "949",
+      "P_after_F": "161",
+      "F_after_P": "161"
+    },
+    {
+      "word": "95",
+      "P_word": "10",
+      "F_word": "959",
+      "P_after_F": "101",
+      "F_after_P": "101"
+    },
+    {
+      "word": "96",
+      "P_word": "14",
+      "F_word": "969",
+      "P_after_F": "141",
+      "F_after_P": "141"
+    },
+    {
+      "word": "97",
+      "P_word": "17",
+      "F_word": "979",
+      "P_after_F": "171",
+      "F_after_P": "171"
+    },
+    {
+      "word": "98",
+      "P_word": "12",
+      "F_word": "989",
+      "P_after_F": "121",
+      "F_after_P": "121"
+    },
+    {
+      "word": "99",
+      "P_word": "11",
+      "F_word": "99",
+      "P_after_F": "11",
+      "F_after_P": "11"
+    }
+  ],
+  "target": {
+    "word": "59",
+    "P_word": "01",
+    "F_word": "595",
+    "P_after_F": "010",
+    "F_after_P": "010"
+  },
+  "typed_certificate_after_payload_P": {
+    "source": "01",
+    "opcode": "2",
+    "output": "010"
+  },
+  "untyped_full_word_after_P": "018010",
+  "conjugate_cyclic_successor": [
+    4,
+    5,
+    1,
+    6,
+    7,
+    9,
+    0,
+    2,
+    3,
+    8
+  ],
+  "all_99_retained_carry_steps": [
+    {
+      "raw_before": [
+        0,
+        0
+      ],
+      "raw_after": [
+        1,
+        0
+      ],
+      "P_chart_before": [
+        5,
+        0
+      ],
+      "P_chart_after": [
+        9,
+        0
+      ]
+    },
+    {
+      "raw_before": [
+        1,
+        0
+      ],
+      "raw_after": [
+        2,
+        0
+      ],
+      "P_chart_before": [
+        9,
+        0
+      ],
+      "P_chart_after": [
+        8,
+        0
+      ]
+    },
+    {
+      "raw_before": [
+        2,
+        0
+      ],
+      "raw_after": [
+        3,
+        0
+      ],
+      "P_chart_before": [
+        8,
+        0
+      ],
+      "P_chart_after": [
+        3,
+        0
+      ]
+    },
+    {
+      "raw_before": [
+        3,
+        0
+      ],
+      "raw_after": [
+        4,
+        0
+      ],
+      "P_chart_before": [
+        3,
+        0
+      ],
+      "P_chart_after": [
+        6,
+        0
+      ]
+    },
+    {
+      "raw_before": [
+        4,
+        0
+      ],
+      "raw_after": [
+        5,
+        0
+      ],
+      "P_chart_before": [
+        6,
+        0
+      ],
+      "P_chart_after": [
+        0,
+        0
+      ]
+    },
+    {
+      "raw_before": [
+        5,
+        0
+      ],
+      "raw_after": [
+        6,
+        0
+      ],
+      "P_chart_before": [
+        0,
+        0
+      ],
+      "P_chart_after": [
+        4,
+        0
+      ]
+    },
+    {
+      "raw_before": [
+        6,
+        0
+      ],
+      "raw_after": [
+        7,
+        0
+      ],
+      "P_chart_before": [
+        4,
+        0
+      ],
+      "P_chart_after": [
+        7,
+        0
+      ]
+    },
+    {
+      "raw_before": [
+        7,
+        0
+      ],
+      "raw_after": [
+        8,
+        0
+      ],
+      "P_chart_before": [
+        7,
+        0
+      ],
+      "P_chart_after": [
+        2,
+        0
+      ]
+    },
+    {
+      "raw_before": [
+        8,
+        0
+      ],
+      "raw_after": [
+        9,
+        0
+      ],
+      "P_chart_before": [
+        2,
+        0
+      ],
+      "P_chart_after": [
+        1,
+        0
+      ]
+    },
+    {
+      "raw_before": [
+        9,
+        0
+      ],
+      "raw_after": [
+        0,
+        1
+      ],
+      "P_chart_before": [
+        1,
+        0
+      ],
+      "P_chart_after": [
+        5,
+        1
+      ]
+    },
+    {
+      "raw_before": [
+        0,
+        1
+      ],
+      "raw_after": [
+        1,
+        1
+      ],
+      "P_chart_before": [
+        5,
+        1
+      ],
+      "P_chart_after": [
+        9,
+        1
+      ]
+    },
+    {
+      "raw_before": [
+        1,
+        1
+      ],
+      "raw_after": [
+        2,
+        1
+      ],
+      "P_chart_before": [
+        9,
+        1
+      ],
+      "P_chart_after": [
+        8,
+        1
+      ]
+    },
+    {
+      "raw_before": [
+        2,
+        1
+      ],
+      "raw_after": [
+        3,
+        1
+      ],
+      "P_chart_before": [
+        8,
+        1
+      ],
+      "P_chart_after": [
+        3,
+        1
+      ]
+    },
+    {
+      "raw_before": [
+        3,
+        1
+      ],
+      "raw_after": [
+        4,
+        1
+      ],
+      "P_chart_before": [
+        3,
+        1
+      ],
+      "P_chart_after": [
+        6,
+        1
+      ]
+    },
+    {
+      "raw_before": [
+        4,
+        1
+      ],
+      "raw_after": [
+        5,
+        1
+      ],
+      "P_chart_before": [
+        6,
+        1
+      ],
+      "P_chart_after": [
+        0,
+        1
+      ]
+    },
+    {
+      "raw_before": [
+        5,
+        1
+      ],
+      "raw_after": [
+        6,
+        1
+      ],
+      "P_chart_before": [
+        0,
+        1
+      ],
+      "P_chart_after": [
+        4,
+        1
+      ]
+    },
+    {
+      "raw_before": [
+        6,
+        1
+      ],
+      "raw_after": [
+        7,
+        1
+      ],
+      "P_chart_before": [
+        4,
+        1
+      ],
+      "P_chart_after": [
+        7,
+        1
+      ]
+    },
+    {
+      "raw_before": [
+        7,
+        1
+      ],
+      "raw_after": [
+        8,
+        1
+      ],
+      "P_chart_before": [
+        7,
+        1
+      ],
+      "P_chart_after": [
+        2,
+        1
+      ]
+    },
+    {
+      "raw_before": [
+        8,
+        1
+      ],
+      "raw_after": [
+        9,
+        1
+      ],
+      "P_chart_before": [
+        2,
+        1
+      ],
+      "P_chart_after": [
+        1,
+        1
+      ]
+    },
+    {
+      "raw_before": [
+        9,
+        1
+      ],
+      "raw_after": [
+        0,
+        2
+      ],
+      "P_chart_before": [
+        1,
+        1
+      ],
+      "P_chart_after": [
+        5,
+        2
+      ]
+    },
+    {
+      "raw_before": [
+        0,
+        2
+      ],
+      "raw_after": [
+        1,
+        2
+      ],
+      "P_chart_before": [
+        5,
+        2
+      ],
+      "P_chart_after": [
+        9,
+        2
+      ]
+    },
+    {
+      "raw_before": [
+        1,
+        2
+      ],
+      "raw_after": [
+        2,
+        2
+      ],
+      "P_chart_before": [
+        9,
+        2
+      ],
+      "P_chart_after": [
+        8,
+        2
+      ]
+    },
+    {
+      "raw_before": [
+        2,
+        2
+      ],
+      "raw_after": [
+        3,
+        2
+      ],
+      "P_chart_before": [
+        8,
+        2
+      ],
+      "P_chart_after": [
+        3,
+        2
+      ]
+    },
+    {
+      "raw_before": [
+        3,
+        2
+      ],
+      "raw_after": [
+        4,
+        2
+      ],
+      "P_chart_before": [
+        3,
+        2
+      ],
+      "P_chart_after": [
+        6,
+        2
+      ]
+    },
+    {
+      "raw_before": [
+        4,
+        2
+      ],
+      "raw_after": [
+        5,
+        2
+      ],
+      "P_chart_before": [
+        6,
+        2
+      ],
+      "P_chart_after": [
+        0,
+        2
+      ]
+    },
+    {
+      "raw_before": [
+        5,
+        2
+      ],
+      "raw_after": [
+        6,
+        2
+      ],
+      "P_chart_before": [
+        0,
+        2
+      ],
+      "P_chart_after": [
+        4,
+        2
+      ]
+    },
+    {
+      "raw_before": [
+        6,
+        2
+      ],
+      "raw_after": [
+        7,
+        2
+      ],
+      "P_chart_before": [
+        4,
+        2
+      ],
+      "P_chart_after": [
+        7,
+        2
+      ]
+    },
+    {
+      "raw_before": [
+        7,
+        2
+      ],
+      "raw_after": [
+        8,
+        2
+      ],
+      "P_chart_before": [
+        7,
+        2
+      ],
+      "P_chart_after": [
+        2,
+        2
+      ]
+    },
+    {
+      "raw_before": [
+        8,
+        2
+      ],
+      "raw_after": [
+        9,
+        2
+      ],
+      "P_chart_before": [
+        2,
+        2
+      ],
+      "P_chart_after": [
+        1,
+        2
+      ]
+    },
+    {
+      "raw_before": [
+        9,
+        2
+      ],
+      "raw_after": [
+        0,
+        3
+      ],
+      "P_chart_before": [
+        1,
+        2
+      ],
+      "P_chart_after": [
+        5,
+        3
+      ]
+    },
+    {
+      "raw_before": [
+        0,
+        3
+      ],
+      "raw_after": [
+        1,
+        3
+      ],
+      "P_chart_before": [
+        5,
+        3
+      ],
+      "P_chart_after": [
+        9,
+        3
+      ]
+    },
+    {
+      "raw_before": [
+        1,
+        3
+      ],
+      "raw_after": [
+        2,
+        3
+      ],
+      "P_chart_before": [
+        9,
+        3
+      ],
+      "P_chart_after": [
+        8,
+        3
+      ]
+    },
+    {
+      "raw_before": [
+        2,
+        3
+      ],
+      "raw_after": [
+        3,
+        3
+      ],
+      "P_chart_before": [
+        8,
+        3
+      ],
+      "P_chart_after": [
+        3,
+        3
+      ]
+    },
+    {
+      "raw_before": [
+        3,
+        3
+      ],
+      "raw_after": [
+        4,
+        3
+      ],
+      "P_chart_before": [
+        3,
+        3
+      ],
+      "P_chart_after": [
+        6,
+        3
+      ]
+    },
+    {
+      "raw_before": [
+        4,
+        3
+      ],
+      "raw_after": [
+        5,
+        3
+      ],
+      "P_chart_before": [
+        6,
+        3
+      ],
+      "P_chart_after": [
+        0,
+        3
+      ]
+    },
+    {
+      "raw_before": [
+        5,
+        3
+      ],
+      "raw_after": [
+        6,
+        3
+      ],
+      "P_chart_before": [
+        0,
+        3
+      ],
+      "P_chart_after": [
+        4,
+        3
+      ]
+    },
+    {
+      "raw_before": [
+        6,
+        3
+      ],
+      "raw_after": [
+        7,
+        3
+      ],
+      "P_chart_before": [
+        4,
+        3
+      ],
+      "P_chart_after": [
+        7,
+        3
+      ]
+    },
+    {
+      "raw_before": [
+        7,
+        3
+      ],
+      "raw_after": [
+        8,
+        3
+      ],
+      "P_chart_before": [
+        7,
+        3
+      ],
+      "P_chart_after": [
+        2,
+        3
+      ]
+    },
+    {
+      "raw_before": [
+        8,
+        3
+      ],
+      "raw_after": [
+        9,
+        3
+      ],
+      "P_chart_before": [
+        2,
+        3
+      ],
+      "P_chart_after": [
+        1,
+        3
+      ]
+    },
+    {
+      "raw_before": [
+        9,
+        3
+      ],
+      "raw_after": [
+        0,
+        4
+      ],
+      "P_chart_before": [
+        1,
+        3
+      ],
+      "P_chart_after": [
+        5,
+        4
+      ]
+    },
+    {
+      "raw_before": [
+        0,
+        4
+      ],
+      "raw_after": [
+        1,
+        4
+      ],
+      "P_chart_before": [
+        5,
+        4
+      ],
+      "P_chart_after": [
+        9,
+        4
+      ]
+    },
+    {
+      "raw_before": [
+        1,
+        4
+      ],
+      "raw_after": [
+        2,
+        4
+      ],
+      "P_chart_before": [
+        9,
+        4
+      ],
+      "P_chart_after": [
+        8,
+        4
+      ]
+    },
+    {
+      "raw_before": [
+        2,
+        4
+      ],
+      "raw_after": [
+        3,
+        4
+      ],
+      "P_chart_before": [
+        8,
+        4
+      ],
+      "P_chart_after": [
+        3,
+        4
+      ]
+    },
+    {
+      "raw_before": [
+        3,
+        4
+      ],
+      "raw_after": [
+        4,
+        4
+      ],
+      "P_chart_before": [
+        3,
+        4
+      ],
+      "P_chart_after": [
+        6,
+        4
+      ]
+    },
+    {
+      "raw_before": [
+        4,
+        4
+      ],
+      "raw_after": [
+        5,
+        4
+      ],
+      "P_chart_before": [
+        6,
+        4
+      ],
+      "P_chart_after": [
+        0,
+        4
+      ]
+    },
+    {
+      "raw_before": [
+        5,
+        4
+      ],
+      "raw_after": [
+        6,
+        4
+      ],
+      "P_chart_before": [
+        0,
+        4
+      ],
+      "P_chart_after": [
+        4,
+        4
+      ]
+    },
+    {
+      "raw_before": [
+        6,
+        4
+      ],
+      "raw_after": [
+        7,
+        4
+      ],
+      "P_chart_before": [
+        4,
+        4
+      ],
+      "P_chart_after": [
+        7,
+        4
+      ]
+    },
+    {
+      "raw_before": [
+        7,
+        4
+      ],
+      "raw_after": [
+        8,
+        4
+      ],
+      "P_chart_before": [
+        7,
+        4
+      ],
+      "P_chart_after": [
+        2,
+        4
+      ]
+    },
+    {
+      "raw_before": [
+        8,
+        4
+      ],
+      "raw_after": [
+        9,
+        4
+      ],
+      "P_chart_before": [
+        2,
+        4
+      ],
+      "P_chart_after": [
+        1,
+        4
+      ]
+    },
+    {
+      "raw_before": [
+        9,
+        4
+      ],
+      "raw_after": [
+        0,
+        5
+      ],
+      "P_chart_before": [
+        1,
+        4
+      ],
+      "P_chart_after": [
+        5,
+        5
+      ]
+    },
+    {
+      "raw_before": [
+        0,
+        5
+      ],
+      "raw_after": [
+        1,
+        5
+      ],
+      "P_chart_before": [
+        5,
+        5
+      ],
+      "P_chart_after": [
+        9,
+        5
+      ]
+    },
+    {
+      "raw_before": [
+        1,
+        5
+      ],
+      "raw_after": [
+        2,
+        5
+      ],
+      "P_chart_before": [
+        9,
+        5
+      ],
+      "P_chart_after": [
+        8,
+        5
+      ]
+    },
+    {
+      "raw_before": [
+        2,
+        5
+      ],
+      "raw_after": [
+        3,
+        5
+      ],
+      "P_chart_before": [
+        8,
+        5
+      ],
+      "P_chart_after": [
+        3,
+        5
+      ]
+    },
+    {
+      "raw_before": [
+        3,
+        5
+      ],
+      "raw_after": [
+        4,
+        5
+      ],
+      "P_chart_before": [
+        3,
+        5
+      ],
+      "P_chart_after": [
+        6,
+        5
+      ]
+    },
+    {
+      "raw_before": [
+        4,
+        5
+      ],
+      "raw_after": [
+        5,
+        5
+      ],
+      "P_chart_before": [
+        6,
+        5
+      ],
+      "P_chart_after": [
+        0,
+        5
+      ]
+    },
+    {
+      "raw_before": [
+        5,
+        5
+      ],
+      "raw_after": [
+        6,
+        5
+      ],
+      "P_chart_before": [
+        0,
+        5
+      ],
+      "P_chart_after": [
+        4,
+        5
+      ]
+    },
+    {
+      "raw_before": [
+        6,
+        5
+      ],
+      "raw_after": [
+        7,
+        5
+      ],
+      "P_chart_before": [
+        4,
+        5
+      ],
+      "P_chart_after": [
+        7,
+        5
+      ]
+    },
+    {
+      "raw_before": [
+        7,
+        5
+      ],
+      "raw_after": [
+        8,
+        5
+      ],
+      "P_chart_before": [
+        7,
+        5
+      ],
+      "P_chart_after": [
+        2,
+        5
+      ]
+    },
+    {
+      "raw_before": [
+        8,
+        5
+      ],
+      "raw_after": [
+        9,
+        5
+      ],
+      "P_chart_before": [
+        2,
+        5
+      ],
+      "P_chart_after": [
+        1,
+        5
+      ]
+    },
+    {
+      "raw_before": [
+        9,
+        5
+      ],
+      "raw_after": [
+        0,
+        6
+      ],
+      "P_chart_before": [
+        1,
+        5
+      ],
+      "P_chart_after": [
+        5,
+        6
+      ]
+    },
+    {
+      "raw_before": [
+        0,
+        6
+      ],
+      "raw_after": [
+        1,
+        6
+      ],
+      "P_chart_before": [
+        5,
+        6
+      ],
+      "P_chart_after": [
+        9,
+        6
+      ]
+    },
+    {
+      "raw_before": [
+        1,
+        6
+      ],
+      "raw_after": [
+        2,
+        6
+      ],
+      "P_chart_before": [
+        9,
+        6
+      ],
+      "P_chart_after": [
+        8,
+        6
+      ]
+    },
+    {
+      "raw_before": [
+        2,
+        6
+      ],
+      "raw_after": [
+        3,
+        6
+      ],
+      "P_chart_before": [
+        8,
+        6
+      ],
+      "P_chart_after": [
+        3,
+        6
+      ]
+    },
+    {
+      "raw_before": [
+        3,
+        6
+      ],
+      "raw_after": [
+        4,
+        6
+      ],
+      "P_chart_before": [
+        3,
+        6
+      ],
+      "P_chart_after": [
+        6,
+        6
+      ]
+    },
+    {
+      "raw_before": [
+        4,
+        6
+      ],
+      "raw_after": [
+        5,
+        6
+      ],
+      "P_chart_before": [
+        6,
+        6
+      ],
+      "P_chart_after": [
+        0,
+        6
+      ]
+    },
+    {
+      "raw_before": [
+        5,
+        6
+      ],
+      "raw_after": [
+        6,
+        6
+      ],
+      "P_chart_before": [
+        0,
+        6
+      ],
+      "P_chart_after": [
+        4,
+        6
+      ]
+    },
+    {
+      "raw_before": [
+        6,
+        6
+      ],
+      "raw_after": [
+        7,
+        6
+      ],
+      "P_chart_before": [
+        4,
+        6
+      ],
+      "P_chart_after": [
+        7,
+        6
+      ]
+    },
+    {
+      "raw_before": [
+        7,
+        6
+      ],
+      "raw_after": [
+        8,
+        6
+      ],
+      "P_chart_before": [
+        7,
+        6
+      ],
+      "P_chart_after": [
+        2,
+        6
+      ]
+    },
+    {
+      "raw_before": [
+        8,
+        6
+      ],
+      "raw_after": [
+        9,
+        6
+      ],
+      "P_chart_before": [
+        2,
+        6
+      ],
+      "P_chart_after": [
+        1,
+        6
+      ]
+    },
+    {
+      "raw_before": [
+        9,
+        6
+      ],
+      "raw_after": [
+        0,
+        7
+      ],
+      "P_chart_before": [
+        1,
+        6
+      ],
+      "P_chart_after": [
+        5,
+        7
+      ]
+    },
+    {
+      "raw_before": [
+        0,
+        7
+      ],
+      "raw_after": [
+        1,
+        7
+      ],
+      "P_chart_before": [
+        5,
+        7
+      ],
+      "P_chart_after": [
+        9,
+        7
+      ]
+    },
+    {
+      "raw_before": [
+        1,
+        7
+      ],
+      "raw_after": [
+        2,
+        7
+      ],
+      "P_chart_before": [
+        9,
+        7
+      ],
+      "P_chart_after": [
+        8,
+        7
+      ]
+    },
+    {
+      "raw_before": [
+        2,
+        7
+      ],
+      "raw_after": [
+        3,
+        7
+      ],
+      "P_chart_before": [
+        8,
+        7
+      ],
+      "P_chart_after": [
+        3,
+        7
+      ]
+    },
+    {
+      "raw_before": [
+        3,
+        7
+      ],
+      "raw_after": [
+        4,
+        7
+      ],
+      "P_chart_before": [
+        3,
+        7
+      ],
+      "P_chart_after": [
+        6,
+        7
+      ]
+    },
+    {
+      "raw_before": [
+        4,
+        7
+      ],
+      "raw_after": [
+        5,
+        7
+      ],
+      "P_chart_before": [
+        6,
+        7
+      ],
+      "P_chart_after": [
+        0,
+        7
+      ]
+    },
+    {
+      "raw_before": [
+        5,
+        7
+      ],
+      "raw_after": [
+        6,
+        7
+      ],
+      "P_chart_before": [
+        0,
+        7
+      ],
+      "P_chart_after": [
+        4,
+        7
+      ]
+    },
+    {
+      "raw_before": [
+        6,
+        7
+      ],
+      "raw_after": [
+        7,
+        7
+      ],
+      "P_chart_before": [
+        4,
+        7
+      ],
+      "P_chart_after": [
+        7,
+        7
+      ]
+    },
+    {
+      "raw_before": [
+        7,
+        7
+      ],
+      "raw_after": [
+        8,
+        7
+      ],
+      "P_chart_before": [
+        7,
+        7
+      ],
+      "P_chart_after": [
+        2,
+        7
+      ]
+    },
+    {
+      "raw_before": [
+        8,
+        7
+      ],
+      "raw_after": [
+        9,
+        7
+      ],
+      "P_chart_before": [
+        2,
+        7
+      ],
+      "P_chart_after": [
+        1,
+        7
+      ]
+    },
+    {
+      "raw_before": [
+        9,
+        7
+      ],
+      "raw_after": [
+        0,
+        8
+      ],
+      "P_chart_before": [
+        1,
+        7
+      ],
+      "P_chart_after": [
+        5,
+        8
+      ]
+    },
+    {
+      "raw_before": [
+        0,
+        8
+      ],
+      "raw_after": [
+        1,
+        8
+      ],
+      "P_chart_before": [
+        5,
+        8
+      ],
+      "P_chart_after": [
+        9,
+        8
+      ]
+    },
+    {
+      "raw_before": [
+        1,
+        8
+      ],
+      "raw_after": [
+        2,
+        8
+      ],
+      "P_chart_before": [
+        9,
+        8
+      ],
+      "P_chart_after": [
+        8,
+        8
+      ]
+    },
+    {
+      "raw_before": [
+        2,
+        8
+      ],
+      "raw_after": [
+        3,
+        8
+      ],
+      "P_chart_before": [
+        8,
+        8
+      ],
+      "P_chart_after": [
+        3,
+        8
+      ]
+    },
+    {
+      "raw_before": [
+        3,
+        8
+      ],
+      "raw_after": [
+        4,
+        8
+      ],
+      "P_chart_before": [
+        3,
+        8
+      ],
+      "P_chart_after": [
+        6,
+        8
+      ]
+    },
+    {
+      "raw_before": [
+        4,
+        8
+      ],
+      "raw_after": [
+        5,
+        8
+      ],
+      "P_chart_before": [
+        6,
+        8
+      ],
+      "P_chart_after": [
+        0,
+        8
+      ]
+    },
+    {
+      "raw_before": [
+        5,
+        8
+      ],
+      "raw_after": [
+        6,
+        8
+      ],
+      "P_chart_before": [
+        0,
+        8
+      ],
+      "P_chart_after": [
+        4,
+        8
+      ]
+    },
+    {
+      "raw_before": [
+        6,
+        8
+      ],
+      "raw_after": [
+        7,
+        8
+      ],
+      "P_chart_before": [
+        4,
+        8
+      ],
+      "P_chart_after": [
+        7,
+        8
+      ]
+    },
+    {
+      "raw_before": [
+        7,
+        8
+      ],
+      "raw_after": [
+        8,
+        8
+      ],
+      "P_chart_before": [
+        7,
+        8
+      ],
+      "P_chart_after": [
+        2,
+        8
+      ]
+    },
+    {
+      "raw_before": [
+        8,
+        8
+      ],
+      "raw_after": [
+        9,
+        8
+      ],
+      "P_chart_before": [
+        2,
+        8
+      ],
+      "P_chart_after": [
+        1,
+        8
+      ]
+    },
+    {
+      "raw_before": [
+        9,
+        8
+      ],
+      "raw_after": [
+        0,
+        9
+      ],
+      "P_chart_before": [
+        1,
+        8
+      ],
+      "P_chart_after": [
+        5,
+        9
+      ]
+    },
+    {
+      "raw_before": [
+        0,
+        9
+      ],
+      "raw_after": [
+        1,
+        9
+      ],
+      "P_chart_before": [
+        5,
+        9
+      ],
+      "P_chart_after": [
+        9,
+        9
+      ]
+    },
+    {
+      "raw_before": [
+        1,
+        9
+      ],
+      "raw_after": [
+        2,
+        9
+      ],
+      "P_chart_before": [
+        9,
+        9
+      ],
+      "P_chart_after": [
+        8,
+        9
+      ]
+    },
+    {
+      "raw_before": [
+        2,
+        9
+      ],
+      "raw_after": [
+        3,
+        9
+      ],
+      "P_chart_before": [
+        8,
+        9
+      ],
+      "P_chart_after": [
+        3,
+        9
+      ]
+    },
+    {
+      "raw_before": [
+        3,
+        9
+      ],
+      "raw_after": [
+        4,
+        9
+      ],
+      "P_chart_before": [
+        3,
+        9
+      ],
+      "P_chart_after": [
+        6,
+        9
+      ]
+    },
+    {
+      "raw_before": [
+        4,
+        9
+      ],
+      "raw_after": [
+        5,
+        9
+      ],
+      "P_chart_before": [
+        6,
+        9
+      ],
+      "P_chart_after": [
+        0,
+        9
+      ]
+    },
+    {
+      "raw_before": [
+        5,
+        9
+      ],
+      "raw_after": [
+        6,
+        9
+      ],
+      "P_chart_before": [
+        0,
+        9
+      ],
+      "P_chart_after": [
+        4,
+        9
+      ]
+    },
+    {
+      "raw_before": [
+        6,
+        9
+      ],
+      "raw_after": [
+        7,
+        9
+      ],
+      "P_chart_before": [
+        4,
+        9
+      ],
+      "P_chart_after": [
+        7,
+        9
+      ]
+    },
+    {
+      "raw_before": [
+        7,
+        9
+      ],
+      "raw_after": [
+        8,
+        9
+      ],
+      "P_chart_before": [
+        7,
+        9
+      ],
+      "P_chart_after": [
+        2,
+        9
+      ]
+    },
+    {
+      "raw_before": [
+        8,
+        9
+      ],
+      "raw_after": [
+        9,
+        9
+      ],
+      "P_chart_before": [
+        2,
+        9
+      ],
+      "P_chart_after": [
+        1,
+        9
+      ]
+    }
+  ],
+  "ratio_countercase": {
+    "raw": "5/9",
+    "naive_ratio_after_P": "0",
+    "preserved_readout": "P_inverse(0)/P_inverse(1) = 5/9"
+  },
+  "claim_ceiling": "Exact equivariance of a declared word operation; no BSD scalar relation or universal numeral meaning"
+}

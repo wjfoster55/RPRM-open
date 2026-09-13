@@ -1,0 +1,21 @@
+{
+  "scope": "RPRM operational-value recovery and bounded E34 p=5 continuation",
+  "claims": [
+    {"id":"operational_definition","status":"RECOVERED_DEFINITION_AND_CORRECTION","claim":"Base operation/relation profile exists in the declared structure; the aperture selects future-sufficient operational state","proof":"OPERATIONAL_VALUE_RECOVERY.md","evidence":"evidence/operational_sources.json"},
+    {"id":"two_shadow_inverse","status":"WRITTEN_PROOF_AND_COMPLETE_FINITE_TEST","claim":"r(P),r(2P) recover P on the admitted nonexceptional carrier; r alone fails raw doubling updates","proof":"OPERATIONAL_BRIDGE.md","carrier_size":4096,"partition_counts":[2048,4096,4096]},
+    {"id":"height_receiver_correction","status":"PRESERVED_QUALIFICATION","claim":"Canonical-height-only doubling is already preserved on the old r fiber; mixed addition/pairing may distinguish it","proof":"OPERATIONAL_BRIDGE.md","h5_after_same_addition_mod5":[4,3]},
+    {"id":"cyclotomic_regulator","status":"NEW_THEOREM_DEPENDENT_EXACT_RESULT","claim":"E34's ordinary cyclotomic5-adic pairing is nondegenerate","MST_Gram_mod5":[[1,2],[2,2]],"determinant_mod5":3,"proof":"PADIC_HEIGHT_AUDIT.md"},
+    {"id":"BKS_admission","status":"CHECKED_WITH_ATTRIBUTED_PRIOR_INPUTS","claim":"BKS Hypothesis2.2 holds at5: residual irreducibility/freeness, positive rank, finite5-primarySha","new_certificate":"Frobenius3 polynomial X^2+3 is irreducible overF5","prior_inputs":"rank2 and Sha[5^infinity]=0"},
+    {"id":"Bockstein_nonvanishing","status":"ESTABLISHED_BY_PUBLISHED_COMPARISON","claim":"The specified BKS Bockstein regulator is nonzero","proof":"PADIC_HEIGHT_AUDIT.md","theorem":"BKS5.6 plus ordinary height comparison"},
+    {"id":"arithmetic_vector","status":"WRITTEN_DEFINITION_AND_EXACT_RESIDUE","claim":"W=adj(G_MST)ell is unique for its pairing equation and invariant under integral basis change","W_div5_mod5":[0,3],"exact_W_computed":false,"proof":"OPERATIONAL_BRIDGE.md"},
+    {"id":"canonical_collinearity","status":"ESTABLISHED_BY_PUBLISHED_COMPARISON","claim":"The canonical derived5-adic Kato class lies in the line spanned by the Bockstein regulator","theorem":"BKS6.2 under checked hypotheses and nondegenerate pairing","zero_class_still_possible":true,"proof":"PADIC_HEIGHT_AUDIT.md"},
+    {"id":"scalar_comparison","status":"OPEN","claim":"Exact multiplier equals the normalized real analytic coefficient","target":"BKS6.7 scalar formula, equivalently rank-two generalizedPerrin-Riou comparison at the checked regulator"},
+    {"id":"main_conjecture_admission","status":"OPEN_IN_THIS_ROUTE","claim":"The precise main-conjecture input needed for the selected full-BSD implication has not been newly checked"},
+    {"id":"total_Sha","status":"OPEN","claim":"Finiteness and total order of Sha(E34/Q); no new prime-primary subgroup beyond earlier2,5 was determined"},
+    {"id":"full_BSD","status":"OPEN","claim":"Exact complex BSD leading-coefficient formula and generalBSD"}
+  ],
+  "formal_verification": false,
+  "no_saved_PASS_as_numeric_input": true,
+  "other_lanes_changed": false,
+  "paper_or_publication": false
+}

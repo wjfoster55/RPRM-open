@@ -1,0 +1,251 @@
+{
+  "created_utc": "2026-09-13T01:39:40.710474+00:00",
+  "status": "EXACT_BOUNDED_RISE_FALL_AND_SEAMS_CHECKED",
+  "source_sha256": "582ae5713ae681667c4b29cb48102eecdb6346d968be05aed3751f90b59baddd",
+  "rise_fall": {
+    "cases": [
+      {
+        "base": 2,
+        "states": 10,
+        "forward_edges": 9,
+        "outer_boundary": [
+          -4,
+          5
+        ]
+      },
+      {
+        "base": 3,
+        "states": 15,
+        "forward_edges": 14,
+        "outer_boundary": [
+          -6,
+          8
+        ]
+      },
+      {
+        "base": 4,
+        "states": 20,
+        "forward_edges": 19,
+        "outer_boundary": [
+          -8,
+          11
+        ]
+      },
+      {
+        "base": 5,
+        "states": 25,
+        "forward_edges": 24,
+        "outer_boundary": [
+          -10,
+          14
+        ]
+      },
+      {
+        "base": 6,
+        "states": 30,
+        "forward_edges": 29,
+        "outer_boundary": [
+          -12,
+          17
+        ]
+      },
+      {
+        "base": 7,
+        "states": 35,
+        "forward_edges": 34,
+        "outer_boundary": [
+          -14,
+          20
+        ]
+      },
+      {
+        "base": 8,
+        "states": 40,
+        "forward_edges": 39,
+        "outer_boundary": [
+          -16,
+          23
+        ]
+      },
+      {
+        "base": 9,
+        "states": 45,
+        "forward_edges": 44,
+        "outer_boundary": [
+          -18,
+          26
+        ]
+      },
+      {
+        "base": 10,
+        "states": 50,
+        "forward_edges": 49,
+        "outer_boundary": [
+          -20,
+          29
+        ]
+      }
+    ],
+    "states": 270,
+    "enabled_edges": 261,
+    "example_path": [
+      {
+        "k": 0,
+        "rise": 7,
+        "fall": 2,
+        "rise_state": [
+          0,
+          7
+        ],
+        "fall_state": [
+          0,
+          2
+        ],
+        "sum": 9
+      },
+      {
+        "k": 1,
+        "rise": 8,
+        "fall": 1,
+        "rise_state": [
+          0,
+          8
+        ],
+        "fall_state": [
+          0,
+          1
+        ],
+        "sum": 9
+      },
+      {
+        "k": 2,
+        "rise": 9,
+        "fall": 0,
+        "rise_state": [
+          0,
+          9
+        ],
+        "fall_state": [
+          0,
+          0
+        ],
+        "sum": 9
+      },
+      {
+        "k": 3,
+        "rise": 10,
+        "fall": -1,
+        "rise_state": [
+          1,
+          0
+        ],
+        "fall_state": [
+          -1,
+          9
+        ],
+        "sum": 9
+      },
+      {
+        "k": 4,
+        "rise": 11,
+        "fall": -2,
+        "rise_state": [
+          1,
+          1
+        ],
+        "fall_state": [
+          -1,
+          8
+        ],
+        "sum": 9
+      },
+      {
+        "k": 5,
+        "rise": 12,
+        "fall": -3,
+        "rise_state": [
+          1,
+          2
+        ],
+        "fall_state": [
+          -1,
+          7
+        ],
+        "sum": 9
+      }
+    ],
+    "unbounded_continuation": "Written family z=7+k, reflected=2-k for any separately admitted integer k; no terminal predicate follows"
+  },
+  "bidirectional": {
+    "relations": 512,
+    "states_per_relation": 3,
+    "horizons": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "seam_checks": 69120,
+    "successful_path_occurrences": 27840
+  },
+  "hostile_meeting": {
+    "start": 7,
+    "target": 2,
+    "horizon": 5,
+    "split": 2,
+    "forward_state": [
+      0,
+      9
+    ],
+    "backward_state": [
+      -1,
+      9
+    ],
+    "same_digit": true,
+    "joint_seam_empty": true,
+    "projected_route": [
+      7,
+      8,
+      9,
+      0,
+      1,
+      2
+    ]
+  },
+  "positive_meeting": {
+    "start": 7,
+    "target": 12,
+    "horizon": 5,
+    "joint_seam": [
+      9
+    ],
+    "path": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "existence_not_forced_readout": {
+    "complete_triples": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "readout_values": [
+      0,
+      1
+    ]
+  },
+  "general_BSD_or_other_Millennium_proof": false
+}

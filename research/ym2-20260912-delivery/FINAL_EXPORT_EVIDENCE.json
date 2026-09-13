@@ -1,0 +1,195 @@
+{
+  "archive": {
+    "bytes": 155781,
+    "path": "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\YM2-interacting-SU2-2026-09-12.zip",
+    "sha256": "167e181c19e6c2a5dfdcb3e9956412251a8dcb9d808c7684e68393e7d86f1f8c"
+  },
+  "checks": {
+    "archive_crc": "PASS",
+    "authored_local_links": "PASS",
+    "exported_manifest_after": "PASS",
+    "exported_manifest_before": "PASS",
+    "exported_scalar_reference_exact_output": "PASS",
+    "exported_science": "PASS",
+    "input_packet": {
+      "errors": [],
+      "files": 23,
+      "status": "PASS"
+    },
+    "safe_unique_paths": "PASS",
+    "source_export_scientific_bytes_equal": true,
+    "source_manifest": "PASS",
+    "zip_hash_unchanged_after_replay": true
+  },
+  "completed_utc": "2026-09-12T16:24:23.616776+00:00",
+  "evidence_boundary": "Fresh exported-byte execution and integrity, not a formal proof or quantum spectral bound. YM1 checker not run.",
+  "export_history": "Initial helper link audit mistook inline Taylor coefficient notation [t^n](...) for a Markdown link. Fixed helper to skip inline code; resumed successful frozen source runs. No frozen payload code, proof, or result was changed.",
+  "export_script": {
+    "bytes": 12704,
+    "path": "export_and_replay.py",
+    "sha256": "cded8d43cf73a1f1e627a7f2accd43fd9d0287510aff6321f985a01514804f20"
+  },
+  "exported_root": "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\final-extraction\\YM2-interacting-SU2",
+  "frozen_contract_sha256": "626bb5064c106d1a7b90a4af3c0a787b3b3596a84aaaa6be8ef851d0d93fdcaf",
+  "manifest_sha256": "aec84f41abaa6e138234e230a2c43e6da8cb77e64f88186d64a8971952885260",
+  "numeric_diagnostics": {
+    "absolute_tolerance": 1e-10,
+    "max_energy_drift": 7.105427357601002e-15,
+    "max_step_difference": 7.327471962526033e-15
+  },
+  "payload_files_excluding_manifest": 39,
+  "replay_results": {
+    "bytes": 27983,
+    "path": "FINAL_REPLAY_RESULTS.json",
+    "sha256": "b4d22e4a94ef06b00a7b7e3a9698a7f9635d4c6b266f59a1211eb2c706d99aa4"
+  },
+  "runs": [
+    {
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "supplied/CODEX_YM2/verify_packet.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2_interacting_energy_transfer",
+      "ended_utc": "2026-09-12T16:23:35.261423+00:00",
+      "exit_code": 0,
+      "name": "input-packet-integrity",
+      "started_utc": "2026-09-12T16:23:35.021091+00:00",
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"files\": 23,\n  \"errors\": []\n}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "check_ym2.py",
+        "--numeric",
+        "--output",
+        "RESULTS.json"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2_interacting_energy_transfer",
+      "ended_utc": "2026-09-12T16:23:35.514586+00:00",
+      "exit_code": 0,
+      "name": "final-source-science",
+      "started_utc": "2026-09-12T16:23:35.271282+00:00",
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"output\": \"RESULTS.json\", \"exact_states\": 6, \"gauge_transports\": 6, \"numeric\": true}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "check_scalar_reference.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2_interacting_energy_transfer",
+      "ended_utc": "2026-09-12T16:23:35.595051+00:00",
+      "exit_code": 0,
+      "name": "final-source-scalar-reference",
+      "started_utc": "2026-09-12T16:23:35.515140+00:00",
+      "stderr": "",
+      "stdout": "A ('1/2', '0', '0', '0', '-5/6', '0', '46/45')\nB ('1/2', '0', '-4/3', '0', '71/54', '0', '-50/81')\n+ ('3/2', '0', '-6', '6', '33/2', '-33/5', '-213/10')\n- ('3/2', '0', '-6', '-6', '33/2', '33/5', '-213/10')\nplanar+ ('2', '0', '-14', '8', '97/3', '-178/5', '-221/9')\nplanar- ('2', '0', '-14', '-8', '97/3', '178/5', '-221/9')\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "verify_manifest.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2_interacting_energy_transfer",
+      "ended_utc": "2026-09-12T16:24:22.655636+00:00",
+      "exit_code": 0,
+      "name": "final-source-manifest",
+      "started_utc": "2026-09-12T16:24:22.556850+00:00",
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"files\": 39,\n  \"errors\": []\n}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "verify_manifest.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\final-extraction\\YM2-interacting-SU2",
+      "ended_utc": "2026-09-12T16:24:23.104353+00:00",
+      "exit_code": 0,
+      "name": "exported-manifest-before",
+      "started_utc": "2026-09-12T16:24:22.737963+00:00",
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"files\": 39,\n  \"errors\": []\n}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "check_ym2.py",
+        "--numeric",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\FINAL_REPLAY_RESULTS.json"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\final-extraction\\YM2-interacting-SU2",
+      "ended_utc": "2026-09-12T16:24:23.350671+00:00",
+      "exit_code": 0,
+      "name": "exported-science",
+      "started_utc": "2026-09-12T16:24:23.105054+00:00",
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"output\": \"C:\\\\github\\\\RPRM-open\\\\research\\\\ym2-20260912-delivery\\\\FINAL_REPLAY_RESULTS.json\", \"exact_states\": 6, \"gauge_transports\": 6, \"numeric\": true}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "check_scalar_reference.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\final-extraction\\YM2-interacting-SU2",
+      "ended_utc": "2026-09-12T16:24:23.439760+00:00",
+      "exit_code": 0,
+      "name": "exported-scalar-reference",
+      "started_utc": "2026-09-12T16:24:23.351335+00:00",
+      "stderr": "",
+      "stdout": "A ('1/2', '0', '0', '0', '-5/6', '0', '46/45')\nB ('1/2', '0', '-4/3', '0', '71/54', '0', '-50/81')\n+ ('3/2', '0', '-6', '6', '33/2', '-33/5', '-213/10')\n- ('3/2', '0', '-6', '-6', '33/2', '33/5', '-213/10')\nplanar+ ('2', '0', '-14', '8', '97/3', '-178/5', '-221/9')\nplanar- ('2', '0', '-14', '-8', '97/3', '178/5', '-221/9')\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "supplied/CODEX_YM2/verify_packet.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\final-extraction\\YM2-interacting-SU2",
+      "ended_utc": "2026-09-12T16:24:23.520849+00:00",
+      "exit_code": 0,
+      "name": "exported-input-packet",
+      "started_utc": "2026-09-12T16:24:23.440329+00:00",
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"files\": 23,\n  \"errors\": []\n}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "verify_manifest.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\final-extraction\\YM2-interacting-SU2",
+      "ended_utc": "2026-09-12T16:24:23.598941+00:00",
+      "exit_code": 0,
+      "name": "exported-manifest-after",
+      "started_utc": "2026-09-12T16:24:23.521497+00:00",
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"files\": 39,\n  \"errors\": []\n}\n"
+    }
+  ],
+  "runtime": {
+    "executable": "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "status": "PASS"
+}

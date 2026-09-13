@@ -1,0 +1,165 @@
+{
+  "schema": "ym2-operational-controls-v1",
+  "status": "PASS",
+  "matrix_channels": [
+    {
+      "pattern": "opposite",
+      "spin": 0,
+      "rank": 16,
+      "singular_value_squared": "1/16"
+    },
+    {
+      "pattern": "opposite",
+      "spin": 1,
+      "rank": 16,
+      "singular_value_squared": "9/16"
+    },
+    {
+      "pattern": "opposite",
+      "spin": 0,
+      "rank": 16,
+      "singular_value_squared": "1/16"
+    },
+    {
+      "pattern": "opposite",
+      "spin": 1,
+      "rank": 16,
+      "singular_value_squared": "9/16"
+    },
+    {
+      "pattern": "same",
+      "spin": 0,
+      "rank": 4,
+      "singular_value_squared": "1/4"
+    },
+    {
+      "pattern": "same",
+      "spin": 1,
+      "rank": 12,
+      "singular_value_squared": "3/4"
+    },
+    {
+      "pattern": "same",
+      "spin": 0,
+      "rank": 4,
+      "singular_value_squared": "1/4"
+    },
+    {
+      "pattern": "same",
+      "spin": 1,
+      "rank": 12,
+      "singular_value_squared": "3/4"
+    }
+  ],
+  "incidence": [
+    {
+      "dimension": 2,
+      "axis": 0,
+      "plaquettes": 2,
+      "pair_count": 7,
+      "counts": {
+        "shared": {
+          "same": 0,
+          "opposite": 1
+        },
+        "outside": {
+          "same": 0,
+          "opposite": 6
+        }
+      }
+    },
+    {
+      "dimension": 2,
+      "axis": 1,
+      "plaquettes": 2,
+      "pair_count": 7,
+      "counts": {
+        "shared": {
+          "same": 0,
+          "opposite": 1
+        },
+        "outside": {
+          "same": 0,
+          "opposite": 6
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "axis": 0,
+      "plaquettes": 4,
+      "pair_count": 42,
+      "counts": {
+        "shared": {
+          "same": 2,
+          "opposite": 4
+        },
+        "outside": {
+          "same": 12,
+          "opposite": 24
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "axis": 1,
+      "plaquettes": 4,
+      "pair_count": 42,
+      "counts": {
+        "shared": {
+          "same": 2,
+          "opposite": 4
+        },
+        "outside": {
+          "same": 12,
+          "opposite": 24
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "axis": 2,
+      "plaquettes": 4,
+      "pair_count": 42,
+      "counts": {
+        "shared": {
+          "same": 2,
+          "opposite": 4
+        },
+        "outside": {
+          "same": 12,
+          "opposite": 24
+        }
+      }
+    }
+  ],
+  "spectral": {
+    "resolvent_values": 31,
+    "two_probe_pairs": 21,
+    "character_spin_examples": 64,
+    "zero_current_nonzero_inverse": "1/156",
+    "fixed_scale_zero_later": "-z/[16(9+z)(13+z)]"
+  },
+  "certificates": [
+    {
+      "x": "1/3",
+      "Z": "7/20",
+      "margin": "1/2400",
+      "Lipschitz": "101/180",
+      "q": "4/5",
+      "D": "41/90",
+      "gap_prefactor_without_d_over_d_minus_one": "3/10"
+    },
+    {
+      "x": "7/20",
+      "Z": "5/12",
+      "margin": "13/6912",
+      "Lipschitz": "109/180",
+      "q": "163/180",
+      "D": "23/45",
+      "gap_prefactor_without_d_over_d_minus_one": "17/120"
+    }
+  ],
+  "old_checkers_executed": false,
+  "assertions": 633
+}

@@ -1,0 +1,89 @@
+{
+  "receiver": {
+    "name": "outlet_exceedance",
+    "description": "Does outlet mobile concentration exceed threshold C* over future interval [t0, t1] under a known continuation input?",
+    "threshold_c": 0.05,
+    "t0": 200.0,
+    "t1": 300.0,
+    "secondary": "cumulative_mass_released_over_[t0,t1]"
+  },
+  "episodes": {
+    "dual_slow": {
+      "control": "dual_slow",
+      "n_obs": 125,
+      "final_outlet_c": 0.01220342936,
+      "peak_outlet_c": 0.3264482359,
+      "mass_residual_rel": 0.310453783677875,
+      "truth_exceeds": true,
+      "times_hash": "013b5aeca48a0e3be92b75b4890c4724cbdac0aee3085c103347ee903b2a8f9f",
+      "outlet_hash": "e788c38120ad609c218a725bf8db9a314d1192614f87444f2b48322db1261b24",
+      "mobile_mass_final": 1.1562790602049995,
+      "immobile_mass_final": 0.5757256537600808
+    },
+    "no_immobile": {
+      "control": "no_immobile",
+      "n_obs": 125,
+      "final_outlet_c": 1.830283437e-05,
+      "peak_outlet_c": 0.5256420912,
+      "mass_residual_rel": 0.01484200450235706,
+      "truth_exceeds": true,
+      "times_hash": "013b5aeca48a0e3be92b75b4890c4724cbdac0aee3085c103347ee903b2a8f9f",
+      "outlet_hash": "3e3742fd8cc2e60817d5a981d0b22239f223fc4dda12ce4814139d4cfa090bd7",
+      "mobile_mass_final": 0.08161851801824077,
+      "immobile_mass_final": 0.0
+    },
+    "rapid_equilibration": {
+      "control": "rapid_equilibration",
+      "n_obs": 125,
+      "final_outlet_c": 0.002442279924,
+      "peak_outlet_c": 0.4074783336,
+      "mass_residual_rel": 0.289586958012839,
+      "truth_exceeds": true,
+      "times_hash": "013b5aeca48a0e3be92b75b4890c4724cbdac0aee3085c103347ee903b2a8f9f",
+      "outlet_hash": "20b11a32b5b88edf39947e559232f8e2439d2c8dffb7a3a023edadd248937442",
+      "mobile_mass_final": 1.1575068531955972,
+      "immobile_mass_final": 0.4630731606121418
+    }
+  },
+  "checkpoint_t": 120.0,
+  "baselines": {
+    "current_reading": {
+      "status": "ONE",
+      "predicted_exceeds": true,
+      "predicted_mass": null,
+      "supporting_candidate_ids": [
+        "current_reading"
+      ],
+      "notes": "last_c=0.1819955331 vs C*=0.05 (myopic; ignores storage)"
+    },
+    "history_mean": {
+      "status": "ONE",
+      "predicted_exceeds": false,
+      "predicted_mass": null,
+      "supporting_candidate_ids": [
+        "history_mean"
+      ],
+      "notes": "mean_c=0.027699549491286855 vs C*=0.05"
+    },
+    "candidate_gate": {
+      "status": "ONE",
+      "predicted_exceeds": true,
+      "predicted_mass": null,
+      "supporting_candidate_ids": [
+        "dual_slow",
+        "no_immobile"
+      ],
+      "notes": "candidates agree"
+    }
+  },
+  "evaluator_truth_exceeds": true,
+  "hypothesis_vs_evidence": {
+    "hypothesis": "Present outlet reading can hide stored tracer that changes later release.",
+    "evidence_grade": "simulated_model_episode",
+    "not_claimed": [
+      "field observation",
+      "RPRM discovered slow exchange (exchange was in the simulator)",
+      "health/safety threshold"
+    ]
+  }
+}

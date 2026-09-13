@@ -1,0 +1,10 @@
+{
+  "inventory_members": 108,
+  "payload_members": 109,
+  "inventory_mismatches": [],
+  "unlisted_payload": [
+    "DELIVERY_INVENTORY.json"
+  ],
+  "original_archive_members_identical": 35,
+  "original_archive_checked": "/mnt/data/BSD_E5_CODEX_TEST_01.zip"
+}

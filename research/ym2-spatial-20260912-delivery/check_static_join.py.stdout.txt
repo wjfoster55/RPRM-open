@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "receipt": "C:\\github\\RPRM-open\\research\\ym2-spatial-20260912-delivery\\final-extraction\\YM2-spatial-joint\\RESULTS_STATIC.json",
+  "receipt_action": "compared_without_writing",
+  "counts": {
+    "rational_seeds": 7,
+    "matrix_product_comparisons": 49,
+    "associativity_and_matrix_triples": 343,
+    "joint_product_updates": 256,
+    "cross_Gram_minor_identities": 64,
+    "coarse_fiber_recovery_and_energy_controls": 72
+  }
+}

@@ -1,0 +1,7 @@
+Omega: ['93809582917/40000000000', '1172619786463/500000000000']
+canonical height (full x height): ['1899437/1000000', '1899511/1000000']
+c2,c5,torsion: [2, 4, 4]
+BSD RHS without Sha: ['2227317/1000000', '556851/250000']
+quotient: ['499569/500000', '500391/500000']
+PASS: exact quotient enclosure contained in (1/2,3/2).
+Wrote C:\github\RPRM-open\research\bsd-e5-completion\runs\final_validation\bsd_factors.json

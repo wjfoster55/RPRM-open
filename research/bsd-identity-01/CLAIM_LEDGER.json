@@ -1,0 +1,27 @@
+{
+  "experiment": "BSD_IDENTITY_01",
+  "model": [0, 0, 0, -1156, 0],
+  "date": "2026-09-12",
+  "claims": [
+    {"claim": "inherited_rank_two_full_basis_and_two_primary_Sha", "status": "REPLAYED_WITH_WRITTEN_PROOF_DEPENDENCIES", "proofs": "input_source/", "evidence": "runs/return_validation/inputs/RUN.json"},
+    {"claim": "absolutely_convergent_height_and_regulator_series", "status": "PROVED", "proof": "EXPLICIT_IDENTITY_TARGET.md"},
+    {"claim": "all_stage_matching_certificate_suffices_for_real_identity", "status": "PROVED_CONDITIONAL_CRITERION", "proof": "EXPLICIT_IDENTITY_TARGET.md"},
+    {"claim": "actual_matching_rule_and_zero_boundary", "status": "OPEN"},
+    {"claim": "bounded_rationality_implies_quotient_one", "status": "PROVED_CONDITIONAL_CRITERION", "conditional_denominator_bound": 10000, "proof": "EXACTNESS_AND_LEVELS.md"},
+    {"claim": "actual_quotient_rationality_and_denominator_bound", "status": "NOT_ESTABLISHED"},
+    {"claim": "whole_units_plus_remainder_recovers_value_and_carry", "status": "PROVED_ON_DECLARED_NONNEGATIVE_CARRIER", "proof": "EXACTNESS_AND_LEVELS.md"},
+    {"claim": "same_fixed_value_zero_at_all_levels_is_zero", "status": "PROVED_CONDITIONAL_CRITERION", "proof": "EXACTNESS_AND_LEVELS.md"},
+    {"claim": "actual_BSD_discrepancy_zero_at_all_levels", "status": "NOT_ESTABLISHED"},
+    {"claim": "negative_readout_extension_and_full_user_carry_recurrence", "status": "OPEN_SPECIFICATION", "preserved_input": "USER_ITERATION.md"},
+    {"claim": "odd_prime_5_theorem_admission_and_trace_reduction", "status": "PROVED_REDUCTION_WITH_CITED_THEOREMS", "proof": "ODD_PRIME_ATTEMPT.md"},
+    {"claim": "actual_degree_256_trace_mod125", "status": "NOT_COMPUTED", "value": null},
+    {"claim": "Sha_5_primary", "status": "NOT_ESTABLISHED"},
+    {"claim": "applicable_unconditional_exact_identity_theorem_from_bounded_review", "status": "NOT_ESTABLISHED", "proof_obligations": "EXACT_IDENTITY_THEOREMS.md"},
+    {"claim": "full_Sha_finiteness_and_order", "status": "NOT_ESTABLISHED"},
+    {"claim": "exact_complex_BSD_identity", "status": "NOT_ESTABLISHED"},
+    {"claim": "general_BSD", "status": "OPEN"}
+  ],
+  "fresh_run": "runs/return_validation/RUN.json",
+  "formal_verification": "NOT_RUN",
+  "evidence_ceiling": "Written reductions, cited theorem conditions, fresh finite computation; open premises are not promoted"
+}

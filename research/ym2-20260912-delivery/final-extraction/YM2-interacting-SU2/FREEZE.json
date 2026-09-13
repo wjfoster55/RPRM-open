@@ -1,0 +1,75 @@
+{
+  "assumptions": "MODEL_AND_DERIVATION.md sections 1-3; initial H<=5, ||A||<=3 in reference units, horizon 0<=t<=1",
+  "evidence_ceiling": "Written proof plus exact finite checks; no formal proof assistant, no spectral result, no novelty claim",
+  "expected_results": [
+    "R3 pair: (E,B,J)=(1/2,1/2,0), K=0 and -8/3",
+    "R4 pair: (E,B,J,K)=(3,3/2,0,-12), third derivative=+36 and -36",
+    "Conditioned fixed-q momentum circle: third derivative range [-36,36]",
+    "Planar R4 control: (5/2,2,0,-28), third derivative=+48 and -48"
+  ],
+  "frozen_utc": "2026-09-12T16:23:35.269090+00:00",
+  "reviewed_files": [
+    {
+      "bytes": 22354,
+      "path": "MODEL_AND_DERIVATION.md",
+      "sha256": "a0bfa2760ec7258ae424b950845aa091b44daab11c7c4e8ef45208d1d205c22a"
+    },
+    {
+      "bytes": 7699,
+      "path": "RETURN_TO_WILLIAM.md",
+      "sha256": "e98f6d6eeeeaf95b39f7af47040d3fe23ba0fa963368d1bd87b93b7a152a8407"
+    },
+    {
+      "bytes": 3811,
+      "path": "PROBLEM_BRIDGE.md",
+      "sha256": "a7b32ab4982e31272fe4a7f13f80b4f4d1f6b273780b998fcff4ed269036dd05"
+    },
+    {
+      "bytes": 5513,
+      "path": "SOURCES.md",
+      "sha256": "c05158db7d6620749b24c06a813129629238a115df08cee20056dc3dc70cf812"
+    },
+    {
+      "bytes": 2717,
+      "path": "AUTHORITY_AND_REBRIEF.md",
+      "sha256": "c8f35aa339ca5ea6f84048393a241f1f11d62eb22102cd59a7d89400071e3256"
+    },
+    {
+      "bytes": 2005,
+      "path": "README.md",
+      "sha256": "c7e7bb1a12a294b02c53509ed452707d53f4e03204e8b78c4861aff9ab97881a"
+    },
+    {
+      "bytes": 11919,
+      "path": "check_ym2.py",
+      "sha256": "ab250573cd8655d3e6cf0b088ec4f17057ff44a31055927afe6f43d7bc7b446d"
+    },
+    {
+      "bytes": 1233,
+      "path": "check_scalar_reference.py",
+      "sha256": "18779af7612985862c336107446c3c6b0d2c4d67194574ade5c8be6cf4debded"
+    },
+    {
+      "bytes": 1328,
+      "path": "verify_manifest.py",
+      "sha256": "167a4f4eaa5b8f9fe2f58321e3c5172a063d3a777e213986593df7970a4bc926"
+    },
+    {
+      "bytes": 2209,
+      "path": "review/INDEPENDENT_MATH.md",
+      "sha256": "ad73ead0c073b8effd6dae436efb860e32498ee960db503f968b2181344bcfc9"
+    },
+    {
+      "bytes": 2797,
+      "path": "review/PHYSICS_REVIEW.md",
+      "sha256": "1489e5f08e2e027401f59cf18b37a3ca3f2cb210fb5807f508cfb7ff776ca1f1"
+    },
+    {
+      "bytes": 2780,
+      "path": "review/FINAL_MATH_REVIEW.md",
+      "sha256": "869c79ea5c22424eb15842a7e84d1bdcc7a46f9ab5867f498260c5fc9302bd8b"
+    }
+  ],
+  "scope": "Classical homogeneous pure SU(2); g=1,L=reference length,V=L^3 for all witnesses",
+  "status": "IMPLEMENTATION_AND_ASSUMPTIONS_FROZEN_BEFORE_FINAL_SOURCE_RUN"
+}

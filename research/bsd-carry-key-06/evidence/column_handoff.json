@@ -1,0 +1,145 @@
+{
+  "created_utc": "2026-09-13T00:31:01.927945+00:00",
+  "source_sha256": "7b6e8e06b41a4b7cd8278146560aecf2a9bef543189ff4d4df174c94515b640f",
+  "status": "COMPRESSION_CARRY_AND_CONDITIONAL_HANDOFF_AUDITED",
+  "user_supplied_stage": "566 IS INTERMEDIATE; terminal readout is not selected",
+  "source_example": {
+    "coefficient": 2301,
+    "modulus": 3125,
+    "sum": 5426,
+    "folded_terms": [
+      231,
+      335
+    ],
+    "folded_sum": 566
+  },
+  "fold": {
+    "domain": [
+      0,
+      9999
+    ],
+    "range": [
+      0,
+      1089
+    ],
+    "formula": "F(n)=10*floor(n/100)+(n mod100)",
+    "addition_defect": "F(n+m)=F(n)+F(m)-90*k; k=floor(((n mod100)+(m mod100))/100)",
+    "local_carry_pairs_checked": 10000,
+    "fixed_modulus_candidates_checked": 3125,
+    "failed_additivity_control": {
+      "inputs": [
+        99,
+        1
+      ],
+      "sum_after_fold": 100,
+      "fold_after_sum": 10
+    },
+    "all_total_preimages_of566": [
+      4796,
+      4886,
+      4976,
+      5066,
+      5156,
+      5246,
+      5336,
+      5426,
+      5516,
+      5606
+    ],
+    "all_coefficient_preimages_with_modulus3125": [
+      1671,
+      1761,
+      1851,
+      1941,
+      2031,
+      2121,
+      2211,
+      2301,
+      2391,
+      2481
+    ],
+    "inverse_with_tens_zero": [
+      2301
+    ],
+    "inverse_with_old_residue": [
+      2301
+    ],
+    "next_lifts_and_folded_sums": [
+      {
+        "coefficient": 426,
+        "compressed_sum": 401
+      },
+      {
+        "coefficient": 1051,
+        "compressed_sum": 486
+      },
+      {
+        "coefficient": 1676,
+        "compressed_sum": 481
+      },
+      {
+        "coefficient": 2301,
+        "compressed_sum": 566
+      },
+      {
+        "coefficient": 2926,
+        "compressed_sum": 651
+      }
+    ]
+  },
+  "shadow": {
+    "maps": "M(d)=9-d; N(d)=(-d) mod10; S=N after M",
+    "digit5_path": [
+      5,
+      4,
+      6
+    ],
+    "transported_checkpoint_set": {
+      "source": [
+        0,
+        5
+      ],
+      "image": [
+        1,
+        6
+      ],
+      "scope": "Illustrative transport of the historical checkpoint guard; no universal safety claim"
+    },
+    "exact_M_transport": "M_F(y)=1089-y",
+    "M_transport_example": {
+      "source": 5426,
+      "source_shadow": 4573,
+      "folded_shadow": 523,
+      "naive_three_digit_shadow": 433,
+      "difference": 90
+    },
+    "S_descent_ambiguous_output_count": 980,
+    "S_descent_total_output_count": 1090,
+    "S_descent_witness": [
+      {
+        "source": 4796,
+        "fold": 566,
+        "shadow": 5807,
+        "fold_after_shadow": 587
+      },
+      {
+        "source": 5426,
+        "fold": 566,
+        "shadow": 6537,
+        "fold_after_shadow": 687
+      }
+    ],
+    "conditional_handoff_with_old_residue": {
+      "compressed_input": 566,
+      "recovered_sum": 5426,
+      "source_shadow": 6537,
+      "compressed_shadow": 687,
+      "operation_status": "CANDIDATE S, not uniquely identified as user intended"
+    },
+    "different_operation_on_three_digit_word": {
+      "input": 566,
+      "output": 677
+    }
+  },
+  "claim_ceiling": "Exact finite operations and inverse repair. The zero mask or compressed value is observed data, not an independent prediction of the analytic coefficient. BSD comparison remains OPEN."
+}

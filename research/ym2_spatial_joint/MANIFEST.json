@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "scope": "New spatial joint research payload only",
+  "self_excluded": "MANIFEST.json",
+  "files": [
+    {
+      "path": "CHAT_BRIDGE.md",
+      "bytes": 3743,
+      "sha256": "60aef450c04c9dcdf7a1d3587d546ed1cd5dbfc34d71bbd6e121c7565d45b58f"
+    },
+    {
+      "path": "check_dynamics.py",
+      "bytes": 11215,
+      "sha256": "98e0ac06ae305c1b727332c0f3d8094e568a3853cbfa0cdf303485c5f26364b4"
+    },
+    {
+      "path": "check_phase.py",
+      "bytes": 10866,
+      "sha256": "49b3edb2e257e9adb9f180beca4bcece89f8c9f0a9bc46219ab904eee83f7f57"
+    },
+    {
+      "path": "check_static_join.py",
+      "bytes": 10538,
+      "sha256": "3c8421766c574a98d2f47de7489497cda3b006be42d933773ad327c779ff89d3"
+    },
+    {
+      "path": "DYNAMICS.md",
+      "bytes": 12412,
+      "sha256": "fda5fb6e4c581335284ddb4366e5202290f42282d2732751792e9444a3912c81"
+    },
+    {
+      "path": "PHASE_CLOSURE.md",
+      "bytes": 10959,
+      "sha256": "65a83f3df4dc5d1a5b3b27698d80fed857e0c10937081e27658bf50392ded24a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1935,
+      "sha256": "b8d58940eb318c5dea62b680f18a8a0d0cfb1a549163adda4b437b2b36bbf022"
+    },
+    {
+      "path": "RELATIONAL_SCALING.md",
+      "bytes": 6257,
+      "sha256": "4689150309f15a7cb5420a8cec3fa06230fad5632abc2f2570ca1a84aa0a23ec"
+    },
+    {
+      "path": "RESULTS_DYNAMICS.json",
+      "bytes": 7630,
+      "sha256": "61c62242c464ef21b49dc5ee8b989ffeb81658d911d09d6e084be1fa1588bd37"
+    },
+    {
+      "path": "RESULTS_PHASE.json",
+      "bytes": 9188,
+      "sha256": "b6d1311075fe34530eaae5acf58bd584ef0bc70d1b388c0111a8c30a68b766e9"
+    },
+    {
+      "path": "RESULTS_STATIC.json",
+      "bytes": 3193,
+      "sha256": "8170ffb6fed501939902c468077619e36ab3430b55b71755fb5672bdab28db11"
+    },
+    {
+      "path": "RETURN_TO_WILLIAM.md",
+      "bytes": 8731,
+      "sha256": "a6931790abbace0b9c77f3813e80651909ccbb1c660fb5fc18ae6422cc174e4b"
+    },
+    {
+      "path": "REVIEW_DYNAMICS_AUDIT.md",
+      "bytes": 10264,
+      "sha256": "3181ed34b1c01a194b19c6f7df9a18e0758004a70916b05d44ca6ea726b61b93"
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 2678,
+      "sha256": "6f26b05835f75b4b6917c909c7d1efe20b614789eb8e1850b4f95bf332aaa514"
+    },
+    {
+      "path": "STATIC_JOIN.md",
+      "bytes": 16669,
+      "sha256": "88b2490c4c03a3370744d928cf7b4710e9367dab8f0f0c21558f69d35e5fd0b0"
+    },
+    {
+      "path": "VISUAL_CHECKS.json",
+      "bytes": 1033,
+      "sha256": "023fe556b704f34e380b2d897031b32f80309e333d755fa4f7be9f5c1936b6c8"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "ANALYTIC_NOTE.md": {
+    "sha256": "218934932734425e1e7a64afcbcdea19cbca956af97f97327f04896dceb92276",
+    "bytes": 12054
+  },
+  "BSD_REBRIEF.md": {
+    "sha256": "926e7b306130b4831f64741f4d3e6ac370b1842f2e620e495d011b2cb26cb044",
+    "bytes": 2216
+  },
+  "certify_e5.py": {
+    "sha256": "93719886550fd08c7488ead7031a1ebb44ae6d1da0c321b4067016120e5cfaed",
+    "bytes": 9055
+  },
+  "CERTIFICATE.json": {
+    "sha256": "2dae7d4a986e56f3a446163418e5e59aacf655cfbd242c45429b73d56aa158c3",
+    "bytes": 4081
+  }
+}

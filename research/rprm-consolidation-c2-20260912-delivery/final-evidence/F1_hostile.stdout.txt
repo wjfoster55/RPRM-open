@@ -1,0 +1,1 @@
+{"output": "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-evidence\\F1_hostile.json", "expected_observation_reproduced": true}

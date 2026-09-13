@@ -1,0 +1,109 @@
+{
+  "status": "REFERENCE_AND_FRAME_READBACK_VERIFIED",
+  "all_offset_frames": [
+    {
+      "depth": 9,
+      "side": 0,
+      "prefix": "2.034",
+      "prefix_width": 3,
+      "suffix": "0012300",
+      "suffix_width": 7,
+      "recovered_value": "203400123/100000000"
+    },
+    {
+      "depth": 9,
+      "side": 0,
+      "prefix": "2.0340",
+      "prefix_width": 4,
+      "suffix": "012300",
+      "suffix_width": 6,
+      "recovered_value": "203400123/100000000"
+    },
+    {
+      "depth": 9,
+      "side": 1,
+      "prefix": "2.034",
+      "prefix_width": 3,
+      "suffix": "0104820",
+      "suffix_width": 7,
+      "recovered_value": "1017005241/500000000"
+    },
+    {
+      "depth": 9,
+      "side": 1,
+      "prefix": "2.0340",
+      "prefix_width": 4,
+      "suffix": "104820",
+      "suffix_width": 6,
+      "recovered_value": "1017005241/500000000"
+    },
+    {
+      "depth": 10,
+      "side": 0,
+      "prefix": "2.034",
+      "prefix_width": 3,
+      "suffix": "0048708",
+      "suffix_width": 7,
+      "recovered_value": "5085012177/2500000000"
+    },
+    {
+      "depth": 10,
+      "side": 0,
+      "prefix": "2.0340",
+      "prefix_width": 4,
+      "suffix": "048708",
+      "suffix_width": 6,
+      "recovered_value": "5085012177/2500000000"
+    },
+    {
+      "depth": 10,
+      "side": 1,
+      "prefix": "2.034",
+      "prefix_width": 3,
+      "suffix": "0071839",
+      "suffix_width": 7,
+      "recovered_value": "20340071839/10000000000"
+    },
+    {
+      "depth": 10,
+      "side": 1,
+      "prefix": "2.0340",
+      "prefix_width": 4,
+      "suffix": "071839",
+      "suffix_width": 6,
+      "recovered_value": "20340071839/10000000000"
+    }
+  ],
+  "two_lossless_packets_for_same_old_lower_bound": [
+    {
+      "packet": {
+        "prefix": "2.034",
+        "prefix_width": 3,
+        "hook": "010",
+        "reference_A": 3,
+        "left_frame": 2,
+        "right_frame": 2,
+        "decoder": "seven-state direct-code/half-gap"
+      },
+      "recovered_suffix": "0012300",
+      "recovered_bound": "203400123/100000000"
+    },
+    {
+      "packet": {
+        "prefix": "2.0340",
+        "prefix_width": 4,
+        "hook": "010",
+        "reference_A": 3,
+        "left_frame": 1,
+        "right_frame": 2,
+        "decoder": "seven-state direct-code/half-gap"
+      },
+      "recovered_suffix": "012300",
+      "recovered_bound": "203400123/100000000"
+    }
+  ],
+  "visible_hook_alone_recovers_bound": false,
+  "full_BSD_comparison": "OPEN",
+  "input_sha256": "19f204ed8c3243188fbf97ab8c9c3b550f5af77d20014985e264d94c63c80378",
+  "source_sha256": "77185a0ec8049a4a01a9992b897ee9ee60bd9de3c1491e464fa1a83fb8081bb1"
+}

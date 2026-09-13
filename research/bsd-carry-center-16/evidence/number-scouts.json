@@ -1,0 +1,1608 @@
+{
+  "status": "FOUR_NARROW_SCOUTS_RECORDED",
+  "prior_receipt": "C:\\github\\RPRM-open\\research\\bsd-sliding-hook-15\\evidence\\translator-verification.json",
+  "prior_receipt_sha256": "7154ec85e0deb87b1fd988d1781b493fd72a83e1e3b94be82e470e196c3df948",
+  "verified_source_hashes": {
+    "translate_number.py": "6e7fab0a37430b7d6fc197940129756b1a14277dbfc990e1a07a446eb18c5e67",
+    "carrier_lexer.py": "45805f1796290c41834a27001bb9bcd2117359093b05754a3eb10ab430474e46",
+    "readings.json": "c47045f601422c3f494536ae27a3b2b56660b46d0c2b9da3c9c3881b8bdb6ff0",
+    "verify.py": "7589d4f081c503e51410bed93c9b88a58dbe2453436f921418ee61dbb7935907"
+  },
+  "reused_verifier_bytes_unchanged": true,
+  "scouts": [
+    {
+      "input": "5",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRMLexicon\\operational_numbers\\translate_number.py",
+        "5",
+        "--scout"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "declared_maps": {
+          "P_and_N_image_sets_equal": false,
+          "definitions": {
+            "M": "d -> 9-d = (0 9)(1 8)(2 7)(3 6)(4 5)",
+            "N": "d -> -d mod 10, fixes 0 and 5",
+            "P": "(0 5)(1 9)(2 8)(4 6), fixes 3 and 7",
+            "T": "P after N = (0 5)(3 7)"
+          },
+          "fixed_sets": {
+            "M": [],
+            "N": [
+              0,
+              5
+            ],
+            "P": [
+              3,
+              7
+            ],
+            "T": [
+              1,
+              2,
+              4,
+              6,
+              8,
+              9
+            ]
+          },
+          "image_sets": {
+            "M": [
+              4
+            ],
+            "N": [
+              5
+            ],
+            "P": [
+              0
+            ],
+            "T": [
+              0
+            ]
+          },
+          "pair_orbit_membership": [
+            {
+              "occupancy": "half",
+              "orbit": [
+                0,
+                5
+              ],
+              "present": [
+                5
+              ]
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                1,
+                9
+              ],
+              "present": []
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                2,
+                8
+              ],
+              "present": []
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                3,
+                7
+              ],
+              "present": []
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                4,
+                6
+              ],
+              "present": []
+            }
+          ],
+          "set_stabilizer": [
+            "N"
+          ],
+          "set_symmetric_differences": {
+            "M": [
+              4,
+              5
+            ],
+            "N": [],
+            "P": [
+              0,
+              5
+            ],
+            "T": [
+              0,
+              5
+            ]
+          },
+          "source_set": [
+            5
+          ],
+          "transforms": {
+            "M": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "M(source)",
+              "source": "5",
+              "value": "4"
+            },
+            "N": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "N(source)",
+              "source": "5",
+              "value": "5"
+            },
+            "P": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "P(source)",
+              "source": "5",
+              "value": "0"
+            },
+            "T": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "T(source)",
+              "source": "5",
+              "value": "0"
+            }
+          }
+        },
+        "digits": [
+          {
+            "digit": 5,
+            "facts": [
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "parity",
+                "value": "odd"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "binary",
+                "value": "101"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "positive_divisors",
+                "value": [
+                  1,
+                  5
+                ]
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "ordered_factor_pairs",
+                "value": [
+                  [
+                    1,
+                    5
+                  ],
+                  [
+                    5,
+                    1
+                  ]
+                ]
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "prime_factorization",
+                "value": [
+                  5
+                ]
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "P_image",
+                "value": 0
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "N_image",
+                "value": 5
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "T_image",
+                "value": 0
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "M_image",
+                "value": 4
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "fixed_by",
+                "value": [
+                  "N"
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "gloss": "Five may be acting as the half-base endpoint or as the held-still N coordinate.",
+                "id": "half_base_endpoint",
+                "lane": "RPRM_READING",
+                "missing": "base-ten or endpoint adapter"
+              }
+            ]
+          }
+        ],
+        "input": {
+          "base": 10,
+          "digits": "5",
+          "lexical_carrier": {
+            "claim_ceiling": "Classification preserves possible lexical carriers; it does not choose the token's mathematical meaning from syntax alone.",
+            "core": "5",
+            "dispatch_mode": "EXACT_DIGIT_STRING",
+            "normalization_changed": false,
+            "normalized_digits": "5",
+            "raw": "5",
+            "requires_explicit_adapter_for_semantic_claim": true,
+            "resolution": "MANY",
+            "semantic_fiber": [
+              "EXACT_DIGIT_WORD",
+              "NONNEGATIVE_INTEGER_LITERAL"
+            ],
+            "syntax_class": "PLAIN_DIGIT_SYNTAX",
+            "wrappers": []
+          },
+          "raw": "5"
+        },
+        "policy": {
+          "claim_ceiling": "This report enumerates affordances and proposals; it does not prove a unique meaning, independent source, or cross-carrier adapter.",
+          "concurrent_lenses": true,
+          "construction_history_preserved": true,
+          "lexical_carrier_precedes_digit_normalization": true,
+          "punctuation_erasure_selects_no_semantic_carrier": true,
+          "scout_has_authority": false
+        },
+        "schema": "rprm-operational-number-report/v1",
+        "scout": {
+          "mode": "BOUNDED_VIBE_SCOUT",
+          "proposals": [],
+          "status": "PROPOSAL_NOT_AUTHORITY"
+        },
+        "sequence": {
+          "adjacent_pairs": [],
+          "digit_counts": {
+            "5": 1
+          },
+          "gap_two_receivers": [],
+          "integer_facts": [
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_value",
+              "value": 5
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "digit_sum",
+              "value": 5
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_positive_divisors",
+              "value": [
+                1,
+                5
+              ]
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_prime_factorization",
+              "value": [
+                5
+              ]
+            }
+          ],
+          "length": 1,
+          "matched_readings": [],
+          "signed_pair_receivers": [],
+          "unique_digits": [
+            5
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "input": "9",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRMLexicon\\operational_numbers\\translate_number.py",
+        "9",
+        "--scout"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "declared_maps": {
+          "P_and_N_image_sets_equal": true,
+          "definitions": {
+            "M": "d -> 9-d = (0 9)(1 8)(2 7)(3 6)(4 5)",
+            "N": "d -> -d mod 10, fixes 0 and 5",
+            "P": "(0 5)(1 9)(2 8)(4 6), fixes 3 and 7",
+            "T": "P after N = (0 5)(3 7)"
+          },
+          "fixed_sets": {
+            "M": [],
+            "N": [
+              0,
+              5
+            ],
+            "P": [
+              3,
+              7
+            ],
+            "T": [
+              1,
+              2,
+              4,
+              6,
+              8,
+              9
+            ]
+          },
+          "image_sets": {
+            "M": [
+              0
+            ],
+            "N": [
+              1
+            ],
+            "P": [
+              1
+            ],
+            "T": [
+              9
+            ]
+          },
+          "pair_orbit_membership": [
+            {
+              "occupancy": "none",
+              "orbit": [
+                0,
+                5
+              ],
+              "present": []
+            },
+            {
+              "occupancy": "half",
+              "orbit": [
+                1,
+                9
+              ],
+              "present": [
+                9
+              ]
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                2,
+                8
+              ],
+              "present": []
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                3,
+                7
+              ],
+              "present": []
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                4,
+                6
+              ],
+              "present": []
+            }
+          ],
+          "set_stabilizer": [
+            "T"
+          ],
+          "set_symmetric_differences": {
+            "M": [
+              0,
+              9
+            ],
+            "N": [
+              1,
+              9
+            ],
+            "P": [
+              1,
+              9
+            ],
+            "T": []
+          },
+          "source_set": [
+            9
+          ],
+          "transforms": {
+            "M": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "M(source)",
+              "source": "9",
+              "value": "0"
+            },
+            "N": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "N(source)",
+              "source": "9",
+              "value": "1"
+            },
+            "P": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "P(source)",
+              "source": "9",
+              "value": "1"
+            },
+            "T": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "T(source)",
+              "source": "9",
+              "value": "9"
+            }
+          }
+        },
+        "digits": [
+          {
+            "digit": 9,
+            "facts": [
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "parity",
+                "value": "odd"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "binary",
+                "value": "1001"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "positive_divisors",
+                "value": [
+                  1,
+                  3,
+                  9
+                ]
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "ordered_factor_pairs",
+                "value": [
+                  [
+                    1,
+                    9
+                  ],
+                  [
+                    3,
+                    3
+                  ],
+                  [
+                    9,
+                    1
+                  ]
+                ]
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "prime_factorization",
+                "value": [
+                  3,
+                  3
+                ]
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "P_image",
+                "value": 1
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "N_image",
+                "value": 1
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "T_image",
+                "value": 9
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "M_image",
+                "value": 0
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "fixed_by",
+                "value": [
+                  "T"
+                ]
+              },
+              {
+                "expression": "9 == -1 (mod 10)",
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "decimal_residue",
+                "value": -1
+              }
+            ],
+            "readings": [
+              {
+                "gloss": "Nine may be a decimal minus-one residue or the column immediately before a successor carry.",
+                "id": "minus_one_or_carry_brink",
+                "lane": "RPRM_READING",
+                "missing": "modular or positional operation"
+              }
+            ]
+          }
+        ],
+        "input": {
+          "base": 10,
+          "digits": "9",
+          "lexical_carrier": {
+            "claim_ceiling": "Classification preserves possible lexical carriers; it does not choose the token's mathematical meaning from syntax alone.",
+            "core": "9",
+            "dispatch_mode": "EXACT_DIGIT_STRING",
+            "normalization_changed": false,
+            "normalized_digits": "9",
+            "raw": "9",
+            "requires_explicit_adapter_for_semantic_claim": true,
+            "resolution": "MANY",
+            "semantic_fiber": [
+              "EXACT_DIGIT_WORD",
+              "NONNEGATIVE_INTEGER_LITERAL"
+            ],
+            "syntax_class": "PLAIN_DIGIT_SYNTAX",
+            "wrappers": []
+          },
+          "raw": "9"
+        },
+        "policy": {
+          "claim_ceiling": "This report enumerates affordances and proposals; it does not prove a unique meaning, independent source, or cross-carrier adapter.",
+          "concurrent_lenses": true,
+          "construction_history_preserved": true,
+          "lexical_carrier_precedes_digit_normalization": true,
+          "punctuation_erasure_selects_no_semantic_carrier": true,
+          "scout_has_authority": false
+        },
+        "schema": "rprm-operational-number-report/v1",
+        "scout": {
+          "mode": "BOUNDED_VIBE_SCOUT",
+          "proposals": [],
+          "status": "PROPOSAL_NOT_AUTHORITY"
+        },
+        "sequence": {
+          "adjacent_pairs": [],
+          "digit_counts": {
+            "9": 1
+          },
+          "gap_two_receivers": [],
+          "integer_facts": [
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_value",
+              "value": 9
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "digit_sum",
+              "value": 9
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_positive_divisors",
+              "value": [
+                1,
+                3,
+                9
+              ]
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_prime_factorization",
+              "value": [
+                3,
+                3
+              ]
+            }
+          ],
+          "length": 1,
+          "matched_readings": [],
+          "signed_pair_receivers": [],
+          "unique_digits": [
+            9
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "input": "01",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRMLexicon\\operational_numbers\\translate_number.py",
+        "01",
+        "--scout"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "declared_maps": {
+          "P_and_N_image_sets_equal": false,
+          "definitions": {
+            "M": "d -> 9-d = (0 9)(1 8)(2 7)(3 6)(4 5)",
+            "N": "d -> -d mod 10, fixes 0 and 5",
+            "P": "(0 5)(1 9)(2 8)(4 6), fixes 3 and 7",
+            "T": "P after N = (0 5)(3 7)"
+          },
+          "fixed_sets": {
+            "M": [],
+            "N": [
+              0,
+              5
+            ],
+            "P": [
+              3,
+              7
+            ],
+            "T": [
+              1,
+              2,
+              4,
+              6,
+              8,
+              9
+            ]
+          },
+          "image_sets": {
+            "M": [
+              8,
+              9
+            ],
+            "N": [
+              0,
+              9
+            ],
+            "P": [
+              5,
+              9
+            ],
+            "T": [
+              1,
+              5
+            ]
+          },
+          "pair_orbit_membership": [
+            {
+              "occupancy": "half",
+              "orbit": [
+                0,
+                5
+              ],
+              "present": [
+                0
+              ]
+            },
+            {
+              "occupancy": "half",
+              "orbit": [
+                1,
+                9
+              ],
+              "present": [
+                1
+              ]
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                2,
+                8
+              ],
+              "present": []
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                3,
+                7
+              ],
+              "present": []
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                4,
+                6
+              ],
+              "present": []
+            }
+          ],
+          "set_stabilizer": [],
+          "set_symmetric_differences": {
+            "M": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "N": [
+              1,
+              9
+            ],
+            "P": [
+              0,
+              1,
+              5,
+              9
+            ],
+            "T": [
+              0,
+              5
+            ]
+          },
+          "source_set": [
+            0,
+            1
+          ],
+          "transforms": {
+            "M": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "M(source)",
+              "source": "01",
+              "value": "98"
+            },
+            "N": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "N(source)",
+              "source": "01",
+              "value": "09"
+            },
+            "P": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "P(source)",
+              "source": "01",
+              "value": "59"
+            },
+            "T": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "T(source)",
+              "source": "01",
+              "value": "51"
+            }
+          }
+        },
+        "digits": [
+          {
+            "digit": 0,
+            "facts": [
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "parity",
+                "value": "even"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "binary",
+                "value": "0"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "positive_divisors",
+                "value": []
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "ordered_factor_pairs",
+                "value": []
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "prime_factorization",
+                "value": []
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "P_image",
+                "value": 5
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "N_image",
+                "value": 0
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "T_image",
+                "value": 5
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "M_image",
+                "value": 9
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "fixed_by",
+                "value": [
+                  "N"
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "gloss": "Zero may be a numeric identity, empty state, inactive state, or port; inspect the carrier type.",
+                "id": "typed_zero_warning",
+                "lane": "RPRM_READING",
+                "missing": "named carrier and receiver"
+              }
+            ]
+          },
+          {
+            "digit": 1,
+            "facts": [
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "parity",
+                "value": "odd"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "binary",
+                "value": "1"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "positive_divisors",
+                "value": [
+                  1
+                ]
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "ordered_factor_pairs",
+                "value": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "prime_factorization",
+                "value": []
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "P_image",
+                "value": 9
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "N_image",
+                "value": 9
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "T_image",
+                "value": 1
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "M_image",
+                "value": 8
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "fixed_by",
+                "value": [
+                  "T"
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "gloss": "One may be acting as the seed of the double-plus-one ancestry 1 -> 3 -> 7 -> 15.",
+                "id": "ancestry_seed",
+                "lane": "RPRM_READING",
+                "missing": "declared ancestry carrier"
+              }
+            ]
+          }
+        ],
+        "input": {
+          "base": 10,
+          "digits": "01",
+          "lexical_carrier": {
+            "claim_ceiling": "Classification preserves possible lexical carriers; it does not choose the token's mathematical meaning from syntax alone.",
+            "core": "01",
+            "dispatch_mode": "EXACT_DIGIT_STRING",
+            "normalization_changed": false,
+            "normalized_digits": "01",
+            "raw": "01",
+            "requires_explicit_adapter_for_semantic_claim": true,
+            "resolution": "MANY",
+            "semantic_fiber": [
+              "EXACT_DIGIT_WORD",
+              "NONNEGATIVE_INTEGER_LITERAL"
+            ],
+            "syntax_class": "PLAIN_DIGIT_SYNTAX",
+            "wrappers": []
+          },
+          "raw": "01"
+        },
+        "policy": {
+          "claim_ceiling": "This report enumerates affordances and proposals; it does not prove a unique meaning, independent source, or cross-carrier adapter.",
+          "concurrent_lenses": true,
+          "construction_history_preserved": true,
+          "lexical_carrier_precedes_digit_normalization": true,
+          "punctuation_erasure_selects_no_semantic_carrier": true,
+          "scout_has_authority": false
+        },
+        "schema": "rprm-operational-number-report/v1",
+        "scout": {
+          "mode": "BOUNDED_VIBE_SCOUT",
+          "proposals": [],
+          "status": "PROPOSAL_NOT_AUTHORITY"
+        },
+        "sequence": {
+          "adjacent_pairs": [
+            "01"
+          ],
+          "digit_counts": {
+            "0": 1,
+            "1": 1
+          },
+          "gap_two_receivers": [],
+          "integer_facts": [
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_value",
+              "value": 1
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "digit_sum",
+              "value": 1
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_positive_divisors",
+              "value": [
+                1
+              ]
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_prime_factorization",
+              "value": []
+            }
+          ],
+          "length": 2,
+          "matched_readings": [],
+          "signed_pair_receivers": [
+            {
+              "carrier": "base-10 ordered adjacent digit pair",
+              "centered_sum": -8,
+              "centered_sum_definition": "A+B-9",
+              "combined_coordinate_recovery": {
+                "coordinates": {
+                  "centered_sum": -8,
+                  "signed_gap": 1
+                },
+                "count": 1,
+                "disposition": "ONE",
+                "formula": "A=(centered_sum+9-signed_gap)/2; B=(centered_sum+9+signed_gap)/2",
+                "lane": "EXACT_ARITHMETIC",
+                "pair": [
+                  0,
+                  1
+                ],
+                "source_relation": "DERIVED_DEPENDENT",
+                "typed_disposition": "ONE(01)",
+                "word": "01"
+              },
+              "complete_orbit": [
+                {
+                  "centered_sum": -8,
+                  "operation": "I",
+                  "pair": [
+                    0,
+                    1
+                  ],
+                  "signed_gap": 1,
+                  "word": "01"
+                },
+                {
+                  "centered_sum": -8,
+                  "operation": "O",
+                  "pair": [
+                    1,
+                    0
+                  ],
+                  "signed_gap": -1,
+                  "word": "10"
+                },
+                {
+                  "centered_sum": 8,
+                  "operation": "M",
+                  "pair": [
+                    9,
+                    8
+                  ],
+                  "signed_gap": -1,
+                  "word": "98"
+                },
+                {
+                  "centered_sum": 8,
+                  "operation": "F=O_after_M",
+                  "pair": [
+                    8,
+                    9
+                  ],
+                  "signed_gap": 1,
+                  "word": "89"
+                }
+              ],
+              "coordinate_lane": "EXACT_ARITHMETIC",
+              "distinct_state_count": 4,
+              "independence": "ONE_DEPENDENT",
+              "lane": "EXACT_DECLARED_MAP",
+              "pair": [
+                0,
+                1
+              ],
+              "position": 0,
+              "signed_gap": 1,
+              "signed_gap_definition": "B-A",
+              "signed_gap_fiber": {
+                "count": 9,
+                "disposition": "MANY",
+                "lane": "EXACT_ARITHMETIC",
+                "signed_gap": 1,
+                "source_relation": "DERIVED_DEPENDENT",
+                "typed_disposition": "MANY(9)",
+                "words": [
+                  "01",
+                  "12",
+                  "23",
+                  "34",
+                  "45",
+                  "56",
+                  "67",
+                  "78",
+                  "89"
+                ]
+              },
+              "source": "01",
+              "source_relation": "DERIVED_DEPENDENT",
+              "terminology_boundary": "signed_gap is B-A; it is not gcd",
+              "words": {
+                "coordinatewise_M": "98",
+                "fold_O_after_M": "89",
+                "source_I": "01",
+                "swap_O": "10"
+              }
+            }
+          ],
+          "unique_digits": [
+            0,
+            1
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "input": "0/1",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRMLexicon\\operational_numbers\\translate_number.py",
+        "0/1",
+        "--scout"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "declared_maps": {
+          "P_and_N_image_sets_equal": false,
+          "definitions": {
+            "M": "d -> 9-d = (0 9)(1 8)(2 7)(3 6)(4 5)",
+            "N": "d -> -d mod 10, fixes 0 and 5",
+            "P": "(0 5)(1 9)(2 8)(4 6), fixes 3 and 7",
+            "T": "P after N = (0 5)(3 7)"
+          },
+          "fixed_sets": {
+            "M": [],
+            "N": [
+              0,
+              5
+            ],
+            "P": [
+              3,
+              7
+            ],
+            "T": [
+              1,
+              2,
+              4,
+              6,
+              8,
+              9
+            ]
+          },
+          "image_sets": {
+            "M": [
+              8,
+              9
+            ],
+            "N": [
+              0,
+              9
+            ],
+            "P": [
+              5,
+              9
+            ],
+            "T": [
+              1,
+              5
+            ]
+          },
+          "pair_orbit_membership": [
+            {
+              "occupancy": "half",
+              "orbit": [
+                0,
+                5
+              ],
+              "present": [
+                0
+              ]
+            },
+            {
+              "occupancy": "half",
+              "orbit": [
+                1,
+                9
+              ],
+              "present": [
+                1
+              ]
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                2,
+                8
+              ],
+              "present": []
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                3,
+                7
+              ],
+              "present": []
+            },
+            {
+              "occupancy": "none",
+              "orbit": [
+                4,
+                6
+              ],
+              "present": []
+            }
+          ],
+          "set_stabilizer": [],
+          "set_symmetric_differences": {
+            "M": [
+              0,
+              1,
+              8,
+              9
+            ],
+            "N": [
+              1,
+              9
+            ],
+            "P": [
+              0,
+              1,
+              5,
+              9
+            ],
+            "T": [
+              0,
+              5
+            ]
+          },
+          "source_set": [
+            0,
+            1
+          ],
+          "transforms": {
+            "M": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "M(source)",
+              "source": "01",
+              "value": "98"
+            },
+            "N": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "N(source)",
+              "source": "01",
+              "value": "09"
+            },
+            "P": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "P(source)",
+              "source": "01",
+              "value": "59"
+            },
+            "T": {
+              "independence": "ONE_DEPENDENT",
+              "lane": "DERIVED_DEPENDENT",
+              "operation": "T(source)",
+              "source": "01",
+              "value": "51"
+            }
+          }
+        },
+        "digits": [
+          {
+            "digit": 0,
+            "facts": [
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "parity",
+                "value": "even"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "binary",
+                "value": "0"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "positive_divisors",
+                "value": []
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "ordered_factor_pairs",
+                "value": []
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "prime_factorization",
+                "value": []
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "P_image",
+                "value": 5
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "N_image",
+                "value": 0
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "T_image",
+                "value": 5
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "M_image",
+                "value": 9
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "fixed_by",
+                "value": [
+                  "N"
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "gloss": "Zero may be a numeric identity, empty state, inactive state, or port; inspect the carrier type.",
+                "id": "typed_zero_warning",
+                "lane": "RPRM_READING",
+                "missing": "named carrier and receiver"
+              }
+            ]
+          },
+          {
+            "digit": 1,
+            "facts": [
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "parity",
+                "value": "odd"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "binary",
+                "value": "1"
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "positive_divisors",
+                "value": [
+                  1
+                ]
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "ordered_factor_pairs",
+                "value": [
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              },
+              {
+                "lane": "EXACT_ARITHMETIC",
+                "operation": "prime_factorization",
+                "value": []
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "P_image",
+                "value": 9
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "N_image",
+                "value": 9
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "T_image",
+                "value": 1
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "M_image",
+                "value": 8
+              },
+              {
+                "lane": "EXACT_DECLARED_MAP",
+                "operation": "fixed_by",
+                "value": [
+                  "T"
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "gloss": "One may be acting as the seed of the double-plus-one ancestry 1 -> 3 -> 7 -> 15.",
+                "id": "ancestry_seed",
+                "lane": "RPRM_READING",
+                "missing": "declared ancestry carrier"
+              }
+            ]
+          }
+        ],
+        "input": {
+          "base": 10,
+          "digits": "01",
+          "lexical_carrier": {
+            "claim_ceiling": "Classification preserves possible lexical carriers; it does not choose the token's mathematical meaning from syntax alone.",
+            "core": "0/1",
+            "dispatch_mode": "NORMALIZED_DIGIT_VIEW",
+            "normalization_changed": true,
+            "normalized_digits": "01",
+            "raw": "0/1",
+            "requires_explicit_adapter_for_semantic_claim": true,
+            "resolution": "MANY",
+            "semantic_fiber": [
+              "RATIONAL_FRACTION",
+              "PATH_OR_RATIO_TOKEN"
+            ],
+            "syntax_class": "SLASH_SYNTAX",
+            "wrappers": []
+          },
+          "raw": "0/1"
+        },
+        "policy": {
+          "claim_ceiling": "This report enumerates affordances and proposals; it does not prove a unique meaning, independent source, or cross-carrier adapter.",
+          "concurrent_lenses": true,
+          "construction_history_preserved": true,
+          "lexical_carrier_precedes_digit_normalization": true,
+          "punctuation_erasure_selects_no_semantic_carrier": true,
+          "scout_has_authority": false
+        },
+        "schema": "rprm-operational-number-report/v1",
+        "scout": {
+          "mode": "BOUNDED_VIBE_SCOUT",
+          "proposals": [],
+          "status": "PROPOSAL_NOT_AUTHORITY"
+        },
+        "sequence": {
+          "adjacent_pairs": [
+            "01"
+          ],
+          "digit_counts": {
+            "0": 1,
+            "1": 1
+          },
+          "gap_two_receivers": [],
+          "integer_facts": [
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_value",
+              "value": 1
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "digit_sum",
+              "value": 1
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_positive_divisors",
+              "value": [
+                1
+              ]
+            },
+            {
+              "lane": "EXACT_ARITHMETIC",
+              "operation": "integer_prime_factorization",
+              "value": []
+            }
+          ],
+          "length": 2,
+          "matched_readings": [],
+          "signed_pair_receivers": [
+            {
+              "carrier": "base-10 ordered adjacent digit pair",
+              "centered_sum": -8,
+              "centered_sum_definition": "A+B-9",
+              "combined_coordinate_recovery": {
+                "coordinates": {
+                  "centered_sum": -8,
+                  "signed_gap": 1
+                },
+                "count": 1,
+                "disposition": "ONE",
+                "formula": "A=(centered_sum+9-signed_gap)/2; B=(centered_sum+9+signed_gap)/2",
+                "lane": "EXACT_ARITHMETIC",
+                "pair": [
+                  0,
+                  1
+                ],
+                "source_relation": "DERIVED_DEPENDENT",
+                "typed_disposition": "ONE(01)",
+                "word": "01"
+              },
+              "complete_orbit": [
+                {
+                  "centered_sum": -8,
+                  "operation": "I",
+                  "pair": [
+                    0,
+                    1
+                  ],
+                  "signed_gap": 1,
+                  "word": "01"
+                },
+                {
+                  "centered_sum": -8,
+                  "operation": "O",
+                  "pair": [
+                    1,
+                    0
+                  ],
+                  "signed_gap": -1,
+                  "word": "10"
+                },
+                {
+                  "centered_sum": 8,
+                  "operation": "M",
+                  "pair": [
+                    9,
+                    8
+                  ],
+                  "signed_gap": -1,
+                  "word": "98"
+                },
+                {
+                  "centered_sum": 8,
+                  "operation": "F=O_after_M",
+                  "pair": [
+                    8,
+                    9
+                  ],
+                  "signed_gap": 1,
+                  "word": "89"
+                }
+              ],
+              "coordinate_lane": "EXACT_ARITHMETIC",
+              "distinct_state_count": 4,
+              "independence": "ONE_DEPENDENT",
+              "lane": "EXACT_DECLARED_MAP",
+              "pair": [
+                0,
+                1
+              ],
+              "position": 0,
+              "signed_gap": 1,
+              "signed_gap_definition": "B-A",
+              "signed_gap_fiber": {
+                "count": 9,
+                "disposition": "MANY",
+                "lane": "EXACT_ARITHMETIC",
+                "signed_gap": 1,
+                "source_relation": "DERIVED_DEPENDENT",
+                "typed_disposition": "MANY(9)",
+                "words": [
+                  "01",
+                  "12",
+                  "23",
+                  "34",
+                  "45",
+                  "56",
+                  "67",
+                  "78",
+                  "89"
+                ]
+              },
+              "source": "01",
+              "source_relation": "DERIVED_DEPENDENT",
+              "terminology_boundary": "signed_gap is B-A; it is not gcd",
+              "words": {
+                "coordinatewise_M": "98",
+                "fold_O_after_M": "89",
+                "source_I": "01",
+                "swap_O": "10"
+              }
+            }
+          ],
+          "unique_digits": [
+            0,
+            1
+          ]
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "claim_ceiling": "Scouts enumerate typed possibilities; they do not select user meaning",
+  "source_sha256": "b37633c7d5f2400f994f83835c616cd502e20595facd068c0d81fde2271c2316"
+}

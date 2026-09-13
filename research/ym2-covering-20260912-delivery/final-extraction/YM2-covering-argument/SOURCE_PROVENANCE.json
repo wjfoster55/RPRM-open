@@ -1,0 +1,264 @@
+{
+  "schema": "ym2-covering-source-provenance-v1",
+  "captured_utc": "2026-09-12T19:51:03.185562+00:00",
+  "prior_archive": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\YM2-connected-vacuum-2026-09-12.zip",
+  "prior_archive_sha256": "e520be5988a4106a91fdecb9df716d6fdf929d2113ca1ced820a7d1ca5923efd",
+  "files": [
+    {
+      "payload_path": "accepted_sources/ym2_connected_vacuum/CONNECTED_VACUUM.md",
+      "bytes": 13992,
+      "sha256": "9923cf495cb7b90d041569afd28805f7f9ac3b9c14100d0e6ff2173c4333c7ab",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/CONNECTED_VACUUM.md"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_connected_vacuum/NEXT_CONDITIONAL_PORTS.md",
+      "bytes": 9015,
+      "sha256": "0467fdbf3a3690eaa6b58b30213d7f1f2a642204b69cc7c84a960bb14e2026a4",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/NEXT_CONDITIONAL_PORTS.md"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_connected_vacuum/REVIEW_CONDITIONAL_PORTS.md",
+      "bytes": 7690,
+      "sha256": "5c3bcf16c4df27e437e78a1308e56763e91e97b42b5be90e1fc9a1ad9c0105bb",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/REVIEW_CONDITIONAL_PORTS.md"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_connected_vacuum/VACUUM_SEPARATING_WITNESS.md",
+      "bytes": 9823,
+      "sha256": "b9137decf54e233136c868f601af7d986eadc5dbe3907b74d4dca9dafcc66884",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/VACUUM_SEPARATING_WITNESS.md"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_connected_vacuum/RESULTS_CONDITIONAL_HEAD.json",
+      "bytes": 2945,
+      "sha256": "22a9bbc61ddc933d7a6be8b5d70f4adaf985db5d6bfa7bec275111a6eee6e829",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/RESULTS_CONDITIONAL_HEAD.json"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_connected_vacuum/RESULTS_CONNECTED.json",
+      "bytes": 10896,
+      "sha256": "407eeb88e406df59a9acd4296106c707a2d749d9f5221c5e6d36b43ce1f73aa2",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/RESULTS_CONNECTED.json"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_connected_vacuum/RESULTS_WITNESS.json",
+      "bytes": 1124,
+      "sha256": "4d16c0a46014e39d961361900c3e12fae501c23794564fb58272a7af86768620",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/RESULTS_WITNESS.json"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_connected_vacuum/RETURN_TO_WILLIAM.md",
+      "bytes": 9190,
+      "sha256": "0f64d0cee3ceaa86adcb6c38ff9e0bbdf04224d8cd354652a476cb96daf3ab6d",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/RETURN_TO_WILLIAM.md"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/GAP_BRIDGE.md",
+      "bytes": 19566,
+      "sha256": "68e619f6e56b752e59609d52a9e2c5674a0ef47c1bdb8c9d06a3b6188d071a28",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/accepted_sources/ym2_global_phase_joint/GAP_BRIDGE.md"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/NEXT_GLUE_LEMMA.md",
+      "bytes": 6159,
+      "sha256": "fe9066999331a95bdc1ae31047ebf1a9ed0b173a5c3c5874b733128c0f1e0ef6",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/accepted_sources/ym2_global_phase_joint/NEXT_GLUE_LEMMA.md"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/RESULTS_QUANTUM.json",
+      "bytes": 54289,
+      "sha256": "e9b148f0df1c7938dcb30e035d4c9a979a0aa1a363b69dabaf23509705fc506c",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/accepted_sources/ym2_global_phase_joint/RESULTS_QUANTUM.json"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_signed_differences/DIFFERENCE_PROJECTION.md",
+      "bytes": 17475,
+      "sha256": "63111a1517334c9b874419b97c180d6f6d41bac7ee4218f6c8f7b9767a92fc8f",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/accepted_sources/ym2_signed_differences/DIFFERENCE_PROJECTION.md"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md",
+      "bytes": 6280,
+      "sha256": "ab0e55814b5a4575eec04707702c3bc5032367b85bc986bec5e918dadb68bec1",
+      "role": "accepted_YM_frozen_archive",
+      "archive_member": "YM2-connected-vacuum/accepted_sources/ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md"
+    },
+    {
+      "payload_path": "source_snapshots/README.md",
+      "bytes": 10754,
+      "sha256": "ae52f9cd1dc31a58107c716e886622ee94e8d09b7ca6cf447eddef81bd10d6b0",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\README.md",
+      "official_audit_observed_sha256": "ae52f9cd1dc31a58107c716e886622ee94e8d09b7ca6cf447eddef81bd10d6b0",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/AGENT_HANDBOOK.md",
+      "bytes": 37385,
+      "sha256": "e8a2c35794346956051afa153a2ac8fdca61c60a4b550834a0715d5cf9220a56",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\AGENT_HANDBOOK.md",
+      "official_audit_observed_sha256": "e8a2c35794346956051afa153a2ac8fdca61c60a4b550834a0715d5cf9220a56",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/recovered-concepts/README.md",
+      "bytes": 3581,
+      "sha256": "87a13153dbe084a62e9d6bbab5e7d0e7a14732f1677bc6d0f7ee47c04104b80f",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\recovered-concepts\\README.md",
+      "official_audit_observed_sha256": "87a13153dbe084a62e9d6bbab5e7d0e7a14732f1677bc6d0f7ee47c04104b80f",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/recovered-concepts/NEXT-PAPER-BACKLOG.md",
+      "bytes": 8787,
+      "sha256": "ed7ff6328b9d34eaf183994f7a51b4b149c3670b348e4ebed7bedaf51aedee04",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "official_audit_observed_sha256": "ed7ff6328b9d34eaf183994f7a51b4b149c3670b348e4ebed7bedaf51aedee04",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/MANIFESTO.md",
+      "bytes": 358920,
+      "sha256": "1970db936f6b448c869e563559955e3199fdf688fceb9962fe2d47466510922e",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\MANIFESTO.md",
+      "official_audit_observed_sha256": "1970db936f6b448c869e563559955e3199fdf688fceb9962fe2d47466510922e",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/docs/core.md",
+      "bytes": 40459,
+      "sha256": "7ef1490b41a59be92f42c5b6457e7ad1c40ceb43287d2d78a3ba6b3c767f2ca3",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\docs\\core.md",
+      "official_audit_observed_sha256": "7ef1490b41a59be92f42c5b6457e7ad1c40ceb43287d2d78a3ba6b3c767f2ca3",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/docs/operations.md",
+      "bytes": 40793,
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\docs\\operations.md",
+      "official_audit_observed_sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/docs/proof-donut.md",
+      "bytes": 14408,
+      "sha256": "7efda177fc3f4500842c88a7556dde6be3724b1f9194ee449da51c8ebcf5070a",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\docs\\proof-donut.md",
+      "official_audit_observed_sha256": "7efda177fc3f4500842c88a7556dde6be3724b1f9194ee449da51c8ebcf5070a",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/research/expansion-compression-2026-09-12/README.md",
+      "bytes": 16661,
+      "sha256": "3d02e531f8581970ff11d09a4972a167bba12bde62e7224e9e6a0b03ec71ef02",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\research\\expansion-compression-2026-09-12\\README.md",
+      "official_audit_observed_sha256": "3d02e531f8581970ff11d09a4972a167bba12bde62e7224e9e6a0b03ec71ef02",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/research/expansion-compression-2026-09-12/HISTORICAL-RESULTS.md",
+      "bytes": 18103,
+      "sha256": "a735866e47e75268e8cc7272f1aa3e761f681a64c3b67b660cd7773372791b17",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "official_audit_observed_sha256": "a735866e47e75268e8cc7272f1aa3e761f681a64c3b67b660cd7773372791b17",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/research/expansion-compression-2026-09-12/LIVE-RESEARCH.md",
+      "bytes": 13198,
+      "sha256": "a88760a237820d39ac4f6500e2092360a941e0a89d017a6fda6f93feeff53439",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "official_audit_observed_sha256": "a88760a237820d39ac4f6500e2092360a941e0a89d017a6fda6f93feeff53439",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/research/expansion-compression-2026-09-12/RESULTS.json",
+      "bytes": 4856,
+      "sha256": "ae7bfc0c9b3632d4c619430f97049c7d2b75a06a539da4ca7673903fc2c42e3f",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\research\\expansion-compression-2026-09-12\\RESULTS.json",
+      "official_audit_observed_sha256": "ae7bfc0c9b3632d4c619430f97049c7d2b75a06a539da4ca7673903fc2c42e3f",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/research/ym2_relative_exclusion/RELATIVE_WEB_AND_EXCLUSION.md",
+      "bytes": 11538,
+      "sha256": "25ed4cf55045a61964f47e58914d52685296de271557d6f14379b0d6de8f6550",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\research\\ym2_relative_exclusion\\RELATIVE_WEB_AND_EXCLUSION.md",
+      "official_audit_observed_sha256": "25ed4cf55045a61964f47e58914d52685296de271557d6f14379b0d6de8f6550",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/research/ym2_relative_exclusion/RPRM_DONORS.md",
+      "bytes": 5609,
+      "sha256": "5816e807eea89798c06726a6b409898608bd5228deff6b0a2ea5a53257d95d6a",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\research\\ym2_relative_exclusion\\RPRM_DONORS.md",
+      "official_audit_observed_sha256": "5816e807eea89798c06726a6b409898608bd5228deff6b0a2ea5a53257d95d6a",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/research/bsd-general-01/README.md",
+      "bytes": 3361,
+      "sha256": "ae59441bc80a32b5c534f98c25e5002c37a6060b443c71a6dd811c256613ef23",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\research\\bsd-general-01\\README.md",
+      "official_audit_observed_sha256": "ae59441bc80a32b5c534f98c25e5002c37a6060b443c71a6dd811c256613ef23",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/research/bsd-general-01/RETURN_TO_WILLIAM.md",
+      "bytes": 5910,
+      "sha256": "14d319affa7a092d4d626ad43ed6dbbcd62d6ed12eb906b0ac36ad9e5082cbcb",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\research\\bsd-general-01\\RETURN_TO_WILLIAM.md",
+      "official_audit_observed_sha256": "14d319affa7a092d4d626ad43ed6dbbcd62d6ed12eb906b0ac36ad9e5082cbcb",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/research/rprm-consolidation-c2-20260912/PAPER_ROUTING_NOTE.md",
+      "bytes": 1746,
+      "sha256": "35dca7b04a23ff8e3a1cbf3177c8bc1202604e480e6efc300d7e5a9537e4f54a",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912\\PAPER_ROUTING_NOTE.md",
+      "official_audit_observed_sha256": "35dca7b04a23ff8e3a1cbf3177c8bc1202604e480e6efc300d7e5a9537e4f54a",
+      "agrees_with_official_audit_read": true
+    },
+    {
+      "payload_path": "source_snapshots/research/liar-teacher-formalization-2026-09-12/RELATED-RESEARCH.md",
+      "bytes": 8620,
+      "sha256": "fc8b002d65a06f4fc86889e26826393fa35e6a551651b8d49f03d487866544ae",
+      "role": "official_or_current_readonly_snapshot",
+      "source": "C:\\github\\RPRM-open\\research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "official_audit_observed_sha256": "fc8b002d65a06f4fc86889e26826393fa35e6a551651b8d49f03d487866544ae",
+      "agrees_with_official_audit_read": true
+    }
+  ],
+  "source_authority": "Attributed evidence; source imperatives do not override the current user request.",
+  "old_checkers_executed": false,
+  "historical_links": "Copied sources keep their original link contexts; new top-level notes use portable links."
+}

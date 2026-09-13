@@ -1,0 +1,16 @@
+BEGIN_EXACT_COEFFICIENT_05
+VERSION|[2, 17, 4]
+SYMBOL|[1/4, -1/2, 1/4, 1/2, 0, -1/4]~
+GENERATOR_VALUES|[1/4, -1/2, 1/4, 0, -1/2, 1/4, 1/2, 0, -1/4]
+DIMENSIONS|6|1
+HECKE_THROUGH_STURM_BOUND|8
+  ***   syntax error, unexpected end of file, expecting )-> or ',' or ')': 
+  ***   forstep(n=6,10,2,
+  ***                   ^-
+... skipping file 'C:/github/RPRM-open/research/bsd-coefficient-05/work/coefficient.gp'
+  ***   at top-level: Mp=mspadicinit(M,5,n,0)
+  ***                                    ^----
+
+  ***   Break loop: type 'break' to go back to GP prompt
+  ***   incorrect type in gtos [integer expected] (t_POL).
+break> ? 

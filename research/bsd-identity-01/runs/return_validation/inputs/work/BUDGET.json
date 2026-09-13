@@ -1,0 +1,22 @@
+{
+  "frozen_before_interval_execution": true,
+  "curve_a_invariants": [0, 0, 0, -1156, 0],
+  "conductor": 18496,
+  "root_number": 1,
+  "Euler_head_cutoffs_in_order": [40, 80, 160],
+  "completed_coefficient_order": 2,
+  "target_interval_width": "1/100",
+  "dyadic_bits": 80,
+  "quadrature": "signed-error Simpson rule",
+  "panels_per_doubling_band": 64,
+  "maximum_bands_per_kernel": 10,
+  "maximum_total_panels": 102400,
+  "transformed_integral_end": 32,
+  "log_series_terms": 32,
+  "exp_alternating_degrees": [31, 30],
+  "pi_arctangent_terms": [64, 20],
+  "divisor_tail_cutoff": 4096,
+  "tail_support": "n congruent to 1 mod 4 and not divisible by 17; written all-n proof required",
+  "refinement": "No panel refinement. Skip finite head if twice the certified tail alone exceeds target width.",
+  "stop": "First eligible successful interval, otherwise OPEN after cutoff160"
+}

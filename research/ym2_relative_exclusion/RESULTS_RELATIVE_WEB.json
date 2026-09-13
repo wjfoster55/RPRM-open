@@ -1,0 +1,108 @@
+{
+  "schema": "ym2-relative-web-exact-v1",
+  "status": "PASS",
+  "evidence_grade": "Exact finite controls; general scope supplied by written proofs",
+  "ratio_web_examples": [
+    {
+      "ell": "1/8",
+      "L": "2",
+      "d": "1",
+      "reference_factor": "3",
+      "x": "1/8",
+      "y": "2",
+      "L_over_ell": "16",
+      "gap_d": "7/11",
+      "gap_ell": "7/88",
+      "gap_L": "14/11"
+    },
+    {
+      "ell": "2/7",
+      "L": "11/3",
+      "d": "5/2",
+      "reference_factor": "1/4",
+      "x": "4/35",
+      "y": "22/15",
+      "L_over_ell": "77/6",
+      "gap_d": "7/11",
+      "gap_ell": "4/55",
+      "gap_L": "14/15"
+    },
+    {
+      "ell": "3",
+      "L": "3",
+      "d": "7/5",
+      "reference_factor": "9/2",
+      "x": "15/7",
+      "y": "15/7",
+      "L_over_ell": "1",
+      "gap_d": "7/11",
+      "gap_ell": "15/11",
+      "gap_L": "15/11"
+    }
+  ],
+  "reference_hostile_controls": [
+    {
+      "n": 2,
+      "same_L_over_ell": 2,
+      "gap_over_EA": "1",
+      "gap_over_EB": "1/2",
+      "gap_over_retained_Estar": "1/2"
+    },
+    {
+      "n": 3,
+      "same_L_over_ell": 3,
+      "gap_over_EA": "1",
+      "gap_over_EB": "1/2",
+      "gap_over_retained_Estar": "1/3"
+    },
+    {
+      "n": 7,
+      "same_L_over_ell": 7,
+      "gap_over_EA": "1",
+      "gap_over_EB": "1/2",
+      "gap_over_retained_Estar": "1/7"
+    },
+    {
+      "n": 19,
+      "same_L_over_ell": 19,
+      "gap_over_EA": "1",
+      "gap_over_EB": "1/2",
+      "gap_over_retained_Estar": "1/19"
+    }
+  ],
+  "quadratic_form_controls": 30,
+  "finite_gap_controls": [
+    {
+      "excited_dimension": 1,
+      "exact_gap": "1"
+    },
+    {
+      "excited_dimension": 2,
+      "exact_gap": "1/2"
+    },
+    {
+      "excited_dimension": 5,
+      "exact_gap": "1/5"
+    },
+    {
+      "excited_dimension": 13,
+      "exact_gap": "1/13"
+    }
+  ],
+  "not_claimed": [
+    "actual YM gap estimate",
+    "infinite coverage by finite testing",
+    "universal prime seam rule",
+    "proof-assistant certification"
+  ],
+  "sources": [
+    {
+      "path": "check_relative_web.py",
+      "sha256": "443cd68481c7fb4f592ff0bac631c852a4d566c456c87484d76a6863b21a4a41"
+    },
+    {
+      "path": "RELATIVE_WEB_AND_EXCLUSION.md",
+      "sha256": "25ed4cf55045a61964f47e58914d52685296de271557d6f14379b0d6de8f6550"
+    }
+  ]
+}

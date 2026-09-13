@@ -1,0 +1,1 @@
+PASS: exact matrix, 4096 spin-pair, radius, conditional and hostile controls; saved receipt matched; no files written.

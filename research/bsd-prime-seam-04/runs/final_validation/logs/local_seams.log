@@ -1,0 +1,113 @@
+{
+  "status": "EXACT_LOCAL_SEAM_AND_BOUNDED_SCOUT_COMPLETED",
+  "local_factors": {
+    "5": {
+      "real": [
+        4,
+        5
+      ],
+      "imag": [
+        -3,
+        5
+      ]
+    },
+    "13": {
+      "real": [
+        63,
+        65
+      ],
+      "imag": [
+        -16,
+        65
+      ]
+    }
+  },
+  "ratio_13_over_5": {
+    "real": [
+      12,
+      13
+    ],
+    "imag": [
+      5,
+      13
+    ]
+  },
+  "good_ordinary_prime_count": 79,
+  "prime_lucky_counts": {
+    "00": 722,
+    "01": 110,
+    "10": 125,
+    "11": 43
+  },
+  "ordinary_primes_with_5_dividing_point_count": [
+    13,
+    29,
+    37,
+    89,
+    101,
+    113,
+    137,
+    157,
+    173,
+    181,
+    193,
+    197,
+    229,
+    233,
+    293,
+    313,
+    349,
+    353,
+    397,
+    433,
+    461,
+    509,
+    521,
+    593,
+    613,
+    617,
+    653,
+    677,
+    709,
+    757,
+    761,
+    769,
+    773,
+    797,
+    809,
+    941,
+    977
+  ],
+  "lucky_members_in_that_list": [
+    13,
+    37,
+    193,
+    349,
+    433,
+    613,
+    769
+  ],
+  "E_F13_nonzero_order5_points": [
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      9,
+      6
+    ],
+    [
+      9,
+      7
+    ]
+  ],
+  "ray_group_orders": [
+    256,
+    512
+  ],
+  "global_BSD_scalar": "OPEN_NOT_COMPUTED"
+}

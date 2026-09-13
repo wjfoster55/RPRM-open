@@ -1,0 +1,3011 @@
+{
+  "status": "FINITE_FOURIER_AND_CONDITIONAL_PHASE_BRIDGE_CHECKED",
+  "source_sha256": "e5074eeb3daa3aacd719fc89cab168b343b6c9b2c8afd4bfdc75b0289a57b80c",
+  "five_modes": [
+    {
+      "n": -2,
+      "density": 1,
+      "winding": -2,
+      "energy": 4
+    },
+    {
+      "n": -1,
+      "density": 1,
+      "winding": -1,
+      "energy": 1
+    },
+    {
+      "n": 0,
+      "density": 1,
+      "winding": 0,
+      "energy": 0
+    },
+    {
+      "n": 1,
+      "density": 1,
+      "winding": 1,
+      "energy": 1
+    },
+    {
+      "n": 2,
+      "density": 1,
+      "winding": 2,
+      "energy": 4
+    }
+  ],
+  "coefficient_carrier": "{-1,0,1}^5",
+  "all_243_coefficient_rows": [
+    {
+      "coefficients": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        -1,
+        -1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        -1,
+        0,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        -1,
+        1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        0,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        0,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        0,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        1,
+        -1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        1,
+        0,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        1,
+        0,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        1,
+        1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        -1,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 8,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 4,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 8,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        -1,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        -1,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "norm_squared": 2,
+      "energy": 8,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "norm_squared": 1,
+      "energy": 4,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "norm_squared": 2,
+      "energy": 8,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        1,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 8,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 4,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 8,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        -1,
+        -1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        -1,
+        0,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        -1,
+        1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        0,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        0,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        0,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        -1,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 2,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 1,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        -1,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        -1,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 2,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        0,
+        -1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 2,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "norm_squared": 1,
+      "energy": 1,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        0,
+        0,
+        1
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 2,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        0,
+        1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 2,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        1,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 1,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        1,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        1,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 2,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        -1,
+        -1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 1,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "norm_squared": 2,
+      "energy": 4,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "norm_squared": 1,
+      "energy": 0,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "norm_squared": 2,
+      "energy": 4,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        -1,
+        1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 1,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        -1,
+        1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "norm_squared": 1,
+      "energy": 1,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "norm_squared": 1,
+      "energy": 4,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "norm_squared": 0,
+      "energy": 0,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "norm_squared": 1,
+      "energy": 4,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "norm_squared": 1,
+      "energy": 1,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 1,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "norm_squared": 2,
+      "energy": 4,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "norm_squared": 1,
+      "energy": 0,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "norm_squared": 2,
+      "energy": 4,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 1,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        -1,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 2,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 1,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        -1,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        -1,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 2,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        0,
+        -1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 2,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        0,
+        0,
+        -1
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "norm_squared": 1,
+      "energy": 1,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        0,
+        1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 2,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 2,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 1,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 2,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -1,
+        -1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -1,
+        0,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -1,
+        1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        0,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        1,
+        -1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        1,
+        0,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        1,
+        0,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        1,
+        1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 8,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 4,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 8,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        -1,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "norm_squared": 2,
+      "energy": 8,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "norm_squared": 1,
+      "energy": 4,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "norm_squared": 2,
+      "energy": 8,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        1,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 8,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 4,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 8,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -1,
+        -1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -1,
+        0,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -1,
+        1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": -1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        0,
+        -1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        0,
+        0,
+        -1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "norm_squared": 2,
+      "energy": 5,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "norm_squared": 3,
+      "energy": 9,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        0,
+        1,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 6,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 10,
+      "mean": 0
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "norm_squared": 3,
+      "energy": 5,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "norm_squared": 4,
+      "energy": 9,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "norm_squared": 4,
+      "energy": 6,
+      "mean": 1
+    },
+    {
+      "coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "norm_squared": 5,
+      "energy": 10,
+      "mean": 1
+    }
+  ],
+  "nonconstant_small_energy_controls": [
+    {
+      "epsilon": "1",
+      "energy_over_norm_squared": "1/2"
+    },
+    {
+      "epsilon": "1/2",
+      "energy_over_norm_squared": "1/5"
+    },
+    {
+      "epsilon": "1/10",
+      "energy_over_norm_squared": "1/101"
+    },
+    {
+      "epsilon": "1/100",
+      "energy_over_norm_squared": "1/10001"
+    },
+    {
+      "epsilon": "1/1000",
+      "energy_over_norm_squared": "1/1000001"
+    }
+  ],
+  "attributed_A_interval": [
+    "638511803/100000000",
+    "127703717/20000000"
+  ],
+  "attributed_B1_interval": [
+    "1276918651/200000000",
+    "399101589/62500000"
+  ],
+  "derived_Q_interval": [
+    "3192559015/3192812712",
+    "1277037170/1276918651"
+  ],
+  "derived_Q_minus_one_interval": [
+    "-253697/3192812712",
+    "118519/1276918651"
+  ],
+  "complete_integer_fiber_in_K_interval": [
+    0
+  ],
+  "nonzero_control": {
+    "A": "127703/20000",
+    "B1": "127701/20000",
+    "Q": "127703/127701",
+    "K": "2/127701",
+    "ordinary_periodic": false
+  },
+  "twisted_boundary_control": {
+    "twist": "1/100000",
+    "K": "1/100000",
+    "ordinary_periodic": false
+  },
+  "analytic_exponential_equivalence": "Written proof: exp(2*pi*i*K)=1 iff K is integer",
+  "periodicity_established_for_actual_BSD": false,
+  "claim_ceiling": "Finite tests plus conditional implication; periodicity is an open premise, not a BSD proof"
+}

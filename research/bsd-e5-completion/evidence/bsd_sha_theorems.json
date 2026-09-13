@@ -1,0 +1,154 @@
+{
+  "schema": "bsd-e5-theorem-application-v1",
+  "inspected_utc_date": "2026-09-12",
+  "curve": {
+    "base_field": "Q",
+    "a_invariants": [
+      0,
+      0,
+      0,
+      -25,
+      0
+    ],
+    "discriminant": 1000000,
+    "conductor": 800
+  },
+  "claim_grades": {
+    "global_bsd_theorem": "THEOREM_CITED",
+    "e5_application": "WRITTEN_PROOF",
+    "formal_proof": false,
+    "published_computation_replayed": false
+  },
+  "primary_source": {
+    "authors": [
+      "Brendan Creutz",
+      "Robert L. Miller"
+    ],
+    "title": "Second Isogeny Descents and the Birch and Swinnerton-Dyer Conjectural Formula",
+    "journal": "Journal of Algebra 372 (2012), 673-701",
+    "doi": "10.1016/j.jalgebra.2012.09.029",
+    "arxiv_version": "1105.4018v2",
+    "full_text_url": "https://arxiv.org/pdf/1105.4018v2",
+    "metadata_url": "https://arxiv.org/abs/1105.4018v2",
+    "theorem": "1.1",
+    "theorem_printed_page": 2,
+    "proof_section": "7.1",
+    "statement_inspected": true,
+    "normalizations_inspected": true,
+    "publisher_fetch": "HTTP_403; full author arXiv version inspected"
+  },
+  "hypotheses": {
+    "elliptic_curve_over_Q": true,
+    "nonzero_discriminant": true,
+    "conductor_less_than_5000": true,
+    "analytic_rank_at_most_one": true,
+    "analytic_rank": 1,
+    "conductor_source": "supplied_review/BSD_E5_REVIEW/input/BSD_E5_CODEX_TEST_01_RETURN/ANALYTIC_THEOREMS.md#1",
+    "analytic_rank_source": "supplied_review/BSD_E5_REVIEW/REVIEW.md",
+    "extra_CM_hypothesis": false,
+    "extra_residual_irreducibility_hypothesis": false,
+    "optimal_representative_required": false,
+    "database_label_used": false
+  },
+  "secondary_dependency_check": {
+    "author": "Robert L. Miller",
+    "arxiv_version": "1010.2431v3",
+    "url": "https://arxiv.org/pdf/1010.2431v3",
+    "theorem": "1.2",
+    "definition": "1.1",
+    "exception_table": 9,
+    "exception_table_printed_page": 23,
+    "exception_conductors": [
+      546,
+      570,
+      858,
+      870,
+      1050,
+      1230,
+      1938,
+      1950,
+      2370,
+      2550,
+      3270
+    ],
+    "conductor_800_excluded_from_exception_set": true,
+    "independent_of_primary_proof": false
+  },
+  "normalization": {
+    "minimal_differential": "dx/(2y)",
+    "real_period": "integral over all E(R) of |dx/(2y)|",
+    "torsion_order": 4,
+    "torsion_order_squared": 16,
+    "rank_one_leading_coefficient": "L'(E,1)",
+    "regulator_requirement": "canonical-height regulator of full free Mordell-Weil group",
+    "full_x_height": "Hhat(P)=lim_n 4^(-n) log max(abs(num(x(2^n P))),den(x(2^n P)))",
+    "pairing": "(Hhat(P+Q)-Hhat(P)-Hhat(Q))/2",
+    "rank_one_regulator": "Hhat(primitive_generator)",
+    "smaller_height_convention": "Hhat/2; not the rank-one BSD regulator used here",
+    "height_normalization_source": "https://johncremona.github.io/book/fulltext/chapter3.pdf#page=10",
+    "height_source_section": "3.4",
+    "height_source_printed_pages": [
+      71,
+      72
+    ],
+    "height_source_inspected": true
+  },
+  "known_derivative_interval": {
+    "lower": "556371/250000",
+    "upper": "1114529/500000",
+    "strict": true
+  },
+  "conclusions": {
+    "sha_finite": true,
+    "full_bsd_formula_status": "ESTABLISHED_BY_APPLICABLE_CITED_THEOREM",
+    "identity": "L'(E,1)=Omega*Reg*prod(c_p)*#Sha/16",
+    "sha_order_status": "ESTABLISHED_BY_THEOREM_AND_CERTIFIED_INTEGER_ISOLATION",
+    "sha_order": 1,
+    "odd_primary_sha_status": "TRIVIAL_FOR_EVERY_ODD_PRIME",
+    "sha_group": "trivial",
+    "specialized_identity": "Lprime(E,1)=Omega(E)*Hhat_x((-4,6))/2",
+    "completed_fiber": "ONE(1) for #Sha; ONE(trivial group) for Sha"
+  },
+  "isolation_rule": "After independent positive-factor certification, 0<16*L'/A<2 and the cited identity imply #Sha=1, where A=Omega*Reg*prod(c_p).",
+  "negative_controls": [
+    "j-invariant alone does not bind model",
+    "2-primary vanishing alone does not settle odd Sha",
+    "subgroup regulator with index m introduces factor m^2",
+    "one-component real period omits factor two",
+    "numerical agreement without applicable theorem does not imply integer equality"
+  ],
+  "integer_isolation": {
+    "factor_receipt": "evidence/bsd_factors.json",
+    "primitive_proof": "GENERATOR_PROOF.md",
+    "primitive_receipt": "evidence/generator.json",
+    "free_index_of_P": 1,
+    "omega_readable": [
+      "93809582917/40000000000",
+      "1172619786463/500000000000"
+    ],
+    "regulator_readable": [
+      "1899437/1000000",
+      "1899511/1000000"
+    ],
+    "product_cp": 8,
+    "A_definition": "Omega*Reg*product_cp",
+    "A_strict_lower": 24,
+    "quotient_strict_upper": "1114529/750000",
+    "quotient_from_readable_factors_exact": [
+      "2225484000000000000/2227404183204119593",
+      "178324640000000000/178185392747117729"
+    ],
+    "independently_enlarged_quotient": [
+      "31223/31250",
+      "500391/500000"
+    ],
+    "raw_based_factor_receipt_quotient": [
+      "499569/500000",
+      "500391/500000"
+    ],
+    "readable_factors_widen_interval_relative_to_raw": true,
+    "only_positive_integer_in_interval": 1,
+    "independent_fraction_reassembly": true,
+    "reassembly_imports_factor_implementation": false
+  }
+}

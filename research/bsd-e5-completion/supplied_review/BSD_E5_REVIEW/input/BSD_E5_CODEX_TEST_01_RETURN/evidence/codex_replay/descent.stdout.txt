@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "real_candidates": 32,
+  "mod8_survivors": 8,
+  "rationally_realized_classes": 8,
+  "decoder_checks": 256,
+  "output": "C:\\github\\RPRM-open\\research\\bsd-e5-test-01\\evidence\\codex_replay\\descent_receipt.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "ym2-bsd-active-snapshot-v1",
+  "scope": "Read-only compact status; provisional commentary, not adopted as proved donor result.",
+  "result": {
+    "timedOut": true,
+    "wake": null,
+    "polls": [
+      {
+        "schemaVersion": 1,
+        "cursor": "91e0919f-bb1f-4708-8270-000098233d21:6",
+        "revision": 6,
+        "changed": true,
+        "thread": {
+          "id": "01a096b0-a546-76b0-b680-53e3a37f0e4a",
+          "hostId": "local",
+          "status": {
+            "type": "active",
+            "activeFlags": []
+          }
+        },
+        "latestTurn": {
+          "id": "01a097c9-5343-78a3-8d47-2495d57fc698",
+          "status": "inProgress",
+          "error": null,
+          "startedAt": 1789252949,
+          "completedAt": null,
+          "durationMs": null
+        },
+        "latestAssistantMessageId": "msg_08e6b3015ddf7128016aa5d7628f4887d08247589fcfa02767",
+        "latestAssistantMessage": {
+          "id": "msg_08e6b3015ddf7128016aa5d7628f4887d08247589fcfa02767",
+          "turnId": "01a097c9-5343-78a3-8d47-2495d57fc698",
+          "phase": "commentary",
+          "text": "The exact algebra checks out: the factors at 5 and 13 share a Gaussian-prime factor, and cancelling it gives [ C_{13}/C_5=(12+5i)/13. ] So this is an actual multiplier connection between the two primes. I’m now testing what information that connection preserves, including whether lucky-number membership adds a constraint and whether a closed prime path still leaves an undetermined scale."
+        },
+        "latestToolMarkerId": "exec-95119cd6-e421-4d7c-95cd-9cccef7f594e",
+        "latestToolMarker": {
+          "id": "exec-95119cd6-e421-4d7c-95cd-9cccef7f594e",
+          "turnId": "01a097c9-5343-78a3-8d47-2495d57fc698",
+          "type": "fileChange",
+          "name": "fileChange",
+          "status": "completed"
+        }
+      }
+    ]
+  }
+}

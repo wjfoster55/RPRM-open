@@ -1,0 +1,219 @@
+{
+  "status": "ALL_ORIGINAL_MEMBERS_IDENTICAL",
+  "utc": "2026-09-12T17:51:39.984310+00:00",
+  "original_zip_name": "BSD_E5_CODEX_TEST_01.zip",
+  "original_zip_sha256": "8c0fb7c1233470dfc047635116809ddb2cc2d194b4322fb7fa8ff46ea993df7c",
+  "files": [
+    {
+      "member": "BSD_E5_CODEX_TEST_01/CODEX_START_HERE.md",
+      "size": 14221,
+      "sha256": "371f0a8a4918647b225d5660e0600033f4dea20eceb7246f9d7d69ace0cb938b",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/DELIVERY_INVENTORY.json",
+      "size": 5586,
+      "sha256": "3d8332d46bfc23933d491fcd8dd72d4e4904a9b60f64ebb14adf492ac159beab",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/INTERVAL_CONSTRUCTION_HINT.md",
+      "size": 2825,
+      "sha256": "ddb5cdc73f5a7507ebff994c454fdf812123f6ea28a48567e87d15653d895329",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/PASTE_TO_CODEX.txt",
+      "size": 799,
+      "sha256": "5ddfb2297e035a41176b184d4fb8a974aa196248c8f2a53f70a45ecdb91dd320",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/PREFLIGHT_SCOPE.md",
+      "size": 1528,
+      "sha256": "e77ab61191a132de0dc28737f0e6659cf8f0ec6202edaf86f43e9d1393bc14c8",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/README.md",
+      "size": 3301,
+      "sha256": "ea4584040cb13d969a80d5b4fda4136df2704a911284e3cd90b35c53de82244c",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/RPRM_CONTEXT.md",
+      "size": 2493,
+      "sha256": "ab9b53673cb1d7183c6939ba58c43c8c1d5258c264cc0d5bfd167ad0ac6f6963",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/SOURCES.md",
+      "size": 3077,
+      "sha256": "e149241df0f9c98a59600b6a17cc31a0da80db33b0d51aaa5283087c47d0de82",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/SOURCE_BINDINGS.json",
+      "size": 4922,
+      "sha256": "f10e01bdfc098dabb675d2dc0c389fd1d8bbd19c6140811003b1dd5d8a01695a",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/TEST_PLAN.json",
+      "size": 3871,
+      "sha256": "039ebbe341a76a6dc196673392ccc1fb0e6e6905d18da03592fbb2201926850c",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/context/BSD_CHAT_UPDATE.md",
+      "size": 4944,
+      "sha256": "a436f32a39e7ce948779db181fa9a0ff06ebbc80a03b70b112ad15917fc71f29",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/context/CURRENT_STATE.md",
+      "size": 6282,
+      "sha256": "b93085ac125346bd609a7f73e9a464fac70e34efa6c8a07f9e937abc0e6e17df",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/context/sources/accepted/C1_CARRY_FORWARD.md",
+      "size": 12511,
+      "sha256": "0a6ba65a302efc45b473e4c30a3da3a3a794a093e074697454eca40f5f2f99b0",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/context/sources/c2/ad/AD1_DESIGN.md",
+      "size": 6174,
+      "sha256": "e8166aaeee2642894f7d54d657df6b87f00b23915785009011e0eae99126ab21",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/context/sources/c2/ad/AD1_RESULT.md",
+      "size": 8574,
+      "sha256": "3db6abd7b7169e4b1991d2aa57e37d45b20e98c461392f95b074e6270c4ad5ad",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/analytic/ANALYTIC_NOTE.md",
+      "size": 12054,
+      "sha256": "218934932734425e1e7a64afcbcdea19cbca956af97f97327f04896dceb92276",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/analytic/BSD_REBRIEF.md",
+      "size": 2216,
+      "sha256": "926e7b306130b4831f64741f4d3e6ac370b1842f2e620e495d011b2cb26cb044",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/analytic/CERTIFICATE.json",
+      "size": 4081,
+      "sha256": "2dae7d4a986e56f3a446163418e5e59aacf655cfbd242c45429b73d56aa158c3",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/analytic/CONTENTS.json",
+      "size": 515,
+      "sha256": "e68e15390cc6aefccc7af88f7ad811aba8f5e31bdc9d3db2ae2840d1153a758b",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/analytic/certify_e5.py",
+      "size": 9055,
+      "sha256": "93719886550fd08c7488ead7031a1ebb44ae6d1da0c321b4067016120e5cfaed",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/descent/BSD_REBRIEF.md",
+      "size": 3208,
+      "sha256": "26b95544febe1f057e6123b6aac196a02bcf5c878ccb3a2defe0d9e1c8f5c544",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/descent/E5_DESCENT_NOTE.md",
+      "size": 16056,
+      "sha256": "c85c9b1e57393608271ad1994d2bb1d9622e6c5797ced05933d11c1bb8130b63",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/descent/E5_DESCENT_RECEIPT.json",
+      "size": 64997,
+      "sha256": "5cedd6949c6d4a70299175fb6b6ea495e6992e9d7d3a930723a3eae2fc361947",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/descent/README.md",
+      "size": 996,
+      "sha256": "f1eb16a5c71266ec1255515ae14fdb8fdd3ed6bb24944d7209ccd8170ae5e56c",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/descent/context/BSD_CHAT_UPDATE.md",
+      "size": 4944,
+      "sha256": "a436f32a39e7ce948779db181fa9a0ff06ebbc80a03b70b112ad15917fc71f29",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/descent/context/CURRENT_STATE.md",
+      "size": 6282,
+      "sha256": "b93085ac125346bd609a7f73e9a464fac70e34efa6c8a07f9e937abc0e6e17df",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/inputs/descent/e5_descent.py",
+      "size": 13693,
+      "sha256": "0744cb00b206b4934c37313941170275a9b20dd87580c743aeccc8a5ae40c494",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/preflight/REPLAY.json",
+      "size": 9361,
+      "sha256": "d40c1ce75759a73c9971c2b08ca197f15a53da2ab19f0c5c52f21b76fb436361",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/preflight/analytic.stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/preflight/analytic.stdout.txt",
+      "size": 629,
+      "sha256": "1e7b33f8bd8ea8af720c86d04497c305d6b6dc42b723a1d6ca4ef5b5b9a6b358",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/preflight/analytic_receipt.json",
+      "size": 4081,
+      "sha256": "2dae7d4a986e56f3a446163418e5e59aacf655cfbd242c45429b73d56aa158c3",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/preflight/descent.stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/preflight/descent.stdout.txt",
+      "size": 209,
+      "sha256": "d39dce86d7fb6c7ff2e1619005c7f276f69b41b6c61a4a49aa9db28737194751",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/preflight/descent_receipt.json",
+      "size": 64997,
+      "sha256": "c382f0fb0fac1b04871c0b55c00ffeb4b45ca7fb769b549d301f7c762114eee9",
+      "identical": true
+    },
+    {
+      "member": "BSD_E5_CODEX_TEST_01/tools/replay_inputs.py",
+      "size": 7091,
+      "sha256": "d637af79e66ab950cb09040b1f7769eff47504562bfcf7d33c85079c95617d70",
+      "identical": true
+    }
+  ],
+  "scope": "Byte preservation, not mathematical truth."
+}

@@ -1,0 +1,37 @@
+{
+  "archive_sha256": "01109ae7e8e89fe2010e7c737085272a74ca0204d0ab28de276c8f396497c6c2",
+  "scope": "Historical source snapshots; no saved numerical results used as fresh computation inputs",
+  "relative_links": "Resolve internal links in original source directory if they point outside this snapshot.",
+  "files": [
+    {
+      "file": "PI_ZIP_TEST_SPEC.md",
+      "original_source": "C:\\github\\RPRMFoundry\\evidence\\sealed\\RPRMPiViewfinder_SEALED_96f920a.zip::experiments/PI_VIEWFINDER_TEACHER_ZIP_01/TEST_SPEC.md",
+      "bytes": 14554,
+      "sha256": "dd93a02c259461d2d7292d51876ede667da3ef50b4ba74cadb674e3f12540456"
+    },
+    {
+      "file": "DISTANCE_AND_SEAM.md",
+      "original_source": "C:\\github\\RPRM-open\\research\\closure-seam-09\\DISTANCE_AND_SEAM.md",
+      "bytes": 11568,
+      "sha256": "335bdab991ba4de7618388b28b44210ee0f282cdc1161ea6e66dbad035841161"
+    },
+    {
+      "file": "EXPLICIT_IDENTITY_TARGET.md",
+      "original_source": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\EXPLICIT_IDENTITY_TARGET.md",
+      "bytes": 15376,
+      "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753"
+    },
+    {
+      "file": "FACTOR_COMPARISON.md",
+      "original_source": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\input_source\\FACTOR_COMPARISON.md",
+      "bytes": 4340,
+      "sha256": "e7c482d6674464c71f7f1ef1891d64690115d9301b329297c4a5fe52910989f4"
+    },
+    {
+      "file": "PI_CLOSURE_LEGEND_AUDIT.md",
+      "original_source": "C:\\github\\RPRMLexicon\\operational_numbers\\PI_CLOSURE_LEGEND_AUDIT.md",
+      "bytes": 4539,
+      "sha256": "ac23ea73a3661df1c9854f8c6d2caab789f78a16880ddcdd57b04d22073a9fe2"
+    }
+  ]
+}

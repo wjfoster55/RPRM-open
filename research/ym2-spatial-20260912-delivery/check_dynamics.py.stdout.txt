@@ -1,0 +1,353 @@
+{
+  "status": "PASS",
+  "scope": "Exact rational finite lattice derivative checks; no trajectory integration or continuum claim.",
+  "convention": "Q=q0 I+i q.sigma; T=i sigma; <X,Y>=-Tr(XY)/2; H=sum|E|^2/2+B",
+  "graph": {
+    "vertices": 6,
+    "links": 7,
+    "plaquettes": 2,
+    "boundary": "open/free"
+  },
+  "witnesses": {
+    "U": [
+      "3/5",
+      "4/5",
+      "0",
+      "0"
+    ],
+    "V_A": [
+      "3/5",
+      "0",
+      "4/5",
+      "0"
+    ],
+    "V_B": [
+      "3/5",
+      "12/25",
+      "16/25",
+      "0"
+    ]
+  },
+  "results": {
+    "A": {
+      "plaquette_half_traces": [
+        "3/5",
+        "3/5"
+      ],
+      "common_base_dot": "0",
+      "perimeter_half_trace": "9/25",
+      "B_initial": "4/5",
+      "B_prime_initial": "0",
+      "B_second_initial": "-128/25",
+      "gradient_norm_squared": "128/25",
+      "shared_gradient_norm_squared": "32/25",
+      "per_edge_gradients": {
+        "a": [
+          "4/5",
+          "0",
+          "0"
+        ],
+        "b": [
+          "0",
+          "4/5",
+          "0"
+        ],
+        "c": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "d": [
+          "0",
+          "-4/5",
+          "0"
+        ],
+        "l": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "s": [
+          "4/5",
+          "-4/5",
+          "0"
+        ],
+        "r": [
+          "0",
+          "4/5",
+          "0"
+        ]
+      }
+    },
+    "B": {
+      "plaquette_half_traces": [
+        "3/5",
+        "3/5"
+      ],
+      "common_base_dot": "48/125",
+      "perimeter_half_trace": "-3/125",
+      "B_initial": "4/5",
+      "B_prime_initial": "0",
+      "B_second_initial": "-544/125",
+      "gradient_norm_squared": "544/125",
+      "shared_gradient_norm_squared": "64/125",
+      "per_edge_gradients": {
+        "a": [
+          "4/5",
+          "0",
+          "0"
+        ],
+        "b": [
+          "12/25",
+          "16/25",
+          "0"
+        ],
+        "c": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "d": [
+          "-12/25",
+          "-16/25",
+          "0"
+        ],
+        "l": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "s": [
+          "8/25",
+          "-16/25",
+          "0"
+        ],
+        "r": [
+          "12/25",
+          "16/25",
+          "0"
+        ]
+      }
+    }
+  },
+  "B_second_B_minus_A": "96/125",
+  "gauge_covariance": {
+    "nonconstant_vertex_transformations": 1,
+    "transformed_witnesses": 2,
+    "all_21_gradient_components_per_state": "PASS"
+  },
+  "controls": {
+    "central_left": {
+      "plaquette_half_traces": [
+        "1",
+        "3/5"
+      ],
+      "common_base_dot": "0",
+      "perimeter_half_trace": "3/5",
+      "B_initial": "2/5",
+      "B_prime_initial": "0",
+      "B_second_initial": "-64/25",
+      "gradient_norm_squared": "64/25",
+      "shared_gradient_norm_squared": "16/25",
+      "per_edge_gradients": {
+        "a": [
+          "0",
+          "0",
+          "0"
+        ],
+        "b": [
+          "0",
+          "4/5",
+          "0"
+        ],
+        "c": [
+          "0",
+          "0",
+          "0"
+        ],
+        "d": [
+          "0",
+          "-4/5",
+          "0"
+        ],
+        "l": [
+          "0",
+          "0",
+          "0"
+        ],
+        "s": [
+          "0",
+          "-4/5",
+          "0"
+        ],
+        "r": [
+          "0",
+          "4/5",
+          "0"
+        ]
+      }
+    },
+    "aligned": {
+      "plaquette_half_traces": [
+        "3/5",
+        "3/5"
+      ],
+      "common_base_dot": "16/25",
+      "perimeter_half_trace": "-7/25",
+      "B_initial": "4/5",
+      "B_prime_initial": "0",
+      "B_second_initial": "-96/25",
+      "gradient_norm_squared": "96/25",
+      "shared_gradient_norm_squared": "0",
+      "per_edge_gradients": {
+        "a": [
+          "4/5",
+          "0",
+          "0"
+        ],
+        "b": [
+          "4/5",
+          "0",
+          "0"
+        ],
+        "c": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "d": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "l": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "s": [
+          "0",
+          "0",
+          "0"
+        ],
+        "r": [
+          "4/5",
+          "0",
+          "0"
+        ]
+      }
+    },
+    "antialigned": {
+      "plaquette_half_traces": [
+        "3/5",
+        "3/5"
+      ],
+      "common_base_dot": "-16/25",
+      "perimeter_half_trace": "1",
+      "B_initial": "4/5",
+      "B_prime_initial": "0",
+      "B_second_initial": "-32/5",
+      "gradient_norm_squared": "32/5",
+      "shared_gradient_norm_squared": "64/25",
+      "per_edge_gradients": {
+        "a": [
+          "4/5",
+          "0",
+          "0"
+        ],
+        "b": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "c": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "d": [
+          "4/5",
+          "0",
+          "0"
+        ],
+        "l": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "s": [
+          "8/5",
+          "0",
+          "0"
+        ],
+        "r": [
+          "-4/5",
+          "0",
+          "0"
+        ]
+      }
+    },
+    "three_vector_components": {
+      "plaquette_half_traces": [
+        "3/5",
+        "1/2"
+      ],
+      "common_base_dot": "2/5",
+      "perimeter_half_trace": "-1/10",
+      "B_initial": "9/10",
+      "B_prime_initial": "0",
+      "B_second_initial": "-119/25",
+      "gradient_norm_squared": "119/25",
+      "shared_gradient_norm_squared": "59/100",
+      "per_edge_gradients": {
+        "a": [
+          "4/5",
+          "0",
+          "0"
+        ],
+        "b": [
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        "c": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "d": [
+          "-1/2",
+          "-1/2",
+          "-1/2"
+        ],
+        "l": [
+          "-4/5",
+          "0",
+          "0"
+        ],
+        "s": [
+          "3/10",
+          "-1/2",
+          "-1/2"
+        ],
+        "r": [
+          "1/2",
+          "1/2",
+          "1/2"
+        ]
+      }
+    }
+  },
+  "checks": [
+    "Unit quaternions and exact complex-matrix unitarity for all eight checked configurations",
+    "Full seven-link quaternion derivatives equal independent exact 2x2 complex-matrix derivatives",
+    "Gauge force obeys the Gauss identity at every vertex for all eight configurations",
+    "Common-base shared force difference and all-link norm formula for all eight configurations",
+    "Two noncommuting witnesses have equal individual classes and unequal actual initial B second derivative",
+    "Nonconstant independent vertex gauge changes preserve observables and transform each link gradient covariantly",
+    "Reversing the right plaquette orientation leaves its trace potential and every actual force unchanged",
+    "Central, aligned, antialigned, and three-component-vector controls",
+    "Naive two-chord unit kinetic metric rejects the required seven-link force norm"
+  ],
+  "proof_boundary": "The accompanying written derivation proves the finite-model formula. These finite executable checks do not prove their own general soundness, dynamical closure, a continuum limit, or a mass gap."
+}

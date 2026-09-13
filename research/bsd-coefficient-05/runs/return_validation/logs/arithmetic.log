@@ -1,0 +1,15 @@
+{
+  "status": "EXACT_CYCLOTOMIC_HEIGHT_RESIDUES_AND_NONVANISHING",
+  "MST_pairing_matrix_mod5": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "MST_determinant_mod5": 3,
+  "full_complex_BSD_identity": "OPEN"
+}

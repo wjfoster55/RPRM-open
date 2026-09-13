@@ -1,0 +1,29 @@
+[
+  {
+    "scenario": "ex-gwt-mt3dsupp632a",
+    "params": {
+      "distribution_coefficient": 0.25,
+      "decay": 0.0,
+      "decay_sorbed": -0.001
+    },
+    "max_abs_rel_diff_vs_mt3dms": 6.671367077341806e-05
+  },
+  {
+    "scenario": "ex-gwt-mt3dsupp632b",
+    "params": {
+      "distribution_coefficient": 0.25,
+      "decay": -0.0005,
+      "decay_sorbed": -0.0005
+    },
+    "max_abs_rel_diff_vs_mt3dms": 4.057843137257844e-05
+  },
+  {
+    "scenario": "ex-gwt-mt3dsupp632c",
+    "params": {
+      "distribution_coefficient": 0.0,
+      "decay": -0.001,
+      "decay_sorbed": 0.0
+    },
+    "max_abs_rel_diff_vs_mt3dms": 4.0183218665786146e-05
+  }
+]

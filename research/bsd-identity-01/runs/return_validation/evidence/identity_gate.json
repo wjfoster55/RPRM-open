@@ -1,0 +1,136 @@
+{
+  "status": "CONDITIONAL_EQUALITY_GATE_AND_READOUT_CONTROLS_COMPLETED",
+  "model": [
+    0,
+    0,
+    0,
+    -1156,
+    0
+  ],
+  "input_receipt_sha256": {
+    "interval": "c40489fdce59eb47032943a75286a67cbadaa4fea786e348f5c438a2fca4f3cb",
+    "generator": "b9166c676055bc5a238d3662b9ca442f7185cf00cb661bc9fe08ec8e0c6f71de",
+    "factor_frontier": "cadbb216af845cf04885e7245ee5b8b29c8fe3354443415fc25a986dc86bf457"
+  },
+  "source_sha256": "a79281d17da4c935c1d61cfa021d25857989ced820a0e84954e5e9c5f7b69833",
+  "ratio_interval": [
+    "812919697494147362353166996613003343139997725868987040541414886301937478111004679041187840/812984294911381434970983292291770715721815189985656753667012124837092307886692401334364707",
+    "1083904440610860029291231309907227895981798823936298335429094653443877068320507798348627968/1083803846294822918921251931048120849104211892580465285150016421538694369167628419738153113"
+  ],
+  "absolute_distance_from_one_bound": "100594316037110369979378859107046877586931355833050279078231905182699152879378610474855/1083803846294822918921251931048120849104211892580465285150016421538694369167628419738153113",
+  "conditional_rational_gate": {
+    "premise": "The actual quotient is rational with reduced positive denominator <=10000",
+    "consequence": "The actual quotient equals1",
+    "proof": "|a/q-1|>=1/q for a!=q; exact interval lies within distance1/10000",
+    "checked_denominators": 10000,
+    "complete_candidate_fiber": [
+      "1"
+    ],
+    "largest_bound_admitted_by_current_interval": 10774,
+    "premise_for_actual_quotient": "NOT_ESTABLISHED"
+  },
+  "controls": {
+    "rationality_without_denominator_bound": "1000000000001/1000000000000",
+    "first_denominator_admitting_another_value": 10775,
+    "boundary_counterexample": "10776/10775",
+    "scope": "Possible real-number inputs, not claimed alternate elliptic-curve L-values"
+  },
+  "readout_levels": {
+    "carrier": "nonnegative rational values; level k>=0; exact equality retained",
+    "decode": "x=(whole+remainder)/10^k, 0<=remainder<1",
+    "six_tenths_state": [
+      "0",
+      "3/5"
+    ],
+    "two_six_tenths_sum_state": [
+      "1",
+      "1/5"
+    ],
+    "addition_grid_pairs_and_levels_checked": 1764,
+    "finite_depth_controls": [
+      {
+        "last_zero_level": 0,
+        "nonzero_value": "1/10",
+        "first_visible_level": 1
+      },
+      {
+        "last_zero_level": 1,
+        "nonzero_value": "1/100",
+        "first_visible_level": 2
+      },
+      {
+        "last_zero_level": 2,
+        "nonzero_value": "1/1000",
+        "first_visible_level": 3
+      },
+      {
+        "last_zero_level": 3,
+        "nonzero_value": "1/10000",
+        "first_visible_level": 4
+      },
+      {
+        "last_zero_level": 4,
+        "nonzero_value": "1/100000",
+        "first_visible_level": 5
+      },
+      {
+        "last_zero_level": 5,
+        "nonzero_value": "1/1000000",
+        "first_visible_level": 6
+      },
+      {
+        "last_zero_level": 6,
+        "nonzero_value": "1/10000000",
+        "first_visible_level": 7
+      },
+      {
+        "last_zero_level": 7,
+        "nonzero_value": "1/100000000",
+        "first_visible_level": 8
+      },
+      {
+        "last_zero_level": 8,
+        "nonzero_value": "1/1000000000",
+        "first_visible_level": 9
+      },
+      {
+        "last_zero_level": 9,
+        "nonzero_value": "1/10000000000",
+        "first_visible_level": 10
+      }
+    ],
+    "negative_extension_options": {
+      "value": "-3/5",
+      "floor": -1,
+      "truncate_toward_zero": 0,
+      "status": "Distinct analyst-defined extensions; user rule unspecified"
+    },
+    "all_levels_zero_lemma": "For one fixed x, all-level zero implies x=0; written proof required",
+    "all_levels_zero_for_BSD_discrepancy": "NOT_ESTABLISHED"
+  },
+  "separate_five_adic_trace_readout": {
+    "carrier": "Z/125Z projected to Z/25Z; conditions justified in ODD_PRIME_ATTEMPT.md",
+    "complete_fiber_over_coarse_zero": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "residues_sufficient_for_the_5_primary_vanishing_theorem": [
+      25,
+      50,
+      75,
+      100
+    ],
+    "zero_residue": "This valuation-two criterion is inconclusive; nontrivial Sha is NOT inferred",
+    "actual_trace_mod125": null,
+    "status": "ACTUAL_RESIDUE_NOT_COMPUTED"
+  },
+  "actual_quotient_rationality": "NOT_ESTABLISHED",
+  "actual_exact_analytic_identity": "NOT_ESTABLISHED",
+  "total_Sha": "NOT_ESTABLISHED",
+  "full_BSD": "NOT_ESTABLISHED",
+  "evidence_grade": "WRITTEN_CONDITIONAL_REDUCTION_PLUS_EXACT_FINITE_CHECKS",
+  "formal_verification": "NOT_RUN"
+}

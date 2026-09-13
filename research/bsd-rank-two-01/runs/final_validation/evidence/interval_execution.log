@@ -1,0 +1,19 @@
+M=40: current certified tail too wide; advancing prescribed cutoff
+M=80: current certified tail too wide; advancing prescribed cutoff
+M=160: ENCLOSURE_SUCCEEDED; completed width 146771/100000000
+{
+  "status": "CERTIFIED_COEFFICIENT_INTERVAL",
+  "selected_cutoff": 160,
+  "lambda2_interval": [
+    "1727579267/12500000",
+    "13820780907/100000000"
+  ],
+  "alpha_times_lambda2_interval": [
+    "1929783514854559597047485/302231454903657293676544",
+    "7719216034312724870403291/1208925819614629174706176"
+  ],
+  "total_panels": 7360,
+  "output": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\evidence\\interval.json"
+}
+
+STDERR:

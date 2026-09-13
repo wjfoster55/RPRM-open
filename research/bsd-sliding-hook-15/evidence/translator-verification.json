@@ -1,0 +1,28 @@
+{
+  "schema": "bsd-sliding-hook-15/translator-verification/v1",
+  "date": "2026-09-12",
+  "command": [
+    "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-B",
+    "C:\\github\\RPRMLexicon\\operational_numbers\\verify.py"
+  ],
+  "exit_code": 0,
+  "stdout": "PASS: 114/114 operational-number checks\n",
+  "stderr": "",
+  "source_root": "C:\\github\\RPRMLexicon\\operational_numbers",
+  "sha256_before": {
+    "translate_number.py": "6e7fab0a37430b7d6fc197940129756b1a14277dbfc990e1a07a446eb18c5e67",
+    "carrier_lexer.py": "45805f1796290c41834a27001bb9bcd2117359093b05754a3eb10ab430474e46",
+    "readings.json": "c47045f601422c3f494536ae27a3b2b56660b46d0c2b9da3c9c3881b8bdb6ff0",
+    "verify.py": "7589d4f081c503e51410bed93c9b88a58dbe2453436f921418ee61dbb7935907"
+  },
+  "sha256_after": {
+    "translate_number.py": "6e7fab0a37430b7d6fc197940129756b1a14277dbfc990e1a07a446eb18c5e67",
+    "carrier_lexer.py": "45805f1796290c41834a27001bb9bcd2117359093b05754a3eb10ab430474e46",
+    "readings.json": "c47045f601422c3f494536ae27a3b2b56660b46d0c2b9da3c9c3881b8bdb6ff0",
+    "verify.py": "7589d4f081c503e51410bed93c9b88a58dbe2453436f921418ee61dbb7935907"
+  },
+  "bytes_unchanged": true,
+  "claim_ceiling": "Fresh execution evidence for the named finite verifier; hashes bind bytes and do not establish general soundness."
+}
+

@@ -1,0 +1,24 @@
+{
+  "schema": "ym2-connected-vacuum-witness-v1",
+  "status": "PASS",
+  "evidence_grade": "exact finite checks supporting the linked written proof",
+  "checker_sha256": "dfbf222a9945ff99cec2ad9dacfc44735db97a7bb230d5cfc81926e93bc9ae55",
+  "orthogonality_monomial_controls": 45,
+  "convolution_haar_marginal_controls": 13,
+  "D_norm_squared": "3/16",
+  "J_second_order_coefficient": "1/936",
+  "normalized_log_second_order_constant": "-7/288",
+  "u2_sup_majorant": "991/22464",
+  "p2_lower_majorant_at_r_1_10": "5797/6000",
+  "scalar_log_tail_coefficient": "2839/86400",
+  "full_log_phi_L2_error_bound": "< 3 r^3 for 0<r<=1/10",
+  "J_full_remainder_bound": "|J-r^2/936| < 3r^3 for 0<r<=1/10",
+  "certified_interval": "0<r<=1/3000",
+  "strict_lower_bound": "J(r) > (4/58500)r^2",
+  "hostile_pair": [
+    "(0,0,3/5)",
+    "(0,0,-3/5)"
+  ],
+  "hostile_pair_second_order_difference": "4/585 (jet only)",
+  "boundary": "All-real quantifiers, conditional moments, analytic perturbation and the accepted vacuum lower bound use written proofs. No numerical eigenvalue, simulation or old source test is run."
+}

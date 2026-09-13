@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-I",
+    "-B",
+    "check_ym2.py",
+    "--numeric",
+    "--output",
+    "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\FINAL_REPLAY_RESULTS.json"
+  ],
+  "cwd": "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\final-extraction\\YM2-interacting-SU2",
+  "ended_utc": "2026-09-12T16:24:23.350671+00:00",
+  "exit_code": 0,
+  "name": "exported-science",
+  "started_utc": "2026-09-12T16:24:23.105054+00:00",
+  "stderr": "",
+  "stdout": "{\"status\": \"PASS\", \"output\": \"C:\\\\github\\\\RPRM-open\\\\research\\\\ym2-20260912-delivery\\\\FINAL_REPLAY_RESULTS.json\", \"exact_states\": 6, \"gauge_transports\": 6, \"numeric\": true}\n"
+}

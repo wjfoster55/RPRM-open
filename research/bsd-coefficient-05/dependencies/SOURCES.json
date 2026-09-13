@@ -1,0 +1,123 @@
+{
+  "dependencies": [
+    {
+      "source": "C:\\github\\RPRM-open\\research\\bsd-operational-03\\PADIC_HEIGHT_AUDIT.md",
+      "copy": "dependencies/PADIC_HEIGHT_AUDIT.md",
+      "sha256": "8db3ed9b53c6bd114bc54e142cfcebe2a99233d65b0cc03671025ea023f0e66e",
+      "role": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_RERUN"
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\FACTOR_COMPARISON.md",
+      "copy": "dependencies/FACTOR_COMPARISON.md",
+      "sha256": "e7c482d6674464c71f7f1ef1891d64690115d9301b329297c4a5fe52910989f4",
+      "role": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_RERUN"
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\evidence\\factor_frontier.json",
+      "copy": "dependencies/factor_frontier.json",
+      "sha256": "1ae349895886fa106c02d4495b6941ed19c98578338df34237edfc5335ef58aa",
+      "role": "DISPLAY_PRIOR_CERTIFICATE_ONLY"
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\GENERATOR_PROOF.md",
+      "copy": "dependencies/GENERATOR_PROOF.md",
+      "sha256": "9c6b26a14051eda856bf79094257bd30d0e9382528b5e208e79ab33c168c9b15",
+      "role": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_RERUN"
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\ARITHMETIC_PROOF.md",
+      "copy": "dependencies/ARITHMETIC_PROOF.md",
+      "sha256": "3d3e7fbb43fae46d4759a0bf48f705b82d4552b06744b8b9f6d70d8e673de243",
+      "role": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_RERUN"
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\LOCAL_ANALYTIC_INPUTS.md",
+      "copy": "dependencies/LOCAL_ANALYTIC_INPUTS.md",
+      "sha256": "b82a74927703053eb43930d589de1e7d79360df9261ca02968e8bae91b61bdcc",
+      "role": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_RERUN"
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\bsd-trace-02\\TRACE_CALCULATION.md",
+      "copy": "dependencies/TRACE_CALCULATION_02.md",
+      "sha256": "f991173f730bde04b40d1c8c82dba5ff7fde11ea370915454118a0f882f1937d",
+      "role": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_RERUN"
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\bsd-trace-02\\TRACE_FORMULA_AUDIT.md",
+      "copy": "dependencies/TRACE_FORMULA_AUDIT_02.md",
+      "sha256": "ae07ad27e55879353e391ca54bc5aa26cbd492aa3c75e30abf9107f1d58db00a",
+      "role": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_RERUN"
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\bsd-operational-03\\work\\padic_height.py",
+      "copy": "work/padic_height.py",
+      "sha256": "814d864a6785d9122f86d379398f9c18bcf213f98936bd1c74d6fe0b8d909fda",
+      "role": "UNCHANGED_RUNNABLE_SOURCE_FRESHLY_EXECUTED"
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\bsd-operational-03\\work\\rational_ec.py",
+      "copy": "work/rational_ec.py",
+      "sha256": "e7b78d2a5495334bfd7229b955db0679e1453935c4c1b80ec309b19b0e672246",
+      "role": "UNCHANGED_RUNNABLE_SOURCE_FRESHLY_EXECUTED"
+    },
+    {
+      "source": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_PRIME_FAMILY_ATLAS_AUDIT_102\\REPORT.md",
+      "sha256": "4e2ea03cbdb7aa04ba8dfef09b9642e42acff395719b9751cd23bbe682983e9e",
+      "role": "READ_ONLY_ATTRIBUTED_PRIME_ATLAS_NOT_REPLAYED"
+    },
+    {
+      "source": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_PRIME_FAMILY_ATLAS_AUDIT_102\\PRIME_ATLAS_FRAMEWORK.md",
+      "sha256": "14f38b8dbba697fd4b760f17973ab1dd0450e1193e45a9a288acd19226676b2c",
+      "role": "READ_ONLY_ATTRIBUTED_PRIME_ATLAS_NOT_REPLAYED"
+    },
+    {
+      "source": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_PRIME_ATLAS_FILTER_SHADOW_EXTENSION_AUDIT_103\\REPORT.md",
+      "sha256": "7982effe4693e3426f08e97605af2f080b591e5896e77135184430984f93556b",
+      "role": "READ_ONLY_ATTRIBUTED_PRIME_ATLAS_NOT_REPLAYED"
+    },
+    {
+      "source": "C:\\github\\RPRM-foam-development\\experiments\\RPRM_PRIME_ATLAS_FILTER_SHADOW_EXTENSION_AUDIT_103\\FRAMEWORK_EXTENSION.md",
+      "sha256": "2f4a6218eaa8463bca37aacff55bc006a39ca531e8aa695740002dfc6cc413f7",
+      "role": "READ_ONLY_ATTRIBUTED_PRIME_ATLAS_NOT_REPLAYED"
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://sites.math.rutgers.edu/~zeilberg/EM22/JT1983.pdf",
+      "use": "Tunnell Theorem 3, exact period anchor; printed pages 328-329"
+    },
+    {
+      "url": "https://sigma-journal.com/2018/090/sigma18-090.pdf",
+      "use": "Li-Long-Tu Lemma 3.1, exact beta-integral L-value"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2101.06960",
+      "use": "Belabas-Perrin-Riou ordinary overconvergent construction and precision"
+    },
+    {
+      "url": "https://kurihara.math.keio.ac.jp/bks4.pdf",
+      "use": "BKS Hypothesis 2.2, Proposition 6.1, Theorem 6.2, Corollary 6.7"
+    },
+    {
+      "url": "https://pari.math.u-bordeaux.fr/dochtml/html/Modular_symbols.html",
+      "use": "PARI modular symbol, derivative and series conventions"
+    },
+    {
+      "url": "https://pari.math.u-bordeaux.fr/download.html",
+      "use": "Official release and source archive checksum"
+    }
+  ],
+  "runtime": {
+    "windows_executable_url": "https://pari.math.u-bordeaux.fr/pub/pari/windows/gp64-2-17-4.exe",
+    "windows_executable_sha256": "518ea54d23832211356c99d1bb58b74a3f0acd354a965543e7bcca9b34030119",
+    "executable_hash_note": "Locally measured integrity hash; not a proof of correspondence to the source archive",
+    "source_url": "https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.17.4.tar.gz",
+    "source_sha256": "02651d99c391007d384b3fadbc20abc6916b77036f9e496c99e9ce8688ca4b53",
+    "official_source_checksum_matched": true,
+    "selected_source_files": {
+      "pari-2.17.4/COPYING": "runtime/COPYING",
+      "pari-2.17.4/src/basemath/modsym.c": "dependencies/pari/modsym.c",
+      "pari-2.17.4/src/basemath/ellpadic.c": "dependencies/pari/ellpadic.c"
+    }
+  }
+}

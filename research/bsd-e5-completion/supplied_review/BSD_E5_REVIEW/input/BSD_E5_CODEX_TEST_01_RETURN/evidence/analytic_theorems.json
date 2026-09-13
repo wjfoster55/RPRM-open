@@ -1,0 +1,194 @@
+{
+  "task_id": "B01",
+  "status": "CONFIRMED",
+  "audit_date": "2026-09-12",
+  "audit_kind": "INDEPENDENT_PRIMARY_SOURCE_AND_WRITTEN_PROOF_REVIEW",
+  "proof_locator": "ANALYTIC_THEOREMS.md",
+  "input_identity": {"field": "Q", "a_invariants": [0, 0, 0, -25, 0]},
+  "sources": [
+    {
+      "id": "ELKIES",
+      "url": "https://arxiv.org/pdf/math/0208056",
+      "title": "Curves D y^2=x^3-x of odd analytic rank",
+      "locations": ["section 1.1, printed pages 1-2", "section 2, printed page 4"],
+      "actual_source_opened": true,
+      "checked_content": "D-family definition; sign by squarefree |D| modulo 8; N(E_D)=32D^2 for odd squarefree D under section 2 hypotheses.",
+      "not_used": "The paper's arithmetic rank conclusions and point-construction computations."
+    },
+    {
+      "id": "BCDT",
+      "url": "https://www.math.u-psud.fr/~breuil/PUBLICATIONS/STW.pdf",
+      "title": "On the modularity of elliptic curves over Q: Wild 3-adic exercises",
+      "locations": ["Introduction, Theorem A, page 1", "Introduction, modularity equivalences (1)-(2), pages 2-3"],
+      "actual_source_opened": true,
+      "checked_content": "Every elliptic curve over Q is modular, with L(E,s) equal to that of a weight-two eigenform of level N(E)."
+    },
+    {
+      "id": "CREMONA2",
+      "url": "https://johncremona.github.io/book/fulltext/chapter2.pdf",
+      "title": "Algorithms for Modular Elliptic Curves, Chapter 2",
+      "locations": ["section 2.8, printed page 29, equations 2.8.5-2.8.6", "section 2.13, printed pages 42-43, Proposition 2.13.1"],
+      "actual_source_opened": true,
+      "checked_content": "Completed Mellin normalization, Fricke/root-sign reversal, Mellin split, derivative integral and E1 formula with order-at-least-r hypothesis."
+    },
+    {
+      "id": "CREMONA3",
+      "url": "https://johncremona.github.io/book/fulltext/chapter3.pdf",
+      "title": "Algorithms for Modular Elliptic Curves, Chapter 3",
+      "locations": ["section 3.1, printed pages 62-63, equations 3.1.2-3.1.3"],
+      "actual_source_opened": true,
+      "checked_content": "Weierstrass invariants and general coordinate-change discriminant scaling u^12 Delta'=Delta."
+    },
+    {
+      "id": "MILNE",
+      "url": "https://www.jmilne.org/math/Books/ectext6.pdf",
+      "title": "Elliptic Curves (2006)",
+      "locations": ["II section 3, printed page 59", "IV section 10, printed page 163"],
+      "actual_source_opened": true,
+      "checked_content": "Cuspidal reduction is additive; additive local polynomial equals 1; good local polynomial equals 1-a_p T+p T^2."
+    },
+    {
+      "id": "HASSE",
+      "url": "https://math.mit.edu/classes/18.783/2023/LectureNotes7.pdf",
+      "title": "Andrew Sutherland, MIT 18.783 Fall 2023, Lecture 7",
+      "locations": ["section 7.2, Theorem 7.3, printed pages 1-2"],
+      "actual_source_opened": true,
+      "checked_content": "For elliptic E/F_q, #E(F_q)=q+1-t and |t|<=2 sqrt(q); proof spans pages 1-2."
+    },
+    {
+      "id": "SAGE_DERIVATIVE",
+      "url": "https://doc.sagemath.org/html/en/reference/arithmetic_curves/sage/schemes/elliptic_curves/lseries_ell.html#sage.schemes.elliptic_curves.lseries_ell.Lseries_ell.deriv_at1",
+      "title": "Sage Lseries_ell.deriv_at1 documentation",
+      "locations": ["deriv_at1 warning and algorithm"],
+      "actual_source_opened": true,
+      "checked_content": "Requires exact L(E,1)=0 and gives 2 sum (a_n/n) E1(2 pi n/sqrt(N)).",
+      "execution_status": "NOT_RUN",
+      "not_used": "Database examples, numerical backend error estimates, sha/rank methods. Cohen section 7.5.3 was credited in this documentation but not separately opened."
+    },
+    {
+      "id": "DLMF",
+      "url": "https://dlmf.nist.gov/6.2#E1",
+      "title": "NIST DLMF 6.2.1",
+      "locations": ["equation 6.2.1"],
+      "actual_source_opened": true,
+      "checked_content": "Positive-real E1(x)=integral_x^infinity exp(-t)/t dt."
+    }
+  ],
+  "claims": [
+    {
+      "id": "B01_MODEL",
+      "status": "CONFIRMED",
+      "evidence_kind": "WRITTEN_EXACT_SPECIALIZATION",
+      "hypotheses": ["Supplied model over Q with a4=-25", "Rational invertible substitution x=5u,y=25v"],
+      "conclusion": "Identified with D=5 member of Dv^2=u^3-u.",
+      "sources": ["ELKIES"],
+      "control": "K02_MODEL_BINDING"
+    },
+    {
+      "id": "B01_CONDUCTOR_SIGN_RULE",
+      "status": "CONFIRMED",
+      "evidence_kind": "THEOREM_CITED",
+      "hypotheses": ["D nonzero squarefree integer", "D odd for N=32D^2", "|D| modulo 8 in {5,6,7} for sign -1"],
+      "conclusion": "Applicable conductor and root-number formulas read in Elkies.",
+      "sources": ["ELKIES"]
+    },
+    {
+      "id": "B01_CONDUCTOR_SIGN_E5",
+      "status": "CONFIRMED",
+      "evidence_kind": "WRITTEN_EXACT_SPECIALIZATION",
+      "hypotheses": ["D=5>0 is squarefree and odd", "5 modulo 8 equals 5"],
+      "conclusion": {"conductor": 800, "functional_equation_sign": -1},
+      "depends_on": ["B01_MODEL", "B01_CONDUCTOR_SIGN_RULE"],
+      "prime_counts_used_for_conductor_or_sign": false
+    },
+    {
+      "id": "B01_MINIMALITY",
+      "status": "CONFIRMED",
+      "evidence_kind": "WRITTEN_PROOF_FROM_STANDARD_TRANSFORMATION_LAW",
+      "hypotheses": ["Integral Weierstrass equation", "u in Q_p^* has integral valuation", "Any integral equation has nonnegative discriminant valuation"],
+      "computed_data": {"c4": 1200, "c6": 0, "Delta": 1000000, "valuations": {"2": 6, "5": 6, "all_other_primes": 0}},
+      "conclusion": "A discriminant valuation cannot decrease by 12 and remain nonnegative; the displayed model is minimal at every prime.",
+      "sources": ["CREMONA3"]
+    },
+    {
+      "id": "B01_LOCAL_FACTORS",
+      "status": "CONFIRMED",
+      "evidence_kind": "WRITTEN_LOCAL_SPECIALIZATION_OF_CITED_CONVENTIONS",
+      "hypotheses": ["Minimality proved", "At 2, X=x+1 then Z=y+X yields Z^2=X^3", "At 5 reduction is y^2=x^3", "Delta a unit elsewhere"],
+      "conclusion": "Additive reduction at 2,5 yields P_2=P_5=1. All n divisible by 2 or 5 have a_n=0. All other primes are good.",
+      "sources": ["MILNE"]
+    },
+    {
+      "id": "B01_MODULARITY",
+      "status": "CONFIRMED",
+      "evidence_kind": "THEOREM_CITED",
+      "hypotheses": ["Nonsingular projective cubic over Q with rational point at infinity"],
+      "conclusion": "The normalized weight-two newform at conductor level supplies L(E,s) and its Fricke transformation.",
+      "sources": ["BCDT", "CREMONA2"]
+    },
+    {
+      "id": "B01_CENTRAL_ZERO",
+      "status": "CONFIRMED",
+      "evidence_kind": "WRITTEN_PROOF_FROM_CHECKED_THEOREM_PREMISES",
+      "hypotheses": ["Lambda(s)=alpha^(-s) Gamma(s) L(E,s)", "epsilon=-1", "alpha=2 pi/sqrt(800)>0", "Gamma(1)=1"],
+      "conclusion": "The completed function is odd about 1 and its factor at 1 is 1/alpha; L(E,1)=0 exactly.",
+      "raw_L_asserted_odd": false,
+      "rank_input_used": false
+    },
+    {
+      "id": "B01_DERIVATIVE_FORMULA",
+      "status": "CONFIRMED",
+      "evidence_kind": "INDEPENDENT_WRITTEN_MELLIN_DERIVATION_WITH_PRIMARY_FORMULA_CROSS_CHECK",
+      "hypotheses": ["Fricke eta=+1=-epsilon", "g(1/u)=epsilon u^2 g(u)", "Exponential domination permits integration and differentiation", "L(E,1)=0 eliminates differentiated prefactor term"],
+      "conclusion": "L'(E,1)=2 sum_{n>=1} (a_n/n) E1(alpha n).",
+      "primary_cross_check": "Cremona Proposition 2.13.1 with r=1, eta=(-1)^(r-1)=+1, and order at least one established without assuming simplicity.",
+      "sources": ["CREMONA2", "SAGE_DERIVATIVE", "DLMF"]
+    },
+    {
+      "id": "B01_HASSE",
+      "status": "CONFIRMED",
+      "evidence_kind": "THEOREM_CITED",
+      "hypotheses": ["For each p outside {2,5}, E reduces to an elliptic curve over F_p"],
+      "conclusion": "|a_p|<=2 sqrt(p) at every good prime.",
+      "sources": ["HASSE"]
+    },
+    {
+      "id": "B01_ALL_N_BOUND",
+      "status": "CONFIRMED",
+      "evidence_kind": "WRITTEN_ALL_N_PROOF_FROM_HASSE_AND_EULER_FACTORS",
+      "hypotheses": ["Good Euler roots beta,gamma have modulus sqrt(p)", "a_(p^k)=sum_{j=0}^k beta^j gamma^(k-j)", "Coprime coefficient multiplicativity", "Additive bad-prime powers vanish", "Pairing complementary divisors proves d(n)<=2 sqrt(n)"],
+      "conclusion": "For every integer n>=1, |a_n|<=d(n)sqrt(n)<=2n.",
+      "depends_on": ["B01_LOCAL_FACTORS", "B01_HASSE"],
+      "finite_samples_used_as_unbounded_proof": false
+    },
+    {
+      "id": "B01_RATIONAL_BOUND_PREMISES",
+      "status": "CONFIRMED",
+      "evidence_kind": "WRITTEN_ELEMENTARY_INEQUALITY_PROOFS",
+      "hypotheses": ["Alternating arctan series yields 3<pi<7/2", "Rational squares give 7/5<sqrt(2)<3/2", "Exponential series and geometric/atanh series"],
+      "conclusions": ["1/5<alpha<1/4", "exp(-alpha)<q=5/6", "0<E1(x)<=exp(-x)/x for x>0", "2E1(alpha)>8/9", "Negative nth contribution has magnitude <10|a_n|q^n/n^2", "Every tail from n=M+1 has magnitude <20 q^(M+1)/((M+1)(1-q))"],
+      "not_a_backend_decimal_estimate": true
+    },
+    {
+      "id": "B01_BASELINE_ASSEMBLY",
+      "status": "CONFIRMED",
+      "evidence_kind": "WRITTEN_PROOF_RECONCILED_WITH_B02_FRESH_INDEPENDENT_COMPUTATION",
+      "hypotheses": ["Read work/analytic_check.py and evidence/analytic.json; B02 independently verifies the four nonzero coefficients through 20 and exact rational assembly"],
+      "conclusion": "L'(E,1)>615556405007957768183/937494780448358006784>13/20, so the exact central zero is simple.",
+      "dependency_evidence": "evidence/analytic.json#B02",
+      "dependency_implementation": "work/analytic_check.py",
+      "clarification": "The finite B02 computation and this written analytic theorem chain are separate evidence, now reconciled. No arithmetic rank or archived PASS was used."
+    }
+  ],
+  "independence": {
+    "source_programs_imported": false,
+    "historical_PASS_read_as_evidence": false,
+    "arithmetic_rank_used": false,
+    "BSD_prediction_used": false,
+    "backend_rank_or_sha_used": false,
+    "source_formula_and_hypotheses_read": true,
+    "independent_written_derivations": true
+  },
+  "unresolved_in_this_lane": [],
+  "claim_ceiling": "One fixed-curve analytic certificate under established cited theorems, with exact model binding and all-term coverage. No formal proof, full BSD coefficient formula, changed-curve theorem, or general BSD conclusion."
+}

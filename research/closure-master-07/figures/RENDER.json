@@ -1,0 +1,5 @@
+{
+  "matplotlib": "3.10.8",
+  "source_evidence": "research\\closure-master-07\\evidence\\fresh_checks.json",
+  "scope": "Exact model values, not measured physical data"
+}

@@ -1,0 +1,6 @@
+PASS: exact integer height cutoff H<=20
+PASS: all 511 rational abscissas enumerated; 7 affine points and O
+PASS: every nontorsion point is +/-P plus rational 2-torsion
+PASS: duplication exceptional cases and three hostile controls
+CONCLUSION (with cited and prior theorem inputs): free index of P is ONE(1)
+Certificate: C:\github\RPRM-open\research\bsd-e5-completion\evidence\generator.json

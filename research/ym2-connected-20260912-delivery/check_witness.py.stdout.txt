@@ -1,0 +1,1 @@
+PASS: actual-vacuum witness rational checks; 45 orthogonality and 13 Haar controls

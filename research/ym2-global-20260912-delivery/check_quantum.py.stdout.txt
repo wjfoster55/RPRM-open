@@ -1,0 +1,2 @@
+PASS: all 128 supports, four nonempty no-leaf supports with minimum four edges; exact Pauli Casimir and metric; three exact cometric divergence identities.
+Receipt compared_without_writing: C:\github\RPRM-open\research\ym2-global-20260912-delivery\final-extraction\YM2-global-phase-joint\RESULTS_QUANTUM.json

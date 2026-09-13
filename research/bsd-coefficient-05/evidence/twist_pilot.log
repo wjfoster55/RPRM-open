@@ -1,0 +1,9 @@
+BEGIN_TWIST_PILOT
+[2, 17, 4]
+twisted_minimal_model=[0, 0, 0, -1156, 0]
+twisted_conductor=18496
+a5=-2
+BEGIN_DERIVATIVE
+D2=4*5^2 + 5^3 + 4*5^4 + O(5^5)
+elapsed_ms=16
+END_TWIST_PILOT

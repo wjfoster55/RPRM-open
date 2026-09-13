@@ -1,0 +1,321 @@
+{
+  "schema": "ym2-estimate-final-export-v1",
+  "status": "PASS",
+  "utc": "2026-09-12T20:23:40.088887+00:00",
+  "archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+  "archive_sha256": "4e91d638db3ef1c511cb35b08e74a5c4413af7f58babc15b03bf1afee8a4d6d5",
+  "archive_bytes": 207475,
+  "payload_files": 19,
+  "payload_bytes": 316040,
+  "manifest_covered_files": 18,
+  "zip_crc": "PASS",
+  "fresh_extraction": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\final-extraction-v2\\YM2-estimate-continuation",
+  "source_equals_extracted": true,
+  "unchanged_after_replay": true,
+  "command": [
+    "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-I",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\final-extraction-v2\\YM2-estimate-continuation\\check_continuation.py"
+  ],
+  "cwd": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\final-extraction-v2\\YM2-estimate-continuation",
+  "exit_code": 0,
+  "stdout_file": "check_continuation.stdout.txt",
+  "stdout_sha256": "ed5d39a6d6a6ea6951e6b467955f7221cb43c9057a3b2aadda134abaaa738f7c",
+  "stderr_bytes": 0,
+  "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "accepted_files": 4,
+  "prior_archive_sha256": "02ceeb8207b862eb5034a9c24cff9e05566ed4636972e95146b6b673d0f6f5c5",
+  "file_links_checked": 22,
+  "link_records": [
+    {
+      "note": "CONDITIONAL_GAP_EXTENSION.md",
+      "target": "accepted/CONDITIONAL_REFINEMENT.md"
+    },
+    {
+      "note": "CONDITIONAL_GAP_EXTENSION.md",
+      "target": "accepted/DIRECT_COVER_ATTEMPT.md"
+    },
+    {
+      "note": "CONDITIONAL_GAP_EXTENSION.md",
+      "target": "SIGNED_AND_CONTRACTED_AUDIT.md"
+    },
+    {
+      "note": "CONDITIONAL_GAP_EXTENSION.md",
+      "target": "SOURCE_NORM_REFINEMENT.md"
+    },
+    {
+      "note": "CONDITIONAL_GAP_EXTENSION.md",
+      "target": "RECENTER_AND_INVERSE.md"
+    },
+    {
+      "note": "README.md",
+      "target": "RESULT.md"
+    },
+    {
+      "note": "README.md",
+      "target": "RECENTER_AND_INVERSE.md"
+    },
+    {
+      "note": "README.md",
+      "target": "SOURCE_NORM_REFINEMENT.md"
+    },
+    {
+      "note": "README.md",
+      "target": "SIGNED_AND_CONTRACTED_AUDIT.md"
+    },
+    {
+      "note": "README.md",
+      "target": "CONDITIONAL_GAP_EXTENSION.md"
+    },
+    {
+      "note": "README.md",
+      "target": "COMBINED_REVIEW.md"
+    },
+    {
+      "note": "README.md",
+      "target": "scale_changes.png"
+    },
+    {
+      "note": "README.md",
+      "target": "RESULTS.json"
+    },
+    {
+      "note": "README.md",
+      "target": "SOURCE_PROVENANCE.json"
+    },
+    {
+      "note": "RECENTER_AND_INVERSE.md",
+      "target": "accepted/DIRECT_COVER_ATTEMPT.md"
+    },
+    {
+      "note": "RECENTER_AND_INVERSE.md",
+      "target": "accepted/NEXT_OBLIGATION.md"
+    },
+    {
+      "note": "RECENTER_AND_INVERSE.md",
+      "target": "RESULT.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "RECENTER_AND_INVERSE.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "SOURCE_NORM_REFINEMENT.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "SIGNED_AND_CONTRACTED_AUDIT.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "CONDITIONAL_GAP_EXTENSION.md"
+    },
+    {
+      "note": "SIGNED_AND_CONTRACTED_AUDIT.md",
+      "target": "accepted/DIRECT_COVER_ATTEMPT.md"
+    }
+  ],
+  "figure_dimensions": [
+    2800,
+    1200
+  ],
+  "receipt": {
+    "schema": "ym2-estimate-continuation-checks-v1",
+    "status": "PASS",
+    "checker_sha256": "512a77ea50b9b92584104ac4c7be35f28d82da596ee673a0c0a6b173083cd8cb",
+    "source_matrix": {
+      "dimension": 16,
+      "twice_B_gram_trace": 16,
+      "twice_B_gram_polynomial": "G^2=4G",
+      "B_nonzero_singular_values": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "actual_plaquette_A_norm": "4",
+      "all_positive_word_A_norm": "8",
+      "same_norm_under_partial_inversion": "REJECT"
+    },
+    "contracted_gradient": {
+      "density_pair_controls": 25,
+      "finite_spin_pairs": 4096,
+      "unrestricted_operator_norm": "3",
+      "factored_expectation_max": "2",
+      "new_bilinear_constant": "16/9",
+      "entangled_singlet_as_product_input": "REJECT"
+    },
+    "continuation": {
+      "recenter_controls": [
+        {
+          "radius": "0",
+          "source": "0",
+          "extra_source_supremum": "3/16",
+          "total": "3/16"
+        },
+        {
+          "radius": "1/8",
+          "source": "5/48",
+          "extra_source_supremum": "1/12",
+          "total": "3/16"
+        },
+        {
+          "radius": "1/4",
+          "source": "1/6",
+          "extra_source_supremum": "1/48",
+          "total": "3/16"
+        },
+        {
+          "radius": "1/3",
+          "source": "5/27",
+          "extra_source_supremum": "1/432",
+          "total": "3/16"
+        },
+        {
+          "radius": "3/8",
+          "source": "3/16",
+          "extra_source_supremum": "0",
+          "total": "3/16"
+        }
+      ],
+      "new_radius_controls": [
+        {
+          "dimension": 2,
+          "incidence": 2,
+          "radius": "1/4",
+          "coupling": "7/288",
+          "contraction": "4/9",
+          "Bochner_lower": "1/2",
+          "conditional_row_upper": "1/3",
+          "conditional_gap_prefactor": "1",
+          "conditional_gap_negative_exponent": "2/3",
+          "endpoint_uses_spectral_continuity": false
+        },
+        {
+          "dimension": 2,
+          "incidence": 2,
+          "radius": "3/8",
+          "coupling": "1/32",
+          "contraction": "2/3",
+          "Bochner_lower": "1/4",
+          "conditional_row_upper": "1/2",
+          "conditional_gap_prefactor": "3/4",
+          "conditional_gap_negative_exponent": "1",
+          "endpoint_uses_spectral_continuity": false
+        },
+        {
+          "dimension": 2,
+          "incidence": 2,
+          "radius": "1/2",
+          "coupling": "5/144",
+          "contraction": "8/9",
+          "Bochner_lower": "0",
+          "conditional_row_upper": "2/3",
+          "conditional_gap_prefactor": "1/2",
+          "conditional_gap_negative_exponent": "4/3",
+          "endpoint_uses_spectral_continuity": false
+        },
+        {
+          "dimension": 2,
+          "incidence": 2,
+          "radius": "9/16",
+          "coupling": "9/256",
+          "contraction": "1",
+          "Bochner_lower": "-1/8",
+          "conditional_row_upper": "3/4",
+          "conditional_gap_prefactor": "3/8",
+          "conditional_gap_negative_exponent": "3/2",
+          "endpoint_uses_spectral_continuity": true
+        },
+        {
+          "dimension": 3,
+          "incidence": 4,
+          "radius": "1/4",
+          "coupling": "7/576",
+          "contraction": "4/9",
+          "Bochner_lower": "1/2",
+          "conditional_row_upper": "1/3",
+          "conditional_gap_prefactor": "1",
+          "conditional_gap_negative_exponent": "2/3",
+          "endpoint_uses_spectral_continuity": false
+        },
+        {
+          "dimension": 3,
+          "incidence": 4,
+          "radius": "3/8",
+          "coupling": "1/64",
+          "contraction": "2/3",
+          "Bochner_lower": "1/4",
+          "conditional_row_upper": "1/2",
+          "conditional_gap_prefactor": "3/4",
+          "conditional_gap_negative_exponent": "1",
+          "endpoint_uses_spectral_continuity": false
+        },
+        {
+          "dimension": 3,
+          "incidence": 4,
+          "radius": "1/2",
+          "coupling": "5/288",
+          "contraction": "8/9",
+          "Bochner_lower": "0",
+          "conditional_row_upper": "2/3",
+          "conditional_gap_prefactor": "1/2",
+          "conditional_gap_negative_exponent": "4/3",
+          "endpoint_uses_spectral_continuity": false
+        },
+        {
+          "dimension": 3,
+          "incidence": 4,
+          "radius": "9/16",
+          "coupling": "9/512",
+          "contraction": "1",
+          "Bochner_lower": "-1/8",
+          "conditional_row_upper": "3/4",
+          "conditional_gap_prefactor": "3/8",
+          "conditional_gap_negative_exponent": "3/2",
+          "endpoint_uses_spectral_continuity": true
+        }
+      ]
+    },
+    "oscillation_orientation": {
+      "matrix": [
+        [
+          "0",
+          "2/5",
+          "2/5"
+        ],
+        [
+          "4/5",
+          "0",
+          "0"
+        ],
+        [
+          "4/5",
+          "0",
+          "0"
+        ]
+      ],
+      "oscillation_vector": [
+        [
+          "1"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "correct_C_transpose_l1": "4/5",
+      "incorrect_C_l1": "8/5",
+      "transpose_omission": "REJECT"
+    },
+    "old_checkers_run": false,
+    "evidence_ceiling": "Finite rational controls. General matrix, Banach, probability, spectral and continuum claims require their written proofs."
+  },
+  "evidence_ceiling": "Written proofs and independent agent audits, with finite exact corroboration; not formal certification or a continuum mass-gap theorem."
+}

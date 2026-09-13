@@ -1,0 +1,4 @@
+  File "C:\github\RPRM-open\research\bsd-e5-test-01\work\arithmetic_check.py", line 312
+    for name, operation in (('group', lambda: plus((F(0), F(1)), P)), ('signature', lambda: signature((F(0), F(1)))):
+                                                                                                                    ^
+SyntaxError: invalid syntax

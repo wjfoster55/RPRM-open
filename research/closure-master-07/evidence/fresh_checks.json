@@ -1,0 +1,365 @@
+{
+  "created_utc": "2026-09-13T01:12:58.764389+00:00",
+  "status": "EXACT_CARRY_CYCLE_AND_STOPPING_CONTROLS_COMPLETED",
+  "source_sha256": "7ea95fc48e2a1c43233a10753194e8fa2c29b35058f7215853ab5a1797b441b2",
+  "carry": {
+    "cases": [
+      {
+        "base": 3,
+        "weights": [
+          1,
+          1
+        ],
+        "states": 9,
+        "horizon": 6
+      },
+      {
+        "base": 5,
+        "weights": [
+          1,
+          5,
+          5
+        ],
+        "states": 125,
+        "horizon": 10
+      },
+      {
+        "base": 7,
+        "weights": [
+          1,
+          7,
+          7
+        ],
+        "states": 343,
+        "horizon": 14
+      },
+      {
+        "base": 10,
+        "weights": [
+          100,
+          10,
+          10,
+          1
+        ],
+        "states": 10000,
+        "horizon": 20
+      }
+    ],
+    "total_states": 10477,
+    "transition_checks": 216583,
+    "current_path": [
+      {
+        "k": 0,
+        "source_word": "5426",
+        "wrapped": 566,
+        "weighted_wraps": 0,
+        "lifted": 566
+      },
+      {
+        "k": 1,
+        "source_word": "6537",
+        "wrapped": 687,
+        "weighted_wraps": 0,
+        "lifted": 687
+      },
+      {
+        "k": 2,
+        "source_word": "7648",
+        "wrapped": 808,
+        "weighted_wraps": 0,
+        "lifted": 808
+      },
+      {
+        "k": 3,
+        "source_word": "8759",
+        "wrapped": 929,
+        "weighted_wraps": 0,
+        "lifted": 929
+      },
+      {
+        "k": 4,
+        "source_word": "9860",
+        "wrapped": 1040,
+        "weighted_wraps": 1,
+        "lifted": 1050
+      },
+      {
+        "k": 5,
+        "source_word": "0971",
+        "wrapped": 161,
+        "weighted_wraps": 101,
+        "lifted": 1171
+      },
+      {
+        "k": 6,
+        "source_word": "1082",
+        "wrapped": 182,
+        "weighted_wraps": 111,
+        "lifted": 1292
+      },
+      {
+        "k": 7,
+        "source_word": "2193",
+        "wrapped": 303,
+        "weighted_wraps": 111,
+        "lifted": 1413
+      },
+      {
+        "k": 8,
+        "source_word": "3204",
+        "wrapped": 324,
+        "weighted_wraps": 121,
+        "lifted": 1534
+      },
+      {
+        "k": 9,
+        "source_word": "4315",
+        "wrapped": 445,
+        "weighted_wraps": 121,
+        "lifted": 1655
+      },
+      {
+        "k": 10,
+        "source_word": "5426",
+        "wrapped": 566,
+        "weighted_wraps": 121,
+        "lifted": 1776
+      },
+      {
+        "k": 11,
+        "source_word": "6537",
+        "wrapped": 687,
+        "weighted_wraps": 121,
+        "lifted": 1897
+      },
+      {
+        "k": 12,
+        "source_word": "7648",
+        "wrapped": 808,
+        "weighted_wraps": 121,
+        "lifted": 2018
+      },
+      {
+        "k": 13,
+        "source_word": "8759",
+        "wrapped": 929,
+        "weighted_wraps": 121,
+        "lifted": 2139
+      },
+      {
+        "k": 14,
+        "source_word": "9860",
+        "wrapped": 1040,
+        "weighted_wraps": 122,
+        "lifted": 2260
+      },
+      {
+        "k": 15,
+        "source_word": "0971",
+        "wrapped": 161,
+        "weighted_wraps": 222,
+        "lifted": 2381
+      },
+      {
+        "k": 16,
+        "source_word": "1082",
+        "wrapped": 182,
+        "weighted_wraps": 232,
+        "lifted": 2502
+      },
+      {
+        "k": 17,
+        "source_word": "2193",
+        "wrapped": 303,
+        "weighted_wraps": 232,
+        "lifted": 2623
+      },
+      {
+        "k": 18,
+        "source_word": "3204",
+        "wrapped": 324,
+        "weighted_wraps": 242,
+        "lifted": 2744
+      },
+      {
+        "k": 19,
+        "source_word": "4315",
+        "wrapped": 445,
+        "weighted_wraps": 242,
+        "lifted": 2865
+      },
+      {
+        "k": 20,
+        "source_word": "5426",
+        "wrapped": 566,
+        "weighted_wraps": 242,
+        "lifted": 2986
+      }
+    ],
+    "one_cycle_projected_return": 566,
+    "one_cycle_lift_drift": 1210
+  },
+  "cycle_potential": {
+    "complete_family_size": 729,
+    "counts": {
+      "nonzero_cycle_sum": 552,
+      "zero_cycle_sums": 177
+    },
+    "examples": {
+      "obstructed": {
+        "T": [
+          0,
+          0,
+          0
+        ],
+        "h": [
+          -1,
+          -1,
+          -1
+        ],
+        "cycles": [
+          [
+            0
+          ]
+        ],
+        "cycle_sums": [
+          -1
+        ],
+        "one_potential": null
+      },
+      "solvable": {
+        "T": [
+          0,
+          0,
+          0
+        ],
+        "h": [
+          0,
+          -1,
+          -1
+        ],
+        "cycles": [
+          [
+            0
+          ]
+        ],
+        "cycle_sums": [
+          0
+        ],
+        "one_potential": [
+          -1,
+          -2,
+          -2
+        ]
+      }
+    },
+    "equation": "h(x)=g(x)-g(Tx)",
+    "scope": "n=3 functional graphs, edge costs -1,0,1; written theorem covers arbitrary supplied finite graph"
+  },
+  "parity_cubes": [
+    {
+      "boundary_bits": 3,
+      "all_cube_patterns": 27,
+      "monochromatic_cubes": 8,
+      "maximum_free_bits": 0,
+      "compact_opposite_parity_CNF_clause_count": 8,
+      "required_block_certified_cube_exclusions": 8
+    },
+    {
+      "boundary_bits": 4,
+      "all_cube_patterns": 81,
+      "monochromatic_cubes": 16,
+      "maximum_free_bits": 0,
+      "compact_opposite_parity_CNF_clause_count": 16,
+      "required_block_certified_cube_exclusions": 16
+    },
+    {
+      "boundary_bits": 5,
+      "all_cube_patterns": 243,
+      "monochromatic_cubes": 32,
+      "maximum_free_bits": 0,
+      "compact_opposite_parity_CNF_clause_count": 24,
+      "required_block_certified_cube_exclusions": 32
+    },
+    {
+      "boundary_bits": 6,
+      "all_cube_patterns": 729,
+      "monochromatic_cubes": 64,
+      "maximum_free_bits": 0,
+      "compact_opposite_parity_CNF_clause_count": 32,
+      "required_block_certified_cube_exclusions": 64
+    },
+    {
+      "boundary_bits": 7,
+      "all_cube_patterns": 2187,
+      "monochromatic_cubes": 128,
+      "maximum_free_bits": 0,
+      "compact_opposite_parity_CNF_clause_count": 40,
+      "required_block_certified_cube_exclusions": 128
+    },
+    {
+      "boundary_bits": 8,
+      "all_cube_patterns": 6561,
+      "monochromatic_cubes": 256,
+      "maximum_free_bits": 0,
+      "compact_opposite_parity_CNF_clause_count": 48,
+      "required_block_certified_cube_exclusions": 256
+    }
+  ],
+  "stop_controls": {
+    "numerator_bound": 100,
+    "divisibility_modulus": 125,
+    "complete_compatible_numerators": [
+      0
+    ],
+    "without_height_bound_nonzero_witness": 125,
+    "strict_contraction_nonzero_at_every_recorded_step": true,
+    "contraction_samples": [
+      "1",
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32",
+      "1/64",
+      "1/128",
+      "1/256",
+      "1/512",
+      "1/1024",
+      "1/2048",
+      "1/4096",
+      "1/8192",
+      "1/16384",
+      "1/32768",
+      "1/65536",
+      "1/131072",
+      "1/262144",
+      "1/524288",
+      "1/1048576"
+    ],
+    "positive_finite_gaps_with_zero_limit": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32",
+      "1/64",
+      "1/128",
+      "1/256",
+      "1/512",
+      "1/1024",
+      "1/2048",
+      "1/4096",
+      "1/8192",
+      "1/16384",
+      "1/32768",
+      "1/65536",
+      "1/131072",
+      "1/262144",
+      "1/524288",
+      "1/1048576"
+    ]
+  },
+  "Millennium_problem_solved": false,
+  "claim_ceiling": "Fresh finite tests plus separate written proofs; no domain bridge is inferred from shared notation."
+}

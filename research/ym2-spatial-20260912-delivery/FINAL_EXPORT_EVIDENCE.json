@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-12T17:27:30.207144+00:00",
+  "archive": "C:\\github\\RPRM-open\\research\\ym2-spatial-20260912-delivery\\YM2-spatial-joint-2026-09-12.zip",
+  "archive_sha256": "60d0efd6577adaa24594071aa58001355e26b96353b386200d0f96546bb60e29",
+  "archive_bytes": 53167,
+  "payload_files": 17,
+  "manifest_covered_files": 16,
+  "fresh_extraction": "C:\\github\\RPRM-open\\research\\ym2-spatial-20260912-delivery\\final-extraction\\YM2-spatial-joint",
+  "zip_crc": "PASS",
+  "payload_before_and_after_replay_identical": true,
+  "source_payload_identical_to_extracted": true,
+  "runs": [
+    {
+      "script": "check_dynamics.py",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\github\\RPRM-open\\research\\ym2-spatial-20260912-delivery\\final-extraction\\YM2-spatial-joint\\check_dynamics.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-spatial-20260912-delivery\\final-extraction\\YM2-spatial-joint",
+      "exit_code": 0,
+      "receipt": "RESULTS_DYNAMICS.json",
+      "comparison": "Fresh stdout JSON equals saved receipt",
+      "stdout_sha256": "d967d855e20b5ba28802df35e347c05d66082189f8e8985477e2ea5fb601d3a1",
+      "stderr_bytes": 0
+    },
+    {
+      "script": "check_static_join.py",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\github\\RPRM-open\\research\\ym2-spatial-20260912-delivery\\final-extraction\\YM2-spatial-joint\\check_static_join.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-spatial-20260912-delivery\\final-extraction\\YM2-spatial-joint",
+      "exit_code": 0,
+      "receipt": "RESULTS_STATIC.json",
+      "comparison": "Default checker recomputes and compares complete saved JSON internally",
+      "stdout_sha256": "e6f6bfbe676dff2ecc7a199be41de9ff6965c6d26051bb907355eaf7444ed69f",
+      "stderr_bytes": 0
+    },
+    {
+      "script": "check_phase.py",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\github\\RPRM-open\\research\\ym2-spatial-20260912-delivery\\final-extraction\\YM2-spatial-joint\\check_phase.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-spatial-20260912-delivery\\final-extraction\\YM2-spatial-joint",
+      "exit_code": 0,
+      "receipt": "RESULTS_PHASE.json",
+      "comparison": "Default checker recomputes and compares complete saved JSON internally",
+      "stdout_sha256": "4c26255141b5be0ae608c87559d95332fe08c0e01c435712a361cafa8804b870",
+      "stderr_bytes": 0
+    }
+  ],
+  "static_checks": {
+    "rational_seeds": 7,
+    "matrix_product_comparisons": 49,
+    "associativity_and_matrix_triples": 343,
+    "joint_product_updates": 256,
+    "cross_Gram_minor_identities": 64,
+    "coarse_fiber_recovery_and_energy_controls": 72
+  },
+  "phase_regular_cases": 12,
+  "phase_gauge_cases": 6,
+  "phase_boundary_cases": 3,
+  "phase_polynomial_identity": {
+    "method": "exact sparse polynomial expansion",
+    "expanded_terms": 15,
+    "passed": true
+  },
+  "earlier_YM2_zip": "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\YM2-interacting-SU2-2026-09-12.zip",
+  "earlier_YM2_zip_sha256_unchanged": "167e181c19e6c2a5dfdcb3e9956412251a8dcb9d808c7684e68393e7d86f1f8c",
+  "limits": "Written mathematics plus finite executable checks; not formal verification, global singular closure or a continuum quantum result."
+}

@@ -1,0 +1,10 @@
+{
+  "archive": "C:\\github\\RPRM-open\\research\\RPRM_BSD_KEYRING_13_RETURN.zip",
+  "archive_bytes": 2240160,
+  "archive_sha256": "6d1716f8f7897e02e4d2a99bb4d077ffd29e816b636f52a268f2d422ae3c3f12",
+  "created_utc": "2026-09-13T04:29:36.260830+00:00",
+  "manifested_files": 19,
+  "source_tree_byte_comparison": true,
+  "status": "ARCHIVE_BYTES_AND_MANIFEST_VERIFIED",
+  "verified_members": 20
+}

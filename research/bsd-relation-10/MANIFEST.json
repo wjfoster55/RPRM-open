@@ -1,0 +1,141 @@
+{
+  "claim": "Byte integrity only; not mathematical verification",
+  "files": [
+    {
+      "bytes": 13603,
+      "path": "agents/CM_THEOREM_ROUTE.md",
+      "sha256": "1e7ae8ce38502fc46336ecd361fc6ca7b70ed31b5173ddf36d7676441da033bb"
+    },
+    {
+      "bytes": 12154,
+      "path": "agents/DERIVED_CLASS_ROUTE.md",
+      "sha256": "93b7682991786bc66d907fc64de6786a19af390147dc9a5a3507f83e90732807"
+    },
+    {
+      "bytes": 7725,
+      "path": "agents/FINITE_READBACK_REVIEW.md",
+      "sha256": "3213211e466eadd7e88def9fea0da923f36d98ad4f7ed5b41ea6e6503d261bc0"
+    },
+    {
+      "bytes": 9960,
+      "path": "agents/SIGMA_AUDIT.md",
+      "sha256": "09b0181593e8449809b5469abf3764cfe4c8a84b7977d84ecd7cb54b8cf8c9ac"
+    },
+    {
+      "bytes": 2517,
+      "path": "BSD_REBRIEF.md",
+      "sha256": "29342e4f8c21ed63a9e5ffff356140bd94e7d8a7446e2e0bd334a6233f065a44"
+    },
+    {
+      "bytes": 14223,
+      "path": "dependencies/ARITHMETIC_PROOF.md",
+      "sha256": "3d3e7fbb43fae46d4759a0bf48f705b82d4552b06744b8b9f6d70d8e673de243"
+    },
+    {
+      "bytes": 9461,
+      "path": "dependencies/COEFFICIENT_PROOF.md",
+      "sha256": "89cdd5a9458e421bc3b22f7f82799b687d4c371319f445d6d1c2e0686d250910"
+    },
+    {
+      "bytes": 11154,
+      "path": "dependencies/EXACT_IDENTITY_THEOREMS.md",
+      "sha256": "2cf701bef7b760237b12dbf2d36436913b5cb2bdcdcb26e564299957836ed77e"
+    },
+    {
+      "bytes": 15376,
+      "path": "dependencies/EXPLICIT_IDENTITY_TARGET.md",
+      "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753"
+    },
+    {
+      "bytes": 11575,
+      "path": "dependencies/GENERATOR_PROOF.md",
+      "sha256": "9c6b26a14051eda856bf79094257bd30d0e9382528b5e208e79ab33c168c9b15"
+    },
+    {
+      "bytes": 16525,
+      "path": "dependencies/PADIC_HEIGHT_AUDIT.md",
+      "sha256": "8db3ed9b53c6bd114bc54e142cfcebe2a99233d65b0cc03671025ea023f0e66e"
+    },
+    {
+      "bytes": 2164,
+      "path": "dependencies/SOURCES.json",
+      "sha256": "6ea78880c1958e6a3637c78296017a8138fd10918764826fd206e6dc579f854a"
+    },
+    {
+      "bytes": 7406,
+      "path": "dependencies/TRACE_CALCULATION.md",
+      "sha256": "f991173f730bde04b40d1c8c82dba5ff7fde11ea370915454118a0f882f1937d"
+    },
+    {
+      "bytes": 1667,
+      "path": "PREFREEZE.md",
+      "sha256": "455d606ef81f8b610fcc8d7bd4c14bf9c140e1cb629e4a114224b97f7ee15b66"
+    },
+    {
+      "bytes": 9102,
+      "path": "README.md",
+      "sha256": "ac2ed526958396c6402681e4beee80cebf645293850f8c86c8fa54ae167e4c15"
+    },
+    {
+      "bytes": 27489,
+      "path": "runs/fresh-01/evidence/reciprocity.json",
+      "sha256": "1fd4dea68158f5e8af746d9457811c58048089a749064fd96c711e73dc004cd0"
+    },
+    {
+      "bytes": 535,
+      "path": "runs/fresh-01/logs/analytic.log",
+      "sha256": "37b51781dd653b545b8f7c27fa12c2fbb57113a6fdfdbe899f7d480502c1cfee"
+    },
+    {
+      "bytes": 404,
+      "path": "runs/fresh-01/logs/reciprocity.log",
+      "sha256": "2e02a008c7c76b73c59d08068b6eb1ead2146d92ef9666b398bf55e9afc6c7da"
+    },
+    {
+      "bytes": 1352,
+      "path": "runs/fresh-01/RUN.json",
+      "sha256": "bb8980f25e3c7ae7a3095d15b7e907fa3237306b57a902b81a925f6631380270"
+    },
+    {
+      "bytes": 2426,
+      "path": "runs/fresh-01/work/analytic.gp",
+      "sha256": "4a1c7c3598b0c1116a06b70a41dd50485c2eabd38472c9b3818d7e7a08592b39"
+    },
+    {
+      "bytes": 8542,
+      "path": "runs/fresh-01/work/reciprocity.py",
+      "sha256": "b8cc6d750c802632d62c0301af98732d28ca919dbaaba0741d2f83150ef6000a"
+    },
+    {
+      "bytes": 2983,
+      "path": "runs/fresh-01/work/run.py",
+      "sha256": "2b76bfa46cbfe271b9c10ed00d875802a3fe6e038398b4e2321c98b02e22c359"
+    },
+    {
+      "bytes": 2426,
+      "path": "work/analytic.gp",
+      "sha256": "4a1c7c3598b0c1116a06b70a41dd50485c2eabd38472c9b3818d7e7a08592b39"
+    },
+    {
+      "bytes": 1820,
+      "path": "work/capture_dependencies.py",
+      "sha256": "a1d22283c6d23dc8f0169244b0a2ba52ef65df71d34cfbecbd4c111d2511cfd1"
+    },
+    {
+      "bytes": 3670,
+      "path": "work/package_packet.py",
+      "sha256": "8cfdc89c96619b1babbe90fa0dd9f674d0c8e1611c380687e197df6158dafd40"
+    },
+    {
+      "bytes": 8542,
+      "path": "work/reciprocity.py",
+      "sha256": "b8cc6d750c802632d62c0301af98732d28ca919dbaaba0741d2f83150ef6000a"
+    },
+    {
+      "bytes": 2983,
+      "path": "work/run.py",
+      "sha256": "2b76bfa46cbfe271b9c10ed00d875802a3fe6e038398b4e2321c98b02e22c359"
+    }
+  ],
+  "schema": "bsd-relation-10-file-manifest-v1"
+}

@@ -1,0 +1,2 @@
+PASS: 12 regular full-link cases, 6 gauge-covariance cases, 3 rank-two boundary cases, singular hostile case, exact polynomial determinant identity.
+Receipt compared_without_writing: C:\github\RPRM-open\research\ym2-spatial-20260912-delivery\final-extraction\YM2-spatial-joint\RESULTS_PHASE.json

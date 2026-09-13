@@ -1,0 +1,42 @@
+{
+  "handoff": "RPRM-CODEX-CONSOLIDATION-01",
+  "state": "PREPARED_NOT_EXECUTED_IN_CHATGPT",
+  "owner": "Codex when user submits this packet",
+  "execution_order": [
+    "F1",
+    "AD1",
+    "YM1"
+  ],
+  "closed_dependencies": [
+    "RCF01-C1",
+    "SAT02-M1-maintenance",
+    "SAT02-partial-research",
+    "Lind-Reichardt-review005",
+    "AD-pilot_collection_v2-frozen"
+  ],
+  "tasks": [
+    {
+      "id": "F1",
+      "task": "Claim/evidence closeout of completed fluid frontier studies",
+      "instruction": "tasks/F1_FLUID_CLOSEOUT.md",
+      "state": "PENDING_CODEX",
+      "scope_type": "EXISTING_RESULT_CLOSEOUT"
+    },
+    {
+      "id": "AD1",
+      "task": "One executable scoped-claim development specimen",
+      "instruction": "tasks/AD1_SCOPED_CLAIM.md",
+      "state": "PENDING_CODEX",
+      "scope_type": "BOUNDED_NEW_DEVELOPMENT"
+    },
+    {
+      "id": "YM1",
+      "task": "One physical model/observable/dynamics bridge",
+      "instruction": "tasks/YM1_PHYSICAL_BRIDGE.md",
+      "state": "PENDING_CODEX",
+      "scope_type": "BOUNDED_NEW_DEFINITION_AND_CALIBRATION"
+    }
+  ],
+  "blocked_lane_policy": "Complete other independent tasks; record exact missing source/bridge. No fabricated completion.",
+  "return": "One consolidated portable ZIP plus actual final-replay evidence and plain-language status."
+}

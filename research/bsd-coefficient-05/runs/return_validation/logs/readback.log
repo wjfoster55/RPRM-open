@@ -1,0 +1,15 @@
+{
+  "status": "EXACT_COEFFICIENT_AND_INDEPENDENT_READBACK_COMPLETED",
+  "coefficient": {
+    "name": "b2, E34 connected real period, gamma=6",
+    "residue": 426,
+    "modulus": 625,
+    "absolute_precision": 4,
+    "expansion": "1 + 2*5^2 + 3*5^3 + O(5^4)",
+    "nonzero": true,
+    "valuation": 0
+  },
+  "fresh_MST_regulator_mod5": 3,
+  "five_times_local_comparison_scalar_mod5": 1,
+  "full_real_BSD_identity": "OPEN"
+}

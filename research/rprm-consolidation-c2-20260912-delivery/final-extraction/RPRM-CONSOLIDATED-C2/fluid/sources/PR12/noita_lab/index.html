@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>mini-Noita liquid lab</title>
+<style>
+  :root { --bg:#0b0c12; --panel:#161822; --ink:#e7e9f0; --mut:#8b90a3; --acc:#3aa0ff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:13px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  header { padding:10px 14px; border-bottom:1px solid #222533; }
+  header h1 { margin:0; font-size:15px; font-weight:600; }
+  header .sub { color:var(--mut); font-size:12px; margin-top:2px; }
+  .wrap { display:flex; gap:14px; padding:14px; align-items:flex-start; flex-wrap:wrap; }
+  .stage { background:#000; border:1px solid #222533; border-radius:6px; padding:6px; }
+  canvas { display:block; cursor:crosshair; border-radius:3px; }
+  .panel { background:var(--panel); border:1px solid #222533; border-radius:6px;
+           padding:12px; min-width:230px; }
+  .panel h2 { font-size:12px; text-transform:uppercase; letter-spacing:.06em;
+              color:var(--mut); margin:0 0 8px; }
+  .row { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+  button, .chip { background:#20232f; color:var(--ink); border:1px solid #2c3042;
+           border-radius:5px; padding:6px 9px; cursor:pointer; font:inherit; }
+  button:hover { border-color:var(--acc); }
+  button.active, .chip.active { background:var(--acc); color:#06111f; border-color:var(--acc); font-weight:600; }
+  label.chk { display:flex; align-items:center; gap:6px; color:var(--mut); }
+  input[type=range] { width:130px; }
+  #hud { padding:8px 14px; border-top:1px solid #222533; color:var(--mut); }
+  #hud b { color:var(--ink); }
+  #modelName { color:var(--acc); font-weight:600; }
+  .hint { color:var(--mut); font-size:11.5px; margin-top:8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>mini-Noita liquid lab &nbsp;·&nbsp; <span id="modelName"></span></h1>
+  <div class="sub">Falling-sand cellular automaton — comparing three cheap water models. Paint with the mouse.</div>
+</header>
+
+<div class="wrap">
+  <div class="stage"><canvas id="view"></canvas></div>
+
+  <div class="panel">
+    <h2>Water model (live A/B/C/D)</h2>
+    <div class="row">
+      <button data-model="A">A binary</button>
+      <button data-model="B">B momentum</button>
+      <button data-model="C">C mass-level</button>
+      <button data-model="D">D level-aware</button>
+      <button data-model="E">E D_fast (=D)</button>
+      <button data-model="F">F D_fast (fast)</button>
+    </div>
+
+    <h2>Brush</h2>
+    <div class="row">
+      <button data-brush="3">Water</button>
+      <button data-brush="2">Sand</button>
+      <button data-brush="1">Stone</button>
+      <button data-brush="0">Erase</button>
+    </div>
+
+    <h2>Scenarios</h2>
+    <div class="row">
+      <button id="sc-basin">Column→basin</button>
+      <button id="sc-utube">U-tube</button>
+      <button id="sc-dam">Dam-break</button>
+      <button id="sc-stress">Multi-body</button>
+      <button id="reset">Clear</button>
+    </div>
+
+    <h2>Sim</h2>
+    <div class="row">
+      <button id="pause">Pause</button>
+      <label class="chk">speed <input id="speed" type="range" min="1" max="6" value="1"></label>
+    </div>
+    <div class="row">
+      <label class="chk"><input id="chunks" type="checkbox"> show awake chunks</label>
+    </div>
+
+    <div class="hint">
+      A: fast, but can't climb — leaves the U-tube's far shaft empty,
+      and its surface stays stepped.<br>
+      B: inertia &amp; splashes, but oscillates and won't flatten.<br>
+      C: continuous depth, flattens free surfaces, and its pressure term
+      pushes water partway up the far shaft (A/B never do). It still doesn't
+      fully equalize a tall U-tube — see PROBLEMS.md.<br>
+      D: level-aware. Labels connected water bodies and reads each body's
+      target level straight off (volume ÷ footprint), so a U-tube equalizes
+      to Δh≈0 in tens of steps. Load U-tube and watch both shafts level out.<br>
+      E: D_fast / E_exact — the cache/skip machinery constrained to reproduce D
+      frame-for-frame (verified by test_frame_equality.js). It re-floods every
+      awake body each relabel frame like D, so it is a faithful mirror, not a
+      speedup.<br>
+      F: D_fast — the certificate-gated variant that actually skips work (cache
+      connected-body labels + target levels, re-flood only disturbed/uncertified
+      bodies). NOT frame-identical to D: hydrostatically equivalent but with small
+      deviations on fragmenting scenes. Load Multi-body.
+    </div>
+  </div>
+</div>
+
+<div id="hud"></div>
+
+<script src="js/constants.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/scenarios.js"></script>
+<script src="js/models.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

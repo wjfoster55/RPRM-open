@@ -1,0 +1,14 @@
+{
+  "working_root": "C:\\github\\RPRM-open",
+  "isolated_output": "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912",
+  "source_revision": "9b5e132ee36334311f125027c2a719563890a3c1",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.3.5",
+  "node": "v24.18.0",
+  "incoming_zip_sha256": "ad9464970dd1c269c5af6a29255ee3659d6c9595fc4a484fd7ecb96955a2499d",
+  "installations": false,
+  "accepted_suites_replayed": false,
+  "local_preflight": "No later equivalent return found in bounded research/Downloads file-name and named-task latest-turn checks. Only this consolidation and disjoint bounded reviewers are controlled here; unseen external activity is not ruled out."
+}

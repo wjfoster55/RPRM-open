@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-I",
+    "-B",
+    "check_ym2.py",
+    "--numeric",
+    "--output",
+    "RESULTS.json"
+  ],
+  "cwd": "C:\\github\\RPRM-open\\research\\ym2_interacting_energy_transfer",
+  "ended_utc": "2026-09-12T16:23:35.514586+00:00",
+  "exit_code": 0,
+  "name": "final-source-science",
+  "started_utc": "2026-09-12T16:23:35.271282+00:00",
+  "stderr": "",
+  "stdout": "{\"status\": \"PASS\", \"output\": \"RESULTS.json\", \"exact_states\": 6, \"gauge_transports\": 6, \"numeric\": true}\n"
+}

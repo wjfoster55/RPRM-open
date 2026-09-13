@@ -1,0 +1,63 @@
+{
+  "schema": "rprm-operational-number-sources/v1",
+  "generated_on": "2026-08-21",
+  "rule": "A hash establishes source identity, not semantic validity or authority.",
+  "sources": [
+    {
+      "id": "FABLE_PI_CLOSURE_LEGEND",
+      "path": "C:/github/RPRMLexicon/lexicon/RPRM_PI_CLOSURE_LEGEND.md",
+      "sha256": "5b5fe3e1c8e577aac3d054aef0d31f106c82af8535b223b4442799664dc6f085",
+      "role": "proposed legend and research context",
+      "authority": "NON_CANONICAL_INPUT"
+    },
+    {
+      "id": "WILLIAM_MESSAGE_TO_FABLE",
+      "path": "C:/Users/bkbee/Downloads/message_sent_to_claude.txt",
+      "sha256": "a67fb3b9da53367045cfe900df6a64ae125b79917099d851c49b2c7130a1544b",
+      "role": "user intent and abductive vocabulary",
+      "authority": "USER_CONTEXT"
+    },
+    {
+      "id": "PI_VIEWFINDER_SEALED_PACKET",
+      "path": "C:/github/RPRMFoundry/evidence/sealed/RPRMPiViewfinder_SEALED_96f920a.zip",
+      "sha256": "01109ae7e8e89fe2010e7c737085272a74ca0204d0ab28de276c8f396497c6c2",
+      "role": "sealed finite Pi viewfinder and mirror-circle evidence",
+      "authority": "SEALED_FINITE_SOURCE"
+    },
+    {
+      "id": "PI_DIGIT_SYMMETRY_REPO",
+      "path": "C:/github/PiDigitSymmetry",
+      "git_commit": "20b22785deca2de0bb00b2da9e00070f6f9098a0",
+      "role": "finite P/N/T and word-carrier implementation",
+      "authority": "TESTED_FINITE_SOURCE"
+    },
+    {
+      "id": "RPRM_FOUNDRY_C001",
+      "path": "C:/github/RPRMFoundry",
+      "git_commit": "f4eb38897dbcf077b891401bbdc8b141fbf06967",
+      "role": "sealed campaign decisions and continuation boundary",
+      "authority": "SEALED_CAMPAIGN_SOURCE"
+    },
+    {
+      "id": "NUMBER_USAGE_ATLAS_RESULTS",
+      "path": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/Quantum Research/experiments/RPRM_NUMBER_USAGE_ATLAS_01/RESULTS.json",
+      "sha256": "3db2db1c9624b90a21c703c1eef3e246eee81f33e9264bea7d6c0e28de32b0bc",
+      "role": "exact finite affordances, divisor closures, and factorization capabilities",
+      "authority": "TESTED_FINITE_SOURCE"
+    },
+    {
+      "id": "NUMBER_USAGE_ATLAS_PROTOCOL",
+      "path": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/Quantum Research/experiments/RPRM_NUMBER_USAGE_ATLAS_01/PROTOCOL.md",
+      "sha256": "cb3c190cc523f94a2b3950a24abc986d6edb28222015120ed2755d21c4e9d455",
+      "role": "MUST/MAY/DID/FALSE_PROMOTION discipline",
+      "authority": "FROZEN_PROTOCOL"
+    }
+  ],
+  "known_gap": {
+    "context_root": "4e71563878efb5a39b85666989f9fb4af787759ea8def296bca1dc3560e5fced",
+    "external_ledger_reopen": "OPEN_SOURCE_MISSING",
+    "repo_copy": "C:/github/RPRMFoundry/campaigns/C001_THREE_BOSSES/CONTINUATION_TICKET.json",
+    "effect": "The repo artifact is usable provenance; no external-ledger recovery is claimed."
+  }
+}
+

@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S6.html",
+    "status": 200,
+    "bytes": 351487,
+    "sha256": "c8bdddedb1fed61255eb7050284a3aa44d5bd7756efdadd647b17272980b4c80",
+    "stored_payload": false,
+    "reason": "External primary reference; full copyrighted work not redistributed",
+    "observed_utc": "2026-09-12T15:01:37.338943+00:00"
+  },
+  {
+    "url": "https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S2.html",
+    "status": 200,
+    "bytes": 393517,
+    "sha256": "fc7652fe8703434b34286b6c919917095d1f7ee8140d46dc0608d9cb62ad051c",
+    "stored_payload": false,
+    "reason": "External primary reference; full copyrighted work not redistributed",
+    "observed_utc": "2026-09-12T15:01:38.331240+00:00"
+  },
+  {
+    "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+    "status": 200,
+    "bytes": 195976,
+    "sha256": "3558403ca14c11e382f73a09e548222708540bfdf478cf96aa11c52d43e23e09",
+    "stored_payload": false,
+    "reason": "External primary reference; full copyrighted work not redistributed",
+    "observed_utc": "2026-09-12T15:01:39.113295+00:00"
+  }
+]

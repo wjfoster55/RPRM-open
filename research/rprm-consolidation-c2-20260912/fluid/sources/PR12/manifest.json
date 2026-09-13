@@ -1,0 +1,11 @@
+{
+  "status": "proposed_only_not_executed",
+  "date": "2026-09-10",
+  "sha256": {
+    "CURSOR_TRANSPORT_START.md": "315fee8947dc690bd800b8b9d8906e25bc4cf71b3729692afae3b68910103b75",
+    "FROZEN_TRANSFER_PROTOCOL.md": "2e2987de6a0cc7936fc3f9bc1aa57e03610aa2eeeb51ae6eca9683d5e574817b",
+    "HAINES_SCOUT.md": "6ac7b13eda73eacc785f503fc7591d7181a198f2da591fde69dcc46f0e7c75ae",
+    "README.md": "bc524ab739d4cd5a244c1c5fc68251d752f52374ae85ecfdf73faa32e79c2810",
+    "SOURCES.md": "8e2a4c16ce46196a9e54a48d6cd361ae44d1dc9f6d8781bc2ce9d6903d33b02a"
+  }
+}

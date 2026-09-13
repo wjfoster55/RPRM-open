@@ -6,6 +6,10 @@ develops a relational framework for mathematical unification: preserve the
 source mathematics and make its questions, representations and operations
 explicit. Every claim has a stated domain and evidence grade.
 
+For recalled concepts and research continuations, start with
+`recovered-concepts/README.md`. Its `NEXT-PAPER-BACKLOG.md` tracks candidate
+paper additions; dated audits and original passages remain attributed evidence.
+
 For a mathematical task, specify:
 
 1. Carrier, types, equality and admitted context.

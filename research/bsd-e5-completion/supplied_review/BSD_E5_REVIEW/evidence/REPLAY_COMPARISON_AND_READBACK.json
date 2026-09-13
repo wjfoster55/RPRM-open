@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "comparisons": [
+    {
+      "stage": "arithmetic",
+      "all_nonmetadata_fields_equal": true,
+      "fields_compared": [
+        "candidate_counts",
+        "controls",
+        "cosets",
+        "cube",
+        "evidence_kind",
+        "exclusions",
+        "modular_filter_route",
+        "modular_filters",
+        "not_established",
+        "rational_x_search",
+        "representatives",
+        "source_contract",
+        "source_sha256",
+        "sources",
+        "status",
+        "tasks",
+        "tower_tests"
+      ],
+      "excluded_environment_metadata": [
+        "python",
+        "utc"
+      ]
+    },
+    {
+      "stage": "model_binding",
+      "all_nonmetadata_fields_equal": true,
+      "fields_compared": [
+        "baseline",
+        "certificate_model",
+        "checks",
+        "claim_ceiling",
+        "control_id",
+        "evidence_kind",
+        "hash_ceiling",
+        "input_sha256",
+        "mutation",
+        "polynomial_witness",
+        "status"
+      ],
+      "excluded_environment_metadata": [
+        "command",
+        "generated_at_utc",
+        "input_locator",
+        "python_version"
+      ]
+    },
+    {
+      "stage": "analytic",
+      "all_nonmetadata_fields_equal": true,
+      "fields_compared": [
+        "B02",
+        "D01",
+        "coefficients_through_20",
+        "controls",
+        "external_rigorous_backend",
+        "formal_proof_status",
+        "prime_data_through_20",
+        "source_program_comparison"
+      ],
+      "excluded_environment_metadata": [
+        "elapsed_seconds_display_only",
+        "run"
+      ]
+    },
+    {
+      "stage": "interval",
+      "all_nonmetadata_fields_equal": true,
+      "fields_compared": [
+        "analytic_dependencies",
+        "attempts",
+        "budget",
+        "constants",
+        "error_ledger",
+        "evidence_kind",
+        "execution_outcome",
+        "finite_coefficient_data",
+        "inequality",
+        "input_curve_a_invariants",
+        "lower",
+        "not_used",
+        "quantity",
+        "selected_cutoff",
+        "selected_panels_per_band",
+        "status",
+        "target_met",
+        "target_width",
+        "task_id",
+        "upper",
+        "width"
+      ],
+      "excluded_environment_metadata": [
+        "run"
+      ]
+    }
+  ],
+  "readbacks_independently_checked": 118,
+  "declared_tower_cases": 112,
+  "additional_point_search_cases": 6,
+  "trace_steps_checked": 304,
+  "six_controls_replayed": [
+    "K01_OFF_CURVE",
+    "K02_MODEL_BINDING",
+    "K03_EULER_RECURRENCE",
+    "K04_NO_TAIL",
+    "K05_LOST_REMAINDER",
+    "K06_FRAME_TRANSPORT"
+  ],
+  "new_mutation_campaign": false,
+  "additional_torsion_corollary": {
+    "evidence_kind": "NEW_IN_THIS_REVIEW_STANDARD_THEOREM_APPLICATION",
+    "curve": "y^2=x^3-25x",
+    "discriminant": 1000000,
+    "good_prime_counts": {
+      "3": 4,
+      "7": 8
+    },
+    "theorem": "Milne, Elliptic Curves (2006), II Corollary 5.7, printed p.66: rational torsion injects under good reduction at odd p.",
+    "source": "https://www.jmilne.org/math/Books/ectext6.pdf#page=74",
+    "proof": "Good reduction at 3 and #E(F3)=4 bound total rational torsion by 4. The four displayed 2-torsion points attain the bound.",
+    "torsion_points": {
+      "O": "infinity",
+      "T0": [
+        "0",
+        "0"
+      ],
+      "Tplus": [
+        "5",
+        "0"
+      ],
+      "Tminus": [
+        "-5",
+        "0"
+      ]
+    },
+    "conclusion": "E(Q)_tors = E(Q)[2] = (Z/2)^2; exactly four rational torsion points.",
+    "not_concluded": "P is an integral generator; full Sha; full BSD coefficient formula"
+  },
+  "scope": "Fresh execution comparison plus independently checked recorded arithmetic; no independent worker-context claim"
+}

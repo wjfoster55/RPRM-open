@@ -1,0 +1,96 @@
+{
+  "control_id": "K02_MODEL_BINDING",
+  "status": "CONFIRMED",
+  "evidence_kind": "INDEPENDENT_FINITE_CONTRACT_TEST",
+  "generated_at_utc": "2026-09-12T17:43:43.930916+00:00",
+  "command": "work/model_binding_check.py --output evidence/model_binding.json",
+  "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "input_locator": "supplied\\BSD_E5_CODEX_TEST_01\\TEST_PLAN.json",
+  "input_sha256": "039ebbe341a76a6dc196673392ccc1fb0e6e6905d18da03592fbb2201926850c",
+  "certificate_model": {
+    "field": "Q",
+    "a_invariants": [
+      0,
+      0,
+      0,
+      -25,
+      0
+    ]
+  },
+  "baseline": {
+    "source_model": {
+      "field": "Q",
+      "a_invariants": [
+        0,
+        0,
+        0,
+        -25,
+        0
+      ]
+    },
+    "invariants": {
+      "c4": 1200,
+      "c6": 0,
+      "discriminant": 1000000,
+      "j": "1728"
+    },
+    "disposition": "ACCEPT_MODEL_IDENTITY",
+    "mismatching_fields": [],
+    "released_analytic_specialization": {
+      "D": 5,
+      "conductor": 800,
+      "functional_equation_sign": -1,
+      "evidence_kind": "THEOREM_CITED_WITH_WRITTEN_SPECIALIZATION",
+      "proof_locator": "ANALYTIC_THEOREMS.md"
+    }
+  },
+  "mutation": {
+    "source_model": {
+      "field": "Q",
+      "a_invariants": [
+        0,
+        0,
+        0,
+        -36,
+        0
+      ]
+    },
+    "invariants": {
+      "c4": 1728,
+      "c6": 0,
+      "discriminant": 2985984,
+      "j": "1728"
+    },
+    "disposition": "REJECT_CERTIFICATE_NON_APPLICABILITY",
+    "mismatching_fields": [
+      "a_invariants"
+    ],
+    "released_analytic_specialization": null,
+    "reason": "The E5 theorem certificate requires its exact bound model."
+  },
+  "polynomial_witness": {
+    "coordinate_substitution": "x=5u, y=25v",
+    "baseline_pullback": {
+      "v^2": 625,
+      "u^3": -125,
+      "u": 125
+    },
+    "changed_pullback": {
+      "v^2": 625,
+      "u^3": -125,
+      "u": 180
+    },
+    "difference": "55u",
+    "interpretation": "The D=5 polynomial identity no longer holds after the a4 mutation."
+  },
+  "checks": {
+    "baseline_identity_accepted": true,
+    "real_a4_mutation": true,
+    "changed_certificate_rejected": true,
+    "conductor_and_sign_withheld_for_changed_model": true,
+    "same_j_is_insufficient_for_binding": true,
+    "actual_polynomial_mismatch": true
+  },
+  "claim_ceiling": "The existing E5 certificate is inapplicable to the changed model. No changed-curve rank, conductor, root number, or L-value is asserted.",
+  "hash_ceiling": "The input digest identifies bytes and is not the mathematical model check."
+}

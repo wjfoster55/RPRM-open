@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "real_candidates": 32,
+  "mod8_survivors": 8,
+  "rationally_realized_classes": 8,
+  "decoder_checks": 256,
+  "output": "/mnt/data/BSD_E5_CODEX_TEST_01/preflight/descent_receipt.json"
+}

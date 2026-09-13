@@ -1,0 +1,74 @@
+{
+  "status": "CONFIRMED",
+  "generated_at_utc": "2026-09-12T17:48:44.891300+00:00",
+  "review_scope": "Executed E5 branch M=40, 32 panels per doubling band; no new coefficient cutoff or quadrature execution.",
+  "evidence_kind": [
+    "INDEPENDENT_CODE_AND_WRITTEN_PROOF_PEER_REVIEW",
+    "EXACT_RECORDED_LEDGER_REASSEMBLY"
+  ],
+  "files_reviewed": [
+    {
+      "path": "work/analytic_check.py",
+      "sha256": "311dfbfcb4b2295b0697f592dbd1d762e29f054527358d548dcf082963f151e3"
+    },
+    {
+      "path": "work/INTERVAL_BUDGET.json",
+      "sha256": "26731f4d32e764490da30358b36e9acf02d65a1dcac8159c98fd9df561ac1895"
+    },
+    {
+      "path": "DERIVATIVE_INTERVAL.json",
+      "sha256": "a77666393d6be23d35fd155e0d4c3895f20aa6236c51f0e264e88b31b0933e03"
+    },
+    {
+      "path": "INTERVAL_DERIVATION.md",
+      "sha256": "65e242dce048490f9ef0a0aabcb3e53c0f84bac548921760876755bcb6600206"
+    },
+    {
+      "path": "evidence/analytic.json",
+      "sha256": "1371edac2d17cb60b7de70b7017eb4b4de8743f51fecfa759f1fe62c65a4e445"
+    }
+  ],
+  "checks": {
+    "implementation_matches_fresh_receipt": true,
+    "budget_matches_fresh_receipt": true,
+    "same_e5_model": true,
+    "only_first_budgeted_attempt": true,
+    "retained_nonzero_indices_complete": true,
+    "signed_term_1": true,
+    "row_ledger_1": true,
+    "signed_term_9": true,
+    "row_ledger_9": true,
+    "signed_term_13": true,
+    "row_ledger_13": true,
+    "signed_term_17": true,
+    "row_ledger_17": true,
+    "signed_term_29": true,
+    "row_ledger_29": true,
+    "signed_term_37": true,
+    "row_ledger_37": true,
+    "signed_head_reassembly": true,
+    "entire_tail_radius_reconstructed": true,
+    "raw_infinite_interval_reconstructed": true,
+    "export_outward": true,
+    "complete_width_ledger": true,
+    "positive_target_width": true,
+    "baseline_rational_reassembly": true,
+    "coarse_pi_alternative_lower": true
+  },
+  "reviewed_mathematical_obligations": [
+    "Machin identity and alternating atan enclosures; integer square-root bounds; alpha denominator endpoints reversed correctly.",
+    "For exp(-z), 0<=z<=1 gives odd degree31 lower and even degree30 upper; nonnegative squaring is monotone and uses outward dyadic rounding.",
+    "f(t)=exp(-t)/t has f''=exp(-t)(1/t+2/t^2+2/t^3)>0 and f'''<0. Midpoint is a lower bound and its per-panel error is <=h^3 f''(left)/24.",
+    "E1(x_lo)-E1(x)<= (x_hi-x_lo)/x_lo for x in [x_lo,x_hi]; code subtracts an upward-rounded allowance only from the lower endpoint.",
+    "Integral beyond 32 bounded by exp(-32)/32; nonzero finite weights reverse endpoints when negative.",
+    "All-n Hasse/Euler coefficient bound supplies the entire n>=41 tail. This strict positive-radius envelope proves the exported endpoints may be stated strictly.",
+    "All signed multiplication and accumulation use exact Fraction arithmetic. Fixed-grid exponential/panel roundoff and final export enlargement are separately accounted."
+  ],
+  "conclusion": {
+    "lower": "556371/250000",
+    "upper": "1114529/500000",
+    "width": "1787/500000"
+  },
+  "defects_found": [],
+  "limitations": "A peer written proof/code review and finite ledger check, not formal verification or a second independently designed quadrature algorithm. Hashes bind reviewed bytes only. Arithmetic rank and historical source receipts were not read as analytic inputs."
+}

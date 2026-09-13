@@ -1,0 +1,161 @@
+[
+  {
+    "original_path": "CODEX_START_HERE.md",
+    "delivery_path": "supplied/CODEX_START_HERE.md",
+    "bytes": 8794,
+    "sha256": "c2dbfb4a02f6fe30f3dd1c71e5667cffcd7e677447b9182a0846da682879f44e"
+  },
+  {
+    "original_path": "CURRENT_STATE.md",
+    "delivery_path": "supplied/CURRENT_STATE.md",
+    "bytes": 4150,
+    "sha256": "071a89ac0bc3d83b19253f4b5d89a81dc01a2c1aaecbb5d3ee8e553884a9213f"
+  },
+  {
+    "original_path": "SOURCE_INDEX.json",
+    "delivery_path": "supplied/SOURCE_INDEX.json",
+    "bytes": 9890,
+    "sha256": "dfe1672f5d1ea258fa8ed51858fe1adedd30f60a89fdb91e942fd613ad0cdf35"
+  },
+  {
+    "original_path": "HANDOFF_MANIFEST.json",
+    "delivery_path": "supplied/HANDOFF_MANIFEST.json",
+    "bytes": 6927,
+    "sha256": "f4cc2ff6aac53dfe1d12ff03cfe45385b0dde4399903453a7e95b33ff6f31bc8"
+  },
+  {
+    "original_path": "SOURCE_NOTES.md",
+    "delivery_path": "supplied/SOURCE_NOTES.md",
+    "bytes": 2129,
+    "sha256": "12999a53874a6b74257da3e78fbc994fd81c46d3ca32f6e5496553b043ebb4be"
+  },
+  {
+    "original_path": "tasks/F1_FLUID_CLOSEOUT.md",
+    "delivery_path": "supplied/tasks/F1_FLUID_CLOSEOUT.md",
+    "bytes": 5255,
+    "sha256": "4f09d1880dbff3b98c376db80bf6dcd5ed8b24c30769c98442986e4ca7215bc6"
+  },
+  {
+    "original_path": "tasks/AD1_SCOPED_CLAIM.md",
+    "delivery_path": "supplied/tasks/AD1_SCOPED_CLAIM.md",
+    "bytes": 4583,
+    "sha256": "f9b4cb9713474032ecbc50c72407d140aafe44189631897ef0a1b64612c520ef"
+  },
+  {
+    "original_path": "tasks/YM1_PHYSICAL_BRIDGE.md",
+    "delivery_path": "supplied/tasks/YM1_PHYSICAL_BRIDGE.md",
+    "bytes": 4256,
+    "sha256": "0c451ec16b94d3bb94d6a4430d3f0323718f266c097ae3b146da7bdaa4849035"
+  },
+  {
+    "original_path": "accepted/C1_CLOSEOUT.md",
+    "delivery_path": "supplied/accepted/C1_CLOSEOUT.md",
+    "bytes": 2394,
+    "sha256": "a2b3a6826cd6abfcbcf30c0a722958c827b23b6c6d90c3f0f9ef06a96647b322"
+  },
+  {
+    "original_path": "accepted/SAT02_M1_CLOSEOUT.md",
+    "delivery_path": "supplied/accepted/SAT02_M1_CLOSEOUT.md",
+    "bytes": 2420,
+    "sha256": "fafaedb32a9cf20f5bae7e5a86e59f556af504981419067560a6810c3cdd664a"
+  },
+  {
+    "original_path": "accepted/C1_CARRY_FORWARD.md",
+    "delivery_path": "supplied/accepted/C1_CARRY_FORWARD.md",
+    "bytes": 12511,
+    "sha256": "0a6ba65a302efc45b473e4c30a3da3a3a794a093e074697454eca40f5f2f99b0"
+  },
+  {
+    "original_path": "accepted/C1_MATH_REVIEW.md",
+    "delivery_path": "supplied/accepted/C1_MATH_REVIEW.md",
+    "bytes": 12440,
+    "sha256": "b8f16e8b022a6350ea60cd705689963f715a910f89e2d6143ac6b5cc6e3706e8"
+  },
+  {
+    "original_path": "accepted/archives/RCF01-portable-codex-c1.zip",
+    "delivery_path": "supplied/accepted/archives/RCF01-portable-codex-c1.zip",
+    "bytes": 1716903,
+    "sha256": "5a33fe48bb7f868fdfa11d0baa23aa2a158bba04e3e5f341b2962bae8c82328b"
+  },
+  {
+    "original_path": "accepted/archives/RCF01-codex-c1-final-evidence.zip",
+    "delivery_path": "supplied/accepted/archives/RCF01-codex-c1-final-evidence.zip",
+    "bytes": 335051,
+    "sha256": "77f1c0f48c9eefc5bac6fe400b2064a0215b2b45efab65f19dec0cee211fba1b"
+  },
+  {
+    "original_path": "accepted/archives/SAT02-portable-codex-m1.zip",
+    "delivery_path": "supplied/accepted/archives/SAT02-portable-codex-m1.zip",
+    "bytes": 1360426,
+    "sha256": "8300b2643de12210c98897b7693d28d7a45d8ecce71a8f1842743b46f5788ca5"
+  },
+  {
+    "original_path": "accepted/archives/SAT02-codex-m1-final-evidence.zip",
+    "delivery_path": "supplied/accepted/archives/SAT02-codex-m1-final-evidence.zip",
+    "bytes": 324527,
+    "sha256": "4ebfa840c085ddbdae557fac56838ff34b86c2790a76127278a46bdf2d2b34f7"
+  },
+  {
+    "original_path": "sources/ad/PILOT_COLLECTION_V2_REVIEW.md",
+    "delivery_path": "supplied/sources/ad/PILOT_COLLECTION_V2_REVIEW.md",
+    "bytes": 11668,
+    "sha256": "9c578dd5e8c07f9a97f7f72b910cb29a53234179d18a663ae9a6939dfceed381"
+  },
+  {
+    "original_path": "sources/ad/RECOVERED_CORE_INTEGRATION_HISTORICAL.md",
+    "delivery_path": "supplied/sources/ad/RECOVERED_CORE_INTEGRATION_HISTORICAL.md",
+    "bytes": 6973,
+    "sha256": "7ab09d126de9fdef1f08d626edaa58011dd0258d4b628c5ebf281d3afec75050"
+  },
+  {
+    "original_path": "sources/bsd/LIND_REICHARDT_REVIEW005_CLOSEOUT.md",
+    "delivery_path": "supplied/sources/bsd/LIND_REICHARDT_REVIEW005_CLOSEOUT.md",
+    "bytes": 9083,
+    "sha256": "9ab6eae83fd2a51a19cbdfa4201fd15ebbe22c0637ee668b28fbdb0fd5e17d99"
+  },
+  {
+    "original_path": "sources/fluid/PRIOR_OWNER_CARD.md",
+    "delivery_path": "supplied/sources/fluid/PRIOR_OWNER_CARD.md",
+    "bytes": 4741,
+    "sha256": "9e2327b5dd839590aadf7d3db35fecb5072be0dd9a82744832eca847e228c83a"
+  },
+  {
+    "original_path": "sources/yang_mills/PRIOR_OWNER_CARD.md",
+    "delivery_path": "supplied/sources/yang_mills/PRIOR_OWNER_CARD.md",
+    "bytes": 3146,
+    "sha256": "551d6f862c012af1685521da7c23e240a66c015520d96bd40ab6c5d8311f5c1b"
+  },
+  {
+    "original_path": "sources/yang_mills/check_yang_mills_connections.py",
+    "delivery_path": "supplied/sources/yang_mills/check_yang_mills_connections.py",
+    "bytes": 3637,
+    "sha256": "3880f589bace99feac7399d78dfe6d487263fe0cb3f8fba30ca8432306feb04c"
+  },
+  {
+    "original_path": "sources/yang_mills/YANG_MILLS_CONNECTION_CHECKS.json",
+    "delivery_path": "supplied/sources/yang_mills/YANG_MILLS_CONNECTION_CHECKS.json",
+    "bytes": 1074,
+    "sha256": "96653591590868f37f4684c8f76c1b3e95e92975f1a80376c6f10e848debf4fe"
+  },
+  {
+    "original_path": "source_access/FLUID_SOURCE_PLAN.json",
+    "delivery_path": "supplied/source_access/FLUID_SOURCE_PLAN.json",
+    "bytes": 2638,
+    "sha256": "4b13ca6809d500e223efc79fe056ec09e36952fcae0ec8fa77c638f25b42f348"
+  },
+  {
+    "original_path": "C:\\github\\RPRM-open\\AGENTS.md",
+    "delivery_path": "provenance/workspace_instructions/AGENTS.md",
+    "sha256": "ae5266217a43fc0ad17814b9b4204bca48be3dccb194bc93679c1e070c7fe3cf"
+  },
+  {
+    "original_path": "C:\\github\\RPRM-open\\README.md",
+    "delivery_path": "provenance/workspace_instructions/README.md",
+    "sha256": "6d51655d529d8f1818adc5f61b71486c57bf02b7bce9302272fe79f36cef12c8"
+  },
+  {
+    "original_path": "C:\\github\\RPRM-open\\AGENT_HANDBOOK.md",
+    "delivery_path": "provenance/workspace_instructions/AGENT_HANDBOOK.md",
+    "sha256": "e8a2c35794346956051afa153a2ac8fdca61c60a4b550834a0715d5cf9220a56"
+  }
+]

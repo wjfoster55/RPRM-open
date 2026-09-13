@@ -1,0 +1,334 @@
+{
+  "schema": "ym2-connected-source-provenance-v1",
+  "prior_archive": "C:\\github\\RPRM-open\\research\\ym2-signed-20260912-delivery\\YM2-signed-differences-2026-09-12.zip",
+  "prior_archive_sha256": "914b1950ed762cd86f1b14ea6cd7816e99f8860a612ba3cea44773544bb3218f",
+  "capture_utc": "2026-09-12T18:42:14.969926+00:00",
+  "scope": "Accepted YM bytes plus attributed running BSD/PNP source snapshots; no source commands executed",
+  "files": [
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/formal-proofs.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/formal-proofs.md",
+      "sha256": "3786f87ecadb659e1f3667ca02cacfed083c7703efa5bd89ab9f64b16e723e62",
+      "bytes": 4454,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/operations.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/operations.md",
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd",
+      "bytes": 40793,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843",
+      "bytes": 102093,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/proof-donut.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/proof-donut.md",
+      "sha256": "7efda177fc3f4500842c88a7556dde6be3724b1f9194ee449da51c8ebcf5070a",
+      "bytes": 14408,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/relational-layer.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/relational-layer.md",
+      "sha256": "170af9573d7325f9cdd2c1e028113d908f2d0e409a6a627895a76dbd8fb3c846",
+      "bytes": 8903,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/RPRM-CONCEPT-RECOVERY.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/RPRM-CONCEPT-RECOVERY.md",
+      "sha256": "5cd1318d303f89fd587692e7d9d5d87f96c285441fa6f530ea70a73047737829",
+      "bytes": 28752,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/accepted_sources/ym2_spatial_joint/DYNAMICS.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/accepted_sources/ym2_spatial_joint/DYNAMICS.md",
+      "sha256": "fda5fb6e4c581335284ddb4366e5202290f42282d2732751792e9444a3912c81",
+      "bytes": 12412,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/accepted_sources/ym2_spatial_joint/PHASE_CLOSURE.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/accepted_sources/ym2_spatial_joint/PHASE_CLOSURE.md",
+      "sha256": "65a83f3df4dc5d1a5b3b27698d80fed857e0c10937081e27658bf50392ded24a",
+      "bytes": 10959,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/accepted_sources/ym2_spatial_joint/STATIC_JOIN.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/accepted_sources/ym2_spatial_joint/STATIC_JOIN.md",
+      "sha256": "88b2490c4c03a3370744d928cf7b4710e9367dab8f0f0c21558f69d35e5fd0b0",
+      "bytes": 16669,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/check_invariants.py",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/check_invariants.py",
+      "sha256": "413ffe74abd2fc4dfb370ecb6b83d7aa4152019f42db62dc6e8204be253a3d1a",
+      "bytes": 20282,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/check_quantum.py",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/check_quantum.py",
+      "sha256": "1eae75f9abab18b152502977bf7e20ac855608af72913ddaab70b5480bb88519",
+      "bytes": 10687,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/check_tree.py",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/check_tree.py",
+      "sha256": "7ead2debfdd38cf023089af34868a8f9c6387536caa0200dad7c156b2d1dc298",
+      "bytes": 11936,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/GAP_BRIDGE.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/GAP_BRIDGE.md",
+      "sha256": "68e619f6e56b752e59609d52a9e2c5674a0ef47c1bdb8c9d06a3b6188d071a28",
+      "bytes": 19566,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/GLOBAL_INVARIANT_JOINT.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/GLOBAL_INVARIANT_JOINT.md",
+      "sha256": "f7858fa2e613ddfe1c0e6dcd29042d1fd9c92c4dab76ce8771c92baf44a028b6",
+      "bytes": 16935,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/GLOBAL_TREE_PHASE.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/GLOBAL_TREE_PHASE.md",
+      "sha256": "28280864599a5eea464f0e626d4c6b3bb8efb26789939e6a09a6d79ed53cd95d",
+      "bytes": 15765,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/INDEPENDENT_REVIEW.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/INDEPENDENT_REVIEW.md",
+      "sha256": "69bddca4054039cf820c72716bda8b9424483417e4740772b2750f213f5875ec",
+      "bytes": 12038,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/MANIFEST.json",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/MANIFEST.json",
+      "sha256": "14656c699914a9dea6c4bce8b63b85a905dbd070be34ebd2f7275dd71f4a0207",
+      "bytes": 4361,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/NEXT_GLUE_LEMMA.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/NEXT_GLUE_LEMMA.md",
+      "sha256": "fe9066999331a95bdc1ae31047ebf1a9ed0b173a5c3c5874b733128c0f1e0ef6",
+      "bytes": 6159,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/README.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/README.md",
+      "sha256": "2650c70d0d9c665f5d49076be10fe5a2c9c81d03079f534437067835bacf03a4",
+      "bytes": 4540,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/RESULTS_INVARIANTS.json",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/RESULTS_INVARIANTS.json",
+      "sha256": "376fae70c4574f2282af2f3f7494ab3b6509ed13aacdce7de36812363b6a8d7a",
+      "bytes": 3129,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/RESULTS_QUANTUM.json",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/RESULTS_QUANTUM.json",
+      "sha256": "e9b148f0df1c7938dcb30e035d4c9a979a0aa1a363b69dabaf23509705fc506c",
+      "bytes": 54289,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/RESULTS_TREE.json",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/RESULTS_TREE.json",
+      "sha256": "f384ae68376302bb28aeea6803edc76e1bcc9fe22474b9973f3a82269216be6b",
+      "bytes": 10941,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/RETURN_TO_WILLIAM.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/RETURN_TO_WILLIAM.md",
+      "sha256": "ffdd2e8613d7030f5a4335f8ab6c1b04cb8db09885385f90df2818d99b54d4e0",
+      "bytes": 8730,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/RPRM_PROOF_CERTIFICATE.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/RPRM_PROOF_CERTIFICATE.md",
+      "sha256": "56d96174f1d44b9a6fa7e3e556a483e2d1013e62632de9b91aef7f35604b50a2",
+      "bytes": 9565,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/SOURCE_AUDIT.md",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/SOURCE_AUDIT.md",
+      "sha256": "01088c7a0f923a3107a0dc4b3ebfe9547f0bacd5f4d8346e0d6631a1b238b993",
+      "bytes": 7543,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_global_phase_joint/SOURCE_PROVENANCE.json",
+      "archive_member": "YM2-signed-differences/accepted_sources/ym2_global_phase_joint/SOURCE_PROVENANCE.json",
+      "sha256": "5b94663a6714277570852ddc1e0c14da9567d8aa340f7d1fdcf958dfdbc3dc71",
+      "bytes": 3559,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_signed_differences/VACUUM_COMPARISON.md",
+      "archive_member": "YM2-signed-differences/VACUUM_COMPARISON.md",
+      "sha256": "164871ae2e06eefbc5b47304cbddaaea4df0e72db262e276abe67a61726e6d01",
+      "bytes": 17769,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md",
+      "archive_member": "YM2-signed-differences/NEXT_CONNECTED_OBLIGATION.md",
+      "sha256": "ab0e55814b5a4575eec04707702c3bc5032367b85bc986bec5e918dadb68bec1",
+      "bytes": 6280,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_signed_differences/DIFFERENCE_PROJECTION.md",
+      "archive_member": "YM2-signed-differences/DIFFERENCE_PROJECTION.md",
+      "sha256": "63111a1517334c9b874419b97c180d6f6d41bac7ee4218f6c8f7b9767a92fc8f",
+      "bytes": 17475,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_signed_differences/STACKING_AND_SCALING.md",
+      "archive_member": "YM2-signed-differences/STACKING_AND_SCALING.md",
+      "sha256": "370c79bbe82b25e81efa2ce443443edcb4d1ffc300089b5c3b4fcd5c290a96a8",
+      "bytes": 6778,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_signed_differences/SIGNED_SEMANTICS.md",
+      "archive_member": "YM2-signed-differences/SIGNED_SEMANTICS.md",
+      "sha256": "be385797eabcae784a02615761bce14c05ac6e1d48bdf8fd2131ae3dcecba43f",
+      "bytes": 16211,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_signed_differences/SOURCE_AUDIT.md",
+      "archive_member": "YM2-signed-differences/SOURCE_AUDIT.md",
+      "sha256": "587809fdbeb88d53bf2f11fbdd6d15a3e2626f81dfe0aa8245ac2ccf184f6c10",
+      "bytes": 6038,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "accepted_sources/ym2_signed_differences/RESULTS_VACUUM_COMPARISON.json",
+      "archive_member": "YM2-signed-differences/RESULTS_VACUUM_COMPARISON.json",
+      "sha256": "46d19521a805b9a63490808d0dcd6a2c1915ab54f065a2f265cc02fa0230ac24",
+      "bytes": 4702,
+      "role": "accepted_YM_source_not_rerun"
+    },
+    {
+      "payload_path": "running_task_snapshots/liar-teacher-formalization-2026-09-12/THEORY-DRAFT.md",
+      "source": "C:\\github\\RPRM-open\\research\\liar-teacher-formalization-2026-09-12\\THEORY-DRAFT.md",
+      "sha256": "9ab0e5b7dff70fd2ee5f8ef1c5b99ea82eb3015a82395cc7aa75202ac5581585",
+      "bytes": 14470,
+      "captured_utc": "2026-09-12T18:42:14.963442+00:00",
+      "audit_sha256": "9ab0e5b7dff70fd2ee5f8ef1c5b99ea82eb3015a82395cc7aa75202ac5581585",
+      "matches_audit_snapshot": true,
+      "role": "running_task_snapshot_read_only_not_adjudicated"
+    },
+    {
+      "payload_path": "running_task_snapshots/liar-teacher-formalization-2026-09-12/SAT-PILOT.md",
+      "source": "C:\\github\\RPRM-open\\research\\liar-teacher-formalization-2026-09-12\\SAT-PILOT.md",
+      "sha256": "2012ba5aeb1f7bc2e85e6061c9ae5c22b7df6ffabbd2d571dfc01970c8c79bad",
+      "bytes": 14321,
+      "captured_utc": "2026-09-12T18:42:14.964165+00:00",
+      "audit_sha256": "bed42c3901e0c24fba3b7556cc67d2fd1c2b41fc3c70fedb699deca51bc64f64",
+      "matches_audit_snapshot": false,
+      "role": "running_task_snapshot_read_only_not_adjudicated"
+    },
+    {
+      "payload_path": "running_task_snapshots/liar-teacher-formalization-2026-09-12/RELATED-RESEARCH.md",
+      "source": "C:\\github\\RPRM-open\\research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "sha256": "fc8b002d65a06f4fc86889e26826393fa35e6a551651b8d49f03d487866544ae",
+      "bytes": 8620,
+      "captured_utc": "2026-09-12T18:42:14.964934+00:00",
+      "audit_sha256": "fc8b002d65a06f4fc86889e26826393fa35e6a551651b8d49f03d487866544ae",
+      "matches_audit_snapshot": true,
+      "role": "running_task_snapshot_read_only_not_adjudicated"
+    },
+    {
+      "payload_path": "running_task_snapshots/bsd-e5-test-01/ARITHMETIC_PROOF.md",
+      "source": "C:\\github\\RPRM-open\\research\\bsd-e5-test-01\\ARITHMETIC_PROOF.md",
+      "sha256": "35f23551c397dc1a3a401c28243072b98eeb7a9733b4e5429b9f4ea592c5af49",
+      "bytes": 17804,
+      "captured_utc": "2026-09-12T18:42:14.965866+00:00",
+      "audit_sha256": "35f23551c397dc1a3a401c28243072b98eeb7a9733b4e5429b9f4ea592c5af49",
+      "matches_audit_snapshot": true,
+      "role": "running_task_snapshot_read_only_not_adjudicated"
+    },
+    {
+      "payload_path": "running_task_snapshots/bsd-e5-test-01/INTERVAL_DERIVATION.md",
+      "source": "C:\\github\\RPRM-open\\research\\bsd-e5-test-01\\INTERVAL_DERIVATION.md",
+      "sha256": "65e242dce048490f9ef0a0aabcb3e53c0f84bac548921760876755bcb6600206",
+      "bytes": 17006,
+      "captured_utc": "2026-09-12T18:42:14.966676+00:00",
+      "audit_sha256": "65e242dce048490f9ef0a0aabcb3e53c0f84bac548921760876755bcb6600206",
+      "matches_audit_snapshot": true,
+      "role": "running_task_snapshot_read_only_not_adjudicated"
+    },
+    {
+      "payload_path": "running_task_snapshots/bsd-e5-completion/GENERATOR_PROOF.md",
+      "source": "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\GENERATOR_PROOF.md",
+      "sha256": "dd7a761f063eee413e10266f24e58d254df3416b8c57a40d8e8bed5e4b4b337a",
+      "bytes": 8344,
+      "captured_utc": "2026-09-12T18:42:14.967576+00:00",
+      "audit_sha256": "dd7a761f063eee413e10266f24e58d254df3416b8c57a40d8e8bed5e4b4b337a",
+      "matches_audit_snapshot": true,
+      "role": "running_task_snapshot_read_only_not_adjudicated"
+    },
+    {
+      "payload_path": "running_task_snapshots/bsd-e5-completion/BSD_FACTORS.md",
+      "source": "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\BSD_FACTORS.md",
+      "sha256": "9f570c5bf87c6b0b0b38f7fd4fd3d29f3495d2328917e64c11f613419456ed0b",
+      "bytes": 10866,
+      "captured_utc": "2026-09-12T18:42:14.968234+00:00",
+      "audit_sha256": "9f570c5bf87c6b0b0b38f7fd4fd3d29f3495d2328917e64c11f613419456ed0b",
+      "matches_audit_snapshot": true,
+      "role": "running_task_snapshot_read_only_not_adjudicated"
+    },
+    {
+      "payload_path": "running_task_snapshots/bsd-e5-completion/BSD_SHA_THEOREMS.md",
+      "source": "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\BSD_SHA_THEOREMS.md",
+      "sha256": "1cc196f2f5fce9992ba669c8185c2f769cfe47d7c2a28e4bd3889da6ad9516be",
+      "bytes": 10217,
+      "captured_utc": "2026-09-12T18:42:14.969055+00:00",
+      "audit_sha256": "1cc196f2f5fce9992ba669c8185c2f769cfe47d7c2a28e4bd3889da6ad9516be",
+      "matches_audit_snapshot": true,
+      "role": "running_task_snapshot_read_only_not_adjudicated"
+    },
+    {
+      "payload_path": "running_task_snapshots/bsd-e5-completion/work/coordinate_check.py",
+      "source": "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\work\\coordinate_check.py",
+      "sha256": "642d21d6044ca54f45ba7ba53e2b2134fa9a13258f21a076411d824e2b7470ad",
+      "bytes": 8693,
+      "captured_utc": "2026-09-12T18:42:14.969916+00:00",
+      "audit_sha256": "642d21d6044ca54f45ba7ba53e2b2134fa9a13258f21a076411d824e2b7470ad",
+      "matches_audit_snapshot": true,
+      "role": "running_task_snapshot_read_only_not_adjudicated"
+    }
+  ],
+  "running_files_changed_since_audit": [
+    "liar-teacher-formalization-2026-09-12/SAT-PILOT.md"
+  ],
+  "source_link_boundary": "Unedited source copies retain their original historical link context; current top-level notes use bundled paths."
+}

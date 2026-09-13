@@ -1,0 +1,7 @@
+BEGIN_CLASSICAL_PILOT
+generator_values=[1/4, -1/2, 1/4, 0, -1/2, 1/4, 1/2, 0, -1/4]
+unit_root=3 + 2*5 + 4*5^2 + 2*5^3 + 5^4 + 4*5^5 + 2*5^7 + 5^8 + 5^9 + O(5^12)
+n=2 raw_Riemann=4*5^2 + O(5^3) elapsed_ms=16
+n=3 raw_Riemann=4*5^2 + 5^3 + O(5^4) elapsed_ms=109
+n=4 raw_Riemann=4*5^2 + 5^3 + 4*5^4 + O(5^5) elapsed_ms=625
+END_CLASSICAL_PILOT

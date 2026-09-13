@@ -1,0 +1,1 @@
+{"W":64,"H":48,"model":"B","mode":"cut_exit","steps":300,"thresh":0.5,"stepsRun":13,"Qdyn":0,"firstBreach":-1,"maxMonitored":0,"finalMonitored":0,"totalMass":1,"sumActive":9792,"sumMoved":13,"graphEvals":14,"stop":"no_trapped","cutReason":"R_opt_empty","wall_ms":26,"snapshots":[]}

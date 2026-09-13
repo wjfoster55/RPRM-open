@@ -1,0 +1,638 @@
+{
+  "status": "EXACT_COEFFICIENT_AND_INDEPENDENT_READBACK_COMPLETED",
+  "coefficient": {
+    "name": "b2, E34 connected real period, gamma=6",
+    "residue": 426,
+    "modulus": 625,
+    "absolute_precision": 4,
+    "expansion": "1 + 2*5^2 + 3*5^3 + O(5^4)",
+    "nonzero": true,
+    "valuation": 0
+  },
+  "analytic_method_comparisons": [
+    {
+      "kind": "level consistency",
+      "tag": "overconvergent_D2_raw",
+      "levels": [
+        6,
+        8
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "overconvergent_D2_raw",
+      "levels": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "classical_D2_raw",
+      "levels": [
+        2,
+        3
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "classical_D2_raw",
+      "levels": [
+        3,
+        4
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "classical_D2_raw",
+      "levels": [
+        4,
+        5
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "overconvergent_D0_raw",
+      "levels": [
+        6,
+        8
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "overconvergent_D0_raw",
+      "levels": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "derivative_b2_component",
+      "levels": [
+        6,
+        8
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "derivative_b2_component",
+      "levels": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "classical_b2_component",
+      "levels": [
+        2,
+        3
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "classical_b2_component",
+      "levels": [
+        3,
+        4
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "classical_b2_component",
+      "levels": [
+        4,
+        5
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "overconvergent_b2_component",
+      "levels": [
+        6,
+        8
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "overconvergent_b2_component",
+      "levels": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "overconvergent_D1_raw",
+      "levels": [
+        6,
+        8
+      ]
+    },
+    {
+      "kind": "level consistency",
+      "tag": "overconvergent_D1_raw",
+      "levels": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        6,
+        2
+      ],
+      "common_absolute_precision": 1
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        6,
+        3
+      ],
+      "common_absolute_precision": 2
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        6,
+        4
+      ],
+      "common_absolute_precision": 3
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        6,
+        5
+      ],
+      "common_absolute_precision": 3
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        8,
+        2
+      ],
+      "common_absolute_precision": 1
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        8,
+        3
+      ],
+      "common_absolute_precision": 2
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        8,
+        4
+      ],
+      "common_absolute_precision": 3
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        8,
+        5
+      ],
+      "common_absolute_precision": 4
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        10,
+        2
+      ],
+      "common_absolute_precision": 1
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        10,
+        3
+      ],
+      "common_absolute_precision": 2
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        10,
+        4
+      ],
+      "common_absolute_precision": 3
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        10,
+        5
+      ],
+      "common_absolute_precision": 4
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        6,
+        2
+      ],
+      "common_absolute_precision": 1
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        6,
+        3
+      ],
+      "common_absolute_precision": 2
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        6,
+        4
+      ],
+      "common_absolute_precision": 3
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        6,
+        5
+      ],
+      "common_absolute_precision": 3
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        8,
+        2
+      ],
+      "common_absolute_precision": 1
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        8,
+        3
+      ],
+      "common_absolute_precision": 2
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        8,
+        4
+      ],
+      "common_absolute_precision": 3
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        8,
+        5
+      ],
+      "common_absolute_precision": 4
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        10,
+        2
+      ],
+      "common_absolute_precision": 1
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        10,
+        3
+      ],
+      "common_absolute_precision": 2
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        10,
+        4
+      ],
+      "common_absolute_precision": 3
+    },
+    {
+      "kind": "independent analytic algorithms",
+      "levels": [
+        10,
+        5
+      ],
+      "common_absolute_precision": 4
+    }
+  ],
+  "certificates": [
+    {
+      "tag": "overconvergent_D0_raw",
+      "level": 6,
+      "precision": 6,
+      "residue": [
+        0,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_D1_raw",
+      "level": 6,
+      "precision": 5,
+      "residue": [
+        0,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_D2_raw",
+      "level": 6,
+      "precision": 5,
+      "residue": [
+        2725,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_b2_component",
+      "level": 6,
+      "precision": 3,
+      "residue": [
+        51,
+        1
+      ]
+    },
+    {
+      "tag": "derivative_b2_component",
+      "level": 6,
+      "precision": 3,
+      "residue": [
+        51,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_D0_raw",
+      "level": 8,
+      "precision": 8,
+      "residue": [
+        0,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_D1_raw",
+      "level": 8,
+      "precision": 7,
+      "residue": [
+        0,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_D2_raw",
+      "level": 8,
+      "precision": 7,
+      "residue": [
+        65225,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_b2_component",
+      "level": 8,
+      "precision": 5,
+      "residue": [
+        2301,
+        1
+      ]
+    },
+    {
+      "tag": "derivative_b2_component",
+      "level": 8,
+      "precision": 5,
+      "residue": [
+        2301,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_D0_raw",
+      "level": 10,
+      "precision": 10,
+      "residue": [
+        0,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_D1_raw",
+      "level": 10,
+      "precision": 9,
+      "residue": [
+        0,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_D2_raw",
+      "level": 10,
+      "precision": 8,
+      "residue": [
+        221475,
+        1
+      ]
+    },
+    {
+      "tag": "overconvergent_b2_component",
+      "level": 10,
+      "precision": 6,
+      "residue": [
+        8551,
+        1
+      ]
+    },
+    {
+      "tag": "derivative_b2_component",
+      "level": 10,
+      "precision": 6,
+      "residue": [
+        8551,
+        1
+      ]
+    },
+    {
+      "tag": "unit_root",
+      "level": 20,
+      "precision": 20,
+      "residue": [
+        64139650950988,
+        1
+      ]
+    },
+    {
+      "tag": "five_times_C5",
+      "level": 20,
+      "precision": 20,
+      "residue": [
+        46841671034458,
+        1
+      ]
+    },
+    {
+      "tag": "classical_D2_raw",
+      "level": 2,
+      "precision": 3,
+      "residue": [
+        100,
+        1
+      ]
+    },
+    {
+      "tag": "classical_b2_component",
+      "level": 2,
+      "precision": 1,
+      "residue": [
+        1,
+        1
+      ]
+    },
+    {
+      "tag": "classical_D2_raw",
+      "level": 3,
+      "precision": 4,
+      "residue": [
+        225,
+        1
+      ]
+    },
+    {
+      "tag": "classical_b2_component",
+      "level": 3,
+      "precision": 2,
+      "residue": [
+        1,
+        1
+      ]
+    },
+    {
+      "tag": "classical_D2_raw",
+      "level": 4,
+      "precision": 5,
+      "residue": [
+        2725,
+        1
+      ]
+    },
+    {
+      "tag": "classical_b2_component",
+      "level": 4,
+      "precision": 3,
+      "residue": [
+        51,
+        1
+      ]
+    },
+    {
+      "tag": "classical_D2_raw",
+      "level": 5,
+      "precision": 6,
+      "residue": [
+        2725,
+        1
+      ]
+    },
+    {
+      "tag": "classical_b2_component",
+      "level": 5,
+      "precision": 4,
+      "residue": [
+        426,
+        1
+      ]
+    }
+  ],
+  "Tunnell_anchor_counts": [
+    {
+      "z_square_coefficient": 32,
+      "solutions": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "z_square_coefficient": 8,
+      "solutions": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    }
+  ],
+  "anchor_L_over_connected_period": [
+    1,
+    4
+  ],
+  "local_finite_counts": [
+    {
+      "prime": 5,
+      "point_count": 8,
+      "Euler_value": [
+        8,
+        5
+      ],
+      "v5_Euler_value": -1
+    },
+    {
+      "prime": 13,
+      "point_count": 20,
+      "Euler_value": [
+        20,
+        13
+      ],
+      "v5_Euler_value": 1
+    },
+    {
+      "prime": 41,
+      "point_count": 52,
+      "Euler_value": [
+        52,
+        41
+      ],
+      "v5_Euler_value": 0
+    }
+  ],
+  "fresh_MST_regulator_mod5": 3,
+  "five_times_local_comparison_scalar_mod5": 1,
+  "local_scalar_definition": "Lambda_component = C5 * D2_raw / (100 * R_MST)",
+  "BKS_scalar_conversion": "Lambda_xi = (Omega_component/Omega_xi)*Lambda_component",
+  "wrong_twist_factor_control": 227,
+  "all_real_period_coefficient_mod625": 213,
+  "status_lower_coefficients": "exact vanishing uses cited order theorem; finite zero residues alone do not prove it",
+  "exact_padic_analytic_rank": 2,
+  "canonical_derived_class_nonzero": "THEOREM_BACKED_FROM_NEW_COEFFICIENT_AND_PRIOR_HYPOTHESES",
+  "full_real_BSD_identity": "OPEN",
+  "total_Sha": "OPEN",
+  "source_sha256": "751541133f74466225caa2ad9afab4ba4822b68d21a68e4b5ba2fca06d456cf9"
+}

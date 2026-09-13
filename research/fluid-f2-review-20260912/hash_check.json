@@ -1,0 +1,86 @@
+[
+  {
+    "path": "EXPORT.md",
+    "match": true
+  },
+  {
+    "path": "MODEL_CONTRACT.md",
+    "match": true
+  },
+  {
+    "path": "PROTOCOL.md",
+    "match": true
+  },
+  {
+    "path": "README.md",
+    "match": true
+  },
+  {
+    "path": "REBRIEF_POINTER.md",
+    "match": true
+  },
+  {
+    "path": "RETURN_TO_WILLIAM.md",
+    "match": true
+  },
+  {
+    "path": "pinned/constants.js",
+    "match": true
+  },
+  {
+    "path": "pinned/grid.js",
+    "match": true
+  },
+  {
+    "path": "pinned/models.js",
+    "match": true
+  },
+  {
+    "path": "pinned/scenarios.js",
+    "match": true
+  },
+  {
+    "path": "proof/DERIVATION.md",
+    "match": true
+  },
+  {
+    "path": "results/panel_ids.json",
+    "match": true
+  },
+  {
+    "path": "results/rows.jsonl",
+    "match": true
+  },
+  {
+    "path": "results/rows.md",
+    "match": true
+  },
+  {
+    "path": "results/rows_scientific.jsonl",
+    "match": true
+  },
+  {
+    "path": "results/summary.json",
+    "match": true
+  },
+  {
+    "path": "src/bound.py",
+    "match": true
+  },
+  {
+    "path": "src/check_f1_regression.py",
+    "match": true
+  },
+  {
+    "path": "src/oracle.js",
+    "match": true
+  },
+  {
+    "path": "src/run_f2.py",
+    "match": true
+  },
+  {
+    "path": "src/scenes.py",
+    "match": true
+  }
+]

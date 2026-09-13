@@ -1,0 +1,525 @@
+{
+  "task_id": "D01",
+  "status": "CONFIRMED",
+  "execution_outcome": "TARGET_MET",
+  "quantity": "c1=L'(E,1), E:y^2=x^3-25x over Q",
+  "input_curve_a_invariants": [
+    0,
+    0,
+    0,
+    -25,
+    0
+  ],
+  "analytic_dependencies": "B01 checked conductor/sign/modularity/Mellin identity, plus Hasse and Euler-factor theorem as stated in INTERVAL_DERIVATION.md",
+  "evidence_kind": "EXACT_RATIONAL_ENCLOSURE_WITH_WRITTEN_ERROR_PROOF_AND_CITED_THEOREMS",
+  "inequality": "lower < c1 < upper",
+  "lower": "556371/250000",
+  "upper": "1114529/500000",
+  "width": "1787/500000",
+  "target_width": "1/100",
+  "target_met": true,
+  "selected_cutoff": 40,
+  "selected_panels_per_band": 32,
+  "constants": {
+    "pi": [
+      "3797952473636338580787993/1208925819614629174706176",
+      "1898976236818169290393997/604462909807314587353088"
+    ],
+    "pi_method": "Machin pi=16 atan(1/5)-4 atan(1/239); alternating finite sums",
+    "pi_arctangent_terms": [
+      64,
+      20
+    ],
+    "sqrt2": [
+      "1709679290002018430137083/1208925819614629174706176",
+      "427419822500504607534271/302231454903657293676544"
+    ],
+    "sqrt2_integer_witness": {
+      "r": 1709679290002018430137083,
+      "scale": 1208925819614629174706176,
+      "r_squared": 2923003274661805836407369406282358284898171748889,
+      "2_scale_squared": 2923003274661805836407369665432566039311865085952,
+      "r_plus_1_squared": 2923003274661805836407372825640938288935032023056
+    },
+    "alpha": [
+      "134277897436623868511801/604462909807314587353088",
+      "268555794873247737023603/1208925819614629174706176"
+    ],
+    "alpha_width": "1/1208925819614629174706176",
+    "coarse_alpha_bounds": [
+      "1/5",
+      "1/4"
+    ],
+    "exp_minus_alpha_upper": "5/6",
+    "rounding": "outward, denominator 2^80"
+  },
+  "error_ledger": {
+    "alpha_enclosure": "1027705/53751788696751723766049931264",
+    "retained_quadrature": "109490364978677636211356899/430014309574013790128399450112",
+    "retained_exp_and_midpoint_rounding": "100635913/143338103191337930042799816704",
+    "retained_integral_tails": "12292344768571/6718973587093965470756241408",
+    "infinite_coefficient_tail_width": "227373675443232059478759765625/68508409511574137097674085629952",
+    "signed_multiplication_and_summation_rounding": "0",
+    "endpoint_export_enlargement": "258690015630473650379459565719486156949030458287/558194726184208924559674355239166644333930610688000000"
+  },
+  "attempts": [
+    {
+      "cutoff": 40,
+      "panels_per_band": 32,
+      "retained_e1": [
+        {
+          "x": [
+            "134277897436623868511801/604462909807314587353088",
+            "268555794873247737023603/1208925819614629174706176"
+          ],
+          "integration_range": [
+            "134277897436623868511801/604462909807314587353088",
+            "32"
+          ],
+          "method": "midpoint with analytic second-derivative error bound",
+          "lower": "1375146507938855945754991/1208925819614629174706176",
+          "upper": "1375285531076317153744569/1208925819614629174706176",
+          "width": "69511568730603994789/604462909807314587353088",
+          "midpoint_lower": "343786626984713986438749/302231454903657293676544",
+          "midpoint_upper": "1375146507938855945755255/1208925819614629174706176",
+          "alpha_input_loss": "5/1208925819614629174706176",
+          "quadrature_error_bound": "69511568730364775333/604462909807314587353088",
+          "quadrature_bound_rounding_already_included_at_most": "1/4722366482869645213696",
+          "midpoint_exp_and_rounding_gap": "259/1208925819614629174706176",
+          "exp_evaluation_uncertainty_bound": "1/4722366482869645213696",
+          "midpoint_outward_rounding_allowance": "1/2361183241434822606848",
+          "integration_tail": "59804831/151115727451828646838272",
+          "panels": 256,
+          "bands": 8,
+          "error_ledger_identity_checked": true,
+          "n": 1,
+          "a_n": 1,
+          "signed_weight": "2",
+          "term_interval": [
+            "1375146507938855945754991/604462909807314587353088",
+            "1375285531076317153744569/604462909807314587353088"
+          ],
+          "signed_head_width_contribution": "69511568730603994789/302231454903657293676544"
+        },
+        {
+          "x": [
+            "1208501076929614816606209/604462909807314587353088",
+            "2417002153859229633212427/1208925819614629174706176"
+          ],
+          "integration_range": [
+            "1208501076929614816606209/604462909807314587353088",
+            "32"
+          ],
+          "method": "midpoint with analytic second-derivative error bound",
+          "lower": "1848473075618914420319/37778931862957161709568",
+          "upper": "29588012411352361772257/604462909807314587353088",
+          "width": "12443201449731047153/604462909807314587353088",
+          "midpoint_lower": "59151138419805261450213/1208925819614629174706176",
+          "midpoint_upper": "59151138419805261450375/1208925819614629174706176",
+          "alpha_input_loss": "5/1208925819614629174706176",
+          "quadrature_error_bound": "24886402898983655491/1208925819614629174706176",
+          "quadrature_bound_rounding_already_included_at_most": "5/37778931862957161709568",
+          "midpoint_exp_and_rounding_gap": "81/604462909807314587353088",
+          "exp_evaluation_uncertainty_bound": "5/37778931862957161709568",
+          "midpoint_outward_rounding_allowance": "5/18889465931478580854784",
+          "integration_tail": "59804831/151115727451828646838272",
+          "panels": 160,
+          "bands": 5,
+          "error_ledger_identity_checked": true,
+          "n": 9,
+          "a_n": -3,
+          "signed_weight": "-2/3",
+          "term_interval": [
+            "-29588012411352361772257/906694364710971881029632",
+            "-1848473075618914420319/56668397794435742564352"
+          ],
+          "signed_head_width_contribution": "12443201449731047153/906694364710971881029632"
+        },
+        {
+          "x": [
+            "1745612666676110290653413/604462909807314587353088",
+            "3491225333352220581306839/1208925819614629174706176"
+          ],
+          "integration_range": [
+            "1745612666676110290653413/604462909807314587353088",
+            "32"
+          ],
+          "method": "midpoint with analytic second-derivative error bound",
+          "lower": "9095069759937961283173/604462909807314587353088",
+          "upper": "9101189893259399655979/604462909807314587353088",
+          "width": "3060066660719186403/302231454903657293676544",
+          "midpoint_lower": "18190139519875922566351/1208925819614629174706176",
+          "midpoint_upper": "1136883719992245160405/75557863725914323419136",
+          "alpha_input_loss": "5/1208925819614629174706176",
+          "quadrature_error_bound": "6120133321199153415/604462909807314587353088",
+          "quadrature_bound_rounding_already_included_at_most": "1/9444732965739290427392",
+          "midpoint_exp_and_rounding_gap": "129/1208925819614629174706176",
+          "exp_evaluation_uncertainty_bound": "1/9444732965739290427392",
+          "midpoint_outward_rounding_allowance": "1/4722366482869645213696",
+          "integration_tail": "59804831/151115727451828646838272",
+          "panels": 128,
+          "bands": 4,
+          "error_ledger_identity_checked": true,
+          "n": 13,
+          "a_n": -6,
+          "signed_weight": "-12/13",
+          "term_interval": [
+            "-27303569679778198967937/1964504456873772408897536",
+            "-27285209279813883849519/1964504456873772408897536"
+          ],
+          "signed_head_width_contribution": "9180199982157559209/982252228436886204448768"
+        },
+        {
+          "x": [
+            "2282724256422605764700617/604462909807314587353088",
+            "4565448512845211529401251/1208925819614629174706176"
+          ],
+          "integration_range": [
+            "2282724256422605764700617/604462909807314587353088",
+            "32"
+          ],
+          "method": "midpoint with analytic second-derivative error bound",
+          "lower": "1497974690431083614305/302231454903657293676544",
+          "upper": "5997904157214908306289/1208925819614629174706176",
+          "width": "6005395490573849069/1208925819614629174706176",
+          "midpoint_lower": "5991898761724334457225/1208925819614629174706176",
+          "midpoint_upper": "2995949380862167228677/604462909807314587353088",
+          "alpha_input_loss": "5/1208925819614629174706176",
+          "quadrature_error_bound": "6005395490095410287/1208925819614629174706176",
+          "quadrature_bound_rounding_already_included_at_most": "1/9444732965739290427392",
+          "midpoint_exp_and_rounding_gap": "129/1208925819614629174706176",
+          "exp_evaluation_uncertainty_bound": "1/9444732965739290427392",
+          "midpoint_outward_rounding_allowance": "1/4722366482869645213696",
+          "integration_tail": "59804831/151115727451828646838272",
+          "panels": 128,
+          "bands": 4,
+          "error_ledger_identity_checked": true,
+          "n": 17,
+          "a_n": -2,
+          "signed_weight": "-4/17",
+          "term_interval": [
+            "-5997904157214908306289/5137934733362173992501248",
+            "-1497974690431083614305/1284483683340543498125312"
+          ],
+          "signed_head_width_contribution": "6005395490573849069/5137934733362173992501248"
+        },
+        {
+          "x": [
+            "3894059025662092186842229/604462909807314587353088",
+            "7788118051324184373684487/1208925819614629174706176"
+          ],
+          "integration_range": [
+            "3894059025662092186842229/604462909807314587353088",
+            "32"
+          ],
+          "method": "midpoint with analytic second-derivative error bound",
+          "lower": "262067581842582801831/1208925819614629174706176",
+          "upper": "262724211701602125135/1208925819614629174706176",
+          "width": "82078732377415413/151115727451828646838272",
+          "midpoint_lower": "65516895460645700459/302231454903657293676544",
+          "midpoint_upper": "65516895460645700483/302231454903657293676544",
+          "alpha_input_loss": "5/1208925819614629174706176",
+          "quadrature_error_bound": "656629858540884555/1208925819614629174706176",
+          "quadrature_bound_rounding_already_included_at_most": "3/37778931862957161709568",
+          "midpoint_exp_and_rounding_gap": "3/37778931862957161709568",
+          "exp_evaluation_uncertainty_bound": "3/37778931862957161709568",
+          "midpoint_outward_rounding_allowance": "3/18889465931478580854784",
+          "integration_tail": "59804831/151115727451828646838272",
+          "panels": 96,
+          "bands": 3,
+          "error_ledger_identity_checked": true,
+          "n": 29,
+          "a_n": -10,
+          "signed_weight": "-20/29",
+          "term_interval": [
+            "-1313621058508010625675/8764712192206061516619776",
+            "-1310337909212914009155/8764712192206061516619776"
+          ],
+          "signed_head_width_contribution": "410393661887077065/1095589024025757689577472"
+        },
+        {
+          "x": [
+            "4968282205155083134936637/604462909807314587353088",
+            "9936564410310166269873311/1208925819614629174706176"
+          ],
+          "integration_range": [
+            "4968282205155083134936637/604462909807314587353088",
+            "32"
+          ],
+          "method": "midpoint with analytic second-derivative error bound",
+          "lower": "35558660360296814511/1208925819614629174706176",
+          "upper": "35699569603738754891/1208925819614629174706176",
+          "width": "35227310860485095/302231454903657293676544",
+          "midpoint_lower": "8889665090074203629/302231454903657293676544",
+          "midpoint_upper": "17779330180148407291/604462909807314587353088",
+          "alpha_input_loss": "5/1208925819614629174706176",
+          "quadrature_error_bound": "140909242963501661/1208925819614629174706176",
+          "quadrature_bound_rounding_already_included_at_most": "1/18889465931478580854784",
+          "midpoint_exp_and_rounding_gap": "33/604462909807314587353088",
+          "exp_evaluation_uncertainty_bound": "1/18889465931478580854784",
+          "midpoint_outward_rounding_allowance": "1/9444732965739290427392",
+          "integration_tail": "59804831/151115727451828646838272",
+          "panels": 64,
+          "bands": 2,
+          "error_ledger_identity_checked": true,
+          "n": 37,
+          "a_n": 2,
+          "signed_weight": "4/37",
+          "term_interval": [
+            "35558660360296814511/11182563831435319866032128",
+            "35699569603738754891/11182563831435319866032128"
+          ],
+          "signed_head_width_contribution": "35227310860485095/2795640957858829966508032"
+        }
+      ],
+      "finite_head_claim": {
+        "curve_a_invariants": [
+          0,
+          0,
+          0,
+          -25,
+          0
+        ],
+        "requested_quantity": "c1=L'(E5,1)",
+        "cutoff": 40,
+        "finite_head_interval": [
+          "957703659238384762517985725821/430014309574013790128399450112",
+          "957813149603364226864572400643/430014309574013790128399450112"
+        ],
+        "tail_premise": {
+          "coefficient_domain": "every integer n >= 1",
+          "coefficient_abs_upper": "2*n",
+          "all_term_coefficient_bound": {
+            "theorem": "Hasse bound, good Euler recurrence, coprime multiplicativity, additive factors 1",
+            "proof_ref": "INTERVAL_DERIVATION.md#all-term-coverage",
+            "scope": "E5 all n >= 1"
+          },
+          "e1_inequality": "E1(x)<=exp(-x)/x for every x>0",
+          "alpha_lower": "1/5",
+          "exp_minus_alpha_upper": "5/6",
+          "starts_at": 41
+        }
+      },
+      "tail_radius": "227373675443232059478759765625/137016819023148274195348171259904",
+      "raw_interval": [
+        "159008456371777480468424685484603075396983091698487/71448924951578742343638317470613330474743118168064",
+        "159263781717232422192933600260418635345871734126921/71448924951578742343638317470613330474743118168064"
+      ],
+      "rational_interval": [
+        "556371/250000",
+        "1114529/500000"
+      ],
+      "width": "1787/500000",
+      "strictly_positive": true,
+      "target_met": true,
+      "error_ledger_width_contributions": {
+        "alpha_enclosure": "1027705/53751788696751723766049931264",
+        "retained_quadrature": "109490364978677636211356899/430014309574013790128399450112",
+        "retained_exp_and_midpoint_rounding": "100635913/143338103191337930042799816704",
+        "retained_integral_tails": "12292344768571/6718973587093965470756241408",
+        "infinite_coefficient_tail_width": "227373675443232059478759765625/68508409511574137097674085629952",
+        "signed_multiplication_and_summation_rounding": "0",
+        "endpoint_export_enlargement": "258690015630473650379459565719486156949030458287/558194726184208924559674355239166644333930610688000000"
+      },
+      "error_ledger_sum_checked": true,
+      "total_panels": 832
+    }
+  ],
+  "budget": {
+    "id": "E5_EXACT_QUADRATURE_BUDGET_V1",
+    "declared_before_interval_execution": true,
+    "coefficient_cutoffs_in_order": [
+      40,
+      80,
+      160
+    ],
+    "panels_per_doubling_band_in_order": [
+      32,
+      64,
+      128
+    ],
+    "refinement_policy": "At each cutoff try the listed panel counts in order, stopping the entire calculation at the first strictly positive interval of width <= 1/100; if none qualifies move to the next cutoff.",
+    "integration_upper_endpoint": "32",
+    "maximum_doubling_bands_per_retained_term": 8,
+    "maximum_panels_per_retained_term": 1024,
+    "dyadic_grid_bits": 80,
+    "machin_arctangent_terms": {
+      "one_fifth": 64,
+      "one_239th": 20
+    },
+    "sqrt2_dyadic_grid_bits": 80,
+    "exp_base_even_partial_sum_degree": 30,
+    "exp_base_odd_partial_sum_degree": 31,
+    "exp_range_reduction": "Divide the nonnegative rational argument by 2 until <= 1; square the interval back, rounding outward to the 80-bit dyadic grid at every step.",
+    "quadrature": "Composite midpoint lower bound with analytic per-panel upper error h^3 sup(f'')/24; f(t)=exp(-t)/t. Use doubling bands [x,2x] up to 32, each split into K equal rational panels. If x>=32 in a budgeted later cutoff, bound E1(x) directly between 0 and exp(-x)/x.",
+    "target_width": "1/100",
+    "arithmetic": "Python standard-library integers and Fraction only; no floating-point values in the proof path.",
+    "output_rounding": "Outward to denominator 1000000 for readable rational endpoint display, with that enlargement included in the success test.",
+    "notes": "This file is a fixed budget declaration, not a result or a prediction of the answer. The script reads and hashes these bytes before running its first interval calculation."
+  },
+  "run": {
+    "started_utc": "2026-09-12T17:50:26.892982+00:00",
+    "budget_sha256": "26731f4d32e764490da30358b36e9acf02d65a1dcac8159c98fd9df561ac1895",
+    "implementation_sha256": "311dfbfcb4b2295b0697f592dbd1d762e29f054527358d548dcf082963f151e3",
+    "implementation": "work/analytic_check.py",
+    "independence": "new standard-library implementation; no source-program imports, saved-result reads, arithmetic rank inputs or numerical target values"
+  },
+  "finite_coefficient_data": {
+    "prime_data": [
+      {
+        "p": 2,
+        "projective_model_count": 3,
+        "trace": 0,
+        "status": "additive",
+        "affine_pairs": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "local_factor": "1"
+      },
+      {
+        "p": 3,
+        "projective_model_count": 4,
+        "trace": 0,
+        "status": "good",
+        "quadratic_character_sum": 0,
+        "local_factor": "1-(0)*T+3*T^2"
+      },
+      {
+        "p": 5,
+        "projective_model_count": 6,
+        "trace": 0,
+        "status": "additive",
+        "quadratic_character_sum": 0,
+        "local_factor": "1"
+      },
+      {
+        "p": 7,
+        "projective_model_count": 8,
+        "trace": 0,
+        "status": "good",
+        "quadratic_character_sum": 0,
+        "local_factor": "1-(0)*T+7*T^2"
+      },
+      {
+        "p": 11,
+        "projective_model_count": 12,
+        "trace": 0,
+        "status": "good",
+        "quadratic_character_sum": 0,
+        "local_factor": "1-(0)*T+11*T^2"
+      },
+      {
+        "p": 13,
+        "projective_model_count": 20,
+        "trace": -6,
+        "status": "good",
+        "quadratic_character_sum": 6,
+        "local_factor": "1-(-6)*T+13*T^2"
+      },
+      {
+        "p": 17,
+        "projective_model_count": 20,
+        "trace": -2,
+        "status": "good",
+        "quadratic_character_sum": 2,
+        "local_factor": "1-(-2)*T+17*T^2"
+      },
+      {
+        "p": 19,
+        "projective_model_count": 20,
+        "trace": 0,
+        "status": "good",
+        "quadratic_character_sum": 0,
+        "local_factor": "1-(0)*T+19*T^2"
+      },
+      {
+        "p": 23,
+        "projective_model_count": 24,
+        "trace": 0,
+        "status": "good",
+        "quadratic_character_sum": 0,
+        "local_factor": "1-(0)*T+23*T^2"
+      },
+      {
+        "p": 29,
+        "projective_model_count": 40,
+        "trace": -10,
+        "status": "good",
+        "quadratic_character_sum": 10,
+        "local_factor": "1-(-10)*T+29*T^2"
+      },
+      {
+        "p": 31,
+        "projective_model_count": 32,
+        "trace": 0,
+        "status": "good",
+        "quadratic_character_sum": 0,
+        "local_factor": "1-(0)*T+31*T^2"
+      },
+      {
+        "p": 37,
+        "projective_model_count": 36,
+        "trace": 2,
+        "status": "good",
+        "quadratic_character_sum": -2,
+        "local_factor": "1-(2)*T+37*T^2"
+      }
+    ],
+    "all_coefficients": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": -3,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": -6,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": -2,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": -10,
+      "30": 0,
+      "31": 0,
+      "32": 0,
+      "33": 0,
+      "34": 0,
+      "35": 0,
+      "36": 0,
+      "37": 2,
+      "38": 0,
+      "39": 0,
+      "40": 0
+    }
+  },
+  "not_used": [
+    "arithmetic rank",
+    "BSD predicted value",
+    "archived PASS or result field",
+    "ordinary floating E1",
+    "external interval backend"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "packet_id": "packet:ab9391ebf780974fec93779d6c3548f6a57fa13c22164fd7fb1e4b6a9c423e44",
+  "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+  "objective": "prime paths lucky numbers prime seam operational multiplier",
+  "match_fiber": {
+    "disposition": "MANY",
+    "cardinality": 414,
+    "scope": "policy-visible lexical matches before packet packing"
+  },
+  "omission_summary": {
+    "count": 406,
+    "by_reason": [
+      {
+        "reason": "CANDIDATE_CAP",
+        "count": 382
+      },
+      {
+        "reason": "PAYLOAD_BUDGET",
+        "count": 24
+      }
+    ],
+    "search_operation": "search_omissions(packet_id, objective, max_results)"
+  },
+  "selected_members": [
+    {
+      "member_id": "member:5d9bf71ccf9b2c2c408925a822c7d85ee37f02387f1e852c76cc45d4f02d4c60",
+      "record_id": "occurrence:7e9c68f77c55d88b3933bb9f4358d07377612517ee132042e9dbcd37a2ee85c8",
+      "record_kind": "OBSERVATION",
+      "title": "10. Prime numbers under the full operational lens",
+      "retrieval_rank": 1,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## 10. Prime numbers under the full operational lens\n\nLet\n\n\\[\np_1=2,p_2=3,p_3=5,\\ldots\n\\]\n\nbe the increasing prime sequence.\n\nFor every prime \\(p\\), the standard rank\n\n\\[\nr=\\pi(p)\n\\]\n\nis a derived arithmetic relation, and\n\n\\[\nr\\longleftrightarrow p_r\n\\]\n\nis an exact inverse pair as a mathematical definition. This does not make\nprime certification or computation free.\n\nFor width \\(k\\), define\n\n\\[\nW_{r,k}=(p_r,p_{r+1},\\ldots,p_{r+k-1}).\n\\]\n\nThe operations\n\n\\[\n\\begin{aligned}\nS_+(r,k)&=(r+1,k),\\\\\nS_-(r,k)&=(r-1,k),\\\\\nE(r,k)&=(r,k+1),\\\\\nD(r,k)&=(r,k-1)\n\\end{aligned}\n\\]\n\nselect an operational chart already grounded in prime arithmetic.\n\n",
+      "excerpt_utf8_bytes": 640,
+      "excerpt_sha256": "442f533a992f0eccfb248ab06d0df93192e8b560c028d7a507eacec43eb1ef66",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:7e9c68f77c55d88b3933bb9f4358d07377612517ee132042e9dbcd37a2ee85c8",
+        "event_id": "event:6df0bb191ed28b7c72c4425370cb33325a504f373e684a588fba2ac823845bfe",
+        "blob_sha256": "ce02b13d6b18b33eb58c56c106650b7237f06b68924c9a27343ea69a9c394146",
+        "byte_length": 67280,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_OPERATIONAL_LAYER_FOUNDATION_AND_PRIME_PROGRAM_2026-08-28.md",
+        "source_byte_start": 50999,
+        "source_byte_end": 51639,
+        "slice_sha256": "442f533a992f0eccfb248ab06d0df93192e8b560c028d7a507eacec43eb1ef66",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-29T09:04:42.467500Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 50999,
+      "exact_source_byte_end": 51639
+    },
+    {
+      "member_id": "member:ac9f075f227a1aeaee7908fb8a61a82b977fca2c608d6c9136f4cfd036fe9b51",
+      "record_id": "occurrence:a5b854869e55e98aac9a7ac421efc9155359d4b0e2a7bafad4c7aefc3fb8eab8",
+      "record_kind": "OBSERVATION",
+      "title": "lenses.json — part 6",
+      "retrieval_rank": 3,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "      \"claim_grade\": \"derived_synthesis\",\r\n      \"title\": \"Seam Zero Four-Code Comparison Diamond and Overlap Board\",\r\n      \"summary\": \"Two bounded support predicates have four pointwise joint codes; the exact sum/difference transform places those codes on the four arms of a 3-by-3 comparison diamond, with four impossible corners and a central half-half completion that is absent from the Boolean carrier.\",\r\n      \"contexts\": [\r\n        \"seam-zero\",\r\n        \"binary-pair\",\r\n        \"comparison-diamond\",\r\n        \"overlap-board\",\r\n        \"prime-lucky\",\r\n        \"rank-select\"\r\n      ],\r\n      \"carrier\": \"a finite ambient address set C, two rooted support predicates x,y:C->{0,1}, their pointwise product carrier, and optionally the weighted completion [0,1]^2\",\r\n      \"operation\": \"apply (x,y)->(s,d)=(x+y-1,x-y), enumerate the exact inverse fiber, and aggregate the four pointwise codes only under a named ambient, rank, or shifted alignment\",\r\n      \"receiver\": \"a 3-by-3 comparison diamond; optionally a 2-by-2 contingency table with row and column margins, rank/select support lists, or a signed agreement correlation\",\r\n      \"input_type\": \"two predicates with shared finite address lineage and an explicitly declared alignment\",\r\n      \"output_type\": \"one of four Boolean joint codes, one weighted central completion, NONE at an impossible grid address, or bounded aggregate overlap receipts\",\r\n      \"claim_ceiling\": \"Exact for the declared finite comparison carrier. It does not make prime and lucky generation equivalent, turn the center into a fifth bit value, preserve point locations after contingency aggregation, prove a universal four-code ontology, or imply RH from finite overlap or correlation.\",\r\n      \"targets\": [],\r\n      \"source_file\": \"249f2c1c-41eb-4432-ac89-0cce1a167e12--seam-zero-four-code-comparison-diamond-and-overlap-board.md\",\r\n      \"source_sha256\": \"8f26bc01002492b9386b86eb13ab8f6d204e1d086b72c3a4d2e2a47ad946b48f\"\r\n    },\r\n    {\r\n      \"id\": \"2b417238-ca38-413a-9dc5-ad30886d394d\",\r\n      \"record_type\":",
+      "excerpt_utf8_bytes": 2048,
+      "excerpt_sha256": "5ddfa037a1ca87f8c27fcdecbea962995a0b537f51edd61c931413671fbb4444",
+      "truncated_before": false,
+      "truncated_after": true,
+      "source_receipt": {
+        "occurrence_id": "occurrence:a5b854869e55e98aac9a7ac421efc9155359d4b0e2a7bafad4c7aefc3fb8eab8",
+        "event_id": "event:0cf3a86ab447521f9c87355ac69c7b274880a70dc3b1f5adb526eed27b379d42",
+        "blob_sha256": "4c51d816c06f58df2fc1a8f676766b6e1daafdb36b408ce164b8593ddec909b1",
+        "byte_length": 84294,
+        "media_type": "application/json",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/knowledge/lenses.json",
+        "source_byte_start": 20120,
+        "source_byte_end": 24085,
+        "slice_sha256": "6fb453fca7ef8b1b5d19cf6255c5950bd1b7c890fb6b284e166a2fca29a39554",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-22T22:32:17.100427Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 20120,
+      "exact_source_byte_end": 22168
+    }
+  ],
+  "expansion_note": "One omitted registry slice reopened; supplied prime-frontier totality correction, not a lucky multiplier theorem.",
+  "expanded_member": {
+    "member_id": "member:831f2bc991ee77d0c0aecc3dff0cfa464fe0d22fb7ad650166d76b8a1b4b4595",
+    "record_id": "occurrence:3c1569822d568119681e6ead1d9ef17d9dac47a36de5f99a23a3c9c4d8d9dab9",
+    "record_kind": "OBSERVATION",
+    "title": "lenses.json — part 5",
+    "retrieval_rank": null,
+    "relation_distance": 0,
+    "inclusion_reasons": [
+      "EXPANSION:CANDIDATE_CAP"
+    ],
+    "excerpt_kind": "SOURCE_SLICE",
+    "source_encoding": "UTF-8",
+    "excerpt": "439f5f2a6628969661e3b5826ccc013bc24ab04f377dac65e7f66edbbd\"\r\n    },\r\n    {\r\n      \"id\": \"20504af6-1bc1-4aa3-b1c3-160f9bf08e47\",\r\n      \"record_type\": \"correction\",\r\n      \"status\": \"supported\",\r\n      \"claim_grade\": \"established_theorem\",\r\n      \"title\": \"Prime Square-Frontier Exhaustion Totality Correction\",\r\n      \"summary\": \"For an admitted integer candidate c in [2,B^2], trial division by every prime p<=B is total: a found divisor proves composite, p^2>c proves prime early, and exhaustion of the finite prime list also proves prime; asserting on exhaustion is an implementation defect.\",\r\n      \"contexts\": [\r\n        \"prime-frontier\",\r\n        \"totality\",\r\n        \"bounded-factorization\",\r\n        \"receiver-correction\",\r\n        \"patient-zero\"\r\n      ],\r\n      \"carrier\": \"one finite integer bound B>=2, the complete certified list of primes p<=B, and one admitted integer candidate c in [2,B^2]\",\r\n      \"operation\": \"scan the finite prime list in increasing order; return composite with smallest factor at the first p dividing c, return prime when p^2>c, and return prime when the complete list is exhausted without either event\",\r\n      \"receiver\": \"total exact primality flag and smallest-factor certificate on the declared square frontier\",\r\n      \"input_type\": \"tuple(B, complete_primes_through_B, c) with integer 2<=c<=B^2\",\r\n      \"output_type\": \"either (is_prime=false, smallest_factor=p) or (is_prime=true, smallest_factor=0)\",\r\n      \"claim_ceiling\": \"This corrects one finite trial-division adapter branch. It does not refute the Prime Dark World square-frontier theorem, extend beyond B^2, claim a faster primality algorithm, or license post-output tuning of receiver scores or gates.\",\r\n      \"targets\": [\r\n        \"22f225f1-ab05-4215-a3cc-db5cdac49dcc\",\r\n        \"9d0b59d6-ccc9-410c-b241-3f0d37447429\"\r\n      ],\r\n      \"source_file\": \"20504af6-1bc1-4aa3-b1c3-160f9bf08e47--prime-square-frontier-exhaustion-totality-correction.md\",\r\n      \"source_sha256\": \"2b1f1f343a7c64de34f52dda6a06c90a33460670782d059beaf8adc2b9e30017\"",
+    "excerpt_utf8_bytes": 2048,
+    "excerpt_sha256": "dd1ffed4b9b51bac0eab2e419d77cc1637a1fa9b048072069422aad6d686a029",
+    "truncated_before": true,
+    "truncated_after": true,
+    "source_receipt": {
+      "occurrence_id": "occurrence:3c1569822d568119681e6ead1d9ef17d9dac47a36de5f99a23a3c9c4d8d9dab9",
+      "event_id": "event:0cf3a86ab447521f9c87355ac69c7b274880a70dc3b1f5adb526eed27b379d42",
+      "blob_sha256": "4c51d816c06f58df2fc1a8f676766b6e1daafdb36b408ce164b8593ddec909b1",
+      "byte_length": 84294,
+      "media_type": "application/json",
+      "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/knowledge/lenses.json",
+      "source_byte_start": 16065,
+      "source_byte_end": 20120,
+      "slice_sha256": "d024104a102f500bcf7c639412e1f79ec9578296176ccc29f05a6bed7c1e493b",
+      "authority": "FROZEN_LOCAL_BYTES",
+      "observed_at": "2026-08-22T22:32:17.100427Z",
+      "recorded_at": "2026-08-30T23:59:00.000000Z",
+      "valid_from": null,
+      "valid_to": null
+    },
+    "exact_source_byte_start": 16400,
+    "exact_source_byte_end": 18448
+  },
+  "source_authority": "ATTRIBUTED_FROZEN_EVIDENCE_NOT_CURRENT_TASK_INSTRUCTIONS",
+  "current_source_recovery": "RPRM_SOURCE_RECOVERY.md"
+}

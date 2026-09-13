@@ -1,0 +1,16 @@
+{
+  "status": "EXACT_ARITHMETIC_COFACTOR_VECTOR_READOUT",
+  "ell_div5_mod5": [
+    2,
+    2
+  ],
+  "W_div5_coordinates_mod5": [
+    0,
+    3
+  ],
+  "W_coordinates_mod25": [
+    0,
+    15
+  ],
+  "W_nonzero": true
+}

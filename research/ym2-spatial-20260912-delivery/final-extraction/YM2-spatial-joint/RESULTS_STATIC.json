@@ -1,0 +1,175 @@
+{
+  "status": "PASS",
+  "arithmetic": "fractions.Fraction; independent exact complex Pauli matrices",
+  "claim_grade": "Finite exact controls; continuous-fiber coverage is a written proof in STATIC_JOIN.md",
+  "scope": "Static finite SU(2) tuples; no dynamics, RG, or continuum/quantum assertion",
+  "counts": {
+    "rational_seeds": 7,
+    "matrix_product_comparisons": 49,
+    "associativity_and_matrix_triples": 343,
+    "joint_product_updates": 256,
+    "cross_Gram_minor_identities": 64,
+    "coarse_fiber_recovery_and_energy_controls": 72
+  },
+  "pair_local_trace_obstruction": {
+    "individual_scalars": [
+      "3/5",
+      "3/5"
+    ],
+    "joined_scalar_endpoints": [
+      "-7/25",
+      "1"
+    ]
+  },
+  "triple_orientation_obstruction": {
+    "plus": [
+      [
+        "3/5",
+        "4/5",
+        "0",
+        "0"
+      ],
+      [
+        "3/5",
+        "0",
+        "4/5",
+        "0"
+      ],
+      [
+        "3/5",
+        "0",
+        "0",
+        "4/5"
+      ]
+    ],
+    "minus": [
+      [
+        "3/5",
+        "4/5",
+        "0",
+        "0"
+      ],
+      [
+        "3/5",
+        "0",
+        "4/5",
+        "0"
+      ],
+      [
+        "3/5",
+        "0",
+        "0",
+        "-4/5"
+      ]
+    ],
+    "scalars": [
+      "3/5",
+      "3/5",
+      "3/5"
+    ],
+    "Gram": [
+      [
+        "16/25",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "16/25",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "16/25"
+      ]
+    ],
+    "pair_product_scalars": [
+      "9/25",
+      "9/25",
+      "9/25"
+    ],
+    "oriented_triples": [
+      "64/125",
+      "-64/125"
+    ],
+    "ordered_product_scalars": [
+      "91/125",
+      "-37/125"
+    ]
+  },
+  "coarse_energy_obstruction": {
+    "outer": [
+      "3/5",
+      "0",
+      "0",
+      "4/5"
+    ],
+    "U_A": [
+      "3/5",
+      "4/5",
+      "0",
+      "0"
+    ],
+    "V_A": [
+      "9/25",
+      "-12/25",
+      "-16/25",
+      "12/25"
+    ],
+    "U_B": [
+      "4/5",
+      "3/5",
+      "0",
+      "0"
+    ],
+    "V_B": [
+      "12/25",
+      "-9/25",
+      "-12/25",
+      "16/25"
+    ],
+    "fine_shape_sum": [
+      "26/25",
+      "18/25"
+    ],
+    "coarse_shape_term": "2/5",
+    "both_pairs_noncommuting": true,
+    "complete_fine_sum_fiber": "[2-sqrt(2+2*w0),2+sqrt(2+2*w0)]"
+  },
+  "integer_power_not_join_homomorphism": {
+    "U": [
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    "V": [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    "U_squared_V_squared": [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "UV_squared": [
+      "-1",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "hostile_controls": [
+    "out-of-image pair dot rejected",
+    "central endpoint forces zero dot",
+    "out-of-domain scalar rejected",
+    "improper reflection preserves pairs but changes triples",
+    "rank-zero through rank-three product replacements checked",
+    "full outer holonomy does not determine fine magnetic sum",
+    "W=-I fixes fine sum while source pair remains nonunique"
+  ]
+}

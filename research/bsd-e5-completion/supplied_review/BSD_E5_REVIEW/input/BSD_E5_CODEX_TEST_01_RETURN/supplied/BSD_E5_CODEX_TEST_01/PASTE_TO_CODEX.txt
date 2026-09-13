@@ -1,0 +1,14 @@
+Read CODEX_START_HERE.md and carry out BSD E5 test 01 in a separate BSD experiment directory.
+
+This is a bounded arithmetic task, not a reassignment of your Yang–Mills work.
+Do not modify or interrupt other lanes, reopen Lind–Reichardt or the old AD pilot,
+or start a paper.
+
+Replay the supplied programs, then independently check the descent, analytic
+nonvanishing proof, and cube/readback maps. Attempt the one new rigorous
+coefficient interval specified in the prompt. Check actual formulas and conditions,
+not only saved PASS records or familiar expected answers.
+
+Return the runnable source, fresh evidence, an understandable mathematical
+explanation, and the concise BSD rebrief. Preserve any failed proof obligation
+instead of forcing the expected result. Stop after this one experiment.

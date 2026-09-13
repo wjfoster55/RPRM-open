@@ -1,0 +1,21 @@
+{
+  "scope": "Starting work toward general BSD for elliptic curves over Q",
+  "novelty": "NOT_CLAIMED",
+  "formal_verification": "NOT_RUN",
+  "claims": [
+    {"id": "UNIFORM_HEIGHT_RECONSTRUCTION", "status": "WRITTEN_PROOF", "source": "RECONSTRUCTION.md", "boundary": "Uniform source height is a premise; one-prime torsion fiber retained"},
+    {"id": "COMPATIBILITY_NOT_RATIONALITY", "status": "WRITTEN_COUNTEREXAMPLE", "source": "RECONSTRUCTION.md", "boundary": "Inverse-of-three tower; actual E5 specialization uses prior primitive generator proof"},
+    {"id": "FINITE_READBACK_THRESHOLD", "status": "WRITTEN_CONDITIONAL_PROOF", "source": "RECONSTRUCTION.md", "boundary": "Requires integral basis, source height, positive Gram bound and torsion data"},
+    {"id": "SELMER_DEFECT", "status": "WRITTEN_PROOF_USING_CITED_THEOREMS", "source": "SELMER_TOWER.md", "boundary": "Actual rational rank and torsion needed to isolate Sha"},
+    {"id": "PRIMARY_STABILITY", "status": "WRITTEN_PROOF", "source": "SELMER_TOWER.md", "boundary": "Exact adjacent normalized defects; no infinite-prime conclusion"},
+    {"id": "GENERAL_MELLIN_TAIL", "status": "WRITTEN_PROOF_USING_CITED_THEOREMS", "source": "ANALYTIC_BRIDGE.md", "boundary": "Correct curve conductor/sign/Euler factors and certified alpha bound"},
+    {"id": "ANALYTIC_RANK_CERTIFICATE", "status": "WRITTEN_CONDITIONAL_PROOF", "source": "ANALYTIC_BRIDGE.md", "boundary": "Exact lower zeros plus nonzero interval; ranks two/three reduction cites low-rank theorem"},
+    {"id": "FINITE_CONTROLS", "status": "FINITE_CHECKS_PASS", "source": "evidence/general_checks_release.json", "boundary": "Seven finite groups of checks, not formal verification"},
+    {"id": "GENERAL_RANK_EQUALITY", "status": "OPEN", "source": "ANALYTIC_BRIDGE.md", "missing": "A proof supplying all required analytic zeros and leading nonvanishing for arbitrary E/Q"},
+    {"id": "GENERAL_SHA_FINITE", "status": "OPEN", "source": "SELMER_TOWER.md", "missing": "Primary finiteness and finite prime support for arbitrary E/Q"},
+    {"id": "GENERAL_LEADING_FORMULA", "status": "OPEN", "source": "ANALYTIC_BRIDGE.md", "missing": "Arithmetic/analytic identity in the unrestricted case"},
+    {"id": "GENERAL_CARRY_LAW", "status": "OPEN", "source": "CARRY_BRIDGE.md", "missing": "Full recurrence, state types, phase/sign rules and proved decoder"},
+    {"id": "CARRY_HEIGHT_ANALYTIC_BRIDGE", "status": "OPEN", "source": "CARRY_BRIDGE.md", "missing": "Uniform rational source-height bound and a relation to L-function coefficients"},
+    {"id": "NEW_RANK_TWO_INTERVAL", "status": "NOT_RUN", "source": "ANALYTIC_BRIDGE.md", "missing": "Select and independently certify one curve; implement and execute its finite-head quadrature"}
+  ]
+}

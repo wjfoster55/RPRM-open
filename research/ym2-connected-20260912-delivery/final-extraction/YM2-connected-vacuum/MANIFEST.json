@@ -1,0 +1,342 @@
+{
+  "schema": "ym2-connected-vacuum-manifest-v1",
+  "self_excluded": "MANIFEST.json",
+  "scope": "New connected-vacuum research, accepted source copies and attributed running-task snapshots",
+  "files": [
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/formal-proofs.md",
+      "bytes": 4454,
+      "sha256": "3786f87ecadb659e1f3667ca02cacfed083c7703efa5bd89ab9f64b16e723e62"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/operations.md",
+      "bytes": 40793,
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "bytes": 102093,
+      "sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/proof-donut.md",
+      "bytes": 14408,
+      "sha256": "7efda177fc3f4500842c88a7556dde6be3724b1f9194ee449da51c8ebcf5070a"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/relational-layer.md",
+      "bytes": 8903,
+      "sha256": "170af9573d7325f9cdd2c1e028113d908f2d0e409a6a627895a76dbd8fb3c846"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/accepted_sources/rprm/RPRM-CONCEPT-RECOVERY.md",
+      "bytes": 28752,
+      "sha256": "5cd1318d303f89fd587692e7d9d5d87f96c285441fa6f530ea70a73047737829"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/accepted_sources/ym2_spatial_joint/DYNAMICS.md",
+      "bytes": 12412,
+      "sha256": "fda5fb6e4c581335284ddb4366e5202290f42282d2732751792e9444a3912c81"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/accepted_sources/ym2_spatial_joint/PHASE_CLOSURE.md",
+      "bytes": 10959,
+      "sha256": "65a83f3df4dc5d1a5b3b27698d80fed857e0c10937081e27658bf50392ded24a"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/accepted_sources/ym2_spatial_joint/STATIC_JOIN.md",
+      "bytes": 16669,
+      "sha256": "88b2490c4c03a3370744d928cf7b4710e9367dab8f0f0c21558f69d35e5fd0b0"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/check_invariants.py",
+      "bytes": 20282,
+      "sha256": "413ffe74abd2fc4dfb370ecb6b83d7aa4152019f42db62dc6e8204be253a3d1a"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/check_quantum.py",
+      "bytes": 10687,
+      "sha256": "1eae75f9abab18b152502977bf7e20ac855608af72913ddaab70b5480bb88519"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/check_tree.py",
+      "bytes": 11936,
+      "sha256": "7ead2debfdd38cf023089af34868a8f9c6387536caa0200dad7c156b2d1dc298"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/GAP_BRIDGE.md",
+      "bytes": 19566,
+      "sha256": "68e619f6e56b752e59609d52a9e2c5674a0ef47c1bdb8c9d06a3b6188d071a28"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/GLOBAL_INVARIANT_JOINT.md",
+      "bytes": 16935,
+      "sha256": "f7858fa2e613ddfe1c0e6dcd29042d1fd9c92c4dab76ce8771c92baf44a028b6"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/GLOBAL_TREE_PHASE.md",
+      "bytes": 15765,
+      "sha256": "28280864599a5eea464f0e626d4c6b3bb8efb26789939e6a09a6d79ed53cd95d"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/INDEPENDENT_REVIEW.md",
+      "bytes": 12038,
+      "sha256": "69bddca4054039cf820c72716bda8b9424483417e4740772b2750f213f5875ec"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/MANIFEST.json",
+      "bytes": 4361,
+      "sha256": "14656c699914a9dea6c4bce8b63b85a905dbd070be34ebd2f7275dd71f4a0207"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/NEXT_GLUE_LEMMA.md",
+      "bytes": 6159,
+      "sha256": "fe9066999331a95bdc1ae31047ebf1a9ed0b173a5c3c5874b733128c0f1e0ef6"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/README.md",
+      "bytes": 4540,
+      "sha256": "2650c70d0d9c665f5d49076be10fe5a2c9c81d03079f534437067835bacf03a4"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/RESULTS_INVARIANTS.json",
+      "bytes": 3129,
+      "sha256": "376fae70c4574f2282af2f3f7494ab3b6509ed13aacdce7de36812363b6a8d7a"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/RESULTS_QUANTUM.json",
+      "bytes": 54289,
+      "sha256": "e9b148f0df1c7938dcb30e035d4c9a979a0aa1a363b69dabaf23509705fc506c"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/RESULTS_TREE.json",
+      "bytes": 10941,
+      "sha256": "f384ae68376302bb28aeea6803edc76e1bcc9fe22474b9973f3a82269216be6b"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/RETURN_TO_WILLIAM.md",
+      "bytes": 8730,
+      "sha256": "ffdd2e8613d7030f5a4335f8ab6c1b04cb8db09885385f90df2818d99b54d4e0"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/RPRM_PROOF_CERTIFICATE.md",
+      "bytes": 9565,
+      "sha256": "56d96174f1d44b9a6fa7e3e556a483e2d1013e62632de9b91aef7f35604b50a2"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/SOURCE_AUDIT.md",
+      "bytes": 7543,
+      "sha256": "01088c7a0f923a3107a0dc4b3ebfe9547f0bacd5f4d8346e0d6631a1b238b993"
+    },
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/SOURCE_PROVENANCE.json",
+      "bytes": 3559,
+      "sha256": "5b94663a6714277570852ddc1e0c14da9567d8aa340f7d1fdcf958dfdbc3dc71"
+    },
+    {
+      "path": "accepted_sources/ym2_signed_differences/DIFFERENCE_PROJECTION.md",
+      "bytes": 17475,
+      "sha256": "63111a1517334c9b874419b97c180d6f6d41bac7ee4218f6c8f7b9767a92fc8f"
+    },
+    {
+      "path": "accepted_sources/ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md",
+      "bytes": 6280,
+      "sha256": "ab0e55814b5a4575eec04707702c3bc5032367b85bc986bec5e918dadb68bec1"
+    },
+    {
+      "path": "accepted_sources/ym2_signed_differences/RESULTS_VACUUM_COMPARISON.json",
+      "bytes": 4702,
+      "sha256": "46d19521a805b9a63490808d0dcd6a2c1915ab54f065a2f265cc02fa0230ac24"
+    },
+    {
+      "path": "accepted_sources/ym2_signed_differences/SIGNED_SEMANTICS.md",
+      "bytes": 16211,
+      "sha256": "be385797eabcae784a02615761bce14c05ac6e1d48bdf8fd2131ae3dcecba43f"
+    },
+    {
+      "path": "accepted_sources/ym2_signed_differences/SOURCE_AUDIT.md",
+      "bytes": 6038,
+      "sha256": "587809fdbeb88d53bf2f11fbdd6d15a3e2626f81dfe0aa8245ac2ccf184f6c10"
+    },
+    {
+      "path": "accepted_sources/ym2_signed_differences/STACKING_AND_SCALING.md",
+      "bytes": 6778,
+      "sha256": "370c79bbe82b25e81efa2ce443443edcb4d1ffc300089b5c3b4fcd5c290a96a8"
+    },
+    {
+      "path": "accepted_sources/ym2_signed_differences/VACUUM_COMPARISON.md",
+      "bytes": 17769,
+      "sha256": "164871ae2e06eefbc5b47304cbddaaea4df0e72db262e276abe67a61726e6d01"
+    },
+    {
+      "path": "check_conditional_head.py",
+      "bytes": 6853,
+      "sha256": "67c266363d9dec2fdf44d2f1590729ed2f0b2115e69681a0005f9544a889d98d"
+    },
+    {
+      "path": "check_connected.py",
+      "bytes": 11707,
+      "sha256": "433bd5bcae18dc7e620db262268ed948fa0b7da8963fb6dfb221652d63a854b7"
+    },
+    {
+      "path": "check_witness.py",
+      "bytes": 6905,
+      "sha256": "dfbf222a9945ff99cec2ad9dacfc44735db97a7bb230d5cfc81926e93bc9ae55"
+    },
+    {
+      "path": "connected_joint.png",
+      "bytes": 370472,
+      "sha256": "ab3742aba7a1f75a59c00c3e0097c75638678c3276fd3762235d7d1a262e4c5b"
+    },
+    {
+      "path": "connected_joint.svg",
+      "bytes": 88137,
+      "sha256": "a1926116ce1b657e2ee610a52d0022ee5b4a3dd62b5256fc067097bb00db6502"
+    },
+    {
+      "path": "CONNECTED_VACUUM.md",
+      "bytes": 13992,
+      "sha256": "9923cf495cb7b90d041569afd28805f7f9ac3b9c14100d0e6ff2173c4333c7ab"
+    },
+    {
+      "path": "CROSS_BSD.md",
+      "bytes": 7640,
+      "sha256": "47d161299b3e3abec1615a23a6dd3719242397f86c95eb4b57d6ba847212b530"
+    },
+    {
+      "path": "CROSS_PNP.md",
+      "bytes": 13809,
+      "sha256": "6a19af0bc83922cc80c28a4a1000793121612e4a2937baa66609aae04721e689"
+    },
+    {
+      "path": "CROSS_SOURCE_UPDATE.md",
+      "bytes": 2683,
+      "sha256": "8905458d3cc772f345e9daf774b3f3945961c052e20c49445760f3e776bfb92f"
+    },
+    {
+      "path": "draw_connected_joint.py",
+      "bytes": 10467,
+      "sha256": "122f84b60278d6de78679231a58dd54a82be4a309d65c7242da637c9b6512bf6"
+    },
+    {
+      "path": "NEXT_CONDITIONAL_PORTS.md",
+      "bytes": 9015,
+      "sha256": "0467fdbf3a3690eaa6b58b30213d7f1f2a642204b69cc7c84a960bb14e2026a4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3590,
+      "sha256": "b55318748252b2f3e8596aa3117d39260888502433300760732b4b143010700e"
+    },
+    {
+      "path": "RESULTS_CONDITIONAL_HEAD.json",
+      "bytes": 2945,
+      "sha256": "22a9bbc61ddc933d7a6be8b5d70f4adaf985db5d6bfa7bec275111a6eee6e829"
+    },
+    {
+      "path": "RESULTS_CONNECTED.json",
+      "bytes": 10896,
+      "sha256": "407eeb88e406df59a9acd4296106c707a2d749d9f5221c5e6d36b43ce1f73aa2"
+    },
+    {
+      "path": "RESULTS_WITNESS.json",
+      "bytes": 1124,
+      "sha256": "4d16c0a46014e39d961361900c3e12fae501c23794564fb58272a7af86768620"
+    },
+    {
+      "path": "RETURN_TO_WILLIAM.md",
+      "bytes": 9190,
+      "sha256": "0f64d0cee3ceaa86adcb6c38ff9e0bbdf04224d8cd354652a476cb96daf3ab6d"
+    },
+    {
+      "path": "REVIEW_CONDITIONAL_PORTS.md",
+      "bytes": 7690,
+      "sha256": "5c3bcf16c4df27e437e78a1308e56763e91e97b42b5be90e1fc9a1ad9c0105bb"
+    },
+    {
+      "path": "REVIEW_PERTURBATION.md",
+      "bytes": 12566,
+      "sha256": "e9596a1c62ea1de2de58e334fc1269cb13d7342841257a9384b9603b6b0521a2"
+    },
+    {
+      "path": "REVIEW_WITNESS.md",
+      "bytes": 6209,
+      "sha256": "4608b294b7fefc1d26bfd5b93afb4b4766facc94625cfbb0bb46012f54b00c76"
+    },
+    {
+      "path": "REVIEW_WITNESS_MATH.md",
+      "bytes": 4704,
+      "sha256": "ddad01741ab3885d276ce56e7302adae49882a26e6b8d5501abf39f64bee07d6"
+    },
+    {
+      "path": "running_task_snapshots/bsd-e5-completion/BSD_FACTORS.md",
+      "bytes": 10866,
+      "sha256": "9f570c5bf87c6b0b0b38f7fd4fd3d29f3495d2328917e64c11f613419456ed0b"
+    },
+    {
+      "path": "running_task_snapshots/bsd-e5-completion/BSD_SHA_THEOREMS.md",
+      "bytes": 10217,
+      "sha256": "1cc196f2f5fce9992ba669c8185c2f769cfe47d7c2a28e4bd3889da6ad9516be"
+    },
+    {
+      "path": "running_task_snapshots/bsd-e5-completion/GENERATOR_PROOF.md",
+      "bytes": 8344,
+      "sha256": "dd7a761f063eee413e10266f24e58d254df3416b8c57a40d8e8bed5e4b4b337a"
+    },
+    {
+      "path": "running_task_snapshots/bsd-e5-completion/work/coordinate_check.py",
+      "bytes": 8693,
+      "sha256": "642d21d6044ca54f45ba7ba53e2b2134fa9a13258f21a076411d824e2b7470ad"
+    },
+    {
+      "path": "running_task_snapshots/bsd-e5-test-01/ARITHMETIC_PROOF.md",
+      "bytes": 17804,
+      "sha256": "35f23551c397dc1a3a401c28243072b98eeb7a9733b4e5429b9f4ea592c5af49"
+    },
+    {
+      "path": "running_task_snapshots/bsd-e5-test-01/INTERVAL_DERIVATION.md",
+      "bytes": 17006,
+      "sha256": "65e242dce048490f9ef0a0aabcb3e53c0f84bac548921760876755bcb6600206"
+    },
+    {
+      "path": "running_task_snapshots/liar-teacher-formalization-2026-09-12/RELATED-RESEARCH.md",
+      "bytes": 8620,
+      "sha256": "fc8b002d65a06f4fc86889e26826393fa35e6a551651b8d49f03d487866544ae"
+    },
+    {
+      "path": "running_task_snapshots/liar-teacher-formalization-2026-09-12/SAT-PILOT.md",
+      "bytes": 14321,
+      "sha256": "2012ba5aeb1f7bc2e85e6061c9ae5c22b7df6ffabbd2d571dfc01970c8c79bad"
+    },
+    {
+      "path": "running_task_snapshots/liar-teacher-formalization-2026-09-12/THEORY-DRAFT.md",
+      "bytes": 14470,
+      "sha256": "9ab0e5b7dff70fd2ee5f8ef1c5b99ea82eb3015a82395cc7aa75202ac5581585"
+    },
+    {
+      "path": "SOURCE_AUDIT.md",
+      "bytes": 7376,
+      "sha256": "80c87a78cfd6b8b8a1efa7c6530d4128dd32f0a95c1424c13190f7bcdc713c20"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 18062,
+      "sha256": "99bc7bf47d62184088317d40b3c77b3e0f18502cbe702786046c49b27f7072b2"
+    },
+    {
+      "path": "THREAD_SNAPSHOTS.json",
+      "bytes": 1064,
+      "sha256": "78eebd1ffb1ae33dd5f04e936d207b41880892135e767fc22adc042a33e1f40f"
+    },
+    {
+      "path": "VACUUM_SEPARATING_WITNESS.md",
+      "bytes": 9823,
+      "sha256": "b9137decf54e233136c868f601af7d986eadc5dbe3907b74d4dca9dafcc66884"
+    },
+    {
+      "path": "VISUAL_CHECKS.md",
+      "bytes": 4471,
+      "sha256": "7478e96dd353059434ff08666f3f9980cdd14c33d3be2901cdfb6f66d915f39f"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "BSD-E5-CODEX-TEST-01",
+  "stage": "exposed development verification and one bounded extension",
+  "curve": {
+    "field": "Q",
+    "a_invariants": [
+      0,
+      0,
+      0,
+      -25,
+      0
+    ]
+  },
+  "required_tasks": [
+    {
+      "id": "R01",
+      "task": "Fresh replay of the two byte-preserved source programs; do not count as independent."
+    },
+    {
+      "id": "A01",
+      "task": "Independent finite 2-descent arithmetic and written completeness proof."
+    },
+    {
+      "id": "A02",
+      "task": "2-power tower, exact readback, inverse distinction, and odd-index limitation."
+    },
+    {
+      "id": "B01",
+      "task": "Independent conductor/sign/local-factor and Mellin-normalization source check."
+    },
+    {
+      "id": "B02",
+      "task": "Independent a_n, exact rational positivity bound, and all-tail proof."
+    },
+    {
+      "id": "C01",
+      "task": "Cube bijection/group operation and coherent receiver transport."
+    },
+    {
+      "id": "D01",
+      "task": "Attempt rigorous rational derivative interval width <=1/100 within finite budget."
+    },
+    {
+      "id": "J01",
+      "task": "Combine independent arithmetic and analytic conclusions with exact scope."
+    }
+  ],
+  "required_controls": [
+    {
+      "id": "K01_OFF_CURVE",
+      "kind": "rejection",
+      "task": "Supply (0,1), which is not on E5; exact group/signature path rejects it rather than silently processing it."
+    },
+    {
+      "id": "K02_MODEL_BINDING",
+      "kind": "non-applicability",
+      "task": "Change a-invariant -25 to -36 while presenting the E5 certificate; detect different source. Do not conclude a new rank or copy conductor/sign."
+    },
+    {
+      "id": "K03_EULER_RECURRENCE",
+      "kind": "mismatch",
+      "task": "Set a9=0 in a disposable coefficient record; independent a3^2-3 recurrence detects the false record."
+    },
+    {
+      "id": "K04_NO_TAIL",
+      "kind": "unresolved analytic claim",
+      "task": "Remove the all-term tail justification from a finite-head claim; do not promote the finite value to an infinite-sum nonvanishing certificate. A different supplied proof would be separately credited."
+    },
+    {
+      "id": "K05_LOST_REMAINDER",
+      "kind": "same-summary/different-answer",
+      "task": "O and Q=2P share the level-one class but differ at level two. Show exact recovery with retained source/remainder and non-identifiability from the coarse label alone."
+    },
+    {
+      "id": "K06_FRAME_TRANSPORT",
+      "kind": "positive and negative pair",
+      "task": "Apply one nontrivial invertible five-bit basis map. Transport the readout and pass; keep the old readout and exhibit a mismatch. Renaming is not a mathematical failure."
+    }
+  ],
+  "extension_budget": {
+    "coefficient_cutoffs": [
+      40,
+      80,
+      160
+    ],
+    "optional_working_precision_bits": [
+      80,
+      160
+    ],
+    "target_interval_width": "1/100",
+    "exact_quadrature_budget": "Declare finite mesh/refinement cap before execution.",
+    "stop": "Stop at first proved positive interval meeting width; otherwise report strongest justified result at budget."
+  },
+  "forbidden_inferences": [
+    "Finite modular survival implies global existence without a witness.",
+    "Cube shape proves arithmetic exclusions.",
+    "Eight classes plus a wrapper give nine classes.",
+    "Binary quotient coordinates certify odd-prime saturation.",
+    "A small decimal proves an exact zero.",
+    "The raw L-function is odd simply because its completion is odd.",
+    "One-curve rank comparison proves full or general BSD.",
+    "Any measured AD speed/accuracy advantage from this example."
+  ],
+  "new_interval_status_at_packaging": "NOT_RUN",
+  "codex_execution_status_at_packaging": "NOT_RUN",
+  "reporting": "Each required task and control receives a named disposition, never silently omitted."
+}

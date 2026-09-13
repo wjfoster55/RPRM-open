@@ -1,0 +1,85 @@
+{
+  "schema": "ym-to-bsd-read-only-snapshot-v1",
+  "snapshot_utc": "2026-09-12T20:11:38Z",
+  "source_root": "C:/github/RPRM-open",
+  "scope": "Selected completed YM covering argument and BSD identity/trace targets; active YM task untouched",
+  "sources": [
+    {
+      "path": "research/ym2_covering_argument/COVERING_RESULT.md",
+      "sha256": "b65cf3fbbf8bea4f4173d9263750814fdb2878b158e1d5ec6f60854424b65002",
+      "bytes": 14446,
+      "last_write_utc": "2026-09-12T19:50:49.8394789Z"
+    },
+    {
+      "path": "research/ym2_covering_argument/DIRECT_COVER_ATTEMPT.md",
+      "sha256": "1e30640bb3c837938447b769942295f3f357453f06fe8b9b5a5de6546d788df0",
+      "bytes": 17473,
+      "last_write_utc": "2026-09-12T19:45:44.3703095Z"
+    },
+    {
+      "path": "research/ym2_covering_argument/NEXT_OBLIGATION.md",
+      "sha256": "f428f56bde1a85544efc7f4ccf313a3cb6f26f93598b57f57fdf7c76da105e42",
+      "bytes": 5518,
+      "last_write_utc": "2026-09-12T19:50:49.8406434Z"
+    },
+    {
+      "path": "research/ym2_covering_argument/CONDITIONAL_REFINEMENT.md",
+      "sha256": "abd62ff7ae6771722e21ea497b2050f4dbf0478b28cfc037f0d698d22b09360c",
+      "bytes": 9065,
+      "last_write_utc": "2026-09-12T19:50:49.8418851Z"
+    },
+    {
+      "path": "research/ym2_covering_argument/CONDITIONAL_REVIEW.md",
+      "sha256": "4038e8eaa1fabb23ecee5729fbd73566bbcbbc3ba8b119fd6a5d54b323306566",
+      "bytes": 5627,
+      "last_write_utc": "2026-09-12T19:47:19.2819379Z"
+    },
+    {
+      "path": "research/ym2_covering_argument/DIRECT_COVER_REVIEW.md",
+      "sha256": "1435fe73bd6fa208d124476f3402e66cf5dfab5df3a77ec4365ac53b692a7909",
+      "bytes": 13681,
+      "last_write_utc": "2026-09-12T19:55:36.2425970Z"
+    },
+    {
+      "path": "research/ym2_covering_argument/FINAL_MATH_REVIEW.md",
+      "sha256": "f908c5073fb765db94b7f59448cfefd72c463e80b011634d210d8b0ac9f2d887",
+      "bytes": 8409,
+      "last_write_utc": "2026-09-12T19:55:36.2410860Z"
+    },
+    {
+      "path": "research/ym2_covering_argument/OFFICIAL_DOCS_TRANSFER.md",
+      "sha256": "6791bfc06c45ef302a8a9bb2380c3d84213e82679f1fecb0ed13ef59d4f32ce9",
+      "bytes": 19257,
+      "last_write_utc": "2026-09-12T19:37:58.2222793Z"
+    },
+    {
+      "path": "research/bsd-identity-01/EXPLICIT_IDENTITY_TARGET.md",
+      "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753",
+      "bytes": 15376,
+      "last_write_utc": "2026-09-12T19:57:56.5772650Z"
+    },
+    {
+      "path": "research/bsd-identity-01/ODD_PRIME_ATTEMPT.md",
+      "sha256": "4e2ce62977ed0c9cba8f4bccbdc26e09d06a6720d61ee02ea2231801328e371c",
+      "bytes": 9617,
+      "last_write_utc": "2026-09-12T19:57:56.5772650Z"
+    }
+  ],
+  "finite_controls": {
+    "newton_identity_cases": 78125,
+    "newton_grid": "a1=0..124; a2,a3,a4,a5=0..4",
+    "mixed_precision_checks": 312500,
+    "idempotent_lift_cases": 50,
+    "old_checkers_run": false,
+    "actual_CM_trace_computed": false,
+    "status": "PASS finite scalar controls; transfer lemmas are written proofs"
+  },
+  "control_procedure": {
+    "arithmetic": "Exact integer JavaScript values; all intermediate integer magnitudes below 2^53",
+    "newton": "s[0]=0; s[k]=-(k*a[k-1]+sum(j=1..k-1,a[j-1]*s[k-j])); T=2*s[5]+289*s[1]",
+    "expanded_T": "-2*a1^5+10*a1^3*a2-10*a1^2*a3-10*a1*a2^2+10*a1*a4+10*a2*a3-10*a5-289*a1",
+    "precision": "For each tested tuple, separately add 25 to a2,a3,a4,a5 and compare expanded_T modulo125",
+    "idempotents": "For every e0 in 0..124 with e0 mod5 in {0,1}, perform e <- e-(e^2-e)*inverse(2e-1) modulo125 twice; inverse found by complete search 0..124; require e^2=e mod125 and same mod5 residue"
+  },
+  "theorem_ceiling": "Written transfer lemmas and bounded scalar controls only; no actual CM orbit algebra, trace value, new Sha result, complex BSD identity, or continuum YM conclusion"
+}

@@ -1,0 +1,13 @@
+BEGIN_SYMBOL_PILOT
+M_dimensions=9
+symbol=[1/4, -1/2, 1/4, 0, -1/2, 1/4, 1/2, 0, -1/4]~
+symbol_zero_to_infinity=-1/4
+symbol_exact_anchor=[-1/4, 1/2, -1/4, 0, 1/2, -1/4, -1/2, 0, 1/4]~
+anchor=1/4
+
+  ***   Break loop: type 'break' to go back to GP prompt
+  ***   at top-level: print("mssign=",mssign(M))
+  ***                                 ^----------
+  ***   not a function in function call
+... skipping file 'C:/github/RPRM-open/research/bsd-coefficient-05/work/symbol_pilot.gp'
+break> ? 

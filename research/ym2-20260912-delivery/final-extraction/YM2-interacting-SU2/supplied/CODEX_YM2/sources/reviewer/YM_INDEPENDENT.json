@@ -1,0 +1,12 @@
+{
+  "admitted_rational_states": 67,
+  "interpretation": "Checks delivered retained updater on admitted states against independently evaluated full oscillator modes; symbolic identity is exact. Field-theory assumptions remain those stated in the source.",
+  "one_step_and_inverse_checks": 536,
+  "status": "PASS",
+  "symbolic_polynomial_differences": [
+    "0",
+    "0",
+    "0"
+  ],
+  "two_time_composition_checks": 4288
+}

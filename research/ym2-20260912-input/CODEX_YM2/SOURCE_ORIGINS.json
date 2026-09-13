@@ -1,0 +1,112 @@
+[
+  {
+    "path": "sources/accepted/C2_REBRIEF.md",
+    "source_archive": "rprm-consolidation-c2-20260912.zip",
+    "source_member": "rprm-consolidation-c2-20260912/REBRIEF_ADDENDUM.md",
+    "sha256": "e2f0a52348574f5ea2053002f5d916377be6b8efa4e4ef9f99e76b6469d9f6bc",
+    "bytes": 4218
+  },
+  {
+    "path": "sources/accepted/C2_REVIEW_CLOSEOUT.md",
+    "source_local_attachment": "RPRM-C2-REVIEW-01/CLOSEOUT_MESSAGE.md",
+    "sha256": "31545471cf39607c5591077eaf8e4267bc468ce427f6c55ede4826cf2f5c98fb",
+    "bytes": 2491
+  },
+  {
+    "path": "sources/accepted/C1_CLOSEOUT.md",
+    "source_local_attachment": "RCF01-CODEX-C1-CLOSEOUT/CLOSEOUT_MESSAGE.md",
+    "sha256": "a2b3a6826cd6abfcbcf30c0a722958c827b23b6c6d90c3f0f9ef06a96647b322",
+    "bytes": 2394
+  },
+  {
+    "path": "sources/accepted/SAT02_M1_CLOSEOUT.md",
+    "source_local_attachment": "SAT02-CODEX-M1-CLOSEOUT/CLOSEOUT_MESSAGE.md",
+    "sha256": "fafaedb32a9cf20f5bae7e5a86e59f556af504981419067560a6810c3cdd664a",
+    "bytes": 2420
+  },
+  {
+    "path": "sources/accepted/C1_CARRY_FORWARD.md",
+    "source_archive": "rprm-consolidation-c2-20260912.zip",
+    "source_member": "rprm-consolidation-c2-20260912/supplied/accepted/C1_CARRY_FORWARD.md",
+    "sha256": "0a6ba65a302efc45b473e4c30a3da3a3a794a093e074697454eca40f5f2f99b0",
+    "bytes": 12511
+  },
+  {
+    "path": "sources/recovered_concepts/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+    "source_local_attachment": "RPRM-CONCEPT-RECOVERY/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+    "sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843",
+    "bytes": 102093
+  },
+  {
+    "path": "sources/recovered_concepts/CUBES-AND-PI-CURVES.md",
+    "source_local_attachment": "RPRM-CONCEPT-RECOVERY/CUBES-AND-PI-CURVES.md",
+    "sha256": "526ab16ba66addb1e6ebade597a2470f44d83761705f29333e4ee439c5c9ef0e",
+    "bytes": 53235
+  },
+  {
+    "path": "sources/recovered_concepts/ZERO-AND-RAILS.md",
+    "source_local_attachment": "RPRM-CONCEPT-RECOVERY/ZERO-AND-RAILS.md",
+    "sha256": "82b33805d899cbdd64232dbfc4f87bf979098232bd2ed8a16a494dbf8156a57d",
+    "bytes": 16721
+  },
+  {
+    "path": "sources/c2/yang_mills/check_ym1.py",
+    "source_archive": "rprm-consolidation-c2-20260912.zip",
+    "source_member": "rprm-consolidation-c2-20260912/yang_mills/check_ym1.py",
+    "sha256": "5a76cf4b16a15d395aedfd3e8427fcf38a238aa407b8e8dae6738eeef5eb8747",
+    "bytes": 4684
+  },
+  {
+    "path": "sources/c2/yang_mills/PRIMARY_REFERENCES.md",
+    "source_archive": "rprm-consolidation-c2-20260912.zip",
+    "source_member": "rprm-consolidation-c2-20260912/yang_mills/PRIMARY_REFERENCES.md",
+    "sha256": "0ac01cd63d28059529ce425ebf90bf2c1e723a0c0f63b70d4a5681d2c7d601fd",
+    "bytes": 1961
+  },
+  {
+    "path": "sources/c2/yang_mills/PRIMARY_REFERENCE_IDENTITIES.json",
+    "source_archive": "rprm-consolidation-c2-20260912.zip",
+    "source_member": "rprm-consolidation-c2-20260912/yang_mills/PRIMARY_REFERENCE_IDENTITIES.json",
+    "sha256": "8adcb1d9f231fae13143e4e959e39e1d03d768b8551e88e8c15dcaf9c532d883",
+    "bytes": 1156
+  },
+  {
+    "path": "sources/c2/yang_mills/review/YM1_MATH_PHYSICS_REVIEW.md",
+    "source_archive": "rprm-consolidation-c2-20260912.zip",
+    "source_member": "rprm-consolidation-c2-20260912/yang_mills/review/YM1_MATH_PHYSICS_REVIEW.md",
+    "sha256": "cac3987b15a4967a1168ca8e0ae6b5f100a640912946fc0f45ab857899f16402",
+    "bytes": 8481
+  },
+  {
+    "path": "sources/c2/yang_mills/YM1_BRIDGE.md",
+    "source_archive": "rprm-consolidation-c2-20260912.zip",
+    "source_member": "rprm-consolidation-c2-20260912/yang_mills/YM1_BRIDGE.md",
+    "sha256": "99fbb73774071925a9bc1ed2c18906da61e17226895d0a8b09fb829ac81d9338",
+    "bytes": 12230
+  },
+  {
+    "path": "sources/c2/yang_mills/YM1_CHECK.json",
+    "source_archive": "rprm-consolidation-c2-20260912.zip",
+    "source_member": "rprm-consolidation-c2-20260912/yang_mills/YM1_CHECK.json",
+    "sha256": "ce21a13874f1d0b6c7cba370bda0f1ba4c878490d1e070f6cd9f691c69234d43",
+    "bytes": 4115
+  },
+  {
+    "path": "sources/reviewer/YM1_BRIDGE.md",
+    "source_local_attachment": "RPRM-C2-REVIEW-01/source_snapshots/YM1_BRIDGE.md",
+    "sha256": "99fbb73774071925a9bc1ed2c18906da61e17226895d0a8b09fb829ac81d9338",
+    "bytes": 12230
+  },
+  {
+    "path": "sources/reviewer/REBRIEF_ADDENDUM.md",
+    "source_local_attachment": "RPRM-C2-REVIEW-01/source_snapshots/REBRIEF_ADDENDUM.md",
+    "sha256": "e2f0a52348574f5ea2053002f5d916377be6b8efa4e4ef9f99e76b6469d9f6bc",
+    "bytes": 4218
+  },
+  {
+    "path": "sources/reviewer/YM_INDEPENDENT.json",
+    "source_local_attachment": "RPRM-C2-REVIEW-01/results/independent/YM_INDEPENDENT.json",
+    "sha256": "9949ad38cc942175fec6b43cbf853a380d2b8273f43b7aab05724fb787e9631d",
+    "bytes": 423
+  }
+]

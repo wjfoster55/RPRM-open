@@ -1,0 +1,252 @@
+{
+  "created_utc": "2026-09-12T20:54:27.297318+00:00",
+  "scope": "BSD operational03",
+  "files": [
+    {
+      "path": "BSD_REBRIEF.md",
+      "bytes": 1956,
+      "sha256": "f2353b8b1d57b022be4a83bed5ec2c4d423425c72536a5445328c9ae3319aa46"
+    },
+    {
+      "path": "CLAIM_LEDGER.json",
+      "bytes": 3112,
+      "sha256": "0d121907fa686be2ae68f41fd8c9235944fde750130b638de68cc0ec498c60ec"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 3074,
+      "sha256": "d32485a08a24583ac94216a7d5c6cdeb2bf0be529a3e109d3e274f8f4818f3fd"
+    },
+    {
+      "path": "dependencies/ARITHMETIC_PROOF.md",
+      "bytes": 14223,
+      "sha256": "3d3e7fbb43fae46d4759a0bf48f705b82d4552b06744b8b9f6d70d8e673de243"
+    },
+    {
+      "path": "dependencies/EXACT_IDENTITY_THEOREMS.md",
+      "bytes": 11154,
+      "sha256": "2cf701bef7b760237b12dbf2d36436913b5cb2bdcdcb26e564299957836ed77e"
+    },
+    {
+      "path": "dependencies/EXPLICIT_IDENTITY_TARGET.md",
+      "bytes": 15376,
+      "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753"
+    },
+    {
+      "path": "dependencies/GENERATOR_PROOF.md",
+      "bytes": 11575,
+      "sha256": "9c6b26a14051eda856bf79094257bd30d0e9382528b5e208e79ab33c168c9b15"
+    },
+    {
+      "path": "dependencies/LOCAL_ANALYTIC_INPUTS.md",
+      "bytes": 8342,
+      "sha256": "b82a74927703053eb43930d589de1e7d79360df9261ca02968e8bae91b61bdcc"
+    },
+    {
+      "path": "dependencies/SOURCES.json",
+      "bytes": 1983,
+      "sha256": "4d63363141e17468b7d7bf618b7975da185bf99d2d96236ac112e3670229986e"
+    },
+    {
+      "path": "dependencies/TRACE_CALCULATION_02.md",
+      "bytes": 7406,
+      "sha256": "f991173f730bde04b40d1c8c82dba5ff7fde11ea370915454118a0f882f1937d"
+    },
+    {
+      "path": "dependencies/TRACE_FORMULA_AUDIT_02.md",
+      "bytes": 13412,
+      "sha256": "ae07ad27e55879353e391ca54bc5aa26cbd492aa3c75e30abf9107f1d58db00a"
+    },
+    {
+      "path": "evidence/bockstein_readout.json",
+      "bytes": 1694,
+      "sha256": "5dbd9fda03b7961f3965466e604d30b51e023acd76fd64b9d6765970d9b66347"
+    },
+    {
+      "path": "evidence/bockstein_readout_initial_source.py",
+      "bytes": 4257,
+      "sha256": "b89cc105076e797a9a33ea5329f26ecebc908d69126d52eb9eb8d83fe0fabeb1"
+    },
+    {
+      "path": "evidence/fabric_selection.json",
+      "bytes": 11588,
+      "sha256": "b4126cf753c8341df6c88402c8c0967ee8dba366af9a1f2c4fdbcf45996f9853"
+    },
+    {
+      "path": "evidence/operational_shadow.json",
+      "bytes": 8940,
+      "sha256": "28606e2b057ebfe9608dca6b53e47790f690a5ebe4418d8b8ca195929217e98c"
+    },
+    {
+      "path": "evidence/operational_sources.json",
+      "bytes": 98468,
+      "sha256": "934f4e58a23d02ca241d7abcee64ed40eab36139a87ff2bf079b8cdc0c259e12"
+    },
+    {
+      "path": "evidence/padic_height.json",
+      "bytes": 26376,
+      "sha256": "88755803bafebf23a0e6eb7b851e9c618bbcbe65a3d630cf53b9b5296ec4fc95"
+    },
+    {
+      "path": "evidence/padic_height_readback.json",
+      "bytes": 7402,
+      "sha256": "b595db239f760454ef9429255b908b80ed1923c2d95bcd5db26f4c181d187f88"
+    },
+    {
+      "path": "input_source/cm_action.py",
+      "bytes": 5518,
+      "sha256": "c2df97cc98feaad094149ac491c23d6c7df37006e9cb5c1d16b2c2816590368a"
+    },
+    {
+      "path": "input_source/trace125.py",
+      "bytes": 14140,
+      "sha256": "f1f9eb8039d9088f0d0e1e318771b880c58e3578c0e7457e55e2ab641c12699a"
+    },
+    {
+      "path": "OPERATIONAL_BRIDGE.md",
+      "bytes": 6788,
+      "sha256": "dc089747cb4d3a7f9aae47c9131b779b5b1e2c650a1b127d71c09ac380edadae"
+    },
+    {
+      "path": "OPERATIONAL_VALUE_RECOVERY.md",
+      "bytes": 14307,
+      "sha256": "c0a050a0bbf3f26b495b48e79da8fc203a44775f0d3581e7321f6606e224c2ce"
+    },
+    {
+      "path": "PADIC_HEIGHT_AUDIT.md",
+      "bytes": 16525,
+      "sha256": "8db3ed9b53c6bd114bc54e142cfcebe2a99233d65b0cc03671025ea023f0e66e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2729,
+      "sha256": "bba9462300b45cab88c032997f2b00d29b10857e286b50ce9db0293fa80410db"
+    },
+    {
+      "path": "RETURN_TO_WILLIAM.md",
+      "bytes": 4100,
+      "sha256": "04f51425bb6dae24458b1307e176cc1817c93491553c5692f80867f75783ae4b"
+    },
+    {
+      "path": "runs/return_validation/evidence/bockstein_readout.json",
+      "bytes": 1785,
+      "sha256": "a4e22286008b6baf3987325eae35bd50c2f416ee0144849c0e00a345805c7817"
+    },
+    {
+      "path": "runs/return_validation/evidence/operational_shadow.json",
+      "bytes": 8940,
+      "sha256": "006ea8f80f61a734258146d91a6f46cf3ae2fdbb675f4419f37131b812c33d91"
+    },
+    {
+      "path": "runs/return_validation/evidence/padic_height.json",
+      "bytes": 26376,
+      "sha256": "d36cf769204be707d9d73b20752247ca5844675c4376edb513599de069a8814c"
+    },
+    {
+      "path": "runs/return_validation/evidence/padic_height_readback.json",
+      "bytes": 7402,
+      "sha256": "08524b97dad3a175fe75658482bf9f4c073a8a6535017555fe20a5aa3e28efec"
+    },
+    {
+      "path": "runs/return_validation/input_source/cm_action.py",
+      "bytes": 5518,
+      "sha256": "c2df97cc98feaad094149ac491c23d6c7df37006e9cb5c1d16b2c2816590368a"
+    },
+    {
+      "path": "runs/return_validation/input_source/trace125.py",
+      "bytes": 14140,
+      "sha256": "f1f9eb8039d9088f0d0e1e318771b880c58e3578c0e7457e55e2ab641c12699a"
+    },
+    {
+      "path": "runs/return_validation/logs/arithmetic_vector.log",
+      "bytes": 230,
+      "sha256": "22be496b40828f27f65f6ac2bb53c8bbcd130eacddbca25d021df3b121bfe757"
+    },
+    {
+      "path": "runs/return_validation/logs/height.log",
+      "bytes": 246,
+      "sha256": "508c63d4839e04065bcaa3961d0fd180da15dd8ee4708f875d47a21f4ec75eb0"
+    },
+    {
+      "path": "runs/return_validation/logs/independent_height.log",
+      "bytes": 406,
+      "sha256": "a4dc51a879a4e44e37b24275cbc0508e3ca5585b4c762321f9d4275cb6c36e3d"
+    },
+    {
+      "path": "runs/return_validation/logs/operational_shadow.log",
+      "bytes": 215,
+      "sha256": "56adbea717faf5111c7bdcb20147a1f0bcda079dd74d1aea896d96e60c44eb48"
+    },
+    {
+      "path": "runs/return_validation/RUN.json",
+      "bytes": 2897,
+      "sha256": "4b6ce50969c156d33e95c7a37b335c9891da4d9c95b21a6f5267a52dbd2fd95a"
+    },
+    {
+      "path": "runs/return_validation/work/bockstein_readout.py",
+      "bytes": 4348,
+      "sha256": "4461c6c7ebc1f6c98671545ca7b36ac1a6d8752ca916a728ab256539d9a0d01e"
+    },
+    {
+      "path": "runs/return_validation/work/operational_shadow.py",
+      "bytes": 6259,
+      "sha256": "bcf7fbc5b468ba04dff43a5b1f17362ce809055821869bed3a4fafc798f3a4f0"
+    },
+    {
+      "path": "runs/return_validation/work/padic_height.py",
+      "bytes": 4663,
+      "sha256": "814d864a6785d9122f86d379398f9c18bcf213f98936bd1c74d6fe0b8d909fda"
+    },
+    {
+      "path": "runs/return_validation/work/padic_height_readback.py",
+      "bytes": 7795,
+      "sha256": "9f4c8a10acf79d0d223ca60aee88936198a3a8ec0c445eb74e221ba16f19bb05"
+    },
+    {
+      "path": "runs/return_validation/work/rational_ec.py",
+      "bytes": 1612,
+      "sha256": "e7b78d2a5495334bfd7229b955db0679e1453935c4c1b80ec309b19b0e672246"
+    },
+    {
+      "path": "runs/return_validation/work/run_operational.py",
+      "bytes": 3966,
+      "sha256": "1dde86147fd30182ede15ca0460d3229515eeeb2b316c489a2f32f6c257eb960"
+    },
+    {
+      "path": "THIRD_RELATION_AUDIT.md",
+      "bytes": 19360,
+      "sha256": "048a722a8665498593130f6d2b9ac40d40f27703b53c8994e14868dc827ae9ae"
+    },
+    {
+      "path": "work/bockstein_readout.py",
+      "bytes": 4348,
+      "sha256": "4461c6c7ebc1f6c98671545ca7b36ac1a6d8752ca916a728ab256539d9a0d01e"
+    },
+    {
+      "path": "work/operational_shadow.py",
+      "bytes": 6259,
+      "sha256": "bcf7fbc5b468ba04dff43a5b1f17362ce809055821869bed3a4fafc798f3a4f0"
+    },
+    {
+      "path": "work/padic_height.py",
+      "bytes": 4663,
+      "sha256": "814d864a6785d9122f86d379398f9c18bcf213f98936bd1c74d6fe0b8d909fda"
+    },
+    {
+      "path": "work/padic_height_readback.py",
+      "bytes": 7795,
+      "sha256": "9f4c8a10acf79d0d223ca60aee88936198a3a8ec0c445eb74e221ba16f19bb05"
+    },
+    {
+      "path": "work/rational_ec.py",
+      "bytes": 1612,
+      "sha256": "e7b78d2a5495334bfd7229b955db0679e1453935c4c1b80ec309b19b0e672246"
+    },
+    {
+      "path": "work/run_operational.py",
+      "bytes": 3966,
+      "sha256": "1dde86147fd30182ede15ca0460d3229515eeeb2b316c489a2f32f6c257eb960"
+    }
+  ],
+  "hash_meaning": "Binds bytes, not proof contents"
+}

@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-09-13T03:58:15.797435+00:00",
+  "scope": "Attributed written dependencies and unchanged executable kernel. Earlier embedded relative links remain historical locators; this is not a replay of the entire prior BSD proof campaign.",
+  "numerical_bounds_source": "Fresh check_hooks.py execution, not the captured earlier rebrief",
+  "files": [
+    {
+      "original": "C:\\github\\RPRM-open\\research\\bsd-pi-reading-11\\dependencies\\PI_ZIP_TEST_SPEC.md",
+      "snapshot": "dependencies/PI_ZIP_TEST_SPEC.md",
+      "sha256": "dd93a02c259461d2d7292d51876ede667da3ef50b4ba74cadb674e3f12540456",
+      "bytes": 14554
+    },
+    {
+      "original": "C:\\github\\RPRM-open\\research\\bsd-pi-reading-11\\dependencies\\EXPLICIT_IDENTITY_TARGET.md",
+      "snapshot": "dependencies/EXPLICIT_IDENTITY_TARGET.md",
+      "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753",
+      "bytes": 15376
+    },
+    {
+      "original": "C:\\github\\RPRM-open\\research\\bsd-pi-reading-11\\BSD_REBRIEF.md",
+      "snapshot": "dependencies/PI11_BSD_REBRIEF.md",
+      "sha256": "ec6f270c2b9a8d41bd4c160de61923ea113810a71c38de1eeccc27c795be96ab",
+      "bytes": 1701
+    },
+    {
+      "original": "C:\\github\\RPRM-open\\research\\bsd-pi-reading-11\\agents\\PI_GEOMETRY.md",
+      "snapshot": "dependencies/PI11_PI_GEOMETRY.md",
+      "sha256": "d1f8f0b0155579bf053a5437cfa3258f06560bdff15f438f6a0281e6ec9d800c",
+      "bytes": 13952
+    },
+    {
+      "original": "C:\\github\\RPRM-open\\research\\bsd-pi-reading-11\\work\\height_kernel.py",
+      "snapshot": "work/height_kernel.py",
+      "sha256": "d1ab3943932a25bd8bce023eebb405d138957c339e5c9640640e6490d4ab7cf0",
+      "bytes": 8113
+    }
+  ]
+}

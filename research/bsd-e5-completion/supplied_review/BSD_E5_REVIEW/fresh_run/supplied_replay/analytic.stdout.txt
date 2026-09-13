@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "conclusion": "L(E,1)=0 and L'(E,1)>65/100; analytic order exactly 1.",
+  "lower_bound": {
+    "numerator": "615556405007957768183",
+    "denominator": "937494780448358006784",
+    "float_for_display_only": 0.6565971542940934
+  },
+  "illustration": {
+    "status": "NUMERICAL_ILLUSTRATION_ONLY",
+    "partial_sum_n_le_100": "2.227370379544146204886461273318766710247",
+    "analytic_tail_bound_evaluated_numerically": "1.61339439929e-10",
+    "arbitrary_precision_decimal_digits": 60,
+    "rounding_error_certified": false,
+    "note": "Not needed for, and not promoted into, the exact sign proof."
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "schema": "ym2-rail-final-export-v1",
+  "status": "PASS",
+  "utc": "2026-09-12T23:54:16.847385+00:00",
+  "archive": "C:\\github\\RPRM-open\\research\\ym2-rail-20260912-delivery\\YM2-rail-closure-2026-09-12.zip",
+  "archive_sha256": "d32225173249ebffdaa733a0a8e4ee6955902e78c136072cfd368d4b2640232d",
+  "archive_bytes": 2353363,
+  "payload_files": 57,
+  "payload_bytes": 4280604,
+  "manifest_covered_files": 56,
+  "zip_crc": "PASS",
+  "fresh_extraction": "C:\\github\\RPRM-open\\research\\ym2-rail-20260912-delivery\\final-extraction\\YM2-rail-closure",
+  "source_equals_extracted": true,
+  "unchanged_after_replay": true,
+  "command": [
+    "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-I",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\github\\RPRM-open\\research\\ym2-rail-20260912-delivery\\final-extraction\\YM2-rail-closure\\check_rail.py"
+  ],
+  "cwd": "C:\\github\\RPRM-open\\research\\ym2-rail-20260912-delivery\\final-extraction\\YM2-rail-closure",
+  "exit_code": 0,
+  "stdout_file": "check_rail.stdout.txt",
+  "stdout_sha256": "4bbbebdf72de23a7bdce609e9f5cb42d02411ef7d56c2a8673b63741c86d7c50",
+  "stderr_bytes": 0,
+  "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "accepted_snapshots": 38,
+  "cited_source_hashes_checked": 29,
+  "prior_archive_sha256": "4d217545e3e1f90d26e668a2dbdfde70a2a9876951a9e460f1c9505b21e4fa32",
+  "prior_archive_unchanged": true,
+  "reviewed_theorem_sha256": "30d65be6af0424da4544fea5037c6a2476278850c2131180a85f274979cda7e2",
+  "top_level_file_links_checked": 63,
+  "link_records": [
+    {
+      "note": "CHAIN_ESTIMATES.md",
+      "target": "accepted/handoff/VACUUM_ATLAS.md"
+    },
+    {
+      "note": "CHAIN_ESTIMATES.md",
+      "target": "accepted/handoff/TRIAL_REFERENCE.md"
+    },
+    {
+      "note": "CHAIN_ESTIMATES.md",
+      "target": "accepted/handoff/RESULT.md"
+    },
+    {
+      "note": "CHAIN_ESTIMATES.md",
+      "target": "accepted/handoff/VACUUM_ATLAS.md"
+    },
+    {
+      "note": "CONDITIONAL_RAIL.md",
+      "target": "CHAIN_ESTIMATES.md"
+    },
+    {
+      "note": "INDEPENDENT_REVIEW.md",
+      "target": "CONDITIONAL_RAIL.md"
+    },
+    {
+      "note": "INDEPENDENT_REVIEW.md",
+      "target": "CHAIN_ESTIMATES.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/4e94911226_CUBES-AND-PI-CURVES.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/5af0b06380_RPRM-CONCEPT-RECOVERY.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/ba3416025c_Investigate RPRM bridge families CHATLOG.txt"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/ba3416025c_Investigate RPRM bridge families CHATLOG.txt"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/10028dc6b4_README.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/4077dcc32e_RPRM_PI_THREE_LEVEL_345_MATRIX_01_EVIDENCE.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/474d96afb4_RESULTS_SUMMARY.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/a97ce7f0d9_RPRM_MASTER_ASSISTANT_CONTEXT_GUIDE_WORKING_0_1_2026-08-13.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/7fd574cf2c_REPORT.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/6666f0bf03_REPORT.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/bec4af2749_RPRM_TYPED_PLUS_ONE_RECURSIVE_PORT_SCOUT_0_1_SHADOW.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/99cd68b4ab_RESULTS_SUMMARY.md"
+    },
+    {
+      "note": "RAIL_RECOVERY.md",
+      "target": "accepted/sources/4e94911226_CUBES-AND-PI-CURVES.md"
+    },
+    {
+      "note": "README.md",
+      "target": "RESULT.md"
+    },
+    {
+      "note": "README.md",
+      "target": "CONDITIONAL_RAIL.md"
+    },
+    {
+      "note": "README.md",
+      "target": "CHAIN_ESTIMATES.md"
+    },
+    {
+      "note": "README.md",
+      "target": "VAULT_RECOVERY.md"
+    },
+    {
+      "note": "README.md",
+      "target": "RAIL_RECOVERY.md"
+    },
+    {
+      "note": "README.md",
+      "target": "rail_closure.png"
+    },
+    {
+      "note": "README.md",
+      "target": "rail_closure.svg"
+    },
+    {
+      "note": "README.md",
+      "target": "draw_rail.py"
+    },
+    {
+      "note": "README.md",
+      "target": "RESULTS.json"
+    },
+    {
+      "note": "README.md",
+      "target": "SOURCE_PROVENANCE.json"
+    },
+    {
+      "note": "README.md",
+      "target": "INDEPENDENT_REVIEW.md"
+    },
+    {
+      "note": "README.md",
+      "target": "VISUAL_CHECKS.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "rail_closure.png"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "VAULT_RECOVERY.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "RAIL_RECOVERY.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "CONDITIONAL_RAIL.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "CHAIN_ESTIMATES.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "RESULTS.json"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "INDEPENDENT_REVIEW.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "SOURCE_PROVENANCE.json"
+    },
+    {
+      "note": "RETRIEVAL_SCOPE.md",
+      "target": "RAIL_MEMORY_PARSED.json"
+    },
+    {
+      "note": "RETRIEVAL_SCOPE.md",
+      "target": "RAIL_MEMORY_OMISSIONS_PARSED.json"
+    },
+    {
+      "note": "RETRIEVAL_SCOPE.md",
+      "target": "RAIL_MEMORY_EXPANSION.json"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/4c3c1ef852_RPRM_VAULT_PROCESS_1_0.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/340d3609c9_VAULT_CONTRACT_1_0.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/68ecefa4b6_SOURCES.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/340d3609c9_VAULT_CONTRACT_1_0.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/03ba81a68c_RPRM_PROOF_RECEIPT_CALCULUS.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/2601fdc27e_core.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/28b88f9b2a_TYPED_CLOSURE_SELF_REARM_01_PROTOCOL.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/c8f15167ff_ATOMIC_HANDOFF_TRANSACTION_01_PROTOCOL.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/64a49cea6e_USER_STEERING_AMENDMENTS_0_7_FIRST_ACTUALIZATION_FLICK.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/245b54d5c3_RPRM_LONGITUDINAL_INTUITION_AND_MISSED_SEAMS_AUDIT_0_1_SHADOW.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/1c61f9700c_RPRM_MASTER_ASSISTANT_CONTEXT_GUIDE_WORKING_0_1_2026-08-13.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/a480a92f1c_README.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/d0eb8eb77e_CHATGPT_HANDOFF.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/33ad47113d_PROTOCOL.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/a5f6e02f25_RPR_MODEL_V3_3.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/e12c540a9e_operations.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/e12c540a9e_operations.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/03ba81a68c_RPRM_PROOF_RECEIPT_CALCULUS.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/c8f15167ff_ATOMIC_HANDOFF_TRANSACTION_01_PROTOCOL.md"
+    },
+    {
+      "note": "VAULT_RECOVERY.md",
+      "target": "accepted/sources/c57ebdedbd_adjudication.json"
+    }
+  ],
+  "figure_dimensions": [
+    3200,
+    1900
+  ],
+  "old_checkers_executed": false,
+  "receipt": {
+    "schema": "ym2-rail-exact-controls-v1",
+    "status": "PASS",
+    "assertions": 12097,
+    "positive_joint_families": 272,
+    "two_bit_weight_range": [
+      1,
+      4
+    ],
+    "three_bit_families": 16,
+    "incompatible_order_ratios": [
+      "1",
+      "2"
+    ],
+    "exact_auxiliary_loop_gaps": [
+      "1",
+      "2/5",
+      "2/17",
+      "2/5",
+      "1"
+    ],
+    "weighted_matrix_max_row": "6/5",
+    "weighted_certificate_q": "9/10",
+    "signed_prefix_bound": "1/10",
+    "sum_absolute_defects": "10",
+    "aba_final_state": [
+      2,
+      "A"
+    ],
+    "old_checkers_run": false,
+    "evidence_ceiling": "Exact finite controls, not a formal proof of smooth SU(2), an actual vacuum construction, cryptographic security, or a uniform continuum gap."
+  },
+  "evidence_ceiling": "Written proofs and independent agent review plus exact bounded controls. Export integrity does not prove general mathematics, cryptographic security, or a continuum mass gap."
+}

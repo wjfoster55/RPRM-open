@@ -1,0 +1,9239 @@
+{
+  "status": "COMPLEMENTARY_GAPS_AND_AFFINE_CLOSURE_VERIFIED",
+  "created_utc": "2026-09-13T03:55:36.128596+00:00",
+  "gap_models": [
+    {
+      "depth": 9,
+      "width": "925193/100000000000",
+      "shape_only_fiber_on_test_carrier": {
+        "kind": "MANY",
+        "size": 7
+      },
+      "cases": [
+        {
+          "t": "1/8",
+          "x": "8136009546237/4000000000000",
+          "left_gap": "925193/800000000000",
+          "right_gap": "6476351/800000000000",
+          "sum": "925193/100000000000",
+          "readback": "8136009546237/4000000000000",
+          "reflected_x": "8136037302027/4000000000000"
+        },
+        {
+          "t": "1/4",
+          "x": "4068007086101/2000000000000",
+          "left_gap": "925193/400000000000",
+          "right_gap": "2775579/400000000000",
+          "sum": "925193/100000000000",
+          "readback": "4068007086101/2000000000000",
+          "reflected_x": "4068016338031/2000000000000"
+        },
+        {
+          "t": "3/8",
+          "x": "8136018798167/4000000000000",
+          "left_gap": "2775579/800000000000",
+          "right_gap": "925193/160000000000",
+          "sum": "925193/100000000000",
+          "readback": "8136018798167/4000000000000",
+          "reflected_x": "8136028050097/4000000000000"
+        },
+        {
+          "t": "1/2",
+          "x": "2034005856033/1000000000000",
+          "left_gap": "925193/200000000000",
+          "right_gap": "925193/200000000000",
+          "sum": "925193/100000000000",
+          "readback": "2034005856033/1000000000000",
+          "reflected_x": "2034005856033/1000000000000"
+        },
+        {
+          "t": "5/8",
+          "x": "8136028050097/4000000000000",
+          "left_gap": "925193/160000000000",
+          "right_gap": "2775579/800000000000",
+          "sum": "925193/100000000000",
+          "readback": "8136028050097/4000000000000",
+          "reflected_x": "8136018798167/4000000000000"
+        },
+        {
+          "t": "3/4",
+          "x": "4068016338031/2000000000000",
+          "left_gap": "2775579/400000000000",
+          "right_gap": "925193/400000000000",
+          "sum": "925193/100000000000",
+          "readback": "4068016338031/2000000000000",
+          "reflected_x": "4068007086101/2000000000000"
+        },
+        {
+          "t": "7/8",
+          "x": "8136037302027/4000000000000",
+          "left_gap": "6476351/800000000000",
+          "right_gap": "925193/800000000000",
+          "sum": "925193/100000000000",
+          "readback": "8136037302027/4000000000000",
+          "reflected_x": "8136009546237/4000000000000"
+        }
+      ],
+      "unlabelled_pair_fibers": {
+        "1/8|7/8": [
+          "8136009546237/4000000000000",
+          "8136037302027/4000000000000"
+        ],
+        "1/4|3/4": [
+          "4068007086101/2000000000000",
+          "4068016338031/2000000000000"
+        ],
+        "3/8|5/8": [
+          "8136018798167/4000000000000",
+          "8136028050097/4000000000000"
+        ],
+        "1/2|1/2": [
+          "2034005856033/1000000000000"
+        ]
+      }
+    },
+    {
+      "depth": 10,
+      "width": "2312983/1000000000000",
+      "shape_only_fiber_on_test_carrier": {
+        "kind": "MANY",
+        "size": 7
+      },
+      "cases": [
+        {
+          "t": "1/8",
+          "x": "16272041279543/8000000000000",
+          "left_gap": "2312983/8000000000000",
+          "right_gap": "16190881/8000000000000",
+          "sum": "2312983/1000000000000",
+          "readback": "16272041279543/8000000000000",
+          "reflected_x": "16272055157441/8000000000000"
+        },
+        {
+          "t": "1/4",
+          "x": "8136021796263/4000000000000",
+          "left_gap": "2312983/4000000000000",
+          "right_gap": "6938949/4000000000000",
+          "sum": "2312983/1000000000000",
+          "readback": "8136021796263/4000000000000",
+          "reflected_x": "8136026422229/4000000000000"
+        },
+        {
+          "t": "3/8",
+          "x": "16272045905509/8000000000000",
+          "left_gap": "6938949/8000000000000",
+          "right_gap": "2312983/1600000000000",
+          "sum": "2312983/1000000000000",
+          "readback": "16272045905509/8000000000000",
+          "reflected_x": "650882021259/320000000000"
+        },
+        {
+          "t": "1/2",
+          "x": "4068012054623/2000000000000",
+          "left_gap": "2312983/2000000000000",
+          "right_gap": "2312983/2000000000000",
+          "sum": "2312983/1000000000000",
+          "readback": "4068012054623/2000000000000",
+          "reflected_x": "4068012054623/2000000000000"
+        },
+        {
+          "t": "5/8",
+          "x": "650882021259/320000000000",
+          "left_gap": "2312983/1600000000000",
+          "right_gap": "6938949/8000000000000",
+          "sum": "2312983/1000000000000",
+          "readback": "650882021259/320000000000",
+          "reflected_x": "16272045905509/8000000000000"
+        },
+        {
+          "t": "3/4",
+          "x": "8136026422229/4000000000000",
+          "left_gap": "6938949/4000000000000",
+          "right_gap": "2312983/4000000000000",
+          "sum": "2312983/1000000000000",
+          "readback": "8136026422229/4000000000000",
+          "reflected_x": "8136021796263/4000000000000"
+        },
+        {
+          "t": "7/8",
+          "x": "16272055157441/8000000000000",
+          "left_gap": "16190881/8000000000000",
+          "right_gap": "2312983/8000000000000",
+          "sum": "2312983/1000000000000",
+          "readback": "16272055157441/8000000000000",
+          "reflected_x": "16272041279543/8000000000000"
+        }
+      ],
+      "unlabelled_pair_fibers": {
+        "1/8|7/8": [
+          "16272041279543/8000000000000",
+          "16272055157441/8000000000000"
+        ],
+        "1/4|3/4": [
+          "8136021796263/4000000000000",
+          "8136026422229/4000000000000"
+        ],
+        "3/8|5/8": [
+          "16272045905509/8000000000000",
+          "650882021259/320000000000"
+        ],
+        "1/2|1/2": [
+          "4068012054623/2000000000000"
+        ]
+      }
+    }
+  ],
+  "refinement_transfer": {
+    "formula": "t10=slope*t9+offset",
+    "slope": "9251930/2312983",
+    "offset": "-3640752/2312983",
+    "admitted_t9": [
+      "1820376/4625965",
+      "1190747/1850386"
+    ],
+    "cases": [
+      {
+        "x": "101700243541/50000000000",
+        "t9": "1820376/4625965",
+        "t10": "0"
+      },
+      {
+        "x": "16272041279543/8000000000000",
+        "t9": "31438999/74015440",
+        "t10": "1/8"
+      },
+      {
+        "x": "8136021796263/4000000000000",
+        "t9": "16875991/37007720",
+        "t10": "1/4"
+      },
+      {
+        "x": "16272045905509/8000000000000",
+        "t9": "7212993/14803088",
+        "t10": "3/8"
+      },
+      {
+        "x": "4068012054623/2000000000000",
+        "t9": "9594487/18503860",
+        "t10": "1/2"
+      },
+      {
+        "x": "650882021259/320000000000",
+        "t9": "40690931/74015440",
+        "t10": "5/8"
+      },
+      {
+        "x": "8136026422229/4000000000000",
+        "t9": "21501957/37007720",
+        "t10": "3/4"
+      },
+      {
+        "x": "16272055157441/8000000000000",
+        "t9": "45316897/74015440",
+        "t10": "7/8"
+      },
+      {
+        "x": "2034007183803/1000000000000",
+        "t9": "1190747/1850386",
+        "t10": "1"
+      }
+    ]
+  },
+  "affine_total_rational_model": {
+    "test_grid": [
+      "-2",
+      "-3/2",
+      "-1",
+      "-1/2",
+      "0",
+      "1/2",
+      "1",
+      "3/2",
+      "2"
+    ],
+    "coefficient_carrier": "a,b,c,e each integer -2..2",
+    "fiber_kind_counts": {
+      "NONE": 40,
+      "ONE": 575,
+      "MANY": 10
+    },
+    "all_625_cases": [
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-5/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-6/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -2,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          -1,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          0,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          1,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "5/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -2,
+          2,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "6/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-6"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        },
+        "finite_test_fiber": [
+          "-2",
+          "-3/2",
+          "-1",
+          "-1/2",
+          "0",
+          "1/2",
+          "1",
+          "3/2",
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3/2"
+        },
+        "finite_test_fiber": [
+          "-3/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/2"
+        },
+        "finite_test_fiber": [
+          "-1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-5/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -2,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        },
+        "finite_test_fiber": [
+          "-2",
+          "-3/2",
+          "-1",
+          "-1/2",
+          "0",
+          "1/2",
+          "1",
+          "3/2",
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3/2"
+        },
+        "finite_test_fiber": [
+          "-3/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/2"
+        },
+        "finite_test_fiber": [
+          "-1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/2"
+        },
+        "finite_test_fiber": [
+          "1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          -1,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        },
+        "finite_test_fiber": [
+          "-2",
+          "-3/2",
+          "-1",
+          "-1/2",
+          "0",
+          "1/2",
+          "1",
+          "3/2",
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/2"
+        },
+        "finite_test_fiber": [
+          "-1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/2"
+        },
+        "finite_test_fiber": [
+          "1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          0,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        },
+        "finite_test_fiber": [
+          "-2",
+          "-3/2",
+          "-1",
+          "-1/2",
+          "0",
+          "1/2",
+          "1",
+          "3/2",
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/2"
+        },
+        "finite_test_fiber": [
+          "-1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/2"
+        },
+        "finite_test_fiber": [
+          "1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3/2"
+        },
+        "finite_test_fiber": [
+          "3/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          1,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "6"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        },
+        "finite_test_fiber": [
+          "-2",
+          "-3/2",
+          "-1",
+          "-1/2",
+          "0",
+          "1/2",
+          "1",
+          "3/2",
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/2"
+        },
+        "finite_test_fiber": [
+          "1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3/2"
+        },
+        "finite_test_fiber": [
+          "3/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "5/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          -1,
+          2,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "6"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-6"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -2,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          -1,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          0,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          1,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-6"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          0,
+          2,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "6"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "5/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/2"
+        },
+        "finite_test_fiber": [
+          "1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3/2"
+        },
+        "finite_test_fiber": [
+          "3/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        },
+        "finite_test_fiber": [
+          "-2",
+          "-3/2",
+          "-1",
+          "-1/2",
+          "0",
+          "1/2",
+          "1",
+          "3/2",
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "6"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -2,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/2"
+        },
+        "finite_test_fiber": [
+          "-1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/2"
+        },
+        "finite_test_fiber": [
+          "1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3/2"
+        },
+        "finite_test_fiber": [
+          "3/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        },
+        "finite_test_fiber": [
+          "-2",
+          "-3/2",
+          "-1",
+          "-1/2",
+          "0",
+          "1/2",
+          "1",
+          "3/2",
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          -1,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/2"
+        },
+        "finite_test_fiber": [
+          "-1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/2"
+        },
+        "finite_test_fiber": [
+          "1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        },
+        "finite_test_fiber": [
+          "-2",
+          "-3/2",
+          "-1",
+          "-1/2",
+          "0",
+          "1/2",
+          "1",
+          "3/2",
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          0,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3/2"
+        },
+        "finite_test_fiber": [
+          "-3/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/2"
+        },
+        "finite_test_fiber": [
+          "-1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/2"
+        },
+        "finite_test_fiber": [
+          "1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        },
+        "finite_test_fiber": [
+          "-2",
+          "-3/2",
+          "-1",
+          "-1/2",
+          "0",
+          "1/2",
+          "1",
+          "3/2",
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-5/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3/2"
+        },
+        "finite_test_fiber": [
+          "-3/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/2"
+        },
+        "finite_test_fiber": [
+          "-1/2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        },
+        "finite_test_fiber": [
+          "-2",
+          "-3/2",
+          "-1",
+          "-1/2",
+          "0",
+          "1/2",
+          "1",
+          "3/2",
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "NONE"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-6"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "6/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "5/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -2,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          -1,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          0,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          1,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          -2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-6/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          -2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          -2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          -2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          -2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/5"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          -1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          -1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          -1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          -1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          -1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          0,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          0,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          0,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "1"
+        },
+        "finite_test_fiber": [
+          "1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          0,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "2"
+        },
+        "finite_test_fiber": [
+          "2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          1,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "0"
+        },
+        "finite_test_fiber": [
+          "0"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          1,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          1,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          2,
+          -2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          2,
+          -1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-1"
+        },
+        "finite_test_fiber": [
+          "-1"
+        ]
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          2,
+          0
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-4/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          2,
+          1
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-5/3"
+        },
+        "finite_test_fiber": []
+      },
+      {
+        "a_b_c_e": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "rational_fiber": {
+          "kind": "ONE",
+          "value": "-2"
+        },
+        "finite_test_fiber": [
+          "-2"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "name": "two identity legs: every state closes",
+        "a_b_c_e": [
+          "1",
+          "0",
+          "1",
+          "0"
+        ],
+        "fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        }
+      },
+      {
+        "name": "complement followed by complement: every state closes",
+        "a_b_c_e": [
+          "-1",
+          "1",
+          "-1",
+          "1"
+        ],
+        "fiber": {
+          "kind": "MANY",
+          "family": "all rational x"
+        }
+      },
+      {
+        "name": "complement followed by halving: unique state 1/3",
+        "a_b_c_e": [
+          "-1",
+          "1",
+          "1/2",
+          "0"
+        ],
+        "fiber": {
+          "kind": "ONE",
+          "value": "1/3"
+        }
+      },
+      {
+        "name": "unit outward and imperfect return: no exact state",
+        "a_b_c_e": [
+          "1",
+          "1",
+          "1",
+          "-99/100"
+        ],
+        "fiber": {
+          "kind": "NONE"
+        }
+      }
+    ]
+  },
+  "user_shape_rule": "OPEN: these are two candidate interpretations",
+  "BSD_multiplier": "OPEN: neither model provides an analytic-to-height map",
+  "source_sha256": "4af1c4f012603f8ea0874f7cc00cf005f13da04aa655ee1690a9c289f1bdda5f",
+  "input_sha256": "19f204ed8c3243188fbf97ab8c9c3b550f5af77d20014985e264d94c63c80378"
+}

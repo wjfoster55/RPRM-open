@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="430" fill="#ffffff"/>
+  <text x="450" y="30" font-size="20" font-weight="bold" text-anchor="middle" fill="#111">Two representations of the same U-tube state</text>
+  <text x="450" y="52" font-size="13" text-anchor="middle" fill="#555">The receiver question is "resting free-surface height". Left: absolute field (needs a global solve). Right: body/level (intrinsic read-off).</text>
+
+  <!-- ============ LEFT: absolute Eulerian field ============ -->
+  <text x="225" y="86" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a3c6e">Absolute field representation</text>
+  <text x="225" y="104" font-size="12" text-anchor="middle" fill="#666">store u, p per cell &#183; incompressibility = global elliptic solve</text>
+
+  <!-- U tube walls -->
+  <g stroke="#333" stroke-width="3" fill="none">
+    <path d="M120 130 L120 330 L330 330 L330 130"/>
+    <path d="M170 130 L170 280 L280 280 L280 130"/>
+  </g>
+  <!-- water left shaft (tall) -->
+  <rect x="121" y="150" width="48" height="179" fill="#4a90d9" opacity="0.85"/>
+  <!-- water bottom pipe -->
+  <rect x="121" y="281" width="208" height="48" fill="#4a90d9" opacity="0.85"/>
+  <!-- right shaft empty (the impossible frozen state) -->
+  <rect x="281" y="281" width="48" height="48" fill="#4a90d9" opacity="0.85"/>
+
+  <!-- grid hint -->
+  <g stroke="#1a3c6e" stroke-width="0.5" opacity="0.25">
+    <line x1="121" y1="170" x2="169" y2="170"/><line x1="121" y1="190" x2="169" y2="190"/>
+    <line x1="121" y1="210" x2="169" y2="210"/><line x1="121" y1="230" x2="169" y2="230"/>
+    <line x1="121" y1="250" x2="169" y2="250"/><line x1="121" y1="270" x2="169" y2="270"/>
+    <line x1="145" y1="150" x2="145" y2="329"/>
+  </g>
+
+  <!-- pressure arrows that must be solved globally -->
+  <g stroke="#c0392b" stroke-width="2" fill="#c0392b">
+    <line x1="145" y1="315" x2="230" y2="315" marker-end="url(#red)"/>
+    <line x1="240" y1="315" x2="300" y2="300" marker-end="url(#red)"/>
+  </g>
+  <text x="235" y="360" font-size="11" text-anchor="middle" fill="#c0392b">pressure must be propagated cell-by-cell</text>
+  <text x="235" y="376" font-size="11" text-anchor="middle" fill="#c0392b">to push the far column UP against gravity</text>
+  <text x="235" y="400" font-size="12" text-anchor="middle" fill="#111" font-weight="bold">cost: O(elliptic solve), non-local</text>
+
+  <!-- ============ RIGHT: body / level ============ -->
+  <text x="675" y="86" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e6e3c">Body / level representation</text>
+  <text x="675" y="104" font-size="12" text-anchor="middle" fill="#666">one body: V (volume) + geometry &#8594; level is read off</text>
+
+  <g stroke="#333" stroke-width="3" fill="none">
+    <path d="M570 130 L570 330 L780 330 L780 130"/>
+    <path d="M620 130 L620 280 L730 280 L730 130"/>
+  </g>
+
+  <!-- equalized water both shafts to same level -->
+  <rect x="571" y="235" width="48" height="94" fill="#3ca55c" opacity="0.85"/>
+  <rect x="571" y="281" width="208" height="48" fill="#3ca55c" opacity="0.85"/>
+  <rect x="731" y="235" width="48" height="94" fill="#3ca55c" opacity="0.85"/>
+
+  <!-- equipotential dashed line -->
+  <line x1="560" y1="235" x2="790" y2="235" stroke="#1e6e3c" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="675" y="228" font-size="12" text-anchor="middle" fill="#1e6e3c" font-weight="bold">single equipotential  z* = invert(&#8747;A(z)dz = V)</text>
+
+  <text x="675" y="360" font-size="11" text-anchor="middle" fill="#1e6e3c">connectivity (union-find, O(N)) labels the body;</text>
+  <text x="675" y="376" font-size="11" text-anchor="middle" fill="#1e6e3c">the level is intrinsic &#8212; no iteration</text>
+  <text x="675" y="400" font-size="12" text-anchor="middle" fill="#111" font-weight="bold">cost: O(N) connectivity + O(1) read-off</text>
+
+  <!-- divider -->
+  <line x1="450" y1="120" x2="450" y2="410" stroke="#ccc" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <defs>
+    <marker id="red" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+</svg>

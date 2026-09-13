@@ -1,0 +1,26 @@
+{
+  "schema": "ym2-conditional-construction-controls-v1",
+  "status": "PASS",
+  "assertions": 5041,
+  "direct_SU2_seven_link_configurations": 24,
+  "exact_spin_pairs": 2304,
+  "spin_double_labels_checked": [
+    1,
+    48
+  ],
+  "new_bilinear_constant": "1/3",
+  "new_source_kappa": {
+    "2": "65/12",
+    "4": "59/2"
+  },
+  "mr_bound": "1/3",
+  "correction_radius": "3/7",
+  "radius_margin": "37/14112",
+  "contraction_factor": "37/63",
+  "influence_bound": "19/21",
+  "conditional_log_oscillation": "32/63",
+  "gap_before_cover": "exp(-32/63)/7",
+  "coupling_window_factor": "128/27",
+  "old_checkers_run": false,
+  "evidence_ceiling": "Exact polynomial and rational controls. Written all-spin, all-volume proofs and accepted analytic dependencies carry the general theorem; no formal proof assistant or continuum gap proof."
+}

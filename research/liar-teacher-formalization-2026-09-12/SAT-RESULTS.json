@@ -1,0 +1,3699 @@
+{
+  "specification": "SAT-PILOT.md frozen specification",
+  "seed": 20260912,
+  "implementation_sha256": "0a45fa0b60e40d36cabc4e027bf0c56444fca9bd167e98f377147e91468939cf",
+  "evidence_grade": "finite tests; no general SAT complexity claim",
+  "failures": [],
+  "guards": {
+    "single_support_truth_tables": 276,
+    "affine_projection_systems": 38,
+    "missing_duplicate_normalization_empty_and_scope_guards": "PASS"
+  },
+  "finite_cases": [
+    {
+      "name": "b3_right0_identity",
+      "boundary_width": 3,
+      "raw_clauses": 8,
+      "raw_literals": 24,
+      "variables": 3,
+      "input_sha256": "80841fcc3183397e208081c999e13b8385866b870255ecc2caff805e5b1f37d0",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 8,
+          "input_literals": 24,
+          "normalization_set_probes": 48,
+          "normalization_sort_items": 24,
+          "clause_set_probes": 16,
+          "duplicate_clauses": 0,
+          "support_groups": 2,
+          "distinct_clause_parity_literal_visits": 24,
+          "mask_build_visits": 6,
+          "recognized_rows": 2
+        },
+        "gf2": {
+          "projection_row_tests": 2,
+          "private_free_rows_before_reduction": 2,
+          "coefficient_tests": 6,
+          "pivot_rows": 3,
+          "row_xors": 1,
+          "xor_bit_spans": 4
+        },
+        "messages": [
+          [
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            [
+              7,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            7,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 8,
+        "stored_message_mask_bit_spans": 8,
+        "boundary_mapping_entries": 3
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 8,
+          "input_literals": 24,
+          "normalization_set_probes": 48,
+          "normalization_sort_items": 24,
+          "clause_set_probes": 16,
+          "duplicate_clauses": 0,
+          "support_groups": 2,
+          "distinct_clause_parity_literal_visits": 24,
+          "mask_build_visits": 6,
+          "recognized_rows": 2
+        },
+        "gf2": {
+          "coefficient_tests": 4,
+          "pivot_rows": 1,
+          "row_xors": 1,
+          "xor_bit_spans": 4
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 16,
+        "clause_checks": 52,
+        "literal_checks": 96
+      },
+      "projection_sizes": [
+        4,
+        4
+      ],
+      "projection_sha256": [
+        "65ca4c9e354944ebfa921b8dfb4600444a18d7492191278316b5c9e69fc6c57c",
+        "65ca4c9e354944ebfa921b8dfb4600444a18d7492191278316b5c9e69fc6c57c"
+      ],
+      "join_size": 4,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 3,
+          "clause_visits": 25,
+          "literal_visits": 57,
+          "decisions": 2,
+          "unit_assignments": 1
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 16,
+          "recursive_calls": 16,
+          "clause_visits": 52,
+          "literal_visits": 96,
+          "conflicts": 8
+        },
+        "point_messages": 8
+      },
+      "boundary_memberships_checked": 16
+    },
+    {
+      "name": "b3_right0_transformed",
+      "boundary_width": 3,
+      "raw_clauses": 8,
+      "raw_literals": 24,
+      "variables": 3,
+      "input_sha256": "008e93cebc431afe6423dd95a01ac15fd60d461783bcc58d4590c9c6622d9fa3",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 8,
+          "input_literals": 24,
+          "normalization_set_probes": 48,
+          "normalization_sort_items": 24,
+          "clause_set_probes": 16,
+          "duplicate_clauses": 0,
+          "support_groups": 2,
+          "distinct_clause_parity_literal_visits": 24,
+          "mask_build_visits": 6,
+          "recognized_rows": 2
+        },
+        "gf2": {
+          "projection_row_tests": 2,
+          "private_free_rows_before_reduction": 2,
+          "coefficient_tests": 6,
+          "pivot_rows": 3,
+          "row_xors": 1,
+          "xor_bit_spans": 4
+        },
+        "messages": [
+          [
+            [
+              7,
+              1
+            ]
+          ],
+          [
+            [
+              7,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            7,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 8,
+        "stored_message_mask_bit_spans": 8,
+        "boundary_mapping_entries": 3
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 8,
+          "input_literals": 24,
+          "normalization_set_probes": 48,
+          "normalization_sort_items": 24,
+          "clause_set_probes": 16,
+          "duplicate_clauses": 0,
+          "support_groups": 2,
+          "distinct_clause_parity_literal_visits": 24,
+          "mask_build_visits": 6,
+          "recognized_rows": 2
+        },
+        "gf2": {
+          "coefficient_tests": 4,
+          "pivot_rows": 1,
+          "row_xors": 1,
+          "xor_bit_spans": 4
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 16,
+        "clause_checks": 52,
+        "literal_checks": 97
+      },
+      "projection_sizes": [
+        4,
+        4
+      ],
+      "projection_sha256": [
+        "f1bad45f0035ba7af93aab62157052862ffca659dcb5a9c21f8ea94de0f430b7",
+        "f1bad45f0035ba7af93aab62157052862ffca659dcb5a9c21f8ea94de0f430b7"
+      ],
+      "join_size": 4,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 3,
+          "clause_visits": 26,
+          "literal_visits": 60,
+          "decisions": 2,
+          "unit_assignments": 1
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 16,
+          "recursive_calls": 16,
+          "clause_visits": 52,
+          "literal_visits": 97,
+          "conflicts": 8
+        },
+        "point_messages": 8
+      },
+      "boundary_memberships_checked": 16
+    },
+    {
+      "name": "b3_right1_identity",
+      "boundary_width": 3,
+      "raw_clauses": 8,
+      "raw_literals": 24,
+      "variables": 3,
+      "input_sha256": "4b36dd9658580ab0e31415323a46b8aef12c51830f715fa7c253eb5d339aea87",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 8,
+          "input_literals": 24,
+          "normalization_set_probes": 48,
+          "normalization_sort_items": 24,
+          "clause_set_probes": 16,
+          "duplicate_clauses": 0,
+          "support_groups": 2,
+          "distinct_clause_parity_literal_visits": 24,
+          "mask_build_visits": 6,
+          "recognized_rows": 2
+        },
+        "gf2": {
+          "projection_row_tests": 2,
+          "private_free_rows_before_reduction": 2,
+          "coefficient_tests": 6,
+          "pivot_rows": 3,
+          "row_xors": 1,
+          "xor_bit_spans": 4
+        },
+        "messages": [
+          [
+            [
+              7,
+              0
+            ]
+          ],
+          [
+            [
+              7,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 8,
+        "stored_message_mask_bit_spans": 8,
+        "boundary_mapping_entries": 3
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 8,
+          "input_literals": 24,
+          "normalization_set_probes": 48,
+          "normalization_sort_items": 24,
+          "clause_set_probes": 16,
+          "duplicate_clauses": 0,
+          "support_groups": 2,
+          "distinct_clause_parity_literal_visits": 24,
+          "mask_build_visits": 6,
+          "recognized_rows": 2
+        },
+        "gf2": {
+          "coefficient_tests": 4,
+          "pivot_rows": 1,
+          "row_xors": 1,
+          "xor_bit_spans": 4
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 16,
+        "clause_checks": 52,
+        "literal_checks": 96
+      },
+      "projection_sizes": [
+        4,
+        4
+      ],
+      "projection_sha256": [
+        "65ca4c9e354944ebfa921b8dfb4600444a18d7492191278316b5c9e69fc6c57c",
+        "f1bad45f0035ba7af93aab62157052862ffca659dcb5a9c21f8ea94de0f430b7"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 7,
+          "clause_visits": 60,
+          "literal_visits": 124,
+          "decisions": 3,
+          "unit_assignments": 4,
+          "conflicts": 4
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 16,
+          "recursive_calls": 16,
+          "clause_visits": 52,
+          "literal_visits": 96,
+          "conflicts": 8
+        },
+        "point_messages": 8
+      },
+      "boundary_memberships_checked": 16
+    },
+    {
+      "name": "b3_right1_transformed",
+      "boundary_width": 3,
+      "raw_clauses": 8,
+      "raw_literals": 24,
+      "variables": 3,
+      "input_sha256": "ba0bd0a716423b7a84eee3a4f5a73f184f20f8a2d277716df9700239f5df3427",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 8,
+          "input_literals": 24,
+          "normalization_set_probes": 48,
+          "normalization_sort_items": 24,
+          "clause_set_probes": 16,
+          "duplicate_clauses": 0,
+          "support_groups": 2,
+          "distinct_clause_parity_literal_visits": 24,
+          "mask_build_visits": 6,
+          "recognized_rows": 2
+        },
+        "gf2": {
+          "projection_row_tests": 2,
+          "private_free_rows_before_reduction": 2,
+          "coefficient_tests": 6,
+          "pivot_rows": 3,
+          "row_xors": 1,
+          "xor_bit_spans": 4
+        },
+        "messages": [
+          [
+            [
+              7,
+              1
+            ]
+          ],
+          [
+            [
+              7,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 8,
+        "stored_message_mask_bit_spans": 8,
+        "boundary_mapping_entries": 3
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 8,
+          "input_literals": 24,
+          "normalization_set_probes": 48,
+          "normalization_sort_items": 24,
+          "clause_set_probes": 16,
+          "duplicate_clauses": 0,
+          "support_groups": 2,
+          "distinct_clause_parity_literal_visits": 24,
+          "mask_build_visits": 6,
+          "recognized_rows": 2
+        },
+        "gf2": {
+          "coefficient_tests": 4,
+          "pivot_rows": 1,
+          "row_xors": 1,
+          "xor_bit_spans": 4
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 16,
+        "clause_checks": 52,
+        "literal_checks": 94
+      },
+      "projection_sizes": [
+        4,
+        4
+      ],
+      "projection_sha256": [
+        "f1bad45f0035ba7af93aab62157052862ffca659dcb5a9c21f8ea94de0f430b7",
+        "65ca4c9e354944ebfa921b8dfb4600444a18d7492191278316b5c9e69fc6c57c"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 7,
+          "clause_visits": 60,
+          "literal_visits": 128,
+          "decisions": 3,
+          "unit_assignments": 4,
+          "conflicts": 4
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 16,
+          "recursive_calls": 16,
+          "clause_visits": 52,
+          "literal_visits": 94,
+          "conflicts": 8
+        },
+        "point_messages": 8
+      },
+      "boundary_memberships_checked": 16
+    },
+    {
+      "name": "b4_right0_identity",
+      "boundary_width": 4,
+      "raw_clauses": 16,
+      "raw_literals": 48,
+      "variables": 6,
+      "input_sha256": "70f96bf1923ea5eed118fc1875ef1cd685f955bcde34d98fd8e2b0a8f7ada2d3",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 16,
+          "input_literals": 48,
+          "normalization_set_probes": 96,
+          "normalization_sort_items": 48,
+          "clause_set_probes": 32,
+          "duplicate_clauses": 0,
+          "support_groups": 4,
+          "distinct_clause_parity_literal_visits": 48,
+          "mask_build_visits": 12,
+          "recognized_rows": 4
+        },
+        "gf2": {
+          "coefficient_tests": 11,
+          "pivot_rows": 5,
+          "row_xors": 3,
+          "xor_bit_spans": 18,
+          "projection_row_tests": 4,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              15,
+              0
+            ]
+          ],
+          [
+            [
+              15,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            15,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 10,
+        "stored_message_mask_bit_spans": 10,
+        "boundary_mapping_entries": 4
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 16,
+          "input_literals": 48,
+          "normalization_set_probes": 96,
+          "normalization_sort_items": 48,
+          "clause_set_probes": 32,
+          "duplicate_clauses": 0,
+          "support_groups": 4,
+          "distinct_clause_parity_literal_visits": 48,
+          "mask_build_visits": 12,
+          "recognized_rows": 4
+        },
+        "gf2": {
+          "coefficient_tests": 18,
+          "pivot_rows": 3,
+          "row_xors": 5,
+          "xor_bit_spans": 35
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 64,
+        "clause_checks": 312,
+        "literal_checks": 576
+      },
+      "projection_sizes": [
+        8,
+        8
+      ],
+      "projection_sha256": [
+        "8878a2081ab55139e4514bce4c79c29c5ee95bd1bc1d27d7dd1d2d5b08d8ea39",
+        "8878a2081ab55139e4514bce4c79c29c5ee95bd1bc1d27d7dd1d2d5b08d8ea39"
+      ],
+      "join_size": 8,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 4,
+          "clause_visits": 79,
+          "literal_visits": 177,
+          "decisions": 3,
+          "unit_assignments": 3
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 32,
+          "recursive_calls": 32,
+          "clause_visits": 312,
+          "literal_visits": 576,
+          "unit_assignments": 32,
+          "conflicts": 16
+        },
+        "point_messages": 16
+      },
+      "boundary_memberships_checked": 32
+    },
+    {
+      "name": "b4_right0_transformed",
+      "boundary_width": 4,
+      "raw_clauses": 16,
+      "raw_literals": 48,
+      "variables": 6,
+      "input_sha256": "2600262078ffb75e13d1aabda32d9707e0f3fc0c787c5ad1bfe1f86af5f045a8",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 16,
+          "input_literals": 48,
+          "normalization_set_probes": 96,
+          "normalization_sort_items": 48,
+          "clause_set_probes": 32,
+          "duplicate_clauses": 0,
+          "support_groups": 4,
+          "distinct_clause_parity_literal_visits": 48,
+          "mask_build_visits": 12,
+          "recognized_rows": 4
+        },
+        "gf2": {
+          "coefficient_tests": 11,
+          "pivot_rows": 5,
+          "row_xors": 3,
+          "xor_bit_spans": 19,
+          "projection_row_tests": 4,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              27,
+              0
+            ]
+          ],
+          [
+            [
+              27,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            27,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 10,
+        "stored_message_mask_bit_spans": 12,
+        "boundary_mapping_entries": 4
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 16,
+          "input_literals": 48,
+          "normalization_set_probes": 96,
+          "normalization_sort_items": 48,
+          "clause_set_probes": 32,
+          "duplicate_clauses": 0,
+          "support_groups": 4,
+          "distinct_clause_parity_literal_visits": 48,
+          "mask_build_visits": 12,
+          "recognized_rows": 4
+        },
+        "gf2": {
+          "coefficient_tests": 15,
+          "pivot_rows": 3,
+          "row_xors": 3,
+          "xor_bit_spans": 21
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 64,
+        "clause_checks": 321,
+        "literal_checks": 580
+      },
+      "projection_sizes": [
+        8,
+        8
+      ],
+      "projection_sha256": [
+        "8878a2081ab55139e4514bce4c79c29c5ee95bd1bc1d27d7dd1d2d5b08d8ea39",
+        "8878a2081ab55139e4514bce4c79c29c5ee95bd1bc1d27d7dd1d2d5b08d8ea39"
+      ],
+      "join_size": 8,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 4,
+          "clause_visits": 87,
+          "literal_visits": 201,
+          "decisions": 3,
+          "unit_assignments": 3
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 32,
+          "recursive_calls": 32,
+          "clause_visits": 321,
+          "literal_visits": 596,
+          "unit_assignments": 32,
+          "conflicts": 16
+        },
+        "point_messages": 16
+      },
+      "boundary_memberships_checked": 32
+    },
+    {
+      "name": "b4_right1_identity",
+      "boundary_width": 4,
+      "raw_clauses": 16,
+      "raw_literals": 48,
+      "variables": 6,
+      "input_sha256": "f8fe40bbb5788f776fdbe3f5d82930bc1bf87125b1ed38ac540f78cfe288c984",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 16,
+          "input_literals": 48,
+          "normalization_set_probes": 96,
+          "normalization_sort_items": 48,
+          "clause_set_probes": 32,
+          "duplicate_clauses": 0,
+          "support_groups": 4,
+          "distinct_clause_parity_literal_visits": 48,
+          "mask_build_visits": 12,
+          "recognized_rows": 4
+        },
+        "gf2": {
+          "coefficient_tests": 11,
+          "pivot_rows": 5,
+          "row_xors": 3,
+          "xor_bit_spans": 18,
+          "projection_row_tests": 4,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              15,
+              0
+            ]
+          ],
+          [
+            [
+              15,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 10,
+        "stored_message_mask_bit_spans": 10,
+        "boundary_mapping_entries": 4
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 16,
+          "input_literals": 48,
+          "normalization_set_probes": 96,
+          "normalization_sort_items": 48,
+          "clause_set_probes": 32,
+          "duplicate_clauses": 0,
+          "support_groups": 4,
+          "distinct_clause_parity_literal_visits": 48,
+          "mask_build_visits": 12,
+          "recognized_rows": 4
+        },
+        "gf2": {
+          "coefficient_tests": 18,
+          "pivot_rows": 3,
+          "row_xors": 5,
+          "xor_bit_spans": 35
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 64,
+        "clause_checks": 312,
+        "literal_checks": 576
+      },
+      "projection_sizes": [
+        8,
+        8
+      ],
+      "projection_sha256": [
+        "8878a2081ab55139e4514bce4c79c29c5ee95bd1bc1d27d7dd1d2d5b08d8ea39",
+        "aeed91ab6f1d34789912d82031eec9d763650d79dba02a8947782aceac47d568"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 15,
+          "clause_visits": 332,
+          "literal_visits": 652,
+          "decisions": 7,
+          "unit_assignments": 16,
+          "conflicts": 8
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 32,
+          "recursive_calls": 32,
+          "clause_visits": 312,
+          "literal_visits": 576,
+          "unit_assignments": 32,
+          "conflicts": 16
+        },
+        "point_messages": 16
+      },
+      "boundary_memberships_checked": 32
+    },
+    {
+      "name": "b4_right1_transformed",
+      "boundary_width": 4,
+      "raw_clauses": 16,
+      "raw_literals": 48,
+      "variables": 6,
+      "input_sha256": "d066b3ecbb137ae0a6d1469a26255a7297f1471f7bf21f8edcb624904e31c411",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 16,
+          "input_literals": 48,
+          "normalization_set_probes": 96,
+          "normalization_sort_items": 48,
+          "clause_set_probes": 32,
+          "duplicate_clauses": 0,
+          "support_groups": 4,
+          "distinct_clause_parity_literal_visits": 48,
+          "mask_build_visits": 12,
+          "recognized_rows": 4
+        },
+        "gf2": {
+          "coefficient_tests": 11,
+          "pivot_rows": 5,
+          "row_xors": 3,
+          "xor_bit_spans": 21,
+          "projection_row_tests": 4,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              43,
+              1
+            ]
+          ],
+          [
+            [
+              43,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 10,
+        "stored_message_mask_bit_spans": 14,
+        "boundary_mapping_entries": 4
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 16,
+          "input_literals": 48,
+          "normalization_set_probes": 96,
+          "normalization_sort_items": 48,
+          "clause_set_probes": 32,
+          "duplicate_clauses": 0,
+          "support_groups": 4,
+          "distinct_clause_parity_literal_visits": 48,
+          "mask_build_visits": 12,
+          "recognized_rows": 4
+        },
+        "gf2": {
+          "coefficient_tests": 15,
+          "pivot_rows": 3,
+          "row_xors": 5,
+          "xor_bit_spans": 32
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 64,
+        "clause_checks": 323,
+        "literal_checks": 597
+      },
+      "projection_sizes": [
+        8,
+        8
+      ],
+      "projection_sha256": [
+        "aeed91ab6f1d34789912d82031eec9d763650d79dba02a8947782aceac47d568",
+        "8878a2081ab55139e4514bce4c79c29c5ee95bd1bc1d27d7dd1d2d5b08d8ea39"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 15,
+          "clause_visits": 352,
+          "literal_visits": 751,
+          "decisions": 7,
+          "unit_assignments": 20,
+          "conflicts": 8
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 32,
+          "recursive_calls": 32,
+          "clause_visits": 323,
+          "literal_visits": 622,
+          "unit_assignments": 32,
+          "conflicts": 16
+        },
+        "point_messages": 16
+      },
+      "boundary_memberships_checked": 32
+    },
+    {
+      "name": "b5_right0_identity",
+      "boundary_width": 5,
+      "raw_clauses": 24,
+      "raw_literals": 72,
+      "variables": 9,
+      "input_sha256": "0dc921230f4c21381c2999df2e3f2d3fac9c445c73294cdad05ad03699f9ee07",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 24,
+          "input_literals": 72,
+          "normalization_set_probes": 144,
+          "normalization_sort_items": 72,
+          "clause_set_probes": 48,
+          "duplicate_clauses": 0,
+          "support_groups": 6,
+          "distinct_clause_parity_literal_visits": 72,
+          "mask_build_visits": 18,
+          "recognized_rows": 6
+        },
+        "gf2": {
+          "coefficient_tests": 20,
+          "pivot_rows": 7,
+          "row_xors": 5,
+          "xor_bit_spans": 42,
+          "projection_row_tests": 6,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              31,
+              0
+            ]
+          ],
+          [
+            [
+              31,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            31,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 12,
+        "stored_message_mask_bit_spans": 12,
+        "boundary_mapping_entries": 5
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 24,
+          "input_literals": 72,
+          "normalization_set_probes": 144,
+          "normalization_sort_items": 72,
+          "clause_set_probes": 48,
+          "duplicate_clauses": 0,
+          "support_groups": 6,
+          "distinct_clause_parity_literal_visits": 72,
+          "mask_build_visits": 18,
+          "recognized_rows": 6
+        },
+        "gf2": {
+          "coefficient_tests": 40,
+          "pivot_rows": 5,
+          "row_xors": 9,
+          "xor_bit_spans": 87
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 256,
+        "clause_checks": 1456,
+        "literal_checks": 2688
+      },
+      "projection_sizes": [
+        16,
+        16
+      ],
+      "projection_sha256": [
+        "48467c42d51b8751782d991e94e9c4e20b346f442f330fce0c3195053e454f46",
+        "48467c42d51b8751782d991e94e9c4e20b346f442f330fce0c3195053e454f46"
+      ],
+      "join_size": 16,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 5,
+          "clause_visits": 165,
+          "literal_visits": 368,
+          "decisions": 4,
+          "unit_assignments": 5
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 64,
+          "recursive_calls": 64,
+          "clause_visits": 1296,
+          "literal_visits": 2368,
+          "unit_assignments": 128,
+          "conflicts": 32
+        },
+        "point_messages": 32
+      },
+      "boundary_memberships_checked": 64
+    },
+    {
+      "name": "b5_right0_transformed",
+      "boundary_width": 5,
+      "raw_clauses": 24,
+      "raw_literals": 72,
+      "variables": 9,
+      "input_sha256": "5ddd8017c73060713d593ae10c5d2af40a25f9ad436d22c956d378b4470badc3",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 24,
+          "input_literals": 72,
+          "normalization_set_probes": 144,
+          "normalization_sort_items": 72,
+          "clause_set_probes": 48,
+          "duplicate_clauses": 0,
+          "support_groups": 6,
+          "distinct_clause_parity_literal_visits": 72,
+          "mask_build_visits": 18,
+          "recognized_rows": 6
+        },
+        "gf2": {
+          "coefficient_tests": 20,
+          "pivot_rows": 7,
+          "row_xors": 7,
+          "xor_bit_spans": 70,
+          "projection_row_tests": 6,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              468,
+              1
+            ]
+          ],
+          [
+            [
+              468,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            468,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 12,
+        "stored_message_mask_bit_spans": 20,
+        "boundary_mapping_entries": 5
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 24,
+          "input_literals": 72,
+          "normalization_set_probes": 144,
+          "normalization_sort_items": 72,
+          "clause_set_probes": 48,
+          "duplicate_clauses": 0,
+          "support_groups": 6,
+          "distinct_clause_parity_literal_visits": 72,
+          "mask_build_visits": 18,
+          "recognized_rows": 6
+        },
+        "gf2": {
+          "coefficient_tests": 38,
+          "pivot_rows": 5,
+          "row_xors": 7,
+          "xor_bit_spans": 67
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 256,
+        "clause_checks": 1564,
+        "literal_checks": 2896
+      },
+      "projection_sizes": [
+        16,
+        16
+      ],
+      "projection_sha256": [
+        "0744f2c68568ff9c62e37e267a5c9fd32e990a52507518c0cdeb4efda23a2e1e",
+        "0744f2c68568ff9c62e37e267a5c9fd32e990a52507518c0cdeb4efda23a2e1e"
+      ],
+      "join_size": 16,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 5,
+          "clause_visits": 177,
+          "literal_visits": 390,
+          "decisions": 4,
+          "unit_assignments": 5
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 64,
+          "recursive_calls": 64,
+          "clause_visits": 1351,
+          "literal_visits": 2642,
+          "unit_assignments": 128,
+          "conflicts": 32
+        },
+        "point_messages": 32
+      },
+      "boundary_memberships_checked": 64
+    },
+    {
+      "name": "b5_right1_identity",
+      "boundary_width": 5,
+      "raw_clauses": 24,
+      "raw_literals": 72,
+      "variables": 9,
+      "input_sha256": "013096f530600c0af270c761243743c9e9858c630b530601575f15808e601c63",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 24,
+          "input_literals": 72,
+          "normalization_set_probes": 144,
+          "normalization_sort_items": 72,
+          "clause_set_probes": 48,
+          "duplicate_clauses": 0,
+          "support_groups": 6,
+          "distinct_clause_parity_literal_visits": 72,
+          "mask_build_visits": 18,
+          "recognized_rows": 6
+        },
+        "gf2": {
+          "coefficient_tests": 20,
+          "pivot_rows": 7,
+          "row_xors": 5,
+          "xor_bit_spans": 42,
+          "projection_row_tests": 6,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              31,
+              0
+            ]
+          ],
+          [
+            [
+              31,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 12,
+        "stored_message_mask_bit_spans": 12,
+        "boundary_mapping_entries": 5
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 24,
+          "input_literals": 72,
+          "normalization_set_probes": 144,
+          "normalization_sort_items": 72,
+          "clause_set_probes": 48,
+          "duplicate_clauses": 0,
+          "support_groups": 6,
+          "distinct_clause_parity_literal_visits": 72,
+          "mask_build_visits": 18,
+          "recognized_rows": 6
+        },
+        "gf2": {
+          "coefficient_tests": 40,
+          "pivot_rows": 5,
+          "row_xors": 9,
+          "xor_bit_spans": 87
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 256,
+        "clause_checks": 1456,
+        "literal_checks": 2688
+      },
+      "projection_sizes": [
+        16,
+        16
+      ],
+      "projection_sha256": [
+        "48467c42d51b8751782d991e94e9c4e20b346f442f330fce0c3195053e454f46",
+        "0744f2c68568ff9c62e37e267a5c9fd32e990a52507518c0cdeb4efda23a2e1e"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 31,
+          "clause_visits": 1156,
+          "literal_visits": 2228,
+          "decisions": 15,
+          "unit_assignments": 40,
+          "conflicts": 16
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 64,
+          "recursive_calls": 64,
+          "clause_visits": 1296,
+          "literal_visits": 2368,
+          "unit_assignments": 128,
+          "conflicts": 32
+        },
+        "point_messages": 32
+      },
+      "boundary_memberships_checked": 64
+    },
+    {
+      "name": "b5_right1_transformed",
+      "boundary_width": 5,
+      "raw_clauses": 24,
+      "raw_literals": 72,
+      "variables": 9,
+      "input_sha256": "66111a5344b56d12af466066c31a9a66e82442250f92e34ecbf884b9203d6c00",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 24,
+          "input_literals": 72,
+          "normalization_set_probes": 144,
+          "normalization_sort_items": 72,
+          "clause_set_probes": 48,
+          "duplicate_clauses": 0,
+          "support_groups": 6,
+          "distinct_clause_parity_literal_visits": 72,
+          "mask_build_visits": 18,
+          "recognized_rows": 6
+        },
+        "gf2": {
+          "coefficient_tests": 20,
+          "pivot_rows": 7,
+          "row_xors": 7,
+          "xor_bit_spans": 66,
+          "projection_row_tests": 6,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              428,
+              0
+            ]
+          ],
+          [
+            [
+              428,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 12,
+        "stored_message_mask_bit_spans": 20,
+        "boundary_mapping_entries": 5
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 24,
+          "input_literals": 72,
+          "normalization_set_probes": 144,
+          "normalization_sort_items": 72,
+          "clause_set_probes": 48,
+          "duplicate_clauses": 0,
+          "support_groups": 6,
+          "distinct_clause_parity_literal_visits": 72,
+          "mask_build_visits": 18,
+          "recognized_rows": 6
+        },
+        "gf2": {
+          "coefficient_tests": 36,
+          "pivot_rows": 5,
+          "row_xors": 8,
+          "xor_bit_spans": 72
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 256,
+        "clause_checks": 1537,
+        "literal_checks": 2759
+      },
+      "projection_sizes": [
+        16,
+        16
+      ],
+      "projection_sha256": [
+        "48467c42d51b8751782d991e94e9c4e20b346f442f330fce0c3195053e454f46",
+        "0744f2c68568ff9c62e37e267a5c9fd32e990a52507518c0cdeb4efda23a2e1e"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 31,
+          "clause_visits": 1163,
+          "literal_visits": 2418,
+          "decisions": 15,
+          "unit_assignments": 46,
+          "conflicts": 16
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 64,
+          "recursive_calls": 64,
+          "clause_visits": 1333,
+          "literal_visits": 2563,
+          "unit_assignments": 128,
+          "conflicts": 32
+        },
+        "point_messages": 32
+      },
+      "boundary_memberships_checked": 64
+    },
+    {
+      "name": "b6_right0_identity",
+      "boundary_width": 6,
+      "raw_clauses": 32,
+      "raw_literals": 96,
+      "variables": 12,
+      "input_sha256": "c0ccc37eb2b3bf7d98f1a623cfa60c67c9c47a447d7f234e4b2fe04e3ad9fc91",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 32,
+          "input_literals": 96,
+          "normalization_set_probes": 192,
+          "normalization_sort_items": 96,
+          "clause_set_probes": 64,
+          "duplicate_clauses": 0,
+          "support_groups": 8,
+          "distinct_clause_parity_literal_visits": 96,
+          "mask_build_visits": 24,
+          "recognized_rows": 8
+        },
+        "gf2": {
+          "coefficient_tests": 33,
+          "pivot_rows": 9,
+          "row_xors": 7,
+          "xor_bit_spans": 74,
+          "projection_row_tests": 8,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              63,
+              0
+            ]
+          ],
+          [
+            [
+              63,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            63,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 14,
+        "stored_message_mask_bit_spans": 14,
+        "boundary_mapping_entries": 6
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 32,
+          "input_literals": 96,
+          "normalization_set_probes": 192,
+          "normalization_sort_items": 96,
+          "clause_set_probes": 64,
+          "duplicate_clauses": 0,
+          "support_groups": 8,
+          "distinct_clause_parity_literal_visits": 96,
+          "mask_build_visits": 24,
+          "recognized_rows": 8
+        },
+        "gf2": {
+          "coefficient_tests": 70,
+          "pivot_rows": 7,
+          "row_xors": 13,
+          "xor_bit_spans": 159
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 1024,
+        "clause_checks": 6240,
+        "literal_checks": 11520
+      },
+      "projection_sizes": [
+        32,
+        32
+      ],
+      "projection_sha256": [
+        "e07f3a664b7bc8d1a961da764933b887a15237d78328738695d771151ac97a7f",
+        "e07f3a664b7bc8d1a961da764933b887a15237d78328738695d771151ac97a7f"
+      ],
+      "join_size": 32,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 6,
+          "clause_visits": 283,
+          "literal_visits": 630,
+          "decisions": 5,
+          "unit_assignments": 7
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 128,
+          "recursive_calls": 128,
+          "clause_visits": 4448,
+          "literal_visits": 8064,
+          "unit_assignments": 384,
+          "conflicts": 64
+        },
+        "point_messages": 64
+      },
+      "boundary_memberships_checked": 128
+    },
+    {
+      "name": "b6_right0_transformed",
+      "boundary_width": 6,
+      "raw_clauses": 32,
+      "raw_literals": 96,
+      "variables": 12,
+      "input_sha256": "78e573d2eaecad5ac4639f7c8125cd85630965b4bb7af4837aa975f042bb826f",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 32,
+          "input_literals": 96,
+          "normalization_set_probes": 192,
+          "normalization_sort_items": 96,
+          "clause_set_probes": 64,
+          "duplicate_clauses": 0,
+          "support_groups": 8,
+          "distinct_clause_parity_literal_visits": 96,
+          "mask_build_visits": 24,
+          "recognized_rows": 8
+        },
+        "gf2": {
+          "coefficient_tests": 33,
+          "pivot_rows": 9,
+          "row_xors": 12,
+          "xor_bit_spans": 145,
+          "projection_row_tests": 8,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              1644,
+              0
+            ]
+          ],
+          [
+            [
+              1644,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            1644,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 14,
+        "stored_message_mask_bit_spans": 24,
+        "boundary_mapping_entries": 6
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 32,
+          "input_literals": 96,
+          "normalization_set_probes": 192,
+          "normalization_sort_items": 96,
+          "clause_set_probes": 64,
+          "duplicate_clauses": 0,
+          "support_groups": 8,
+          "distinct_clause_parity_literal_visits": 96,
+          "mask_build_visits": 24,
+          "recognized_rows": 8
+        },
+        "gf2": {
+          "coefficient_tests": 66,
+          "pivot_rows": 7,
+          "row_xors": 20,
+          "xor_bit_spans": 255
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 1024,
+        "clause_checks": 6764,
+        "literal_checks": 12277
+      },
+      "projection_sizes": [
+        32,
+        32
+      ],
+      "projection_sha256": [
+        "e07f3a664b7bc8d1a961da764933b887a15237d78328738695d771151ac97a7f",
+        "e07f3a664b7bc8d1a961da764933b887a15237d78328738695d771151ac97a7f"
+      ],
+      "join_size": 32,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 6,
+          "clause_visits": 308,
+          "literal_visits": 696,
+          "decisions": 5,
+          "unit_assignments": 7
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 128,
+          "recursive_calls": 128,
+          "clause_visits": 4513,
+          "literal_visits": 8882,
+          "unit_assignments": 384,
+          "conflicts": 64
+        },
+        "point_messages": 64
+      },
+      "boundary_memberships_checked": 128
+    },
+    {
+      "name": "b6_right1_identity",
+      "boundary_width": 6,
+      "raw_clauses": 32,
+      "raw_literals": 96,
+      "variables": 12,
+      "input_sha256": "b8a3b9f637d0748703c75043decdc177988e45d6c61e7f89066f27b02cd20de0",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 32,
+          "input_literals": 96,
+          "normalization_set_probes": 192,
+          "normalization_sort_items": 96,
+          "clause_set_probes": 64,
+          "duplicate_clauses": 0,
+          "support_groups": 8,
+          "distinct_clause_parity_literal_visits": 96,
+          "mask_build_visits": 24,
+          "recognized_rows": 8
+        },
+        "gf2": {
+          "coefficient_tests": 33,
+          "pivot_rows": 9,
+          "row_xors": 7,
+          "xor_bit_spans": 74,
+          "projection_row_tests": 8,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              63,
+              0
+            ]
+          ],
+          [
+            [
+              63,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 14,
+        "stored_message_mask_bit_spans": 14,
+        "boundary_mapping_entries": 6
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 32,
+          "input_literals": 96,
+          "normalization_set_probes": 192,
+          "normalization_sort_items": 96,
+          "clause_set_probes": 64,
+          "duplicate_clauses": 0,
+          "support_groups": 8,
+          "distinct_clause_parity_literal_visits": 96,
+          "mask_build_visits": 24,
+          "recognized_rows": 8
+        },
+        "gf2": {
+          "coefficient_tests": 70,
+          "pivot_rows": 7,
+          "row_xors": 13,
+          "xor_bit_spans": 159
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 1024,
+        "clause_checks": 6240,
+        "literal_checks": 11520
+      },
+      "projection_sizes": [
+        32,
+        32
+      ],
+      "projection_sha256": [
+        "e07f3a664b7bc8d1a961da764933b887a15237d78328738695d771151ac97a7f",
+        "36ad8247835ac927408fb28755d8ab953cce717c6caf2c35e72d46d9e0b79646"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 63,
+          "clause_visits": 3340,
+          "literal_visits": 6348,
+          "decisions": 31,
+          "unit_assignments": 88,
+          "conflicts": 32
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 128,
+          "recursive_calls": 128,
+          "clause_visits": 4448,
+          "literal_visits": 8064,
+          "unit_assignments": 384,
+          "conflicts": 64
+        },
+        "point_messages": 64
+      },
+      "boundary_memberships_checked": 128
+    },
+    {
+      "name": "b6_right1_transformed",
+      "boundary_width": 6,
+      "raw_clauses": 32,
+      "raw_literals": 96,
+      "variables": 12,
+      "input_sha256": "78e902ba34dbb68614aefb773ab96391b2e8aeb617dab00f42432205a12eeece",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 32,
+          "input_literals": 96,
+          "normalization_set_probes": 192,
+          "normalization_sort_items": 96,
+          "clause_set_probes": 64,
+          "duplicate_clauses": 0,
+          "support_groups": 8,
+          "distinct_clause_parity_literal_visits": 96,
+          "mask_build_visits": 24,
+          "recognized_rows": 8
+        },
+        "gf2": {
+          "coefficient_tests": 33,
+          "pivot_rows": 9,
+          "row_xors": 11,
+          "xor_bit_spans": 127,
+          "projection_row_tests": 8,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              3849,
+              1
+            ]
+          ],
+          [
+            [
+              3849,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 14,
+        "stored_message_mask_bit_spans": 26,
+        "boundary_mapping_entries": 6
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 32,
+          "input_literals": 96,
+          "normalization_set_probes": 192,
+          "normalization_sort_items": 96,
+          "clause_set_probes": 64,
+          "duplicate_clauses": 0,
+          "support_groups": 8,
+          "distinct_clause_parity_literal_visits": 96,
+          "mask_build_visits": 24,
+          "recognized_rows": 8
+        },
+        "gf2": {
+          "coefficient_tests": 68,
+          "pivot_rows": 7,
+          "row_xors": 15,
+          "xor_bit_spans": 173
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 1024,
+        "clause_checks": 6933,
+        "literal_checks": 12407
+      },
+      "projection_sizes": [
+        32,
+        32
+      ],
+      "projection_sha256": [
+        "36ad8247835ac927408fb28755d8ab953cce717c6caf2c35e72d46d9e0b79646",
+        "e07f3a664b7bc8d1a961da764933b887a15237d78328738695d771151ac97a7f"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 63,
+          "clause_visits": 3836,
+          "literal_visits": 7795,
+          "decisions": 31,
+          "unit_assignments": 140,
+          "conflicts": 32
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 128,
+          "recursive_calls": 128,
+          "clause_visits": 4646,
+          "literal_visits": 9094,
+          "unit_assignments": 384,
+          "conflicts": 64
+        },
+        "point_messages": 64
+      },
+      "boundary_memberships_checked": 128
+    },
+    {
+      "name": "b7_right0_identity",
+      "boundary_width": 7,
+      "raw_clauses": 40,
+      "raw_literals": 120,
+      "variables": 15,
+      "input_sha256": "0bf07570d6e2797aaf05cf8c10b32799beaa0a5e4bf66d3f14c322d0e46f5d48",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 40,
+          "input_literals": 120,
+          "normalization_set_probes": 240,
+          "normalization_sort_items": 120,
+          "clause_set_probes": 80,
+          "duplicate_clauses": 0,
+          "support_groups": 10,
+          "distinct_clause_parity_literal_visits": 120,
+          "mask_build_visits": 30,
+          "recognized_rows": 10
+        },
+        "gf2": {
+          "coefficient_tests": 50,
+          "pivot_rows": 11,
+          "row_xors": 9,
+          "xor_bit_spans": 114,
+          "projection_row_tests": 10,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              127,
+              0
+            ]
+          ],
+          [
+            [
+              127,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            127,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 16,
+        "stored_message_mask_bit_spans": 16,
+        "boundary_mapping_entries": 7
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 40,
+          "input_literals": 120,
+          "normalization_set_probes": 240,
+          "normalization_sort_items": 120,
+          "clause_set_probes": 80,
+          "duplicate_clauses": 0,
+          "support_groups": 10,
+          "distinct_clause_parity_literal_visits": 120,
+          "mask_build_visits": 30,
+          "recognized_rows": 10
+        },
+        "gf2": {
+          "coefficient_tests": 108,
+          "pivot_rows": 9,
+          "row_xors": 17,
+          "xor_bit_spans": 251
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 4096,
+        "clause_checks": 25792,
+        "literal_checks": 47616
+      },
+      "projection_sizes": [
+        64,
+        64
+      ],
+      "projection_sha256": [
+        "5bdc5ac4a3483a1ce30099f03567edb27a8041692d57866fc895e8d0d395a5bc",
+        "5bdc5ac4a3483a1ce30099f03567edb27a8041692d57866fc895e8d0d395a5bc"
+      ],
+      "join_size": 64,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 7,
+          "clause_visits": 433,
+          "literal_visits": 963,
+          "decisions": 6,
+          "unit_assignments": 9
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 256,
+          "recursive_calls": 256,
+          "clause_visits": 13632,
+          "literal_visits": 24576,
+          "unit_assignments": 1024,
+          "conflicts": 128
+        },
+        "point_messages": 128
+      },
+      "boundary_memberships_checked": 256
+    },
+    {
+      "name": "b7_right0_transformed",
+      "boundary_width": 7,
+      "raw_clauses": 40,
+      "raw_literals": 120,
+      "variables": 15,
+      "input_sha256": "210108a532675b2d8652d56f755f7a5ce7206937691a9cf177ea3631a7b32df8",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 40,
+          "input_literals": 120,
+          "normalization_set_probes": 240,
+          "normalization_sort_items": 120,
+          "clause_set_probes": 80,
+          "duplicate_clauses": 0,
+          "support_groups": 10,
+          "distinct_clause_parity_literal_visits": 120,
+          "mask_build_visits": 30,
+          "recognized_rows": 10
+        },
+        "gf2": {
+          "coefficient_tests": 54,
+          "pivot_rows": 11,
+          "row_xors": 13,
+          "xor_bit_spans": 195,
+          "projection_row_tests": 10,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              14666,
+              1
+            ]
+          ],
+          [
+            [
+              14666,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            14666,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 16,
+        "stored_message_mask_bit_spans": 30,
+        "boundary_mapping_entries": 7
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 40,
+          "input_literals": 120,
+          "normalization_set_probes": 240,
+          "normalization_sort_items": 120,
+          "clause_set_probes": 80,
+          "duplicate_clauses": 0,
+          "support_groups": 10,
+          "distinct_clause_parity_literal_visits": 120,
+          "mask_build_visits": 30,
+          "recognized_rows": 10
+        },
+        "gf2": {
+          "coefficient_tests": 115,
+          "pivot_rows": 9,
+          "row_xors": 17,
+          "xor_bit_spans": 269
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 4096,
+        "clause_checks": 27585,
+        "literal_checks": 50041
+      },
+      "projection_sizes": [
+        64,
+        64
+      ],
+      "projection_sha256": [
+        "bdcf386f8a6be989256bf6b57282fb0a6111ea248ec2661271a8f00a71aa24b9",
+        "bdcf386f8a6be989256bf6b57282fb0a6111ea248ec2661271a8f00a71aa24b9"
+      ],
+      "join_size": 64,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 7,
+          "clause_visits": 454,
+          "literal_visits": 1058,
+          "decisions": 6,
+          "unit_assignments": 9
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 256,
+          "recursive_calls": 256,
+          "clause_visits": 13760,
+          "literal_visits": 27221,
+          "unit_assignments": 1024,
+          "conflicts": 128
+        },
+        "point_messages": 128
+      },
+      "boundary_memberships_checked": 256
+    },
+    {
+      "name": "b7_right1_identity",
+      "boundary_width": 7,
+      "raw_clauses": 40,
+      "raw_literals": 120,
+      "variables": 15,
+      "input_sha256": "5940c8280e2ac4cdfa752bb92ce9f338e513219d2d993ddc8fbdb64b40215ab9",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 40,
+          "input_literals": 120,
+          "normalization_set_probes": 240,
+          "normalization_sort_items": 120,
+          "clause_set_probes": 80,
+          "duplicate_clauses": 0,
+          "support_groups": 10,
+          "distinct_clause_parity_literal_visits": 120,
+          "mask_build_visits": 30,
+          "recognized_rows": 10
+        },
+        "gf2": {
+          "coefficient_tests": 50,
+          "pivot_rows": 11,
+          "row_xors": 9,
+          "xor_bit_spans": 114,
+          "projection_row_tests": 10,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              127,
+              0
+            ]
+          ],
+          [
+            [
+              127,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 16,
+        "stored_message_mask_bit_spans": 16,
+        "boundary_mapping_entries": 7
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 40,
+          "input_literals": 120,
+          "normalization_set_probes": 240,
+          "normalization_sort_items": 120,
+          "clause_set_probes": 80,
+          "duplicate_clauses": 0,
+          "support_groups": 10,
+          "distinct_clause_parity_literal_visits": 120,
+          "mask_build_visits": 30,
+          "recognized_rows": 10
+        },
+        "gf2": {
+          "coefficient_tests": 108,
+          "pivot_rows": 9,
+          "row_xors": 17,
+          "xor_bit_spans": 251
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 4096,
+        "clause_checks": 25792,
+        "literal_checks": 47616
+      },
+      "projection_sizes": [
+        64,
+        64
+      ],
+      "projection_sha256": [
+        "5bdc5ac4a3483a1ce30099f03567edb27a8041692d57866fc895e8d0d395a5bc",
+        "bdcf386f8a6be989256bf6b57282fb0a6111ea248ec2661271a8f00a71aa24b9"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 127,
+          "clause_visits": 8756,
+          "literal_visits": 16452,
+          "decisions": 63,
+          "unit_assignments": 184,
+          "conflicts": 64
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 256,
+          "recursive_calls": 256,
+          "clause_visits": 13632,
+          "literal_visits": 24576,
+          "unit_assignments": 1024,
+          "conflicts": 128
+        },
+        "point_messages": 128
+      },
+      "boundary_memberships_checked": 256
+    },
+    {
+      "name": "b7_right1_transformed",
+      "boundary_width": 7,
+      "raw_clauses": 40,
+      "raw_literals": 120,
+      "variables": 15,
+      "input_sha256": "aa46f0bd276fab8c096062d8ad3ccf3ce073da87d0e32bfbfc1d656ad9c8be7f",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 40,
+          "input_literals": 120,
+          "normalization_set_probes": 240,
+          "normalization_sort_items": 120,
+          "clause_set_probes": 80,
+          "duplicate_clauses": 0,
+          "support_groups": 10,
+          "distinct_clause_parity_literal_visits": 120,
+          "mask_build_visits": 30,
+          "recognized_rows": 10
+        },
+        "gf2": {
+          "coefficient_tests": 54,
+          "pivot_rows": 11,
+          "row_xors": 16,
+          "xor_bit_spans": 247,
+          "projection_row_tests": 10,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              11441,
+              0
+            ]
+          ],
+          [
+            [
+              11441,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 16,
+        "stored_message_mask_bit_spans": 30,
+        "boundary_mapping_entries": 7
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 40,
+          "input_literals": 120,
+          "normalization_set_probes": 240,
+          "normalization_sort_items": 120,
+          "clause_set_probes": 80,
+          "duplicate_clauses": 0,
+          "support_groups": 10,
+          "distinct_clause_parity_literal_visits": 120,
+          "mask_build_visits": 30,
+          "recognized_rows": 10
+        },
+        "gf2": {
+          "coefficient_tests": 116,
+          "pivot_rows": 9,
+          "row_xors": 21,
+          "xor_bit_spans": 326
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 4096,
+        "clause_checks": 28290,
+        "literal_checks": 50716
+      },
+      "projection_sizes": [
+        64,
+        64
+      ],
+      "projection_sha256": [
+        "5bdc5ac4a3483a1ce30099f03567edb27a8041692d57866fc895e8d0d395a5bc",
+        "bdcf386f8a6be989256bf6b57282fb0a6111ea248ec2661271a8f00a71aa24b9"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 127,
+          "clause_visits": 10992,
+          "literal_visits": 21803,
+          "decisions": 63,
+          "unit_assignments": 318,
+          "conflicts": 64
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 256,
+          "recursive_calls": 256,
+          "clause_visits": 13730,
+          "literal_visits": 26963,
+          "unit_assignments": 1024,
+          "conflicts": 128
+        },
+        "point_messages": 128
+      },
+      "boundary_memberships_checked": 256
+    },
+    {
+      "name": "b8_right0_identity",
+      "boundary_width": 8,
+      "raw_clauses": 48,
+      "raw_literals": 144,
+      "variables": 18,
+      "input_sha256": "527fb70d699fdbe18be30a74fe36e0bb207a6f37fe630628e027a32727a3d929",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 48,
+          "input_literals": 144,
+          "normalization_set_probes": 288,
+          "normalization_sort_items": 144,
+          "clause_set_probes": 96,
+          "duplicate_clauses": 0,
+          "support_groups": 12,
+          "distinct_clause_parity_literal_visits": 144,
+          "mask_build_visits": 36,
+          "recognized_rows": 12
+        },
+        "gf2": {
+          "coefficient_tests": 71,
+          "pivot_rows": 13,
+          "row_xors": 11,
+          "xor_bit_spans": 162,
+          "projection_row_tests": 12,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              255,
+              0
+            ]
+          ],
+          [
+            [
+              255,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            255,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 18,
+        "stored_message_mask_bit_spans": 18,
+        "boundary_mapping_entries": 8
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 48,
+          "input_literals": 144,
+          "normalization_set_probes": 288,
+          "normalization_sort_items": 144,
+          "clause_set_probes": 96,
+          "duplicate_clauses": 0,
+          "support_groups": 12,
+          "distinct_clause_parity_literal_visits": 144,
+          "mask_build_visits": 36,
+          "recognized_rows": 12
+        },
+        "gf2": {
+          "coefficient_tests": 154,
+          "pivot_rows": 11,
+          "row_xors": 21,
+          "xor_bit_spans": 363
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 16384,
+        "clause_checks": 104832,
+        "literal_checks": 193536
+      },
+      "projection_sizes": [
+        128,
+        128
+      ],
+      "projection_sha256": [
+        "55ef8802d7b97adcb30099d5b6e800e2efaa5b903946132e6e2f9a77a94c3fea",
+        "55ef8802d7b97adcb30099d5b6e800e2efaa5b903946132e6e2f9a77a94c3fea"
+      ],
+      "join_size": 128,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 8,
+          "clause_visits": 615,
+          "literal_visits": 1367,
+          "decisions": 7,
+          "unit_assignments": 11
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 512,
+          "recursive_calls": 512,
+          "clause_visits": 38784,
+          "literal_visits": 69632,
+          "unit_assignments": 2560,
+          "conflicts": 256
+        },
+        "point_messages": 256
+      },
+      "boundary_memberships_checked": 512
+    },
+    {
+      "name": "b8_right0_transformed",
+      "boundary_width": 8,
+      "raw_clauses": 48,
+      "raw_literals": 144,
+      "variables": 18,
+      "input_sha256": "d2b1d1560a1f03377a2246d48b209727a31b980f2675b50830fc0c4f66aaa45c",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 48,
+          "input_literals": 144,
+          "normalization_set_probes": 288,
+          "normalization_sort_items": 144,
+          "clause_set_probes": 96,
+          "duplicate_clauses": 0,
+          "support_groups": 12,
+          "distinct_clause_parity_literal_visits": 144,
+          "mask_build_visits": 36,
+          "recognized_rows": 12
+        },
+        "gf2": {
+          "coefficient_tests": 76,
+          "pivot_rows": 13,
+          "row_xors": 22,
+          "xor_bit_spans": 394,
+          "projection_row_tests": 12,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              99738,
+              1
+            ]
+          ],
+          [
+            [
+              99738,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            99738,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 18,
+        "stored_message_mask_bit_spans": 36,
+        "boundary_mapping_entries": 8
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 48,
+          "input_literals": 144,
+          "normalization_set_probes": 288,
+          "normalization_sort_items": 144,
+          "clause_set_probes": 96,
+          "duplicate_clauses": 0,
+          "support_groups": 12,
+          "distinct_clause_parity_literal_visits": 144,
+          "mask_build_visits": 36,
+          "recognized_rows": 12
+        },
+        "gf2": {
+          "coefficient_tests": 173,
+          "pivot_rows": 11,
+          "row_xors": 29,
+          "xor_bit_spans": 525
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "SAT",
+      "oracle_work": {
+        "complete_assignments": 16384,
+        "clause_checks": 118220,
+        "literal_checks": 211564
+      },
+      "projection_sizes": [
+        128,
+        128
+      ],
+      "projection_sha256": [
+        "5398017c1ca4de8f277313e9563f1b8f54fcd82e9b8f9dff6409b401a30400d0",
+        "5398017c1ca4de8f277313e9563f1b8f54fcd82e9b8f9dff6409b401a30400d0"
+      ],
+      "join_size": 128,
+      "whole_cnf_dpll": {
+        "status": "SAT",
+        "work": {
+          "recursive_calls": 8,
+          "clause_visits": 639,
+          "literal_visits": 1501,
+          "decisions": 7,
+          "unit_assignments": 11
+        }
+      },
+      "point_boundary": {
+        "status": "SAT",
+        "work": {
+          "boundary_queries": 512,
+          "recursive_calls": 512,
+          "clause_visits": 39392,
+          "literal_visits": 78713,
+          "unit_assignments": 2560,
+          "conflicts": 256
+        },
+        "point_messages": 256
+      },
+      "boundary_memberships_checked": 512
+    },
+    {
+      "name": "b8_right1_identity",
+      "boundary_width": 8,
+      "raw_clauses": 48,
+      "raw_literals": 144,
+      "variables": 18,
+      "input_sha256": "d908233dbbdea68548b5cccc6810cf2854d9e8e7e95210b8fb24eda863181d83",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 48,
+          "input_literals": 144,
+          "normalization_set_probes": 288,
+          "normalization_sort_items": 144,
+          "clause_set_probes": 96,
+          "duplicate_clauses": 0,
+          "support_groups": 12,
+          "distinct_clause_parity_literal_visits": 144,
+          "mask_build_visits": 36,
+          "recognized_rows": 12
+        },
+        "gf2": {
+          "coefficient_tests": 71,
+          "pivot_rows": 13,
+          "row_xors": 11,
+          "xor_bit_spans": 162,
+          "projection_row_tests": 12,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              255,
+              0
+            ]
+          ],
+          [
+            [
+              255,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 18,
+        "stored_message_mask_bit_spans": 18,
+        "boundary_mapping_entries": 8
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 48,
+          "input_literals": 144,
+          "normalization_set_probes": 288,
+          "normalization_sort_items": 144,
+          "clause_set_probes": 96,
+          "duplicate_clauses": 0,
+          "support_groups": 12,
+          "distinct_clause_parity_literal_visits": 144,
+          "mask_build_visits": 36,
+          "recognized_rows": 12
+        },
+        "gf2": {
+          "coefficient_tests": 154,
+          "pivot_rows": 11,
+          "row_xors": 21,
+          "xor_bit_spans": 363
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 16384,
+        "clause_checks": 104832,
+        "literal_checks": 193536
+      },
+      "projection_sizes": [
+        128,
+        128
+      ],
+      "projection_sha256": [
+        "55ef8802d7b97adcb30099d5b6e800e2efaa5b903946132e6e2f9a77a94c3fea",
+        "5398017c1ca4de8f277313e9563f1b8f54fcd82e9b8f9dff6409b401a30400d0"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 255,
+          "clause_visits": 21660,
+          "literal_visits": 40316,
+          "decisions": 127,
+          "unit_assignments": 376,
+          "conflicts": 128
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 512,
+          "recursive_calls": 512,
+          "clause_visits": 38784,
+          "literal_visits": 69632,
+          "unit_assignments": 2560,
+          "conflicts": 256
+        },
+        "point_messages": 256
+      },
+      "boundary_memberships_checked": 512
+    },
+    {
+      "name": "b8_right1_transformed",
+      "boundary_width": 8,
+      "raw_clauses": 48,
+      "raw_literals": 144,
+      "variables": 18,
+      "input_sha256": "be90820a688f6f2a5021d6f2ab7ef290bf57aca67711da747e18c20976c90117",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 48,
+          "input_literals": 144,
+          "normalization_set_probes": 288,
+          "normalization_sort_items": 144,
+          "clause_set_probes": 96,
+          "duplicate_clauses": 0,
+          "support_groups": 12,
+          "distinct_clause_parity_literal_visits": 144,
+          "mask_build_visits": 36,
+          "recognized_rows": 12
+        },
+        "gf2": {
+          "coefficient_tests": 77,
+          "pivot_rows": 13,
+          "row_xors": 20,
+          "xor_bit_spans": 368,
+          "projection_row_tests": 12,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              91786,
+              1
+            ]
+          ],
+          [
+            [
+              91786,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 18,
+        "stored_message_mask_bit_spans": 36,
+        "boundary_mapping_entries": 8
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 48,
+          "input_literals": 144,
+          "normalization_set_probes": 288,
+          "normalization_sort_items": 144,
+          "clause_set_probes": 96,
+          "duplicate_clauses": 0,
+          "support_groups": 12,
+          "distinct_clause_parity_literal_visits": 144,
+          "mask_build_visits": 36,
+          "recognized_rows": 12
+        },
+        "gf2": {
+          "coefficient_tests": 165,
+          "pivot_rows": 11,
+          "row_xors": 20,
+          "xor_bit_spans": 373
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 16384,
+        "clause_checks": 115125,
+        "literal_checks": 206541
+      },
+      "projection_sizes": [
+        128,
+        128
+      ],
+      "projection_sha256": [
+        "5398017c1ca4de8f277313e9563f1b8f54fcd82e9b8f9dff6409b401a30400d0",
+        "55ef8802d7b97adcb30099d5b6e800e2efaa5b903946132e6e2f9a77a94c3fea"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 255,
+          "clause_visits": 26096,
+          "literal_visits": 52093,
+          "decisions": 127,
+          "unit_assignments": 628,
+          "conflicts": 128
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 512,
+          "recursive_calls": 512,
+          "clause_visits": 38747,
+          "literal_visits": 77671,
+          "unit_assignments": 2560,
+          "conflicts": 256
+        },
+        "point_messages": 256
+      },
+      "boundary_memberships_checked": 512
+    }
+  ],
+  "non_affine_controls": [
+    {
+      "name": "OR3_vs_000",
+      "boundary_width": 3,
+      "raw_clauses": 4,
+      "raw_literals": 6,
+      "variables": 3,
+      "input_sha256": "4dcf9d3d6f56462e0f021825163168d2a4a012da7a56bf62e229042b468451bb",
+      "panel": {
+        "status": "UNRECOGNIZED",
+        "recognition": {
+          "input_clauses": 4,
+          "input_literals": 6,
+          "normalization_set_probes": 12,
+          "normalization_sort_items": 6,
+          "clause_set_probes": 8,
+          "duplicate_clauses": 0,
+          "support_groups": 4,
+          "distinct_clause_parity_literal_visits": 6,
+          "residual_groups": 1,
+          "residual_clauses": 1,
+          "mask_build_visits": 3,
+          "recognized_rows": 3
+        }
+      },
+      "whole_system_gaussian": {
+        "status": "UNRECOGNIZED",
+        "recognition": {
+          "input_clauses": 4,
+          "input_literals": 6,
+          "normalization_set_probes": 12,
+          "normalization_sort_items": 6,
+          "clause_set_probes": 8,
+          "duplicate_clauses": 0,
+          "support_groups": 4,
+          "distinct_clause_parity_literal_visits": 6,
+          "residual_groups": 1,
+          "residual_clauses": 1,
+          "mask_build_visits": 3,
+          "recognized_rows": 3
+        }
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 16,
+        "clause_checks": 22,
+        "literal_checks": 28
+      },
+      "projection_sizes": [
+        7,
+        1
+      ],
+      "projection_sha256": [
+        "62bdd8af195f24d1e941e61c690f5187ff7614b75e3913ed5fbecde3a078be1f",
+        "92e2c626c7ce168a400af00df82e85dd70415da96e97fd6cbb75572acb745068"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 1,
+          "clause_visits": 10,
+          "literal_visits": 18,
+          "unit_assignments": 3,
+          "conflicts": 1
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 16,
+          "recursive_calls": 16,
+          "clause_visits": 22,
+          "literal_visits": 28,
+          "conflicts": 8
+        },
+        "point_messages": 8
+      },
+      "boundary_memberships_checked": 16
+    },
+    {
+      "name": "exactly_one_vs_111",
+      "boundary_width": 3,
+      "raw_clauses": 7,
+      "raw_literals": 12,
+      "variables": 3,
+      "input_sha256": "553e695fb6c112bc5cd19acd95c852de141a794e07196647d3e2e9fe92a889a7",
+      "panel": {
+        "status": "UNRECOGNIZED",
+        "recognition": {
+          "input_clauses": 7,
+          "input_literals": 12,
+          "normalization_set_probes": 24,
+          "normalization_sort_items": 12,
+          "clause_set_probes": 14,
+          "duplicate_clauses": 0,
+          "support_groups": 7,
+          "distinct_clause_parity_literal_visits": 12,
+          "residual_groups": 4,
+          "residual_clauses": 4,
+          "mask_build_visits": 3,
+          "recognized_rows": 3
+        }
+      },
+      "whole_system_gaussian": {
+        "status": "UNRECOGNIZED",
+        "recognition": {
+          "input_clauses": 7,
+          "input_literals": 12,
+          "normalization_set_probes": 24,
+          "normalization_sort_items": 12,
+          "clause_set_probes": 14,
+          "duplicate_clauses": 0,
+          "support_groups": 7,
+          "distinct_clause_parity_literal_visits": 12,
+          "residual_groups": 4,
+          "residual_clauses": 4,
+          "mask_build_visits": 3,
+          "recognized_rows": 3
+        }
+      },
+      "independent_oracle": true,
+      "oracle_status": "UNSAT",
+      "oracle_work": {
+        "complete_assignments": 16,
+        "clause_checks": 38,
+        "literal_checks": 52
+      },
+      "projection_sizes": [
+        3,
+        1
+      ],
+      "projection_sha256": [
+        "a7b83e05f609304bfcb8a54b3525e8f22cc3fc9494e0b1b3e67bc024bb51e500",
+        "1a2a487d73ca5829d759e5705b373af4d14196216fadf6dfc991c70f131a9128"
+      ],
+      "join_size": 0,
+      "whole_cnf_dpll": {
+        "status": "UNSAT",
+        "work": {
+          "recursive_calls": 1,
+          "clause_visits": 16,
+          "literal_visits": 26,
+          "unit_assignments": 3,
+          "conflicts": 1
+        }
+      },
+      "point_boundary": {
+        "status": "UNSAT",
+        "work": {
+          "boundary_queries": 16,
+          "recursive_calls": 16,
+          "clause_visits": 38,
+          "literal_visits": 52,
+          "conflicts": 12
+        },
+        "point_messages": 4
+      },
+      "boundary_memberships_checked": 16
+    }
+  ],
+  "scaling_cases": [
+    {
+      "name": "b16_right0_algebra_only",
+      "boundary_width": 16,
+      "raw_clauses": 112,
+      "raw_literals": 336,
+      "variables": 42,
+      "input_sha256": "1e4bb3d4af42a6f0afb7e965b9d0e1efdb021362e13690084bec0c22900c1002",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 112,
+          "input_literals": 336,
+          "normalization_set_probes": 672,
+          "normalization_sort_items": 336,
+          "clause_set_probes": 224,
+          "duplicate_clauses": 0,
+          "support_groups": 28,
+          "distinct_clause_parity_literal_visits": 336,
+          "mask_build_visits": 84,
+          "recognized_rows": 28
+        },
+        "gf2": {
+          "coefficient_tests": 383,
+          "pivot_rows": 29,
+          "row_xors": 27,
+          "xor_bit_spans": 834,
+          "projection_row_tests": 28,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              65535,
+              0
+            ]
+          ],
+          [
+            [
+              65535,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            65535,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 34,
+        "stored_message_mask_bit_spans": 34,
+        "boundary_mapping_entries": 16
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 112,
+          "input_literals": 336,
+          "normalization_set_probes": 672,
+          "normalization_sort_items": 336,
+          "clause_set_probes": 224,
+          "duplicate_clauses": 0,
+          "support_groups": 28,
+          "distinct_clause_parity_literal_visits": 336,
+          "mask_build_visits": 84,
+          "recognized_rows": 28
+        },
+        "gf2": {
+          "coefficient_tests": 810,
+          "pivot_rows": 27,
+          "row_xors": 53,
+          "xor_bit_spans": 1979
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": false,
+      "validation": "dependent algebra agreement only; no exhaustive oracle"
+    },
+    {
+      "name": "b16_right1_algebra_only",
+      "boundary_width": 16,
+      "raw_clauses": 112,
+      "raw_literals": 336,
+      "variables": 42,
+      "input_sha256": "4fda2e00016bc34598223631fbe5baf53b53d6006cc28223e8f0a72852041a8f",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 112,
+          "input_literals": 336,
+          "normalization_set_probes": 672,
+          "normalization_sort_items": 336,
+          "clause_set_probes": 224,
+          "duplicate_clauses": 0,
+          "support_groups": 28,
+          "distinct_clause_parity_literal_visits": 336,
+          "mask_build_visits": 84,
+          "recognized_rows": 28
+        },
+        "gf2": {
+          "coefficient_tests": 383,
+          "pivot_rows": 29,
+          "row_xors": 27,
+          "xor_bit_spans": 834,
+          "projection_row_tests": 28,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              65535,
+              0
+            ]
+          ],
+          [
+            [
+              65535,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 34,
+        "stored_message_mask_bit_spans": 34,
+        "boundary_mapping_entries": 16
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 112,
+          "input_literals": 336,
+          "normalization_set_probes": 672,
+          "normalization_sort_items": 336,
+          "clause_set_probes": 224,
+          "duplicate_clauses": 0,
+          "support_groups": 28,
+          "distinct_clause_parity_literal_visits": 336,
+          "mask_build_visits": 84,
+          "recognized_rows": 28
+        },
+        "gf2": {
+          "coefficient_tests": 810,
+          "pivot_rows": 27,
+          "row_xors": 53,
+          "xor_bit_spans": 1979
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": false,
+      "validation": "dependent algebra agreement only; no exhaustive oracle"
+    },
+    {
+      "name": "b32_right0_algebra_only",
+      "boundary_width": 32,
+      "raw_clauses": 240,
+      "raw_literals": 720,
+      "variables": 90,
+      "input_sha256": "d924a2b1a49c2c563cf55b86bc3daab14ce749ec7338c45e1a61fabdd119c14b",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 240,
+          "input_literals": 720,
+          "normalization_set_probes": 1440,
+          "normalization_sort_items": 720,
+          "clause_set_probes": 480,
+          "duplicate_clauses": 0,
+          "support_groups": 60,
+          "distinct_clause_parity_literal_visits": 720,
+          "mask_build_visits": 180,
+          "recognized_rows": 60
+        },
+        "gf2": {
+          "coefficient_tests": 1775,
+          "pivot_rows": 61,
+          "row_xors": 59,
+          "xor_bit_spans": 3714,
+          "projection_row_tests": 60,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              4294967295,
+              0
+            ]
+          ],
+          [
+            [
+              4294967295,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            4294967295,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 66,
+        "stored_message_mask_bit_spans": 66,
+        "boundary_mapping_entries": 32
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 240,
+          "input_literals": 720,
+          "normalization_set_probes": 1440,
+          "normalization_sort_items": 720,
+          "clause_set_probes": 480,
+          "duplicate_clauses": 0,
+          "support_groups": 60,
+          "distinct_clause_parity_literal_visits": 720,
+          "mask_build_visits": 180,
+          "recognized_rows": 60
+        },
+        "gf2": {
+          "coefficient_tests": 3658,
+          "pivot_rows": 59,
+          "row_xors": 117,
+          "xor_bit_spans": 9051
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": false,
+      "validation": "dependent algebra agreement only; no exhaustive oracle"
+    },
+    {
+      "name": "b32_right1_algebra_only",
+      "boundary_width": 32,
+      "raw_clauses": 240,
+      "raw_literals": 720,
+      "variables": 90,
+      "input_sha256": "8ecdb58f66c54bf30610994e8207afdae1cda1518c97fd037bb2385e28bc47a8",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 240,
+          "input_literals": 720,
+          "normalization_set_probes": 1440,
+          "normalization_sort_items": 720,
+          "clause_set_probes": 480,
+          "duplicate_clauses": 0,
+          "support_groups": 60,
+          "distinct_clause_parity_literal_visits": 720,
+          "mask_build_visits": 180,
+          "recognized_rows": 60
+        },
+        "gf2": {
+          "coefficient_tests": 1775,
+          "pivot_rows": 61,
+          "row_xors": 59,
+          "xor_bit_spans": 3714,
+          "projection_row_tests": 60,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              4294967295,
+              0
+            ]
+          ],
+          [
+            [
+              4294967295,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 66,
+        "stored_message_mask_bit_spans": 66,
+        "boundary_mapping_entries": 32
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 240,
+          "input_literals": 720,
+          "normalization_set_probes": 1440,
+          "normalization_sort_items": 720,
+          "clause_set_probes": 480,
+          "duplicate_clauses": 0,
+          "support_groups": 60,
+          "distinct_clause_parity_literal_visits": 720,
+          "mask_build_visits": 180,
+          "recognized_rows": 60
+        },
+        "gf2": {
+          "coefficient_tests": 3658,
+          "pivot_rows": 59,
+          "row_xors": 117,
+          "xor_bit_spans": 9051
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": false,
+      "validation": "dependent algebra agreement only; no exhaustive oracle"
+    },
+    {
+      "name": "b64_right0_algebra_only",
+      "boundary_width": 64,
+      "raw_clauses": 496,
+      "raw_literals": 1488,
+      "variables": 186,
+      "input_sha256": "3a5b57a1649dc67505f6aaa810f8717f8c5145c823a91d139fb0684b6c9c372b",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 496,
+          "input_literals": 1488,
+          "normalization_set_probes": 2976,
+          "normalization_sort_items": 1488,
+          "clause_set_probes": 992,
+          "duplicate_clauses": 0,
+          "support_groups": 124,
+          "distinct_clause_parity_literal_visits": 1488,
+          "mask_build_visits": 372,
+          "recognized_rows": 124
+        },
+        "gf2": {
+          "coefficient_tests": 7631,
+          "pivot_rows": 125,
+          "row_xors": 123,
+          "xor_bit_spans": 15618,
+          "projection_row_tests": 124,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              18446744073709551615,
+              0
+            ]
+          ],
+          [
+            [
+              18446744073709551615,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            18446744073709551615,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 130,
+        "stored_message_mask_bit_spans": 130,
+        "boundary_mapping_entries": 64
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 496,
+          "input_literals": 1488,
+          "normalization_set_probes": 2976,
+          "normalization_sort_items": 1488,
+          "clause_set_probes": 992,
+          "duplicate_clauses": 0,
+          "support_groups": 124,
+          "distinct_clause_parity_literal_visits": 1488,
+          "mask_build_visits": 372,
+          "recognized_rows": 124
+        },
+        "gf2": {
+          "coefficient_tests": 15498,
+          "pivot_rows": 123,
+          "row_xors": 245,
+          "xor_bit_spans": 38555
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": false,
+      "validation": "dependent algebra agreement only; no exhaustive oracle"
+    },
+    {
+      "name": "b64_right1_algebra_only",
+      "boundary_width": 64,
+      "raw_clauses": 496,
+      "raw_literals": 1488,
+      "variables": 186,
+      "input_sha256": "90e636c2f63e43b8ada2e234bb3b5ac4d0afe6109b2b84210745bf20d0c45cb2",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 496,
+          "input_literals": 1488,
+          "normalization_set_probes": 2976,
+          "normalization_sort_items": 1488,
+          "clause_set_probes": 992,
+          "duplicate_clauses": 0,
+          "support_groups": 124,
+          "distinct_clause_parity_literal_visits": 1488,
+          "mask_build_visits": 372,
+          "recognized_rows": 124
+        },
+        "gf2": {
+          "coefficient_tests": 7631,
+          "pivot_rows": 125,
+          "row_xors": 123,
+          "xor_bit_spans": 15618,
+          "projection_row_tests": 124,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              18446744073709551615,
+              0
+            ]
+          ],
+          [
+            [
+              18446744073709551615,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 130,
+        "stored_message_mask_bit_spans": 130,
+        "boundary_mapping_entries": 64
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 496,
+          "input_literals": 1488,
+          "normalization_set_probes": 2976,
+          "normalization_sort_items": 1488,
+          "clause_set_probes": 992,
+          "duplicate_clauses": 0,
+          "support_groups": 124,
+          "distinct_clause_parity_literal_visits": 1488,
+          "mask_build_visits": 372,
+          "recognized_rows": 124
+        },
+        "gf2": {
+          "coefficient_tests": 15498,
+          "pivot_rows": 123,
+          "row_xors": 245,
+          "xor_bit_spans": 38555
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": false,
+      "validation": "dependent algebra agreement only; no exhaustive oracle"
+    },
+    {
+      "name": "b128_right0_algebra_only",
+      "boundary_width": 128,
+      "raw_clauses": 1008,
+      "raw_literals": 3024,
+      "variables": 378,
+      "input_sha256": "8613ad9083d8feee7e3bb81729d97626ef92fd130f7ba75a16440668915ae7da",
+      "panel": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 1008,
+          "input_literals": 3024,
+          "normalization_set_probes": 6048,
+          "normalization_sort_items": 3024,
+          "clause_set_probes": 2016,
+          "duplicate_clauses": 0,
+          "support_groups": 252,
+          "distinct_clause_parity_literal_visits": 3024,
+          "mask_build_visits": 756,
+          "recognized_rows": 252
+        },
+        "gf2": {
+          "coefficient_tests": 31631,
+          "pivot_rows": 253,
+          "row_xors": 251,
+          "xor_bit_spans": 64002,
+          "projection_row_tests": 252,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              340282366920938463463374607431768211455,
+              0
+            ]
+          ],
+          [
+            [
+              340282366920938463463374607431768211455,
+              0
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            340282366920938463463374607431768211455,
+            0
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 258,
+        "stored_message_mask_bit_spans": 258,
+        "boundary_mapping_entries": 128
+      },
+      "whole_system_gaussian": {
+        "status": "SAT",
+        "recognition": {
+          "input_clauses": 1008,
+          "input_literals": 3024,
+          "normalization_set_probes": 6048,
+          "normalization_sort_items": 3024,
+          "clause_set_probes": 2016,
+          "duplicate_clauses": 0,
+          "support_groups": 252,
+          "distinct_clause_parity_literal_visits": 3024,
+          "mask_build_visits": 756,
+          "recognized_rows": 252
+        },
+        "gf2": {
+          "coefficient_tests": 63754,
+          "pivot_rows": 251,
+          "row_xors": 501,
+          "xor_bit_spans": 159003
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": false,
+      "validation": "dependent algebra agreement only; no exhaustive oracle"
+    },
+    {
+      "name": "b128_right1_algebra_only",
+      "boundary_width": 128,
+      "raw_clauses": 1008,
+      "raw_literals": 3024,
+      "variables": 378,
+      "input_sha256": "1083699cf9625b32515b483396756c0eae91c1e1b6cc184c903253184bbfeb0e",
+      "panel": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 1008,
+          "input_literals": 3024,
+          "normalization_set_probes": 6048,
+          "normalization_sort_items": 3024,
+          "clause_set_probes": 2016,
+          "duplicate_clauses": 0,
+          "support_groups": 252,
+          "distinct_clause_parity_literal_visits": 3024,
+          "mask_build_visits": 756,
+          "recognized_rows": 252
+        },
+        "gf2": {
+          "coefficient_tests": 31631,
+          "pivot_rows": 253,
+          "row_xors": 251,
+          "xor_bit_spans": 64002,
+          "projection_row_tests": 252,
+          "private_free_rows_before_reduction": 2
+        },
+        "messages": [
+          [
+            [
+              340282366920938463463374607431768211455,
+              0
+            ]
+          ],
+          [
+            [
+              340282366920938463463374607431768211455,
+              1
+            ]
+          ]
+        ],
+        "joined_boundary_rows": [
+          [
+            0,
+            1
+          ]
+        ],
+        "dense_boundary_coefficient_bits_estimate": 258,
+        "stored_message_mask_bit_spans": 258,
+        "boundary_mapping_entries": 128
+      },
+      "whole_system_gaussian": {
+        "status": "UNSAT",
+        "recognition": {
+          "input_clauses": 1008,
+          "input_literals": 3024,
+          "normalization_set_probes": 6048,
+          "normalization_sort_items": 3024,
+          "clause_set_probes": 2016,
+          "duplicate_clauses": 0,
+          "support_groups": 252,
+          "distinct_clause_parity_literal_visits": 3024,
+          "mask_build_visits": 756,
+          "recognized_rows": 252
+        },
+        "gf2": {
+          "coefficient_tests": 63754,
+          "pivot_rows": 251,
+          "row_xors": 501,
+          "xor_bit_spans": 159003
+        },
+        "messages": null,
+        "joined_boundary_rows": null,
+        "dense_boundary_coefficient_bits_estimate": null,
+        "stored_message_mask_bit_spans": null,
+        "boundary_mapping_entries": null
+      },
+      "independent_oracle": false,
+      "validation": "dependent algebra agreement only; no exhaustive oracle"
+    }
+  ],
+  "status": "PASS"
+}

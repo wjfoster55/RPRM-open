@@ -1,0 +1,307 @@
+{
+  "schema": "ym2-connected-vacuum-final-export-v1",
+  "status": "PASS",
+  "utc": "2026-09-12T18:52:38.397055+00:00",
+  "archive": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\YM2-connected-vacuum-2026-09-12.zip",
+  "archive_sha256": "e520be5988a4106a91fdecb9df716d6fdf929d2113ca1ced820a7d1ca5923efd",
+  "archive_bytes": 684691,
+  "payload_files": 68,
+  "payload_bytes": 1299355,
+  "manifest_covered_files": 67,
+  "zip_crc": "PASS",
+  "fresh_extraction": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\final-extraction\\YM2-connected-vacuum",
+  "source_equals_extracted": true,
+  "payload_unchanged_after_replay": true,
+  "archive_unchanged_after_replay": true,
+  "runs": [
+    {
+      "script": "check_connected.py",
+      "receipt": "RESULTS_CONNECTED.json",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\final-extraction\\YM2-connected-vacuum\\check_connected.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\final-extraction\\YM2-connected-vacuum",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt_comparison": "Full fresh deterministic computation compared internally in default read-only mode",
+      "stdout_path": "check_connected.py.stdout.txt",
+      "stdout_sha256": "801471bfd240a9e79d05ee0b2a2a346d20dec0587009eb2f0c585acb2a553a6e",
+      "stderr_path": "check_connected.py.stderr.txt",
+      "stderr_bytes": 0
+    },
+    {
+      "script": "check_witness.py",
+      "receipt": "RESULTS_WITNESS.json",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\final-extraction\\YM2-connected-vacuum\\check_witness.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\final-extraction\\YM2-connected-vacuum",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt_comparison": "Full fresh deterministic computation compared internally in default read-only mode",
+      "stdout_path": "check_witness.py.stdout.txt",
+      "stdout_sha256": "4999ac6cbd09402166412f1efff0a86e051a355a692e690a5204e733e16bd66d",
+      "stderr_path": "check_witness.py.stderr.txt",
+      "stderr_bytes": 0
+    },
+    {
+      "script": "check_conditional_head.py",
+      "receipt": "RESULTS_CONDITIONAL_HEAD.json",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\final-extraction\\YM2-connected-vacuum\\check_conditional_head.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\final-extraction\\YM2-connected-vacuum",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt_comparison": "Full fresh deterministic computation compared internally in default read-only mode",
+      "stdout_path": "check_conditional_head.py.stdout.txt",
+      "stdout_sha256": "41d485fa46c3b008e3ad413f45ed0f93bb2fdefacff0383adbc7a6db315ce5cc",
+      "stderr_path": "check_conditional_head.py.stderr.txt",
+      "stderr_bytes": 0
+    }
+  ],
+  "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "polynomial_identity_checks": 16,
+  "witness_orthogonality_controls": 45,
+  "witness_haar_convolution_controls": 13,
+  "local_star_dimensions": [
+    2,
+    3
+  ],
+  "local_star_incident_pair_counts": [
+    7,
+    42
+  ],
+  "accepted_YM_source_files": 33,
+  "running_task_source_files": 9,
+  "top_level_local_file_links_checked": 51,
+  "link_records": [
+    {
+      "note": "CONNECTED_VACUUM.md",
+      "target": "accepted_sources/ym2_global_phase_joint/GAP_BRIDGE.md"
+    },
+    {
+      "note": "CONNECTED_VACUUM.md",
+      "target": "accepted_sources/ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md"
+    },
+    {
+      "note": "CONNECTED_VACUUM.md",
+      "target": "VACUUM_SEPARATING_WITNESS.md"
+    },
+    {
+      "note": "CONNECTED_VACUUM.md",
+      "target": "RESULTS_CONNECTED.json"
+    },
+    {
+      "note": "CROSS_SOURCE_UPDATE.md",
+      "target": "THREAD_SNAPSHOTS.json"
+    },
+    {
+      "note": "CROSS_SOURCE_UPDATE.md",
+      "target": "SOURCE_PROVENANCE.json"
+    },
+    {
+      "note": "CROSS_SOURCE_UPDATE.md",
+      "target": "CROSS_PNP.md"
+    },
+    {
+      "note": "CROSS_SOURCE_UPDATE.md",
+      "target": "running_task_snapshots/liar-teacher-formalization-2026-09-12/SAT-PILOT.md"
+    },
+    {
+      "note": "CROSS_SOURCE_UPDATE.md",
+      "target": "CROSS_BSD.md"
+    },
+    {
+      "note": "NEXT_CONDITIONAL_PORTS.md",
+      "target": "CONNECTED_VACUUM.md"
+    },
+    {
+      "note": "NEXT_CONDITIONAL_PORTS.md",
+      "target": "accepted_sources/ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md"
+    },
+    {
+      "note": "NEXT_CONDITIONAL_PORTS.md",
+      "target": "RESULTS_CONDITIONAL_HEAD.json"
+    },
+    {
+      "note": "README.md",
+      "target": "RETURN_TO_WILLIAM.md"
+    },
+    {
+      "note": "README.md",
+      "target": "CONNECTED_VACUUM.md"
+    },
+    {
+      "note": "README.md",
+      "target": "VACUUM_SEPARATING_WITNESS.md"
+    },
+    {
+      "note": "README.md",
+      "target": "NEXT_CONDITIONAL_PORTS.md"
+    },
+    {
+      "note": "README.md",
+      "target": "CROSS_PNP.md"
+    },
+    {
+      "note": "README.md",
+      "target": "CROSS_BSD.md"
+    },
+    {
+      "note": "README.md",
+      "target": "CROSS_SOURCE_UPDATE.md"
+    },
+    {
+      "note": "README.md",
+      "target": "connected_joint.png"
+    },
+    {
+      "note": "README.md",
+      "target": "connected_joint.svg"
+    },
+    {
+      "note": "README.md",
+      "target": "draw_connected_joint.py"
+    },
+    {
+      "note": "README.md",
+      "target": "VISUAL_CHECKS.md"
+    },
+    {
+      "note": "README.md",
+      "target": "SOURCE_AUDIT.md"
+    },
+    {
+      "note": "README.md",
+      "target": "SOURCE_PROVENANCE.json"
+    },
+    {
+      "note": "RETURN_TO_WILLIAM.md",
+      "target": "CROSS_SOURCE_UPDATE.md"
+    },
+    {
+      "note": "RETURN_TO_WILLIAM.md",
+      "target": "connected_joint.png"
+    },
+    {
+      "note": "RETURN_TO_WILLIAM.md",
+      "target": "CONNECTED_VACUUM.md"
+    },
+    {
+      "note": "RETURN_TO_WILLIAM.md",
+      "target": "VACUUM_SEPARATING_WITNESS.md"
+    },
+    {
+      "note": "RETURN_TO_WILLIAM.md",
+      "target": "NEXT_CONDITIONAL_PORTS.md"
+    },
+    {
+      "note": "REVIEW_CONDITIONAL_PORTS.md",
+      "target": "NEXT_CONDITIONAL_PORTS.md"
+    },
+    {
+      "note": "REVIEW_CONDITIONAL_PORTS.md",
+      "target": "check_conditional_head.py"
+    },
+    {
+      "note": "REVIEW_PERTURBATION.md",
+      "target": "CONNECTED_VACUUM.md"
+    },
+    {
+      "note": "REVIEW_PERTURBATION.md",
+      "target": "accepted_sources/ym2_global_phase_joint/GAP_BRIDGE.md"
+    },
+    {
+      "note": "REVIEW_WITNESS_MATH.md",
+      "target": "VACUUM_SEPARATING_WITNESS.md"
+    },
+    {
+      "note": "REVIEW_WITNESS_MATH.md",
+      "target": "accepted_sources/ym2_signed_differences/VACUUM_COMPARISON.md"
+    },
+    {
+      "note": "REVIEW_WITNESS_MATH.md",
+      "target": "REVIEW_PERTURBATION.md"
+    },
+    {
+      "note": "SOURCE_AUDIT.md",
+      "target": "accepted_sources/ym2_global_phase_joint/GAP_BRIDGE.md"
+    },
+    {
+      "note": "SOURCE_AUDIT.md",
+      "target": "accepted_sources/ym2_signed_differences/VACUUM_COMPARISON.md"
+    },
+    {
+      "note": "SOURCE_AUDIT.md",
+      "target": "accepted_sources/ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md"
+    },
+    {
+      "note": "SOURCE_AUDIT.md",
+      "target": "CROSS_PNP.md"
+    },
+    {
+      "note": "SOURCE_AUDIT.md",
+      "target": "CROSS_BSD.md"
+    },
+    {
+      "note": "SOURCE_AUDIT.md",
+      "target": "CROSS_SOURCE_UPDATE.md"
+    },
+    {
+      "note": "SOURCE_AUDIT.md",
+      "target": "REVIEW_PERTURBATION.md"
+    },
+    {
+      "note": "SOURCE_AUDIT.md",
+      "target": "REVIEW_WITNESS.md"
+    },
+    {
+      "note": "SOURCE_AUDIT.md",
+      "target": "REVIEW_WITNESS_MATH.md"
+    },
+    {
+      "note": "SOURCE_AUDIT.md",
+      "target": "REVIEW_CONDITIONAL_PORTS.md"
+    },
+    {
+      "note": "VACUUM_SEPARATING_WITNESS.md",
+      "target": "CONNECTED_VACUUM.md"
+    },
+    {
+      "note": "VACUUM_SEPARATING_WITNESS.md",
+      "target": "accepted_sources/ym2_signed_differences/VACUUM_COMPARISON.md"
+    },
+    {
+      "note": "VACUUM_SEPARATING_WITNESS.md",
+      "target": "check_witness.py"
+    },
+    {
+      "note": "VACUUM_SEPARATING_WITNESS.md",
+      "target": "RESULTS_WITNESS.json"
+    }
+  ],
+  "figure_dimensions": [
+    3200,
+    1700
+  ],
+  "figure_visual_review": "See VISUAL_CHECKS.md; root also inspected final PNG",
+  "prior_archive_unchanged": "C:\\github\\RPRM-open\\research\\ym2-signed-20260912-delivery\\YM2-signed-differences-2026-09-12.zip",
+  "prior_archive_sha256": "914b1950ed762cd86f1b14ea6cd7816e99f8860a612ba3cea44773544bb3218f",
+  "evidence_boundary": "Written analytic proofs with exact bounded corroboration; no proof-assistant certification, full conditional remainder bound, continuum construction, P=NP or mass-gap solution."
+}

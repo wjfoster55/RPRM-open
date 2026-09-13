@@ -1,0 +1,5988 @@
+{
+  "status": "PASS",
+  "evidence_kind": "INDEPENDENT_FINITE_TESTS_PLUS_WRITTEN_PROOF_WITH_CITED_THEOREMS",
+  "utc": "2026-09-12T17:55:21.401460+00:00",
+  "python": "3.13.5",
+  "source_sha256": "ed1831e0a7e8af2993d606ec4de6ea017df2f9e95141b8b2aa7daf8d63f8aacf",
+  "source_contract": {
+    "field": "Q",
+    "a_invariants": [
+      0,
+      0,
+      0,
+      -25,
+      0
+    ],
+    "no_supplied_imports_or_receipt_reads": true
+  },
+  "tasks": [
+    {
+      "id": "A01",
+      "status": "CONFIRMED",
+      "conclusion": "Sel_2=delta(E(Q)) has eight classes; rank=1; Sha[2^n]=0 for all n>=1",
+      "evidence": [
+        "independent residue lifting",
+        "exact rational witnesses",
+        "ARITHMETIC_PROOF.md"
+      ],
+      "sources": [
+        "S_KUMMER",
+        "S_SELMER",
+        "S_MW"
+      ]
+    },
+    {
+      "id": "A02",
+      "status": "CONFIRMED",
+      "conclusion": "compatible 2-power quotient coordinates and exact finite readback; no odd-prime saturation conclusion",
+      "evidence": [
+        "112 finite tower cases at levels1..4",
+        "six rational-x-search spot cases",
+        "ARITHMETIC_PROOF.md"
+      ],
+      "sources": [
+        "S_HALF",
+        "S_KUMMER",
+        "S_MW",
+        "S_SELMER"
+      ]
+    },
+    {
+      "id": "C01",
+      "status": "CONFIRMED",
+      "conclusion": "five-bit bijection transports XOR to squareclass multiplication; coherent frame/readout transport passes",
+      "evidence": [
+        "all 1024 pairs",
+        "32 transported readouts",
+        "ARITHMETIC_PROOF.md"
+      ],
+      "sources": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "S_KUMMER",
+      "url": "https://www.jmilne.org/math/Books/ectext6.pdf",
+      "locator": "IV section 3, Remark 3.7, printed p.113 / PDF page 121; preceding split-2-torsion cohomology identification",
+      "status": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "Q has characteristic zero",
+        "roots 0,5,-5 are distinct rational integers",
+        "discriminant 1000000 is nonzero",
+        "E[2] is rational"
+      ]
+    },
+    {
+      "id": "S_SELMER",
+      "url": "https://arxiv.org/pdf/math/0611694",
+      "locator": "section 1.1, printed pp.2-3 / PDF pages 2-3, Kummer and Selmer exact sequences and all-place local-image definition",
+      "status": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "Q is a number field",
+        "E5 is an elliptic curve",
+        "n=2^k is an integer greater than one",
+        "all places are retained in Selmer definition"
+      ]
+    },
+    {
+      "id": "S_MW",
+      "url": "https://www.jmilne.org/math/Books/ectext6.pdf",
+      "locator": "Chapter IV opening, finite-basis theorem, printed p.101 / PDF page 109",
+      "status": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "E5 is an elliptic curve over number field Q"
+      ]
+    },
+    {
+      "id": "S_HALF",
+      "url": "https://arxiv.org/html/1702.02255v2",
+      "locator": "section 2, Theorem 2.1 and equations (3)-(6), plus Example 2.2 for a two-torsion target",
+      "status": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "characteristic of Q is not 2",
+        "all three roots belong to Q and are distinct",
+        "non-O target is admitted on E5",
+        "all three differences are rational squares on enabled path",
+        "O handled separately as fiber E[2]"
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "id": "K01_OFF_CURVE",
+      "status": "CONFIRMED",
+      "outcome": "ADMISSION_REJECTED",
+      "input": {
+        "x": "0",
+        "y": "1"
+      },
+      "residual_y2_minus_rhs": "1",
+      "observations": [
+        {
+          "path": "group",
+          "error": "Admission error: point is off E5"
+        },
+        {
+          "path": "signature",
+          "error": "Admission error: point is off E5"
+        }
+      ]
+    },
+    {
+      "id": "K05_LOST_REMAINDER",
+      "status": "CONFIRMED",
+      "outcome": "NON_IDENTIFIABLE_FROM_COARSE_LABEL",
+      "fiber": "MANY: the two finer quotient lifts (0,O) and (2,O); source-specific choice OPEN after backing is removed",
+      "observations": {
+        "O_level1": {
+          "m": 0,
+          "torsion": "O",
+          "remainder": "O",
+          "trace": [
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            }
+          ]
+        },
+        "Q_level1": {
+          "m": 0,
+          "torsion": "O",
+          "remainder": {
+            "x": "-4",
+            "y": "6"
+          },
+          "trace": [
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "6"
+              }
+            }
+          ]
+        },
+        "O_level2": {
+          "m": 0,
+          "torsion": "O",
+          "remainder": "O",
+          "trace": [
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            }
+          ]
+        },
+        "Q_level2": {
+          "m": 2,
+          "torsion": "O",
+          "remainder": "O",
+          "trace": [
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "6"
+              }
+            },
+            {
+              "bit": 1,
+              "torsion": "O",
+              "remainder": "O"
+            }
+          ]
+        },
+        "Q": {
+          "x": "1681/144",
+          "y": "-62279/1728"
+        },
+        "all_Q_halves": [
+          {
+            "point": {
+              "x": "-4",
+              "y": "6"
+            },
+            "signature": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "point": {
+              "x": "25/4",
+              "y": "75/8"
+            },
+            "signature": [
+              1,
+              5,
+              5
+            ]
+          },
+          {
+            "point": {
+              "x": "-5/9",
+              "y": "-100/27"
+            },
+            "signature": [
+              -5,
+              -2,
+              10
+            ]
+          },
+          {
+            "point": {
+              "x": "45",
+              "y": "-300"
+            },
+            "signature": [
+              5,
+              10,
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "K06_FRAME_TRANSPORT",
+      "status": "CONFIRMED",
+      "outcome": "COHERENT_TRANSPORT_CONFIRMED_AND_STALE_READOUT_REFUTED",
+      "frame": "b3 ^= b0; b2 ^= b4; self-inverse",
+      "positive_cases": 32,
+      "negative_mismatch_count": 8,
+      "witness": {
+        "source_bits": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "new_bits": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "signature": [
+          -1,
+          -1,
+          1
+        ],
+        "transported_readout": 1,
+        "untransported_readout": 0
+      }
+    }
+  ],
+  "candidate_counts": {
+    "supported": 64,
+    "real": 32,
+    "mod2": 32,
+    "mod4": 16,
+    "mod8": 8
+  },
+  "modular_filter_route": "Complete binary lifting tree from primitive mod2 leaves to mod4 then mod8; parity preserved under lifts",
+  "modular_filters": [
+    {
+      "signature": [
+        -10,
+        -10,
+        1
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -10,
+        -5,
+        2
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -10,
+        -2,
+        5
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -10,
+        -1,
+        10
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -5,
+        -10,
+        2
+      ],
+      "2": {
+        "count": 7,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "8": {
+        "count": 256,
+        "first": [
+          1,
+          1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "signature": [
+        -5,
+        -5,
+        1
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -5,
+        -2,
+        10
+      ],
+      "2": {
+        "count": 7,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "8": {
+        "count": 256,
+        "first": [
+          1,
+          1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "signature": [
+        -5,
+        -1,
+        5
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -2,
+        -10,
+        5
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -2,
+        -5,
+        10
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -2,
+        -2,
+        1
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -2,
+        -1,
+        2
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -1,
+        -10,
+        10
+      ],
+      "2": {
+        "count": 7,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -1,
+        -5,
+        5
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "8": {
+        "count": 128,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "signature": [
+        -1,
+        -2,
+        2
+      ],
+      "2": {
+        "count": 7,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        -1,
+        -1,
+        1
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "8": {
+        "count": 128,
+        "first": [
+          2,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "signature": [
+        1,
+        1,
+        1
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "8": {
+        "count": 128,
+        "first": [
+          1,
+          1,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "signature": [
+        1,
+        2,
+        2
+      ],
+      "2": {
+        "count": 7,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        1,
+        5,
+        5
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "8": {
+        "count": 128,
+        "first": [
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "signature": [
+        1,
+        10,
+        10
+      ],
+      "2": {
+        "count": 7,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        2,
+        1,
+        2
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        2,
+        2,
+        1
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        2,
+        5,
+        10
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        2,
+        10,
+        5
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        5,
+        1,
+        5
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        5,
+        2,
+        10
+      ],
+      "2": {
+        "count": 7,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "8": {
+        "count": 256,
+        "first": [
+          1,
+          0,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "signature": [
+        5,
+        5,
+        1
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        5,
+        10,
+        2
+      ],
+      "2": {
+        "count": 7,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 16,
+        "first": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "8": {
+        "count": 256,
+        "first": [
+          1,
+          0,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "signature": [
+        10,
+        1,
+        10
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        10,
+        2,
+        5
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        10,
+        5,
+        2
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    },
+    {
+      "signature": [
+        10,
+        10,
+        1
+      ],
+      "2": {
+        "count": 3,
+        "first": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "4": {
+        "count": 0,
+        "first": null
+      },
+      "8": {
+        "count": 0,
+        "first": null
+      }
+    }
+  ],
+  "representatives": [
+    {
+      "epsilon": 0,
+      "torsion": "O",
+      "point": "O",
+      "signature": [
+        1,
+        1,
+        1
+      ],
+      "homogeneous_witness": [
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "epsilon": 0,
+      "torsion": "T0",
+      "point": {
+        "x": "0",
+        "y": "0"
+      },
+      "signature": [
+        -1,
+        -5,
+        5
+      ],
+      "homogeneous_witness": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "epsilon": 0,
+      "torsion": "Tplus",
+      "point": {
+        "x": "5",
+        "y": "0"
+      },
+      "signature": [
+        5,
+        2,
+        10
+      ],
+      "homogeneous_witness": [
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "epsilon": 0,
+      "torsion": "Tminus",
+      "point": {
+        "x": "-5",
+        "y": "0"
+      },
+      "signature": [
+        -5,
+        -10,
+        2
+      ],
+      "homogeneous_witness": [
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "torsion": "O",
+      "point": {
+        "x": "-4",
+        "y": "6"
+      },
+      "signature": [
+        -1,
+        -1,
+        1
+      ],
+      "homogeneous_witness": [
+        2,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "torsion": "T0",
+      "point": {
+        "x": "25/4",
+        "y": "75/8"
+      },
+      "signature": [
+        1,
+        5,
+        5
+      ],
+      "homogeneous_witness": [
+        5,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "epsilon": 1,
+      "torsion": "Tplus",
+      "point": {
+        "x": "-5/9",
+        "y": "-100/27"
+      },
+      "signature": [
+        -5,
+        -2,
+        10
+      ],
+      "homogeneous_witness": [
+        1,
+        5,
+        2,
+        3
+      ]
+    },
+    {
+      "epsilon": 1,
+      "torsion": "Tminus",
+      "point": {
+        "x": "45",
+        "y": "-300"
+      },
+      "signature": [
+        5,
+        10,
+        2
+      ],
+      "homogeneous_witness": [
+        3,
+        2,
+        5,
+        1
+      ]
+    }
+  ],
+  "cosets": [
+    {
+      "representative": [
+        1,
+        1,
+        1
+      ],
+      "members": [
+        [
+          -5,
+          -10,
+          2
+        ],
+        [
+          -5,
+          -2,
+          10
+        ],
+        [
+          -1,
+          -5,
+          5
+        ],
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          5,
+          2,
+          10
+        ],
+        [
+          5,
+          10,
+          2
+        ]
+      ]
+    },
+    {
+      "representative": [
+        2,
+        2,
+        1
+      ],
+      "members": [
+        [
+          -10,
+          -5,
+          2
+        ],
+        [
+          -10,
+          -1,
+          10
+        ],
+        [
+          -2,
+          -10,
+          5
+        ],
+        [
+          -2,
+          -2,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          10,
+          5
+        ],
+        [
+          10,
+          1,
+          10
+        ],
+        [
+          10,
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "representative": [
+        1,
+        2,
+        2
+      ],
+      "members": [
+        [
+          -5,
+          -5,
+          1
+        ],
+        [
+          -5,
+          -1,
+          5
+        ],
+        [
+          -1,
+          -10,
+          10
+        ],
+        [
+          -1,
+          -2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          10,
+          10
+        ],
+        [
+          5,
+          1,
+          5
+        ],
+        [
+          5,
+          5,
+          1
+        ]
+      ]
+    },
+    {
+      "representative": [
+        2,
+        1,
+        2
+      ],
+      "members": [
+        [
+          -10,
+          -10,
+          1
+        ],
+        [
+          -10,
+          -2,
+          5
+        ],
+        [
+          -2,
+          -5,
+          10
+        ],
+        [
+          -2,
+          -1,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          5,
+          10
+        ],
+        [
+          10,
+          2,
+          5
+        ],
+        [
+          10,
+          10,
+          1
+        ]
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "signature": [
+        2,
+        2,
+        1
+      ],
+      "modulus": 4,
+      "primitive_count": 0
+    },
+    {
+      "signature": [
+        1,
+        2,
+        2
+      ],
+      "modulus": 8,
+      "primitive_count": 0
+    },
+    {
+      "signature": [
+        2,
+        1,
+        2
+      ],
+      "modulus": 4,
+      "primitive_count": 0
+    }
+  ],
+  "rational_x_search": {
+    "bounds": "x=a/b^2, -80<=a<=200, 1<=b<=4; both rational y signs",
+    "unique_x_tested": 951,
+    "affine_points_found": 11,
+    "points": [
+      {
+        "x": "-5",
+        "y": "0"
+      },
+      {
+        "x": "-4",
+        "y": "-6"
+      },
+      {
+        "x": "-4",
+        "y": "6"
+      },
+      {
+        "x": "-5/9",
+        "y": "-100/27"
+      },
+      {
+        "x": "-5/9",
+        "y": "100/27"
+      },
+      {
+        "x": "0",
+        "y": "0"
+      },
+      {
+        "x": "5",
+        "y": "0"
+      },
+      {
+        "x": "25/4",
+        "y": "-75/8"
+      },
+      {
+        "x": "25/4",
+        "y": "75/8"
+      },
+      {
+        "x": "45",
+        "y": "-300"
+      },
+      {
+        "x": "45",
+        "y": "300"
+      }
+    ],
+    "decoded_spots": [
+      {
+        "point": {
+          "x": "-5",
+          "y": "0"
+        },
+        "level4": {
+          "m": 0,
+          "torsion": "Tminus",
+          "remainder": "O",
+          "trace": [
+            {
+              "bit": 0,
+              "torsion": "Tminus",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            }
+          ]
+        }
+      },
+      {
+        "point": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "level4": {
+          "m": 15,
+          "torsion": "O",
+          "remainder": {
+            "x": "-4",
+            "y": "-6"
+          },
+          "trace": [
+            {
+              "bit": 1,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "-6"
+              }
+            },
+            {
+              "bit": 1,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "-6"
+              }
+            },
+            {
+              "bit": 1,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "-6"
+              }
+            },
+            {
+              "bit": 1,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "-6"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "point": {
+          "x": "-4",
+          "y": "6"
+        },
+        "level4": {
+          "m": 1,
+          "torsion": "O",
+          "remainder": "O",
+          "trace": [
+            {
+              "bit": 1,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            }
+          ]
+        }
+      },
+      {
+        "point": {
+          "x": "-5/9",
+          "y": "-100/27"
+        },
+        "level4": {
+          "m": 1,
+          "torsion": "Tplus",
+          "remainder": "O",
+          "trace": [
+            {
+              "bit": 1,
+              "torsion": "Tplus",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            }
+          ]
+        }
+      },
+      {
+        "point": {
+          "x": "-5/9",
+          "y": "100/27"
+        },
+        "level4": {
+          "m": 15,
+          "torsion": "Tplus",
+          "remainder": {
+            "x": "-4",
+            "y": "-6"
+          },
+          "trace": [
+            {
+              "bit": 1,
+              "torsion": "Tplus",
+              "remainder": {
+                "x": "-4",
+                "y": "-6"
+              }
+            },
+            {
+              "bit": 1,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "-6"
+              }
+            },
+            {
+              "bit": 1,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "-6"
+              }
+            },
+            {
+              "bit": 1,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "-6"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "point": {
+          "x": "0",
+          "y": "0"
+        },
+        "level4": {
+          "m": 0,
+          "torsion": "T0",
+          "remainder": "O",
+          "trace": [
+            {
+              "bit": 0,
+              "torsion": "T0",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "tower_tests": {
+    "count": 112,
+    "m_selection": [
+      -3,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    "levels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "records": [
+      {
+        "source_m": -3,
+        "source_torsion": "O",
+        "level": 1,
+        "point": {
+          "x": "-2439844/5094049",
+          "y": "-39601568754/11497268593"
+        },
+        "m": 1,
+        "torsion": "O",
+        "remainder": {
+          "x": "1681/144",
+          "y": "62279/1728"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "O",
+        "level": 2,
+        "point": {
+          "x": "-2439844/5094049",
+          "y": "-39601568754/11497268593"
+        },
+        "m": 1,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "O",
+        "level": 3,
+        "point": {
+          "x": "-2439844/5094049",
+          "y": "-39601568754/11497268593"
+        },
+        "m": 5,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "O",
+        "level": 4,
+        "point": {
+          "x": "-2439844/5094049",
+          "y": "-39601568754/11497268593"
+        },
+        "m": 13,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "T0",
+        "level": 1,
+        "point": {
+          "x": "127351225/2439844",
+          "y": "-1430549626725/3811036328"
+        },
+        "m": 1,
+        "torsion": "T0",
+        "remainder": {
+          "x": "1681/144",
+          "y": "62279/1728"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "T0",
+        "level": 2,
+        "point": {
+          "x": "127351225/2439844",
+          "y": "-1430549626725/3811036328"
+        },
+        "m": 1,
+        "torsion": "T0",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "T0",
+        "level": 3,
+        "point": {
+          "x": "127351225/2439844",
+          "y": "-1430549626725/3811036328"
+        },
+        "m": 5,
+        "torsion": "T0",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "T0",
+        "level": 4,
+        "point": {
+          "x": "127351225/2439844",
+          "y": "-1430549626725/3811036328"
+        },
+        "m": 13,
+        "torsion": "T0",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "Tplus",
+        "level": 1,
+        "point": {
+          "x": "-115152005/27910089",
+          "y": "845927888300/147449000187"
+        },
+        "m": 1,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "1681/144",
+          "y": "62279/1728"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "Tplus",
+        "level": 2,
+        "point": {
+          "x": "-115152005/27910089",
+          "y": "845927888300/147449000187"
+        },
+        "m": 1,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "Tplus",
+        "level": 3,
+        "point": {
+          "x": "-115152005/27910089",
+          "y": "845927888300/147449000187"
+        },
+        "m": 5,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "Tplus",
+        "level": 4,
+        "point": {
+          "x": "-115152005/27910089",
+          "y": "845927888300/147449000187"
+        },
+        "m": 13,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "Tminus",
+        "level": 1,
+        "point": {
+          "x": "139550445/23030401",
+          "y": "931243391100/110522894399"
+        },
+        "m": 1,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "1681/144",
+          "y": "62279/1728"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "Tminus",
+        "level": 2,
+        "point": {
+          "x": "139550445/23030401",
+          "y": "931243391100/110522894399"
+        },
+        "m": 1,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "Tminus",
+        "level": 3,
+        "point": {
+          "x": "139550445/23030401",
+          "y": "931243391100/110522894399"
+        },
+        "m": 5,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -3,
+        "source_torsion": "Tminus",
+        "level": 4,
+        "point": {
+          "x": "139550445/23030401",
+          "y": "931243391100/110522894399"
+        },
+        "m": 13,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "O",
+        "level": 1,
+        "point": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "m": 1,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "O",
+        "level": 2,
+        "point": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "m": 3,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "O",
+        "level": 3,
+        "point": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "m": 7,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "O",
+        "level": 4,
+        "point": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "m": 15,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "T0",
+        "level": 1,
+        "point": {
+          "x": "25/4",
+          "y": "-75/8"
+        },
+        "m": 1,
+        "torsion": "T0",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "T0",
+        "level": 2,
+        "point": {
+          "x": "25/4",
+          "y": "-75/8"
+        },
+        "m": 3,
+        "torsion": "T0",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "T0",
+        "level": 3,
+        "point": {
+          "x": "25/4",
+          "y": "-75/8"
+        },
+        "m": 7,
+        "torsion": "T0",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "T0",
+        "level": 4,
+        "point": {
+          "x": "25/4",
+          "y": "-75/8"
+        },
+        "m": 15,
+        "torsion": "T0",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "Tplus",
+        "level": 1,
+        "point": {
+          "x": "-5/9",
+          "y": "100/27"
+        },
+        "m": 1,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "Tplus",
+        "level": 2,
+        "point": {
+          "x": "-5/9",
+          "y": "100/27"
+        },
+        "m": 3,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "Tplus",
+        "level": 3,
+        "point": {
+          "x": "-5/9",
+          "y": "100/27"
+        },
+        "m": 7,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "Tplus",
+        "level": 4,
+        "point": {
+          "x": "-5/9",
+          "y": "100/27"
+        },
+        "m": 15,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "Tminus",
+        "level": 1,
+        "point": {
+          "x": "45",
+          "y": "300"
+        },
+        "m": 1,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "Tminus",
+        "level": 2,
+        "point": {
+          "x": "45",
+          "y": "300"
+        },
+        "m": 3,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "Tminus",
+        "level": 3,
+        "point": {
+          "x": "45",
+          "y": "300"
+        },
+        "m": 7,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": -1,
+        "source_torsion": "Tminus",
+        "level": 4,
+        "point": {
+          "x": "45",
+          "y": "300"
+        },
+        "m": 15,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "O",
+        "level": 1,
+        "point": "O",
+        "m": 0,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "O",
+        "level": 2,
+        "point": "O",
+        "m": 0,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "O",
+        "level": 3,
+        "point": "O",
+        "m": 0,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "O",
+        "level": 4,
+        "point": "O",
+        "m": 0,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "T0",
+        "level": 1,
+        "point": {
+          "x": "0",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "T0",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "T0",
+        "level": 2,
+        "point": {
+          "x": "0",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "T0",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "T0",
+        "level": 3,
+        "point": {
+          "x": "0",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "T0",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "T0",
+        "level": 4,
+        "point": {
+          "x": "0",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "T0",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "Tplus",
+        "level": 1,
+        "point": {
+          "x": "5",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tplus",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "Tplus",
+        "level": 2,
+        "point": {
+          "x": "5",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tplus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "Tplus",
+        "level": 3,
+        "point": {
+          "x": "5",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tplus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "Tplus",
+        "level": 4,
+        "point": {
+          "x": "5",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tplus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "Tminus",
+        "level": 1,
+        "point": {
+          "x": "-5",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tminus",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "Tminus",
+        "level": 2,
+        "point": {
+          "x": "-5",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tminus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "Tminus",
+        "level": 3,
+        "point": {
+          "x": "-5",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tminus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 0,
+        "source_torsion": "Tminus",
+        "level": 4,
+        "point": {
+          "x": "-5",
+          "y": "0"
+        },
+        "m": 0,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tminus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "O",
+        "level": 1,
+        "point": {
+          "x": "-4",
+          "y": "6"
+        },
+        "m": 1,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "O",
+        "level": 2,
+        "point": {
+          "x": "-4",
+          "y": "6"
+        },
+        "m": 1,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "O",
+        "level": 3,
+        "point": {
+          "x": "-4",
+          "y": "6"
+        },
+        "m": 1,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "O",
+        "level": 4,
+        "point": {
+          "x": "-4",
+          "y": "6"
+        },
+        "m": 1,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "T0",
+        "level": 1,
+        "point": {
+          "x": "25/4",
+          "y": "75/8"
+        },
+        "m": 1,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "T0",
+        "level": 2,
+        "point": {
+          "x": "25/4",
+          "y": "75/8"
+        },
+        "m": 1,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "T0",
+        "level": 3,
+        "point": {
+          "x": "25/4",
+          "y": "75/8"
+        },
+        "m": 1,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "T0",
+        "level": 4,
+        "point": {
+          "x": "25/4",
+          "y": "75/8"
+        },
+        "m": 1,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "Tplus",
+        "level": 1,
+        "point": {
+          "x": "-5/9",
+          "y": "-100/27"
+        },
+        "m": 1,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "Tplus",
+        "level": 2,
+        "point": {
+          "x": "-5/9",
+          "y": "-100/27"
+        },
+        "m": 1,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "Tplus",
+        "level": 3,
+        "point": {
+          "x": "-5/9",
+          "y": "-100/27"
+        },
+        "m": 1,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "Tplus",
+        "level": 4,
+        "point": {
+          "x": "-5/9",
+          "y": "-100/27"
+        },
+        "m": 1,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "Tminus",
+        "level": 1,
+        "point": {
+          "x": "45",
+          "y": "-300"
+        },
+        "m": 1,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "Tminus",
+        "level": 2,
+        "point": {
+          "x": "45",
+          "y": "-300"
+        },
+        "m": 1,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "Tminus",
+        "level": 3,
+        "point": {
+          "x": "45",
+          "y": "-300"
+        },
+        "m": 1,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 1,
+        "source_torsion": "Tminus",
+        "level": 4,
+        "point": {
+          "x": "45",
+          "y": "-300"
+        },
+        "m": 1,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "O",
+        "level": 1,
+        "point": {
+          "x": "1681/144",
+          "y": "-62279/1728"
+        },
+        "m": 0,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "O",
+        "level": 2,
+        "point": {
+          "x": "1681/144",
+          "y": "-62279/1728"
+        },
+        "m": 2,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "O",
+        "level": 3,
+        "point": {
+          "x": "1681/144",
+          "y": "-62279/1728"
+        },
+        "m": 2,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "O",
+        "level": 4,
+        "point": {
+          "x": "1681/144",
+          "y": "-62279/1728"
+        },
+        "m": 2,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "T0",
+        "level": 1,
+        "point": {
+          "x": "-3600/1681",
+          "y": "-455700/68921"
+        },
+        "m": 0,
+        "torsion": "T0",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "T0",
+        "level": 2,
+        "point": {
+          "x": "-3600/1681",
+          "y": "-455700/68921"
+        },
+        "m": 2,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "T0",
+        "level": 3,
+        "point": {
+          "x": "-3600/1681",
+          "y": "-455700/68921"
+        },
+        "m": 2,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "T0",
+        "level": 4,
+        "point": {
+          "x": "-3600/1681",
+          "y": "-455700/68921"
+        },
+        "m": 2,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "Tplus",
+        "level": 1,
+        "point": {
+          "x": "12005/961",
+          "y": "1205400/29791"
+        },
+        "m": 0,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "Tplus",
+        "level": 2,
+        "point": {
+          "x": "12005/961",
+          "y": "1205400/29791"
+        },
+        "m": 2,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "Tplus",
+        "level": 3,
+        "point": {
+          "x": "12005/961",
+          "y": "1205400/29791"
+        },
+        "m": 2,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "Tplus",
+        "level": 4,
+        "point": {
+          "x": "12005/961",
+          "y": "1205400/29791"
+        },
+        "m": 2,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "Tminus",
+        "level": 1,
+        "point": {
+          "x": "-4805/2401",
+          "y": "762600/117649"
+        },
+        "m": 0,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "Tminus",
+        "level": 2,
+        "point": {
+          "x": "-4805/2401",
+          "y": "762600/117649"
+        },
+        "m": 2,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "Tminus",
+        "level": 3,
+        "point": {
+          "x": "-4805/2401",
+          "y": "762600/117649"
+        },
+        "m": 2,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 2,
+        "source_torsion": "Tminus",
+        "level": 4,
+        "point": {
+          "x": "-4805/2401",
+          "y": "762600/117649"
+        },
+        "m": 2,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 0,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "O",
+        "level": 1,
+        "point": {
+          "x": "-2439844/5094049",
+          "y": "39601568754/11497268593"
+        },
+        "m": 1,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "O",
+        "level": 2,
+        "point": {
+          "x": "-2439844/5094049",
+          "y": "39601568754/11497268593"
+        },
+        "m": 3,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "O",
+        "level": 3,
+        "point": {
+          "x": "-2439844/5094049",
+          "y": "39601568754/11497268593"
+        },
+        "m": 3,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "O",
+        "level": 4,
+        "point": {
+          "x": "-2439844/5094049",
+          "y": "39601568754/11497268593"
+        },
+        "m": 3,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "T0",
+        "level": 1,
+        "point": {
+          "x": "127351225/2439844",
+          "y": "1430549626725/3811036328"
+        },
+        "m": 1,
+        "torsion": "T0",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "T0",
+        "level": 2,
+        "point": {
+          "x": "127351225/2439844",
+          "y": "1430549626725/3811036328"
+        },
+        "m": 3,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "T0",
+        "level": 3,
+        "point": {
+          "x": "127351225/2439844",
+          "y": "1430549626725/3811036328"
+        },
+        "m": 3,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "T0",
+        "level": 4,
+        "point": {
+          "x": "127351225/2439844",
+          "y": "1430549626725/3811036328"
+        },
+        "m": 3,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "Tplus",
+        "level": 1,
+        "point": {
+          "x": "-115152005/27910089",
+          "y": "-845927888300/147449000187"
+        },
+        "m": 1,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "Tplus",
+        "level": 2,
+        "point": {
+          "x": "-115152005/27910089",
+          "y": "-845927888300/147449000187"
+        },
+        "m": 3,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "Tplus",
+        "level": 3,
+        "point": {
+          "x": "-115152005/27910089",
+          "y": "-845927888300/147449000187"
+        },
+        "m": 3,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "Tplus",
+        "level": 4,
+        "point": {
+          "x": "-115152005/27910089",
+          "y": "-845927888300/147449000187"
+        },
+        "m": 3,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "Tminus",
+        "level": 1,
+        "point": {
+          "x": "139550445/23030401",
+          "y": "-931243391100/110522894399"
+        },
+        "m": 1,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "Tminus",
+        "level": 2,
+        "point": {
+          "x": "139550445/23030401",
+          "y": "-931243391100/110522894399"
+        },
+        "m": 3,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "Tminus",
+        "level": 3,
+        "point": {
+          "x": "139550445/23030401",
+          "y": "-931243391100/110522894399"
+        },
+        "m": 3,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 3,
+        "source_torsion": "Tminus",
+        "level": 4,
+        "point": {
+          "x": "139550445/23030401",
+          "y": "-931243391100/110522894399"
+        },
+        "m": 3,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "O",
+        "level": 1,
+        "point": {
+          "x": "-50674456250230065124/79467131846613549025",
+          "y": "-2805376007832772561194783839874/708404494466557080860839692625"
+        },
+        "m": 1,
+        "torsion": "O",
+        "remainder": {
+          "x": "1681/144",
+          "y": "-62279/1728"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "O",
+        "level": 2,
+        "point": {
+          "x": "-50674456250230065124/79467131846613549025",
+          "y": "-2805376007832772561194783839874/708404494466557080860839692625"
+        },
+        "m": 1,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "O",
+        "level": 3,
+        "point": {
+          "x": "-50674456250230065124/79467131846613549025",
+          "y": "-2805376007832772561194783839874/708404494466557080860839692625"
+        },
+        "m": 5,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "O",
+        "level": 4,
+        "point": {
+          "x": "-50674456250230065124/79467131846613549025",
+          "y": "-2805376007832772561194783839874/708404494466557080860839692625"
+        },
+        "m": 5,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "T0",
+        "level": 1,
+        "point": {
+          "x": "1986678296165338725625/50674456250230065124",
+          "y": "-87827456931247149629459129122875/360731149702908578934801985432"
+        },
+        "m": 1,
+        "torsion": "T0",
+        "remainder": {
+          "x": "1681/144",
+          "y": "-62279/1728"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "T0",
+        "level": 2,
+        "point": {
+          "x": "1986678296165338725625/50674456250230065124",
+          "y": "-87827456931247149629459129122875/360731149702908578934801985432"
+        },
+        "m": 1,
+        "torsion": "T0",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "T0",
+        "level": 3,
+        "point": {
+          "x": "1986678296165338725625/50674456250230065124",
+          "y": "-87827456931247149629459129122875/360731149702908578934801985432"
+        },
+        "m": 5,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "T0",
+        "level": 4,
+        "point": {
+          "x": "1986678296165338725625/50674456250230065124",
+          "y": "-87827456931247149629459129122875/360731149702908578934801985432"
+        },
+        "m": 5,
+        "torsion": "T0",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "T0",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "Tplus",
+        "level": 1,
+        "point": {
+          "x": "-1733306014914188400005/448010115483297810249",
+          "y": "59075981004203488280860633839500/9482693857306717951986015941307"
+        },
+        "m": 1,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "1681/144",
+          "y": "-62279/1728"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "Tplus",
+        "level": 2,
+        "point": {
+          "x": "-1733306014914188400005/448010115483297810249",
+          "y": "59075981004203488280860633839500/9482693857306717951986015941307"
+        },
+        "m": 1,
+        "torsion": "Tplus",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "Tplus",
+        "level": 3,
+        "point": {
+          "x": "-1733306014914188400005/448010115483297810249",
+          "y": "59075981004203488280860633839500/9482693857306717951986015941307"
+        },
+        "m": 5,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "Tplus",
+        "level": 4,
+        "point": {
+          "x": "-1733306014914188400005/448010115483297810249",
+          "y": "59075981004203488280860633839500/9482693857306717951986015941307"
+        },
+        "m": 5,
+        "torsion": "Tplus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tplus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "Tminus",
+        "level": 1,
+        "point": {
+          "x": "2240050577416489051245/346661202982837680001",
+          "y": "67158692483406161286096086398500/6454429472891638712892656520001"
+        },
+        "m": 1,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "1681/144",
+          "y": "-62279/1728"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "Tminus",
+        "level": 2,
+        "point": {
+          "x": "2240050577416489051245/346661202982837680001",
+          "y": "67158692483406161286096086398500/6454429472891638712892656520001"
+        },
+        "m": 1,
+        "torsion": "Tminus",
+        "remainder": {
+          "x": "-4",
+          "y": "6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "Tminus",
+        "level": 3,
+        "point": {
+          "x": "2240050577416489051245/346661202982837680001",
+          "y": "67158692483406161286096086398500/6454429472891638712892656520001"
+        },
+        "m": 5,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      {
+        "source_m": 5,
+        "source_torsion": "Tminus",
+        "level": 4,
+        "point": {
+          "x": "2240050577416489051245/346661202982837680001",
+          "y": "67158692483406161286096086398500/6454429472891638712892656520001"
+        },
+        "m": 5,
+        "torsion": "Tminus",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "Tminus",
+            "remainder": {
+              "x": "1681/144",
+              "y": "-62279/1728"
+            }
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      }
+    ],
+    "inverse_distinction": {
+      "P_level1": {
+        "m": 1,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      "minus_P_level1": {
+        "m": 1,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      },
+      "P_level2": {
+        "m": 1,
+        "torsion": "O",
+        "remainder": "O",
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": "O"
+          },
+          {
+            "bit": 0,
+            "torsion": "O",
+            "remainder": "O"
+          }
+        ]
+      },
+      "minus_P_level2": {
+        "m": 3,
+        "torsion": "O",
+        "remainder": {
+          "x": "-4",
+          "y": "-6"
+        },
+        "trace": [
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          },
+          {
+            "bit": 1,
+            "torsion": "O",
+            "remainder": {
+              "x": "-4",
+              "y": "-6"
+            }
+          }
+        ]
+      }
+    },
+    "declared_point_coordinate_bit_cap": 4096,
+    "observed_max_point_coordinate_bits": 1053
+  },
+  "cube": {
+    "bit_order": [
+      "P",
+      "T0",
+      "Tplus",
+      "A",
+      "B"
+    ],
+    "generators": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        -5,
+        5
+      ],
+      [
+        5,
+        2,
+        10
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ]
+    ],
+    "group_pair_count": 1024,
+    "mapping": [
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "signature": [
+          1,
+          1,
+          1
+        ],
+        "arithmetic_admissible": true
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "signature": [
+          -1,
+          -1,
+          1
+        ],
+        "arithmetic_admissible": true
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "signature": [
+          -1,
+          -5,
+          5
+        ],
+        "arithmetic_admissible": true
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "signature": [
+          1,
+          5,
+          5
+        ],
+        "arithmetic_admissible": true
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "signature": [
+          5,
+          2,
+          10
+        ],
+        "arithmetic_admissible": true
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "signature": [
+          -5,
+          -2,
+          10
+        ],
+        "arithmetic_admissible": true
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "signature": [
+          -5,
+          -10,
+          2
+        ],
+        "arithmetic_admissible": true
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "signature": [
+          5,
+          10,
+          2
+        ],
+        "arithmetic_admissible": true
+      },
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "signature": [
+          2,
+          2,
+          1
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "signature": [
+          -2,
+          -2,
+          1
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "signature": [
+          -2,
+          -10,
+          5
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "signature": [
+          2,
+          10,
+          5
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "signature": [
+          10,
+          1,
+          10
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "signature": [
+          -10,
+          -1,
+          10
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "signature": [
+          -10,
+          -5,
+          2
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "signature": [
+          10,
+          5,
+          2
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "signature": [
+          1,
+          2,
+          2
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "signature": [
+          -1,
+          -2,
+          2
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "signature": [
+          -1,
+          -10,
+          10
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "signature": [
+          1,
+          10,
+          10
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "signature": [
+          5,
+          1,
+          5
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "signature": [
+          -5,
+          -1,
+          5
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "signature": [
+          -5,
+          -5,
+          1
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "signature": [
+          5,
+          5,
+          1
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "signature": [
+          2,
+          1,
+          2
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "signature": [
+          -2,
+          -1,
+          2
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "signature": [
+          -2,
+          -5,
+          10
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "signature": [
+          2,
+          5,
+          10
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "signature": [
+          10,
+          2,
+          5
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "signature": [
+          -10,
+          -2,
+          5
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "signature": [
+          -10,
+          -10,
+          1
+        ],
+        "arithmetic_admissible": false
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "signature": [
+          10,
+          10,
+          1
+        ],
+        "arithmetic_admissible": false
+      }
+    ]
+  },
+  "not_established": [
+    "P generates the full free integral lattice",
+    "odd-primary Sha or total Sha order",
+    "a general BSD theorem",
+    "analytic claims",
+    "general RPRM performance advantage"
+  ]
+}

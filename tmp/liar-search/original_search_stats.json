@@ -1,0 +1,37 @@
+{
+  "candidate_files": 978,
+  "native_files": 95,
+  "native_user_occurrences": 66,
+  "subagent_files": 883,
+  "excluded_sep12_occurrences": 1,
+  "retained_occurrences": 65,
+  "unique_user_texts": 65,
+  "candidate_files_by_root": {
+    "sessions": 978
+  },
+  "retained_record_types": {
+    "response_item": 65
+  },
+  "matching_native_files_retained": 22,
+  "copied_assistant_context_candidates": [
+    {
+      "index": 42,
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T20-31-22-01a0274e-fb96-7293-8fa8-ab142e066122.jsonl",
+      "line": 5100,
+      "timestamp": "2026-08-22T15:31:26.955Z"
+    },
+    {
+      "index": 44,
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T20-31-22-01a0274e-fb96-7293-8fa8-ab142e066122.jsonl",
+      "line": 5686,
+      "timestamp": "2026-08-22T15:53:11.155Z"
+    }
+  ],
+  "user_reposted_own_external_input_candidate": {
+    "index": 43,
+    "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T20-31-22-01a0274e-fb96-7293-8fa8-ab142e066122.jsonl",
+    "line": 5118,
+    "timestamp": "2026-08-22T15:32:18.115Z"
+  },
+  "coverage_note": "Lexical candidate coverage only; 883 subagent-source files deliberately excluded; native user role does not itself authenticate the authorship of pasted prose; selected excerpts were inspected for this."
+}

@@ -1,0 +1,83 @@
+{
+  "status": "SLIDING_AND_VIEW_CONTROLS_CHECKED",
+  "changes": [
+    {
+      "control": "spacing",
+      "value": "12",
+      "state": "12,0,-40,55",
+      "canvas_changed": true
+    },
+    {
+      "control": "slide",
+      "value": "45",
+      "state": "12,45,-40,55",
+      "canvas_changed": true
+    },
+    {
+      "control": "orbit",
+      "value": "30",
+      "state": "12,45,30,55",
+      "canvas_changed": true
+    },
+    {
+      "control": "tilt",
+      "value": "90",
+      "state": "12,45,30,90",
+      "canvas_changed": true
+    }
+  ],
+  "clearances": [
+    {
+      "spacing": 12,
+      "centerline_separation": 0.47037808470444054,
+      "combined_tube_radii": 0.15
+    },
+    {
+      "spacing": 30,
+      "centerline_separation": 1.1646857029613433,
+      "combined_tube_radii": 0.15
+    },
+    {
+      "spacing": 35,
+      "centerline_separation": 1.353176097769229,
+      "combined_tube_radii": 0.15
+    },
+    {
+      "spacing": 120,
+      "centerline_separation": 3.8971143170299736,
+      "combined_tube_radii": 0.15
+    }
+  ],
+  "narrow": {
+    "viewport": 343,
+    "scrollWidth": 343,
+    "controls": [
+      {
+        "id": "ks-spacing",
+        "value": "35",
+        "min": "12",
+        "max": "120"
+      },
+      {
+        "id": "ks-slide",
+        "value": "0",
+        "min": "-180",
+        "max": "180"
+      },
+      {
+        "id": "ks-orbit",
+        "value": "-40",
+        "min": "-180",
+        "max": "180"
+      },
+      {
+        "id": "ks-tilt",
+        "value": "55",
+        "min": "0",
+        "max": "90"
+      }
+    ]
+  },
+  "errors": [],
+  "preview_sha256": "186704c85d0bdfc25edc62a9104460952550acde253aa2e4744e6b8e83577f78"
+}

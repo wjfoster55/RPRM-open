@@ -1,0 +1,246 @@
+{
+  "source": "C:\\github\\RPRM-open\\research\\fluid-f2-review-20260912\\input\\fluid_dynamic_frontier_02",
+  "stored_row_cost_totals": {
+    "t_prepare_s": 1.9366935009991266,
+    "t_graph_s": 1.9266557609992105,
+    "cand_fallback_wall_s": 2.4438052289995085,
+    "t_ref_s": 1.4798598269997,
+    "ref_wall_s": 1.4489733400002933,
+    "cand_steps": 1771,
+    "ref_steps": 10125,
+    "reach_steps": 8625,
+    "cand_graph_evals": 1794,
+    "cand_sum_active": 2049408,
+    "ref_sum_active": 7041664,
+    "candidate_timed_pipeline_s": 4.380498729998635,
+    "candidate_over_reference_timed_pipeline": 2.960076792461995
+  },
+  "coverage": {
+    "named_scenes": 53,
+    "unique_simulation_inputs": 50,
+    "duplicate_groups": [
+      [
+        "f1_tall",
+        "A_w6_x26_V180"
+      ],
+      [
+        "A_w4_x1_V180",
+        "C_far4_V180"
+      ],
+      [
+        "A_w4_x28_V180",
+        "C_adj4_V180"
+      ]
+    ],
+    "V180_named_but_not_V180": [
+      {
+        "id": "A_w2_x1_V180",
+        "actual_V": 92.0
+      },
+      {
+        "id": "A_w2_x15_V180",
+        "actual_V": 92.0
+      },
+      {
+        "id": "A_w2_x26_V180",
+        "actual_V": 92.0
+      },
+      {
+        "id": "A_w2_x28_V180",
+        "actual_V": 92.0
+      },
+      {
+        "id": "A_w2_x29_V180",
+        "actual_V": 92.0
+      },
+      {
+        "id": "A_w2_x30_V180",
+        "actual_V": 92.0
+      }
+    ],
+    "raw_mass_values": [
+      0.0,
+      1.0
+    ],
+    "geometry_count": 11
+  },
+  "dynamic_A_B_only_controls": [
+    {
+      "id": "D_shelf_isolated",
+      "W": 64,
+      "H": 48,
+      "model": "B",
+      "mode": "cut_exit",
+      "steps": 300,
+      "thresh": 0.5,
+      "stepsRun": 300,
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "maxMonitored": 0,
+      "finalMonitored": 0,
+      "totalMass": 9,
+      "sumActive": 314176,
+      "sumMoved": 2677,
+      "graphEvals": 301,
+      "stop": "horizon",
+      "cutReason": null,
+      "wall_ms": 186,
+      "snapshots": [],
+      "input_sha256": "ea74553e4353625e8074d0555807e35451aa89498f81c0c9a75ed7b4f3711c0a",
+      "host_wall_s": 0.2575956000073347
+    },
+    {
+      "id": "E_adjcell_y1",
+      "W": 64,
+      "H": 48,
+      "model": "B",
+      "mode": "cut_exit",
+      "steps": 300,
+      "thresh": 0.5,
+      "stepsRun": 13,
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "maxMonitored": 0,
+      "finalMonitored": 0,
+      "totalMass": 1,
+      "sumActive": 9792,
+      "sumMoved": 13,
+      "graphEvals": 14,
+      "stop": "no_trapped",
+      "cutReason": "R_opt_empty",
+      "wall_ms": 26,
+      "snapshots": [],
+      "input_sha256": "a8b52c2a3fd3dd9fe8c09c66519b12da9b95ddd3a8a9c545253a0c763dc1f1aa",
+      "host_wall_s": 0.09354339999845251
+    },
+    {
+      "id": "E_adjcell_y35",
+      "W": 64,
+      "H": 48,
+      "model": "B",
+      "mode": "cut_exit",
+      "steps": 300,
+      "thresh": 0.5,
+      "stepsRun": 1,
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "maxMonitored": 0,
+      "finalMonitored": 0,
+      "totalMass": 1,
+      "sumActive": 3072,
+      "sumMoved": 1,
+      "graphEvals": 2,
+      "stop": "no_trapped",
+      "cutReason": "R_opt_empty",
+      "wall_ms": 14,
+      "snapshots": [],
+      "input_sha256": "6ef64088cf2a0c963c82885429ef6ea0ef459e4f132a91bdd08013b3e5918406",
+      "host_wall_s": 0.08577380000497214
+    },
+    {
+      "id": "E_stack10_adj",
+      "W": 64,
+      "H": 48,
+      "model": "B",
+      "mode": "cut_exit",
+      "steps": 300,
+      "thresh": 0.5,
+      "stepsRun": 7,
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "maxMonitored": 0,
+      "finalMonitored": 0,
+      "totalMass": 10,
+      "sumActive": 7488,
+      "sumMoved": 70,
+      "graphEvals": 8,
+      "stop": "no_trapped",
+      "cutReason": "R_opt_empty",
+      "wall_ms": 20,
+      "snapshots": [],
+      "input_sha256": "52015959a1cf93644f3b789dca77a5a1c35915a1c263443c79970fd5d6537517",
+      "host_wall_s": 0.09010529998340644
+    },
+    {
+      "id": "E_blob9_far",
+      "W": 64,
+      "H": 48,
+      "model": "B",
+      "mode": "cut_exit",
+      "steps": 300,
+      "thresh": 0.5,
+      "stepsRun": 13,
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "maxMonitored": 0,
+      "finalMonitored": 0,
+      "totalMass": 9,
+      "sumActive": 7808,
+      "sumMoved": 117,
+      "graphEvals": 14,
+      "stop": "no_trapped",
+      "cutReason": "R_opt_empty",
+      "wall_ms": 26,
+      "snapshots": [],
+      "input_sha256": "1043d07b2c1ea73ebf6b2ced577d8de5b372e8d9220ea311ea74bb607c014100",
+      "host_wall_s": 0.10486600000876933
+    }
+  ],
+  "reconstructed_dynamic_A_panel_steps": 2105,
+  "normalization_control": {
+    "static": [
+      "CERTIFIED_NO",
+      "A:no_water_in_R_opt"
+    ],
+    "layers": {
+      "A": {
+        "verdict": "CERTIFIED_NO",
+        "reason": "no_water_in_R_opt"
+      },
+      "B": {
+        "verdict": "CERTIFIED_NO",
+        "reason": "no_catwalk_and_V_lt_sill_need"
+      },
+      "failed_gap_adjacent": {
+        "verdict": "CERTIFIED_NO",
+        "reason": "not_gap_adjacent_and_V_le_basin"
+      },
+      "stats": {
+        "graph_nodes_visited": 6144,
+        "R_opt_size": 2500,
+        "R_catwalk_size": 1415,
+        "water_in_R_opt": 0.25,
+        "water_in_R_catwalk": 0.25,
+        "monitor_mass": 0.25,
+        "V": 0.25,
+        "top": 40,
+        "sill_need": 12,
+        "left_below_capacity": 341
+      }
+    },
+    "oracle": {
+      "W": 64,
+      "H": 48,
+      "model": "B",
+      "mode": "yes_exit",
+      "steps": 300,
+      "thresh": 0.5,
+      "stepsRun": 0,
+      "Qdyn": 1,
+      "firstBreach": 0,
+      "maxMonitored": 1,
+      "finalMonitored": 1,
+      "totalMass": 1,
+      "sumActive": 0,
+      "sumMoved": 0,
+      "graphEvals": 0,
+      "stop": "yes0",
+      "cutReason": null,
+      "wall_ms": 0,
+      "snapshots": [],
+      "input_sha256": "c96c91433f09bf45af75da555a858f652822ece09c7d3787399f4f4ab6a632d9",
+      "host_wall_s": 0.06699789999402128
+    }
+  },
+  "scope": "Stored-row aggregation, five dynamic-A controls, and one normalization control; no broad benchmark or input edits."
+}

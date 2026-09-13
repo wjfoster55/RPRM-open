@@ -1,0 +1,256 @@
+{
+  "schema": "rprm-context-omission-search/v1",
+  "packet_id": "packet:d96316463e66a528f24574b05076c0ddd39c917a41d6323e3e30e30b0dbbf57a",
+  "packet_snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+  "current_snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+  "snapshot_drift": false,
+  "objective": "vault blockchain ledger FLICK past future",
+  "query_terms": [
+    "vault",
+    "blockchain",
+    "ledger",
+    "flick",
+    "past",
+    "future"
+  ],
+  "ranking": "DISTINCT_TERM_COVERAGE_THEN_TOTAL_CASEFOLDED_FREQUENCY_THEN_RECORD_ID",
+  "searched_omission_count": 614,
+  "match_fiber": {
+    "disposition": "MANY",
+    "cardinality": 259,
+    "scope": "matching omitted records in the verified packet"
+  },
+  "max_results": 12,
+  "truncated": true,
+  "results": [
+    {
+      "rank": 1,
+      "record_id": "occurrence:bc19f4ff7a97c118ff7cf768fd920b89d8d8865e68700476326b5e85b0c4f205",
+      "record_kind": "OBSERVATION",
+      "title": "Finite research results retained — part 16",
+      "omission_reason": "PAYLOAD_BUDGET",
+      "expansion_handle": {
+        "handle_id": "handle:74b4313e57d52c4dafb20f3dc1684c20b98232d88cc29998be4933dadcd1f8eb",
+        "reason": "PAYLOAD_BUDGET",
+        "record_id": "occurrence:bc19f4ff7a97c118ff7cf768fd920b89d8d8865e68700476326b5e85b0c4f205",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "past",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 5
+    },
+    {
+      "rank": 2,
+      "record_id": "occurrence:12e46dec068ec30ff18029d32db1504e822606e08501d293a0717068389f2371",
+      "record_kind": "OBSERVATION",
+      "title": "16. RPRM operation ledger",
+      "omission_reason": "PAYLOAD_BUDGET",
+      "expansion_handle": {
+        "handle_id": "handle:38afa5ef9b5ef0e5891d8388516b2d5d80caa620db0b7ddf65b7b586c85f88bc",
+        "reason": "PAYLOAD_BUDGET",
+        "record_id": "occurrence:12e46dec068ec30ff18029d32db1504e822606e08501d293a0717068389f2371",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "ledger",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 3
+    },
+    {
+      "rank": 3,
+      "record_id": "occurrence:1e0726eda048b875ce8f12766aa1b7deac4fae13cc2b47c9fe615e76f77c1672",
+      "record_kind": "OBSERVATION",
+      "title": "4. Machine Love: versioned text transport and nonmonotone hosts — Audit126 — part 1",
+      "omission_reason": "CANDIDATE_CAP",
+      "expansion_handle": {
+        "handle_id": "handle:384906b8a410133dc10354db73a00485bb6d50a09f34a64452ae3e5c789b9b50",
+        "reason": "CANDIDATE_CAP",
+        "record_id": "occurrence:1e0726eda048b875ce8f12766aa1b7deac4fae13cc2b47c9fe615e76f77c1672",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "ledger",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 3
+    },
+    {
+      "rank": 4,
+      "record_id": "occurrence:2614a17a69b52dcc6eb05307c95311f658dd44c4b43d79dad038694b8355c25f",
+      "record_kind": "OBSERVATION",
+      "title": "4. Typed operations",
+      "omission_reason": "PAYLOAD_BUDGET",
+      "expansion_handle": {
+        "handle_id": "handle:1f42cdffb3f6aebed92a3e1c768225122e1be3a6b1fd9f584e4f2f3946b46fb1",
+        "reason": "PAYLOAD_BUDGET",
+        "record_id": "occurrence:2614a17a69b52dcc6eb05307c95311f658dd44c4b43d79dad038694b8355c25f",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "flick",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 3
+    },
+    {
+      "rank": 5,
+      "record_id": "occurrence:4743b4d8be243dea8a1024b9e85b9880d9eab68c861caf60bdcedbe213dadc1f",
+      "record_kind": "OBSERVATION",
+      "title": "Read this way — part 1",
+      "omission_reason": "CANDIDATE_CAP",
+      "expansion_handle": {
+        "handle_id": "handle:9c7bfdacaee14f1405001826d08725912d02aaa01ac27b6e5567813d27e5e329",
+        "reason": "CANDIDATE_CAP",
+        "record_id": "occurrence:4743b4d8be243dea8a1024b9e85b9880d9eab68c861caf60bdcedbe213dadc1f",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "ledger",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 3
+    },
+    {
+      "rank": 6,
+      "record_id": "occurrence:902e2b42d8624d5e6075fc7e6091676e30335913594cd0842d974d1dbb2d3489",
+      "record_kind": "OBSERVATION",
+      "title": "6. Current corpus ledger — part 1",
+      "omission_reason": "CANDIDATE_CAP",
+      "expansion_handle": {
+        "handle_id": "handle:5ef965c13f0dda38d68e3d18dd3e1128fc1cd02c24cda737f76895423dfaedd8",
+        "reason": "CANDIDATE_CAP",
+        "record_id": "occurrence:902e2b42d8624d5e6075fc7e6091676e30335913594cd0842d974d1dbb2d3489",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "ledger",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 3
+    },
+    {
+      "rank": 7,
+      "record_id": "occurrence:917b51ebe3a44970ef14d00bb5cb2ab78fc27712952062ffb2d2979ebe745962",
+      "record_kind": "OBSERVATION",
+      "title": "Finite research results retained — part 12",
+      "omission_reason": "CANDIDATE_CAP",
+      "expansion_handle": {
+        "handle_id": "handle:430de233ac2592352d85d72e2451b16f1aca1c1eadc500f1a50164f38201083d",
+        "reason": "CANDIDATE_CAP",
+        "record_id": "occurrence:917b51ebe3a44970ef14d00bb5cb2ab78fc27712952062ffb2d2979ebe745962",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "past",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 3
+    },
+    {
+      "rank": 8,
+      "record_id": "occurrence:a5ac3affbae6b9e2dcad2ed6b691423daa4743904e02755524178d8799c190df",
+      "record_kind": "OBSERVATION",
+      "title": "Read this way — part 3",
+      "omission_reason": "CANDIDATE_CAP",
+      "expansion_handle": {
+        "handle_id": "handle:d711f636d8092efb2bd295796268e6bcd794ccbc037a840c8a6f6c3ddda9faf6",
+        "reason": "CANDIDATE_CAP",
+        "record_id": "occurrence:a5ac3affbae6b9e2dcad2ed6b691423daa4743904e02755524178d8799c190df",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "past",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 3
+    },
+    {
+      "rank": 9,
+      "record_id": "occurrence:02b540b05117557bec56790fa7c03360a96ab63042465ffc45ef0606b125f2a2",
+      "record_kind": "OBSERVATION",
+      "title": "Exact RPRM-to-engine alignment",
+      "omission_reason": "PAYLOAD_BUDGET",
+      "expansion_handle": {
+        "handle_id": "handle:05faaa660c34f90cf1db1793207895e8db2630f57bd070a7ad399a415f2894da",
+        "reason": "PAYLOAD_BUDGET",
+        "record_id": "occurrence:02b540b05117557bec56790fa7c03360a96ab63042465ffc45ef0606b125f2a2",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "flick",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 2
+    },
+    {
+      "rank": 10,
+      "record_id": "occurrence:13afdbdab718b274e563b6ab565bd9c3e78ef448706a6a492cb089860227d095",
+      "record_kind": "OBSERVATION",
+      "title": "Intended strongest conclusion",
+      "omission_reason": "PAYLOAD_BUDGET",
+      "expansion_handle": {
+        "handle_id": "handle:864f5f245099c7d2e601587805569c361448d0b61d5556f18d536bee58675ed7",
+        "reason": "PAYLOAD_BUDGET",
+        "record_id": "occurrence:13afdbdab718b274e563b6ab565bd9c3e78ef448706a6a492cb089860227d095",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "past",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 2
+    },
+    {
+      "rank": 11,
+      "record_id": "occurrence:224a24b1eb59289c9834030873b9c8f407a0a2006aae5bd0db8df399928877ca",
+      "record_kind": "OBSERVATION",
+      "title": "6. Fit with standard mathematics and science",
+      "omission_reason": "PAYLOAD_BUDGET",
+      "expansion_handle": {
+        "handle_id": "handle:9c3c17eaffc75ba9294a7cba73b1c71578db7816c722f5f2f2bcdaa2d03b6b8f",
+        "reason": "PAYLOAD_BUDGET",
+        "record_id": "occurrence:224a24b1eb59289c9834030873b9c8f407a0a2006aae5bd0db8df399928877ca",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "ledger",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 2
+    },
+    {
+      "rank": 12,
+      "record_id": "occurrence:25a8b30f538d995ccee7eafeab2b39b006c142ff83adef99c54d87237f7425eb",
+      "record_kind": "OBSERVATION",
+      "title": "8.1 What the same starting move looks like across domains",
+      "omission_reason": "CANDIDATE_CAP",
+      "expansion_handle": {
+        "handle_id": "handle:6a3198f0510251aecc19321f09aa9e531f0bb9425439088f8915c2dc32f3ce7a",
+        "reason": "CANDIDATE_CAP",
+        "record_id": "occurrence:25a8b30f538d995ccee7eafeab2b39b006c142ff83adef99c54d87237f7425eb",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "past",
+        "future"
+      ],
+      "distinct_term_hits": 2,
+      "total_term_frequency": 2
+    }
+  ],
+  "claim_ceiling": "Results are a bounded lexical ranking over this verified packet's omitted record IDs only. They do not establish source truth, semantic relevance, or packet sufficiency."
+}

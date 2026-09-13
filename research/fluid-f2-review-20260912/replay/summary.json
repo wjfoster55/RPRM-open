@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "n_scenes": 53,
+  "n_yes": 20,
+  "n_no": 33,
+  "horizon": 300,
+  "theta": 0.5,
+  "model": "B",
+  "false_no": 0,
+  "false_yes": 0,
+  "failed_gap_adjacent_false_no_count": 6,
+  "failed_gap_adjacent_false_no_ids": [
+    "A_w4_x26_V180",
+    "A_w4_x27_V180",
+    "A_w6_x24_V180",
+    "A_w6_x25_V180",
+    "D_ledge_to_gap",
+    "D_ledge_end31"
+  ],
+  "coverage_static_AB_decides": 11,
+  "coverage_static_AB_decides_denom": 53,
+  "static_NO_from_A": 5,
+  "static_YES_from_A": 1,
+  "static_NO_from_B_only": 5,
+  "limited_exact_YES": 19,
+  "limited_exact_NO_trapped": 20,
+  "limited_exact_horizon_NO": 3,
+  "sum_ref_steps_yes_exit": 10125,
+  "sum_cand_steps": 1771,
+  "sum_reach_steps": 8625,
+  "sum_ref_sum_active": 7041664,
+  "sum_cand_sum_active": 2049408,
+  "step_ratio_cand_over_ref": 0.17491358024691359,
+  "active_ratio_cand_over_ref": 0.2910402995655572,
+  "volume_height_multi_member_classes": 9,
+  "volume_height_colliding_classes": 6,
+  "pinned_sha256": {
+    "constants.js": "14f3a5c88f5f73ad30f1898eaa96c437ee315aa69d591fee03f409476ad35380",
+    "grid.js": "3ec221be5e0ce86ea0ca676f379f63cd14be6b339594a09cb2f671889c2984a3",
+    "models.js": "7f20984990f71157ca64c1279b87de27dc39688b5f1bbf684451102c1f79d17f",
+    "scenarios.js": "e689ae50e2f3b1d8b1e8986c36203c74f0e27a677d8c3cb371421e65369a4f2a"
+  },
+  "elapsed_s": 16.491397100005997,
+  "notes": [
+    "step_ratio is executed model-B steps, not a certification-rate ratio.",
+    "Reference is yes-exit rollout: early YES, else full H. That is the competent baseline.",
+    "Layer A NO is the trivial no-upward/barrier reachability baseline (credited separately).",
+    "Layer B extra NO is the new static content. Limited exact trapped-NO is the new dynamic content.",
+    "failed_gap_adjacent is an ablation, not an official verdict."
+  ]
+}

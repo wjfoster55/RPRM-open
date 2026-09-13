@@ -1,0 +1,358 @@
+{
+  "schema": "ym2-operational-final-export-v1",
+  "status": "PASS",
+  "utc": "2026-09-13T00:50:30.400082+00:00",
+  "archive": "C:\\github\\RPRM-open\\research\\ym2-operational-20260912-delivery\\YM2-operational-seam-2026-09-12.zip",
+  "archive_sha256": "19c6b86a31ebdea7d4c6f83a332a472cc3fabdcc3a908512b7f1616c65bc7d05",
+  "archive_bytes": 3681951,
+  "payload_files": 53,
+  "manifest_covered_files": 52,
+  "snapshots": 31,
+  "zip_crc": "PASS",
+  "duplicate_and_path_checks": "PASS",
+  "source_equals_fresh_extraction": true,
+  "unchanged_after_replay": true,
+  "fresh_extraction": "C:\\github\\RPRM-open\\research\\ym2-operational-20260912-delivery\\final-extraction\\YM2-operational-seam",
+  "command": [
+    "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-I",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\github\\RPRM-open\\research\\ym2-operational-20260912-delivery\\final-extraction\\YM2-operational-seam\\check_operational.py"
+  ],
+  "cwd": "C:\\github\\RPRM-open\\research\\ym2-operational-20260912-delivery\\final-extraction\\YM2-operational-seam",
+  "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_sha256": "ccb5cc2d023f068f32493093c84f621df841267aad18947fc383634cd2d8b3dc",
+  "reviewed_files": {
+    "CHANNEL_SOURCE.md": "ff817b7cb2700636e4ad1497120c6f67765d51d75ef5148fa237abc1c2361d38",
+    "SPECTRAL_CHANNEL.md": "d69f9413b85dfe6bb3ae64fb32fef32d731951eb8674765d95c709d2f2a19c01",
+    "COMBINED_RESULT.md": "db8c340ae3f8955ee439249e56a5752a6edb6d3ef7af9cfa862aa0bc293cefe3",
+    "BSD_DONOR.md": "54d161387b6172e7ba98109c3cae4fd3d28a1ff2ba1b2b897c934de3f9ef609c"
+  },
+  "top_level_links": [
+    {
+      "source": "BSD_DONOR.md",
+      "target": "accepted/research/bsd-operational-03/OPERATIONAL_VALUE_RECOVERY.md"
+    },
+    {
+      "source": "BSD_DONOR.md",
+      "target": "accepted/research/bsd-carry-key-06/PREFREEZE.md"
+    },
+    {
+      "source": "BSD_DONOR.md",
+      "target": "accepted/research/bsd-carry-key-06/OPERATIONAL_PROOF.md"
+    },
+    {
+      "source": "BSD_DONOR.md",
+      "target": "accepted/research/bsd-operational-03/OPERATIONAL_BRIDGE.md"
+    },
+    {
+      "source": "BSD_DONOR.md",
+      "target": "accepted/research/ym2_conditional_construction/CONDITIONAL_OBSTRUCTION.md"
+    },
+    {
+      "source": "BSD_DONOR.md",
+      "target": "accepted/research/ym2_rail_closure/CONDITIONAL_RAIL.md"
+    },
+    {
+      "source": "BSD_DONOR.md",
+      "target": "accepted/research/bsd-carry-key-06/COLUMN_HANDOFF.md"
+    },
+    {
+      "source": "CHANNEL_SOURCE.md",
+      "target": "accepted/research/ym2_conditional_construction/accepted/research/ym2_overlap_cover/accepted/estimate/SOURCE_NORM_REFINEMENT.md"
+    },
+    {
+      "source": "CHANNEL_SOURCE.md",
+      "target": "accepted/research/ym2_conditional_construction/LOCAL_VACUUM_ROUTE.md"
+    },
+    {
+      "source": "CHANNEL_SOURCE.md",
+      "target": "accepted/research/ym2_conditional_construction/GAUGE_NORM_GAIN.md"
+    },
+    {
+      "source": "CHANNEL_SOURCE.md",
+      "target": "accepted/research/ym2_conditional_construction/TWO_SQUARE_GEOMETRY.md"
+    },
+    {
+      "source": "CHANNEL_SOURCE.md",
+      "target": "accepted/research/ym2_conditional_construction/CONDITIONAL_OBSTRUCTION.md"
+    },
+    {
+      "source": "CHANNEL_SOURCE.md",
+      "target": "channel_probe.py"
+    },
+    {
+      "source": "COMBINED_RESULT.md",
+      "target": "CANDIDATES.md"
+    },
+    {
+      "source": "COMBINED_RESULT.md",
+      "target": "CHANNEL_SOURCE.md"
+    },
+    {
+      "source": "COMBINED_RESULT.md",
+      "target": "SPECTRAL_CHANNEL.md"
+    },
+    {
+      "source": "README.md",
+      "target": "RESULT.md"
+    },
+    {
+      "source": "README.md",
+      "target": "COMBINED_RESULT.md"
+    },
+    {
+      "source": "README.md",
+      "target": "BSD_DONOR.md"
+    },
+    {
+      "source": "README.md",
+      "target": "CANDIDATES.md"
+    },
+    {
+      "source": "README.md",
+      "target": "CHANNEL_SOURCE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "SPECTRAL_CHANNEL.md"
+    },
+    {
+      "source": "README.md",
+      "target": "OPERATIONAL_REVIEW.md"
+    },
+    {
+      "source": "README.md",
+      "target": "RESULTS.json"
+    },
+    {
+      "source": "README.md",
+      "target": "operational_seam.png"
+    },
+    {
+      "source": "README.md",
+      "target": "operational_seam.svg"
+    },
+    {
+      "source": "README.md",
+      "target": "LITERATURE.md"
+    },
+    {
+      "source": "RESULT.md",
+      "target": "BSD_DONOR.md"
+    },
+    {
+      "source": "RESULT.md",
+      "target": "COMBINED_RESULT.md"
+    },
+    {
+      "source": "RESULT.md",
+      "target": "CHANNEL_SOURCE.md"
+    },
+    {
+      "source": "RESULT.md",
+      "target": "SPECTRAL_CHANNEL.md"
+    },
+    {
+      "source": "RESULT.md",
+      "target": "RESULTS.json"
+    },
+    {
+      "source": "RESULT.md",
+      "target": "OPERATIONAL_REVIEW.md"
+    },
+    {
+      "source": "RESULT.md",
+      "target": "LITERATURE.md"
+    },
+    {
+      "source": "SPECTRAL_CHANNEL.md",
+      "target": "accepted/research/ym2_conditional_construction/TWO_SQUARE_GEOMETRY.md"
+    },
+    {
+      "source": "SPECTRAL_CHANNEL.md",
+      "target": "accepted/research/ym2_conditional_construction/CONDITIONAL_OBSTRUCTION.md"
+    },
+    {
+      "source": "SPECTRAL_CHANNEL.md",
+      "target": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md"
+    }
+  ],
+  "figure_dimensions": [
+    3200,
+    1800
+  ],
+  "prior_archive_sha256": "1f2c4017faf270367de7209ec59eb5e2c19e32fdcaa99b27405d2b624aae785d",
+  "original_sources_unchanged": true,
+  "old_checkers_executed": false,
+  "receipt": {
+    "schema": "ym2-operational-controls-v1",
+    "status": "PASS",
+    "matrix_channels": [
+      {
+        "pattern": "opposite",
+        "spin": 0,
+        "rank": 16,
+        "singular_value_squared": "1/16"
+      },
+      {
+        "pattern": "opposite",
+        "spin": 1,
+        "rank": 16,
+        "singular_value_squared": "9/16"
+      },
+      {
+        "pattern": "opposite",
+        "spin": 0,
+        "rank": 16,
+        "singular_value_squared": "1/16"
+      },
+      {
+        "pattern": "opposite",
+        "spin": 1,
+        "rank": 16,
+        "singular_value_squared": "9/16"
+      },
+      {
+        "pattern": "same",
+        "spin": 0,
+        "rank": 4,
+        "singular_value_squared": "1/4"
+      },
+      {
+        "pattern": "same",
+        "spin": 1,
+        "rank": 12,
+        "singular_value_squared": "3/4"
+      },
+      {
+        "pattern": "same",
+        "spin": 0,
+        "rank": 4,
+        "singular_value_squared": "1/4"
+      },
+      {
+        "pattern": "same",
+        "spin": 1,
+        "rank": 12,
+        "singular_value_squared": "3/4"
+      }
+    ],
+    "incidence": [
+      {
+        "dimension": 2,
+        "axis": 0,
+        "plaquettes": 2,
+        "pair_count": 7,
+        "counts": {
+          "shared": {
+            "same": 0,
+            "opposite": 1
+          },
+          "outside": {
+            "same": 0,
+            "opposite": 6
+          }
+        }
+      },
+      {
+        "dimension": 2,
+        "axis": 1,
+        "plaquettes": 2,
+        "pair_count": 7,
+        "counts": {
+          "shared": {
+            "same": 0,
+            "opposite": 1
+          },
+          "outside": {
+            "same": 0,
+            "opposite": 6
+          }
+        }
+      },
+      {
+        "dimension": 3,
+        "axis": 0,
+        "plaquettes": 4,
+        "pair_count": 42,
+        "counts": {
+          "shared": {
+            "same": 2,
+            "opposite": 4
+          },
+          "outside": {
+            "same": 12,
+            "opposite": 24
+          }
+        }
+      },
+      {
+        "dimension": 3,
+        "axis": 1,
+        "plaquettes": 4,
+        "pair_count": 42,
+        "counts": {
+          "shared": {
+            "same": 2,
+            "opposite": 4
+          },
+          "outside": {
+            "same": 12,
+            "opposite": 24
+          }
+        }
+      },
+      {
+        "dimension": 3,
+        "axis": 2,
+        "plaquettes": 4,
+        "pair_count": 42,
+        "counts": {
+          "shared": {
+            "same": 2,
+            "opposite": 4
+          },
+          "outside": {
+            "same": 12,
+            "opposite": 24
+          }
+        }
+      }
+    ],
+    "spectral": {
+      "resolvent_values": 31,
+      "two_probe_pairs": 21,
+      "character_spin_examples": 64,
+      "zero_current_nonzero_inverse": "1/156",
+      "fixed_scale_zero_later": "-z/[16(9+z)(13+z)]"
+    },
+    "certificates": [
+      {
+        "x": "1/3",
+        "Z": "7/20",
+        "margin": "1/2400",
+        "Lipschitz": "101/180",
+        "q": "4/5",
+        "D": "41/90",
+        "gap_prefactor_without_d_over_d_minus_one": "3/10"
+      },
+      {
+        "x": "7/20",
+        "Z": "5/12",
+        "margin": "13/6912",
+        "Lipschitz": "109/180",
+        "q": "163/180",
+        "D": "23/45",
+        "gap_prefactor_without_d_over_d_minus_one": "17/120"
+      }
+    ],
+    "old_checkers_executed": false,
+    "assertions": 633
+  },
+  "ceiling": "Written scoped proofs and independent agent review with exact finite controls; byte integrity is not formal proof or a continuum mass-gap theorem."
+}

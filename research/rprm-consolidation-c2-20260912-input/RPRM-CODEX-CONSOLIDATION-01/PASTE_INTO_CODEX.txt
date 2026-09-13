@@ -1,0 +1,11 @@
+I'm consolidating the remaining RPRM work into this one Codex conversation so I don't need to move messages among threads.
+
+Read CODEX_START_HERE.md in RPRM-CODEX-CONSOLIDATION-01 as the single active assignment, then CURRENT_STATE.md. Follow applicable workspace instructions. This is the explicit execution handoff for F1, AD1 and YM1, not another coordination-only review.
+
+Keep C1 and SAT02 Codex M1 closed, preserve SAT's 6 RUN / 4 NOT_RUN and limited claims, and do not reopen Lind–Reichardt or rescore/rerun the AD 14/16 pilot. Older pending-patch and undispatched notes are historical; current closeouts and this assignment govern the next work.
+
+Own the three bounded tasks: (1) reconcile the existing fluid PR12/13 claims and evidence; (2) complete one small executable AD scoped-claim reuse design; (3) derive one physically grounded Yang–Mills model/observable/dynamics bridge with a falsifier or preservation argument and a finite-box/truncation negative control. Use the supplied task cards. Default to sequential execution; any workers must use disjoint output areas, with one coordinator maintaining the state.
+
+Reconcile any actual local completed work before duplicating it. Read the fluid checkout or fetch its pinned source yourself; do not ask me to gather old chats. If one source is inaccessible, finish the other tasks and state the exact limitation. Preserve input archives, original meanings and successful results; do not force a new theorem, speedup or success verdict.
+
+No SAT Task03, seed backfill, new benchmark/model tournament, large physics-engine rewrite, installations, paid compute, commit/push/merge, publication or manuscript edits. Return one actual consolidated ZIP and SHA-256, final-export evidence for new checks, RETURN_TO_WILLIAM.md, and a current rebrief that says what is complete and what remains open. Complete the bounded work, not merely a plan, then stop.

@@ -1,0 +1,136 @@
+{
+  "claim": "Byte integrity only; not mathematical verification",
+  "files": [
+    {
+      "bytes": 6816,
+      "path": "agents/DIGIT_SCOUT.md",
+      "sha256": "4cadb92789d4638666c906c3ba117588d5f55f4e92808e79dc3944c46cc2cdf6"
+    },
+    {
+      "bytes": 992,
+      "path": "agents/RATIO_REVIEW.md",
+      "sha256": "9126ae99e45e51c634d80cdeaacf326b1da9e704e8f3128646cc28166626f930"
+    },
+    {
+      "bytes": 9040,
+      "path": "agents/SLIDING_GEOMETRY.md",
+      "sha256": "b0ff9e1fb76c5d6d0e3f1452bf7b62eb570f8bf9c0636728660472afe792d059"
+    },
+    {
+      "bytes": 1704,
+      "path": "BSD_REBRIEF.md",
+      "sha256": "88cf4e32e2283410c59eab56983e7cdafb028fac2bb943dade07bc463039dd7b"
+    },
+    {
+      "bytes": 5710,
+      "path": "evidence/check_digit_scout.py",
+      "sha256": "4d6437a42d239ae25b0066ee2be55699a468dc15906eb88add22dd5c15cabc56"
+    },
+    {
+      "bytes": 20994,
+      "path": "evidence/digit-checks.json",
+      "sha256": "cff4ab0ba3502af2db7da48cace995506521710ae70db49b42be97939a1e7740"
+    },
+    {
+      "bytes": 13502,
+      "path": "evidence/display-bounds.json",
+      "sha256": "7a542cbc8c192578a4d6c7cec78a020b9112b12708b58730eefb0f0058e9949a"
+    },
+    {
+      "bytes": 16253,
+      "path": "evidence/ratio-loop-v2.json",
+      "sha256": "fb1226046438969518343949f31e3308581994c35956a13a110b90eb6f46d2c1"
+    },
+    {
+      "bytes": 15958,
+      "path": "evidence/ratio-loop.json",
+      "sha256": "6cf0fe400c6d1904a5797dea050685873719fbfda1944b134d8f03af8cc594d6"
+    },
+    {
+      "bytes": 50759,
+      "path": "evidence/sliding-desktop.png",
+      "sha256": "1f0abf9d91bf08cdb65de6c12946442ddbb18a8ae17a8d3204abad8a93f03fbd"
+    },
+    {
+      "bytes": 37111,
+      "path": "evidence/sliding-edge-on.png",
+      "sha256": "a588198e4abc3eeba85dd2093049aac01a83fd64da916128b0d81a571aeb020c"
+    },
+    {
+      "bytes": 35882,
+      "path": "evidence/sliding-mobile.png",
+      "sha256": "0ed39c9af077f93453b53123f4a9ffac6cea2c3cf3e98fda312acbb34b6b074f"
+    },
+    {
+      "bytes": 47323,
+      "path": "evidence/sliding-preview.html",
+      "sha256": "186704c85d0bdfc25edc62a9104460952550acde253aa2e4744e6b8e83577f78"
+    },
+    {
+      "bytes": 125300,
+      "path": "evidence/translator-scouts.json",
+      "sha256": "f2fcba25edbcc2023c2892638297a86ae74f97f6e5e4296d061b5a8fe573d1b5"
+    },
+    {
+      "bytes": 1352,
+      "path": "evidence/translator-verification.json",
+      "sha256": "7154ec85e0deb87b1fd988d1781b493fd72a83e1e3b94be82e470e196c3df948"
+    },
+    {
+      "bytes": 1674,
+      "path": "evidence/visual-check.json",
+      "sha256": "a73b826095dfe069e597e8ae569d86c16240f953f3de39aa306028a9a692e3ee"
+    },
+    {
+      "bytes": 2290,
+      "path": "PREFREEZE.md",
+      "sha256": "fd5319cad394a65beee6367324045b6417af267d744d338ebed4a51614c00ea9"
+    },
+    {
+      "bytes": 8650,
+      "path": "README.md",
+      "sha256": "666dc06db6bccdca15c835f231d6703d58fe8d166891d8b37c68471d8a507dbd"
+    },
+    {
+      "bytes": 2302,
+      "path": "SOURCES.md",
+      "sha256": "792dc7c1db0e3273579ac519a8af9be644d623acdfa900c94028540bd2250538"
+    },
+    {
+      "bytes": 6948,
+      "path": "visual/sliding-keyring.html",
+      "sha256": "ebccf5382cbc1b12c2634f90ecabbfc3d74d4d90a81c065208cada1b7d859e5b"
+    },
+    {
+      "bytes": 3272,
+      "path": "work/check_display_bounds.py",
+      "sha256": "e4e8e177d1e97d91ca292dc2ce7e65ca9272e93bb29cea5ad184fa5b172dd9ba"
+    },
+    {
+      "bytes": 2341,
+      "path": "work/check_ratio_loop.py",
+      "sha256": "6f29f21aa1401bf41a3067cbae2861ee8fae5d1864717dbe62035fe5cd97fd76"
+    },
+    {
+      "bytes": 1884,
+      "path": "work/check_ratio_loop_initial.py",
+      "sha256": "fa9cd01265a1d4da9a3218320cd9abb526d1f027c5beeb07a7e9f90741536fdc"
+    },
+    {
+      "bytes": 4137,
+      "path": "work/check_sliding_visual.cjs",
+      "sha256": "f72b4f0c647680affe577ea3d99e466237c34f7b88444f78d06f16fad7f66b82"
+    },
+    {
+      "bytes": 3677,
+      "path": "work/package_packet.py",
+      "sha256": "a0396aae8cecf97150cb768d3c7eb9701af6cbcb56bf46f7b97db5a0fb1f5879"
+    },
+    {
+      "bytes": 1958,
+      "path": "work/verify_bindings.py",
+      "sha256": "05732e02c4c245c1c1981cf3334d36a762099da1c576a4a3c76fe0f0e2354260"
+    }
+  ],
+  "schema": "bsd-sliding-hook-15-file-manifest-v1"
+}

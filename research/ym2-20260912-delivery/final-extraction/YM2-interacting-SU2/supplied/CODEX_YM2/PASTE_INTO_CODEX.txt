@@ -1,0 +1,5 @@
+Publication is on hold. This is the next interacting-field research task, not another consolidation or closeout.
+
+Read CODEX_START_HERE.md and CURRENT_STATE.md in the attached/extracted CODEX_YM2 packet. Complete YM2: test whether electric energy, magnetic energy, and signed transfer support future magnetic-energy readout in an actual interacting SU(2) sector. Derive the model and constraints, obtain a closure proof or exact separating witness, and pursue one physically justified refinement far enough to expose the next mathematical obligation. Use the included YM1 sources as accepted starting evidence, not a task to rerun.
+
+Preserve all closed results and broader RPRM meanings. Work only in this lane. Return the derivation, checked result, what it does and does not say about the mass-gap ambition, a portable ZIP and final-export evidence. No paper, benchmark campaign, installation, paid compute, commit/push/merge, or other-lane work. Do the bounded research rather than returning only a plan.

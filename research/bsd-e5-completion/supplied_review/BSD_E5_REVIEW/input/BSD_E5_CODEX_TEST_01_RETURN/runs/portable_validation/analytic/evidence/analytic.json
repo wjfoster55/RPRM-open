@@ -1,0 +1,237 @@
+{
+  "run": {
+    "started_utc": "2026-09-12T17:50:26.892982+00:00",
+    "budget_sha256": "26731f4d32e764490da30358b36e9acf02d65a1dcac8159c98fd9df561ac1895",
+    "implementation_sha256": "311dfbfcb4b2295b0697f592dbd1d762e29f054527358d548dcf082963f151e3",
+    "implementation": "work/analytic_check.py",
+    "independence": "new standard-library implementation; no source-program imports, saved-result reads, arithmetic rank inputs or numerical target values"
+  },
+  "B02": {
+    "task_id": "B02",
+    "status": "CONFIRMED",
+    "evidence_kind": [
+      "INDEPENDENT_EXACT_FINITE_COMPUTATION",
+      "WRITTEN_DERIVATION",
+      "THEOREM_CITED"
+    ],
+    "nonzero_through_20": {
+      "1": 1,
+      "9": -3,
+      "13": -6,
+      "17": -2
+    },
+    "leading_lower": "8/9",
+    "retained_negative_rows": [
+      {
+        "n": 9,
+        "a_n": -3,
+        "absolute_term_bound": "9765625/136048896"
+      },
+      {
+        "n": 13,
+        "a_n": -6,
+        "absolute_term_bound": "6103515625/183938107392"
+      },
+      {
+        "n": 17,
+        "a_n": -2,
+        "absolute_term_bound": "3814697265625/1222951144882176"
+      }
+    ],
+    "additional_positive_terms_ignored": [],
+    "negative_magnitude_bound": "22338243056640625/206678743485087744",
+    "entire_tail_after_20_bound": "2384185791015625/19194831810330624",
+    "lower_bound": "615556405007957768183/937494780448358006784",
+    "advertised_rational_reconstructed": true,
+    "margin_above_13_over_20": "30923988582625318867/4687473902241790033920",
+    "premises": [
+      {
+        "id": "MELLIN_IDENTITY",
+        "support": "B01 separate source and normalization check; not inferred from finite arithmetic"
+      },
+      {
+        "id": "ALPHA_RANGE",
+        "support": "exact Machin and integer square-root enclosure in constants",
+        "bounds": [
+          "1/5",
+          "1/4"
+        ]
+      },
+      {
+        "id": "EXP_RATIO",
+        "support": "exp(alpha)>1+alpha>6/5, hence exp(-alpha)<5/6"
+      },
+      {
+        "id": "ALL_N_COEFFICIENT_BOUND",
+        "support": "Hasse theorem -> Euler roots -> |a_n|<=d(n)sqrt(n)<=2n, with additive factors 1; full written derivation"
+      },
+      {
+        "id": "E1_UPPER",
+        "support": "integral_x^infinity exp(-t)/t dt <= exp(-x)/x for every x>0"
+      },
+      {
+        "id": "LEADING_TERM",
+        "support": "alpha<1/4, exp(-t)>1/3 on (1/4,1), log(2)>2/3; hence 2E1(alpha)>8/9"
+      },
+      {
+        "id": "COMPLETE_TAIL",
+        "support": "geometric sum covering every n>=21; no sampled sign/zero extrapolation"
+      }
+    ]
+  },
+  "D01": {
+    "status": "CONFIRMED",
+    "interval_file": "DERIVATIVE_INTERVAL.json",
+    "lower": "556371/250000",
+    "upper": "1114529/500000",
+    "width": "1787/500000",
+    "cutoff": 40,
+    "panels_per_band": 32
+  },
+  "prime_data_through_20": [
+    {
+      "p": 2,
+      "projective_model_count": 3,
+      "trace": 0,
+      "status": "additive",
+      "affine_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "local_factor": "1"
+    },
+    {
+      "p": 3,
+      "projective_model_count": 4,
+      "trace": 0,
+      "status": "good",
+      "quadratic_character_sum": 0,
+      "local_factor": "1-(0)*T+3*T^2"
+    },
+    {
+      "p": 5,
+      "projective_model_count": 6,
+      "trace": 0,
+      "status": "additive",
+      "quadratic_character_sum": 0,
+      "local_factor": "1"
+    },
+    {
+      "p": 7,
+      "projective_model_count": 8,
+      "trace": 0,
+      "status": "good",
+      "quadratic_character_sum": 0,
+      "local_factor": "1-(0)*T+7*T^2"
+    },
+    {
+      "p": 11,
+      "projective_model_count": 12,
+      "trace": 0,
+      "status": "good",
+      "quadratic_character_sum": 0,
+      "local_factor": "1-(0)*T+11*T^2"
+    },
+    {
+      "p": 13,
+      "projective_model_count": 20,
+      "trace": -6,
+      "status": "good",
+      "quadratic_character_sum": 6,
+      "local_factor": "1-(-6)*T+13*T^2"
+    },
+    {
+      "p": 17,
+      "projective_model_count": 20,
+      "trace": -2,
+      "status": "good",
+      "quadratic_character_sum": 2,
+      "local_factor": "1-(-2)*T+17*T^2"
+    },
+    {
+      "p": 19,
+      "projective_model_count": 20,
+      "trace": 0,
+      "status": "good",
+      "quadratic_character_sum": 0,
+      "local_factor": "1-(0)*T+19*T^2"
+    }
+  ],
+  "coefficients_through_20": {
+    "1": 1,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": -3,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": -6,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": -2,
+    "18": 0,
+    "19": 0,
+    "20": 0
+  },
+  "controls": [
+    {
+      "id": "K03_EULER_RECURRENCE",
+      "status": "CONFIRMED",
+      "control_outcome": "FALSE_RECORD_REJECTED",
+      "program_execution": "PASS",
+      "actual_mutation": "coefficient record a9 changed to 0",
+      "input_file": "evidence/controls/K03_mutated_a9.json",
+      "observed_a9": 0,
+      "a3": 0,
+      "required_a9_from_a3_squared_minus_3": -3,
+      "mismatch": 3
+    },
+    {
+      "id": "K04_NO_TAIL",
+      "status": "CONFIRMED",
+      "control_outcome": "INFINITE_CLAIM_OPEN_PROMOTION_REJECTED",
+      "program_execution": "PASS",
+      "actual_mutation": "deleted the all-term coefficient theorem from the same finite-head claim representation used by interval promotion",
+      "input_file": "evidence/controls/K04_missing_all_term_premise.json",
+      "before": {
+        "status": "CONFIRMED",
+        "promotion": "SUPPORTED_WITH_CITED_THEOREM",
+        "infinite_sum_interval": [
+          "159008456371777480468424685484603075396983091698487/71448924951578742343638317470613330474743118168064",
+          "159263781717232422192933600260418635345871734126921/71448924951578742343638317470613330474743118168064"
+        ],
+        "tail_radius": "227373675443232059478759765625/137016819023148274195348171259904"
+      },
+      "after": {
+        "status": "OPEN",
+        "promotion": "REJECTED",
+        "reason": "Finite head does not enclose the infinite sum without all omitted terms covered.",
+        "missing": [
+          "all_term_coefficient_bound"
+        ],
+        "finite_head_interval": [
+          "957703659238384762517985725821/430014309574013790128399450112",
+          "957813149603364226864572400643/430014309574013790128399450112"
+        ],
+        "infinite_sum_interval": null
+      },
+      "meaning": "This rejects this finite-head promotion; it does not refute nonvanishing or invalidate an independently supplied proof."
+    }
+  ],
+  "source_program_comparison": "root separately runs supplied programs; not part of this independent computation",
+  "formal_proof_status": "NOT_RUN",
+  "external_rigorous_backend": "NOT_RUN; standard-library exact enclosure completed",
+  "elapsed_seconds_display_only": 1.103
+}

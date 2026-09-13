@@ -1,0 +1,50 @@
+{
+  "links": [
+    {
+      "source": "AUTHORITY_AND_REBRIEF.md",
+      "target": "RETURN_TO_WILLIAM.md"
+    },
+    {
+      "source": "AUTHORITY_AND_REBRIEF.md",
+      "target": "PROBLEM_BRIDGE.md"
+    },
+    {
+      "source": "MODEL_AND_DERIVATION.md",
+      "target": "SOURCES.md"
+    },
+    {
+      "source": "MODEL_AND_DERIVATION.md",
+      "target": "review/INDEPENDENT_MATH.md"
+    },
+    {
+      "source": "MODEL_AND_DERIVATION.md",
+      "target": "RESULTS.json"
+    },
+    {
+      "source": "MODEL_AND_DERIVATION.md",
+      "target": "PROBLEM_BRIDGE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "RETURN_TO_WILLIAM.md"
+    },
+    {
+      "source": "README.md",
+      "target": "MODEL_AND_DERIVATION.md"
+    },
+    {
+      "source": "README.md",
+      "target": "PROBLEM_BRIDGE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "SOURCES.md"
+    },
+    {
+      "source": "review/PHYSICS_REVIEW.md",
+      "target": "../SOURCES.md"
+    }
+  ],
+  "scope": "new authored Markdown only; inherited source locators not rewritten",
+  "status": "PASS"
+}

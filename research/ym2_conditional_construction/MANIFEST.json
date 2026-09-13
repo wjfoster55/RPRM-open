@@ -1,0 +1,136 @@
+{
+  "schema": "ym2-construction-manifest-v1",
+  "self_excluded": "MANIFEST.json",
+  "files": [
+    {
+      "path": "accepted/research/ym2_estimate_continuation/SIGNED_AND_CONTRACTED_AUDIT.md",
+      "bytes": 14004,
+      "sha256": "46485c888fa3bff0826a314347b1147f2c378109e3f45f39849483f03d92978e"
+    },
+    {
+      "path": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/CONDITIONAL_REFINEMENT.md",
+      "bytes": 9065,
+      "sha256": "abd62ff7ae6771722e21ea497b2050f4dbf0478b28cfc037f0d698d22b09360c"
+    },
+    {
+      "path": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md",
+      "bytes": 17473,
+      "sha256": "1e30640bb3c837938447b769942295f3f357453f06fe8b9b5a5de6546d788df0"
+    },
+    {
+      "path": "accepted/research/ym2_overlap_cover/accepted/estimate/CONDITIONAL_GAP_EXTENSION.md",
+      "bytes": 14200,
+      "sha256": "387ecab4983a0e8398db538d6ddc8d60e2441a179004a1806ecd6adc739f21fd"
+    },
+    {
+      "path": "accepted/research/ym2_overlap_cover/accepted/estimate/SIGNED_AND_CONTRACTED_AUDIT.md",
+      "bytes": 14004,
+      "sha256": "46485c888fa3bff0826a314347b1147f2c378109e3f45f39849483f03d92978e"
+    },
+    {
+      "path": "accepted/research/ym2_overlap_cover/accepted/estimate/SOURCE_NORM_REFINEMENT.md",
+      "bytes": 12931,
+      "sha256": "cbfccef461b79d2a4270ef52bd2f821860d88f0c157228b894c1ccba1c969ac4"
+    },
+    {
+      "path": "accepted/research/ym2_overlap_cover/BLOCK_COVER.md",
+      "bytes": 20813,
+      "sha256": "3b0a7b88ab1849504b9d7e3001dfe4a40d403244fe8cd67180eb53b749ce1407"
+    },
+    {
+      "path": "accepted/research/ym2_rail_closure/CONDITIONAL_RAIL.md",
+      "bytes": 12832,
+      "sha256": "30d65be6af0424da4544fea5037c6a2476278850c2131180a85f274979cda7e2"
+    },
+    {
+      "path": "accepted/research/ym2_rail_closure/RESULT.md",
+      "bytes": 12211,
+      "sha256": "ef1eb24ebbd382dabf08d606c95c57c83176a10bddb726ce3460fa532823eb9f"
+    },
+    {
+      "path": "accepted/research/ym2_vacuum_handoff/TRIAL_REFERENCE.md",
+      "bytes": 10967,
+      "sha256": "ccdc03f843bb5eb3d1627e4655e86e9cac1bfed8074d13b58554a696a9c54c7a"
+    },
+    {
+      "path": "accepted/YM2-rail-closure-2026-09-12.zip",
+      "bytes": 2353363,
+      "sha256": "d32225173249ebffdaa733a0a8e4ee6955902e78c136072cfd368d4b2640232d"
+    },
+    {
+      "path": "check_construction.py",
+      "bytes": 8533,
+      "sha256": "27a23af7b7436e3669fee666b3c23aea7cd544d722a172bfbd95d05acfc52b54"
+    },
+    {
+      "path": "COMBINED_RESULT.md",
+      "bytes": 12515,
+      "sha256": "7ad46c4e96b84bcada64875d07452738b059aa62a2778799b103b7b7feb9eb40"
+    },
+    {
+      "path": "CONDITIONAL_OBSTRUCTION.md",
+      "bytes": 12023,
+      "sha256": "e45e29b0162e5fdcbece541fa33e15466c13e96544bb60fe1bbea913ee282542"
+    },
+    {
+      "path": "CONSTRUCTION_REVIEW.md",
+      "bytes": 17997,
+      "sha256": "c0319af689421af4db2a4624c1e2db5b5eb0b2071c0081bcef76674d9fec5de0"
+    },
+    {
+      "path": "draw_geometry.py",
+      "bytes": 4404,
+      "sha256": "52979dd9938693c91d3e7f7d9d3ef4555ea169e6bd3034a563ca8c46fb515f81"
+    },
+    {
+      "path": "GAUGE_NORM_GAIN.md",
+      "bytes": 18782,
+      "sha256": "0ae7da9697b5bb9ce798444fc7a9e8fc25b872d9bc00500b0f9e43652d264e94"
+    },
+    {
+      "path": "joint_construction.png",
+      "bytes": 537309,
+      "sha256": "e4f81456856cc994fef82c4a59a02824a624d8e4d26e71425c0eb9cc01ab0372"
+    },
+    {
+      "path": "joint_construction.svg",
+      "bytes": 578182,
+      "sha256": "115b346ec8980c92069feb24cc744d150dcdfc03bb74cf5bc5177cfb93cea22f"
+    },
+    {
+      "path": "LOCAL_VACUUM_ROUTE.md",
+      "bytes": 22021,
+      "sha256": "6fc392e3f75716b289bcf39e9ee75f0a81bce47766090453531e33e9cd7405ba"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1463,
+      "sha256": "d74d0d483f4f2a4139f479e8cfbecea7844816623196125c5cf05d800a2f50c8"
+    },
+    {
+      "path": "RESULT.md",
+      "bytes": 8892,
+      "sha256": "51e8d178a5fcee9e407456671b8c1875108363e2485eb456ee502a8fc211b810"
+    },
+    {
+      "path": "RESULTS.json",
+      "bytes": 857,
+      "sha256": "f16578695421ba11da0e9fa82bba39cdf164f63ab53af1800bd401d5d5d13705"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 8721,
+      "sha256": "404d6b8eb857c271e1a0c9aae203d3ab4fe96ac336f07c76b0a553d464c6217b"
+    },
+    {
+      "path": "TWO_SQUARE_GEOMETRY.md",
+      "bytes": 7419,
+      "sha256": "9d290bdad62f22c2d1101e5cf1a7ade92fdf27f6ad149437a15c32f6cf9399b8"
+    },
+    {
+      "path": "VISUAL_CHECKS.md",
+      "bytes": 915,
+      "sha256": "07e242c9aa7bacecf7a44f7f89d24440306ecc8e6b75e8dbd6f67bb7416ddff7"
+    }
+  ]
+}

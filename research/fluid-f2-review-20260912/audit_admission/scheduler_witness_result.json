@@ -1,0 +1,72 @@
+{
+  "evidence_grade": "finite executable documentation witness",
+  "scope": "normalized binary model-B initial state; one frame; no claimed Q_300 counterexample",
+  "CHUNK": 8,
+  "frame": 1,
+  "actual_row_scan": [
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0,
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8
+  ],
+  "prose_whole_row_scan": [
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "initial_water": [
+    [
+      7,
+      2
+    ],
+    [
+      8,
+      2
+    ]
+  ],
+  "pinned_after_frame_1": [
+    [
+      7,
+      2
+    ],
+    [
+      9,
+      2
+    ]
+  ],
+  "whole_row_control_after_frame_1": [
+    [
+      8,
+      2
+    ],
+    [
+      9,
+      2
+    ]
+  ]
+}

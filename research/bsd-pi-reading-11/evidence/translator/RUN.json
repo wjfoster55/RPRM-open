@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-09-13T03:14:08.940948+00:00",
+  "source_root": "C:\\github\\RPRMLexicon\\operational_numbers",
+  "source_hashes": {
+    "translate_number.py": "6e7fab0a37430b7d6fc197940129756b1a14277dbfc990e1a07a446eb18c5e67",
+    "carrier_lexer.py": "45805f1796290c41834a27001bb9bcd2117359093b05754a3eb10ab430474e46",
+    "verify.py": "7589d4f081c503e51410bed93c9b88a58dbe2453436f921418ee61dbb7935907",
+    "readings.json": "c47045f601422c3f494536ae27a3b2b56660b46d0c2b9da3c9c3881b8bdb6ff0"
+  },
+  "jobs": [
+    {
+      "name": "verify",
+      "exit_code": 0,
+      "output": "verify.log",
+      "sha256": "c54f26fc71007d7591be703119d018c6af2f1129f47fb413648fe744f32d0fa0"
+    },
+    {
+      "name": "lower",
+      "exit_code": 0,
+      "output": "lower.json",
+      "sha256": "2cf438d2398d66b2e4a17d2fb9a8a75bf1f1e85600006dba3ce61091002f52f1"
+    },
+    {
+      "name": "upper",
+      "exit_code": 0,
+      "output": "upper.json",
+      "sha256": "bc95a659ac69e50e652e25587a418f4c93f27ddd0f532ae3485de2feff9b9690"
+    },
+    {
+      "name": "34",
+      "exit_code": 0,
+      "output": "34.json",
+      "sha256": "1ba3373bfb360c366e2df620bced96541a968885eb6d1656216e5387c43d6e87"
+    },
+    {
+      "name": "35",
+      "exit_code": 0,
+      "output": "35.json",
+      "sha256": "29e755860fb4c7c369a6005cdc901b9b2aec08f8f508b7d170a7f581faa0ab11"
+    },
+    {
+      "name": "pi",
+      "exit_code": 0,
+      "output": "pi.json",
+      "sha256": "ce45ea4fa226e30d3fb1cfeb91725d063de435d967cd3db5af96a4a652dc2f42"
+    }
+  ],
+  "status": "FRESH_TRANSLATOR_RUN_COMPLETED"
+}

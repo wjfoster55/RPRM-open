@@ -1,0 +1,1 @@
+PASS: exact vacuum-comparison arithmetic; saved receipt matches

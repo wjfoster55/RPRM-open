@@ -1,0 +1,286 @@
+{
+  "schema": "ym2-rail-manifest-v1",
+  "self_excluded": "MANIFEST.json",
+  "files": [
+    {
+      "path": "accepted/handoff/accepted/overlap/accepted/estimate/CONDITIONAL_GAP_EXTENSION.md",
+      "bytes": 14200,
+      "sha256": "387ecab4983a0e8398db538d6ddc8d60e2441a179004a1806ecd6adc739f21fd"
+    },
+    {
+      "path": "accepted/handoff/accepted/overlap/accepted/estimate/SOURCE_NORM_REFINEMENT.md",
+      "bytes": 12931,
+      "sha256": "cbfccef461b79d2a4270ef52bd2f821860d88f0c157228b894c1ccba1c969ac4"
+    },
+    {
+      "path": "accepted/handoff/accepted/overlap/BLOCK_COVER.md",
+      "bytes": 20813,
+      "sha256": "3b0a7b88ab1849504b9d7e3001dfe4a40d403244fe8cd67180eb53b749ce1407"
+    },
+    {
+      "path": "accepted/handoff/COMPENSATOR.md",
+      "bytes": 12393,
+      "sha256": "6c8ae01ae49c444bdde363af868d736b82a74683cd49a9f2d81955875eda0d1e"
+    },
+    {
+      "path": "accepted/handoff/INDEPENDENT_REVIEW.md",
+      "bytes": 9550,
+      "sha256": "06f9adc13afbdecc5ca4d713a112001471a69c1a72c0ce4f3125411ccb12eb54"
+    },
+    {
+      "path": "accepted/handoff/RESULT.md",
+      "bytes": 10927,
+      "sha256": "7d657fc0486d6ae2168b32caa11b637392ab6a570da3b4585dc72963c043ca8e"
+    },
+    {
+      "path": "accepted/handoff/TRIAL_REFERENCE.md",
+      "bytes": 10967,
+      "sha256": "ccdc03f843bb5eb3d1627e4655e86e9cac1bfed8074d13b58554a696a9c54c7a"
+    },
+    {
+      "path": "accepted/handoff/VACUUM_ATLAS.md",
+      "bytes": 20026,
+      "sha256": "df1a039651b7a403dde5a60758d06f74f4172373e61209dd03c4e7b0233305f5"
+    },
+    {
+      "path": "accepted/sources/03ba81a68c_RPRM_PROOF_RECEIPT_CALCULUS.md",
+      "bytes": 12826,
+      "sha256": "ff5c3f59bb33248fa874357539d7e39a19c26b610363021b36957a12d366b1cb"
+    },
+    {
+      "path": "accepted/sources/10028dc6b4_README.md",
+      "bytes": 9951,
+      "sha256": "6bab2b3bef797d10d4609429bb6e4fe0053d97d7f1c857fdce6a6b06df90d59d"
+    },
+    {
+      "path": "accepted/sources/1c61f9700c_RPRM_MASTER_ASSISTANT_CONTEXT_GUIDE_WORKING_0_1_2026-08-13.md",
+      "bytes": 50141,
+      "sha256": "a939f252816b5e73686fce64a3b19caa39151637d56749cd3b83b84b6f19708c"
+    },
+    {
+      "path": "accepted/sources/245b54d5c3_RPRM_LONGITUDINAL_INTUITION_AND_MISSED_SEAMS_AUDIT_0_1_SHADOW.md",
+      "bytes": 25300,
+      "sha256": "6d7087d382de0f73f50c6ab4134c0d4b95fa515dc3b13d7367ae0a7c1b7f195b"
+    },
+    {
+      "path": "accepted/sources/2601fdc27e_core.md",
+      "bytes": 40459,
+      "sha256": "7ef1490b41a59be92f42c5b6457e7ad1c40ceb43287d2d78a3ba6b3c767f2ca3"
+    },
+    {
+      "path": "accepted/sources/28b88f9b2a_TYPED_CLOSURE_SELF_REARM_01_PROTOCOL.md",
+      "bytes": 7318,
+      "sha256": "2b4e1d91ded96b805e35429fef4a731a5617d687217cb115fd2c49ef6be58252"
+    },
+    {
+      "path": "accepted/sources/33ad47113d_PROTOCOL.md",
+      "bytes": 7919,
+      "sha256": "bae5a55c7122ff0270e1d047db8d453366e695dba77b0f4edd21263e01893495"
+    },
+    {
+      "path": "accepted/sources/340d3609c9_VAULT_CONTRACT_1_0.md",
+      "bytes": 13712,
+      "sha256": "2b11745ff8a46bde0de75629df0dbddbd7704cb1d1b06d98d1fa0c765784f511"
+    },
+    {
+      "path": "accepted/sources/4077dcc32e_RPRM_PI_THREE_LEVEL_345_MATRIX_01_EVIDENCE.md",
+      "bytes": 3493,
+      "sha256": "f53904f29820db4b02a3d01943f1b49e40b7873d879276d95ecc95c4851aa853"
+    },
+    {
+      "path": "accepted/sources/474d96afb4_RESULTS_SUMMARY.md",
+      "bytes": 3453,
+      "sha256": "ea9b6fa8f811d8a4bc78ae3e965783537d5ca459627b5855d3f5715329de8e81"
+    },
+    {
+      "path": "accepted/sources/4c3c1ef852_RPRM_VAULT_PROCESS_1_0.md",
+      "bytes": 23358,
+      "sha256": "1deedc9ac97a00998a7f946f2bb5521786f3f921b4a6a832d86566f5797b2f75"
+    },
+    {
+      "path": "accepted/sources/4e94911226_CUBES-AND-PI-CURVES.md",
+      "bytes": 53235,
+      "sha256": "526ab16ba66addb1e6ebade597a2470f44d83761705f29333e4ee439c5c9ef0e"
+    },
+    {
+      "path": "accepted/sources/5575bc0590_RPRM_KERNEL_STILL_POINT_2026-08-12.md",
+      "bytes": 7730,
+      "sha256": "17e74561eab6d90d3bad876b607a77ec7e670d891d5c55da034ee619ac784dee"
+    },
+    {
+      "path": "accepted/sources/5af0b06380_RPRM-CONCEPT-RECOVERY.md",
+      "bytes": 28752,
+      "sha256": "5cd1318d303f89fd587692e7d9d5d87f96c285441fa6f530ea70a73047737829"
+    },
+    {
+      "path": "accepted/sources/64a49cea6e_USER_STEERING_AMENDMENTS_0_7_FIRST_ACTUALIZATION_FLICK.md",
+      "bytes": 4476,
+      "sha256": "3258e3c8b78055772577c0902e3af5014decb0c96e3172b6e36bf5f3144bd4ae"
+    },
+    {
+      "path": "accepted/sources/6666f0bf03_REPORT.md",
+      "bytes": 5853,
+      "sha256": "28989cc615a869eaf0cad809b1da3b85a4d570cba8cad16d4bf7de0f63627201"
+    },
+    {
+      "path": "accepted/sources/68ecefa4b6_SOURCES.md",
+      "bytes": 4937,
+      "sha256": "f79783770028c4da1e62ea0964c14fb56e64b91c60645aaad1c2e97cfdef51b5"
+    },
+    {
+      "path": "accepted/sources/7fd574cf2c_REPORT.md",
+      "bytes": 6132,
+      "sha256": "bd4fcd84a8fc26a11873cb33480c63eba7941a486b55c95410fe36a3ae98ea82"
+    },
+    {
+      "path": "accepted/sources/99cd68b4ab_RESULTS_SUMMARY.md",
+      "bytes": 3514,
+      "sha256": "82a0af5e270ca8b88515a0ff8ac8fd82527bf644b31ddb8a158a3e713113a081"
+    },
+    {
+      "path": "accepted/sources/a480a92f1c_README.md",
+      "bytes": 3591,
+      "sha256": "f1022aad5f55eff459c430aa37e197fb18f0fae2bc513b88018a1fb26786aeeb"
+    },
+    {
+      "path": "accepted/sources/a5f6e02f25_RPR_MODEL_V3_3.md",
+      "bytes": 65584,
+      "sha256": "fa2c9d3f330a08a8cacc135be071d83a7bd6003a3415be2c33a2a594be88fbaa"
+    },
+    {
+      "path": "accepted/sources/a97ce7f0d9_RPRM_MASTER_ASSISTANT_CONTEXT_GUIDE_WORKING_0_1_2026-08-13.md",
+      "bytes": 50141,
+      "sha256": "a939f252816b5e73686fce64a3b19caa39151637d56749cd3b83b84b6f19708c"
+    },
+    {
+      "path": "accepted/sources/ba3416025c_Investigate RPRM bridge families CHATLOG.txt",
+      "bytes": 1838190,
+      "sha256": "be7b068f327cafba446f059a009a272abb1a59fa085bc9aaa97b8bf4add995d3"
+    },
+    {
+      "path": "accepted/sources/bec4af2749_RPRM_TYPED_PLUS_ONE_RECURSIVE_PORT_SCOUT_0_1_SHADOW.md",
+      "bytes": 8650,
+      "sha256": "eb1807545b7d3e0f5812a4a16f25f00df3f62b04976ff34ffd070fc331526ee2"
+    },
+    {
+      "path": "accepted/sources/c35b356507_RPRM_BRIDGE_FAMILIES_FULL_REREAD_UNDERSTANDING_PACKET_2026-08-12.md",
+      "bytes": 27499,
+      "sha256": "d38ef532b2ace34fb71114b4e29338ecd1bf466914424f862912be2eb6bce2c7"
+    },
+    {
+      "path": "accepted/sources/c57ebdedbd_adjudication.json",
+      "bytes": 5717,
+      "sha256": "1dc65a16296fe859a28cf5c6ba7037db93867d0d78a1b0b4516f52e9116510de"
+    },
+    {
+      "path": "accepted/sources/c8f15167ff_ATOMIC_HANDOFF_TRANSACTION_01_PROTOCOL.md",
+      "bytes": 7443,
+      "sha256": "302e64dbce2deb328dc923311fa3b2c327a4db83a8bb7e6d6b25342889f2bf81"
+    },
+    {
+      "path": "accepted/sources/d0eb8eb77e_CHATGPT_HANDOFF.md",
+      "bytes": 41906,
+      "sha256": "94e3a1d67dc4fe813b5200fee6784c8be00ee41f0a240a0780198a5c2eae9bbb"
+    },
+    {
+      "path": "accepted/sources/e12c540a9e_operations.md",
+      "bytes": 40793,
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd"
+    },
+    {
+      "path": "accepted/YM2-vacuum-handoff-2026-09-12.zip",
+      "bytes": 1065326,
+      "sha256": "4d217545e3e1f90d26e668a2dbdfde70a2a9876951a9e460f1c9505b21e4fa32"
+    },
+    {
+      "path": "CHAIN_ESTIMATES.md",
+      "bytes": 20420,
+      "sha256": "af30f9e105a09c030494b3d0949f128dd4c953485e2d56503aecff40d9958509"
+    },
+    {
+      "path": "check_rail.py",
+      "bytes": 7828,
+      "sha256": "6d9ef683b370207f96d430182f2d97c3732f4a4f92bf7a2c67d441368c931b15"
+    },
+    {
+      "path": "CONDITIONAL_RAIL.md",
+      "bytes": 12832,
+      "sha256": "30d65be6af0424da4544fea5037c6a2476278850c2131180a85f274979cda7e2"
+    },
+    {
+      "path": "draw_rail.py",
+      "bytes": 4551,
+      "sha256": "6b0c2fd25917bc3211d98133093f4897f1531f7051527cfcabb94d2b3951d8a6"
+    },
+    {
+      "path": "INDEPENDENT_REVIEW.md",
+      "bytes": 10871,
+      "sha256": "b2f9cf19b5f80f4cc881d7f9ef9972d504ef0f6cba571dafd8fb838cd7f1169d"
+    },
+    {
+      "path": "rail_closure.png",
+      "bytes": 354167,
+      "sha256": "a1e47d9907abc4f8ba9c702658bb0ec975b87d2da92da990b3422518081e4636"
+    },
+    {
+      "path": "rail_closure.svg",
+      "bytes": 134806,
+      "sha256": "a755ae17d9b7d9f74b396586c226a7629a7dd28cd6855e6c35e55c23a039ef18"
+    },
+    {
+      "path": "RAIL_MEMORY_EXPANSION.json",
+      "bytes": 9569,
+      "sha256": "8d094a314266c60948910de85bf167979037447bb12f528888df1009c8c038be"
+    },
+    {
+      "path": "RAIL_MEMORY_OMISSIONS_PARSED.json",
+      "bytes": 10103,
+      "sha256": "70ba62baf56655342cf5bb99189cdfdd42baeff6058874f2e2e3691c64efd6a5"
+    },
+    {
+      "path": "RAIL_MEMORY_PARSED.json",
+      "bytes": 40199,
+      "sha256": "64e7ad08ec1a6ba38498825c7db0eca2248ccb17397d7710226e3ba7bc7e6c94"
+    },
+    {
+      "path": "RAIL_RECOVERY.md",
+      "bytes": 19241,
+      "sha256": "1a594f334d5735a14f160a7688d5aff5f78aeaf6e6e8d43205949e594ea91101"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1754,
+      "sha256": "d20f9103eaaab09c00e37c152a3151bfcfa97a9c353707cccc53e9b7703f1425"
+    },
+    {
+      "path": "RESULT.md",
+      "bytes": 12211,
+      "sha256": "ef1eb24ebbd382dabf08d606c95c57c83176a10bddb726ce3460fa532823eb9f"
+    },
+    {
+      "path": "RESULTS.json",
+      "bytes": 748,
+      "sha256": "4bbbebdf72de23a7bdce609e9f5cb42d02411ef7d56c2a8673b63741c86d7c50"
+    },
+    {
+      "path": "RETRIEVAL_SCOPE.md",
+      "bytes": 2943,
+      "sha256": "95dcf30e618b6bac49e13b998a659717f365d6aed8375c60b76df2260e7a6711"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 24959,
+      "sha256": "2e45ffa189a844d27ed79fe4adc73148493b99ddf54f6f41d4f1455e36523204"
+    },
+    {
+      "path": "VAULT_RECOVERY.md",
+      "bytes": 22917,
+      "sha256": "665988368c16d3d62fb10bd7d65e76ca36bebe0cb070c32dd6190385fbbc60c6"
+    },
+    {
+      "path": "VISUAL_CHECKS.md",
+      "bytes": 910,
+      "sha256": "f3a2c2a5b9f52836e670611b592709660fc0e9a19fadc66ce1962d86bf0d426c"
+    }
+  ]
+}

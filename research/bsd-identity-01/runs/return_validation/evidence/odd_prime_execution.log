@@ -1,0 +1,12 @@
+{
+  "status": "OPEN",
+  "finite_admission_checks": "COMPLETED",
+  "p": 5,
+  "rho_degree": 256,
+  "trace_modulus": 125,
+  "trace_T_mod_125": null,
+  "sha_5_primary_conclusion": "NOT_ESTABLISHED",
+  "output": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\runs\\return_validation\\evidence\\odd_prime.json"
+}
+
+STDERR:

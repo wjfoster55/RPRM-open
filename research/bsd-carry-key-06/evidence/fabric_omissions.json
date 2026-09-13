@@ -1,0 +1,98 @@
+{
+  "schema": "rprm-context-omission-search/v1",
+  "packet_id": "packet:16cd5ec8f93c165ef9eef82cc07d89bd2049ac9db829026459fed02e4821ea9d",
+  "packet_snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+  "current_snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+  "snapshot_drift": false,
+  "objective": "FIVE_IS_SAFE half decade fiving",
+  "query_terms": [
+    "five_is_safe",
+    "half",
+    "decade",
+    "fiving"
+  ],
+  "ranking": "DISTINCT_TERM_COVERAGE_THEN_TOTAL_CASEFOLDED_FREQUENCY_THEN_RECORD_ID",
+  "searched_omission_count": 499,
+  "match_fiber": {
+    "disposition": "MANY",
+    "cardinality": 16,
+    "scope": "matching omitted records in the verified packet"
+  },
+  "max_results": 4,
+  "truncated": true,
+  "results": [
+    {
+      "rank": 1,
+      "record_id": "occurrence:ac565bed54c24cc496248899cc6ab8492f2e0f2fc0b4fe12a5ffe67f2c34bc27",
+      "record_kind": "OBSERVATION",
+      "title": "7. Bottom-up evidence map — part 3",
+      "omission_reason": "CANDIDATE_CAP",
+      "expansion_handle": {
+        "handle_id": "handle:0413be86e5e7cddf1bd1bdf902c4110a62fcd8e9afb8d2f7802a5599a09cb34c",
+        "reason": "CANDIDATE_CAP",
+        "record_id": "occurrence:ac565bed54c24cc496248899cc6ab8492f2e0f2fc0b4fe12a5ffe67f2c34bc27",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "half"
+      ],
+      "distinct_term_hits": 1,
+      "total_term_frequency": 3
+    },
+    {
+      "rank": 2,
+      "record_id": "occurrence:d78df932640d7c5762764835acbcb6f1dc95e43db46c03c75a17062846c3fa32",
+      "record_kind": "OBSERVATION",
+      "title": "lenses.json — part 2",
+      "omission_reason": "PAYLOAD_BUDGET",
+      "expansion_handle": {
+        "handle_id": "handle:57fe8565e311a574ea649e480d7a2741d597fb15a95552a4b52cc6261e74e583",
+        "reason": "PAYLOAD_BUDGET",
+        "record_id": "occurrence:d78df932640d7c5762764835acbcb6f1dc95e43db46c03c75a17062846c3fa32",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "half"
+      ],
+      "distinct_term_hits": 1,
+      "total_term_frequency": 3
+    },
+    {
+      "rank": 3,
+      "record_id": "occurrence:ef3e25982907bbce4429892d07bfec1caed7579b2a0d29083eed2f83cfc9df96",
+      "record_kind": "OBSERVATION",
+      "title": "11. Prospective `+2000` test against MetzDowd",
+      "omission_reason": "CANDIDATE_CAP",
+      "expansion_handle": {
+        "handle_id": "handle:817144b8b783238b828f883a47900e550172d16ea6053d4598c2b3f2cacc7875",
+        "reason": "CANDIDATE_CAP",
+        "record_id": "occurrence:ef3e25982907bbce4429892d07bfec1caed7579b2a0d29083eed2f83cfc9df96",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "decade"
+      ],
+      "distinct_term_hits": 1,
+      "total_term_frequency": 3
+    },
+    {
+      "rank": 4,
+      "record_id": "occurrence:10673fb27f89ad8f52a64723da7ddcc76dad313dbd924f15e7383df5f1985aa1",
+      "record_kind": "OBSERVATION",
+      "title": "Bottom line",
+      "omission_reason": "CANDIDATE_CAP",
+      "expansion_handle": {
+        "handle_id": "handle:518c9e1b1ccc9ef798e753fab5d23a4ef38aa55e2e69bdda3b75e1ae04d0086d",
+        "reason": "CANDIDATE_CAP",
+        "record_id": "occurrence:10673fb27f89ad8f52a64723da7ddcc76dad313dbd924f15e7383df5f1985aa1",
+        "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+      },
+      "matched_terms": [
+        "half"
+      ],
+      "distinct_term_hits": 1,
+      "total_term_frequency": 2
+    }
+  ],
+  "claim_ceiling": "Results are a bounded lexical ranking over this verified packet's omitted record IDs only. They do not establish source truth, semantic relevance, or packet sufficiency."
+}

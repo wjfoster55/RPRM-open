@@ -1,0 +1,107 @@
+{
+  "experiment": "BSD E5 test 01",
+  "started_utc": "2026-09-12T17:55:18.750658+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "stage": "supplied_replay",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/e5_return_review/input/BSD_E5_CODEX_TEST_01_RETURN/supplied/BSD_E5_CODEX_TEST_01/tools/replay_inputs.py",
+        "--output",
+        "/mnt/data/e5_return_review/fresh_run/supplied_replay"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.9336454279999913,
+      "script": "supplied/BSD_E5_CODEX_TEST_01/tools/replay_inputs.py",
+      "script_sha256": "d637af79e66ab950cb09040b1f7769eff47504562bfcf7d33c85079c95617d70",
+      "stdout": "supplied_replay.stdout.txt",
+      "stderr": "supplied_replay.stderr.txt"
+    },
+    {
+      "stage": "arithmetic",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/e5_return_review/input/BSD_E5_CODEX_TEST_01_RETURN/work/arithmetic_check.py",
+        "--output",
+        "/mnt/data/e5_return_review/fresh_run/arithmetic.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.830814279000009,
+      "script": "work/arithmetic_check.py",
+      "script_sha256": "ed1831e0a7e8af2993d606ec4de6ea017df2f9e95141b8b2aa7daf8d63f8aacf",
+      "stdout": "arithmetic.stdout.txt",
+      "stderr": "arithmetic.stderr.txt"
+    },
+    {
+      "stage": "model_binding",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/e5_return_review/input/BSD_E5_CODEX_TEST_01_RETURN/work/model_binding_check.py",
+        "--output",
+        "/mnt/data/e5_return_review/fresh_run/model_binding.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.5541013539999966,
+      "script": "work/model_binding_check.py",
+      "script_sha256": "87f96cdf4af4dcc5f032642091d611d759050ff58ec8fc48ad8805b9c113c0e4",
+      "stdout": "model_binding.stdout.txt",
+      "stderr": "model_binding.stderr.txt"
+    },
+    {
+      "stage": "analytic",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/e5_return_review/input/BSD_E5_CODEX_TEST_01_RETURN/work/analytic_check.py",
+        "--output-dir",
+        "/mnt/data/e5_return_review/fresh_run/analytic"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.3957169050000005,
+      "script": "work/analytic_check.py",
+      "script_sha256": "311dfbfcb4b2295b0697f592dbd1d762e29f054527358d548dcf082963f151e3",
+      "stdout": "analytic.stdout.txt",
+      "stderr": "analytic.stderr.txt"
+    },
+    {
+      "stage": "interval_peer",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/e5_return_review/input/BSD_E5_CODEX_TEST_01_RETURN/work/interval_peer_check.py",
+        "--input-dir",
+        "/mnt/data/e5_return_review/fresh_run/analytic",
+        "--output",
+        "/mnt/data/e5_return_review/fresh_run/interval_peer_review.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.5601602190000108,
+      "script": "work/interval_peer_check.py",
+      "script_sha256": "1f7d89db9e9815ed67c9a39c9282c7019003b83b731cd9a0bc722bda6426f2b4",
+      "stdout": "interval_peer.stdout.txt",
+      "stderr": "interval_peer.stderr.txt"
+    }
+  ],
+  "optional_backend_probe": {
+    "modules_present": {
+      "sage": false,
+      "cypari2": false,
+      "sympy": true,
+      "flint": false,
+      "mpmath": true
+    },
+    "executables": {
+      "sage": null,
+      "gp": null
+    },
+    "independent_backend_comparison": "NOT_RUN"
+  },
+  "scope": "Fresh source replay and finite exact computations. Cited theorem applicability is audited in the written reports.",
+  "finished_utc": "2026-09-12T17:55:24.027368+00:00",
+  "status": "ALL_COMMANDS_COMPLETED"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "LOCAL_ANALYTIC_INPUTS.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\LOCAL_ANALYTIC_INPUTS.md",
+    "sha256": "b82a74927703053eb43930d589de1e7d79360df9261ca02968e8bae91b61bdcc",
+    "status": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_A_FRESH_REPLAY"
+  },
+  {
+    "file": "ANALYTIC_PROOF.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\ANALYTIC_PROOF.md",
+    "sha256": "569a65cdee1e76f809046f6a7e159d0496b8c8a84299b7f4caef153adc932132",
+    "status": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_A_FRESH_REPLAY"
+  },
+  {
+    "file": "ODD_PRIME_ATTEMPT.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\ODD_PRIME_ATTEMPT.md",
+    "sha256": "4e2ce62977ed0c9cba8f4bccbdc26e09d06a6720d61ee02ea2231801328e371c",
+    "status": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_A_FRESH_REPLAY"
+  },
+  {
+    "file": "ARITHMETIC_PROOF.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\ARITHMETIC_PROOF.md",
+    "sha256": "3d3e7fbb43fae46d4759a0bf48f705b82d4552b06744b8b9f6d70d8e673de243",
+    "status": "ATTRIBUTED_PRIOR_WRITTEN_PROOF_NOT_A_FRESH_REPLAY"
+  }
+]

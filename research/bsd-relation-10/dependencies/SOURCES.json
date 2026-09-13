@@ -1,0 +1,48 @@
+{
+  "scope": "Earlier written proofs, not fresh results and not read by the computation",
+  "links": "Relative links within snapshots refer to their original source directories; use original_source to resolve them.",
+  "files": [
+    {
+      "snapshot": "ARITHMETIC_PROOF.md",
+      "original_source": "C:\\github\\RPRM-open\\research\\bsd-coefficient-05\\dependencies\\ARITHMETIC_PROOF.md",
+      "sha256": "3d3e7fbb43fae46d4759a0bf48f705b82d4552b06744b8b9f6d70d8e673de243",
+      "bytes": 14223
+    },
+    {
+      "snapshot": "GENERATOR_PROOF.md",
+      "original_source": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\input_source\\GENERATOR_PROOF.md",
+      "sha256": "9c6b26a14051eda856bf79094257bd30d0e9382528b5e208e79ab33c168c9b15",
+      "bytes": 11575
+    },
+    {
+      "snapshot": "TRACE_CALCULATION.md",
+      "original_source": "C:\\github\\RPRM-open\\research\\bsd-trace-02\\TRACE_CALCULATION.md",
+      "sha256": "f991173f730bde04b40d1c8c82dba5ff7fde11ea370915454118a0f882f1937d",
+      "bytes": 7406
+    },
+    {
+      "snapshot": "PADIC_HEIGHT_AUDIT.md",
+      "original_source": "C:\\github\\RPRM-open\\research\\bsd-coefficient-05\\dependencies\\PADIC_HEIGHT_AUDIT.md",
+      "sha256": "8db3ed9b53c6bd114bc54e142cfcebe2a99233d65b0cc03671025ea023f0e66e",
+      "bytes": 16525
+    },
+    {
+      "snapshot": "COEFFICIENT_PROOF.md",
+      "original_source": "C:\\github\\RPRM-open\\research\\bsd-coefficient-05\\COEFFICIENT_PROOF.md",
+      "sha256": "89cdd5a9458e421bc3b22f7f82799b687d4c371319f445d6d1c2e0686d250910",
+      "bytes": 9461
+    },
+    {
+      "snapshot": "EXACT_IDENTITY_THEOREMS.md",
+      "original_source": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\EXACT_IDENTITY_THEOREMS.md",
+      "sha256": "2cf701bef7b760237b12dbf2d36436913b5cb2bdcdcb26e564299957836ed77e",
+      "bytes": 11154
+    },
+    {
+      "snapshot": "EXPLICIT_IDENTITY_TARGET.md",
+      "original_source": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\EXPLICIT_IDENTITY_TARGET.md",
+      "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753",
+      "bytes": 15376
+    }
+  ]
+}

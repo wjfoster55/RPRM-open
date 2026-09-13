@@ -1,0 +1,45 @@
+{
+  "status": "CONFIRMED",
+  "utc": "2026-09-12T18:28:23.787462+00:00",
+  "review_inventory_members": 152,
+  "prior_return_inventory_members": 108,
+  "original_archive": {
+    "status": "NOT_RUN",
+    "reason": "Optional original archive not supplied to this command."
+  },
+  "integrity_scope": "Bytes only; not mathematical proof.",
+  "fresh_torsion_premises": {
+    "discriminant": 1000000,
+    "good_prime_counts": {
+      "3": 4,
+      "7": 8
+    },
+    "rational_two_torsion": [
+      "O",
+      [
+        "0",
+        "0"
+      ],
+      [
+        "5",
+        "0"
+      ],
+      [
+        "-5",
+        "0"
+      ]
+    ],
+    "conclusion": "E(Q)_tors has order4 and equals E[2](Q), by the cited injection theorem.",
+    "theorem_kind": "THEOREM_CITED",
+    "theorem": "Milne, Elliptic Curves (2006), II Corollary5.7, printedp66/PDFp74",
+    "url": "https://www.jmilne.org/math/Books/ectext6.pdf#page=74",
+    "hypotheses": [
+      "Elliptic curve over Q",
+      "3 is odd",
+      "Good reduction at3"
+    ],
+    "scope": "Torsion injects under this reduction; the infinite rational group does not."
+  },
+  "prior_reuse": "The unchanged prior descent and analytic proof are reused at the same model and normalization. The supplied review has been read; its PASS strings are not new proofs.",
+  "source_sha256": "de32f6a84bf5a4e16c68626e4200af35a2290facd202953d93afb84d18cf5e28"
+}

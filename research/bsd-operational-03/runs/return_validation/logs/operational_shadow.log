@@ -1,0 +1,7 @@
+{
+  "status": "EXACT_OPERATIONAL_ADAPTER_AND_HOSTILE_CONTROL_VERIFIED",
+  "carrier_size": 4096,
+  "raw_shadow_classes": 2048,
+  "shadow_plus_doubling_classes": 4096,
+  "elapsed_seconds": 27.501851799956057
+}

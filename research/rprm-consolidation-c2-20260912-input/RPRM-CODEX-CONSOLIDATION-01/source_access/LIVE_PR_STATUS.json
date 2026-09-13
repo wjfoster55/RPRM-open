@@ -1,0 +1,26 @@
+{
+  "record_kind": "Normalized selected fields transcribed from successful GitHub connector get_pr_info responses; not a raw API receipt or behavioral replay",
+  "recorded_at_utc": "2026-09-12T14:16:32.526973+00:00",
+  "repository": "wjfoster55/rprm-fluid-adjacency",
+  "pull_requests": [
+    {
+      "number": 12,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head_sha": "91d74b77bde86251468f0d3758f8e84125792677",
+      "base_sha": "1c4c4028b522b9a1e33617bbd1c38f0974d9927b",
+      "updated_at": "2026-09-12T10:35:16Z"
+    },
+    {
+      "number": 13,
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head_sha": "7e3a6603c8f3c036f9f59f519b069cfc02b7825f",
+      "base_sha": "91d74b77bde86251468f0d3758f8e84125792677",
+      "updated_at": "2026-09-12T10:56:07Z"
+    }
+  ],
+  "source_access": "GitHub connected metadata succeeded. This handoff makes no claim that it checked worker liveness."
+}

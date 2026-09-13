@@ -1,0 +1,16 @@
+{
+  "scope": "In-conversation explanatory geometry, separate from mathematical proof",
+  "fragment": "C:/Users/bkbee/.codex/visualizations/2026/09/12/01a0965b-9165-78d2-81fe-19720be304f6/spatial-joint-angle.html",
+  "browser_checks": {
+    "checked_state_A": {"relative_angle_degrees": 90, "curvature": "-5.1200", "outer_half_trace": "0.3600"},
+    "checked_state_B": {"relative_cosine": "3/5", "curvature": "-4.3520", "outer_half_trace": "-0.0240"},
+    "common_frame_rotation": "B readouts unchanged after rotation from 0 to 180 degrees",
+    "responsive_widths": [736, 320],
+    "narrow_root_width": 288,
+    "narrow_scroll_width": 288,
+    "svg_labels_visually_checked": true,
+    "console_errors": []
+  },
+  "mathematical_values": "Analytic initial-derivative formulas from DYNAMICS.md; visualization uses floating-point trigonometry and is not a trajectory simulation",
+  "geometry": "The squares are a spatial graph schematic; the arrows below are color vectors in a common transported frame, not physical-space directions"
+}

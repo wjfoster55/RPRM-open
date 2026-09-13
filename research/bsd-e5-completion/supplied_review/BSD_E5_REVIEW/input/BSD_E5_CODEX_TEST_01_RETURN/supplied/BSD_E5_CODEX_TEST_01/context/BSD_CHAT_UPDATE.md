@@ -1,0 +1,24 @@
+# Update for the existing BSD ChatGPT conversation
+
+We are splitting the work deliberately. This conversation is now the BSD arithmetic discussion. P versus NP stays in my other ChatGPT conversation; Codex owns the next interacting Yang–Mills question; Cursor owns new fluid work. The next paper is ON HOLD until there is more substantive research. Do not start another manuscript or turn this conversation back into an agent-coordination hub.
+
+Please read CURRENT_STATE.md and the supplied current rebrief, C1 carry-forward, AD1 design/result, and the Lind–Reichardt review005 closeout. Reconcile this with the actual earlier messages and sources in THIS conversation. Do not ask me to reconstruct history that is already here, and do not treat an absent new copy of an old file as proof it never existed. Retrieve a relevant prior file when needed rather than guessing its contents.
+
+## What changed while I was away
+
+1. C1's exact finite Prestige reuse branch is accepted. It preserves an answer/operation contract and the construction recipe needed to reopen a composed result. The seven-site algebra is a restriction/quotient algebra, not the literal low-degree representatives closed under full multiplication. A valid current answer can coexist with several complete sources. A new operation may expose a previously omitted distinction.
+2. Preserve original meanings: Prestige One is usable relational access and retained construction, not social status, a depth label or a bare hash. Fiving, FIVE_IS_SAFE and FIVE.future are distinct; no new modulo-5/6 interpretation is a recovered universal operator. A seam is relative to an observation/relation/operation, not necessarily a physical cut or an assigned cost.
+3. The old AD pilot stays **14/16 vs 14/16**, with its scope/provenance annotations. No rescore or 32-prompt rerun. New AD1 implements scoped reuse, harmless source transport, conditional rules, changed questions and backing loss. It ties ordinary typed caching; it is a better-specified working example for us, not demonstrated general model superiority.
+4. A claim should retain the statement, object/source, domain, quantifier, assumptions, operations, and evidence. Distinguish instance equality from equality on every admitted input. A coherent rechart is a positive case, not automatic information loss. Lost backing does not make a mathematical fiber empty; source identity, truth, sufficiency and availability are different.
+5. Lind–Reichardt review005 is CLOSED as an inspectable classical example. The reviewed curve is the smooth projective model of `2y^2 = 1 - 17x^4`; its associated elliptic curve in the accepted account is `V^2 = U^3 + 17U`. The local constructions plus global obstruction establish the stated local/global contrast. The packet did not compute a new rank, analytic L-function, total Sha, or BSD theorem. Preserve the exact inherited dependencies; do not rerun the completed arithmetic merely because C1 exists.
+6. SAT02/M1 and C2/F1/AD1/YM1 are closed within their scopes. Their completion does not mean BSD is solved, abandoned, or blocked pending another shared audit. Nothing is automatically running because this update was prepared.
+
+## How I want to resume
+
+Let's return to the actual BSD question, not spend the first response reciting a list of caveats. Give me a concrete account of the closest unfinished arithmetic idea from this thread, incorporating the recovered concepts without replacing them with one narrow analogy. Select ONE next mathematical question and begin working on it: an explicit construction, invariant, obstruction, map, or computable quantity whose proposed relation to a global rational-point/rank/L-function question can be stated and tested.
+
+Use known examples where appropriate, but state which implication is proved, conditional, or still being sought. More identical local-solubility bits on already locally soluble coverings do not distinguish global realization. A rational map is not automatically a rational point; a finite-field computation is not automatically an all-places theorem. Showing that a summary forgets something is useful only if we then identify the missing arithmetic relationship or the next discriminating operation.
+
+I prefer concrete examples and plain explanations before dense notation. Show actual reasoning or a small worked calculation and identify the decisive remaining step. Do not claim that a routine or already-known result is novel; equally, do not stop merely because the broader conjecture is open. New proposed arithmetic work is separate from rechecking the frozen example. No model tournament, software-maintenance prompt, remote write, manuscript edit, publication or other-lane dispatch is requested.
+
+The complete routing and source references are in this packet; old pending/undispatched notes are history. Keep a concise durable rebrief of any new mathematical outcome so it does not get lost again.

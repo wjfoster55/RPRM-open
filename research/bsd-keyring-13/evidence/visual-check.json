@@ -1,0 +1,16 @@
+{
+  "status": "VISUAL_RENDER_AND_ROTATION_CHECKED",
+  "errors": [],
+  "canvas_changed_after_rotation": true,
+  "narrow_view": {
+    "rootWidth": 343,
+    "viewport": 343,
+    "scrollWidth": 343,
+    "rendered": "true",
+    "labels": [
+      "Orbit 0°",
+      "Tilt 60°"
+    ]
+  },
+  "preview_sha256": "3d78db72ad4bd8efa0fa5fba22d6d03250a9eb018b79c956d406dcb7c621e02a"
+}

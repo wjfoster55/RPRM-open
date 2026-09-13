@@ -1,0 +1,2 @@
+PASS: 14 phase cases in 2 representatives each; 6 regular bridges; central exit coefficient 225; naive metric rejected.
+Receipt compared_without_writing: C:\github\RPRM-open\research\ym2-global-20260912-delivery\final-extraction\YM2-global-phase-joint\RESULTS_TREE.json

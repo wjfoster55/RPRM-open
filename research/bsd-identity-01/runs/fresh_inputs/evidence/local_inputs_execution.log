@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "conductor": 18496,
+  "root_number": 1,
+  "limit": 1000,
+  "output": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\runs\\fresh_inputs\\evidence\\local_inputs.json"
+}
+
+STDERR:

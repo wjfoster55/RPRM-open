@@ -1,0 +1,35 @@
+{
+  "protocol_id": "rprm-transport-passive-v0",
+  "status": "discovery_draft_not_confirmation_freeze",
+  "date": "2026-09-10",
+  "model_family": "MF6 GWT + optional IST, 1-D column, conservative tracer",
+  "verification_anchor": "ex-gwt-mt3dsupp632 (published production/sorption cases)",
+  "scientific_model": {
+    "name": "passive_dual_domain",
+    "reactions": "none",
+    "sorption": "none",
+    "controls": ["dual_slow", "no_immobile", "rapid_equilibration"]
+  },
+  "receiver": {
+    "primary": "outlet concentration exceeds C* on [t0,t1] under known continuation",
+    "threshold_c": 0.05,
+    "t0_days": 200,
+    "t1_days": 300,
+    "secondary": "cumulative mass released on [t0,t1]",
+    "vocabulary": ["NONE", "ONE", "MANY", "OPEN", "FALSE_ONE"]
+  },
+  "information_split": {
+    "observer": ["acquired outlet concentration", "known flow", "explicitly costed extra samples"],
+    "evaluator_only": ["immobile inventory", "hidden params", "future targets", "full clean trajectory"]
+  },
+  "baselines": ["current_reading", "history_mean", "candidate_gate"],
+  "confirmation_rules": {
+    "not_yet": true,
+    "note": "Freeze after discovery; generate independent preparation histories; do not split neighboring frames."
+  },
+  "transfer": {
+    "domain_C_reserved": "1-D shallow-water (see FROZEN_TRANSFER_PROTOCOL.md)",
+    "outcome_blind": true,
+    "not_started": true
+  }
+}

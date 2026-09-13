@@ -1,0 +1,37 @@
+{
+  "experiment": "BSD_RANK_TWO_01",
+  "date": "2026-09-12",
+  "curve": {"field": "Q", "a_invariants": [0, 0, 0, -1156, 0]},
+  "evidence_grade": "WRITTEN_PROOFS_PLUS_FRESH_EXACT_COMPUTATION_AND_CITED_THEOREMS",
+  "formal_verification": "NOT_RUN",
+  "claims": [
+    {"claim": "arithmetic_rank", "status": "PROVED", "value": 2, "proof": "ARITHMETIC_PROOF.md"},
+    {"claim": "rational_torsion", "status": "PROVED", "value": "(Z/2)^2", "proof": "ARITHMETIC_PROOF.md"},
+    {"claim": "P_Q_integral_basis_modulo_torsion", "status": "PROVED", "value": {"P": [-2, 48], "Q": [-16, 120], "free_index": 1}, "proof": "GENERATOR_PROOF.md"},
+    {"claim": "sha_2_primary", "status": "PROVED", "value": "ZERO", "proof": "ARITHMETIC_PROOF.md"},
+    {"claim": "conductor_root_number", "status": "PROVED_USING_CITED_FAMILY_SIGN_THEOREM", "value": [18496, 1], "proof": "LOCAL_ANALYTIC_INPUTS.md"},
+    {"claim": "analytic_rank", "status": "PROVED_USING_CITED_LOW_ANALYTIC_RANK_THEOREM", "value": 2, "proof": "ANALYTIC_PROOF.md"},
+    {"claim": "L_second_Taylor_coefficient", "status": "RIGOROUS_ENCLOSURE", "value": ["6.38511803", "6.38518585"], "proof": "ANALYTIC_PROOF.md"},
+    {"claim": "full_minimal_real_period", "status": "RIGOROUS_ENCLOSURE", "value": ["0.899358321446", "0.899358321447"], "proof": "FACTOR_COMPARISON.md"},
+    {"claim": "full_basis_BSD_regulator", "status": "RIGOROUS_ENCLOSURE", "value": ["7.099053962", "7.100201634"], "proof": "GENERATOR_PROOF.md"},
+    {"claim": "analytic_arithmetic_factor_quotient", "status": "RIGOROUS_COMPARISON_ONLY", "value": ["0.999920542", "1.000092816"], "proof": "FACTOR_COMPARISON.md"},
+    {"claim": "odd_primary_Sha", "status": "NOT_ESTABLISHED", "proof_obligations": "FULL_BSD_FRONTIER.md"},
+    {"claim": "full_Sha_finiteness_and_order", "status": "NOT_ESTABLISHED", "proof_obligations": "FULL_BSD_FRONTIER.md"},
+    {"claim": "Sha_zero_equivalent_to_odd_p_Selmer_order_p_squared_given_completed_inputs", "status": "PROVED_REDUCTION_WITH_OPEN_QUANTIFIED_PREMISE", "proof": "SHA_ORDER_CRITERION.md"},
+    {"claim": "full_BSD_leading_coefficient_identity", "status": "NOT_ESTABLISHED", "proof_obligations": "FULL_BSD_FRONTIER.md"},
+    {"claim": "midpoint_plus_directed_gap_recovers_ordered_endpoints", "status": "PROVED", "proof": "MIDPOINT_BRIDGE.md"},
+    {"claim": "full_user_carry_swap_recurrence", "status": "OPEN_SPECIFICATION", "preserved_input": "USER_ITERATION.md"},
+    {"claim": "directed_operation_forces_curve_specific_L_coefficients", "status": "OPEN", "proof_obligations": "MIDPOINT_BRIDGE.md"},
+    {"claim": "general_BSD", "status": "OPEN"}
+  ],
+  "retained_failures": [
+    "Head cutoffs 40 and 80: OPEN_WITH_THIS_TAIL_BOUND; cutoff 160 succeeded",
+    "Primitive mod-4 solutions need not lift to Q_2: explicit mod-8 obstruction",
+    "Blanket positive curvature for the analytic kernel is false",
+    "Changed curve and off-curve point inputs rejected",
+    "Removing the all-term tail leaves a finite head, not a full L-function interval",
+    "Old E5 full-BSD theorem fails both conductor and rank conditions"
+  ],
+  "fresh_replay": "runs/final_validation/RUN.json",
+  "scope": "One rank-two experiment plus the user's midpoint correction; no new paper or general-BSD proof claim"
+}

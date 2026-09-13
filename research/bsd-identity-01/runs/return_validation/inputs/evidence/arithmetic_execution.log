@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "counts": {
+    "supported": 64,
+    "real": 32,
+    "mod2": 32,
+    "mod4": 28,
+    "mod8": 16,
+    "mod17": 32,
+    "rationally_witnessed": 16
+  },
+  "P": {
+    "x": "-2",
+    "y": "48"
+  },
+  "Q": {
+    "x": "-16",
+    "y": "120"
+  },
+  "conclusions": {
+    "rank": 2,
+    "selmer_2_order": 16,
+    "selmer_2_dimension": 4,
+    "sha_2_order": 1,
+    "sha_2_primary": "ZERO",
+    "sha_all_2_power_torsion": "Sha[2^n]=0 for every n>=1",
+    "rational_torsion_order": 4,
+    "rational_torsion_structure": "(Z/2Z)^2",
+    "P_Q_independent": true,
+    "P_Q_free_subgroup_index": "FINITE_ODD_NOT_DETERMINED",
+    "odd_prime_saturation": "NOT_PERFORMED"
+  },
+  "output": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\runs\\return_validation\\inputs\\evidence\\arithmetic.json"
+}
+
+STDERR:

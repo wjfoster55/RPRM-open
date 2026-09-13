@@ -1,0 +1,548 @@
+{
+  "compile": {
+    "schema": "rprm-context-compile-view/v1",
+    "packet_id": "packet:e88bee3548751c10a09ed5e08c0a96dc8e690164c3f99a0aaa4b633ac0181bdc",
+    "packet_schema": "rprm-context-packet/v1",
+    "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+    "receiver": {
+      "schema": "rprm-memory-receiver/v1",
+      "objective": "proving donut backward forward abduction castle rise fall",
+      "namespace": "rprm-alpha",
+      "operations": [],
+      "contradiction_mode": "CURRENT",
+      "allowed_record_kinds": [
+        "CLAIM",
+        "OBSERVATION",
+        "RELATION"
+      ],
+      "allowed_authorities": [
+        "FROZEN_LOCAL_BYTES",
+        "LOCAL_OCCURRENCE",
+        "OFFICIAL_RECORD",
+        "PRIMARY_SOURCE",
+        "SECONDARY_SOURCE",
+        "UNVERIFIED"
+      ],
+      "as_of": null,
+      "as_known": null,
+      "max_payload_bytes": 8192,
+      "max_candidates": 32,
+      "graph_depth": 1,
+      "output_schema": "text/context",
+      "model_receipt": "unspecified",
+      "tokenizer_receipt": "NONE_BYTE_BUDGET"
+    },
+    "receiver_sha256": "c227566a8b94ab018c41f3a3aa147c23f62b2ec466e5f642913599299e6598fb",
+    "compiler": {
+      "version": "rcmf-stage1-0.1",
+      "code_sha256": "62217cf808cc2b84213a637f6e0010d619164cf143d331c5e97de26e5ce1a7b2",
+      "python": "3.14.5",
+      "sqlite": "3.50.4",
+      "search": "SQLITE_FTS5_POLICY_LOCAL_BM25_THEN_RECORD_ID",
+      "search_projection_sha256": "d4fb557b8fbf611496c3e46e571c98f327e83d1d5813c32c0544cd900b9a29f1",
+      "search_projection_policy": "REBUILT_FROM_AUTHORITY_BEFORE_COMPILE",
+      "embedding_lane": "OMITTED_NOT_IMPLEMENTED"
+    },
+    "query_terms": [
+      "proving",
+      "donut",
+      "backward",
+      "forward",
+      "abduction",
+      "castle",
+      "rise",
+      "fall"
+    ],
+    "match_fiber": {
+      "disposition": "MANY",
+      "cardinality": 142,
+      "scope": "policy-visible lexical matches before packet packing"
+    },
+    "receiver_sufficiency": {
+      "disposition": "OPEN",
+      "cardinality": null,
+      "scope": "answer plus declared downstream operation family",
+      "missing": [
+        "finite receiver certificate",
+        "transition-descent census"
+      ]
+    },
+    "strong_reconstruction": {
+      "disposition": "OPEN",
+      "cardinality": null,
+      "scope": "full authority snapshot from the hot packet",
+      "missing": [
+        "all authority records outside packet members",
+        "complete snapshot manifest"
+      ]
+    },
+    "members": [
+      {
+        "member_id": "member:8438cb78779deee2a6a349231a8e5cfb79f76661a153be80f7978568789bbae5",
+        "record_id": "occurrence:73f24afdd921a5c1ccaad7b81e1806582d91e0e98934c39b36d69fccbffa79c7",
+        "record_kind": "OBSERVATION",
+        "title": "3. Modal target and realized operation must be separate",
+        "retrieval_rank": 1,
+        "relation_distance": 0,
+        "inclusion_reasons": [
+          "LEXICAL_MATCH"
+        ],
+        "excerpt_kind": "SOURCE_SLICE",
+        "source_encoding": "UTF-8",
+        "excerpt": "## 3. Modal target and realized operation must be separate\n\nThe official text has 62 nonblank lines.  A direct finite census gives:\n\n| feature | line count | token occurrences |\n|---|---:|---:|\n| `fall` | 21 | 21 |\n| `wish` | 23 | 23 |\n| `could` | 24 | 25 |\n| `you` or `your` | 23 | 24 |\n| line-initial `but` | 11 | 11 |\n| `backwards` | 2 | 2 |\n| `arms` | 4 | 4 |\n\nAll 21 occurrences of `fall` occur under the modal wish/could construction;\nnone is an affirmative report that the desired fall has completed.  The three\nchorus passes contribute seven occurrences each.  This is an exact text\ncensus, not number symbolism.\n\nThis grammar is not merely descriptive present tense.  It repeatedly supplies\na counterfactual target and then a contradiction or failed realization.\nTherefore the carrier needs two ports:\n\n```text\nD(t) = desired operation / destination\nA(t) = actual rendered state\n```\n\nFolding them together produces the mistaken alternatives\n\n```text\nthe inverse completed\nor\nthere is no inverse content.\n```\n\nThe stronger reading is between them:\n\n```text\nD selects a relationally redirected catch;\nA remains a one-sided cyclic projection and never closes it.\n```\n\nThe uncompleted operation is the subject, not evidence that the target was\nabsent from the work.\n\nThe corresponding text-receiver fibers are also explicit:\n\n```text\nbare fall token                         MANY(21)\nbackward-route line                     MANY(2)\nbackward-route continuation             MANY(2)\nnormalized addressed-arms wording       MANY(4)\n```\n\nRetaining lyric occurrence ID and timing reopens each source occurrence to\n`ONE`.  The repeated label alone cannot recover which chorus, target sequence,\nor visual state carried it.\n\n",
+        "excerpt_utf8_bytes": 1720,
+        "excerpt_sha256": "5a36d8b0f3eeedc7f1320782e4a951a48117a66a34c5ccfa90cd05f4b9dd2e85",
+        "truncated_before": false,
+        "truncated_after": false,
+        "source_receipt": {
+          "occurrence_id": "occurrence:73f24afdd921a5c1ccaad7b81e1806582d91e0e98934c39b36d69fccbffa79c7",
+          "event_id": "event:78ba1295c5b066eb2aa177b26f700654ab46a3f8f5580ca495695e4876816289",
+          "blob_sha256": "e1af35644863715db7ac488d73cda37e78acb2f277ac80ebfec79295db61a3bc",
+          "byte_length": 17971,
+          "media_type": "text/markdown",
+          "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_WISHFALL_JOINT_AUDIOVISUAL_RELATIONAL_INVERSE_CORRECTION_2026-08-29.md",
+          "source_byte_start": 8466,
+          "source_byte_end": 10186,
+          "slice_sha256": "5a36d8b0f3eeedc7f1320782e4a951a48117a66a34c5ccfa90cd05f4b9dd2e85",
+          "authority": "FROZEN_LOCAL_BYTES",
+          "observed_at": "2026-08-30T00:24:06.693679Z",
+          "recorded_at": "2026-08-30T23:59:00.000000Z",
+          "valid_from": null,
+          "valid_to": null
+        },
+        "exact_source_byte_start": 8466,
+        "exact_source_byte_end": 10186
+      },
+      {
+        "member_id": "member:18c622e677c4be8b7a7b8eed4ee109a650431f43011a63dafb54b27018c9538e",
+        "record_id": "occurrence:d9bbc7b846e707d6b574ed09373d4b7216b5ac46ff5d5fd45dfa2e1cb5568168",
+        "record_kind": "OBSERVATION",
+        "title": "8. Hostile controls",
+        "retrieval_rank": 2,
+        "relation_distance": 0,
+        "inclusion_reasons": [
+          "LEXICAL_MATCH"
+        ],
+        "excerpt_kind": "SOURCE_SLICE",
+        "source_encoding": "UTF-8",
+        "excerpt": "## 8. Hostile controls\n\n| Hostile | Result |\n|---|---|\n| remove the lyrics | cyclic falling, wall projection, and non-landing remain; arms/backward destination disappears — **joint receiver is necessary** |\n| remove the images | desire, other-side language, and relational catch remain; literal wall projection and stuck surface loop disappear — **joint receiver is necessary** |\n| require reverse frames | fails; semantic inverse is not a playback inverse |\n| equate every fall target | fails; ground, observer, life/world, and arms are distinct receivers |\n| claim successful closure from the arms refrain | fails; no visible catch occurs and the final state is still mid-fall |\n| claim all upward language removes the figure | overbroad; the later learned-flight line occurs in the mixed bridge rather than the two matched dark pre-choruses |\n| identify the two hearts as self/other ports | tempting but untyped; their roles remain `OPEN` |\n| infer post-file eternal falling | rejected; continuation remains `OPEN_NEW_CARRIER` |\n| infer creator knowledge or puzzle provenance | rejected absent independent evidence |\n\n",
+        "excerpt_utf8_bytes": 1125,
+        "excerpt_sha256": "11017b18fe4d26eead97dff7d58ee27cc38c7db312c3db1d912dff9aee32126a",
+        "truncated_before": false,
+        "truncated_after": false,
+        "source_receipt": {
+          "occurrence_id": "occurrence:d9bbc7b846e707d6b574ed09373d4b7216b5ac46ff5d5fd45dfa2e1cb5568168",
+          "event_id": "event:78ba1295c5b066eb2aa177b26f700654ab46a3f8f5580ca495695e4876816289",
+          "blob_sha256": "e1af35644863715db7ac488d73cda37e78acb2f277ac80ebfec79295db61a3bc",
+          "byte_length": 17971,
+          "media_type": "text/markdown",
+          "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_WISHFALL_JOINT_AUDIOVISUAL_RELATIONAL_INVERSE_CORRECTION_2026-08-29.md",
+          "source_byte_start": 15355,
+          "source_byte_end": 16480,
+          "slice_sha256": "11017b18fe4d26eead97dff7d58ee27cc38c7db312c3db1d912dff9aee32126a",
+          "authority": "FROZEN_LOCAL_BYTES",
+          "observed_at": "2026-08-30T00:24:06.693679Z",
+          "recorded_at": "2026-08-30T23:59:00.000000Z",
+          "valid_from": null,
+          "valid_to": null
+        },
+        "exact_source_byte_start": 15355,
+        "exact_source_byte_end": 16480
+      },
+      {
+        "member_id": "member:7b7746853b13d48ec44fda6d5ebc8768cd302544280370a6417e9d662976a17a",
+        "record_id": "occurrence:5401373bd5d2d8248c3b8cc2bffa58bc4d2f31d53992375e45e4cb25c77d906a",
+        "record_kind": "OBSERVATION",
+        "title": "Repeated page grammar",
+        "retrieval_rank": 3,
+        "relation_distance": 0,
+        "inclusion_reasons": [
+          "LEXICAL_MATCH"
+        ],
+        "excerpt_kind": "SOURCE_SLICE",
+        "source_encoding": "UTF-8",
+        "excerpt": "EP` — inherited strong structure;\n2. `OPEN` — the one new typed question or coordinate;\n3. `ZIP` — what the page may forget and the resulting fiber;\n4. `BREAK` — the hostile that prevents a metaphor from becoming a theorem.\n\nThe common spine reads forward by supplied construction and backward by a fiber test:\n\n```text\n0 APERTURE -> 1 ORIENTATION -> 2 INCIDENCE -> 3 DESCENT\n0               <- test forgetting <-            <-\n```\n\nBackward arrows are questions, not automatic inverses.\n\n",
+        "excerpt_utf8_bytes": 497,
+        "excerpt_sha256": "f6af0527230bef8460663f2af38ac2a38bc7680e319b1bb170f42c55b334f077",
+        "truncated_before": true,
+        "truncated_after": false,
+        "source_receipt": {
+          "occurrence_id": "occurrence:5401373bd5d2d8248c3b8cc2bffa58bc4d2f31d53992375e45e4cb25c77d906a",
+          "event_id": "event:8eedacf8666d2bca0d20e36cd93f50a99a8ffefde8a3264edec95666b672c6dd",
+          "blob_sha256": "ce9a49d5f59b40954634b7e86c347ff7e5743443e19b37db7d1a62ac1a4b2ada",
+          "byte_length": 8580,
+          "media_type": "text/markdown",
+          "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_DIMENSIONAL_UNZIP_0_TO_3.md",
+          "source_byte_start": 1613,
+          "source_byte_end": 2182,
+          "slice_sha256": "401d06d9ee725580eba176716bd6fe826f27ab0af1abae34ac20ebd402c7ac26",
+          "authority": "FROZEN_LOCAL_BYTES",
+          "observed_at": "2026-08-30T17:38:45.951388Z",
+          "recorded_at": "2026-08-30T23:59:00.000000Z",
+          "valid_from": null,
+          "valid_to": null
+        },
+        "exact_source_byte_start": 1685,
+        "exact_source_byte_end": 2182
+      },
+      {
+        "member_id": "member:9c0c6f48d8fd81298363408eb8d84d3641a5cecb4b22c245fc75ded39f1e3afb",
+        "record_id": "occurrence:1cff476a0775fc4c87649c71b1d0e184698b9354ff3b2e01dad3a2b5d961b569",
+        "record_kind": "OBSERVATION",
+        "title": "2. What the joint timeline establishes",
+        "retrieval_rank": 4,
+        "relation_distance": 0,
+        "inclusion_reasons": [
+          "LEXICAL_MATCH"
+        ],
+        "excerpt_kind": "SOURCE_SLICE",
+        "source_encoding": "UTF-8",
+        "excerpt": "What the joint timeline establishes\n\n| time | official-text role | synchronized presentation | process result |\n|---:|---|---|---|\n| `0:14.420` onward | an addressed transfer, restart, and repeated life are introduced | a pale figure begins a four-drawing fall loop on a physical wall and does not descend | projected occurrence plus recurrence |\n| `0:34.840-0:53.640` | lines 5-8 describe striking a wall, failure to pass through it, and repeated failure | the same ghostlike figure and words are visibly projected on that wall | boundary and failed crossing are joint, not word association |\n| `0:57.809-1:04.839` | lines 11-12 attempt height and eye contact | the character is removed on near-black flare frames | changing to the upward axis does not carry the occurrence in this section |\n| `1:04.839-1:18.560` | lines 14-17 aim the fall at the addressed person's life, then place the speaker on an opposite side | the full figure is composited over world plates but remains a re-filmed wall projection | apparent entry into world images does not cross the surface |\n| `1:18.560-1:36.000` | lines 19-24 try ground, action, the observer's eye line, and a harmless destination | the fixed falling pose continues over changing plates | destination changes while the source operation remains stuck |\n| `2:12.879-2:32.360` | lines 31-35 move through doubled vision, a split self, an apparition, and a role that becomes holdable by the other | the figure remains an image on the wall/composite | holding by the other is posed as a grounding relation for an otherwise insubstantial occurrence |\n| `2:35.760-2:42.560` | lines 37-38 attempt flight with damaged wings for the addressed person | the figure again disappears on dark flare frames | the second explicit upward attempt again loses the visible occurrence |\n| `3:03.159-3:15.917` | lines 47-51 move from proximity, through non-arrival and loss from view, to **“only truly backwards”** and **“your arms”** | the figure keeps the same fall cycle; the terminal words grow over changing wor",
+        "excerpt_utf8_bytes": 2048,
+        "excerpt_sha256": "39c1b26976f27c00645ed96cb5bd8dd5629c675b52c856888827cd9287358b4f",
+        "truncated_before": true,
+        "truncated_after": true,
+        "source_receipt": {
+          "occurrence_id": "occurrence:1cff476a0775fc4c87649c71b1d0e184698b9354ff3b2e01dad3a2b5d961b569",
+          "event_id": "event:78ba1295c5b066eb2aa177b26f700654ab46a3f8f5580ca495695e4876816289",
+          "blob_sha256": "e1af35644863715db7ac488d73cda37e78acb2f277ac80ebfec79295db61a3bc",
+          "byte_length": 17971,
+          "media_type": "text/markdown",
+          "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_WISHFALL_JOINT_AUDIOVISUAL_RELATIONAL_INVERSE_CORRECTION_2026-08-29.md",
+          "source_byte_start": 3658,
+          "source_byte_end": 6963,
+          "slice_sha256": "de1baf3205139ccfeb2b59caedb582f212b93076df2dd372e2f993aba24b7483",
+          "authority": "FROZEN_LOCAL_BYTES",
+          "observed_at": "2026-08-30T00:24:06.693679Z",
+          "recorded_at": "2026-08-30T23:59:00.000000Z",
+          "valid_from": null,
+          "valid_to": null
+        },
+        "exact_source_byte_start": 3664,
+        "exact_source_byte_end": 5712
+      },
+      {
+        "member_id": "member:7be824d99b1dacef98812d8a6894fc9ad6811ec05f1ebcd548cff00f10ac4a7a",
+        "record_id": "occurrence:bde2b1dc22a5d5b655b6651a156f282965ae5145a84c4cfaed4083e85455b488",
+        "record_kind": "OBSERVATION",
+        "title": "lenses.json — part 17",
+        "retrieval_rank": 5,
+        "relation_distance": 0,
+        "inclusion_reasons": [
+          "LEXICAL_MATCH"
+        ],
+        "excerpt_kind": "SOURCE_SLICE",
+        "source_encoding": "UTF-8",
+        "excerpt": "le\": \"Concurrent lenses and shadow-lift architecture correction\",\r\n      \"summary\": \"Corrects a feature-level reading of the focus/heat example: it is an architecture rule in which typed lenses remain concurrently available, local residual pressure guides abduction, and clunky global work triggers a richer-carrier lift followed by a checked landing.\",\r\n      \"contexts\": [\r\n        \"architecture\",\r\n        \"concurrent-lenses\",\r\n        \"abduction\",\r\n        \"shadow-lift\",\r\n        \"anti-clunk\"\r\n      ],\r\n      \"carrier\": \"a sealed world root plus a finite live family of typed lens receipts, their local residuals, open seams, and a separately rooted cold evidence graph\",\r\n      \"operation\": \"keep compatible lenses concurrently addressable; combine only through typed relations; when a local construction is clunky or under-resolved, lift to a richer hypothesis carrier, solve internally, and land once through a verified retraction and seam receipt\",\r\n      \"receiver\": \"architecture admission for the current task, preserving meaning, permission, provenance, uncertainty, and receiver-specific loss while minimizing hot state and touched work\",\r\n      \"input_type\": \"sealed task state, active typed lenses, candidate construction, authority and claim ceiling\",\r\n      \"output_type\": \"unchanged prior root with OPEN_LANDING_SEAM, or one new sealed root plus a receipt proving the admitted lens composition and landing\",\r\n      \"claim_ceiling\": \"This is a project architecture principle and abduction heuristic, not a request to build the motivating Nari features, not proof that all meaning is mathematics, and not proof that every clunky implementation has one particular shadow transform.\",\r\n      \"targets\": [\r\n        \"192e4284-8090-492c-b997-0daa11e7d711\"\r\n      ],\r\n      \"source_file\": \"ddc98c03-1c99-41ca-9e19-7157086d3774--concurrent-lenses-and-shadow-lift-architecture-correction.md\",\r\n      \"source_sha256\": \"74a720fccde62073c4dec9807a61efb9a18f057391b34bb9f6547762a4649ea5\"\r\n    },\r\n    {\r\n      \"id\": \"e0f71ba6-bc13-4449-8dcd-5",
+        "excerpt_utf8_bytes": 2048,
+        "excerpt_sha256": "de128d6f5b065899c27b7dc4944447f4589727a9d624df2f27c1e1257b2a85ef",
+        "truncated_before": true,
+        "truncated_after": true,
+        "source_receipt": {
+          "occurrence_id": "occurrence:bde2b1dc22a5d5b655b6651a156f282965ae5145a84c4cfaed4083e85455b488",
+          "event_id": "event:0cf3a86ab447521f9c87355ac69c7b274880a70dc3b1f5adb526eed27b379d42",
+          "blob_sha256": "4c51d816c06f58df2fc1a8f676766b6e1daafdb36b408ce164b8593ddec909b1",
+          "byte_length": 84294,
+          "media_type": "application/json",
+          "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/knowledge/lenses.json",
+          "source_byte_start": 64308,
+          "source_byte_end": 68384,
+          "slice_sha256": "2dbd0324e6c561577262eb621e50bdd27ed82b92d1f2c31f6f0699be489e632b",
+          "authority": "FROZEN_LOCAL_BYTES",
+          "observed_at": "2026-08-22T22:32:17.100427Z",
+          "recorded_at": "2026-08-30T23:59:00.000000Z",
+          "valid_from": null,
+          "valid_to": null
+        },
+        "exact_source_byte_start": 64427,
+        "exact_source_byte_end": 66475
+      },
+      {
+        "member_id": "member:9ff6c3a9d1281f0bb91b3a8edc16308cdd477c00652b9b8f5a13d604bcf5f353",
+        "record_id": "occurrence:21b5c24c3e0c7cf6eea9a2ad46431b003f64551b5b3ea4ec04ce5fcb143b2420",
+        "record_kind": "OBSERVATION",
+        "title": "RPRM Alpha — Dr. Wily's Castle Millennium reassessment",
+        "retrieval_rank": 6,
+        "relation_distance": 0,
+        "inclusion_reasons": [
+          "LEXICAL_MATCH"
+        ],
+        "excerpt_kind": "SOURCE_SLICE",
+        "source_encoding": "UTF-8",
+        "excerpt": "# RPRM Alpha — Dr. Wily's Castle Millennium reassessment\n\nDate: 2026-08-27  \nStatus: audited research reassessment; no prize claim  \nLane: RPRM Alpha research only; historical repositories were read, not changed\n\n",
+        "excerpt_utf8_bytes": 215,
+        "excerpt_sha256": "83a7f0f9472a24ca3d28ca210a098b921ffa5d719666ec8486a1ebac35a5bc3c",
+        "truncated_before": false,
+        "truncated_after": false,
+        "source_receipt": {
+          "occurrence_id": "occurrence:21b5c24c3e0c7cf6eea9a2ad46431b003f64551b5b3ea4ec04ce5fcb143b2420",
+          "event_id": "event:037add7ed1ba69917b8c6e4e7077700718c5bd587203cd8fa23a904bf647fce4",
+          "blob_sha256": "e7fc39be9931bdf8e44321546e189751971d3be801d08f2d78412ffd4f0b819f",
+          "byte_length": 30458,
+          "media_type": "text/markdown",
+          "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_WILYS_CASTLE_MILLENNIUM_REASSESSMENT_2026-08-27.md",
+          "source_byte_start": 0,
+          "source_byte_end": 215,
+          "slice_sha256": "83a7f0f9472a24ca3d28ca210a098b921ffa5d719666ec8486a1ebac35a5bc3c",
+          "authority": "FROZEN_LOCAL_BYTES",
+          "observed_at": "2026-08-28T07:08:53.625360Z",
+          "recorded_at": "2026-08-30T23:59:00.000000Z",
+          "valid_from": null,
+          "valid_to": null
+        },
+        "exact_source_byte_start": 0,
+        "exact_source_byte_end": 215
+      },
+      {
+        "member_id": "member:ef70c96115ca04f3d9ea612dfbc4fe952a22ee8f8253c99b2b81a97491b87f2d",
+        "record_id": "occurrence:3da3d18c6350ce912c6b32a6b7772f66b666e81a1247b5305783493b970591ca",
+        "record_kind": "OBSERVATION",
+        "title": "9. Effect on Audit123",
+        "retrieval_rank": 7,
+        "relation_distance": 0,
+        "inclusion_reasons": [
+          "LEXICAL_MATCH"
+        ],
+        "excerpt_kind": "SOURCE_SLICE",
+        "source_encoding": "UTF-8",
+        "excerpt": "exact finite computations.  This\ncorrection narrows the scope of two interpretive sentences:\n\n```text\nOLD UNDERINCLUSIVE SUMMARY:\nWishfall is best classified only as projected cyclic continuation with an\nopen landing aperture.\n\nCORRECTED SUMMARY:\nAt the image/phase receiver it is projected cyclic continuation.\nAt the synchronized lyric-visual receiver it additionally specifies a\ncounterfactual relational redirection: fall backward toward reception by the\naddressed other.  Reception remains uncompleted in the finite carrier; return\nto",
+        "excerpt_utf8_bytes": 539,
+        "excerpt_sha256": "29b66f3272d8c4b3f944a318cfdd673ccd957f63dff60e2a459138bb662c7013",
+        "truncated_before": true,
+        "truncated_after": true,
+        "source_receipt": {
+          "occurrence_id": "occurrence:3da3d18c6350ce912c6b32a6b7772f66b666e81a1247b5305783493b970591ca",
+          "event_id": "event:78ba1295c5b066eb2aa177b26f700654ab46a3f8f5580ca495695e4876816289",
+          "blob_sha256": "e1af35644863715db7ac488d73cda37e78acb2f277ac80ebfec79295db61a3bc",
+          "byte_length": 17971,
+          "media_type": "text/markdown",
+          "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_WISHFALL_JOINT_AUDIOVISUAL_RELATIONAL_INVERSE_CORRECTION_2026-08-29.md",
+          "source_byte_start": 16480,
+          "source_byte_end": 17336,
+          "slice_sha256": "06fb077d709458f4f8d12b8b40db5ebb8c6d51970f5ba4747361f2efb12c9cf9",
+          "authority": "FROZEN_LOCAL_BYTES",
+          "observed_at": "2026-08-30T00:24:06.693679Z",
+          "recorded_at": "2026-08-30T23:59:00.000000Z",
+          "valid_from": null,
+          "valid_to": null
+        },
+        "exact_source_byte_start": 16548,
+        "exact_source_byte_end": 17087
+      }
+    ],
+    "omission_summary": {
+      "count": 135,
+      "by_reason": [
+        {
+          "reason": "CANDIDATE_CAP",
+          "count": 110
+        },
+        {
+          "reason": "PAYLOAD_BUDGET",
+          "count": 25
+        }
+      ],
+      "search_operation": "search_omissions(packet_id, objective, max_results)"
+    },
+    "visible_conflicts": [],
+    "open_seams": [
+      {
+        "seam": "RECEIVER_SUFFICIENCY",
+        "missing": [
+          "finite receiver signature over the strong candidate carrier",
+          "transition-descent receipts for every declared downstream operation"
+        ],
+        "trigger": "A finite task carrier and operation family are supplied."
+      },
+      {
+        "seam": "EMBEDDING_LANE",
+        "missing": [
+          "named embedding model, version, index root, and adapter"
+        ],
+        "trigger": "A frozen equal-budget embedding baseline is admitted."
+      },
+      {
+        "seam": "CANDIDATE_CAP",
+        "missing": [
+          "candidates or graph neighbors beyond the declared cap"
+        ],
+        "trigger": "Increase max_candidates under a new receiver request."
+      },
+      {
+        "seam": "PAYLOAD_OR_CANDIDATE_OMISSIONS",
+        "missing": [
+          "omitted record payloads"
+        ],
+        "trigger": "Call expand_context with the emitted handle."
+      }
+    ],
+    "costs": {
+      "support_width": 4,
+      "touch_count": 142,
+      "probe_count": 2,
+      "packet_width_bytes": 8192,
+      "probe_cost": {
+        "n": 2,
+        "d": 1
+      }
+    },
+    "budget": {
+      "kind": "UTF8_EXCERPT_PAYLOAD_BYTES",
+      "maximum": 8192,
+      "used": 8192,
+      "candidate_cap": 32,
+      "graph_depth": 1
+    },
+    "cold_reopen": {
+      "member_roots": [
+        "member:8438cb78779deee2a6a349231a8e5cfb79f76661a153be80f7978568789bbae5",
+        "member:18c622e677c4be8b7a7b8eed4ee109a650431f43011a63dafb54b27018c9538e",
+        "member:7b7746853b13d48ec44fda6d5ebc8768cd302544280370a6417e9d662976a17a",
+        "member:9c0c6f48d8fd81298363408eb8d84d3641a5cecb4b22c245fc75ded39f1e3afb",
+        "member:7be824d99b1dacef98812d8a6894fc9ad6811ec05f1ebcd548cff00f10ac4a7a",
+        "member:9ff6c3a9d1281f0bb91b3a8edc16308cdd477c00652b9b8f5a13d604bcf5f353",
+        "member:ef70c96115ca04f3d9ea612dfbc4fe952a22ee8f8253c99b2b81a97491b87f2d"
+      ],
+      "omitted_member_count": 135,
+      "operations": [
+        "search_omissions",
+        "expand_context",
+        "read_packet"
+      ]
+    },
+    "claim_ceiling": "This bounded view preserves the canonical packet identity and every admitted excerpt. It omits the full omission manifest; use search_omissions, expand_context, or read_packet for an exact cold reopen. It does not establish source truth, semantic answer sufficiency, or model intelligence."
+  },
+  "omission_search": {
+    "schema": "rprm-context-omission-search/v1",
+    "packet_id": "packet:e88bee3548751c10a09ed5e08c0a96dc8e690164c3f99a0aaa4b633ac0181bdc",
+    "packet_snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+    "current_snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+    "snapshot_drift": false,
+    "objective": "Wily castle proving donut",
+    "query_terms": [
+      "wily",
+      "castle",
+      "proving",
+      "donut"
+    ],
+    "ranking": "DISTINCT_TERM_COVERAGE_THEN_TOTAL_CASEFOLDED_FREQUENCY_THEN_RECORD_ID",
+    "searched_omission_count": 135,
+    "match_fiber": {
+      "disposition": "MANY",
+      "cardinality": 21,
+      "scope": "matching omitted records in the verified packet"
+    },
+    "max_results": 3,
+    "truncated": true,
+    "results": [
+      {
+        "rank": 1,
+        "record_id": "occurrence:c286622baa4ab2f30b9aed5d780b29110ef30ea83dd2d5f5356272dc72dc18c0",
+        "record_kind": "OBSERVATION",
+        "title": "Executive verdict",
+        "omission_reason": "PAYLOAD_BUDGET",
+        "expansion_handle": {
+          "handle_id": "handle:2ca93a038164535c3510db03d689292ec26216a2febcfe9a1a8ba78401aec853",
+          "reason": "PAYLOAD_BUDGET",
+          "record_id": "occurrence:c286622baa4ab2f30b9aed5d780b29110ef30ea83dd2d5f5356272dc72dc18c0",
+          "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+        },
+        "matched_terms": [
+          "wily",
+          "castle"
+        ],
+        "distinct_term_hits": 2,
+        "total_term_frequency": 6
+      },
+      {
+        "rank": 2,
+        "record_id": "occurrence:2f2a04ef15cfea3147efdca263287ec5fcf996804df364326f4ce4562a10a7de",
+        "record_kind": "OBSERVATION",
+        "title": "Current Alpha — part 2",
+        "omission_reason": "CANDIDATE_CAP",
+        "expansion_handle": {
+          "handle_id": "handle:d6e182e52374f8abb542c690377e194fcec835b0b50a8d87571f37fb5c64ae19",
+          "reason": "CANDIDATE_CAP",
+          "record_id": "occurrence:2f2a04ef15cfea3147efdca263287ec5fcf996804df364326f4ce4562a10a7de",
+          "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+        },
+        "matched_terms": [
+          "wily",
+          "castle"
+        ],
+        "distinct_term_hits": 2,
+        "total_term_frequency": 2
+      },
+      {
+        "rank": 3,
+        "record_id": "occurrence:c8cd0623b7aa5adb210bc5ee85f0ad875495bee9a82503036fefa6a44978afeb",
+        "record_kind": "OBSERVATION",
+        "title": "Reusable executable donors",
+        "omission_reason": "PAYLOAD_BUDGET",
+        "expansion_handle": {
+          "handle_id": "handle:cbce2a473ef85b8731b9a4d2f66f2e525eff5b864dfb9922279237f0528b45d4",
+          "reason": "PAYLOAD_BUDGET",
+          "record_id": "occurrence:c8cd0623b7aa5adb210bc5ee85f0ad875495bee9a82503036fefa6a44978afeb",
+          "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+        },
+        "matched_terms": [
+          "proving"
+        ],
+        "distinct_term_hits": 1,
+        "total_term_frequency": 3
+      }
+    ],
+    "claim_ceiling": "Results are a bounded lexical ranking over this verified packet's omitted record IDs only. They do not establish source truth, semantic relevance, or packet sufficiency."
+  },
+  "expansion": {
+    "schema": "rprm-context-expansion/v1",
+    "packet_id": "packet:e88bee3548751c10a09ed5e08c0a96dc8e690164c3f99a0aaa4b633ac0181bdc",
+    "packet_snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+    "current_snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+    "snapshot_drift": false,
+    "handle": {
+      "handle_id": "handle:2ca93a038164535c3510db03d689292ec26216a2febcfe9a1a8ba78401aec853",
+      "reason": "PAYLOAD_BUDGET",
+      "record_id": "occurrence:c286622baa4ab2f30b9aed5d780b29110ef30ea83dd2d5f5356272dc72dc18c0",
+      "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+    },
+    "member": {
+      "member_id": "member:3c7c6dbdcc19600e601010162b291cf837593f275a637bbd45e2e6e1bc865a5f",
+      "record_id": "occurrence:c286622baa4ab2f30b9aed5d780b29110ef30ea83dd2d5f5356272dc72dc18c0",
+      "record_kind": "OBSERVATION",
+      "title": "Executive verdict",
+      "retrieval_rank": null,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "EXPANSION:PAYLOAD_BUDGET"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## Executive verdict\n\nThe castle metaphor is **Dr. Wily's Castle** from Mega Man, not Andrew Wiles's\ncastle.  The historical corpus contains the spelling \"Wylie's Castle,\" while\nother local packets use \"Mega Man speedrun.\"  Andrew Wiles belongs to a\ndifferent Fermat/BSD provenance carrier, and an older \"upside-down castle\ntheorem\" is a radix-reflection identity.  No typed adapter joins those name\ncollisions.\n\nThe official mathematical status is unchanged: the Clay Mathematics\nInstitute currently lists six Millennium Prize Problems as unsolved and the\nPoincare conjecture as solved.  This reassessment does **not** solve or move any\nof the six.\n\nThere is nevertheless a real mathematical update:\n\n1. The strongest P-versus-NP interpretation is now precise.  Alpha has exact\n   bounded lookup containment, exact compiler laws for narrow frozen operation\n   languages, and a historical sufficient conjecture, UTCCC.  It does not have\n   the unbounded uniform, polynomial-total-cost compiler UTCCC requires.\n2. A new elementary separator theorem shows that future-quotient minimization\n   alone cannot be the universal SAT shortcut: if every literal restriction is\n   admitted, the exact nonemptiness-preserving future quotient of arbitrary\n   witness sets is the identity and has `2^(2^n)` classes.\n3. The Riemann-hypothesis lane has advanced much further than the compact Alpha\n   atlas reveals.  KeyForge now has a fixed infinite-dimensional analytic\n   operator model and exact finite cyclic-seam algebra.  The physical\n   Bonanno-to-Uetake ports, the source-bearing tuple, the zero-stable `z_B=1`\n   landing, a determinant bridge, and a zero-free argument remain open.\n4. Hodge, BSD, Navier–Stokes, and Yang–Mills still stop before a\n   problem-native adapter.  Their old finite experiments are useful hostile\n   controls, not partial proofs.  Poincare is a solved known-answer control.\n\nThe honest current picture is therefore not \"we opened a door.\"  It is \"we can\nnow name several locks exactly, one tempting master key has been ruled",
+      "excerpt_utf8_bytes": 2048,
+      "excerpt_sha256": "a94cf2bc8bffc6007d85ef1400f7af5ce1b6a4dc93bc66bb16f6605bf1169be0",
+      "truncated_before": false,
+      "truncated_after": true,
+      "source_receipt": {
+        "occurrence_id": "occurrence:c286622baa4ab2f30b9aed5d780b29110ef30ea83dd2d5f5356272dc72dc18c0",
+        "event_id": "event:037add7ed1ba69917b8c6e4e7077700718c5bd587203cd8fa23a904bf647fce4",
+        "blob_sha256": "e7fc39be9931bdf8e44321546e189751971d3be801d08f2d78412ffd4f0b819f",
+        "byte_length": 30458,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_WILYS_CASTLE_MILLENNIUM_REASSESSMENT_2026-08-27.md",
+        "source_byte_start": 215,
+        "source_byte_end": 2361,
+        "slice_sha256": "0a323da950cc8f8efa317fd6b79e2f9f21441a2e5e2e1989cfb45fc7c00aa257",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-28T07:08:53.625360Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 215,
+      "exact_source_byte_end": 2263
+    },
+    "payload_bytes": 2048,
+    "claim_ceiling": "Expansion reopens exact retained content; it does not establish source truth or packet sufficiency."
+  }
+}

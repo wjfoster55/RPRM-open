@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "scope": "Global fixed-graph continuation and bounded quantum bridge",
+  "self_excluded": "MANIFEST.json",
+  "files": [
+    {
+      "path": "accepted_sources/rprm/formal-proofs.md",
+      "bytes": 4454,
+      "sha256": "3786f87ecadb659e1f3667ca02cacfed083c7703efa5bd89ab9f64b16e723e62"
+    },
+    {
+      "path": "accepted_sources/rprm/operations.md",
+      "bytes": 40793,
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd"
+    },
+    {
+      "path": "accepted_sources/rprm/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "bytes": 102093,
+      "sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843"
+    },
+    {
+      "path": "accepted_sources/rprm/proof-donut.md",
+      "bytes": 14408,
+      "sha256": "7efda177fc3f4500842c88a7556dde6be3724b1f9194ee449da51c8ebcf5070a"
+    },
+    {
+      "path": "accepted_sources/rprm/relational-layer.md",
+      "bytes": 8903,
+      "sha256": "170af9573d7325f9cdd2c1e028113d908f2d0e409a6a627895a76dbd8fb3c846"
+    },
+    {
+      "path": "accepted_sources/rprm/RPRM-CONCEPT-RECOVERY.md",
+      "bytes": 28752,
+      "sha256": "5cd1318d303f89fd587692e7d9d5d87f96c285441fa6f530ea70a73047737829"
+    },
+    {
+      "path": "accepted_sources/ym2_spatial_joint/DYNAMICS.md",
+      "bytes": 12412,
+      "sha256": "fda5fb6e4c581335284ddb4366e5202290f42282d2732751792e9444a3912c81"
+    },
+    {
+      "path": "accepted_sources/ym2_spatial_joint/PHASE_CLOSURE.md",
+      "bytes": 10959,
+      "sha256": "65a83f3df4dc5d1a5b3b27698d80fed857e0c10937081e27658bf50392ded24a"
+    },
+    {
+      "path": "accepted_sources/ym2_spatial_joint/STATIC_JOIN.md",
+      "bytes": 16669,
+      "sha256": "88b2490c4c03a3370744d928cf7b4710e9367dab8f0f0c21558f69d35e5fd0b0"
+    },
+    {
+      "path": "check_invariants.py",
+      "bytes": 20282,
+      "sha256": "413ffe74abd2fc4dfb370ecb6b83d7aa4152019f42db62dc6e8204be253a3d1a"
+    },
+    {
+      "path": "check_quantum.py",
+      "bytes": 10687,
+      "sha256": "1eae75f9abab18b152502977bf7e20ac855608af72913ddaab70b5480bb88519"
+    },
+    {
+      "path": "check_tree.py",
+      "bytes": 11936,
+      "sha256": "7ead2debfdd38cf023089af34868a8f9c6387536caa0200dad7c156b2d1dc298"
+    },
+    {
+      "path": "GAP_BRIDGE.md",
+      "bytes": 19566,
+      "sha256": "68e619f6e56b752e59609d52a9e2c5674a0ef47c1bdb8c9d06a3b6188d071a28"
+    },
+    {
+      "path": "GLOBAL_INVARIANT_JOINT.md",
+      "bytes": 16935,
+      "sha256": "f7858fa2e613ddfe1c0e6dcd29042d1fd9c92c4dab76ce8771c92baf44a028b6"
+    },
+    {
+      "path": "GLOBAL_TREE_PHASE.md",
+      "bytes": 15765,
+      "sha256": "28280864599a5eea464f0e626d4c6b3bb8efb26789939e6a09a6d79ed53cd95d"
+    },
+    {
+      "path": "INDEPENDENT_REVIEW.md",
+      "bytes": 12038,
+      "sha256": "69bddca4054039cf820c72716bda8b9424483417e4740772b2750f213f5875ec"
+    },
+    {
+      "path": "NEXT_GLUE_LEMMA.md",
+      "bytes": 6159,
+      "sha256": "fe9066999331a95bdc1ae31047ebf1a9ed0b173a5c3c5874b733128c0f1e0ef6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4540,
+      "sha256": "2650c70d0d9c665f5d49076be10fe5a2c9c81d03079f534437067835bacf03a4"
+    },
+    {
+      "path": "RESULTS_INVARIANTS.json",
+      "bytes": 3129,
+      "sha256": "376fae70c4574f2282af2f3f7494ab3b6509ed13aacdce7de36812363b6a8d7a"
+    },
+    {
+      "path": "RESULTS_QUANTUM.json",
+      "bytes": 54289,
+      "sha256": "e9b148f0df1c7938dcb30e035d4c9a979a0aa1a363b69dabaf23509705fc506c"
+    },
+    {
+      "path": "RESULTS_TREE.json",
+      "bytes": 10941,
+      "sha256": "f384ae68376302bb28aeea6803edc76e1bcc9fe22474b9973f3a82269216be6b"
+    },
+    {
+      "path": "RETURN_TO_WILLIAM.md",
+      "bytes": 8730,
+      "sha256": "ffdd2e8613d7030f5a4335f8ab6c1b04cb8db09885385f90df2818d99b54d4e0"
+    },
+    {
+      "path": "RPRM_PROOF_CERTIFICATE.md",
+      "bytes": 9565,
+      "sha256": "56d96174f1d44b9a6fa7e3e556a483e2d1013e62632de9b91aef7f35604b50a2"
+    },
+    {
+      "path": "SOURCE_AUDIT.md",
+      "bytes": 7543,
+      "sha256": "01088c7a0f923a3107a0dc4b3ebfe9547f0bacd5f4d8346e0d6631a1b238b993"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 3559,
+      "sha256": "5b94663a6714277570852ddc1e0c14da9567d8aa340f7d1fdcf958dfdbc3dc71"
+    }
+  ]
+}

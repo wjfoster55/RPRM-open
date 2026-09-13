@@ -1,0 +1,21 @@
+{
+  "id": "E5_EXACT_QUADRATURE_BUDGET_V1",
+  "declared_before_interval_execution": true,
+  "coefficient_cutoffs_in_order": [40, 80, 160],
+  "panels_per_doubling_band_in_order": [32, 64, 128],
+  "refinement_policy": "At each cutoff try the listed panel counts in order, stopping the entire calculation at the first strictly positive interval of width <= 1/100; if none qualifies move to the next cutoff.",
+  "integration_upper_endpoint": "32",
+  "maximum_doubling_bands_per_retained_term": 8,
+  "maximum_panels_per_retained_term": 1024,
+  "dyadic_grid_bits": 80,
+  "machin_arctangent_terms": {"one_fifth": 64, "one_239th": 20},
+  "sqrt2_dyadic_grid_bits": 80,
+  "exp_base_even_partial_sum_degree": 30,
+  "exp_base_odd_partial_sum_degree": 31,
+  "exp_range_reduction": "Divide the nonnegative rational argument by 2 until <= 1; square the interval back, rounding outward to the 80-bit dyadic grid at every step.",
+  "quadrature": "Composite midpoint lower bound with analytic per-panel upper error h^3 sup(f'')/24; f(t)=exp(-t)/t. Use doubling bands [x,2x] up to 32, each split into K equal rational panels. If x>=32 in a budgeted later cutoff, bound E1(x) directly between 0 and exp(-x)/x.",
+  "target_width": "1/100",
+  "arithmetic": "Python standard-library integers and Fraction only; no floating-point values in the proof path.",
+  "output_rounding": "Outward to denominator 1000000 for readable rational endpoint display, with that enlargement included in the success test.",
+  "notes": "This file is a fixed budget declaration, not a result or a prediction of the answer. The script reads and hashes these bytes before running its first interval calculation."
+}

@@ -1,0 +1,930 @@
+{
+  "schema": "bsd-sliding-hook-15/digit-scout-checks/v1",
+  "status": "PASS",
+  "candidate_status": "POSTTARGET_FITTED",
+  "carrier": "all 100 exact width-two base-10 words, including leading zero",
+  "max_overlap_image_count": 100,
+  "certificate_image_count": 100,
+  "certificate_length_counts": {
+    "5": 10,
+    "6": 90
+  },
+  "overlap_fibers_on_all_width_two_or_three_words": {
+    "ONE": 100,
+    "NONE": 1000
+  },
+  "fixed_words": [
+    "00",
+    "11",
+    "22",
+    "33",
+    "44",
+    "55",
+    "66",
+    "77",
+    "88",
+    "99"
+  ],
+  "bounded_two_grammar_fiber_after_59": [
+    "max_overlap",
+    "one_symbol_overlap"
+  ],
+  "grammar_agree_count": 90,
+  "grammar_differ_words": [
+    "00",
+    "11",
+    "22",
+    "33",
+    "44",
+    "55",
+    "66",
+    "77",
+    "88",
+    "99"
+  ],
+  "certificate_fibers": {
+    "592595": {
+      "disposition": "ONE",
+      "values": [
+        "59"
+      ]
+    },
+    "582585": {
+      "disposition": "ONE",
+      "values": [
+        "58"
+      ]
+    },
+    "55255": {
+      "disposition": "ONE",
+      "values": [
+        "55"
+      ]
+    },
+    "552555": {
+      "disposition": "NONE",
+      "values": []
+    },
+    "592594": {
+      "disposition": "NONE",
+      "values": []
+    },
+    "507394": {
+      "disposition": "NONE",
+      "values": []
+    }
+  },
+  "lower_parser_count": 1000,
+  "lower_rational_enabled_count": 900,
+  "lower_pair_3_4_fiber": [
+    "0394",
+    "1394",
+    "2394",
+    "3394",
+    "4394",
+    "5394",
+    "6394",
+    "7394",
+    "8394",
+    "9394"
+  ],
+  "lower_rational_3_over_4_fiber": [
+    "0394",
+    "0698",
+    "1394",
+    "1698",
+    "2394",
+    "2698",
+    "3394",
+    "3698",
+    "4394",
+    "4698",
+    "5394",
+    "5698",
+    "6394",
+    "6698",
+    "7394",
+    "7698",
+    "8394",
+    "8698",
+    "9394",
+    "9698"
+  ],
+  "retained_lower_prefix": "50",
+  "selected_lower_suffix": "7394",
+  "bound_fractions": {
+    "lower": "-253697/500000000",
+    "upper": "118519/200000000"
+  },
+  "9_divisibility": {
+    "592595": false,
+    "507394": false,
+    "7394": false,
+    "59": false,
+    "595": false,
+    "55": false
+  },
+  "rows": [
+    {
+      "source": "00",
+      "reverse": "00",
+      "overlap_length": 2,
+      "max_overlap": "00",
+      "one_symbol_overlap": "000",
+      "certificate": "00200"
+    },
+    {
+      "source": "01",
+      "reverse": "10",
+      "overlap_length": 1,
+      "max_overlap": "010",
+      "one_symbol_overlap": "010",
+      "certificate": "012010"
+    },
+    {
+      "source": "02",
+      "reverse": "20",
+      "overlap_length": 1,
+      "max_overlap": "020",
+      "one_symbol_overlap": "020",
+      "certificate": "022020"
+    },
+    {
+      "source": "03",
+      "reverse": "30",
+      "overlap_length": 1,
+      "max_overlap": "030",
+      "one_symbol_overlap": "030",
+      "certificate": "032030"
+    },
+    {
+      "source": "04",
+      "reverse": "40",
+      "overlap_length": 1,
+      "max_overlap": "040",
+      "one_symbol_overlap": "040",
+      "certificate": "042040"
+    },
+    {
+      "source": "05",
+      "reverse": "50",
+      "overlap_length": 1,
+      "max_overlap": "050",
+      "one_symbol_overlap": "050",
+      "certificate": "052050"
+    },
+    {
+      "source": "06",
+      "reverse": "60",
+      "overlap_length": 1,
+      "max_overlap": "060",
+      "one_symbol_overlap": "060",
+      "certificate": "062060"
+    },
+    {
+      "source": "07",
+      "reverse": "70",
+      "overlap_length": 1,
+      "max_overlap": "070",
+      "one_symbol_overlap": "070",
+      "certificate": "072070"
+    },
+    {
+      "source": "08",
+      "reverse": "80",
+      "overlap_length": 1,
+      "max_overlap": "080",
+      "one_symbol_overlap": "080",
+      "certificate": "082080"
+    },
+    {
+      "source": "09",
+      "reverse": "90",
+      "overlap_length": 1,
+      "max_overlap": "090",
+      "one_symbol_overlap": "090",
+      "certificate": "092090"
+    },
+    {
+      "source": "10",
+      "reverse": "01",
+      "overlap_length": 1,
+      "max_overlap": "101",
+      "one_symbol_overlap": "101",
+      "certificate": "102101"
+    },
+    {
+      "source": "11",
+      "reverse": "11",
+      "overlap_length": 2,
+      "max_overlap": "11",
+      "one_symbol_overlap": "111",
+      "certificate": "11211"
+    },
+    {
+      "source": "12",
+      "reverse": "21",
+      "overlap_length": 1,
+      "max_overlap": "121",
+      "one_symbol_overlap": "121",
+      "certificate": "122121"
+    },
+    {
+      "source": "13",
+      "reverse": "31",
+      "overlap_length": 1,
+      "max_overlap": "131",
+      "one_symbol_overlap": "131",
+      "certificate": "132131"
+    },
+    {
+      "source": "14",
+      "reverse": "41",
+      "overlap_length": 1,
+      "max_overlap": "141",
+      "one_symbol_overlap": "141",
+      "certificate": "142141"
+    },
+    {
+      "source": "15",
+      "reverse": "51",
+      "overlap_length": 1,
+      "max_overlap": "151",
+      "one_symbol_overlap": "151",
+      "certificate": "152151"
+    },
+    {
+      "source": "16",
+      "reverse": "61",
+      "overlap_length": 1,
+      "max_overlap": "161",
+      "one_symbol_overlap": "161",
+      "certificate": "162161"
+    },
+    {
+      "source": "17",
+      "reverse": "71",
+      "overlap_length": 1,
+      "max_overlap": "171",
+      "one_symbol_overlap": "171",
+      "certificate": "172171"
+    },
+    {
+      "source": "18",
+      "reverse": "81",
+      "overlap_length": 1,
+      "max_overlap": "181",
+      "one_symbol_overlap": "181",
+      "certificate": "182181"
+    },
+    {
+      "source": "19",
+      "reverse": "91",
+      "overlap_length": 1,
+      "max_overlap": "191",
+      "one_symbol_overlap": "191",
+      "certificate": "192191"
+    },
+    {
+      "source": "20",
+      "reverse": "02",
+      "overlap_length": 1,
+      "max_overlap": "202",
+      "one_symbol_overlap": "202",
+      "certificate": "202202"
+    },
+    {
+      "source": "21",
+      "reverse": "12",
+      "overlap_length": 1,
+      "max_overlap": "212",
+      "one_symbol_overlap": "212",
+      "certificate": "212212"
+    },
+    {
+      "source": "22",
+      "reverse": "22",
+      "overlap_length": 2,
+      "max_overlap": "22",
+      "one_symbol_overlap": "222",
+      "certificate": "22222"
+    },
+    {
+      "source": "23",
+      "reverse": "32",
+      "overlap_length": 1,
+      "max_overlap": "232",
+      "one_symbol_overlap": "232",
+      "certificate": "232232"
+    },
+    {
+      "source": "24",
+      "reverse": "42",
+      "overlap_length": 1,
+      "max_overlap": "242",
+      "one_symbol_overlap": "242",
+      "certificate": "242242"
+    },
+    {
+      "source": "25",
+      "reverse": "52",
+      "overlap_length": 1,
+      "max_overlap": "252",
+      "one_symbol_overlap": "252",
+      "certificate": "252252"
+    },
+    {
+      "source": "26",
+      "reverse": "62",
+      "overlap_length": 1,
+      "max_overlap": "262",
+      "one_symbol_overlap": "262",
+      "certificate": "262262"
+    },
+    {
+      "source": "27",
+      "reverse": "72",
+      "overlap_length": 1,
+      "max_overlap": "272",
+      "one_symbol_overlap": "272",
+      "certificate": "272272"
+    },
+    {
+      "source": "28",
+      "reverse": "82",
+      "overlap_length": 1,
+      "max_overlap": "282",
+      "one_symbol_overlap": "282",
+      "certificate": "282282"
+    },
+    {
+      "source": "29",
+      "reverse": "92",
+      "overlap_length": 1,
+      "max_overlap": "292",
+      "one_symbol_overlap": "292",
+      "certificate": "292292"
+    },
+    {
+      "source": "30",
+      "reverse": "03",
+      "overlap_length": 1,
+      "max_overlap": "303",
+      "one_symbol_overlap": "303",
+      "certificate": "302303"
+    },
+    {
+      "source": "31",
+      "reverse": "13",
+      "overlap_length": 1,
+      "max_overlap": "313",
+      "one_symbol_overlap": "313",
+      "certificate": "312313"
+    },
+    {
+      "source": "32",
+      "reverse": "23",
+      "overlap_length": 1,
+      "max_overlap": "323",
+      "one_symbol_overlap": "323",
+      "certificate": "322323"
+    },
+    {
+      "source": "33",
+      "reverse": "33",
+      "overlap_length": 2,
+      "max_overlap": "33",
+      "one_symbol_overlap": "333",
+      "certificate": "33233"
+    },
+    {
+      "source": "34",
+      "reverse": "43",
+      "overlap_length": 1,
+      "max_overlap": "343",
+      "one_symbol_overlap": "343",
+      "certificate": "342343"
+    },
+    {
+      "source": "35",
+      "reverse": "53",
+      "overlap_length": 1,
+      "max_overlap": "353",
+      "one_symbol_overlap": "353",
+      "certificate": "352353"
+    },
+    {
+      "source": "36",
+      "reverse": "63",
+      "overlap_length": 1,
+      "max_overlap": "363",
+      "one_symbol_overlap": "363",
+      "certificate": "362363"
+    },
+    {
+      "source": "37",
+      "reverse": "73",
+      "overlap_length": 1,
+      "max_overlap": "373",
+      "one_symbol_overlap": "373",
+      "certificate": "372373"
+    },
+    {
+      "source": "38",
+      "reverse": "83",
+      "overlap_length": 1,
+      "max_overlap": "383",
+      "one_symbol_overlap": "383",
+      "certificate": "382383"
+    },
+    {
+      "source": "39",
+      "reverse": "93",
+      "overlap_length": 1,
+      "max_overlap": "393",
+      "one_symbol_overlap": "393",
+      "certificate": "392393"
+    },
+    {
+      "source": "40",
+      "reverse": "04",
+      "overlap_length": 1,
+      "max_overlap": "404",
+      "one_symbol_overlap": "404",
+      "certificate": "402404"
+    },
+    {
+      "source": "41",
+      "reverse": "14",
+      "overlap_length": 1,
+      "max_overlap": "414",
+      "one_symbol_overlap": "414",
+      "certificate": "412414"
+    },
+    {
+      "source": "42",
+      "reverse": "24",
+      "overlap_length": 1,
+      "max_overlap": "424",
+      "one_symbol_overlap": "424",
+      "certificate": "422424"
+    },
+    {
+      "source": "43",
+      "reverse": "34",
+      "overlap_length": 1,
+      "max_overlap": "434",
+      "one_symbol_overlap": "434",
+      "certificate": "432434"
+    },
+    {
+      "source": "44",
+      "reverse": "44",
+      "overlap_length": 2,
+      "max_overlap": "44",
+      "one_symbol_overlap": "444",
+      "certificate": "44244"
+    },
+    {
+      "source": "45",
+      "reverse": "54",
+      "overlap_length": 1,
+      "max_overlap": "454",
+      "one_symbol_overlap": "454",
+      "certificate": "452454"
+    },
+    {
+      "source": "46",
+      "reverse": "64",
+      "overlap_length": 1,
+      "max_overlap": "464",
+      "one_symbol_overlap": "464",
+      "certificate": "462464"
+    },
+    {
+      "source": "47",
+      "reverse": "74",
+      "overlap_length": 1,
+      "max_overlap": "474",
+      "one_symbol_overlap": "474",
+      "certificate": "472474"
+    },
+    {
+      "source": "48",
+      "reverse": "84",
+      "overlap_length": 1,
+      "max_overlap": "484",
+      "one_symbol_overlap": "484",
+      "certificate": "482484"
+    },
+    {
+      "source": "49",
+      "reverse": "94",
+      "overlap_length": 1,
+      "max_overlap": "494",
+      "one_symbol_overlap": "494",
+      "certificate": "492494"
+    },
+    {
+      "source": "50",
+      "reverse": "05",
+      "overlap_length": 1,
+      "max_overlap": "505",
+      "one_symbol_overlap": "505",
+      "certificate": "502505"
+    },
+    {
+      "source": "51",
+      "reverse": "15",
+      "overlap_length": 1,
+      "max_overlap": "515",
+      "one_symbol_overlap": "515",
+      "certificate": "512515"
+    },
+    {
+      "source": "52",
+      "reverse": "25",
+      "overlap_length": 1,
+      "max_overlap": "525",
+      "one_symbol_overlap": "525",
+      "certificate": "522525"
+    },
+    {
+      "source": "53",
+      "reverse": "35",
+      "overlap_length": 1,
+      "max_overlap": "535",
+      "one_symbol_overlap": "535",
+      "certificate": "532535"
+    },
+    {
+      "source": "54",
+      "reverse": "45",
+      "overlap_length": 1,
+      "max_overlap": "545",
+      "one_symbol_overlap": "545",
+      "certificate": "542545"
+    },
+    {
+      "source": "55",
+      "reverse": "55",
+      "overlap_length": 2,
+      "max_overlap": "55",
+      "one_symbol_overlap": "555",
+      "certificate": "55255"
+    },
+    {
+      "source": "56",
+      "reverse": "65",
+      "overlap_length": 1,
+      "max_overlap": "565",
+      "one_symbol_overlap": "565",
+      "certificate": "562565"
+    },
+    {
+      "source": "57",
+      "reverse": "75",
+      "overlap_length": 1,
+      "max_overlap": "575",
+      "one_symbol_overlap": "575",
+      "certificate": "572575"
+    },
+    {
+      "source": "58",
+      "reverse": "85",
+      "overlap_length": 1,
+      "max_overlap": "585",
+      "one_symbol_overlap": "585",
+      "certificate": "582585"
+    },
+    {
+      "source": "59",
+      "reverse": "95",
+      "overlap_length": 1,
+      "max_overlap": "595",
+      "one_symbol_overlap": "595",
+      "certificate": "592595"
+    },
+    {
+      "source": "60",
+      "reverse": "06",
+      "overlap_length": 1,
+      "max_overlap": "606",
+      "one_symbol_overlap": "606",
+      "certificate": "602606"
+    },
+    {
+      "source": "61",
+      "reverse": "16",
+      "overlap_length": 1,
+      "max_overlap": "616",
+      "one_symbol_overlap": "616",
+      "certificate": "612616"
+    },
+    {
+      "source": "62",
+      "reverse": "26",
+      "overlap_length": 1,
+      "max_overlap": "626",
+      "one_symbol_overlap": "626",
+      "certificate": "622626"
+    },
+    {
+      "source": "63",
+      "reverse": "36",
+      "overlap_length": 1,
+      "max_overlap": "636",
+      "one_symbol_overlap": "636",
+      "certificate": "632636"
+    },
+    {
+      "source": "64",
+      "reverse": "46",
+      "overlap_length": 1,
+      "max_overlap": "646",
+      "one_symbol_overlap": "646",
+      "certificate": "642646"
+    },
+    {
+      "source": "65",
+      "reverse": "56",
+      "overlap_length": 1,
+      "max_overlap": "656",
+      "one_symbol_overlap": "656",
+      "certificate": "652656"
+    },
+    {
+      "source": "66",
+      "reverse": "66",
+      "overlap_length": 2,
+      "max_overlap": "66",
+      "one_symbol_overlap": "666",
+      "certificate": "66266"
+    },
+    {
+      "source": "67",
+      "reverse": "76",
+      "overlap_length": 1,
+      "max_overlap": "676",
+      "one_symbol_overlap": "676",
+      "certificate": "672676"
+    },
+    {
+      "source": "68",
+      "reverse": "86",
+      "overlap_length": 1,
+      "max_overlap": "686",
+      "one_symbol_overlap": "686",
+      "certificate": "682686"
+    },
+    {
+      "source": "69",
+      "reverse": "96",
+      "overlap_length": 1,
+      "max_overlap": "696",
+      "one_symbol_overlap": "696",
+      "certificate": "692696"
+    },
+    {
+      "source": "70",
+      "reverse": "07",
+      "overlap_length": 1,
+      "max_overlap": "707",
+      "one_symbol_overlap": "707",
+      "certificate": "702707"
+    },
+    {
+      "source": "71",
+      "reverse": "17",
+      "overlap_length": 1,
+      "max_overlap": "717",
+      "one_symbol_overlap": "717",
+      "certificate": "712717"
+    },
+    {
+      "source": "72",
+      "reverse": "27",
+      "overlap_length": 1,
+      "max_overlap": "727",
+      "one_symbol_overlap": "727",
+      "certificate": "722727"
+    },
+    {
+      "source": "73",
+      "reverse": "37",
+      "overlap_length": 1,
+      "max_overlap": "737",
+      "one_symbol_overlap": "737",
+      "certificate": "732737"
+    },
+    {
+      "source": "74",
+      "reverse": "47",
+      "overlap_length": 1,
+      "max_overlap": "747",
+      "one_symbol_overlap": "747",
+      "certificate": "742747"
+    },
+    {
+      "source": "75",
+      "reverse": "57",
+      "overlap_length": 1,
+      "max_overlap": "757",
+      "one_symbol_overlap": "757",
+      "certificate": "752757"
+    },
+    {
+      "source": "76",
+      "reverse": "67",
+      "overlap_length": 1,
+      "max_overlap": "767",
+      "one_symbol_overlap": "767",
+      "certificate": "762767"
+    },
+    {
+      "source": "77",
+      "reverse": "77",
+      "overlap_length": 2,
+      "max_overlap": "77",
+      "one_symbol_overlap": "777",
+      "certificate": "77277"
+    },
+    {
+      "source": "78",
+      "reverse": "87",
+      "overlap_length": 1,
+      "max_overlap": "787",
+      "one_symbol_overlap": "787",
+      "certificate": "782787"
+    },
+    {
+      "source": "79",
+      "reverse": "97",
+      "overlap_length": 1,
+      "max_overlap": "797",
+      "one_symbol_overlap": "797",
+      "certificate": "792797"
+    },
+    {
+      "source": "80",
+      "reverse": "08",
+      "overlap_length": 1,
+      "max_overlap": "808",
+      "one_symbol_overlap": "808",
+      "certificate": "802808"
+    },
+    {
+      "source": "81",
+      "reverse": "18",
+      "overlap_length": 1,
+      "max_overlap": "818",
+      "one_symbol_overlap": "818",
+      "certificate": "812818"
+    },
+    {
+      "source": "82",
+      "reverse": "28",
+      "overlap_length": 1,
+      "max_overlap": "828",
+      "one_symbol_overlap": "828",
+      "certificate": "822828"
+    },
+    {
+      "source": "83",
+      "reverse": "38",
+      "overlap_length": 1,
+      "max_overlap": "838",
+      "one_symbol_overlap": "838",
+      "certificate": "832838"
+    },
+    {
+      "source": "84",
+      "reverse": "48",
+      "overlap_length": 1,
+      "max_overlap": "848",
+      "one_symbol_overlap": "848",
+      "certificate": "842848"
+    },
+    {
+      "source": "85",
+      "reverse": "58",
+      "overlap_length": 1,
+      "max_overlap": "858",
+      "one_symbol_overlap": "858",
+      "certificate": "852858"
+    },
+    {
+      "source": "86",
+      "reverse": "68",
+      "overlap_length": 1,
+      "max_overlap": "868",
+      "one_symbol_overlap": "868",
+      "certificate": "862868"
+    },
+    {
+      "source": "87",
+      "reverse": "78",
+      "overlap_length": 1,
+      "max_overlap": "878",
+      "one_symbol_overlap": "878",
+      "certificate": "872878"
+    },
+    {
+      "source": "88",
+      "reverse": "88",
+      "overlap_length": 2,
+      "max_overlap": "88",
+      "one_symbol_overlap": "888",
+      "certificate": "88288"
+    },
+    {
+      "source": "89",
+      "reverse": "98",
+      "overlap_length": 1,
+      "max_overlap": "898",
+      "one_symbol_overlap": "898",
+      "certificate": "892898"
+    },
+    {
+      "source": "90",
+      "reverse": "09",
+      "overlap_length": 1,
+      "max_overlap": "909",
+      "one_symbol_overlap": "909",
+      "certificate": "902909"
+    },
+    {
+      "source": "91",
+      "reverse": "19",
+      "overlap_length": 1,
+      "max_overlap": "919",
+      "one_symbol_overlap": "919",
+      "certificate": "912919"
+    },
+    {
+      "source": "92",
+      "reverse": "29",
+      "overlap_length": 1,
+      "max_overlap": "929",
+      "one_symbol_overlap": "929",
+      "certificate": "922929"
+    },
+    {
+      "source": "93",
+      "reverse": "39",
+      "overlap_length": 1,
+      "max_overlap": "939",
+      "one_symbol_overlap": "939",
+      "certificate": "932939"
+    },
+    {
+      "source": "94",
+      "reverse": "49",
+      "overlap_length": 1,
+      "max_overlap": "949",
+      "one_symbol_overlap": "949",
+      "certificate": "942949"
+    },
+    {
+      "source": "95",
+      "reverse": "59",
+      "overlap_length": 1,
+      "max_overlap": "959",
+      "one_symbol_overlap": "959",
+      "certificate": "952959"
+    },
+    {
+      "source": "96",
+      "reverse": "69",
+      "overlap_length": 1,
+      "max_overlap": "969",
+      "one_symbol_overlap": "969",
+      "certificate": "962969"
+    },
+    {
+      "source": "97",
+      "reverse": "79",
+      "overlap_length": 1,
+      "max_overlap": "979",
+      "one_symbol_overlap": "979",
+      "certificate": "972979"
+    },
+    {
+      "source": "98",
+      "reverse": "89",
+      "overlap_length": 1,
+      "max_overlap": "989",
+      "one_symbol_overlap": "989",
+      "certificate": "982989"
+    },
+    {
+      "source": "99",
+      "reverse": "99",
+      "overlap_length": 2,
+      "max_overlap": "99",
+      "one_symbol_overlap": "999",
+      "certificate": "99299"
+    }
+  ],
+  "claim_ceiling": "Definitions, direct finite proofs, and exhaustive tests of declared word maps; no inferred global numeral meanings or BSD equality."
+}

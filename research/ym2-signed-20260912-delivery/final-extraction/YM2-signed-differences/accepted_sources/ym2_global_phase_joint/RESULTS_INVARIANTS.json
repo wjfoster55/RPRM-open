@@ -1,0 +1,137 @@
+{
+  "central_crossing": {
+    "Delta_t_fourth_coefficient": "225",
+    "initial_energy": "4",
+    "initial_phase_rank": 2,
+    "u_cross_v_t_squared_coefficient": [
+      "0",
+      "0",
+      "15"
+    ]
+  },
+  "counts": {
+    "basis_dot_cross_controls": 2600,
+    "checks": 3008,
+    "proper_rotation_controls": 24,
+    "regular_decoder_derivative_controls": 18,
+    "source_invariant_rhs_comparisons": 39
+  },
+  "evidence_grade": "bounded exact rational checks; written general proofs in GLOBAL_INVARIANT_JOINT.md",
+  "image_rejections": [
+    {
+      "failed_conditions": [
+        "unit",
+        "zero_gauss"
+      ],
+      "name": "unit_mismatch"
+    },
+    {
+      "failed_conditions": [
+        "triple_minor_compatibility"
+      ],
+      "name": "independently_flipped_triple"
+    },
+    {
+      "failed_conditions": [
+        "zero_gauss"
+      ],
+      "name": "nonzero_gauss"
+    },
+    {
+      "failed_conditions": [
+        "rank_at_most_three",
+        "triple_minor_compatibility",
+        "zero_gauss"
+      ],
+      "name": "rank_four_Gram"
+    }
+  ],
+  "method": "quaternion source differential versus ten-coefficient Gram/triple compiler; exact dual derivatives; no time integration",
+  "mirror_hostile": {
+    "kinetic_energy_each": "3",
+    "outer_trace_velocity": [
+      "6",
+      "-6"
+    ],
+    "regular_p_w": [
+      "1",
+      "-1"
+    ],
+    "same_full_Gram": true,
+    "tau_123": [
+      "1",
+      "-1"
+    ],
+    "total_energy_each": "5"
+  },
+  "schema": "ym2_global_phase_joint.invariants.v1",
+  "scope": "fixed seven-link two-square classical zero-Gauss source; ranks zero through three; no continuum or quantum assertion",
+  "states": [
+    {
+      "energy": "0",
+      "name": "central_zero_rank0",
+      "phase_rank": 0
+    },
+    {
+      "energy": "2",
+      "name": "central_circulation_rank1",
+      "phase_rank": 1
+    },
+    {
+      "energy": "4",
+      "name": "central_two_circulations_rank2",
+      "phase_rank": 2
+    },
+    {
+      "energy": "39",
+      "name": "central_signs_rank2",
+      "phase_rank": 2
+    },
+    {
+      "energy": "164/5",
+      "name": "commuting_axial_rank1",
+      "phase_rank": 1
+    },
+    {
+      "energy": "113/25",
+      "name": "commuting_transverse_rank2",
+      "phase_rank": 2
+    },
+    {
+      "energy": "138/13",
+      "name": "one_central_rank2",
+      "phase_rank": 2
+    },
+    {
+      "energy": "5",
+      "name": "mirror_plus_rank3",
+      "phase_rank": 3
+    },
+    {
+      "energy": "5",
+      "name": "mirror_minus_rank3",
+      "phase_rank": 3
+    },
+    {
+      "energy": "33122/4225",
+      "name": "regular_plane_rank2",
+      "phase_rank": 2
+    },
+    {
+      "energy": "140402/4225",
+      "name": "regular_oriented_rank3",
+      "phase_rank": 3
+    },
+    {
+      "energy": "15713/4900",
+      "name": "regular_mixed_rank3",
+      "phase_rank": 3
+    },
+    {
+      "energy": "133472/4225",
+      "name": "regular_negative_scalar_rank3",
+      "phase_rank": 3
+    }
+  ],
+  "status": "PASS"
+}

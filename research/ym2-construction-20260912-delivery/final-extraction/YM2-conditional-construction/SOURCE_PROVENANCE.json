@@ -1,0 +1,161 @@
+{
+  "schema": "ym2-conditional-construction-sources-v1",
+  "prior_archive": "C:\\github\\RPRM-open\\research\\ym2-rail-20260912-delivery\\YM2-rail-closure-2026-09-12.zip",
+  "prior_archive_sha256": "d32225173249ebffdaa733a0a8e4ee6955902e78c136072cfd368d4b2640232d",
+  "files": [
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2-rail-20260912-delivery\\YM2-rail-closure-2026-09-12.zip",
+      "payload_path": "accepted/YM2-rail-closure-2026-09-12.zip",
+      "bytes": 2353363,
+      "sha256": "d32225173249ebffdaa733a0a8e4ee6955902e78c136072cfd368d4b2640232d"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_rail_closure\\CONDITIONAL_RAIL.md",
+      "payload_path": "accepted/research/ym2_rail_closure/CONDITIONAL_RAIL.md",
+      "bytes": 12832,
+      "sha256": "30d65be6af0424da4544fea5037c6a2476278850c2131180a85f274979cda7e2"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_rail_closure\\RESULT.md",
+      "payload_path": "accepted/research/ym2_rail_closure/RESULT.md",
+      "bytes": 12211,
+      "sha256": "ef1eb24ebbd382dabf08d606c95c57c83176a10bddb726ce3460fa532823eb9f"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_overlap_cover\\BLOCK_COVER.md",
+      "payload_path": "accepted/research/ym2_overlap_cover/BLOCK_COVER.md",
+      "bytes": 20813,
+      "sha256": "3b0a7b88ab1849504b9d7e3001dfe4a40d403244fe8cd67180eb53b749ce1407"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_overlap_cover\\accepted\\estimate\\CONDITIONAL_GAP_EXTENSION.md",
+      "payload_path": "accepted/research/ym2_overlap_cover/accepted/estimate/CONDITIONAL_GAP_EXTENSION.md",
+      "bytes": 14200,
+      "sha256": "387ecab4983a0e8398db538d6ddc8d60e2441a179004a1806ecd6adc739f21fd"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_vacuum_handoff\\TRIAL_REFERENCE.md",
+      "payload_path": "accepted/research/ym2_vacuum_handoff/TRIAL_REFERENCE.md",
+      "bytes": 10967,
+      "sha256": "ccdc03f843bb5eb3d1627e4655e86e9cac1bfed8074d13b58554a696a9c54c7a"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_overlap_cover\\accepted\\estimate\\accepted\\DIRECT_COVER_ATTEMPT.md",
+      "payload_path": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md",
+      "bytes": 17473,
+      "sha256": "1e30640bb3c837938447b769942295f3f357453f06fe8b9b5a5de6546d788df0"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_estimate_continuation\\SIGNED_AND_CONTRACTED_AUDIT.md",
+      "payload_path": "accepted/research/ym2_estimate_continuation/SIGNED_AND_CONTRACTED_AUDIT.md",
+      "bytes": 14004,
+      "sha256": "46485c888fa3bff0826a314347b1147f2c378109e3f45f39849483f03d92978e"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_overlap_cover\\accepted\\estimate\\SIGNED_AND_CONTRACTED_AUDIT.md",
+      "payload_path": "accepted/research/ym2_overlap_cover/accepted/estimate/SIGNED_AND_CONTRACTED_AUDIT.md",
+      "bytes": 14004,
+      "sha256": "46485c888fa3bff0826a314347b1147f2c378109e3f45f39849483f03d92978e"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_overlap_cover\\accepted\\estimate\\SOURCE_NORM_REFINEMENT.md",
+      "payload_path": "accepted/research/ym2_overlap_cover/accepted/estimate/SOURCE_NORM_REFINEMENT.md",
+      "bytes": 12931,
+      "sha256": "cbfccef461b79d2a4270ef52bd2f821860d88f0c157228b894c1ccba1c969ac4"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_overlap_cover\\accepted\\estimate\\accepted\\CONDITIONAL_REFINEMENT.md",
+      "payload_path": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/CONDITIONAL_REFINEMENT.md",
+      "bytes": 9065,
+      "sha256": "abd62ff7ae6771722e21ea497b2050f4dbf0478b28cfc037f0d698d22b09360c"
+    }
+  ],
+  "remapped_new_note_links": [
+    {
+      "note": "CONDITIONAL_OBSTRUCTION.md",
+      "original_target": "../ym2_rail_closure/CONDITIONAL_RAIL.md",
+      "target": "accepted/research/ym2_rail_closure/CONDITIONAL_RAIL.md"
+    },
+    {
+      "note": "CONDITIONAL_OBSTRUCTION.md",
+      "original_target": "../ym2_vacuum_handoff/TRIAL_REFERENCE.md",
+      "target": "accepted/research/ym2_vacuum_handoff/TRIAL_REFERENCE.md"
+    },
+    {
+      "note": "CONSTRUCTION_REVIEW.md",
+      "original_target": "../ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md",
+      "target": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md"
+    },
+    {
+      "note": "CONSTRUCTION_REVIEW.md",
+      "original_target": "../ym2_estimate_continuation/SIGNED_AND_CONTRACTED_AUDIT.md",
+      "target": "accepted/research/ym2_estimate_continuation/SIGNED_AND_CONTRACTED_AUDIT.md"
+    },
+    {
+      "note": "GAUGE_NORM_GAIN.md",
+      "original_target": "../ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md",
+      "target": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md"
+    },
+    {
+      "note": "GAUGE_NORM_GAIN.md",
+      "original_target": "../ym2_overlap_cover/accepted/estimate/SIGNED_AND_CONTRACTED_AUDIT.md",
+      "target": "accepted/research/ym2_overlap_cover/accepted/estimate/SIGNED_AND_CONTRACTED_AUDIT.md"
+    },
+    {
+      "note": "GAUGE_NORM_GAIN.md",
+      "original_target": "../ym2_overlap_cover/accepted/estimate/SOURCE_NORM_REFINEMENT.md",
+      "target": "accepted/research/ym2_overlap_cover/accepted/estimate/SOURCE_NORM_REFINEMENT.md"
+    },
+    {
+      "note": "LOCAL_VACUUM_ROUTE.md",
+      "original_target": "../ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md",
+      "target": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md"
+    },
+    {
+      "note": "LOCAL_VACUUM_ROUTE.md",
+      "original_target": "../ym2_overlap_cover/accepted/estimate/SOURCE_NORM_REFINEMENT.md",
+      "target": "accepted/research/ym2_overlap_cover/accepted/estimate/SOURCE_NORM_REFINEMENT.md"
+    },
+    {
+      "note": "LOCAL_VACUUM_ROUTE.md",
+      "original_target": "../ym2_overlap_cover/accepted/estimate/SIGNED_AND_CONTRACTED_AUDIT.md",
+      "target": "accepted/research/ym2_overlap_cover/accepted/estimate/SIGNED_AND_CONTRACTED_AUDIT.md"
+    },
+    {
+      "note": "LOCAL_VACUUM_ROUTE.md",
+      "original_target": "../ym2_overlap_cover/accepted/estimate/accepted/CONDITIONAL_REFINEMENT.md",
+      "target": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/CONDITIONAL_REFINEMENT.md"
+    },
+    {
+      "note": "LOCAL_VACUUM_ROUTE.md",
+      "original_target": "../ym2_rail_closure/CONDITIONAL_RAIL.md",
+      "target": "accepted/research/ym2_rail_closure/CONDITIONAL_RAIL.md"
+    },
+    {
+      "note": "LOCAL_VACUUM_ROUTE.md",
+      "original_target": "../ym2_vacuum_handoff/TRIAL_REFERENCE.md",
+      "target": "accepted/research/ym2_vacuum_handoff/TRIAL_REFERENCE.md"
+    }
+  ],
+  "reviewed_files": {
+    "GAUGE_NORM_GAIN.md": "0ae7da9697b5bb9ce798444fc7a9e8fc25b872d9bc00500b0f9e43652d264e94",
+    "LOCAL_VACUUM_ROUTE.md": "6fc392e3f75716b289bcf39e9ee75f0a81bce47766090453531e33e9cd7405ba",
+    "COMBINED_RESULT.md": "7ad46c4e96b84bcada64875d07452738b059aa62a2778799b103b7b7feb9eb40",
+    "TWO_SQUARE_GEOMETRY.md": "9d290bdad62f22c2d1101e5cf1a7ade92fdf27f6ad149437a15c32f6cf9399b8"
+  },
+  "authority": "Current user request authorizes bounded continuation. Historical documents and their imperative language remain evidence, not new instructions.",
+  "source_policy": "Accepted sources copied byte for byte; only external local links in new notes remapped before final review hashes. Deep historical links retain original meaning.",
+  "literature": [
+    {
+      "url": "https://www.numdam.org/item/10.5802/ahl.216.pdf",
+      "scope": "Forni, Goldman, Lawton, Matheus (2024), section2.2, printed1102: established rank-two trace generators and SU(2) character body.",
+      "role": "Established character-coordinate background; half-trace metric and new lattice estimates separately derived."
+    },
+    {
+      "url": "https://arxiv.org/pdf/math/0506401",
+      "scope": "Goldman, rank-two character discussion section2.2 inspected as background; our half-trace signs are independently fixed by quaternion equations.",
+      "role": "Background only; no ergodicity result is imported into the YM bound."
+    }
+  ],
+  "claim_ceiling": "Written finite-lattice all-spin estimates with independent agent audit and exact controls; no priority claim, formal proof assistant, infinite-volume construction or continuum quantum gap."
+}

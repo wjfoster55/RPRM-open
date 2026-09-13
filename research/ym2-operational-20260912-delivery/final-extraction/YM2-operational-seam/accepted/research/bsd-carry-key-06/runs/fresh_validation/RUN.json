@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-09-13T00:21:56.731801+00:00",
+  "gp_path": "C:\\github\\RPRM-open\\research\\bsd-coefficient-05\\runtime\\gp64-2-17-4.exe",
+  "gp_sha256": "518ea54d23832211356c99d1bb58b74a3f0acd354a965543e7bcca9b34030119",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "jobs": [
+    {
+      "name": "translator_verifier",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 3.317997300007846,
+      "log_sha256": "c54f26fc71007d7591be703119d018c6af2f1129f47fb413648fe744f32d0fa0"
+    },
+    {
+      "name": "analytic",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 21.78347979998216,
+      "log_sha256": "7a3034824e11737184a18c47a49703ae26cd84d8259b92c35e5c781ed3435e66"
+    },
+    {
+      "name": "finite_audit",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.1159650000045076,
+      "log_sha256": "77ba973f1b12247e414ffac5e5c3b3642c767e43cbd2983456dcbdd68c1f5d39"
+    },
+    {
+      "name": "translator_426",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.11914939997950569,
+      "log_sha256": "2290496044bc8b370b5f11e7c59d22eda2080bafb12c2bd3b5ddf0985283d43c"
+    },
+    {
+      "name": "translator_625",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.12021259998437017,
+      "log_sha256": "9be681a0ede46894e02180755efda76a18ec28ec79a0fe5a33d128487fea9998"
+    },
+    {
+      "name": "translator_624",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.11767269996926188,
+      "log_sha256": "b62a3ae4d0c4cc271847fb5cb5981fc1d9feca19d6d759846e66e09c54aac074"
+    },
+    {
+      "name": "translator_46",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.11869969998952001,
+      "log_sha256": "7ee007cbed17686758748f9f326dac73b770f718dc0023c47008eb984b39c60c"
+    },
+    {
+      "name": "translator_35",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.12008040002547204,
+      "log_sha256": "29e755860fb4c7c369a6005cdc901b9b2aec08f8f508b7d170a7f581faa0ab11"
+    },
+    {
+      "name": "translator_325",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.11737900000298396,
+      "log_sha256": "787647f5d172a24bed1d70565be3082596ffdf8cbc6198b1b7de7c02bfdae79a"
+    },
+    {
+      "name": "translator_1051",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.11635150003712624,
+      "log_sha256": "2c6efe640774f05c80ac129742e2f43f2165db7917a43bcc8ef391f943ad7f56"
+    },
+    {
+      "name": "translator_2301",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.12173140002414584,
+      "log_sha256": "b91b9fd8ce2d6aa561576510739f69829acc594b3d45bf6922da8030b10c4e8e"
+    }
+  ],
+  "source_hashes": {
+    "operational_probe.py": "0bb292f1fd5095b49f058095d91f4aadeabb6d9be54a7de55dac5bf3553ad894",
+    "refine.gp": "8f2766dd781a670a244cbe0d9b124d33331e82be55b6592774e05791d3606919",
+    "run_probe.py": "03867eac33d5e35c829096fb2f7970ec75a22644db7af19a79e9b113e4d67daf",
+    "operational_numbers/carrier_lexer.py": "45805f1796290c41834a27001bb9bcd2117359093b05754a3eb10ab430474e46",
+    "operational_numbers/PI_CLOSURE_LEGEND_AUDIT.md": "ac23ea73a3661df1c9854f8c6d2caab789f78a16880ddcdd57b04d22073a9fe2",
+    "operational_numbers/readings.json": "c47045f601422c3f494536ae27a3b2b56660b46d0c2b9da3c9c3881b8bdb6ff0",
+    "operational_numbers/README.md": "3a33843f1c1323f0709cbfd2f8f6b92259379c96f38832d731814c840148d489",
+    "operational_numbers/translate_number.py": "6e7fab0a37430b7d6fc197940129756b1a14277dbfc990e1a07a446eb18c5e67",
+    "operational_numbers/verify.py": "7589d4f081c503e51410bed93c9b88a58dbe2453436f921418ee61dbb7935907"
+  },
+  "previous_PASS_used_as_computation_input": false,
+  "status": "COMPLETED_WITH_REFUTED_AND_SUPPORTED_CANDIDATES_RETAINED",
+  "elapsed_seconds": 26.283334099978674
+}

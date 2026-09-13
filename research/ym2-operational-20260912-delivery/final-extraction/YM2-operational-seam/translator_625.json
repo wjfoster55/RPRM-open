@@ -1,0 +1,722 @@
+{
+  "declared_maps": {
+    "P_and_N_image_sets_equal": false,
+    "definitions": {
+      "M": "d -> 9-d = (0 9)(1 8)(2 7)(3 6)(4 5)",
+      "N": "d -> -d mod 10, fixes 0 and 5",
+      "P": "(0 5)(1 9)(2 8)(4 6), fixes 3 and 7",
+      "T": "P after N = (0 5)(3 7)"
+    },
+    "fixed_sets": {
+      "M": [],
+      "N": [
+        0,
+        5
+      ],
+      "P": [
+        3,
+        7
+      ],
+      "T": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        9
+      ]
+    },
+    "image_sets": {
+      "M": [
+        3,
+        4,
+        7
+      ],
+      "N": [
+        4,
+        5,
+        8
+      ],
+      "P": [
+        0,
+        4,
+        8
+      ],
+      "T": [
+        0,
+        2,
+        6
+      ]
+    },
+    "pair_orbit_membership": [
+      {
+        "occupancy": "half",
+        "orbit": [
+          0,
+          5
+        ],
+        "present": [
+          5
+        ]
+      },
+      {
+        "occupancy": "none",
+        "orbit": [
+          1,
+          9
+        ],
+        "present": []
+      },
+      {
+        "occupancy": "half",
+        "orbit": [
+          2,
+          8
+        ],
+        "present": [
+          2
+        ]
+      },
+      {
+        "occupancy": "none",
+        "orbit": [
+          3,
+          7
+        ],
+        "present": []
+      },
+      {
+        "occupancy": "half",
+        "orbit": [
+          4,
+          6
+        ],
+        "present": [
+          6
+        ]
+      }
+    ],
+    "set_stabilizer": [],
+    "set_symmetric_differences": {
+      "M": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "N": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "P": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        8
+      ],
+      "T": [
+        0,
+        5
+      ]
+    },
+    "source_set": [
+      2,
+      5,
+      6
+    ],
+    "transforms": {
+      "M": {
+        "independence": "ONE_DEPENDENT",
+        "lane": "DERIVED_DEPENDENT",
+        "operation": "M(source)",
+        "source": "625",
+        "value": "374"
+      },
+      "N": {
+        "independence": "ONE_DEPENDENT",
+        "lane": "DERIVED_DEPENDENT",
+        "operation": "N(source)",
+        "source": "625",
+        "value": "485"
+      },
+      "P": {
+        "independence": "ONE_DEPENDENT",
+        "lane": "DERIVED_DEPENDENT",
+        "operation": "P(source)",
+        "source": "625",
+        "value": "480"
+      },
+      "T": {
+        "independence": "ONE_DEPENDENT",
+        "lane": "DERIVED_DEPENDENT",
+        "operation": "T(source)",
+        "source": "625",
+        "value": "620"
+      }
+    }
+  },
+  "digits": [
+    {
+      "digit": 2,
+      "facts": [
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "parity",
+          "value": "even"
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "binary",
+          "value": "10"
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "positive_divisors",
+          "value": [
+            1,
+            2
+          ]
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "ordered_factor_pairs",
+          "value": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "prime_factorization",
+          "value": [
+            2
+          ]
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "P_image",
+          "value": 8
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "N_image",
+          "value": 8
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "T_image",
+          "value": 2
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "M_image",
+          "value": 7
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "fixed_by",
+          "value": [
+            "T"
+          ]
+        }
+      ],
+      "readings": [
+        {
+          "gloss": "Two may be acting as a gap or span receipt between named endpoints.",
+          "id": "span_receipt",
+          "lane": "RPRM_READING",
+          "missing": "endpoint receiver"
+        }
+      ]
+    },
+    {
+      "digit": 5,
+      "facts": [
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "parity",
+          "value": "odd"
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "binary",
+          "value": "101"
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "positive_divisors",
+          "value": [
+            1,
+            5
+          ]
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "ordered_factor_pairs",
+          "value": [
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "prime_factorization",
+          "value": [
+            5
+          ]
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "P_image",
+          "value": 0
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "N_image",
+          "value": 5
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "T_image",
+          "value": 0
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "M_image",
+          "value": 4
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "fixed_by",
+          "value": [
+            "N"
+          ]
+        }
+      ],
+      "readings": [
+        {
+          "gloss": "Five may be acting as the half-base endpoint or as the held-still N coordinate.",
+          "id": "half_base_endpoint",
+          "lane": "RPRM_READING",
+          "missing": "base-ten or endpoint adapter"
+        }
+      ]
+    },
+    {
+      "digit": 6,
+      "facts": [
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "parity",
+          "value": "even"
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "binary",
+          "value": "110"
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "positive_divisors",
+          "value": [
+            1,
+            2,
+            3,
+            6
+          ]
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "ordered_factor_pairs",
+          "value": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        },
+        {
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "prime_factorization",
+          "value": [
+            2,
+            3
+          ]
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "P_image",
+          "value": 4
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "N_image",
+          "value": 4
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "T_image",
+          "value": 6
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "M_image",
+          "value": 3
+        },
+        {
+          "lane": "EXACT_DECLARED_MAP",
+          "operation": "fixed_by",
+          "value": [
+            "T"
+          ]
+        },
+        {
+          "expression": "2+4",
+          "lane": "EXACT_ARITHMETIC",
+          "operation": "target_corner_identity",
+          "value": 6
+        }
+      ],
+      "readings": [
+        {
+          "gloss": "Six may be wearing a computed-corner role instead of arriving as an independent source coordinate.",
+          "id": "fake_six_computed_corner",
+          "lane": "RPRM_READING",
+          "missing": "receiver proving source-versus-computed lineage"
+        }
+      ]
+    }
+  ],
+  "input": {
+    "base": 10,
+    "digits": "625",
+    "lexical_carrier": {
+      "claim_ceiling": "Classification preserves possible lexical carriers; it does not choose the token's mathematical meaning from syntax alone.",
+      "core": "625",
+      "dispatch_mode": "EXACT_DIGIT_STRING",
+      "normalization_changed": false,
+      "normalized_digits": "625",
+      "raw": "625",
+      "requires_explicit_adapter_for_semantic_claim": true,
+      "resolution": "MANY",
+      "semantic_fiber": [
+        "EXACT_DIGIT_WORD",
+        "NONNEGATIVE_INTEGER_LITERAL"
+      ],
+      "syntax_class": "PLAIN_DIGIT_SYNTAX",
+      "wrappers": []
+    },
+    "raw": "625"
+  },
+  "policy": {
+    "claim_ceiling": "This report enumerates affordances and proposals; it does not prove a unique meaning, independent source, or cross-carrier adapter.",
+    "concurrent_lenses": true,
+    "construction_history_preserved": true,
+    "lexical_carrier_precedes_digit_normalization": true,
+    "punctuation_erasure_selects_no_semantic_carrier": true,
+    "scout_has_authority": false
+  },
+  "schema": "rprm-operational-number-report/v1",
+  "scout": {
+    "mode": "BOUNDED_VIBE_SCOUT",
+    "proposals": [
+      {
+        "authority": "NONE",
+        "lane": "SCOUT_PROPOSAL",
+        "operation": "computed_six_probe",
+        "receipts": [
+          "2+4=6",
+          "2*3=6",
+          "P(4)=6"
+        ],
+        "value": "This 6 may be wearing a computed-corner role; compare literal-source and 2+4 lineages."
+      }
+    ],
+    "status": "PROPOSAL_NOT_AUTHORITY"
+  },
+  "sequence": {
+    "adjacent_pairs": [
+      "62",
+      "25"
+    ],
+    "digit_counts": {
+      "2": 1,
+      "5": 1,
+      "6": 1
+    },
+    "gap_two_receivers": [],
+    "integer_facts": [
+      {
+        "lane": "EXACT_ARITHMETIC",
+        "operation": "integer_value",
+        "value": 625
+      },
+      {
+        "lane": "EXACT_ARITHMETIC",
+        "operation": "digit_sum",
+        "value": 13
+      },
+      {
+        "lane": "EXACT_ARITHMETIC",
+        "operation": "integer_positive_divisors",
+        "value": [
+          1,
+          5,
+          25,
+          125,
+          625
+        ]
+      },
+      {
+        "lane": "EXACT_ARITHMETIC",
+        "operation": "integer_prime_factorization",
+        "value": [
+          5,
+          5,
+          5,
+          5
+        ]
+      }
+    ],
+    "length": 3,
+    "matched_readings": [],
+    "signed_pair_receivers": [
+      {
+        "carrier": "base-10 ordered adjacent digit pair",
+        "centered_sum": -1,
+        "centered_sum_definition": "A+B-9",
+        "combined_coordinate_recovery": {
+          "coordinates": {
+            "centered_sum": -1,
+            "signed_gap": -4
+          },
+          "count": 1,
+          "disposition": "ONE",
+          "formula": "A=(centered_sum+9-signed_gap)/2; B=(centered_sum+9+signed_gap)/2",
+          "lane": "EXACT_ARITHMETIC",
+          "pair": [
+            6,
+            2
+          ],
+          "source_relation": "DERIVED_DEPENDENT",
+          "typed_disposition": "ONE(62)",
+          "word": "62"
+        },
+        "complete_orbit": [
+          {
+            "centered_sum": -1,
+            "operation": "I",
+            "pair": [
+              6,
+              2
+            ],
+            "signed_gap": -4,
+            "word": "62"
+          },
+          {
+            "centered_sum": -1,
+            "operation": "O",
+            "pair": [
+              2,
+              6
+            ],
+            "signed_gap": 4,
+            "word": "26"
+          },
+          {
+            "centered_sum": 1,
+            "operation": "M",
+            "pair": [
+              3,
+              7
+            ],
+            "signed_gap": 4,
+            "word": "37"
+          },
+          {
+            "centered_sum": 1,
+            "operation": "F=O_after_M",
+            "pair": [
+              7,
+              3
+            ],
+            "signed_gap": -4,
+            "word": "73"
+          }
+        ],
+        "coordinate_lane": "EXACT_ARITHMETIC",
+        "distinct_state_count": 4,
+        "independence": "ONE_DEPENDENT",
+        "lane": "EXACT_DECLARED_MAP",
+        "pair": [
+          6,
+          2
+        ],
+        "position": 0,
+        "signed_gap": -4,
+        "signed_gap_definition": "B-A",
+        "signed_gap_fiber": {
+          "count": 6,
+          "disposition": "MANY",
+          "lane": "EXACT_ARITHMETIC",
+          "signed_gap": -4,
+          "source_relation": "DERIVED_DEPENDENT",
+          "typed_disposition": "MANY(6)",
+          "words": [
+            "40",
+            "51",
+            "62",
+            "73",
+            "84",
+            "95"
+          ]
+        },
+        "source": "62",
+        "source_relation": "DERIVED_DEPENDENT",
+        "terminology_boundary": "signed_gap is B-A; it is not gcd",
+        "words": {
+          "coordinatewise_M": "37",
+          "fold_O_after_M": "73",
+          "source_I": "62",
+          "swap_O": "26"
+        }
+      },
+      {
+        "carrier": "base-10 ordered adjacent digit pair",
+        "centered_sum": -2,
+        "centered_sum_definition": "A+B-9",
+        "combined_coordinate_recovery": {
+          "coordinates": {
+            "centered_sum": -2,
+            "signed_gap": 3
+          },
+          "count": 1,
+          "disposition": "ONE",
+          "formula": "A=(centered_sum+9-signed_gap)/2; B=(centered_sum+9+signed_gap)/2",
+          "lane": "EXACT_ARITHMETIC",
+          "pair": [
+            2,
+            5
+          ],
+          "source_relation": "DERIVED_DEPENDENT",
+          "typed_disposition": "ONE(25)",
+          "word": "25"
+        },
+        "complete_orbit": [
+          {
+            "centered_sum": -2,
+            "operation": "I",
+            "pair": [
+              2,
+              5
+            ],
+            "signed_gap": 3,
+            "word": "25"
+          },
+          {
+            "centered_sum": -2,
+            "operation": "O",
+            "pair": [
+              5,
+              2
+            ],
+            "signed_gap": -3,
+            "word": "52"
+          },
+          {
+            "centered_sum": 2,
+            "operation": "M",
+            "pair": [
+              7,
+              4
+            ],
+            "signed_gap": -3,
+            "word": "74"
+          },
+          {
+            "centered_sum": 2,
+            "operation": "F=O_after_M",
+            "pair": [
+              4,
+              7
+            ],
+            "signed_gap": 3,
+            "word": "47"
+          }
+        ],
+        "coordinate_lane": "EXACT_ARITHMETIC",
+        "distinct_state_count": 4,
+        "independence": "ONE_DEPENDENT",
+        "lane": "EXACT_DECLARED_MAP",
+        "pair": [
+          2,
+          5
+        ],
+        "position": 1,
+        "signed_gap": 3,
+        "signed_gap_definition": "B-A",
+        "signed_gap_fiber": {
+          "count": 7,
+          "disposition": "MANY",
+          "lane": "EXACT_ARITHMETIC",
+          "signed_gap": 3,
+          "source_relation": "DERIVED_DEPENDENT",
+          "typed_disposition": "MANY(7)",
+          "words": [
+            "03",
+            "14",
+            "25",
+            "36",
+            "47",
+            "58",
+            "69"
+          ]
+        },
+        "source": "25",
+        "source_relation": "DERIVED_DEPENDENT",
+        "terminology_boundary": "signed_gap is B-A; it is not gcd",
+        "words": {
+          "coordinatewise_M": "74",
+          "fold_O_after_M": "47",
+          "source_I": "25",
+          "swap_O": "52"
+        }
+      }
+    ],
+    "unique_digits": [
+      2,
+      5,
+      6
+    ]
+  }
+}

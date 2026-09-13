@@ -1,0 +1,104 @@
+<div id="keyring13" class="keyring13">
+  <h3>Three loops + shared connector</h3>
+  <div class="viz-row" aria-label="Loop labels">
+    <span><span class="kr-swatch kr-a" aria-hidden="true"></span>A · 2.</span>
+    <span><span class="kr-swatch kr-b" aria-hidden="true"></span>B · 0340</span>
+    <span><span class="kr-swatch kr-c" aria-hidden="true"></span>C · paired tails</span>
+    <span><span class="kr-swatch kr-k" aria-hidden="true"></span>K · shared connector</span>
+  </div>
+  <canvas role="img" aria-label="A proposed three-dimensional keyring: three separate small hoops A, B and C are each linked once to the larger hoop K. The small hoops do not link one another. View angles can be changed with the following controls.">Three separate loops linked by a fourth loop.</canvas>
+  <div class="viz-controls">
+    <label class="form-label" for="kr-orbit">Orbit <output id="kr-orbit-value">0°</output>
+      <input class="form-range" id="kr-orbit" type="range" min="-180" max="180" step="1" value="0">
+    </label>
+    <label class="form-label" for="kr-tilt">Tilt <output id="kr-tilt-value">60°</output>
+      <input class="form-range" id="kr-tilt" type="range" min="10" max="85" step="1" value="60">
+    </label>
+  </div>
+</div>
+<style>
+#keyring13 canvas { display:block; width:100%; height:330px; }
+#keyring13 .kr-swatch { display:inline-block; width:12px; height:4px; vertical-align:middle; margin-right:5px; }
+#keyring13 .kr-a { background:var(--viz-series-1); }
+#keyring13 .kr-b { background:var(--viz-series-2); }
+#keyring13 .kr-c { background:var(--viz-series-3); }
+#keyring13 .kr-k { background:var(--viz-series-4); }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('keyring13');
+  const canvas = root.querySelector('canvas');
+  const ctx = canvas.getContext('2d');
+  const orbit = root.querySelector('#kr-orbit');
+  const tilt = root.querySelector('#kr-tilt');
+  const outputOrbit = root.querySelector('#kr-orbit-value');
+  const outputTilt = root.querySelector('#kr-tilt-value');
+  const swatches = ['a','b','c','k'].map(x => root.querySelector('.kr-'+x));
+  const faces = [];
+  const add = (a,b) => a.map((v,i) => v+b[i]);
+  const mul = (a,s) => a.map(v => v*s);
+  const cross = (a,b) => [a[1]*b[2]-a[2]*b[1], a[2]*b[0]-a[0]*b[2], a[0]*b[1]-a[1]*b[0]];
+  function makeHoop(center,u,v,radius,tube,color) {
+    const normal = cross(u,v), rings = [];
+    const count = 144, sides = 10;
+    for(let i=0;i<count;i++) {
+      const t=2*Math.PI*i/count;
+      const radial=add(mul(u,Math.cos(t)),mul(v,Math.sin(t)));
+      const p=add(center,mul(radial,radius));
+      const section=[];
+      for(let j=0;j<sides;j++) {
+        const s=2*Math.PI*j/sides;
+        section.push(add(p,add(mul(radial,tube*Math.cos(s)),mul(normal,tube*Math.sin(s)))));
+      }
+      rings.push(section);
+    }
+    for(let i=0;i<count;i++) for(let j=0;j<sides;j++) {
+      const q=[rings[i][j],rings[(i+1)%count][j],rings[(i+1)%count][(j+1)%sides],rings[i][(j+1)%sides]];
+      faces.push({points:q,color});
+    }
+  }
+  const centers=[];
+  for(let i=0;i<3;i++) {
+    const theta=2*Math.PI*i/3, u=[Math.cos(theta),Math.sin(theta),0];
+    const center=mul(u,3);centers.push(center);
+    makeHoop(center,u,[0,0,1],0.75,0.075,i);
+  }
+  makeHoop([0,0,0],[1,0,0],[0,1,0],3,0.055,3);
+  function draw() {
+    const width=canvas.clientWidth, height=330;
+    if(!width || !ctx) return;
+    const ratio=window.devicePixelRatio || 1;
+    canvas.width=Math.round(width*ratio);canvas.height=Math.round(height*ratio);
+    ctx.setTransform(ratio,0,0,ratio,0,0);ctx.clearRect(0,0,width,height);
+    const yaw=Number(orbit.value)*Math.PI/180, pitch=Number(tilt.value)*Math.PI/180;
+    const cy=Math.cos(yaw),sy=Math.sin(yaw),cp=Math.cos(pitch),sp=Math.sin(pitch);
+    const transform=([x,y,z]) => {const xx=cy*x-sy*y,yy=sy*x+cy*y;return [xx,cp*yy-sp*z,sp*yy+cp*z];};
+    const colors=swatches.map(s=>getComputedStyle(s).backgroundColor);
+    const transformed=faces.map(f=>{const p=f.points.map(transform);return {points:p,color:f.color,depth:p.reduce((s,q)=>s+q[2],0)/p.length};});
+    const labelPoints=centers.map(center=>transform(add(center,[0,0,-1.12])));
+    const bounds=[...transformed.flatMap(f=>f.points),...labelPoints];
+    const xs=bounds.map(p=>p[0]),ys=bounds.map(p=>p[1]);
+    const left=Math.min(...xs),right=Math.max(...xs),bottom=Math.min(...ys),top=Math.max(...ys);
+    const scale=Math.min((width-40)/(right-left),(height-40)/(top-bottom));
+    const screen=p=>[width/2+scale*(p[0]-(left+right)/2),height/2-scale*(p[1]-(top+bottom)/2)];
+    transformed.sort((a,b)=>a.depth-b.depth);
+    for(const face of transformed) {
+      ctx.fillStyle=colors[face.color];
+      ctx.beginPath();
+      face.points.forEach((p,i)=>{const [x,y]=screen(p);if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});
+      ctx.closePath();ctx.fill();
+    }
+    ctx.fillStyle=getComputedStyle(root).color;
+    ctx.font='500 14px '+getComputedStyle(root).fontFamily;
+    ctx.textAlign='center';ctx.textBaseline='middle';
+    labelPoints.forEach((point,i)=>{const p=screen(point);ctx.fillText('ABC'[i],p[0],p[1]);});
+    outputOrbit.value=orbit.value+'°';outputTilt.value=tilt.value+'°';
+    root.dataset.rendered='true';root.dataset.view=orbit.value+','+tilt.value;
+  }
+  orbit.addEventListener('input',draw);tilt.addEventListener('input',draw);
+  const observer=new ResizeObserver(draw);observer.observe(canvas);
+  new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['class','style','data-theme']});
+  if(window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
+  draw();
+})();
+</script>

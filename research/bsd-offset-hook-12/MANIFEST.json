@@ -1,0 +1,126 @@
+{
+  "claim": "Byte integrity only; not mathematical verification",
+  "files": [
+    {
+      "bytes": 16662,
+      "path": "agents/CIRCULAR_LOCK.md",
+      "sha256": "5c49bffad87a8b1a1192399333a107f4105cf42c61fd9b110a0818f58acf9924"
+    },
+    {
+      "bytes": 17247,
+      "path": "agents/HOOK_DECODER.md",
+      "sha256": "3ae19c2918316b41b9353c500e83a04e831896180040ffc4ace95bd2529e3aa0"
+    },
+    {
+      "bytes": 10036,
+      "path": "agents/NUMERIC_REVIEW.md",
+      "sha256": "61eef1573c56b15fb028ccd87d9936e0cc190d87f2758d255bcf9f7197a098b9"
+    },
+    {
+      "bytes": 15668,
+      "path": "agents/TWO_HALF_CLOSURES.md",
+      "sha256": "d6705d06d0f3c0da288726dc409c37f3fa4d082b91fdc84c96a08667a31c10af"
+    },
+    {
+      "bytes": 2081,
+      "path": "BSD_REBRIEF.md",
+      "sha256": "c0446e9a12a5fca8931cc7085290c992edca5f2defb85c8f6459d2fc6f136998"
+    },
+    {
+      "bytes": 15376,
+      "path": "dependencies/EXPLICIT_IDENTITY_TARGET.md",
+      "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753"
+    },
+    {
+      "bytes": 1701,
+      "path": "dependencies/PI11_BSD_REBRIEF.md",
+      "sha256": "ec6f270c2b9a8d41bd4c160de61923ea113810a71c38de1eeccc27c795be96ab"
+    },
+    {
+      "bytes": 13952,
+      "path": "dependencies/PI11_PI_GEOMETRY.md",
+      "sha256": "d1f8f0b0155579bf053a5437cfa3258f06560bdff15f438f6a0281e6ec9d800c"
+    },
+    {
+      "bytes": 14554,
+      "path": "dependencies/PI_ZIP_TEST_SPEC.md",
+      "sha256": "dd93a02c259461d2d7292d51876ede667da3ef50b4ba74cadb674e3f12540456"
+    },
+    {
+      "bytes": 2761,
+      "path": "evidence/anchor-readback.json",
+      "sha256": "b03f81e88e78ffce3412f39801a88f5f279af8951ebf45e6dc9ba2d9b124b094"
+    },
+    {
+      "bytes": 3939433,
+      "path": "evidence/hooks.json",
+      "sha256": "19f204ed8c3243188fbf97ab8c9c3b550f5af77d20014985e264d94c63c80378"
+    },
+    {
+      "bytes": 166144,
+      "path": "evidence/two-halves.json",
+      "sha256": "88bb64bb0dc39dc0e9b932e8015f67a9811408a1165189ea034dc07b564d8bbf"
+    },
+    {
+      "bytes": 2484,
+      "path": "PREFREEZE.md",
+      "sha256": "4fd13f2623d7a9dac32f969d67a778df9fb2ce3e9c428bc7aac3083a18038014"
+    },
+    {
+      "bytes": 10789,
+      "path": "README.md",
+      "sha256": "0e1919f6991f4c67a1af673c60c205bf81bdbfa2178d6f25ce260eb67bb69e22"
+    },
+    {
+      "bytes": 1747,
+      "path": "SHAPE_STEERING.md",
+      "sha256": "1d56020a6fe41cf23e773cceccd56dc4a0305e80cb3171dcd4a0cfde5ce7f24e"
+    },
+    {
+      "bytes": 1764,
+      "path": "SOURCE_CAPTURE.json",
+      "sha256": "17c42f9904d81780b6d918161a026582ac94056312ce50de9cc383cbe965533e"
+    },
+    {
+      "bytes": 6666,
+      "path": "TWO_HALVES.md",
+      "sha256": "140d93569543a004d71295f5c89f586e01040056ecc0844e6f69a13233fa33af"
+    },
+    {
+      "bytes": 1873,
+      "path": "work/capture_dependencies.py",
+      "sha256": "050ac3f39eeef4d2aaf77159c4a0c57a2e536fc173cc37e914a58d1ff83d8d39"
+    },
+    {
+      "bytes": 2862,
+      "path": "work/check_anchor_readback.py",
+      "sha256": "77185a0ec8049a4a01a9992b897ee9ee60bd9de3c1491e464fa1a83fb8081bb1"
+    },
+    {
+      "bytes": 7022,
+      "path": "work/check_hooks.py",
+      "sha256": "6b199dd8afe10b6827b573fec6ab0b138b5cf0c0ec29b10d66c1cf7a3a57e809"
+    },
+    {
+      "bytes": 5815,
+      "path": "work/check_two_halves.py",
+      "sha256": "4af1c4f012603f8ea0874f7cc00cf005f13da04aa655ee1690a9c289f1bdda5f"
+    },
+    {
+      "bytes": 8113,
+      "path": "work/height_kernel.py",
+      "sha256": "d1ab3943932a25bd8bce023eebb405d138957c339e5c9640640e6490d4ab7cf0"
+    },
+    {
+      "bytes": 3674,
+      "path": "work/package_packet.py",
+      "sha256": "cc706cea0c9b9f304db604aceeb4665e35f482035894e2b8710a5af65c8cd369"
+    },
+    {
+      "bytes": 1953,
+      "path": "work/verify_packet_inputs.py",
+      "sha256": "f5a7a2b0796e2cba0cab04e5fee88048d16b4a0ce562cf423ad0209d8a3fc04d"
+    }
+  ],
+  "schema": "bsd-offset-hook-12-file-manifest-v1"
+}

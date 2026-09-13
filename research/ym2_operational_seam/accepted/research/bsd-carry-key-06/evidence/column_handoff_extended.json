@@ -1,0 +1,224 @@
+{
+  "created_utc": "2026-09-13T00:32:05.197058+00:00",
+  "source_sha256": "d1c999598b40f1056073927ea839f2752aa14af854e88db957525f4614b659ce",
+  "status": "COMPRESSION_CARRY_AND_CONDITIONAL_HANDOFF_AUDITED",
+  "user_supplied_stage": "566 IS INTERMEDIATE; terminal readout is not selected",
+  "source_example": {
+    "coefficient": 2301,
+    "modulus": 3125,
+    "sum": 5426,
+    "folded_terms": [
+      231,
+      335
+    ],
+    "folded_sum": 566
+  },
+  "fold": {
+    "domain": [
+      0,
+      9999
+    ],
+    "range": [
+      0,
+      1089
+    ],
+    "formula": "F(n)=10*floor(n/100)+(n mod100)",
+    "addition_defect": "F(n+m)=F(n)+F(m)-90*k; k=floor(((n mod100)+(m mod100))/100)",
+    "local_carry_pairs_checked": 10000,
+    "fixed_modulus_candidates_checked": 3125,
+    "failed_additivity_control": {
+      "inputs": [
+        99,
+        1
+      ],
+      "sum_after_fold": 100,
+      "fold_after_sum": 10
+    },
+    "all_total_preimages_of566": [
+      4796,
+      4886,
+      4976,
+      5066,
+      5156,
+      5246,
+      5336,
+      5426,
+      5516,
+      5606
+    ],
+    "all_coefficient_preimages_with_modulus3125": [
+      1671,
+      1761,
+      1851,
+      1941,
+      2031,
+      2121,
+      2211,
+      2301,
+      2391,
+      2481
+    ],
+    "inverse_with_tens_zero": [
+      2301
+    ],
+    "inverse_with_old_residue": [
+      2301
+    ],
+    "next_lifts_and_folded_sums": [
+      {
+        "coefficient": 426,
+        "compressed_sum": 401
+      },
+      {
+        "coefficient": 1051,
+        "compressed_sum": 486
+      },
+      {
+        "coefficient": 1676,
+        "compressed_sum": 481
+      },
+      {
+        "coefficient": 2301,
+        "compressed_sum": 566
+      },
+      {
+        "coefficient": 2926,
+        "compressed_sum": 651
+      }
+    ]
+  },
+  "shadow": {
+    "maps": "M(d)=9-d; N(d)=(-d) mod10; S=N after M",
+    "digit5_path": [
+      5,
+      4,
+      6
+    ],
+    "transported_checkpoint_set": {
+      "source": [
+        0,
+        5
+      ],
+      "image": [
+        1,
+        6
+      ],
+      "scope": "Illustrative transport of the historical checkpoint guard; no universal safety claim"
+    },
+    "exact_M_transport": "M_F(y)=1089-y",
+    "M_transport_example": {
+      "source": 5426,
+      "source_shadow": 4573,
+      "folded_shadow": 523,
+      "naive_three_digit_shadow": 433,
+      "difference": 90
+    },
+    "S_descent_ambiguous_output_count": 980,
+    "S_descent_total_output_count": 1090,
+    "S_descent_witness": [
+      {
+        "source": 4796,
+        "fold": 566,
+        "shadow": 5807,
+        "fold_after_shadow": 587
+      },
+      {
+        "source": 5426,
+        "fold": 566,
+        "shadow": 6537,
+        "fold_after_shadow": 687
+      }
+    ],
+    "conditional_handoff_with_old_residue": {
+      "compressed_input": 566,
+      "recovered_sum": 5426,
+      "source_shadow": 6537,
+      "compressed_shadow": 687,
+      "operation_status": "CANDIDATE S, not uniquely identified as user intended"
+    },
+    "different_operation_on_three_digit_word": {
+      "input": 566,
+      "output": 677
+    }
+  },
+  "retained_shadow_carrier": {
+    "marks": "W[j]=weighted count of source digit j with weights(100,10,10,1)",
+    "source_states": 10000,
+    "complete_operational_classes": 5500,
+    "S_update": "W_next[j]=W[(j-1) mod10]",
+    "M_update": "W_next[j]=W[9-j]",
+    "readout": "sum(j*W[j])",
+    "next_readout": "F_next=F+121-10*W[9]",
+    "ten_step_path": [
+      {
+        "step": 0,
+        "source_word": "5426",
+        "compressed": 566,
+        "next_wrap_weight": 0
+      },
+      {
+        "step": 1,
+        "source_word": "6537",
+        "compressed": 687,
+        "next_wrap_weight": 0
+      },
+      {
+        "step": 2,
+        "source_word": "7648",
+        "compressed": 808,
+        "next_wrap_weight": 0
+      },
+      {
+        "step": 3,
+        "source_word": "8759",
+        "compressed": 929,
+        "next_wrap_weight": 1
+      },
+      {
+        "step": 4,
+        "source_word": "9860",
+        "compressed": 1040,
+        "next_wrap_weight": 100
+      },
+      {
+        "step": 5,
+        "source_word": "0971",
+        "compressed": 161,
+        "next_wrap_weight": 10
+      },
+      {
+        "step": 6,
+        "source_word": "1082",
+        "compressed": 182,
+        "next_wrap_weight": 0
+      },
+      {
+        "step": 7,
+        "source_word": "2193",
+        "compressed": 303,
+        "next_wrap_weight": 10
+      },
+      {
+        "step": 8,
+        "source_word": "3204",
+        "compressed": 324,
+        "next_wrap_weight": 0
+      },
+      {
+        "step": 9,
+        "source_word": "4315",
+        "compressed": 445,
+        "next_wrap_weight": 0
+      },
+      {
+        "step": 10,
+        "source_word": "5426",
+        "compressed": 566,
+        "next_wrap_weight": 0
+      }
+    ],
+    "preserved_operations": "uniform S and M on every source digit; observing F",
+    "forgotten": "order of the two middle source digits; other positional operations require a new audit"
+  },
+  "claim_ceiling": "Exact finite operations and inverse repair. The zero mask or compressed value is observed data, not an independent prediction of the analytic coefficient. BSD comparison remains OPEN."
+}

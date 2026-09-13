@@ -1,0 +1,113 @@
+{
+  "purpose": "Byte identity, not proof of contents",
+  "files": [
+    {
+      "path": "ANALYTIC_BRIDGE.md",
+      "sha256": "d8a96f2062c0f13bc0a1ea2abd43ca3c69432fdcd0b5e2ade489e77e536a4d80",
+      "bytes": 13176
+    },
+    {
+      "path": "CARRY_BRIDGE.md",
+      "sha256": "a7590966734087b29ab08906b22be10e71c49e57a5018f4c3e9a855c352f98bc",
+      "bytes": 3306
+    },
+    {
+      "path": "CLAIM_LEDGER.json",
+      "sha256": "7dcd584de77629f8dad7f62b8e0053ad8465d4d07d5c84721d63e139252d7115",
+      "bytes": 2750
+    },
+    {
+      "path": "evidence/general_checks.json",
+      "sha256": "04e1328441b8aa5dbb7c8e2eeac1945a96f8fd20244d1b4c3c4ec9a7351f31d7",
+      "bytes": 9413
+    },
+    {
+      "path": "evidence/general_checks_execution.log",
+      "sha256": "13d22350a6431fa11c377c435f125c76fe976f67b872108fb44ff426ff7f1e67",
+      "bytes": 378
+    },
+    {
+      "path": "evidence/general_checks_final.json",
+      "sha256": "86ccabd44e296baf7efe072e144bd217e175481aa402e5b31be5fdb3a8521763",
+      "bytes": 11214
+    },
+    {
+      "path": "evidence/general_checks_final_execution.log",
+      "sha256": "0a1ae6c98e7d3543b1639e577941c1df4879e5cbb95db8a78fcb1a3030c28b67",
+      "bytes": 413
+    },
+    {
+      "path": "evidence/general_checks_release.json",
+      "sha256": "ac4f64f80987c0190cc8aecb3634676e635f054798dc8e63dd30a7fdd74c8d01",
+      "bytes": 11736
+    },
+    {
+      "path": "evidence/general_checks_release_execution.log",
+      "sha256": "f27f13a555ddfd12cc814cd3a724d378f11ee078da3fb4f8ec17a8b7081a3513",
+      "bytes": 415
+    },
+    {
+      "path": "README.md",
+      "sha256": "ae59441bc80a32b5c534f98c25e5002c37a6060b443c71a6dd811c256613ef23",
+      "bytes": 3361
+    },
+    {
+      "path": "RECONSTRUCTION.md",
+      "sha256": "dda4ca1eb288f33ced289c0e1d6bddfb9c44519a352dc28485cd44280afa33c6",
+      "bytes": 6703
+    },
+    {
+      "path": "RETURN_TO_WILLIAM.md",
+      "sha256": "14d319affa7a092d4d626ad43ed6dbbcd62d6ed12eb906b0ac36ad9e5082cbcb",
+      "bytes": 5910
+    },
+    {
+      "path": "SELMER_TOWER.md",
+      "sha256": "b601728e4d367d06a2dd78b492f00ed7272c0f696e9740c9a7506258fac93f87",
+      "bytes": 8947
+    },
+    {
+      "path": "TOWER_AUDIT.md",
+      "sha256": "ebad68063bf6b30ba6acfccda8079859288014a6605beb37afc771fdafa74260",
+      "bytes": 7278
+    },
+    {
+      "path": "work/check_general.py",
+      "sha256": "8b3f6a68030922e82b7d7784efe7daf3d73fd2e58cbe1b3278b313ec9d21b14d",
+      "bytes": 14488
+    },
+    {
+      "path": "work/mellin_tail.py",
+      "sha256": "c8f7b8ccdaeab623e26f9fbd664040e37f3c3acd49ca4adbc2dae859dd03e1be",
+      "bytes": 1883
+    },
+    {
+      "path": "work/package.py",
+      "sha256": "51f3b6200dd048b60c54f6d60e1918a33baa88f8376a7abfdf8946a37a3baf23",
+      "bytes": 2930
+    }
+  ],
+  "reused_proof_dependencies_not_bundled": [
+    {
+      "path": "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\GENERATOR_PROOF.md",
+      "sha256": "dd7a761f063eee413e10266f24e58d254df3416b8c57a40d8e8bed5e4b4b337a"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\COORDINATE_NOTE.md",
+      "sha256": "c1848fa88dbfeac669cf00287bfc995dae1f2df27c31b8872755036d1d1c84a7"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\research\\bsd-e5-completion\\BSD_SHA_THEOREMS.md",
+      "sha256": "1cc196f2f5fce9992ba669c8185c2f769cfe47d7c2a28e4bd3889da6ad9516be"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\research\\bsd-e5-test-01\\ANALYTIC_THEOREMS.md",
+      "sha256": "9a2b169dc03a8519f81d05f7d55adfdd9816e864f564551ad7ad08bce7e12563"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\research\\bsd-e5-test-01\\INTERVAL_DERIVATION.md",
+      "sha256": "65e242dce048490f9ef0a0aabcb3e53c0f84bac548921760876755bcb6600206"
+    }
+  ],
+  "general_BSD": "OPEN"
+}

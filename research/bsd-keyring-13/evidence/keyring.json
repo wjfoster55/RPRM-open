@@ -1,0 +1,3332 @@
+{
+  "status": "DECLARED_BLOCK_READBACK_AND_CARRY_VERIFIED",
+  "created_utc": "2026-09-13T04:19:21.407167+00:00",
+  "actual_height_input_replayed": false,
+  "attributed_interval_records": [
+    {
+      "depth": 9,
+      "integer_block": "2.",
+      "middle_block": "0340",
+      "joint_tail_block": [
+        "01230068",
+        "10481998"
+      ],
+      "widths": [
+        4,
+        8
+      ],
+      "readback": [
+        "508500307517/250000000000",
+        "1017005240999/500000000000"
+      ],
+      "decimal_readback": [
+        "2.034001230068",
+        "2.034010481998"
+      ]
+    },
+    {
+      "depth": 10,
+      "integer_block": "2.",
+      "middle_block": "0340",
+      "joint_tail_block": [
+        "04870820",
+        "07183803"
+      ],
+      "widths": [
+        4,
+        8
+      ],
+      "readback": [
+        "101700243541/50000000000",
+        "2034007183803/1000000000000"
+      ],
+      "decimal_readback": [
+        "2.034004870820",
+        "2.034007183803"
+      ]
+    }
+  ],
+  "geometry_parameters": {
+    "connector_radius": "3",
+    "satellite_radius": "3/4",
+    "satellite_ball_center_distance_squared": "27",
+    "sum_of_ball_radii_squared": "9/4"
+  },
+  "topology_only_fiber": {
+    "carrier": "I=2,P=0340,w=4,m=2,0<=a<=b<100",
+    "kind": "MANY",
+    "size": 5050,
+    "examples": [
+      {
+        "tails": [
+          "00",
+          "01"
+        ],
+        "interval": [
+          "1017/500",
+          "2034001/1000000"
+        ]
+      },
+      {
+        "tails": [
+          "00",
+          "02"
+        ],
+        "interval": [
+          "1017/500",
+          "1017001/500000"
+        ]
+      },
+      {
+        "tails": [
+          "48",
+          "71"
+        ],
+        "interval": [
+          "31782/15625",
+          "2034071/1000000"
+        ]
+      }
+    ]
+  },
+  "carry_carrier": "I=2,P=0..9,T=0..19,w=m=1, one carry buffer",
+  "carry_cases": [
+    {
+      "input": [
+        2,
+        0,
+        0
+      ],
+      "normalized": [
+        2,
+        0,
+        0
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        1
+      ],
+      "normalized": [
+        2,
+        0,
+        1
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        2
+      ],
+      "normalized": [
+        2,
+        0,
+        2
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        3
+      ],
+      "normalized": [
+        2,
+        0,
+        3
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        4
+      ],
+      "normalized": [
+        2,
+        0,
+        4
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        5
+      ],
+      "normalized": [
+        2,
+        0,
+        5
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        6
+      ],
+      "normalized": [
+        2,
+        0,
+        6
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        7
+      ],
+      "normalized": [
+        2,
+        0,
+        7
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        8
+      ],
+      "normalized": [
+        2,
+        0,
+        8
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        9
+      ],
+      "normalized": [
+        2,
+        0,
+        9
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        10
+      ],
+      "normalized": [
+        2,
+        1,
+        0
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        11
+      ],
+      "normalized": [
+        2,
+        1,
+        1
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        12
+      ],
+      "normalized": [
+        2,
+        1,
+        2
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        13
+      ],
+      "normalized": [
+        2,
+        1,
+        3
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        14
+      ],
+      "normalized": [
+        2,
+        1,
+        4
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        15
+      ],
+      "normalized": [
+        2,
+        1,
+        5
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        16
+      ],
+      "normalized": [
+        2,
+        1,
+        6
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        17
+      ],
+      "normalized": [
+        2,
+        1,
+        7
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        18
+      ],
+      "normalized": [
+        2,
+        1,
+        8
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        0,
+        19
+      ],
+      "normalized": [
+        2,
+        1,
+        9
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        0
+      ],
+      "normalized": [
+        2,
+        1,
+        0
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        1
+      ],
+      "normalized": [
+        2,
+        1,
+        1
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        2
+      ],
+      "normalized": [
+        2,
+        1,
+        2
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        3
+      ],
+      "normalized": [
+        2,
+        1,
+        3
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        4
+      ],
+      "normalized": [
+        2,
+        1,
+        4
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        5
+      ],
+      "normalized": [
+        2,
+        1,
+        5
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        6
+      ],
+      "normalized": [
+        2,
+        1,
+        6
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        7
+      ],
+      "normalized": [
+        2,
+        1,
+        7
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        8
+      ],
+      "normalized": [
+        2,
+        1,
+        8
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        9
+      ],
+      "normalized": [
+        2,
+        1,
+        9
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        10
+      ],
+      "normalized": [
+        2,
+        2,
+        0
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        11
+      ],
+      "normalized": [
+        2,
+        2,
+        1
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        12
+      ],
+      "normalized": [
+        2,
+        2,
+        2
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        13
+      ],
+      "normalized": [
+        2,
+        2,
+        3
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        14
+      ],
+      "normalized": [
+        2,
+        2,
+        4
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        15
+      ],
+      "normalized": [
+        2,
+        2,
+        5
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        16
+      ],
+      "normalized": [
+        2,
+        2,
+        6
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        17
+      ],
+      "normalized": [
+        2,
+        2,
+        7
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        18
+      ],
+      "normalized": [
+        2,
+        2,
+        8
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        1,
+        19
+      ],
+      "normalized": [
+        2,
+        2,
+        9
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        0
+      ],
+      "normalized": [
+        2,
+        2,
+        0
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        1
+      ],
+      "normalized": [
+        2,
+        2,
+        1
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        2
+      ],
+      "normalized": [
+        2,
+        2,
+        2
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        3
+      ],
+      "normalized": [
+        2,
+        2,
+        3
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        4
+      ],
+      "normalized": [
+        2,
+        2,
+        4
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        5
+      ],
+      "normalized": [
+        2,
+        2,
+        5
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        6
+      ],
+      "normalized": [
+        2,
+        2,
+        6
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        7
+      ],
+      "normalized": [
+        2,
+        2,
+        7
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        8
+      ],
+      "normalized": [
+        2,
+        2,
+        8
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        9
+      ],
+      "normalized": [
+        2,
+        2,
+        9
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        10
+      ],
+      "normalized": [
+        2,
+        3,
+        0
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        11
+      ],
+      "normalized": [
+        2,
+        3,
+        1
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        12
+      ],
+      "normalized": [
+        2,
+        3,
+        2
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        13
+      ],
+      "normalized": [
+        2,
+        3,
+        3
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        14
+      ],
+      "normalized": [
+        2,
+        3,
+        4
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        15
+      ],
+      "normalized": [
+        2,
+        3,
+        5
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        16
+      ],
+      "normalized": [
+        2,
+        3,
+        6
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        17
+      ],
+      "normalized": [
+        2,
+        3,
+        7
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        18
+      ],
+      "normalized": [
+        2,
+        3,
+        8
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        2,
+        19
+      ],
+      "normalized": [
+        2,
+        3,
+        9
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        0
+      ],
+      "normalized": [
+        2,
+        3,
+        0
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        1
+      ],
+      "normalized": [
+        2,
+        3,
+        1
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        2
+      ],
+      "normalized": [
+        2,
+        3,
+        2
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        3
+      ],
+      "normalized": [
+        2,
+        3,
+        3
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        4
+      ],
+      "normalized": [
+        2,
+        3,
+        4
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        5
+      ],
+      "normalized": [
+        2,
+        3,
+        5
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        6
+      ],
+      "normalized": [
+        2,
+        3,
+        6
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        7
+      ],
+      "normalized": [
+        2,
+        3,
+        7
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        8
+      ],
+      "normalized": [
+        2,
+        3,
+        8
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        9
+      ],
+      "normalized": [
+        2,
+        3,
+        9
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        10
+      ],
+      "normalized": [
+        2,
+        4,
+        0
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        11
+      ],
+      "normalized": [
+        2,
+        4,
+        1
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        12
+      ],
+      "normalized": [
+        2,
+        4,
+        2
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        13
+      ],
+      "normalized": [
+        2,
+        4,
+        3
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        14
+      ],
+      "normalized": [
+        2,
+        4,
+        4
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        15
+      ],
+      "normalized": [
+        2,
+        4,
+        5
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        16
+      ],
+      "normalized": [
+        2,
+        4,
+        6
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        17
+      ],
+      "normalized": [
+        2,
+        4,
+        7
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        18
+      ],
+      "normalized": [
+        2,
+        4,
+        8
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        3,
+        19
+      ],
+      "normalized": [
+        2,
+        4,
+        9
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        0
+      ],
+      "normalized": [
+        2,
+        4,
+        0
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        1
+      ],
+      "normalized": [
+        2,
+        4,
+        1
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        2
+      ],
+      "normalized": [
+        2,
+        4,
+        2
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        3
+      ],
+      "normalized": [
+        2,
+        4,
+        3
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        4
+      ],
+      "normalized": [
+        2,
+        4,
+        4
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        5
+      ],
+      "normalized": [
+        2,
+        4,
+        5
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        6
+      ],
+      "normalized": [
+        2,
+        4,
+        6
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        7
+      ],
+      "normalized": [
+        2,
+        4,
+        7
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        8
+      ],
+      "normalized": [
+        2,
+        4,
+        8
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        9
+      ],
+      "normalized": [
+        2,
+        4,
+        9
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        10
+      ],
+      "normalized": [
+        2,
+        5,
+        0
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        11
+      ],
+      "normalized": [
+        2,
+        5,
+        1
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        12
+      ],
+      "normalized": [
+        2,
+        5,
+        2
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        13
+      ],
+      "normalized": [
+        2,
+        5,
+        3
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        14
+      ],
+      "normalized": [
+        2,
+        5,
+        4
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        15
+      ],
+      "normalized": [
+        2,
+        5,
+        5
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        16
+      ],
+      "normalized": [
+        2,
+        5,
+        6
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        17
+      ],
+      "normalized": [
+        2,
+        5,
+        7
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        18
+      ],
+      "normalized": [
+        2,
+        5,
+        8
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        4,
+        19
+      ],
+      "normalized": [
+        2,
+        5,
+        9
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        0
+      ],
+      "normalized": [
+        2,
+        5,
+        0
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        1
+      ],
+      "normalized": [
+        2,
+        5,
+        1
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        2
+      ],
+      "normalized": [
+        2,
+        5,
+        2
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        3
+      ],
+      "normalized": [
+        2,
+        5,
+        3
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        4
+      ],
+      "normalized": [
+        2,
+        5,
+        4
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        5
+      ],
+      "normalized": [
+        2,
+        5,
+        5
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        6
+      ],
+      "normalized": [
+        2,
+        5,
+        6
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        7
+      ],
+      "normalized": [
+        2,
+        5,
+        7
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        8
+      ],
+      "normalized": [
+        2,
+        5,
+        8
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        9
+      ],
+      "normalized": [
+        2,
+        5,
+        9
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        10
+      ],
+      "normalized": [
+        2,
+        6,
+        0
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        11
+      ],
+      "normalized": [
+        2,
+        6,
+        1
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        12
+      ],
+      "normalized": [
+        2,
+        6,
+        2
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        13
+      ],
+      "normalized": [
+        2,
+        6,
+        3
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        14
+      ],
+      "normalized": [
+        2,
+        6,
+        4
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        15
+      ],
+      "normalized": [
+        2,
+        6,
+        5
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        16
+      ],
+      "normalized": [
+        2,
+        6,
+        6
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        17
+      ],
+      "normalized": [
+        2,
+        6,
+        7
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        18
+      ],
+      "normalized": [
+        2,
+        6,
+        8
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        5,
+        19
+      ],
+      "normalized": [
+        2,
+        6,
+        9
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        0
+      ],
+      "normalized": [
+        2,
+        6,
+        0
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        1
+      ],
+      "normalized": [
+        2,
+        6,
+        1
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        2
+      ],
+      "normalized": [
+        2,
+        6,
+        2
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        3
+      ],
+      "normalized": [
+        2,
+        6,
+        3
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        4
+      ],
+      "normalized": [
+        2,
+        6,
+        4
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        5
+      ],
+      "normalized": [
+        2,
+        6,
+        5
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        6
+      ],
+      "normalized": [
+        2,
+        6,
+        6
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        7
+      ],
+      "normalized": [
+        2,
+        6,
+        7
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        8
+      ],
+      "normalized": [
+        2,
+        6,
+        8
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        9
+      ],
+      "normalized": [
+        2,
+        6,
+        9
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        10
+      ],
+      "normalized": [
+        2,
+        7,
+        0
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        11
+      ],
+      "normalized": [
+        2,
+        7,
+        1
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        12
+      ],
+      "normalized": [
+        2,
+        7,
+        2
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        13
+      ],
+      "normalized": [
+        2,
+        7,
+        3
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        14
+      ],
+      "normalized": [
+        2,
+        7,
+        4
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        15
+      ],
+      "normalized": [
+        2,
+        7,
+        5
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        16
+      ],
+      "normalized": [
+        2,
+        7,
+        6
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        17
+      ],
+      "normalized": [
+        2,
+        7,
+        7
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        18
+      ],
+      "normalized": [
+        2,
+        7,
+        8
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        6,
+        19
+      ],
+      "normalized": [
+        2,
+        7,
+        9
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        0
+      ],
+      "normalized": [
+        2,
+        7,
+        0
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        1
+      ],
+      "normalized": [
+        2,
+        7,
+        1
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        2
+      ],
+      "normalized": [
+        2,
+        7,
+        2
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        3
+      ],
+      "normalized": [
+        2,
+        7,
+        3
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        4
+      ],
+      "normalized": [
+        2,
+        7,
+        4
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        5
+      ],
+      "normalized": [
+        2,
+        7,
+        5
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        6
+      ],
+      "normalized": [
+        2,
+        7,
+        6
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        7
+      ],
+      "normalized": [
+        2,
+        7,
+        7
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        8
+      ],
+      "normalized": [
+        2,
+        7,
+        8
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        9
+      ],
+      "normalized": [
+        2,
+        7,
+        9
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        10
+      ],
+      "normalized": [
+        2,
+        8,
+        0
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        11
+      ],
+      "normalized": [
+        2,
+        8,
+        1
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        12
+      ],
+      "normalized": [
+        2,
+        8,
+        2
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        13
+      ],
+      "normalized": [
+        2,
+        8,
+        3
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        14
+      ],
+      "normalized": [
+        2,
+        8,
+        4
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        15
+      ],
+      "normalized": [
+        2,
+        8,
+        5
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        16
+      ],
+      "normalized": [
+        2,
+        8,
+        6
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        17
+      ],
+      "normalized": [
+        2,
+        8,
+        7
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        18
+      ],
+      "normalized": [
+        2,
+        8,
+        8
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        7,
+        19
+      ],
+      "normalized": [
+        2,
+        8,
+        9
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        0
+      ],
+      "normalized": [
+        2,
+        8,
+        0
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        1
+      ],
+      "normalized": [
+        2,
+        8,
+        1
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        2
+      ],
+      "normalized": [
+        2,
+        8,
+        2
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        3
+      ],
+      "normalized": [
+        2,
+        8,
+        3
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        4
+      ],
+      "normalized": [
+        2,
+        8,
+        4
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        5
+      ],
+      "normalized": [
+        2,
+        8,
+        5
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        6
+      ],
+      "normalized": [
+        2,
+        8,
+        6
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        7
+      ],
+      "normalized": [
+        2,
+        8,
+        7
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        8
+      ],
+      "normalized": [
+        2,
+        8,
+        8
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        9
+      ],
+      "normalized": [
+        2,
+        8,
+        9
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        10
+      ],
+      "normalized": [
+        2,
+        9,
+        0
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        11
+      ],
+      "normalized": [
+        2,
+        9,
+        1
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        12
+      ],
+      "normalized": [
+        2,
+        9,
+        2
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        13
+      ],
+      "normalized": [
+        2,
+        9,
+        3
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        14
+      ],
+      "normalized": [
+        2,
+        9,
+        4
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        15
+      ],
+      "normalized": [
+        2,
+        9,
+        5
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        16
+      ],
+      "normalized": [
+        2,
+        9,
+        6
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        17
+      ],
+      "normalized": [
+        2,
+        9,
+        7
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        18
+      ],
+      "normalized": [
+        2,
+        9,
+        8
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        8,
+        19
+      ],
+      "normalized": [
+        2,
+        9,
+        9
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        0
+      ],
+      "normalized": [
+        2,
+        9,
+        0
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        1
+      ],
+      "normalized": [
+        2,
+        9,
+        1
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        2
+      ],
+      "normalized": [
+        2,
+        9,
+        2
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        3
+      ],
+      "normalized": [
+        2,
+        9,
+        3
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        4
+      ],
+      "normalized": [
+        2,
+        9,
+        4
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        5
+      ],
+      "normalized": [
+        2,
+        9,
+        5
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        6
+      ],
+      "normalized": [
+        2,
+        9,
+        6
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        7
+      ],
+      "normalized": [
+        2,
+        9,
+        7
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        8
+      ],
+      "normalized": [
+        2,
+        9,
+        8
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        9
+      ],
+      "normalized": [
+        2,
+        9,
+        9
+      ],
+      "carry_tags": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        10
+      ],
+      "normalized": [
+        3,
+        0,
+        0
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        11
+      ],
+      "normalized": [
+        3,
+        0,
+        1
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        12
+      ],
+      "normalized": [
+        3,
+        0,
+        2
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        13
+      ],
+      "normalized": [
+        3,
+        0,
+        3
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        14
+      ],
+      "normalized": [
+        3,
+        0,
+        4
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        15
+      ],
+      "normalized": [
+        3,
+        0,
+        5
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        16
+      ],
+      "normalized": [
+        3,
+        0,
+        6
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        17
+      ],
+      "normalized": [
+        3,
+        0,
+        7
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        18
+      ],
+      "normalized": [
+        3,
+        0,
+        8
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        2,
+        9,
+        19
+      ],
+      "normalized": [
+        3,
+        0,
+        9
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    }
+  ],
+  "actual_width_boundary_controls": [
+    {
+      "input": [
+        2,
+        340,
+        100000000
+      ],
+      "normalized": [
+        2,
+        341,
+        0
+      ],
+      "carry_tags": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        2,
+        9999,
+        100000000
+      ],
+      "normalized": [
+        3,
+        0,
+        0
+      ],
+      "carry_tags": [
+        1,
+        1
+      ]
+    }
+  ],
+  "source_sha256": "e24e2c603e9389b30d8ff5906db133b4961eaf50d792c5be56a8093806198fe8",
+  "input_sha256": "19f204ed8c3243188fbf97ab8c9c3b550f5af77d20014985e264d94c63c80378",
+  "claim_ceiling": "Exact positional encoding and candidate topology; BSD loop maps OPEN"
+}

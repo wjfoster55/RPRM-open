@@ -1,0 +1,23 @@
+\\ Pure rational cuspidal eigenspace; no msfromell, periods, bestappr or BSD.
+print("BEGIN_EXACT_SYMBOL_PILOT");
+E0=ellinit([0,0,0,-1,0]);
+M=msinit(32,2,1);
+S=mscuspidal(M);
+print("ambient_dimension=",msdim(M));
+print("cuspidal_dimension=",msdim(S));
+raw=S[1][,1];
+z=mseval(M,raw,[oo,0]);
+phin=raw/(4*z);
+print("raw_symbol=",raw);
+print("raw_anchor=",z);
+print("exact_symbol=",phin);
+print("anchor_infinity_to_zero=",mseval(M,phin,[oo,0]));
+print("Hecke=",vector(4,j,my(p=[2,3,5,7][j]);[p,mshecke(M,p)*phin==ellap(E0,p)*phin]));
+Mp=mspadicinit(M,5,7,0);
+mu=mspadicmoments(Mp,phin,136);
+print("D0=",mspadicL(mu,[0,0],0));
+print("D1=",mspadicL(mu,[0,0],1));
+print("D2=",mspadicL(mu,[0,0],2));
+print("series=",mspadicseries(mu));
+print("END_EXACT_SYMBOL_PILOT");
+quit;

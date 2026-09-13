@@ -1,0 +1,150 @@
+{
+  "started_utc": "2026-09-12T19:29:26.193700+00:00",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "copied_inputs": {
+    "arithmetic.py": "c0f72bee942411aa13090cd2a32483fbc0f6e886dc1c3538d86ed42023585133",
+    "factor_frontier.py": "fb302731f2bb355aa7a245cbb13e8b0b7c82822583b6e031d203d17babf5a0af",
+    "generator.py": "b1440405679074c8c82ef86e4013ad64bd855e2f4388f15010f154ac6a5a8ee3",
+    "interval.py": "87181b1ccc7622712b9f29dcb2f149abb3e0be685614535868fea3cab04c41c4",
+    "interval_audit.py": "1cca3de891ab020922d0b14a838f4458131565308b528efad137f205a19bd917",
+    "local_inputs.py": "ae60fd441c7a9edfe31f947ba1c1d2eb6b1021ff5a8473ba2acdf7437f62fa23",
+    "midpoint.py": "e49f9181a9dd85fc36ac59778edbf848123fe33986520fb8a3403ab0dcde2608",
+    "run_all.py": "e126a95f9aa48be6a1bf1513d4ad0f5e4cb18698ae8698e6e9e816a7a21df557",
+    "BUDGET.json": "7e4724c15e8c5a23429067772ecc9f12b1298989299630bb2065751c7a325e6e"
+  },
+  "copied_saved_receipts": false,
+  "stages": [
+    {
+      "stage": "arithmetic",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\work\\arithmetic.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\evidence\\arithmetic.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.7600030000321567,
+      "source_sha256": "c0f72bee942411aa13090cd2a32483fbc0f6e886dc1c3538d86ed42023585133",
+      "log_sha256": "a0c3e35ecd1898a2487e0b4694cc540d5f8da5c9f96b0d836f81e1d3fa8db315",
+      "receipt_sha256": "cfe2f69089c15235b03c2452c2d6bfdd25ac9f69243d4c0a29e5a78c712c6221"
+    },
+    {
+      "stage": "local_inputs",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\work\\local_inputs.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\evidence\\local_inputs.json",
+        "--limit",
+        "1000"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.13953669997863472,
+      "source_sha256": "ae60fd441c7a9edfe31f947ba1c1d2eb6b1021ff5a8473ba2acdf7437f62fa23",
+      "log_sha256": "786b0667efcf7ec1a6988cb71153f18b71f59ecc09c797938e110127d528c799",
+      "receipt_sha256": "673fb2374cdbc4dd536f7be06f0a2bb221d1552d3aa2d2c404de0eefc16363da"
+    },
+    {
+      "stage": "generator",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\work\\generator.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\evidence\\generator.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.8255000000353903,
+      "source_sha256": "b1440405679074c8c82ef86e4013ad64bd855e2f4388f15010f154ac6a5a8ee3",
+      "log_sha256": "42f1845b78eb1ec3438251f26e35edc7aa6f08e69d3091c16b7364169fd1bf31",
+      "receipt_sha256": "2a49f2ae3d36156842b9d7c1772996c58b5ed458c3babde4616d5b211134a357"
+    },
+    {
+      "stage": "interval",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\work\\interval.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\evidence\\interval.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.894136699964292,
+      "source_sha256": "87181b1ccc7622712b9f29dcb2f149abb3e0be685614535868fea3cab04c41c4",
+      "log_sha256": "b02cbcf2f40632c64c28767805441c16b0f4c50f226c957c371ec7054de31895",
+      "receipt_sha256": "07bb2abe27cb8aa1347048dfde5f6db83ebdd6af06bad32d3628197bf26d5abc"
+    },
+    {
+      "stage": "interval_audit",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\work\\interval_audit.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.24364470003638417,
+      "source_sha256": "1cca3de891ab020922d0b14a838f4458131565308b528efad137f205a19bd917",
+      "log_sha256": "5bc3b7db6e3e567616e9a2e8f75983f6a00627b2f5f93334e6474e11a8408e4a",
+      "receipt_sha256": "12212c7d64b258c44994a26d0ea083b432e7fdbf1770747ba95fcba6367e8574"
+    },
+    {
+      "stage": "midpoint",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\work\\midpoint.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\evidence\\midpoint.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.1844664000091143,
+      "source_sha256": "e49f9181a9dd85fc36ac59778edbf848123fe33986520fb8a3403ab0dcde2608",
+      "log_sha256": "74f2c35cf54ca208faba841ab320b8c3e1c09d83e497b8ed78fbd6fdd19d93ce",
+      "receipt_sha256": "0d42be511f7215f07b0f9725365cf203fcd84f1e6b0f236b301a24086e791032"
+    },
+    {
+      "stage": "factor_frontier",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\work\\factor_frontier.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\runs\\final_validation\\evidence\\factor_frontier.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.14695769996615127,
+      "source_sha256": "fb302731f2bb355aa7a245cbb13e8b0b7c82822583b6e031d203d17babf5a0af",
+      "log_sha256": "7a5dd7b26804ae30ae83abb0b4426b1d1ebeda8ef035c0b0ee42afc3bc85d204",
+      "receipt_sha256": "3483882fdddcf556d079451a4d668ce8139603a4ef6e66ee577679a1cf181b4a"
+    }
+  ],
+  "status": "FRESH_REPLAY_AND_CONSISTENCY_CHECKS_COMPLETED",
+  "evidence_scope": "Fresh computations and dependency consistency; written proofs remain required",
+  "consistency_checks": {
+    "rank": 2,
+    "basis_index": 1,
+    "sha_2_primary": "ZERO",
+    "analytic_rank": "2, using cited low-rank theorem plus positive second coefficient",
+    "full_sha": "NOT_ESTABLISHED",
+    "full_BSD_identity": "NOT_ESTABLISHED",
+    "midpoint_full_and_half_gap": [
+      "-1/5",
+      "-1/10"
+    ],
+    "failed_tail_attempts_preserved": [
+      40,
+      80
+    ]
+  },
+  "finished_utc": "2026-09-12T19:29:48.557850+00:00"
+}

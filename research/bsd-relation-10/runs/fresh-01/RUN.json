@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-13T02:30:21.032769+00:00",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "gp_executable": "C:\\github\\RPRM-open\\research\\bsd-coefficient-05\\runtime\\gp64-2-17-4.exe",
+  "gp_sha256": "518ea54d23832211356c99d1bb58b74a3f0acd354a965543e7bcca9b34030119",
+  "source_snapshot": {
+    "analytic.gp": "4a1c7c3598b0c1116a06b70a41dd50485c2eabd38472c9b3818d7e7a08592b39",
+    "reciprocity.py": "b8cc6d750c802632d62c0301af98732d28ca919dbaaba0741d2f83150ef6000a",
+    "run.py": "2b76bfa46cbfe271b9c10ed00d875802a3fe6e038398b4e2321c98b02e22c359"
+  },
+  "saved_results_used_as_input": false,
+  "jobs": [
+    {
+      "name": "analytic",
+      "exit_code": 0,
+      "success": true,
+      "elapsed_seconds": 2.0125109999789856,
+      "log_sha256": "37b51781dd653b545b8f7c27fa12c2fbb57113a6fdfdbe899f7d480502c1cfee"
+    },
+    {
+      "name": "reciprocity",
+      "exit_code": 0,
+      "success": true,
+      "elapsed_seconds": 0.12695120001444593,
+      "log_sha256": "2e02a008c7c76b73c59d08068b6eb1ead2146d92ef9666b398bf55e9afc6c7da"
+    }
+  ],
+  "status": "EXACT_FINITE_RELATION_VERIFIED",
+  "elapsed_seconds": 2.1587171999854036,
+  "evidence_hashes": {
+    "reciprocity.json": "1fd4dea68158f5e8af746d9457811c58048089a749064fd96c711e73dc004cd0"
+  }
+}

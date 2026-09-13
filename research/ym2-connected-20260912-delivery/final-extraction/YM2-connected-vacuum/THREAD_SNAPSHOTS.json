@@ -1,0 +1,29 @@
+{
+  "schema": "ym2-running-task-selection-v1",
+  "saved_utc": "2026-09-12 18:46:34 UTC",
+  "tasks": [
+    {
+      "source_tool": "read_thread",
+      "thread": "01a096b0-a546-76b0-b680-53e3a37f0e4a",
+      "title": "Run BSD E5 test 01",
+      "host_id": "local",
+      "status_at_read": {
+        "type": "active",
+        "activeFlags": []
+      },
+      "interpretation": "Running-task snapshot only. Relevant source files captured separately; no task was messaged or modified."
+    },
+    {
+      "source_tool": "read_thread",
+      "thread": "01a096c9-32c7-7653-8654-65e26fcc2c65",
+      "title": "Locate liar-truth framework",
+      "host_id": "local",
+      "status_at_read": {
+        "type": "active",
+        "activeFlags": []
+      },
+      "interpretation": "Running-task snapshot only. Relevant source files captured separately; no task was messaged or modified."
+    }
+  ],
+  "scope": "Metadata of the two running Codex tasks explicitly requested by the user. Only mathematical source snapshots needed for the transfer are included in this packet."
+}

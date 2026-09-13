@@ -1,0 +1,106 @@
+{
+  "claim": "Byte integrity only; not mathematical verification",
+  "files": [
+    {
+      "bytes": 16022,
+      "path": "agents/PNP_AUDIT.md",
+      "sha256": "4fcc7cc190f14d4607a82f72ea7892995e3a5948d2514a0bef419d12ea8374ee"
+    },
+    {
+      "bytes": 10620,
+      "path": "agents/POINCARE_REFERENCE.md",
+      "sha256": "232fc10dc7a36a232e632cd8adb4db023b5b03c980bb299cf975e5b6745e9bfa"
+    },
+    {
+      "bytes": 3393,
+      "path": "agents/PROOF_REVIEW.md",
+      "sha256": "3ab546d96bdcda8e65cf0ff2135108c1080e7ce755db31cf404b9d100063121a"
+    },
+    {
+      "bytes": 13108,
+      "path": "agents/YM_AUDIT.md",
+      "sha256": "f2bc69b7331d60085ed09fb1fe0d016702d8b90c7ce3d262e2ee5da093397f75"
+    },
+    {
+      "bytes": 11229,
+      "path": "CLOSURE_PROOF.md",
+      "sha256": "1561f8924bf692f5d4cc7b74aafea9627652f5a86c585913ae03dc6b24001c45"
+    },
+    {
+      "bytes": 7949,
+      "path": "evidence/fresh_checks.json",
+      "sha256": "fc09cb8fbe88e7296fb997ba5bbce8b164e25d2aff3625661ae73e240df96553"
+    },
+    {
+      "bytes": 18709,
+      "path": "evidence/historical_context.json",
+      "sha256": "a0c6947cf8d16431a4f95ba6222e164acb447b772e158ce1800f42aded49cbca"
+    },
+    {
+      "bytes": 3022,
+      "path": "evidence/local_source_hashes.json",
+      "sha256": "f73146eebdda93633af7d14718740730dd20536f22d4db321e941af0ea493582"
+    },
+    {
+      "bytes": 8860,
+      "path": "evidence/ym_shift.json",
+      "sha256": "0b88d2fb2b47c64a62fa7b60797a7053ac4455322e9334f7c753d827d507e4de"
+    },
+    {
+      "bytes": 176,
+      "path": "figures/RENDER.json",
+      "sha256": "c9be489a7c72b628f5a2ecc650cb49438edc05283eda7a6827234a53f28ba2bc"
+    },
+    {
+      "bytes": 138033,
+      "path": "figures/sawtooth_and_lift.png",
+      "sha256": "beb9df60938bf20fcb7e57b9c1c2323dc8c2be0940820a535f3f0b3eb7fd1227"
+    },
+    {
+      "bytes": 74577,
+      "path": "figures/sawtooth_and_lift.svg",
+      "sha256": "3aa9d30b5deb50fd77db2779a72ed76137a978effb343e681765f5ab5cebc455"
+    },
+    {
+      "bytes": 2838,
+      "path": "MASTER_CHARTER.md",
+      "sha256": "2773987e9c5fd95c5816765392ca6fbd50ae2dc2c823c4617ea86bc3453bfeaa"
+    },
+    {
+      "bytes": 11517,
+      "path": "MASTER_STATE.md",
+      "sha256": "da92dc3fda7a53733b506a313760688bf5d092fd4ae0001ec78d5576f7c6c25e"
+    },
+    {
+      "bytes": 7195,
+      "path": "PROVENANCE.md",
+      "sha256": "c3a25cfaf4ddd4470abf75043404f0532b253963dfcd7e22c815c34d30ad20a1"
+    },
+    {
+      "bytes": 4356,
+      "path": "README.md",
+      "sha256": "f33eda960148a41bede15f2f26eeed9b007dcc3f58da568b22e52e5e3333c1fb"
+    },
+    {
+      "bytes": 6282,
+      "path": "work/check_closure.py",
+      "sha256": "7ea95fc48e2a1c43233a10753194e8fa2c29b35058f7215853ab5a1797b441b2"
+    },
+    {
+      "bytes": 8359,
+      "path": "work/check_ym_shift.py",
+      "sha256": "5551692583d4443a2278ea892e08b4639ba8f2310ec6667d1b685c7d9da55a8d"
+    },
+    {
+      "bytes": 2524,
+      "path": "work/draw_closure.py",
+      "sha256": "c3cefb43b6f101011c5b4a294225f968004155bff239545cb9a00bbc38576840"
+    },
+    {
+      "bytes": 3590,
+      "path": "work/package_packet.py",
+      "sha256": "868e08290cffdeb50f38b9a84c7e31a72c8300256a0007a52d57efa384955acd"
+    }
+  ],
+  "schema": "closure-master-07-file-manifest-v1"
+}

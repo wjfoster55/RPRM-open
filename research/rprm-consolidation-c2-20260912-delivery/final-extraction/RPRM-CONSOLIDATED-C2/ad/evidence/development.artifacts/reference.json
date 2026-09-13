@@ -1,0 +1,2511 @@
+{
+  "case_sha256": "27c37987d9842bff4dd32127241e3dff718b9354af26462877463c6950208bc2",
+  "counts": {
+    "bags": 126,
+    "equal_bags": 49
+  },
+  "evidence_grade": "development",
+  "fixtures": {
+    "base": {
+      "direct_pair": [
+        13,
+        13
+      ],
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        13,
+        13
+      ],
+      "values": [
+        5,
+        8
+      ]
+    },
+    "boolean": {
+      "status": "ADMISSION_ERROR"
+    },
+    "cancellation": {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": [
+        -1,
+        -1,
+        1,
+        1
+      ]
+    },
+    "changed": {
+      "direct_pair": [
+        10,
+        5
+      ],
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        10,
+        5
+      ],
+      "values": [
+        5,
+        5
+      ]
+    },
+    "distinct_change": {
+      "direct_pair": [
+        8,
+        8
+      ],
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        8,
+        8
+      ],
+      "values": [
+        -1,
+        1,
+        8
+      ]
+    },
+    "duplicate_id": {
+      "status": "ADMISSION_ERROR"
+    },
+    "empty": {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": []
+    },
+    "empty_id": {
+      "status": "ADMISSION_ERROR"
+    },
+    "float": {
+      "status": "ADMISSION_ERROR"
+    },
+    "malformed": {
+      "status": "ADMISSION_ERROR"
+    },
+    "missing": {
+      "direct_pair": [
+        13,
+        13
+      ],
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        13,
+        13
+      ],
+      "values": [
+        5,
+        8
+      ]
+    },
+    "null": {
+      "status": "ADMISSION_ERROR"
+    },
+    "out_of_domain": {
+      "status": "ADMISSION_ERROR"
+    },
+    "relabel": {
+      "direct_pair": [
+        13,
+        13
+      ],
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        13,
+        13
+      ],
+      "values": [
+        5,
+        8
+      ]
+    },
+    "reorder": {
+      "direct_pair": [
+        13,
+        13
+      ],
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        13,
+        13
+      ],
+      "values": [
+        8,
+        5
+      ]
+    },
+    "tampered": {
+      "direct_pair": [
+        13,
+        13
+      ],
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        13,
+        13
+      ],
+      "values": [
+        5,
+        8
+      ]
+    },
+    "too_many": {
+      "status": "ADMISSION_ERROR"
+    },
+    "zero_duplicate": {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": [
+        0,
+        0
+      ]
+    }
+  },
+  "native_sql_empty": [
+    null,
+    null
+  ],
+  "rows": [
+    {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "id": "bag-000",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": []
+    },
+    {
+      "direct_pair": [
+        -1,
+        -1
+      ],
+      "id": "bag-001",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        -1,
+        -1
+      ],
+      "values": [
+        -1
+      ]
+    },
+    {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "id": "bag-002",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": [
+        0
+      ]
+    },
+    {
+      "direct_pair": [
+        1,
+        1
+      ],
+      "id": "bag-003",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        1,
+        1
+      ],
+      "values": [
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        5,
+        5
+      ],
+      "id": "bag-004",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        5,
+        5
+      ],
+      "values": [
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        8,
+        8
+      ],
+      "id": "bag-005",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        8,
+        8
+      ],
+      "values": [
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        -2,
+        -1
+      ],
+      "id": "bag-006",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        -2,
+        -1
+      ],
+      "values": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "direct_pair": [
+        -1,
+        -1
+      ],
+      "id": "bag-007",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        -1,
+        -1
+      ],
+      "values": [
+        -1,
+        0
+      ]
+    },
+    {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "id": "bag-008",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": [
+        -1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        4,
+        4
+      ],
+      "id": "bag-009",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        4,
+        4
+      ],
+      "values": [
+        -1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        7,
+        7
+      ],
+      "id": "bag-010",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        7,
+        7
+      ],
+      "values": [
+        -1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "id": "bag-011",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    {
+      "direct_pair": [
+        1,
+        1
+      ],
+      "id": "bag-012",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        1,
+        1
+      ],
+      "values": [
+        0,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        5,
+        5
+      ],
+      "id": "bag-013",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        5,
+        5
+      ],
+      "values": [
+        0,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        8,
+        8
+      ],
+      "id": "bag-014",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        8,
+        8
+      ],
+      "values": [
+        0,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        2,
+        1
+      ],
+      "id": "bag-015",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        2,
+        1
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        6,
+        6
+      ],
+      "id": "bag-016",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        6,
+        6
+      ],
+      "values": [
+        1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        9,
+        9
+      ],
+      "id": "bag-017",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        9,
+        9
+      ],
+      "values": [
+        1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        10,
+        5
+      ],
+      "id": "bag-018",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        10,
+        5
+      ],
+      "values": [
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        13,
+        13
+      ],
+      "id": "bag-019",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        13,
+        13
+      ],
+      "values": [
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        16,
+        8
+      ],
+      "id": "bag-020",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        16,
+        8
+      ],
+      "values": [
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        -3,
+        -1
+      ],
+      "id": "bag-021",
+      "multiplicity_difference": -2,
+      "ok": true,
+      "sql_pair": [
+        -3,
+        -1
+      ],
+      "values": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "direct_pair": [
+        -2,
+        -1
+      ],
+      "id": "bag-022",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        -2,
+        -1
+      ],
+      "values": [
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "direct_pair": [
+        -1,
+        0
+      ],
+      "id": "bag-023",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        -1,
+        0
+      ],
+      "values": [
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        3,
+        4
+      ],
+      "id": "bag-024",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        3,
+        4
+      ],
+      "values": [
+        -1,
+        -1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        6,
+        7
+      ],
+      "id": "bag-025",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        6,
+        7
+      ],
+      "values": [
+        -1,
+        -1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        -1,
+        -1
+      ],
+      "id": "bag-026",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        -1,
+        -1
+      ],
+      "values": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "id": "bag-027",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        4,
+        4
+      ],
+      "id": "bag-028",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        4,
+        4
+      ],
+      "values": [
+        -1,
+        0,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        7,
+        7
+      ],
+      "id": "bag-029",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        7,
+        7
+      ],
+      "values": [
+        -1,
+        0,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        1,
+        0
+      ],
+      "id": "bag-030",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        1,
+        0
+      ],
+      "values": [
+        -1,
+        1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        5,
+        5
+      ],
+      "id": "bag-031",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        5,
+        5
+      ],
+      "values": [
+        -1,
+        1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        8,
+        8
+      ],
+      "id": "bag-032",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        8,
+        8
+      ],
+      "values": [
+        -1,
+        1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        9,
+        4
+      ],
+      "id": "bag-033",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        9,
+        4
+      ],
+      "values": [
+        -1,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        12,
+        12
+      ],
+      "id": "bag-034",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        12,
+        12
+      ],
+      "values": [
+        -1,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        15,
+        7
+      ],
+      "id": "bag-035",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        15,
+        7
+      ],
+      "values": [
+        -1,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "id": "bag-036",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "direct_pair": [
+        1,
+        1
+      ],
+      "id": "bag-037",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        1,
+        1
+      ],
+      "values": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        5,
+        5
+      ],
+      "id": "bag-038",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        5,
+        5
+      ],
+      "values": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        8,
+        8
+      ],
+      "id": "bag-039",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        8,
+        8
+      ],
+      "values": [
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        2,
+        1
+      ],
+      "id": "bag-040",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        2,
+        1
+      ],
+      "values": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        6,
+        6
+      ],
+      "id": "bag-041",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        6,
+        6
+      ],
+      "values": [
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        9,
+        9
+      ],
+      "id": "bag-042",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        9,
+        9
+      ],
+      "values": [
+        0,
+        1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        10,
+        5
+      ],
+      "id": "bag-043",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        10,
+        5
+      ],
+      "values": [
+        0,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        13,
+        13
+      ],
+      "id": "bag-044",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        13,
+        13
+      ],
+      "values": [
+        0,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        16,
+        8
+      ],
+      "id": "bag-045",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        16,
+        8
+      ],
+      "values": [
+        0,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        3,
+        1
+      ],
+      "id": "bag-046",
+      "multiplicity_difference": 2,
+      "ok": true,
+      "sql_pair": [
+        3,
+        1
+      ],
+      "values": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        7,
+        6
+      ],
+      "id": "bag-047",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        7,
+        6
+      ],
+      "values": [
+        1,
+        1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        10,
+        9
+      ],
+      "id": "bag-048",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        10,
+        9
+      ],
+      "values": [
+        1,
+        1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        11,
+        6
+      ],
+      "id": "bag-049",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        11,
+        6
+      ],
+      "values": [
+        1,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        14,
+        14
+      ],
+      "id": "bag-050",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        14,
+        14
+      ],
+      "values": [
+        1,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        17,
+        9
+      ],
+      "id": "bag-051",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        17,
+        9
+      ],
+      "values": [
+        1,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        15,
+        5
+      ],
+      "id": "bag-052",
+      "multiplicity_difference": 10,
+      "ok": true,
+      "sql_pair": [
+        15,
+        5
+      ],
+      "values": [
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        18,
+        13
+      ],
+      "id": "bag-053",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        18,
+        13
+      ],
+      "values": [
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        21,
+        13
+      ],
+      "id": "bag-054",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        21,
+        13
+      ],
+      "values": [
+        5,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        24,
+        8
+      ],
+      "id": "bag-055",
+      "multiplicity_difference": 16,
+      "ok": true,
+      "sql_pair": [
+        24,
+        8
+      ],
+      "values": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        -4,
+        -1
+      ],
+      "id": "bag-056",
+      "multiplicity_difference": -3,
+      "ok": true,
+      "sql_pair": [
+        -4,
+        -1
+      ],
+      "values": [
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "direct_pair": [
+        -3,
+        -1
+      ],
+      "id": "bag-057",
+      "multiplicity_difference": -2,
+      "ok": true,
+      "sql_pair": [
+        -3,
+        -1
+      ],
+      "values": [
+        -1,
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "direct_pair": [
+        -2,
+        0
+      ],
+      "id": "bag-058",
+      "multiplicity_difference": -2,
+      "ok": true,
+      "sql_pair": [
+        -2,
+        0
+      ],
+      "values": [
+        -1,
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        2,
+        4
+      ],
+      "id": "bag-059",
+      "multiplicity_difference": -2,
+      "ok": true,
+      "sql_pair": [
+        2,
+        4
+      ],
+      "values": [
+        -1,
+        -1,
+        -1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        5,
+        7
+      ],
+      "id": "bag-060",
+      "multiplicity_difference": -2,
+      "ok": true,
+      "sql_pair": [
+        5,
+        7
+      ],
+      "values": [
+        -1,
+        -1,
+        -1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        -2,
+        -1
+      ],
+      "id": "bag-061",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        -2,
+        -1
+      ],
+      "values": [
+        -1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "direct_pair": [
+        -1,
+        0
+      ],
+      "id": "bag-062",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        -1,
+        0
+      ],
+      "values": [
+        -1,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        3,
+        4
+      ],
+      "id": "bag-063",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        3,
+        4
+      ],
+      "values": [
+        -1,
+        -1,
+        0,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        6,
+        7
+      ],
+      "id": "bag-064",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        6,
+        7
+      ],
+      "values": [
+        -1,
+        -1,
+        0,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "id": "bag-065",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": [
+        -1,
+        -1,
+        1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        4,
+        5
+      ],
+      "id": "bag-066",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        4,
+        5
+      ],
+      "values": [
+        -1,
+        -1,
+        1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        7,
+        8
+      ],
+      "id": "bag-067",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        7,
+        8
+      ],
+      "values": [
+        -1,
+        -1,
+        1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        8,
+        4
+      ],
+      "id": "bag-068",
+      "multiplicity_difference": 4,
+      "ok": true,
+      "sql_pair": [
+        8,
+        4
+      ],
+      "values": [
+        -1,
+        -1,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        11,
+        12
+      ],
+      "id": "bag-069",
+      "multiplicity_difference": -1,
+      "ok": true,
+      "sql_pair": [
+        11,
+        12
+      ],
+      "values": [
+        -1,
+        -1,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        14,
+        7
+      ],
+      "id": "bag-070",
+      "multiplicity_difference": 7,
+      "ok": true,
+      "sql_pair": [
+        14,
+        7
+      ],
+      "values": [
+        -1,
+        -1,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        -1,
+        -1
+      ],
+      "id": "bag-071",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        -1,
+        -1
+      ],
+      "values": [
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "id": "bag-072",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": [
+        -1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        4,
+        4
+      ],
+      "id": "bag-073",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        4,
+        4
+      ],
+      "values": [
+        -1,
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        7,
+        7
+      ],
+      "id": "bag-074",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        7,
+        7
+      ],
+      "values": [
+        -1,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        1,
+        0
+      ],
+      "id": "bag-075",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        1,
+        0
+      ],
+      "values": [
+        -1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        5,
+        5
+      ],
+      "id": "bag-076",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        5,
+        5
+      ],
+      "values": [
+        -1,
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        8,
+        8
+      ],
+      "id": "bag-077",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        8,
+        8
+      ],
+      "values": [
+        -1,
+        0,
+        1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        9,
+        4
+      ],
+      "id": "bag-078",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        9,
+        4
+      ],
+      "values": [
+        -1,
+        0,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        12,
+        12
+      ],
+      "id": "bag-079",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        12,
+        12
+      ],
+      "values": [
+        -1,
+        0,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        15,
+        7
+      ],
+      "id": "bag-080",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        15,
+        7
+      ],
+      "values": [
+        -1,
+        0,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        2,
+        0
+      ],
+      "id": "bag-081",
+      "multiplicity_difference": 2,
+      "ok": true,
+      "sql_pair": [
+        2,
+        0
+      ],
+      "values": [
+        -1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        6,
+        5
+      ],
+      "id": "bag-082",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        6,
+        5
+      ],
+      "values": [
+        -1,
+        1,
+        1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        9,
+        8
+      ],
+      "id": "bag-083",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        9,
+        8
+      ],
+      "values": [
+        -1,
+        1,
+        1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        10,
+        5
+      ],
+      "id": "bag-084",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        10,
+        5
+      ],
+      "values": [
+        -1,
+        1,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        13,
+        13
+      ],
+      "id": "bag-085",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        13,
+        13
+      ],
+      "values": [
+        -1,
+        1,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        16,
+        8
+      ],
+      "id": "bag-086",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        16,
+        8
+      ],
+      "values": [
+        -1,
+        1,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        14,
+        4
+      ],
+      "id": "bag-087",
+      "multiplicity_difference": 10,
+      "ok": true,
+      "sql_pair": [
+        14,
+        4
+      ],
+      "values": [
+        -1,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        17,
+        12
+      ],
+      "id": "bag-088",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        17,
+        12
+      ],
+      "values": [
+        -1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        20,
+        12
+      ],
+      "id": "bag-089",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        20,
+        12
+      ],
+      "values": [
+        -1,
+        5,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        23,
+        7
+      ],
+      "id": "bag-090",
+      "multiplicity_difference": 16,
+      "ok": true,
+      "sql_pair": [
+        23,
+        7
+      ],
+      "values": [
+        -1,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        0,
+        0
+      ],
+      "id": "bag-091",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        0,
+        0
+      ],
+      "values": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "direct_pair": [
+        1,
+        1
+      ],
+      "id": "bag-092",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        1,
+        1
+      ],
+      "values": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        5,
+        5
+      ],
+      "id": "bag-093",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        5,
+        5
+      ],
+      "values": [
+        0,
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        8,
+        8
+      ],
+      "id": "bag-094",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        8,
+        8
+      ],
+      "values": [
+        0,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        2,
+        1
+      ],
+      "id": "bag-095",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        2,
+        1
+      ],
+      "values": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        6,
+        6
+      ],
+      "id": "bag-096",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        6,
+        6
+      ],
+      "values": [
+        0,
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        9,
+        9
+      ],
+      "id": "bag-097",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        9,
+        9
+      ],
+      "values": [
+        0,
+        0,
+        1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        10,
+        5
+      ],
+      "id": "bag-098",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        10,
+        5
+      ],
+      "values": [
+        0,
+        0,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        13,
+        13
+      ],
+      "id": "bag-099",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        13,
+        13
+      ],
+      "values": [
+        0,
+        0,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        16,
+        8
+      ],
+      "id": "bag-100",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        16,
+        8
+      ],
+      "values": [
+        0,
+        0,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        3,
+        1
+      ],
+      "id": "bag-101",
+      "multiplicity_difference": 2,
+      "ok": true,
+      "sql_pair": [
+        3,
+        1
+      ],
+      "values": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        7,
+        6
+      ],
+      "id": "bag-102",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        7,
+        6
+      ],
+      "values": [
+        0,
+        1,
+        1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        10,
+        9
+      ],
+      "id": "bag-103",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        10,
+        9
+      ],
+      "values": [
+        0,
+        1,
+        1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        11,
+        6
+      ],
+      "id": "bag-104",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        11,
+        6
+      ],
+      "values": [
+        0,
+        1,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        14,
+        14
+      ],
+      "id": "bag-105",
+      "multiplicity_difference": 0,
+      "ok": true,
+      "sql_pair": [
+        14,
+        14
+      ],
+      "values": [
+        0,
+        1,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        17,
+        9
+      ],
+      "id": "bag-106",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        17,
+        9
+      ],
+      "values": [
+        0,
+        1,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        15,
+        5
+      ],
+      "id": "bag-107",
+      "multiplicity_difference": 10,
+      "ok": true,
+      "sql_pair": [
+        15,
+        5
+      ],
+      "values": [
+        0,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        18,
+        13
+      ],
+      "id": "bag-108",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        18,
+        13
+      ],
+      "values": [
+        0,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        21,
+        13
+      ],
+      "id": "bag-109",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        21,
+        13
+      ],
+      "values": [
+        0,
+        5,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        24,
+        8
+      ],
+      "id": "bag-110",
+      "multiplicity_difference": 16,
+      "ok": true,
+      "sql_pair": [
+        24,
+        8
+      ],
+      "values": [
+        0,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        4,
+        1
+      ],
+      "id": "bag-111",
+      "multiplicity_difference": 3,
+      "ok": true,
+      "sql_pair": [
+        4,
+        1
+      ],
+      "values": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "direct_pair": [
+        8,
+        6
+      ],
+      "id": "bag-112",
+      "multiplicity_difference": 2,
+      "ok": true,
+      "sql_pair": [
+        8,
+        6
+      ],
+      "values": [
+        1,
+        1,
+        1,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        11,
+        9
+      ],
+      "id": "bag-113",
+      "multiplicity_difference": 2,
+      "ok": true,
+      "sql_pair": [
+        11,
+        9
+      ],
+      "values": [
+        1,
+        1,
+        1,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        12,
+        6
+      ],
+      "id": "bag-114",
+      "multiplicity_difference": 6,
+      "ok": true,
+      "sql_pair": [
+        12,
+        6
+      ],
+      "values": [
+        1,
+        1,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        15,
+        14
+      ],
+      "id": "bag-115",
+      "multiplicity_difference": 1,
+      "ok": true,
+      "sql_pair": [
+        15,
+        14
+      ],
+      "values": [
+        1,
+        1,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        18,
+        9
+      ],
+      "id": "bag-116",
+      "multiplicity_difference": 9,
+      "ok": true,
+      "sql_pair": [
+        18,
+        9
+      ],
+      "values": [
+        1,
+        1,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        16,
+        6
+      ],
+      "id": "bag-117",
+      "multiplicity_difference": 10,
+      "ok": true,
+      "sql_pair": [
+        16,
+        6
+      ],
+      "values": [
+        1,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        19,
+        14
+      ],
+      "id": "bag-118",
+      "multiplicity_difference": 5,
+      "ok": true,
+      "sql_pair": [
+        19,
+        14
+      ],
+      "values": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        22,
+        14
+      ],
+      "id": "bag-119",
+      "multiplicity_difference": 8,
+      "ok": true,
+      "sql_pair": [
+        22,
+        14
+      ],
+      "values": [
+        1,
+        5,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        25,
+        9
+      ],
+      "id": "bag-120",
+      "multiplicity_difference": 16,
+      "ok": true,
+      "sql_pair": [
+        25,
+        9
+      ],
+      "values": [
+        1,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        20,
+        5
+      ],
+      "id": "bag-121",
+      "multiplicity_difference": 15,
+      "ok": true,
+      "sql_pair": [
+        20,
+        5
+      ],
+      "values": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "direct_pair": [
+        23,
+        13
+      ],
+      "id": "bag-122",
+      "multiplicity_difference": 10,
+      "ok": true,
+      "sql_pair": [
+        23,
+        13
+      ],
+      "values": [
+        5,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        26,
+        13
+      ],
+      "id": "bag-123",
+      "multiplicity_difference": 13,
+      "ok": true,
+      "sql_pair": [
+        26,
+        13
+      ],
+      "values": [
+        5,
+        5,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        29,
+        13
+      ],
+      "id": "bag-124",
+      "multiplicity_difference": 16,
+      "ok": true,
+      "sql_pair": [
+        29,
+        13
+      ],
+      "values": [
+        5,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "direct_pair": [
+        32,
+        8
+      ],
+      "id": "bag-125",
+      "multiplicity_difference": 24,
+      "ok": true,
+      "sql_pair": [
+        32,
+        8
+      ],
+      "values": [
+        8,
+        8,
+        8,
+        8
+      ]
+    }
+  ],
+  "sqlite_version": "3.50.4",
+  "status": "PASS"
+}

@@ -1,0 +1,220 @@
+{
+  "status": "PASS",
+  "evidence_grade": "FINITE_EXHAUSTIVE_FIXTURES",
+  "assertions": 13665,
+  "checks_by_family": {
+    "rank_vs_enumerated_fibers": 256,
+    "complete_reply_fibers": 2187,
+    "all_four_or_more_separate": 64,
+    "triple_census": 1,
+    "ordered_basis_census": 1,
+    "anchored_replacement": 252,
+    "calibrated_composition": 1344,
+    "primal_quartet_exchange": 168,
+    "primal_expansion": 168,
+    "two_of_three_on_four_states": 3,
+    "primal_coset_iff": 336,
+    "primal_degenerate_hostile": 84,
+    "primal_inside_span_hostile": 84,
+    "anchor_transport": 512,
+    "character_transport": 3584,
+    "forgotten_anchor_hostile": 8,
+    "hamming_code": 1,
+    "simplex_code": 2,
+    "simplex_hamming_duality": 1,
+    "dependent_triples_are_hamming_words": 1,
+    "single_error_decode": 240,
+    "double_error_alias_hostile": 336,
+    "extended_code": 1,
+    "extended_single_error_location": 128,
+    "extended_single_and_none_distinct": 16,
+    "extended_double_detection": 448,
+    "double_error_fibers": 2,
+    "future_handoff_hostile": 1,
+    "enabledness_handoff_hostile": 1,
+    "unproved_newcomer_grammar_hostile": 1,
+    "translation_stabilizer": 256,
+    "nonaffine_symmetry_hostile": 1,
+    "affine_stabilizer_with_empty_control": 353,
+    "affine_rechart": 2824
+  },
+  "triple_census": {
+    "separating": 28,
+    "dependent": 7,
+    "ordered_bases": 168
+  },
+  "dependent_triples": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      1,
+      4,
+      5
+    ],
+    [
+      1,
+      6,
+      7
+    ],
+    [
+      2,
+      4,
+      6
+    ],
+    [
+      2,
+      5,
+      7
+    ],
+    [
+      3,
+      4,
+      7
+    ],
+    [
+      3,
+      5,
+      6
+    ]
+  ],
+  "hamming_codewords": 16,
+  "simplex_codewords": 8,
+  "extended_double_error_classes": {
+    "3": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "2": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "5": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        4,
+        7
+      ]
+    ],
+    "4": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "7": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        6,
+        7
+      ]
+    ],
+    "6": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "1": [
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ]
+    ]
+  },
+  "boolean_function_stabilizer_sizes": {
+    "8": 2,
+    "1": 184,
+    "2": 56,
+    "4": 14
+  },
+  "limits": "Finite checks of the written contracts; no general soundness, SAT performance, or P-versus-NP claim."
+}

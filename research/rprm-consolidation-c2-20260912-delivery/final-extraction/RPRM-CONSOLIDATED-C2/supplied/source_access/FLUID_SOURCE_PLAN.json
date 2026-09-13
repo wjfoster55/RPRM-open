@@ -1,0 +1,59 @@
+{
+  "repository": "wjfoster55/rprm-fluid-adjacency",
+  "full_source_embedded": false,
+  "acquisition_order": [
+    "existing authorized local checkout/snapshot at pinned revision",
+    "approved read-only GitHub retrieval at exact pins"
+  ],
+  "direct_container_copy_attempt": {
+    "result": "FAILED_DNS",
+    "message": "Temporary failure in name resolution when retrieving pinned codeload ZIP; connector metadata succeeded. Not evidence that Codex/local source access is unavailable."
+  },
+  "acquisition_rules": [
+    "Read AGENTS.md only where actually applicable in the authorized checkout.",
+    "Retrieve the repository tree at each pin to confirm paths and source dependencies.",
+    "Hash each acquired file and distinguish missing files from untested claims.",
+    "Do not reconstruct missing historical result rows or call new output historical.",
+    "If one lane is access-blocked, return its partial/source-limited closeout and complete the other lanes."
+  ],
+  "pins": [
+    {
+      "pr": 12,
+      "sha": "91d74b77bde86251468f0d3758f8e84125792677",
+      "paths": [
+        "noita_lab/design/DYNAMIC_FRONTIER.md",
+        "noita_lab/design/WITNESSED_INVALIDATION.md",
+        "noita_lab/design/SUFFICIENCY_TEST.md",
+        "noita_lab/design/RPRM_GENERAL_MECHANISM.md",
+        "noita_lab/experiments/dynamic_frontier.py",
+        "noita_lab/experiments/dynamic_frontier_sim.js",
+        "noita_lab/experiments/truth_solver.py",
+        "noita_lab/experiments/witnessed_invalidation.py",
+        "noita_lab/experiments/test_cache_invalidation.js",
+        "noita_lab/js/constants.js",
+        "noita_lab/js/grid.js",
+        "noita_lab/js/scenarios.js",
+        "noita_lab/js/models.js"
+      ]
+    },
+    {
+      "pr": 13,
+      "sha": "7e3a6603c8f3c036f9f59f519b069cfc02b7825f",
+      "paths": [
+        "broadphase_lab/README.md",
+        "broadphase_lab/artifacts/broadphase_results.json",
+        "broadphase_lab/run_broadphase_experiment.py",
+        "broadphase_lab/certificate.py",
+        "broadphase_lab/sim.py",
+        "broadphase_lab/scenes.py",
+        "broadphase_lab/diagnose_fp.py"
+      ]
+    }
+  ],
+  "url_templates": {
+    "tree": "https://api.github.com/repos/wjfoster55/rprm-fluid-adjacency/git/trees/{sha}?recursive=1",
+    "raw": "https://raw.githubusercontent.com/wjfoster55/rprm-fluid-adjacency/{sha}/{path}",
+    "archive": "https://codeload.github.com/wjfoster55/rprm-fluid-adjacency/zip/{sha}"
+  },
+  "scope": "Source-assisted closeout; this list is a retrieval plan, not a claim that every listed optional source was freshly copied or all dependency paths were inspected in this handoff."
+}

@@ -1,0 +1,212 @@
+{
+  "implementation_sha256": "705b46a3a7756542af164cdf928fc094feaccb51fb7c49d8922521ccbc8f9e5c",
+  "specification_sha256": "8ca346258d76a9ee607f07832836d7441c5c730edae71f8c0d72dce63957f2b2",
+  "status": "PASS",
+  "evidence_grade": "FINITE_EXACT_CONNECTION_CHECKS",
+  "assertions": 34936,
+  "checks": {
+    "rational_stack": 8191,
+    "incremental_winding_phase": 8191,
+    "canonical_winding_phase": 8191,
+    "compressed_next_bit": 8190,
+    "all_sum_values": 13,
+    "complete_binomial_fiber": 91,
+    "phase_forgets_count": 13,
+    "phase_total_hostile": 1,
+    "sum_without_n_mean_hostile": 1,
+    "order_receiver_hostile": 1,
+    "independent_moore_vs_gcd_partition": 6,
+    "full_reopen": 360,
+    "original_peek_decodes": 360,
+    "quotient_update": 840,
+    "grow_then_coarsen": 1,
+    "mixed_radix_refinement": 180,
+    "migration_inverse": 180,
+    "retired_future_coarsening": 120,
+    "stale_operator_quotient_hostile": 1,
+    "terminal_identity_fold_noncompositional": 1,
+    "identity_fold_explicit_hostile": 1,
+    "same_coordinate_supports": 1,
+    "joint_sum_hostile": 1,
+    "independence_vs_shared_source": 1
+  },
+  "stack_histograms": [
+    {
+      "n": 0,
+      "histories": 1,
+      "sum_classes": 1,
+      "fixed_n_minimum_bits": 0,
+      "phase_classes": 1,
+      "max_history_fiber": 1
+    },
+    {
+      "n": 1,
+      "histories": 2,
+      "sum_classes": 2,
+      "fixed_n_minimum_bits": 1,
+      "phase_classes": 1,
+      "max_history_fiber": 1
+    },
+    {
+      "n": 2,
+      "histories": 4,
+      "sum_classes": 3,
+      "fixed_n_minimum_bits": 2,
+      "phase_classes": 1,
+      "max_history_fiber": 2
+    },
+    {
+      "n": 3,
+      "histories": 8,
+      "sum_classes": 4,
+      "fixed_n_minimum_bits": 2,
+      "phase_classes": 1,
+      "max_history_fiber": 3
+    },
+    {
+      "n": 4,
+      "histories": 16,
+      "sum_classes": 5,
+      "fixed_n_minimum_bits": 3,
+      "phase_classes": 1,
+      "max_history_fiber": 6
+    },
+    {
+      "n": 5,
+      "histories": 32,
+      "sum_classes": 6,
+      "fixed_n_minimum_bits": 3,
+      "phase_classes": 1,
+      "max_history_fiber": 10
+    },
+    {
+      "n": 6,
+      "histories": 64,
+      "sum_classes": 7,
+      "fixed_n_minimum_bits": 3,
+      "phase_classes": 1,
+      "max_history_fiber": 20
+    },
+    {
+      "n": 7,
+      "histories": 128,
+      "sum_classes": 8,
+      "fixed_n_minimum_bits": 3,
+      "phase_classes": 1,
+      "max_history_fiber": 35
+    },
+    {
+      "n": 8,
+      "histories": 256,
+      "sum_classes": 9,
+      "fixed_n_minimum_bits": 4,
+      "phase_classes": 1,
+      "max_history_fiber": 70
+    },
+    {
+      "n": 9,
+      "histories": 512,
+      "sum_classes": 10,
+      "fixed_n_minimum_bits": 4,
+      "phase_classes": 1,
+      "max_history_fiber": 126
+    },
+    {
+      "n": 10,
+      "histories": 1024,
+      "sum_classes": 11,
+      "fixed_n_minimum_bits": 4,
+      "phase_classes": 1,
+      "max_history_fiber": 252
+    },
+    {
+      "n": 11,
+      "histories": 2048,
+      "sum_classes": 12,
+      "fixed_n_minimum_bits": 4,
+      "phase_classes": 1,
+      "max_history_fiber": 462
+    },
+    {
+      "n": 12,
+      "histories": 4096,
+      "sum_classes": 13,
+      "fixed_n_minimum_bits": 4,
+      "phase_classes": 1,
+      "max_history_fiber": 924
+    }
+  ],
+  "operator_stages": [
+    {
+      "actions": [
+        12
+      ],
+      "g": 12,
+      "classes": 5,
+      "minimum_fixed_bits": 3,
+      "source_fiber": 12,
+      "moore_iterations": 1
+    },
+    {
+      "actions": [
+        12,
+        18
+      ],
+      "g": 6,
+      "classes": 10,
+      "minimum_fixed_bits": 4,
+      "source_fiber": 6,
+      "moore_iterations": 2
+    },
+    {
+      "actions": [
+        12,
+        18,
+        20
+      ],
+      "g": 2,
+      "classes": 30,
+      "minimum_fixed_bits": 5,
+      "source_fiber": 2,
+      "moore_iterations": 4
+    },
+    {
+      "actions": [
+        12,
+        18,
+        20,
+        25
+      ],
+      "g": 1,
+      "classes": 60,
+      "minimum_fixed_bits": 6,
+      "source_fiber": 1,
+      "moore_iterations": 5
+    },
+    {
+      "actions": [
+        12,
+        18,
+        20
+      ],
+      "g": 2,
+      "classes": 30,
+      "minimum_fixed_bits": 5,
+      "source_fiber": 2,
+      "moore_iterations": 4
+    },
+    {
+      "actions": [
+        12
+      ],
+      "g": 12,
+      "classes": 5,
+      "minimum_fixed_bits": 3,
+      "source_fiber": 12,
+      "moore_iterations": 1
+    }
+  ],
+  "boolean_identity_update_tables_tested": 16,
+  "valid_boolean_identity_update_tables": 0,
+  "limits": "Declared finite scopes only; source histories remain distinct; no general complexity theorem."
+}

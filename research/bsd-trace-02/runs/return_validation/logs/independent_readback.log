@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_AGGREGATION",
+  "rows": 512,
+  "distinct_roots": 256,
+  "trace_unit_multiple_mod125": 100,
+  "first_five_coefficients_if_scalar": [
+    0,
+    30,
+    36,
+    57,
+    120
+  ],
+  "output": "C:\\github\\RPRM-open\\research\\bsd-trace-02\\runs\\return_validation\\evidence\\trace_readback.json"
+}

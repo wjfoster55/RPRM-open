@@ -1,0 +1,60 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"schema\": \"rprm-context-expansion/v1\",\n  \"packet_id\": \"packet:d96316463e66a528f24574b05076c0ddd39c917a41d6323e3e30e30b0dbbf57a\",\n  \"packet_snapshot_root\": \"944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e\",\n  \"current_snapshot_root\": \"944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e\",\n  \"snapshot_drift\": false,\n  \"handle\": {\n    \"handle_id\": \"handle:74b4313e57d52c4dafb20f3dc1684c20b98232d88cc29998be4933dadcd1f8eb\",\n    \"reason\": \"PAYLOAD_BUDGET\",\n    \"record_id\": \"occurrence:bc19f4ff7a97c118ff7cf768fd920b89d8d8865e68700476326b5e85b0c4f205\",\n    \"snapshot_root\": \"944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e\"\n  },\n  \"member\": {\n    \"member_id\": \"member:72075bcd8fe4ee1b93464d5b9b9ceb701b25f5349eeb3f46421621253fc51b37\",\n    \"record_id\": \"occurrence:bc19f4ff7a97c118ff7cf768fd920b89d8d8865e68700476326b5e85b0c4f205\",\n    \"record_kind\": \"OBSERVATION\",\n    \"title\": \"Finite research results retained — part 16\",\n    \"retrieval_rank\": null,\n    \"relation_distance\": 0,\n    \"inclusion_reasons\": [\n      \"EXPANSION:PAYLOAD_BUDGET\"\n    ],\n    \"excerpt_kind\": \"SOURCE_SLICE\",\n    \"source_encoding\": \"UTF-8\",\n    \"excerpt\": \"  `r_(O+D) mod11=1`.  The full delta is Folded to the two-state receiver\\r\\n  action `10^D mod11=10`; transporting the future lane backward gives\\r\\n  `r_O mod11=10`, and CRT reconstructs remainder 54 and the exact width-18\\r\\n  block `701298701298701298`.  Neither huge address, delta, length, quotient\\r\\n  integer, nor skipped prefix is materialized.\\r\\n- Audit 83's modular components remain individually lossy: mod seven has\\r\\n  eleven-state fibers and 385 unresolved pairs; shifted mod eleven has\\r\\n  seven-state fibers and 231 unresolved pairs.  Their candidate traces are\\r\\n  `77->11->1` and `77->7->1`.  Omitting the action leaves two strong\\r\\n  `(remainder,action)` states in every one of 77 observation cells; seven\\r\\n  fixed-point cells retain one past remainder and seventy retain two.  The\\r\\n  action is complete for the digit receiver but recovers neither the raw\\r\\n  delta nor its compact expression.\\r\\n- Audit 83 passes 22,176 bounded modular joins and 133,056 literal window\\r\\n  comparisons.  Its next/previous-digit operations have backward fiber ONE.\\r\\n  A one-digit output has ten correct current classes but 77 future-stable\\r\\n  classes and cannot update itself.  A `(first digit,future mod11)` pair is\\r\\n  jointly sufficient only by hiding full mod-77 compilation in the first\\r\\n  port.  The factorization is a lazy coordinate decomposition, not lost\\r\\n  information, entropy, randomness, measured speedup, or generic compression.\\r\\n- Audit 84 closes Audit83's named three-lane successor.  For\\r\\n  `Q_L=floor(10*10^L/1001)`, `1001=7*11*13`, and the same compact anchor\\r\\n  `O=10^(10^100)`, it reads mod seven at `O`, mod eleven at\\r\\n  `O+10^(10^50)+1`, and mod thirteen at `O+10^(10^40)+3`.  The shifted\\r\\n  observations are both `1`, and both action values print as `10`, but the\\r\\n  typed inverses are `10 mod11` and `4 mod13`.  Aligning them gives residues\\r\\n  `(5,10,4)`, CRT remainder 901, and the exact width-24 block\\r\\n  `900099900099900099900099` without materializing either delta, the anchor,\\r\\n  length, quotient integer, or skipped prefix.\\r\\n- Eve\",\n    \"excerpt_utf8_bytes\": 2048,\n    \"excerpt_sha256\": \"9347720cfb0d2e2a5547e9a8fabf5f74682def72cf11abf4678d9030997d5e41\",\n    \"truncated_before\": false,\n    \"truncated_after\": true,\n    \"source_receipt\": {\n      \"occurrence_id\": \"occurrence:bc19f4ff7a97c118ff7cf768fd920b89d8d8865e68700476326b5e85b0c4f205\",\n      \"event_id\": \"event:6dfc6f9a262220ceeaff9bfd790b2163b8aaf5bf3e95bc3e5a7562008ab4326b\",\n      \"blob_sha256\": \"a427d9ff423c16a2ddc46ce716d50b58ce0fc7d53beda6c413ca6bbdc7fb9a82\",\n      \"byte_length\": 168354,\n      \"media_type\": \"text/markdown\",\n      \"source_locator\": \"C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/atlas/CLAIM_LEDGER.md\",\n      \"source_byte_start\": 63640,\n      \"source_byte_end\": 67712,\n      \"slice_sha256\": \"c53dbb2bf214cf8ec1857e533fd9c3c46e48d8c240cce1f0bee0a9abeb39bb3d\",\n      \"authority\": \"FROZEN_LOCAL_BYTES\",\n      \"observed_at\": \"2026-08-30T05:33:53.285561Z\",\n      \"recorded_at\": \"2026-08-30T23:59:00.000000Z\",\n      \"valid_from\": null,\n      \"valid_to\": null\n    },\n    \"exact_source_byte_start\": 63640,\n    \"exact_source_byte_end\": 65688\n  },\n  \"payload_bytes\": 2048,\n  \"claim_ceiling\": \"Expansion reopens exact retained content; it does not establish source truth or packet sufficiency.\"\n}"
+    }
+  ],
+  "structuredContent": {
+    "schema": "rprm-context-expansion/v1",
+    "packet_id": "packet:d96316463e66a528f24574b05076c0ddd39c917a41d6323e3e30e30b0dbbf57a",
+    "packet_snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+    "current_snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+    "snapshot_drift": false,
+    "handle": {
+      "handle_id": "handle:74b4313e57d52c4dafb20f3dc1684c20b98232d88cc29998be4933dadcd1f8eb",
+      "reason": "PAYLOAD_BUDGET",
+      "record_id": "occurrence:bc19f4ff7a97c118ff7cf768fd920b89d8d8865e68700476326b5e85b0c4f205",
+      "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e"
+    },
+    "member": {
+      "member_id": "member:72075bcd8fe4ee1b93464d5b9b9ceb701b25f5349eeb3f46421621253fc51b37",
+      "record_id": "occurrence:bc19f4ff7a97c118ff7cf768fd920b89d8d8865e68700476326b5e85b0c4f205",
+      "record_kind": "OBSERVATION",
+      "title": "Finite research results retained — part 16",
+      "retrieval_rank": null,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "EXPANSION:PAYLOAD_BUDGET"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "  `r_(O+D) mod11=1`.  The full delta is Folded to the two-state receiver\r\n  action `10^D mod11=10`; transporting the future lane backward gives\r\n  `r_O mod11=10`, and CRT reconstructs remainder 54 and the exact width-18\r\n  block `701298701298701298`.  Neither huge address, delta, length, quotient\r\n  integer, nor skipped prefix is materialized.\r\n- Audit 83's modular components remain individually lossy: mod seven has\r\n  eleven-state fibers and 385 unresolved pairs; shifted mod eleven has\r\n  seven-state fibers and 231 unresolved pairs.  Their candidate traces are\r\n  `77->11->1` and `77->7->1`.  Omitting the action leaves two strong\r\n  `(remainder,action)` states in every one of 77 observation cells; seven\r\n  fixed-point cells retain one past remainder and seventy retain two.  The\r\n  action is complete for the digit receiver but recovers neither the raw\r\n  delta nor its compact expression.\r\n- Audit 83 passes 22,176 bounded modular joins and 133,056 literal window\r\n  comparisons.  Its next/previous-digit operations have backward fiber ONE.\r\n  A one-digit output has ten correct current classes but 77 future-stable\r\n  classes and cannot update itself.  A `(first digit,future mod11)` pair is\r\n  jointly sufficient only by hiding full mod-77 compilation in the first\r\n  port.  The factorization is a lazy coordinate decomposition, not lost\r\n  information, entropy, randomness, measured speedup, or generic compression.\r\n- Audit 84 closes Audit83's named three-lane successor.  For\r\n  `Q_L=floor(10*10^L/1001)`, `1001=7*11*13`, and the same compact anchor\r\n  `O=10^(10^100)`, it reads mod seven at `O`, mod eleven at\r\n  `O+10^(10^50)+1`, and mod thirteen at `O+10^(10^40)+3`.  The shifted\r\n  observations are both `1`, and both action values print as `10`, but the\r\n  typed inverses are `10 mod11` and `4 mod13`.  Aligning them gives residues\r\n  `(5,10,4)`, CRT remainder 901, and the exact width-24 block\r\n  `900099900099900099900099` without materializing either delta, the anchor,\r\n  length, quotient integer, or skipped prefix.\r\n- Eve",
+      "excerpt_utf8_bytes": 2048,
+      "excerpt_sha256": "9347720cfb0d2e2a5547e9a8fabf5f74682def72cf11abf4678d9030997d5e41",
+      "truncated_before": false,
+      "truncated_after": true,
+      "source_receipt": {
+        "occurrence_id": "occurrence:bc19f4ff7a97c118ff7cf768fd920b89d8d8865e68700476326b5e85b0c4f205",
+        "event_id": "event:6dfc6f9a262220ceeaff9bfd790b2163b8aaf5bf3e95bc3e5a7562008ab4326b",
+        "blob_sha256": "a427d9ff423c16a2ddc46ce716d50b58ce0fc7d53beda6c413ca6bbdc7fb9a82",
+        "byte_length": 168354,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/atlas/CLAIM_LEDGER.md",
+        "source_byte_start": 63640,
+        "source_byte_end": 67712,
+        "slice_sha256": "c53dbb2bf214cf8ec1857e533fd9c3c46e48d8c240cce1f0bee0a9abeb39bb3d",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T05:33:53.285561Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 63640,
+      "exact_source_byte_end": 65688
+    },
+    "payload_bytes": 2048,
+    "claim_ceiling": "Expansion reopens exact retained content; it does not establish source truth or packet sufficiency."
+  },
+  "isError": false
+}

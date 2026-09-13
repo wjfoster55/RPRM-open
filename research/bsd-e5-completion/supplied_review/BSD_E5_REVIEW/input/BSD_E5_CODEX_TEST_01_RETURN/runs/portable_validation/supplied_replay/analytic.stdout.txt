@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "conclusion": "L(E,1)=0 and L'(E,1)>65/100; analytic order exactly 1.",
+  "lower_bound": {
+    "numerator": "615556405007957768183",
+    "denominator": "937494780448358006784",
+    "float_for_display_only": 0.6565971542940934
+  },
+  "illustration": {
+    "status": "NOT_RUN",
+    "reason": "mpmath unavailable; exact certificate unaffected"
+  }
+}

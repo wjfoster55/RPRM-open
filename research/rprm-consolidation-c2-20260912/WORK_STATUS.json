@@ -1,0 +1,99 @@
+{
+  "coordinator": "current Codex task",
+  "execution_order": [
+    "F1",
+    "AD1",
+    "YM1"
+  ],
+  "source_workspace_revision": "9b5e132ee36334311f125027c2a719563890a3c1",
+  "local_activity_qualification": "Bounded local and visible task checks only; no claim of universal external-worker visibility.",
+  "F1": {
+    "state": "complete_with_limitations",
+    "sources": [
+      "91d74b77bde86251468f0d3758f8e84125792677",
+      "7e3a6603c8f3c036f9f59f519b069cfc02b7825f"
+    ],
+    "checks": {
+      "new": "two-state B replay and one three-disk hostile replay; saved aggregate arithmetic",
+      "not_run": "full dynamic/broadphase/invalidation panels, static oracle, production runtime"
+    },
+    "remaining_obligation": "None for F1; absent raw panel rows limit stronger historical verification. Restricted soundness/performance are separate open research, not active tasks.",
+    "result": "Original summary collision, certification-rate advantage, timer reduction and dominant-cost null preserved; all-World broadphase soundness refuted",
+    "evidence_paths": [
+      "fluid/F1_CHECK.json",
+      "fluid/review/broadphase_hostile_result.json",
+      "fluid/F1_CLAIM_LEDGER.md"
+    ],
+    "more_work_needed": false
+  },
+  "AD1": {
+    "state": "complete",
+    "source_identity": "supplied/tasks/AD1_SCOPED_CLAIM.md; supplied/sources/ad and accepted/C1_CARRY_FORWARD.md; ad/CASE_FREEZE.json",
+    "checks": {
+      "executed": "30 named cases +126 aggregate bags, both arms; direct SQLite/Python reference; output guards",
+      "not_run": "frozen pilot/LLM sessions and closed C1/SAT suites"
+    },
+    "result": "Functional scoped reuse demonstrated; conventional tie; explicit metadata larger in tested serialization",
+    "evidence_paths": [
+      "ad/AD1_RESULT.md",
+      "ad/evidence/development.json",
+      "ad/evidence/development.artifacts/reference.json"
+    ],
+    "remaining_obligation": "None for AD1; broader AD benefit/acquisition and authenticated import outside this specimen",
+    "more_work_needed": false
+  },
+  "YM1": {
+    "state": "complete",
+    "source_identity": "yang_mills/PRIMARY_REFERENCES.md and PRIMARY_REFERENCE_IDENTITIES.json; supplied/sources/yang_mills calibration preserved",
+    "checks": {
+      "executed": "Five exact rational phase states; four direct field sampling cases; four box-spacing entries; independent bounded math/physics review",
+      "not_run": "old cube/photon replay, non-Abelian interacting evolution, quantum interacting spectrum, continuum mass-gap proof"
+    },
+    "result": "Maxwell energy summary falsifier and exact signed-transfer repair; complete restricted fibers and analytic 1/L negative control",
+    "evidence_paths": [
+      "yang_mills/YM1_BRIDGE.md",
+      "yang_mills/YM1_CHECK.json",
+      "yang_mills/review/YM1_MATH_PHYSICS_REVIEW.md"
+    ],
+    "remaining_obligation": "None for YM1; interacting SU(2) energy-transfer closure is the single stated next physical obligation, not launched",
+    "more_work_needed": false
+  },
+  "closed_preserved": {
+    "C1": "ACCEPTED_WITHIN_SCOPE",
+    "SAT02_M1": "ACCEPTED_WITHIN_LOCAL_SCOPE; 6 RUN / 4 NOT_RUN",
+    "Lind_Reichardt": "CLOSED",
+    "AD_pilot": "14/16 versus 14/16 frozen"
+  },
+  "workers": [
+    {
+      "name": "f1_broadphase_review",
+      "output": "fluid/review",
+      "state": "completed",
+      "disposition": "bounded source review and single hostile reproducer delivered"
+    },
+    {
+      "name": "ad1_specimen",
+      "output": "ad",
+      "state": "completed",
+      "disposition": "development PASS and return delivered"
+    },
+    {
+      "name": "ad1_specimen/ad1_reference_review",
+      "output": "read-only; testimony recorded in ad/AD1_RESULT.md",
+      "state": "completed",
+      "disposition": "ACCEPT within frozen specimen scope"
+    },
+    {
+      "name": "ym1_math_review",
+      "output": "yang_mills/review",
+      "state": "completed",
+      "disposition": "PASS; minor citation clarification incorporated"
+    }
+  ],
+  "delivery": {
+    "state": "payload completed; final exported validation recorded externally",
+    "entrypoint": "verify_delivery.py",
+    "final_evidence": "Separate final-evidence ZIP with FINAL_REPLAY.json and EXPORT_IDENTITY.json; no circular claim that this payload includes its own final ZIP digest",
+    "closed_suite_replays": false
+  }
+}

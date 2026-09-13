@@ -1,0 +1,44 @@
+[
+  {
+    "file": "GENERATOR_PROOF.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\GENERATOR_PROOF.md",
+    "sha256": "9c6b26a14051eda856bf79094257bd30d0e9382528b5e208e79ab33c168c9b15",
+    "status": "ATTRIBUTED_UNCHANGED_PRIOR_WRITTEN_PROOF"
+  },
+  {
+    "file": "EXPLICIT_IDENTITY_TARGET.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\EXPLICIT_IDENTITY_TARGET.md",
+    "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753",
+    "status": "ATTRIBUTED_UNCHANGED_PRIOR_WRITTEN_PROOF"
+  },
+  {
+    "file": "TRACE_FORMULA_AUDIT_02.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-trace-02\\TRACE_FORMULA_AUDIT.md",
+    "sha256": "ae07ad27e55879353e391ca54bc5aa26cbd492aa3c75e30abf9107f1d58db00a",
+    "status": "ATTRIBUTED_UNCHANGED_PRIOR_WRITTEN_PROOF"
+  },
+  {
+    "file": "TRACE_CALCULATION_02.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-trace-02\\TRACE_CALCULATION.md",
+    "sha256": "f991173f730bde04b40d1c8c82dba5ff7fde11ea370915454118a0f882f1937d",
+    "status": "ATTRIBUTED_UNCHANGED_PRIOR_WRITTEN_PROOF"
+  },
+  {
+    "file": "LOCAL_ANALYTIC_INPUTS.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\LOCAL_ANALYTIC_INPUTS.md",
+    "sha256": "b82a74927703053eb43930d589de1e7d79360df9261ca02968e8bae91b61bdcc",
+    "status": "ATTRIBUTED_UNCHANGED_PRIOR_WRITTEN_PROOF"
+  },
+  {
+    "file": "ARITHMETIC_PROOF.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-rank-two-01\\ARITHMETIC_PROOF.md",
+    "sha256": "3d3e7fbb43fae46d4759a0bf48f705b82d4552b06744b8b9f6d70d8e673de243",
+    "status": "ATTRIBUTED_UNCHANGED_PRIOR_WRITTEN_PROOF"
+  },
+  {
+    "file": "EXACT_IDENTITY_THEOREMS.md",
+    "source": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\EXACT_IDENTITY_THEOREMS.md",
+    "sha256": "2cf701bef7b760237b12dbf2d36436913b5cb2bdcdcb26e564299957836ed77e",
+    "status": "ATTRIBUTED_UNCHANGED_PRIOR_WRITTEN_PROOF"
+  }
+]

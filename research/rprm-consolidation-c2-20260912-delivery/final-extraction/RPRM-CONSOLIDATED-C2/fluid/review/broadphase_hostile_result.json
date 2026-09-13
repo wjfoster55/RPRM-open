@@ -1,0 +1,139 @@
+{
+  "study": "one fixed hostile case; not a benchmark campaign",
+  "source_commit": "7e3a6603c8f3c036f9f59f519b069cfc02b7825f",
+  "sources": {
+    "sim": {
+      "path_relative_to_fluid": "sources/PR13/broadphase_lab/sim.py",
+      "sha256": "575102185dbf9e1291fb9835c1c107421f9720cd949c0ae87ce4e8f14efdf982"
+    },
+    "certificate": {
+      "path_relative_to_fluid": "sources/PR13/broadphase_lab/certificate.py",
+      "sha256": "6aef43252a81f2cc62cd05bf4692e4254b1fc3d43f7b575ed5047caec4927d8a"
+    }
+  },
+  "reproducer_sha256": "2b01cd62d962f986dccdaf6c6aa2aa54a6c5875150f872a4094d9c1761a0d06e",
+  "runtime": {
+    "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5"
+  },
+  "inputs": {
+    "W": 20.0,
+    "H": 20.0,
+    "gravity": 9.8,
+    "dt": 0.016666666666666666,
+    "friction": 0.0,
+    "restitution": 0.0,
+    "walls": [],
+    "positions": [
+      [
+        5.0,
+        5.0
+      ],
+      [
+        5.1,
+        5.0
+      ],
+      [
+        5.0,
+        6.028
+      ]
+    ],
+    "velocities": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "radii": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "density": 1.0,
+    "initial_angular_velocities": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "island": [
+      0,
+      1,
+      2
+    ],
+    "ca_sleep_threshold": 1.6
+  },
+  "before_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "before_gaps": {
+    "0,1": -0.9000000000000004,
+    "0,2": 0.02799999999999958,
+    "1,2": 0.032852361182371004
+  },
+  "verdicts": {
+    "addition_guard": true,
+    "persistence_guard": true,
+    "P": true,
+    "ca_sleeping_tau_1_6": true
+  },
+  "after_pairs": [
+    [
+      0,
+      1
+    ]
+  ],
+  "after_gaps": {
+    "0,1": -0.7210000000000001,
+    "0,2": 0.03188868101166764,
+    "1,2": 0.04532016626486213
+  },
+  "after_positions": [
+    [
+      4.9105,
+      4.997277777777778
+    ],
+    [
+      5.1895,
+      4.997277777777778
+    ],
+    [
+      5.0,
+      6.025277777777777
+    ]
+  ],
+  "after_velocities": [
+    [
+      -5.370000000000002,
+      -0.16333333333333333
+    ],
+    [
+      5.370000000000002,
+      -0.16333333333333333
+    ],
+    [
+      0.0,
+      -0.16333333333333333
+    ]
+  ],
+  "receiver_changed": true,
+  "both_methods_falsely_certify": true,
+  "expected_hostile_observation_reproduced": true,
+  "scope": "Refutes universal soundness on accepted World inputs with deep overlap; does not alter the saved randomized suite's zero observed FP."
+}

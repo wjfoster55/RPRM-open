@@ -1,0 +1,20 @@
+\\ Pilot of exact symbol renormalization; anchor proof is a separate obligation.
+print("BEGIN_SYMBOL_PILOT");
+E0=ellinit([0,0,0,-1,0]);
+[M,phi]=msfromell(E0,1);
+print("M_dimensions=",msdim(M));
+print("symbol=",phi);
+z=mseval(M,phi,[0,oo]);
+print("symbol_zero_to_infinity=",z);
+phin=phi/(4*z);
+print("symbol_exact_anchor=",phin);
+print("anchor=",mseval(M,phin,[0,oo]));
+print("mssign=",mssign(M));
+Mp=mspadicinit(M,5,6,0);
+mu=mspadicmoments(Mp,phin,136);
+print("D0=",mspadicL(mu,[0,0],0));
+print("D1=",mspadicL(mu,[0,0],1));
+print("D2=",mspadicL(mu,[0,0],2));
+print("series=",mspadicseries(mu));
+print("END_SYMBOL_PILOT");
+quit;

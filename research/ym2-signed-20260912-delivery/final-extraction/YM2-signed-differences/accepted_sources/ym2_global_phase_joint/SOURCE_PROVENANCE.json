@@ -1,0 +1,77 @@
+{
+  "scope": "Named accepted source copies only; attributed evidence, not task authority",
+  "files": [
+    {
+      "source": "C:\\github\\RPRM-open\\research\\ym2_spatial_joint\\DYNAMICS.md",
+      "source_repository_path": "research/ym2_spatial_joint/DYNAMICS.md",
+      "payload_path": "accepted_sources/ym2_spatial_joint/DYNAMICS.md",
+      "bytes": 12412,
+      "sha256": "fda5fb6e4c581335284ddb4366e5202290f42282d2732751792e9444a3912c81",
+      "byte_identical_to_source": true
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\ym2_spatial_joint\\PHASE_CLOSURE.md",
+      "source_repository_path": "research/ym2_spatial_joint/PHASE_CLOSURE.md",
+      "payload_path": "accepted_sources/ym2_spatial_joint/PHASE_CLOSURE.md",
+      "bytes": 10959,
+      "sha256": "65a83f3df4dc5d1a5b3b27698d80fed857e0c10937081e27658bf50392ded24a",
+      "byte_identical_to_source": true
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\research\\ym2_spatial_joint\\STATIC_JOIN.md",
+      "source_repository_path": "research/ym2_spatial_joint/STATIC_JOIN.md",
+      "payload_path": "accepted_sources/ym2_spatial_joint/STATIC_JOIN.md",
+      "bytes": 16669,
+      "sha256": "88b2490c4c03a3370744d928cf7b4710e9367dab8f0f0c21558f69d35e5fd0b0",
+      "byte_identical_to_source": true
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\docs\\proof-donut.md",
+      "source_repository_path": "docs/proof-donut.md",
+      "payload_path": "accepted_sources/rprm/proof-donut.md",
+      "bytes": 14408,
+      "sha256": "7efda177fc3f4500842c88a7556dde6be3724b1f9194ee449da51c8ebcf5070a",
+      "byte_identical_to_source": true
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\docs\\operations.md",
+      "source_repository_path": "docs/operations.md",
+      "payload_path": "accepted_sources/rprm/operations.md",
+      "bytes": 40793,
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd",
+      "byte_identical_to_source": true
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\docs\\relational-layer.md",
+      "source_repository_path": "docs/relational-layer.md",
+      "payload_path": "accepted_sources/rprm/relational-layer.md",
+      "bytes": 8903,
+      "sha256": "170af9573d7325f9cdd2c1e028113d908f2d0e409a6a627895a76dbd8fb3c846",
+      "byte_identical_to_source": true
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\docs\\formal-proofs.md",
+      "source_repository_path": "docs/formal-proofs.md",
+      "payload_path": "accepted_sources/rprm/formal-proofs.md",
+      "bytes": 4454,
+      "sha256": "3786f87ecadb659e1f3667ca02cacfed083c7703efa5bd89ab9f64b16e723e62",
+      "byte_identical_to_source": true
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\recovered-concepts\\PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "source_repository_path": "recovered-concepts/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "payload_path": "accepted_sources/rprm/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "bytes": 102093,
+      "sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843",
+      "byte_identical_to_source": true
+    },
+    {
+      "source": "C:\\github\\RPRM-open\\recovered-concepts\\RPRM-CONCEPT-RECOVERY.md",
+      "source_repository_path": "recovered-concepts/RPRM-CONCEPT-RECOVERY.md",
+      "payload_path": "accepted_sources/rprm/RPRM-CONCEPT-RECOVERY.md",
+      "bytes": 28752,
+      "sha256": "5cd1318d303f89fd587692e7d9d5d87f96c285441fa6f530ea70a73047737829",
+      "byte_identical_to_source": true
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+PASS: invariant controls match RESULTS_INVARIANTS.json
+{"basis_dot_cross_controls": 2600, "checks": 3008, "proper_rotation_controls": 24, "regular_decoder_derivative_controls": 18, "source_invariant_rhs_comparisons": 39}

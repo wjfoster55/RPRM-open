@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-12T18:22:10.406628+00:00",
+  "archive": "C:\\github\\RPRM-open\\research\\ym2-signed-20260912-delivery\\YM2-signed-differences-2026-09-12.zip",
+  "archive_sha256": "914b1950ed762cd86f1b14ea6cd7816e99f8860a612ba3cea44773544bb3218f",
+  "archive_bytes": 439486,
+  "payload_files": 52,
+  "payload_bytes": 1065239,
+  "manifest_covered_files": 51,
+  "fresh_extraction": "C:\\github\\RPRM-open\\research\\ym2-signed-20260912-delivery\\final-extraction\\YM2-signed-differences",
+  "zip_crc": "PASS",
+  "source_equals_extracted": true,
+  "payload_unchanged_after_replay": true,
+  "runs": [
+    {
+      "script": "check_differences.py",
+      "receipt": "RESULTS_DIFFERENCES.json",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\github\\RPRM-open\\research\\ym2-signed-20260912-delivery\\final-extraction\\YM2-signed-differences\\check_differences.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-signed-20260912-delivery\\final-extraction\\YM2-signed-differences",
+      "exit_code": 0,
+      "status": "PASS",
+      "comparison": "Default mode freshly recomputes and compares the complete saved receipt internally",
+      "stdout_sha256": "ec413b46a1c44bfc0a150339899aff89d14c22fadc5f5118efb3a11d90a68e5c",
+      "stderr_bytes": 0
+    },
+    {
+      "script": "check_stacking.py",
+      "receipt": "RESULTS_STACKING.json",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\github\\RPRM-open\\research\\ym2-signed-20260912-delivery\\final-extraction\\YM2-signed-differences\\check_stacking.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-signed-20260912-delivery\\final-extraction\\YM2-signed-differences",
+      "exit_code": 0,
+      "status": "PASS",
+      "comparison": "Default mode freshly recomputes and compares the complete saved receipt internally",
+      "stdout_sha256": "e611a312995b9bae46a70ea689d4060747237b6bb92e182dd0ac50e1c3c3ff54",
+      "stderr_bytes": 0
+    },
+    {
+      "script": "check_vacuum_comparison.py",
+      "receipt": "RESULTS_VACUUM_COMPARISON.json",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\github\\RPRM-open\\research\\ym2-signed-20260912-delivery\\final-extraction\\YM2-signed-differences\\check_vacuum_comparison.py"
+      ],
+      "cwd": "C:\\github\\RPRM-open\\research\\ym2-signed-20260912-delivery\\final-extraction\\YM2-signed-differences",
+      "exit_code": 0,
+      "status": "PASS",
+      "comparison": "Default mode freshly recomputes and compares the complete saved receipt internally",
+      "stdout_sha256": "2c3a1f2035d58e08c86caf56bb46e3bee0ce266038d013e333cd8c9150649357",
+      "stderr_bytes": 0
+    }
+  ],
+  "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "difference_models": 7,
+  "difference_matrix_controls": 364,
+  "stacking_counts": {
+    "complete_basis_eigenvectors": 90,
+    "complete_sum_fibers": 42,
+    "cubes": 12,
+    "off_diagonal_orthogonality_controls": 465
+  },
+  "sharp_tilt_controls": 3,
+  "six_square_envelope_checked": true,
+  "accepted_source_files": 29,
+  "top_level_local_file_links_checked": 44,
+  "figure_dimensions": [
+    2080,
+    1440
+  ],
+  "figure_visual_review": "See payload VISUAL_CHECKS.md; PNG inspected before freezing",
+  "prior_archive_unchanged": "C:\\github\\RPRM-open\\research\\ym2-global-20260912-delivery\\YM2-global-phase-joint-2026-09-12.zip",
+  "prior_archive_sha256": "c42d6cd9f09a8377af2eaff7b36f07ca69c553fe585cb0a0078c2f87f100062d",
+  "limits": "Written proofs with exact bounded corroboration; no proof-assistant certification, uniform vacuum estimate, continuum theory, or mass-gap solution."
+}

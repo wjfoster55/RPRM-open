@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "counts": {
+    "supported": 64,
+    "real": 32,
+    "mod2": 32,
+    "mod4": 16,
+    "mod8": 8
+  },
+  "tower_cases": 112,
+  "max_coordinate_bits": 1053,
+  "cube_pairs": 1024,
+  "task_ids": [
+    "A01",
+    "A02",
+    "C01"
+  ],
+  "control_ids": [
+    "K01_OFF_CURVE",
+    "K05_LOST_REMAINDER",
+    "K06_FRAME_TRANSPORT"
+  ],
+  "output": "/mnt/data/e5_return_review/fresh_run/arithmetic.json"
+}

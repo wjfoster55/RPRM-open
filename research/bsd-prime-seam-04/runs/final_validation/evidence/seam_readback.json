@@ -1,0 +1,4443 @@
+{
+  "checks": [
+    {
+      "actual": true,
+      "expected": true,
+      "name": "good_reduction_3",
+      "passed": true
+    },
+    {
+      "actual": 4,
+      "expected": 4,
+      "name": "point_count_3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "good_reduction_5",
+      "passed": true
+    },
+    {
+      "actual": 8,
+      "expected": 8,
+      "name": "point_count_5",
+      "passed": true
+    },
+    {
+      "actual": [
+        -2,
+        1
+      ],
+      "expected": [
+        -2,
+        1
+      ],
+      "name": "CM_trace_matches_fresh_count_5",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          0,
+          1
+        ],
+        "real": [
+          5,
+          1
+        ]
+      },
+      "expected": {
+        "imag": [
+          0,
+          1
+        ],
+        "real": [
+          5,
+          1
+        ]
+      },
+      "name": "CM_norm_5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "good_reduction_13",
+      "passed": true
+    },
+    {
+      "actual": 20,
+      "expected": 20,
+      "name": "point_count_13",
+      "passed": true
+    },
+    {
+      "actual": [
+        -6,
+        1
+      ],
+      "expected": [
+        -6,
+        1
+      ],
+      "name": "CM_trace_matches_fresh_count_13",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          0,
+          1
+        ],
+        "real": [
+          13,
+          1
+        ]
+      },
+      "expected": {
+        "imag": [
+          0,
+          1
+        ],
+        "real": [
+          13,
+          1
+        ]
+      },
+      "name": "CM_norm_13",
+      "passed": true
+    },
+    {
+      "actual": [],
+      "expected": [],
+      "name": "fresh_Frob3_quadratic_has_no_F5_roots",
+      "passed": true
+    },
+    {
+      "actual": [
+        3,
+        1,
+        1
+      ],
+      "expected": [
+        3,
+        1,
+        1
+      ],
+      "name": "fresh_Frob13_polynomial_equals_X_minus_1_times_X_minus_3",
+      "passed": true
+    },
+    {
+      "actual": [
+        1,
+        3
+      ],
+      "expected": [
+        1,
+        3
+      ],
+      "name": "fresh_Frob13_roots_mod_5",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          -3,
+          5
+        ],
+        "real": [
+          4,
+          5
+        ]
+      },
+      "expected": {
+        "imag": [
+          -3,
+          5
+        ],
+        "real": [
+          4,
+          5
+        ]
+      },
+      "name": "original_complex_formula_C5",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          0,
+          1
+        ],
+        "real": [
+          1,
+          1
+        ]
+      },
+      "expected": {
+        "imag": [
+          0,
+          1
+        ],
+        "real": [
+          1,
+          1
+        ]
+      },
+      "name": "complex_norm_C5",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          -16,
+          65
+        ],
+        "real": [
+          63,
+          65
+        ]
+      },
+      "expected": {
+        "imag": [
+          -16,
+          65
+        ],
+        "real": [
+          63,
+          65
+        ]
+      },
+      "name": "original_complex_formula_C13",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          0,
+          1
+        ],
+        "real": [
+          1,
+          1
+        ]
+      },
+      "expected": {
+        "imag": [
+          0,
+          1
+        ],
+        "real": [
+          1,
+          1
+        ]
+      },
+      "name": "complex_norm_C13",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          5,
+          13
+        ],
+        "real": [
+          12,
+          13
+        ]
+      },
+      "expected": {
+        "imag": [
+          5,
+          13
+        ],
+        "real": [
+          12,
+          13
+        ]
+      },
+      "name": "independent_ratio_C13_over_C5",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          -16,
+          65
+        ],
+        "real": [
+          63,
+          65
+        ]
+      },
+      "expected": {
+        "imag": [
+          -16,
+          65
+        ],
+        "real": [
+          63,
+          65
+        ]
+      },
+      "name": "ratio_times_C5_recovers_C13",
+      "passed": true
+    },
+    {
+      "actual": 2,
+      "expected": 2,
+      "name": "Hensel_root_5_initial",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_1",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_2",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_3",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_4",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_5",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_6",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_7",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_8",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_9",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_10",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_11",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_12",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_13",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_14",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_15",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_5_power_16",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_5^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_5^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_5^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_5^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_5^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_5^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_5^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_5^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_5^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_5^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_5^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_5^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_5^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_5^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_5^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_5^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_5^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_5^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_5^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_5^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_5^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_5^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_5^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_5^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_5^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_5^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_5^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_5^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_5^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_5^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_5^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_5^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_5^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_5^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_5^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_5^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_5^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_5^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_5^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_5^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_5^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_5^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_5^8",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_5^8",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_5^8",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_5^8",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_5^8",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_5^8",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "oriented_pi5_is_unit_at_5",
+      "passed": true
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "name": "oriented_conjugate_pi5_valuation_at_5",
+      "passed": true
+    },
+    {
+      "actual": -1,
+      "expected": -1,
+      "name": "C5_valuation_at_own_prime",
+      "passed": true
+    },
+    {
+      "actual": -1,
+      "expected": -1,
+      "name": "valuation_C5_at_5",
+      "passed": true
+    },
+    {
+      "actual": -1,
+      "expected": -1,
+      "name": "valuation_C13_at_5",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "valuation_C13_over_C5_at_5",
+      "passed": true
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "name": "hostile_opposite_embedding_C5_valuation",
+      "passed": true
+    },
+    {
+      "actual": 5,
+      "expected": 5,
+      "name": "Hensel_root_13_initial",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_1",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_2",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_3",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_4",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_5",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_6",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_7",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_8",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_9",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_10",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_11",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_12",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_13",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_14",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_15",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "Hensel_root_13_power_16",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_13^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_13^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_13^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_13^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_13^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_13^1",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_13^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_13^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_13^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_13^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_13^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_13^2",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_13^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_13^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_13^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_13^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_13^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_13^3",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_13^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_13^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_13^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_13^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_13^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_13^4",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_13^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_13^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_13^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_13^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_13^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_13^5",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_13^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_13^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_13^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_13^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_13^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_13^6",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_13^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_13^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_13^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_13^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_13^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_13^7",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C5_at_13^8",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C5_at_13^8",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_at_13^8",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_at_13^8",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "original_vs_coordinates_C13_over_C5_at_13^8",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "absolute_precision_C13_over_C5_at_13^8",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "oriented_pi13_is_unit_at_13",
+      "passed": true
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "name": "oriented_conjugate_pi13_valuation_at_13",
+      "passed": true
+    },
+    {
+      "actual": -1,
+      "expected": -1,
+      "name": "C13_valuation_at_own_prime",
+      "passed": true
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "valuation_C5_at_13",
+      "passed": true
+    },
+    {
+      "actual": -1,
+      "expected": -1,
+      "name": "valuation_C13_at_13",
+      "passed": true
+    },
+    {
+      "actual": -1,
+      "expected": -1,
+      "name": "valuation_C13_over_C5_at_13",
+      "passed": true
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "name": "hostile_opposite_embedding_C13_valuation",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          -3,
+          5
+        ],
+        "real": [
+          4,
+          5
+        ]
+      },
+      "expected": {
+        "imag": [
+          -3,
+          5
+        ],
+        "real": [
+          4,
+          5
+        ]
+      },
+      "name": "witness_C5",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          -16,
+          65
+        ],
+        "real": [
+          63,
+          65
+        ]
+      },
+      "expected": {
+        "imag": [
+          -16,
+          65
+        ],
+        "real": [
+          63,
+          65
+        ]
+      },
+      "name": "witness_C13",
+      "passed": true
+    },
+    {
+      "actual": {
+        "imag": [
+          5,
+          13
+        ],
+        "real": [
+          12,
+          13
+        ]
+      },
+      "expected": {
+        "imag": [
+          5,
+          13
+        ],
+        "real": [
+          12,
+          13
+        ]
+      },
+      "name": "witness_ratio_C13_over_C5",
+      "passed": true
+    }
+  ],
+  "contract": {
+    "carrier": "Q(i), exact Fraction pairs; finite F_p enumerations; specified embeddings in Q_p",
+    "coverage": "q=3,5,13 point enumeration; original formula; both chosen p-adic embeddings through p^8",
+    "curve": "E34: y^2 = x^3 - 1156*x; one point at infinity",
+    "equality": "exact rational-coordinate equality and declared finite modular congruences",
+    "evidence_grade": "fresh exact finite computation; mathematical theorem dependency explicitly retained",
+    "fiber_scope": "fixed-input deterministic finite readback; no global completion-fiber claim",
+    "hostile_case": "opposite square-root branch changes each own-prime C valuation from -1 to +1",
+    "nonclaims": [
+      "full BSD",
+      "Kolyvagin-prime admissibility",
+      "proof of the Frobenius characteristic theorem"
+    ],
+    "operation": "exact evaluation; inversions require nonzero inputs; output must be fresh",
+    "padic_residue_convention": "A value is p^valuation times unit_residue modulo unit_modulus. Its absolute precision is p^(unit_power+valuation). Extra unit digits are separately checked to ensure absolute precision p^k at every k=1,...,8. Denominators divisible by p are never inverted modulo p^k.",
+    "receiver": "point counts, CM trace/norm, rational factors, oriented valuations, retained residues",
+    "requested_readout": "independent agreement with original local-factor formula and finite certificates",
+    "supplied_ports": "witness C5, C13, and C13/C5 rational-complex coordinates"
+  },
+  "created_utc": "2026-09-12T23:01:24.298764+00:00",
+  "errors": [],
+  "evidence": {
+    "finite_frobenius": {
+      "Frob13_characteristic_mod5": [
+        3,
+        1,
+        1
+      ],
+      "Frob13_roots_mod5": [
+        1,
+        3
+      ],
+      "Frob3_characteristic_mod5": [
+        3,
+        0,
+        1
+      ],
+      "Frob3_roots_mod5": [],
+      "Frob3_values_at_0_through_4": [
+        3,
+        4,
+        2,
+        2,
+        4
+      ],
+      "coefficient_order": "constant, X, X^2",
+      "irreducibility_scope": "A quadratic over F5 is irreducible exactly when it has no F5 root.",
+      "representation_dependency": "Interpreting X^2-a_q X+q as Frobenius on E34[5] uses the standard good-reduction Frobenius characteristic theorem for q != 5. Given that theorem, the irreducible q=3 polynomial rules out an invariant F5 line. This script verifies the finite certificate, not the theorem."
+    },
+    "independent_ratio_13_over_5": {
+      "imag": [
+        5,
+        13
+      ],
+      "real": [
+        12,
+        13
+      ]
+    },
+    "original_complex_formula": {
+      "13": {
+        "conjugate_pi": {
+          "imag": [
+            -2,
+            1
+          ],
+          "real": [
+            -3,
+            1
+          ]
+        },
+        "inverse_of_one_minus_inverse_pi": {
+          "imag": [
+            -1,
+            10
+          ],
+          "real": [
+            4,
+            5
+          ]
+        },
+        "one_minus_inverse_conjugate_pi": {
+          "imag": [
+            -2,
+            13
+          ],
+          "real": [
+            16,
+            13
+          ]
+        },
+        "one_minus_inverse_pi": {
+          "imag": [
+            2,
+            13
+          ],
+          "real": [
+            16,
+            13
+          ]
+        },
+        "pi": {
+          "imag": [
+            2,
+            1
+          ],
+          "real": [
+            -3,
+            1
+          ]
+        },
+        "result": {
+          "imag": [
+            -16,
+            65
+          ],
+          "real": [
+            63,
+            65
+          ]
+        }
+      },
+      "5": {
+        "conjugate_pi": {
+          "imag": [
+            -2,
+            1
+          ],
+          "real": [
+            -1,
+            1
+          ]
+        },
+        "inverse_of_one_minus_inverse_pi": {
+          "imag": [
+            -1,
+            4
+          ],
+          "real": [
+            3,
+            4
+          ]
+        },
+        "one_minus_inverse_conjugate_pi": {
+          "imag": [
+            -2,
+            5
+          ],
+          "real": [
+            6,
+            5
+          ]
+        },
+        "one_minus_inverse_pi": {
+          "imag": [
+            2,
+            5
+          ],
+          "real": [
+            6,
+            5
+          ]
+        },
+        "pi": {
+          "imag": [
+            2,
+            1
+          ],
+          "real": [
+            -1,
+            1
+          ]
+        },
+        "result": {
+          "imag": [
+            -3,
+            5
+          ],
+          "real": [
+            4,
+            5
+          ]
+        }
+      }
+    },
+    "padic_embeddings": {
+      "13": {
+        "hensel_steps": [
+          {
+            "modulus": 13,
+            "power": 1,
+            "root": 5
+          },
+          {
+            "modulus": 169,
+            "power": 2,
+            "root": 70
+          },
+          {
+            "modulus": 2197,
+            "power": 3,
+            "root": 239
+          },
+          {
+            "modulus": 28561,
+            "power": 4,
+            "root": 239
+          },
+          {
+            "modulus": 371293,
+            "power": 5,
+            "root": 143044
+          },
+          {
+            "modulus": 4826809,
+            "power": 6,
+            "root": 1999509
+          },
+          {
+            "modulus": 62748517,
+            "power": 7,
+            "root": 6826318
+          },
+          {
+            "modulus": 815730721,
+            "power": 8,
+            "root": 6826318
+          },
+          {
+            "modulus": 10604499373,
+            "power": 9,
+            "root": 822557039
+          },
+          {
+            "modulus": 137858491849,
+            "power": 10,
+            "root": 85658552023
+          },
+          {
+            "modulus": 1792160394037,
+            "power": 11,
+            "root": 1188526486815
+          },
+          {
+            "modulus": 23298085122481,
+            "power": 12,
+            "root": 11941488851037
+          },
+          {
+            "modulus": 302875106592253,
+            "power": 13,
+            "root": 291518510320809
+          },
+          {
+            "modulus": 3937376385699289,
+            "power": 14,
+            "root": 2108769149874327
+          },
+          {
+            "modulus": 51185893014090757,
+            "power": 15,
+            "root": 13920898306972194
+          },
+          {
+            "modulus": 665416609183179841,
+            "power": 16,
+            "root": 13920898306972194
+          }
+        ],
+        "hostile_opposite_embedding": {
+          "readout": {
+            "absolute_precision_exponent": 9,
+            "denominator_valuation": 0,
+            "numerator_valuation": 1,
+            "raw_denominator_mod_unit_modulus": 802078101,
+            "raw_numerator_mod_unit_modulus": 13652652,
+            "unit_modulus": 815730721,
+            "unit_power": 8,
+            "unit_residue": 153621782,
+            "valuation": 1
+          },
+          "root": 651495710876207647
+        },
+        "initial_root": 5,
+        "original_formula_stages": {
+          "13": {
+            "C": {
+              "absolute_precision_exponent": 7,
+              "denominator_valuation": 1,
+              "numerator_valuation": 0,
+              "raw_denominator": -775165638692245161167610942750144,
+              "raw_denominator_mod_unit_modulus": 13652652,
+              "raw_numerator": -775165638692245216851204170638920,
+              "raw_numerator_mod_unit_modulus": 802078101,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 793886516,
+              "valuation": -1
+            },
+            "conjugate_pi": {
+              "absolute_precision_exponent": 9,
+              "denominator_valuation": 0,
+              "numerator_valuation": 1,
+              "raw_denominator": 1,
+              "raw_denominator_mod_unit_modulus": 1,
+              "raw_numerator": -27841796613944391,
+              "raw_numerator_mod_unit_modulus": 802078082,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 689183484,
+              "valuation": 1
+            },
+            "inverse_of_one_minus_inverse_pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 27841796613944384,
+              "raw_denominator_mod_unit_modulus": 13652632,
+              "raw_numerator": 27841796613944385,
+              "raw_numerator_mod_unit_modulus": 13652633,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 815048090,
+              "valuation": 0
+            },
+            "one_minus_inverse_conjugate_pi": {
+              "absolute_precision_exponent": 7,
+              "denominator_valuation": 1,
+              "numerator_valuation": 0,
+              "raw_denominator": -27841796613944391,
+              "raw_denominator_mod_unit_modulus": 802078082,
+              "raw_numerator": -27841796613944392,
+              "raw_numerator_mod_unit_modulus": 802078081,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 802078101,
+              "valuation": -1
+            },
+            "one_minus_inverse_pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 27841796613944385,
+              "raw_denominator_mod_unit_modulus": 13652633,
+              "raw_numerator": 27841796613944384,
+              "raw_numerator_mod_unit_modulus": 13652632,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 126547238,
+              "valuation": 0
+            },
+            "pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 1,
+              "raw_denominator_mod_unit_modulus": 1,
+              "raw_numerator": 27841796613944385,
+              "raw_numerator_mod_unit_modulus": 13652633,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 13652633,
+              "valuation": 0
+            }
+          },
+          "5": {
+            "C": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": -775165638692245161167610942750154,
+              "raw_denominator_mod_unit_modulus": 13652642,
+              "raw_numerator": -775165638692245216851204170638930,
+              "raw_numerator_mod_unit_modulus": 802078091,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 811634931,
+              "valuation": 0
+            },
+            "conjugate_pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 1,
+              "raw_denominator_mod_unit_modulus": 1,
+              "raw_numerator": -27841796613944389,
+              "raw_numerator_mod_unit_modulus": 802078084,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 802078084,
+              "valuation": 0
+            },
+            "inverse_of_one_minus_inverse_pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 27841796613944386,
+              "raw_denominator_mod_unit_modulus": 13652634,
+              "raw_numerator": 27841796613944387,
+              "raw_numerator_mod_unit_modulus": 13652635,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 610091462,
+              "valuation": 0
+            },
+            "one_minus_inverse_conjugate_pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": -27841796613944389,
+              "raw_denominator_mod_unit_modulus": 802078084,
+              "raw_numerator": -27841796613944390,
+              "raw_numerator_mod_unit_modulus": 802078083,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 813000195,
+              "valuation": 0
+            },
+            "one_minus_inverse_pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 27841796613944387,
+              "raw_denominator_mod_unit_modulus": 13652635,
+              "raw_numerator": 27841796613944386,
+              "raw_numerator_mod_unit_modulus": 13652634,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 492168961,
+              "valuation": 0
+            },
+            "pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 1,
+              "raw_denominator_mod_unit_modulus": 1,
+              "raw_numerator": 27841796613944387,
+              "raw_numerator_mod_unit_modulus": 13652635,
+              "unit_modulus": 815730721,
+              "unit_power": 8,
+              "unit_residue": 13652635,
+              "valuation": 0
+            }
+          }
+        },
+        "precision_levels": [
+          {
+            "modulus": 13,
+            "power": 1,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 1,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 126,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 59,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 156,
+                  "raw_numerator_mod_unit_modulus": 45,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 59,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 0,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 0,
+                  "raw_numerator_mod_unit_modulus": 6,
+                  "unit_modulus": 13,
+                  "unit_power": 1,
+                  "unit_residue": 7,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 0,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 0,
+                  "raw_numerator_mod_unit_modulus": 9,
+                  "unit_modulus": 13,
+                  "unit_power": 1,
+                  "unit_residue": 7,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 1,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 24,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 24,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 52,
+                  "raw_numerator_mod_unit_modulus": 148,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 24,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 0,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 0,
+                  "raw_numerator_mod_unit_modulus": 5,
+                  "unit_modulus": 13,
+                  "unit_power": 1,
+                  "unit_residue": 11,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 0,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 0,
+                  "raw_numerator_mod_unit_modulus": 11,
+                  "unit_modulus": 13,
+                  "unit_power": 1,
+                  "unit_residue": 11,
+                  "valuation": -1
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 1,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 2,
+                  "unit_modulus": 13,
+                  "unit_power": 1,
+                  "unit_residue": 3,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 3,
+                  "raw_numerator_mod_unit_modulus": 9,
+                  "unit_modulus": 13,
+                  "unit_power": 1,
+                  "unit_residue": 3,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 3,
+                  "raw_numerator_mod_unit_modulus": 9,
+                  "unit_modulus": 13,
+                  "unit_power": 1,
+                  "unit_residue": 3,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 2,
+                  "unit_modulus": 13,
+                  "unit_power": 1,
+                  "unit_residue": 3,
+                  "valuation": 0
+                }
+              }
+            }
+          },
+          {
+            "modulus": 169,
+            "power": 2,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 2,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 633,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 566,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 494,
+                  "raw_numerator_mod_unit_modulus": 1735,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 566,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 156,
+                  "raw_numerator_mod_unit_modulus": 45,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 59,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 126,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 59,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 2,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 1207,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 1207,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 1911,
+                  "raw_numerator_mod_unit_modulus": 486,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 1207,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 52,
+                  "raw_numerator_mod_unit_modulus": 148,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 24,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 24,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 24,
+                  "valuation": -1
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 2,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 132,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 94,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 146,
+                  "raw_numerator_mod_unit_modulus": 35,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 94,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 146,
+                  "raw_numerator_mod_unit_modulus": 35,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 94,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 132,
+                  "unit_modulus": 169,
+                  "unit_power": 2,
+                  "unit_residue": 94,
+                  "valuation": 0
+                }
+              }
+            }
+          },
+          {
+            "modulus": 2197,
+            "power": 3,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 3,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 24800,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 4960,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 494,
+                  "raw_numerator_mod_unit_modulus": 28099,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 4960,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 494,
+                  "raw_numerator_mod_unit_modulus": 1735,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 566,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 633,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 566,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 3,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 1207,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 1207,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 23881,
+                  "raw_numerator_mod_unit_modulus": 4880,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 1207,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 1911,
+                  "raw_numerator_mod_unit_modulus": 486,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 1207,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 1207,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 1207,
+                  "valuation": -1
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 3,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 1484,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 1615,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 484,
+                  "raw_numerator_mod_unit_modulus": 1725,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 1615,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 484,
+                  "raw_numerator_mod_unit_modulus": 1725,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 1615,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 1484,
+                  "unit_modulus": 2197,
+                  "unit_power": 3,
+                  "unit_residue": 1615,
+                  "valuation": 0
+                }
+              }
+            }
+          },
+          {
+            "modulus": 28561,
+            "power": 4,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 4,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 310410,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 62082,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 286104,
+                  "raw_numerator_mod_unit_modulus": 85221,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 62082,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 494,
+                  "raw_numerator_mod_unit_modulus": 28099,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 4960,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 24800,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 4960,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 4,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 343939,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 343939,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 109564,
+                  "raw_numerator_mod_unit_modulus": 261929,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 343939,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 23881,
+                  "raw_numerator_mod_unit_modulus": 4880,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 1207,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 1207,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 1207,
+                  "valuation": -1
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 4,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 27848,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 16994,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 484,
+                  "raw_numerator_mod_unit_modulus": 28089,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 16994,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 484,
+                  "raw_numerator_mod_unit_modulus": 28089,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 16994,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 27848,
+                  "unit_modulus": 28561,
+                  "unit_power": 4,
+                  "unit_residue": 16994,
+                  "valuation": 0
+                }
+              }
+            }
+          },
+          {
+            "modulus": 371293,
+            "power": 5,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 5,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 1795582,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 2289840,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 3999034,
+                  "raw_numerator_mod_unit_modulus": 827807,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 2289840,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 286104,
+                  "raw_numerator_mod_unit_modulus": 85221,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 62082,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 310410,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 62082,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 5,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 343939,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 343939,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 3451201,
+                  "raw_numerator_mod_unit_modulus": 1375808,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 343939,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 109564,
+                  "raw_numerator_mod_unit_modulus": 261929,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 343939,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 343939,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 343939,
+                  "valuation": -1
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 5,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 313458,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 359726,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 286094,
+                  "raw_numerator_mod_unit_modulus": 85211,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 359726,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 286094,
+                  "raw_numerator_mod_unit_modulus": 85211,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 359726,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 313458,
+                  "unit_modulus": 371293,
+                  "unit_power": 5,
+                  "unit_residue": 359726,
+                  "valuation": 0
+                }
+              }
+            }
+          },
+          {
+            "modulus": 4826809,
+            "power": 6,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 6,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 16276009,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 40904312,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13652652,
+                  "raw_numerator_mod_unit_modulus": 49095897,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 40904312,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 3999034,
+                  "raw_numerator_mod_unit_modulus": 827807,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 2289840,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 1795582,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 2289840,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 6,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 34131602,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 34131602,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 51719291,
+                  "raw_numerator_mod_unit_modulus": 11029426,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 34131602,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 3451201,
+                  "raw_numerator_mod_unit_modulus": 1375808,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 343939,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 343939,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 343939,
+                  "valuation": -1
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 6,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 3655095,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 731019,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 3999024,
+                  "raw_numerator_mod_unit_modulus": 827797,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 731019,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 3999024,
+                  "raw_numerator_mod_unit_modulus": 827797,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 731019,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 3655095,
+                  "unit_modulus": 4826809,
+                  "unit_power": 6,
+                  "unit_residue": 731019,
+                  "valuation": 0
+                }
+              }
+            }
+          },
+          {
+            "modulus": 62748517,
+            "power": 7,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 7,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 706509696,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 793886516,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13652652,
+                  "raw_numerator_mod_unit_modulus": 802078101,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 793886516,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13652652,
+                  "raw_numerator_mod_unit_modulus": 49095897,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 40904312,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 16276009,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 40904312,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 7,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 34131602,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 34131602,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 679204461,
+                  "raw_numerator_mod_unit_modulus": 136526460,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 34131602,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 51719291,
+                  "raw_numerator_mod_unit_modulus": 11029426,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 34131602,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 34131602,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 34131602,
+                  "valuation": -1
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 7,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 42269567,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 58652727,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13652642,
+                  "raw_numerator_mod_unit_modulus": 49095887,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 58652727,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13652642,
+                  "raw_numerator_mod_unit_modulus": 49095887,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 58652727,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 42269567,
+                  "unit_modulus": 62748517,
+                  "unit_power": 7,
+                  "unit_residue": 58652727,
+                  "valuation": 0
+                }
+              }
+            }
+          },
+          {
+            "modulus": 815730721,
+            "power": 8,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 8,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 8048086185,
+                  "unit_modulus": 10604499373,
+                  "unit_power": 9,
+                  "unit_residue": 1609617237,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 1645114094,
+                  "raw_numerator_mod_unit_modulus": 8959385311,
+                  "unit_modulus": 10604499373,
+                  "unit_power": 9,
+                  "unit_residue": 1609617237,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13652652,
+                  "raw_numerator_mod_unit_modulus": 802078101,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 793886516,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 706509696,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 793886516,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 8,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 4112785207,
+                  "unit_modulus": 10604499373,
+                  "unit_power": 9,
+                  "unit_residue": 4112785207,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 4757858066,
+                  "raw_numerator_mod_unit_modulus": 5846641507,
+                  "unit_modulus": 10604499373,
+                  "unit_power": 9,
+                  "unit_residue": 4112785207,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 679204461,
+                  "raw_numerator_mod_unit_modulus": 136526460,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 34131602,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 34131602,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 34131602,
+                  "valuation": -1
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 8,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 795251771,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 811634931,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13652642,
+                  "raw_numerator_mod_unit_modulus": 802078091,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 811634931,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13652642,
+                  "raw_numerator_mod_unit_modulus": 802078091,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 811634931,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 795251771,
+                  "unit_modulus": 815730721,
+                  "unit_power": 8,
+                  "unit_residue": 811634931,
+                  "valuation": 0
+                }
+              }
+            }
+          }
+        ],
+        "root_lift_power": 16
+      },
+      "5": {
+        "hensel_steps": [
+          {
+            "modulus": 5,
+            "power": 1,
+            "root": 2
+          },
+          {
+            "modulus": 25,
+            "power": 2,
+            "root": 7
+          },
+          {
+            "modulus": 125,
+            "power": 3,
+            "root": 57
+          },
+          {
+            "modulus": 625,
+            "power": 4,
+            "root": 182
+          },
+          {
+            "modulus": 3125,
+            "power": 5,
+            "root": 2057
+          },
+          {
+            "modulus": 15625,
+            "power": 6,
+            "root": 14557
+          },
+          {
+            "modulus": 78125,
+            "power": 7,
+            "root": 45807
+          },
+          {
+            "modulus": 390625,
+            "power": 8,
+            "root": 280182
+          },
+          {
+            "modulus": 1953125,
+            "power": 9,
+            "root": 280182
+          },
+          {
+            "modulus": 9765625,
+            "power": 10,
+            "root": 6139557
+          },
+          {
+            "modulus": 48828125,
+            "power": 11,
+            "root": 25670807
+          },
+          {
+            "modulus": 244140625,
+            "power": 12,
+            "root": 123327057
+          },
+          {
+            "modulus": 1220703125,
+            "power": 13,
+            "root": 123327057
+          },
+          {
+            "modulus": 6103515625,
+            "power": 14,
+            "root": 5006139557
+          },
+          {
+            "modulus": 30517578125,
+            "power": 15,
+            "root": 11109655182
+          },
+          {
+            "modulus": 152587890625,
+            "power": 16,
+            "root": 102662389557
+          }
+        ],
+        "hostile_opposite_embedding": {
+          "readout": {
+            "absolute_precision_exponent": 9,
+            "denominator_valuation": 0,
+            "numerator_valuation": 1,
+            "raw_denominator_mod_unit_modulus": 220892,
+            "raw_numerator_mod_unit_modulus": 169745,
+            "unit_modulus": 390625,
+            "unit_power": 8,
+            "unit_residue": 346122,
+            "valuation": 1
+          },
+          "root": 49925501068
+        },
+        "initial_root": 2,
+        "original_formula_stages": {
+          "13": {
+            "C": {
+              "absolute_precision_exponent": 7,
+              "denominator_valuation": 1,
+              "numerator_valuation": 0,
+              "raw_denominator": -42158264918007565845870,
+              "raw_denominator_mod_unit_modulus": 169755,
+              "raw_numerator": -42158264918418215404098,
+              "raw_numerator_mod_unit_modulus": 220902,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 256127,
+              "valuation": -1
+            },
+            "conjugate_pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 1,
+              "raw_denominator_mod_unit_modulus": 1,
+              "raw_numerator": -205324779117,
+              "raw_numerator_mod_unit_modulus": 220883,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 220883,
+              "valuation": 0
+            },
+            "inverse_of_one_minus_inverse_pi": {
+              "absolute_precision_exponent": 7,
+              "denominator_valuation": 1,
+              "numerator_valuation": 0,
+              "raw_denominator": 205324779110,
+              "raw_denominator_mod_unit_modulus": 169735,
+              "raw_numerator": 205324779111,
+              "raw_numerator_mod_unit_modulus": 169736,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 250538,
+              "valuation": -1
+            },
+            "one_minus_inverse_conjugate_pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": -205324779117,
+              "raw_denominator_mod_unit_modulus": 220883,
+              "raw_numerator": -205324779118,
+              "raw_numerator_mod_unit_modulus": 220882,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 227329,
+              "valuation": 0
+            },
+            "one_minus_inverse_pi": {
+              "absolute_precision_exponent": 9,
+              "denominator_valuation": 0,
+              "numerator_valuation": 1,
+              "raw_denominator": 205324779111,
+              "raw_denominator_mod_unit_modulus": 169736,
+              "raw_numerator": 205324779110,
+              "raw_numerator_mod_unit_modulus": 169735,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 309102,
+              "valuation": 1
+            },
+            "pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 1,
+              "raw_denominator_mod_unit_modulus": 1,
+              "raw_numerator": 205324779111,
+              "raw_numerator_mod_unit_modulus": 169736,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 169736,
+              "valuation": 0
+            }
+          },
+          "5": {
+            "C": {
+              "absolute_precision_exponent": 7,
+              "denominator_valuation": 1,
+              "numerator_valuation": 0,
+              "raw_denominator": -42158264918007565845880,
+              "raw_denominator_mod_unit_modulus": 169745,
+              "raw_numerator": -42158264918418215404108,
+              "raw_numerator_mod_unit_modulus": 220892,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 331333,
+              "valuation": -1
+            },
+            "conjugate_pi": {
+              "absolute_precision_exponent": 9,
+              "denominator_valuation": 0,
+              "numerator_valuation": 1,
+              "raw_denominator": 1,
+              "raw_denominator_mod_unit_modulus": 1,
+              "raw_numerator": -205324779115,
+              "raw_numerator_mod_unit_modulus": 220885,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 278552,
+              "valuation": 1
+            },
+            "inverse_of_one_minus_inverse_pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 205324779112,
+              "raw_denominator_mod_unit_modulus": 169737,
+              "raw_numerator": 205324779113,
+              "raw_numerator_mod_unit_modulus": 169738,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 222924,
+              "valuation": 0
+            },
+            "one_minus_inverse_conjugate_pi": {
+              "absolute_precision_exponent": 7,
+              "denominator_valuation": 1,
+              "numerator_valuation": 0,
+              "raw_denominator": -205324779115,
+              "raw_denominator_mod_unit_modulus": 220885,
+              "raw_numerator": -205324779116,
+              "raw_numerator_mod_unit_modulus": 220884,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 220892,
+              "valuation": -1
+            },
+            "one_minus_inverse_pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 205324779113,
+              "raw_denominator_mod_unit_modulus": 169738,
+              "raw_numerator": 205324779112,
+              "raw_numerator_mod_unit_modulus": 169737,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 112074,
+              "valuation": 0
+            },
+            "pi": {
+              "absolute_precision_exponent": 8,
+              "denominator_valuation": 0,
+              "numerator_valuation": 0,
+              "raw_denominator": 1,
+              "raw_denominator_mod_unit_modulus": 1,
+              "raw_numerator": 205324779113,
+              "raw_numerator_mod_unit_modulus": 169738,
+              "unit_modulus": 390625,
+              "unit_power": 8,
+              "unit_residue": 169738,
+              "valuation": 0
+            }
+          }
+        },
+        "precision_levels": [
+          {
+            "modulus": 5,
+            "power": 1,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 1,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 15,
+                  "raw_numerator_mod_unit_modulus": 1,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 2,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 2,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 2,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 0,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 0,
+                  "raw_numerator_mod_unit_modulus": 2,
+                  "unit_modulus": 5,
+                  "unit_power": 1,
+                  "unit_residue": 2,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 0,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 0,
+                  "raw_numerator_mod_unit_modulus": 1,
+                  "unit_modulus": 5,
+                  "unit_power": 1,
+                  "unit_residue": 2,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 1,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 3,
+                  "raw_numerator_mod_unit_modulus": 2,
+                  "unit_modulus": 5,
+                  "unit_power": 1,
+                  "unit_residue": 4,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 0,
+                  "raw_numerator_mod_unit_modulus": 0,
+                  "unit_modulus": 5,
+                  "unit_power": 1,
+                  "unit_residue": 4,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 0,
+                  "raw_numerator_mod_unit_modulus": 0,
+                  "unit_modulus": 5,
+                  "unit_power": 1,
+                  "unit_residue": 4,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 3,
+                  "raw_numerator_mod_unit_modulus": 2,
+                  "unit_modulus": 5,
+                  "unit_power": 1,
+                  "unit_residue": 4,
+                  "valuation": 0
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 1,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 8,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 8,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 20,
+                  "raw_numerator_mod_unit_modulus": 17,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 8,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 0,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 0,
+                  "raw_numerator_mod_unit_modulus": 2,
+                  "unit_modulus": 5,
+                  "unit_power": 1,
+                  "unit_residue": 3,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 0,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 0,
+                  "raw_numerator_mod_unit_modulus": 3,
+                  "unit_modulus": 5,
+                  "unit_power": 1,
+                  "unit_residue": 3,
+                  "valuation": -1
+                }
+              }
+            }
+          },
+          {
+            "modulus": 25,
+            "power": 2,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 2,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 26,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 2,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 27,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 2,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 2,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 2,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 15,
+                  "raw_numerator_mod_unit_modulus": 1,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 2,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 2,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 22,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 19,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 10,
+                  "raw_numerator_mod_unit_modulus": 15,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 19,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 10,
+                  "raw_numerator_mod_unit_modulus": 15,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 19,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 22,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 19,
+                  "valuation": 0
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 2,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 83,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 83,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 120,
+                  "raw_numerator_mod_unit_modulus": 17,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 83,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 20,
+                  "raw_numerator_mod_unit_modulus": 17,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 8,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 1,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 8,
+                  "unit_modulus": 25,
+                  "unit_power": 2,
+                  "unit_residue": 8,
+                  "valuation": -1
+                }
+              }
+            }
+          },
+          {
+            "modulus": 125,
+            "power": 3,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 3,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 276,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 502,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 380,
+                  "raw_numerator_mod_unit_modulus": 277,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 502,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 27,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 2,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 26,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 2,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 3,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 47,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 119,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 85,
+                  "raw_numerator_mod_unit_modulus": 115,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 119,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 85,
+                  "raw_numerator_mod_unit_modulus": 115,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 119,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 47,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 119,
+                  "valuation": 0
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 3,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 83,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 83,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 370,
+                  "raw_numerator_mod_unit_modulus": 267,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 83,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 120,
+                  "raw_numerator_mod_unit_modulus": 17,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 83,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 2,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 83,
+                  "unit_modulus": 125,
+                  "unit_power": 3,
+                  "unit_residue": 83,
+                  "valuation": -1
+                }
+              }
+            }
+          },
+          {
+            "modulus": 625,
+            "power": 4,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 4,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 1526,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 3002,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 1005,
+                  "raw_numerator_mod_unit_modulus": 2152,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 3002,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 380,
+                  "raw_numerator_mod_unit_modulus": 277,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 502,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 276,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 502,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 4,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 297,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 119,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 210,
+                  "raw_numerator_mod_unit_modulus": 615,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 119,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 210,
+                  "raw_numerator_mod_unit_modulus": 615,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 119,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 297,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 119,
+                  "valuation": 0
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 4,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 83,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 83,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 995,
+                  "raw_numerator_mod_unit_modulus": 2142,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 83,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 370,
+                  "raw_numerator_mod_unit_modulus": 267,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 83,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 3,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 83,
+                  "unit_modulus": 625,
+                  "unit_power": 4,
+                  "unit_residue": 83,
+                  "valuation": -1
+                }
+              }
+            }
+          },
+          {
+            "modulus": 3125,
+            "power": 5,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 5,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 1526,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 6127,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13505,
+                  "raw_numerator_mod_unit_modulus": 2152,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 6127,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 1005,
+                  "raw_numerator_mod_unit_modulus": 2152,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 3002,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 1526,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 3002,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 5,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 922,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 1994,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 2710,
+                  "raw_numerator_mod_unit_modulus": 615,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 1994,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 2710,
+                  "raw_numerator_mod_unit_modulus": 615,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 1994,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 922,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 1994,
+                  "valuation": 0
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 5,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 3208,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 3208,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13495,
+                  "raw_numerator_mod_unit_modulus": 2142,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 3208,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 995,
+                  "raw_numerator_mod_unit_modulus": 2142,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 83,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 4,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 83,
+                  "unit_modulus": 3125,
+                  "unit_power": 5,
+                  "unit_residue": 83,
+                  "valuation": -1
+                }
+              }
+            }
+          },
+          {
+            "modulus": 15625,
+            "power": 6,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 6,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 48401,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 21752,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13505,
+                  "raw_numerator_mod_unit_modulus": 64652,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 21752,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13505,
+                  "raw_numerator_mod_unit_modulus": 2152,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 6127,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 1526,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 6127,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 6,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 10297,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 1994,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 5835,
+                  "raw_numerator_mod_unit_modulus": 9990,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 1994,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 5835,
+                  "raw_numerator_mod_unit_modulus": 9990,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 1994,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 10297,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 1994,
+                  "valuation": 0
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 6,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 18833,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 18833,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13495,
+                  "raw_numerator_mod_unit_modulus": 64642,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 18833,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13495,
+                  "raw_numerator_mod_unit_modulus": 2142,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 3208,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 5,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 3208,
+                  "unit_modulus": 15625,
+                  "unit_power": 6,
+                  "unit_residue": 3208,
+                  "valuation": -1
+                }
+              }
+            }
+          },
+          {
+            "modulus": 78125,
+            "power": 7,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 7,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 204651,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 256127,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 169755,
+                  "raw_numerator_mod_unit_modulus": 220902,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 256127,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13505,
+                  "raw_numerator_mod_unit_modulus": 64652,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 21752,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 48401,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 21752,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 7,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 72797,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 17619,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 21460,
+                  "raw_numerator_mod_unit_modulus": 56865,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 17619,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 21460,
+                  "raw_numerator_mod_unit_modulus": 56865,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 17619,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 72797,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 17619,
+                  "valuation": 0
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 7,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 331333,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 331333,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 169745,
+                  "raw_numerator_mod_unit_modulus": 220892,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 331333,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13495,
+                  "raw_numerator_mod_unit_modulus": 64642,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 18833,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 6,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 18833,
+                  "unit_modulus": 78125,
+                  "unit_power": 7,
+                  "unit_residue": 18833,
+                  "valuation": -1
+                }
+              }
+            }
+          },
+          {
+            "modulus": 390625,
+            "power": 8,
+            "values": {
+              "C13": {
+                "absolute_modulus_p_power": 8,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 1376526,
+                  "unit_modulus": 1953125,
+                  "unit_power": 9,
+                  "unit_residue": 256127,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 560380,
+                  "raw_numerator_mod_unit_modulus": 1392777,
+                  "unit_modulus": 1953125,
+                  "unit_power": 9,
+                  "unit_residue": 256127,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 169755,
+                  "raw_numerator_mod_unit_modulus": 220902,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 256127,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 65,
+                  "raw_numerator_mod_unit_modulus": 204651,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 256127,
+                  "valuation": -1
+                }
+              },
+              "C13_over_C5": {
+                "absolute_modulus_p_power": 8,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 229047,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 17619,
+                  "valuation": 0
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 255835,
+                  "raw_numerator_mod_unit_modulus": 134990,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 17619,
+                  "valuation": 0
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 1,
+                  "raw_denominator_mod_unit_modulus": 255835,
+                  "raw_numerator_mod_unit_modulus": 134990,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 17619,
+                  "valuation": 0
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 0,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 13,
+                  "raw_numerator_mod_unit_modulus": 229047,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 17619,
+                  "valuation": 0
+                }
+              },
+              "C5": {
+                "absolute_modulus_p_power": 8,
+                "coordinates_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 1112583,
+                  "unit_modulus": 1953125,
+                  "unit_power": 9,
+                  "unit_residue": 1112583,
+                  "valuation": -1
+                },
+                "original_at_absolute_precision": {
+                  "absolute_precision_exponent": 8,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 560370,
+                  "raw_numerator_mod_unit_modulus": 1392767,
+                  "unit_modulus": 1953125,
+                  "unit_power": 9,
+                  "unit_residue": 1112583,
+                  "valuation": -1
+                },
+                "original_formula": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 169745,
+                  "raw_numerator_mod_unit_modulus": 220892,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 331333,
+                  "valuation": -1
+                },
+                "rational_coordinates": {
+                  "absolute_precision_exponent": 7,
+                  "denominator_valuation": 1,
+                  "numerator_valuation": 0,
+                  "raw_denominator_mod_unit_modulus": 5,
+                  "raw_numerator_mod_unit_modulus": 331333,
+                  "unit_modulus": 390625,
+                  "unit_power": 8,
+                  "unit_residue": 331333,
+                  "valuation": -1
+                }
+              }
+            }
+          }
+        ],
+        "root_lift_power": 16
+      }
+    },
+    "point_counts": {
+      "13": {
+        "affine_points": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            9,
+            6
+          ],
+          [
+            9,
+            7
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            11,
+            9
+          ]
+        ],
+        "discriminant_mod_p": 1,
+        "point_at_infinity_count": 1,
+        "point_count": 20,
+        "trace": -6
+      },
+      "3": {
+        "affine_points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "discriminant_mod_p": 1,
+        "point_at_infinity_count": 1,
+        "point_count": 4,
+        "trace": 0
+      },
+      "5": {
+        "affine_points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "discriminant_mod_p": 4,
+        "point_at_infinity_count": 1,
+        "point_count": 8,
+        "trace": -2
+      }
+    },
+    "witness": {
+      "hash_scope": "Binds witness bytes; does not establish mathematical truth.",
+      "path": "C:\\github\\RPRM-open\\research\\bsd-prime-seam-04\\runs\\final_validation\\evidence\\prime_seam.json",
+      "sha256": "686791be8c863be6f5908e9a6096c98cd4c12d32758089b428277cb40b465c31"
+    }
+  },
+  "failed_checks": [],
+  "report": "PASS: 166 checks, 0 failed checks, 0 errors.",
+  "schema": "bsd-prime-seam-04-independent-readback-v1",
+  "status": "PASS"
+}

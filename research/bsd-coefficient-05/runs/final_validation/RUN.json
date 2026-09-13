@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-09-12T23:59:06.053509+00:00",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "gp_executable": "C:\\github\\RPRM-open\\research\\bsd-coefficient-05\\runtime\\gp64-2-17-4.exe",
+  "gp_sha256": "518ea54d23832211356c99d1bb58b74a3f0acd354a965543e7bcca9b34030119",
+  "source_snapshot": {
+    "coefficient.gp": "80d308add8c091086028b5718cb4c94a8210be2251f511954412fa1b02da4938",
+    "anchor_control.gp": "8429803f6004f3d1157ee232ece9b55390a3c1b8d600d80344fc970307e29b93",
+    "padic_height.py": "814d864a6785d9122f86d379398f9c18bcf213f98936bd1c74d6fe0b8d909fda",
+    "rational_ec.py": "e7b78d2a5495334bfd7229b955db0679e1453935c4c1b80ec309b19b0e672246",
+    "readback.py": "751541133f74466225caa2ad9afab4ba4822b68d21a68e4b5ba2fca06d456cf9",
+    "run_coefficient.py": "801255cad21767a19a3d9e1ac484e894645ba2253f6eb889c2c3bac4e02b0c50"
+  },
+  "saved_computational_PASS_used_as_input": false,
+  "status": "ANALYTIC_COEFFICIENT_AND_INDEPENDENT_READBACK_VERIFIED",
+  "jobs": [
+    {
+      "name": "analytic",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 4.356607599998824,
+      "log": "logs/analytic.log",
+      "sha256": "31d052951004915aea6d8efaa50c56737f1b42336d58cfaf91fb7c6324e61e25"
+    },
+    {
+      "name": "anchor_control",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.0754878000007011,
+      "log": "logs/anchor_control.log",
+      "sha256": "d77bd68e74f0c6a84002469a47002922ff331edba4302331f9af1d57aa5ba77a"
+    },
+    {
+      "name": "arithmetic",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.12152200000127777,
+      "log": "logs/arithmetic.log",
+      "sha256": "508c63d4839e04065bcaa3961d0fd180da15dd8ee4708f875d47a21f4ec75eb0"
+    },
+    {
+      "name": "readback",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.12796469999011606,
+      "log": "logs/readback.log",
+      "sha256": "af9f0a274fce9eeb76741fae0acf4748fd1029064b25d271bddaaa8e905dbf87"
+    }
+  ],
+  "full_BSD": "OPEN",
+  "total_Sha": "OPEN",
+  "elapsed_seconds": 4.695525599992834,
+  "evidence_sha256": {
+    "coefficient_readback.json": "7456a344728db3bebd6b382376af56786e9c2044e424fbe32e63eba60985fe49",
+    "padic_height.json": "32de79cab99dee537646c3ca5fda075bb72a4631f1f10615536d1b119c7b138a"
+  }
+}

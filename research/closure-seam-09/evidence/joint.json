@@ -1,0 +1,583 @@
+{
+  "claim_scope": "exact finite enumeration; written general laws are separate",
+  "created_utc": "2026-09-13T02:00:36.398070+00:00",
+  "distance_ambiguous_fibers": 4,
+  "equal_distance_distinct_matchings": 2,
+  "fixed_records_distances": [
+    0,
+    2
+  ],
+  "maximum_repair_alphabet": 2,
+  "parameters": {
+    "context": "fixed common frame and unit; no assignment optimization",
+    "coordinate_values": [
+      0,
+      1
+    ],
+    "matching_carrier": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "occurrences_per_side": 2,
+    "receiver": "sum_i (x_i - y_pi(i))^2",
+    "source_equality": "ordered occurrence values and matching agree"
+  },
+  "python_version": "3.14.5",
+  "side_record_fibers": 16,
+  "source_file": "research/closure-seam-09/work/check_joint.py",
+  "source_ledger": [
+    {
+      "cross_term": 0,
+      "expanded_value": 0,
+      "left_values": [
+        0,
+        0
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        0,
+        0
+      ],
+      "sum_squared_differences": 0
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 0,
+      "left_values": [
+        0,
+        0
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        0,
+        0
+      ],
+      "sum_squared_differences": 0
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 1,
+      "left_values": [
+        0,
+        0
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        0,
+        1
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 1,
+      "left_values": [
+        0,
+        0
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        0,
+        1
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 1,
+      "left_values": [
+        0,
+        0
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        1,
+        0
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 1,
+      "left_values": [
+        0,
+        0
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        1,
+        0
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 2,
+      "left_values": [
+        0,
+        0
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        1,
+        1
+      ],
+      "sum_squared_differences": 2
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 2,
+      "left_values": [
+        0,
+        0
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        1,
+        1
+      ],
+      "sum_squared_differences": 2
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 1,
+      "left_values": [
+        0,
+        1
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        0,
+        0
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 1,
+      "left_values": [
+        0,
+        1
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        0,
+        0
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 0,
+      "left_values": [
+        0,
+        1
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        0,
+        1
+      ],
+      "sum_squared_differences": 0
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 2,
+      "left_values": [
+        0,
+        1
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        0,
+        1
+      ],
+      "sum_squared_differences": 2
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 2,
+      "left_values": [
+        0,
+        1
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        1,
+        0
+      ],
+      "sum_squared_differences": 2
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 0,
+      "left_values": [
+        0,
+        1
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        1,
+        0
+      ],
+      "sum_squared_differences": 0
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 1,
+      "left_values": [
+        0,
+        1
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        1,
+        1
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 1,
+      "left_values": [
+        0,
+        1
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        1,
+        1
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 1,
+      "left_values": [
+        1,
+        0
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        0,
+        0
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 1,
+      "left_values": [
+        1,
+        0
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        0,
+        0
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 2,
+      "left_values": [
+        1,
+        0
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        0,
+        1
+      ],
+      "sum_squared_differences": 2
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 0,
+      "left_values": [
+        1,
+        0
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        0,
+        1
+      ],
+      "sum_squared_differences": 0
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 0,
+      "left_values": [
+        1,
+        0
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        1,
+        0
+      ],
+      "sum_squared_differences": 0
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 2,
+      "left_values": [
+        1,
+        0
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        1,
+        0
+      ],
+      "sum_squared_differences": 2
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 1,
+      "left_values": [
+        1,
+        0
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        1,
+        1
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 1,
+      "left_values": [
+        1,
+        0
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        1,
+        1
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 2,
+      "left_values": [
+        1,
+        1
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        0,
+        0
+      ],
+      "sum_squared_differences": 2
+    },
+    {
+      "cross_term": 0,
+      "expanded_value": 2,
+      "left_values": [
+        1,
+        1
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        0,
+        0
+      ],
+      "sum_squared_differences": 2
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 1,
+      "left_values": [
+        1,
+        1
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        0,
+        1
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 1,
+      "left_values": [
+        1,
+        1
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        0,
+        1
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 1,
+      "left_values": [
+        1,
+        1
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        1,
+        0
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 1,
+      "expanded_value": 1,
+      "left_values": [
+        1,
+        1
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        1,
+        0
+      ],
+      "sum_squared_differences": 1
+    },
+    {
+      "cross_term": 2,
+      "expanded_value": 0,
+      "left_values": [
+        1,
+        1
+      ],
+      "matching": [
+        0,
+        1
+      ],
+      "right_values": [
+        1,
+        1
+      ],
+      "sum_squared_differences": 0
+    },
+    {
+      "cross_term": 2,
+      "expanded_value": 0,
+      "left_values": [
+        1,
+        1
+      ],
+      "matching": [
+        1,
+        0
+      ],
+      "right_values": [
+        1,
+        1
+      ],
+      "sum_squared_differences": 0
+    }
+  ],
+  "source_sha256": "0e6a5677b33a35666a4ca14552aa595ad9bedce410e4ab1f7028086f0cf899e0",
+  "sources": 32,
+  "status": "PASS"
+}

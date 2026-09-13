@@ -1,0 +1,676 @@
+{
+  "schema": "ym2-overlap-final-export-v1",
+  "status": "PASS",
+  "utc": "2026-09-12T20:50:01.926319+00:00",
+  "archive": "C:\\github\\RPRM-open\\research\\ym2-overlap-20260912-delivery\\YM2-overlap-cover-2026-09-12.zip",
+  "archive_sha256": "e8486ab5b3afacc65c070c5dcb975a66e4170154f0f75245bb2a3d169a148ca3",
+  "archive_bytes": 713612,
+  "payload_files": 34,
+  "payload_bytes": 1025051,
+  "manifest_covered_files": 33,
+  "zip_crc": "PASS",
+  "fresh_extraction": "C:\\github\\RPRM-open\\research\\ym2-overlap-20260912-delivery\\final-extraction\\YM2-overlap-cover",
+  "source_equals_extracted": true,
+  "unchanged_after_replay": true,
+  "command": [
+    "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-I",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\github\\RPRM-open\\research\\ym2-overlap-20260912-delivery\\final-extraction\\YM2-overlap-cover\\check_overlap.py"
+  ],
+  "cwd": "C:\\github\\RPRM-open\\research\\ym2-overlap-20260912-delivery\\final-extraction\\YM2-overlap-cover",
+  "exit_code": 0,
+  "stdout_file": "check_overlap.stdout.txt",
+  "stdout_sha256": "1352a37e7485a0f4fda457904b2d95b7a93978ab67a972a216dd4bb51ecc622c",
+  "stderr_bytes": 0,
+  "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "accepted_snapshots": 20,
+  "prior_archives_unchanged": [
+    {
+      "path": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "sha256": "4e91d638db3ef1c511cb35b08e74a5c4413af7f58babc15b03bf1afee8a4d6d5"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\YM2-connected-vacuum-2026-09-12.zip",
+      "sha256": "e520be5988a4106a91fdecb9df716d6fdf929d2113ca1ced820a7d1ca5923efd"
+    }
+  ],
+  "top_level_file_links_checked": 37,
+  "link_records": [
+    {
+      "note": "BLOCK_COVER.md",
+      "target": "accepted/estimate/RESULT.md"
+    },
+    {
+      "note": "BLOCK_COVER.md",
+      "target": "accepted/estimate/CONDITIONAL_GAP_EXTENSION.md"
+    },
+    {
+      "note": "BLOCK_COVER.md",
+      "target": "accepted/DIFFERENCE_PROJECTION.md"
+    },
+    {
+      "note": "GEOMETRIC_OVERLAP.md",
+      "target": "accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md"
+    },
+    {
+      "note": "GEOMETRIC_OVERLAP.md",
+      "target": "accepted/estimate/CONDITIONAL_GAP_EXTENSION.md"
+    },
+    {
+      "note": "GEOMETRIC_OVERLAP.md",
+      "target": "accepted/rprm/core.md"
+    },
+    {
+      "note": "GEOMETRIC_OVERLAP.md",
+      "target": "accepted/rprm/operations.md"
+    },
+    {
+      "note": "GEOMETRIC_OVERLAP.md",
+      "target": "accepted/rprm/ZERO-AND-RAILS.md"
+    },
+    {
+      "note": "GEOMETRIC_OVERLAP.md",
+      "target": "accepted/rprm/CUBES-AND-PI-CURVES.md"
+    },
+    {
+      "note": "GEOMETRIC_OVERLAP.md",
+      "target": "accepted/PHASE_CLOSURE.md"
+    },
+    {
+      "note": "GEOMETRIC_OVERLAP.md",
+      "target": "accepted/REVIEW_PERTURBATION.md"
+    },
+    {
+      "note": "GEOMETRIC_OVERLAP.md",
+      "target": "accepted/estimate/CONDITIONAL_GAP_EXTENSION.md"
+    },
+    {
+      "note": "INDEPENDENT_REVIEW.md",
+      "target": "BLOCK_COVER.md"
+    },
+    {
+      "note": "INDEPENDENT_REVIEW.md",
+      "target": "accepted/estimate/CONDITIONAL_GAP_EXTENSION.md"
+    },
+    {
+      "note": "INDEPENDENT_REVIEW.md",
+      "target": "OVERLAP_INVERSE.md"
+    },
+    {
+      "note": "OVERLAP_INVERSE.md",
+      "target": "accepted/estimate/RESULT.md"
+    },
+    {
+      "note": "OVERLAP_INVERSE.md",
+      "target": "accepted/estimate/RECENTER_AND_INVERSE.md"
+    },
+    {
+      "note": "README.md",
+      "target": "RESULT.md"
+    },
+    {
+      "note": "README.md",
+      "target": "overlap_cover.png"
+    },
+    {
+      "note": "README.md",
+      "target": "BLOCK_COVER.md"
+    },
+    {
+      "note": "README.md",
+      "target": "GEOMETRIC_OVERLAP.md"
+    },
+    {
+      "note": "README.md",
+      "target": "OVERLAP_INVERSE.md"
+    },
+    {
+      "note": "README.md",
+      "target": "INDEPENDENT_REVIEW.md"
+    },
+    {
+      "note": "README.md",
+      "target": "RESULTS.json"
+    },
+    {
+      "note": "README.md",
+      "target": "SOURCE_PROVENANCE.json"
+    },
+    {
+      "note": "README.md",
+      "target": "draw_overlap.py"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "overlap_cover.png"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "BLOCK_COVER.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "BLOCK_COVER.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "INDEPENDENT_REVIEW.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "GEOMETRIC_OVERLAP.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "OVERLAP_INVERSE.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "GEOMETRIC_OVERLAP.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "accepted/estimate/RESULT.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "check_overlap.py"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "RESULTS.json"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "SOURCE_PROVENANCE.json"
+    }
+  ],
+  "historical_link_scope": "Accepted byte-exact snapshots retain historical relative links; complete deep historical navigation is not asserted. Prior final ZIP included.",
+  "figure_dimensions": [
+    3200,
+    1600
+  ],
+  "receipt": {
+    "schema": "ym2-overlap-exact-controls-v1",
+    "direction_covers": [
+      {
+        "vertices": 4,
+        "edges": 4,
+        "blocks": 2,
+        "total_weight": "2",
+        "edge_loads": [
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "factor": "2",
+        "counting_ceiling": "4",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      {
+        "vertices": 12,
+        "edges": 17,
+        "blocks": 2,
+        "total_weight": "2",
+        "edge_loads": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "factor": "2",
+        "counting_ceiling": "17/6",
+        "shape": [
+          3,
+          4
+        ]
+      },
+      {
+        "vertices": 16,
+        "edges": 24,
+        "blocks": 2,
+        "total_weight": "2",
+        "edge_loads": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "factor": "2",
+        "counting_ceiling": "8/3",
+        "shape": [
+          4,
+          4
+        ]
+      },
+      {
+        "vertices": 8,
+        "edges": 12,
+        "blocks": 3,
+        "total_weight": "3/2",
+        "edge_loads": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "factor": "3/2",
+        "counting_ceiling": "12/5",
+        "shape": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "vertices": 27,
+        "edges": 54,
+        "blocks": 3,
+        "total_weight": "3/2",
+        "edge_loads": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "factor": "3/2",
+        "counting_ceiling": "27/14",
+        "shape": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "vertices": 24,
+        "edges": 46,
+        "blocks": 3,
+        "total_weight": "3/2",
+        "edge_loads": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "factor": "3/2",
+        "counting_ceiling": "2",
+        "shape": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "square": {
+      "vertices": 4,
+      "edges": 4,
+      "blocks": 4,
+      "total_weight": "4",
+      "edge_loads": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "factor": "4",
+      "counting_ceiling": "4"
+    },
+    "two_adjacent_squares": {
+      "vertices": 6,
+      "edges": 7,
+      "blocks": 15,
+      "total_weight": "7/2",
+      "edge_loads": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "factor": "7/2",
+      "counting_ceiling": "7/2"
+    },
+    "cube": {
+      "vertices": 8,
+      "edges": 12,
+      "blocks": 384,
+      "total_weight": "12/5",
+      "edge_loads": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "factor": "12/5",
+      "counting_ceiling": "12/5"
+    },
+    "duplicate_cube_factor": "12/5",
+    "nonphysical_product_control": [
+      {
+        "support": [
+          0
+        ],
+        "eigenvalue": "1"
+      },
+      {
+        "support": [
+          1
+        ],
+        "eigenvalue": "1"
+      },
+      {
+        "support": [
+          0,
+          1
+        ],
+        "eigenvalue": "3/2"
+      },
+      {
+        "support": [
+          2
+        ],
+        "eigenvalue": "1"
+      },
+      {
+        "support": [
+          0,
+          2
+        ],
+        "eigenvalue": "3/2"
+      },
+      {
+        "support": [
+          1,
+          2
+        ],
+        "eigenvalue": "3/2"
+      },
+      {
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "eigenvalue": "3/2"
+      }
+    ],
+    "free_inverse_loops": [
+      {
+        "loop_edges": 4,
+        "naive_multiplier": 16
+      },
+      {
+        "loop_edges": 6,
+        "naive_multiplier": 36
+      },
+      {
+        "loop_edges": 8,
+        "naive_multiplier": 64
+      },
+      {
+        "loop_edges": 12,
+        "naive_multiplier": 144
+      },
+      {
+        "loop_edges": 20,
+        "naive_multiplier": 400
+      }
+    ],
+    "fixed_graph_physical_high_spin": [
+      {
+        "spin": "1/2",
+        "multiplier_lower_bound_at_weight_one": "2"
+      },
+      {
+        "spin": "1",
+        "multiplier_lower_bound_at_weight_one": "11/3"
+      },
+      {
+        "spin": "4",
+        "multiplier_lower_bound_at_weight_one": "83/3"
+      },
+      {
+        "spin": "16",
+        "multiplier_lower_bound_at_weight_one": "1091/3"
+      },
+      {
+        "spin": "64",
+        "multiplier_lower_bound_at_weight_one": "16643/3"
+      }
+    ],
+    "box_counting_ceilings": [
+      {
+        "dimension": 2,
+        "side_vertices": 2,
+        "counting_ceiling": "4",
+        "excess": "2"
+      },
+      {
+        "dimension": 2,
+        "side_vertices": 3,
+        "counting_ceiling": "3",
+        "excess": "1"
+      },
+      {
+        "dimension": 2,
+        "side_vertices": 4,
+        "counting_ceiling": "8/3",
+        "excess": "2/3"
+      },
+      {
+        "dimension": 2,
+        "side_vertices": 8,
+        "counting_ceiling": "16/7",
+        "excess": "2/7"
+      },
+      {
+        "dimension": 2,
+        "side_vertices": 16,
+        "counting_ceiling": "32/15",
+        "excess": "2/15"
+      },
+      {
+        "dimension": 2,
+        "side_vertices": 64,
+        "counting_ceiling": "128/63",
+        "excess": "2/63"
+      },
+      {
+        "dimension": 3,
+        "side_vertices": 2,
+        "counting_ceiling": "12/5",
+        "excess": "9/10"
+      },
+      {
+        "dimension": 3,
+        "side_vertices": 3,
+        "counting_ceiling": "27/14",
+        "excess": "3/7"
+      },
+      {
+        "dimension": 3,
+        "side_vertices": 4,
+        "counting_ceiling": "16/9",
+        "excess": "5/18"
+      },
+      {
+        "dimension": 3,
+        "side_vertices": 8,
+        "counting_ceiling": "192/119",
+        "excess": "27/238"
+      },
+      {
+        "dimension": 3,
+        "side_vertices": 16,
+        "counting_ceiling": "256/165",
+        "excess": "17/330"
+      },
+      {
+        "dimension": 3,
+        "side_vertices": 64,
+        "counting_ceiling": "4096/2709",
+        "excess": "65/5418"
+      }
+    ],
+    "endpoint_coefficients_of_exp_minus_3_over_2": {
+      "old": "3/8",
+      "d2": "3/4",
+      "d3": "9/16"
+    },
+    "status": "PASS",
+    "assertions": 1343,
+    "evidence_ceiling": "Finite exact corroboration; all-spin, all-volume and actual-vacuum claims rely on the written proofs, not these samples."
+  },
+  "old_checkers_executed": false,
+  "evidence_ceiling": "Written proofs with independent agent audits and bounded exact corroboration; export evidence binds bytes/execution, not mathematical truth or continuum existence."
+}

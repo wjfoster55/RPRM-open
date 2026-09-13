@@ -1,0 +1,720 @@
+{
+  "input_identity": {
+    "field": "Q",
+    "a_invariants": [
+      0,
+      0,
+      0,
+      -25,
+      0
+    ],
+    "source_records": [
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/CODEX_START_HERE.md",
+        "sha256": "371f0a8a4918647b225d5660e0600033f4dea20eceb7246f9d7d69ace0cb938b",
+        "size": 14221
+      },
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/TEST_PLAN.json",
+        "sha256": "039ebbe341a76a6dc196673392ccc1fb0e6e6905d18da03592fbb2201926850c",
+        "size": 3871
+      },
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/inputs/descent/E5_DESCENT_NOTE.md",
+        "sha256": "c85c9b1e57393608271ad1994d2bb1d9622e6c5797ced05933d11c1bb8130b63",
+        "size": 16056
+      },
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/inputs/analytic/ANALYTIC_NOTE.md",
+        "sha256": "218934932734425e1e7a64afcbcdea19cbca956af97f97327f04896dceb92276",
+        "size": 12054
+      },
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/inputs/descent/e5_descent.py",
+        "sha256": "0744cb00b206b4934c37313941170275a9b20dd87580c743aeccc8a5ae40c494",
+        "size": 13693
+      },
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/inputs/analytic/certify_e5.py",
+        "sha256": "93719886550fd08c7488ead7031a1ebb44ae6d1da0c321b4067016120e5cfaed",
+        "size": 9055
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "A01",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "Sel_2=delta(E(Q)) has eight classes; rank=1; Sha[2^n]=0 for all n>=1",
+      "evidence_kind": "INDEPENDENT_FINITE_TESTS_PLUS_WRITTEN_PROOF_WITH_CITED_THEOREMS",
+      "checked_hypotheses": [
+        "Exact E5 model",
+        "Stated carriers and level/cutoff bounds",
+        "Written proof and cited hypotheses at the linked evidence scope"
+      ],
+      "source": [
+        "independent residue lifting",
+        "exact rational witnesses",
+        "ARITHMETIC_PROOF.md"
+      ]
+    },
+    {
+      "id": "A02",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "compatible 2-power quotient coordinates and exact finite readback; no odd-prime saturation conclusion",
+      "evidence_kind": "INDEPENDENT_FINITE_TESTS_PLUS_WRITTEN_PROOF_WITH_CITED_THEOREMS",
+      "checked_hypotheses": [
+        "Exact E5 model",
+        "Stated carriers and level/cutoff bounds",
+        "Written proof and cited hypotheses at the linked evidence scope"
+      ],
+      "source": [
+        "112 finite tower cases at levels1..4",
+        "six rational-x-search spot cases",
+        "ARITHMETIC_PROOF.md"
+      ]
+    },
+    {
+      "id": "C01",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "five-bit bijection transports XOR to squareclass multiplication; coherent frame/readout transport passes",
+      "evidence_kind": "INDEPENDENT_FINITE_TESTS_PLUS_WRITTEN_PROOF_WITH_CITED_THEOREMS",
+      "checked_hypotheses": [
+        "Exact E5 model",
+        "Stated carriers and level/cutoff bounds",
+        "Written proof and cited hypotheses at the linked evidence scope"
+      ],
+      "source": [
+        "all 1024 pairs",
+        "32 transported readouts",
+        "ARITHMETIC_PROOF.md"
+      ]
+    },
+    {
+      "id": "R01",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "Both byte-preserved supplied programs were executed freshly; the source replay reproduced its stated outputs.",
+      "evidence_kind": "SAME_IMPLEMENTATION_FRESH_REPLAY",
+      "checked_hypotheses": [
+        "Exact E5 model",
+        "Stated carriers and level/cutoff bounds",
+        "Written proof and cited hypotheses at the linked evidence scope"
+      ],
+      "source": [
+        "evidence/codex_replay/REPLAY.json",
+        "runs/portable_validation/RUN.json"
+      ]
+    },
+    {
+      "id": "B01",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "Exact E5 identification, N=800, sign=-1, additive factors at 2 and 5, and completed Mellin/central derivative normalization checked.",
+      "evidence_kind": "INDEPENDENT_PRIMARY_SOURCE_AND_WRITTEN_PROOF_REVIEW",
+      "checked_hypotheses": [
+        "Exact E5 model",
+        "Stated carriers and level/cutoff bounds",
+        "Written proof and cited hypotheses at the linked evidence scope"
+      ],
+      "source": [
+        "ANALYTIC_THEOREMS.md",
+        "evidence/analytic_theorems.json"
+      ]
+    },
+    {
+      "id": "B02",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "Independent coefficients and every bound premise give Lprime > 615556405007957768183/937494780448358006784 > 13/20.",
+      "evidence_kind": [
+        "INDEPENDENT_EXACT_FINITE_COMPUTATION",
+        "WRITTEN_DERIVATION",
+        "THEOREM_CITED"
+      ],
+      "checked_hypotheses": [
+        "Exact E5 model",
+        "Stated carriers and level/cutoff bounds",
+        "Written proof and cited hypotheses at the linked evidence scope"
+      ],
+      "source": [
+        "evidence/analytic.json",
+        "INTERVAL_DERIVATION.md",
+        "ANALYTIC_THEOREMS.md"
+      ]
+    },
+    {
+      "id": "D01",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "556371/250000 < c1 < 1114529/500000",
+      "evidence_kind": "EXACT_RATIONAL_ENCLOSURE_WITH_WRITTEN_ERROR_PROOF_AND_CITED_THEOREMS",
+      "checked_hypotheses": [
+        "Exact E5 model",
+        "Stated carriers and level/cutoff bounds",
+        "Written proof and cited hypotheses at the linked evidence scope"
+      ],
+      "source": [
+        "DERIVATIVE_INTERVAL.json",
+        "INTERVAL_DERIVATION.md",
+        "work/INTERVAL_BUDGET.json",
+        "evidence/interval_peer_review.json"
+      ]
+    },
+    {
+      "id": "J01",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "Arithmetic rank=1 independently equals analytic zero order=1 on E5. Sha[2^n]=0 for every n>=1; full BSD coefficient formula remains unestablished here.",
+      "evidence_kind": "WRITTEN_COMBINATION_OF_INDEPENDENT_THEOREM_BASED_RESULTS",
+      "checked_hypotheses": [
+        "Exact E5 model",
+        "Stated carriers and level/cutoff bounds",
+        "Written proof and cited hypotheses at the linked evidence scope"
+      ],
+      "source": [
+        "ARITHMETIC_PROOF.md",
+        "ANALYTIC_THEOREMS.md",
+        "DERIVATIVE_INTERVAL.json",
+        "RETURN_TO_WILLIAM.md"
+      ]
+    },
+    {
+      "id": "THEOREM_S_KUMMER",
+      "input_identity": "Characteristic-zero split cubic with roots 0,5,-5 over Q",
+      "status": "CONFIRMED",
+      "conclusion": "S_KUMMER applies at its cited scope.",
+      "evidence_kind": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "Q has characteristic zero",
+        "roots 0,5,-5 are distinct rational integers",
+        "discriminant 1000000 is nonzero",
+        "E[2] is rational"
+      ],
+      "source": {
+        "url": "https://www.jmilne.org/math/Books/ectext6.pdf",
+        "locator": "IV section 3, Remark 3.7, printed p.113 / PDF page 121; preceding split-2-torsion cohomology identification",
+        "audit": "ARITHMETIC_PROOF.md"
+      }
+    },
+    {
+      "id": "THEOREM_S_SELMER",
+      "input_identity": "Characteristic-zero split cubic with roots 0,5,-5 over Q",
+      "status": "CONFIRMED",
+      "conclusion": "S_SELMER applies at its cited scope.",
+      "evidence_kind": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "Q is a number field",
+        "E5 is an elliptic curve",
+        "n=2^k is an integer greater than one",
+        "all places are retained in Selmer definition"
+      ],
+      "source": {
+        "url": "https://arxiv.org/pdf/math/0611694",
+        "locator": "section 1.1, printed pp.2-3 / PDF pages 2-3, Kummer and Selmer exact sequences and all-place local-image definition",
+        "audit": "ARITHMETIC_PROOF.md"
+      }
+    },
+    {
+      "id": "THEOREM_S_MW",
+      "input_identity": "Characteristic-zero split cubic with roots 0,5,-5 over Q",
+      "status": "CONFIRMED",
+      "conclusion": "S_MW applies at its cited scope.",
+      "evidence_kind": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "E5 is an elliptic curve over number field Q"
+      ],
+      "source": {
+        "url": "https://www.jmilne.org/math/Books/ectext6.pdf",
+        "locator": "Chapter IV opening, finite-basis theorem, printed p.101 / PDF page 109",
+        "audit": "ARITHMETIC_PROOF.md"
+      }
+    },
+    {
+      "id": "THEOREM_S_HALF",
+      "input_identity": "Characteristic-zero split cubic with roots 0,5,-5 over Q",
+      "status": "CONFIRMED",
+      "conclusion": "S_HALF applies at its cited scope.",
+      "evidence_kind": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "characteristic of Q is not 2",
+        "all three roots belong to Q and are distinct",
+        "non-O target is admitted on E5",
+        "all three differences are rational squares on enabled path",
+        "O handled separately as fiber E[2]"
+      ],
+      "source": {
+        "url": "https://arxiv.org/html/1702.02255v2",
+        "locator": "section 2, Theorem 2.1 and equations (3)-(6), plus Example 2.2 for a two-torsion target",
+        "audit": "ARITHMETIC_PROOF.md"
+      }
+    },
+    {
+      "id": "B01_MODEL",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "Identified with D=5 member of Dv^2=u^3-u.",
+      "evidence_kind": "WRITTEN_EXACT_SPECIALIZATION",
+      "checked_hypotheses": [
+        "Supplied model over Q with a4=-25",
+        "Rational invertible substitution x=5u,y=25v"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": [
+          "ELKIES"
+        ]
+      }
+    },
+    {
+      "id": "B01_CONDUCTOR_SIGN_RULE",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "Applicable conductor and root-number formulas read in Elkies.",
+      "evidence_kind": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "D nonzero squarefree integer",
+        "D odd for N=32D^2",
+        "|D| modulo 8 in {5,6,7} for sign -1"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": [
+          "ELKIES"
+        ]
+      }
+    },
+    {
+      "id": "B01_CONDUCTOR_SIGN_E5",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": {
+        "conductor": 800,
+        "functional_equation_sign": -1
+      },
+      "evidence_kind": "WRITTEN_EXACT_SPECIALIZATION",
+      "checked_hypotheses": [
+        "D=5>0 is squarefree and odd",
+        "5 modulo 8 equals 5"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": [
+          "B01_MODEL",
+          "B01_CONDUCTOR_SIGN_RULE"
+        ]
+      }
+    },
+    {
+      "id": "B01_MINIMALITY",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "A discriminant valuation cannot decrease by 12 and remain nonnegative; the displayed model is minimal at every prime.",
+      "evidence_kind": "WRITTEN_PROOF_FROM_STANDARD_TRANSFORMATION_LAW",
+      "checked_hypotheses": [
+        "Integral Weierstrass equation",
+        "u in Q_p^* has integral valuation",
+        "Any integral equation has nonnegative discriminant valuation"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": [
+          "CREMONA3"
+        ]
+      }
+    },
+    {
+      "id": "B01_LOCAL_FACTORS",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "Additive reduction at 2,5 yields P_2=P_5=1. All n divisible by 2 or 5 have a_n=0. All other primes are good.",
+      "evidence_kind": "WRITTEN_LOCAL_SPECIALIZATION_OF_CITED_CONVENTIONS",
+      "checked_hypotheses": [
+        "Minimality proved",
+        "At 2, X=x+1 then Z=y+X yields Z^2=X^3",
+        "At 5 reduction is y^2=x^3",
+        "Delta a unit elsewhere"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": [
+          "MILNE"
+        ]
+      }
+    },
+    {
+      "id": "B01_MODULARITY",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "The normalized weight-two newform at conductor level supplies L(E,s) and its Fricke transformation.",
+      "evidence_kind": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "Nonsingular projective cubic over Q with rational point at infinity"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": [
+          "BCDT",
+          "CREMONA2"
+        ]
+      }
+    },
+    {
+      "id": "B01_CENTRAL_ZERO",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "The completed function is odd about 1 and its factor at 1 is 1/alpha; L(E,1)=0 exactly.",
+      "evidence_kind": "WRITTEN_PROOF_FROM_CHECKED_THEOREM_PREMISES",
+      "checked_hypotheses": [
+        "Lambda(s)=alpha^(-s) Gamma(s) L(E,s)",
+        "epsilon=-1",
+        "alpha=2 pi/sqrt(800)>0",
+        "Gamma(1)=1"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": []
+      }
+    },
+    {
+      "id": "B01_DERIVATIVE_FORMULA",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "L'(E,1)=2 sum_{n>=1} (a_n/n) E1(alpha n).",
+      "evidence_kind": "INDEPENDENT_WRITTEN_MELLIN_DERIVATION_WITH_PRIMARY_FORMULA_CROSS_CHECK",
+      "checked_hypotheses": [
+        "Fricke eta=+1=-epsilon",
+        "g(1/u)=epsilon u^2 g(u)",
+        "Exponential domination permits integration and differentiation",
+        "L(E,1)=0 eliminates differentiated prefactor term"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": [
+          "CREMONA2",
+          "SAGE_DERIVATIVE",
+          "DLMF"
+        ]
+      }
+    },
+    {
+      "id": "B01_HASSE",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "|a_p|<=2 sqrt(p) at every good prime.",
+      "evidence_kind": "THEOREM_CITED",
+      "checked_hypotheses": [
+        "For each p outside {2,5}, E reduces to an elliptic curve over F_p"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": [
+          "HASSE"
+        ]
+      }
+    },
+    {
+      "id": "B01_ALL_N_BOUND",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "For every integer n>=1, |a_n|<=d(n)sqrt(n)<=2n.",
+      "evidence_kind": "WRITTEN_ALL_N_PROOF_FROM_HASSE_AND_EULER_FACTORS",
+      "checked_hypotheses": [
+        "Good Euler roots beta,gamma have modulus sqrt(p)",
+        "a_(p^k)=sum_{j=0}^k beta^j gamma^(k-j)",
+        "Coprime coefficient multiplicativity",
+        "Additive bad-prime powers vanish",
+        "Pairing complementary divisors proves d(n)<=2 sqrt(n)"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": [
+          "B01_LOCAL_FACTORS",
+          "B01_HASSE"
+        ]
+      }
+    },
+    {
+      "id": "B01_RATIONAL_BOUND_PREMISES",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": [
+        "1/5<alpha<1/4",
+        "exp(-alpha)<q=5/6",
+        "0<E1(x)<=exp(-x)/x for x>0",
+        "2E1(alpha)>8/9",
+        "Negative nth contribution has magnitude <10|a_n|q^n/n^2",
+        "Every tail from n=M+1 has magnitude <20 q^(M+1)/((M+1)(1-q))"
+      ],
+      "evidence_kind": "WRITTEN_ELEMENTARY_INEQUALITY_PROOFS",
+      "checked_hypotheses": [
+        "Alternating arctan series yields 3<pi<7/2",
+        "Rational squares give 7/5<sqrt(2)<3/2",
+        "Exponential series and geometric/atanh series"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": []
+      }
+    },
+    {
+      "id": "B01_BASELINE_ASSEMBLY",
+      "input_identity": "Q: [0,0,0,-25,0]",
+      "status": "CONFIRMED",
+      "conclusion": "L'(E,1)>615556405007957768183/937494780448358006784>13/20, so the exact central zero is simple.",
+      "evidence_kind": "WRITTEN_PROOF_RECONCILED_WITH_B02_FRESH_INDEPENDENT_COMPUTATION",
+      "checked_hypotheses": [
+        "Read work/analytic_check.py and evidence/analytic.json; B02 independently verifies the four nonzero coefficients through 20 and exact rational assembly"
+      ],
+      "source": {
+        "audit": "ANALYTIC_THEOREMS.md",
+        "detail": "evidence/analytic_theorems.json",
+        "references": []
+      }
+    },
+    {
+      "id": "CONTROL_K01_OFF_CURVE",
+      "input_identity": {
+        "x": "0",
+        "y": "1"
+      },
+      "status": "CONFIRMED",
+      "conclusion": "ADMISSION_REJECTED",
+      "evidence_kind": "EXECUTED_FINITE_CONTROL",
+      "checked_hypotheses": [
+        "Supply (0,1), which is not on E5; exact group/signature path rejects it rather than silently processing it."
+      ],
+      "source": "CONTROLS.json"
+    },
+    {
+      "id": "CONTROL_K02_MODEL_BINDING",
+      "input_identity": "K02_MODEL_BINDING",
+      "status": "CONFIRMED",
+      "conclusion": "REJECT_CERTIFICATE_NON_APPLICABILITY",
+      "evidence_kind": "EXECUTED_FINITE_CONTROL",
+      "checked_hypotheses": [
+        "Change a-invariant -25 to -36 while presenting the E5 certificate; detect different source. Do not conclude a new rank or copy conductor/sign."
+      ],
+      "source": "CONTROLS.json"
+    },
+    {
+      "id": "CONTROL_K03_EULER_RECURRENCE",
+      "input_identity": "coefficient record a9 changed to 0",
+      "status": "CONFIRMED",
+      "conclusion": "FALSE_RECORD_REJECTED",
+      "evidence_kind": "EXECUTED_FINITE_CONTROL",
+      "checked_hypotheses": [
+        "Set a9=0 in a disposable coefficient record; independent a3^2-3 recurrence detects the false record."
+      ],
+      "source": "CONTROLS.json"
+    },
+    {
+      "id": "CONTROL_K04_NO_TAIL",
+      "input_identity": "deleted the all-term coefficient theorem from the same finite-head claim representation used by interval promotion",
+      "status": "CONFIRMED",
+      "conclusion": "INFINITE_CLAIM_OPEN_PROMOTION_REJECTED",
+      "evidence_kind": "EXECUTED_FINITE_CONTROL",
+      "checked_hypotheses": [
+        "Remove the all-term tail justification from a finite-head claim; do not promote the finite value to an infinite-sum nonvanishing certificate. A different supplied proof would be separately credited."
+      ],
+      "source": "CONTROLS.json"
+    },
+    {
+      "id": "CONTROL_K05_LOST_REMAINDER",
+      "input_identity": "K05_LOST_REMAINDER",
+      "status": "CONFIRMED",
+      "conclusion": "NON_IDENTIFIABLE_FROM_COARSE_LABEL",
+      "evidence_kind": "EXECUTED_FINITE_CONTROL",
+      "checked_hypotheses": [
+        "O and Q=2P share the level-one class but differ at level two. Show exact recovery with retained source/remainder and non-identifiability from the coarse label alone."
+      ],
+      "source": "CONTROLS.json"
+    },
+    {
+      "id": "CONTROL_K06_FRAME_TRANSPORT",
+      "input_identity": "K06_FRAME_TRANSPORT",
+      "status": "CONFIRMED",
+      "conclusion": "COHERENT_TRANSPORT_CONFIRMED_AND_STALE_READOUT_REFUTED",
+      "evidence_kind": "EXECUTED_FINITE_CONTROL",
+      "checked_hypotheses": [
+        "Apply one nontrivial invertible five-bit basis map. Transport the readout and pass; keep the old readout and exhibit a mismatch. Renaming is not a mathematical failure."
+      ],
+      "source": "CONTROLS.json"
+    },
+    {
+      "id": "K03_FALSE_COEFFICIENT",
+      "input_identity": "evidence/controls/K03_mutated_a9.json",
+      "status": "REFUTED",
+      "conclusion": "a9=0 is false; the independently computed recurrence requires a9=-3.",
+      "evidence_kind": "EXACT_WRONG_VALUE_WITNESS",
+      "checked_hypotheses": [
+        "Good prime 3; a3=0; a9=a3^2-3."
+      ],
+      "source": [
+        "CONTROLS.json",
+        "evidence/analytic.json"
+      ]
+    },
+    {
+      "id": "K02_CHANGED_MODEL_REUSE",
+      "input_identity": "Q: [0,0,0,-36,0]",
+      "status": "REFUTED",
+      "conclusion": "Reuse of the exact-model E5 certificate is inapplicable after the real a4 change.",
+      "evidence_kind": "EXACT_MODEL_AND_POLYNOMIAL_MISMATCH",
+      "checked_hypotheses": [
+        "The certificate requires a4=-25; the pullback difference is 55u."
+      ],
+      "source": [
+        "CONTROLS.json",
+        "evidence/model_binding.json"
+      ]
+    },
+    {
+      "id": "K06_STALE_READOUT",
+      "input_identity": "Transformed five-bit coordinates with the original indicator retained",
+      "status": "REFUTED",
+      "conclusion": "The stale indicator misclassifies delta(P); correctly transported indicator remains valid.",
+      "evidence_kind": "EXACT_WRONG_VALUE_WITNESS",
+      "checked_hypotheses": [
+        "Invertible frame change; original independent arithmetic admissible subset."
+      ],
+      "source": [
+        "CONTROLS.json",
+        "evidence/arithmetic.json"
+      ]
+    },
+    {
+      "id": "K04_MUTATED_INFINITE_CLAIM",
+      "input_identity": "evidence/controls/K04_missing_all_term_premise.json",
+      "status": "CONDITIONAL",
+      "conclusion": "OPEN: this finite head alone does not establish an infinite-sum enclosure.",
+      "evidence_kind": "EXPLICIT_MISSING_PROOF_OBLIGATION",
+      "checked_hypotheses": [
+        "The all-term coefficient premise was actually removed from the interval claim."
+      ],
+      "source": [
+        "CONTROLS.json",
+        "evidence/controls/K04_missing_all_term_premise.json"
+      ]
+    },
+    {
+      "id": "FRONTIER",
+      "input_identity": "E5 only",
+      "status": "NOT_RUN",
+      "conclusion": "Full BSD coefficient formula, odd saturation of P, odd-primary Sha and total Sha order remain unestablished in this experiment.",
+      "evidence_kind": "SCOPE_BOUNDARY",
+      "checked_hypotheses": [
+        "Not inferred from binary quotients or one-curve rank equality."
+      ],
+      "source": [
+        "CODEX_START_HERE.md in supplied bundle",
+        "BSD_REBRIEF.md"
+      ]
+    }
+  ],
+  "primary_source_index": [
+    {
+      "id": "ELKIES",
+      "url": "https://arxiv.org/pdf/math/0208056",
+      "title": "Curves D y^2=x^3-x of odd analytic rank",
+      "locations": [
+        "section 1.1, printed pages 1-2",
+        "section 2, printed page 4"
+      ],
+      "actual_source_opened": true,
+      "checked_content": "D-family definition; sign by squarefree |D| modulo 8; N(E_D)=32D^2 for odd squarefree D under section 2 hypotheses.",
+      "not_used": "The paper's arithmetic rank conclusions and point-construction computations."
+    },
+    {
+      "id": "BCDT",
+      "url": "https://www.math.u-psud.fr/~breuil/PUBLICATIONS/STW.pdf",
+      "title": "On the modularity of elliptic curves over Q: Wild 3-adic exercises",
+      "locations": [
+        "Introduction, Theorem A, page 1",
+        "Introduction, modularity equivalences (1)-(2), pages 2-3"
+      ],
+      "actual_source_opened": true,
+      "checked_content": "Every elliptic curve over Q is modular, with L(E,s) equal to that of a weight-two eigenform of level N(E)."
+    },
+    {
+      "id": "CREMONA2",
+      "url": "https://johncremona.github.io/book/fulltext/chapter2.pdf",
+      "title": "Algorithms for Modular Elliptic Curves, Chapter 2",
+      "locations": [
+        "section 2.8, printed page 29, equations 2.8.5-2.8.6",
+        "section 2.13, printed pages 42-43, Proposition 2.13.1"
+      ],
+      "actual_source_opened": true,
+      "checked_content": "Completed Mellin normalization, Fricke/root-sign reversal, Mellin split, derivative integral and E1 formula with order-at-least-r hypothesis."
+    },
+    {
+      "id": "CREMONA3",
+      "url": "https://johncremona.github.io/book/fulltext/chapter3.pdf",
+      "title": "Algorithms for Modular Elliptic Curves, Chapter 3",
+      "locations": [
+        "section 3.1, printed pages 62-63, equations 3.1.2-3.1.3"
+      ],
+      "actual_source_opened": true,
+      "checked_content": "Weierstrass invariants and general coordinate-change discriminant scaling u^12 Delta'=Delta."
+    },
+    {
+      "id": "MILNE",
+      "url": "https://www.jmilne.org/math/Books/ectext6.pdf",
+      "title": "Elliptic Curves (2006)",
+      "locations": [
+        "II section 3, printed page 59",
+        "IV section 10, printed page 163"
+      ],
+      "actual_source_opened": true,
+      "checked_content": "Cuspidal reduction is additive; additive local polynomial equals 1; good local polynomial equals 1-a_p T+p T^2."
+    },
+    {
+      "id": "HASSE",
+      "url": "https://math.mit.edu/classes/18.783/2023/LectureNotes7.pdf",
+      "title": "Andrew Sutherland, MIT 18.783 Fall 2023, Lecture 7",
+      "locations": [
+        "section 7.2, Theorem 7.3, printed pages 1-2"
+      ],
+      "actual_source_opened": true,
+      "checked_content": "For elliptic E/F_q, #E(F_q)=q+1-t and |t|<=2 sqrt(q); proof spans pages 1-2."
+    },
+    {
+      "id": "SAGE_DERIVATIVE",
+      "url": "https://doc.sagemath.org/html/en/reference/arithmetic_curves/sage/schemes/elliptic_curves/lseries_ell.html#sage.schemes.elliptic_curves.lseries_ell.Lseries_ell.deriv_at1",
+      "title": "Sage Lseries_ell.deriv_at1 documentation",
+      "locations": [
+        "deriv_at1 warning and algorithm"
+      ],
+      "actual_source_opened": true,
+      "checked_content": "Requires exact L(E,1)=0 and gives 2 sum (a_n/n) E1(2 pi n/sqrt(N)).",
+      "execution_status": "NOT_RUN",
+      "not_used": "Database examples, numerical backend error estimates, sha/rank methods. Cohen section 7.5.3 was credited in this documentation but not separately opened."
+    },
+    {
+      "id": "DLMF",
+      "url": "https://dlmf.nist.gov/6.2#E1",
+      "title": "NIST DLMF 6.2.1",
+      "locations": [
+        "equation 6.2.1"
+      ],
+      "actual_source_opened": true,
+      "checked_content": "Positive-real E1(x)=integral_x^infinity exp(-t)/t dt."
+    }
+  ],
+  "evidence_ceiling": "Theorems cited, written specializations, and finite exact executions are distinct. No new formal proof or general BSD theorem.",
+  "inventory_ceiling": "Hashes identify source bytes; they do not prove the mathematical content."
+}

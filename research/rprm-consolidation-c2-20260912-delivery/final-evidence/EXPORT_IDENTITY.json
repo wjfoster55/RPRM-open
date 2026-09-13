@@ -1,0 +1,14 @@
+{
+  "archive": "RPRM-CONSOLIDATED-C2-20260912.zip",
+  "sha256": "d72b85c0beb57d924c7a073b67a9230f130c25e206190e0b942e4839b46eca17",
+  "bytes": 6213961,
+  "validated_utc": "2026-09-12T15:06:28.102981+00:00",
+  "fresh_extraction": "final-extraction/RPRM-CONSOLIDATED-C2",
+  "payload_files_including_manifest": 447,
+  "manifested_payload_files_verified": 446,
+  "source_git_blobs_verified": 232,
+  "selected_preserved_input_records_verified": 27,
+  "final_replay": "FINAL_REPLAY.json",
+  "scope": "Actual final exported ZIP; four new bounded check entrypoints only. Historical accepted suites not rerun.",
+  "all_workers": "completed"
+}

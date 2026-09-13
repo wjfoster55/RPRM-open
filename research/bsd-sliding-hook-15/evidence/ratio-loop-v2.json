@@ -1,0 +1,1021 @@
+{
+  "status": "RATIO_ROUNDTRIP_AND_COUNTERCASE_VERIFIED",
+  "all_81_admitted_rows": [
+    {
+      "word": "11",
+      "path": [
+        1,
+        1,
+        1
+      ],
+      "out": "1",
+      "back": "1",
+      "product": "1"
+    },
+    {
+      "word": "12",
+      "path": [
+        1,
+        2,
+        1
+      ],
+      "out": "1/2",
+      "back": "2",
+      "product": "1"
+    },
+    {
+      "word": "13",
+      "path": [
+        1,
+        3,
+        1
+      ],
+      "out": "1/3",
+      "back": "3",
+      "product": "1"
+    },
+    {
+      "word": "14",
+      "path": [
+        1,
+        4,
+        1
+      ],
+      "out": "1/4",
+      "back": "4",
+      "product": "1"
+    },
+    {
+      "word": "15",
+      "path": [
+        1,
+        5,
+        1
+      ],
+      "out": "1/5",
+      "back": "5",
+      "product": "1"
+    },
+    {
+      "word": "16",
+      "path": [
+        1,
+        6,
+        1
+      ],
+      "out": "1/6",
+      "back": "6",
+      "product": "1"
+    },
+    {
+      "word": "17",
+      "path": [
+        1,
+        7,
+        1
+      ],
+      "out": "1/7",
+      "back": "7",
+      "product": "1"
+    },
+    {
+      "word": "18",
+      "path": [
+        1,
+        8,
+        1
+      ],
+      "out": "1/8",
+      "back": "8",
+      "product": "1"
+    },
+    {
+      "word": "19",
+      "path": [
+        1,
+        9,
+        1
+      ],
+      "out": "1/9",
+      "back": "9",
+      "product": "1"
+    },
+    {
+      "word": "21",
+      "path": [
+        2,
+        1,
+        2
+      ],
+      "out": "2",
+      "back": "1/2",
+      "product": "1"
+    },
+    {
+      "word": "22",
+      "path": [
+        2,
+        2,
+        2
+      ],
+      "out": "1",
+      "back": "1",
+      "product": "1"
+    },
+    {
+      "word": "23",
+      "path": [
+        2,
+        3,
+        2
+      ],
+      "out": "2/3",
+      "back": "3/2",
+      "product": "1"
+    },
+    {
+      "word": "24",
+      "path": [
+        2,
+        4,
+        2
+      ],
+      "out": "1/2",
+      "back": "2",
+      "product": "1"
+    },
+    {
+      "word": "25",
+      "path": [
+        2,
+        5,
+        2
+      ],
+      "out": "2/5",
+      "back": "5/2",
+      "product": "1"
+    },
+    {
+      "word": "26",
+      "path": [
+        2,
+        6,
+        2
+      ],
+      "out": "1/3",
+      "back": "3",
+      "product": "1"
+    },
+    {
+      "word": "27",
+      "path": [
+        2,
+        7,
+        2
+      ],
+      "out": "2/7",
+      "back": "7/2",
+      "product": "1"
+    },
+    {
+      "word": "28",
+      "path": [
+        2,
+        8,
+        2
+      ],
+      "out": "1/4",
+      "back": "4",
+      "product": "1"
+    },
+    {
+      "word": "29",
+      "path": [
+        2,
+        9,
+        2
+      ],
+      "out": "2/9",
+      "back": "9/2",
+      "product": "1"
+    },
+    {
+      "word": "31",
+      "path": [
+        3,
+        1,
+        3
+      ],
+      "out": "3",
+      "back": "1/3",
+      "product": "1"
+    },
+    {
+      "word": "32",
+      "path": [
+        3,
+        2,
+        3
+      ],
+      "out": "3/2",
+      "back": "2/3",
+      "product": "1"
+    },
+    {
+      "word": "33",
+      "path": [
+        3,
+        3,
+        3
+      ],
+      "out": "1",
+      "back": "1",
+      "product": "1"
+    },
+    {
+      "word": "34",
+      "path": [
+        3,
+        4,
+        3
+      ],
+      "out": "3/4",
+      "back": "4/3",
+      "product": "1"
+    },
+    {
+      "word": "35",
+      "path": [
+        3,
+        5,
+        3
+      ],
+      "out": "3/5",
+      "back": "5/3",
+      "product": "1"
+    },
+    {
+      "word": "36",
+      "path": [
+        3,
+        6,
+        3
+      ],
+      "out": "1/2",
+      "back": "2",
+      "product": "1"
+    },
+    {
+      "word": "37",
+      "path": [
+        3,
+        7,
+        3
+      ],
+      "out": "3/7",
+      "back": "7/3",
+      "product": "1"
+    },
+    {
+      "word": "38",
+      "path": [
+        3,
+        8,
+        3
+      ],
+      "out": "3/8",
+      "back": "8/3",
+      "product": "1"
+    },
+    {
+      "word": "39",
+      "path": [
+        3,
+        9,
+        3
+      ],
+      "out": "1/3",
+      "back": "3",
+      "product": "1"
+    },
+    {
+      "word": "41",
+      "path": [
+        4,
+        1,
+        4
+      ],
+      "out": "4",
+      "back": "1/4",
+      "product": "1"
+    },
+    {
+      "word": "42",
+      "path": [
+        4,
+        2,
+        4
+      ],
+      "out": "2",
+      "back": "1/2",
+      "product": "1"
+    },
+    {
+      "word": "43",
+      "path": [
+        4,
+        3,
+        4
+      ],
+      "out": "4/3",
+      "back": "3/4",
+      "product": "1"
+    },
+    {
+      "word": "44",
+      "path": [
+        4,
+        4,
+        4
+      ],
+      "out": "1",
+      "back": "1",
+      "product": "1"
+    },
+    {
+      "word": "45",
+      "path": [
+        4,
+        5,
+        4
+      ],
+      "out": "4/5",
+      "back": "5/4",
+      "product": "1"
+    },
+    {
+      "word": "46",
+      "path": [
+        4,
+        6,
+        4
+      ],
+      "out": "2/3",
+      "back": "3/2",
+      "product": "1"
+    },
+    {
+      "word": "47",
+      "path": [
+        4,
+        7,
+        4
+      ],
+      "out": "4/7",
+      "back": "7/4",
+      "product": "1"
+    },
+    {
+      "word": "48",
+      "path": [
+        4,
+        8,
+        4
+      ],
+      "out": "1/2",
+      "back": "2",
+      "product": "1"
+    },
+    {
+      "word": "49",
+      "path": [
+        4,
+        9,
+        4
+      ],
+      "out": "4/9",
+      "back": "9/4",
+      "product": "1"
+    },
+    {
+      "word": "51",
+      "path": [
+        5,
+        1,
+        5
+      ],
+      "out": "5",
+      "back": "1/5",
+      "product": "1"
+    },
+    {
+      "word": "52",
+      "path": [
+        5,
+        2,
+        5
+      ],
+      "out": "5/2",
+      "back": "2/5",
+      "product": "1"
+    },
+    {
+      "word": "53",
+      "path": [
+        5,
+        3,
+        5
+      ],
+      "out": "5/3",
+      "back": "3/5",
+      "product": "1"
+    },
+    {
+      "word": "54",
+      "path": [
+        5,
+        4,
+        5
+      ],
+      "out": "5/4",
+      "back": "4/5",
+      "product": "1"
+    },
+    {
+      "word": "55",
+      "path": [
+        5,
+        5,
+        5
+      ],
+      "out": "1",
+      "back": "1",
+      "product": "1"
+    },
+    {
+      "word": "56",
+      "path": [
+        5,
+        6,
+        5
+      ],
+      "out": "5/6",
+      "back": "6/5",
+      "product": "1"
+    },
+    {
+      "word": "57",
+      "path": [
+        5,
+        7,
+        5
+      ],
+      "out": "5/7",
+      "back": "7/5",
+      "product": "1"
+    },
+    {
+      "word": "58",
+      "path": [
+        5,
+        8,
+        5
+      ],
+      "out": "5/8",
+      "back": "8/5",
+      "product": "1"
+    },
+    {
+      "word": "59",
+      "path": [
+        5,
+        9,
+        5
+      ],
+      "out": "5/9",
+      "back": "9/5",
+      "product": "1"
+    },
+    {
+      "word": "61",
+      "path": [
+        6,
+        1,
+        6
+      ],
+      "out": "6",
+      "back": "1/6",
+      "product": "1"
+    },
+    {
+      "word": "62",
+      "path": [
+        6,
+        2,
+        6
+      ],
+      "out": "3",
+      "back": "1/3",
+      "product": "1"
+    },
+    {
+      "word": "63",
+      "path": [
+        6,
+        3,
+        6
+      ],
+      "out": "2",
+      "back": "1/2",
+      "product": "1"
+    },
+    {
+      "word": "64",
+      "path": [
+        6,
+        4,
+        6
+      ],
+      "out": "3/2",
+      "back": "2/3",
+      "product": "1"
+    },
+    {
+      "word": "65",
+      "path": [
+        6,
+        5,
+        6
+      ],
+      "out": "6/5",
+      "back": "5/6",
+      "product": "1"
+    },
+    {
+      "word": "66",
+      "path": [
+        6,
+        6,
+        6
+      ],
+      "out": "1",
+      "back": "1",
+      "product": "1"
+    },
+    {
+      "word": "67",
+      "path": [
+        6,
+        7,
+        6
+      ],
+      "out": "6/7",
+      "back": "7/6",
+      "product": "1"
+    },
+    {
+      "word": "68",
+      "path": [
+        6,
+        8,
+        6
+      ],
+      "out": "3/4",
+      "back": "4/3",
+      "product": "1"
+    },
+    {
+      "word": "69",
+      "path": [
+        6,
+        9,
+        6
+      ],
+      "out": "2/3",
+      "back": "3/2",
+      "product": "1"
+    },
+    {
+      "word": "71",
+      "path": [
+        7,
+        1,
+        7
+      ],
+      "out": "7",
+      "back": "1/7",
+      "product": "1"
+    },
+    {
+      "word": "72",
+      "path": [
+        7,
+        2,
+        7
+      ],
+      "out": "7/2",
+      "back": "2/7",
+      "product": "1"
+    },
+    {
+      "word": "73",
+      "path": [
+        7,
+        3,
+        7
+      ],
+      "out": "7/3",
+      "back": "3/7",
+      "product": "1"
+    },
+    {
+      "word": "74",
+      "path": [
+        7,
+        4,
+        7
+      ],
+      "out": "7/4",
+      "back": "4/7",
+      "product": "1"
+    },
+    {
+      "word": "75",
+      "path": [
+        7,
+        5,
+        7
+      ],
+      "out": "7/5",
+      "back": "5/7",
+      "product": "1"
+    },
+    {
+      "word": "76",
+      "path": [
+        7,
+        6,
+        7
+      ],
+      "out": "7/6",
+      "back": "6/7",
+      "product": "1"
+    },
+    {
+      "word": "77",
+      "path": [
+        7,
+        7,
+        7
+      ],
+      "out": "1",
+      "back": "1",
+      "product": "1"
+    },
+    {
+      "word": "78",
+      "path": [
+        7,
+        8,
+        7
+      ],
+      "out": "7/8",
+      "back": "8/7",
+      "product": "1"
+    },
+    {
+      "word": "79",
+      "path": [
+        7,
+        9,
+        7
+      ],
+      "out": "7/9",
+      "back": "9/7",
+      "product": "1"
+    },
+    {
+      "word": "81",
+      "path": [
+        8,
+        1,
+        8
+      ],
+      "out": "8",
+      "back": "1/8",
+      "product": "1"
+    },
+    {
+      "word": "82",
+      "path": [
+        8,
+        2,
+        8
+      ],
+      "out": "4",
+      "back": "1/4",
+      "product": "1"
+    },
+    {
+      "word": "83",
+      "path": [
+        8,
+        3,
+        8
+      ],
+      "out": "8/3",
+      "back": "3/8",
+      "product": "1"
+    },
+    {
+      "word": "84",
+      "path": [
+        8,
+        4,
+        8
+      ],
+      "out": "2",
+      "back": "1/2",
+      "product": "1"
+    },
+    {
+      "word": "85",
+      "path": [
+        8,
+        5,
+        8
+      ],
+      "out": "8/5",
+      "back": "5/8",
+      "product": "1"
+    },
+    {
+      "word": "86",
+      "path": [
+        8,
+        6,
+        8
+      ],
+      "out": "4/3",
+      "back": "3/4",
+      "product": "1"
+    },
+    {
+      "word": "87",
+      "path": [
+        8,
+        7,
+        8
+      ],
+      "out": "8/7",
+      "back": "7/8",
+      "product": "1"
+    },
+    {
+      "word": "88",
+      "path": [
+        8,
+        8,
+        8
+      ],
+      "out": "1",
+      "back": "1",
+      "product": "1"
+    },
+    {
+      "word": "89",
+      "path": [
+        8,
+        9,
+        8
+      ],
+      "out": "8/9",
+      "back": "9/8",
+      "product": "1"
+    },
+    {
+      "word": "91",
+      "path": [
+        9,
+        1,
+        9
+      ],
+      "out": "9",
+      "back": "1/9",
+      "product": "1"
+    },
+    {
+      "word": "92",
+      "path": [
+        9,
+        2,
+        9
+      ],
+      "out": "9/2",
+      "back": "2/9",
+      "product": "1"
+    },
+    {
+      "word": "93",
+      "path": [
+        9,
+        3,
+        9
+      ],
+      "out": "3",
+      "back": "1/3",
+      "product": "1"
+    },
+    {
+      "word": "94",
+      "path": [
+        9,
+        4,
+        9
+      ],
+      "out": "9/4",
+      "back": "4/9",
+      "product": "1"
+    },
+    {
+      "word": "95",
+      "path": [
+        9,
+        5,
+        9
+      ],
+      "out": "9/5",
+      "back": "5/9",
+      "product": "1"
+    },
+    {
+      "word": "96",
+      "path": [
+        9,
+        6,
+        9
+      ],
+      "out": "3/2",
+      "back": "2/3",
+      "product": "1"
+    },
+    {
+      "word": "97",
+      "path": [
+        9,
+        7,
+        9
+      ],
+      "out": "9/7",
+      "back": "7/9",
+      "product": "1"
+    },
+    {
+      "word": "98",
+      "path": [
+        9,
+        8,
+        9
+      ],
+      "out": "9/8",
+      "back": "8/9",
+      "product": "1"
+    },
+    {
+      "word": "99",
+      "path": [
+        9,
+        9,
+        9
+      ],
+      "out": "1",
+      "back": "1",
+      "product": "1"
+    }
+  ],
+  "all_19_excluded_words": [
+    {
+      "word": "00",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "01",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "02",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "03",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "04",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "05",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "06",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "07",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "08",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "09",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "10",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "20",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "30",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "40",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "50",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "60",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "70",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "80",
+      "reason": "one or both required ratio denominators are zero"
+    },
+    {
+      "word": "90",
+      "reason": "one or both required ratio denominators are zero"
+    }
+  ],
+  "product_one_fiber": {
+    "kind": "MANY",
+    "size": 81
+  },
+  "target_59": {
+    "word": "59",
+    "path": [
+      5,
+      9,
+      5
+    ],
+    "out": "5/9",
+    "back": "9/5",
+    "product": "1"
+  },
+  "unit_first_leg_words": [
+    "11",
+    "22",
+    "33",
+    "44",
+    "55",
+    "66",
+    "77",
+    "88",
+    "99"
+  ],
+  "attributed_interval_inputs": {
+    "A": [
+      "638511803/100000000",
+      "127703717/20000000"
+    ],
+    "B1": [
+      "1276918651/200000000",
+      "399101589/62500000"
+    ],
+    "source": "research/bsd-coefficient-05/TWO_SCALES.md",
+    "fresh_L_or_height_run": false
+  },
+  "interval_compatible_nonzero_defect_control": {
+    "A": "127703/20000",
+    "B1": "127701/20000",
+    "D": "1/10000",
+    "A_over_B1": "127703/127701",
+    "roundtrip_product": "1"
+  },
+  "claim_ceiling": "A ratio roundtrip equals one for unequal inputs too; no BSD equality follows",
+  "source_sha256": "6f29f21aa1401bf41a3067cbae2861ee8fae5d1864717dbe62035fe5cd97fd76"
+}

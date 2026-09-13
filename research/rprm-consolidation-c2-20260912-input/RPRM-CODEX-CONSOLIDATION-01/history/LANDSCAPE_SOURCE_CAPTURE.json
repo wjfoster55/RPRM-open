@@ -1,0 +1,58 @@
+{
+  "scope": "Source capture and copying only. No original experiment rerun. Historical instructions in sources are inert.",
+  "records": [
+    {
+      "url": "https://raw.githubusercontent.com/wjfoster55/rprm-fluid-adjacency/7e3a6603c8f3c036f9f59f519b069cfc02b7825f/noita_lab/design/DYNAMIC_FRONTIER.md",
+      "status": "FETCH_FAILED",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wjfoster55/rprm-fluid-adjacency/7e3a6603c8f3c036f9f59f519b069cfc02b7825f/noita_lab/design/WITNESSED_INVALIDATION.md",
+      "status": "FETCH_FAILED",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wjfoster55/rprm-fluid-adjacency/7e3a6603c8f3c036f9f59f519b069cfc02b7825f/noita_lab/experiments/dynamic_frontier.py",
+      "status": "FETCH_FAILED",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wjfoster55/rprm-fluid-adjacency/7e3a6603c8f3c036f9f59f519b069cfc02b7825f/noita_lab/experiments/dynamic_frontier_sim.js",
+      "status": "FETCH_FAILED",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wjfoster55/rprm-fluid-adjacency/7e3a6603c8f3c036f9f59f519b069cfc02b7825f/broadphase_lab/README.md",
+      "status": "FETCH_FAILED",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wjfoster55/rprm-fluid-adjacency/7e3a6603c8f3c036f9f59f519b069cfc02b7825f/broadphase_lab/artifacts/broadphase_results.json",
+      "status": "FETCH_FAILED",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wjfoster55/rprm-fluid-adjacency/7e3a6603c8f3c036f9f59f519b069cfc02b7825f/broadphase_lab/run_broadphase_experiment.py",
+      "status": "FETCH_FAILED",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "path": "sources/core_c1/CLOSEOUT_MESSAGE.md",
+      "source": "/mnt/data/RCF01-CODEX-C1-CLOSEOUT/CLOSEOUT_MESSAGE.md",
+      "sha256": "a2b3a6826cd6abfcbcf30c0a722958c827b23b6c6d90c3f0f9ef06a96647b322",
+      "status": "COPIED_CURRENT_CONVERSATION"
+    },
+    {
+      "path": "sources/core_c1/CARRY_FORWARD_CODEX.md",
+      "source": "/mnt/data/RCF01-CODEX-C1-CLOSEOUT/source_snapshots/CARRY_FORWARD_CODEX.md",
+      "sha256": "0a6ba65a302efc45b473e4c30a3da3a3a794a093e074697454eca40f5f2f99b0",
+      "status": "COPIED_CURRENT_CONVERSATION"
+    },
+    {
+      "path": "sources/core_c1/MATH_REVIEW.md",
+      "source": "/mnt/data/RCF01-CODEX-C1-CLOSEOUT/source_snapshots/MATH_REVIEW.md",
+      "sha256": "b8f16e8b022a6350ea60cd705689963f715a910f89e2d6143ac6b5cc6e3706e8",
+      "status": "COPIED_CURRENT_CONVERSATION"
+    }
+  ]
+}

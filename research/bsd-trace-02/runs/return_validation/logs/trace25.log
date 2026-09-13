@@ -1,0 +1,37 @@
+Irreducible residue field certified.
+Primitive Gaussian 68-division point certified.
+Prime-to-5 torsion lift certified.
+{
+  "status": "EXACT_TRACE_RESIDUE_COMPUTED",
+  "modulus": 25,
+  "trace_unit_multiple": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "valuation_capped": 2,
+  "v5_exactly_2": false,
+  "orbit_checks": {
+    "action_occurrences": 512,
+    "distinct_points": 512,
+    "distinct_rho_values": 256,
+    "rho_fiber_size": 2,
+    "trace_is_in_base_ring": true,
+    "distinct_image_sum_agrees": true,
+    "involution_fixes_rho": true
+  },
+  "elapsed_seconds": 1.7572691000532359
+}

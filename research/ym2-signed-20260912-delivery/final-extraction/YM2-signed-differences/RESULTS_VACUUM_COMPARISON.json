@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "evidence_grade": "exact finite arithmetic supporting a separate written analytic proof",
+  "graph_links": 7,
+  "normalized_heat_time": 1,
+  "taylor_terms_k": [
+    0,
+    8
+  ],
+  "exp_3_strict_lower_bound": {
+    "numerator": 89641,
+    "denominator": 4480
+  },
+  "exp_3_lower_bound_exceeds_20_by": {
+    "numerator": 41,
+    "denominator": 4480
+  },
+  "all_n_exponent_difference_polynomial_ascending": [
+    2,
+    -3,
+    1
+  ],
+  "analytic_geometric_tail_majorant": {
+    "numerator": 1541,
+    "denominator": 6859
+  },
+  "quarter_minus_tail_majorant": {
+    "numerator": 695,
+    "denominator": 27436
+  },
+  "one_link_heat_interval": {
+    "lower": {
+      "numerator": 3,
+      "denominator": 4
+    },
+    "upper": {
+      "numerator": 5,
+      "denominator": 4
+    }
+  },
+  "seven_link_heat_ratio_upper_bound": {
+    "numerator": 78125,
+    "denominator": 2187
+  },
+  "density_ratio_rational_factor": {
+    "numerator": 6103515625,
+    "denominator": 4782969
+  },
+  "density_ratio_parameter_factor": "exp(16 r), r=beta/(alpha hbar^2)",
+  "physical_C_mix_upper_bound": "R_bar/4",
+  "local_C_loc_upper_bound": "R_bar/3",
+  "overlap_multiplicity": 1,
+  "glue_gap_lower_bound": "6 alpha hbar^2 / R_bar^2",
+  "direct_gap_lower_bound": "6 alpha hbar^2 / R_bar",
+  "gauge_refinement": {
+    "normalized_heat_time": {
+      "numerator": 2,
+      "denominator": 3
+    },
+    "strict_exponential_lower_bounds": [
+      {
+        "argument": {
+          "numerator": 2,
+          "denominator": 1
+        },
+        "degree": 16,
+        "positive_taylor_sum": {
+          "numerator": 1572669151,
+          "denominator": 212837625
+        },
+        "strict_threshold": {
+          "numerator": 73,
+          "denominator": 10
+        },
+        "margin": {
+          "numerator": 37908977,
+          "denominator": 425675250
+        }
+      },
+      {
+        "argument": {
+          "numerator": 16,
+          "denominator": 3
+        },
+        "degree": 16,
+        "positive_taylor_sum": {
+          "numerator": 5692827009709386683,
+          "denominator": 27485885585032875
+        },
+        "strict_threshold": {
+          "numerator": 200,
+          "denominator": 1
+        },
+        "margin": {
+          "numerator": 195649892702811683,
+          "denominator": 27485885585032875
+        }
+      },
+      {
+        "argument": {
+          "numerator": 14,
+          "denominator": 3
+        },
+        "degree": 16,
+        "positive_taylor_sum": {
+          "numerator": 59650982118067349,
+          "denominator": 560936440510875
+        },
+        "strict_threshold": {
+          "numerator": 100,
+          "denominator": 1
+        },
+        "margin": {
+          "numerator": 3557338066979849,
+          "denominator": 560936440510875
+        }
+      }
+    ],
+    "successive_tail_term_ratio_upper_bound_n_ge_3": {
+      "numerator": 4,
+      "denominator": 225
+    },
+    "complete_character_tail_majorant": {
+      "numerator": 76633,
+      "denominator": 129064
+    },
+    "character_tail_upper_bound": {
+      "numerator": 3,
+      "denominator": 5
+    },
+    "three_fifths_minus_tail_majorant": {
+      "numerator": 4027,
+      "denominator": 645320
+    },
+    "support_sizes_from_accepted_source": [
+      4,
+      4,
+      6,
+      7
+    ],
+    "support_provenance": "../ym2_global_phase_joint/RESULTS_QUANTUM.json; old census not rerun",
+    "support_polynomial_at_three_fifths": {
+      "numerator": 26082,
+      "denominator": 78125
+    },
+    "gauge_averaged_heat_ratio_upper_bound": {
+      "numerator": 104207,
+      "denominator": 52043
+    },
+    "density_ratio_rational_factor": {
+      "numerator": 10859098849,
+      "denominator": 2708473849
+    },
+    "density_ratio_parameter_factor": "exp(32 r/3), r=beta/(alpha hbar^2)",
+    "physical_C_mix_upper_bound": "R_gauge/4",
+    "local_C_loc_upper_bound": "R_gauge/3",
+    "glue_gap_lower_bound": "6 alpha hbar^2 / R_gauge^2",
+    "direct_gap_lower_bound": "6 alpha hbar^2 / R_gauge"
+  },
+  "not_verified_by_this_program": [
+    "general heat-kernel character expansion and Peter-Weyl completeness",
+    "analytic infinite-series comparison and convergence",
+    "Feynman-Kac or Trotter semigroup comparison",
+    "all-spin invariant graph-support bound",
+    "gauge-averaged residual cancellations and finite support expansion",
+    "ground-state existence and source operator/form domains",
+    "conditional-variance and Poincare comparison proofs",
+    "graph-family uniformity or continuum quantum construction"
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "source": "C:\\github\\RPRMLexicon\\operational_numbers\\translate_number.py",
+    "copy": "dependencies/operational_numbers/translate_number.py",
+    "sha256": "6e7fab0a37430b7d6fc197940129756b1a14277dbfc990e1a07a446eb18c5e67",
+    "role": "UNCHANGED_SOURCE_SNAPSHOT"
+  },
+  {
+    "source": "C:\\github\\RPRMLexicon\\operational_numbers\\carrier_lexer.py",
+    "copy": "dependencies/operational_numbers/carrier_lexer.py",
+    "sha256": "45805f1796290c41834a27001bb9bcd2117359093b05754a3eb10ab430474e46",
+    "role": "UNCHANGED_SOURCE_SNAPSHOT"
+  },
+  {
+    "source": "C:\\github\\RPRMLexicon\\operational_numbers\\readings.json",
+    "copy": "dependencies/operational_numbers/readings.json",
+    "sha256": "c47045f601422c3f494536ae27a3b2b56660b46d0c2b9da3c9c3881b8bdb6ff0",
+    "role": "UNCHANGED_SOURCE_SNAPSHOT"
+  },
+  {
+    "source": "C:\\github\\RPRMLexicon\\operational_numbers\\verify.py",
+    "copy": "dependencies/operational_numbers/verify.py",
+    "sha256": "7589d4f081c503e51410bed93c9b88a58dbe2453436f921418ee61dbb7935907",
+    "role": "UNCHANGED_SOURCE_SNAPSHOT"
+  },
+  {
+    "source": "C:\\github\\RPRMLexicon\\operational_numbers\\README.md",
+    "copy": "dependencies/operational_numbers/README.md",
+    "sha256": "3a33843f1c1323f0709cbfd2f8f6b92259379c96f38832d731814c840148d489",
+    "role": "UNCHANGED_SOURCE_SNAPSHOT"
+  },
+  {
+    "source": "C:\\github\\RPRMLexicon\\operational_numbers\\PI_CLOSURE_LEGEND_AUDIT.md",
+    "copy": "dependencies/operational_numbers/PI_CLOSURE_LEGEND_AUDIT.md",
+    "sha256": "ac23ea73a3661df1c9854f8c6d2caab789f78a16880ddcdd57b04d22073a9fe2",
+    "role": "UNCHANGED_SOURCE_SNAPSHOT"
+  },
+  {
+    "source": "C:\\github\\RPRMLexicon\\lexicon\\RPRM_PI_CLOSURE_LEGEND.md",
+    "copy": "dependencies/PI_CLOSURE_LEGEND.md",
+    "sha256": "9ebdf2d739994e5d0e6679b62c6100d80e14e983103c8faf449ffadf182b07dc",
+    "role": "ATTRIBUTED_PRIOR_DERIVATION"
+  },
+  {
+    "source": "C:\\github\\RPRM-open\\research\\bsd-coefficient-05\\COEFFICIENT_PROOF.md",
+    "copy": "dependencies/COEFFICIENT_PROOF_05.md",
+    "sha256": "89cdd5a9458e421bc3b22f7f82799b687d4c371319f445d6d1c2e0686d250910",
+    "role": "ATTRIBUTED_PRIOR_DERIVATION"
+  },
+  {
+    "source": "C:\\github\\RPRM-open\\research\\bsd-coefficient-05\\work\\coefficient.gp",
+    "copy": "dependencies/coefficient_05.gp",
+    "sha256": "80d308add8c091086028b5718cb4c94a8210be2251f511954412fa1b02da4938",
+    "role": "ATTRIBUTED_PRIOR_DERIVATION"
+  },
+  {
+    "source": "C:\\github\\RPRM-open\\recovered-concepts\\PRESTIGE-AND-NUMBER-OPERATIONS.md",
+    "sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843",
+    "role": "READ_ONLY_FIVING_SOURCE_RECOVERY",
+    "lines": "700-737"
+  }
+]

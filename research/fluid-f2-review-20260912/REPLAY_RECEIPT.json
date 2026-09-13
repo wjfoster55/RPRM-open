@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-12",
+  "source_zip_sha256": "45cac52b845b641838a11031f245a2c0a4342a3e69cec42fc17fe0b1320ba5e9",
+  "source_zip_bytes": 70475,
+  "hashed_payload_files": 21,
+  "all_payload_hashes_match": true,
+  "row_counts": {
+    "saved": 53,
+    "scientific": 53,
+    "replay": 53
+  },
+  "saved_scientific_sha256": "57da163e8a1a6a5ce5c38d20c88a799ce925ab04fd9858261d68a49bfba01921",
+  "saved_scientific_matches_saved_rows_after_removing_timings": true,
+  "fresh_replay_matches_all_scientific_fields": true,
+  "different_scene_ids": [],
+  "different_summary_fields_except_elapsed": [],
+  "rows_markdown_matches_after_line_ending_normalization": true,
+  "saved_costs": {
+    "candidate_prepare_plus_fallback_s": 4.380498729998635,
+    "reference_wrapper_s": 1.4798598269997,
+    "candidate_over_reference": 2.960076792461995,
+    "candidate_graph_evaluations_in_exact_fallback": 1794,
+    "note": "t_graph_s is nested in t_prepare_s and is not added twice. These wrapper timings include process costs but do not measure standalone scene construction/storage."
+  },
+  "fresh_replay_costs": {
+    "candidate_prepare_plus_fallback_s": 10.164257499971427,
+    "reference_wrapper_s": 5.968405400082702,
+    "candidate_over_reference": 1.703010572946433,
+    "candidate_graph_evaluations_in_exact_fallback": 1794,
+    "note": "t_graph_s is nested in t_prepare_s and is not added twice. These wrapper timings include process costs but do not measure standalone scene construction/storage."
+  },
+  "source_hash_checks": [
+    {
+      "path": "EXPORT.md",
+      "match": true
+    },
+    {
+      "path": "MODEL_CONTRACT.md",
+      "match": true
+    },
+    {
+      "path": "PROTOCOL.md",
+      "match": true
+    },
+    {
+      "path": "README.md",
+      "match": true
+    },
+    {
+      "path": "REBRIEF_POINTER.md",
+      "match": true
+    },
+    {
+      "path": "RETURN_TO_WILLIAM.md",
+      "match": true
+    },
+    {
+      "path": "pinned/constants.js",
+      "match": true
+    },
+    {
+      "path": "pinned/grid.js",
+      "match": true
+    },
+    {
+      "path": "pinned/models.js",
+      "match": true
+    },
+    {
+      "path": "pinned/scenarios.js",
+      "match": true
+    },
+    {
+      "path": "proof/DERIVATION.md",
+      "match": true
+    },
+    {
+      "path": "results/panel_ids.json",
+      "match": true
+    },
+    {
+      "path": "results/rows.jsonl",
+      "match": true
+    },
+    {
+      "path": "results/rows.md",
+      "match": true
+    },
+    {
+      "path": "results/rows_scientific.jsonl",
+      "match": true
+    },
+    {
+      "path": "results/summary.json",
+      "match": true
+    },
+    {
+      "path": "src/bound.py",
+      "match": true
+    },
+    {
+      "path": "src/check_f1_regression.py",
+      "match": true
+    },
+    {
+      "path": "src/oracle.js",
+      "match": true
+    },
+    {
+      "path": "src/run_f2.py",
+      "match": true
+    },
+    {
+      "path": "src/scenes.py",
+      "match": true
+    }
+  ],
+  "evidence_grade": "Finite replay and source integrity; not a universal certificate soundness proof.",
+  "export_limit": "run_f2.py does not regenerate rows_scientific.jsonl; this reviewer compares parsed scientific fields explicitly."
+}

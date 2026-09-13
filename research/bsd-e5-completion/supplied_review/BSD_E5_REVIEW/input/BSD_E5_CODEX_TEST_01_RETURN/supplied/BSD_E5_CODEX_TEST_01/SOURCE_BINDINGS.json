@@ -1,0 +1,124 @@
+{
+  "purpose": "Byte-preserved source bindings, not a mathematical certificate or a prior protocol lock.",
+  "files": [
+    {
+      "path": "inputs/descent/README.md",
+      "origin_archive": "BSD_E5_DESCENT_ATTEMPT.zip",
+      "archive_member": "BSD_E5_DESCENT_ATTEMPT/README.md",
+      "size": 996,
+      "sha256": "f1eb16a5c71266ec1255515ae14fdb8fdd3ed6bb24944d7209ccd8170ae5e56c"
+    },
+    {
+      "path": "inputs/descent/BSD_REBRIEF.md",
+      "origin_archive": "BSD_E5_DESCENT_ATTEMPT.zip",
+      "archive_member": "BSD_E5_DESCENT_ATTEMPT/BSD_REBRIEF.md",
+      "size": 3208,
+      "sha256": "26b95544febe1f057e6123b6aac196a02bcf5c878ccb3a2defe0d9e1c8f5c544"
+    },
+    {
+      "path": "inputs/descent/E5_DESCENT_NOTE.md",
+      "origin_archive": "BSD_E5_DESCENT_ATTEMPT.zip",
+      "archive_member": "BSD_E5_DESCENT_ATTEMPT/E5_DESCENT_NOTE.md",
+      "size": 16056,
+      "sha256": "c85c9b1e57393608271ad1994d2bb1d9622e6c5797ced05933d11c1bb8130b63"
+    },
+    {
+      "path": "inputs/descent/e5_descent.py",
+      "origin_archive": "BSD_E5_DESCENT_ATTEMPT.zip",
+      "archive_member": "BSD_E5_DESCENT_ATTEMPT/e5_descent.py",
+      "size": 13693,
+      "sha256": "0744cb00b206b4934c37313941170275a9b20dd87580c743aeccc8a5ae40c494"
+    },
+    {
+      "path": "inputs/descent/E5_DESCENT_RECEIPT.json",
+      "origin_archive": "BSD_E5_DESCENT_ATTEMPT.zip",
+      "archive_member": "BSD_E5_DESCENT_ATTEMPT/E5_DESCENT_RECEIPT.json",
+      "size": 64997,
+      "sha256": "5cedd6949c6d4a70299175fb6b6ea495e6992e9d7d3a930723a3eae2fc361947"
+    },
+    {
+      "path": "inputs/descent/context/BSD_CHAT_UPDATE.md",
+      "origin_archive": "BSD_E5_DESCENT_ATTEMPT.zip",
+      "archive_member": "BSD_E5_DESCENT_ATTEMPT/context/BSD_CHAT_UPDATE.md",
+      "size": 4944,
+      "sha256": "a436f32a39e7ce948779db181fa9a0ff06ebbc80a03b70b112ad15917fc71f29"
+    },
+    {
+      "path": "inputs/descent/context/CURRENT_STATE.md",
+      "origin_archive": "BSD_E5_DESCENT_ATTEMPT.zip",
+      "archive_member": "BSD_E5_DESCENT_ATTEMPT/context/CURRENT_STATE.md",
+      "size": 6282,
+      "sha256": "b93085ac125346bd609a7f73e9a464fac70e34efa6c8a07f9e937abc0e6e17df"
+    },
+    {
+      "path": "inputs/analytic/ANALYTIC_NOTE.md",
+      "origin_archive": "BSD_E5_ANALYTIC_STEP.zip",
+      "archive_member": "ANALYTIC_NOTE.md",
+      "size": 12054,
+      "sha256": "218934932734425e1e7a64afcbcdea19cbca956af97f97327f04896dceb92276"
+    },
+    {
+      "path": "inputs/analytic/BSD_REBRIEF.md",
+      "origin_archive": "BSD_E5_ANALYTIC_STEP.zip",
+      "archive_member": "BSD_REBRIEF.md",
+      "size": 2216,
+      "sha256": "926e7b306130b4831f64741f4d3e6ac370b1842f2e620e495d011b2cb26cb044"
+    },
+    {
+      "path": "inputs/analytic/certify_e5.py",
+      "origin_archive": "BSD_E5_ANALYTIC_STEP.zip",
+      "archive_member": "certify_e5.py",
+      "size": 9055,
+      "sha256": "93719886550fd08c7488ead7031a1ebb44ae6d1da0c321b4067016120e5cfaed"
+    },
+    {
+      "path": "inputs/analytic/CERTIFICATE.json",
+      "origin_archive": "BSD_E5_ANALYTIC_STEP.zip",
+      "archive_member": "CERTIFICATE.json",
+      "size": 4081,
+      "sha256": "2dae7d4a986e56f3a446163418e5e59aacf655cfbd242c45429b73d56aa158c3"
+    },
+    {
+      "path": "inputs/analytic/CONTENTS.json",
+      "origin_archive": "BSD_E5_ANALYTIC_STEP.zip",
+      "archive_member": "CONTENTS.json",
+      "size": 515,
+      "sha256": "e68e15390cc6aefccc7af88f7ad811aba8f5e31bdc9d3db2ae2840d1153a758b"
+    },
+    {
+      "path": "context/BSD_CHAT_UPDATE.md",
+      "origin_archive": "BSD_CHAT_UPDATE-2026-09-12.zip",
+      "archive_member": "BSD_CHAT_UPDATE/BSD_CHAT_UPDATE.md",
+      "size": 4944,
+      "sha256": "a436f32a39e7ce948779db181fa9a0ff06ebbc80a03b70b112ad15917fc71f29"
+    },
+    {
+      "path": "context/CURRENT_STATE.md",
+      "origin_archive": "BSD_CHAT_UPDATE-2026-09-12.zip",
+      "archive_member": "BSD_CHAT_UPDATE/CURRENT_STATE.md",
+      "size": 6282,
+      "sha256": "b93085ac125346bd609a7f73e9a464fac70e34efa6c8a07f9e937abc0e6e17df"
+    },
+    {
+      "path": "context/sources/accepted/C1_CARRY_FORWARD.md",
+      "origin_archive": "BSD_CHAT_UPDATE-2026-09-12.zip",
+      "archive_member": "BSD_CHAT_UPDATE/sources/accepted/C1_CARRY_FORWARD.md",
+      "size": 12511,
+      "sha256": "0a6ba65a302efc45b473e4c30a3da3a3a794a093e074697454eca40f5f2f99b0"
+    },
+    {
+      "path": "context/sources/c2/ad/AD1_DESIGN.md",
+      "origin_archive": "BSD_CHAT_UPDATE-2026-09-12.zip",
+      "archive_member": "BSD_CHAT_UPDATE/sources/c2/ad/AD1_DESIGN.md",
+      "size": 6174,
+      "sha256": "e8166aaeee2642894f7d54d657df6b87f00b23915785009011e0eae99126ab21"
+    },
+    {
+      "path": "context/sources/c2/ad/AD1_RESULT.md",
+      "origin_archive": "BSD_CHAT_UPDATE-2026-09-12.zip",
+      "archive_member": "BSD_CHAT_UPDATE/sources/c2/ad/AD1_RESULT.md",
+      "size": 8574,
+      "sha256": "3db6abd7b7169e4b1991d2aa57e37d45b20e98c461392f95b074e6270c4ad5ad"
+    }
+  ]
+}

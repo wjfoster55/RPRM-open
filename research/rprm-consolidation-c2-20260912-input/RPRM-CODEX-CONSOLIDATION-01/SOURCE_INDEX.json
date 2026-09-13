@@ -1,0 +1,194 @@
+{
+  "kind": "exact current-conversation source copies; fresh author instructions and metadata are separately described",
+  "copies": [
+    {
+      "path": "accepted/archives/RCF01-portable-codex-c1.zip",
+      "source": "current-conversation attachment: RCF01-portable-codex-c1.zip",
+      "sha256": "5a33fe48bb7f868fdfa11d0baa23aa2a158bba04e3e5f341b2962bae8c82328b",
+      "bytes": 1716903,
+      "role": "Frozen accepted build or paired historical execution evidence; reference only, not a new job."
+    },
+    {
+      "path": "accepted/archives/RCF01-codex-c1-final-evidence.zip",
+      "source": "current-conversation attachment: RCF01-codex-c1-final-evidence.zip",
+      "sha256": "77f1c0f48c9eefc5bac6fe400b2064a0215b2b45efab65f19dec0cee211fba1b",
+      "bytes": 335051,
+      "role": "Frozen accepted build or paired historical execution evidence; reference only, not a new job."
+    },
+    {
+      "path": "accepted/archives/SAT02-portable-codex-m1.zip",
+      "source": "current-conversation attachment: SAT02-portable-codex-m1.zip",
+      "sha256": "8300b2643de12210c98897b7693d28d7a45d8ecce71a8f1842743b46f5788ca5",
+      "bytes": 1360426,
+      "role": "Frozen accepted build or paired historical execution evidence; reference only, not a new job."
+    },
+    {
+      "path": "accepted/archives/SAT02-codex-m1-final-evidence.zip",
+      "source": "current-conversation attachment: SAT02-codex-m1-final-evidence.zip",
+      "sha256": "4ebfa840c085ddbdae557fac56838ff34b86c2790a76127278a46bdf2d2b34f7",
+      "bytes": 324527,
+      "role": "Frozen accepted build or paired historical execution evidence; reference only, not a new job."
+    },
+    {
+      "path": "accepted/review_archives/RCF01-CODEX-C1-CLOSEOUT.zip",
+      "source": "current-conversation attachment: RCF01-CODEX-C1-CLOSEOUT.zip",
+      "sha256": "e242b7ea5647a2811bb9c1af6f423859ae28a7f88c5ee1f688e5aefe81d98bfe",
+      "bytes": 88079,
+      "role": "Accepted review evidence. Historical commands inside are not dispatched."
+    },
+    {
+      "path": "accepted/review_archives/SAT02-CODEX-M1-CLOSEOUT.zip",
+      "source": "current-conversation attachment: SAT02-CODEX-M1-CLOSEOUT.zip",
+      "sha256": "c17a8e6f9b626e66c40af9ffa180eea25711b9490511ef3402253f5b54ac698e",
+      "bytes": 135651,
+      "role": "Accepted review evidence. Historical commands inside are not dispatched."
+    },
+    {
+      "path": "accepted/C1_CLOSEOUT.md",
+      "source": "current-conversation attachment: CLOSEOUT_MESSAGE.md",
+      "sha256": "a2b3a6826cd6abfcbcf30c0a722958c827b23b6c6d90c3f0f9ef06a96647b322",
+      "bytes": 2394,
+      "role": "Authoritative C1 acceptance/scope."
+    },
+    {
+      "path": "accepted/C1_CARRY_FORWARD.md",
+      "source": "current-conversation attachment: CARRY_FORWARD_CODEX.md",
+      "sha256": "0a6ba65a302efc45b473e4c30a3da3a3a794a093e074697454eca40f5f2f99b0",
+      "bytes": 12511,
+      "role": "Original concept meanings and exact finite capability boundaries."
+    },
+    {
+      "path": "accepted/C1_MATH_REVIEW.md",
+      "source": "current-conversation attachment: MATH_REVIEW.md",
+      "sha256": "b8f16e8b022a6350ea60cd705689963f715a910f89e2d6143ac6b5cc6e3706e8",
+      "bytes": 12440,
+      "role": "Mathematical review, including quotient/restriction-algebra correction."
+    },
+    {
+      "path": "accepted/SAT02_M1_CLOSEOUT.md",
+      "source": "current-conversation attachment: CLOSEOUT_MESSAGE.md",
+      "sha256": "fafaedb32a9cf20f5bae7e5a86e59f556af504981419067560a6810c3cdd664a",
+      "bytes": 2420,
+      "role": "Authoritative SAT02 maintenance closeout; research remains partial."
+    },
+    {
+      "path": "history/SAT02_R1_STATUS_SUPERSEDED.md",
+      "source": "current-conversation attachment: CLOSEOUT_R1_STATUS.md",
+      "sha256": "da573f5ddc0e42eeecc75ada34a9d8d970f655bb95c54046fde4cb4a211c74fe",
+      "bytes": 1150,
+      "role": "Older R1-only overlay; its pending-checker status is superseded by M1, not an active task."
+    },
+    {
+      "path": "history/RPRM-LANDSCAPE-2026-09-12.zip",
+      "source": "current-conversation attachment: RPRM-LANDSCAPE-2026-09-12.zip",
+      "sha256": "6f044c8799f13089ed1c55fa3bc8037844d059d9c4cfcc26746a903b45c99a1f",
+      "bytes": 61598,
+      "role": "Historical coordination packet. Its SAT status and dispatch holds are superseded."
+    },
+    {
+      "path": "sources/fluid/PRIOR_OWNER_CARD.md",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/FLUID_NEXT.md",
+      "sha256": "9e2327b5dd839590aadf7d3db35fecb5072be0dd9a82744832eca847e228c83a",
+      "bytes": 4741,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "sources/ad/PRIOR_OWNER_CARD.md",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/BSD_AD_NEXT.md",
+      "sha256": "fbcb17b9985df4ed180703b8c444037138c8e361acf89bdcf2a37ce32e5a32bc",
+      "bytes": 3727,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "sources/yang_mills/PRIOR_OWNER_CARD.md",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/YANG_MILLS_NEXT.md",
+      "sha256": "551d6f862c012af1685521da7c23e240a66c015520d96bd40ab6c5d8311f5c1b",
+      "bytes": 3146,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "sources/bsd/LIND_REICHARDT_REVIEW005_CLOSEOUT.md",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/sources/library/REVIEW(3).md",
+      "sha256": "9ab6eae83fd2a51a19cbdfa4201fd15ebbe22c0637ee668b28fbdb0fd5e17d99",
+      "bytes": 9083,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "sources/ad/PILOT_COLLECTION_V2_REVIEW.md",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/sources/library/REVIEW(4).md",
+      "sha256": "9c578dd5e8c07f9a97f7f72b910cb29a53234179d18a663ae9a6939dfceed381",
+      "bytes": 11668,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "sources/ad/RECOVERED_CORE_INTEGRATION_HISTORICAL.md",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/sources/library/AD_RECOVERED_CORE_INTEGRATION_NOTE.md",
+      "sha256": "7ab09d126de9fdef1f08d626edaa58011dd0258d4b628c5ebf281d3afec75050",
+      "bytes": 6973,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "sources/yang_mills/YANG_MILLS_CONNECTION_CHECKS.json",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/sources/library/YANG_MILLS_CONNECTION_CHECKS.json",
+      "sha256": "96653591590868f37f4684c8f76c1b3e95e92975f1a80376c6f10e848debf4fe",
+      "bytes": 1074,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "sources/yang_mills/check_yang_mills_connections.py",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/sources/library/check_yang_mills_connections.py",
+      "sha256": "3880f589bace99feac7399d78dfe6d487263fe0cb3f8fba30ca8432306feb04c",
+      "bytes": 3637,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "history/LANDSCAPE_SUPERSEDED_FOR_STATUS.md",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/LANDSCAPE.md",
+      "sha256": "d3f179ae688bc80be083f002d2c5a3693aa6ae6ec2f6ef315abf61107b0245c8",
+      "bytes": 12429,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "history/LANDSCAPE_SOURCE_INDEX.md",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/SOURCES.md",
+      "sha256": "c3db83b4d047537a16742c001d2d189ac5a64390df4dec145de7d82df8a5d5f2",
+      "bytes": 3478,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "history/LANDSCAPE_SOURCE_CAPTURE.json",
+      "source": "RPRM-LANDSCAPE-2026-09-12.zip!/RPRM-LANDSCAPE-2026-09-12/SOURCE_CAPTURE.json",
+      "sha256": "5e006e108d2ec91581af1c423fc353ddf39e75d18d3680be58ff251e29994328",
+      "bytes": 3011,
+      "role": "Exact historical source snapshot; active instructions are in tasks/."
+    },
+    {
+      "path": "sources/recovered/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "source": "current-conversation attachment: PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843",
+      "bytes": 102093,
+      "role": "Original recovered wording, later interpretation, corrections and open scope; no historical prompts reactivated."
+    },
+    {
+      "path": "sources/recovered/CUBES-AND-PI-CURVES.md",
+      "source": "current-conversation attachment: CUBES-AND-PI-CURVES.md",
+      "sha256": "526ab16ba66addb1e6ebade597a2470f44d83761705f29333e4ee439c5c9ef0e",
+      "bytes": 53235,
+      "role": "Original recovered wording, later interpretation, corrections and open scope; no historical prompts reactivated."
+    },
+    {
+      "path": "sources/recovered/ZERO-AND-RAILS.md",
+      "source": "current-conversation attachment: ZERO-AND-RAILS.md",
+      "sha256": "82b33805d899cbdd64232dbfc4f87bf979098232bd2ed8a16a494dbf8156a57d",
+      "bytes": 16721,
+      "role": "Original recovered wording, later interpretation, corrections and open scope; no historical prompts reactivated."
+    },
+    {
+      "path": "sources/recovered/PAPER-COVERAGE-AUDIT.md",
+      "source": "current-conversation attachment: PAPER-COVERAGE-AUDIT.md",
+      "sha256": "55467ec717480ce4719288387c9664b4e66d27c36888a53e3769fbab5caf3550",
+      "bytes": 17833,
+      "role": "Original recovered wording, later interpretation, corrections and open scope; no historical prompts reactivated."
+    }
+  ]
+}

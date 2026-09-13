@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-09-12T22:56:24.607246+00:00",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "status": "ALL_THREE_NEW_CALCULATIONS_VERIFIED",
+  "jobs": [
+    {
+      "name": "local_seams",
+      "exit_code": 0,
+      "elapsed_seconds": 0.16286400001263246,
+      "log": "logs/local_seams.log",
+      "log_sha256": "8f9b380ac651e951acaa0d11cd8fab3452893c409c91108cb2ed5ce4ed6bdf69"
+    },
+    {
+      "name": "independent_readback",
+      "exit_code": 0,
+      "elapsed_seconds": 0.14911779999965802,
+      "log": "logs/independent_readback.log",
+      "log_sha256": "bad9250e8c059abe971845dc46ee257bf708148993d69fc9aaec2db948420606"
+    },
+    {
+      "name": "scale_obstruction",
+      "exit_code": 0,
+      "elapsed_seconds": 0.11471789999632165,
+      "log": "logs/scale_obstruction.log",
+      "log_sha256": "dc6cc0748a1714292bf57a06d13d05c9d7e4611182270675669c79d59f163d4c"
+    }
+  ],
+  "source_snapshot": {
+    "prime_seam.py": "806a6969accaee04486250cb7fd9c1a750d50ed5b224aa0f8519236e26d3a8f1",
+    "run_seam.py": "d57d6af7a52faae9aced5fd09c62a66a6f36e0cf000898e4e066c46ff56caca4",
+    "scale_obstruction.py": "d6fa1f964c5f4c49e5b915e4d031ddb61ae6c5485e12d47b4ebffe516edf8096",
+    "seam_readback.py": "fdbec0b9b8279ec4fc6d67ea1a0df8683b9eff777602efee44720c046bd141a6"
+  },
+  "saved_computational_evidence_used_as_input": false,
+  "prior_interval_used_only_as_countermodel_receiver": true,
+  "full_BSD": "OPEN",
+  "total_Sha": "OPEN",
+  "elapsed_seconds": 0.44478009996237233,
+  "evidence_sha256": {
+    "prime_seam.json": "6f416f2ee446010a725ee93e30738e10a1689b8ed4bbe382c542302a1e4a68d3",
+    "scale_obstruction.json": "dc6cc0748a1714292bf57a06d13d05c9d7e4611182270675669c79d59f163d4c",
+    "seam_readback.json": "37c5ddf99a680b2fb09196a909e6a62c3629eedffef7a9c3e1053012a351a89e"
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "schema": "rprm-context-compile-view/v1",
+  "packet_id": "packet:16cd5ec8f93c165ef9eef82cc07d89bd2049ac9db829026459fed02e4821ea9d",
+  "packet_schema": "rprm-context-packet/v1",
+  "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+  "receiver": {
+    "schema": "rprm-memory-receiver/v1",
+    "objective": "fiving FIVE_IS_SAFE pi key ordered digits carry",
+    "namespace": "rprm-alpha",
+    "operations": [],
+    "contradiction_mode": "CURRENT",
+    "allowed_record_kinds": [
+      "CLAIM",
+      "OBSERVATION",
+      "RELATION"
+    ],
+    "allowed_authorities": [
+      "FROZEN_LOCAL_BYTES",
+      "LOCAL_OCCURRENCE",
+      "OFFICIAL_RECORD",
+      "PRIMARY_SOURCE",
+      "SECONDARY_SOURCE",
+      "UNVERIFIED"
+    ],
+    "as_of": null,
+    "as_known": null,
+    "max_payload_bytes": 8192,
+    "max_candidates": 32,
+    "graph_depth": 1,
+    "output_schema": "text/context",
+    "model_receipt": "unspecified",
+    "tokenizer_receipt": "NONE_BYTE_BUDGET"
+  },
+  "receiver_sha256": "7f58bc19461394f1c9b2b0b11369a06f7c009ba514835159f00ce5358eb0a5ea",
+  "compiler": {
+    "version": "rcmf-stage1-0.1",
+    "code_sha256": "62217cf808cc2b84213a637f6e0010d619164cf143d331c5e97de26e5ce1a7b2",
+    "python": "3.14.5",
+    "sqlite": "3.50.4",
+    "search": "SQLITE_FTS5_POLICY_LOCAL_BM25_THEN_RECORD_ID",
+    "search_projection_sha256": "d4fb557b8fbf611496c3e46e571c98f327e83d1d5813c32c0544cd900b9a29f1",
+    "search_projection_policy": "REBUILT_FROM_AUTHORITY_BEFORE_COMPILE",
+    "embedding_lane": "OMITTED_NOT_IMPLEMENTED"
+  },
+  "query_terms": [
+    "fiving",
+    "five_is_safe",
+    "pi",
+    "key",
+    "ordered",
+    "digits",
+    "carry"
+  ],
+  "match_fiber": {
+    "disposition": "MANY",
+    "cardinality": 509,
+    "scope": "policy-visible lexical matches before packet packing"
+  },
+  "receiver_sufficiency": {
+    "disposition": "OPEN",
+    "cardinality": null,
+    "scope": "answer plus declared downstream operation family",
+    "missing": [
+      "finite receiver certificate",
+      "transition-descent census"
+    ]
+  },
+  "strong_reconstruction": {
+    "disposition": "OPEN",
+    "cardinality": null,
+    "scope": "full authority snapshot from the hot packet",
+    "missing": [
+      "all authority records outside packet members",
+      "complete snapshot manifest"
+    ]
+  },
+  "members": [
+    {
+      "member_id": "member:aadeeca9da3ae3e56b04006c041259e9f7c0030bb8e5f5ddd1b55769fd0d8de3",
+      "record_id": "occurrence:332087f8acc70a9195de51942e24e380ff51e8621d9128c46e3a97cbd238f5d6",
+      "record_kind": "OBSERVATION",
+      "title": "B. Supplied-address pi Peek",
+      "retrieval_rank": 1,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "### B. Supplied-address pi Peek\n\nInput: `P`, address `n`, width `w`.  Output: `W_(n,w)(P)`.  BBP gives a genuine\nremote binary/hexadecimal pi lane without preceding digits.  Plouffe's 2009\nmethod describes a decimal lane with low memory and substantially higher time.\nThis is the established analogue of moving the camera while leaving the root.\n\n",
+      "excerpt_utf8_bytes": 347,
+      "excerpt_sha256": "8f47741c87c32fc097cedd5c55a5839174054d1bda25efd08e1eabb1cdb8c4bd",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:332087f8acc70a9195de51942e24e380ff51e8621d9128c46e3a97cbd238f5d6",
+        "event_id": "event:f230ec1a3a94244b369d620e8fb2f2c33af057774273c54187964d8fec48adaf",
+        "blob_sha256": "42cea3bc4366366bd7fafbb30d518531a18d2c295dbd002fcc8a2167b832749a",
+        "byte_length": 7508,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_PI_SELF_ATLAS_OPERATIONAL_APERTURE_SCOUT_2026-08-27.md",
+        "source_byte_start": 3840,
+        "source_byte_end": 4187,
+        "slice_sha256": "8f47741c87c32fc097cedd5c55a5839174054d1bda25efd08e1eabb1cdb8c4bd",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-27T15:53:15.635659Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 3840,
+      "exact_source_byte_end": 4187
+    },
+    {
+      "member_id": "member:36674e2e8c3117a7e003e20346efadeb60dc850320e6657c2ed19e52df9e0540",
+      "record_id": "occurrence:8252dda85eb7126600560d346a7bc5da66f3d7ed08ca7b5d9dc2ed18084964de",
+      "record_kind": "OBSERVATION",
+      "title": "6. Scoped branches",
+      "retrieval_rank": 2,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## 6. Scoped branches\n\n```text\nGeometry (k in Z, k>=2; + in Z^2):\n          U_k=(1,k), V_k=(k,1), D=(1,1), so U_k+V_k=(k+1)D.\nPrimes (n>=1): X_U={0,...,U-1}, pi(U-1)>=n;\n          ell_n(x)=[pi(x)<n], p_n=min{x in X_U:pi(x)>=n}.\nPi (integer b>=2; m,n>=0; w>=1):\n          T_n(x)=frac(b^n x); T_m(T_n(pi))=T_(m+n)(pi);\n          W_(n,w)=floor(b^w T_n(pi)).\n```\n\nThe first is a complementary-slope closure, the second a bounded rank-select identity, and the third a rooted navigation identity. The supported prime closure is square-frontier totality—complete primes through `B` certify trial division through `B^2`. The supported pi closure is a hash-pinned finite Pi Cell through 12 fractional digits. The rank-step and tail-camera views remain scoped candidate adapters; they do not supply physical dimension, unpaid prime certification, free pi digit content, or a remote pi-pattern locator.\n\n",
+      "excerpt_utf8_bytes": 895,
+      "excerpt_sha256": "f8d73850fde6ebe7741ebb548413923d9734cba6b7265f8ee091d6ab7dab1f48",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:8252dda85eb7126600560d346a7bc5da66f3d7ed08ca7b5d9dc2ed18084964de",
+        "event_id": "event:c7e38b271479c3931e64304b6439700906f9850ce949b3ccca88f48676756757",
+        "blob_sha256": "f5c56c6bca5256cc9216f1ded9c767b383827a54c985e1595f2b2a8335432be7",
+        "byte_length": 8598,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_ONE_PAGE_MATHEMATICAL_CLOSURE.md",
+        "source_byte_start": 6093,
+        "source_byte_end": 6988,
+        "slice_sha256": "f8d73850fde6ebe7741ebb548413923d9734cba6b7265f8ee091d6ab7dab1f48",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T17:00:07.622304Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 6093,
+      "exact_source_byte_end": 6988
+    },
+    {
+      "member_id": "member:1ad4af86bcec962b0a81c0f56fef44fa0d25a0c26e3771aa3ab94292d769fa66",
+      "record_id": "occurrence:b389f7aeeab00ccd169df0091ede0ba3c248b2b019b0d5c80f4a84cafc14356e",
+      "record_kind": "OBSERVATION",
+      "title": "Pi-key / identity-threshold board",
+      "retrieval_rank": 3,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "# Pi-key / identity-threshold board\n\nDate: 2026-08-29  \nStatus: **three exact neighboring mechanisms recovered; identity composition is a candidate; dimensional lift not yet earned**\n\n",
+      "excerpt_utf8_bytes": 184,
+      "excerpt_sha256": "db3dd01dc430e031fb30a127c5ab567440006bc620589908ad3813f73265587a",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:b389f7aeeab00ccd169df0091ede0ba3c248b2b019b0d5c80f4a84cafc14356e",
+        "event_id": "event:84b379ea35ba6c76224832f2af3c03d9525b4d0fc29cc9866233a261fc7ee642",
+        "blob_sha256": "260ac9a2ccac2ac63ed73fd66bf62ca5abefd34937636a68f1d579416d532444",
+        "byte_length": 11231,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_PI_KEY_IDENTITY_THRESHOLD_BOARD_2026-08-29.md",
+        "source_byte_start": 0,
+        "source_byte_end": 184,
+        "slice_sha256": "db3dd01dc430e031fb30a127c5ab567440006bc620589908ad3813f73265587a",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T00:56:32.340010Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 0,
+      "exact_source_byte_end": 184
+    },
+    {
+      "member_id": "member:0b1d17338bef79a4824422d0dbb1edd65be342fcc547a6c2ab494f4c44013239",
+      "record_id": "occurrence:a06f596ecbd82ab7d1c66b414a13fa525b76b13268133d4fa91949a4655cf01c",
+      "record_kind": "OBSERVATION",
+      "title": "The exact typed home of `3/5`",
+      "retrieval_rank": 4,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "_4+V_4=(5,5)=5D.\n```\n\nThe number three and number five therefore occur together for two distinct,\nmechanically derived reasons:\n\n```text\ndelta=(y-x)/3              # reachable-lattice / perpendicular coordinate\nrho=(y+delta) mod 5        # shared diagonal carry phase\n```\n\nThis gives the `3/5` pair a legitimate typed carrier. It does not establish an\nintrinsic meaning for the bare numerals, a pi key, a physical dimension, or a\nuniversal role for 3 and 5.\n\n",
+      "excerpt_utf8_bytes": 459,
+      "excerpt_sha256": "0a4afbfccd0f7b860da67db56b86413505c3993dd744cbff140e451c26ef0b66",
+      "truncated_before": true,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:a06f596ecbd82ab7d1c66b414a13fa525b76b13268133d4fa91949a4655cf01c",
+        "event_id": "event:e7156bc379ea0c7c897374d0bd5a7745d4b53dd4f076c7b6a0649200c869e935",
+        "blob_sha256": "3a8c43fcbbf64637d0c440db451521047f1e716088e40047800c1d5c07625f9e",
+        "byte_length": 7776,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_COMPLEMENTARY_SLOPE_CARRY_LADDER_SCOUT_2026-08-27.md",
+        "source_byte_start": 2926,
+        "source_byte_end": 3485,
+        "slice_sha256": "da033bbbea76653a3e064c96be97aeb97c929b62ce74a86831b9dbaaccf5928f",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-27T17:56:31.362495Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 3026,
+      "exact_source_byte_end": 3485
+    },
+    {
+      "member_id": "member:3e96f193b840323b95afb71f3847d96c151064bdd9bb3a10c1a1b8c78f76680a",
+      "record_id": "occurrence:78ba6028c9cff55ed3384adfb9dadeb045376f81958132b410b03cdf82beb93d",
+      "record_kind": "OBSERVATION",
+      "title": "Exact `35 -> 64` perpendicular rebase",
+      "retrieval_rank": 5,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## Exact `35 -> 64` perpendicular rebase\n\nAudit07 already supplies the four endpoint views\n\n```text\nI(35)=35, O(35)=53, M(35)=64, F(35)=46,\n```\n\nwhere `O` reverses digits, `M` applies nines complement, and `F=O*M`.\nIts historical bit chart was\n\n```text\nI=00, O=10, F=01, M=11.\n```\n\nIn that chart `64` is the diagonal/antipodal view of `35`.  Rebase the same\nKlein-four action using `O` and `M` as independent axes:\n\n```text\nI=00, O=10, M=01, F=11.\n```\n\nThe coordinate adapter over `F_2` is\n\n```text\n(x,y)_old -> (x+y,y)_new,\n```\n\nand is its own inverse.  Under this exact `CAR`, `35 -> 64` becomes one\nperpendicular complement-axis step.  No orbit member or operation changes;\nonly the chart does.\n\nFor clarity, future pi work should distinguish operator tags from numbers:\n\n```text\npi[I:35]  = rooted identity view,\npi[M:64]  = nines-complement shadow view.\n```\n\nThis notation does not mean `(3/5)*pi` or `(6/4)*pi`.  `pi[M:64]` remains a\ndependent transformed view in the rooted pi atlas and is not automatically a\nliteral tail occurring elsewhere in pi.  Since `M` is an involution, the\nfinite-window rejoin is exact when the base-ten window convention is retained.\n\n",
+      "excerpt_utf8_bytes": 1170,
+      "excerpt_sha256": "3f0057e76cc0abf384a855cdbc04f496751c3ecf21675f927e2666c558f51b7e",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:78ba6028c9cff55ed3384adfb9dadeb045376f81958132b410b03cdf82beb93d",
+        "event_id": "event:f230ec1a3a94244b369d620e8fb2f2c33af057774273c54187964d8fec48adaf",
+        "blob_sha256": "42cea3bc4366366bd7fafbb30d518531a18d2c295dbd002fcc8a2167b832749a",
+        "byte_length": 7508,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_PI_SELF_ATLAS_OPERATIONAL_APERTURE_SCOUT_2026-08-27.md",
+        "source_byte_start": 2334,
+        "source_byte_end": 3504,
+        "slice_sha256": "3f0057e76cc0abf384a855cdbc04f496751c3ecf21675f927e2666c558f51b7e",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-27T15:53:15.635659Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 2334,
+      "exact_source_byte_end": 3504
+    },
+    {
+      "member_id": "member:b18ed9750b55b7190663c649378cab7e6267edcce8680100ee760dfc09d97720",
+      "record_id": "occurrence:b85f585867850c37644f47e176745f85d49c92ad1523c4ecfa9eaa82a5b537fa",
+      "record_kind": "OBSERVATION",
+      "title": "A. The addressed Pi `3x3`",
+      "retrieval_rank": 6,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "### A. The addressed Pi `3x3`\n\n```text\n1 4 1\n5 9 2\n6 5 3\n```\n\nThe complete frozen address is:\n\n```text\n3 | 141 | 592 | 653 | 5\n```\n\nThe [finite Pi-cell receipt](../knowledge/lenses.json) proves a contextual\ndecoder on this pinned carrier. It is not nine unrelated digit slots. For\nordered endpoints `A<B` and code `c=(c1,c2,c3)`, the registered decoder is:\n\n```text\nD_(A,B)(c1,c2,c3) =\n  [ c1      (A+B)/2     c1 ]\n  [ B       A+B+c1      c2 ]\n  [ B+c1    B            c3 ]\n```\n\nAt `(A,B,c)=(3,5,123)` this gives exactly:\n\n```text\n[1 4 1]\n[5 9 2]\n[6 5 3]\n```\n\nThis mechanically explains William's observation:\n\n- the first row duplicates the first live code slot `c1=1` around endpoint\n  midpoint `4`;\n- the lower two rows share endpoint `B=5`;\n- their other repeated relation to the first row is `6=B+c1`; and\n- the center is `9=A+B+c1`.\n\nThe decoder has five typed input ports—two endpoint/context ports and three\ncode ports. With `(A,B)` frozen, its hot aperture is exactly the three slots\n`c1,c2,c3`. Code `123` has `MANY(10)` contextual decodes when endpoints are\nerased and `ONE` at endpoint context `(3,5)`.\n\nThe structural reading of the repeated rows is therefore exact. Calling the\nfirst row SUBJECT/identity and the other rows particular identity-system roles\nis still an unselected semantic adapter.\n\nExact occurrence facts inside the nine digits are:\n\n- `1` occurs twice, both in the first row;\n- `5` occurs twice, once in each of the other rows;\n- `2,3,4,6,9` occur once; and\n- `0,7,8` do not occur.\n\nThose facts match William's “doubles” observation. They do not by themselves\nselect a completion rule, role dictionary, or threshold policy.\n\n",
+      "excerpt_utf8_bytes": 1663,
+      "excerpt_sha256": "df8232e135222de4b0d60b31b20472b24c88882acbbf495e6b5da089a77c9afd",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:b85f585867850c37644f47e176745f85d49c92ad1523c4ecfa9eaa82a5b537fa",
+        "event_id": "event:84b379ea35ba6c76224832f2af3c03d9525b4d0fc29cc9866233a261fc7ee642",
+        "blob_sha256": "260ac9a2ccac2ac63ed73fd66bf62ca5abefd34937636a68f1d579416d532444",
+        "byte_length": 11231,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_PI_KEY_IDENTITY_THRESHOLD_BOARD_2026-08-29.md",
+        "source_byte_start": 1480,
+        "source_byte_end": 3143,
+        "slice_sha256": "df8232e135222de4b0d60b31b20472b24c88882acbbf495e6b5da089a77c9afd",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T00:56:32.340010Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 1480,
+      "exact_source_byte_end": 3143
+    },
+    {
+      "member_id": "member:6af93312887833e3467812b24231e4b2901bea385b9f72fa35e64a2790ee0eab",
+      "record_id": "occurrence:f6f5203e51b20a15f334cc27bc1d46ee2243352c6167708961d6e924dbdf5617",
+      "record_kind": "OBSERVATION",
+      "title": "Negative and corrective knowledge — part 2",
+      "retrieval_rank": 7,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "  transform of the same scalar local block.  Rudin–Shapiro requires the typed\r\n  zero-pair shadow receiver; padding is load-bearing.\r\n- Audit 62 refutes the inference `self-consistent hash = geometry-valid\r\n  state`.  Exact dirty-row replay preserves false untouched rows unless the\r\n  old state first carries an independently earned validity receipt.\r\n- Audit 64 refutes the inference `the declared exhaustive census passed = the\r\n  public operation domain matches the declared aperture`.  A transition can\r\n  be internally exact and still be admitted at the wrong typed boundary.\r\n- Audit 75 refutes `a small present Peek is automatically a sufficient live\r\n  cache`.  `VISIBLE` has two current values on every ray, but its stable\r\n  partition under all admitted future toggles has all 2,325 strong scenes.\r\n  It also preserves a cold-verifier failure: independently correct integer-key\r\n  histograms do not directly equal their JSON string-key representation; the\r\n  separately rooted correction normalizes only that boundary.\r\n- Audit 76 refutes `a short exact interior block identifies an arbitrary big\r\n  integer`.  Its two-character `60` is injective only on the declared\r\n  97-remainder quotient family with `(B,q,o,L)` retained; forgetting those\r\n  typed ports restores enormous `MANY` fibers.  It also refutes `a long wait or\r\n  a percentage creates randomness`: fixed `p` has support one, while an exact\r\n  percentage appears only after a source distribution is supplied.  Finally,\r\n  base ten modulo 100 at positive offset has multiplier zero, so all 100 source\r\n  numerators collapse to one live remainder; apparent operator matching there\r\n  is `MANY(100)`, not a CAR.\r\n- Audit 77 refutes `multiply the two visible factor Peeks to get the product\r\n  Peek`: hidden lower digits contribute the typed `T` borrow, seam reseed, and\r\n  `U` closure carry.  It also refutes `a matched product state identifies its\r\n  sources`; the tower witness is operationally exact while retaining seven\r\n  ordered factor ancestries.  Finally, a unit add",
+      "excerpt_utf8_bytes": 2048,
+      "excerpt_sha256": "2ad8c8270b7b79f0782b9edab0075fb2eb5d824485cb524e73b6cb53a376fcfb",
+      "truncated_before": false,
+      "truncated_after": true,
+      "source_receipt": {
+        "occurrence_id": "occurrence:f6f5203e51b20a15f334cc27bc1d46ee2243352c6167708961d6e924dbdf5617",
+        "event_id": "event:6dfc6f9a262220ceeaff9bfd790b2163b8aaf5bf3e95bc3e5a7562008ab4326b",
+        "blob_sha256": "a427d9ff423c16a2ddc46ce716d50b58ce0fc7d53beda6c413ca6bbdc7fb9a82",
+        "byte_length": 168354,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/atlas/CLAIM_LEDGER.md",
+        "source_byte_start": 77285,
+        "source_byte_end": 81379,
+        "slice_sha256": "d585e11acc83a5a4d4878eaa5b191e779e6d43073dd85c3191adb719ed582ca2",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-30T05:33:53.285561Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 77285,
+      "exact_source_byte_end": 79333
+    },
+    {
+      "member_id": "member:362976800c881637a555f02811311555f7ec1d03d7c42c94043e932c249e86f6",
+      "record_id": "occurrence:e6a04313a764e3bc748be68d0839af6dcf102ddc88119182d643d83e7760ac62",
+      "record_kind": "OBSERVATION",
+      "title": "7. Bottom-up evidence map — part 4",
+      "retrieval_rank": 8,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "r](../atlas/CLAIM_LEDGER.md), and\n[lens catalog](../knowledge/lenses.json). The double-slit Gram construction is\npreserved in the historical read-only source\n`C:\\github\\RPRMResearch\\RPRM_METROIDVANIA_RELATION_ATLAS_01\\NOTE.md`,\nsection 2.4.\n\nThe prime and pi work matters because it repeatedly catches type errors and\nfalse hidden domain meanings. It does not erase a number's ordinary arithmetic\nidentity, and it is not evidence that primes or digits secretly encode\nparticles, constants, or physical dimensions.\n\n---\n\n",
+      "excerpt_utf8_bytes": 520,
+      "excerpt_sha256": "40efada6849d3a3c8b06d72c997a26d5094ed986543a9ad9d02ccd985570086d",
+      "truncated_before": true,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:e6a04313a764e3bc748be68d0839af6dcf102ddc88119182d643d83e7760ac62",
+        "event_id": "event:6832039e98206779eca56909486546726cde49af32eb4f5740363c75110a5b88",
+        "blob_sha256": "b230fd2c3c9c66484583fa925b5a8aaba5bc1cd4ffeda579eb6feb719a06411a",
+        "byte_length": 160319,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_RELATIONAL_UNIFICATION_PROGRAM_DRAFT_0_1_2026-08-28.md",
+        "source_byte_start": 89446,
+        "source_byte_end": 90048,
+        "slice_sha256": "6b305175bb9dc3ea6e9112a007c183edfdafa9be99ea3f0a6e13303a5eb04238",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-29T17:22:12.100604Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 89528,
+      "exact_source_byte_end": 90048
+    },
+    {
+      "member_id": "member:b438e449772d16cbf1265c9b8aaa6cda779f032b1e59d01e3d7c2efad2c28de4",
+      "record_id": "occurrence:23bd710457bb361e25a0e3b453a3db1f3a4d0fa4c5a77be22b3fa87a5132ce9e",
+      "record_kind": "OBSERVATION",
+      "title": "Primary mathematical context",
+      "retrieval_rank": 9,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## Primary mathematical context\n\n- Bailey, Borwein, and Plouffe, “On the Rapid Computation of Various\n  Polylogarithmic Constants,” *Mathematics of Computation* 66 (1997),\n  <https://doi.org/10.1090/S0025-5718-97-00856-9>.\n- Simon Plouffe, “On the computation of the n-th decimal digit of various\n  transcendental numbers” (2009), <https://arxiv.org/abs/0912.0303>.\n- Peter Trueb, “Digit Statistics of the First 22.4 Trillion Decimal Digits of\n  Pi” (2016), <https://arxiv.org/abs/1612.00489>.\n\nThese sources support remote supplied-address extraction and finite\nstatistical evidence.  They do not supply the RPRM operational-pattern locator\nproposed here.\n",
+      "excerpt_utf8_bytes": 669,
+      "excerpt_sha256": "a5ecd32d88e41cdf58ebbdffa201e724836b4c5186ec96bb51deba4306107abd",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:23bd710457bb361e25a0e3b453a3db1f3a4d0fa4c5a77be22b3fa87a5132ce9e",
+        "event_id": "event:f230ec1a3a94244b369d620e8fb2f2c33af057774273c54187964d8fec48adaf",
+        "blob_sha256": "42cea3bc4366366bd7fafbb30d518531a18d2c295dbd002fcc8a2167b832749a",
+        "byte_length": 7508,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_PI_SELF_ATLAS_OPERATIONAL_APERTURE_SCOUT_2026-08-27.md",
+        "source_byte_start": 6839,
+        "source_byte_end": 7508,
+        "slice_sha256": "a5ecd32d88e41cdf58ebbdffa201e724836b4c5186ec96bb51deba4306107abd",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-27T15:53:15.635659Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 6839,
+      "exact_source_byte_end": 7508
+    },
+    {
+      "member_id": "member:254538c13e733df5da01bbf186a8117083fca1555b89e1b938430cb203f01054",
+      "record_id": "occurrence:8a7cd6652043d7872823c5352063c45a6f4344d498a55d2a99ed4105f6c2b92a",
+      "record_kind": "OBSERVATION",
+      "title": "Strongest candidate conclusion",
+      "retrieval_rank": 10,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "tude stays packed.  The widened\nlocal residue is the exact carry receiver needed to check the slope operators\nbefore discarding lower digits.\n\nThree of the four field ports recover the fourth but do not automatically\nrecover the strong s",
+      "excerpt_utf8_bytes": 237,
+      "excerpt_sha256": "afa23ee80a8102f17e8157076710e1154818e257a1bb00cfc9baade6990b959e",
+      "truncated_before": true,
+      "truncated_after": true,
+      "source_receipt": {
+        "occurrence_id": "occurrence:8a7cd6652043d7872823c5352063c45a6f4344d498a55d2a99ed4105f6c2b92a",
+        "event_id": "event:6d0be1e6883f3f37ed2b54018fb547f8375bb3bba57a27ab3619caec935b4baa",
+        "blob_sha256": "962fcfda50b7ec31aedc3652fdc1297334824025bd802e19d35a0ef65a2483ed",
+        "byte_length": 2849,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_SHARED_ANCHOR_SLOPE_PEEK_SCOUT_2026-08-27.md",
+        "source_byte_start": 2063,
+        "source_byte_end": 2530,
+        "slice_sha256": "aa5c570737d37c3afc5cf187bd9b1d10e87e64a80ee5115ed58be849dc1037bd",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-27T19:14:57.466234Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 2218,
+      "exact_source_byte_end": 2455
+    }
+  ],
+  "omission_summary": {
+    "count": 499,
+    "by_reason": [
+      {
+        "reason": "CANDIDATE_CAP",
+        "count": 477
+      },
+      {
+        "reason": "PAYLOAD_BUDGET",
+        "count": 22
+      }
+    ],
+    "search_operation": "search_omissions(packet_id, objective, max_results)"
+  },
+  "visible_conflicts": [],
+  "open_seams": [
+    {
+      "seam": "RECEIVER_SUFFICIENCY",
+      "missing": [
+        "finite receiver signature over the strong candidate carrier",
+        "transition-descent receipts for every declared downstream operation"
+      ],
+      "trigger": "A finite task carrier and operation family are supplied."
+    },
+    {
+      "seam": "EMBEDDING_LANE",
+      "missing": [
+        "named embedding model, version, index root, and adapter"
+      ],
+      "trigger": "A frozen equal-budget embedding baseline is admitted."
+    },
+    {
+      "seam": "CANDIDATE_CAP",
+      "missing": [
+        "candidates or graph neighbors beyond the declared cap"
+      ],
+      "trigger": "Increase max_candidates under a new receiver request."
+    },
+    {
+      "seam": "PAYLOAD_OR_CANDIDATE_OMISSIONS",
+      "missing": [
+        "omitted record payloads"
+      ],
+      "trigger": "Call expand_context with the emitted handle."
+    }
+  ],
+  "costs": {
+    "support_width": 7,
+    "touch_count": 509,
+    "probe_count": 2,
+    "packet_width_bytes": 8192,
+    "probe_cost": {
+      "n": 2,
+      "d": 1
+    }
+  },
+  "budget": {
+    "kind": "UTF8_EXCERPT_PAYLOAD_BYTES",
+    "maximum": 8192,
+    "used": 8192,
+    "candidate_cap": 32,
+    "graph_depth": 1
+  },
+  "cold_reopen": {
+    "member_roots": [
+      "member:aadeeca9da3ae3e56b04006c041259e9f7c0030bb8e5f5ddd1b55769fd0d8de3",
+      "member:36674e2e8c3117a7e003e20346efadeb60dc850320e6657c2ed19e52df9e0540",
+      "member:1ad4af86bcec962b0a81c0f56fef44fa0d25a0c26e3771aa3ab94292d769fa66",
+      "member:0b1d17338bef79a4824422d0dbb1edd65be342fcc547a6c2ab494f4c44013239",
+      "member:3e96f193b840323b95afb71f3847d96c151064bdd9bb3a10c1a1b8c78f76680a",
+      "member:b18ed9750b55b7190663c649378cab7e6267edcce8680100ee760dfc09d97720",
+      "member:6af93312887833e3467812b24231e4b2901bea385b9f72fa35e64a2790ee0eab",
+      "member:362976800c881637a555f02811311555f7ec1d03d7c42c94043e932c249e86f6",
+      "member:b438e449772d16cbf1265c9b8aaa6cda779f032b1e59d01e3d7c2efad2c28de4",
+      "member:254538c13e733df5da01bbf186a8117083fca1555b89e1b938430cb203f01054"
+    ],
+    "omitted_member_count": 499,
+    "operations": [
+      "search_omissions",
+      "expand_context",
+      "read_packet"
+    ]
+  },
+  "claim_ceiling": "This bounded view preserves the canonical packet identity and every admitted excerpt. It omits the full omission manifest; use search_omissions, expand_context, or read_packet for an exact cold reopen. It does not establish source truth, semantic answer sufficiency, or model intelligence."
+}

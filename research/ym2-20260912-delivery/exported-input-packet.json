@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-I",
+    "-B",
+    "supplied/CODEX_YM2/verify_packet.py"
+  ],
+  "cwd": "C:\\github\\RPRM-open\\research\\ym2-20260912-delivery\\final-extraction\\YM2-interacting-SU2",
+  "ended_utc": "2026-09-12T16:24:23.520849+00:00",
+  "exit_code": 0,
+  "name": "exported-input-packet",
+  "started_utc": "2026-09-12T16:24:23.440329+00:00",
+  "stderr": "",
+  "stdout": "{\n  \"status\": \"PASS\",\n  \"files\": 23,\n  \"errors\": []\n}\n"
+}

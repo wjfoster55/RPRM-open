@@ -1,0 +1,286 @@
+{
+  "schema": "ym2-operational-provenance-v1",
+  "snapshot_utc": "2026-09-13T00:46:53.162988+00:00",
+  "files": [
+    {
+      "source_path": "C:\\github\\RPRM-open\\AGENT_HANDBOOK.md",
+      "payload_path": "accepted/AGENT_HANDBOOK.md",
+      "bytes": 37385,
+      "sha256": "e8a2c35794346956051afa153a2ac8fdca61c60a4b550834a0715d5cf9220a56"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\docs\\operations.md",
+      "payload_path": "accepted/docs/operations.md",
+      "bytes": 40793,
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd"
+    },
+    {
+      "source_path": "C:\\github\\RPRMLexicon\\operational_numbers\\README.md",
+      "payload_path": "accepted/external/operational_numbers/README.md",
+      "bytes": 4361,
+      "sha256": "3a33843f1c1323f0709cbfd2f8f6b92259379c96f38832d731814c840148d489"
+    },
+    {
+      "source_path": "C:\\github\\RPRMLexicon\\operational_numbers\\SOURCE_MANIFEST.json",
+      "payload_path": "accepted/external/operational_numbers/SOURCE_MANIFEST.json",
+      "bytes": 2817,
+      "sha256": "937b8bb0e5c07c9b246b4349a6fe2a9f939c7c1100118c14366586094029e8f7"
+    },
+    {
+      "source_path": "C:\\github\\RPRMLexicon\\operational_numbers\\carrier_lexer.py",
+      "payload_path": "accepted/external/operational_numbers/carrier_lexer.py",
+      "bytes": 5114,
+      "sha256": "45805f1796290c41834a27001bb9bcd2117359093b05754a3eb10ab430474e46"
+    },
+    {
+      "source_path": "C:\\github\\RPRMLexicon\\operational_numbers\\readings.json",
+      "payload_path": "accepted/external/operational_numbers/readings.json",
+      "bytes": 3732,
+      "sha256": "c47045f601422c3f494536ae27a3b2b56660b46d0c2b9da3c9c3881b8bdb6ff0"
+    },
+    {
+      "source_path": "C:\\github\\RPRMLexicon\\operational_numbers\\translate_number.py",
+      "payload_path": "accepted/external/operational_numbers/translate_number.py",
+      "bytes": 20513,
+      "sha256": "6e7fab0a37430b7d6fc197940129756b1a14277dbfc990e1a07a446eb18c5e67"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-carry-key-06\\COLUMN_HANDOFF.md",
+      "payload_path": "accepted/research/bsd-carry-key-06/COLUMN_HANDOFF.md",
+      "bytes": 7613,
+      "sha256": "7c75f84dae917d718e18e07d3aedf433d2e16ebaf7f61df857a5e81044fd77bf"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-carry-key-06\\OPERATIONAL_PROOF.md",
+      "payload_path": "accepted/research/bsd-carry-key-06/OPERATIONAL_PROOF.md",
+      "bytes": 10188,
+      "sha256": "804464e95b1893d199e70f3237f583021107cd8fa29c5ab2bc0a7fc5b096722d"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-carry-key-06\\PREFREEZE.md",
+      "payload_path": "accepted/research/bsd-carry-key-06/PREFREEZE.md",
+      "bytes": 2695,
+      "sha256": "105a5e65661b2f32f3ee3e3dd4c3c7844a839b781262d4d82dd71fbd5b6e02eb"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-carry-key-06\\evidence\\column_handoff_extended.json",
+      "payload_path": "accepted/research/bsd-carry-key-06/evidence/column_handoff_extended.json",
+      "bytes": 5436,
+      "sha256": "5df84c3ba6eca77c41f851ec4152a1b9ddd445fce9fb37b129cabee263a469c1"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-carry-key-06\\runs\\fresh_validation\\RUN.json",
+      "payload_path": "accepted/research/bsd-carry-key-06/runs/fresh_validation/RUN.json",
+      "bytes": 4038,
+      "sha256": "204a6efddbe9bcb26fe5824a61133e6511f1203c155f0f29930cde88404a1f85"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-carry-key-06\\runs\\fresh_validation\\evidence\\operations.json",
+      "payload_path": "accepted/research/bsd-carry-key-06/runs/fresh_validation/evidence/operations.json",
+      "bytes": 16699,
+      "sha256": "5b35474e06bfcc0fd037f2eb0fe689af06cdc7572d787a261e3e59620da257d3"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-carry-key-06\\runs\\fresh_validation\\logs\\analytic.log",
+      "payload_path": "accepted/research/bsd-carry-key-06/runs/fresh_validation/logs/analytic.log",
+      "bytes": 359,
+      "sha256": "7a3034824e11737184a18c47a49703ae26cd84d8259b92c35e5c781ed3435e66"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-carry-key-06\\runs\\fresh_validation\\logs\\finite_audit.log",
+      "payload_path": "accepted/research/bsd-carry-key-06/runs/fresh_validation/logs/finite_audit.log",
+      "bytes": 303,
+      "sha256": "77ba973f1b12247e414ffac5e5c3b3642c767e43cbd2983456dcbdd68c1f5d39"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-carry-key-06\\work\\column_handoff.py",
+      "payload_path": "accepted/research/bsd-carry-key-06/work/column_handoff.py",
+      "bytes": 7032,
+      "sha256": "d1c999598b40f1056073927ea839f2752aa14af854e88db957525f4614b659ce"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-carry-key-06\\work\\operational_probe.py",
+      "payload_path": "accepted/research/bsd-carry-key-06/work/operational_probe.py",
+      "bytes": 6904,
+      "sha256": "0bb292f1fd5095b49f058095d91f4aadeabb6d9be54a7de55dac5bf3553ad894"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-operational-03\\OPERATIONAL_BRIDGE.md",
+      "payload_path": "accepted/research/bsd-operational-03/OPERATIONAL_BRIDGE.md",
+      "bytes": 6788,
+      "sha256": "dc089747cb4d3a7f9aae47c9131b779b5b1e2c650a1b127d71c09ac380edadae"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-operational-03\\OPERATIONAL_VALUE_RECOVERY.md",
+      "payload_path": "accepted/research/bsd-operational-03/OPERATIONAL_VALUE_RECOVERY.md",
+      "bytes": 14307,
+      "sha256": "c0a050a0bbf3f26b495b48e79da8fc203a44775f0d3581e7321f6606e224c2ce"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-operational-03\\evidence\\operational_sources.json",
+      "payload_path": "accepted/research/bsd-operational-03/evidence/operational_sources.json",
+      "bytes": 98468,
+      "sha256": "934f4e58a23d02ca241d7abcee64ed40eab36139a87ff2bf079b8cdc0c259e12"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\bsd-operational-03\\runs\\return_validation\\RUN.json",
+      "payload_path": "accepted/research/bsd-operational-03/runs/return_validation/RUN.json",
+      "bytes": 2897,
+      "sha256": "4b6ce50969c156d33e95c7a37b335c9891da4d9c95b21a6f5267a52dbd2fd95a"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2-construction-20260912-delivery\\YM2-conditional-construction-2026-09-12.zip",
+      "payload_path": "accepted/research/ym2-construction-20260912-delivery/YM2-conditional-construction-2026-09-12.zip",
+      "bytes": 3077161,
+      "sha256": "1f2c4017faf270367de7209ec59eb5e2c19e32fdcaa99b27405d2b624aae785d"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_conditional_construction\\COMBINED_RESULT.md",
+      "payload_path": "accepted/research/ym2_conditional_construction/COMBINED_RESULT.md",
+      "bytes": 12515,
+      "sha256": "7ad46c4e96b84bcada64875d07452738b059aa62a2778799b103b7b7feb9eb40"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_conditional_construction\\CONDITIONAL_OBSTRUCTION.md",
+      "payload_path": "accepted/research/ym2_conditional_construction/CONDITIONAL_OBSTRUCTION.md",
+      "bytes": 12023,
+      "sha256": "e45e29b0162e5fdcbece541fa33e15466c13e96544bb60fe1bbea913ee282542"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_conditional_construction\\CONSTRUCTION_REVIEW.md",
+      "payload_path": "accepted/research/ym2_conditional_construction/CONSTRUCTION_REVIEW.md",
+      "bytes": 17997,
+      "sha256": "c0319af689421af4db2a4624c1e2db5b5eb0b2071c0081bcef76674d9fec5de0"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_conditional_construction\\GAUGE_NORM_GAIN.md",
+      "payload_path": "accepted/research/ym2_conditional_construction/GAUGE_NORM_GAIN.md",
+      "bytes": 18782,
+      "sha256": "0ae7da9697b5bb9ce798444fc7a9e8fc25b872d9bc00500b0f9e43652d264e94"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_conditional_construction\\LOCAL_VACUUM_ROUTE.md",
+      "payload_path": "accepted/research/ym2_conditional_construction/LOCAL_VACUUM_ROUTE.md",
+      "bytes": 22021,
+      "sha256": "6fc392e3f75716b289bcf39e9ee75f0a81bce47766090453531e33e9cd7405ba"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_conditional_construction\\TWO_SQUARE_GEOMETRY.md",
+      "payload_path": "accepted/research/ym2_conditional_construction/TWO_SQUARE_GEOMETRY.md",
+      "bytes": 7419,
+      "sha256": "9d290bdad62f22c2d1101e5cf1a7ade92fdf27f6ad149437a15c32f6cf9399b8"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_conditional_construction\\accepted\\research\\ym2_overlap_cover\\accepted\\estimate\\SOURCE_NORM_REFINEMENT.md",
+      "payload_path": "accepted/research/ym2_conditional_construction/accepted/research/ym2_overlap_cover/accepted/estimate/SOURCE_NORM_REFINEMENT.md",
+      "bytes": 12931,
+      "sha256": "cbfccef461b79d2a4270ef52bd2f821860d88f0c157228b894c1ccba1c969ac4"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_overlap_cover\\accepted\\estimate\\accepted\\DIRECT_COVER_ATTEMPT.md",
+      "payload_path": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md",
+      "bytes": 17473,
+      "sha256": "1e30640bb3c837938447b769942295f3f357453f06fe8b9b5a5de6546d788df0"
+    },
+    {
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2_rail_closure\\CONDITIONAL_RAIL.md",
+      "payload_path": "accepted/research/ym2_rail_closure/CONDITIONAL_RAIL.md",
+      "bytes": 12832,
+      "sha256": "30d65be6af0424da4544fea5037c6a2476278850c2131180a85f274979cda7e2"
+    }
+  ],
+  "link_remaps": [
+    {
+      "note": "BSD_DONOR.md",
+      "from": "../bsd-operational-03/OPERATIONAL_VALUE_RECOVERY.md",
+      "to": "accepted/research/bsd-operational-03/OPERATIONAL_VALUE_RECOVERY.md"
+    },
+    {
+      "note": "BSD_DONOR.md",
+      "from": "../bsd-carry-key-06/PREFREEZE.md",
+      "to": "accepted/research/bsd-carry-key-06/PREFREEZE.md"
+    },
+    {
+      "note": "BSD_DONOR.md",
+      "from": "../bsd-carry-key-06/OPERATIONAL_PROOF.md",
+      "to": "accepted/research/bsd-carry-key-06/OPERATIONAL_PROOF.md"
+    },
+    {
+      "note": "BSD_DONOR.md",
+      "from": "../bsd-operational-03/OPERATIONAL_BRIDGE.md",
+      "to": "accepted/research/bsd-operational-03/OPERATIONAL_BRIDGE.md"
+    },
+    {
+      "note": "BSD_DONOR.md",
+      "from": "../ym2_conditional_construction/CONDITIONAL_OBSTRUCTION.md",
+      "to": "accepted/research/ym2_conditional_construction/CONDITIONAL_OBSTRUCTION.md"
+    },
+    {
+      "note": "BSD_DONOR.md",
+      "from": "../ym2_rail_closure/CONDITIONAL_RAIL.md",
+      "to": "accepted/research/ym2_rail_closure/CONDITIONAL_RAIL.md"
+    },
+    {
+      "note": "BSD_DONOR.md",
+      "from": "../bsd-carry-key-06/COLUMN_HANDOFF.md",
+      "to": "accepted/research/bsd-carry-key-06/COLUMN_HANDOFF.md"
+    },
+    {
+      "note": "CHANNEL_SOURCE.md",
+      "from": "../ym2_conditional_construction/accepted/research/ym2_overlap_cover/accepted/estimate/SOURCE_NORM_REFINEMENT.md",
+      "to": "accepted/research/ym2_conditional_construction/accepted/research/ym2_overlap_cover/accepted/estimate/SOURCE_NORM_REFINEMENT.md"
+    },
+    {
+      "note": "CHANNEL_SOURCE.md",
+      "from": "../ym2_conditional_construction/LOCAL_VACUUM_ROUTE.md",
+      "to": "accepted/research/ym2_conditional_construction/LOCAL_VACUUM_ROUTE.md"
+    },
+    {
+      "note": "CHANNEL_SOURCE.md",
+      "from": "../ym2_conditional_construction/GAUGE_NORM_GAIN.md",
+      "to": "accepted/research/ym2_conditional_construction/GAUGE_NORM_GAIN.md"
+    },
+    {
+      "note": "CHANNEL_SOURCE.md",
+      "from": "../ym2_conditional_construction/TWO_SQUARE_GEOMETRY.md",
+      "to": "accepted/research/ym2_conditional_construction/TWO_SQUARE_GEOMETRY.md"
+    },
+    {
+      "note": "CHANNEL_SOURCE.md",
+      "from": "../ym2_conditional_construction/CONDITIONAL_OBSTRUCTION.md",
+      "to": "accepted/research/ym2_conditional_construction/CONDITIONAL_OBSTRUCTION.md"
+    },
+    {
+      "note": "SPECTRAL_CHANNEL.md",
+      "from": "../ym2_conditional_construction/TWO_SQUARE_GEOMETRY.md",
+      "to": "accepted/research/ym2_conditional_construction/TWO_SQUARE_GEOMETRY.md"
+    },
+    {
+      "note": "SPECTRAL_CHANNEL.md",
+      "from": "../ym2_conditional_construction/CONDITIONAL_OBSTRUCTION.md",
+      "to": "accepted/research/ym2_conditional_construction/CONDITIONAL_OBSTRUCTION.md"
+    },
+    {
+      "note": "SPECTRAL_CHANNEL.md",
+      "from": "../ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md",
+      "to": "accepted/research/ym2_overlap_cover/accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md"
+    }
+  ],
+  "prior_archive": "C:\\github\\RPRM-open\\research\\ym2-construction-20260912-delivery\\YM2-conditional-construction-2026-09-12.zip",
+  "prior_archive_sha256": "1f2c4017faf270367de7209ec59eb5e2c19e32fdcaa99b27405d2b624aae785d",
+  "donor_task": {
+    "title": "Run BSD E5 test 01",
+    "thread_id": "01a096b0-a546-76b0-b680-53e3a37f0e4a",
+    "status_at_initial_read": "active",
+    "status_at_final_snapshot": "completed turn; idle",
+    "completion_turn": "01a0981d-0df1-7093-afca-85facea1c8b5",
+    "read_only": true
+  },
+  "reviewed_files": {
+    "CHANNEL_SOURCE.md": "ff817b7cb2700636e4ad1497120c6f67765d51d75ef5148fa237abc1c2361d38",
+    "SPECTRAL_CHANNEL.md": "d69f9413b85dfe6bb3ae64fb32fef32d731951eb8674765d95c709d2f2a19c01",
+    "COMBINED_RESULT.md": "db8c340ae3f8955ee439249e56a5752a6edb6d3ef7af9cfa862aa0bc293cefe3",
+    "BSD_DONOR.md": "54d161387b6172e7ba98109c3cae4fd3d28a1ff2ba1b2b897c934de3f9ef609c"
+  },
+  "ceiling": "Exact byte snapshots; no old mathematical checker executed; snapshots are evidence not task authority."
+}

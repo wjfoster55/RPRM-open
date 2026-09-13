@@ -1,0 +1,17 @@
+{
+  "status": "REPLAY_PASS",
+  "output": "/mnt/data/e5_return_review/fresh_run/supplied_replay",
+  "summary": {
+    "source_files_unchanged": 17,
+    "descent_initial_candidates": 32,
+    "descent_realized_classes": 8,
+    "descent_decoder_cases": 256,
+    "analytic_lower_rational": {
+      "numerator": "615556405007957768183",
+      "denominator": "937494780448358006784"
+    },
+    "cube_candidates": 32,
+    "optional_decimal_status": "NUMERICAL_ILLUSTRATION_ONLY"
+  },
+  "error": null
+}

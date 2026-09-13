@@ -1,0 +1,181 @@
+{
+  "status": "BOUNDED_FLOAT_PRESTIGE_AND_ROUNDING_CONTROLS_CHECKED",
+  "created_utc": "2026-09-13T05:48:26.158640+00:00",
+  "source_sha256": "83597ed0fc04f99367d0c28a31382403da4b625484f00774ddd848f34c3849e1",
+  "binary64_control_rows": [
+    {
+      "integer": 9007199254740990,
+      "binary64_exact_value": "9007199254740990",
+      "error": "0"
+    },
+    {
+      "integer": 9007199254740991,
+      "binary64_exact_value": "9007199254740991",
+      "error": "0"
+    },
+    {
+      "integer": 9007199254740992,
+      "binary64_exact_value": "9007199254740992",
+      "error": "0"
+    },
+    {
+      "integer": 9007199254740993,
+      "binary64_exact_value": "9007199254740992",
+      "error": "-1"
+    },
+    {
+      "integer": 9007199254740994,
+      "binary64_exact_value": "9007199254740994",
+      "error": "0"
+    },
+    {
+      "integer": 9007199254740995,
+      "binary64_exact_value": "9007199254740996",
+      "error": "1"
+    },
+    {
+      "integer": 9007199254740996,
+      "binary64_exact_value": "9007199254740996",
+      "error": "0"
+    }
+  ],
+  "attributed_A_interval": [
+    "638511803/100000000",
+    "127703717/20000000"
+  ],
+  "attributed_B1_interval": [
+    "1276918651/200000000",
+    "399101589/62500000"
+  ],
+  "derived_D_interval": [
+    "-253697/500000000",
+    "118519/200000000"
+  ],
+  "widths": {
+    "A": "3391/50000000",
+    "B1": "1032169/1000000000",
+    "D": "1099989/1000000000",
+    "B1_share_of_D_width": "1032169/1099989"
+  },
+  "last_subtraction_binary64_absolute_errors": [
+    "247247/549755813888000000000",
+    "158113/439804651110400000000"
+  ],
+  "last_subtraction_errors_less_than": "1/1000000000000000",
+  "binary64_scope": "Only a demonstration of the final displayed-endpoint subtraction; actual producer arithmetic audited separately",
+  "cube_carrier_count": 256,
+  "summary_count": 128,
+  "complete_fiber_size": 2,
+  "zero_summary_complete_fiber": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "h_flip_distinguishing_site": 6,
+  "Q_interval": [
+    "3192559015/3192812712",
+    "1277037170/1276918651"
+  ],
+  "nearest_half_up_roundings": [
+    {
+      "decimal_places": 0,
+      "lower_rounded_scaled_integer": 1,
+      "upper_rounded_scaled_integer": 1,
+      "scale": 1,
+      "unique_rounded_value": "1"
+    },
+    {
+      "decimal_places": 1,
+      "lower_rounded_scaled_integer": 10,
+      "upper_rounded_scaled_integer": 10,
+      "scale": 10,
+      "unique_rounded_value": "1"
+    },
+    {
+      "decimal_places": 2,
+      "lower_rounded_scaled_integer": 100,
+      "upper_rounded_scaled_integer": 100,
+      "scale": 100,
+      "unique_rounded_value": "1"
+    },
+    {
+      "decimal_places": 3,
+      "lower_rounded_scaled_integer": 1000,
+      "upper_rounded_scaled_integer": 1000,
+      "scale": 1000,
+      "unique_rounded_value": "1"
+    },
+    {
+      "decimal_places": 4,
+      "lower_rounded_scaled_integer": 9999,
+      "upper_rounded_scaled_integer": 10001,
+      "scale": 10000,
+      "unique_rounded_value": null
+    },
+    {
+      "decimal_places": 5,
+      "lower_rounded_scaled_integer": 99992,
+      "upper_rounded_scaled_integer": 100009,
+      "scale": 100000,
+      "unique_rounded_value": null
+    },
+    {
+      "decimal_places": 6,
+      "lower_rounded_scaled_integer": 999921,
+      "upper_rounded_scaled_integer": 1000093,
+      "scale": 1000000,
+      "unique_rounded_value": null
+    }
+  ],
+  "same_rounded_different_exact_witnesses": [
+    {
+      "A": "127703/20000",
+      "B1": "127703/20000",
+      "Q": "1",
+      "D": "0",
+      "rounded_3dp": "1.000"
+    },
+    {
+      "A": "127703/20000",
+      "B1": "127701/20000",
+      "Q": "127703/127701",
+      "D": "1/10000",
+      "rounded_3dp": "1.000"
+    }
+  ],
+  "retained_scalings": [
+    {
+      "scale": 1,
+      "normalized_D": "1/10000",
+      "reconstructed_D": "1/10000"
+    },
+    {
+      "scale": 10,
+      "normalized_D": "1/100000",
+      "reconstructed_D": "1/10000"
+    },
+    {
+      "scale": 10000,
+      "normalized_D": "1/100000000",
+      "reconstructed_D": "1/10000"
+    }
+  ],
+  "claim_ceiling": "Exact finite models and rounded readout of attributed bounds; no new BSD enclosure or exact identity"
+}

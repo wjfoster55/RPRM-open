@@ -1,0 +1,47 @@
+{
+  "status": "JOINT_CARRY_BOUNDARY_EXCEPTION_VERIFIED",
+  "carrier": "I=2,P=0..9,0<=a<=b<20,w=m=1",
+  "same_prefix_cases": 1100,
+  "split_prefix_cases": 1000,
+  "actual_width_control": [
+    {
+      "raw_tail": 99999999,
+      "normalized": [
+        2,
+        340,
+        99999999
+      ],
+      "tags": [
+        0,
+        0
+      ],
+      "value": "2034099999999/1000000000000",
+      "fixed_width_readout": [
+        2,
+        "0340",
+        "99999999"
+      ]
+    },
+    {
+      "raw_tail": 100000000,
+      "normalized": [
+        2,
+        341,
+        0
+      ],
+      "tags": [
+        1,
+        0
+      ],
+      "value": "20341/10000",
+      "fixed_width_readout": [
+        2,
+        "0341",
+        "00000000"
+      ]
+    }
+  ],
+  "obligation": "At a straddled carry boundary, retain endpoint-specific prefixes or an extended common-frame offset. A single normalized middle word is insufficient.",
+  "source_sha256": "3f502a7d23c0bdc28a27aeeb02a432b7885a258dfdb71b9b321b0dc5fac4c343",
+  "dependency_sha256": "e24e2c603e9389b30d8ff5906db133b4961eaf50d792c5be56a8093806198fe8"
+}

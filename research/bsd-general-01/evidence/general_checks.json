@@ -1,0 +1,400 @@
+{
+  "status": "FINITE_CHECKS_PASS",
+  "python": "3.14.5",
+  "source_sha256": "695c90eabc4605f931bbdc3ad128f1569f06fed5fbce68823798d246396ba6d2",
+  "general_BSD": "OPEN",
+  "formal_verification": "NOT_RUN",
+  "checks": {
+    "finite_quotients": {
+      "cases": 144,
+      "rank_range": [
+        0,
+        3
+      ],
+      "moduli": [
+        1,
+        12
+      ]
+    },
+    "bounded_reconstruction": {
+      "group": "Z^2 + Z/4 + Z/3",
+      "height_bound": 7,
+      "ball_size": 2700,
+      "target": [
+        7,
+        -4,
+        3,
+        2
+      ],
+      "factorial_fibers": [
+        {
+          "n": 1,
+          "modulus": 1,
+          "fiber_size": 2700
+        },
+        {
+          "n": 2,
+          "modulus": 2,
+          "fiber_size": 336
+        },
+        {
+          "n": 3,
+          "modulus": 6,
+          "fiber_size": 12
+        },
+        {
+          "n": 4,
+          "modulus": 24,
+          "fiber_size": 1
+        },
+        {
+          "n": 5,
+          "modulus": 120,
+          "fiber_size": 1
+        },
+        {
+          "n": 6,
+          "modulus": 720,
+          "fiber_size": 1
+        }
+      ],
+      "binary_fibers": [
+        {
+          "n": 1,
+          "fiber_size": 336
+        },
+        {
+          "n": 2,
+          "fiber_size": 36
+        },
+        {
+          "n": 3,
+          "fiber_size": 12
+        },
+        {
+          "n": 4,
+          "fiber_size": 3
+        },
+        {
+          "n": 5,
+          "fiber_size": 3
+        },
+        {
+          "n": 6,
+          "fiber_size": 3
+        }
+      ],
+      "binary_final_fiber": [
+        [
+          7,
+          -4,
+          3,
+          0
+        ],
+        [
+          7,
+          -4,
+          3,
+          1
+        ],
+        [
+          7,
+          -4,
+          3,
+          2
+        ]
+      ]
+    },
+    "compatible_nonrational_tower": {
+      "abstract_levels": [
+        {
+          "n": 1,
+          "least_nonnegative": 1,
+          "centered": 1,
+          "bounded_witness_count": 40
+        },
+        {
+          "n": 2,
+          "least_nonnegative": 3,
+          "centered": -1,
+          "bounded_witness_count": 20
+        },
+        {
+          "n": 3,
+          "least_nonnegative": 3,
+          "centered": 3,
+          "bounded_witness_count": 10
+        },
+        {
+          "n": 4,
+          "least_nonnegative": 11,
+          "centered": -5,
+          "bounded_witness_count": 5
+        },
+        {
+          "n": 5,
+          "least_nonnegative": 11,
+          "centered": 11,
+          "bounded_witness_count": 2
+        },
+        {
+          "n": 6,
+          "least_nonnegative": 43,
+          "centered": -21,
+          "bounded_witness_count": 1
+        },
+        {
+          "n": 7,
+          "least_nonnegative": 43,
+          "centered": 43,
+          "bounded_witness_count": 0
+        },
+        {
+          "n": 8,
+          "least_nonnegative": 171,
+          "centered": -85,
+          "bounded_witness_count": 0
+        },
+        {
+          "n": 9,
+          "least_nonnegative": 171,
+          "centered": 171,
+          "bounded_witness_count": 0
+        },
+        {
+          "n": 10,
+          "least_nonnegative": 683,
+          "centered": -341,
+          "bounded_witness_count": 0
+        },
+        {
+          "n": 11,
+          "least_nonnegative": 683,
+          "centered": 683,
+          "bounded_witness_count": 0
+        },
+        {
+          "n": 12,
+          "least_nonnegative": 2731,
+          "centered": -1365,
+          "bounded_witness_count": 0
+        }
+      ],
+      "fixed_bound": 40,
+      "e5_levels": [
+        {
+          "n": 1,
+          "k": 1,
+          "height_bits": 3,
+          "x": [
+            "-4",
+            "1"
+          ],
+          "y": [
+            "6",
+            "1"
+          ]
+        },
+        {
+          "n": 2,
+          "k": 3,
+          "height_bits": 23,
+          "x": [
+            "-2439844",
+            "5094049"
+          ],
+          "y": [
+            "39601568754",
+            "11497268593"
+          ]
+        },
+        {
+          "n": 3,
+          "k": 3,
+          "height_bits": 23,
+          "x": [
+            "-2439844",
+            "5094049"
+          ],
+          "y": [
+            "39601568754",
+            "11497268593"
+          ]
+        },
+        {
+          "n": 4,
+          "k": 11,
+          "height_bits": 330,
+          "x": [
+            "-436096489776152515361961739159830454295257464729873932623943999877446083737410030028195913677813604",
+            "1273067032994123099261301614274416425755939808863243389288577912482148761954476113123638148833812321"
+          ],
+          "y": [
+            "132614475216627933270796551684085847302259309780014114820035610834876382032391587129092560300745263814430474664728650329313316543067740186246678807394",
+            "45423114390071063369775924300150878724115511177451032034909625230215003238964572835631923653370664616237212008604932522061752370879357058954170932369"
+          ]
+        },
+        {
+          "n": 5,
+          "k": 11,
+          "height_bits": 330,
+          "x": [
+            "-436096489776152515361961739159830454295257464729873932623943999877446083737410030028195913677813604",
+            "1273067032994123099261301614274416425755939808863243389288577912482148761954476113123638148833812321"
+          ],
+          "y": [
+            "132614475216627933270796551684085847302259309780014114820035610834876382032391587129092560300745263814430474664728650329313316543067740186246678807394",
+            "45423114390071063369775924300150878724115511177451032034909625230215003238964572835631923653370664616237212008604932522061752370879357058954170932369"
+          ]
+        }
+      ],
+      "growing_representatives": [
+        3,
+        5,
+        9,
+        17,
+        33,
+        65,
+        129,
+        257,
+        513,
+        1025,
+        2049,
+        4097
+      ],
+      "common_small_representative": 1,
+      "universal_nonrealizability": "WRITTEN_PROOF: 3m=1 has no integer solution"
+    },
+    "saturation_controls": {
+      "matrix": [
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "integral_index": 3,
+      "binary_levels": [
+        {
+          "modulus": 2,
+          "image_size": 4
+        },
+        {
+          "modulus": 4,
+          "image_size": 16
+        },
+        {
+          "modulus": 8,
+          "image_size": 64
+        },
+        {
+          "modulus": 16,
+          "image_size": 256
+        },
+        {
+          "modulus": 32,
+          "image_size": 1024
+        },
+        {
+          "modulus": 64,
+          "image_size": 4096
+        },
+        {
+          "modulus": 128,
+          "image_size": 16384
+        }
+      ],
+      "mod_3_image_size": 3,
+      "independent_index_2_mod_2_image_size": 2
+    },
+    "selmer_defect_models": {
+      "model_warning": "Abstract groups; no elliptic realization asserted",
+      "finite_obstruction": [
+        4,
+        4
+      ],
+      "defect_rows": [
+        {
+          "n": 1,
+          "MW_quotient": 4,
+          "Selmer_model": 16,
+          "defect": 4
+        },
+        {
+          "n": 2,
+          "MW_quotient": 16,
+          "Selmer_model": 256,
+          "defect": 16
+        },
+        {
+          "n": 3,
+          "MW_quotient": 32,
+          "Selmer_model": 512,
+          "defect": 16
+        },
+        {
+          "n": 4,
+          "MW_quotient": 64,
+          "Selmer_model": 1024,
+          "defect": 16
+        },
+        {
+          "n": 5,
+          "MW_quotient": 128,
+          "Selmer_model": 2048,
+          "defect": 16
+        }
+      ],
+      "slope_ambiguity": [
+        {
+          "n": 1,
+          "rank1_finite_obstruction": 8,
+          "rank3_zero_obstruction": 8
+        },
+        {
+          "n": 2,
+          "rank1_finite_obstruction": 64,
+          "rank3_zero_obstruction": 64
+        },
+        {
+          "n": 3,
+          "rank1_finite_obstruction": 512,
+          "rank3_zero_obstruction": 512
+        },
+        {
+          "n": 4,
+          "rank1_finite_obstruction": 4096,
+          "rank3_zero_obstruction": 4096
+        },
+        {
+          "n": 5,
+          "rank1_finite_obstruction": 32768,
+          "rank3_zero_obstruction": 32768
+        },
+        {
+          "n": 6,
+          "rank1_finite_obstruction": 262144,
+          "rank3_zero_obstruction": 262144
+        },
+        {
+          "n": 7,
+          "rank1_finite_obstruction": 524288,
+          "rank3_zero_obstruction": 2097152
+        }
+      ],
+      "plateau_finite_cases": 1875
+    },
+    "analytic_nonimplication_controls": {
+      "carrier": "polynomial analytic controls, not elliptic L-functions",
+      "delta": "1/1152921504606846976",
+      "second_derivative": "1/576460752303423488",
+      "fourth_derivative": 24,
+      "actual_order": 2,
+      "zero_second_derivative_comparison_order": 4,
+      "near_integer_control": "1152921504606846977/1152921504606846976"
+    }
+  }
+}

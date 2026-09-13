@@ -1,0 +1,347 @@
+{
+  "schema": "ym2-vacuum-handoff-final-export-v1",
+  "status": "PASS",
+  "utc": "2026-09-12T23:03:08.281138+00:00",
+  "archive": "C:\\github\\RPRM-open\\research\\ym2-vacuum-handoff-20260912-delivery\\YM2-vacuum-handoff-2026-09-12.zip",
+  "archive_sha256": "4d217545e3e1f90d26e668a2dbdfde70a2a9876951a9e460f1c9505b21e4fa32",
+  "archive_bytes": 1065326,
+  "payload_files": 32,
+  "payload_bytes": 1281538,
+  "manifest_covered_files": 31,
+  "zip_crc": "PASS",
+  "fresh_extraction": "C:\\github\\RPRM-open\\research\\ym2-vacuum-handoff-20260912-delivery\\final-extraction\\YM2-vacuum-handoff",
+  "source_equals_extracted": true,
+  "unchanged_after_replay": true,
+  "command": [
+    "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-I",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\github\\RPRM-open\\research\\ym2-vacuum-handoff-20260912-delivery\\final-extraction\\YM2-vacuum-handoff\\check_handoff.py"
+  ],
+  "cwd": "C:\\github\\RPRM-open\\research\\ym2-vacuum-handoff-20260912-delivery\\final-extraction\\YM2-vacuum-handoff",
+  "exit_code": 0,
+  "stdout_file": "check_handoff.stdout.txt",
+  "stdout_sha256": "a597f3eb5b901cbe3e9530ac93ad516a083791c5057bfc17461e1206cb9ed739",
+  "stderr_bytes": 0,
+  "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "accepted_snapshots": 15,
+  "prior_archive_sha256": "e8486ab5b3afacc65c070c5dcb975a66e4170154f0f75245bb2a3d169a148ca3",
+  "prior_archive_unchanged": true,
+  "reviewed_trial_reference_sha256": "ccdc03f843bb5eb3d1627e4655e86e9cac1bfed8074d13b58554a696a9c54c7a",
+  "top_level_file_links_checked": 46,
+  "link_records": [
+    {
+      "note": "COMPENSATOR.md",
+      "target": "accepted/overlap/BLOCK_COVER.md"
+    },
+    {
+      "note": "COMPENSATOR.md",
+      "target": "accepted/donors/ZERO-AND-RAILS.md"
+    },
+    {
+      "note": "COMPENSATOR.md",
+      "target": "accepted/donors/expansion-compression-2026-09-12/README.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/liar-teacher-formalization-2026-09-12/THEORY.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/liar-teacher-formalization-2026-09-12/README.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/bsd-operational-03/OPERATIONAL_BRIDGE.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/bsd-operational-03/RETURN_TO_WILLIAM.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/bsd-operational-03/PADIC_HEIGHT_AUDIT.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/overlap/RESULT.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/overlap/OVERLAP_INVERSE.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/bsd-general-01/CARRY_BRIDGE.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/liar-teacher-formalization-2026-09-12/THEORY.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/liar-teacher-formalization-2026-09-12/README.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/bsd-operational-03/OPERATIONAL_BRIDGE.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/bsd-operational-03/RETURN_TO_WILLIAM.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/bsd-operational-03/PADIC_HEIGHT_AUDIT.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/donors/bsd-general-01/CARRY_BRIDGE.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/overlap/RESULT.md"
+    },
+    {
+      "note": "DONOR_HANDOFF.md",
+      "target": "accepted/overlap/OVERLAP_INVERSE.md"
+    },
+    {
+      "note": "INDEPENDENT_REVIEW.md",
+      "target": "TRIAL_REFERENCE.md"
+    },
+    {
+      "note": "INDEPENDENT_REVIEW.md",
+      "target": "accepted/overlap/BLOCK_COVER.md"
+    },
+    {
+      "note": "INDEPENDENT_REVIEW.md",
+      "target": "accepted/overlap/accepted/estimate/CONDITIONAL_GAP_EXTENSION.md"
+    },
+    {
+      "note": "INDEPENDENT_REVIEW.md",
+      "target": "accepted/overlap/accepted/estimate/SOURCE_NORM_REFINEMENT.md"
+    },
+    {
+      "note": "INDEPENDENT_REVIEW.md",
+      "target": "accepted/overlap/accepted/estimate/COMBINED_REVIEW.md"
+    },
+    {
+      "note": "README.md",
+      "target": "RESULT.md"
+    },
+    {
+      "note": "README.md",
+      "target": "vacuum_handoff.png"
+    },
+    {
+      "note": "README.md",
+      "target": "COMPENSATOR.md"
+    },
+    {
+      "note": "README.md",
+      "target": "DONOR_HANDOFF.md"
+    },
+    {
+      "note": "README.md",
+      "target": "VACUUM_ATLAS.md"
+    },
+    {
+      "note": "README.md",
+      "target": "TRIAL_REFERENCE.md"
+    },
+    {
+      "note": "README.md",
+      "target": "INDEPENDENT_REVIEW.md"
+    },
+    {
+      "note": "README.md",
+      "target": "RESULTS.json"
+    },
+    {
+      "note": "README.md",
+      "target": "SOURCE_PROVENANCE.json"
+    },
+    {
+      "note": "README.md",
+      "target": "draw_handoff.py"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "vacuum_handoff.png"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "COMPENSATOR.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "RELATED_TASKS.json"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "DONOR_HANDOFF.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "BSD_STATUS_SNAPSHOT.json"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "TRIAL_REFERENCE.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "INDEPENDENT_REVIEW.md"
+    },
+    {
+      "note": "RESULT.md",
+      "target": "VACUUM_ATLAS.md"
+    },
+    {
+      "note": "TRIAL_REFERENCE.md",
+      "target": "VACUUM_ATLAS.md"
+    },
+    {
+      "note": "VACUUM_ATLAS.md",
+      "target": "accepted/overlap/RESULT.md"
+    },
+    {
+      "note": "VACUUM_ATLAS.md",
+      "target": "accepted/overlap/OVERLAP_INVERSE.md"
+    },
+    {
+      "note": "VACUUM_ATLAS.md",
+      "target": "accepted/overlap/accepted/estimate/CONDITIONAL_GAP_EXTENSION.md"
+    }
+  ],
+  "figure_dimensions": [
+    3000,
+    1400
+  ],
+  "old_checkers_executed": false,
+  "receipt": {
+    "schema": "ym2-vacuum-handoff-controls-v1",
+    "compensator": {
+      "W": "3/2",
+      "Lambda": "1",
+      "normalized": [
+        "3/5",
+        "2/5"
+      ],
+      "signed_contrast": "-1/5",
+      "integer_triples": 8000,
+      "balanced_maximizers": 20,
+      "unequal_weight_controls": [
+        {
+          "third_weight": "1/5",
+          "gain": "6/5"
+        },
+        {
+          "third_weight": "2/5",
+          "gain": "7/5"
+        },
+        {
+          "third_weight": "1/2",
+          "gain": "15/11"
+        },
+        {
+          "third_weight": "3/5",
+          "gain": "4/3"
+        },
+        {
+          "third_weight": "1",
+          "gain": "5/4"
+        }
+      ]
+    },
+    "two_state_control": {
+      "carrier": "auxiliary two-state operator, not SU(2)",
+      "actual_gap": "2",
+      "reference_gap": "5/2",
+      "residual": [
+        "-1",
+        "1/2"
+      ],
+      "transferred_lower_bound": "13/10"
+    },
+    "reference_gap_scope": {
+      "q_reference": "mr",
+      "D_reference": "2mr/3",
+      "reference_window_ratio_to_old_actual_window": "128/9",
+      "warning": "Reference operator only; no actual YM interval extension established."
+    },
+    "plaquette_residual_controls": [
+      {
+        "plaquettes": 1,
+        "r": "1/10",
+        "residual_oscillation": "1/1800"
+      },
+      {
+        "plaquettes": 2,
+        "r": "1/10",
+        "residual_oscillation": "1/900"
+      },
+      {
+        "plaquettes": 3,
+        "r": "1/10",
+        "residual_oscillation": "1/600"
+      },
+      {
+        "plaquettes": 4,
+        "r": "1/10",
+        "residual_oscillation": "1/450"
+      }
+    ],
+    "auxiliary_binary_mixture": [
+      {
+        "sites": 2,
+        "variance": "5/8",
+        "rayleigh": "3/4",
+        "upper_bound": "4/5"
+      },
+      {
+        "sites": 3,
+        "variance": "1/2",
+        "rayleigh": "3/5",
+        "upper_bound": "2/3"
+      },
+      {
+        "sites": 4,
+        "variance": "7/16",
+        "rayleigh": "195/392",
+        "upper_bound": "4/7"
+      },
+      {
+        "sites": 5,
+        "variance": "2/5",
+        "rayleigh": "87/205",
+        "upper_bound": "1/2"
+      },
+      {
+        "sites": 6,
+        "variance": "3/8",
+        "rayleigh": "3785/10248",
+        "upper_bound": "4/9"
+      },
+      {
+        "sites": 7,
+        "variance": "5/14",
+        "rayleigh": "24459/74825",
+        "upper_bound": "2/5"
+      },
+      {
+        "sites": 8,
+        "variance": "11/32",
+        "rayleigh": "1720605/5872592",
+        "upper_bound": "4/11"
+      }
+    ],
+    "status": "PASS",
+    "assertions": 19621,
+    "evidence_ceiling": "New finite exact controls. General SU(2), all-spin, all-volume and actual-correction claims require the written proofs and supplied ports."
+  },
+  "evidence_ceiling": "Written derivations and independent agent review, with bounded exact controls. Hash/replay integrity does not certify general mathematical truth or an actual coupling-window extension."
+}

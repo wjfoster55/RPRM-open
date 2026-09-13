@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "evidence_grade": "NEW_BOUNDED_DEVELOPMENT_CALIBRATION",
+  "definition": "fixed k=1, c=3/5,s=4/5; five preselected amplitude cases, two field witnesses, four finite-box entries",
+  "exact_arithmetic": "fractions.Fraction; no floating solver",
+  "rows": [
+    {
+      "id": "plus",
+      "state": [
+        "1",
+        "1"
+      ],
+      "retained_initial": [
+        "1/2",
+        "1/2",
+        "1"
+      ],
+      "state_after": [
+        "7/5",
+        "-1/5"
+      ],
+      "retained_after": [
+        "49/50",
+        "1/50",
+        "-7/25"
+      ],
+      "pass": true
+    },
+    {
+      "id": "minus",
+      "state": [
+        "1",
+        "-1"
+      ],
+      "retained_initial": [
+        "1/2",
+        "1/2",
+        "-1"
+      ],
+      "state_after": [
+        "-1/5",
+        "-7/5"
+      ],
+      "retained_after": [
+        "1/50",
+        "49/50",
+        "7/25"
+      ],
+      "pass": true
+    },
+    {
+      "id": "zero",
+      "state": [
+        "0",
+        "0"
+      ],
+      "retained_initial": [
+        "0",
+        "0",
+        "0"
+      ],
+      "state_after": [
+        "0",
+        "0"
+      ],
+      "retained_after": [
+        "0",
+        "0",
+        "0"
+      ],
+      "pass": true
+    },
+    {
+      "id": "pure_electric",
+      "state": [
+        "0",
+        "1"
+      ],
+      "retained_initial": [
+        "0",
+        "1/2",
+        "0"
+      ],
+      "state_after": [
+        "4/5",
+        "3/5"
+      ],
+      "retained_after": [
+        "8/25",
+        "9/50",
+        "12/25"
+      ],
+      "pass": true
+    },
+    {
+      "id": "antipode_plus",
+      "state": [
+        "-1",
+        "-1"
+      ],
+      "retained_initial": [
+        "1/2",
+        "1/2",
+        "1"
+      ],
+      "state_after": [
+        "-7/5",
+        "1/5"
+      ],
+      "retained_after": [
+        "49/50",
+        "1/50",
+        "-7/25"
+      ],
+      "pass": true
+    }
+  ],
+  "field_sampling": {
+    "nodes": 16,
+    "absolute_tolerance": 2e-12,
+    "rows": [
+      {
+        "state": "plus",
+        "time": "initial",
+        "UB_UE_transfer": [
+          0.5,
+          0.5000000000000001,
+          1.0000000000000002
+        ],
+        "max_abs_error": 2.220446049250313e-16,
+        "pass": true
+      },
+      {
+        "state": "plus",
+        "time": "after",
+        "UB_UE_transfer": [
+          0.9800000000000002,
+          0.020000000000000004,
+          -0.28
+        ],
+        "max_abs_error": 3.3306690738754696e-16,
+        "pass": true
+      },
+      {
+        "state": "minus",
+        "time": "initial",
+        "UB_UE_transfer": [
+          0.5,
+          0.5000000000000001,
+          -1.0000000000000002
+        ],
+        "max_abs_error": 2.220446049250313e-16,
+        "pass": true
+      },
+      {
+        "state": "minus",
+        "time": "after",
+        "UB_UE_transfer": [
+          0.020000000000000004,
+          0.9800000000000002,
+          0.28
+        ],
+        "max_abs_error": 3.3306690738754696e-16,
+        "pass": true
+      }
+    ]
+  },
+  "finite_box_control": [
+    {
+      "L_over_2pi_length_unit": 1,
+      "gap_in_hbar_c_over_length_unit": "1"
+    },
+    {
+      "L_over_2pi_length_unit": 2,
+      "gap_in_hbar_c_over_length_unit": "1/2"
+    },
+    {
+      "L_over_2pi_length_unit": 4,
+      "gap_in_hbar_c_over_length_unit": "1/4"
+    },
+    {
+      "L_over_2pi_length_unit": 8,
+      "gap_in_hbar_c_over_length_unit": "1/8"
+    }
+  ],
+  "analytic_limit": "For any epsilon>0 choose integer m>1/epsilon; gap=1/m<epsilon. The table alone is not the proof.",
+  "not_calculated": [
+    "interacting non-Abelian evolution",
+    "quantum interacting spectrum",
+    "continuum/thermodynamic mass gap",
+    "old cube/photon calibration"
+  ],
+  "entrypoint_sha256": "5a76cf4b16a15d395aedfd3e8427fcf38a238aa407b8e8dae6738eeef5eb8747",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]"
+}

@@ -1,0 +1,229 @@
+{
+  "stage": "discovery_RETROSPECTIVE",
+  "receiver": {
+    "name": "outlet_exceedance",
+    "description": "Does outlet mobile concentration exceed threshold C* over future interval [t0, t1] under a known continuation input?",
+    "threshold_c": 0.02,
+    "t0": 250.0,
+    "t1": 350.0,
+    "secondary": "cumulative_mass_released_over_[t0,t1]"
+  },
+  "checkpoint_t": 100.0,
+  "n_grid": 15,
+  "n_ambiguous_pairs": 8,
+  "selected_pairs": [
+    {
+      "a": "z0.001_p0.1",
+      "b": "z0.02_p0.02",
+      "c_check_a": 0.3275307513,
+      "c_check_b": 0.3580888428,
+      "rel_diff_check": 0.08533661998809419,
+      "exceeds_a": true,
+      "exceeds_b": false,
+      "selected_discovery_example": true
+    },
+    {
+      "a": "z0.001_p0.1",
+      "b": "z1_p0.02",
+      "c_check_a": 0.3275307513,
+      "c_check_b": 0.3583629148,
+      "rel_diff_check": 0.0860361444409147,
+      "exceeds_a": true,
+      "exceeds_b": false,
+      "selected_discovery_example": true
+    },
+    {
+      "a": "z0.001_p0.1",
+      "b": "z0.005_p0.02",
+      "c_check_a": 0.3275307513,
+      "c_check_b": 0.3585636107,
+      "rel_diff_check": 0.08654771001278297,
+      "exceeds_a": true,
+      "exceeds_b": false,
+      "selected_discovery_example": true
+    },
+    {
+      "a": "z0.001_p0.2",
+      "b": "z0.02_p0.02",
+      "c_check_a": 0.3180052458,
+      "c_check_b": 0.3580888428,
+      "rel_diff_check": 0.11193757584451602,
+      "exceeds_a": true,
+      "exceeds_b": false,
+      "selected_discovery_example": true
+    },
+    {
+      "a": "z0.001_p0.2",
+      "b": "z1_p0.02",
+      "c_check_a": 0.3180052458,
+      "c_check_b": 0.3583629148,
+      "rel_diff_check": 0.11261675618003983,
+      "exceeds_a": true,
+      "exceeds_b": false,
+      "selected_discovery_example": true
+    }
+  ],
+  "candidate_gate_on_best": {
+    "status": "MANY",
+    "predicted_exceeds": null,
+    "predicted_mass": null,
+    "supporting_candidate_ids": [
+      "z0.001_p0.1",
+      "z0.02_p0.02"
+    ],
+    "notes": "need distinguishing observation"
+  },
+  "note": "Examples were searched and selected after seeing outcomes. Do not treat as confirmatory cohort.",
+  "grid": [
+    {
+      "id": "z0.0001_p0.02",
+      "zetaim": 0.0001,
+      "porosity_immobile": 0.02,
+      "c_check": 0.4166099013,
+      "exceeds": false,
+      "final_c": 0.002066784662,
+      "immobile_mass_at_end": 0.08508847424944574,
+      "outlet_hash": 0.002066784662
+    },
+    {
+      "id": "z0.0001_p0.1",
+      "zetaim": 0.0001,
+      "porosity_immobile": 0.1,
+      "c_check": 0.4154739451,
+      "exceeds": false,
+      "final_c": 0.001174700092,
+      "immobile_mass_at_end": 0.23494486055754246,
+      "outlet_hash": 0.001174700092
+    },
+    {
+      "id": "z0.0001_p0.2",
+      "zetaim": 0.0001,
+      "porosity_immobile": 0.2,
+      "c_check": 0.415321174,
+      "exceeds": false,
+      "final_c": 0.000671351422,
+      "immobile_mass_at_end": 0.2685358349040232,
+      "outlet_hash": 0.000671351422
+    },
+    {
+      "id": "z0.001_p0.02",
+      "zetaim": 0.001,
+      "porosity_immobile": 0.02,
+      "c_check": 0.3724774025,
+      "exceeds": false,
+      "final_c": 7.829668117e-05,
+      "immobile_mass_at_end": 0.005213141615500605,
+      "outlet_hash": 7.829668117e-05
+    },
+    {
+      "id": "z0.001_p0.1",
+      "zetaim": 0.001,
+      "porosity_immobile": 0.1,
+      "c_check": 0.3275307513,
+      "exceeds": true,
+      "final_c": 0.01235052393,
+      "immobile_mass_at_end": 0.36292567668661163,
+      "outlet_hash": 0.01235052393
+    },
+    {
+      "id": "z0.001_p0.2",
+      "zetaim": 0.001,
+      "porosity_immobile": 0.2,
+      "c_check": 0.3180052458,
+      "exceeds": true,
+      "final_c": 0.01767060652,
+      "immobile_mass_at_end": 0.8385646346411795,
+      "outlet_hash": 0.01767060652
+    },
+    {
+      "id": "z0.005_p0.02",
+      "zetaim": 0.005,
+      "porosity_immobile": 0.02,
+      "c_check": 0.3585636107,
+      "exceeds": false,
+      "final_c": 5.727954743e-06,
+      "immobile_mass_at_end": 0.0012395592473341186,
+      "outlet_hash": 5.727954743e-06
+    },
+    {
+      "id": "z0.005_p0.1",
+      "zetaim": 0.005,
+      "porosity_immobile": 0.1,
+      "c_check": 0.2120992304,
+      "exceeds": true,
+      "final_c": 0.002755123178,
+      "immobile_mass_at_end": 0.1694484238575129,
+      "outlet_hash": 0.002755123178
+    },
+    {
+      "id": "z0.005_p0.2",
+      "zetaim": 0.005,
+      "porosity_immobile": 0.2,
+      "c_check": 0.1578101331,
+      "exceeds": true,
+      "final_c": 0.02260705278,
+      "immobile_mass_at_end": 0.7741018607457024,
+      "outlet_hash": 0.02260705278
+    },
+    {
+      "id": "z0.02_p0.02",
+      "zetaim": 0.02,
+      "porosity_immobile": 0.02,
+      "c_check": 0.3580888428,
+      "exceeds": false,
+      "final_c": 4.337790037e-06,
+      "immobile_mass_at_end": 0.0009545198255695831,
+      "outlet_hash": 4.337790037e-06
+    },
+    {
+      "id": "z0.02_p0.1",
+      "zetaim": 0.02,
+      "porosity_immobile": 0.1,
+      "c_check": 0.1610492337,
+      "exceeds": true,
+      "final_c": 0.0004765273651,
+      "immobile_mass_at_end": 0.09603628440574966,
+      "outlet_hash": 0.0004765273651
+    },
+    {
+      "id": "z0.02_p0.2",
+      "zetaim": 0.02,
+      "porosity_immobile": 0.2,
+      "c_check": 0.07372109573,
+      "exceeds": true,
+      "final_c": 0.009692652502,
+      "immobile_mass_at_end": 0.6965245781784868,
+      "outlet_hash": 0.009692652502
+    },
+    {
+      "id": "z1_p0.02",
+      "zetaim": 1.0,
+      "porosity_immobile": 0.02,
+      "c_check": 0.3583629148,
+      "exceeds": false,
+      "final_c": 4.02316533e-06,
+      "immobile_mass_at_end": 0.0008806326152222201,
+      "outlet_hash": 4.02316533e-06
+    },
+    {
+      "id": "z1_p0.1",
+      "zetaim": 1.0,
+      "porosity_immobile": 0.1,
+      "c_check": 0.1376265047,
+      "exceeds": true,
+      "final_c": 0.0002240888914,
+      "immobile_mass_at_end": 0.07075734182664242,
+      "outlet_hash": 0.0002240888914
+    },
+    {
+      "id": "z1_p0.2",
+      "zetaim": 1.0,
+      "porosity_immobile": 0.2,
+      "c_check": 0.03221547836,
+      "exceeds": true,
+      "final_c": 0.004047604827,
+      "immobile_mass_at_end": 0.6286093412224739,
+      "outlet_hash": 0.004047604827
+    }
+  ]
+}

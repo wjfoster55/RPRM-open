@@ -1,0 +1,86 @@
+{
+  "status": "EXACT_SCALE_OBSTRUCTION_AND_EULER_FACTOR_VERIFIED",
+  "source_sha256": "d6fa1f964c5f4c49e5b915e4d031ddb61ae6c5485e12d47b4ebffe516edf8096",
+  "real_interval": [
+    [
+      499960271,
+      500000000
+    ],
+    [
+      62505801,
+      62500000
+    ]
+  ],
+  "tested_primes": [
+    2,
+    5,
+    13
+  ],
+  "congruence_precision": 8,
+  "modulus": 81573072100000000,
+  "alternate_square_root": [
+    8157307291573072100000001,
+    8157307210000000000000001
+  ],
+  "alternate_positive_rational_square": [
+    66541662249151209120525790146412993146144200000001,
+    66541660918317984100000016314614420000000000000001
+  ],
+  "alternate_is_not_one": true,
+  "alternate_in_real_interval": true,
+  "alternate_valuations": {
+    "2": 0,
+    "5": 0,
+    "13": 0
+  },
+  "alternate_minus_one_valuations": {
+    "2": 9,
+    "5": 8,
+    "13": 8
+  },
+  "auxiliary_13_Euler_factor_at_1": [
+    20,
+    13
+  ],
+  "auxiliary_13_v5": 1,
+  "rank2_leading_transport_samples": [
+    {
+      "a2": [
+        0,
+        1
+      ],
+      "T2_product": [
+        0,
+        1
+      ]
+    },
+    {
+      "a2": [
+        7,
+        11
+      ],
+      "T2_product": [
+        140,
+        143
+      ]
+    },
+    {
+      "a2": [
+        -13,
+        2
+      ],
+      "T2_product": [
+        -10,
+        1
+      ]
+    }
+  ],
+  "order_admission_hostile_T2": [
+    1,
+    1
+  ],
+  "global_BSD_quotient_congruences_actually_computed": false,
+  "actual_analytic_augmentation_coefficient": "OPEN_NOT_COMPUTED",
+  "countermodel_scope": "finite local congruences, positive rational square, real interval",
+  "not_a_counterexample_to_BSD": true
+}

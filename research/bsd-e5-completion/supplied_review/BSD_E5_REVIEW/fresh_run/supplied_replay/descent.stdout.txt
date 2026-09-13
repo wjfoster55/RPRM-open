@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "real_candidates": 32,
+  "mod8_survivors": 8,
+  "rationally_realized_classes": 8,
+  "decoder_checks": 256,
+  "output": "/mnt/data/e5_return_review/fresh_run/supplied_replay/descent_receipt.json"
+}

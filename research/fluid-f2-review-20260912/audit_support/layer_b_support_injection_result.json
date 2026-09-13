@@ -1,0 +1,134 @@
+{
+  "source_root": "C:\\github\\RPRM-open\\research\\fluid-f2-review-20260912\\input\\fluid_dynamic_frontier_02",
+  "scene_id": "audit_two_cell_support_injection",
+  "contract": {
+    "W": 64,
+    "H": 48,
+    "steps": 300,
+    "theta": 0.5,
+    "divider_x": 32,
+    "crest_y": 36,
+    "initial_water": [
+      [
+        30,
+        34
+      ],
+      [
+        31,
+        34
+      ]
+    ],
+    "extra_walls": [
+      [
+        29,
+        36
+      ],
+      [
+        30,
+        36
+      ]
+    ],
+    "sand": false,
+    "new_inflow": false,
+    "normalization": "Pinned normalizeForModel(B); frame starts at zero."
+  },
+  "static_verdict": "CERTIFIED_NO",
+  "static_reason": "B:no_catwalk_and_V_lt_sill_need",
+  "layers": {
+    "A": {
+      "verdict": "UNRESOLVED",
+      "reason": "water_in_R_opt"
+    },
+    "B": {
+      "verdict": "CERTIFIED_NO",
+      "reason": "no_catwalk_and_V_lt_sill_need"
+    },
+    "failed_gap_adjacent": {
+      "verdict": "UNRESOLVED",
+      "reason": "gap_adjacent_or_fill_possible"
+    },
+    "stats": {
+      "graph_nodes_visited": 6144,
+      "R_opt_size": 2500,
+      "R_catwalk_size": 1415,
+      "water_in_R_opt": 2.0,
+      "water_in_R_catwalk": 0.0,
+      "monitor_mass": 0.0,
+      "V": 2.0,
+      "top": 34,
+      "sill_need": 12,
+      "left_below_capacity": 339
+    }
+  },
+  "oracle": {
+    "Qdyn": 1,
+    "firstBreach": 3,
+    "maxMonitored": 1,
+    "totalMass": 2,
+    "stepsRun": 300
+  },
+  "trace": [
+    {
+      "t": 0,
+      "water": [
+        {
+          "x": 30,
+          "y": 34,
+          "mass": 1
+        },
+        {
+          "x": 31,
+          "y": 34,
+          "mass": 1
+        }
+      ]
+    },
+    {
+      "t": 1,
+      "water": [
+        {
+          "x": 30,
+          "y": 35,
+          "mass": 1
+        },
+        {
+          "x": 31,
+          "y": 35,
+          "mass": 1
+        }
+      ]
+    },
+    {
+      "t": 2,
+      "water": [
+        {
+          "x": 32,
+          "y": 35,
+          "mass": 1
+        },
+        {
+          "x": 31,
+          "y": 36,
+          "mass": 1
+        }
+      ]
+    },
+    {
+      "t": 3,
+      "water": [
+        {
+          "x": 33,
+          "y": 36,
+          "mass": 1
+        },
+        {
+          "x": 31,
+          "y": 37,
+          "mass": 1
+        }
+      ]
+    }
+  ],
+  "false_no": true,
+  "interpretation": "The stack lemma is false for the stated ledge geometry contract: a diagonally arriving cell can support the next cell without a filled column to the wall."
+}

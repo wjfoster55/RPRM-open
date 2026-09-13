@@ -1,0 +1,194 @@
+{
+  "packet_id": "packet:5cd258671e05eaa3d5d1b998435870088c73967e99c8797726a64fe4c764679c",
+  "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+  "receiver": {
+    "schema": "rprm-memory-receiver/v1",
+    "objective": "operational value possessed revealed numerical relationship profile August 28",
+    "namespace": "rprm-alpha",
+    "operations": [],
+    "contradiction_mode": "CURRENT",
+    "allowed_record_kinds": [
+      "CLAIM",
+      "OBSERVATION",
+      "RELATION"
+    ],
+    "allowed_authorities": [
+      "FROZEN_LOCAL_BYTES",
+      "LOCAL_OCCURRENCE",
+      "OFFICIAL_RECORD",
+      "PRIMARY_SOURCE",
+      "SECONDARY_SOURCE",
+      "UNVERIFIED"
+    ],
+    "as_of": null,
+    "as_known": null,
+    "max_payload_bytes": 8192,
+    "max_candidates": 32,
+    "graph_depth": 1,
+    "output_schema": "text/context",
+    "model_receipt": "unspecified",
+    "tokenizer_receipt": "NONE_BYTE_BUDGET"
+  },
+  "match_fiber": {
+    "disposition": "MANY",
+    "cardinality": 583,
+    "scope": "policy-visible lexical matches before packet packing"
+  },
+  "members": [
+    {
+      "member_id": "member:0c2a3992818355aece0fc952390f85f6fde9580c25c385147b74df3f7a3aa211",
+      "record_id": "occurrence:11b5e7296ab973e68729fbf5e0c39c90c0ddb201cd912e38255c0a0f05debe29",
+      "record_kind": "OBSERVATION",
+      "title": "2.0 Mark, numeral, number, operational profile",
+      "retrieval_rank": 1,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "### 2.0 Mark, numeral, number, operational profile\n\nThe base chain is\n\n\\[\n\\text{mark}\n\\xrightarrow{\\text{admit }(\\Sigma_{num},\\nu)}\n\\text{numeral occurrence }(\\sigma,\\nu)\n\\xrightarrow{\\nu}\\text{number}\n\\to\\text{rooted operation-and-relation profile}.\n\\]\n\nWithout a representation map there is a mark, not yet a numeral. Once a\nbase-\\(b\\) numeral is declared, its value is fixed by\n\n\\[\n\\nu_b(d_k\\cdots d_0)=\\sum_{i=0}^{k}d_i b^i.\n\\]\n\nFor a declared many-sorted structure \\(\\mathcal A\\), operation signature\n\\(\\Omega\\), relation signature \\(\\Lambda\\), and \\(a\\in\\mathcal A\\), define\n\n\\[\n\\operatorname{OP}_{\\mathcal A,(\\Omega,\\Lambda)}(a)\n=\n\\bigl(\\operatorname{Eval}_{\\mathcal A,\\Omega}(a),\n\\operatorname{Rel}_{\\mathcal A,\\Lambda}(a)\\bigr),\n\\]\n\nwhere the first component records definedness and values of every admitted\nwell-typed operation term rooted at \\(a\\), and the second records\n`TRUE | FALSE | UNDEFINED` for every admitted declared or definable predicate\nrooted at \\(a\\). Order, divisibility, congruence, and primality are included\nonly when declared or definable in \\((\\Omega,\\Lambda)\\).\n\nThe profile is possessed by the object in the declared structure whether or\nnot it is explicitly materialized. A later aperture may retain a much smaller\nfuture-sufficient quotient of it. The two-level construction, its exact finite\nquotient theorem, O1 spine, prime hierarchy, and hostile controls are developed\nin the companion [Operational Layer Foundation and Prime Program](RPRM_OPERATIONAL_LAYER_FOUNDATION_AND_PRIME_PROGRAM_2026-08-28.md).\n\n",
+      "excerpt_utf8_bytes": 1544,
+      "excerpt_sha256": "e11ecd276f21db022b2fcb12322bb6899e7a80ed98cefd90a683c014bc998db9",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:11b5e7296ab973e68729fbf5e0c39c90c0ddb201cd912e38255c0a0f05debe29",
+        "event_id": "event:6832039e98206779eca56909486546726cde49af32eb4f5740363c75110a5b88",
+        "blob_sha256": "b230fd2c3c9c66484583fa925b5a8aaba5bc1cd4ffeda579eb6feb719a06411a",
+        "byte_length": 160319,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_RELATIONAL_UNIFICATION_PROGRAM_DRAFT_0_1_2026-08-28.md",
+        "source_byte_start": 34699,
+        "source_byte_end": 36243,
+        "slice_sha256": "e11ecd276f21db022b2fcb12322bb6899e7a80ed98cefd90a683c014bc998db9",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-29T17:22:12.100604Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 34699,
+      "exact_source_byte_end": 36243
+    },
+    {
+      "member_id": "member:fddd17652eaa6548b395ea7091f0347f54338cc1abce28877beb3b7681269f15",
+      "record_id": "occurrence:e7e6478011699db24ae60c2f93b48b5a26397f4b3d6e6ed9867d378c97eb065e",
+      "record_kind": "OBSERVATION",
+      "title": "2.3 Possessed identity versus revealed identity",
+      "retrieval_rank": 2,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "### 2.3 Possessed identity versus revealed identity\n\nLet \\(X\\) and an identity or equivalence relation \\(\\sim\\) on \\(X\\) be fixed.\nLet \\(K_t\\) denote the witnesses available to an observer at stage \\(t\\), with\n\n\\[\nK_0\\subseteq K_1\\subseteq\\cdots .\n\\]\n\nIf a witness entering \\(K_t\\) proves \\(x\\sim y\\), then two statements must not\nbe conflated:\n\n1. **structural statement:** \\(x\\sim y\\) in the already declared carrier;\n2. **epistemic statement:** the current observer can now certify \\(x\\sim y\\).\n\nThe second can change with time while the first does not. Discovery time is\nnot creation time. Conversely, if stage \\(t\\) changes \\(X\\), \\(\\sim\\), the\noperator language, or the receiver version, then the new result belongs to a\nnew carrier and cannot be projected backward without an adapter.\n\nThis is the exact caution behind the phrase “it already has that identity.”\nThe identity need not have been visible, named, or computationally cheap. It\nmust, however, be a property of the frozen object rather than metadata added\nafter the answer is known.\n\n---\n\n",
+      "excerpt_utf8_bytes": 1060,
+      "excerpt_sha256": "8482dd64736dc24fac25366bdb33dfdfcbd1d3913489c84a30a58f6e64aa1249",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:e7e6478011699db24ae60c2f93b48b5a26397f4b3d6e6ed9867d378c97eb065e",
+        "event_id": "event:6df0bb191ed28b7c72c4425370cb33325a504f373e684a588fba2ac823845bfe",
+        "blob_sha256": "ce02b13d6b18b33eb58c56c106650b7237f06b68924c9a27343ea69a9c394146",
+        "byte_length": 67280,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_OPERATIONAL_LAYER_FOUNDATION_AND_PRIME_PROGRAM_2026-08-28.md",
+        "source_byte_start": 8855,
+        "source_byte_end": 9915,
+        "slice_sha256": "8482dd64736dc24fac25366bdb33dfdfcbd1d3913489c84a30a58f6e64aa1249",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-29T09:04:42.467500Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 8855,
+      "exact_source_byte_end": 9915
+    },
+    {
+      "member_id": "member:912e3fbb924bacc4124aa42c1826eddf629e32f0919163804a820d62f96ad84e",
+      "record_id": "occurrence:7505a14f3476d8c8f7429c316fe7d409e18d24839dedd990b2bbb95d90a2e08e",
+      "record_kind": "OBSERVATION",
+      "title": "4. Base operational profile versus aperture state",
+      "retrieval_rank": 6,
+      "relation_distance": 0,
+      "inclusion_reasons": [
+        "LEXICAL_MATCH"
+      ],
+      "excerpt_kind": "SOURCE_SLICE",
+      "source_encoding": "UTF-8",
+      "excerpt": "## 4. Base operational profile versus aperture state\n\nThe base profile should not be confused with the smaller state needed for one\ntask.\n\nFreeze an operational aperture\n\n\\[\n\\mathcal H=(X,\\Gamma,\\{\\delta_g\\}_{g\\in\\Gamma},q,\\alpha),\n\\]\n\nwhere \\(X\\) is a typed carrier, \\(\\Gamma\\) an admitted generator language,\n\\(\\delta_g\\) partial operations, \\(q\\) a receiver, and \\(\\alpha\\) the declared\nboundary.\n\nFor an operation word \\(w\\), record whether \\(\\delta_w(x)\\) is defined and,\nwhen it is, the value \\(q(\\delta_w(x))\\). Define\n\n\\[\nx\\equiv_{\\mathcal H}y\n\\]\n\nwhen every admitted future word gives the same definedness and receiver\noutput.\n\nThen\n\n\\[\n\\operatorname{OV}_{\\mathcal H}(x)=[x]_{\\equiv_{\\mathcal H}}\n\\]\n\nis the aperture's operational state.\n\nThe priority is:\n\n\\[\n\\text{base number structure}\n\\longrightarrow\n\\text{selected operation aperture}\n\\longrightarrow\n\\text{future-equivalence Fold}.\n\\]\n\nThe aperture does not create the number's operations. It asks which part of\nthe already lawful structure must remain hot for this future.\n\n",
+      "excerpt_utf8_bytes": 1040,
+      "excerpt_sha256": "d4886988b19806f08d67208243883ed355f9861e4032f8dab75cb158d5f4ee97",
+      "truncated_before": false,
+      "truncated_after": false,
+      "source_receipt": {
+        "occurrence_id": "occurrence:7505a14f3476d8c8f7429c316fe7d409e18d24839dedd990b2bbb95d90a2e08e",
+        "event_id": "event:6df0bb191ed28b7c72c4425370cb33325a504f373e684a588fba2ac823845bfe",
+        "blob_sha256": "ce02b13d6b18b33eb58c56c106650b7237f06b68924c9a27343ea69a9c394146",
+        "byte_length": 67280,
+        "media_type": "text/markdown",
+        "source_locator": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/RPRM Alpha/research/RPRM_OPERATIONAL_LAYER_FOUNDATION_AND_PRIME_PROGRAM_2026-08-28.md",
+        "source_byte_start": 12614,
+        "source_byte_end": 13654,
+        "slice_sha256": "d4886988b19806f08d67208243883ed355f9861e4032f8dab75cb158d5f4ee97",
+        "authority": "FROZEN_LOCAL_BYTES",
+        "observed_at": "2026-08-29T09:04:42.467500Z",
+        "recorded_at": "2026-08-30T23:59:00.000000Z",
+        "valid_from": null,
+        "valid_to": null
+      },
+      "exact_source_byte_start": 12614,
+      "exact_source_byte_end": 13654
+    }
+  ],
+  "omission_summary": {
+    "count": 575,
+    "by_reason": [
+      {
+        "reason": "CANDIDATE_CAP",
+        "count": 551
+      },
+      {
+        "reason": "PAYLOAD_BUDGET",
+        "count": 24
+      }
+    ],
+    "search_operation": "search_omissions(packet_id, objective, max_results)"
+  },
+  "visible_conflicts": [],
+  "open_seams": [
+    {
+      "seam": "RECEIVER_SUFFICIENCY",
+      "missing": [
+        "finite receiver signature over the strong candidate carrier",
+        "transition-descent receipts for every declared downstream operation"
+      ],
+      "trigger": "A finite task carrier and operation family are supplied."
+    },
+    {
+      "seam": "EMBEDDING_LANE",
+      "missing": [
+        "named embedding model, version, index root, and adapter"
+      ],
+      "trigger": "A frozen equal-budget embedding baseline is admitted."
+    },
+    {
+      "seam": "CANDIDATE_CAP",
+      "missing": [
+        "candidates or graph neighbors beyond the declared cap"
+      ],
+      "trigger": "Increase max_candidates under a new receiver request."
+    },
+    {
+      "seam": "PAYLOAD_OR_CANDIDATE_OMISSIONS",
+      "missing": [
+        "omitted record payloads"
+      ],
+      "trigger": "Call expand_context with the emitted handle."
+    }
+  ],
+  "scope": "Selected definition and correction excerpts only; source recovery also checks current Foam copies. No claim of complete lexical or semantic coverage."
+}

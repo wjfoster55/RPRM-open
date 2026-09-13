@@ -1,0 +1,9 @@
+{
+  "status": "CONDITIONAL_EQUALITY_GATE_AND_READOUT_CONTROLS_COMPLETED",
+  "largest_conditional_denominator_bound": 10774,
+  "boundary_counterexample": "10776/10775",
+  "addition_checks": 1764,
+  "actual_identity": "NOT_ESTABLISHED"
+}
+
+STDERR:

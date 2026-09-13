@@ -1,0 +1,27 @@
+{
+  "kind": "Root integration review and observed execution results",
+  "date": "2026-09-12",
+  "status": "CONFIRMED",
+  "required_task_count": 8,
+  "required_control_count": 6,
+  "obligation_source": "supplied/BSD_E5_CODEX_TEST_01/TEST_PLAN.json",
+  "named_dispositions": ["INDEPENDENT_CHECKS.json", "CONTROLS.json", "CLAIM_LEDGER.json"],
+  "portable_runner": "runs/portable_validation/RUN.json",
+  "portable_stage_exit_codes": {"supplied_replay": 0, "arithmetic": 0, "model_binding": 0, "analytic": 0, "interval_peer": 0},
+  "post_run_exact_comparisons": {
+    "arithmetic_candidate_counts": "MATCH",
+    "arithmetic_tower_test_records": "MATCH",
+    "arithmetic_executed_source_hash": "MATCH_CURRENT_SOURCE",
+    "analytic_all_attempts_and_term_ledgers": "MATCH",
+    "analytic_constants": "MATCH",
+    "analytic_coefficient_data": "MATCH",
+    "analytic_executed_source_hash": "MATCH_CURRENT_SOURCE",
+    "B01_theorem_chain_and_B02_dependency": "RECONCILED"
+  },
+  "interval": {"lower": "556371/250000", "upper": "1114529/500000", "width": "1787/500000", "cutoff": 40, "panels_per_band": 32},
+  "all_35_original_members": "evidence/final_original_bytes.json",
+  "failed_execution_preserved": "evidence/arithmetic_fresh.log",
+  "failed_baseline_mathematical_obligations": [],
+  "intentional_missing_proof_obligation": "K04 mutated infinite claim remains OPEN without its all-term premise.",
+  "review_scope": "Root read the independently written arithmetic and analytic code, all three proofs, and the peer-check code; reviewed special cases, signed enclosure, normalization, tail and source reconciliation. This summary does not replace the linked fresh evidence or cited theorems."
+}

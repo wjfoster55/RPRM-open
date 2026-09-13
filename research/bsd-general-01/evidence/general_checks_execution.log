@@ -1,0 +1,13 @@
+{
+  "status": "FINITE_CHECKS_PASS",
+  "check_groups": [
+    "finite_quotients",
+    "bounded_reconstruction",
+    "compatible_nonrational_tower",
+    "saturation_controls",
+    "selmer_defect_models",
+    "analytic_nonimplication_controls"
+  ],
+  "general_BSD": "OPEN",
+  "output": "C:\\github\\RPRM-open\\research\\bsd-general-01\\evidence\\general_checks.json"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "INDEPENDENT_RATIONAL_AND_HEIGHT_RESIDUE_READBACK_PASSED",
+  "MST_pairing_matrix_mod5": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "MST_determinant_mod5": 3,
+  "frobenius_mod5_test": {
+    "polynomial": "X^2+3",
+    "discriminant_mod5": 3,
+    "squares_mod5": [
+      0,
+      1,
+      4
+    ],
+    "roots": [],
+    "irreducible": true
+  }
+}

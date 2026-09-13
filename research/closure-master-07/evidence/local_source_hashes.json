@@ -1,0 +1,81 @@
+{
+  "scope": "Historical sources read for this master comparison; hashes bind bytes, not proof validity",
+  "captured_utc": "2026-09-13T01:27:14.8694687Z",
+  "files": [
+    {
+      "path": "research/bsd-e5-completion/BSD_REBRIEF.md",
+      "bytes": 1672,
+      "sha256": "3ce7ccbd6936e0aa17b2dc9d3225f67f6c2d471ee0de5aa17ce5c166bacacc2e"
+    },
+    {
+      "path": "research/bsd-coefficient-05/BSD_REBRIEF.md",
+      "bytes": 1725,
+      "sha256": "d374f4e956e40716f736124a977b27cae4ff8f5d5507f5a3e135c3735d6596df"
+    },
+    {
+      "path": "research/bsd-carry-key-06/COLUMN_HANDOFF.md",
+      "bytes": 7613,
+      "sha256": "7c75f84dae917d718e18e07d3aedf433d2e16ebaf7f61df857a5e81044fd77bf"
+    },
+    {
+      "path": "research/bsd-identity-01/EXPLICIT_IDENTITY_TARGET.md",
+      "bytes": 15376,
+      "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753"
+    },
+    {
+      "path": "research/ym2_operational_seam/COMBINED_RESULT.md",
+      "bytes": 7189,
+      "sha256": "db8c340ae3f8955ee439249e56a5752a6edb6d3ef7af9cfa862aa0bc293cefe3"
+    },
+    {
+      "path": "research/ym2_operational_seam/RESULT.md",
+      "bytes": 5904,
+      "sha256": "3e0e5c78382f13a8ca2b21c7c6bcc235fea9aca6a1ff95e6ab3716f9e07bb44b"
+    },
+    {
+      "path": "research/ym2_operational_seam/CHANNEL_SOURCE.md",
+      "bytes": 15281,
+      "sha256": "ff817b7cb2700636e4ad1497120c6f67765d51d75ef5148fa237abc1c2361d38"
+    },
+    {
+      "path": "research/ym2_operational_seam/SPECTRAL_CHANNEL.md",
+      "bytes": 19294,
+      "sha256": "d69f9413b85dfe6bb3ae64fb32fef32d731951eb8674765d95c709d2f2a19c01"
+    },
+    {
+      "path": "research/ym2_operational_seam/OPERATIONAL_REVIEW.md",
+      "bytes": 16970,
+      "sha256": "a000905c65d9e446a0263bf415396a433d06e47b38fc78439fc40d745bf88cbc"
+    },
+    {
+      "path": "research/ym2_operational_seam/BSD_DONOR.md",
+      "bytes": 21257,
+      "sha256": "54d161387b6172e7ba98109c3cae4fd3d28a1ff2ba1b2b897c934de3f9ef609c"
+    },
+    {
+      "path": "research/liar-teacher-formalization-2026-09-12/THEORY.md",
+      "bytes": 21508,
+      "sha256": "e91276debfccd8af6bd62e1a497142a5d27c563aadcc4a312b7619dfee83d925"
+    },
+    {
+      "path": "research/liar-teacher-formalization-2026-09-12/SAT-PILOT.md",
+      "bytes": 14321,
+      "sha256": "2012ba5aeb1f7bc2e85e6061c9ae5c22b7df6ffabbd2d571dfc01970c8c79bad"
+    },
+    {
+      "path": "research/liar-teacher-formalization-2026-09-12/sat_pilot.py",
+      "bytes": 16504,
+      "sha256": "0a45fa0b60e40d36cabc4e027bf0c56444fca9bd167e98f377147e91468939cf"
+    },
+    {
+      "path": "research/liar-teacher-formalization-2026-09-12/CONTINUATION.md",
+      "bytes": 5636,
+      "sha256": "f5d8ec4899d59c1f3e07326c61100cabcfa76a2a3157bcf427159a75da116e6f"
+    },
+    {
+      "path": "research/fluid-f2-review-20260912/REVIEW.md",
+      "bytes": 10814,
+      "sha256": "e6cf43812a5b6d1769941508ef39c3d63a23e42c8b6ec8e8aa98de0bb6be4a6e"
+    }
+  ]
+}

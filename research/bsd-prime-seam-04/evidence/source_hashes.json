@@ -1,0 +1,65 @@
+{
+  "scope": "READ_ONLY_ATTRIBUTED_SOURCES; hashes bind bytes, not contents",
+  "sources": [
+    {
+      "path": "C:/github/RPRM-foam-development/research/RPRM_OPERATIONAL_LAYER_FOUNDATION_AND_PRIME_PROGRAM_2026-08-28.md",
+      "sha256": "ce02b13d6b18b33eb58c56c106650b7237f06b68924c9a27343ea69a9c394146",
+      "bytes": 67280
+    },
+    {
+      "path": "C:/github/RPRM-open/recovered-concepts/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843",
+      "bytes": 102093
+    },
+    {
+      "path": "C:/github/RPRM-foam-development/experiments/RPRM_RELATION_RESIDUAL_LENS_LOCK_CUT_ROTATION_AUDIT_105/REPORT.md",
+      "sha256": "8bdcba47cf9ef2ec25d1a26d145b8140473c20874953c1dfb0c78a20db1be3a6",
+      "bytes": 5545
+    },
+    {
+      "path": "C:/github/RPRM-foam-development/knowledge/lenses.json",
+      "sha256": "4c51d816c06f58df2fc1a8f676766b6e1daafdb36b408ce164b8593ddec909b1",
+      "bytes": 84294
+    },
+    {
+      "path": "C:/github/RPRM-foam-development/experiments/RPRM_PRIME_ATLAS_FILTER_SHADOW_EXTENSION_AUDIT_103/REPORT.md",
+      "sha256": "7982effe4693e3426f08e97605af2f080b591e5896e77135184430984f93556b",
+      "bytes": 7856
+    },
+    {
+      "path": "C:/github/RPRMLexicon/operational_numbers/README.md",
+      "sha256": "3a33843f1c1323f0709cbfd2f8f6b92259379c96f38832d731814c840148d489",
+      "bytes": 4361
+    },
+    {
+      "path": "C:/github/RPRMLexicon/operational_numbers/translate_number.py",
+      "sha256": "6e7fab0a37430b7d6fc197940129756b1a14277dbfc990e1a07a446eb18c5e67",
+      "bytes": 20513
+    },
+    {
+      "path": "C:/github/RPRMLexicon/operational_numbers/carrier_lexer.py",
+      "sha256": "45805f1796290c41834a27001bb9bcd2117359093b05754a3eb10ab430474e46",
+      "bytes": 5114
+    },
+    {
+      "path": "C:/github/RPRMLexicon/operational_numbers/verify.py",
+      "sha256": "7589d4f081c503e51410bed93c9b88a58dbe2453436f921418ee61dbb7935907",
+      "bytes": 15022
+    },
+    {
+      "path": "C:/github/RPRMLexicon/operational_numbers/readings.json",
+      "sha256": "c47045f601422c3f494536ae27a3b2b56660b46d0c2b9da3c9c3881b8bdb6ff0",
+      "bytes": 3732
+    }
+  ],
+  "primary_web_sources": [
+    {
+      "url": "https://kurihara.math.keio.ac.jp/bks4.pdf",
+      "used": "\u00a76.1 interpolation and unit-root convention; Proposition6.1; Theorem6.2; Corollary6.7"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/19300980.1956.12467445",
+      "used": "bibliographic record for the1956 lucky-sieve paper"
+    }
+  ]
+}

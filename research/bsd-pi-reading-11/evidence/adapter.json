@@ -1,0 +1,1236 @@
+{
+  "status": "EXACT_DECLARED_ADAPTER_AND_COMPLETE_FIBER",
+  "carrier": "real interval[2,2.1), infinite",
+  "receiver": "hundredths/thousandths pair;100 states",
+  "admitted_decoder_states": 7,
+  "inadmissible_decoder_states": 93,
+  "actual_distance_interval": [
+    "508500307517/250000000000",
+    "1017005240999/500000000000"
+  ],
+  "certified_leading_fractional_digits": "0340",
+  "actual_distance_key": [
+    3,
+    4
+  ],
+  "decoder_output": "31415926535",
+  "decoder_pi_window_fiber": {
+    "kind": "MANY",
+    "half_open_interval": [
+      "2.034",
+      "2.035"
+    ]
+  },
+  "distinct_values_outside_actual_distance_interval_with_same_word": [
+    "10171/5000",
+    "5087/2500"
+  ],
+  "complete_receiver_table": [
+    {
+      "key": [
+        0,
+        0
+      ],
+      "fiber_half_open": [
+        "2",
+        "2001/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        0,
+        1
+      ],
+      "fiber_half_open": [
+        "2001/1000",
+        "1001/500"
+      ],
+      "word": "01112323202",
+      "disposition": "ONE_WORD"
+    },
+    {
+      "key": [
+        0,
+        2
+      ],
+      "fiber_half_open": [
+        "1001/500",
+        "2003/1000"
+      ],
+      "word": "02224646404",
+      "disposition": "ONE_WORD"
+    },
+    {
+      "key": [
+        0,
+        3
+      ],
+      "fiber_half_open": [
+        "2003/1000",
+        "501/250"
+      ],
+      "word": "03336969606",
+      "disposition": "ONE_WORD"
+    },
+    {
+      "key": [
+        0,
+        4
+      ],
+      "fiber_half_open": [
+        "501/250",
+        "401/200"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        0,
+        5
+      ],
+      "fiber_half_open": [
+        "401/200",
+        "1003/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        0,
+        6
+      ],
+      "fiber_half_open": [
+        "1003/500",
+        "2007/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        0,
+        7
+      ],
+      "fiber_half_open": [
+        "2007/1000",
+        "251/125"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        0,
+        8
+      ],
+      "fiber_half_open": [
+        "251/125",
+        "2009/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        0,
+        9
+      ],
+      "fiber_half_open": [
+        "2009/1000",
+        "201/100"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        1,
+        0
+      ],
+      "fiber_half_open": [
+        "201/100",
+        "2011/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        1,
+        1
+      ],
+      "fiber_half_open": [
+        "2011/1000",
+        "503/250"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        1,
+        2
+      ],
+      "fiber_half_open": [
+        "503/250",
+        "2013/1000"
+      ],
+      "word": "11213524313",
+      "disposition": "ONE_WORD"
+    },
+    {
+      "key": [
+        1,
+        3
+      ],
+      "fiber_half_open": [
+        "2013/1000",
+        "1007/500"
+      ],
+      "word": "12325847515",
+      "disposition": "ONE_WORD"
+    },
+    {
+      "key": [
+        1,
+        4
+      ],
+      "fiber_half_open": [
+        "1007/500",
+        "403/200"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        1,
+        5
+      ],
+      "fiber_half_open": [
+        "403/200",
+        "252/125"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        1,
+        6
+      ],
+      "fiber_half_open": [
+        "252/125",
+        "2017/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        1,
+        7
+      ],
+      "fiber_half_open": [
+        "2017/1000",
+        "1009/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        1,
+        8
+      ],
+      "fiber_half_open": [
+        "1009/500",
+        "2019/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        1,
+        9
+      ],
+      "fiber_half_open": [
+        "2019/1000",
+        "101/50"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        2,
+        0
+      ],
+      "fiber_half_open": [
+        "101/50",
+        "2021/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        2,
+        1
+      ],
+      "fiber_half_open": [
+        "2021/1000",
+        "1011/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        2,
+        2
+      ],
+      "fiber_half_open": [
+        "1011/500",
+        "2023/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        2,
+        3
+      ],
+      "fiber_half_open": [
+        "2023/1000",
+        "253/125"
+      ],
+      "word": "21314725424",
+      "disposition": "ONE_WORD"
+    },
+    {
+      "key": [
+        2,
+        4
+      ],
+      "fiber_half_open": [
+        "253/125",
+        "81/40"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        2,
+        5
+      ],
+      "fiber_half_open": [
+        "81/40",
+        "1013/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        2,
+        6
+      ],
+      "fiber_half_open": [
+        "1013/500",
+        "2027/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        2,
+        7
+      ],
+      "fiber_half_open": [
+        "2027/1000",
+        "507/250"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        2,
+        8
+      ],
+      "fiber_half_open": [
+        "507/250",
+        "2029/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        2,
+        9
+      ],
+      "fiber_half_open": [
+        "2029/1000",
+        "203/100"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        3,
+        0
+      ],
+      "fiber_half_open": [
+        "203/100",
+        "2031/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        3,
+        1
+      ],
+      "fiber_half_open": [
+        "2031/1000",
+        "254/125"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        3,
+        2
+      ],
+      "fiber_half_open": [
+        "254/125",
+        "2033/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        3,
+        3
+      ],
+      "fiber_half_open": [
+        "2033/1000",
+        "1017/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        3,
+        4
+      ],
+      "fiber_half_open": [
+        "1017/500",
+        "407/200"
+      ],
+      "word": "31415926535",
+      "disposition": "ONE_WORD"
+    },
+    {
+      "key": [
+        3,
+        5
+      ],
+      "fiber_half_open": [
+        "407/200",
+        "509/250"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        3,
+        6
+      ],
+      "fiber_half_open": [
+        "509/250",
+        "2037/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        3,
+        7
+      ],
+      "fiber_half_open": [
+        "2037/1000",
+        "1019/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        3,
+        8
+      ],
+      "fiber_half_open": [
+        "1019/500",
+        "2039/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        3,
+        9
+      ],
+      "fiber_half_open": [
+        "2039/1000",
+        "51/25"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        4,
+        0
+      ],
+      "fiber_half_open": [
+        "51/25",
+        "2041/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        4,
+        1
+      ],
+      "fiber_half_open": [
+        "2041/1000",
+        "1021/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        4,
+        2
+      ],
+      "fiber_half_open": [
+        "1021/500",
+        "2043/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        4,
+        3
+      ],
+      "fiber_half_open": [
+        "2043/1000",
+        "511/250"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        4,
+        4
+      ],
+      "fiber_half_open": [
+        "511/250",
+        "409/200"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        4,
+        5
+      ],
+      "fiber_half_open": [
+        "409/200",
+        "1023/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        4,
+        6
+      ],
+      "fiber_half_open": [
+        "1023/500",
+        "2047/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        4,
+        7
+      ],
+      "fiber_half_open": [
+        "2047/1000",
+        "256/125"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        4,
+        8
+      ],
+      "fiber_half_open": [
+        "256/125",
+        "2049/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        4,
+        9
+      ],
+      "fiber_half_open": [
+        "2049/1000",
+        "41/20"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        5,
+        0
+      ],
+      "fiber_half_open": [
+        "41/20",
+        "2051/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        5,
+        1
+      ],
+      "fiber_half_open": [
+        "2051/1000",
+        "513/250"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        5,
+        2
+      ],
+      "fiber_half_open": [
+        "513/250",
+        "2053/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        5,
+        3
+      ],
+      "fiber_half_open": [
+        "2053/1000",
+        "1027/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        5,
+        4
+      ],
+      "fiber_half_open": [
+        "1027/500",
+        "411/200"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        5,
+        5
+      ],
+      "fiber_half_open": [
+        "411/200",
+        "257/125"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        5,
+        6
+      ],
+      "fiber_half_open": [
+        "257/125",
+        "2057/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        5,
+        7
+      ],
+      "fiber_half_open": [
+        "2057/1000",
+        "1029/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        5,
+        8
+      ],
+      "fiber_half_open": [
+        "1029/500",
+        "2059/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        5,
+        9
+      ],
+      "fiber_half_open": [
+        "2059/1000",
+        "103/50"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        6,
+        0
+      ],
+      "fiber_half_open": [
+        "103/50",
+        "2061/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        6,
+        1
+      ],
+      "fiber_half_open": [
+        "2061/1000",
+        "1031/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        6,
+        2
+      ],
+      "fiber_half_open": [
+        "1031/500",
+        "2063/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        6,
+        3
+      ],
+      "fiber_half_open": [
+        "2063/1000",
+        "258/125"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        6,
+        4
+      ],
+      "fiber_half_open": [
+        "258/125",
+        "413/200"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        6,
+        5
+      ],
+      "fiber_half_open": [
+        "413/200",
+        "1033/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        6,
+        6
+      ],
+      "fiber_half_open": [
+        "1033/500",
+        "2067/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        6,
+        7
+      ],
+      "fiber_half_open": [
+        "2067/1000",
+        "517/250"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        6,
+        8
+      ],
+      "fiber_half_open": [
+        "517/250",
+        "2069/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        6,
+        9
+      ],
+      "fiber_half_open": [
+        "2069/1000",
+        "207/100"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        7,
+        0
+      ],
+      "fiber_half_open": [
+        "207/100",
+        "2071/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        7,
+        1
+      ],
+      "fiber_half_open": [
+        "2071/1000",
+        "259/125"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        7,
+        2
+      ],
+      "fiber_half_open": [
+        "259/125",
+        "2073/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        7,
+        3
+      ],
+      "fiber_half_open": [
+        "2073/1000",
+        "1037/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        7,
+        4
+      ],
+      "fiber_half_open": [
+        "1037/500",
+        "83/40"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        7,
+        5
+      ],
+      "fiber_half_open": [
+        "83/40",
+        "519/250"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        7,
+        6
+      ],
+      "fiber_half_open": [
+        "519/250",
+        "2077/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        7,
+        7
+      ],
+      "fiber_half_open": [
+        "2077/1000",
+        "1039/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        7,
+        8
+      ],
+      "fiber_half_open": [
+        "1039/500",
+        "2079/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        7,
+        9
+      ],
+      "fiber_half_open": [
+        "2079/1000",
+        "52/25"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        8,
+        0
+      ],
+      "fiber_half_open": [
+        "52/25",
+        "2081/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        8,
+        1
+      ],
+      "fiber_half_open": [
+        "2081/1000",
+        "1041/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        8,
+        2
+      ],
+      "fiber_half_open": [
+        "1041/500",
+        "2083/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        8,
+        3
+      ],
+      "fiber_half_open": [
+        "2083/1000",
+        "521/250"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        8,
+        4
+      ],
+      "fiber_half_open": [
+        "521/250",
+        "417/200"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        8,
+        5
+      ],
+      "fiber_half_open": [
+        "417/200",
+        "1043/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        8,
+        6
+      ],
+      "fiber_half_open": [
+        "1043/500",
+        "2087/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        8,
+        7
+      ],
+      "fiber_half_open": [
+        "2087/1000",
+        "261/125"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        8,
+        8
+      ],
+      "fiber_half_open": [
+        "261/125",
+        "2089/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        8,
+        9
+      ],
+      "fiber_half_open": [
+        "2089/1000",
+        "209/100"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        9,
+        0
+      ],
+      "fiber_half_open": [
+        "209/100",
+        "2091/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        9,
+        1
+      ],
+      "fiber_half_open": [
+        "2091/1000",
+        "523/250"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        9,
+        2
+      ],
+      "fiber_half_open": [
+        "523/250",
+        "2093/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        9,
+        3
+      ],
+      "fiber_half_open": [
+        "2093/1000",
+        "1047/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        9,
+        4
+      ],
+      "fiber_half_open": [
+        "1047/500",
+        "419/200"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        9,
+        5
+      ],
+      "fiber_half_open": [
+        "419/200",
+        "262/125"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        9,
+        6
+      ],
+      "fiber_half_open": [
+        "262/125",
+        "2097/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        9,
+        7
+      ],
+      "fiber_half_open": [
+        "2097/1000",
+        "1049/500"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        9,
+        8
+      ],
+      "fiber_half_open": [
+        "1049/500",
+        "2099/1000"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    },
+    {
+      "key": [
+        9,
+        9
+      ],
+      "fiber_half_open": [
+        "2099/1000",
+        "21/10"
+      ],
+      "word": null,
+      "disposition": "ADMISSION_ERROR"
+    }
+  ],
+  "root_input_sha256": "4d07387ad3f5a1b1a43167877aeb634578f0801ad95a3f343d64fe803020d667",
+  "script_sha256": "a9bfb1b0cff8cefe5f797c56d9b2dd7d0a9e5a11e378d48dafcb343e013936be",
+  "preserves_full_real_value": false,
+  "predicts_pi_beyond_given_finite_window": false,
+  "role_choice": "explicit proposed adapter, not mathematically forced by glyphs",
+  "full_BSD_comparison": "OPEN"
+}

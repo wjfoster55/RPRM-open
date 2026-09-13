@@ -1,0 +1,46 @@
+{
+  "scope": "Fresh exact finite checks only; no historical suite rerun; no Yang-Mills simulation or proof.",
+  "ternary_cube": {
+    "cells": 27,
+    "full_lines": 49,
+    "center_lines": 13,
+    "full_rank": 23,
+    "center_rank": 13,
+    "full_nullity": 4,
+    "center_nullity": 14,
+    "extra_center_blind_dimensions": 10,
+    "antipodal_counterfeit_center_failures": 0,
+    "antipodal_counterfeit_full_failures": 12
+  },
+  "photon_cube": {
+    "variables": {
+      "a": "E1=1+a",
+      "b": "E2=1+b",
+      "d": "parallel=0, antiparallel=1"
+    },
+    "units": "energy normalized to a common energy unit; c=1; output is normalized invariant mass squared",
+    "values": {
+      "000": 0,
+      "001": 4,
+      "010": 0,
+      "011": 8,
+      "100": 0,
+      "101": 8,
+      "110": 0,
+      "111": 16
+    },
+    "anchored_coefficients": {
+      "000": 0,
+      "001": 4,
+      "010": 0,
+      "011": 4,
+      "100": 0,
+      "101": 4,
+      "110": 0,
+      "111": 4
+    },
+    "full_111": 16,
+    "through_grade_two_111": 12,
+    "missing_three_way_coefficient": 4
+  }
+}

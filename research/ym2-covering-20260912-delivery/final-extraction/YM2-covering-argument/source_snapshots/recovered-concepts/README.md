@@ -1,0 +1,18 @@
+# Recovered concepts and continuing research
+
+This is the stable local knowledge-base entrance for concepts recovered from William's earlier research. It links original evidence, current mathematical contracts, tests and a running paper backlog. Historical language is kept distinct from later reconstruction.
+
+| Concept or task | Read here | Status as of 12 September 2026 |
+|---|---|---|
+| **Liars → teachers; three plus one / seven plus one; Hamming; movable reference; student/vacancy; expand and reduce** | [Recovery and original passages](../research/liar-teacher-recovery-2026-09-12/RECOVERY.md), [current formalization and tests](../research/liar-teacher-formalization-2026-09-12/README.md) | Original user passages recovered; specified binary and handoff models have written proofs and finite tests. Full historical operational meaning remains broader. |
+| **Review Missing Concepts / P versus NP continuation** | [Continuity record](../research/liar-teacher-formalization-2026-09-12/CONTINUATION.md), [raw-CNF parity pilot](../research/liar-teacher-formalization-2026-09-12/SAT-PILOT.md) | Imported latest eight turns; exact affine message experiment completed. General SAT representation and cost bound remain open. |
+| **Expand → compress → expand; scaling; stacked −0.6/+0.4; selective reopening** | [Connected investigation](../research/expansion-compression-2026-09-12/README.md), [historical donors](../research/expansion-compression-2026-09-12/HISTORICAL-RESULTS.md), [current BSD/YM/fluid readout](../research/expansion-compression-2026-09-12/LIVE-RESEARCH.md) | Audit99 variable-factor migration, Audit116 signed carry, shared DAGs and earlier UTCCC costed closure recovered; new exact stacking/version tests pass. Uniform resource-controlled recurrence remains open. |
+| Prestige/reincarnated ones, fiving, inverse-number vocabulary | [Recovered source account](PRESTIGE-AND-NUMBER-OPERATIONS.md), [RCF01](../research/core-recovery-01/README.md), [current R2 repair](../research/core-recovery-r2/README.md) | Keep source vocabulary, recovered contracts and later implementation repairs linked. |
+| Centered/shifted halves, zero, dual rails | [Zero and rails](ZERO-AND-RAILS.md) | Historical recovery complements the already-published centered-half construction. |
+| Formula cube, vacant center, pi/curve constructions | [Cubes and pi curves](CUBES-AND-PI-CURVES.md) | Source recovery and candidate distinctions; no universal cube or alternate-circle theorem inferred from a name. |
+| Earlier recovery as a whole | [11 September recovery](RPRM-CONCEPT-RECOVERY.md), [original passages](ORIGINAL-CONVERSATION-PASSAGES.md) | Dated source record; preserve its original scope. |
+| What should be considered for the next paper | [Running paper backlog](NEXT-PAPER-BACKLOG.md), [11 September coverage audit](PAPER-COVERAGE-AUDIT.md) | Backlog is live; the audit is a fixed historical snapshot. |
+
+For a future task, begin with the relevant row, follow its original sources, and retain failed controls and corrections alongside surviving results. “Not in paper” means the stated construction was not located by the documented audit; it does not mean no related mathematics was published.
+
+These records are saved in `C:\github\RPRM-open`. The historical OneDrive Alpha source tree and its old Memory Fabric database were read-only during this work; no database ingestion or source-tree relocation is claimed. The root [reading map](../README.md) and [agent entry point](../AGENTS.md) point here so recovery does not depend on remembering this task's title.

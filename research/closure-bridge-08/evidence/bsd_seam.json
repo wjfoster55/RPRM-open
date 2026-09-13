@@ -1,0 +1,215 @@
+{
+  "status": "PASS",
+  "curve": "y^2=x^3-1156x",
+  "source_first_steps": {
+    "P": {
+      "name": "P",
+      "source_x": [
+        -2,
+        1
+      ],
+      "H0": 2,
+      "raw_F": 1345600,
+      "raw_G": 9216,
+      "gcd": 64,
+      "next_x": [
+        21025,
+        144
+      ],
+      "H1": 21025,
+      "increment_log_argument": "21025/16",
+      "increment": "(1/4)*log(21025/16)",
+      "increment_sign": 1,
+      "chord_law_readback": "PASS"
+    },
+    "Q": {
+      "name": "Q",
+      "source_x": [
+        -16,
+        1
+      ],
+      "H0": 16,
+      "raw_F": 1993744,
+      "raw_G": 57600,
+      "gcd": 16,
+      "next_x": [
+        124609,
+        3600
+      ],
+      "H1": 124609,
+      "increment_log_argument": "124609/65536",
+      "increment": "(1/4)*log(124609/65536)",
+      "increment_sign": 1,
+      "chord_law_readback": "PASS"
+    },
+    "S": {
+      "name": "S",
+      "source_x": [
+        2178,
+        49
+      ],
+      "H0": 2178,
+      "raw_F": 56538970177600,
+      "raw_G": 840170225664,
+      "gcd": 64,
+      "next_x": [
+        883421409025,
+        13127659776
+      ],
+      "H1": 883421409025,
+      "increment_log_argument": "883421409025/22502537891856",
+      "increment": "(1/4)*log(883421409025/22502537891856)",
+      "increment_sign": -1,
+      "chord_law_readback": "PASS"
+    },
+    "O": {
+      "name": "O",
+      "source_x": [
+        1,
+        0
+      ],
+      "H0": 1,
+      "raw_F": 1,
+      "raw_G": 0,
+      "gcd": 1,
+      "next_x": [
+        1,
+        0
+      ],
+      "H1": 1,
+      "increment_log_argument": "1",
+      "increment": "(1/4)*log(1)",
+      "increment_sign": 0,
+      "chord_law_readback": "PASS"
+    },
+    "T0": {
+      "name": "T0",
+      "source_x": [
+        0,
+        1
+      ],
+      "H0": 1,
+      "raw_F": 1336336,
+      "raw_G": 0,
+      "gcd": 1336336,
+      "next_x": [
+        1,
+        0
+      ],
+      "H1": 1,
+      "increment_log_argument": "1",
+      "increment": "(1/4)*log(1)",
+      "increment_sign": 0,
+      "chord_law_readback": "PASS"
+    },
+    "Tplus": {
+      "name": "Tplus",
+      "source_x": [
+        34,
+        1
+      ],
+      "H0": 34,
+      "raw_F": 5345344,
+      "raw_G": 0,
+      "gcd": 5345344,
+      "next_x": [
+        1,
+        0
+      ],
+      "H1": 1,
+      "increment_log_argument": "1/1336336",
+      "increment": "(1/4)*log(1/1336336)",
+      "increment_sign": -1,
+      "chord_law_readback": "PASS"
+    },
+    "Tminus": {
+      "name": "Tminus",
+      "source_x": [
+        -34,
+        1
+      ],
+      "H0": 34,
+      "raw_F": 5345344,
+      "raw_G": 0,
+      "gcd": 5345344,
+      "next_x": [
+        1,
+        0
+      ],
+      "H1": 1,
+      "increment_log_argument": "1/1336336",
+      "increment": "(1/4)*log(1/1336336)",
+      "increment_sign": -1,
+      "chord_law_readback": "PASS"
+    }
+  },
+  "formal_rectangles": [
+    {
+      "slots": [
+        "p",
+        "p"
+      ],
+      "result": "-u*v/2",
+      "coefficient_identity": "PASS"
+    },
+    {
+      "slots": [
+        "p",
+        "q"
+      ],
+      "result": "u*v/2",
+      "coefficient_identity": "PASS"
+    },
+    {
+      "slots": [
+        "p",
+        "s"
+      ],
+      "result": "u*v/2",
+      "coefficient_identity": "PASS"
+    },
+    {
+      "slots": [
+        "q",
+        "q"
+      ],
+      "result": "-u*v/2",
+      "coefficient_identity": "PASS"
+    },
+    {
+      "slots": [
+        "q",
+        "s"
+      ],
+      "result": "u*v/2",
+      "coefficient_identity": "PASS"
+    },
+    {
+      "slots": [
+        "s",
+        "s"
+      ],
+      "result": "-u*v/2",
+      "coefficient_identity": "PASS"
+    }
+  ],
+  "joint_decomposition": "PASS: -R=(p^2+q^2+s^2)/4-(pq+ps+qs)/2",
+  "actual_PQ_rectangle": {
+    "regulator": "log(21025/16)*log(124609/65536)/32",
+    "finite_defect": "-Omega*sigma*log(21025/16)*log(124609/65536)/32",
+    "regulator_sign": "strictly positive",
+    "defect_sign_if_Omega_and_sigma_positive": "strictly negative",
+    "proof_of_nonzero": "Both exact positive rational log arguments exceed one"
+  },
+  "exception_controls": "PASS: zero Omega, sigma, or either increment gives zero; O and 2-torsion treated projectively",
+  "invalid_point_control": "REJECTED",
+  "ordered_rectangle_path_check": "PASS",
+  "scope": "Candidate V exact on the asynchronous refinement rectangle must retain pair interaction; locked-diagonal-only V is not refuted",
+  "evidence_grade": "Fresh exact rational and formal-polynomial arithmetic, with written universal derivation in agents/BSD_SEAM.md",
+  "open": [
+    "E34 real analytic-height comparison",
+    "actual vanishing-terminal potential",
+    "total Sha identification",
+    "general BSD"
+  ]
+}

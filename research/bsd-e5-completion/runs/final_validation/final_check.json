@@ -1,0 +1,46 @@
+{
+  "status": "CONFIRMED",
+  "utc": "2026-09-12T18:28:24.502252+00:00",
+  "checks": {
+    "complete_height_20_domain": true,
+    "alternate_rational_square_test": true,
+    "global_bound_exact_integer_comparison": true,
+    "primitive_conclusion_matches_written_proof": true,
+    "source_generator": true,
+    "source_factors": true,
+    "source_coordinates": true,
+    "eight_exact_height_iterates": true,
+    "derivative_matches_preserved_prior_certificate": true,
+    "raw_factor_product": true,
+    "raw_ratio": true,
+    "only_possible_positive_integer": true,
+    "coarse_integer_isolation": true,
+    "theorem_hypotheses": true,
+    "local_factor_specialization": true,
+    "generator_relabelings": true,
+    "observed_pair_trace_inverse": true
+  },
+  "evidence_grade": "INDEPENDENT_FINITE_REASSEMBLY_AND_ROOT_WRITTEN_PROOF_REVIEW",
+  "conclusions": {
+    "free_index": 1,
+    "torsion_order": 4,
+    "sha_order": 1,
+    "odd_primary_sha": "TRIVIAL",
+    "full_formula": "Lprime(E,1)=Omega(E)*Hhat_x(P)/2",
+    "formula_evidence": "Creutz\u2013Miller Theorem1.1 with hypotheses independently established for this E5."
+  },
+  "reviewed_written_obligations": [
+    "All-prime gcd bound and all-odd-index height cutoff, including infinity/torsion.",
+    "Canonical-height quadraticity and full-height regulator convention.",
+    "Two real components, AGM enclosure of entire limit, rational logarithm and height tail.",
+    "Actual Tate branches at2 and5, rather than a good-prime or odd-prime shortcut.",
+    "FullBSD theorem applies to every E/Q with N<5000 and analytic rank<=1; no residual/CM exception.",
+    "Integer isolation uses that theorem and positive factors, not decimal rounding.",
+    "Explicit affine coordinate maps preserve the same group; the unformalized global carry law is not inferred."
+  ],
+  "remaining_coordinate_seam": "OPEN: the finite trace and verbal description do not yet specify which slot changes, carry state, sign state and branch at all other inputs.",
+  "theorem_source": "https://arxiv.org/pdf/1105.4018v2#page=2",
+  "published_theorem_computations_replayed": false,
+  "formal_proof": false,
+  "source_sha256": "3933d8d6ef0539190baf9bbc81f8d14f3cc7bdfe1674095987b61dad66c97ffd"
+}

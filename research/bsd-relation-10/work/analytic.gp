@@ -1,0 +1,52 @@
+\\ Fresh E34 analytic coefficient, exact period anchor and bounded measure.
+emit(tag,z)={print("PADIC|",tag,"|",padicprec(z,5),"|",lift(z));};
+print("BEGIN_RELATION_10_ANALYTIC");
+print("VERSION|",version());
+E0=ellinit([0,0,0,-1,0]);
+Et=ellminimalmodel(elltwist(E0,136));
+if(vector(5,k,Et[k])!=[0,0,0,-1156,0],error("twist model"));
+red=ellglobalred(Et);
+if(red[1]!=18496,error("conductor"));
+print("GLOBAL_REDUCTION|",red);
+if(kronecker(136,5)!=1,error("ordinary twist branch"));
+M=msinit(32,2,1);H=mscuspidal(M);
+if(msdim(H)!=1,error("cuspidal plus dimension"));
+v=H[1][,1];z=mseval(M,v,[oo,0]);
+if(z==0,error("zero anchor"));
+phi=v/(4*z);
+if(!msissymbol(M,phi),error("symbol relations"));
+if(mseval(M,phi,[oo,0])!=1/4,error("period anchor"));
+if((-7*v)/(4*mseval(M,-7*v,[oo,0]))!=phi,error("scale invariance"));
+values=mseval(M,phi);
+if(denominator(values)%5==0,error("measure not integral"));
+forprime(p=2,7,if(mshecke(M,p)*phi!=ellap(E0,p)*phi,error("Hecke eigenvalue")));
+print("EXACT_SYMBOL|",phi);
+print("GENERATOR_VALUES|",values);
+print("STURM_BOUND|8");
+roots=polrootspadic(x^2+2*x+5,5,15);
+al=if(valuation(roots[1],5)==0,roots[1],roots[2]);
+if(valuation(al-1,5)!=0,error("exceptional Euler factor"));
+ll=log(6+O(5^15));
+C=(1-1/al)^(-1)*(1-al/5);
+emit("alpha",al);emit("five_C",5*C);emit("log6_div5",ll/5);
+tw(r)=sum(j=1,136,kronecker(136,j)*mseval(M,phi,[oo,r+j/136]));
+\\ Level4 error on D_raw is 5^5; dividing 4 log(6)^2 leaves 5^3.
+n=4;q=5^n;
+r=sum(a=1,q,if(a%5,log(a+O(5^15))^2/al^n*(tw(a/q)-tw(a/(q/5))/al),0));
+Draw=r+O(5^(n+1));b_classical=Draw/(4*ll^2);
+emit("classical_D_raw",Draw);emit("classical_b2",b_classical);
+\\ Separate integration algorithm, shared exact symbol and period anchor.
+Mp=mspadicinit(M,5,7,0);mu=mspadicmoments(Mp,phi,136);
+b_oc=polcoef(mspadicseries(mu),2)/2;
+emit("overconvergent_b2",b_oc);
+if(valuation(b_oc-b_classical,5)<3,error("analytic integration disagreement"));
+if(padicprec(b_classical,5)<3,error("insufficient classical precision"));
+\\ Exact rank-zero controls check the base anchor and twist period factor2.
+L1=mspadicL(mspadicmoments(Mp,phi,1),[0,0]);
+L8=mspadicL(mspadicmoments(Mp,phi,8),[0,0]);
+if(valuation(L1/(1-1/al)^2-1/4,5)<6,error("base normalization"));
+if(valuation(L8/(2*(1+1/al)^2)-1/2,5)<6,error("twist normalization"));
+emit("base_period_control",L1/(1-1/al)^2);
+emit("twist8_period_control",L8/(2*(1+1/al)^2));
+print("END_RELATION_10_ANALYTIC");
+quit;

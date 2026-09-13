@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-09-12T20:50:50.517955+00:00",
+  "status": "EXACT_ARITHMETIC_COFACTOR_VECTOR_READOUT",
+  "definition": "W=adj(G_MST)*(log_omega(P),log_omega(Q))",
+  "height_normalization": "MST bilinear pairing, cyclotomic functional log5/5",
+  "formal_log_reads": {
+    "P": {
+      "t_of_8R_mod25": 5,
+      "log_omega_R_div5_mod5": 2,
+      "tail_bound": "log_omega(t)-t belongs to25 Z_5"
+    },
+    "Q": {
+      "t_of_8R_mod25": 5,
+      "log_omega_R_div5_mod5": 2,
+      "tail_bound": "log_omega(t)-t belongs to25 Z_5"
+    },
+    "P+Q": {
+      "t_of_8R_mod25": 10,
+      "log_omega_R_div5_mod5": 4,
+      "tail_bound": "log_omega(t)-t belongs to25 Z_5"
+    }
+  },
+  "Gram_matrix_mod5": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "ell_div5_mod5": [
+    2,
+    2
+  ],
+  "W_div5_coordinates_mod5": [
+    0,
+    3
+  ],
+  "W_coordinates_mod25": [
+    0,
+    15
+  ],
+  "W_nonzero": true,
+  "identity_G_times_W_equals_detG_times_ell_checked": true,
+  "unimodular_basis_controls": 232,
+  "finite_index_covariance_controls": 1880,
+  "basis_covariance": "represented W transforms by det(U)^2; GL2(Z) leaves it fixed",
+  "BKS_tensor_comparison": "SEE_PADIC_HEIGHT_AUDIT; scalar conventions are explicit",
+  "derived_Kato_vector_kappa": "OPEN_NOT_CONSTRUCTED",
+  "direction_comparison_det_kappa_W": "Canonical collinearity follows BKS6.2 under checked hypotheses; no numerical kappa was computed",
+  "exact_analytic_scalar_comparison": "OPEN",
+  "P_coordinate_warning": "0 modulo25 is not a proof the P coordinate vanishes",
+  "witness_sha256": "d36cf769204be707d9d73b20752247ca5844675c4376edb513599de069a8814c",
+  "source_sha256": "4461c6c7ebc1f6c98671545ca7b36ac1a6d8752ca916a728ab256539d9a0d01e"
+}

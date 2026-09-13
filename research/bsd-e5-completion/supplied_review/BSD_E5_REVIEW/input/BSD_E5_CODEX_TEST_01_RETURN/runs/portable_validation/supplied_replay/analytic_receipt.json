@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "equation": "y^2=x^3-25*x",
+  "source_sha256": "93719886550fd08c7488ead7031a1ebb44ae6d1da0c321b4067016120e5cfaed",
+  "python": "3.14.5",
+  "theorem_inputs": [
+    "Modularity, analytic continuation, and completed functional equation.",
+    "Congruent-number family: conductor N=32*5^2=800; sign epsilon=-1.",
+    "Local Euler factors; multiplicativity and prime-power recurrence.",
+    "Hasse bound implies |a_n| <= d(n)*sqrt(n) <= 2n.",
+    "L'(E,1)=2 sum_{n>=1} (a_n/n) E1(2*pi*n/sqrt(N)) for sign -1.",
+    "Elementary integral definition of E1 and elementary exponential/logarithm inequalities.",
+    "Prior exact arithmetic descent: rank(E(Q))=1. Not used in the derivative computation."
+  ],
+  "point_counts": [
+    {
+      "p": 2,
+      "projective_model_points": 3,
+      "a_p": 0,
+      "local_factor_type": "additive bad reduction; local Euler factor 1"
+    },
+    {
+      "p": 3,
+      "projective_model_points": 4,
+      "a_p": 0,
+      "local_factor_type": "good reduction"
+    },
+    {
+      "p": 5,
+      "projective_model_points": 6,
+      "a_p": 0,
+      "local_factor_type": "additive bad reduction; local Euler factor 1"
+    },
+    {
+      "p": 7,
+      "projective_model_points": 8,
+      "a_p": 0,
+      "local_factor_type": "good reduction"
+    },
+    {
+      "p": 11,
+      "projective_model_points": 12,
+      "a_p": 0,
+      "local_factor_type": "good reduction"
+    },
+    {
+      "p": 13,
+      "projective_model_points": 20,
+      "a_p": -6,
+      "local_factor_type": "good reduction"
+    },
+    {
+      "p": 17,
+      "projective_model_points": 20,
+      "a_p": -2,
+      "local_factor_type": "good reduction"
+    },
+    {
+      "p": 19,
+      "projective_model_points": 20,
+      "a_p": 0,
+      "local_factor_type": "good reduction"
+    }
+  ],
+  "nonzero_coefficients_through_20": [
+    [
+      1,
+      1
+    ],
+    [
+      9,
+      -3
+    ],
+    [
+      13,
+      -6
+    ],
+    [
+      17,
+      -2
+    ]
+  ],
+  "alpha_enclosure": {
+    "lower": "1/5",
+    "upper": "1/4"
+  },
+  "positive_first_term_lower_bound": {
+    "numerator": "8",
+    "denominator": "9",
+    "float_for_display_only": 0.8888888888888888
+  },
+  "retained_negative_magnitude_upper_bound": {
+    "numerator": "22338243056640625",
+    "denominator": "206678743485087744",
+    "float_for_display_only": 0.10808195695389627
+  },
+  "entire_omitted_tail_magnitude_upper_bound": {
+    "numerator": "2384185791015625",
+    "denominator": "19194831810330624",
+    "float_for_display_only": 0.12420977764089917
+  },
+  "Lprime_lower_bound": {
+    "numerator": "615556405007957768183",
+    "denominator": "937494780448358006784",
+    "float_for_display_only": 0.6565971542940934
+  },
+  "certified_conclusion": "L(E,1)=0 and L'(E,1)>65/100; analytic order exactly 1.",
+  "BSD_rank_equality_for_this_curve": "1=1 after adjoining previous arithmetic descent",
+  "full_BSD_leading_coefficient_formula": "NOT_ESTABLISHED_BY_THIS_CERTIFICATE",
+  "generator_odd_saturation": "NOT_PERFORMED",
+  "general_BSD": "NOT_ESTABLISHED_BY_THIS_CERTIFICATE",
+  "finite_cube_recoding": {
+    "candidate_vertices": 32,
+    "realized_class_vertices": 8,
+    "group_sizes_by_outer_bits": {
+      "(0, 0)": 8,
+      "(0, 1)": 8,
+      "(1, 0)": 8,
+      "(1, 1)": 8
+    },
+    "basis_order": [
+      "delta(P)",
+      "delta(T0)",
+      "delta(Tplus)",
+      "A",
+      "B"
+    ],
+    "validity_indicator_given_previous_descent": "(1-u)*(1-v)",
+    "scope": "Exact recoding of accepted finite descent structure. Local exclusions are inherited, not proved by the cube alone.",
+    "class_count_including_identity": 8,
+    "wrapper_is_a_new_group_element": false
+  },
+  "roundoff_used_in_certificate": false,
+  "numerical_display": {
+    "status": "NOT_RUN",
+    "reason": "mpmath unavailable; exact certificate unaffected"
+  }
+}

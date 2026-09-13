@@ -1,0 +1,753 @@
+{
+  "schema": "rprm-local-research-verification/v1",
+  "verified_at_utc": "2026-09-12T18:38:41.099203+00:00",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\CONTINUATION.md",
+      "bytes": 5636,
+      "sha256": "f5d8ec4899d59c1f3e07326c61100cabcfa76a2a3157bcf427159a75da116e6f"
+    },
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\PANEL-RESULTS.json",
+      "bytes": 3408,
+      "sha256": "f4785f18b48640442932bc36b52068be030dbee0e988332ad53c8ad4ff683e6d"
+    },
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "bytes": 7318,
+      "sha256": "f8ac13fe5a76f26881e2bf062fb39c906e88f52d986efadcd66c48e56294075f"
+    },
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "bytes": 8620,
+      "sha256": "fc8b002d65a06f4fc86889e26826393fa35e6a551651b8d49f03d487866544ae"
+    },
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\REVIEW-MISSING-CONCEPTS-SOURCE.json",
+      "bytes": 115421,
+      "sha256": "4b0279fe0a1bb98a87a60d0a8a1362692e5663d13ac162f38d12a7437b54f402"
+    },
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\SAT-PILOT.md",
+      "bytes": 14321,
+      "sha256": "2012ba5aeb1f7bc2e85e6061c9ae5c22b7df6ffabbd2d571dfc01970c8c79bad"
+    },
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\SAT-RESULTS.json",
+      "bytes": 106995,
+      "sha256": "de3bbf7d918d34e60f4f1ddc6cec017f253940a3e77b07971e52b3f90cd4177b"
+    },
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\sat_pilot.py",
+      "bytes": 16504,
+      "sha256": "0a45fa0b60e40d36cabc4e027bf0c56444fca9bd167e98f377147e91468939cf"
+    },
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\THEORY-DRAFT.md",
+      "bytes": 14470,
+      "sha256": "9ab0e5b7dff70fd2ee5f8ef1c5b99ea82eb3015a82395cc7aa75202ac5581585"
+    },
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\THEORY.md",
+      "bytes": 21508,
+      "sha256": "e91276debfccd8af6bd62e1a497142a5d27c563aadcc4a312b7619dfee83d925"
+    },
+    {
+      "path": "research\\liar-teacher-formalization-2026-09-12\\verify_panels.py",
+      "bytes": 9793,
+      "sha256": "9d477d26bc3749625c040d73f8627d4bb4d28e13a1b9cb37b029c5a99f755460"
+    },
+    {
+      "path": "recovered-concepts\\README.md",
+      "bytes": 3015,
+      "sha256": "7a8f4f728916e1befcd768cd41eb7e3268156de71fbf80ad3864e980254e864f"
+    },
+    {
+      "path": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "bytes": 7749,
+      "sha256": "4f24b49f2e5318b903e75178f40296d5bfd53bf6ea03dee7ae7bc7fa2faa4ba4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10754,
+      "sha256": "ae52f9cd1dc31a58107c716e886622ee94e8d09b7ca6cf447eddef81bd10d6b0"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2183,
+      "sha256": "562f5e92ac5d8bb5b9c99683f065f5440caf90061def24aaf7266e95e2ecc2b7"
+    }
+  ],
+  "local_links_checked": 127,
+  "local_links": [
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\CONTINUATION.md",
+      "target": "REVIEW-MISSING-CONCEPTS-SOURCE.json",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\CONTINUATION.md",
+      "target": "../../recovered-concepts/NEXT-PAPER-BACKLOG.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\CONTINUATION.md",
+      "target": "RELATED-RESEARCH.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\CONTINUATION.md",
+      "target": "SAT-PILOT.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\CONTINUATION.md",
+      "target": "../rprm-consolidation-c2-20260912/supplied/accepted/SAT02_M1_CLOSEOUT.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "../../recovered-concepts/README.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "../../recovered-concepts/NEXT-PAPER-BACKLOG.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "THEORY.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "THEORY.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "CONTINUATION.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "REVIEW-MISSING-CONCEPTS-SOURCE.json",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "SAT-PILOT.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "SAT-RESULTS.json",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "PANEL-RESULTS.json",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "RELATED-RESEARCH.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "../liar-teacher-recovery-2026-09-12/RECOVERY.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "../liar-teacher-recovery-2026-09-12/SELECTED-PASSAGES.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\README.md",
+      "target": "VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/AGENTS.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/README.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/AGENT_HANDBOOK.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/bsd-e5-completion/supplied_review/BSD_E5_REVIEW/input/BSD_E5_CODEX_TEST_01_RETURN/RETURN_TO_WILLIAM.md:113",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/bsd-e5-completion/supplied_review/BSD_E5_REVIEW/input/BSD_E5_CODEX_TEST_01_RETURN/RETURN_TO_WILLIAM.md:113",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/ym2_signed_differences/SIGNED_SEMANTICS.md:96",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/ym2_signed_differences/SIGNED_SEMANTICS.md:194",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/bsd-e5-completion/supplied_review/BSD_E5_REVIEW/input/BSD_E5_CODEX_TEST_01_RETURN/RETURN_TO_WILLIAM.md:36",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/ym2_spatial_joint/RETURN_TO_WILLIAM.md:15",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/ym2_spatial_joint/RETURN_TO_WILLIAM.md:104",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/bsd-e5-completion/supplied_review/BSD_E5_REVIEW/REVIEW.md:49",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/ym2_signed_differences/SIGNED_SEMANTICS.md:156",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/bsd-e5-completion/supplied_review/BSD_E5_REVIEW/REVIEW.md:96",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\RELATED-RESEARCH.md",
+      "target": "/C:/github/RPRM-open/research/ym2_signed_differences/REVIEW_CONNECTED_OBLIGATION.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY-DRAFT.md",
+      "target": "../liar-teacher-recovery-2026-09-12/RECOVERY.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY-DRAFT.md",
+      "target": "../liar-teacher-recovery-2026-09-12/SELECTED-PASSAGES.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY-DRAFT.md",
+      "target": "C:/github/RPRMResearch/RPRM_LIAR_TEACHER_BOUNDARY_SYNDROME_01/NOTE.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY.md",
+      "target": "PANEL-RESULTS.json",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY.md",
+      "target": "SAT-RESULTS.json",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY.md",
+      "target": "../liar-teacher-recovery-2026-09-12/RECOVERY.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY.md",
+      "target": "../liar-teacher-recovery-2026-09-12/SELECTED-PASSAGES.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY.md",
+      "target": "C:/github/RPRMResearch/RPRM_LIAR_TEACHER_BOUNDARY_SYNDROME_01/NOTE.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY.md",
+      "target": "SAT-PILOT.md",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY.md",
+      "target": "verify_panels.py",
+      "exists": true
+    },
+    {
+      "source": "research\\liar-teacher-formalization-2026-09-12\\THEORY.md",
+      "target": "SAT-PILOT.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "../research/liar-teacher-recovery-2026-09-12/RECOVERY.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/README.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/CONTINUATION.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/SAT-PILOT.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "../research/core-recovery-01/README.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "../research/core-recovery-r2/README.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "ZERO-AND-RAILS.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "CUBES-AND-PI-CURVES.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "RPRM-CONCEPT-RECOVERY.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "ORIGINAL-CONVERSATION-PASSAGES.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "NEXT-PAPER-BACKLOG.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "PAPER-COVERAGE-AUDIT.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\README.md",
+      "target": "../AGENTS.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "PAPER-COVERAGE-AUDIT.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/THEORY.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/liar-teacher-recovery-2026-09-12/RECOVERY.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/SAT-PILOT.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../docs/concepts.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/core-recovery-r2/README.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "ZERO-AND-RAILS.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "CUBES-AND-PI-CURVES.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "CUBES-AND-PI-CURVES.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "CUBES-AND-PI-CURVES.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/rprm-consolidation-c2-20260912/PAPER_ROUTING_NOTE.md",
+      "exists": true
+    },
+    {
+      "source": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/RELATED-RESEARCH.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/relational-layer.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "MANIFESTO.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "RPRM-Manifesto.pdf",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "DOCUMENT_BUILD.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "RPRM-Manifesto.pdf",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "CITATION.cff",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/relational-layer.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "MANIFESTO.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "RPRM-Manifesto.pdf",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/core.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "LAYPERSON_GUIDE.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "AGENT_HANDBOOK.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/relational-layer.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/concepts.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "recovered-concepts/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "recovered-concepts/NEXT-PAPER-BACKLOG.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/operations.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/unification.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/glossary.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/proof-donut.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "experimental/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "experimental/lens-lab/index.html",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "experimental/lens-lab/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "experimental/music-lens/index.html",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "experimental/music-lens/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "research-packs/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "agent-tests/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/origins.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/verification.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/formal-proofs.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/references.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "CONTENTS.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "research/core-recovery-01/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "research/core-recovery-r1/RETURN_TO_WILLIAM_R1.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "research/core-recovery-r2/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "AGENTS.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/formal-proofs.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "agent-tests/results.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "atlas/index.html",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "experimental/lens-lab/index.html",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "experimental/lens-lab/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "experimental/music-lens/index.html",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "experimental/music-lens/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/fermat-study.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/fermat.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "papers/process-mechanics/The-Right-Answer-Is-Not-Enough.pdf",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "papers/process-mechanics/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "papers/process-mechanics/CLAIM_ID_MANIFEST.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "experimental/process-mechanics/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "LICENSE",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "LICENSES/CC0-1.0.txt",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "LICENSING.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "THIRD_PARTY_NOTICES.md",
+      "exists": true
+    }
+  ],
+  "panel": {
+    "status": "PASS",
+    "assertions": 13665,
+    "execution": "Final expanded fixture suite executed successfully; stdout saved as PANEL-RESULTS.json"
+  },
+  "sat": {
+    "status": "PASS",
+    "implementation_binding": "MATCH",
+    "finite_cases": 24,
+    "guards": {
+      "single_support_truth_tables": 276,
+      "affine_projection_systems": 38,
+      "missing_duplicate_normalization_empty_and_scope_guards": "PASS"
+    },
+    "non_affine_controls": 2,
+    "algebra_only_cases": 8,
+    "complete_local_oracle_assignments": 87360,
+    "local_boundary_memberships": 4032
+  },
+  "review": [
+    "Separate review of written P1-P9 and finite panel implementation found no incorrect assertions; scope gaps motivated the final expanded fixtures.",
+    "Separate P10/P11 review accepted projection, join and exact non-affine extension; corrected zero-variable complexity notation and k>=1 recognition premise.",
+    "SAT code review strengthened explicit positive recognition and actual joined relation validation; corrected counter and payload labels; final run passed.",
+    "Root independently inspected SAT recognizer, private elimination and raw oracle; documented dense-ID cost scope."
+  ],
+  "limits": [
+    "Hashes bind the current local bytes, not their truth or general verifier soundness.",
+    "Finite tests and written proofs are separate evidence grades; no Lean proof was run.",
+    "The imported chat snapshot contains eight recent turns, with older history explicitly excluded.",
+    "Larger SAT cases compare two algebraic implementations without independent exhaustive truth tables.",
+    "This audit did not rerun the BSD, Yang-Mills, SAT02 or historical recovery campaigns.",
+    "Files persisted locally with knowledge-base and agent-entry links; no Memory Fabric database ingestion or publication."
+  ]
+}

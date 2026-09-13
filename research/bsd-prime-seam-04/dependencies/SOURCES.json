@@ -1,0 +1,20 @@
+[
+  {
+    "original": "C:\\github\\RPRM-open\\research\\bsd-trace-02\\TRACE_FORMULA_AUDIT.md",
+    "copy": "dependencies/TRACE_FORMULA_AUDIT.md",
+    "sha256": "ae07ad27e55879353e391ca54bc5aa26cbd492aa3c75e30abf9107f1d58db00a",
+    "role": "ADMITTED_PRIOR_WRITTEN_PROOF_NOT_FRESHLY_REPLAYED"
+  },
+  {
+    "original": "C:\\github\\RPRM-open\\research\\bsd-operational-03\\PADIC_HEIGHT_AUDIT.md",
+    "copy": "dependencies/PADIC_HEIGHT_AUDIT.md",
+    "sha256": "8db3ed9b53c6bd114bc54e142cfcebe2a99233d65b0cc03671025ea023f0e66e",
+    "role": "ADMITTED_PRIOR_WRITTEN_PROOF_NOT_FRESHLY_REPLAYED"
+  },
+  {
+    "original": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\input_source\\FACTOR_COMPARISON.md",
+    "copy": "dependencies/FACTOR_COMPARISON.md",
+    "sha256": "e7c482d6674464c71f7f1ef1891d64690115d9301b329297c4a5fe52910989f4",
+    "role": "ADMITTED_PRIOR_WRITTEN_PROOF_NOT_FRESHLY_REPLAYED"
+  }
+]

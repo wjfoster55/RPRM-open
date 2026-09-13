@@ -1,0 +1,18 @@
+{
+  "scope": "E34/Q y^2=x^3-1156x, one new p=5 critical trace experiment",
+  "claims": [
+    {"id":"rank_inputs","status":"ESTABLISHED_PRIOR_DEPENDENCY","claim":"algebraic and analytic ranks are both 2","proofs":["dependencies/ARITHMETIC_PROOF.md","dependencies/ANALYTIC_PROOF.md"],"freshly_replayed_here":false},
+    {"id":"cm_orbit","status":"PROVED_WITH_CITED_CM_INPUTS","claim":"actual conductor-68 CM action has order512, and the selected r-coordinate trace cover has fiber size2","proof":"TRACE_FORMULA_AUDIT.md","source":"work/cm_action.py"},
+    {"id":"trace_valuation","status":"WRITTEN_PROOF_AND_EXACT_COMPUTATION","claim":"v5(T)=2","unit_multiple_residue_mod125":100,"alternative_residue_up_to_sign":25,"proof":"TRACE_CALCULATION.md","fresh_run":"runs/return_validation/RUN.json"},
+    {"id":"sha_5_primary","status":"ESTABLISHED_BY_PUBLISHED_THEOREM_AND_CHECKED_INPUTS","claim":"Sha(E34/Q)[5^infinity]=0","theorem":"Coates-Liang-Sujatha I, Theorem2.2","proof":"TRACE_CALCULATION.md"},
+    {"id":"signed_critical_value","status":"OPEN","claim":"distinguished signed rational trace or exact rational c5_plus(E)","boundary":"Only a residue up to a unit, sufficient for its valuation, was required and computed."},
+    {"id":"remaining_primary_groups","status":"OPEN","claim":"all prime-primary parts other than the established 2 and5 parts","boundary":"No finite or uniform computation for those primes was performed here."},
+    {"id":"total_sha","status":"OPEN","claim":"finiteness and total order of Sha(E34/Q)","boundary":"Vanishing at two primes does not determine the full group."},
+    {"id":"complex_BSD","status":"OPEN","claim":"full complex leading-coefficient BSD identity for E34","boundary":"The noncentral critical Hecke trace criterion does not prove that identity."},
+    {"id":"general_BSD","status":"OPEN","claim":"general BSD proof","boundary":"No uniform arithmetic-analytic comparison was established."},
+    {"id":"YM_transfer","status":"WRITTEN_CONDITIONAL_TRANSFER_AND_COUNTEREXAMPLE","claim":"exact traces require correct orbit selection and multiplicity preservation; lower-bound ambient enlargement alone is insufficient","proof":"YM_TO_BSD.md","read_only_snapshot":"evidence/ym_snapshot.json"}
+  ],
+  "formal_proof_assistant_used": false,
+  "other_research_lanes_modified": false,
+  "paper_or_publication_started": false
+}

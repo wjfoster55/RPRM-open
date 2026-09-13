@@ -1,0 +1,139 @@
+{
+  "status": "OPEN",
+  "finite_admission_checks": "COMPLETED",
+  "sha_5_primary_conclusion": "NOT_ESTABLISHED",
+  "critical_value_valuation": null,
+  "utc": "2026-09-12T19:55:09.776472+00:00",
+  "source_sha256": "90c9687684ca3bc44d0dff3c0557b96451ccb89f607660efece72eb269d21114",
+  "curve": {
+    "a_invariants": [
+      0,
+      0,
+      0,
+      -1156,
+      0
+    ],
+    "D_in_CLS_notation": 1156,
+    "CM_field": "Q(i)",
+    "CM_order": "Z[i]",
+    "discriminant": 98867482624
+  },
+  "prime_admission": {
+    "p": 5,
+    "good_reduction_discriminant_residue": 4,
+    "affine_points_mod_p": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        0
+      ]
+    ],
+    "projective_point_count": 8,
+    "a_p": -2,
+    "ordinary": true,
+    "non_anomalous": true,
+    "split_factorization": "5=(2+i)(2-i)",
+    "roots_of_unity_count": 4,
+    "prime_to_6w": true,
+    "residual_surjectivity": "NOT_A_HYPOTHESIS_OF_CLS_I_THEOREM_2_2"
+  },
+  "accepted_inputs": {
+    "algebraic_rank": 2,
+    "analytic_rank": 2,
+    "source": "../../bsd-rank-two-01/ARITHMETIC_PROOF.md and its analytic certificates",
+    "rank_parity_agrees": true,
+    "no_saved_receipt_read": true
+  },
+  "isogenous_model": {
+    "a_invariants": [
+      0,
+      0,
+      0,
+      289,
+      0
+    ],
+    "D_in_CLS_notation": -289,
+    "degree": 2,
+    "x_map": "x+289/x",
+    "y_map": "y*(1-289/x^2)",
+    "curve_identity_laurent_residual": {},
+    "differential_pullback_factor": 1,
+    "K_isomorphism_scale_fourth_power": -4,
+    "projective_point_count_mod_5": 8
+  },
+  "CM_conductor": {
+    "model_used_for_CLS_I_Lemma_3_2": "D=-289",
+    "f_generator": 68,
+    "f_norm": 4624,
+    "f1_generator": "34*(1-i)",
+    "phi_f_exact_unit_count": 2048,
+    "rho_minimal_polynomial_degree": 256,
+    "norm_conductor_consistency": "4*N(f)=18496"
+  },
+  "period_normalization": {
+    "differential": "dx/(2y)",
+    "Omega_plus": "least positive real period, not total real integral",
+    "Omega_plus_isogenous_over_original": 2,
+    "alpha_isogenous": "1+i",
+    "beta_isogenous": 68,
+    "c5_original_over_isogenous": 32
+  },
+  "trace_target": {
+    "rho": "positive sqrt(wp(Omega_plus(Eprime)/68,L_Eprime))",
+    "field": "ray class field of Q(i) modulo 34*(1-i)",
+    "A1_polynomial": {
+      "5": 24,
+      "1": 3468
+    },
+    "T": "Trace(2*rho^5+289*rho)",
+    "critical_value_original": "+/-16*T/68^5",
+    "v5_equivalence": "v5(c5_plus(E34))=v5(T)",
+    "sufficient_exact_residues_mod_125": [
+      25,
+      50,
+      75,
+      100
+    ],
+    "rho_polynomial": null,
+    "trace_T_mod_125": null,
+    "Newton_sum_target": "T=2*s5+289*s1, using the first five monic polynomial coefficients"
+  },
+  "missing_calculation": "Construct and certify the correct degree-256 rho polynomial or equivalent trace algebra, then compute T modulo125",
+  "literature_limit": {
+    "targeted_search_queries_used": 4,
+    "maximum": 4,
+    "provided_papers_read": [
+      "https://arxiv.org/pdf/1005.4206",
+      "https://arxiv.org/pdf/0901.3832"
+    ]
+  },
+  "not_established": [
+    "v5(c5_plus)=2",
+    "Sha[5^infinity]=0",
+    "full Sha finiteness",
+    "full BSD identity"
+  ]
+}

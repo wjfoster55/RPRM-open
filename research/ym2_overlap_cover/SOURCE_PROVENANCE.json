@@ -1,0 +1,184 @@
+{
+  "schema": "ym2-overlap-sources-v1",
+  "prior_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+  "prior_archive_sha256": "4e91d638db3ef1c511cb35b08e74a5c4413af7f58babc15b03bf1afee8a4d6d5",
+  "archives": [
+    {
+      "path": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "sha256": "4e91d638db3ef1c511cb35b08e74a5c4413af7f58babc15b03bf1afee8a4d6d5"
+    },
+    {
+      "path": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\YM2-connected-vacuum-2026-09-12.zip",
+      "sha256": "e520be5988a4106a91fdecb9df716d6fdf929d2113ca1ced820a7d1ca5923efd"
+    }
+  ],
+  "files": [
+    {
+      "payload_path": "accepted/YM2-estimate-continuation-2026-09-12-v2.zip",
+      "bytes": 207475,
+      "sha256": "4e91d638db3ef1c511cb35b08e74a5c4413af7f58babc15b03bf1afee8a4d6d5",
+      "source_path": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "kind": "frozen_prior_archive"
+    },
+    {
+      "payload_path": "accepted/estimate/accepted/CONDITIONAL_REFINEMENT.md",
+      "bytes": 9065,
+      "sha256": "abd62ff7ae6771722e21ea497b2050f4dbf0478b28cfc037f0d698d22b09360c",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/accepted/CONDITIONAL_REFINEMENT.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/accepted/COVERING_RESULT.md",
+      "bytes": 14446,
+      "sha256": "b65cf3fbbf8bea4f4173d9263750814fdb2878b158e1d5ec6f60854424b65002",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/accepted/COVERING_RESULT.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/accepted/DIRECT_COVER_ATTEMPT.md",
+      "bytes": 17473,
+      "sha256": "1e30640bb3c837938447b769942295f3f357453f06fe8b9b5a5de6546d788df0",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/accepted/DIRECT_COVER_ATTEMPT.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/accepted/NEXT_OBLIGATION.md",
+      "bytes": 5518,
+      "sha256": "f428f56bde1a85544efc7f4ccf313a3cb6f26f93598b57f57fdf7c76da105e42",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/accepted/NEXT_OBLIGATION.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/COMBINED_REVIEW.md",
+      "bytes": 14344,
+      "sha256": "a8fa6b90531de4fb6fb79b6b6c2a2eddd029d953f15f7f580ba3a22487d05862",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/COMBINED_REVIEW.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/CONDITIONAL_GAP_EXTENSION.md",
+      "bytes": 14200,
+      "sha256": "387ecab4983a0e8398db538d6ddc8d60e2441a179004a1806ecd6adc739f21fd",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/CONDITIONAL_GAP_EXTENSION.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/README.md",
+      "bytes": 2687,
+      "sha256": "c87580e1301ac29ea8bfb86911cfb4b28068aae776cf2e4436fa621324857332",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/README.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/RECENTER_AND_INVERSE.md",
+      "bytes": 13449,
+      "sha256": "2927a0a1b39660c1565ece75a5d70fd3c19dbeb9dcb394889b15896e8ac86ce3",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/RECENTER_AND_INVERSE.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/RESULT.md",
+      "bytes": 11191,
+      "sha256": "c5fde3a573d9e85c0f2549eb1d688b13336d049f92c84140989b0cc54d5f0584",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/RESULT.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/SIGNED_AND_CONTRACTED_AUDIT.md",
+      "bytes": 14004,
+      "sha256": "46485c888fa3bff0826a314347b1147f2c378109e3f45f39849483f03d92978e",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/SIGNED_AND_CONTRACTED_AUDIT.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/SOURCE_NORM_REFINEMENT.md",
+      "bytes": 12931,
+      "sha256": "cbfccef461b79d2a4270ef52bd2f821860d88f0c157228b894c1ccba1c969ac4",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/SOURCE_NORM_REFINEMENT.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/estimate/VISUAL_CHECKS.md",
+      "bytes": 826,
+      "sha256": "e8af781329570d18531c31cfc83123c3ab34ae90c8d39251097400463b7a84aa",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-estimate-20260912-delivery\\YM2-estimate-continuation-2026-09-12-v2.zip",
+      "source_member": "YM2-estimate-continuation/VISUAL_CHECKS.md",
+      "kind": "accepted_prior_note"
+    },
+    {
+      "payload_path": "accepted/PHASE_CLOSURE.md",
+      "bytes": 10959,
+      "sha256": "65a83f3df4dc5d1a5b3b27698d80fed857e0c10937081e27658bf50392ded24a",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\YM2-connected-vacuum-2026-09-12.zip",
+      "source_member": "YM2-connected-vacuum/accepted_sources/ym2_global_phase_joint/accepted_sources/ym2_spatial_joint/PHASE_CLOSURE.md",
+      "kind": "accepted_historical_note"
+    },
+    {
+      "payload_path": "accepted/DIFFERENCE_PROJECTION.md",
+      "bytes": 17475,
+      "sha256": "63111a1517334c9b874419b97c180d6f6d41bac7ee4218f6c8f7b9767a92fc8f",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\YM2-connected-vacuum-2026-09-12.zip",
+      "source_member": "YM2-connected-vacuum/accepted_sources/ym2_signed_differences/DIFFERENCE_PROJECTION.md",
+      "kind": "accepted_historical_note"
+    },
+    {
+      "payload_path": "accepted/REVIEW_PERTURBATION.md",
+      "bytes": 12566,
+      "sha256": "e9596a1c62ea1de2de58e334fc1269cb13d7342841257a9384b9603b6b0521a2",
+      "source_archive": "C:\\github\\RPRM-open\\research\\ym2-connected-20260912-delivery\\YM2-connected-vacuum-2026-09-12.zip",
+      "source_member": "YM2-connected-vacuum/REVIEW_PERTURBATION.md",
+      "kind": "accepted_historical_note"
+    },
+    {
+      "payload_path": "accepted/rprm/core.md",
+      "bytes": 40459,
+      "sha256": "7ef1490b41a59be92f42c5b6457e7ad1c40ceb43287d2d78a3ba6b3c767f2ca3",
+      "source_path": "C:\\github\\RPRM-open\\docs\\core.md",
+      "kind": "selected_official_RPRM_source_snapshot"
+    },
+    {
+      "payload_path": "accepted/rprm/operations.md",
+      "bytes": 40793,
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd",
+      "source_path": "C:\\github\\RPRM-open\\docs\\operations.md",
+      "kind": "selected_official_RPRM_source_snapshot"
+    },
+    {
+      "payload_path": "accepted/rprm/ZERO-AND-RAILS.md",
+      "bytes": 16721,
+      "sha256": "82b33805d899cbdd64232dbfc4f87bf979098232bd2ed8a16a494dbf8156a57d",
+      "source_path": "C:\\github\\RPRM-open\\recovered-concepts\\ZERO-AND-RAILS.md",
+      "kind": "selected_official_RPRM_source_snapshot"
+    },
+    {
+      "payload_path": "accepted/rprm/CUBES-AND-PI-CURVES.md",
+      "bytes": 53235,
+      "sha256": "526ab16ba66addb1e6ebade597a2470f44d83761705f29333e4ee439c5c9ef0e",
+      "source_path": "C:\\github\\RPRM-open\\recovered-concepts\\CUBES-AND-PI-CURVES.md",
+      "kind": "selected_official_RPRM_source_snapshot"
+    }
+  ],
+  "snapshot_policy": "Accepted files preserve exact original bytes and historical links; only the new top-level notes receive portable link rewrites.",
+  "new_external_references": [
+    {
+      "url": "https://arxiv.org/abs/hep-lat/0001028",
+      "scope": "Established maximal-tree gauge formulation; abstract and metadata inspected, not a claim it contains the present numerical bound."
+    },
+    {
+      "url": "https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/schroe.pdf#page=255",
+      "scope": "Teschl 2009, Lemma11.3 printed243/PDF255: IMS localization identity inspected."
+    }
+  ],
+  "authority": "Current user request controls scope; imperative wording in historical source documents is attributed evidence, not a new instruction."
+}

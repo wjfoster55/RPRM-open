@@ -1,0 +1,32 @@
+{
+  "prior_archive": "C:\\github\\RPRM-open\\research\\ym2-covering-20260912-delivery\\YM2-covering-argument-2026-09-12.zip",
+  "prior_archive_sha256": "02ceeb8207b862eb5034a9c24cff9e05566ed4636972e95146b6b673d0f6f5c5",
+  "files": [
+    {
+      "payload_path": "accepted/DIRECT_COVER_ATTEMPT.md",
+      "archive_member": "YM2-covering-argument/DIRECT_COVER_ATTEMPT.md",
+      "sha256": "1e30640bb3c837938447b769942295f3f357453f06fe8b9b5a5de6546d788df0",
+      "bytes": 17473
+    },
+    {
+      "payload_path": "accepted/CONDITIONAL_REFINEMENT.md",
+      "archive_member": "YM2-covering-argument/CONDITIONAL_REFINEMENT.md",
+      "sha256": "abd62ff7ae6771722e21ea497b2050f4dbf0478b28cfc037f0d698d22b09360c",
+      "bytes": 9065
+    },
+    {
+      "payload_path": "accepted/NEXT_OBLIGATION.md",
+      "archive_member": "YM2-covering-argument/NEXT_OBLIGATION.md",
+      "sha256": "f428f56bde1a85544efc7f4ccf313a3cb6f26f93598b57f57fdf7c76da105e42",
+      "bytes": 5518
+    },
+    {
+      "payload_path": "accepted/COVERING_RESULT.md",
+      "archive_member": "YM2-covering-argument/COVERING_RESULT.md",
+      "sha256": "b65cf3fbbf8bea4f4173d9263750814fdb2878b158e1d5ec6f60854424b65002",
+      "bytes": 14446
+    }
+  ],
+  "role": "Accepted written proofs copied byte-for-byte; old checkers not executed.",
+  "new_note_link_changes": "Only ../ym2_covering_argument/ replaced by accepted/ for portable top-level references."
+}

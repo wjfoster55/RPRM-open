@@ -1,0 +1,28 @@
+{
+  "status": "EXACT_FINITE_RECIPROCITY_READBACK",
+  "G_mod125": [
+    [
+      66,
+      32
+    ],
+    [
+      32,
+      117
+    ]
+  ],
+  "regulator_mod125": 73,
+  "ell_div5_mod125": [
+    117,
+    102
+  ],
+  "W_div5_mod125": [
+    50,
+    113
+  ],
+  "five_lambda_mod125": 16,
+  "canonical_component_MST_class_mod125": [
+    50,
+    58
+  ],
+  "complex_BSD_identity": "OPEN"
+}

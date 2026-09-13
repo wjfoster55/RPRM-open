@@ -1,0 +1,150 @@
+{
+  "created_utc": "2026-09-12T16:59:33.111931+00:00",
+  "status": "PASS",
+  "science": {
+    "result_status": "PASS",
+    "counts": {
+      "anisotropic_counterchecks": 1,
+      "assertions": 2312,
+      "assertions_by_category": {
+        "anisotropic_countercheck": 1,
+        "block_gauss_admission": 34,
+        "block_gauss_continuation": 33,
+        "closure_derivative": 102,
+        "closure_taylor": 510,
+        "coupling_control": 3,
+        "energy_conservation": 34,
+        "energy_readout": 510,
+        "frozen_witness_readout": 4,
+        "gauss_admission": 34,
+        "gauss_conservation": 34,
+        "geometry_curvature": 2,
+        "geometry_tangent": 2,
+        "gram_psd_principal_minors": 34,
+        "gram_rank": 34,
+        "negative_gauss_control": 1,
+        "nonsymmetric_T_admissible": 1,
+        "normalization_control": 6,
+        "rank_boundary": 2,
+        "realizable_gram": 34,
+        "reflection_energy": 6,
+        "reflection_gram": 6,
+        "reflection_joint_taylor": 6,
+        "reflection_setup": 1,
+        "reflection_source_taylor": 60,
+        "scaling_energy_taylor": 270,
+        "scaling_joint_taylor": 270,
+        "scaling_source_taylor": 180,
+        "source_force": 34,
+        "spd_chart": 60,
+        "symmetric_T_insufficient": 1,
+        "volume_energy_control": 1,
+        "volume_flow_control": 2
+      },
+      "base_states": 6,
+      "full_state_rows": 34,
+      "geometry_rows": 2,
+      "main_YM2_witnesses": 4,
+      "normalization_rows": 3,
+      "off_Gauss_rows": 1,
+      "reflection_rows": 6,
+      "scaling_rows": 18
+    },
+    "method": "fractions.Fraction exact arithmetic; independently implemented source and joint Taylor recurrences",
+    "execution": "checker owner generated and replayed; independent mathematics reviewer freshly replayed and matched recorded RESULTS.json",
+    "independent_review": "INDEPENDENT_REVIEW.md"
+  },
+  "browser_checks": {
+    "method": "live in-app browser, actual bundled preview wrapper, UI interactions and screenshots",
+    "viewports_checked": [
+      {
+        "width": 736,
+        "height": 760
+      },
+      {
+        "width": 360,
+        "height": 1100
+      },
+      {
+        "width": 320,
+        "height": 1120
+      }
+    ],
+    "primary_direction_action": "Direction A set acceleration to 0; direction B gave displayed -2.667",
+    "amplitude_action": "lambda 2 gave each initial energy 8",
+    "normalized_curve": "identical SVG series path at lambda 1 and 2 with normalization on",
+    "narrow_width": {
+      "root_width": 288,
+      "scroll_width": 288,
+      "svg_widths": [
+        288,
+        288
+      ]
+    },
+    "browser_console_errors": [],
+    "limitations": "visual and interaction checks, not a validated numerical integrator or a screen-reader user study"
+  },
+  "local_links": [
+    {
+      "source": "JOINT_AND_SCALING.md",
+      "target": "../ym2_interacting_energy_transfer/MODEL_AND_DERIVATION.md"
+    },
+    {
+      "source": "JOINT_AND_SCALING.md",
+      "target": "../rprm-consolidation-c2-20260912/ad/AD1_DESIGN.md"
+    },
+    {
+      "source": "JOINT_AND_SCALING.md",
+      "target": "../rprm-consolidation-c2-20260912/ad/AD1_RESULT.md"
+    },
+    {
+      "source": "JOINT_AND_SCALING.md",
+      "target": "../ym2_interacting_energy_transfer/supplied/CODEX_YM2/sources/accepted/SAT02_M1_CLOSEOUT.md"
+    },
+    {
+      "source": "README.md",
+      "target": "JOINT_AND_SCALING.md"
+    },
+    {
+      "source": "README.md",
+      "target": "INDEPENDENT_REVIEW.md"
+    }
+  ],
+  "visual": {
+    "path": "C:\\Users\\bkbee\\.codex\\visualizations\\2026\\09\\12\\01a0965b-9165-78d2-81fe-19720be304f6\\field-direction-and-scale.html",
+    "sha256": "afe348f3823fac6ebeda137b69e4e7421f29f9e4c2c13d5133e1141086b4001a",
+    "bytes": 14669
+  },
+  "prior_YM2_zip": {
+    "sha256": "167e181c19e6c2a5dfdcb3e9956412251a8dcb9d808c7684e68393e7d86f1f8c",
+    "unchanged": true
+  },
+  "files": [
+    {
+      "path": "check_joint.py",
+      "sha256": "bbb1981c2f5cc873e3d60fcfc123ba0802b0005a398e14ab3f2d7a03659201aa",
+      "bytes": 24837
+    },
+    {
+      "path": "INDEPENDENT_REVIEW.md",
+      "sha256": "2bdb5585ad8d073c43c93bda5e86d1b1271c82ad0b9e6dc1f65a8d28aa85801f",
+      "bytes": 2192
+    },
+    {
+      "path": "JOINT_AND_SCALING.md",
+      "sha256": "a5c663a88f577bf58b68ae645bb87d2348f85bdc5c441613ba3afe0347e793b9",
+      "bytes": 18332
+    },
+    {
+      "path": "README.md",
+      "sha256": "5d6943cbd68c5eab8364db118417d2ad6451004910f3eb53ba16f41e507f4632",
+      "bytes": 962
+    },
+    {
+      "path": "RESULTS.json",
+      "sha256": "a058fcca42fe21adfc8b267282395cd79e461adffc39e0d6f8447c15b963ac6f",
+      "bytes": 863893
+    }
+  ],
+  "claim_boundary": "Written reviewed closure/scaling proof plus exact finite calibration. No storage/speed advantage, spatial gluing or quantum gap proved."
+}

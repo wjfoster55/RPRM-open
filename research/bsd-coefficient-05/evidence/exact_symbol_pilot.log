@@ -1,0 +1,13 @@
+BEGIN_EXACT_SYMBOL_PILOT
+ambient_dimension=6
+cuspidal_dimension=1
+raw_symbol=[1, -2, 1, 2, 0, -1]~
+raw_anchor=1
+exact_symbol=[1/4, -1/2, 1/4, 1/2, 0, -1/4]~
+anchor_infinity_to_zero=1/4
+Hecke=[[2, 1], [3, 1], [5, 1], [7, 1]]
+D0=O(5^7)
+D1=O(5^6)
+D2=4*5^2 + 5^3 + 4*5^4 + O(5^6)
+series=O(5^7) + O(5^5)*x + (2 + 4*5^2 + 5^3 + O(5^4))*x^2 + (4 + 3*5^2 + O(5^3))*x^3 + (4 + 5 + 5^2 + O(5^3))*x^4 + (2 + O(5))*x^5 + O(x^6)
+END_EXACT_SYMBOL_PILOT

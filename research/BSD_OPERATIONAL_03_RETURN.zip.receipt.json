@@ -1,0 +1,12 @@
+{
+  "archive": "C:\\github\\RPRM-open\\research\\BSD_OPERATIONAL_03_RETURN.zip",
+  "sha256": "a8294171c48883cee1eee93a3e2d691c46c1d5b333e0de3000f85439cbe3ed42",
+  "bytes": 188479,
+  "files": 50,
+  "CRC_and_payload_verified": true,
+  "current_sources_match_fresh_run": true,
+  "all_four_execution_stages_passed": true,
+  "runtime_seconds": 28.105602099967655,
+  "full_BSD": "OPEN",
+  "total_Sha": "OPEN"
+}

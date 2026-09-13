@@ -1,0 +1,4 @@
+PASS: 22812 exact bounded assertions; matched RESULTS_COVERING.json
+PASS: recomputed full receipt matches RESULTS_CONDITIONAL_COVER.json; no files written
+PASS: 53 manifest-bound files unchanged; both new receipts match.
+Byte verification and finite checks do not replace the written analytic proofs.

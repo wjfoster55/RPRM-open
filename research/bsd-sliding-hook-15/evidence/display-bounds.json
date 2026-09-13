@@ -1,0 +1,671 @@
+{
+  "status": "BOUNDED_DISPLAY_AND_GRAMMAR_CHECKS_PASS",
+  "created_utc": "2026-09-13T04:56:45.668047+00:00",
+  "attributed_prior_inputs": {
+    "A": [
+      "638511803/100000000",
+      "127703717/20000000"
+    ],
+    "B1": [
+      "1276918651/200000000",
+      "399101589/62500000"
+    ]
+  },
+  "integer_origin": {
+    "upper_subtraction": [
+      6385185850,
+      6384593255,
+      592595
+    ],
+    "lower_magnitude_subtraction": [
+      6385625424,
+      6385118030,
+      507394
+    ],
+    "scale": 1000000000,
+    "lower_suffix": "7394",
+    "omitted_lower_prefix": "50"
+  },
+  "fresh_L_or_height_run": false,
+  "all_100_word_cases": [
+    {
+      "source": "00",
+      "reversed": "00",
+      "joined": "00",
+      "certificate": "00200"
+    },
+    {
+      "source": "01",
+      "reversed": "10",
+      "joined": "010",
+      "certificate": "012010"
+    },
+    {
+      "source": "02",
+      "reversed": "20",
+      "joined": "020",
+      "certificate": "022020"
+    },
+    {
+      "source": "03",
+      "reversed": "30",
+      "joined": "030",
+      "certificate": "032030"
+    },
+    {
+      "source": "04",
+      "reversed": "40",
+      "joined": "040",
+      "certificate": "042040"
+    },
+    {
+      "source": "05",
+      "reversed": "50",
+      "joined": "050",
+      "certificate": "052050"
+    },
+    {
+      "source": "06",
+      "reversed": "60",
+      "joined": "060",
+      "certificate": "062060"
+    },
+    {
+      "source": "07",
+      "reversed": "70",
+      "joined": "070",
+      "certificate": "072070"
+    },
+    {
+      "source": "08",
+      "reversed": "80",
+      "joined": "080",
+      "certificate": "082080"
+    },
+    {
+      "source": "09",
+      "reversed": "90",
+      "joined": "090",
+      "certificate": "092090"
+    },
+    {
+      "source": "10",
+      "reversed": "01",
+      "joined": "101",
+      "certificate": "102101"
+    },
+    {
+      "source": "11",
+      "reversed": "11",
+      "joined": "11",
+      "certificate": "11211"
+    },
+    {
+      "source": "12",
+      "reversed": "21",
+      "joined": "121",
+      "certificate": "122121"
+    },
+    {
+      "source": "13",
+      "reversed": "31",
+      "joined": "131",
+      "certificate": "132131"
+    },
+    {
+      "source": "14",
+      "reversed": "41",
+      "joined": "141",
+      "certificate": "142141"
+    },
+    {
+      "source": "15",
+      "reversed": "51",
+      "joined": "151",
+      "certificate": "152151"
+    },
+    {
+      "source": "16",
+      "reversed": "61",
+      "joined": "161",
+      "certificate": "162161"
+    },
+    {
+      "source": "17",
+      "reversed": "71",
+      "joined": "171",
+      "certificate": "172171"
+    },
+    {
+      "source": "18",
+      "reversed": "81",
+      "joined": "181",
+      "certificate": "182181"
+    },
+    {
+      "source": "19",
+      "reversed": "91",
+      "joined": "191",
+      "certificate": "192191"
+    },
+    {
+      "source": "20",
+      "reversed": "02",
+      "joined": "202",
+      "certificate": "202202"
+    },
+    {
+      "source": "21",
+      "reversed": "12",
+      "joined": "212",
+      "certificate": "212212"
+    },
+    {
+      "source": "22",
+      "reversed": "22",
+      "joined": "22",
+      "certificate": "22222"
+    },
+    {
+      "source": "23",
+      "reversed": "32",
+      "joined": "232",
+      "certificate": "232232"
+    },
+    {
+      "source": "24",
+      "reversed": "42",
+      "joined": "242",
+      "certificate": "242242"
+    },
+    {
+      "source": "25",
+      "reversed": "52",
+      "joined": "252",
+      "certificate": "252252"
+    },
+    {
+      "source": "26",
+      "reversed": "62",
+      "joined": "262",
+      "certificate": "262262"
+    },
+    {
+      "source": "27",
+      "reversed": "72",
+      "joined": "272",
+      "certificate": "272272"
+    },
+    {
+      "source": "28",
+      "reversed": "82",
+      "joined": "282",
+      "certificate": "282282"
+    },
+    {
+      "source": "29",
+      "reversed": "92",
+      "joined": "292",
+      "certificate": "292292"
+    },
+    {
+      "source": "30",
+      "reversed": "03",
+      "joined": "303",
+      "certificate": "302303"
+    },
+    {
+      "source": "31",
+      "reversed": "13",
+      "joined": "313",
+      "certificate": "312313"
+    },
+    {
+      "source": "32",
+      "reversed": "23",
+      "joined": "323",
+      "certificate": "322323"
+    },
+    {
+      "source": "33",
+      "reversed": "33",
+      "joined": "33",
+      "certificate": "33233"
+    },
+    {
+      "source": "34",
+      "reversed": "43",
+      "joined": "343",
+      "certificate": "342343"
+    },
+    {
+      "source": "35",
+      "reversed": "53",
+      "joined": "353",
+      "certificate": "352353"
+    },
+    {
+      "source": "36",
+      "reversed": "63",
+      "joined": "363",
+      "certificate": "362363"
+    },
+    {
+      "source": "37",
+      "reversed": "73",
+      "joined": "373",
+      "certificate": "372373"
+    },
+    {
+      "source": "38",
+      "reversed": "83",
+      "joined": "383",
+      "certificate": "382383"
+    },
+    {
+      "source": "39",
+      "reversed": "93",
+      "joined": "393",
+      "certificate": "392393"
+    },
+    {
+      "source": "40",
+      "reversed": "04",
+      "joined": "404",
+      "certificate": "402404"
+    },
+    {
+      "source": "41",
+      "reversed": "14",
+      "joined": "414",
+      "certificate": "412414"
+    },
+    {
+      "source": "42",
+      "reversed": "24",
+      "joined": "424",
+      "certificate": "422424"
+    },
+    {
+      "source": "43",
+      "reversed": "34",
+      "joined": "434",
+      "certificate": "432434"
+    },
+    {
+      "source": "44",
+      "reversed": "44",
+      "joined": "44",
+      "certificate": "44244"
+    },
+    {
+      "source": "45",
+      "reversed": "54",
+      "joined": "454",
+      "certificate": "452454"
+    },
+    {
+      "source": "46",
+      "reversed": "64",
+      "joined": "464",
+      "certificate": "462464"
+    },
+    {
+      "source": "47",
+      "reversed": "74",
+      "joined": "474",
+      "certificate": "472474"
+    },
+    {
+      "source": "48",
+      "reversed": "84",
+      "joined": "484",
+      "certificate": "482484"
+    },
+    {
+      "source": "49",
+      "reversed": "94",
+      "joined": "494",
+      "certificate": "492494"
+    },
+    {
+      "source": "50",
+      "reversed": "05",
+      "joined": "505",
+      "certificate": "502505"
+    },
+    {
+      "source": "51",
+      "reversed": "15",
+      "joined": "515",
+      "certificate": "512515"
+    },
+    {
+      "source": "52",
+      "reversed": "25",
+      "joined": "525",
+      "certificate": "522525"
+    },
+    {
+      "source": "53",
+      "reversed": "35",
+      "joined": "535",
+      "certificate": "532535"
+    },
+    {
+      "source": "54",
+      "reversed": "45",
+      "joined": "545",
+      "certificate": "542545"
+    },
+    {
+      "source": "55",
+      "reversed": "55",
+      "joined": "55",
+      "certificate": "55255"
+    },
+    {
+      "source": "56",
+      "reversed": "65",
+      "joined": "565",
+      "certificate": "562565"
+    },
+    {
+      "source": "57",
+      "reversed": "75",
+      "joined": "575",
+      "certificate": "572575"
+    },
+    {
+      "source": "58",
+      "reversed": "85",
+      "joined": "585",
+      "certificate": "582585"
+    },
+    {
+      "source": "59",
+      "reversed": "95",
+      "joined": "595",
+      "certificate": "592595"
+    },
+    {
+      "source": "60",
+      "reversed": "06",
+      "joined": "606",
+      "certificate": "602606"
+    },
+    {
+      "source": "61",
+      "reversed": "16",
+      "joined": "616",
+      "certificate": "612616"
+    },
+    {
+      "source": "62",
+      "reversed": "26",
+      "joined": "626",
+      "certificate": "622626"
+    },
+    {
+      "source": "63",
+      "reversed": "36",
+      "joined": "636",
+      "certificate": "632636"
+    },
+    {
+      "source": "64",
+      "reversed": "46",
+      "joined": "646",
+      "certificate": "642646"
+    },
+    {
+      "source": "65",
+      "reversed": "56",
+      "joined": "656",
+      "certificate": "652656"
+    },
+    {
+      "source": "66",
+      "reversed": "66",
+      "joined": "66",
+      "certificate": "66266"
+    },
+    {
+      "source": "67",
+      "reversed": "76",
+      "joined": "676",
+      "certificate": "672676"
+    },
+    {
+      "source": "68",
+      "reversed": "86",
+      "joined": "686",
+      "certificate": "682686"
+    },
+    {
+      "source": "69",
+      "reversed": "96",
+      "joined": "696",
+      "certificate": "692696"
+    },
+    {
+      "source": "70",
+      "reversed": "07",
+      "joined": "707",
+      "certificate": "702707"
+    },
+    {
+      "source": "71",
+      "reversed": "17",
+      "joined": "717",
+      "certificate": "712717"
+    },
+    {
+      "source": "72",
+      "reversed": "27",
+      "joined": "727",
+      "certificate": "722727"
+    },
+    {
+      "source": "73",
+      "reversed": "37",
+      "joined": "737",
+      "certificate": "732737"
+    },
+    {
+      "source": "74",
+      "reversed": "47",
+      "joined": "747",
+      "certificate": "742747"
+    },
+    {
+      "source": "75",
+      "reversed": "57",
+      "joined": "757",
+      "certificate": "752757"
+    },
+    {
+      "source": "76",
+      "reversed": "67",
+      "joined": "767",
+      "certificate": "762767"
+    },
+    {
+      "source": "77",
+      "reversed": "77",
+      "joined": "77",
+      "certificate": "77277"
+    },
+    {
+      "source": "78",
+      "reversed": "87",
+      "joined": "787",
+      "certificate": "782787"
+    },
+    {
+      "source": "79",
+      "reversed": "97",
+      "joined": "797",
+      "certificate": "792797"
+    },
+    {
+      "source": "80",
+      "reversed": "08",
+      "joined": "808",
+      "certificate": "802808"
+    },
+    {
+      "source": "81",
+      "reversed": "18",
+      "joined": "818",
+      "certificate": "812818"
+    },
+    {
+      "source": "82",
+      "reversed": "28",
+      "joined": "828",
+      "certificate": "822828"
+    },
+    {
+      "source": "83",
+      "reversed": "38",
+      "joined": "838",
+      "certificate": "832838"
+    },
+    {
+      "source": "84",
+      "reversed": "48",
+      "joined": "848",
+      "certificate": "842848"
+    },
+    {
+      "source": "85",
+      "reversed": "58",
+      "joined": "858",
+      "certificate": "852858"
+    },
+    {
+      "source": "86",
+      "reversed": "68",
+      "joined": "868",
+      "certificate": "862868"
+    },
+    {
+      "source": "87",
+      "reversed": "78",
+      "joined": "878",
+      "certificate": "872878"
+    },
+    {
+      "source": "88",
+      "reversed": "88",
+      "joined": "88",
+      "certificate": "88288"
+    },
+    {
+      "source": "89",
+      "reversed": "98",
+      "joined": "898",
+      "certificate": "892898"
+    },
+    {
+      "source": "90",
+      "reversed": "09",
+      "joined": "909",
+      "certificate": "902909"
+    },
+    {
+      "source": "91",
+      "reversed": "19",
+      "joined": "919",
+      "certificate": "912919"
+    },
+    {
+      "source": "92",
+      "reversed": "29",
+      "joined": "929",
+      "certificate": "922929"
+    },
+    {
+      "source": "93",
+      "reversed": "39",
+      "joined": "939",
+      "certificate": "932939"
+    },
+    {
+      "source": "94",
+      "reversed": "49",
+      "joined": "949",
+      "certificate": "942949"
+    },
+    {
+      "source": "95",
+      "reversed": "59",
+      "joined": "959",
+      "certificate": "952959"
+    },
+    {
+      "source": "96",
+      "reversed": "69",
+      "joined": "969",
+      "certificate": "962969"
+    },
+    {
+      "source": "97",
+      "reversed": "79",
+      "joined": "979",
+      "certificate": "972979"
+    },
+    {
+      "source": "98",
+      "reversed": "89",
+      "joined": "989",
+      "certificate": "982989"
+    },
+    {
+      "source": "99",
+      "reversed": "99",
+      "joined": "99",
+      "certificate": "99299"
+    }
+  ],
+  "literal_doubling_59": 118,
+  "literal_duplication_59": "5959",
+  "candidate_is_post_target": true,
+  "max_overlap_fixed_words": [
+    "00",
+    "11",
+    "22",
+    "33",
+    "44",
+    "55",
+    "66",
+    "77",
+    "88",
+    "99"
+  ],
+  "widened_bound_numerators": [
+    -507395,
+    592596
+  ],
+  "same_value_rescaled_record": [
+    5925950,
+    10000000000
+  ],
+  "both_consistent_with_supplied_intervals": [
+    {
+      "hypothetical_A": "127703/20000",
+      "hypothetical_B1": "127703/20000",
+      "D": "0"
+    },
+    {
+      "hypothetical_A": "127703/20000",
+      "hypothetical_B1": "127701/20000",
+      "D": "1/10000"
+    }
+  ],
+  "example_scope": "Interval-level ambiguity only, not alternate actual BSD values",
+  "user_grammar": "OPEN: multiple possible rules; this candidate is not independently selected",
+  "BSD_zero_defect": "OPEN: no new equation from the L-function and regulator definitions",
+  "source_sha256": "e4e8e177d1e97d91ca292dc2ce7e65ca9272e93bb29cea5ad184fa5b172dd9ba"
+}

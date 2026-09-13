@@ -1,0 +1,544 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-09-12T18:56:06.505839+00:00",
+  "files": [
+    {
+      "path": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "bytes": 18103,
+      "sha256": "a735866e47e75268e8cc7272f1aa3e761f681a64c3b67b660cd7773372791b17"
+    },
+    {
+      "path": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "bytes": 13198,
+      "sha256": "a88760a237820d39ac4f6500e2092360a941e0a89d017a6fda6f93feeff53439"
+    },
+    {
+      "path": "research\\expansion-compression-2026-09-12\\README.md",
+      "bytes": 16661,
+      "sha256": "3d02e531f8581970ff11d09a4972a167bba12bde62e7224e9e6a0b03ec71ef02"
+    },
+    {
+      "path": "research\\expansion-compression-2026-09-12\\RESULTS.json",
+      "bytes": 4856,
+      "sha256": "ae7bfc0c9b3632d4c619430f97049c7d2b75a06a539da4ca7673903fc2c42e3f"
+    },
+    {
+      "path": "research\\expansion-compression-2026-09-12\\TEST-SPEC.md",
+      "bytes": 2777,
+      "sha256": "8ca346258d76a9ee607f07832836d7441c5c730edae71f8c0d72dce63957f2b2"
+    },
+    {
+      "path": "research\\expansion-compression-2026-09-12\\verify_connections.py",
+      "bytes": 7236,
+      "sha256": "705b46a3a7756542af164cdf928fc094feaccb51fb7c49d8922521ccbc8f9e5c"
+    },
+    {
+      "path": "recovered-concepts\\README.md",
+      "bytes": 3581,
+      "sha256": "87a13153dbe084a62e9d6bbab5e7d0e7a14732f1677bc6d0f7ee47c04104b80f"
+    },
+    {
+      "path": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "bytes": 8787,
+      "sha256": "ed7ff6328b9d34eaf183994f7a51b4b149c3670b348e4ebed7bedaf51aedee04"
+    }
+  ],
+  "local_links_checked": 94,
+  "local_links": [
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-open/recovered-concepts/ZERO-AND-RAILS.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-open/recovered-concepts/PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-open/recovered-concepts/RPRM-CONCEPT-RECOVERY.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/research/RPRM_OPERATIONAL_LAYER_FOUNDATION_AND_PRIME_PROGRAM_2026-08-28.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/Users/bkbee/.codex/sessions/2026/08/10/rollout-2026-08-10T09-31-01-019fec4c-73db-74c2-9079-55df4b51ab6c.jsonl:28540",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-open/recovered-concepts/ZERO-AND-RAILS.md:85",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-open/recovered-concepts/PRESTIGE-AND-NUMBER-OPERATIONS.md:66",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-open/recovered-concepts/PRESTIGE-AND-NUMBER-OPERATIONS.md:96",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-open/recovered-concepts/PRESTIGE-AND-NUMBER-OPERATIONS.md:120",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-open/recovered-concepts/PRESTIGE-AND-NUMBER-OPERATIONS.md:132",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/Quantum Research/RPRM_CENTERED_HALF_FILLING_ZERO_SCOUT_0_1_SHADOW.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/Quantum Research/RPRM_CENTERED_HALF_FILLING_ZERO_SCOUT_0_1_SHADOW.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/Quantum Research/experiments/RPRM_FINITE_ZERO_BALANCE_SHADOW_01/README.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/Quantum Research/RPRM_FOLD_LINEAGE_DYADIC_ADDRESS_AND_LOCALIZATION_SCOUT_0_1_SHADOW.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_RELATION_RESIDUAL_LENS_LOCK_CUT_ROTATION_AUDIT_105/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_ANTICIPATORY_SIGNED_CARRY_TENSION_AUDIT_116/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_PRIMITIVE_LATTICE_DIRECTION_SHELL_AUDIT_89/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_CTHULHU_ZERO_ROOT_ONE_REENTRY_AUDIT_16/PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_CTHULHU_ZERO_ROOT_ONE_REENTRY_AUDIT_16/RESULTS.json",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_FIXED_PATH_KERNEL_COMPLETE_SEAM_FIBER_EXECUTED_ORACLE_AUDIT_111/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_VERSIONED_OPERATOR_REOPEN_BIG_PEEK_AUDIT_99/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/research/RPRM_OPERATIONAL_LAYER_FOUNDATION_AND_PRIME_PROGRAM_2026-08-28.md:408",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_CTHULHU_ZERO_ROOT_ONE_REENTRY_AUDIT_16/POST_FREEZE_NEGATIVE_ZERO_SOURCE.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\HISTORICAL-RESULTS.md",
+      "target": "C:/github/RPRM-foam-development/research/RPRM_BASE_LAYERS_SELF_OTHER_AND_PLURAL_CONSTRUCTION_CORRECTION_2026-08-28.md:78",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../liar-teacher-formalization-2026-09-12/RELATED-RESEARCH.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../ym2_connected_vacuum/RETURN_TO_WILLIAM.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../ym2-connected-20260912-delivery/FINAL_EXPORT_EVIDENCE.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../ym2_connected_vacuum/NEXT_CONDITIONAL_PORTS.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../bsd-e5-test-01/ARITHMETIC_PROOF.md#a02-tower-coordinates-and-retained-readback",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../bsd-e5-completion/GENERATOR_PROOF.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../bsd-e5-completion/RETURN_TO_WILLIAM.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../bsd-e5-completion/COORDINATE_NOTE.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../ym2_connected_vacuum/CONNECTED_VACUUM.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../ym2_connected_vacuum/VACUUM_SEPARATING_WITNESS.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../ym2_connected_vacuum/REVIEW_WITNESS_MATH.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../ym2_connected_vacuum/REVIEW_PERTURBATION.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../fluid-f2-review-20260912/REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../fluid-f2-review-20260912/REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\LIVE-RESEARCH.md",
+      "target": "../ym2_signed_differences/STACKING_AND_SCALING.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "../liar-teacher-formalization-2026-09-12/README.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "../../docs/operations.md#o05",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "C:/github/RPRM-foam-development/atlas/FOUNDATION.md:127",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_ANTICIPATORY_SIGNED_CARRY_TENSION_AUDIT_116/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_VERSIONED_OPERATOR_REOPEN_BIG_PEEK_AUDIT_99/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "HISTORICAL-RESULTS.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "C:/github/RPRM-foam-development/atlas/CLAIM_LEDGER.md:491",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "LIVE-RESEARCH.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "../ym2_connected_vacuum/NEXT_CONDITIONAL_PORTS.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "LIVE-RESEARCH.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_AUDIT60_UNIT_FUTURE_CONGRUENCE_CENSUS_01/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_UTCCC_COSTED_CLOSURE_SEAM_PREFLIGHT_01/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "C:/github/RPRM-foam-development/experiments/RPRM_AUDIT60_ROBDD4_COSTED_SOURCE_APPLY_BRIDGE_01/REPORT.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "TEST-SPEC.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "verify_connections.py",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "RESULTS.json",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "../../recovered-concepts/README.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "../../recovered-concepts/NEXT-PAPER-BACKLOG.md",
+      "exists": true
+    },
+    {
+      "file": "research\\expansion-compression-2026-09-12\\README.md",
+      "target": "VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../research/liar-teacher-recovery-2026-09-12/RECOVERY.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/README.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/CONTINUATION.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/SAT-PILOT.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../research/expansion-compression-2026-09-12/README.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../research/expansion-compression-2026-09-12/HISTORICAL-RESULTS.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../research/expansion-compression-2026-09-12/LIVE-RESEARCH.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../research/core-recovery-01/README.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../research/core-recovery-r2/README.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "ZERO-AND-RAILS.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "CUBES-AND-PI-CURVES.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "RPRM-CONCEPT-RECOVERY.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "ORIGINAL-CONVERSATION-PASSAGES.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "NEXT-PAPER-BACKLOG.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "PAPER-COVERAGE-AUDIT.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\README.md",
+      "target": "../AGENTS.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "PAPER-COVERAGE-AUDIT.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/THEORY.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/liar-teacher-recovery-2026-09-12/RECOVERY.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/SAT-PILOT.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../docs/concepts.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/expansion-compression-2026-09-12/README.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/core-recovery-r2/README.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "ZERO-AND-RAILS.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "CUBES-AND-PI-CURVES.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "CUBES-AND-PI-CURVES.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "CUBES-AND-PI-CURVES.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/rprm-consolidation-c2-20260912/PAPER_ROUTING_NOTE.md",
+      "exists": true
+    },
+    {
+      "file": "recovered-concepts\\NEXT-PAPER-BACKLOG.md",
+      "target": "../research/liar-teacher-formalization-2026-09-12/RELATED-RESEARCH.md",
+      "exists": true
+    }
+  ],
+  "test_status": "PASS",
+  "assertions": 34936,
+  "script_and_frozen_spec_bindings": "MATCH",
+  "execution": "python -I -B research/expansion-compression-2026-09-12/verify_connections.py; exit 0",
+  "memory_snapshot": {
+    "source": "configured read-only current_snapshot tool",
+    "root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+    "blobs": 115,
+    "occurrences": 1932,
+    "retrieval": "Current local reports and exact corpus locators; no compile_context/cache write or database ingestion"
+  },
+  "review_scope": "Source inspection and new finite executable checks; historical campaigns not rerun; no new independent external mathematical review claimed.",
+  "delivery_audit_correction": "Initial link parser falsely treated inline mathematical code E[2](Q) as a file link; repaired by excluding Markdown code spans/fences. No mathematical check failed.",
+  "live_status_refresh": {
+    "as_of_utc": "2026-09-12 18:54:18",
+    "BSD_general_continuation": "active",
+    "YM_connected_continuation": "completed 18:53:44 UTC"
+  },
+  "limits": [
+    "Hashes bind local bytes, not mathematical truth.",
+    "Existing reports retain their written-proof and recorded-finite-test grades.",
+    "New finite checks do not establish general compression, controller optimality or a Millennium-problem result.",
+    "The knowledge-base/backlog files are live navigation; these hashes supersede their earlier navigation-file bindings only.",
+    "No historical result manifest or paper was rewritten; no task messages, database writes, publication or neighboring-campaign edits."
+  ]
+}

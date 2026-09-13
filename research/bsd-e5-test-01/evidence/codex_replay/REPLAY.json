@@ -1,0 +1,310 @@
+{
+  "started_utc": "2026-09-12T17:37:51.157485+00:00",
+  "scope": "Source replay and selected exact result comparison ONLY",
+  "python": "3.14.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "independent_codex_verification": "NOT_RUN_BY_THIS_LAUNCHER",
+  "new_two_sided_interval": "NOT_RUN_BY_THIS_LAUNCHER",
+  "stages": [
+    {
+      "stage": "descent",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-test-01\\supplied\\BSD_E5_CODEX_TEST_01\\inputs\\descent\\e5_descent.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-test-01\\evidence\\codex_replay\\descent_receipt.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.5203483999939635,
+      "receipt": "descent_receipt.json",
+      "receipt_sha256": "72099dd2578e3cab48328af9a324db0714377a9080ab023be017c0df751e1a82",
+      "executed_script_sha256": "0744cb00b206b4934c37313941170275a9b20dd87580c743aeccc8a5ae40c494"
+    },
+    {
+      "stage": "analytic",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-test-01\\supplied\\BSD_E5_CODEX_TEST_01\\inputs\\analytic\\certify_e5.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\bsd-e5-test-01\\evidence\\codex_replay\\analytic_receipt.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.13494459999492392,
+      "receipt": "analytic_receipt.json",
+      "receipt_sha256": "e21609ef10ad5bbe4c96e0ab4f73924ad9bc0d9e8de53d084200367ca441ed29",
+      "executed_script_sha256": "93719886550fd08c7488ead7031a1ebb44ae6d1da0c321b4067016120e5cfaed"
+    }
+  ],
+  "source_bindings": [
+    {
+      "path": "inputs/descent/README.md",
+      "sha256": "f1eb16a5c71266ec1255515ae14fdb8fdd3ed6bb24944d7209ccd8170ae5e56c",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/BSD_REBRIEF.md",
+      "sha256": "26b95544febe1f057e6123b6aac196a02bcf5c878ccb3a2defe0d9e1c8f5c544",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/E5_DESCENT_NOTE.md",
+      "sha256": "c85c9b1e57393608271ad1994d2bb1d9622e6c5797ced05933d11c1bb8130b63",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/e5_descent.py",
+      "sha256": "0744cb00b206b4934c37313941170275a9b20dd87580c743aeccc8a5ae40c494",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/E5_DESCENT_RECEIPT.json",
+      "sha256": "5cedd6949c6d4a70299175fb6b6ea495e6992e9d7d3a930723a3eae2fc361947",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/context/BSD_CHAT_UPDATE.md",
+      "sha256": "a436f32a39e7ce948779db181fa9a0ff06ebbc80a03b70b112ad15917fc71f29",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/context/CURRENT_STATE.md",
+      "sha256": "b93085ac125346bd609a7f73e9a464fac70e34efa6c8a07f9e937abc0e6e17df",
+      "match": true
+    },
+    {
+      "path": "inputs/analytic/ANALYTIC_NOTE.md",
+      "sha256": "218934932734425e1e7a64afcbcdea19cbca956af97f97327f04896dceb92276",
+      "match": true
+    },
+    {
+      "path": "inputs/analytic/BSD_REBRIEF.md",
+      "sha256": "926e7b306130b4831f64741f4d3e6ac370b1842f2e620e495d011b2cb26cb044",
+      "match": true
+    },
+    {
+      "path": "inputs/analytic/certify_e5.py",
+      "sha256": "93719886550fd08c7488ead7031a1ebb44ae6d1da0c321b4067016120e5cfaed",
+      "match": true
+    },
+    {
+      "path": "inputs/analytic/CERTIFICATE.json",
+      "sha256": "2dae7d4a986e56f3a446163418e5e59aacf655cfbd242c45429b73d56aa158c3",
+      "match": true
+    },
+    {
+      "path": "inputs/analytic/CONTENTS.json",
+      "sha256": "e68e15390cc6aefccc7af88f7ad811aba8f5e31bdc9d3db2ae2840d1153a758b",
+      "match": true
+    },
+    {
+      "path": "context/BSD_CHAT_UPDATE.md",
+      "sha256": "a436f32a39e7ce948779db181fa9a0ff06ebbc80a03b70b112ad15917fc71f29",
+      "match": true
+    },
+    {
+      "path": "context/CURRENT_STATE.md",
+      "sha256": "b93085ac125346bd609a7f73e9a464fac70e34efa6c8a07f9e937abc0e6e17df",
+      "match": true
+    },
+    {
+      "path": "context/sources/accepted/C1_CARRY_FORWARD.md",
+      "sha256": "0a6ba65a302efc45b473e4c30a3da3a3a794a093e074697454eca40f5f2f99b0",
+      "match": true
+    },
+    {
+      "path": "context/sources/c2/ad/AD1_DESIGN.md",
+      "sha256": "e8166aaeee2642894f7d54d657df6b87f00b23915785009011e0eae99126ab21",
+      "match": true
+    },
+    {
+      "path": "context/sources/c2/ad/AD1_RESULT.md",
+      "sha256": "3db6abd7b7169e4b1991d2aa57e37d45b20e98c461392f95b074e6270c4ad5ad",
+      "match": true
+    }
+  ],
+  "historical_result_comparisons": [
+    {
+      "stage": "descent",
+      "field": "initial_product_square_candidates",
+      "equal": true
+    },
+    {
+      "stage": "descent",
+      "field": "real_admissible",
+      "equal": true
+    },
+    {
+      "stage": "descent",
+      "field": "modular_filters",
+      "equal": true
+    },
+    {
+      "stage": "descent",
+      "field": "four_cosets",
+      "equal": true
+    },
+    {
+      "stage": "descent",
+      "field": "eight_realized_classes",
+      "equal": true
+    },
+    {
+      "stage": "descent",
+      "field": "coarse_vs_finer_example",
+      "equal": true
+    },
+    {
+      "stage": "descent",
+      "field": "decoder_tests",
+      "equal": true
+    },
+    {
+      "stage": "analytic",
+      "field": "point_counts",
+      "equal": true
+    },
+    {
+      "stage": "analytic",
+      "field": "nonzero_coefficients_through_20",
+      "equal": true
+    },
+    {
+      "stage": "analytic",
+      "field": "alpha_enclosure",
+      "equal": true
+    },
+    {
+      "stage": "analytic",
+      "field": "positive_first_term_lower_bound",
+      "equal": true
+    },
+    {
+      "stage": "analytic",
+      "field": "retained_negative_magnitude_upper_bound",
+      "equal": true
+    },
+    {
+      "stage": "analytic",
+      "field": "entire_omitted_tail_magnitude_upper_bound",
+      "equal": true
+    },
+    {
+      "stage": "analytic",
+      "field": "Lprime_lower_bound",
+      "equal": true
+    },
+    {
+      "stage": "analytic",
+      "field": "certified_conclusion",
+      "equal": true
+    },
+    {
+      "stage": "analytic",
+      "field": "finite_cube_recoding",
+      "equal": true
+    }
+  ],
+  "post_run_source_bindings": [
+    {
+      "path": "inputs/descent/README.md",
+      "sha256": "f1eb16a5c71266ec1255515ae14fdb8fdd3ed6bb24944d7209ccd8170ae5e56c",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/BSD_REBRIEF.md",
+      "sha256": "26b95544febe1f057e6123b6aac196a02bcf5c878ccb3a2defe0d9e1c8f5c544",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/E5_DESCENT_NOTE.md",
+      "sha256": "c85c9b1e57393608271ad1994d2bb1d9622e6c5797ced05933d11c1bb8130b63",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/e5_descent.py",
+      "sha256": "0744cb00b206b4934c37313941170275a9b20dd87580c743aeccc8a5ae40c494",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/E5_DESCENT_RECEIPT.json",
+      "sha256": "5cedd6949c6d4a70299175fb6b6ea495e6992e9d7d3a930723a3eae2fc361947",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/context/BSD_CHAT_UPDATE.md",
+      "sha256": "a436f32a39e7ce948779db181fa9a0ff06ebbc80a03b70b112ad15917fc71f29",
+      "match": true
+    },
+    {
+      "path": "inputs/descent/context/CURRENT_STATE.md",
+      "sha256": "b93085ac125346bd609a7f73e9a464fac70e34efa6c8a07f9e937abc0e6e17df",
+      "match": true
+    },
+    {
+      "path": "inputs/analytic/ANALYTIC_NOTE.md",
+      "sha256": "218934932734425e1e7a64afcbcdea19cbca956af97f97327f04896dceb92276",
+      "match": true
+    },
+    {
+      "path": "inputs/analytic/BSD_REBRIEF.md",
+      "sha256": "926e7b306130b4831f64741f4d3e6ac370b1842f2e620e495d011b2cb26cb044",
+      "match": true
+    },
+    {
+      "path": "inputs/analytic/certify_e5.py",
+      "sha256": "93719886550fd08c7488ead7031a1ebb44ae6d1da0c321b4067016120e5cfaed",
+      "match": true
+    },
+    {
+      "path": "inputs/analytic/CERTIFICATE.json",
+      "sha256": "2dae7d4a986e56f3a446163418e5e59aacf655cfbd242c45429b73d56aa158c3",
+      "match": true
+    },
+    {
+      "path": "inputs/analytic/CONTENTS.json",
+      "sha256": "e68e15390cc6aefccc7af88f7ad811aba8f5e31bdc9d3db2ae2840d1153a758b",
+      "match": true
+    },
+    {
+      "path": "context/BSD_CHAT_UPDATE.md",
+      "sha256": "a436f32a39e7ce948779db181fa9a0ff06ebbc80a03b70b112ad15917fc71f29",
+      "match": true
+    },
+    {
+      "path": "context/CURRENT_STATE.md",
+      "sha256": "b93085ac125346bd609a7f73e9a464fac70e34efa6c8a07f9e937abc0e6e17df",
+      "match": true
+    },
+    {
+      "path": "context/sources/accepted/C1_CARRY_FORWARD.md",
+      "sha256": "0a6ba65a302efc45b473e4c30a3da3a3a794a093e074697454eca40f5f2f99b0",
+      "match": true
+    },
+    {
+      "path": "context/sources/c2/ad/AD1_DESIGN.md",
+      "sha256": "e8166aaeee2642894f7d54d657df6b87f00b23915785009011e0eae99126ab21",
+      "match": true
+    },
+    {
+      "path": "context/sources/c2/ad/AD1_RESULT.md",
+      "sha256": "3db6abd7b7169e4b1991d2aa57e37d45b20e98c461392f95b074e6270c4ad5ad",
+      "match": true
+    }
+  ],
+  "summary": {
+    "source_files_unchanged": 17,
+    "descent_initial_candidates": 32,
+    "descent_realized_classes": 8,
+    "descent_decoder_cases": 256,
+    "analytic_lower_rational": {
+      "numerator": "615556405007957768183",
+      "denominator": "937494780448358006784"
+    },
+    "cube_candidates": 32,
+    "optional_decimal_status": "NOT_RUN"
+  },
+  "status": "REPLAY_PASS",
+  "finished_utc": "2026-09-12T17:37:52.069437+00:00"
+}

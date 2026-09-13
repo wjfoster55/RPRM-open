@@ -1,0 +1,17 @@
+{
+  "status": "FINITE_OPERATION_AUDIT_AND_FRESH_COEFFICIENT_REFINEMENT_COMPLETED",
+  "coefficient": {
+    "residue": 2301,
+    "modulus": 3125,
+    "absolute_precision": 5,
+    "base5": [
+      3,
+      3,
+      2,
+      0,
+      1
+    ],
+    "new_digit": 3
+  },
+  "full_BSD": "OPEN"
+}

@@ -1,0 +1,14 @@
+arithmetic: exit 0; 2.70s
+local_inputs: exit 0; 0.13s
+generator: exit 0; 1.82s
+interval: exit 0; 16.91s
+interval_audit: exit 0; 0.26s
+midpoint: exit 0; 0.18s
+factor_frontier: exit 0; 0.12s
+{
+  "status": "FRESH_REPLAY_AND_CONSISTENCY_CHECKS_COMPLETED",
+  "record": "C:\\github\\RPRM-open\\research\\bsd-identity-01\\runs\\return_validation\\inputs\\RUN.json",
+  "full_BSD_identity": "NOT_ESTABLISHED"
+}
+
+STDERR:

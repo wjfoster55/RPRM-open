@@ -1,0 +1,1 @@
+PASS: 7 rational four-state models; 364 matrix/control checks; half-centering controls; receipt exact.

@@ -1,0 +1,86 @@
+{
+  "claim": "Byte integrity only; not mathematical verification",
+  "files": [
+    {
+      "bytes": 15951,
+      "path": "agents/GEOMETRY.md",
+      "sha256": "b0b725c8283072d0de9f0576e13c82107f0f74074cfb134f65f34e635808d4c8"
+    },
+    {
+      "bytes": 14434,
+      "path": "agents/JOINT_RELATION.md",
+      "sha256": "267c54b4b720b6525bdfc3fdd5f322e624997b3dea3e3609bd0fee6204b77b7a"
+    },
+    {
+      "bytes": 5052,
+      "path": "agents/NUMERICAL_REVIEW.md",
+      "sha256": "da62ac71154a880eadd013e7ae19588b940a09a8bc061baabfee3bbe4b2d89f4"
+    },
+    {
+      "bytes": 11568,
+      "path": "DISTANCE_AND_SEAM.md",
+      "sha256": "335bdab991ba4de7618388b28b44210ee0f282cdc1161ea6e66dbad035841161"
+    },
+    {
+      "bytes": 800497,
+      "path": "evidence/distance.json",
+      "sha256": "c8d1d84b40ec24fb2cdedabad2d8286901370390527af9627547bac67113e5b2"
+    },
+    {
+      "bytes": 2384,
+      "path": "evidence/FILE_BINDINGS.json",
+      "sha256": "d9997a3bb477f9145ed707be193f605495f4d344eea179642df95462e4544d7d"
+    },
+    {
+      "bytes": 9125,
+      "path": "evidence/joint.json",
+      "sha256": "cd6ea27509ccbcf0df3b337211142b9a33d78b57f81b2ce11b7b5cd339e5a20b"
+    },
+    {
+      "bytes": 97595,
+      "path": "figures/joint_pairing.png",
+      "sha256": "49a6e3a24b09c314287672bfdad26f7f2c1b6c97ac74c916947a9c0608ee6de6"
+    },
+    {
+      "bytes": 25728,
+      "path": "figures/joint_pairing.svg",
+      "sha256": "4320864e5ae65d49c1753acfd3fe832509c63b0d8fc61ea3aa9fb3cf640bf819"
+    },
+    {
+      "bytes": 2227,
+      "path": "PREFREEZE.md",
+      "sha256": "cd91f526c3707033fbc66b58984d2dc8fe0bdeb057978934144004e13144dbb5"
+    },
+    {
+      "bytes": 5627,
+      "path": "PROVENANCE.md",
+      "sha256": "3dbc07bb065bf86e1a5ebbceb361c8b9e29970a349c6e26ce52b226401c2fafd"
+    },
+    {
+      "bytes": 4473,
+      "path": "README.md",
+      "sha256": "d3c8995d7050c6c9b3ab48a67f74cf4b2f1aedb4b596a618729d16845b3ae797"
+    },
+    {
+      "bytes": 8113,
+      "path": "work/check_distance.py",
+      "sha256": "d1ab3943932a25bd8bce023eebb405d138957c339e5c9640640e6490d4ab7cf0"
+    },
+    {
+      "bytes": 3957,
+      "path": "work/check_joint.py",
+      "sha256": "0e6a5677b33a35666a4ca14552aa595ad9bedce410e4ab1f7028086f0cf899e0"
+    },
+    {
+      "bytes": 4726,
+      "path": "work/draw_joint.py",
+      "sha256": "4ef6af35c81867d252b9652d17e84caf539b0f10d2d3e96f619ee869422a48ed"
+    },
+    {
+      "bytes": 3668,
+      "path": "work/package_packet.py",
+      "sha256": "6e4b7013d86b9dfcd0fdd484703656a96673add4cdb9a2ad4c251549a94867b1"
+    }
+  ],
+  "schema": "closure-seam-09-file-manifest-v1"
+}

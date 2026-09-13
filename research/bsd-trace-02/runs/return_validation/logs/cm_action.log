@@ -1,0 +1,55 @@
+{
+  "status": "EXACT_FINITE_CM_ACTION_CERTIFICATE_COMPLETED",
+  "prime_rows": [
+    {
+      "prime": 5,
+      "point_count": 8,
+      "a_prime": -2,
+      "CM_Frobenius_real_part": -1,
+      "CM_Frobenius_imaginary_absolute_value": 2,
+      "generators_mod_68": [
+        [
+          67,
+          2
+        ],
+        [
+          67,
+          66
+        ]
+      ],
+      "generated_order_so_far": 256
+    },
+    {
+      "prime": 13,
+      "point_count": 20,
+      "a_prime": -6,
+      "CM_Frobenius_real_part": -3,
+      "CM_Frobenius_imaginary_absolute_value": 2,
+      "generators_mod_68": [
+        [
+          65,
+          2
+        ],
+        [
+          65,
+          66
+        ]
+      ],
+      "generated_order_so_far": 512
+    }
+  ],
+  "group_order": 512,
+  "full_unit_group_order": 2048,
+  "mu4_intersection": [
+    [
+      1,
+      0
+    ]
+  ],
+  "mu4_times_G_equals_full_unit_group": true,
+  "frobenius_5_order": 16,
+  "involution_fixing_r": [
+    33,
+    34
+  ]
+}

@@ -1,0 +1,3475 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-12T17:27:52.436107+00:00",
+  "python": "3.13.5",
+  "code_sha256": "0744cb00b206b4934c37313941170275a9b20dd87580c743aeccc8a5ae40c494",
+  "curve": {
+    "a": -25,
+    "b": 0,
+    "base_field": "Q",
+    "identity": "O"
+  },
+  "scope": {
+    "method": "Exact rational arithmetic plus complete primitive residue enumeration; standard theorem dependencies in note",
+    "no_rank_label_input": true,
+    "no_Sage_no_database_no_L_function": true,
+    "computed": "32 real-admissible signatures, primitive mod-2/4/8 filters, eight exact rational realizations, rational halving and quotient decoder instances",
+    "universal_proof_in_note": "rank=1; Sha[2^n]=0 for all n; compatible 2-power Selmer quotient coordinates",
+    "not_claimed": [
+      "general BSD theorem",
+      "new mathematical theorem",
+      "total Sha order",
+      "odd-prime saturation",
+      "P is a full integral generator",
+      "analytic rank or L-values",
+      "performance advantage"
+    ]
+  },
+  "initial_product_square_candidates": 64,
+  "real_admissible": 32,
+  "modular_filters": {
+    "2": [
+      {
+        "signature": [
+          -10,
+          -10,
+          1
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -10,
+          -5,
+          2
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -10,
+          -2,
+          5
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -10,
+          -1,
+          10
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -5,
+          -10,
+          2
+        ],
+        "primitive_solution_count": 7,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -5,
+          -5,
+          1
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -5,
+          -2,
+          10
+        ],
+        "primitive_solution_count": 7,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -5,
+          -1,
+          5
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -2,
+          -10,
+          5
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -2,
+          -5,
+          10
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -2,
+          -2,
+          1
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -2,
+          -1,
+          2
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -1,
+          -10,
+          10
+        ],
+        "primitive_solution_count": 7,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -1,
+          -5,
+          5
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -1,
+          -2,
+          2
+        ],
+        "primitive_solution_count": 7,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          -1,
+          -1,
+          1
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          1,
+          1,
+          1
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          1,
+          2,
+          2
+        ],
+        "primitive_solution_count": 7,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          1,
+          5,
+          5
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          1,
+          10,
+          10
+        ],
+        "primitive_solution_count": 7,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          2,
+          1,
+          2
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          2,
+          2,
+          1
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "signature": [
+          2,
+          5,
+          10
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          2,
+          10,
+          5
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "signature": [
+          5,
+          1,
+          5
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          5,
+          2,
+          10
+        ],
+        "primitive_solution_count": 7,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          5,
+          5,
+          1
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          5,
+          10,
+          2
+        ],
+        "primitive_solution_count": 7,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          10,
+          1,
+          10
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          10,
+          2,
+          5
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "signature": [
+          10,
+          5,
+          2
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          10,
+          10,
+          1
+        ],
+        "primitive_solution_count": 3,
+        "first_witness": [
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    ],
+    "4": [
+      {
+        "signature": [
+          -10,
+          -10,
+          1
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -10,
+          -5,
+          2
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -10,
+          -2,
+          5
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -10,
+          -1,
+          10
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -5,
+          -10,
+          2
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -5,
+          -5,
+          1
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -5,
+          -2,
+          10
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -5,
+          -1,
+          5
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -2,
+          -10,
+          5
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -2,
+          -5,
+          10
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -2,
+          -2,
+          1
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -2,
+          -1,
+          2
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -1,
+          -10,
+          10
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -1,
+          -5,
+          5
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -1,
+          -2,
+          2
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -1,
+          -1,
+          1
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          1,
+          1,
+          1
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          1,
+          2,
+          2
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          1,
+          5,
+          5
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          1,
+          10,
+          10
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          2,
+          1,
+          2
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          2,
+          2,
+          1
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          2,
+          5,
+          10
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          2,
+          10,
+          5
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          5,
+          1,
+          5
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          5,
+          2,
+          10
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          5,
+          5,
+          1
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          5,
+          10,
+          2
+        ],
+        "primitive_solution_count": 16,
+        "first_witness": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          10,
+          1,
+          10
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          10,
+          2,
+          5
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          10,
+          5,
+          2
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          10,
+          10,
+          1
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      }
+    ],
+    "8": [
+      {
+        "signature": [
+          -10,
+          -10,
+          1
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -10,
+          -5,
+          2
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -10,
+          -2,
+          5
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -10,
+          -1,
+          10
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -5,
+          -10,
+          2
+        ],
+        "primitive_solution_count": 256,
+        "first_witness": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -5,
+          -5,
+          1
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -5,
+          -2,
+          10
+        ],
+        "primitive_solution_count": 256,
+        "first_witness": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -5,
+          -1,
+          5
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -2,
+          -10,
+          5
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -2,
+          -5,
+          10
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -2,
+          -2,
+          1
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -2,
+          -1,
+          2
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -1,
+          -10,
+          10
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -1,
+          -5,
+          5
+        ],
+        "primitive_solution_count": 128,
+        "first_witness": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          -1,
+          -2,
+          2
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          -1,
+          -1,
+          1
+        ],
+        "primitive_solution_count": 128,
+        "first_witness": [
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          1,
+          1,
+          1
+        ],
+        "primitive_solution_count": 128,
+        "first_witness": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "signature": [
+          1,
+          2,
+          2
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          1,
+          5,
+          5
+        ],
+        "primitive_solution_count": 128,
+        "first_witness": [
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "signature": [
+          1,
+          10,
+          10
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          2,
+          1,
+          2
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          2,
+          2,
+          1
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          2,
+          5,
+          10
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          2,
+          10,
+          5
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          5,
+          1,
+          5
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          5,
+          2,
+          10
+        ],
+        "primitive_solution_count": 256,
+        "first_witness": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          5,
+          5,
+          1
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          5,
+          10,
+          2
+        ],
+        "primitive_solution_count": 256,
+        "first_witness": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "signature": [
+          10,
+          1,
+          10
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          10,
+          2,
+          5
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          10,
+          5,
+          2
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      },
+      {
+        "signature": [
+          10,
+          10,
+          1
+        ],
+        "primitive_solution_count": 0,
+        "first_witness": null
+      }
+    ]
+  },
+  "four_cosets": [
+    {
+      "representative": [
+        1,
+        1,
+        1
+      ],
+      "members": [
+        [
+          -5,
+          -10,
+          2
+        ],
+        [
+          -5,
+          -2,
+          10
+        ],
+        [
+          -1,
+          -5,
+          5
+        ],
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          5,
+          2,
+          10
+        ],
+        [
+          5,
+          10,
+          2
+        ]
+      ]
+    },
+    {
+      "representative": [
+        2,
+        2,
+        1
+      ],
+      "members": [
+        [
+          -10,
+          -5,
+          2
+        ],
+        [
+          -10,
+          -1,
+          10
+        ],
+        [
+          -2,
+          -10,
+          5
+        ],
+        [
+          -2,
+          -2,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          10,
+          5
+        ],
+        [
+          10,
+          1,
+          10
+        ],
+        [
+          10,
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "representative": [
+        1,
+        2,
+        2
+      ],
+      "members": [
+        [
+          -5,
+          -5,
+          1
+        ],
+        [
+          -5,
+          -1,
+          5
+        ],
+        [
+          -1,
+          -10,
+          10
+        ],
+        [
+          -1,
+          -2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          10,
+          10
+        ],
+        [
+          5,
+          1,
+          5
+        ],
+        [
+          5,
+          5,
+          1
+        ]
+      ]
+    },
+    {
+      "representative": [
+        2,
+        1,
+        2
+      ],
+      "members": [
+        [
+          -10,
+          -10,
+          1
+        ],
+        [
+          -10,
+          -2,
+          5
+        ],
+        [
+          -2,
+          -5,
+          10
+        ],
+        [
+          -2,
+          -1,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          5,
+          10
+        ],
+        [
+          10,
+          2,
+          5
+        ],
+        [
+          10,
+          10,
+          1
+        ]
+      ]
+    }
+  ],
+  "eight_realized_classes": [
+    {
+      "epsilon": 0,
+      "torsion": "O",
+      "point": "O",
+      "signature": [
+        1,
+        1,
+        1
+      ],
+      "quadric_witness": [
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "epsilon": 0,
+      "torsion": "T0",
+      "point": {
+        "x": "0",
+        "y": "0"
+      },
+      "signature": [
+        -1,
+        -5,
+        5
+      ],
+      "quadric_witness": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "epsilon": 0,
+      "torsion": "Tplus",
+      "point": {
+        "x": "5",
+        "y": "0"
+      },
+      "signature": [
+        5,
+        2,
+        10
+      ],
+      "quadric_witness": [
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "epsilon": 0,
+      "torsion": "Tminus",
+      "point": {
+        "x": "-5",
+        "y": "0"
+      },
+      "signature": [
+        -5,
+        -10,
+        2
+      ],
+      "quadric_witness": [
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "torsion": "O",
+      "point": {
+        "x": "-4",
+        "y": "6"
+      },
+      "signature": [
+        -1,
+        -1,
+        1
+      ],
+      "quadric_witness": [
+        2,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "torsion": "T0",
+      "point": {
+        "x": "25/4",
+        "y": "75/8"
+      },
+      "signature": [
+        1,
+        5,
+        5
+      ],
+      "quadric_witness": [
+        5,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "epsilon": 1,
+      "torsion": "Tplus",
+      "point": {
+        "x": "-5/9",
+        "y": "-100/27"
+      },
+      "signature": [
+        -5,
+        -2,
+        10
+      ],
+      "quadric_witness": [
+        1,
+        5,
+        2,
+        3
+      ]
+    },
+    {
+      "epsilon": 1,
+      "torsion": "Tminus",
+      "point": {
+        "x": "45",
+        "y": "-300"
+      },
+      "signature": [
+        5,
+        10,
+        2
+      ],
+      "quadric_witness": [
+        3,
+        2,
+        5,
+        1
+      ]
+    }
+  ],
+  "coarse_vs_finer_example": {
+    "P": {
+      "x": "-4",
+      "y": "6"
+    },
+    "Q_equals_2P": {
+      "x": "1681/144",
+      "y": "-62279/1728"
+    },
+    "delta_Q": [
+      1,
+      1,
+      1
+    ],
+    "halves_Q": [
+      {
+        "point": {
+          "x": "-4",
+          "y": "6"
+        },
+        "signature": [
+          -1,
+          -1,
+          1
+        ]
+      },
+      {
+        "point": {
+          "x": "-5/9",
+          "y": "-100/27"
+        },
+        "signature": [
+          -5,
+          -2,
+          10
+        ]
+      },
+      {
+        "point": {
+          "x": "25/4",
+          "y": "75/8"
+        },
+        "signature": [
+          1,
+          5,
+          5
+        ]
+      },
+      {
+        "point": {
+          "x": "45",
+          "y": "-300"
+        },
+        "signature": [
+          5,
+          10,
+          2
+        ]
+      }
+    ],
+    "Q_level1": {
+      "m": 0,
+      "torsion": "O",
+      "remainder": {
+        "x": "-4",
+        "y": "6"
+      },
+      "trace": [
+        {
+          "step": 0,
+          "signature": [
+            1,
+            1,
+            1
+          ],
+          "bit": 0,
+          "torsion": "O",
+          "remainder": {
+            "x": "-4",
+            "y": "6"
+          }
+        }
+      ]
+    },
+    "Q_level2": {
+      "m": 2,
+      "torsion": "O",
+      "remainder": "O",
+      "trace": [
+        {
+          "step": 0,
+          "signature": [
+            1,
+            1,
+            1
+          ],
+          "bit": 0,
+          "torsion": "O",
+          "remainder": {
+            "x": "-4",
+            "y": "6"
+          }
+        },
+        {
+          "step": 1,
+          "signature": [
+            -1,
+            -1,
+            1
+          ],
+          "bit": 1,
+          "torsion": "O",
+          "remainder": "O"
+        }
+      ]
+    },
+    "O_level2": {
+      "m": 0,
+      "torsion": "O",
+      "remainder": "O",
+      "trace": [
+        {
+          "step": 0,
+          "signature": [
+            1,
+            1,
+            1
+          ],
+          "bit": 0,
+          "torsion": "O",
+          "remainder": "O"
+        },
+        {
+          "step": 1,
+          "signature": [
+            1,
+            1,
+            1
+          ],
+          "bit": 0,
+          "torsion": "O",
+          "remainder": "O"
+        }
+      ]
+    }
+  },
+  "decoder_tests": {
+    "count": 256,
+    "input_family": "mP+T, -5<=m<=10, T in E[2], n=1..4",
+    "records": [
+      {
+        "input_m": -5,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 3,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 11,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 3,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 11,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 3,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 11,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 3,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -5,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 11,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 4,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 12,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 4,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 12,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 4,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 12,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 4,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -4,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 12,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 5,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 13,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 5,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 13,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 5,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 13,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 5,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -3,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 13,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 6,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 14,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 6,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 14,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 6,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 14,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 6,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -2,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 14,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 7,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 15,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 7,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 15,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 7,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 15,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 7,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": -1,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 15,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 0,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 1,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 2,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 2,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 2,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 2,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 2,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 2,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 2,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 2,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 2,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 3,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 3,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 3,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 3,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 3,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 3,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 3,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 3,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 3,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 4,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 4,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 4,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 4,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 4,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 4,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 4,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 4,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 4,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 5,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 5,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 5,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 5,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 5,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 5,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 5,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 5,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 5,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 6,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 6,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 6,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 6,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 6,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 6,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 6,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 6,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 6,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 7,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 7,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 7,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 7,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 7,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 7,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 3,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 7,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 7,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 7,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 8,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 8,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 8,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 8,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 8,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 1,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 9,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 1,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 9,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 1,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 9,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 1,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 9,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 9,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "O",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "O",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "O",
+        "level_n": 3,
+        "output_m": 2,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "O",
+        "level_n": 4,
+        "output_m": 10,
+        "output_torsion": "O"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "T0",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "T0",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "T0",
+        "level_n": 3,
+        "output_m": 2,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "T0",
+        "level_n": 4,
+        "output_m": 10,
+        "output_torsion": "T0"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "Tplus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "Tplus",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "Tplus",
+        "level_n": 3,
+        "output_m": 2,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "Tplus",
+        "level_n": 4,
+        "output_m": 10,
+        "output_torsion": "Tplus"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "Tminus",
+        "level_n": 1,
+        "output_m": 0,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "Tminus",
+        "level_n": 2,
+        "output_m": 2,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "Tminus",
+        "level_n": 3,
+        "output_m": 2,
+        "output_torsion": "Tminus"
+      },
+      {
+        "input_m": 10,
+        "input_torsion": "Tminus",
+        "level_n": 4,
+        "output_m": 10,
+        "output_torsion": "Tminus"
+      }
+    ]
+  }
+}

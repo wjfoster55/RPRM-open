@@ -1,0 +1,10 @@
+{
+  "archive": "C:\\github\\RPRM-open\\research\\RPRM_BSD_CARRY_CENTER_16_RETURN.zip",
+  "archive_bytes": 34274,
+  "archive_sha256": "2a0fc3084222a519129399064ce9600212aaaaa78c23a316e7ead9252e5a4792",
+  "created_utc": "2026-09-13T05:23:17.486962+00:00",
+  "manifested_files": 15,
+  "source_tree_byte_comparison": true,
+  "status": "ARCHIVE_BYTES_AND_MANIFEST_VERIFIED",
+  "verified_members": 16
+}

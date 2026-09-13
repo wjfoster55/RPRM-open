@@ -1,0 +1,161 @@
+{
+  "schema": "ym2-vacuum-handoff-manifest-v1",
+  "self_excluded": "MANIFEST.json",
+  "files": [
+    {
+      "path": "accepted/donors/bsd-general-01/CARRY_BRIDGE.md",
+      "bytes": 3306,
+      "sha256": "a7590966734087b29ab08906b22be10e71c49e57a5018f4c3e9a855c352f98bc"
+    },
+    {
+      "path": "accepted/donors/bsd-operational-03/OPERATIONAL_BRIDGE.md",
+      "bytes": 6788,
+      "sha256": "dc089747cb4d3a7f9aae47c9131b779b5b1e2c650a1b127d71c09ac380edadae"
+    },
+    {
+      "path": "accepted/donors/bsd-operational-03/PADIC_HEIGHT_AUDIT.md",
+      "bytes": 16525,
+      "sha256": "8db3ed9b53c6bd114bc54e142cfcebe2a99233d65b0cc03671025ea023f0e66e"
+    },
+    {
+      "path": "accepted/donors/bsd-operational-03/RETURN_TO_WILLIAM.md",
+      "bytes": 4100,
+      "sha256": "04f51425bb6dae24458b1307e176cc1817c93491553c5692f80867f75783ae4b"
+    },
+    {
+      "path": "accepted/donors/expansion-compression-2026-09-12/README.md",
+      "bytes": 16661,
+      "sha256": "3d02e531f8581970ff11d09a4972a167bba12bde62e7224e9e6a0b03ec71ef02"
+    },
+    {
+      "path": "accepted/donors/liar-teacher-formalization-2026-09-12/README.md",
+      "bytes": 7318,
+      "sha256": "f8ac13fe5a76f26881e2bf062fb39c906e88f52d986efadcd66c48e56294075f"
+    },
+    {
+      "path": "accepted/donors/liar-teacher-formalization-2026-09-12/THEORY.md",
+      "bytes": 21508,
+      "sha256": "e91276debfccd8af6bd62e1a497142a5d27c563aadcc4a312b7619dfee83d925"
+    },
+    {
+      "path": "accepted/donors/ZERO-AND-RAILS.md",
+      "bytes": 16721,
+      "sha256": "82b33805d899cbdd64232dbfc4f87bf979098232bd2ed8a16a494dbf8156a57d"
+    },
+    {
+      "path": "accepted/overlap/accepted/estimate/COMBINED_REVIEW.md",
+      "bytes": 14344,
+      "sha256": "a8fa6b90531de4fb6fb79b6b6c2a2eddd029d953f15f7f580ba3a22487d05862"
+    },
+    {
+      "path": "accepted/overlap/accepted/estimate/CONDITIONAL_GAP_EXTENSION.md",
+      "bytes": 14200,
+      "sha256": "387ecab4983a0e8398db538d6ddc8d60e2441a179004a1806ecd6adc739f21fd"
+    },
+    {
+      "path": "accepted/overlap/accepted/estimate/SOURCE_NORM_REFINEMENT.md",
+      "bytes": 12931,
+      "sha256": "cbfccef461b79d2a4270ef52bd2f821860d88f0c157228b894c1ccba1c969ac4"
+    },
+    {
+      "path": "accepted/overlap/BLOCK_COVER.md",
+      "bytes": 20813,
+      "sha256": "3b0a7b88ab1849504b9d7e3001dfe4a40d403244fe8cd67180eb53b749ce1407"
+    },
+    {
+      "path": "accepted/overlap/OVERLAP_INVERSE.md",
+      "bytes": 14159,
+      "sha256": "c0c237ad8a1b0d91b8ff7f56c462a618d0654317f6b7eba8460b7f1df1c4f7b7"
+    },
+    {
+      "path": "accepted/overlap/RESULT.md",
+      "bytes": 13262,
+      "sha256": "a61ee10e73d784ddc273383e54efe823e0dddd269f9af37c42cb99430a73dff7"
+    },
+    {
+      "path": "accepted/YM2-overlap-cover-2026-09-12.zip",
+      "bytes": 713612,
+      "sha256": "e8486ab5b3afacc65c070c5dcb975a66e4170154f0f75245bb2a3d169a148ca3"
+    },
+    {
+      "path": "BSD_STATUS_SNAPSHOT.json",
+      "bytes": 1885,
+      "sha256": "1cebb3fd65c76bd4f664c893f6eab7c2f1bba5f8f40a0dfc1a0a7db469ebdfbc"
+    },
+    {
+      "path": "check_handoff.py",
+      "bytes": 7013,
+      "sha256": "81cf56ae4e6be885b11d7abb7f78cfca64a166a2149fc16984ffa62117554b0a"
+    },
+    {
+      "path": "COMPENSATOR.md",
+      "bytes": 12393,
+      "sha256": "6c8ae01ae49c444bdde363af868d736b82a74683cd49a9f2d81955875eda0d1e"
+    },
+    {
+      "path": "DONOR_HANDOFF.md",
+      "bytes": 13350,
+      "sha256": "1519ac67002f949c998b12748779f7eb3339992b4b5c73951ea7075b5882210a"
+    },
+    {
+      "path": "draw_handoff.py",
+      "bytes": 3118,
+      "sha256": "ef6c4ec8999d0e12f66bee2875982d2fdfbcc9ff0d541e2240ee82b70169f1e3"
+    },
+    {
+      "path": "INDEPENDENT_REVIEW.md",
+      "bytes": 9550,
+      "sha256": "06f9adc13afbdecc5ca4d713a112001471a69c1a72c0ce4f3125411ccb12eb54"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1429,
+      "sha256": "a844d461159c4e477272e7ed82f1eb22fed916d9cd54b994e3794f5f396fb216"
+    },
+    {
+      "path": "RELATED_TASKS.json",
+      "bytes": 31996,
+      "sha256": "e8f529ed07d9fc7b46d9927f5646a68133f4a5c0459bf39c7fcf0395eabe44df"
+    },
+    {
+      "path": "RESULT.md",
+      "bytes": 10927,
+      "sha256": "7d657fc0486d6ae2168b32caa11b637392ab6a570da3b4585dc72963c043ca8e"
+    },
+    {
+      "path": "RESULTS.json",
+      "bytes": 2669,
+      "sha256": "0afda6b10f137279b3d1f3b3d327d65e75862cbd1e063c75acf48227429b4bb6"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 6986,
+      "sha256": "3924f1582dfa0c6bdb5ee39eee5f6399577f5d3138f30e3a1ca11609759afc33"
+    },
+    {
+      "path": "TRIAL_REFERENCE.md",
+      "bytes": 10967,
+      "sha256": "ccdc03f843bb5eb3d1627e4655e86e9cac1bfed8074d13b58554a696a9c54c7a"
+    },
+    {
+      "path": "VACUUM_ATLAS.md",
+      "bytes": 20026,
+      "sha256": "df1a039651b7a403dde5a60758d06f74f4172373e61209dd03c4e7b0233305f5"
+    },
+    {
+      "path": "vacuum_handoff.png",
+      "bytes": 235222,
+      "sha256": "7042f4e0c66da7119540fdc25f5b670f9bcedf96ca959fd17ee002091f008f24"
+    },
+    {
+      "path": "vacuum_handoff.svg",
+      "bytes": 11712,
+      "sha256": "d42d6c0bd73843ad243ac554d448f387b110aad90fb008c9f256a37b76160486"
+    },
+    {
+      "path": "VISUAL_CHECKS.md",
+      "bytes": 579,
+      "sha256": "fd0d9adf413aec6476f2adae661d85bc1c6c1cbfefe6eac993aa9d70b1e274d8"
+    }
+  ]
+}

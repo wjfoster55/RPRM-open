@@ -1,0 +1,32 @@
+BEGIN_EXACT_COEFFICIENT_05
+VERSION|[2, 17, 4]
+SYMBOL|[1/4, -1/2, 1/4, 1/2, 0, -1/4]~
+GENERATOR_VALUES|[1/4, -1/2, 1/4, 0, -1/2, 1/4, 1/2, 0, -1/4]
+DIMENSIONS|6|1
+HECKE_THROUGH_STURM_BOUND|8
+PADIC|overconvergent_D0_raw|6|6|0
+PADIC|overconvergent_D1_raw|6|5|0
+PADIC|overconvergent_D2_raw|6|5|2725
+PADIC|overconvergent_b2_component|6|3|51
+PADIC|derivative_b2_component|6|3|51
+PADIC|overconvergent_D0_raw|8|8|0
+PADIC|overconvergent_D1_raw|8|7|0
+PADIC|overconvergent_D2_raw|8|7|65225
+PADIC|overconvergent_b2_component|8|5|2301
+PADIC|derivative_b2_component|8|5|2301
+PADIC|overconvergent_D0_raw|10|10|0
+PADIC|overconvergent_D1_raw|10|9|0
+PADIC|overconvergent_D2_raw|10|8|221475
+PADIC|overconvergent_b2_component|10|6|8551
+PADIC|derivative_b2_component|10|6|8551
+PADIC|unit_root|20|20|64139650950988
+PADIC|five_times_C5|20|20|46841671034458
+PADIC|classical_D2_raw|2|3|100
+PADIC|classical_b2_component|2|1|1
+PADIC|classical_D2_raw|3|4|225
+PADIC|classical_b2_component|3|2|1
+PADIC|classical_D2_raw|4|5|2725
+PADIC|classical_b2_component|4|3|51
+PADIC|classical_D2_raw|5|6|2725
+PADIC|classical_b2_component|5|4|426
+END_EXACT_COEFFICIENT_05

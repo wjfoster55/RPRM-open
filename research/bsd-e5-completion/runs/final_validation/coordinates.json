@@ -1,0 +1,357 @@
+{
+  "status": "CONFIRMED_AT_DECLARED_SCOPES",
+  "utc": "2026-09-12T18:28:24.292146+00:00",
+  "source_sha256": "642d21d6044ca54f45ba7ba53e2b2134fa9a13258f21a076411d824e2b7470ad",
+  "exact_curve_isomorphism": {
+    "source": "y^2=x^3-25x",
+    "target": "5v^2=u^3-u",
+    "forward": "(u,v)=(x/5,y/25)",
+    "inverse": "(x,y)=(5u,25v)",
+    "P_image": [
+      "-4/5",
+      "6/25"
+    ],
+    "O_image": "O",
+    "minus_one_zero_preimage": [
+      "-5",
+      "0"
+    ],
+    "minus_one_zero_order": 2,
+    "finite_retraction_checks": 7,
+    "transported_addition_pairs": 49,
+    "universal_support": "Exact substitution; origin-preserving curve isomorphism transports the elliptic group law."
+  },
+  "literal_pair_checks": [
+    {
+      "pair": [
+        6,
+        4
+      ],
+      "interpretation": "Only the literal x,y interpretation on the unchanged E5 equation",
+      "residual": "-50",
+      "on_e5": false
+    },
+    {
+      "pair": [
+        -6,
+        4
+      ],
+      "interpretation": "Only the literal x,y interpretation on the unchanged E5 equation",
+      "residual": "82",
+      "on_e5": false
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "interpretation": "Only the literal x,y interpretation on the unchanged E5 equation",
+      "residual": "73",
+      "on_e5": false
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "interpretation": "Only the literal x,y interpretation on the unchanged E5 equation",
+      "residual": "64",
+      "on_e5": false
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "interpretation": "Only the literal x,y interpretation on the unchanged E5 equation",
+      "residual": "28",
+      "on_e5": false
+    },
+    {
+      "pair": [
+        -1,
+        0
+      ],
+      "interpretation": "Only the literal x,y interpretation on the unchanged E5 equation",
+      "residual": "-24",
+      "on_e5": false
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "interpretation": "Only the literal x,y interpretation on the unchanged E5 equation",
+      "residual": "1",
+      "on_e5": false
+    }
+  ],
+  "explicit_generator_relabelings": [
+    {
+      "shift": [
+        3,
+        -6
+      ],
+      "forward": "(X,Y)=(x+s,y+t)",
+      "inverse": "(x,y)=(X-s,Y-t)",
+      "a_invariants": [
+        0,
+        -9,
+        12,
+        2,
+        12
+      ],
+      "P_image": [
+        "-1",
+        "0"
+      ],
+      "minus_P_image": [
+        "-1",
+        "-12"
+      ],
+      "identity_image": "O",
+      "group_pairs_checked": 49,
+      "meaning": "Same curve in new coordinates; P remains primitive. Zero Y alone no longer characterizes two-torsion because the Y-linear coefficient changes."
+    },
+    {
+      "shift": [
+        4,
+        -5
+      ],
+      "forward": "(X,Y)=(x+s,y+t)",
+      "inverse": "(x,y)=(X-s,Y-t)",
+      "a_invariants": [
+        0,
+        -12,
+        10,
+        23,
+        11
+      ],
+      "P_image": [
+        "0",
+        "1"
+      ],
+      "minus_P_image": [
+        "0",
+        "-11"
+      ],
+      "identity_image": "O",
+      "group_pairs_checked": 49,
+      "meaning": "Same curve in new coordinates; P remains primitive. Zero Y alone no longer characterizes two-torsion because the Y-linear coefficient changes."
+    }
+  ],
+  "partial_coordinate_queries": {
+    "E5_x_zero": {
+      "status": "ONE",
+      "rhs_y_squared": "0",
+      "values": [
+        "0"
+      ]
+    },
+    "E5_x_minus_one_fifth": {
+      "status": "NONE",
+      "rhs_y_squared": "624/125",
+      "reason": "Reduced rational has numerator or denominator that is not an integer square."
+    },
+    "normalized_u_minus_one_fifth": {
+      "status": "NONE",
+      "rhs_y_squared": "24/625",
+      "reason": "Reduced rational has numerator or denominator that is not an integer square."
+    }
+  },
+  "user_trace": {
+    "carrier": "ordered integer pairs, preserving both slots and their occurrences",
+    "ascending": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        6,
+        4
+      ]
+    ],
+    "descending": [
+      [
+        6,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "forward_edges": [
+      {
+        "from": [
+          0,
+          1
+        ],
+        "to": [
+          2,
+          1
+        ]
+      },
+      {
+        "from": [
+          2,
+          1
+        ],
+        "to": [
+          3,
+          4
+        ]
+      },
+      {
+        "from": [
+          3,
+          4
+        ],
+        "to": [
+          6,
+          4
+        ]
+      }
+    ],
+    "exact_inverse_on_observed_image": true,
+    "base_symbol": "--0 retained as the user's symbol; no arithmetic or orientation identification assumed",
+    "general_carry_sign_phase_rule": "OPEN: the finite trace and verbal description do not yet specify which slot changes, carry state, sign state and branch at all other inputs.",
+    "elliptic_curve_adapter": "OPEN: no map from this complete ordered-pair carrier to E(Q) and transported addition has yet been specified."
+  },
+  "two_literal_candidate_rules": [
+    {
+      "candidate": "increment_first_then_swap",
+      "edges": [
+        {
+          "from": [
+            0,
+            1
+          ],
+          "required": [
+            2,
+            1
+          ],
+          "computed": [
+            1,
+            1
+          ],
+          "matches": false
+        },
+        {
+          "from": [
+            2,
+            1
+          ],
+          "required": [
+            3,
+            4
+          ],
+          "computed": [
+            1,
+            3
+          ],
+          "matches": false
+        },
+        {
+          "from": [
+            3,
+            4
+          ],
+          "required": [
+            6,
+            4
+          ],
+          "computed": [
+            4,
+            4
+          ],
+          "matches": false
+        }
+      ],
+      "status": "REFUTED_AS_A_COMPLETE_DESCRIPTION_OF_THIS_TRACE"
+    },
+    {
+      "candidate": "swap_then_increment_first",
+      "edges": [
+        {
+          "from": [
+            0,
+            1
+          ],
+          "required": [
+            2,
+            1
+          ],
+          "computed": [
+            2,
+            0
+          ],
+          "matches": false
+        },
+        {
+          "from": [
+            2,
+            1
+          ],
+          "required": [
+            3,
+            4
+          ],
+          "computed": [
+            2,
+            2
+          ],
+          "matches": false
+        },
+        {
+          "from": [
+            3,
+            4
+          ],
+          "required": [
+            6,
+            4
+          ],
+          "computed": [
+            5,
+            3
+          ],
+          "matches": false
+        }
+      ],
+      "status": "REFUTED_AS_A_COMPLETE_DESCRIPTION_OF_THIS_TRACE"
+    }
+  ],
+  "ratio_fold": {
+    "inputs": [
+      [
+        6,
+        4
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "equal_rational_value": "3/2",
+    "different_slot_states": true,
+    "meaning": "Reducing a slash label to a rational number can discard slot/carry information."
+  },
+  "claim_boundary": "A failed literal affine-point test does not refute an RPRM coordinate change. A genuine isomorphism preserves identity, element order and primitivity; a lossy fold requires its receiver/fiber contract."
+}

@@ -1,0 +1,92 @@
+{
+  "grade": "EXACT_FINITE_ALGEBRA_AND_HOSTILE_CONTROLS",
+  "scope": "Derivative identities and signed Simpson formula controls; written general bounds are in INTERVAL_AUDIT.md",
+  "kernel": "exp(-t)*log(t/b)/t, t>=b>0",
+  "second_derivative_matches": true,
+  "fourth_derivative_matches": true,
+  "polynomial_controls": [
+    {
+      "panel": [
+        "0",
+        "1"
+      ],
+      "quartic_error": "-1/120",
+      "quintic_error": "-1/48",
+      "quintic_signed_error_bounds": [
+        "-1/24",
+        "0"
+      ]
+    },
+    {
+      "panel": [
+        "1",
+        "2"
+      ],
+      "quartic_error": "-1/120",
+      "quintic_error": "-1/16",
+      "quintic_signed_error_bounds": [
+        "-1/12",
+        "-1/24"
+      ]
+    },
+    {
+      "panel": [
+        "1/17",
+        "2/17"
+      ],
+      "quartic_error": "-1/170382840",
+      "quintic_error": "-1/386201104",
+      "quintic_signed_error_bounds": [
+        "-1/289650828",
+        "-1/579301656"
+      ]
+    },
+    {
+      "panel": [
+        "31/8",
+        "4"
+      ],
+      "quartic_error": "-1/3932160",
+      "quintic_error": "-21/4194304",
+      "quintic_signed_error_bounds": [
+        "-1/196608",
+        "-31/6291456"
+      ]
+    }
+  ],
+  "blanket_positive_J2_curvature_refuted_at": {
+    "b": "1",
+    "u": "2",
+    "bracket_upper": "-203/300"
+  },
+  "blanket_positive_H_curvature_refuted": "F_b''(b)=-exp(-b)*(2/b^2+3/b^3)<0",
+  "ceil_sqrt_integer_witnesses_checked": [
+    1,
+    4096
+  ],
+  "source_sha256": "1cca3de891ab020922d0b14a838f4458131565308b528efad137f205a19bd917",
+  "implementation_receipt_audit": {
+    "status": "PASSED",
+    "source_sha256": "87181b1ccc7622712b9f29dcb2f149abb3e0be685614535868fea3cab04c41c4",
+    "budget_sha256": "7e4724c15e8c5a23429067772ecc9f12b1298989299630bb2065751c7a325e6e",
+    "receipt_sha256": "702e808fae5643fd1e0e980dc312793ba374addf8f7b21b8e89ace2de18871ea",
+    "elementary_controls": {
+      "exp": 7,
+      "log": 6,
+      "method": "independent unscaled/unreduced exact series contained in implementation bounds"
+    },
+    "fresh_local_coefficients_compared_through": 160,
+    "independent_good_prime_character_sums_through": 160,
+    "tail_reassembled_through": 4096,
+    "nonzero_head_terms_reassembled": 27,
+    "total_panels": 7360,
+    "lambda2_interval": [
+      "1727579267/12500000",
+      "13820780907/100000000"
+    ],
+    "lambda2_width": "146771/100000000",
+    "finite_head_width": "17109081260079645/1208925819614629174706176",
+    "tail_radius": "887158659065786629989/1208925819614629174706176",
+    "limitation": "Exact ledger assembly replay plus source inspection, not an independent replay of all Simpson panel evaluations or a formal proof"
+  }
+}

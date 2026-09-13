@@ -1,0 +1,140 @@
+{
+  "purpose": "Local corpus recovery; source identity does not prove source mathematics",
+  "recovered_on": "2026-09-12",
+  "sources": [
+    {
+      "path": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/Quantum Research/RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1/USER_STEERING_AMENDMENTS_0_28_AUDIT_TO_GENERATE_ROLE_TRANSFER.md",
+      "bytes": 5280,
+      "sha256": "4556df37058401cdcccd61fa5ce60b79f8d4dbed4feaa0c45f3258e73568c702"
+    },
+    {
+      "path": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/Quantum Research/RPRM_NARIBRAIN_WORLD_MACHINE_RESEARCH_RUN_0_1/USER_STEERING_AMENDMENTS_0_29_ONE_ANCHOR_SEVEN_SHADOWS.md",
+      "bytes": 5048,
+      "sha256": "1bb52e318771b531c05c7da2f64676ea6c5e155767a53dee23f03bcdb4ed1605"
+    },
+    {
+      "path": "C:/Users/bkbee/OneDrive/DOCUME~1-DESKTOP-06BJRV0-219031/ChatGPT/Quantum Research/RPRM_RETAINED_INVOLUTION_OVERLAY_AND_ZERO_DEFECT_SCOUT_0_1_SHADOW.md",
+      "bytes": 35261,
+      "sha256": "f39d90287d05c3b05ebe513516190c69d217b07af215b3e2f3817b2174495ae5"
+    },
+    {
+      "path": "C:/github/RPRMResearch/RPRM_LIAR_TEACHER_BOUNDARY_SYNDROME_01/README.md",
+      "bytes": 1573,
+      "sha256": "258dd38f14c18441a5a0d9e0c841cd1fb40b30d1fee9b04990dff1239c249086"
+    },
+    {
+      "path": "C:/github/RPRMResearch/RPRM_LIAR_TEACHER_BOUNDARY_SYNDROME_01/NOTE.md",
+      "bytes": 10118,
+      "sha256": "94602b24a3b250d0ae1dd17ab9a2d7e11ec805bf11b9e67ecb49eb42d04e70dd"
+    },
+    {
+      "path": "C:/github/RPRMResearch/RPRM_LIAR_TEACHER_BOUNDARY_SYNDROME_01/TEST_SPEC.md",
+      "bytes": 7312,
+      "sha256": "731a3ad03fb2f07b0aa8c4eb863fe804260c48fddfcf8658ee631f8d46c0ff3f"
+    },
+    {
+      "path": "C:/github/RPRMResearch/RPRM_LIAR_TEACHER_BOUNDARY_SYNDROME_01/RESULTS.json",
+      "bytes": 3075,
+      "sha256": "14cc683598936873a7ab5038cf4715ea2b4eda065131ba022957c1f2bba88f88"
+    },
+    {
+      "path": "C:/github/RPRMResearch/RPRM_LIAR_TEACHER_BOUNDARY_SYNDROME_01/VERIFY_OUTPUT.txt",
+      "bytes": 6532,
+      "sha256": "efdb2b6a266aa391967e4de41f6838cb84f8cbc2de22a1432773eec88c989e23"
+    },
+    {
+      "path": "C:/github/RPRMResearch/RPRM_LIAR_TEACHER_BOUNDARY_SYNDROME_01/verify_liar_teacher_boundary_syndrome.py",
+      "bytes": 22955,
+      "sha256": "8250481fb9ca3d44da220c205de657a0059189464cb4c44e174da2bf9b342ca4"
+    },
+    {
+      "path": "C:/github/RPRMResearch/RPRM_LIAR_TEACHER_BOUNDARY_SYNDROME_01.zip",
+      "bytes": 23476,
+      "sha256": "0375869c80bdd32e39e1b652e939971e4ce9e5afec906e79272cf3c0f57a1f45"
+    },
+    {
+      "path": "C:/github/RPRM-foam-development/experiments/RPRM_V4_CHARACTER_MOBIUS_KEYRING_AUDIT_28/REPORT.md",
+      "bytes": 4483,
+      "sha256": "77b13212c8f91fe2419ee0b379743e7143fcb929e691b87831fc232e3f59bbf8"
+    },
+    {
+      "path": "C:/Users/bkbee/Downloads/Investigate RPRM bridge families CHATLOG.txt",
+      "bytes": 1838190,
+      "sha256": "be7b068f327cafba446f059a009a272abb1a59fa085bc9aaa97b8bf4add995d3"
+    },
+    {
+      "path": "C:/Users/bkbee/.codex/attachments/99280ade-468f-4312-bee1-d55104e58820/pasted-text.txt",
+      "bytes": 12063,
+      "sha256": "9c571df8e8e4f9e8688fa7cc3b6e4d1a6fe485e8ab1a165677c2d5aaaae3c9c8"
+    }
+  ],
+  "selected_original_user_records": 11,
+  "original_records_reopened_and_text_role_timestamp_checked": true,
+  "search_stats": {
+    "candidate_files": 978,
+    "native_files": 95,
+    "native_user_occurrences": 66,
+    "subagent_files": 883,
+    "excluded_sep12_occurrences": 1,
+    "retained_occurrences": 65,
+    "unique_user_texts": 65,
+    "candidate_files_by_root": {
+      "sessions": 978
+    },
+    "retained_record_types": {
+      "response_item": 65
+    },
+    "matching_native_files_retained": 22,
+    "copied_assistant_context_candidates": [
+      {
+        "index": 42,
+        "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T20-31-22-01a0274e-fb96-7293-8fa8-ab142e066122.jsonl",
+        "line": 5100,
+        "timestamp": "2026-08-22T15:31:26.955Z"
+      },
+      {
+        "index": 44,
+        "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T20-31-22-01a0274e-fb96-7293-8fa8-ab142e066122.jsonl",
+        "line": 5686,
+        "timestamp": "2026-08-22T15:53:11.155Z"
+      }
+    ],
+    "user_reposted_own_external_input_candidate": {
+      "index": 43,
+      "path": "C:\\Users\\bkbee\\.codex\\sessions\\2026\\08\\21\\rollout-2026-08-21T20-31-22-01a0274e-fb96-7293-8fa8-ab142e066122.jsonl",
+      "line": 5118,
+      "timestamp": "2026-08-22T15:32:18.115Z"
+    },
+    "coverage_note": "Lexical candidate coverage only; 883 subagent-source files deliberately excluded; native user role does not itself authenticate the authorship of pasted prose; selected excerpts were inspected for this."
+  },
+  "fabric": {
+    "packet_id": "packet:73a3841b69e6a70f949c2165e8c0f263164ede422090eadcb8fb69750f38e030",
+    "snapshot_root": "944da1fef7bb71be819df694599f9908b878cd50e515bd02f973c50fa69adb2e",
+    "namespace": "rprm-alpha",
+    "objective": "liars truth teller teachers student three seven",
+    "lexical_candidates": 406,
+    "omitted_records": 399,
+    "visible_conflicts": [],
+    "selected_members_relevant": false,
+    "omission_search_objective": "liars teachers",
+    "omission_search_matches": 0,
+    "limits": "Lexical indexed packet; direct source search supplied the relevant evidence. No global absence conclusion."
+  },
+  "fresh_replay": {
+    "executed_on": "2026-09-12",
+    "command": "python -I -B C:\\github\\RPRMResearch\\RPRM_LIAR_TEACHER_BOUNDARY_SYNDROME_01\\verify_liar_teacher_boundary_syndrome.py",
+    "exit_code": 0,
+    "observed_stdout_summary": [
+      "RECEIPTS: 62 PASS, 0 FAIL",
+      "EXACT_ASSERTIONS: 310462 PASS, 0 FAIL"
+    ],
+    "record_kind": "Summary of stdout observed in this recovery task, not a regenerated historical receipt",
+    "limits": [
+      "Finite fixtures only; no independent general soundness theorem",
+      "Hamming-15 ordinary-double-miscorrection enumeration is skipped; its zero counter is not a mathematical zero result",
+      "Some small hostile checks are illustrative assertions"
+    ],
+    "source_verifier_and_historical_output_hashes_match_results": true,
+    "zip_hash_matches_prior_composition_seal_citation": true
+  }
+}

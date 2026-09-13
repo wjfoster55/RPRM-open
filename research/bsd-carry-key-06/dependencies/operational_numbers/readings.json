@@ -1,0 +1,110 @@
+{
+  "schema": "rprm-operational-readings/v1",
+  "rule": "These entries are concurrent prompts. No entry overrides exact arithmetic or proves its own construction history.",
+  "digits": {
+    "0": [
+      {
+        "id": "typed_zero_warning",
+        "lane": "RPRM_READING",
+        "gloss": "Zero may be a numeric identity, empty state, inactive state, or port; inspect the carrier type.",
+        "missing": "named carrier and receiver"
+      }
+    ],
+    "1": [
+      {
+        "id": "ancestry_seed",
+        "lane": "RPRM_READING",
+        "gloss": "One may be acting as the seed of the double-plus-one ancestry 1 -> 3 -> 7 -> 15.",
+        "missing": "declared ancestry carrier"
+      }
+    ],
+    "2": [
+      {
+        "id": "span_receipt",
+        "lane": "RPRM_READING",
+        "gloss": "Two may be acting as a gap or span receipt between named endpoints.",
+        "missing": "endpoint receiver"
+      }
+    ],
+    "3": [
+      {
+        "id": "three_nine_echo",
+        "lane": "RPRM_READING",
+        "gloss": "Three may announce a nine shadow; the exact decimal receipt is 3 squared equals 9.",
+        "missing": "adapter if used beyond decimal squaring"
+      }
+    ],
+    "4": [
+      {
+        "id": "midpoint_or_square",
+        "lane": "RPRM_READING",
+        "gloss": "Four may be a square, a midpoint, or a four-slot lock depending on the receiver.",
+        "missing": "named receiver"
+      }
+    ],
+    "5": [
+      {
+        "id": "half_base_endpoint",
+        "lane": "RPRM_READING",
+        "gloss": "Five may be acting as the half-base endpoint or as the held-still N coordinate.",
+        "missing": "base-ten or endpoint adapter"
+      }
+    ],
+    "6": [
+      {
+        "id": "fake_six_computed_corner",
+        "lane": "RPRM_READING",
+        "gloss": "Six may be wearing a computed-corner role instead of arriving as an independent source coordinate.",
+        "missing": "receiver proving source-versus-computed lineage"
+      }
+    ],
+    "7": [
+      {
+        "id": "all_on_or_ancestry_edge",
+        "lane": "RPRM_READING",
+        "gloss": "Seven may be an all-on three-bit address or the last pre-seam node of 1 -> 3 -> 7.",
+        "missing": "bit-order or ancestry receiver"
+      }
+    ],
+    "8": [
+      {
+        "id": "paired_four_negative_half",
+        "lane": "RPRM_READING",
+        "gloss": "Eight may be inspected as two four-coordinates with one candidate shadow or negative-half role.",
+        "missing": "named fold, sign, or abduction receiver; coordinate duplication alone is insufficient"
+      }
+    ],
+    "9": [
+      {
+        "id": "minus_one_or_carry_brink",
+        "lane": "RPRM_READING",
+        "gloss": "Nine may be a decimal minus-one residue or the column immediately before a successor carry.",
+        "missing": "modular or positional operation"
+      }
+    ]
+  },
+  "sequences": [
+    {
+      "id": "nine_one_carry_brink",
+      "pattern": "91",
+      "lane": "RPRM_READING",
+      "gloss": "Nine beside one can prompt the carry-brink lens; the exact receipt is 9 + 1 = 10, not adjacency by itself.",
+      "missing": "declared decimal successor/carry receiver"
+    },
+    {
+      "id": "three_nine_root_square",
+      "pattern": "39",
+      "lane": "RPRM_READING",
+      "gloss": "Three beside nine can prompt a root-square lens because 3 squared equals 9.",
+      "missing": "operation that makes adjacency consequential"
+    },
+    {
+      "id": "p_orbit_vacancy_toggle",
+      "pattern": "1234679",
+      "lane": "OPEN_HYPOTHESIS",
+      "gloss": "This digit set differs from its P-image only by toggling membership across the orbit {2,8}.",
+      "missing": "receiver showing why that single-orbit vacancy predicts anything downstream"
+    }
+  ]
+}
+

@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "new_rollouts": 2,
+  "saved_panel_arithmetic": "PASS",
+  "output": "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-evidence\\F1.json"
+}

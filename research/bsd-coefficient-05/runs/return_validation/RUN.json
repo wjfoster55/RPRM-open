@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-09-12T23:50:19.342003+00:00",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "gp_executable": "C:\\github\\RPRM-open\\research\\bsd-coefficient-05\\runtime\\gp64-2-17-4.exe",
+  "gp_sha256": "518ea54d23832211356c99d1bb58b74a3f0acd354a965543e7bcca9b34030119",
+  "source_snapshot": {
+    "coefficient.gp": "80d308add8c091086028b5718cb4c94a8210be2251f511954412fa1b02da4938",
+    "padic_height.py": "814d864a6785d9122f86d379398f9c18bcf213f98936bd1c74d6fe0b8d909fda",
+    "rational_ec.py": "e7b78d2a5495334bfd7229b955db0679e1453935c4c1b80ec309b19b0e672246",
+    "readback.py": "751541133f74466225caa2ad9afab4ba4822b68d21a68e4b5ba2fca06d456cf9",
+    "run_coefficient.py": "c09c2a49690d40fbea2281ae622ef55b8e282de540bbfdca1436769ad4c94fd6"
+  },
+  "saved_computational_PASS_used_as_input": false,
+  "status": "ANALYTIC_COEFFICIENT_AND_INDEPENDENT_READBACK_VERIFIED",
+  "jobs": [
+    {
+      "name": "analytic",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 4.438176099967677,
+      "log": "logs/analytic.log",
+      "sha256": "31d052951004915aea6d8efaa50c56737f1b42336d58cfaf91fb7c6324e61e25"
+    },
+    {
+      "name": "arithmetic",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.13157839997438714,
+      "log": "logs/arithmetic.log",
+      "sha256": "508c63d4839e04065bcaa3961d0fd180da15dd8ee4708f875d47a21f4ec75eb0"
+    },
+    {
+      "name": "readback",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 0.13424089999170974,
+      "log": "logs/readback.log",
+      "sha256": "af9f0a274fce9eeb76741fae0acf4748fd1029064b25d271bddaaa8e905dbf87"
+    }
+  ],
+  "full_BSD": "OPEN",
+  "total_Sha": "OPEN",
+  "elapsed_seconds": 4.730619599984493,
+  "evidence_sha256": {
+    "coefficient_readback.json": "f4635aa615ee5cc5b33085df9d160aec1b1289dc2380ccbe7062e9752d25a471",
+    "padic_height.json": "67280b09f39150b4a2db5915179eb0a0af183cb6ecbbfab60cb980ad5188566c"
+  }
+}

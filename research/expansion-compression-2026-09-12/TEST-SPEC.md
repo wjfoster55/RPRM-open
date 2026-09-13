@@ -1,0 +1,13 @@
+# Expansion/compression connection checks — frozen small scope
+
+Written 12 September 2026 before creating or running the new verifier. This is a finite illustration and source-connection check, not a replay of the historical campaigns or a general SAT/BSD/Yang–Mills experiment.
+
+1. **Additive shifted-bit histories.** Enumerate every binary word of length zero through twelve. Interpret each bit b as the rational increment b−3/5. Independently evaluate its rational sum and compare with the compressed record (n,k), where k counts ones, and with incremental (integer winding, phase in fifths). Verify every next-bit update within the cap. At each length enumerate complete fibers: n+1 totals and binomial(n,k) words per total. Modulo-one phase must be independent of k at fixed n. Check that retaining just phase loses future total, just total loses mean when n is absent, and (n,k) loses ordered-bit readout. These are changed receivers, not failures of exact additive compression.
+
+2. **Versioned operator language from Audit99.** Fix strong source h∈{0,…,59}, initial visible Peek floor(h/12), and cyclic additions by the six action sets {12}, {12,18}, {12,18,20}, {12,18,20,25}, {12,18,20}, {12}. Starting afresh from Peek equivalence, compute each complete operational partition by Moore refinement. Compare its full classes with floor(h/g), where g is the gcd of 60 and that stage's actions. Check exact quotient updates, all reached states, mixed-radix migration (q,s)↔q′ and reverse coarsening. Expected class counts are 5,10,30,60,30,5. These are operator-version changes on one fixed source, not newly generated source states. Removing an action is allowed only when that future is no longer required.
+
+3. **Noncompositional terminal Fold.** In the supplied four-element XOR group, compare the Boolean receiver “is identity?” for all operation pairs. Exhaust all sixteen binary update tables; none may compute the product's identity bit from the two input identity bits for every pair. The full two-bit group element must remain available for arbitrary multiplication; the final bit is exact at its own terminal receiver.
+
+4. **Joint uncertainty.** Compare the exact two-bit relations {00,11} and {01,10}; they have the same one-coordinate projections but disjoint total-sum supports. Dropping their pairing must be detected. Also compare the exact rational sum variances of independent fair bits and two copies of the same fair bit.
+
+Any mathematical mismatch aborts with a saved FAIL receipt and preserved exception. PASS claims only the declared finite implementation checks. No runtime comparison, optimal compressor, arbitrary-operator algorithm, probabilistic independence assumption or unbounded complexity conclusion is part of this test.

@@ -1,0 +1,105 @@
+<div id="keyring15">
+  <h3>Slide the hoops; change the view</h3>
+  <div class="viz-row" aria-label="Loop labels">
+    <span><span class="kr-swatch kr-i" aria-hidden="true"></span>I · integer 2.</span>
+    <span><span class="kr-swatch kr-m" aria-hidden="true"></span>M · middle 0340</span>
+    <span><span class="kr-swatch kr-t" aria-hidden="true"></span>T · paired tails</span>
+    <span><span class="kr-swatch kr-k" aria-hidden="true"></span>K · connector</span>
+  </div>
+  <canvas role="img" aria-label="Three small hoops can slide closer together and around a fourth connector hoop. Each remains linked once to the connector. A square marks a fixed point on the connector. Separate controls change the viewing direction.">Three movable hoops threaded by one marked connector.</canvas>
+  <div class="viz-controls">
+    <label class="form-label" for="ks-spacing">Hoop spacing <output id="ks-spacing-value">35°</output>
+      <input class="form-range" id="ks-spacing" type="range" min="12" max="120" step="1" value="35">
+    </label>
+    <label class="form-label" for="ks-slide">Slide around connector <output id="ks-slide-value">0°</output>
+      <input class="form-range" id="ks-slide" type="range" min="-180" max="180" step="1" value="0">
+    </label>
+    <label class="form-label" for="ks-orbit">View rotation <output id="ks-orbit-value">−40°</output>
+      <input class="form-range" id="ks-orbit" type="range" min="-180" max="180" step="1" value="-40">
+    </label>
+    <label class="form-label" for="ks-tilt">View tilt <output id="ks-tilt-value">55°</output>
+      <input class="form-range" id="ks-tilt" type="range" min="0" max="90" step="1" value="55">
+    </label>
+  </div>
+</div>
+<style>
+#keyring15 canvas { display:block; width:100%; height:340px; }
+#keyring15 .kr-swatch { display:inline-block; width:12px; height:4px; vertical-align:middle; margin-right:5px; }
+#keyring15 .kr-i { background:var(--viz-series-1); }
+#keyring15 .kr-m { background:var(--viz-series-2); }
+#keyring15 .kr-t { background:var(--viz-series-3); }
+#keyring15 .kr-k { background:var(--viz-series-4); }
+</style>
+<script>
+(() => {
+  const root=document.getElementById('keyring15'),canvas=root.querySelector('canvas'),ctx=canvas.getContext('2d');
+  const names=['spacing','slide','orbit','tilt'];
+  const controls=Object.fromEntries(names.map(n=>[n,root.querySelector('#ks-'+n)]));
+  const outputs=Object.fromEntries(names.map(n=>[n,root.querySelector('#ks-'+n+'-value')]));
+  const swatches=['i','m','t','k'].map(n=>root.querySelector('.kr-'+n));
+  const add=(a,b)=>a.map((v,i)=>v+b[i]),mul=(a,s)=>a.map(v=>v*s);
+  const cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+  let faces=[],centers=[],geometryKey='',queued=false;
+  function makeHoop(center,u,v,radius,tube,color) {
+    const normal=cross(u,v),rings=[],count=120,sides=8;
+    for(let i=0;i<count;i++) {
+      const t=2*Math.PI*i/count,radial=add(mul(u,Math.cos(t)),mul(v,Math.sin(t))),p=add(center,mul(radial,radius)),section=[];
+      for(let j=0;j<sides;j++) {
+        const s=2*Math.PI*j/sides;
+        section.push(add(p,add(mul(radial,tube*Math.cos(s)),mul(normal,tube*Math.sin(s)))));
+      }
+      rings.push(section);
+    }
+    for(let i=0;i<count;i++)for(let j=0;j<sides;j++)faces.push({color,points:[rings[i][j],rings[(i+1)%count][j],rings[(i+1)%count][(j+1)%sides],rings[i][(j+1)%sides]]});
+  }
+  function rebuild() {
+    const key=controls.spacing.value+','+controls.slide.value;
+    if(key===geometryKey)return;
+    geometryKey=key;faces=[];centers=[];
+    const a=Number(controls.spacing.value)*Math.PI/180,phi=Number(controls.slide.value)*Math.PI/180;
+    [-a,0,a].forEach((offset,i)=>{
+      const theta=phi+offset,u=[Math.cos(theta),Math.sin(theta),0],center=mul(u,3);
+      centers.push(center);makeHoop(center,u,[0,0,1],0.75,0.075,i);
+    });
+    makeHoop([0,0,0],[1,0,0],[0,1,0],3,0.055,3);
+  }
+  function draw() {
+    queued=false;rebuild();
+    const width=canvas.clientWidth,height=340;if(!width||!ctx)return;
+    const ratio=window.devicePixelRatio||1;
+    canvas.width=Math.round(width*ratio);canvas.height=Math.round(height*ratio);
+    ctx.setTransform(ratio,0,0,ratio,0,0);ctx.clearRect(0,0,width,height);
+    const yaw=Number(controls.orbit.value)*Math.PI/180,pitch=Number(controls.tilt.value)*Math.PI/180;
+    const cy=Math.cos(yaw),sy=Math.sin(yaw),cp=Math.cos(pitch),sp=Math.sin(pitch);
+    const transform=([x,y,z])=>{const xx=cy*x-sy*y,yy=sy*x+cy*y;return [xx,cp*yy-sp*z,sp*yy+cp*z];};
+    const transformed=faces.map(f=>{const p=f.points.map(transform);return {points:p,color:f.color,depth:p.reduce((s,q)=>s+q[2],0)/p.length};});
+    const labelPoints=centers.map(c=>transform(add(c,[0,0,-1.13])));
+    const marker=transform([-3,0,0]);
+    const bounds=[...transformed.flatMap(f=>f.points),...labelPoints,marker];
+    let left=Infinity,right=-Infinity,bottom=Infinity,top=-Infinity;
+    for(const p of bounds){left=Math.min(left,p[0]);right=Math.max(right,p[0]);bottom=Math.min(bottom,p[1]);top=Math.max(top,p[1]);}
+    const scale=Math.min((width-48)/(right-left),(height-58)/(top-bottom));
+    const screen=p=>[width/2+scale*(p[0]-(left+right)/2),height/2-scale*(p[1]-(top+bottom)/2)];
+    const colors=swatches.map(s=>getComputedStyle(s).backgroundColor);
+    transformed.sort((a,b)=>a.depth-b.depth);
+    for(const f of transformed){ctx.fillStyle=colors[f.color];ctx.beginPath();f.points.forEach((p,i)=>{const [x,y]=screen(p);if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});ctx.closePath();ctx.fill();}
+    ctx.fillStyle=getComputedStyle(root).color;ctx.font='500 14px '+getComputedStyle(root).fontFamily;ctx.textAlign='center';ctx.textBaseline='middle';
+    const [mx,my]=screen(marker);ctx.fillRect(mx-3,my-3,6,6);
+    const candidates=labelPoints.map((p,i)=>({name:'IMT'[i],point:screen(p)}));
+    candidates.push({name:'K',point:[mx,my-17]});
+    const placed=[];
+    for(const c of candidates){let [x,y]=c.point;x=Math.max(12,Math.min(width-12,x));y=Math.max(12,Math.min(height-12,y));
+      for(let j=0;j<12&&placed.some(p=>Math.abs(p[0]-x)<19&&Math.abs(p[1]-y)<18);j++)y=y+18<height-10?y+18:y-36;
+      y=Math.max(12,Math.min(height-12,y));ctx.fillText(c.name,x,y);placed.push([x,y]);}
+    for(const n of names)outputs[n].value=controls[n].value+'°';
+    root.dataset.rendered='true';root.dataset.state=names.map(n=>controls[n].value).join(',');
+    root.dataset.minCenterlineDistance=String(4.5*Math.sin(Number(controls.spacing.value)*Math.PI/360));
+  }
+  function schedule(){if(!queued){queued=true;requestAnimationFrame(draw);}}
+  for(const n of names)controls[n].addEventListener('input',schedule);
+  new ResizeObserver(schedule).observe(canvas);
+  new MutationObserver(schedule).observe(document.documentElement,{attributes:true,attributeFilter:['class','style','data-theme']});
+  if(window.matchMedia)window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',schedule);
+  draw();
+})();
+</script>

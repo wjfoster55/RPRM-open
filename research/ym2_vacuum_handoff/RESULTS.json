@@ -1,0 +1,121 @@
+{
+  "schema": "ym2-vacuum-handoff-controls-v1",
+  "compensator": {
+    "W": "3/2",
+    "Lambda": "1",
+    "normalized": [
+      "3/5",
+      "2/5"
+    ],
+    "signed_contrast": "-1/5",
+    "integer_triples": 8000,
+    "balanced_maximizers": 20,
+    "unequal_weight_controls": [
+      {
+        "third_weight": "1/5",
+        "gain": "6/5"
+      },
+      {
+        "third_weight": "2/5",
+        "gain": "7/5"
+      },
+      {
+        "third_weight": "1/2",
+        "gain": "15/11"
+      },
+      {
+        "third_weight": "3/5",
+        "gain": "4/3"
+      },
+      {
+        "third_weight": "1",
+        "gain": "5/4"
+      }
+    ]
+  },
+  "two_state_control": {
+    "carrier": "auxiliary two-state operator, not SU(2)",
+    "actual_gap": "2",
+    "reference_gap": "5/2",
+    "residual": [
+      "-1",
+      "1/2"
+    ],
+    "transferred_lower_bound": "13/10"
+  },
+  "reference_gap_scope": {
+    "q_reference": "mr",
+    "D_reference": "2mr/3",
+    "reference_window_ratio_to_old_actual_window": "128/9",
+    "warning": "Reference operator only; no actual YM interval extension established."
+  },
+  "plaquette_residual_controls": [
+    {
+      "plaquettes": 1,
+      "r": "1/10",
+      "residual_oscillation": "1/1800"
+    },
+    {
+      "plaquettes": 2,
+      "r": "1/10",
+      "residual_oscillation": "1/900"
+    },
+    {
+      "plaquettes": 3,
+      "r": "1/10",
+      "residual_oscillation": "1/600"
+    },
+    {
+      "plaquettes": 4,
+      "r": "1/10",
+      "residual_oscillation": "1/450"
+    }
+  ],
+  "auxiliary_binary_mixture": [
+    {
+      "sites": 2,
+      "variance": "5/8",
+      "rayleigh": "3/4",
+      "upper_bound": "4/5"
+    },
+    {
+      "sites": 3,
+      "variance": "1/2",
+      "rayleigh": "3/5",
+      "upper_bound": "2/3"
+    },
+    {
+      "sites": 4,
+      "variance": "7/16",
+      "rayleigh": "195/392",
+      "upper_bound": "4/7"
+    },
+    {
+      "sites": 5,
+      "variance": "2/5",
+      "rayleigh": "87/205",
+      "upper_bound": "1/2"
+    },
+    {
+      "sites": 6,
+      "variance": "3/8",
+      "rayleigh": "3785/10248",
+      "upper_bound": "4/9"
+    },
+    {
+      "sites": 7,
+      "variance": "5/14",
+      "rayleigh": "24459/74825",
+      "upper_bound": "2/5"
+    },
+    {
+      "sites": 8,
+      "variance": "11/32",
+      "rayleigh": "1720605/5872592",
+      "upper_bound": "4/11"
+    }
+  ],
+  "status": "PASS",
+  "assertions": 19621,
+  "evidence_ceiling": "New finite exact controls. General SU(2), all-spin, all-volume and actual-correction claims require the written proofs and supplied ports."
+}

@@ -1,0 +1,566 @@
+{
+  "schema": "ym2_connected_vacuum_exact_polynomials_v1",
+  "status": "PASS",
+  "evidence_grade": "Exact rational finite checks; written analytic proofs remain separate",
+  "carrier": "Q[a,b,w] with accepted SU(2) two-square Haar law",
+  "variables_in_order": [
+    "a",
+    "b",
+    "w"
+  ],
+  "checks": [
+    {
+      "name": "constant_kernel",
+      "passed": true,
+      "polynomial": []
+    },
+    {
+      "name": "left_square_eigenvalue",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": "6"
+        }
+      ]
+    },
+    {
+      "name": "right_square_eigenvalue",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": "6"
+        }
+      ]
+    },
+    {
+      "name": "left_centered_square",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-4"
+        },
+        {
+          "powers_a_b_w": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": "16"
+        }
+      ]
+    },
+    {
+      "name": "right_centered_square",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-4"
+        },
+        {
+          "powers_a_b_w": [
+            0,
+            2,
+            0
+          ],
+          "coefficient": "16"
+        }
+      ]
+    },
+    {
+      "name": "adjacent_product",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "powers_a_b_w": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": "13"
+        }
+      ]
+    },
+    {
+      "name": "outer_loop",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": "9"
+        }
+      ]
+    },
+    {
+      "name": "order_one_eigen_equation",
+      "passed": true,
+      "polynomial": []
+    },
+    {
+      "name": "order_two_eigen_equation",
+      "passed": true,
+      "polynomial": []
+    },
+    {
+      "name": "unnormalized_log_second_order",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1/96"
+        },
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": "2/351"
+        },
+        {
+          "powers_a_b_w": [
+            0,
+            2,
+            0
+          ],
+          "coefficient": "-1/144"
+        },
+        {
+          "powers_a_b_w": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-1/234"
+        },
+        {
+          "powers_a_b_w": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": "-1/144"
+        }
+      ]
+    },
+    {
+      "name": "normalized_log_second_order",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-7/288"
+        },
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": "2/351"
+        },
+        {
+          "powers_a_b_w": [
+            0,
+            2,
+            0
+          ],
+          "coefficient": "-1/144"
+        },
+        {
+          "powers_a_b_w": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-1/234"
+        },
+        {
+          "powers_a_b_w": [
+            2,
+            0,
+            0
+          ],
+          "coefficient": "-1/144"
+        }
+      ]
+    },
+    {
+      "name": "disconnected_product_action",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "name": "disconnected_pair_equation",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": "1/3"
+        }
+      ]
+    },
+    {
+      "name": "disconnected_log_cross_cancels",
+      "passed": true,
+      "polynomial": []
+    },
+    {
+      "name": "adjacent_pair_equation",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": "1/3"
+        }
+      ]
+    },
+    {
+      "name": "adjacent_log_cross_survives",
+      "passed": true,
+      "polynomial": [
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": "2/351"
+        },
+        {
+          "powers_a_b_w": [
+            1,
+            1,
+            0
+          ],
+          "coefficient": "-1/234"
+        }
+      ]
+    }
+  ],
+  "checks_passed": 16,
+  "haar_moments": {
+    "a": "0",
+    "b": "0",
+    "w": "0",
+    "a2": "1/4",
+    "b2": "1/4",
+    "ab": "0",
+    "w2": "1/4",
+    "abw": "1/16"
+  },
+  "coefficients": {
+    "u1": [
+      {
+        "powers_a_b_w": [
+          0,
+          1,
+          0
+        ],
+        "coefficient": "1/6"
+      },
+      {
+        "powers_a_b_w": [
+          1,
+          0,
+          0
+        ],
+        "coefficient": "1/6"
+      }
+    ],
+    "u2": [
+      {
+        "powers_a_b_w": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-1/192"
+      },
+      {
+        "powers_a_b_w": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": "1/351"
+      },
+      {
+        "powers_a_b_w": [
+          0,
+          2,
+          0
+        ],
+        "coefficient": "1/96"
+      },
+      {
+        "powers_a_b_w": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "1/39"
+      },
+      {
+        "powers_a_b_w": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": "1/96"
+      }
+    ],
+    "e2": "-1/12",
+    "e3": "0",
+    "log_psi_squared_r2": [
+      {
+        "powers_a_b_w": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-1/96"
+      },
+      {
+        "powers_a_b_w": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": "2/351"
+      },
+      {
+        "powers_a_b_w": [
+          0,
+          2,
+          0
+        ],
+        "coefficient": "-1/144"
+      },
+      {
+        "powers_a_b_w": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "-1/234"
+      },
+      {
+        "powers_a_b_w": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": "-1/144"
+      }
+    ],
+    "log_rho_r2": [
+      {
+        "powers_a_b_w": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": "-7/288"
+      },
+      {
+        "powers_a_b_w": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": "2/351"
+      },
+      {
+        "powers_a_b_w": [
+          0,
+          2,
+          0
+        ],
+        "coefficient": "-1/144"
+      },
+      {
+        "powers_a_b_w": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "-1/234"
+      },
+      {
+        "powers_a_b_w": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": "-1/144"
+      }
+    ],
+    "connected_pair_r2": [
+      {
+        "powers_a_b_w": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": "2/351"
+      },
+      {
+        "powers_a_b_w": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "-1/234"
+      }
+    ]
+  },
+  "normalization": {
+    "mean_psi": "1",
+    "mean_u1": "0",
+    "mean_u2": "0",
+    "mean_psi_squared_r2": "1/72"
+  },
+  "hostile_control": {
+    "incorrect_disconnected_inverse_on_adjacent_pair": [
+      {
+        "powers_a_b_w": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "1/36"
+      }
+    ],
+    "nonzero_residual": [
+      {
+        "powers_a_b_w": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": "-1/36"
+      },
+      {
+        "powers_a_b_w": [
+          1,
+          1,
+          0
+        ],
+        "coefficient": "1/36"
+      }
+    ],
+    "outcome": "REJECT"
+  },
+  "forgotten_w_jet_control": {
+    "points": [
+      [
+        "0",
+        "0",
+        "1/2"
+      ],
+      [
+        "0",
+        "0",
+        "-1/2"
+      ]
+    ],
+    "equal_retained_coordinates": [
+      "a",
+      "b"
+    ],
+    "log_r2_difference": "2/351",
+    "claim_ceiling": "Exact Taylor coefficient separation; actual-density interval proved separately"
+  },
+  "u2_supremum_bound": "991/22464",
+  "analytic_claims_not_machine_verified": [
+    "Rank-one spectral projection and mean-normalized eigenvector analytic on |r|<3/2",
+    "Cauchy L2 remainder bound |r|^3/[2 sqrt(2)(1-|r|)] on |r|<1",
+    "Fixed-graph Ck log remainder from source elliptic regularity",
+    "Arbitrary admitted square/cubic graph second-order connected-support theorem"
+  ],
+  "not_claimed": [
+    "all-order cluster convergence",
+    "graph-uniform conditional influence",
+    "continuum Yang-Mills mass gap",
+    "new general soundness theorem"
+  ],
+  "sources": [
+    {
+      "path": "accepted_sources/ym2_global_phase_joint/GAP_BRIDGE.md",
+      "sha256": "68e619f6e56b752e59609d52a9e2c5674a0ef47c1bdb8c9d06a3b6188d071a28",
+      "role": "reused_written_source"
+    },
+    {
+      "path": "accepted_sources/ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md",
+      "sha256": "ab0e55814b5a4575eec04707702c3bc5032367b85bc986bec5e918dadb68bec1",
+      "role": "reused_written_source"
+    },
+    {
+      "path": "check_connected.py",
+      "sha256": "433bd5bcae18dc7e620db262268ed948fa0b7da8963fb6dfb221652d63a854b7",
+      "role": "new_checked_source"
+    },
+    {
+      "path": "CONNECTED_VACUUM.md",
+      "sha256": "9923cf495cb7b90d041569afd28805f7f9ac3b9c14100d0e6ff2173c4333c7ab",
+      "role": "new_checked_source"
+    }
+  ]
+}

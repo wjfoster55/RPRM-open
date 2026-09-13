@@ -1,0 +1,1 @@
+PASS: 19621 exact assertions; calibrated ratios, chart residuals, majorant and collective controls.

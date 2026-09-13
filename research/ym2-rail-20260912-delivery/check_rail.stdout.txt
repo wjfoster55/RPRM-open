@@ -1,0 +1,32 @@
+{
+  "schema": "ym2-rail-exact-controls-v1",
+  "status": "PASS",
+  "assertions": 12097,
+  "positive_joint_families": 272,
+  "two_bit_weight_range": [
+    1,
+    4
+  ],
+  "three_bit_families": 16,
+  "incompatible_order_ratios": [
+    "1",
+    "2"
+  ],
+  "exact_auxiliary_loop_gaps": [
+    "1",
+    "2/5",
+    "2/17",
+    "2/5",
+    "1"
+  ],
+  "weighted_matrix_max_row": "6/5",
+  "weighted_certificate_q": "9/10",
+  "signed_prefix_bound": "1/10",
+  "sum_absolute_defects": "10",
+  "aba_final_state": [
+    2,
+    "A"
+  ],
+  "old_checkers_run": false,
+  "evidence_ceiling": "Exact finite controls, not a formal proof of smooth SU(2), an actual vacuum construction, cryptographic security, or a uniform continuum gap."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "INDEPENDENT_LEDGER_AND_LIFTED_POINT_REASSEMBLY_PASSED",
+  "input_receipt_sha256": "e061991f753dd3d136a658cf3fdb79ae2aa60e164a04c8bc15036d2b984c8a66",
+  "source_sha256": "a51f0cd4ae62a130f36ee818aca8dac297689d9b4a5dba3868aea5342e7876ad",
+  "production_source_sha256": "f1f9eb8039d9088f0d0e1e318771b880c58e3578c0e7457e55e2ab641c12699a",
+  "field_arithmetic": "direct wrap multiplication; unit inverse by group exponent",
+  "final_point_on_curve": true,
+  "same_residue_point": true,
+  "point_34P_is_nonzero_2_torsion": true,
+  "point_68P_is_O": true,
+  "all_three_primitive_CM_tests_pass": true,
+  "independently_reconstructed_action_group_size": 512,
+  "all_512_terms_recomputed": true,
+  "distinct_rho_values": 256,
+  "each_rho_multiplicity": 2,
+  "trace_residue_mod_125": 100,
+  "valuation_is_exactly_2": true,
+  "identity_and_involution_evaluations_agree": true,
+  "limitation": "Does not independently reconstruct all 512 rho coordinates from the point; source audit and separate full orbit replay are explicit dependencies."
+}

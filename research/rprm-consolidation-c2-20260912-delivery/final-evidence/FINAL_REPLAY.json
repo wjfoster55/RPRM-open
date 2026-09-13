@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "payload_root": "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-extraction\\RPRM-CONSOLIDATED-C2",
+  "manifest_sha256": "aa016a06f514c9f0c7d8c98f52c8f81d49cb088d3e93b5d72281001cbe02a36c",
+  "files_verified": 446,
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "checks": [
+    {
+      "name": "F1",
+      "entrypoint": "fluid/check_f1.py",
+      "entrypoint_sha256": "06f637ca61b18a0a290921493856b74b8ee2ff388ace056aa902df1207d6839b",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-extraction\\RPRM-CONSOLIDATED-C2\\fluid\\check_f1.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-evidence\\F1.json"
+      ],
+      "exit_code": 0,
+      "receipt": "F1.json",
+      "pass": true
+    },
+    {
+      "name": "F1_hostile",
+      "entrypoint": "fluid/review/check_broadphase_hostile.py",
+      "entrypoint_sha256": "2b01cd62d962f986dccdaf6c6aa2aa54a6c5875150f872a4094d9c1761a0d06e",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-extraction\\RPRM-CONSOLIDATED-C2\\fluid\\review\\check_broadphase_hostile.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-evidence\\F1_hostile.json"
+      ],
+      "exit_code": 0,
+      "receipt": "F1_hostile.json",
+      "pass": true
+    },
+    {
+      "name": "AD1",
+      "entrypoint": "ad/check_ad1.py",
+      "entrypoint_sha256": "e45c43688f33424922d5189157d67ca361e91234d8c30bcf9dc62e2f371109c5",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-extraction\\RPRM-CONSOLIDATED-C2\\ad\\check_ad1.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-evidence\\AD1.json"
+      ],
+      "exit_code": 0,
+      "receipt": "AD1.json",
+      "pass": true
+    },
+    {
+      "name": "YM1",
+      "entrypoint": "yang_mills/check_ym1.py",
+      "entrypoint_sha256": "5a76cf4b16a15d395aedfd3e8427fcf38a238aa407b8e8dae6738eeef5eb8747",
+      "command": [
+        "C:\\Users\\bkbee\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-I",
+        "-B",
+        "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-extraction\\RPRM-CONSOLIDATED-C2\\yang_mills\\check_ym1.py",
+        "--output",
+        "C:\\github\\RPRM-open\\research\\rprm-consolidation-c2-20260912-delivery\\final-evidence\\YM1.json"
+      ],
+      "exit_code": 0,
+      "receipt": "YM1.json",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "evidence_scope": "Transfer/source identity and new bounded numerical/development checks; not formal proof or independent external scientific review. Closed suites NOT_RUN."
+}

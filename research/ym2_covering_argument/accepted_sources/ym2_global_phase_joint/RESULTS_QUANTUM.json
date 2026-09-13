@@ -1,0 +1,2988 @@
+{
+  "scope": "complete finite support census, exact Pauli products, exact polynomial drift",
+  "conventions": {
+    "edge_order": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "l",
+      "s",
+      "r"
+    ],
+    "vertex_order": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "edge_endpoints": {
+      "a": [
+        "A",
+        "B"
+      ],
+      "b": [
+        "B",
+        "C"
+      ],
+      "c": [
+        "D",
+        "E"
+      ],
+      "d": [
+        "E",
+        "F"
+      ],
+      "l": [
+        "A",
+        "D"
+      ],
+      "s": [
+        "B",
+        "E"
+      ],
+      "r": [
+        "C",
+        "F"
+      ]
+    },
+    "metric": "-Tr(XY)/2",
+    "pauli": "+i sigma"
+  },
+  "support_certificate": {
+    "support_subsets_exhausted": 128,
+    "empty_supports": 1,
+    "excluded_nonempty_supports": 123,
+    "nonempty_no_leaf_supports": [
+      {
+        "name": "left_square",
+        "support": [
+          "a",
+          "c",
+          "l",
+          "s"
+        ],
+        "edge_count": 4
+      },
+      {
+        "name": "outer_cycle",
+        "support": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "l",
+          "r"
+        ],
+        "edge_count": 6
+      },
+      {
+        "name": "right_square",
+        "support": [
+          "b",
+          "d",
+          "s",
+          "r"
+        ],
+        "edge_count": 4
+      },
+      {
+        "name": "all_seven_edges",
+        "support": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "l",
+          "s",
+          "r"
+        ],
+        "edge_count": 7
+      }
+    ],
+    "minimum_nonempty_no_leaf_edges": 4,
+    "necessary_not_sufficient_control": {
+      "support": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "l",
+        "s",
+        "r"
+      ],
+      "passes_no_leaf": true,
+      "proposed_edge_spin": "1/2 on every edge",
+      "odd_fundamental_degree_vertices": [
+        "B",
+        "E"
+      ],
+      "gauge_invariant_singlet_possible": false,
+      "analytic_reason": "The central element -I acts by -1 at B and E."
+    },
+    "census": [
+      {
+        "mask": 0,
+        "support": [],
+        "vertex_degrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "outcome": "empty_support",
+        "degree_one_witness": null
+      },
+      {
+        "mask": 1,
+        "support": [
+          "a"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 2,
+        "support": [
+          "b"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 3,
+        "support": [
+          "a",
+          "b"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 4,
+        "support": [
+          "c"
+        ],
+        "vertex_degrees": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "D"
+      },
+      {
+        "mask": 5,
+        "support": [
+          "a",
+          "c"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 6,
+        "support": [
+          "b",
+          "c"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 7,
+        "support": [
+          "a",
+          "b",
+          "c"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 8,
+        "support": [
+          "d"
+        ],
+        "vertex_degrees": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "E"
+      },
+      {
+        "mask": 9,
+        "support": [
+          "a",
+          "d"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 10,
+        "support": [
+          "b",
+          "d"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 11,
+        "support": [
+          "a",
+          "b",
+          "d"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          0,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 12,
+        "support": [
+          "c",
+          "d"
+        ],
+        "vertex_degrees": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "D"
+      },
+      {
+        "mask": 13,
+        "support": [
+          "a",
+          "c",
+          "d"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          0,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 14,
+        "support": [
+          "b",
+          "c",
+          "d"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 15,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 16,
+        "support": [
+          "l"
+        ],
+        "vertex_degrees": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 17,
+        "support": [
+          "a",
+          "l"
+        ],
+        "vertex_degrees": [
+          2,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 18,
+        "support": [
+          "b",
+          "l"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 19,
+        "support": [
+          "a",
+          "b",
+          "l"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          1,
+          1,
+          0,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 20,
+        "support": [
+          "c",
+          "l"
+        ],
+        "vertex_degrees": [
+          1,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 21,
+        "support": [
+          "a",
+          "c",
+          "l"
+        ],
+        "vertex_degrees": [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 22,
+        "support": [
+          "b",
+          "c",
+          "l"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 23,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "l"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 24,
+        "support": [
+          "d",
+          "l"
+        ],
+        "vertex_degrees": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 25,
+        "support": [
+          "a",
+          "d",
+          "l"
+        ],
+        "vertex_degrees": [
+          2,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 26,
+        "support": [
+          "b",
+          "d",
+          "l"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 27,
+        "support": [
+          "a",
+          "b",
+          "d",
+          "l"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 28,
+        "support": [
+          "c",
+          "d",
+          "l"
+        ],
+        "vertex_degrees": [
+          1,
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 29,
+        "support": [
+          "a",
+          "c",
+          "d",
+          "l"
+        ],
+        "vertex_degrees": [
+          2,
+          1,
+          0,
+          2,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 30,
+        "support": [
+          "b",
+          "c",
+          "d",
+          "l"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 31,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "l"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 32,
+        "support": [
+          "s"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 33,
+        "support": [
+          "a",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          0,
+          0,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 34,
+        "support": [
+          "b",
+          "s"
+        ],
+        "vertex_degrees": [
+          0,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 35,
+        "support": [
+          "a",
+          "b",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          3,
+          1,
+          0,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 36,
+        "support": [
+          "c",
+          "s"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 37,
+        "support": [
+          "a",
+          "c",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 38,
+        "support": [
+          "b",
+          "c",
+          "s"
+        ],
+        "vertex_degrees": [
+          0,
+          2,
+          1,
+          1,
+          2,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 39,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          3,
+          1,
+          1,
+          2,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 40,
+        "support": [
+          "d",
+          "s"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 41,
+        "support": [
+          "a",
+          "d",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          0,
+          0,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 42,
+        "support": [
+          "b",
+          "d",
+          "s"
+        ],
+        "vertex_degrees": [
+          0,
+          2,
+          1,
+          0,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 43,
+        "support": [
+          "a",
+          "b",
+          "d",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          3,
+          1,
+          0,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 44,
+        "support": [
+          "c",
+          "d",
+          "s"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          0,
+          1,
+          3,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 45,
+        "support": [
+          "a",
+          "c",
+          "d",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          0,
+          1,
+          3,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 46,
+        "support": [
+          "b",
+          "c",
+          "d",
+          "s"
+        ],
+        "vertex_degrees": [
+          0,
+          2,
+          1,
+          1,
+          3,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 47,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          3,
+          1,
+          1,
+          3,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 48,
+        "support": [
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 49,
+        "support": [
+          "a",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          0,
+          1,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "D"
+      },
+      {
+        "mask": 50,
+        "support": [
+          "b",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 51,
+        "support": [
+          "a",
+          "b",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          2,
+          3,
+          1,
+          1,
+          1,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 52,
+        "support": [
+          "c",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          0,
+          2,
+          2,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 53,
+        "support": [
+          "a",
+          "c",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          0,
+          2,
+          2,
+          0
+        ],
+        "outcome": "passes_necessary_no_leaf_condition",
+        "degree_one_witness": null
+      },
+      {
+        "mask": 54,
+        "support": [
+          "b",
+          "c",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          2,
+          2,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 55,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          2,
+          3,
+          1,
+          2,
+          2,
+          0
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 56,
+        "support": [
+          "d",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          0,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 57,
+        "support": [
+          "a",
+          "d",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          0,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "D"
+      },
+      {
+        "mask": 58,
+        "support": [
+          "b",
+          "d",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 59,
+        "support": [
+          "a",
+          "b",
+          "d",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          2,
+          3,
+          1,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 60,
+        "support": [
+          "c",
+          "d",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          0,
+          2,
+          3,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 61,
+        "support": [
+          "a",
+          "c",
+          "d",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          0,
+          2,
+          3,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "F"
+      },
+      {
+        "mask": 62,
+        "support": [
+          "b",
+          "c",
+          "d",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          2,
+          3,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 63,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "l",
+          "s"
+        ],
+        "vertex_degrees": [
+          2,
+          3,
+          1,
+          2,
+          3,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 64,
+        "support": [
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 65,
+        "support": [
+          "a",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 66,
+        "support": [
+          "b",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          2,
+          0,
+          0,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 67,
+        "support": [
+          "a",
+          "b",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          2,
+          0,
+          0,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 68,
+        "support": [
+          "c",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 69,
+        "support": [
+          "a",
+          "c",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 70,
+        "support": [
+          "b",
+          "c",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 71,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 72,
+        "support": [
+          "d",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 73,
+        "support": [
+          "a",
+          "d",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 74,
+        "support": [
+          "b",
+          "d",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 75,
+        "support": [
+          "a",
+          "b",
+          "d",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          2,
+          0,
+          1,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 76,
+        "support": [
+          "c",
+          "d",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 77,
+        "support": [
+          "a",
+          "c",
+          "d",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 78,
+        "support": [
+          "b",
+          "c",
+          "d",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          2,
+          1,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 79,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 80,
+        "support": [
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 81,
+        "support": [
+          "a",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 82,
+        "support": [
+          "b",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 83,
+        "support": [
+          "a",
+          "b",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "D"
+      },
+      {
+        "mask": 84,
+        "support": [
+          "c",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          0,
+          1,
+          2,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 85,
+        "support": [
+          "a",
+          "c",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 86,
+        "support": [
+          "b",
+          "c",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 87,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "E"
+      },
+      {
+        "mask": 88,
+        "support": [
+          "d",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 89,
+        "support": [
+          "a",
+          "d",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 90,
+        "support": [
+          "b",
+          "d",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 91,
+        "support": [
+          "a",
+          "b",
+          "d",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "D"
+      },
+      {
+        "mask": 92,
+        "support": [
+          "c",
+          "d",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          0,
+          1,
+          2,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 93,
+        "support": [
+          "a",
+          "c",
+          "d",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 94,
+        "support": [
+          "b",
+          "c",
+          "d",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 95,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "l",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "outcome": "passes_necessary_no_leaf_condition",
+        "degree_one_witness": null
+      },
+      {
+        "mask": 96,
+        "support": [
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 97,
+        "support": [
+          "a",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          0,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 98,
+        "support": [
+          "b",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          2,
+          2,
+          0,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "E"
+      },
+      {
+        "mask": 99,
+        "support": [
+          "a",
+          "b",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          3,
+          2,
+          0,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 100,
+        "support": [
+          "c",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 101,
+        "support": [
+          "a",
+          "c",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 102,
+        "support": [
+          "b",
+          "c",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "D"
+      },
+      {
+        "mask": 103,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          3,
+          2,
+          1,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 104,
+        "support": [
+          "d",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 105,
+        "support": [
+          "a",
+          "d",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          0,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 106,
+        "support": [
+          "b",
+          "d",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          2,
+          2,
+          0,
+          2,
+          2
+        ],
+        "outcome": "passes_necessary_no_leaf_condition",
+        "degree_one_witness": null
+      },
+      {
+        "mask": 107,
+        "support": [
+          "a",
+          "b",
+          "d",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          3,
+          2,
+          0,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 108,
+        "support": [
+          "c",
+          "d",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          1,
+          1,
+          1,
+          3,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "B"
+      },
+      {
+        "mask": 109,
+        "support": [
+          "a",
+          "c",
+          "d",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          1,
+          1,
+          3,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 110,
+        "support": [
+          "b",
+          "c",
+          "d",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          0,
+          2,
+          2,
+          1,
+          3,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "D"
+      },
+      {
+        "mask": 111,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          3,
+          2,
+          1,
+          3,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 112,
+        "support": [
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 113,
+        "support": [
+          "a",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 114,
+        "support": [
+          "b",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 115,
+        "support": [
+          "a",
+          "b",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          3,
+          2,
+          1,
+          1,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "D"
+      },
+      {
+        "mask": 116,
+        "support": [
+          "c",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 117,
+        "support": [
+          "a",
+          "c",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 118,
+        "support": [
+          "b",
+          "c",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 119,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "F"
+      },
+      {
+        "mask": 120,
+        "support": [
+          "d",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 121,
+        "support": [
+          "a",
+          "d",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          1,
+          1,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 122,
+        "support": [
+          "b",
+          "d",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 123,
+        "support": [
+          "a",
+          "b",
+          "d",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          3,
+          2,
+          1,
+          2,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "D"
+      },
+      {
+        "mask": 124,
+        "support": [
+          "c",
+          "d",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          1,
+          1,
+          2,
+          3,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 125,
+        "support": [
+          "a",
+          "c",
+          "d",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          2,
+          1,
+          2,
+          3,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "C"
+      },
+      {
+        "mask": 126,
+        "support": [
+          "b",
+          "c",
+          "d",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          1,
+          2,
+          2,
+          2,
+          3,
+          2
+        ],
+        "outcome": "excluded_by_degree_one_vertex",
+        "degree_one_witness": "A"
+      },
+      {
+        "mask": 127,
+        "support": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "l",
+          "s",
+          "r"
+        ],
+        "vertex_degrees": [
+          2,
+          3,
+          2,
+          2,
+          3,
+          2
+        ],
+        "outcome": "passes_necessary_no_leaf_condition",
+        "degree_one_witness": null
+      }
+    ],
+    "passed": true
+  },
+  "pauli_certificate": {
+    "arithmetic": "Gaussian integers (real, imaginary)",
+    "generators": [
+      [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            -1
+          ]
+        ]
+      ]
+    ],
+    "sum_generator_squares": [
+      [
+        [
+          -3,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          -3,
+          0
+        ]
+      ]
+    ],
+    "trace_pair_products": [
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ]
+    ],
+    "orthonormal_for_negative_half_trace": true,
+    "fundamental_negative_laplacian_eigenvalue": 3,
+    "passed": true
+  },
+  "drift_certificate": {
+    "arithmetic": "exact integer sparse polynomials in a,b,w",
+    "cometric": [
+      [
+        [
+          {
+            "powers_a_b_w": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": 4
+          },
+          {
+            "powers_a_b_w": [
+              2,
+              0,
+              0
+            ],
+            "coefficient": -4
+          }
+        ],
+        [
+          {
+            "powers_a_b_w": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": 1
+          },
+          {
+            "powers_a_b_w": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": -1
+          }
+        ],
+        [
+          {
+            "powers_a_b_w": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": 3
+          },
+          {
+            "powers_a_b_w": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": -3
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "powers_a_b_w": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": 1
+          },
+          {
+            "powers_a_b_w": [
+              1,
+              1,
+              0
+            ],
+            "coefficient": -1
+          }
+        ],
+        [
+          {
+            "powers_a_b_w": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": 4
+          },
+          {
+            "powers_a_b_w": [
+              0,
+              2,
+              0
+            ],
+            "coefficient": -4
+          }
+        ],
+        [
+          {
+            "powers_a_b_w": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": -3
+          },
+          {
+            "powers_a_b_w": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": 3
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "powers_a_b_w": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": 3
+          },
+          {
+            "powers_a_b_w": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": -3
+          }
+        ],
+        [
+          {
+            "powers_a_b_w": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": -3
+          },
+          {
+            "powers_a_b_w": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": 3
+          }
+        ],
+        [
+          {
+            "powers_a_b_w": [
+              0,
+              0,
+              0
+            ],
+            "coefficient": 6
+          },
+          {
+            "powers_a_b_w": [
+              0,
+              0,
+              2
+            ],
+            "coefficient": -6
+          }
+        ]
+      ]
+    ],
+    "words": [
+      [
+        [
+          "s",
+          1
+        ],
+        [
+          "c",
+          -1
+        ],
+        [
+          "l",
+          -1
+        ],
+        [
+          "a",
+          1
+        ]
+      ],
+      [
+        [
+          "b",
+          1
+        ],
+        [
+          "r",
+          1
+        ],
+        [
+          "d",
+          -1
+        ],
+        [
+          "s",
+          -1
+        ]
+      ],
+      [
+        [
+          "b",
+          1
+        ],
+        [
+          "r",
+          1
+        ],
+        [
+          "d",
+          -1
+        ],
+        [
+          "c",
+          -1
+        ],
+        [
+          "l",
+          -1
+        ],
+        [
+          "a",
+          1
+        ]
+      ]
+    ],
+    "verified_simple_vertex_walks": [
+      [
+        "B",
+        "E",
+        "D",
+        "A",
+        "B"
+      ],
+      [
+        "B",
+        "C",
+        "F",
+        "E",
+        "B"
+      ],
+      [
+        "B",
+        "C",
+        "F",
+        "E",
+        "D",
+        "A",
+        "B"
+      ]
+    ],
+    "distinct_loop_edge_counts": [
+      4,
+      4,
+      6
+    ],
+    "computed_column_divergence": [
+      [
+        {
+          "powers_a_b_w": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": -12
+        }
+      ],
+      [
+        {
+          "powers_a_b_w": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": -12
+        }
+      ],
+      [
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": -18
+        }
+      ]
+    ],
+    "expected_loop_drift": [
+      [
+        {
+          "powers_a_b_w": [
+            1,
+            0,
+            0
+          ],
+          "coefficient": -12
+        }
+      ],
+      [
+        {
+          "powers_a_b_w": [
+            0,
+            1,
+            0
+          ],
+          "coefficient": -12
+        }
+      ],
+      [
+        {
+          "powers_a_b_w": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": -18
+        }
+      ]
+    ],
+    "passed": true
+  },
+  "conditional_electric_bound_coefficient": {
+    "minimum_support_edges": 4,
+    "fundamental_casimir": 3,
+    "twice_bound_in_units_alpha_hbar_squared": 12,
+    "kinetic_prefactor": "alpha*hbar^2/2",
+    "result": "6*alpha*hbar^2",
+    "analytic_inputs": [
+      "Peter-Weyl gives a complete invariant spin-network basis.",
+      "A vertex with one nontrivial incident representation has no singlet.",
+      "All nontrivial SU(2) spins have Casimir 4*j*(j+1)>=3.",
+      "An elementary loop trace attains the bound."
+    ]
+  },
+  "not_certified": [
+    "Analytic operator domains, Haar pushforward, or unitary equivalence.",
+    "Peter-Weyl completeness or a general representation-theory theorem.",
+    "Interacting eigenvalues, min-max principle, or positivity improvement.",
+    "A volume-uniform bound or continuum Yang-Mills mass gap."
+  ],
+  "all_passed": true
+}

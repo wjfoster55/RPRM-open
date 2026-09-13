@@ -1,0 +1,23 @@
+{
+  "curve_a_invariants": [
+    0,
+    0,
+    0,
+    -25,
+    0
+  ],
+  "requested_quantity": "c1=L'(E5,1)",
+  "cutoff": 40,
+  "finite_head_interval": [
+    "957703659238384762517985725821/430014309574013790128399450112",
+    "957813149603364226864572400643/430014309574013790128399450112"
+  ],
+  "tail_premise": {
+    "coefficient_domain": "every integer n >= 1",
+    "coefficient_abs_upper": "2*n",
+    "e1_inequality": "E1(x)<=exp(-x)/x for every x>0",
+    "alpha_lower": "1/5",
+    "exp_minus_alpha_upper": "5/6",
+    "starts_at": 41
+  }
+}

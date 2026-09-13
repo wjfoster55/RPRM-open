@@ -1,0 +1,156 @@
+{
+  "evidence_type": "fresh arithmetic audit of saved summaries; no panel replay",
+  "source_commit": "7e3a6603c8f3c036f9f59f519b069cfc02b7825f",
+  "sources": {
+    "README.md": "82e624ac2914952648aea7111bfae4bdb431ef06e9b23f14b71661b64f916885",
+    "sim.py": "575102185dbf9e1291fb9835c1c107421f9720cd949c0ae87ce4e8f14efdf982",
+    "certificate.py": "6aef43252a81f2cc62cd05bf4692e4254b1fc3d43f7b575ed5047caec4927d8a",
+    "scenes.py": "2129f2b9e886e379b2f5e2d477f4df2971e61e5802a95e9d8fa2fd00516be7bf",
+    "run_broadphase_experiment.py": "1ee34edf551cccf7e247e86ce86376a9ec6b7044b88d7cf8dd688c21d0cd332e",
+    "artifacts/broadphase_results.json": "7a84024a988fdae62f290761b0fa1453945fdf5448eb040c895b59ae4b44a335"
+  },
+  "n_decisions": 70221,
+  "n_nochange": 69383,
+  "n_changed": 838,
+  "P_cert_pct": 73.68451033166717,
+  "ca_sleeping_cert_pct": 66.32916079235557,
+  "delta_pp": 7.355349539311595,
+  "certification_rate_ratio": 1.1108916417974535,
+  "P_only": 5754,
+  "ca_sleeping_only": 589,
+  "both_certify_derived": 45988,
+  "neither_certifies_derived": 17890,
+  "checks": {
+    "naive": {
+      "confusion_counts_total_match": true,
+      "cert_rate_matches": true,
+      "fp_rate_matches_all_decisions_denominator": true,
+      "recall_matches_nochange_denominator": true
+    },
+    "pure_ca": {
+      "confusion_counts_total_match": true,
+      "cert_rate_matches": true,
+      "fp_rate_matches_all_decisions_denominator": true,
+      "recall_matches_nochange_denominator": true
+    },
+    "ca_sleeping": {
+      "confusion_counts_total_match": true,
+      "cert_rate_matches": true,
+      "fp_rate_matches_all_decisions_denominator": true,
+      "recall_matches_nochange_denominator": true
+    },
+    "P": {
+      "confusion_counts_total_match": true,
+      "cert_rate_matches": true,
+      "fp_rate_matches_all_decisions_denominator": true,
+      "recall_matches_nochange_denominator": true
+    }
+  },
+  "per_family": [
+    {
+      "family": "free_fall",
+      "n_island_step_decisions": 7993,
+      "P_certified": 7934,
+      "ca_sleeping_certified": 7937,
+      "P_only": 0,
+      "ca_sleeping_only_derived": 3,
+      "P_cert_pct": 99.26185412235706,
+      "ca_sleeping_cert_pct": 99.29938696359315
+    },
+    {
+      "family": "impact",
+      "n_island_step_decisions": 8617,
+      "P_certified": 2721,
+      "ca_sleeping_certified": 2422,
+      "P_only": 316,
+      "ca_sleeping_only_derived": 17,
+      "P_cert_pct": 31.577115005222236,
+      "ca_sleeping_cert_pct": 28.107229894394802
+    },
+    {
+      "family": "jitter",
+      "n_island_step_decisions": 12299,
+      "P_certified": 2597,
+      "ca_sleeping_certified": 2724,
+      "P_only": 0,
+      "ca_sleeping_only_derived": 127,
+      "P_cert_pct": 21.115537848605577,
+      "ca_sleeping_cert_pct": 22.148142125376047
+    },
+    {
+      "family": "mixed",
+      "n_island_step_decisions": 12000,
+      "P_certified": 12000,
+      "ca_sleeping_certified": 10353,
+      "P_only": 1647,
+      "ca_sleeping_only_derived": 0,
+      "P_cert_pct": 100.0,
+      "ca_sleeping_cert_pct": 86.275
+    },
+    {
+      "family": "near_miss",
+      "n_island_step_decisions": 12382,
+      "P_certified": 11876,
+      "ca_sleeping_certified": 11878,
+      "P_only": 0,
+      "ca_sleeping_only_derived": 2,
+      "P_cert_pct": 95.91342271038604,
+      "ca_sleeping_cert_pct": 95.92957518979163
+    },
+    {
+      "family": "settled_stack",
+      "n_island_step_decisions": 12930,
+      "P_certified": 10622,
+      "ca_sleeping_certified": 10897,
+      "P_only": 165,
+      "ca_sleeping_only_derived": 440,
+      "P_cert_pct": 82.15003866976025,
+      "ca_sleeping_cert_pct": 84.27687548337201
+    },
+    {
+      "family": "slow_drift",
+      "n_island_step_decisions": 4000,
+      "P_certified": 3992,
+      "ca_sleeping_certified": 366,
+      "P_only": 3626,
+      "ca_sleeping_only_derived": 0,
+      "P_cert_pct": 99.8,
+      "ca_sleeping_cert_pct": 9.15
+    }
+  ],
+  "families_n_sum": 70221,
+  "sensitivity": {
+    "method": "local CA+sleeping",
+    "budget_fp_rate": 0.001,
+    "fp_rate_denominator": "all island-step decisions",
+    "n_denominator": 70221,
+    "max_fp_allowed_at_this_n": 70,
+    "reported_cert_rate": 0.7473832614175246,
+    "certified_count_derived": 52482,
+    "selected_threshold": null,
+    "actual_fp_count": null,
+    "missing_evidence": "saved summary omits threshold curves and raw decisions"
+  },
+  "work_saved": {
+    "saved_fractions": {
+      "naive": {
+        "bodies": 0.0,
+        "contacts": 0.0
+      },
+      "ca_sleeping": {
+        "bodies": 0.5972920696324951,
+        "contacts": 0.5330837556728885
+      },
+      "P": {
+        "bodies": 0.7296269687759049,
+        "contacts": 0.7720602518144414
+      }
+    },
+    "body_denominator_definition": "sum of n_bodies over all island-step records",
+    "contact_denominator_definition": "sum of n_contacts over all island-step records, clamped to at least 1 in division",
+    "raw_weighted_numerators_and_denominators": null,
+    "interpretation": "potential weighted skips after full reference evolution; not executed skipping or measured runtime"
+  },
+  "saved_json_contains_nonstandard_infinity": true,
+  "fresh_hostile_case_is_separate": "broadphase_hostile_result.json"
+}

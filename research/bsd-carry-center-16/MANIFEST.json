@@ -1,0 +1,81 @@
+{
+  "claim": "Byte integrity only; not mathematical verification",
+  "files": [
+    {
+      "bytes": 5386,
+      "path": "agents/ATOM_PHASE.md",
+      "sha256": "5dd9accea83bdbc7f3806fe378045b46eaba2efea77ca10f105a4abed0d95107"
+    },
+    {
+      "bytes": 1256,
+      "path": "agents/INDEPENDENT_REVIEW.md",
+      "sha256": "a2a1a5c291389fb18d356153e57d0552a4b996fb0df049737e08b7cc163b378e"
+    },
+    {
+      "bytes": 1280,
+      "path": "BSD_REBRIEF.md",
+      "sha256": "3282196c98b4fe0169261b91c43dfe2814c4c106a449c11162217fa3ff179d89"
+    },
+    {
+      "bytes": 24180,
+      "path": "evidence/carry-center.json",
+      "sha256": "ea96cf9ed595770c35259941541a7491ee155f32986fbadadcfdb814082cd2d1"
+    },
+    {
+      "bytes": 46082,
+      "path": "evidence/number-scouts.json",
+      "sha256": "084f43cae5d3db2da0d5fd49f788795cdc96b6c8c2aed4fcaec14a21f1d8fc58"
+    },
+    {
+      "bytes": 38740,
+      "path": "evidence/p-hinge.json",
+      "sha256": "dd676de792b8c7f5df14decfc29058ffa99357ab74a360f4bd90aba715f9f4b0"
+    },
+    {
+      "bytes": 44486,
+      "path": "evidence/phase-bridge.json",
+      "sha256": "16c73f6f979696b7c5ca4b2dc3e58ed3d42a74dd319a81beaef3d492c67b8c8c"
+    },
+    {
+      "bytes": 3488,
+      "path": "PREFREEZE.md",
+      "sha256": "b0296b283eaff975bfd5bc8cf22165891ef7f4f4bac75e9670156f5b4c8342f4"
+    },
+    {
+      "bytes": 10368,
+      "path": "README.md",
+      "sha256": "cf8df6ec54da23438ff6a556b003926a78c19f4629866ece2bead74bc9e7cabc"
+    },
+    {
+      "bytes": 4948,
+      "path": "work/check_carry_center.py",
+      "sha256": "8cf4e1d335c164237e6e2cac8742a9c213d37eecbac5a7d4081d8816c99a0432"
+    },
+    {
+      "bytes": 2924,
+      "path": "work/check_p_hinge.py",
+      "sha256": "9fd72e9a53e8401d5a8cb2043505334e2255cfcfcea220a60018538deeb02b6d"
+    },
+    {
+      "bytes": 3067,
+      "path": "work/check_phase_bridge.py",
+      "sha256": "e5074eeb3daa3aacd719fc89cab168b343b6c9b2c8afd4bfdc75b0289a57b80c"
+    },
+    {
+      "bytes": 3679,
+      "path": "work/package_packet.py",
+      "sha256": "e6c60bcbe7217a699f605d748fd5802e0503508ad32da147184b50bbb0b10c2d"
+    },
+    {
+      "bytes": 1903,
+      "path": "work/scout_numbers.py",
+      "sha256": "b37633c7d5f2400f994f83835c616cd502e20595facd068c0d81fde2271c2316"
+    },
+    {
+      "bytes": 1351,
+      "path": "work/verify_bindings.py",
+      "sha256": "6df3d3aadd7c655bc46058cec12099fa913dfb8b4e78224ec9fb2d4b79c3d512"
+    }
+  ],
+  "schema": "bsd-carry-center-16-file-manifest-v1"
+}

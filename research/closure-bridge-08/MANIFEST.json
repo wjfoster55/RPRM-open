@@ -1,0 +1,91 @@
+{
+  "claim": "Byte integrity only; not mathematical verification",
+  "files": [
+    {
+      "bytes": 14497,
+      "path": "agents/BSD_SEAM.md",
+      "sha256": "4b0c1b932e8544e59d027a4d3bd1bef5b975c33f901791440281d8cd68684306"
+    },
+    {
+      "bytes": 16501,
+      "path": "agents/CORPUS_MAP.md",
+      "sha256": "8d6acc8ae84f7d110412932d2809178ad9fde6942b0f90089c49ced2e44cf81b"
+    },
+    {
+      "bytes": 6324,
+      "path": "agents/REVIEW.md",
+      "sha256": "995955d0ef45ac89cda04476681b1e342f0c290d8d44afcca18871cbdfac84fd"
+    },
+    {
+      "bytes": 10454,
+      "path": "BIDIRECTIONAL_BRIDGE.md",
+      "sha256": "81aa4282b39db567858de00765ee22f7da7b0de99017863e78d5045f05ecb3a2"
+    },
+    {
+      "bytes": 17136,
+      "path": "evidence/789_affordances.json",
+      "sha256": "22a8aed9875a1abdd104c55a582182d0e1c946d5a338289cbd6c24d47383babf"
+    },
+    {
+      "bytes": 4336,
+      "path": "evidence/bridge.json",
+      "sha256": "8e1a3f3e3e6f312226b8c4caec8ed60c8d44c70b591393787aef210377b723e0"
+    },
+    {
+      "bytes": 4883,
+      "path": "evidence/bsd_seam.json",
+      "sha256": "94f3977111ac3fa2e53e174ad9060b1dedc7803ca343fe182eaebce59942b925"
+    },
+    {
+      "bytes": 13035,
+      "path": "evidence/budget.json",
+      "sha256": "a2e8d64be03344143c97a084b4551ca1d9cc3fd853e8dae73db75d32198e79a6"
+    },
+    {
+      "bytes": 2918,
+      "path": "evidence/FILE_BINDINGS.json",
+      "sha256": "fdf53fcd6c8a8c24a509b3464ac62dec09c0254322ed569593ad3d36c1ecc264"
+    },
+    {
+      "bytes": 34186,
+      "path": "evidence/memory_retrieval.json",
+      "sha256": "72e1e4d656475c63464842659ebebf6bc8e128fb5ad04acb8aef11a095212ce4"
+    },
+    {
+      "bytes": 3191,
+      "path": "PREFREEZE.md",
+      "sha256": "f20a4ed4446be8cbb86624cbb07349bdc839ebfa58edfbe6fd1269941e1d0f18"
+    },
+    {
+      "bytes": 5882,
+      "path": "PROVENANCE.md",
+      "sha256": "9d6ed6d2482bc140d963ec683031f347c80665c9bfbd2834c5516a1569f9c125"
+    },
+    {
+      "bytes": 5741,
+      "path": "README.md",
+      "sha256": "da4a3fa94a2a68ca319648628b056279cbee462187dcb2d5786af2dbc25dd4d7"
+    },
+    {
+      "bytes": 5473,
+      "path": "work/check_bridge.py",
+      "sha256": "582ae5713ae681667c4b29cb48102eecdb6346d968be05aed3751f90b59baddd"
+    },
+    {
+      "bytes": 7655,
+      "path": "work/check_bsd_seam.py",
+      "sha256": "bdeea6571d62e167cb883b6c0eb6dc76ea377814ee6bf79de9be18c8cc077cf1"
+    },
+    {
+      "bytes": 2579,
+      "path": "work/check_budget.py",
+      "sha256": "f8994243b1627a2936053549e19167ebfd4de60ccaa48b1f2dcf9a0c755cebed"
+    },
+    {
+      "bytes": 3670,
+      "path": "work/package_packet.py",
+      "sha256": "c06b603472c4d655c19a921b958b2b95da4d87553a26911b57165bd63cf8c174"
+    }
+  ],
+  "schema": "closure-bridge-08-file-manifest-v1"
+}

@@ -1,0 +1,162 @@
+{
+  "scope": "E34 p=5, alternative character-weighted CM division orbit",
+  "finite_admission": {
+    "gaussian_units_mod17": 256,
+    "primary_ray_representatives_mod68": 512,
+    "lifts_per_mod17_unit": 2,
+    "positive_character_weights": 128,
+    "negative_character_weights": 128,
+    "character_multiplicativity_pairs": 65536,
+    "split_prime_norms": [
+      17,
+      17
+    ],
+    "conjugates": 256
+  },
+  "written_proof": "../DIVISION_ORBIT.md",
+  "numerical_trace_status": "EXACT_CHARACTER_ORBIT_TRACE_RESIDUE_COMPUTED",
+  "trace_mod125_up_to_global_sign": 25,
+  "v5_trace": 2,
+  "source_sha256": "117e5847ed32c68e957a324fe6570b7c74b13e305af08211ac93d28d17473018",
+  "trace_coefficients": [
+    25,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "fresh_field_certificate": {
+    "polynomial": "z^16-2",
+    "coefficient_prime": 5,
+    "rabin_degree": 16,
+    "z_to_5_power_16_equals_z": true,
+    "gcd_degree_at_5_power_8": 0,
+    "saved_certificate_used": false
+  },
+  "normalized_input_by_cm_i": false,
+  "sqrt17_coefficients": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    111,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "lambda3_component": [
+    [
+      17,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      24,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "primitive17_component": [
+    [
+      25,
+      101,
+      52,
+      53,
+      1,
+      107,
+      123,
+      67,
+      75,
+      85,
+      20,
+      73,
+      64,
+      11,
+      60,
+      71
+    ],
+    [
+      96,
+      89,
+      40,
+      0,
+      112,
+      80,
+      11,
+      119,
+      121,
+      66,
+      38,
+      42,
+      116,
+      84,
+      61,
+      79
+    ]
+  ],
+  "checks": {
+    "primitive_points_checked": 256,
+    "distinct_squared_conjugates": 256,
+    "chord_square_and_simultaneous_negation_checks": 256
+  },
+  "attributed_shared_arithmetic": {
+    "path": "work/trace125.py",
+    "sha256": "f1f9eb8039d9088f0d0e1e318771b880c58e3578c0e7457e55e2ab641c12699a",
+    "used_api": "F coefficient arithmetic only",
+    "group_law_and_trace_independent": true,
+    "field_arithmetic_independent": false
+  },
+  "point_witness_input": {
+    "path": "evidence/trace125.json",
+    "sha256": "e061991f753dd3d136a658cf3fdb79ae2aa60e164a04c8bc15036d2b984c8a66",
+    "used_fields": [
+      "lifted_point"
+    ],
+    "saved_status_and_trace_used": false
+  }
+}

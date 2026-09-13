@@ -1,0 +1,322 @@
+{
+  "input_identity": {
+    "field": "Q",
+    "a_invariants": [
+      0,
+      0,
+      0,
+      -25,
+      0
+    ],
+    "source_records": [
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/CODEX_START_HERE.md",
+        "sha256": "371f0a8a4918647b225d5660e0600033f4dea20eceb7246f9d7d69ace0cb938b",
+        "size": 14221
+      },
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/TEST_PLAN.json",
+        "sha256": "039ebbe341a76a6dc196673392ccc1fb0e6e6905d18da03592fbb2201926850c",
+        "size": 3871
+      },
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/inputs/descent/E5_DESCENT_NOTE.md",
+        "sha256": "c85c9b1e57393608271ad1994d2bb1d9622e6c5797ced05933d11c1bb8130b63",
+        "size": 16056
+      },
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/inputs/analytic/ANALYTIC_NOTE.md",
+        "sha256": "218934932734425e1e7a64afcbcdea19cbca956af97f97327f04896dceb92276",
+        "size": 12054
+      },
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/inputs/descent/e5_descent.py",
+        "sha256": "0744cb00b206b4934c37313941170275a9b20dd87580c743aeccc8a5ae40c494",
+        "size": 13693
+      },
+      {
+        "path": "supplied/BSD_E5_CODEX_TEST_01/inputs/analytic/certify_e5.py",
+        "sha256": "93719886550fd08c7488ead7031a1ebb44ae6d1da0c321b4067016120e5cfaed",
+        "size": 9055
+      }
+    ]
+  },
+  "required_control_ids": [
+    "K01_OFF_CURVE",
+    "K02_MODEL_BINDING",
+    "K03_EULER_RECURRENCE",
+    "K04_NO_TAIL",
+    "K05_LOST_REMAINDER",
+    "K06_FRAME_TRANSPORT"
+  ],
+  "controls": [
+    {
+      "id": "K01_OFF_CURVE",
+      "status": "CONFIRMED",
+      "outcome": "ADMISSION_REJECTED",
+      "input": {
+        "x": "0",
+        "y": "1"
+      },
+      "residual_y2_minus_rhs": "1",
+      "observations": [
+        {
+          "path": "group",
+          "error": "Admission error: point is off E5"
+        },
+        {
+          "path": "signature",
+          "error": "Admission error: point is off E5"
+        }
+      ],
+      "required_control": "Supply (0,1), which is not on E5; exact group/signature path rejects it rather than silently processing it."
+    },
+    {
+      "id": "K02_MODEL_BINDING",
+      "status": "CONFIRMED",
+      "outcome": "REJECT_CERTIFICATE_NON_APPLICABILITY",
+      "evidence": "evidence/model_binding.json",
+      "original": {
+        "field": "Q",
+        "a_invariants": [
+          0,
+          0,
+          0,
+          -25,
+          0
+        ]
+      },
+      "changed": {
+        "field": "Q",
+        "a_invariants": [
+          0,
+          0,
+          0,
+          -36,
+          0
+        ]
+      },
+      "polynomial_witness": {
+        "coordinate_substitution": "x=5u, y=25v",
+        "baseline_pullback": {
+          "v^2": 625,
+          "u^3": -125,
+          "u": 125
+        },
+        "changed_pullback": {
+          "v^2": 625,
+          "u^3": -125,
+          "u": 180
+        },
+        "difference": "55u",
+        "interpretation": "The D=5 polynomial identity no longer holds after the a4 mutation."
+      },
+      "claim_ceiling": "The existing E5 certificate is inapplicable to the changed model. No changed-curve rank, conductor, root number, or L-value is asserted.",
+      "required_control": "Change a-invariant -25 to -36 while presenting the E5 certificate; detect different source. Do not conclude a new rank or copy conductor/sign."
+    },
+    {
+      "id": "K03_EULER_RECURRENCE",
+      "status": "CONFIRMED",
+      "control_outcome": "FALSE_RECORD_REJECTED",
+      "program_execution": "PASS",
+      "actual_mutation": "coefficient record a9 changed to 0",
+      "input_file": "evidence/controls/K03_mutated_a9.json",
+      "observed_a9": 0,
+      "a3": 0,
+      "required_a9_from_a3_squared_minus_3": -3,
+      "mismatch": 3,
+      "required_control": "Set a9=0 in a disposable coefficient record; independent a3^2-3 recurrence detects the false record."
+    },
+    {
+      "id": "K04_NO_TAIL",
+      "status": "CONFIRMED",
+      "control_outcome": "INFINITE_CLAIM_OPEN_PROMOTION_REJECTED",
+      "program_execution": "PASS",
+      "actual_mutation": "deleted the all-term coefficient theorem from the same finite-head claim representation used by interval promotion",
+      "input_file": "evidence/controls/K04_missing_all_term_premise.json",
+      "before": {
+        "status": "CONFIRMED",
+        "promotion": "SUPPORTED_WITH_CITED_THEOREM",
+        "infinite_sum_interval": [
+          "159008456371777480468424685484603075396983091698487/71448924951578742343638317470613330474743118168064",
+          "159263781717232422192933600260418635345871734126921/71448924951578742343638317470613330474743118168064"
+        ],
+        "tail_radius": "227373675443232059478759765625/137016819023148274195348171259904"
+      },
+      "after": {
+        "status": "OPEN",
+        "promotion": "REJECTED",
+        "reason": "Finite head does not enclose the infinite sum without all omitted terms covered.",
+        "missing": [
+          "all_term_coefficient_bound"
+        ],
+        "finite_head_interval": [
+          "957703659238384762517985725821/430014309574013790128399450112",
+          "957813149603364226864572400643/430014309574013790128399450112"
+        ],
+        "infinite_sum_interval": null
+      },
+      "meaning": "This rejects this finite-head promotion; it does not refute nonvanishing or invalidate an independently supplied proof.",
+      "required_control": "Remove the all-term tail justification from a finite-head claim; do not promote the finite value to an infinite-sum nonvanishing certificate. A different supplied proof would be separately credited."
+    },
+    {
+      "id": "K05_LOST_REMAINDER",
+      "status": "CONFIRMED",
+      "outcome": "NON_IDENTIFIABLE_FROM_COARSE_LABEL",
+      "fiber": "MANY: the two finer quotient lifts (0,O) and (2,O); source-specific choice OPEN after backing is removed",
+      "observations": {
+        "O_level1": {
+          "m": 0,
+          "torsion": "O",
+          "remainder": "O",
+          "trace": [
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            }
+          ]
+        },
+        "Q_level1": {
+          "m": 0,
+          "torsion": "O",
+          "remainder": {
+            "x": "-4",
+            "y": "6"
+          },
+          "trace": [
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "6"
+              }
+            }
+          ]
+        },
+        "O_level2": {
+          "m": 0,
+          "torsion": "O",
+          "remainder": "O",
+          "trace": [
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            },
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": "O"
+            }
+          ]
+        },
+        "Q_level2": {
+          "m": 2,
+          "torsion": "O",
+          "remainder": "O",
+          "trace": [
+            {
+              "bit": 0,
+              "torsion": "O",
+              "remainder": {
+                "x": "-4",
+                "y": "6"
+              }
+            },
+            {
+              "bit": 1,
+              "torsion": "O",
+              "remainder": "O"
+            }
+          ]
+        },
+        "Q": {
+          "x": "1681/144",
+          "y": "-62279/1728"
+        },
+        "all_Q_halves": [
+          {
+            "point": {
+              "x": "-4",
+              "y": "6"
+            },
+            "signature": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "point": {
+              "x": "25/4",
+              "y": "75/8"
+            },
+            "signature": [
+              1,
+              5,
+              5
+            ]
+          },
+          {
+            "point": {
+              "x": "-5/9",
+              "y": "-100/27"
+            },
+            "signature": [
+              -5,
+              -2,
+              10
+            ]
+          },
+          {
+            "point": {
+              "x": "45",
+              "y": "-300"
+            },
+            "signature": [
+              5,
+              10,
+              2
+            ]
+          }
+        ]
+      },
+      "required_control": "O and Q=2P share the level-one class but differ at level two. Show exact recovery with retained source/remainder and non-identifiability from the coarse label alone."
+    },
+    {
+      "id": "K06_FRAME_TRANSPORT",
+      "status": "CONFIRMED",
+      "outcome": "COHERENT_TRANSPORT_CONFIRMED_AND_STALE_READOUT_REFUTED",
+      "frame": "b3 ^= b0; b2 ^= b4; self-inverse",
+      "positive_cases": 32,
+      "negative_mismatch_count": 8,
+      "witness": {
+        "source_bits": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "new_bits": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "signature": [
+          -1,
+          -1,
+          1
+        ],
+        "transported_readout": 1,
+        "untransported_readout": 0
+      },
+      "required_control": "Apply one nontrivial invertible five-bit basis map. Transport the readout and pass; keep the old readout and exhibit a mismatch. Renaming is not a mathematical failure."
+    }
+  ],
+  "interpretation": "CONFIRMED means the control behaved as required. False records are rejected, missing proof remains OPEN, and coherent transport passes. No changed-curve rank is inferred."
+}

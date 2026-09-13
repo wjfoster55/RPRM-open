@@ -1,0 +1,3353 @@
+{
+  "schema": "ym2-signed-differences-exact-v1",
+  "evidence_grade": "exact rational finite matrix checks; analytic proofs separate",
+  "source_sha256": "feba185aeda3fdccd69ca52d63af079e05f086034be17dc823a8d97e4aaa7e0d",
+  "states": [
+    [
+      -1,
+      -1
+    ],
+    [
+      -1,
+      1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "rho_contract": "-1 < rho < 1; seven exact rational instances, no sampling",
+  "rows": [
+    {
+      "rho": "-99/100",
+      "weights": [
+        "1/400",
+        "199/400",
+        "199/400",
+        "1/400"
+      ],
+      "matrices": {
+        "W": [
+          [
+            "1/400",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "199/400",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "199/400",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1/400"
+          ]
+        ],
+        "P_x": [
+          [
+            "1/200",
+            "0",
+            "199/200",
+            "0"
+          ],
+          [
+            "0",
+            "199/200",
+            "0",
+            "1/200"
+          ],
+          [
+            "1/200",
+            "0",
+            "199/200",
+            "0"
+          ],
+          [
+            "0",
+            "199/200",
+            "0",
+            "1/200"
+          ]
+        ],
+        "P_y": [
+          [
+            "1/200",
+            "199/200",
+            "0",
+            "0"
+          ],
+          [
+            "1/200",
+            "199/200",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "199/200",
+            "1/200"
+          ],
+          [
+            "0",
+            "0",
+            "199/200",
+            "1/200"
+          ]
+        ],
+        "R_x": [
+          [
+            "199/200",
+            "0",
+            "-199/200",
+            "0"
+          ],
+          [
+            "0",
+            "1/200",
+            "0",
+            "-1/200"
+          ],
+          [
+            "-1/200",
+            "0",
+            "1/200",
+            "0"
+          ],
+          [
+            "0",
+            "-199/200",
+            "0",
+            "199/200"
+          ]
+        ],
+        "R_y": [
+          [
+            "199/200",
+            "-199/200",
+            "0",
+            "0"
+          ],
+          [
+            "-1/200",
+            "1/200",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/200",
+            "-1/200"
+          ],
+          [
+            "0",
+            "0",
+            "-199/200",
+            "199/200"
+          ]
+        ],
+        "A": [
+          [
+            "199/100",
+            "-199/200",
+            "-199/200",
+            "0"
+          ],
+          [
+            "-1/200",
+            "1/100",
+            "0",
+            "-1/200"
+          ],
+          [
+            "-1/200",
+            "0",
+            "1/100",
+            "-1/200"
+          ],
+          [
+            "0",
+            "-199/200",
+            "-199/200",
+            "199/100"
+          ]
+        ],
+        "J": [
+          [
+            "1/400",
+            "199/400",
+            "199/400",
+            "1/400"
+          ],
+          [
+            "1/400",
+            "199/400",
+            "199/400",
+            "1/400"
+          ],
+          [
+            "1/400",
+            "199/400",
+            "199/400",
+            "1/400"
+          ],
+          [
+            "1/400",
+            "199/400",
+            "199/400",
+            "1/400"
+          ]
+        ],
+        "K": [
+          [
+            "1/200",
+            "199/400",
+            "199/400",
+            "0"
+          ],
+          [
+            "1/400",
+            "199/200",
+            "0",
+            "1/400"
+          ],
+          [
+            "1/400",
+            "0",
+            "199/200",
+            "1/400"
+          ],
+          [
+            "0",
+            "199/400",
+            "199/400",
+            "1/200"
+          ]
+        ],
+        "systematic_sweep": [
+          [
+            "1/40000",
+            "199/40000",
+            "39601/40000",
+            "199/40000"
+          ],
+          [
+            "199/40000",
+            "39601/40000",
+            "199/40000",
+            "1/40000"
+          ],
+          [
+            "1/40000",
+            "199/40000",
+            "39601/40000",
+            "199/40000"
+          ],
+          [
+            "199/40000",
+            "39601/40000",
+            "199/40000",
+            "1/40000"
+          ]
+        ],
+        "residual_commutator": [
+          [
+            "0",
+            "-19701/20000",
+            "19701/20000",
+            "0"
+          ],
+          [
+            "99/20000",
+            "0",
+            "0",
+            "-99/20000"
+          ],
+          [
+            "-99/20000",
+            "0",
+            "0",
+            "99/20000"
+          ],
+          [
+            "0",
+            "19701/20000",
+            "-19701/20000",
+            "0"
+          ]
+        ],
+        "new_coordinate_P_s": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ],
+        "new_coordinate_P_d": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "new_coordinate_A": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "-1/2"
+          ],
+          [
+            "0",
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ]
+      },
+      "eigenbasis_columns": [
+        [
+          "1",
+          "-2",
+          "0",
+          "199/100"
+        ],
+        [
+          "1",
+          "0",
+          "-2",
+          "-1/100"
+        ],
+        [
+          "1",
+          "0",
+          "2",
+          "-1/100"
+        ],
+        [
+          "1",
+          "2",
+          "0",
+          "199/100"
+        ]
+      ],
+      "eigenbasis_gram": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/50",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "199/50",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "199/10000"
+        ]
+      ],
+      "A_spectrum": [
+        "0",
+        "199/100",
+        "1/100",
+        "2"
+      ],
+      "sharp_C_mix": "100",
+      "random_refresh_mean_zero_norm": "199/200",
+      "sweep_mean_zero_norm": "99/100",
+      "sweep_mean_zero_spectral_radius": "9801/10000",
+      "new_coordinate_invariant_mean_zero": [
+        "-199/200",
+        "1/200",
+        "1/200",
+        "-199/200"
+      ],
+      "checks": [
+        "probability normalization",
+        "x: preserves constants",
+        "x: conditional projection idempotent",
+        "x: weighted self-adjoint",
+        "x: residual projection idempotent",
+        "x: expectation residual orthogonal",
+        "x: residual squared norm equals quadratic form",
+        "x: pairwise signed difference form",
+        "x: centering leaves residual unchanged",
+        "x: constant offsets killed",
+        "y: preserves constants",
+        "y: conditional projection idempotent",
+        "y: weighted self-adjoint",
+        "y: residual projection idempotent",
+        "y: expectation residual orthogonal",
+        "y: residual squared norm equals quadratic form",
+        "y: pairwise signed difference form",
+        "y: centering leaves residual unchanged",
+        "y: constant offsets killed",
+        "stacked residual Gram matrix equals weighted A",
+        "complete weighted orthogonal eigenbasis",
+        "A eigenvector at 0",
+        "K eigenvector from A at 0",
+        "A eigenvector at 199/100",
+        "K eigenvector from A at 199/100",
+        "A eigenvector at 1/100",
+        "K eigenvector from A at 1/100",
+        "A eigenvector at 2",
+        "K eigenvector from A at 2",
+        "K=I-A/2",
+        "sharp variance-to-residual ratio attained",
+        "joint sum variance",
+        "joint sum residual energy",
+        "negation preserves variance",
+        "negation preserves residual energy",
+        "affine centering preserves variance",
+        "affine centering preserves A readout",
+        "double negation is identity unlike residual idempotence",
+        "centered systematic sweep minimal identity",
+        "sweep adjoint product gives exact norm abs(rho)",
+        "systematic sweep exact power n=1",
+        "random refresh exact power n=1",
+        "systematic sweep exact power n=2",
+        "random refresh exact power n=2",
+        "systematic sweep exact power n=3",
+        "random refresh exact power n=3",
+        "systematic sweep exact power n=5",
+        "random refresh exact power n=5",
+        "alternating residuals retain interaction rather than mix all modes",
+        "residual order commutes exactly at rho=0",
+        "sum-difference coordinate change exact inverse",
+        "new coordinate refresh disconnects sum/difference carrier"
+      ],
+      "check_count": 52
+    },
+    {
+      "rho": "-3/4",
+      "weights": [
+        "1/16",
+        "7/16",
+        "7/16",
+        "1/16"
+      ],
+      "matrices": {
+        "W": [
+          [
+            "1/16",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "7/16",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "7/16",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1/16"
+          ]
+        ],
+        "P_x": [
+          [
+            "1/8",
+            "0",
+            "7/8",
+            "0"
+          ],
+          [
+            "0",
+            "7/8",
+            "0",
+            "1/8"
+          ],
+          [
+            "1/8",
+            "0",
+            "7/8",
+            "0"
+          ],
+          [
+            "0",
+            "7/8",
+            "0",
+            "1/8"
+          ]
+        ],
+        "P_y": [
+          [
+            "1/8",
+            "7/8",
+            "0",
+            "0"
+          ],
+          [
+            "1/8",
+            "7/8",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "7/8",
+            "1/8"
+          ],
+          [
+            "0",
+            "0",
+            "7/8",
+            "1/8"
+          ]
+        ],
+        "R_x": [
+          [
+            "7/8",
+            "0",
+            "-7/8",
+            "0"
+          ],
+          [
+            "0",
+            "1/8",
+            "0",
+            "-1/8"
+          ],
+          [
+            "-1/8",
+            "0",
+            "1/8",
+            "0"
+          ],
+          [
+            "0",
+            "-7/8",
+            "0",
+            "7/8"
+          ]
+        ],
+        "R_y": [
+          [
+            "7/8",
+            "-7/8",
+            "0",
+            "0"
+          ],
+          [
+            "-1/8",
+            "1/8",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/8",
+            "-1/8"
+          ],
+          [
+            "0",
+            "0",
+            "-7/8",
+            "7/8"
+          ]
+        ],
+        "A": [
+          [
+            "7/4",
+            "-7/8",
+            "-7/8",
+            "0"
+          ],
+          [
+            "-1/8",
+            "1/4",
+            "0",
+            "-1/8"
+          ],
+          [
+            "-1/8",
+            "0",
+            "1/4",
+            "-1/8"
+          ],
+          [
+            "0",
+            "-7/8",
+            "-7/8",
+            "7/4"
+          ]
+        ],
+        "J": [
+          [
+            "1/16",
+            "7/16",
+            "7/16",
+            "1/16"
+          ],
+          [
+            "1/16",
+            "7/16",
+            "7/16",
+            "1/16"
+          ],
+          [
+            "1/16",
+            "7/16",
+            "7/16",
+            "1/16"
+          ],
+          [
+            "1/16",
+            "7/16",
+            "7/16",
+            "1/16"
+          ]
+        ],
+        "K": [
+          [
+            "1/8",
+            "7/16",
+            "7/16",
+            "0"
+          ],
+          [
+            "1/16",
+            "7/8",
+            "0",
+            "1/16"
+          ],
+          [
+            "1/16",
+            "0",
+            "7/8",
+            "1/16"
+          ],
+          [
+            "0",
+            "7/16",
+            "7/16",
+            "1/8"
+          ]
+        ],
+        "systematic_sweep": [
+          [
+            "1/64",
+            "7/64",
+            "49/64",
+            "7/64"
+          ],
+          [
+            "7/64",
+            "49/64",
+            "7/64",
+            "1/64"
+          ],
+          [
+            "1/64",
+            "7/64",
+            "49/64",
+            "7/64"
+          ],
+          [
+            "7/64",
+            "49/64",
+            "7/64",
+            "1/64"
+          ]
+        ],
+        "residual_commutator": [
+          [
+            "0",
+            "-21/32",
+            "21/32",
+            "0"
+          ],
+          [
+            "3/32",
+            "0",
+            "0",
+            "-3/32"
+          ],
+          [
+            "-3/32",
+            "0",
+            "0",
+            "3/32"
+          ],
+          [
+            "0",
+            "21/32",
+            "-21/32",
+            "0"
+          ]
+        ],
+        "new_coordinate_P_s": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ],
+        "new_coordinate_P_d": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "new_coordinate_A": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "-1/2"
+          ],
+          [
+            "0",
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ]
+      },
+      "eigenbasis_columns": [
+        [
+          "1",
+          "-2",
+          "0",
+          "7/4"
+        ],
+        [
+          "1",
+          "0",
+          "-2",
+          "-1/4"
+        ],
+        [
+          "1",
+          "0",
+          "2",
+          "-1/4"
+        ],
+        [
+          "1",
+          "2",
+          "0",
+          "7/4"
+        ]
+      ],
+      "eigenbasis_gram": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "7/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "7/16"
+        ]
+      ],
+      "A_spectrum": [
+        "0",
+        "7/4",
+        "1/4",
+        "2"
+      ],
+      "sharp_C_mix": "4",
+      "random_refresh_mean_zero_norm": "7/8",
+      "sweep_mean_zero_norm": "3/4",
+      "sweep_mean_zero_spectral_radius": "9/16",
+      "new_coordinate_invariant_mean_zero": [
+        "-7/8",
+        "1/8",
+        "1/8",
+        "-7/8"
+      ],
+      "checks": [
+        "probability normalization",
+        "x: preserves constants",
+        "x: conditional projection idempotent",
+        "x: weighted self-adjoint",
+        "x: residual projection idempotent",
+        "x: expectation residual orthogonal",
+        "x: residual squared norm equals quadratic form",
+        "x: pairwise signed difference form",
+        "x: centering leaves residual unchanged",
+        "x: constant offsets killed",
+        "y: preserves constants",
+        "y: conditional projection idempotent",
+        "y: weighted self-adjoint",
+        "y: residual projection idempotent",
+        "y: expectation residual orthogonal",
+        "y: residual squared norm equals quadratic form",
+        "y: pairwise signed difference form",
+        "y: centering leaves residual unchanged",
+        "y: constant offsets killed",
+        "stacked residual Gram matrix equals weighted A",
+        "complete weighted orthogonal eigenbasis",
+        "A eigenvector at 0",
+        "K eigenvector from A at 0",
+        "A eigenvector at 7/4",
+        "K eigenvector from A at 7/4",
+        "A eigenvector at 1/4",
+        "K eigenvector from A at 1/4",
+        "A eigenvector at 2",
+        "K eigenvector from A at 2",
+        "K=I-A/2",
+        "sharp variance-to-residual ratio attained",
+        "joint sum variance",
+        "joint sum residual energy",
+        "negation preserves variance",
+        "negation preserves residual energy",
+        "affine centering preserves variance",
+        "affine centering preserves A readout",
+        "double negation is identity unlike residual idempotence",
+        "centered systematic sweep minimal identity",
+        "sweep adjoint product gives exact norm abs(rho)",
+        "systematic sweep exact power n=1",
+        "random refresh exact power n=1",
+        "systematic sweep exact power n=2",
+        "random refresh exact power n=2",
+        "systematic sweep exact power n=3",
+        "random refresh exact power n=3",
+        "systematic sweep exact power n=5",
+        "random refresh exact power n=5",
+        "alternating residuals retain interaction rather than mix all modes",
+        "residual order commutes exactly at rho=0",
+        "sum-difference coordinate change exact inverse",
+        "new coordinate refresh disconnects sum/difference carrier"
+      ],
+      "check_count": 52
+    },
+    {
+      "rho": "-1/2",
+      "weights": [
+        "1/8",
+        "3/8",
+        "3/8",
+        "1/8"
+      ],
+      "matrices": {
+        "W": [
+          [
+            "1/8",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/8",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "3/8",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1/8"
+          ]
+        ],
+        "P_x": [
+          [
+            "1/4",
+            "0",
+            "3/4",
+            "0"
+          ],
+          [
+            "0",
+            "3/4",
+            "0",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "0",
+            "3/4",
+            "0"
+          ],
+          [
+            "0",
+            "3/4",
+            "0",
+            "1/4"
+          ]
+        ],
+        "P_y": [
+          [
+            "1/4",
+            "3/4",
+            "0",
+            "0"
+          ],
+          [
+            "1/4",
+            "3/4",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "3/4",
+            "1/4"
+          ],
+          [
+            "0",
+            "0",
+            "3/4",
+            "1/4"
+          ]
+        ],
+        "R_x": [
+          [
+            "3/4",
+            "0",
+            "-3/4",
+            "0"
+          ],
+          [
+            "0",
+            "1/4",
+            "0",
+            "-1/4"
+          ],
+          [
+            "-1/4",
+            "0",
+            "1/4",
+            "0"
+          ],
+          [
+            "0",
+            "-3/4",
+            "0",
+            "3/4"
+          ]
+        ],
+        "R_y": [
+          [
+            "3/4",
+            "-3/4",
+            "0",
+            "0"
+          ],
+          [
+            "-1/4",
+            "1/4",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/4",
+            "-1/4"
+          ],
+          [
+            "0",
+            "0",
+            "-3/4",
+            "3/4"
+          ]
+        ],
+        "A": [
+          [
+            "3/2",
+            "-3/4",
+            "-3/4",
+            "0"
+          ],
+          [
+            "-1/4",
+            "1/2",
+            "0",
+            "-1/4"
+          ],
+          [
+            "-1/4",
+            "0",
+            "1/2",
+            "-1/4"
+          ],
+          [
+            "0",
+            "-3/4",
+            "-3/4",
+            "3/2"
+          ]
+        ],
+        "J": [
+          [
+            "1/8",
+            "3/8",
+            "3/8",
+            "1/8"
+          ],
+          [
+            "1/8",
+            "3/8",
+            "3/8",
+            "1/8"
+          ],
+          [
+            "1/8",
+            "3/8",
+            "3/8",
+            "1/8"
+          ],
+          [
+            "1/8",
+            "3/8",
+            "3/8",
+            "1/8"
+          ]
+        ],
+        "K": [
+          [
+            "1/4",
+            "3/8",
+            "3/8",
+            "0"
+          ],
+          [
+            "1/8",
+            "3/4",
+            "0",
+            "1/8"
+          ],
+          [
+            "1/8",
+            "0",
+            "3/4",
+            "1/8"
+          ],
+          [
+            "0",
+            "3/8",
+            "3/8",
+            "1/4"
+          ]
+        ],
+        "systematic_sweep": [
+          [
+            "1/16",
+            "3/16",
+            "9/16",
+            "3/16"
+          ],
+          [
+            "3/16",
+            "9/16",
+            "3/16",
+            "1/16"
+          ],
+          [
+            "1/16",
+            "3/16",
+            "9/16",
+            "3/16"
+          ],
+          [
+            "3/16",
+            "9/16",
+            "3/16",
+            "1/16"
+          ]
+        ],
+        "residual_commutator": [
+          [
+            "0",
+            "-3/8",
+            "3/8",
+            "0"
+          ],
+          [
+            "1/8",
+            "0",
+            "0",
+            "-1/8"
+          ],
+          [
+            "-1/8",
+            "0",
+            "0",
+            "1/8"
+          ],
+          [
+            "0",
+            "3/8",
+            "-3/8",
+            "0"
+          ]
+        ],
+        "new_coordinate_P_s": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ],
+        "new_coordinate_P_d": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "new_coordinate_A": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "-1/2"
+          ],
+          [
+            "0",
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ]
+      },
+      "eigenbasis_columns": [
+        [
+          "1",
+          "-2",
+          "0",
+          "3/2"
+        ],
+        [
+          "1",
+          "0",
+          "-2",
+          "-1/2"
+        ],
+        [
+          "1",
+          "0",
+          "2",
+          "-1/2"
+        ],
+        [
+          "1",
+          "2",
+          "0",
+          "3/2"
+        ]
+      ],
+      "eigenbasis_gram": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "3/4"
+        ]
+      ],
+      "A_spectrum": [
+        "0",
+        "3/2",
+        "1/2",
+        "2"
+      ],
+      "sharp_C_mix": "2",
+      "random_refresh_mean_zero_norm": "3/4",
+      "sweep_mean_zero_norm": "1/2",
+      "sweep_mean_zero_spectral_radius": "1/4",
+      "new_coordinate_invariant_mean_zero": [
+        "-3/4",
+        "1/4",
+        "1/4",
+        "-3/4"
+      ],
+      "checks": [
+        "probability normalization",
+        "x: preserves constants",
+        "x: conditional projection idempotent",
+        "x: weighted self-adjoint",
+        "x: residual projection idempotent",
+        "x: expectation residual orthogonal",
+        "x: residual squared norm equals quadratic form",
+        "x: pairwise signed difference form",
+        "x: centering leaves residual unchanged",
+        "x: constant offsets killed",
+        "y: preserves constants",
+        "y: conditional projection idempotent",
+        "y: weighted self-adjoint",
+        "y: residual projection idempotent",
+        "y: expectation residual orthogonal",
+        "y: residual squared norm equals quadratic form",
+        "y: pairwise signed difference form",
+        "y: centering leaves residual unchanged",
+        "y: constant offsets killed",
+        "stacked residual Gram matrix equals weighted A",
+        "complete weighted orthogonal eigenbasis",
+        "A eigenvector at 0",
+        "K eigenvector from A at 0",
+        "A eigenvector at 3/2",
+        "K eigenvector from A at 3/2",
+        "A eigenvector at 1/2",
+        "K eigenvector from A at 1/2",
+        "A eigenvector at 2",
+        "K eigenvector from A at 2",
+        "K=I-A/2",
+        "sharp variance-to-residual ratio attained",
+        "joint sum variance",
+        "joint sum residual energy",
+        "negation preserves variance",
+        "negation preserves residual energy",
+        "affine centering preserves variance",
+        "affine centering preserves A readout",
+        "double negation is identity unlike residual idempotence",
+        "centered systematic sweep minimal identity",
+        "sweep adjoint product gives exact norm abs(rho)",
+        "systematic sweep exact power n=1",
+        "random refresh exact power n=1",
+        "systematic sweep exact power n=2",
+        "random refresh exact power n=2",
+        "systematic sweep exact power n=3",
+        "random refresh exact power n=3",
+        "systematic sweep exact power n=5",
+        "random refresh exact power n=5",
+        "alternating residuals retain interaction rather than mix all modes",
+        "residual order commutes exactly at rho=0",
+        "sum-difference coordinate change exact inverse",
+        "new coordinate refresh disconnects sum/difference carrier"
+      ],
+      "check_count": 52
+    },
+    {
+      "rho": "0",
+      "weights": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "matrices": {
+        "W": [
+          [
+            "1/4",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/4",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/4",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1/4"
+          ]
+        ],
+        "P_x": [
+          [
+            "1/2",
+            "0",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "0",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "0",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "0",
+            "1/2"
+          ]
+        ],
+        "P_y": [
+          [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          [
+            "1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/2",
+            "1/2"
+          ],
+          [
+            "0",
+            "0",
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "R_x": [
+          [
+            "1/2",
+            "0",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "0",
+            "-1/2"
+          ],
+          [
+            "-1/2",
+            "0",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2",
+            "0",
+            "1/2"
+          ]
+        ],
+        "R_y": [
+          [
+            "1/2",
+            "-1/2",
+            "0",
+            "0"
+          ],
+          [
+            "-1/2",
+            "1/2",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/2",
+            "-1/2"
+          ],
+          [
+            "0",
+            "0",
+            "-1/2",
+            "1/2"
+          ]
+        ],
+        "A": [
+          [
+            "1",
+            "-1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "1",
+            "0",
+            "-1/2"
+          ],
+          [
+            "-1/2",
+            "0",
+            "1",
+            "-1/2"
+          ],
+          [
+            "0",
+            "-1/2",
+            "-1/2",
+            "1"
+          ]
+        ],
+        "J": [
+          [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ]
+        ],
+        "K": [
+          [
+            "1/2",
+            "1/4",
+            "1/4",
+            "0"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "0",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "0",
+            "1/2",
+            "1/4"
+          ],
+          [
+            "0",
+            "1/4",
+            "1/4",
+            "1/2"
+          ]
+        ],
+        "systematic_sweep": [
+          [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ]
+        ],
+        "residual_commutator": [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "new_coordinate_P_s": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ],
+        "new_coordinate_P_d": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "new_coordinate_A": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "-1/2"
+          ],
+          [
+            "0",
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ]
+      },
+      "eigenbasis_columns": [
+        [
+          "1",
+          "-2",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "-2",
+          "-1"
+        ],
+        [
+          "1",
+          "0",
+          "2",
+          "-1"
+        ],
+        [
+          "1",
+          "2",
+          "0",
+          "1"
+        ]
+      ],
+      "eigenbasis_gram": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "A_spectrum": [
+        "0",
+        "1",
+        "1",
+        "2"
+      ],
+      "sharp_C_mix": "1",
+      "random_refresh_mean_zero_norm": "1/2",
+      "sweep_mean_zero_norm": "0",
+      "sweep_mean_zero_spectral_radius": "0",
+      "new_coordinate_invariant_mean_zero": [
+        "-1/2",
+        "1/2",
+        "1/2",
+        "-1/2"
+      ],
+      "checks": [
+        "probability normalization",
+        "x: preserves constants",
+        "x: conditional projection idempotent",
+        "x: weighted self-adjoint",
+        "x: residual projection idempotent",
+        "x: expectation residual orthogonal",
+        "x: residual squared norm equals quadratic form",
+        "x: pairwise signed difference form",
+        "x: centering leaves residual unchanged",
+        "x: constant offsets killed",
+        "y: preserves constants",
+        "y: conditional projection idempotent",
+        "y: weighted self-adjoint",
+        "y: residual projection idempotent",
+        "y: expectation residual orthogonal",
+        "y: residual squared norm equals quadratic form",
+        "y: pairwise signed difference form",
+        "y: centering leaves residual unchanged",
+        "y: constant offsets killed",
+        "stacked residual Gram matrix equals weighted A",
+        "complete weighted orthogonal eigenbasis",
+        "A eigenvector at 0",
+        "K eigenvector from A at 0",
+        "A eigenvector at 1",
+        "K eigenvector from A at 1",
+        "A eigenvector at 1",
+        "K eigenvector from A at 1",
+        "A eigenvector at 2",
+        "K eigenvector from A at 2",
+        "K=I-A/2",
+        "sharp variance-to-residual ratio attained",
+        "joint sum variance",
+        "joint sum residual energy",
+        "negation preserves variance",
+        "negation preserves residual energy",
+        "affine centering preserves variance",
+        "affine centering preserves A readout",
+        "double negation is identity unlike residual idempotence",
+        "centered systematic sweep minimal identity",
+        "sweep adjoint product gives exact norm abs(rho)",
+        "systematic sweep exact power n=1",
+        "random refresh exact power n=1",
+        "systematic sweep exact power n=2",
+        "random refresh exact power n=2",
+        "systematic sweep exact power n=3",
+        "random refresh exact power n=3",
+        "systematic sweep exact power n=5",
+        "random refresh exact power n=5",
+        "alternating residuals retain interaction rather than mix all modes",
+        "residual order commutes exactly at rho=0",
+        "sum-difference coordinate change exact inverse",
+        "new coordinate refresh disconnects sum/difference carrier"
+      ],
+      "check_count": 52
+    },
+    {
+      "rho": "1/2",
+      "weights": [
+        "3/8",
+        "1/8",
+        "1/8",
+        "3/8"
+      ],
+      "matrices": {
+        "W": [
+          [
+            "3/8",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/8",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/8",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "3/8"
+          ]
+        ],
+        "P_x": [
+          [
+            "3/4",
+            "0",
+            "1/4",
+            "0"
+          ],
+          [
+            "0",
+            "1/4",
+            "0",
+            "3/4"
+          ],
+          [
+            "3/4",
+            "0",
+            "1/4",
+            "0"
+          ],
+          [
+            "0",
+            "1/4",
+            "0",
+            "3/4"
+          ]
+        ],
+        "P_y": [
+          [
+            "3/4",
+            "1/4",
+            "0",
+            "0"
+          ],
+          [
+            "3/4",
+            "1/4",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/4",
+            "3/4"
+          ],
+          [
+            "0",
+            "0",
+            "1/4",
+            "3/4"
+          ]
+        ],
+        "R_x": [
+          [
+            "1/4",
+            "0",
+            "-1/4",
+            "0"
+          ],
+          [
+            "0",
+            "3/4",
+            "0",
+            "-3/4"
+          ],
+          [
+            "-3/4",
+            "0",
+            "3/4",
+            "0"
+          ],
+          [
+            "0",
+            "-1/4",
+            "0",
+            "1/4"
+          ]
+        ],
+        "R_y": [
+          [
+            "1/4",
+            "-1/4",
+            "0",
+            "0"
+          ],
+          [
+            "-3/4",
+            "3/4",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "3/4",
+            "-3/4"
+          ],
+          [
+            "0",
+            "0",
+            "-1/4",
+            "1/4"
+          ]
+        ],
+        "A": [
+          [
+            "1/2",
+            "-1/4",
+            "-1/4",
+            "0"
+          ],
+          [
+            "-3/4",
+            "3/2",
+            "0",
+            "-3/4"
+          ],
+          [
+            "-3/4",
+            "0",
+            "3/2",
+            "-3/4"
+          ],
+          [
+            "0",
+            "-1/4",
+            "-1/4",
+            "1/2"
+          ]
+        ],
+        "J": [
+          [
+            "3/8",
+            "1/8",
+            "1/8",
+            "3/8"
+          ],
+          [
+            "3/8",
+            "1/8",
+            "1/8",
+            "3/8"
+          ],
+          [
+            "3/8",
+            "1/8",
+            "1/8",
+            "3/8"
+          ],
+          [
+            "3/8",
+            "1/8",
+            "1/8",
+            "3/8"
+          ]
+        ],
+        "K": [
+          [
+            "3/4",
+            "1/8",
+            "1/8",
+            "0"
+          ],
+          [
+            "3/8",
+            "1/4",
+            "0",
+            "3/8"
+          ],
+          [
+            "3/8",
+            "0",
+            "1/4",
+            "3/8"
+          ],
+          [
+            "0",
+            "1/8",
+            "1/8",
+            "3/4"
+          ]
+        ],
+        "systematic_sweep": [
+          [
+            "9/16",
+            "3/16",
+            "1/16",
+            "3/16"
+          ],
+          [
+            "3/16",
+            "1/16",
+            "3/16",
+            "9/16"
+          ],
+          [
+            "9/16",
+            "3/16",
+            "1/16",
+            "3/16"
+          ],
+          [
+            "3/16",
+            "1/16",
+            "3/16",
+            "9/16"
+          ]
+        ],
+        "residual_commutator": [
+          [
+            "0",
+            "1/8",
+            "-1/8",
+            "0"
+          ],
+          [
+            "-3/8",
+            "0",
+            "0",
+            "3/8"
+          ],
+          [
+            "3/8",
+            "0",
+            "0",
+            "-3/8"
+          ],
+          [
+            "0",
+            "-1/8",
+            "1/8",
+            "0"
+          ]
+        ],
+        "new_coordinate_P_s": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ],
+        "new_coordinate_P_d": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "new_coordinate_A": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "-1/2"
+          ],
+          [
+            "0",
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ]
+      },
+      "eigenbasis_columns": [
+        [
+          "1",
+          "-2",
+          "0",
+          "1/2"
+        ],
+        [
+          "1",
+          "0",
+          "-2",
+          "-3/2"
+        ],
+        [
+          "1",
+          "0",
+          "2",
+          "-3/2"
+        ],
+        [
+          "1",
+          "2",
+          "0",
+          "1/2"
+        ]
+      ],
+      "eigenbasis_gram": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "3/4"
+        ]
+      ],
+      "A_spectrum": [
+        "0",
+        "1/2",
+        "3/2",
+        "2"
+      ],
+      "sharp_C_mix": "2",
+      "random_refresh_mean_zero_norm": "3/4",
+      "sweep_mean_zero_norm": "1/2",
+      "sweep_mean_zero_spectral_radius": "1/4",
+      "new_coordinate_invariant_mean_zero": [
+        "-1/4",
+        "3/4",
+        "3/4",
+        "-1/4"
+      ],
+      "checks": [
+        "probability normalization",
+        "x: preserves constants",
+        "x: conditional projection idempotent",
+        "x: weighted self-adjoint",
+        "x: residual projection idempotent",
+        "x: expectation residual orthogonal",
+        "x: residual squared norm equals quadratic form",
+        "x: pairwise signed difference form",
+        "x: centering leaves residual unchanged",
+        "x: constant offsets killed",
+        "y: preserves constants",
+        "y: conditional projection idempotent",
+        "y: weighted self-adjoint",
+        "y: residual projection idempotent",
+        "y: expectation residual orthogonal",
+        "y: residual squared norm equals quadratic form",
+        "y: pairwise signed difference form",
+        "y: centering leaves residual unchanged",
+        "y: constant offsets killed",
+        "stacked residual Gram matrix equals weighted A",
+        "complete weighted orthogonal eigenbasis",
+        "A eigenvector at 0",
+        "K eigenvector from A at 0",
+        "A eigenvector at 1/2",
+        "K eigenvector from A at 1/2",
+        "A eigenvector at 3/2",
+        "K eigenvector from A at 3/2",
+        "A eigenvector at 2",
+        "K eigenvector from A at 2",
+        "K=I-A/2",
+        "sharp variance-to-residual ratio attained",
+        "joint sum variance",
+        "joint sum residual energy",
+        "negation preserves variance",
+        "negation preserves residual energy",
+        "affine centering preserves variance",
+        "affine centering preserves A readout",
+        "double negation is identity unlike residual idempotence",
+        "centered systematic sweep minimal identity",
+        "sweep adjoint product gives exact norm abs(rho)",
+        "systematic sweep exact power n=1",
+        "random refresh exact power n=1",
+        "systematic sweep exact power n=2",
+        "random refresh exact power n=2",
+        "systematic sweep exact power n=3",
+        "random refresh exact power n=3",
+        "systematic sweep exact power n=5",
+        "random refresh exact power n=5",
+        "alternating residuals retain interaction rather than mix all modes",
+        "residual order commutes exactly at rho=0",
+        "sum-difference coordinate change exact inverse",
+        "new coordinate refresh disconnects sum/difference carrier"
+      ],
+      "check_count": 52
+    },
+    {
+      "rho": "3/4",
+      "weights": [
+        "7/16",
+        "1/16",
+        "1/16",
+        "7/16"
+      ],
+      "matrices": {
+        "W": [
+          [
+            "7/16",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/16",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/16",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "7/16"
+          ]
+        ],
+        "P_x": [
+          [
+            "7/8",
+            "0",
+            "1/8",
+            "0"
+          ],
+          [
+            "0",
+            "1/8",
+            "0",
+            "7/8"
+          ],
+          [
+            "7/8",
+            "0",
+            "1/8",
+            "0"
+          ],
+          [
+            "0",
+            "1/8",
+            "0",
+            "7/8"
+          ]
+        ],
+        "P_y": [
+          [
+            "7/8",
+            "1/8",
+            "0",
+            "0"
+          ],
+          [
+            "7/8",
+            "1/8",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/8",
+            "7/8"
+          ],
+          [
+            "0",
+            "0",
+            "1/8",
+            "7/8"
+          ]
+        ],
+        "R_x": [
+          [
+            "1/8",
+            "0",
+            "-1/8",
+            "0"
+          ],
+          [
+            "0",
+            "7/8",
+            "0",
+            "-7/8"
+          ],
+          [
+            "-7/8",
+            "0",
+            "7/8",
+            "0"
+          ],
+          [
+            "0",
+            "-1/8",
+            "0",
+            "1/8"
+          ]
+        ],
+        "R_y": [
+          [
+            "1/8",
+            "-1/8",
+            "0",
+            "0"
+          ],
+          [
+            "-7/8",
+            "7/8",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "7/8",
+            "-7/8"
+          ],
+          [
+            "0",
+            "0",
+            "-1/8",
+            "1/8"
+          ]
+        ],
+        "A": [
+          [
+            "1/4",
+            "-1/8",
+            "-1/8",
+            "0"
+          ],
+          [
+            "-7/8",
+            "7/4",
+            "0",
+            "-7/8"
+          ],
+          [
+            "-7/8",
+            "0",
+            "7/4",
+            "-7/8"
+          ],
+          [
+            "0",
+            "-1/8",
+            "-1/8",
+            "1/4"
+          ]
+        ],
+        "J": [
+          [
+            "7/16",
+            "1/16",
+            "1/16",
+            "7/16"
+          ],
+          [
+            "7/16",
+            "1/16",
+            "1/16",
+            "7/16"
+          ],
+          [
+            "7/16",
+            "1/16",
+            "1/16",
+            "7/16"
+          ],
+          [
+            "7/16",
+            "1/16",
+            "1/16",
+            "7/16"
+          ]
+        ],
+        "K": [
+          [
+            "7/8",
+            "1/16",
+            "1/16",
+            "0"
+          ],
+          [
+            "7/16",
+            "1/8",
+            "0",
+            "7/16"
+          ],
+          [
+            "7/16",
+            "0",
+            "1/8",
+            "7/16"
+          ],
+          [
+            "0",
+            "1/16",
+            "1/16",
+            "7/8"
+          ]
+        ],
+        "systematic_sweep": [
+          [
+            "49/64",
+            "7/64",
+            "1/64",
+            "7/64"
+          ],
+          [
+            "7/64",
+            "1/64",
+            "7/64",
+            "49/64"
+          ],
+          [
+            "49/64",
+            "7/64",
+            "1/64",
+            "7/64"
+          ],
+          [
+            "7/64",
+            "1/64",
+            "7/64",
+            "49/64"
+          ]
+        ],
+        "residual_commutator": [
+          [
+            "0",
+            "3/32",
+            "-3/32",
+            "0"
+          ],
+          [
+            "-21/32",
+            "0",
+            "0",
+            "21/32"
+          ],
+          [
+            "21/32",
+            "0",
+            "0",
+            "-21/32"
+          ],
+          [
+            "0",
+            "-3/32",
+            "3/32",
+            "0"
+          ]
+        ],
+        "new_coordinate_P_s": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ],
+        "new_coordinate_P_d": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "new_coordinate_A": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "-1/2"
+          ],
+          [
+            "0",
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ]
+      },
+      "eigenbasis_columns": [
+        [
+          "1",
+          "-2",
+          "0",
+          "1/4"
+        ],
+        [
+          "1",
+          "0",
+          "-2",
+          "-7/4"
+        ],
+        [
+          "1",
+          "0",
+          "2",
+          "-7/4"
+        ],
+        [
+          "1",
+          "2",
+          "0",
+          "1/4"
+        ]
+      ],
+      "eigenbasis_gram": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "7/2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "7/16"
+        ]
+      ],
+      "A_spectrum": [
+        "0",
+        "1/4",
+        "7/4",
+        "2"
+      ],
+      "sharp_C_mix": "4",
+      "random_refresh_mean_zero_norm": "7/8",
+      "sweep_mean_zero_norm": "3/4",
+      "sweep_mean_zero_spectral_radius": "9/16",
+      "new_coordinate_invariant_mean_zero": [
+        "-1/8",
+        "7/8",
+        "7/8",
+        "-1/8"
+      ],
+      "checks": [
+        "probability normalization",
+        "x: preserves constants",
+        "x: conditional projection idempotent",
+        "x: weighted self-adjoint",
+        "x: residual projection idempotent",
+        "x: expectation residual orthogonal",
+        "x: residual squared norm equals quadratic form",
+        "x: pairwise signed difference form",
+        "x: centering leaves residual unchanged",
+        "x: constant offsets killed",
+        "y: preserves constants",
+        "y: conditional projection idempotent",
+        "y: weighted self-adjoint",
+        "y: residual projection idempotent",
+        "y: expectation residual orthogonal",
+        "y: residual squared norm equals quadratic form",
+        "y: pairwise signed difference form",
+        "y: centering leaves residual unchanged",
+        "y: constant offsets killed",
+        "stacked residual Gram matrix equals weighted A",
+        "complete weighted orthogonal eigenbasis",
+        "A eigenvector at 0",
+        "K eigenvector from A at 0",
+        "A eigenvector at 1/4",
+        "K eigenvector from A at 1/4",
+        "A eigenvector at 7/4",
+        "K eigenvector from A at 7/4",
+        "A eigenvector at 2",
+        "K eigenvector from A at 2",
+        "K=I-A/2",
+        "sharp variance-to-residual ratio attained",
+        "joint sum variance",
+        "joint sum residual energy",
+        "negation preserves variance",
+        "negation preserves residual energy",
+        "affine centering preserves variance",
+        "affine centering preserves A readout",
+        "double negation is identity unlike residual idempotence",
+        "centered systematic sweep minimal identity",
+        "sweep adjoint product gives exact norm abs(rho)",
+        "systematic sweep exact power n=1",
+        "random refresh exact power n=1",
+        "systematic sweep exact power n=2",
+        "random refresh exact power n=2",
+        "systematic sweep exact power n=3",
+        "random refresh exact power n=3",
+        "systematic sweep exact power n=5",
+        "random refresh exact power n=5",
+        "alternating residuals retain interaction rather than mix all modes",
+        "residual order commutes exactly at rho=0",
+        "sum-difference coordinate change exact inverse",
+        "new coordinate refresh disconnects sum/difference carrier"
+      ],
+      "check_count": 52
+    },
+    {
+      "rho": "99/100",
+      "weights": [
+        "199/400",
+        "1/400",
+        "1/400",
+        "199/400"
+      ],
+      "matrices": {
+        "W": [
+          [
+            "199/400",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/400",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/400",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "199/400"
+          ]
+        ],
+        "P_x": [
+          [
+            "199/200",
+            "0",
+            "1/200",
+            "0"
+          ],
+          [
+            "0",
+            "1/200",
+            "0",
+            "199/200"
+          ],
+          [
+            "199/200",
+            "0",
+            "1/200",
+            "0"
+          ],
+          [
+            "0",
+            "1/200",
+            "0",
+            "199/200"
+          ]
+        ],
+        "P_y": [
+          [
+            "199/200",
+            "1/200",
+            "0",
+            "0"
+          ],
+          [
+            "199/200",
+            "1/200",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/200",
+            "199/200"
+          ],
+          [
+            "0",
+            "0",
+            "1/200",
+            "199/200"
+          ]
+        ],
+        "R_x": [
+          [
+            "1/200",
+            "0",
+            "-1/200",
+            "0"
+          ],
+          [
+            "0",
+            "199/200",
+            "0",
+            "-199/200"
+          ],
+          [
+            "-199/200",
+            "0",
+            "199/200",
+            "0"
+          ],
+          [
+            "0",
+            "-1/200",
+            "0",
+            "1/200"
+          ]
+        ],
+        "R_y": [
+          [
+            "1/200",
+            "-1/200",
+            "0",
+            "0"
+          ],
+          [
+            "-199/200",
+            "199/200",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "199/200",
+            "-199/200"
+          ],
+          [
+            "0",
+            "0",
+            "-1/200",
+            "1/200"
+          ]
+        ],
+        "A": [
+          [
+            "1/100",
+            "-1/200",
+            "-1/200",
+            "0"
+          ],
+          [
+            "-199/200",
+            "199/100",
+            "0",
+            "-199/200"
+          ],
+          [
+            "-199/200",
+            "0",
+            "199/100",
+            "-199/200"
+          ],
+          [
+            "0",
+            "-1/200",
+            "-1/200",
+            "1/100"
+          ]
+        ],
+        "J": [
+          [
+            "199/400",
+            "1/400",
+            "1/400",
+            "199/400"
+          ],
+          [
+            "199/400",
+            "1/400",
+            "1/400",
+            "199/400"
+          ],
+          [
+            "199/400",
+            "1/400",
+            "1/400",
+            "199/400"
+          ],
+          [
+            "199/400",
+            "1/400",
+            "1/400",
+            "199/400"
+          ]
+        ],
+        "K": [
+          [
+            "199/200",
+            "1/400",
+            "1/400",
+            "0"
+          ],
+          [
+            "199/400",
+            "1/200",
+            "0",
+            "199/400"
+          ],
+          [
+            "199/400",
+            "0",
+            "1/200",
+            "199/400"
+          ],
+          [
+            "0",
+            "1/400",
+            "1/400",
+            "199/200"
+          ]
+        ],
+        "systematic_sweep": [
+          [
+            "39601/40000",
+            "199/40000",
+            "1/40000",
+            "199/40000"
+          ],
+          [
+            "199/40000",
+            "1/40000",
+            "199/40000",
+            "39601/40000"
+          ],
+          [
+            "39601/40000",
+            "199/40000",
+            "1/40000",
+            "199/40000"
+          ],
+          [
+            "199/40000",
+            "1/40000",
+            "199/40000",
+            "39601/40000"
+          ]
+        ],
+        "residual_commutator": [
+          [
+            "0",
+            "99/20000",
+            "-99/20000",
+            "0"
+          ],
+          [
+            "-19701/20000",
+            "0",
+            "0",
+            "19701/20000"
+          ],
+          [
+            "19701/20000",
+            "0",
+            "0",
+            "-19701/20000"
+          ],
+          [
+            "0",
+            "-99/20000",
+            "99/20000",
+            "0"
+          ]
+        ],
+        "new_coordinate_P_s": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ],
+        "new_coordinate_P_d": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "new_coordinate_A": [
+          [
+            "1/2",
+            "0",
+            "0",
+            "-1/2"
+          ],
+          [
+            "0",
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ]
+      },
+      "eigenbasis_columns": [
+        [
+          "1",
+          "-2",
+          "0",
+          "1/100"
+        ],
+        [
+          "1",
+          "0",
+          "-2",
+          "-199/100"
+        ],
+        [
+          "1",
+          "0",
+          "2",
+          "-199/100"
+        ],
+        [
+          "1",
+          "2",
+          "0",
+          "1/100"
+        ]
+      ],
+      "eigenbasis_gram": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "199/50",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/50",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "199/10000"
+        ]
+      ],
+      "A_spectrum": [
+        "0",
+        "1/100",
+        "199/100",
+        "2"
+      ],
+      "sharp_C_mix": "100",
+      "random_refresh_mean_zero_norm": "199/200",
+      "sweep_mean_zero_norm": "99/100",
+      "sweep_mean_zero_spectral_radius": "9801/10000",
+      "new_coordinate_invariant_mean_zero": [
+        "-1/200",
+        "199/200",
+        "199/200",
+        "-1/200"
+      ],
+      "checks": [
+        "probability normalization",
+        "x: preserves constants",
+        "x: conditional projection idempotent",
+        "x: weighted self-adjoint",
+        "x: residual projection idempotent",
+        "x: expectation residual orthogonal",
+        "x: residual squared norm equals quadratic form",
+        "x: pairwise signed difference form",
+        "x: centering leaves residual unchanged",
+        "x: constant offsets killed",
+        "y: preserves constants",
+        "y: conditional projection idempotent",
+        "y: weighted self-adjoint",
+        "y: residual projection idempotent",
+        "y: expectation residual orthogonal",
+        "y: residual squared norm equals quadratic form",
+        "y: pairwise signed difference form",
+        "y: centering leaves residual unchanged",
+        "y: constant offsets killed",
+        "stacked residual Gram matrix equals weighted A",
+        "complete weighted orthogonal eigenbasis",
+        "A eigenvector at 0",
+        "K eigenvector from A at 0",
+        "A eigenvector at 1/100",
+        "K eigenvector from A at 1/100",
+        "A eigenvector at 199/100",
+        "K eigenvector from A at 199/100",
+        "A eigenvector at 2",
+        "K eigenvector from A at 2",
+        "K=I-A/2",
+        "sharp variance-to-residual ratio attained",
+        "joint sum variance",
+        "joint sum residual energy",
+        "negation preserves variance",
+        "negation preserves residual energy",
+        "affine centering preserves variance",
+        "affine centering preserves A readout",
+        "double negation is identity unlike residual idempotence",
+        "centered systematic sweep minimal identity",
+        "sweep adjoint product gives exact norm abs(rho)",
+        "systematic sweep exact power n=1",
+        "random refresh exact power n=1",
+        "systematic sweep exact power n=2",
+        "random refresh exact power n=2",
+        "systematic sweep exact power n=3",
+        "random refresh exact power n=3",
+        "systematic sweep exact power n=5",
+        "random refresh exact power n=5",
+        "alternating residuals retain interaction rather than mix all modes",
+        "residual order commutes exactly at rho=0",
+        "sum-difference coordinate change exact inverse",
+        "new coordinate refresh disconnects sum/difference carrier"
+      ],
+      "check_count": 52
+    }
+  ],
+  "centering_controls": {
+    "binary": [
+      "0",
+      "1"
+    ],
+    "centered": [
+      "-1/2",
+      "1/2"
+    ],
+    "twice_centered": [
+      "-1",
+      "0"
+    ],
+    "equal_occurrences": [
+      "-1/2",
+      "-1/2"
+    ]
+  },
+  "analytic_claims_not_checked": [
+    "gauge equivariance on SU(2) links",
+    "general two-projection norm theorem",
+    "actual vacuum correlation or uniform gap"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "method": "direct primitive mod-2/4/8 quadruple census; exact rational membership; squarefree factoring; cube group check",
+  "candidate_count": 32,
+  "local_survivor_counts": {
+    "2": 32,
+    "4": 16,
+    "8": 8
+  },
+  "eight_rational_witness_signatures": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      -1,
+      -5,
+      5
+    ],
+    [
+      5,
+      2,
+      10
+    ],
+    [
+      -5,
+      -10,
+      2
+    ],
+    [
+      -1,
+      -1,
+      1
+    ],
+    [
+      1,
+      5,
+      5
+    ],
+    [
+      -5,
+      -2,
+      10
+    ],
+    [
+      5,
+      10,
+      2
+    ]
+  ],
+  "cube_vertices": 32,
+  "cube_pair_checks": 1024,
+  "scope": "finite arithmetic; universal Selmer/rank claims require the written coverage proof and Kummer/Mordell-Weil theorems"
+}

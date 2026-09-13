@@ -1,0 +1,444 @@
+{
+  "scope": "finite exact source vector-field and one-form checks; no time integration",
+  "conventions": {
+    "pauli": "+i sigma, minus cross",
+    "tree": [
+      "a",
+      "b",
+      "l",
+      "s",
+      "r"
+    ],
+    "root": "B",
+    "kinetic_source": "sum E_e^2 / 2"
+  },
+  "cases": [
+    {
+      "name": "regular_0_0",
+      "traces": [
+        "3/5",
+        "3/5",
+        "9/25"
+      ],
+      "kinetic": "0",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "regular_0_1",
+      "traces": [
+        "3/5",
+        "3/5",
+        "9/25"
+      ],
+      "kinetic": "16528/625",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "regular_0_2",
+      "traces": [
+        "3/5",
+        "3/5",
+        "9/25"
+      ],
+      "kinetic": "77072/275625",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "regular_1_0",
+      "traces": [
+        "83/205",
+        "5459/16591",
+        "-1467143/3401155"
+      ],
+      "kinetic": "0",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "regular_1_1",
+      "traces": [
+        "83/205",
+        "5459/16591",
+        "-1467143/3401155"
+      ],
+      "kinetic": "61544882374344/2313571066805",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "regular_1_2",
+      "traces": [
+        "83/205",
+        "5459/16591",
+        "-1467143/3401155"
+      ],
+      "kinetic": "158716569693992/566824911367225",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "aligned_transverse_electric",
+      "traces": [
+        "3/5",
+        "3/5",
+        "-7/25"
+      ],
+      "kinetic": "1959/25",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "antialigned_transverse_electric",
+      "traces": [
+        "3/5",
+        "3/5",
+        "1"
+      ],
+      "kinetic": "42",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "central_U",
+      "traces": [
+        "1",
+        "3/5",
+        "3/5"
+      ],
+      "kinetic": "748/25",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "central_V",
+      "traces": [
+        "3/5",
+        "1",
+        "3/5"
+      ],
+      "kinetic": "928/25",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "central_single_circulation",
+      "traces": [
+        "1",
+        "1",
+        "1"
+      ],
+      "kinetic": "2",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "central_two_circulations",
+      "traces": [
+        "1",
+        "1",
+        "1"
+      ],
+      "kinetic": "4",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "negative_central",
+      "traces": [
+        "-1",
+        "-1",
+        "1"
+      ],
+      "kinetic": "28",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    },
+    {
+      "name": "all_zero_equilibrium",
+      "traces": [
+        "1",
+        "1",
+        "1"
+      ],
+      "kinetic": "0",
+      "source_checks": [
+        {
+          "representative": "tree",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        },
+        {
+          "representative": "independent_vertex_gauge",
+          "vector_field_all_14_components": true,
+          "energy_derivative_zero": true,
+          "gauss_derivative_zero": true
+        }
+      ],
+      "canonical_one_form": true,
+      "round_trip": true
+    }
+  ],
+  "regular_bridge_cases": [
+    {
+      "old_p": [
+        "0",
+        "0",
+        "0"
+      ],
+      "full_link_lift_matches": true,
+      "old_cometric_matches": true
+    },
+    {
+      "old_p": [
+        "1",
+        "-2",
+        "3"
+      ],
+      "full_link_lift_matches": true,
+      "old_cometric_matches": true
+    },
+    {
+      "old_p": [
+        "1/3",
+        "2/5",
+        "-1/7"
+      ],
+      "full_link_lift_matches": true,
+      "old_cometric_matches": true
+    },
+    {
+      "old_p": [
+        "0",
+        "0",
+        "0"
+      ],
+      "full_link_lift_matches": true,
+      "old_cometric_matches": true
+    },
+    {
+      "old_p": [
+        "1",
+        "-2",
+        "3"
+      ],
+      "full_link_lift_matches": true,
+      "old_cometric_matches": true
+    },
+    {
+      "old_p": [
+        "1/3",
+        "2/5",
+        "-1/7"
+      ],
+      "full_link_lift_matches": true,
+      "old_cometric_matches": true
+    }
+  ],
+  "central_exit": {
+    "P": [
+      "1",
+      "0",
+      "0"
+    ],
+    "Q": [
+      "0",
+      "1",
+      "0"
+    ],
+    "cross_t2": [
+      "0",
+      "0",
+      "15"
+    ],
+    "Delta_t4": 225,
+    "energy": 4
+  },
+  "naive_two_chord_metric_rejected": true,
+  "all_passed": true
+}

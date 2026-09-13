@@ -1,0 +1,478 @@
+{
+  "schema": "ym2-overlap-exact-controls-v1",
+  "direction_covers": [
+    {
+      "vertices": 4,
+      "edges": 4,
+      "blocks": 2,
+      "total_weight": "2",
+      "edge_loads": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "factor": "2",
+      "counting_ceiling": "4",
+      "shape": [
+        2,
+        2
+      ]
+    },
+    {
+      "vertices": 12,
+      "edges": 17,
+      "blocks": 2,
+      "total_weight": "2",
+      "edge_loads": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "factor": "2",
+      "counting_ceiling": "17/6",
+      "shape": [
+        3,
+        4
+      ]
+    },
+    {
+      "vertices": 16,
+      "edges": 24,
+      "blocks": 2,
+      "total_weight": "2",
+      "edge_loads": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "factor": "2",
+      "counting_ceiling": "8/3",
+      "shape": [
+        4,
+        4
+      ]
+    },
+    {
+      "vertices": 8,
+      "edges": 12,
+      "blocks": 3,
+      "total_weight": "3/2",
+      "edge_loads": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "factor": "3/2",
+      "counting_ceiling": "12/5",
+      "shape": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "vertices": 27,
+      "edges": 54,
+      "blocks": 3,
+      "total_weight": "3/2",
+      "edge_loads": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "factor": "3/2",
+      "counting_ceiling": "27/14",
+      "shape": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "vertices": 24,
+      "edges": 46,
+      "blocks": 3,
+      "total_weight": "3/2",
+      "edge_loads": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "factor": "3/2",
+      "counting_ceiling": "2",
+      "shape": [
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "square": {
+    "vertices": 4,
+    "edges": 4,
+    "blocks": 4,
+    "total_weight": "4",
+    "edge_loads": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "factor": "4",
+    "counting_ceiling": "4"
+  },
+  "two_adjacent_squares": {
+    "vertices": 6,
+    "edges": 7,
+    "blocks": 15,
+    "total_weight": "7/2",
+    "edge_loads": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "factor": "7/2",
+    "counting_ceiling": "7/2"
+  },
+  "cube": {
+    "vertices": 8,
+    "edges": 12,
+    "blocks": 384,
+    "total_weight": "12/5",
+    "edge_loads": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "factor": "12/5",
+    "counting_ceiling": "12/5"
+  },
+  "duplicate_cube_factor": "12/5",
+  "nonphysical_product_control": [
+    {
+      "support": [
+        0
+      ],
+      "eigenvalue": "1"
+    },
+    {
+      "support": [
+        1
+      ],
+      "eigenvalue": "1"
+    },
+    {
+      "support": [
+        0,
+        1
+      ],
+      "eigenvalue": "3/2"
+    },
+    {
+      "support": [
+        2
+      ],
+      "eigenvalue": "1"
+    },
+    {
+      "support": [
+        0,
+        2
+      ],
+      "eigenvalue": "3/2"
+    },
+    {
+      "support": [
+        1,
+        2
+      ],
+      "eigenvalue": "3/2"
+    },
+    {
+      "support": [
+        0,
+        1,
+        2
+      ],
+      "eigenvalue": "3/2"
+    }
+  ],
+  "free_inverse_loops": [
+    {
+      "loop_edges": 4,
+      "naive_multiplier": 16
+    },
+    {
+      "loop_edges": 6,
+      "naive_multiplier": 36
+    },
+    {
+      "loop_edges": 8,
+      "naive_multiplier": 64
+    },
+    {
+      "loop_edges": 12,
+      "naive_multiplier": 144
+    },
+    {
+      "loop_edges": 20,
+      "naive_multiplier": 400
+    }
+  ],
+  "fixed_graph_physical_high_spin": [
+    {
+      "spin": "1/2",
+      "multiplier_lower_bound_at_weight_one": "2"
+    },
+    {
+      "spin": "1",
+      "multiplier_lower_bound_at_weight_one": "11/3"
+    },
+    {
+      "spin": "4",
+      "multiplier_lower_bound_at_weight_one": "83/3"
+    },
+    {
+      "spin": "16",
+      "multiplier_lower_bound_at_weight_one": "1091/3"
+    },
+    {
+      "spin": "64",
+      "multiplier_lower_bound_at_weight_one": "16643/3"
+    }
+  ],
+  "box_counting_ceilings": [
+    {
+      "dimension": 2,
+      "side_vertices": 2,
+      "counting_ceiling": "4",
+      "excess": "2"
+    },
+    {
+      "dimension": 2,
+      "side_vertices": 3,
+      "counting_ceiling": "3",
+      "excess": "1"
+    },
+    {
+      "dimension": 2,
+      "side_vertices": 4,
+      "counting_ceiling": "8/3",
+      "excess": "2/3"
+    },
+    {
+      "dimension": 2,
+      "side_vertices": 8,
+      "counting_ceiling": "16/7",
+      "excess": "2/7"
+    },
+    {
+      "dimension": 2,
+      "side_vertices": 16,
+      "counting_ceiling": "32/15",
+      "excess": "2/15"
+    },
+    {
+      "dimension": 2,
+      "side_vertices": 64,
+      "counting_ceiling": "128/63",
+      "excess": "2/63"
+    },
+    {
+      "dimension": 3,
+      "side_vertices": 2,
+      "counting_ceiling": "12/5",
+      "excess": "9/10"
+    },
+    {
+      "dimension": 3,
+      "side_vertices": 3,
+      "counting_ceiling": "27/14",
+      "excess": "3/7"
+    },
+    {
+      "dimension": 3,
+      "side_vertices": 4,
+      "counting_ceiling": "16/9",
+      "excess": "5/18"
+    },
+    {
+      "dimension": 3,
+      "side_vertices": 8,
+      "counting_ceiling": "192/119",
+      "excess": "27/238"
+    },
+    {
+      "dimension": 3,
+      "side_vertices": 16,
+      "counting_ceiling": "256/165",
+      "excess": "17/330"
+    },
+    {
+      "dimension": 3,
+      "side_vertices": 64,
+      "counting_ceiling": "4096/2709",
+      "excess": "65/5418"
+    }
+  ],
+  "endpoint_coefficients_of_exp_minus_3_over_2": {
+    "old": "3/8",
+    "d2": "3/4",
+    "d3": "9/16"
+  },
+  "status": "PASS",
+  "assertions": 1343,
+  "evidence_ceiling": "Finite exact corroboration; all-spin, all-volume and actual-vacuum claims rely on the written proofs, not these samples."
+}

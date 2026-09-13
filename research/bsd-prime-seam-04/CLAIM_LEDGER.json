@@ -1,0 +1,38 @@
+{
+  "schema": "bsd-prime-seam-04-claims/v1",
+  "proved": [
+    "C13 = C5 * (12+5i)/13 in Q(i) with the declared roots",
+    "shared Frobenius-minus-one Gaussian prime factors at 13 and 5",
+    "S5(z)=z*C5^v5(z) is a retraction on norm-one Q(i) scalars with fibers w*C5^Z",
+    "sum and difference recover the two admitted branch valuations",
+    "auxiliary13 multiplies both leading coefficients by20/13 under the cited order and interpolation conditions"
+  ],
+  "finite_verified": [
+    "point counts and nonzero order5 points over F13",
+    "79 ordinary good primes through1000;37 count norms divisible by5",
+    "prime/lucky joint codes on1..1000",
+    "oriented5-part stripping for the declared prime records",
+    "166 independent original-formula and p-adic readback checks"
+  ],
+  "refuted_at_declared_scope": [
+    "lucky membership determines the oriented5 multiplier exponent",
+    "5 dividing the point count forces nonzero oriented5 exponent",
+    "the assigned exact factor product is determined by the modulo68 ray endpoint",
+    "finite prime congruences and the stated real interval uniquely determine an unrestricted positive rational square"
+  ],
+  "open": [
+    "independently normalized analytic augmentation coefficient",
+    "nonzero canonical derived Kato class by explicit coefficient computation",
+    "exact real/p-adic scalar comparison",
+    "total Sha and unexamined primary parts",
+    "full E34 real BSD leading identity",
+    "general BSD"
+  ],
+  "not_claimed": [
+    "the unknown global scalar belongs to Q(i)'s norm-one subgroup",
+    "a p13 height, Sha theorem or Kolyvagin-prime admission",
+    "assigned ray weights are Kato norm operators",
+    "every nonnegative branch-valuation pair is realized by this curve",
+    "formal verification or global soundness from software self-tests"
+  ]
+}

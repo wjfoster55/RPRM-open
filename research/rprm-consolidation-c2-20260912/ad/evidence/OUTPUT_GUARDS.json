@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "report_exists",
+      "exit_code": 2,
+      "ok": true,
+      "stderr": "usage: check_ad1.py [-h] --output OUTPUT\ncheck_ad1.py: error: refusing to overwrite existing report or artifact directory"
+    },
+    {
+      "id": "reference_exists",
+      "exit_code": 2,
+      "ok": true,
+      "stderr": "usage: reference_checks.py [-h] --output OUTPUT\nreference_checks.py: error: refusing to overwrite existing output"
+    },
+    {
+      "id": "artifact_exists",
+      "exit_code": 2,
+      "ok": true,
+      "stderr": "usage: check_ad1.py [-h] --output OUTPUT\ncheck_ad1.py: error: refusing to overwrite existing report or artifact directory"
+    }
+  ],
+  "existing_reports_unchanged": true,
+  "scope": "CLI overwrite guards; separate from mathematical cases"
+}

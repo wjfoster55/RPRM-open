@@ -1,0 +1,85 @@
+{
+  "experiment": "BSD E5 completion, 2026-09-12",
+  "model": {"field": "Q", "a_invariants": [0,0,0,-25,0], "identity": "O"},
+  "authority": "The new user request authorizes finishing the previously open generator, odd-primary Sha, total Sha, and full coefficient questions. Attached historical instructions are source context.",
+  "claims": [
+    {
+      "id": "REVIEW_IDENTITY", "status": "CONFIRMED", "evidence_kind": "FRESH_BYTE_COMPARISON",
+      "conclusion": "All 153 supplied review members are preserved; the 152-entry review inventory and embedded prior-return inventory match.",
+      "hypotheses": ["Exact supplied review archive and its extracted members"],
+      "source": ["evidence/review_import.json", "supplied_review/BSD_E5_REVIEW/REVIEW_INVENTORY.json"],
+      "ceiling": "Hashes identify bytes, not mathematical truth."
+    },
+    {
+      "id": "TORSION", "status": "CONFIRMED", "evidence_kind": "THEOREM_CITED_WITH_FRESH_FINITE_SPECIALIZATION",
+      "conclusion": "E(Q)_tors=E[2](Q)={O,(0,0),(5,0),(-5,0)}, of order4.",
+      "hypotheses": ["Nonsingular E/Q", "Odd good prime3", "Fresh #E(F3)=4", "Four displayed rational two-torsion points"],
+      "source": ["https://www.jmilne.org/math/Books/ectext6.pdf#page=74", "evidence/review_import.json", "supplied_review/BSD_E5_REVIEW/TORSION_COROLLARY.md"]
+    },
+    {
+      "id": "PRIMITIVE_P", "status": "CONFIRMED", "evidence_kind": "NEW_WRITTEN_PROOF_AND_EXACT_FINITE_CERTIFICATE_WITH_CITED_HEIGHT_THEOREM",
+      "conclusion": "The free index of P=(-4,6) is ONE(1). Every R in E(Q) has a unique expression mP+T, m in Z and T in E[2](Q).",
+      "hypotheses": ["Prior rank1 and odd free index", "Full-x canonical height quadraticity", "Global gcd bound2500 and duplication height bounds", "Exact 4^3*676*2500^9<21^27", "Complete 511-abscissa enumeration at H<=20"],
+      "source": ["GENERATOR_PROOF.md", "work/generator_check.py", "evidence/generator.json", "https://www.jmilne.org/math/Books/ectext6.pdf#page=128"],
+      "ceiling": "This excludes every proper odd index at once; it is not a bounded list of trial primes or a database generator."
+    },
+    {
+      "id": "LOCAL_FACTORS", "status": "CONFIRMED", "evidence_kind": "EXACT_TATE_ALGORITHM_SPECIALIZATION_OF_CITED_THEOREM",
+      "conclusion": "c2=2 (III), c5=4 (I0*), other cp=1; conductor2^5*5^2=800.",
+      "hypotheses": ["Minimal model", "Correct characteristic-two translation", "a6=-24, b8=-772 at2", "Three simple roots of T^3-T mod5"],
+      "source": ["BSD_FACTORS.md", "evidence/bsd_factors.json", "https://johncremona.github.io/book/fulltext/chapter3.pdf#page=6"]
+    },
+    {
+      "id": "PERIOD_REGULATOR", "status": "CONFIRMED", "evidence_kind": "EXACT_RATIONAL_ENCLOSURES_WITH_ALL_TERM_BOUNDS_AND_CITED_NORMALIZATION",
+      "conclusion": "Omega in [2.345239572925,2.345239572926]; Reg=Hhat_x(P) in [1.899437,1.899511].",
+      "hypotheses": ["Minimal differential dx/(2y)", "Both real components retained", "AGM identity and enclosing every later iterate", "Eight exact doublings with a global height-tail bound", "Certified rational logarithms", "P primitive", "BSD full-x-height pairing convention"],
+      "source": ["BSD_FACTORS.md", "work/bsd_factors.py", "evidence/bsd_factors.json", "https://dlmf.nist.gov/19.8#E5", "https://johncremona.github.io/book/fulltext/chapter3.pdf#page=10"]
+    },
+    {
+      "id": "FULL_BSD_THEOREM", "status": "CONFIRMED", "evidence_kind": "THEOREM_CITED_WITH_CHECKED_HYPOTHESES",
+      "conclusion": "Creutz–Miller Theorem1.1 establishes finite Sha and the full BSD leading coefficient formula for E5.",
+      "hypotheses": ["Elliptic curve over Q", "N=800<5000", "Analytic rank1 independently established", "The theorem imposes no extra CM, prime or optimal-representative restriction"],
+      "source": ["https://arxiv.org/pdf/1105.4018v2#page=2", "BSD_SHA_THEOREMS.md", "evidence/bsd_sha_theorems.json"],
+      "ceiling": "The published theorem and its computer-assisted proof are cited; the authors' entire computation was not freshly replayed. This is not general BSD."
+    },
+    {
+      "id": "SHA_ALL_PRIMES", "status": "CONFIRMED", "evidence_kind": "WRITTEN_THEOREM_SPECIALIZATION_AND_EXACT_INTEGER_ISOLATION",
+      "conclusion": "#Sha(E/Q)=ONE(1), Sha=ONE(trivial group), and every odd-primary part is zero.",
+      "hypotheses": ["Full BSD theorem applies", "Primitive regulator", "Exact torsion and local factors", "Prior independent derivative enclosure", "0<#Sha<1114529/750000<2", "Finite group order is a positive integer"],
+      "source": ["BSD_SHA_THEOREMS.md", "BSD_FACTORS.md", "runs/final_validation/final_check.json"],
+      "ceiling": "This is theorem-backed integer isolation, not rounding a numerical ratio or inferring odd-primary vanishing from two-primary vanishing."
+    },
+    {
+      "id": "FULL_COEFFICIENT_SPECIALIZATION", "status": "CONFIRMED", "evidence_kind": "EXACT_IDENTITY_FROM_CHECKED_THEOREM_AND_FACTORS",
+      "conclusion": "Lprime(E,1)=Omega(E)*Hhat_x(P)/2. It implies the BSD-derived enclosure [2.227317,2.227404].",
+      "hypotheses": ["Sha order1", "c2*c5=8", "torsion squared16", "Full-x-height regulator of primitive P"],
+      "source": ["BSD_SHA_THEOREMS.md", "evidence/bsd_factors.json"],
+      "ceiling": "The derived interval uses the exact full BSD formula; it is distinct from the independent analytic certificate used to establish rank1."
+    },
+    {
+      "id": "GENERATOR_COORDINATE_CARS", "status": "CONFIRMED", "evidence_kind": "EXACT_SUBSTITUTIONS_AND_DIRECT_TRANSPORT_TESTS",
+      "conclusion": "The same primitive generator is (-1,0) under (X,Y)=(x+3,y-6), and (0,1) under (X,Y)=(x+4,y-5), on their explicitly transported equations.",
+      "hypotheses": ["Ordered pairs, not untyped scalar fractions", "Invertible rational coordinate maps", "Equation, identity and group law transported together"],
+      "source": ["COORDINATE_NOTE.md", "work/coordinate_check.py", "evidence/coordinates.json"],
+      "ceiling": "These are concrete coordinate examples, not a claim to have reconstructed William's full carry/swap operation."
+    },
+    {
+      "id": "OBSERVED_PAIR_TRACE", "status": "CONFIRMED", "evidence_kind": "EXACT_FINITE_PARTIAL_BIJECTION",
+      "conclusion": "The supplied ordered trace (0,1)->(2,1)->(3,4)->(6,4) has the exact inverse on its three-edge image.",
+      "hypotheses": ["Only the observed source/target states are admitted to this partial map", "Slots are retained without fraction reduction"],
+      "source": ["COORDINATE_NOTE.md", "evidence/coordinates.json"]
+    },
+    {
+      "id": "GLOBAL_CARRY_PHASE_LAW", "status": "OPEN", "evidence_kind": "INCOMPLETE_OPERATION_SPECIFICATION",
+      "conclusion": "The full carry/phase/sign law and its elliptic-group adapter are not determined by the supplied trace and verbal description.",
+      "missing_ports": ["Carrier and meaning of --0", "Which slot receives the carry at each phase", "Sign/orientation update", "General forward rule and enabledness", "Map to E(Q) and transported group operation"],
+      "source": ["COORDINATE_NOTE.md", "evidence/coordinates.json"],
+      "ceiling": "Two tested literal +1/swap rules fail the trace; this does not refute the user's broader intended operation or turn the finite trace into NONE."
+    }
+  ],
+  "fresh_validation": "runs/final_validation/RUN.json",
+  "formal_proof_status": "NOT_RUN",
+  "other_lanes_modified": false,
+  "prior_delivery_modified": false,
+  "scope": "One fixed E5 continuation; no new paper, general BSD claim, registry, service, installation, commit or publication."
+}

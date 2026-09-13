@@ -1,0 +1,194 @@
+{
+  "schema": "ym2-estimate-continuation-checks-v1",
+  "status": "PASS",
+  "checker_sha256": "512a77ea50b9b92584104ac4c7be35f28d82da596ee673a0c0a6b173083cd8cb",
+  "source_matrix": {
+    "dimension": 16,
+    "twice_B_gram_trace": 16,
+    "twice_B_gram_polynomial": "G^2=4G",
+    "B_nonzero_singular_values": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "actual_plaquette_A_norm": "4",
+    "all_positive_word_A_norm": "8",
+    "same_norm_under_partial_inversion": "REJECT"
+  },
+  "contracted_gradient": {
+    "density_pair_controls": 25,
+    "finite_spin_pairs": 4096,
+    "unrestricted_operator_norm": "3",
+    "factored_expectation_max": "2",
+    "new_bilinear_constant": "16/9",
+    "entangled_singlet_as_product_input": "REJECT"
+  },
+  "continuation": {
+    "recenter_controls": [
+      {
+        "radius": "0",
+        "source": "0",
+        "extra_source_supremum": "3/16",
+        "total": "3/16"
+      },
+      {
+        "radius": "1/8",
+        "source": "5/48",
+        "extra_source_supremum": "1/12",
+        "total": "3/16"
+      },
+      {
+        "radius": "1/4",
+        "source": "1/6",
+        "extra_source_supremum": "1/48",
+        "total": "3/16"
+      },
+      {
+        "radius": "1/3",
+        "source": "5/27",
+        "extra_source_supremum": "1/432",
+        "total": "3/16"
+      },
+      {
+        "radius": "3/8",
+        "source": "3/16",
+        "extra_source_supremum": "0",
+        "total": "3/16"
+      }
+    ],
+    "new_radius_controls": [
+      {
+        "dimension": 2,
+        "incidence": 2,
+        "radius": "1/4",
+        "coupling": "7/288",
+        "contraction": "4/9",
+        "Bochner_lower": "1/2",
+        "conditional_row_upper": "1/3",
+        "conditional_gap_prefactor": "1",
+        "conditional_gap_negative_exponent": "2/3",
+        "endpoint_uses_spectral_continuity": false
+      },
+      {
+        "dimension": 2,
+        "incidence": 2,
+        "radius": "3/8",
+        "coupling": "1/32",
+        "contraction": "2/3",
+        "Bochner_lower": "1/4",
+        "conditional_row_upper": "1/2",
+        "conditional_gap_prefactor": "3/4",
+        "conditional_gap_negative_exponent": "1",
+        "endpoint_uses_spectral_continuity": false
+      },
+      {
+        "dimension": 2,
+        "incidence": 2,
+        "radius": "1/2",
+        "coupling": "5/144",
+        "contraction": "8/9",
+        "Bochner_lower": "0",
+        "conditional_row_upper": "2/3",
+        "conditional_gap_prefactor": "1/2",
+        "conditional_gap_negative_exponent": "4/3",
+        "endpoint_uses_spectral_continuity": false
+      },
+      {
+        "dimension": 2,
+        "incidence": 2,
+        "radius": "9/16",
+        "coupling": "9/256",
+        "contraction": "1",
+        "Bochner_lower": "-1/8",
+        "conditional_row_upper": "3/4",
+        "conditional_gap_prefactor": "3/8",
+        "conditional_gap_negative_exponent": "3/2",
+        "endpoint_uses_spectral_continuity": true
+      },
+      {
+        "dimension": 3,
+        "incidence": 4,
+        "radius": "1/4",
+        "coupling": "7/576",
+        "contraction": "4/9",
+        "Bochner_lower": "1/2",
+        "conditional_row_upper": "1/3",
+        "conditional_gap_prefactor": "1",
+        "conditional_gap_negative_exponent": "2/3",
+        "endpoint_uses_spectral_continuity": false
+      },
+      {
+        "dimension": 3,
+        "incidence": 4,
+        "radius": "3/8",
+        "coupling": "1/64",
+        "contraction": "2/3",
+        "Bochner_lower": "1/4",
+        "conditional_row_upper": "1/2",
+        "conditional_gap_prefactor": "3/4",
+        "conditional_gap_negative_exponent": "1",
+        "endpoint_uses_spectral_continuity": false
+      },
+      {
+        "dimension": 3,
+        "incidence": 4,
+        "radius": "1/2",
+        "coupling": "5/288",
+        "contraction": "8/9",
+        "Bochner_lower": "0",
+        "conditional_row_upper": "2/3",
+        "conditional_gap_prefactor": "1/2",
+        "conditional_gap_negative_exponent": "4/3",
+        "endpoint_uses_spectral_continuity": false
+      },
+      {
+        "dimension": 3,
+        "incidence": 4,
+        "radius": "9/16",
+        "coupling": "9/512",
+        "contraction": "1",
+        "Bochner_lower": "-1/8",
+        "conditional_row_upper": "3/4",
+        "conditional_gap_prefactor": "3/8",
+        "conditional_gap_negative_exponent": "3/2",
+        "endpoint_uses_spectral_continuity": true
+      }
+    ]
+  },
+  "oscillation_orientation": {
+    "matrix": [
+      [
+        "0",
+        "2/5",
+        "2/5"
+      ],
+      [
+        "4/5",
+        "0",
+        "0"
+      ],
+      [
+        "4/5",
+        "0",
+        "0"
+      ]
+    ],
+    "oscillation_vector": [
+      [
+        "1"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ]
+    ],
+    "correct_C_transpose_l1": "4/5",
+    "incorrect_C_l1": "8/5",
+    "transpose_omission": "REJECT"
+  },
+  "old_checkers_run": false,
+  "evidence_ceiling": "Finite rational controls. General matrix, Banach, probability, spectral and continuum claims require their written proofs."
+}

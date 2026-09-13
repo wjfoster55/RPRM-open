@@ -1,0 +1,82 @@
+{
+  "captured_utc": "2026-09-13T01:48:12.968179+00:00",
+  "scope": "Byte bindings at closeout, not an additional mathematical execution or proof",
+  "files": [
+    {
+      "path": "research\\closure-bridge-08\\work\\check_bridge.py",
+      "bytes": 5473,
+      "sha256": "582ae5713ae681667c4b29cb48102eecdb6346d968be05aed3751f90b59baddd"
+    },
+    {
+      "path": "research\\closure-bridge-08\\work\\check_bsd_seam.py",
+      "bytes": 7655,
+      "sha256": "bdeea6571d62e167cb883b6c0eb6dc76ea377814ee6bf79de9be18c8cc077cf1"
+    },
+    {
+      "path": "research\\closure-bridge-08\\work\\check_budget.py",
+      "bytes": 2579,
+      "sha256": "f8994243b1627a2936053549e19167ebfd4de60ccaa48b1f2dcf9a0c755cebed"
+    },
+    {
+      "path": "research\\closure-bridge-08\\work\\package_packet.py",
+      "bytes": 3670,
+      "sha256": "c06b603472c4d655c19a921b958b2b95da4d87553a26911b57165bd63cf8c174"
+    },
+    {
+      "path": "research\\closure-bridge-08\\evidence\\789_affordances.json",
+      "bytes": 17136,
+      "sha256": "22a8aed9875a1abdd104c55a582182d0e1c946d5a338289cbd6c24d47383babf"
+    },
+    {
+      "path": "research\\closure-bridge-08\\evidence\\bridge.json",
+      "bytes": 4336,
+      "sha256": "8e1a3f3e3e6f312226b8c4caec8ed60c8d44c70b591393787aef210377b723e0"
+    },
+    {
+      "path": "research\\closure-bridge-08\\evidence\\bsd_seam.json",
+      "bytes": 4883,
+      "sha256": "94f3977111ac3fa2e53e174ad9060b1dedc7803ca343fe182eaebce59942b925"
+    },
+    {
+      "path": "research\\closure-bridge-08\\evidence\\budget.json",
+      "bytes": 13035,
+      "sha256": "a2e8d64be03344143c97a084b4551ca1d9cc3fd853e8dae73db75d32198e79a6"
+    },
+    {
+      "path": "research\\closure-bridge-08\\evidence\\memory_retrieval.json",
+      "bytes": 34186,
+      "sha256": "72e1e4d656475c63464842659ebebf6bc8e128fb5ad04acb8aef11a095212ce4"
+    }
+  ],
+  "embedded_execution_hashes_checked": [
+    "bridge.json",
+    "budget.json"
+  ],
+  "dependencies": [
+    {
+      "path": "docs\\proof-donut.md",
+      "bytes": 14408,
+      "sha256": "7efda177fc3f4500842c88a7556dde6be3724b1f9194ee449da51c8ebcf5070a"
+    },
+    {
+      "path": "docs\\operations.md",
+      "bytes": 40793,
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd"
+    },
+    {
+      "path": "recovered-concepts\\PRESTIGE-AND-NUMBER-OPERATIONS.md",
+      "bytes": 102093,
+      "sha256": "53268cdd22f6346c1c5ddaa0e01fe9eabfe7381b5e0bbaf4b24900509c574843"
+    },
+    {
+      "path": "research\\bsd-identity-01\\EXPLICIT_IDENTITY_TARGET.md",
+      "bytes": 15376,
+      "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753"
+    },
+    {
+      "path": "research\\bsd-carry-key-06\\COLUMN_HANDOFF.md",
+      "bytes": 7613,
+      "sha256": "7c75f84dae917d718e18e07d3aedf433d2e16ebaf7f61df857a5e81044fd77bf"
+    }
+  ]
+}

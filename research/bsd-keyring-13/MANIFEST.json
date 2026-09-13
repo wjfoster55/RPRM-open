@@ -1,0 +1,101 @@
+{
+  "claim": "Byte integrity only; not mathematical verification",
+  "files": [
+    {
+      "bytes": 7320,
+      "path": "agents/BLOCK_REVIEW.md",
+      "sha256": "f45130274d28cefeeb040f21652dcfe79f83d4431ac1a5741b75e1a0160a39e2"
+    },
+    {
+      "bytes": 11297,
+      "path": "agents/KEYRING_AUDIT.md",
+      "sha256": "7b7718517ffa6fc041e43b5ec2a3a2d5bba8bbff3bb9d36f6cd2616cddadd620"
+    },
+    {
+      "bytes": 1369,
+      "path": "BSD_REBRIEF.md",
+      "sha256": "4d999300eae9a29fdcf6986bde83b579322b4b0ccbe7d0ad3eb42d0500928668"
+    },
+    {
+      "bytes": 1145,
+      "path": "evidence/joint-seam.json",
+      "sha256": "6aee725ee295c8630d6320c8727559fa6245b81d3854f6d2d97dbff94f753a3c"
+    },
+    {
+      "bytes": 48145,
+      "path": "evidence/keyring-desktop.png",
+      "sha256": "9754c1ae6f85d159e8fc2fee146e06bda2f805743a7b77d2ec9f0668f92846bb"
+    },
+    {
+      "bytes": 31138,
+      "path": "evidence/keyring-mobile.png",
+      "sha256": "36adfff658d46c2cecda649a8a4d2f4c663c010745eda9904bc87aaa10988cc3"
+    },
+    {
+      "bytes": 45725,
+      "path": "evidence/keyring-preview.html",
+      "sha256": "3d78db72ad4bd8efa0fa5fba22d6d03250a9eb018b79c956d406dcb7c621e02a"
+    },
+    {
+      "bytes": 43029,
+      "path": "evidence/keyring.json",
+      "sha256": "79382691fc6cc04a963d2f653890823b79f0370a362a679a080c401ec993208a"
+    },
+    {
+      "bytes": 372,
+      "path": "evidence/visual-check.json",
+      "sha256": "5afe791dea13a8f2eadec5325cddeef0f04ce9c4864ecf27de24a8097e0ece5f"
+    },
+    {
+      "bytes": 3939433,
+      "path": "inputs/hooks12.json",
+      "sha256": "19f204ed8c3243188fbf97ab8c9c3b550f5af77d20014985e264d94c63c80378"
+    },
+    {
+      "bytes": 1801,
+      "path": "PREFREEZE.md",
+      "sha256": "676b665e142ceccf9a18ed2da27ea8ae144de280aec5c82ecf4ea9995d732bbf"
+    },
+    {
+      "bytes": 7492,
+      "path": "README.md",
+      "sha256": "9aacce5c3b3a1816f87eebaa44ba841cb2be79555ceebc3b9415c529713de993"
+    },
+    {
+      "bytes": 2006,
+      "path": "SOURCES.md",
+      "sha256": "b51f871221d2342fac44990d1002b955c59aa883ee6e32af470d74867c46b014"
+    },
+    {
+      "bytes": 5662,
+      "path": "visual/keyring.html",
+      "sha256": "0692e0952730b87318822d4472bc2f91492a3b41eb2f925e61881d58556d9071"
+    },
+    {
+      "bytes": 2047,
+      "path": "work/check_joint_seam.py",
+      "sha256": "3f502a7d23c0bdc28a27aeeb02a432b7885a258dfdb71b9b321b0dc5fac4c343"
+    },
+    {
+      "bytes": 5338,
+      "path": "work/check_keyring.py",
+      "sha256": "e24e2c603e9389b30d8ff5906db133b4961eaf50d792c5be56a8093806198fe8"
+    },
+    {
+      "bytes": 2535,
+      "path": "work/check_visual.cjs",
+      "sha256": "c8decc7b9fe1bec56e43c0d92176d8c502673c854fb68a3e62a89187de6be0bc"
+    },
+    {
+      "bytes": 3670,
+      "path": "work/package_packet.py",
+      "sha256": "537ded58280cb2a8ba78ea0e5561d2eb85232c61c6d7e2c63a2f575f990089eb"
+    },
+    {
+      "bytes": 1394,
+      "path": "work/verify_bindings.py",
+      "sha256": "78f3d62226387011278d57d63c765c5408cc26f35f90a3ec1da66302b377678e"
+    }
+  ],
+  "schema": "bsd-keyring-13-file-manifest-v1"
+}

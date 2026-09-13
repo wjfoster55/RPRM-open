@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "scope": "transfer integrity only; no research checks executed",
+  "files_checked": 40,
+  "nested_archives_crc_checked": 7,
+  "errors": []
+}

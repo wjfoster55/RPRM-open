@@ -1,0 +1,49 @@
+{
+  "scope": "E34 over Q; p=5; bounded coefficient experiment 05",
+  "claims": [
+    {
+      "claim": "Exact plus modular-symbol normalization phi([infinity,0])=1/4",
+      "grade": "WRITTEN_PROOF_USING_UNCONDITIONAL_PRIMARY_THEOREM_AND_FRESH_EXACT_CONSTRUCTION",
+      "evidence": ["COEFFICIENT_PROOF.md sections 1-2", "runs/final_validation/logs/analytic.log", "runs/final_validation/logs/anchor_control.log"]
+    },
+    {
+      "claim": "b2 is in 426+625 Z_5 in the declared connected-period, gamma=6 convention",
+      "grade": "FRESH_COMPUTATION_WITH_WRITTEN_RIGOROUS_ERROR_BOUND",
+      "evidence": ["COEFFICIENT_PROOF.md sections 3-4", "runs/final_validation/evidence/coefficient_readback.json"],
+      "boundary": "Two integration algorithms share the same exactly normalized classical modular symbol and PARI arithmetic; not formal verification"
+    },
+    {
+      "claim": "The 5-adic analytic order is exactly 2 and the canonical BKS derived class is nonzero",
+      "grade": "THEOREM_BACKED_IMPLICATION_WITH_ATTRIBUTED_PRIOR_HYPOTHESES",
+      "dependencies": ["COEFFICIENT_PROOF.md section 5", "dependencies/PADIC_HEIGHT_AUDIT.md", "dependencies/GENERATOR_PROOF.md", "dependencies/TRACE_CALCULATION_02.md"]
+    },
+    {
+      "claim": "R_MST is 3 mod 5 and 5 Lambda_component is 1 mod 5",
+      "grade": "FRESH_RATIONAL_ARITHMETIC_WITH_PRIOR_HEIGHT_FORMULA_AUDIT",
+      "evidence": ["runs/final_validation/evidence/padic_height.json", "runs/final_validation/evidence/coefficient_readback.json", "dependencies/PADIC_HEIGHT_AUDIT.md"],
+      "boundary": "The BKS scalar retains the explicit period conversion Omega_component/Omega_xi"
+    },
+    {
+      "claim": "Displayed real coefficient, period and regulator enclosures",
+      "grade": "ATTRIBUTED_PRIOR_CERTIFICATES_DISPLAYED_ONLY",
+      "evidence": ["dependencies/FACTOR_COMPARISON.md", "dependencies/factor_frontier.json"],
+      "boundary": "Not recomputed this turn; overlap does not prove exact equality"
+    },
+    {
+      "claim": "Prime-family Atlas102/103 finite coverage and recorded counts",
+      "grade": "ATTRIBUTED_HISTORICAL_RETRIEVAL",
+      "evidence": ["PRIME_FAMILIES.md", "dependencies/SOURCES.json"],
+      "boundary": "No global classification or whole-atlas replay this turn"
+    },
+    {
+      "claim": "Exact real/p-adic BSD scalar identity, total Sha, general BSD",
+      "grade": "OPEN",
+      "boundary": "Neither extra digits nor common Euler-factor multiplication supplies the missing exact identity"
+    }
+  ],
+  "preserved_issues": [
+    "Convenience pilot used numerical rational reconstruction for period scale; excluded from accepted proof",
+    "Symbol pilot selected wrong path orientation and hit unsupported mssign call; stopped before coefficient evaluation",
+    "Initial exact script had GP multiline-loop syntax error; source and log retained; corrected final source freshly run"
+  ]
+}

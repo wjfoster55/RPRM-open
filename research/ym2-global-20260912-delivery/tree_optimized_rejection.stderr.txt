@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\github\RPRM-open\research\ym2-global-20260912-delivery\final-extraction\YM2-global-phase-joint\check_tree.py", line 13, in <module>
+    raise RuntimeError("This checker requires assertions; run without -O or -OO.")
+RuntimeError: This checker requires assertions; run without -O or -OO.

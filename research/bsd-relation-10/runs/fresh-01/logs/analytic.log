@@ -1,0 +1,15 @@
+BEGIN_RELATION_10_ANALYTIC
+VERSION|[2, 17, 4]
+GLOBAL_REDUCTION|[18496, [1, 0, 0, 0], 16, [2, 6; 17, 2], [[6, -6, 0, 4], [2, -1, 0, 4]]]
+EXACT_SYMBOL|[1/4, -1/2, 1/4, 1/2, 0, -1/4]~
+GENERATOR_VALUES|[1/4, -1/2, 1/4, 0, -1/2, 1/4, 1/2, 0, -1/4]
+STURM_BOUND|8
+PADIC|alpha|15|22219310363
+PADIC|five_C|15|27706190708
+PADIC|log6_div5|14|3782644111
+PADIC|classical_D_raw|5|2725
+PADIC|classical_b2|3|51
+PADIC|overconvergent_b2|4|426
+PADIC|base_period_control|7|58594
+PADIC|twist8_period_control|7|39063
+END_RELATION_10_ANALYTIC

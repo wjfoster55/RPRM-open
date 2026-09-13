@@ -1,0 +1,83 @@
+{
+  "schema": "ym2_conditional_ports_local_incidence_v1",
+  "status": "PASS",
+  "evidence_grade": "Exact rational and finite local incidence checks",
+  "coupling_interval_for_head_factor_bounds": "0<=r<=1",
+  "single_factor_oscillation": "2r/3",
+  "pair_factor_oscillation_bound": "4r^2/351",
+  "safe_head_TV_row_bound": "m*r+16*m*(m-1)*r^2/117",
+  "actual_vacuum_additional_term": "(1/4)*sum_j epsilon_ej(G,r)",
+  "local_stars": [
+    {
+      "dimension": 2,
+      "max_plaquettes_per_edge": 2,
+      "single_plaquettes_incident_to_edge": 2,
+      "neighbors_per_incident_plaquette": [
+        4,
+        4
+      ],
+      "adjacent_pair_factors_incident_to_edge": 7,
+      "safe_pair_overcount": 8,
+      "shared_center_pair_double_counts": 1,
+      "hostile_both_plaquettes_only_omitted_factors": 6,
+      "outside_edge_occurrences": 22,
+      "outside_single_factor_exposures": 6,
+      "outside_pair_factor_exposures": 42,
+      "exact_star_b_linear_coefficient": "8",
+      "exact_star_b_quadratic_coefficient": "112/117",
+      "safe_b_quadratic_coefficient": "128/117",
+      "safe_head_TV_row_linear_coefficient": "2",
+      "safe_head_TV_row_quadratic_coefficient": "32/117",
+      "pair_support_edge_sizes": [
+        7
+      ],
+      "passed": true
+    },
+    {
+      "dimension": 3,
+      "max_plaquettes_per_edge": 4,
+      "single_plaquettes_incident_to_edge": 4,
+      "neighbors_per_incident_plaquette": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "adjacent_pair_factors_incident_to_edge": 42,
+      "safe_pair_overcount": 48,
+      "shared_center_pair_double_counts": 6,
+      "hostile_both_plaquettes_only_omitted_factors": 36,
+      "outside_edge_occurrences": 62,
+      "outside_single_factor_exposures": 12,
+      "outside_pair_factor_exposures": 252,
+      "exact_star_b_linear_coefficient": "16",
+      "exact_star_b_quadratic_coefficient": "224/39",
+      "safe_b_quadratic_coefficient": "256/39",
+      "safe_head_TV_row_linear_coefficient": "4",
+      "safe_head_TV_row_quadratic_coefficient": "64/39",
+      "pair_support_edge_sizes": [
+        7
+      ],
+      "passed": true
+    }
+  ],
+  "claim_boundary": "No actual remainder estimate, spectral-gap implication, simulation, or old-suite execution",
+  "sources": [
+    {
+      "path": "check_conditional_head.py",
+      "sha256": "67c266363d9dec2fdf44d2f1590729ed2f0b2115e69681a0005f9544a889d98d"
+    },
+    {
+      "path": "NEXT_CONDITIONAL_PORTS.md",
+      "sha256": "0467fdbf3a3690eaa6b58b30213d7f1f2a642204b69cc7c84a960bb14e2026a4"
+    },
+    {
+      "path": "CONNECTED_VACUUM.md",
+      "sha256": "9923cf495cb7b90d041569afd28805f7f9ac3b9c14100d0e6ff2173c4333c7ab"
+    },
+    {
+      "path": "accepted_sources/ym2_signed_differences/NEXT_CONNECTED_OBLIGATION.md",
+      "sha256": "ab0e55814b5a4575eec04707702c3bc5032367b85bc986bec5e918dadb68bec1"
+    }
+  ]
+}

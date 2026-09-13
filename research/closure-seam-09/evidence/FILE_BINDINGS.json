@@ -1,0 +1,74 @@
+{
+  "captured_utc": "2026-09-13T02:04:11.611801+00:00",
+  "scope": "Closeout byte bindings; not an additional execution or mathematical proof",
+  "execution_hashes_match": true,
+  "files": [
+    {
+      "path": "work/check_distance.py",
+      "bytes": 8113,
+      "sha256": "d1ab3943932a25bd8bce023eebb405d138957c339e5c9640640e6490d4ab7cf0"
+    },
+    {
+      "path": "work/check_joint.py",
+      "bytes": 3957,
+      "sha256": "0e6a5677b33a35666a4ca14552aa595ad9bedce410e4ab1f7028086f0cf899e0"
+    },
+    {
+      "path": "work/draw_joint.py",
+      "bytes": 4726,
+      "sha256": "4ef6af35c81867d252b9652d17e84caf539b0f10d2d3e96f619ee869422a48ed"
+    },
+    {
+      "path": "work/package_packet.py",
+      "bytes": 3668,
+      "sha256": "6e4b7013d86b9dfcd0fdd484703656a96673add4cdb9a2ad4c251549a94867b1"
+    },
+    {
+      "path": "evidence/distance.json",
+      "bytes": 800497,
+      "sha256": "c8d1d84b40ec24fb2cdedabad2d8286901370390527af9627547bac67113e5b2"
+    },
+    {
+      "path": "evidence/joint.json",
+      "bytes": 9125,
+      "sha256": "cd6ea27509ccbcf0df3b337211142b9a33d78b57f81b2ce11b7b5cd339e5a20b"
+    },
+    {
+      "path": "figures/joint_pairing.png",
+      "bytes": 97595,
+      "sha256": "49a6e3a24b09c314287672bfdad26f7f2c1b6c97ac74c916947a9c0608ee6de6"
+    },
+    {
+      "path": "figures/joint_pairing.svg",
+      "bytes": 25728,
+      "sha256": "4320864e5ae65d49c1753acfd3fe832509c63b0d8fc61ea3aa9fb3cf640bf819"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "research\\bsd-identity-01\\EXPLICIT_IDENTITY_TARGET.md",
+      "bytes": 15376,
+      "sha256": "0ddaacd7080bd9387c9cd75ffb04e987866aa2fa88945ba58884fc5d891c3753"
+    },
+    {
+      "path": "research\\closure-bridge-08\\agents\\BSD_SEAM.md",
+      "bytes": 14497,
+      "sha256": "4b0c1b932e8544e59d027a4d3bd1bef5b975c33f901791440281d8cd68684306"
+    },
+    {
+      "path": "docs\\core.md",
+      "bytes": 40459,
+      "sha256": "7ef1490b41a59be92f42c5b6457e7ad1c40ceb43287d2d78a3ba6b3c767f2ca3"
+    },
+    {
+      "path": "docs\\proof-donut.md",
+      "bytes": 14408,
+      "sha256": "7efda177fc3f4500842c88a7556dde6be3724b1f9194ee449da51c8ebcf5070a"
+    },
+    {
+      "path": "docs\\operations.md",
+      "bytes": 40793,
+      "sha256": "1f57f928e6bcb48b5d6c58b3abac0a1044edd99b050c7547c8522b7e4c61b4fd"
+    }
+  ]
+}
