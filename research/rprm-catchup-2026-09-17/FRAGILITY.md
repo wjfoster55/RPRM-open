@@ -3,9 +3,9 @@
 **Opened** 17 September 2026, overnight shift following the catch-up synthesis.
 **Lane** typing and testing (wizard). Not abduction. Nulls declared before every
 run and printed in every output.
-**Status** partial results closed; the central extremal statement is a
-**conjecture** with exhaustive finite evidence; priority is **settled for one
-half and OPEN for the other**.
+**Status** the central extremal statement is, as of §8d, a **theorem for arity 1**
+with a written proof; arity `>= 2` remains a conjecture with exhaustive finite
+evidence; priority is **settled for one half and OPEN for the other**.
 
 Reproduce everything here with
 
@@ -16,6 +16,8 @@ python -I -B tools/fragility_priority.py  prior-art separation, the enabledness 
 python -I -B tools/fragility_exchange.py  the exchange lemma, 5.7M exchanges to n = 40
 python -I -B tools/fragility_critical.py  targeted attack on the tightest exchange family
 python -I -B tools/fragility_limit.py     the cosh^2(1) asymptotic
+python -I -B tools/fragility_proof.py 30  every step of the §8d proof, exact
+python -I -B tools/fragility_mechanism.py why the proof fails for sigma_blind
 ```
 
 Integers and `fractions.Fraction` only. No floating point appears in any value
@@ -347,34 +349,45 @@ sharper upper bound or a direct exchange lemma: that moving one element from a
 smaller block to a larger one strictly increases `sigma_1`. The exhaustive search
 to `n = 45` is consistent with that lemma and does not establish it.
 
-## 8b. The exchange lemma — a sharper open problem, and where it is tightest
+## 8b. The exchange lemma — stated, and where it is tightest
+
+> **Section 8b and 8c were written while this was still a conjecture. Section 8d
+> proves it. The two sections are kept as written, because where the evidence was
+> tightest is what told the proof where it had to work.**
 
 The extremal law is awkward to prove directly because it is a statement about
 argmax and argmin over a whole poset. A single stronger statement implies both
 halves at once and is a far better thing to hand a combinatorialist.
 
-> **Exchange lemma (conjecture).** Let `C` have two blocks of sizes `a >= b` with
-> `b >= 2`, and let `C'` replace them by `a+1` and `b-1`, keeping `n` and `m`
-> fixed. Then `sigma_E(C') > sigma_E(C)` strictly.
+> **Exchange lemma.** Let `C` have two blocks of sizes `a >= b` with `b >= 2`,
+> and let `C'` replace them by `a+1` and `b-1`, keeping `n` and `m` fixed. Then
+> `sigma_E(C') > sigma_E(C)` strictly.
 
-The exchange order on profiles of fixed `(n, m)` is exactly the majorisation
-order, whose unique maximum is `(n-m+1, 1, ..., 1)` and whose unique minimum is
-the balanced profile. So **the exchange lemma implies the extremal law**, and it
-is a local statement about two blocks rather than a global one about a poset.
+**This implies the extremal law**, and it is a local statement about two blocks
+rather than a global one about a poset. The implication needs no machinery. If a
+profile with `m` blocks is not balanced, some pair has `a >= b + 2`, so the
+*reverse* exchange applies to `(a-1, b+1)` and produces a strictly smaller
+`sigma_E`; iterating strictly decreases and terminates at the balanced profile,
+which is therefore the unique minimum. If a profile is not `(n-m+1, 1, ..., 1)`,
+some block has size `>= 2` besides the largest, so a forward exchange applies and
+strictly increases; iterating reaches the maximally unequal profile, which is
+therefore the unique maximum. (This is the majorisation order on partitions of
+`n` into exactly `m` parts, but the argument above does not need that fact.)
 
-**One step of it is proved.** With `S_k = sum_j n_j^k`, the exchange gives
-`S'_k >= S_k` for every `k >= 1`, strictly for `k >= 2`: `(a+1, b-1)` majorises
-`(a, b)` and `x -> x^k` is convex, so Karamata applies. Consequently every factor
-of `sigma_E` indexed by an unchanged block weakly increases, and the factor for
-the grown block strictly increases. Checked on all 14,799 exchanges for
-`n <= 19`: zero violations, as it must be.
+**The first step was proved before the rest.** With `S_k = sum_j n_j^k`, the
+exchange gives `S'_k >= S_k` for every `k >= 1`, strictly for `k >= 2`:
+`(a+1, b-1)` majorises `(a, b)` and `x -> x^k` is convex, so Karamata applies.
+Consequently every factor of `sigma_E` indexed by an unchanged block weakly
+increases, and the factor for the grown block strictly increases. Checked on all
+14,799 exchanges for `n <= 19`: zero violations, as it must be.
 
-**What is not proved** is that the single shrinking factor `(1 + S'_{b-1})`
-cannot lose more than everything else gains. The crude sandwich of Section 8 is
-lossy by a factor of `(1+m)^2` here, which is exactly the gap.
+**What stayed unproved for most of the night** was that the single shrinking
+factor `(1 + S'_{b-1})` cannot lose more than everything else gains. The crude
+sandwich of Section 8 is lossy by a factor of `(1+m)^2` here, which was exactly
+the gap. Section 8d closes it by not going through the sandwich at all.
 
-**Evidence, and it is much stronger than the evidence for the extremal law
-itself.** Every valid exchange in every profile, `n = 4..40`:
+**Evidence, gathered before the proof existed.** Every valid exchange in every
+profile, `n = 4..40`:
 
 | Quantity | Value |
 |---|---:|
@@ -448,6 +461,121 @@ Disposition ONE(constant).* It does not prove the exchange lemma — the lemma a
 has to survive the spectator families where the ratio tends to 1, and that is
 where the open problem lives.
 
+## 8d. Result 6 — the exchange lemma is a theorem, and the extremal law follows
+
+*Written after 8b and 8c, and after the numeric attack on the tight family had
+failed to break the lemma. Machine check of every step:*
+`python -I -B tools/fragility_proof.py 30`.
+
+The sandwich of Section 8 was the wrong instrument. It tried to bound the
+spectator product, which is where it lost `(1+m)^2`. The spectator product does
+not need bounding: it is *termwise* larger after the exchange, and the entire
+difficulty can be pushed into a statement about one function of one variable.
+
+**Notation.** For a profile `p` write `S_k(p) = sum_j n_j^k` and
+
+```text
+f_p(k) = 1 + S_k(p) ,        sigma_E(p) = prod_i f_p(n_i) .
+```
+
+Note the two roles `p` plays: it supplies the *bases* inside `f_p`, and it
+supplies the *exponents* at which `f_p` is evaluated. The proof separates them.
+
+Let `p` have blocks `a >= b >= 2` and spectators `c_1, ..., c_{m-2}`, and let `q`
+be `p` with those two blocks replaced by `a+1` and `b-1`.
+
+> **Step 1 (bases).** For every `k >= 1`, `S_k(q) >= S_k(p)`, strictly for
+> `k >= 2`.
+>
+> *Proof.* `(a+1, b-1)` majorises `(a, b)` and `x -> x^k` is convex on `x > 0`,
+> strictly convex for `k >= 2`; the spectators are unchanged. Karamata. For
+> `k = 1` both sides equal `n`. ∎
+
+Hence `f_q(k) >= f_p(k)` for all `k >= 1`, strictly for `k >= 2`.
+
+> **Step 2 (exponents).** `f_q` is log-convex, so
+> `f_q(a+1) f_q(b-1) >= f_q(a) f_q(b)`.
+>
+> *Proof.* `f_q(k) = e^{k·0} + sum_j e^{k ln q_j}` is a sum of log-convex
+> functions of `k`, hence log-convex; the constant `1` is the `e^{k·0}` term and
+> is what makes this work. Write `h = log f_q`, convex. Since `a >= b`, the
+> interval `[a, a+1]` lies weakly to the right of `[b-1, b]`, and `h'` is
+> nondecreasing, so `h(a+1) - h(a) >= h(b) - h(b-1)`. Exponentiate. ∎
+
+> **Step 3 (combine).**
+>
+> ```text
+> sigma_E(q) = ( prod_c f_q(c) ) · f_q(a+1) · f_q(b-1)
+>           >= ( prod_c f_q(c) ) · f_q(a)   · f_q(b)     by Step 2
+>           >  ( prod_c f_p(c) ) · f_p(a)   · f_p(b)     by Step 1
+>            = sigma_E(p) .
+> ```
+>
+> The last line is strict because `a >= 2`, so `f_q(a) > f_p(a)`, and every
+> factor is positive. ∎
+
+**Theorem (exchange).** For `a >= b >= 2`, `sigma_E(q) > sigma_E(p)`.
+**Corollary (extremal law, arity 1).** For fixed `n` and `m`, `sigma_E` is
+uniquely maximised at `(n-m+1, 1, ..., 1)` and uniquely minimised at the balanced
+profile. *Both by the iteration argument in 8b.*
+
+**Disposition ONE(theorem) for arity 1. Evidence grade: written proof.** Every
+step machine-checked in exact integer arithmetic on all **128,121** distinct
+exchanges over all **28,622** partitions of `n = 4..30`, including the separate
+null control that Step 2's log-convexity also holds for the *old* profile — it is
+a property of the factor function, not an artifact of the exchange. Zero
+failures. In the hostile large-spectator family, Step 2 was checked with spectator
+blocks up to `10^30`, where the direct ratio is numerically indistinguishable
+from 1; Step 2 holds there because the spectator enters it only through `S_k` and
+pushes the ratio toward 1 from above, never through it.
+
+**What is still not proved.** Arities `>= 2`. The same route should work — the
+exponent multiset `{prod of q_i}` majorises `{prod of p_i}` by the same
+convexity, and Step 2 generalises — but that majorisation is not written out
+here. Checked only: 1,609 exchanges at arity 2 (`n <= 16`) and 182 at arity 3
+(`n <= 11`), all strictly increasing. **Arity >= 2 remains OPEN.**
+
+## 8e. Result 7 — why the same proof cannot work for the classical monoid
+
+This is the mechanism behind Result 4, and it is one line.
+
+The proof rests on exactly one property: `f_p(k) = 1 + sum_j n_j^k` is log-convex
+in `k`, because it is a sum of exponentials. The classical successor-only count
+has factor function
+
+```text
+f_blind,p(k) = 1 + sum_j ( (n_j+1)^k - 1 ) = sum_j (n_j+1)^k - (m - 1) .
+```
+
+That is a sum of exponentials **minus a positive constant** whenever `m >= 2`.
+Subtracting a constant does not preserve log-convexity. So Step 2 is not merely
+harder for `sigma_blind` — **its hypothesis is false.**
+
+Tested on all 913 profiles with `n <= 16`, over all `a >= b >= 1`:
+
+| factor function | instances tested | log-convexity violations | worst ratio |
+|---|---:|---:|---:|
+| `f_p` — enabledness enforced | 25,702 | **0** | — |
+| `f_blind,p` — successor only | 25,702 | **7,488** | 0.1357 |
+
+and the failures live in the same regime as the extremal-law failures: the `-1`
+per block is largest relative to the whole factor exactly when blocks are tiny,
+which is why `sigma_blind`'s 41 bad `(n, m)` cells are all many-block,
+mostly-singleton profiles.
+
+> **Reading.** Enabledness is not decoration. Dropping the domain requirement
+> subtracts one unit per block from every factor, and that subtraction is
+> precisely what destroys log-convexity of the factor function and with it the
+> extremal law. The condition RPRM adds for modelling reasons is the condition
+> that makes the count analytically well behaved.
+
+*Evidence grade: written proof for the `sigma_E` direction; finite test for the
+`sigma_blind` failures. Reproduce with* `python -I -B tools/fragility_mechanism.py`.
+
+This does **not** say enabledness is the right modelling choice. It says the two
+conditions cut out objects of different analytic character, and the difference is
+identifiable rather than aesthetic.
+
 ## 9. Dispositions
 
 | Statement | Disposition | Grade |
@@ -457,9 +585,11 @@ where the open problem lives.
 | `sigma_blind` reproduces the published uniform-partition order | **ONE(identity)** | Finite test, 22 cases, exact |
 | Enabledness price `rho(C)` | **ONE(rational)** per profile computed | Exact arithmetic |
 | Admissible domain sizes = subset sums of the profile | **ONE(characterisation)** | Written proof |
-| Extremal law for `sigma_E`, arities 1–3, total and idempotent classes | **OPEN** — conjecture, 0 counterexamples in 903 cells to `n = 45` | Finite test |
-| **Exchange lemma** (implies the extremal law) | **OPEN** — conjecture, 0 non-increases in **5,686,463** exchanges to `n = 40`, plus targeted attack on the tightest families with spectator up to 100,000 | Finite test |
+| **Exchange lemma, arity 1** | **ONE(theorem)** | **Written proof** (§8d); every step machine-checked on 128,121 exchanges to `n = 30` |
+| **Extremal law for `sigma_E`, arity 1** | **ONE(theorem)**, corollary of the above | **Written proof** |
+| Extremal law for `sigma_E`, arity `>= 2`, total and idempotent classes | **OPEN** — conjecture, 0 counterexamples in 903 cells to `n = 45`; arity-2/3 exchange also clean | Finite test |
 | Karamata step `S'_k >= S_k`, strict for `k >= 2` | **ONE(inequality)** | Written proof |
+| `f_p(k) = 1 + sum_j n_j^k` is log-convex; `f_blind` is not | **ONE(separation)** | Written proof + 25,702-instance finite test |
 | `sigma_E(j+1,j-1)/sigma_E(j,j) -> cosh^2(1)` | **ONE(constant)** | Written derivation + exact finite test to `j = 20,000` |
 | Extremal law under injective or permutation priors | **refuted for argmin**, 6 explicit counterexamples retained | Finite test |
 | Extremal law within a fixed domain size | **refuted**, `(2,2,2)` beats `(4,1,1)` at `n = 6, d = 4` | Finite test |
@@ -472,14 +602,12 @@ where the open problem lives.
 
 1. A real literature review for `sigma_E`, beyond one search pass. Until then no
    novelty is claimed.
-2. **The exchange lemma** (Section 8b) is now the single open problem worth
-   solving; it implies the extremal law and it is local. The Karamata step is
-   done. What remains is bounding the one shrinking factor `(1 + S'_{b-1})`
-   against everything else, in the regime where the ratio tends to 1: the family
-   `(K, j, j) -> (K, j+1, j-1)` with `K` large. The `m = 2` case
-   `sigma_E = (1 + a^a + b^a)(1 + a^b + b^b)` is comfortably true — tightest
-   ratio 1.79 at `(2,2) -> (3,1)` — so the difficulty is entirely in the
-   spectator blocks.
+2. **Arity `>= 2`.** Arity 1 is closed (§8d). The obstruction is that the
+   exponents become products `n_{i_1} ... n_{i_r}`, so Step 2 needs the exponent
+   *multiset* of the exchanged profile to majorise the original. For `r = 2` this
+   is checkable by hand — the four exponents `(a+1)^2, (a+1)(b-1), (a+1)(b-1),
+   (b-1)^2` do majorise `a^2, ab, ab, b^2` at equal total `(a+b)^2` — but the
+   general `r` statement is not written. That is the next hour of real work.
 3. A characterisation of `sigma_blind`'s 55 extremal exceptions. They are
    concentrated at large `m` with mostly-singleton profiles, which suggests a
    clean description exists.
@@ -493,5 +621,11 @@ It does not establish that any abstraction in any real system is wrong. It does
 not establish that the uniform prior over operations is the right measure for any
 application; Section 5.2 shows the answer depends on the prior, and identifying
 the right prior is a modelling obligation that has not been discharged. It does
-not establish novelty. It does not make the extremal conjecture a theorem, and
-`n <= 45` is not "all `n`".
+not establish novelty — Section 8d proves a statement, which is a different thing
+from proving that nobody has proved it before.
+
+The extremal law is now a theorem **for arity 1, for the uniform prior over
+partial maps, and for nothing else**. Arity `>= 2` rests on `n <= 16`. The
+bijective and fixed-domain-size counterexamples of Section 5.2 are unaffected by
+the proof and still stand: they are statements about different operation classes,
+and in those classes the law is false.
