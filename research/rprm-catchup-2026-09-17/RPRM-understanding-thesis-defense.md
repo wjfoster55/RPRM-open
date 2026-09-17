@@ -1445,12 +1445,14 @@ it is wrong.**
 **Make RPRM's coverage boundary into a computable number: the fragility spectrum
 of a quotient under unknown operations.** RPRM insists that an operational
 quotient is only valid relative to a *declared* operation set. Every practising
-modeller knows their operation set is incomplete. Nobody has turned that into an
-invariant. So define, for a partition `C` of a finite carrier, the count
+modeller knows their operation set is incomplete, and the framework states that
+as a caution rather than as a quantity. So define, for a partition `C` of a
+finite carrier, the count
 `sigma_a(C)` of arity-`a` partial operations that `C` survives in the exact O05
 sense, and the fragility `F_a(C) = 1 - sigma_a(C)/(ambient)`. I derived a closed
 form, verified it by exhaustive brute force, and found an extremal law with zero
-counterexamples up to `n = 24`: **among all ways to compress `n` states into `m`
+counterexamples up to `n = 24`
+*(Appendix F: later the same night this became a theorem, at every arity)*: **among all ways to compress `n` states into `m`
 blocks, the most robust is one big blob plus singletons, and the least robust is
 uniform binning** — the thing everyone actually does. At `n = 20, m = 10` the
 blob survives an unknown operation `1.7 × 10^7` times more often than the
