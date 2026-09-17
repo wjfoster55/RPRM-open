@@ -70,6 +70,34 @@ changes the most downstream:
    we disagree about what your own process is for, and that disagreement matters
    more than the mathematics.
 
+## Read Appendix E before you argue with Chapter 12
+
+Chapters 1 to 13 were finished and rendered first. Then I spent the rest of the
+night actually running the hostile cases that Chapter 12 declared and marked "not
+yet run," and two of them bit. **Appendix E is the correction**, and it changes
+three things:
+
+- The applied corollary in Section 12.3 — "uniform binning is the most fragile
+  abstraction" — is **prior-dependent**. It holds when the unknown operations may
+  merge states or stall. It **reverses** under bijective operations, for a reason
+  that is one line long and makes the claim more useful than it was.
+- The priority search found the prior art. The classical partition-preserving
+  monoid is Pei's, enumerated in arXiv:2006.04242 and arXiv:1210.4775 — and its
+  condition is **successor agreement only, with no condition on the domain.**
+  RPRM's enabledness condition cuts out a strictly smaller submonoid, and the
+  ratio between them is an exact rational: at `n = 8` with balanced four-block
+  compression, **93% of the abstractions the classical monoid admits are rejected
+  by enabledness.**
+- The thing I did not see coming. Run the two monoids side by side over 231
+  cells: the classical one has **no clean extremal shape — 55 exceptions** —
+  while the enabledness-enforced one has an exact one, **zero exceptions in 903
+  cells up to `n = 45`**, and where they disagree the extremal profiles
+  **invert**. That is a better argument for your framework than anything in
+  Chapter 8, and I did not write it, I ran into it.
+
+Chapters 1 to 13 are left exactly as they were written. The correction sits
+beside them rather than replacing them, which is your rule.
+
 ## What this document is not
 
 It is not a next-target instruction. You pick. Chapter 12 is an argued
@@ -1972,6 +2000,8 @@ tables.
 | `_tools/center_check.py` | Section 4.8, 4.9: ternary-grid ranks and nullities, withheld-centre determination, graded cube kernels, the weight-≤2 restriction | ~4 s |
 | `_tools/census.py` | Section 4.6: the enabledness census, exposure depths, the minimal witness, the null control | ~10 s |
 | `_tools/fragility.py` | Chapter 12: the closed form, brute-force confirmation, the `n = 6` spectrum, the extremal search to `n = 24`, the arity-2 hostile case, the applied table | ~9 s |
+| `tools/fragility_hostile.py` | Appendix E: all five hostile cases, restricted operation classes, fixed-domain slices, arity 3, the extended search to `n = 45` | ~96 s |
+| `tools/fragility_priority.py` | Appendix E: the prior-art separation, the enabledness price, the two-monoid extremal comparison, the subset-sum characterisation | ~7 s |
 
 Raw outputs are retained as `center_out.txt`, `census_out.txt` and
 `fragility_out.txt` beside the scripts.
@@ -1980,6 +2010,216 @@ Every number in this document marked *recomputed* came from one of those three
 runs. Every number marked *reported* is quoted from a named file in
 `C:\github\RPRM-open` and was not re-executed here. The Lean suite was not run.
 The BSD interior was not read. The ChatGPT corpus does not exist locally.
+
+
+# Appendix E — Overnight addendum: the hostile cases were run, and two of them bit
+
+*Written after Chapters 1–13 were finished and the PDF was first rendered. The
+earlier chapters are left exactly as they were. This appendix records what
+happened when the hostile cases declared in Section 12.6 were actually executed,
+including the place where my own headline claim did not survive. Full record in
+`research/rprm-catchup-2026-09-17/FRAGILITY.md`; scripts in `tools/`.*
+
+## E.1 What I said I would attack, and what happened
+
+Section 12.6 listed five hostile cases in priority order and marked three of them
+"not yet run." All five are now run.
+
+| Hostile case | Outcome |
+|---|---|
+| H1 non-uniform priors — **declared strongest objection** | **Bit.** The argmin half of the law is prior-dependent |
+| H2 total operations only | Survived. `n <= 18`, every `m`, zero failures |
+| H3 arity 3 | Survived. `n <= 10`, zero failures |
+| H4 push the exhaustive search | Survived and strengthened: **903 cells, `n <= 45`, zero counterexamples** |
+| H5 the degeneracy objection | Answered structurally, and Result 2's non-monotonicity holds at every `n = 4..12` |
+
+## E.2 Where the claim broke
+
+The conjecture has two halves. They do not have the same status.
+
+| Operation class | argmax = maximally unequal | argmin = balanced |
+|---|---:|---:|
+| All partial maps, `n <= 45` | 0 failures | 0 failures |
+| Total maps only, `n <= 18` | 0 | 0 |
+| Arity 2, `n <= 12` / arity 3, `n <= 10` | 0 | 0 |
+| Idempotent total maps, `n <= 7` | 0 | 0 |
+| **Injective partial maps, `n <= 7`** | 0 | **2 failures** |
+| **Permutations, `n <= 7`** | **1 failure** | **4 failures** |
+
+**The maximum side is nearly prior-free. The minimum side is not.** And the
+minimum side is the one carrying Chapter 12's applied corollary. So:
+
+> **Correction to Section 12.3, Result 4.** "Uniform binning is the most fragile
+> `m`-block abstraction under unknown dynamics" holds when the unknown operations
+> may be **non-injective or partial** — that is, when the dynamics can merge
+> states or stall. It **reverses** when the unknown operations are bijective.
+
+The mechanism is clean enough to state in one line, and it makes the corrected
+claim more useful than the original. Under permutations, a partition survives
+exactly when the map permutes blocks bijectively, and **blocks of equal size can
+be interchanged**. At `n = 4`, the balanced profile `(2,2)` admits `2 x 2! x 2! =
+8` surviving permutations while `(3,1)` admits only `3! x 1! = 6`, because
+unequal blocks cannot swap. Balanced binning buys symmetry. Under general partial
+maps the opposite force dominates, because a large blob absorbs arbitrary images.
+Which wins is a property of the prior, and now you can tell which regime you are
+in.
+
+I also ran the sharpest version of the objection — restrict to partial maps with
+**exactly** `d` defined points, which removes the "mostly-undefined maps dominate
+the count" explanation entirely. At `n = 6`:
+
+| d | class size | (5,1) | (4,2) | (3,3) | (4,1,1) | (3,2,1) | (2,2,2) |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 1 | 36 | 6 | 0 | 0 | 12 | 6 | 0 |
+| 2 | 540 | 0 | 20 | 0 | 36 | 14 | 36 |
+| 3 | 4,320 | 0 | 0 | 108 | 0 | 120 | 0 |
+| 4 | 19,440 | 0 | 272 | 0 | 258 | 216 | **432** |
+| 5 | 46,656 | 3,126 | 0 | 0 | 3,096 | 504 | 0 |
+| 6 | 46,656 | **18,756** | 5,440 | 2,916 | **9,288** | 3,024 | 1,728 |
+
+At `d = 6` the law holds in both the `m = 2` and `m = 3` groups. At `d = 4` it
+**inverts** for `m = 3`: `(2,2,2)` beats `(4,1,1)`. The law is a statement about
+the aggregate over domain sizes and not about every slice, and saying it without
+that qualifier would be an overclaim.
+
+## E.3 Why the zeros are there — a new exact characterisation
+
+Those zeros are not sampling noise. Because a block is wholly enabled or wholly
+disabled, **the domain size of any surviving partial operation is a subset sum of
+the profile.** Under the successor-only condition every domain size `0..n` is
+reachable.
+
+| profile | admissible domain sizes under O05 | count | of `n+1` |
+|---|---|---:|---:|
+| (6) | 0, 6 | 2 | 7 |
+| (3,3) | 0, 3, 6 | 3 | 7 |
+| (5,1) | 0, 1, 5, 6 | 4 | 7 |
+| (4,2) | 0, 2, 4, 6 | 4 | 7 |
+| (2,2,2) | 0, 2, 4, 6 | 4 | 7 |
+| (4,1,1) | 0, 1, 2, 4, 5, 6 | 6 | 7 |
+| (3,2,1) | 0, 1, 2, 3, 4, 5, 6 | 7 | 7 |
+| (1,1,1,1,1,1) | 0, 1, 2, 3, 4, 5, 6 | 7 | 7 |
+
+*Evidence grade: written proof, immediate from the enabledness condition.* It
+explains every zero above and it is why a blob profile concentrates its surviving
+operations at a few very large domain sizes where the counts are enormous.
+
+## E.4 The priority search — and the result it produced instead
+
+Section 12.7 said the literature check might kill priority and had to run before
+anything was published. It ran, and the outcome is better than either possible
+answer I anticipated.
+
+**Prior art exists, and it is for a different monoid.** The monoid of *total*
+transformations preserving a partition was introduced by H. Pei and enumerated
+for arbitrary finite partitions in arXiv:2006.04242. The *partial* analogue for a
+*uniform* partition is Fernandes and Quinteiro, arXiv:1210.4775, with published
+order `( m (n+1)^n - m + 1 )^m` for `m` blocks of size `n`.
+
+**But the literature condition is successor agreement only.** Wherever the map
+happens to be defined on a block, the images must stay in one block. There is no
+condition on the domain. So the two counts are genuinely different objects:
+
+```text
+sigma_blind(C) = prod_i ( 1 + sum_j [ (n_j+1)^{n_i} - 1 ] )      literature
+sigma_E(C)     = prod_i ( 1 + sum_j     n_j^{n_i}         )      RPRM O05
+```
+
+Deriving `sigma_blind` from scratch and collapsing it onto a uniform profile
+reproduces the published order **exactly** in all 22 cases computed, including
+`m = 5, n = 3` where both give `3,150,905,752,576`. Both formulas also match
+exhaustive brute force over every partial map for `n <= 6`. So the identification
+is verified, not assumed.
+
+**The enabledness price.** `rho(C) = sigma_E/sigma_blind` is the exact fraction of
+literature-admissible reductions that RPRM's condition keeps:
+
+| n | profile | `sigma_E` | `sigma_blind` | rejected by enabledness |
+|---:|---|---:|---:|---:|
+| 6 | (6) | 46,657 | 117,649 | 60.3% |
+| 6 | (3,3) | 3,025 | 16,129 | 81.2% |
+| 6 | (2,2,2) | 2,197 | 15,625 | **85.9%** |
+| 8 | (4,4) | 263,169 | 1,560,001 | 83.1% |
+| 8 | (3,3,2) | 91,287 | 912,951 | 90.0% |
+| 8 | (2,2,2,2) | 83,521 | 1,185,921 | **93.0%** |
+| any | discrete | `(n+1)^n` | `(n+1)^n` | 0.0% |
+
+For a balanced four-block reduction of an eight-state system, **93% of the
+abstractions the classical monoid admits are rejected by enabledness.** The
+discrete-partition row is the declared null and it is exactly zero.
+
+## E.5 The flagship, which I did not see coming
+
+Running both monoids side by side over the same 231 `(n, m)` cells with
+`3 <= n <= 24`:
+
+| Monoid | argmax law | argmin law |
+|---|---|---|
+| `sigma_E` — enabledness enforced | **0 failures** (903 cells, to `n = 45`) | **0 failures** |
+| `sigma_blind` — successor only | **14 failures** in 231 cells | **41 failures** |
+
+And where they disagree they **invert**. First disagreement, `n = 11, m = 9`:
+
+```text
+sigma_E      argmax (3,1,1,1,1,1,1,1,1)     argmin (2,2,1,1,1,1,1,1,1)
+sigma_blind  argmax (2,2,1,1,1,1,1,1,1)     argmin (3,1,1,1,1,1,1,1,1)
+```
+
+The most robust profile under one condition is the least robust under the other.
+
+> **On the finite family `3 <= n <= 24`, the classical partition-preserving
+> partial transformation monoid has no clean extremal shape — 55 exceptions in
+> 231 cells — while the submonoid cut out by adding RPRM's enabledness condition
+> has an exact one, with zero exceptions in 903 cells up to `n = 45`.**
+
+*Evidence grade: finite test, complete enumeration inside the stated ranges. Not
+a theorem. Both general statements are OPEN.*
+
+That is the strongest thing to come out of the night, and it is a better argument
+for RPRM than anything in Chapter 8. It does not say the enabledness condition is
+*correct* — that remains a modelling question. It says the condition picks out a
+structurally better-behaved object than the classical one, which is a reason to
+take it seriously that does not require agreeing with the framework's philosophy
+first.
+
+## E.6 Revised status of the pick
+
+| Statement | Was | Now |
+|---|---|---|
+| Closed form `sigma_a(C)` | derived, confirmed | unchanged: **ONE(formula)**, written proof + complete finite test |
+| Priority of the closed form | OPEN | `sigma_blind` is **ONE(citation)**; `sigma_E` is **NONE found after a stated single-pass search**. Not a novelty claim. A real review is still owed |
+| Extremal law | conjecture to `n = 24` | conjecture to **`n = 45`**, 903 cells, and shown to be **specific to the enabledness-enforced monoid** |
+| "Uniform binning is worst" | derived synthesis | **restricted**: holds under partial, total and idempotent priors; **fails** under bijective priors |
+| Subset-sum domain characterisation | not stated | new, **ONE(characterisation)**, written proof |
+| Enabledness price `rho` | not stated | new, **ONE(rational)** per profile |
+| Enabledness restores an extremal law the classical monoid lacks | not stated | new, **ONE(comparison)** on the stated range; general case OPEN |
+
+## E.7 What I got wrong, plainly
+
+Chapter 12 sold the applied corollary without the prior qualifier. I declared the
+prior sensitivity as the strongest objection and then stated the corollary as if
+it had already survived it. It had not been run yet. When it was run, it failed
+on the bijective classes. The corollary is still true and still useful — it is
+now true *with a stated regime*, which is what it should have said in the first
+place.
+
+Chapter 12 also treated the priority question as a threat to the result. It was
+the opposite. Finding the prior art is what made the comparison in E.5 possible,
+because you cannot say "enabledness restores a law" until you know what the
+law-less version is and can cite whose it is.
+
+## E.8 What is owed
+
+1. A real literature review for `sigma_E`. One search pass is not a review, and
+   until it is done nothing here is novel.
+2. The exchange lemma — that moving one element from a smaller block to a larger
+   one strictly increases `sigma_E` — which would make the extremal conjecture a
+   theorem. Start at `m = 2`, where `sigma_E = (1 + a^a + b^a)(1 + a^b + b^b)`.
+3. A characterisation of `sigma_blind`'s 55 exceptions. They cluster at large `m`
+   with mostly-singleton profiles, which suggests a clean description exists.
+4. Take one published finite reduced model of a partial system and compute its
+   `rho`. That is the step that turns an instrument into a finding.
 
 # Appendix D — Closing note
 

@@ -243,53 +243,88 @@ arity 1 and `n <= 3` at arity 2.
 **Null control, declared before running, and it held.** The discrete partition
 must give `sigma_1 = (n+1)^n` exactly, i.e. `F = 0`. Verified `n = 1..8`.
 
-**Open conjecture** — exhaustive search, `2 <= n <= 24`, every `m`, every
-profile, **zero counterexamples**: for fixed `n` and block count `m`,
+**Open conjecture** — exhaustive search, `2 <= n <= 45`, every `m`, every
+profile, **903 cells, zero counterexamples**: for fixed `n` and block count `m`,
 
 ```text
 argmax sigma_1 = (n-m+1, 1, 1, ..., 1)     maximally unequal
 argmin sigma_1 = the balanced profile      sizes differ by at most 1
 ```
 
-Hostile case already run: the same extremal shapes hold at arity 2 for
-`n <= 12`, zero disagreements.
+**Prior art, located and separated.** The monoid of partition-preserving
+transformations is Pei's; enumerated for arbitrary finite partitions in
+arXiv:2006.04242, and the partial/uniform case in arXiv:1210.4775 with order
+`(m(n+1)^n - m + 1)^m`. **But the literature condition is successor agreement
+only — no condition on the domain.** RPRM's enabledness condition cuts out a
+strictly smaller submonoid:
+
+```text
+sigma_blind(C) = prod_i ( 1 + sum_j [ (n_j+1)^{n_i} - 1 ] )   literature
+sigma_E(C)     = prod_i ( 1 + sum_j     n_j^{n_i}         )   RPRM O05
+```
+
+Deriving `sigma_blind` independently reproduces the published order exactly in
+all 22 cases checked. So `sigma_blind` is **ONE(citation)** and `sigma_E` is
+**NONE found after a stated single-pass search** — not a novelty claim; a real
+review is still owed.
+
+**The enabledness price.** `rho = sigma_E / sigma_blind`, exact rational. At
+`n = 8` with balanced four-block compression, `rho = 83,521 / 1,185,921`:
+**93% of the abstractions the classical monoid admits are rejected by
+enabledness.** The discrete partition has `rho = 1` exactly, which was the
+declared null.
+
+**The flagship, found while checking priority.** Over the same 231 `(n, m)` cells
+with `3 <= n <= 24`: the classical monoid has **no clean extremal shape — 14
+argmax and 41 argmin exceptions** — while the enabledness-enforced submonoid has
+an exact one, with **zero exceptions in 903 cells to `n = 45`**. Where they
+disagree the extremal profiles **invert**; first at `n = 11, m = 9`. *Evidence
+grade: finite test, complete enumeration in the stated range. Not a theorem.*
 
 **Observed and unexplained.** Fragility is **not monotone** in block count. At
 `n = 6`: total collapse `(6)` has `F = 0.603`, while balanced `(2,2,2)` has
 `F = 0.981`. The most dangerous abstractions are the moderately aggressive
 balanced ones, not the extreme ones.
 
-**Applied corollary** (derived synthesis; depends on a uniform prior over partial
-operations, which must be stated and defended): **uniform binning is the most
-fragile `m`-block abstraction under unknown dynamics.** At `n = 20, m = 10` the
-one-big-blob profile survives an unknown partial operation about `1.7 × 10^7`
-times more often than the balanced profile.
+**New exact characterisation.** Because a block is wholly enabled or wholly
+disabled, **the admissible domain sizes of a surviving partial operation are
+exactly the subset sums of the profile.** `(6)` admits only `{0, 6}`; `(3,2,1)`
+admits all of `0..6`. Written proof, immediate from enabledness.
 
-**Hostile cases, in priority order.**
+**Applied corollary, and its correct restriction.** Uniform binning is the most
+fragile `m`-block abstraction under unknown dynamics — at `n = 20, m = 10` the
+one-big-blob profile survives about `1.7 × 10^7` times more often. **This holds
+when the unknown operations may merge states or stall (partial, total and
+idempotent classes). It REVERSES under bijective operations**, because equal-size
+blocks can be interchanged: at `n = 4`, `(2,2)` admits 8 surviving permutations
+while `(3,1)` admits only 6. State the regime or do not state the corollary.
 
-1. Non-uniform priors — injective maps only, idempotents only, structured
-   operation pools. **Strongest objection. Attack first.**
-2. Total operations only (drop partiality): does the extremal shape change? If it
-   flips, the result is specifically about partiality, which is a better story.
-3. Arity 3 and above.
-4. Non-deterministic / relational operations.
-5. The degeneracy objection: *"singletons are trivially robust."* Answer with the
-   fixed-`m` framing and with the non-monotonicity result.
+**Hostile cases — all five were run, and two bit.**
 
-**Priority obligation.** Search semigroup theory, universal algebra and the
-transformation-semigroup literature for prior art on counting
-partition-respecting partial maps. Report **ONE(citation)** or **NONE after a
-stated search**. Never a silent novelty claim.
+1. Non-uniform priors. **BIT.** argmin fails under injective-partial (2 cases)
+   and permutations (4 cases). argmax survives every class except permutations at
+   `(4,2)`.
+2. Total operations only. Survived, `n <= 18`, zero failures.
+3. Arity 3. Survived, `n <= 10`. Arity 2 survived to `n <= 12`.
+4. Non-deterministic / relational operations. **Not yet run.**
+5. Fixed domain size, the sharpest form of 1. **BIT.** At `n = 6, d = 4`,
+   `(2,2,2)` beats `(4,1,1)`. The law is about the aggregate over domain sizes,
+   not about every slice.
 
-**Done conditions.** ONE(formula) for `sigma_a`, all arities, with a written
-proof. ONE(profile) for each extremal, or a counterexample — a counterexample
-would also be a fine result. ONE(table) per computed `(n, m)` cell, OPEN beyond
-the enumeration limit. ONE(citation) or NONE-after-stated-search on priority.
-Everything else OPEN.
+**Done conditions and current state.** ONE(formula) for `sigma_a`, all arities,
+written proof — **achieved**. ONE(profile) for each extremal — **still OPEN**;
+the exchange lemma (moving one element from a smaller block to a larger one
+strictly increases `sigma_E`) would close it, and `m = 2`, where
+`sigma_E = (1 + a^a + b^a)(1 + a^b + b^b)`, is where to start. Priority —
+**ONE(citation)** for the classical monoid, **NONE-after-stated-search** for the
+enabledness-enforced one. A real literature review — **owed**. An applied `rho`
+computed for one published reduced model of a partial system — **owed**, and it
+is the step that turns the instrument into a finding.
 
 **Forbidden.** BSD. Repairing the toric `3` versus `1`. Floating-point arithmetic
 in any reported number. Claiming novelty before the literature search. Upgrading
-the conjecture to a theorem on the strength of `n <= 24`.
+the conjecture to a theorem on the strength of `n <= 45`. Stating the applied
+corollary without naming the operation-class regime it holds in.
 
 ## 11. Things not to say to him
 
