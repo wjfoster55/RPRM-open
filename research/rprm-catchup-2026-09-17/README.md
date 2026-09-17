@@ -25,6 +25,15 @@ proof, not a formal one. Every quantitative statement carries a domain and an
 evidence grade, and proving a statement is not the same as establishing that
 nobody has proved it before — no novelty is claimed anywhere in this directory.
 
+**The theorem was then attacked twice, and both attacks changed the record.** A
+literature review found that the closed form is a corollary of a published
+theorem and that the condition already has a name; a hostile audit found three
+wrong explanatory claims around a proof it otherwise confirmed. The corrections
+are in the documents where the errors were, marked as withdrawals rather than
+quietly edited, and each was re-derived here before being accepted. What survived
+both is the extremal law — and it survived in better shape than it started, since
+the same proof turns out to cover the published total-map monoid.
+
 ## Contents
 
 | File | What it is |
@@ -37,7 +46,9 @@ nobody has proved it before — no novelty is claimed anywhere in this directory
 | [`01-first-party-rprm.md`](01-first-party-rprm.md) | Ingest lane 1 — the project's self-account, read from the repository spine |
 | [`03-independent-math-reading.md`](03-independent-math-reading.md) | Ingest lane 3 — an independent mathematical reading, run cold, `verify.py` executed |
 | [`04-coverage-gaps.md`](04-coverage-gaps.md) | What was searched for, found, and still missing |
-| [`tools/`](tools/) | Nine exact-arithmetic verification scripts and their raw outputs |
+| [`LITERATURE-sigma-E.md`](LITERATURE-sigma-E.md) | The real literature review. Cost us the count and the condition; left the extremal law standing |
+| [`EXCHANGE-LEMMA-AUDIT.md`](EXCHANGE-LEMMA-AUDIT.md) | Independent hostile audit of the proof. Verdict THEOREM; three surrounding claims rejected, all three retested and withdrawn here |
+| [`tools/`](tools/) | Eleven exact-arithmetic verification scripts and their raw outputs |
 
 Ingest lane 2 (process history) is held outside this repository. It contains
 private material. Its usable content is distilled into `WILLIAM-WORKING-STYLE.md`.
@@ -60,8 +71,10 @@ fraction.
 | Null control: discrete partition survives everything, `F = 0` | Declared before running; holds for `n = 1..8` |
 | Extremal law: for fixed block count `m`, `argmax = (n-m+1, 1, ..., 1)`, `argmin =` balanced | **THEOREM**, at every arity, for the uniform prior over partial maps. Found first by exhaustive search (903 cells to `n = 45`, zero counterexamples), then proved. See `FRAGILITY.md` §8d–8e |
 | **Exchange lemma** — moving one element from a smaller block to a larger one strictly increases survival; implies the extremal law | **THEOREM.** The profile supplies both the bases inside `f(k) = 1 + sum_j n_j^k` and the exponents at which `f` is evaluated. Separate them: Karamata makes `f` pointwise larger, and `f` is a sum of exponentials hence log-convex, so spreading the two exponents apart at fixed sum cannot decrease their product. Higher arity by convex order |
-| Why the classical successor-only monoid has **no** such law | **ONE(separation).** Its factor function is `sum_j (n_j+1)^k - (m-1)` — a sum of exponentials minus a positive constant, which is **not log-convex**. 7,488 violations in 25,702 instances, concentrated in exactly the profiles where its extremal law fails. Enabledness removes the `-1` per block, and the `-1` per block was what broke it |
+| Why the classical successor-only monoid has **no** such law | **ONE(separation).** Its factor function is `sum_j (n_j+1)^k - (m-1)` — a sum of exponentials **minus a positive constant**, which is not log-convex. Controlled: hold the bases fixed and drop only the subtraction, and both log-convexity and the exchange lemma come back (`0` vs `66` failures in 42,903 exchanges). Adding a constant is harmless; subtracting one is not |
 | `sigma_E(j+1,j-1)/sigma_E(j,j) -> cosh^2(1) = 2.381097845...` | **ONE(constant).** Written derivation, then verified in exact arithmetic to `j = 20,000`. Splitting a balanced pair apart multiplies survival by a fixed factor that does not wash out |
+| Extremal law for the **total-map** prior | **THEOREM**, every arity — promoted §8h after audit. Same proof; its factor `sum_j n_j^k` is also a sum of exponentials. At arity 1 this is Sarkar–Singh's published `\|T(X,P)\|` |
+| Extremal law for the **idempotent** prior | **OPEN.** 0 failures in 466 exchanges to `n = 13`, but the idempotent count provably does **not** factor over blocks, so there is no factor function for the mechanism to use. A closed form for it is derived and brute-force validated |
 | Hostile cases: arity 2, arity 3, total-only, idempotent-only | All run. Survived: `n <= 12`, `n <= 10`, `n <= 18`, `n <= 7`. Zero failures |
 | Hostile case: **non-uniform priors** | **Bit.** The `argmin` half fails under injective-partial and permutation priors. The `argmax` half survives every class but one. Six counterexamples retained |
 | Fragility is **not monotone** in block count | Observed. At `n = 6`, total collapse `(6)` has `F = 0.603`; balanced `(2,2,2)` has `F = 0.981` |
@@ -140,6 +153,9 @@ python -I -B tools/fragility_priority.py prior-art separation, enabledness price
 python -I -B tools/fragility_literature.py  the published reduction: Sarkar-Singh Thm 6.1
                                          against brute force, the adjoin-a-sink identity,
                                          and the exchange lemma on the published T(X,P)
+python -I -B tools/fragility_audit_response.py  the three withdrawn claims, each retested:
+                                         +1 inessential, tensor majorisation works,
+                                         total maps covered, idempotents obstructed
 python -I -B tools/fragility_exchange.py the exchange lemma, 5.7M exchanges to n = 40
 python -I -B tools/fragility_critical.py targeted attack on the tightest family
 python -I -B tools/fragility_limit.py    the cosh^2(1) asymptotic

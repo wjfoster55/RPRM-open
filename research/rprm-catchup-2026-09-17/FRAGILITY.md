@@ -644,10 +644,33 @@ falls in exactly one cell. Inside a cell the exponent is `P` times a product of
 4. The inequality `sum phi >= sum phi` is **additive over cells**, so summing
    over every `U` and every spectator assignment gives (*). ∎
 
-Note step 4 is why the argument is phrased in convex order rather than
-majorisation: majorisation is not additive over disjoint unions, but the
+Note step 4 is why *this particular* argument is phrased in convex order rather
+than majorisation: majorisation is not additive over disjoint unions, but the
 `sum phi` inequality is, and the `sum phi` inequality is all Karamata was ever
 being used for.
+
+> **Correction, after hostile audit.** An earlier revision said the
+> product-multiset majorisation route *fails*, and used that to justify switching
+> to convex order. **That was too strong, and it is withdrawn.** The route works,
+> and it is shorter:
+>
+> Since `q` majorises `p`, Birkhoff–von Neumann gives a doubly stochastic `D`
+> with `p = Dq`. Tensoring, `p^(⊗r) = D^(⊗r) q^(⊗r)`, and a Kronecker product of
+> doubly stochastic matrices is doubly stochastic. The coordinates of these
+> tensor powers are **exactly** the ordered-tuple exponents `e_T`. So
+> `{e_T(q)}` majorises `{e_T(p)}` directly, and one application of Karamata gives
+> (*) without any cell decomposition at all.
+>
+> What was actually true is narrower: majorisation cannot be assembled *piecewise*
+> across the cells of the decomposition above. That is a fact about the cellwise
+> route, not about majorisation, and it does not obstruct the tensor route, which
+> never decomposes. Verified exactly at arities 2, 3, 4 and 5 — 182 exchanges each,
+> zero majorisation failures — in `tools/fragility_audit_response.py`.
+>
+> Both proofs are kept. The tensor argument is the one to publish; the cellwise
+> convex-order argument is retained because it was independently checked against
+> six convex probes and two concave controls, and because it survives in settings
+> where the exponent vector is not a tensor power.
 
 Then exactly as before, with `phi = log f_q` (convex, since `f_q` is log-convex):
 
@@ -680,17 +703,56 @@ the inequality, which they do. 963 exchanges at arities 2, 3 and 4.
 
 This is the mechanism behind Result 4, and it is one line.
 
-The proof rests on exactly one property: `f_p(k) = 1 + sum_j n_j^k` is log-convex
-in `k`, because it is a sum of exponentials. The classical successor-only count
-has factor function
+> **Corrected after hostile audit.** This section previously said that the
+> constant `1` in `f_p(k) = 1 + sum_j n_j^k` "is what makes this work" and that
+> the result is "false without it". **That is wrong and is withdrawn.** Deleting
+> the `1` leaves `sum_j n_j^k`, which is still a sum of exponentials and still
+> log-convex — zero failures in 1,482 probes. The `1` is essential to the
+> *counting* (it is the wholly-undefined choice) and irrelevant to the *analysis*.
+> The corrected mechanism is below. It is not a smaller claim, but it is a
+> different one, and the earlier version would have been caught by a referee.
+
+The proof rests on exactly one property: the factor function is log-convex in
+`k`. A **sum of exponentials is always log-convex**: writing
+`f(k) = sum_j c_j e^{k log a_j}` with `c_j, a_j > 0`, the second derivative of
+`log f` is the weighted variance of the `log a_j`, hence `>= 0`. Note this covers
+a constant term automatically, since `c = c · 1^k` is just another exponential
+with base 1 — which is why the `+1` costs nothing and also why it buys nothing.
+
+The classical successor-only count has factor function
 
 ```text
 f_blind,p(k) = 1 + sum_j ( (n_j+1)^k - 1 ) = sum_j (n_j+1)^k - (m - 1) .
 ```
 
 That is a sum of exponentials **minus a positive constant** whenever `m >= 2`.
-Subtracting a constant does not preserve log-convexity. So Step 2 is not merely
-harder for `sigma_blind` — **its hypothesis is false.**
+Adding a constant preserves log-convexity; **subtracting one need not**, because
+the subtracted term is not an exponential with a positive coefficient. So Step 2
+is not merely harder for `sigma_blind` — **its hypothesis is false.**
+
+The smallest counterexample is immediate. At `p = (1,1)`,
+`f_blind(k) = 2^{k+1} - 1`, so `f(1), f(2), f(3) = 3, 7, 15` and
+
+```text
+f(1) f(3) = 45  <  49 = f(2)^2 ,
+```
+
+which is exactly the failure of log-convexity.
+
+**The controlled experiment, which is what actually pins the mechanism.** Hold
+the bases fixed at `n_j + 1` and vary only the subtraction:
+
+| factor function | log-convexity failures | exchange-lemma failures |
+|---|---:|---:|
+| `sum_j (n_j+1)^k` — no subtraction | **0** / 1,482 | **0** / 42,903 |
+| `sum_j (n_j+1)^k - (m-1)` — classical | **292** / 1,482 | **66** / 42,903 |
+| `sum_j n_j^k` — `+1` deleted, `= \|T(X,P)\|` | **0** / 1,482 | **0** / 42,903 |
+| `1 + sum_j n_j^k` — `sigma_E` | **0** / 1,482 | **0** / 42,903 |
+
+Rows one and two differ **only** by the subtracted constant and differ in
+outcome; rows three and four differ **only** by the added constant and do not.
+That isolates the subtraction as the cause and clears the `+1` of any role.
+Reproduce with `python -I -B tools/fragility_audit_response.py`.
 
 Tested on all 913 profiles with `n <= 16`, over all `a >= b >= 1`:
 
@@ -705,10 +767,15 @@ which is why `sigma_blind`'s 41 bad `(n, m)` cells are all many-block,
 mostly-singleton profiles.
 
 > **Reading.** Enabledness is not decoration. Dropping the domain requirement
-> subtracts one unit per block from every factor, and that subtraction is
-> precisely what destroys log-convexity of the factor function and with it the
-> extremal law. The condition RPRM adds for modelling reasons is the condition
-> that makes the count analytically well behaved.
+> subtracts one unit per block from every factor, and that subtraction is what
+> destroys log-convexity of the factor function, which is the hypothesis the
+> extremal law's proof needs. The condition RPRM adds for modelling reasons is
+> the condition that leaves the count analytically well behaved.
+>
+> Two things this does **not** say. It does not say the `+1` in `sigma_E`'s factor
+> is doing analytic work — it is not; see the correction above. And it does not
+> say log-convexity failure *causes* extremal-law failure: only 1.7% of the
+> log-convexity failures produce an actual exchange loss. §8g has the numbers.
 
 *Evidence grade: written proof for the `sigma_E` direction; finite test for the
 `sigma_blind` failures. Reproduce with* `python -I -B tools/fragility_mechanism.py`.
@@ -737,9 +804,11 @@ All 42,903 distinct exchanges over all partitions of `n <= 26`:
 
 > **Step 2 holding is sufficient.** Across every exchange audited, whenever the
 > factor function is log-convex at the two exchanged exponents, the exchange
-> holds. The classical monoid loses the extremal law exactly where the `-1` per
-> block costs it log-convexity; the enabledness-enforced monoid never loses it,
-> because a sum of exponentials is log-convex everywhere.
+> holds. So the classical monoid can only lose the extremal law *within* the set
+> of exchanges where the `-1` per block costs it log-convexity — a containment,
+> not a coincidence of location, and **not** an "exactly where". The
+> enabledness-enforced monoid never loses it, because a sum of exponentials is
+> log-convex everywhere.
 
 **The honest qualifier, which is the reason to report the base rate.** Step-2
 failure is **necessary but not sufficient**: only 66 of the 3,871 Step-2 failures
@@ -756,6 +825,71 @@ monoid, in 85,806 audited exchanges.
 *Evidence grade: finite test, complete enumeration in the stated range.*
 Reproduce with `python -I -B tools/fragility_predict.py`.
 
+## 8h. Result 10 — total maps are covered; idempotents are not, and here is why
+
+Both classes were carried as conjectures in §9 on the stated grounds that "the
+proof does not transfer, since the factor function there is not `1 + sum n_j^k`".
+A hostile audit rejected that reasoning, and the audit is right. The proof never
+needed `1 + sum n_j^k`; it needed **log-convexity**. This was the same error as
+the one corrected in §8f, made twice.
+
+### Total maps: promoted to theorem
+
+Restricting the prior to **total** maps deletes exactly the wholly-undefined
+choice per block, so the count is
+
+```text
+sigma_r^{tot}(p) = prod_T ( sum_j n_j^{e_T} ) ,
+```
+
+with factor function `g_p(k) = sum_j n_j^k` — a sum of exponentials, hence
+log-convex, with no constant term at all. Steps 1 and 2 of §8d and the tensor
+argument of §8e apply verbatim. Strictness survives: `sum q_j^k > sum p_j^k` is
+strict for `k >= 2`, and the all-`a` tuple has exponent `a^r >= 2` whenever
+`a >= 2`.
+
+> **Theorem.** The exchange lemma, and hence the extremal law, holds for the
+> total-map prior at every arity `r >= 1`.
+
+*Disposition ONE(theorem). Evidence grade: written proof*, machine-checked at
+arities 1–4 (42,903 + 296 + 62 + 62 exchanges, zero failures). This is the same
+object as Sarkar–Singh's `|T(X,P)|` at `r = 1`, which is §6.1's point.
+
+### Idempotents: stays OPEN, now with a reason rather than a gap
+
+The audit says idempotence couples choices across blocks and destroys the
+factorisation. That is checkable, so it was checked, by deriving the count.
+
+An idempotent partial map satisfies `Fix(t) ⊆ dom(t)` and `t(dom t) ⊆ Fix(t)`.
+Write `S_i = Fix(t) ∩ B_i`. A block in the domain with `S_i` nonempty must target
+**its own** block, since its fixed points map to themselves; a block with `S_i`
+empty may target any block `j` with `S_j` nonempty. Hence
+
+```text
+sigma^{idem}(p) = sum over D ⊆ blocks, and (s_i)_{i in D},
+                    prod_{i in D} C(n_i, s_i)
+                  * prod_{i in D, s_i >= 1} s_i^{n_i - s_i}
+                  * prod_{i in D, s_i  = 0} ( sum_{j in D, s_j >= 1} s_j^{n_i} ) .
+```
+
+Validated against brute-force enumeration of all idempotent enabled partial maps
+on every profile with `n <= 6`, 29 profiles, exact agreement — e.g. `(3,3) -> 277`,
+`(2,2,2) -> 262`, `(6) -> 1058`.
+
+**The bracket is the obstruction.** For a fixed-point-free block, the factor
+`sum_{j in D, s_j >= 1} s_j^{n_i}` depends on the *other* blocks' choices. So the
+count is a sum over configurations, not a product of per-block factors — there is
+no factor function for log-convexity to be a property of, and the proof has
+nothing to act on. This is a genuine obstruction, not a missing step.
+
+The lemma nonetheless survives empirically: 466 exchanges, `n <= 13`, zero
+failures.
+
+> **Disposition: OPEN, conjecture at finite-test grade.** Not promoted. A proof
+> would need a different mechanism, because the one used here does not apply.
+
+Reproduce both with `python -I -B tools/fragility_audit_response.py`.
+
 ## 9. Dispositions
 
 | Statement | Disposition | Grade |
@@ -768,7 +902,12 @@ Reproduce with `python -I -B tools/fragility_predict.py`.
 | **Exchange lemma, arity 1** | **ONE(theorem)** | **Written proof** (§8d); every step machine-checked on 128,121 exchanges to `n = 30` |
 | **Exchange lemma, every arity** | **ONE(theorem)** | **Written proof** (§8e, convex order); decomposition and six convex test functions checked, concave controls reverse |
 | **Extremal law for `sigma_r`, every arity** | **ONE(theorem)**, corollary of the above | **Written proof** |
-| Extremal law under the total-map and idempotent-map classes | **OPEN** — conjecture, 0 counterexamples to `n = 18` / `n = 7`; the proof above does not cover them, since those classes are not the uniform partial-map prior | Finite test |
+| Extremal law under the **total-map** class, every arity | **ONE(theorem)** — promoted §8h. Factor `sum_j n_j^k` is a sum of exponentials; the proof transfers verbatim. The earlier "does not cover them" was a wrong obstruction | Written proof |
+| Extremal law under the **idempotent** class | **OPEN** — conjecture, 0 failures in 466 exchanges to `n = 13`. The count does **not** factor over blocks (§8h), so the mechanism is unavailable, not merely unapplied | Finite test + written obstruction |
+| Closed form for the idempotent count | **ONE(formula)**, §8h | Written derivation + brute force, all profiles `n <= 6` |
+| `f(k) = sum_j n_j^k` with **no** constant term is log-convex | **ONE(fact)** — so the `+1` is inessential to the analysis; earlier "false without it" **withdrawn** | Written proof + 1,482 probes |
+| Subtracting a positive constant is what breaks log-convexity | **ONE(separation)** — controlled: same bases, `0/42,903` exchange failures without the subtraction, `66/42,903` with it | Finite test, §8f |
+| Exponent-multiset majorisation at arity `r` via `p^(⊗r) = D^(⊗r) q^(⊗r)` | **ONE(theorem)** — the earlier claim that this route *fails* is **withdrawn**; it works and is shorter | Written proof + arities 2–5 |
 | Karamata step `S'_k >= S_k`, strict for `k >= 2` | **ONE(inequality)** | Written proof |
 | `f_p(k) = 1 + sum_j n_j^k` is log-convex; `f_blind` is not | **ONE(separation)** | Written proof + 25,702-instance finite test |
 | Log-convexity at the exchanged exponents is **sufficient** for the exchange; every `sigma_blind` failure has it broken | **ONE(implication)** on `n <= 26` | Finite test, 85,806 exchanges, both monoids |
@@ -793,11 +932,11 @@ Reproduce with `python -I -B tools/fragility_predict.py`.
    condition and left the extremal law standing. Still owed from it: obtain
    Pei–Zhou 2009 and Fernandes 1998 in the original rather than via restatement,
    and check Sun, BMMS 36(1) 2013, which was not obtained.
-2. **The total-map and idempotent-map classes.** §8d and §8e prove the law for
-   the uniform prior over *partial* maps. The total-map class is a different
-   measure and the proof does not transfer: the factor function there is not
-   `1 + sum n_j^k`. The conjecture survived to `n = 18` and deserves the same
-   treatment — find its factor function and ask whether it is log-convex.
+2. ~~**The total-map and idempotent-map classes.**~~ **Half done, §8h.** Total
+   maps are now a theorem; the stated obstruction was spurious. Idempotents stay
+   OPEN, but now with a derived closed form and an identified obstruction — the
+   count does not factor over blocks — rather than an unexamined gap. What is
+   owed is a mechanism that does not require a factor function.
 3. A characterisation of `sigma_blind`'s 55 extremal exceptions. §8g supplies a
    **necessary** condition — the factor function must fail log-convexity at the
    exchanged exponents — and rules that condition out as sufficient, since only
@@ -815,6 +954,16 @@ application; Section 5.2 shows the answer depends on the prior, and identifying
 the right prior is a modelling obligation that has not been discharged. It does
 not establish novelty — Section 8d proves a statement, which is a different thing
 from proving that nobody has proved it before.
+
+**Three explanatory claims were withdrawn under hostile audit**, none of which
+touched the theorem, all of which would have embarrassed it. The `+1` was said to
+be what makes log-convexity work: it is not, and deleting it leaves another sum
+of exponentials. The product-multiset majorisation route was said to fail: it
+does not, and it is the shorter proof. The total-map class was said to be outside
+the proof: it is inside it. The first and third were the same mistake — treating
+`1 + sum n_j^k` as the hypothesis when the hypothesis was only log-convexity. See
+[`EXCHANGE-LEMMA-AUDIT.md`](EXCHANGE-LEMMA-AUDIT.md) and §8f, §8e, §8h. Each was
+re-derived here before being accepted; none was accepted on the auditor's word.
 
 **And two things it used to claim, it no longer claims.** The closed form
 `sigma_E` is a corollary of a published theorem, not a new count (§4.1b). The
