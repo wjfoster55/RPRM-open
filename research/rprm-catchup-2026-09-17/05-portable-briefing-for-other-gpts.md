@@ -311,11 +311,34 @@ while `(3,1)` admits only 6. State the regime or do not state the corollary.
    `(2,2,2)` beats `(4,1,1)`. The law is about the aggregate over domain sizes,
    not about every slice.
 
+**The reduction, and the only open problem worth handing a combinatorialist.**
+The extremal law follows from one local statement:
+
+> **Exchange lemma (conjecture).** If `C` has blocks of sizes `a >= b` with
+> `b >= 2` and `C'` replaces them by `a+1, b-1`, then `sigma_E(C') > sigma_E(C)`.
+
+The exchange order on profiles of fixed `(n, m)` is the majorisation order, whose
+unique max is `(n-m+1,1,...,1)` and unique min is balanced — so the lemma implies
+both halves at once. **Half is proved:** with `S_k = sum_j n_j^k`, Karamata gives
+`S'_k >= S_k`, strict for `k >= 2`, so every unchanged block's factor weakly
+increases and the grown block's strictly increases. What remains is bounding the
+one shrinking factor `(1 + S'_{b-1})`; the crude sandwich is lossy there by
+`(1+m)^2`. Evidence: **5,686,463 exchanges, `n = 4..40`, zero non-increases**,
+tightest ratio 1.000678 at `(26,7,7) -> (26,8,6)`. The tight family always has
+the same shape — a large spectator plus two *equal* blocks splitting — and was
+attacked directly to spectator size **100,000** with zero refutations. A proof
+must work in that regime.
+
+**One exact asymptotic, ONE(constant).** `sigma_E(j+1,j-1)/sigma_E(j,j) ->
+cosh^2(1) = 2.381097845...`, since `((j-1)/(j+1))^{j±1} -> e^{-2}` gives
+`e^2(1+e^{-2})^2/4`. Derived first, then confirmed in exact rationals to
+`j = 20,000` with the predicted `1/j` error. The balanced two-block profile is
+worse than its neighbour by a **fixed factor** that does not vanish as `n` grows.
+
 **Done conditions and current state.** ONE(formula) for `sigma_a`, all arities,
-written proof — **achieved**. ONE(profile) for each extremal — **still OPEN**;
-the exchange lemma (moving one element from a smaller block to a larger one
-strictly increases `sigma_E`) would close it, and `m = 2`, where
-`sigma_E = (1 + a^a + b^a)(1 + a^b + b^b)`, is where to start. Priority —
+written proof — **achieved**. ONE(profile) for each extremal — **still OPEN**,
+but now reduced to the exchange lemma above, with the Karamata half proved and
+the hard half isolated to one named family. Priority —
 **ONE(citation)** for the classical monoid, **NONE-after-stated-search** for the
 enabledness-enforced one. A real literature review — **owed**. An applied `rho`
 computed for one published reduced model of a partial system — **owed**, and it

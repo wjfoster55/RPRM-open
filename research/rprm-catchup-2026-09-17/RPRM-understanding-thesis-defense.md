@@ -2213,13 +2213,99 @@ law-less version is and can cite whose it is.
 
 1. A real literature review for `sigma_E`. One search pass is not a review, and
    until it is done nothing here is novel.
-2. The exchange lemma — that moving one element from a smaller block to a larger
-   one strictly increases `sigma_E` — which would make the extremal conjecture a
-   theorem. Start at `m = 2`, where `sigma_E = (1 + a^a + b^a)(1 + a^b + b^b)`.
+2. The exchange lemma — see E.9, which was written after this list and changes
+   the answer.
 3. A characterisation of `sigma_blind`'s 55 exceptions. They cluster at large `m`
    with mostly-singleton profiles, which suggests a clean description exists.
 4. Take one published finite reduced model of a partial system and compute its
    `rho`. That is the step that turns an instrument into a finding.
+
+## E.9 One open problem instead of two
+
+Item 2 above was written as a suggestion. It turned out to be the right move and
+it was worth doing immediately, so the rest of the night went into it.
+
+**The reduction.** The extremal law is awkward because it quantifies over a whole
+poset of profiles. It follows from one local statement:
+
+> **Exchange lemma (conjecture).** If `C` has blocks of sizes `a >= b` with
+> `b >= 2`, and `C'` replaces them by `a+1` and `b-1`, then
+> `sigma_E(C') > sigma_E(C)` strictly.
+
+The exchange order on profiles with fixed `(n, m)` *is* the majorisation order.
+Its unique maximum is `(n-m+1, 1, ..., 1)` and its unique minimum is the balanced
+profile. So the exchange lemma implies both halves of the extremal law at once,
+and it only ever mentions two blocks.
+
+**Half of it is now proved, not observed.** Writing `S_k = sum_j n_j^k`, the
+exchanged profile majorises the original and `x -> x^k` is convex, so Karamata
+gives `S'_k >= S_k` for all `k >= 1`, strictly for `k >= 2`. Every factor of
+`sigma_E` indexed by an unchanged block therefore weakly increases, and the grown
+block's factor strictly increases. *Evidence grade: written proof.* What is left
+is one shrinking factor, `(1 + S'_{b-1})`, and the crude sandwich bound is lossy
+there by exactly `(1+m)^2`. That gap is the entire remaining problem.
+
+**Evidence, which is far heavier than for the extremal law itself.** Every valid
+exchange in every profile, `n = 4..40`:
+
+| Quantity | Value |
+|---|---:|
+| Exchanges tested | **5,686,463** |
+| Non-increases | **0** |
+| Tightest ratio | 1.000678, at `n = 40`, `(26,7,7) -> (26,8,6)` |
+| `m = 2` pushed to `n = 400` | 39,601 exchanges, 0 failures |
+
+**Where it is tightest, which is where a proof has to work.** The minimising
+exchange always has the same shape — a large spectator block plus two *equal*
+blocks being split apart — and the ratio falls toward 1:
+
+| n | tightest exchange | ratio |
+|---:|---|---:|
+| 6 | (2,2,2) → (3,2,1) | 1.768320 |
+| 12 | (6,3,3) → (6,4,2) | 1.286139 |
+| 18 | (10,4,4) → (10,5,3) | 1.079199 |
+| 24 | (14,5,5) → (14,6,4) | 1.023515 |
+| 30 | (18,6,6) → (18,7,5) | 1.006507 |
+
+A ratio heading to 1 is exactly the shape of a claim that is about to fail, so I
+attacked the family directly rather than extrapolate: `j` to 200, spectator `K`
+to **100,000**, plus three-equal-block, all-equal-block with `m` to 40, and
+no-spectator to `j = 2000`. **Zero refutations.** Along `(2j, j, j) -> (2j, j+1,
+j-1)` the excess above 1 halves cleanly each step — successive quotients 1.995,
+1.920, 1.868, ..., 1.9975 at `j = 40` — converging to 2. The ratio approaches 1
+and does not cross it.
+
+**And the no-spectator case has an exact answer.** With
+`sigma_E(j,j) = (1 + 2 j^j)^2` and
+`sigma_E(j+1,j-1) = (1 + (j+1)^{j+1} + (j-1)^{j+1})(1 + (j+1)^{j-1} + (j-1)^{j-1})`,
+using `((j-1)/(j+1))^{j±1} -> e^{-2}`:
+
+```text
+sigma_E(j+1, j-1) / sigma_E(j, j)  ->  e^2 (1 + e^{-2})^2 / 4
+                                    =  ( e + e^{-1} )^2 / 4
+                                    =  cosh^2(1)  =  2.381097845541816...
+```
+
+Derived first, then checked in exact rational arithmetic:
+
+| j | n | ratio | limit − ratio | j · (limit − ratio) |
+|---:|---:|---:|---:|---:|
+| 10 | 20 | 2.173595361539517 | 2.075e-01 | 2.0750 |
+| 100 | 200 | 2.357623065853014 | 2.347e-02 | 2.3475 |
+| 1,000 | 2,000 | 2.378720143406846 | 2.378e-03 | 2.3777 |
+| 20,000 | 40,000 | 2.380978799147820 | 1.190e-04 | 2.3809 |
+
+So `ratio = cosh^2(1)(1 - 1/j) + O(1/j^2)`, the `1/j` coefficient being
+`cosh^2(1)` again. **The balanced two-block partition is not marginally the
+worst choice — it is worse by a fixed factor of about 2.381 that does not wash
+out as the carrier grows.** *Disposition ONE(constant); evidence grade: written
+derivation plus exact finite test.*
+
+**Net change to Chapter 12.** Two open conjectures became one, stated locally,
+with the easy half proved, the hard half isolated to a named family, and several
+million exchanges of evidence behind it. That is the artifact I would hand a
+combinatorialist. It is also the honest ceiling: the lemma is not proved, and
+until it is, the extremal law stays a conjecture.
 
 # Appendix D — Closing note
 
@@ -2237,6 +2323,7 @@ Chapter 12's pick is small on purpose. You said the proof is in the pudding. I
 think the pudding does not have to be a Clay problem — it has to be a sentence a
 stranger cannot un-read. *"Uniform binning is the most fragile abstraction you
 can choose, and here is the exact factor by which it is worse"* is that kind of
-sentence, it is provable, and the first draft of the proof already exists.
+sentence, it is provable, and by the end of the night the proof had come down to
+a single local lemma with one factor left to bound.
 
 Correct me tomorrow.

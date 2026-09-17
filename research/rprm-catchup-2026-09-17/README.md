@@ -4,7 +4,7 @@ An outside-in reading of RPRM by a synthesis lane, written as a friendly thesis
 defence, plus one recommended non-BSD research target.
 
 **Start here:** [`RPRM-understanding-thesis-defense.pdf`](RPRM-understanding-thesis-defense.pdf)
-— 63 pages, thirteen numbered chapters plus appendices. The markdown source sits
+— 65 pages, thirteen numbered chapters plus appendices. The markdown source sits
 beside it.
 
 **Then read Appendix E**, which records what happened when the hostile cases the
@@ -22,7 +22,7 @@ an evidence grade.
 
 | File | What it is |
 |---|---|
-| [`RPRM-understanding-thesis-defense.pdf`](RPRM-understanding-thesis-defense.pdf) | The document. 63 pp. Combined first- and third-party account, core contract with fibers computed, lens maturity table, process-honesty chapter, steelman, criticisms, 51 defence questions, the pick, portable briefing appendix, and the overnight addendum |
+| [`RPRM-understanding-thesis-defense.pdf`](RPRM-understanding-thesis-defense.pdf) | The document. 65 pp. Combined first- and third-party account, core contract with fibers computed, lens maturity table, process-honesty chapter, steelman, criticisms, 51 defence questions, the pick, portable briefing appendix, and the overnight addendum |
 | `RPRM-understanding-thesis-defense.md` | Markdown source of the above |
 | [`FRAGILITY.md`](FRAGILITY.md) | The research record for the pick: typed claim, five hostile cases, prior-art separation, dispositions, and what is still owed |
 | [`05-portable-briefing-for-other-gpts.md`](05-portable-briefing-for-other-gpts.md) | Self-contained briefing to paste into any other model. No prior context assumed |
