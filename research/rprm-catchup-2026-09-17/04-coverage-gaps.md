@@ -24,6 +24,62 @@ characterise.
 | `*CHATLOG*` / `*CHAT_EXPORT*` across the user profile | `dir /s /b` | **found**, see 1.2 |
 | OneDrive `ChatGPT\` project tree | full recursive inventory | **found, but not conversations**, see 1.3 |
 
+*A third pass, run independently later the same night, widened this and is
+recorded in 1.1b. It confirmed the negative and sharpened two descriptions.*
+
+### 1.1b Third pass: the negative is now much stronger, and one label was wrong
+
+The earlier passes searched for `conversations.json`. The third searched the
+**entire user profile** for all six filenames in an OpenAI web-export bundle,
+twice, at roughly 200 seconds per sweep:
+
+| Filename | Result |
+|---|---|
+| `conversations.json` | **none** loose anywhere under `C:\Users\bkbee` |
+| `chat.html` | **none** |
+| `message_feedback.json` | **none** |
+| `model_comparisons.json` | **none** |
+| `shared_conversations.json` | **none** |
+| `user.json` | one hit, `AppData\Roaming\Visual Studio Setup\user.json`, **49 bytes** — unrelated |
+
+Standard install paths `AppData\Local\Programs\ChatGPT`,
+`AppData\Local\Programs\OpenAI`, `C:\Program Files\ChatGPT` and
+`C:\Program Files\OpenAI` are **all absent**.
+
+> **A description to correct, not a conclusion.** The earlier line "no ChatGPT
+> desktop app data exists" is too strong. There *is* a large OpenAI-owned store:
+> `AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0`, **1.95 GB**, a UWP package
+> holding a Chromium profile with IndexedDB, Local Storage and Session Storage,
+> plus `AppData\Local\OpenAI` at 631 MB. But a depth-6 filename search across the
+> package returns **zero** export-schema files. It is **Codex desktop storage,
+> not a ChatGPT conversation archive**. `.codex-global-state.json` carries
+> `"chatgpt-migration-announcement-completed-v1": true`, consistent with a
+> ChatGPT-desktop → Codex migration having already happened.
+
+**The one `conversations.json` on the machine is Anthropic's, not OpenAI's.**
+Inside `Downloads\data-d6be5528-...-batch-0000.zip` (15.2 MB), uncompressing to
+**54,826,884 bytes**. Its schema is Claude's — records keyed `uuid`, `name`,
+`summary` — not OpenAI's. It is a large, completely uningested conversational
+corpus, and it is *not* the ChatGPT gap; it is a separate one nobody has opened.
+
+**Codex-side ChatGPT injection, counted.** In `_tools\william-turns.jsonl`:
+
+| Marker | Count |
+|---|---:|
+| `Referenced ChatGPT` (cloud thread injections, with `conversationId`) | 4 |
+| `from chatgpt` | 13 |
+| `GPT said` | 4 |
+| `ChatGPT said` | 3 |
+| `\bpaste\b` | 25 |
+
+The four cloud-thread injections name their source threads — *Quantum Mechanics
+Theory Chat*, *NariTron Economic Sustainability*, *Detector-first design process*,
+*Stochastic Composition Explanation* — and carry bounded cached previews, not full
+threads. The real quote store is `.codex\attachments\*\pasted-text.txt`, where
+William pasted ChatGPT desktop output into Codex. There is also a
+`.codex\.chatgpt-projects\g-p-…\AGENTS.md` describing itself as a "local mirror of
+the ChatGPT project **NariGPT**" — read-only synced sources, not dialogue.
+
 ### 1.2 What exists: four classes of real ChatGPT artifact
 
 *Sections (c) and (d) were added on a second pass, and (b) was reclassified. The

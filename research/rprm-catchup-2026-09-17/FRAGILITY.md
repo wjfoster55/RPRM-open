@@ -168,12 +168,21 @@ and the identity above holds exactly on all 507 profiles with `n <= 14`. Example
 
 ### 4.1c The enabledness condition is also already named
 
-Fernandes (1998) calls it **P-stability**: "α is P-stable if `X_{i_x} ⊆ Dom(α)`
+The literature calls it **P-stability**: "α is P-stable if `X_{i_x} ⊆ Dom(α)`
 and `X_{i_x}α = X_{i_xα}`, for all `x ∈ Dom(α)`". The first clause is exactly
-enabledness. It appears in the literature only for **injective, order-preserving**
-partial maps; for general partial maps with saturated domain, nothing was found.
-So the condition RPRM arrived at on modelling grounds has a 25-year-old name in
-semigroup theory, reached from a completely different direction.
+enabledness. It appears there only for **injective, order-preserving** partial
+maps; for general partial maps with saturated domain, nothing was found. So the
+condition RPRM arrived at on modelling grounds already has a name in semigroup
+theory, reached from a completely different direction.
+
+> **Grade on the attribution, tightened on a second pass.** The definition above
+> is quoted from Caneco–Fernandes–Quinteiro, arXiv:1905.11489, which attributes
+> the notion to Fernandes, *Normally ordered inverse semigroups*, *Semigroup
+> Forum* **56** (1998), 418–433. **That paper was not obtained** — no preprint
+> exists and the author's own publication page lists the citation without a file.
+> So: the *condition* is certainly in the literature, verified from a paper that
+> was read; the *1998 origin* is secondary testimony. (An earlier revision also
+> gave the volume as 58. It is 56.)
 
 ### 4.2 What the literature condition actually is
 
@@ -923,7 +932,7 @@ Reproduce both with `python -I -B tools/fragility_audit_response.py`.
 | Priority of `sigma_blind`, uniform partitions | **ONE(citation)** — Cicalò–Fernandes–Schneider, arXiv:1210.4775, Thm 1.1(i) | PDF read |
 | Priority of `sigma_blind`, non-uniform | **NONE found** — object in print (Pei–Zhou 2009) but no cardinality | Review, §4.1 |
 | Priority of the closed form `sigma_E` | **KNOWN in effect** — a one-line corollary of Sarkar–Singh Thm 6.1 via adjoin-a-sink, §4.1b | Written derivation + exact test, `n <= 14` |
-| Priority of the **enabledness condition** | **KNOWN** — it is Fernandes's *P-stability*, 1998, for injective order-preserving partial maps | Definition quoted, §4.1c |
+| Priority of the **enabledness condition** | **KNOWN** — the condition is in the literature as *P-stability*, for injective order-preserving partial maps. Attribution to Fernandes 1998 is secondary testimony; that paper was **not obtained** | Definition quoted from a paper that was read, §4.1c |
 | Priority of the **extremal law**, `sigma_E` or `T(X,P)` | **NONE found after a real review** — that literature studies *rank* by shape, not *order* | [`LITERATURE-sigma-E.md`](LITERATURE-sigma-E.md); not a first-ness claim |
 | Extremal law holds for the **published** `T(X,P)` too | **ONE(theorem)**, same proof — factor `sum_j n_j^k` is a sum of exponentials | Written proof + 42,903-exchange test |
 | Applied corollary "uniform binning is worst" | **restricted**: holds under partial, total and idempotent priors; **fails** under bijective priors | Finite test |

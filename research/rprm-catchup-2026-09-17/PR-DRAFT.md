@@ -115,9 +115,26 @@ provably does not factor over blocks, so the mechanism has nothing to act on.
 Those counterexamples are kept in the record rather than removed.
 
 No novelty is claimed anywhere. Proving a statement and establishing that nobody
-has proved it are different acts, and only the first happened. Still owed: the
-Chinese-journal literature that the review could not access, and an applied
-computation on one published reduced model.
+has proved it are different acts, and only the first happened.
+
+### A standalone note, for readers who do not want the monograph
+
+`research/rprm-catchup-2026-09-17/notes/extremal-order-TXP.pdf` is a **10-page
+mathematical note** stating and proving the extremal result for Sarkar–Singh's
+`|T(X,P)|` in the language of transformation semigroups, with no framework
+vocabulary anywhere in it. It carries the proof, the negative result, the
+coverage boundary, the literature position, and a per-statement evidence grade.
+It is the piece that can be read by someone who has never heard of this project.
+
+### Source honesty
+
+Three papers were chased. **Sun 2013 was obtained in full** and overturns
+nothing — it fixes a uniform partition, so the shape question cannot arise.
+**Pei 1994 was not obtained**, but its zbMATH review was, and shows the paper
+contains no cardinality at all. **Fernandes 1998 was not obtained**, so the
+attribution of the domain condition to it is graded as secondary testimony, not
+verified from primary. Still owed: the Chinese-language literature the review
+could not access, and an applied computation on one published reduced model.
 
 ### Not included, on purpose
 

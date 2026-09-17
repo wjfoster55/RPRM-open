@@ -2554,8 +2554,9 @@ Verified rather than accepted: exactly, on all 507 profiles with `n <= 14`, with
 Sarkar–Singh's own formula first checked against brute-force enumeration of all
 total maps for `n <= 6`. Worked instance: `sigma_E(3,3) = 3025 = 21175 / 7`.
 
-**The condition is not new either.** Fernandes introduced it in 1998 as
-**P-stability**: *"α is P-stable if X_{i_x} ⊆ Dom(α) and X_{i_x}α = X_{i_xα}, for
+**The condition is not new either.** The literature calls it **P-stability**, and
+Caneco–Fernandes–Quinteiro (arXiv:1905.11489) attribute it to Fernandes, *Semigroup
+Forum* **56** (1998), 418–433: *"α is P-stable if X_{i_x} ⊆ Dom(α) and X_{i_x}α = X_{i_xα}, for
 all x ∈ Dom(α)"*. The first clause is enabledness. It appears in that literature
 only for injective, order-preserving partial maps — but it is the same condition,
 named, twenty-five years earlier, reached from a different direction. This is
@@ -2565,6 +2566,22 @@ the framework's favour about *taste*, and it is not a priority claim.
 
 A citation error was also caught. arXiv:1210.4775 is **Cicalò, Fernandes and
 Schneider**, not Fernandes–Quinteiro as Appendix E said. Fixed throughout.
+
+A second pass on the three unobtained papers sharpened this. **Sun 2013 was
+obtained in full** and does not overturn anything: it counts orientation- and
+order-preserving transformations for a *uniform* partition, where the shape is
+fixed by hypothesis and the extremal question cannot arise. **Pei 1994 was not
+obtained**, but its zbMATH review was, and it quotes the definition of T_E(X)
+verbatim while showing the paper contains no cardinality at all — so the risk that
+it hides a counting result is low for a stated reason. **Fernandes 1998 was not
+obtained**, which is why the attribution above is marked as secondary.
+
+That leaves a structural point worth more than any of them. Almost every paper in
+this area fixes a *uniform* partition by hypothesis, so the shape is determined
+and the extremal question is unaskable; the order for an arbitrary shape appears
+only with Sarkar–Singh in 2021. The question is three years old in askable form.
+That explains the absence without appealing to novelty, and it is the honest
+version of “nobody seems to have done this”.
 
 **What survived, and improved.** No published extremal result was found for any
 of these monoids: that literature studies **rank** as a function of partition
@@ -2676,7 +2693,7 @@ nobody had looked at.
 | Extremal law for the **idempotent** prior | **OPEN** | Finite test + written obstruction |
 | Extremal law under bijective or fixed-domain priors | **refuted** | Counterexamples retained |
 | Closed form `sigma_E` | **corollary of published work** | Sarkar–Singh Thm 6.1 + verified reduction |
-| The enabledness condition | **known as P-stability**, Fernandes 1998 | Definition quoted |
+| The enabledness condition | **known as P-stability** in the literature; the 1998 attribution is secondary testimony — Fernandes 1998 was **not obtained** | Definition quoted from a paper that was read |
 | Priority of the extremal law | **none found after a real review** | Not a first-ness claim |
 | Nullary arity `r = 0` | **excluded** — `sigma_0 = n+1`, profile-independent | Audit's catch |
 

@@ -46,6 +46,7 @@ the same proof turns out to cover the published total-map monoid.
 | [`01-first-party-rprm.md`](01-first-party-rprm.md) | Ingest lane 1 — the project's self-account, read from the repository spine |
 | [`03-independent-math-reading.md`](03-independent-math-reading.md) | Ingest lane 3 — an independent mathematical reading, run cold, `verify.py` executed |
 | [`04-coverage-gaps.md`](04-coverage-gaps.md) | What was searched for, found, and still missing |
+| [`notes/extremal-order-TXP.pdf`](notes/extremal-order-TXP.pdf) | **Standalone 10-page mathematical note**, readable by a transformation-monoid audience with no RPRM vocabulary at all: the extremal shape theorem for Sarkar–Singh's `\|T(X,P)\|`, proof, hostile cases, literature position, evidence grades. Source: [`notes/extremal-order-TXP.md`](notes/extremal-order-TXP.md) |
 | [`LITERATURE-sigma-E.md`](LITERATURE-sigma-E.md) | The real literature review. Cost us the count and the condition; left the extremal law standing |
 | [`EXCHANGE-LEMMA-AUDIT.md`](EXCHANGE-LEMMA-AUDIT.md) | Independent hostile audit of the proof. Verdict THEOREM; three surrounding claims rejected, all three retested and withdrawn here |
 | [`tools/`](tools/) | Eleven exact-arithmetic verification scripts and their raw outputs |
@@ -120,8 +121,22 @@ and that is recorded rather than buried.**
 | `sigma_blind`, uniform | **Published**, CFS Thm 1.1(i). Non-uniform: object in print (Pei–Zhou 2009), no cardinality found |
 | The **extremal law** | **No published counterpart found.** That literature studies *rank* as a function of shape, never *order*. Not a first-ness claim — a recorded search |
 
-One correction it forced: arXiv:1210.4775 is **Cicalò–Fernandes–Schneider**, not
-Fernandes–Quinteiro, as earlier revisions here said.
+Two corrections it forced: arXiv:1210.4775 is **Cicalò–Fernandes–Schneider**, not
+Fernandes–Quinteiro; and Fernandes 1998 is *Semigroup Forum* **56**, not 58.
+
+A second pass chased the three papers the review could not obtain. **Sun 2013 was
+obtained in full** and overturns nothing — it fixes a uniform partition, so the
+shape question cannot arise. **Pei 1994 was not obtained**, but its zbMATH review
+was, and it shows the paper contains no cardinality at all. **Fernandes 1998 was
+not obtained**, so the P-stability attribution is now graded as secondary
+testimony rather than verified from primary. The condition is certainly in the
+literature; that Fernandes 1998 is where it starts is someone else's word.
+
+Worth more than any of the three: almost every paper here *fixes a uniform
+partition by hypothesis*, which determines the shape and makes the extremal
+question unaskable. The order for an arbitrary shape appears only with
+Sarkar–Singh in 2021. The question is three years old in askable form — which
+explains the absence of an answer without anyone needing to be first.
 
 And one thing it gained. The proof needs only that the factor function is a sum
 of exponentials. Sarkar–Singh's `|T(X,P)| = prod_i sum_j n_j^{n_i}` has factor

@@ -46,7 +46,7 @@ sigma_E(C) = prod_i ( 1 + sum_j n_j^{n_i} )
 | **Cicalò–Fernandes–Schneider, arXiv:1210.4775** | partial maps preserving a **uniform** equivalence | **partial** | **none** = Condition A | `(m(n+1)^n − m + 1)^m` | **PDF read** |
 | **Sarkar–Singh, arXiv:2006.04242**, *Comm. Algebra* 49(1) 2021, 331–342 | `T(X,P)`, **arbitrary** finite partition | **total** | n/a | `prod_i ( sum_j m_j n_j^{n_i} )^{m_i}` | **PDF read** |
 | Pei–Zhou 2009, *Adv. Math. (China)* | `P_E(X)`, arbitrary `E` | **partial** | **none** = Condition A | **no count** — Green's, regularity, abundance | abstract only (CNKI) |
-| Fernandes 1998, *Semigroup Forum* 58, 418–433 | introduces **P-stable** partial permutations | partial, injective | **union of blocks** | not seen | **UNVERIFIED** — definition read as restated in arXiv:1905.11489 |
+| Fernandes 1998, *Semigroup Forum* **56**, 418–433, DOI 10.1007/PL00005955 | introduces **P-stable** partial permutations | partial, injective | **union of blocks** | not seen | **NOT OBTAINED** — no preprint; author's own publication page lists the citation with no file. Definition read only as restated in arXiv:1905.11489. **Attribution not verified from primary** |
 | Caneco–Fernandes–Quinteiro, arXiv:1905.11489 | `POI_{k×m}`, P-stable *and* P-order-preserving partial permutations | partial, injective | **union of blocks** | `sum_t C(k,t)^2 (m!)^t` | PDF read |
 | Sarkar–Singh, *Semigroup Forum* 2021 | `Γ(X,P)`, blocks map **onto** blocks | total | n/a | yes | publisher text read |
 | Sarkar–Singh, arXiv:2310.19414 | `T_{S(I)}(X,P)`, character in a prescribed `S(I)` | total | n/a | **no cardinality** | abstract read |
@@ -212,16 +212,39 @@ different route.
 |---|---|---|
 | Is Condition A's count published? | **KNOWN**, for uniform partitions — CFS Theorem 1.1(i). **Not found** for non-uniform | Located, PDF read |
 | Is Condition B's count published? | **VARIANT / not new.** Not found stated anywhere, but it is a one-line corollary of Sarkar–Singh Theorem 6.1 via adjoin-a-sink, verified here | Written derivation + exact finite test |
-| Is the enabledness condition new? | **KNOWN.** It is Fernandes's *P-stability* (1998), for injective order-preserving partial maps. Not found for general partial maps | Definition quoted from a secondary source; Fernandes 1998 itself **UNVERIFIED** |
+| Is the enabledness condition new? | **KNOWN.** The condition is in the literature as *P-stability*, for injective order-preserving partial maps; not found for general partial maps. Its attribution to Fernandes 1998 is **secondary testimony only** | Definition quoted from Caneco–Fernandes–Quinteiro; Fernandes 1998 **not obtained** |
 | Is the extremal law published? | **NONE FOUND after a real search**, for any of these monoids. This is not a novelty claim | Search recorded above |
 | Is the extremal law true? | **ONE(theorem)** for `sigma_E` and for `T(X,P)`, uniform partial-map prior, every arity. **False** under bijective priors | Written proof, §8d–8e |
 
 **What would overturn the "none found" rows.** The Chinese-journal literature
 here — *Advances in Mathematics (China)*, *J. Guizhou Normal Univ.*, *Xinyang
 Normal Univ. J.* — is poorly indexed and was largely inaccessible; a counting
-result could be hiding there. Pei's three original papers, Fernandes 1998, and
-Sun's BMMS 2013 paper were **not obtained**; for each, the definition or scope
-comes from at least two independent secondary sources, never from the source.
+result could be hiding there.
+
+### Second pass on the three unobtained papers (same night)
+
+The three papers flagged as "not obtained" were chased again. The outcomes
+differ, and two of them change what this file may assert.
+
+| Paper | Outcome | Effect |
+|---|---|---|
+| **Sun**, BMMS **36**(1) 2013, 179–192 | **OBTAINED IN FULL**, open access via EMIS | Counts `OP_E(X)`, `O_E(X)` and their idempotents — Fibonacci `F_{2n}` appears in the idempotent formulas — for a **uniform** partition only. No shape dependence, no extremal statement. **Does not overturn anything** |
+| **Pei**, *Semigroup Forum* **49** 1994, 49–58, DOI 10.1007/BF02573470 | **NOT OBTAINED** — Springer paywalled, the EuDML copy at `eudml.org/doc/135333` timed out repeatedly. **zbMATH review obtained in full** (Zbl 0804.20046) | The review quotes the definition verbatim — `T_E(X) = {f ∈ T_X : (f(a),f(b)) ∈ E ∀(a,b) ∈ E}` — and summarises the contents as lattices of `T`-equivalences and α-congruences, with a result on exactly six α-congruences. **No cardinality of any kind.** Overturn risk now low, and for a stated reason rather than by assumption |
+| **Fernandes**, *Semigroup Forum* **56** 1998, 418–433, DOI 10.1007/PL00005955 | **NOT OBTAINED.** No preprint anywhere; the author's own publication page lists the citation with no file | **The P-stability attribution is downgraded to "not verified from primary".** It rests entirely on the restatement in Caneco–Fernandes–Quinteiro, arXiv:1905.11489. The *condition* is certainly in the literature — that paper defines and uses it — but that Fernandes 1998 is where it originates is secondary testimony |
+
+**A bibliographic correction.** This file previously gave Fernandes 1998 as
+*Semigroup Forum* **58**. It is **volume 56**. Both the author's publication page
+and the DOI record agree. Corrected above and in the note.
+
+**A structural observation that explains the absence, without appealing to
+novelty.** Almost every paper in this area *fixes a uniform partition by
+hypothesis* — Cicalò–Fernandes–Schneider, Araújo–Schneider,
+Caneco–Fernandes–Quinteiro, Fernandes–Quinteiro and Sun all assume `m` blocks of
+size `n`. Under that hypothesis the shape is determined by `(m,n)` and the
+extremal question **cannot be posed at all**. The order for an arbitrary shape
+appears to become available only with Sarkar–Singh in 2021. So "no published
+extremal result" is less surprising than it first looks: the question is only
+three years old in askable form. That is an explanation, not a priority claim.
 
 ---
 
