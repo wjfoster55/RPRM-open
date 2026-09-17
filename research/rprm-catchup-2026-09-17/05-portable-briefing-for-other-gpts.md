@@ -252,9 +252,10 @@ argmax sigma_1 = (n-m+1, 1, 1, ..., 1)     maximally unequal
 argmin sigma_1 = the balanced profile      sizes differ by at most 1
 ```
 
-**Prior art, located and separated.** The monoid of partition-preserving
-transformations is Pei's; enumerated for arbitrary finite partitions in
-arXiv:2006.04242, and the partial/uniform case in arXiv:1210.4775 with order
+**Prior art, after a real literature review.** The monoid of partition-preserving
+transformations is Pei's; enumerated for arbitrary finite partitions by
+**Sarkar–Singh**, arXiv:2006.04242, and the partial/uniform case by
+**Cicalò–Fernandes–Schneider**, arXiv:1210.4775, with order
 `(m(n+1)^n - m + 1)^m`. **But the literature condition is successor agreement
 only — no condition on the domain.** RPRM's enabledness condition cuts out a
 strictly smaller submonoid:
@@ -265,9 +266,24 @@ sigma_E(C)     = prod_i ( 1 + sum_j     n_j^{n_i}         )   RPRM O05
 ```
 
 Deriving `sigma_blind` independently reproduces the published order exactly in
-all 22 cases checked. So `sigma_blind` is **ONE(citation)** and `sigma_E` is
-**NONE found after a stated single-pass search** — not a novelty claim; a real
-review is still owed.
+all 22 cases checked.
+
+**Two priority claims were withdrawn after the review, and you should carry the
+corrected version, not the optimistic one.**
+
+- `sigma_E` is **not a new count**. It is a one-line corollary of Sarkar–Singh
+  Theorem 6.1: adjoin a sink `*` as a singleton block, and the bijection
+  "undefined ↦ `*`" carries these partial maps onto the total partition-preserving
+  maps fixing `*`, so `sigma_E(P) = |T(X+{*}, P+{{*}})| / (n+1)`. Verified exactly
+  on all 507 profiles with `n <= 14`.
+- The **enabledness condition is not new** either. It is Fernandes's
+  **P-stability** (1998) — "if a point is in the domain, so is its whole block" —
+  known there for injective order-preserving partial maps.
+
+What the review did **not** find is any published extremal result for any of
+these monoids; that literature studies *rank* as a function of partition shape,
+never *order*. Treat that as a recorded search outcome, **not** a first-ness
+claim, and do not upgrade it.
 
 **The enabledness price.** `rho = sigma_E / sigma_blind`, exact rational. At
 `n = 8` with balanced four-block compression, `rho = 83,521 / 1,185,921`:
@@ -279,8 +295,22 @@ declared null.
 with `3 <= n <= 24`: the classical monoid has **no clean extremal shape — 14
 argmax and 41 argmin exceptions** — while the enabledness-enforced submonoid has
 an exact one, with **zero exceptions in 903 cells to `n = 45`**. Where they
-disagree the extremal profiles **invert**; first at `n = 11, m = 9`. *Evidence
-grade: finite test, complete enumeration in the stated range. Not a theorem.*
+disagree the extremal profiles **invert**; first at `n = 11, m = 9`. The
+`sigma_E` half is now a **theorem** (below); what stays OPEN is a characterisation
+of which cells the classical monoid fails in.
+
+**Why the classical monoid fails, stated correctly.** An earlier version of this
+briefing said the constant `1` in `f_p(k) = 1 + sum_j n_j^k` "is what makes
+log-convexity work". **That is wrong.** A sum of exponentials is log-convex
+because the second derivative of its logarithm is a weighted variance, and a
+constant is just an exponential with base `1` — so adding one is free and
+deleting one changes nothing. The real mechanism is the **subtraction**: the
+classical factor is `sum_j (n_j+1)^k − (m−1)`, a sum of exponentials *minus* a
+positive constant, and subtracting a constant does not preserve log-convexity.
+Smallest failure: `p = (1,1)`, `f(k) = 2^{k+1} − 1`, `f(1)f(3) = 45 < 49 = f(2)^2`.
+Controlled check — hold the bases fixed and remove only the subtraction, and both
+log-convexity and the extremal law come back (`0` failures against `66` in 42,903
+exchanges).
 
 **Observed and unexplained.** Fragility is **not monotone** in block count. At
 `n = 6`: total collapse `(6)` has `F = 0.603`, while balanced `(2,2,2)` has
@@ -336,28 +366,44 @@ The corollary needs no lattice theory: an unbalanced profile admits a reverse
 exchange that strictly decreases, a non-maximally-unequal one admits a forward
 exchange that strictly increases, and both iterations terminate.
 
-**Every arity, via convex order.** At arity `r` the exponents are products, so
-step 2 needs `sum_T phi(e'_T) >= sum_T phi(e_T)` for all convex `phi`.
-Majorisation is the wrong frame — it is not additive over disjoint unions, and
-the natural cell decomposition of the tuples *is* a disjoint union — but the
-`sum phi` inequality is additive. Read an `r`-tuple as `r` independent draws,
-condition on which coordinates hit the changed blocks and on the spectator
-product; each single draw moves up in convex order, convex order is closed under
-multiplication by independent nonnegative factors and under nonnegative scaling,
-and summing over cells finishes it. *ONE(theorem), written proof, all arities.*
+**Every arity, by tensoring.** At arity `r` the exponents are the products
+`e_T = prod_{i in T} n_i` over ordered `r`-tuples of blocks, so step 2 needs
+`sum_T phi(e'_T) >= sum_T phi(e_T)` for all convex `phi`. Since `q` majorises
+`p`, Birkhoff–von Neumann gives a doubly stochastic `D` with `p = Dq`; then
+`p^(⊗r) = D^(⊗r) q^(⊗r)`, the Kronecker power is doubly stochastic, and the
+coordinates of those tensor powers **are** the `e_T`. So the exponent multiset
+majorises directly and one application of Karamata finishes it.
+*ONE(theorem), written proof, all arities.*
+
+(An earlier version claimed this route *fails* and used a longer cellwise
+convex-order argument instead. The claim was too strong and is withdrawn — what is
+true is only that majorisation cannot be assembled piecewise across those cells.
+The cellwise proof is still valid and is retained as an alternative.)
 
 **Why the classical monoid lacks the law — the mechanism.** Its factor function
 is `sum_j (n_j+1)^k - (m-1)`: a sum of exponentials **minus a positive
 constant**, which is not log-convex. Step 2's hypothesis is simply false there.
-7,488 violations in 25,702 instances, worst ratio 0.1357, concentrated in exactly
-the many-block mostly-singleton profiles where `sigma_blind` breaks the extremal
-law. Enabledness removes the `-1` per block, and the `-1` per block is what was
-breaking it.
+7,488 violations in 25,702 instances, worst ratio 0.1357, in the many-block
+mostly-singleton profiles where `sigma_blind` breaks the extremal law. Note the
+containment runs one way only: **only 66 of 3,871 log-convexity failures actually
+break an exchange**, about 1.7%, because spectator factors can absorb the rest. So
+this predicts where the law *can* fail, not where it must.
 
-**Coverage boundary, which matters.** This is a theorem about the **uniform prior
-over partial maps** and nothing else. Under bijective priors the argmin half is
-**false**; within a fixed domain size it is **false**; the total-map and
-idempotent classes are still conjectures the proof does not reach.
+**Coverage boundary, which matters.** This is a theorem about the uniform prior
+over **partial** maps and over **total** maps, at every arity `r >= 1`, and
+nothing else.
+
+- **Total maps: covered.** Factor `sum_j n_j^k`, also a sum of exponentials.
+  At `r = 1` this object is Sarkar–Singh's published `|T(X,P)|`, which is the
+  best place to state the result for an outside reader.
+- **Nullary `r = 0`: excluded.** `sigma_0 = n+1`, independent of the profile.
+- **Bijective priors: false.** The argmin half fails; counterexamples retained.
+- **Fixed domain size: false.** `(2,2,2)` beats `(4,1,1)` at `n = 6, d = 4`.
+- **Idempotents: OPEN**, and provably outside this mechanism. The idempotent
+  count does **not** factor over blocks — a fixed-point-free block's factor
+  depends on which other blocks carry fixed points — so there is no factor
+  function for log-convexity to be a property of. Holds empirically in 466
+  exchanges to `n = 13`; not promoted.
 
 **One exact asymptotic, ONE(constant).** `sigma_E(j+1,j-1)/sigma_E(j,j) ->
 cosh^2(1) = 2.381097845...`, since `((j-1)/(j+1))^{j±1} -> e^{-2}` gives

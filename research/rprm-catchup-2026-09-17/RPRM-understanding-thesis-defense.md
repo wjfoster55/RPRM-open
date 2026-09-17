@@ -1749,7 +1749,7 @@ maps is elementary enough that it may exist in semigroup theory, universal
 algebra, or the transformation-semigroup literature under a different name. If it
 does, the closed form is a citation and the extremal law may still be new. *This
 must be checked before anything is published, and "I could not find it" is
-NONE-after-stated-search, not novelty.*
+NONE-after-stated-search, not novelty. (Appendix G reports the review that was owed here, and it went against the project.)*
 
 **The uniform prior is indefensible.** If a referee decides that counting all
 partial maps equally is not a meaningful measure, the applied corollary
@@ -2125,9 +2125,9 @@ answer I anticipated.
 
 **Prior art exists, and it is for a different monoid.** The monoid of *total*
 transformations preserving a partition was introduced by H. Pei and enumerated
-for arbitrary finite partitions in arXiv:2006.04242. The *partial* analogue for a
-*uniform* partition is Fernandes and Quinteiro, arXiv:1210.4775, with published
-order `( m (n+1)^n - m + 1 )^m` for `m` blocks of size `n`.
+for arbitrary finite partitions by Sarkar and Singh, arXiv:2006.04242. The
+*partial* analogue for a *uniform* partition is Cicalò, Fernandes and
+Schneider, arXiv:1210.4775, with published order `( m (n+1)^n - m + 1 )^m` for `m` blocks of size `n`.
 
 **But the literature condition is successor agreement only.** Wherever the map
 happens to be defined on a block, the images must stay in one block. There is no
@@ -2200,7 +2200,7 @@ first.
 | Statement | Was | Now |
 |---|---|---|
 | Closed form `sigma_a(C)` | derived, confirmed | unchanged: **ONE(formula)**, written proof + complete finite test |
-| Priority of the closed form | OPEN | `sigma_blind` is **ONE(citation)**; `sigma_E` is **NONE found after a stated single-pass search**. Not a novelty claim. A real review is still owed |
+| Priority of the closed form | OPEN | `sigma_blind` is **ONE(citation)**. `sigma_E` was recorded here as NONE-after-a-single-pass-search. **Appendix G overturns this**: the review was done, and the count is a corollary of Sarkar–Singh Theorem 6.1 |
 | Extremal law | conjecture to `n = 24` | conjecture to **`n = 45`**, 903 cells, and shown to be **specific to the enabledness-enforced monoid** |
 | "Uniform binning is worst" | derived synthesis | **restricted**: holds under partial, total and idempotent priors; **fails** under bijective priors |
 | Subset-sum domain characterisation | not stated | new, **ONE(characterisation)**, written proof |
@@ -2495,8 +2495,8 @@ literature obligation from Section 12.7 is unchanged.
 | Extremal law | conjecture to `n = 45` | **ONE(theorem)** for the uniform partial-map prior |
 | Why `sigma_blind` lacks the law | observed, unexplained | **ONE(separation)**: its factor function is not log-convex |
 | Extremal law, bijective priors | refuted | unchanged — still refuted |
-| Extremal law, total and idempotent priors | conjecture | still conjecture; proof does not reach them |
-| Priority | NONE-after-stated-search | unchanged. A real review is still owed |
+| Extremal law, total and idempotent priors | conjecture | **total maps promoted to theorem in Appendix G**; idempotents still OPEN, now with a derived obstruction |
+| Priority | NONE-after-stated-search | **overturned in Appendix G** — the count is a corollary of published work; the condition is Fernandes’s P-stability |
 | Applied `rho` on a published model | owed | still owed |
 
 If you read one sentence of this appendix: **the conjecture at the centre of
@@ -2504,7 +2504,222 @@ Chapter 12 is now a theorem at every arity, the proof is four lines once you sto
 conflating the two roles the profile plays, and the same four lines explain why
 the classical monoid does not have the law.**
 
-# Appendix D — Closing note
+
+# Appendix G — What two adversaries did to Appendix F
+
+Appendix F was written at midnight and claimed a theorem. Before dawn it was
+attacked twice: once by a real literature review, and once by a hostile audit of
+the proof itself. Both attacks landed. Neither killed the theorem.
+
+This appendix is the result. It is placed last because it is the most useful
+thing in the document for judging whether any of the rest should be believed —
+you can read what was claimed, what was checked, and what was taken back.
+
+## G.1 The scoreboard
+
+| Claim as of Appendix F | Verdict | Now |
+|---|---|---|
+| Exchange lemma is a theorem, every arity | **upheld** | unchanged, independently re-derived |
+| Extremal law follows | **upheld** | unchanged |
+| The closed form `sigma_E` was not located in the literature | **overturned** | it is a corollary of a published theorem |
+| The enabledness condition appears to be ours | **overturned** | it is Fernandes's *P-stability*, 1998 |
+| The `+1` is what makes log-convexity work | **overturned** | it is analytically irrelevant |
+| Product-multiset majorisation fails, so use convex order | **overturned** | it works, and it is the shorter proof |
+| Total maps are outside the proof | **overturned** | they are inside it |
+| Idempotents are outside the proof | **upheld** | and now with a derived obstruction |
+
+Six overturned claims, none of them the theorem. That ratio is the honest
+summary of what a night of unreviewed work is worth.
+
+## G.2 The literature review, and the two things it cost
+
+The priority position in Chapter 12 rested on **one search pass**, and said so.
+A real review was owed. Done, it answers four questions, and it goes against the
+project on two of them.
+
+**The count is not new.** Sarkar and Singh, *On certain Semigroups of
+Transformations that preserve a partition*, arXiv:2006.04242, *Comm. Algebra*
+49(1) 2021, 331–342, Theorem 6.1, count the **total** partition-preserving maps
+for an arbitrary finite partition. Regrouped over blocks their formula is
+`prod_i sum_j n_j^{n_i}` — which is `sigma_E` with the `1 +` deleted from each
+factor. And the `1 +` is a sink:
+
+> Adjoin `*` as a new singleton block. The bijection "undefined ↦ `*`" carries
+> the enabledness-respecting partial maps onto exactly the total maps that fix
+> `*` — a block either maps into a block, or goes wholesale to `*`, and `{*}` is
+> itself a block, which is precisely what enabledness buys. So
+> `sigma_E(P) = |T(X + {*}, P + {{*}})| / (n+1)`.
+
+Verified rather than accepted: exactly, on all 507 profiles with `n <= 14`, with
+Sarkar–Singh's own formula first checked against brute-force enumeration of all
+total maps for `n <= 6`. Worked instance: `sigma_E(3,3) = 3025 = 21175 / 7`.
+
+**The condition is not new either.** Fernandes introduced it in 1998 as
+**P-stability**: *"α is P-stable if X_{i_x} ⊆ Dom(α) and X_{i_x}α = X_{i_xα}, for
+all x ∈ Dom(α)"*. The first clause is enabledness. It appears in that literature
+only for injective, order-preserving partial maps — but it is the same condition,
+named, twenty-five years earlier, reached from a different direction. This is
+worth saying plainly: RPRM derived from modelling principles a condition that
+semigroup theory had already isolated on structural grounds. That is a point in
+the framework's favour about *taste*, and it is not a priority claim.
+
+A citation error was also caught. arXiv:1210.4775 is **Cicalò, Fernandes and
+Schneider**, not Fernandes–Quinteiro as Appendix E said. Fixed throughout.
+
+**What survived, and improved.** No published extremal result was found for any
+of these monoids: that literature studies **rank** as a function of partition
+shape, never **order**. And the proof turns out not to need `sigma_E` at all —
+it needs only that the factor function is a sum of exponentials, and
+Sarkar–Singh's `sum_j n_j^k` qualifies. So:
+
+> **The extremal law, same proof, is a theorem about `T(X,P)` — a published,
+> already-counted object in the transformation-semigroup literature.**
+
+That is a better place to stand than an RPRM-internal count, and it cost nothing
+but noticing. `LITERATURE-sigma-E.md` in the research directory has the source
+table, the verbatim definitions, the OEIS negatives, and the list of papers that
+could not be obtained and therefore could still overturn the "none found" rows.
+
+## G.3 The audit, and the three claims it broke
+
+An independent hostile audit confirmed the theorem — *"ONE(THEOREM) for the
+exchange lemma and unique extremal profiles at every positive arity"* — and
+rejected three pieces of the explanation around it. Each was retested here before
+being accepted, because an auditor's say-so is not evidence either. All three
+held up against the project.
+
+**The `+1` was never doing analytic work.** Appendix F said the constant `1` "is
+what makes this work" and the result is "false without it". Wrong. A sum of
+exponentials is log-convex because the second derivative of its logarithm is a
+weighted variance; a constant term is simply another exponential with base `1`,
+so adding one is free — and deleting one leaves `sum_j n_j^k`, which is still a
+sum of exponentials and still log-convex. Zero failures in 1,482 probes.
+
+The corrected mechanism is the **subtraction**, and a controlled experiment pins
+it. Hold the bases fixed at `n_j + 1` and vary only whether the constant is
+subtracted:
+
+| factor function | log-convexity failures | exchange failures |
+|---|---:|---:|
+| `sum_j (n_j+1)^k` — no subtraction | 0 / 1,482 | 0 / 42,903 |
+| `sum_j (n_j+1)^k − (m−1)` — the classical monoid | **292** / 1,482 | **66** / 42,903 |
+| `sum_j n_j^k` — `+1` deleted | 0 / 1,482 | 0 / 42,903 |
+| `1 + sum_j n_j^k` — `sigma_E` | 0 / 1,482 | 0 / 42,903 |
+
+Rows one and two differ only by the subtraction and differ in outcome; rows three
+and four differ only by the addition and do not. Adding a constant preserves
+log-convexity. Subtracting one need not. The smallest failure is `p = (1,1)`,
+where `f_blind(k) = 2^{k+1} − 1` gives `f(1)f(3) = 45 < 49 = f(2)^2`.
+
+So the reading in Chapter 12 survives with its mechanism replaced, not removed:
+dropping enabledness subtracts one unit per block from every factor, and *that
+subtraction* is what costs the classical monoid the hypothesis its extremal law
+would need.
+
+**Majorisation did not fail.** Appendix F switched to convex order at higher
+arity on the grounds that the product-multiset majorisation route fails. It does
+not. Since `q` majorises `p`, Birkhoff–von Neumann gives a doubly stochastic `D`
+with `p = Dq`; tensoring, `p^(⊗r) = D^(⊗r) q^(⊗r)`, a Kronecker product of doubly
+stochastic matrices is doubly stochastic, and the coordinates of those tensor
+powers are exactly the ordered-tuple exponents. The exponent multiset majorises
+directly and Karamata closes it in one step, with no cell decomposition at all.
+Checked exactly at arities 2, 3, 4 and 5.
+
+What was actually true is narrower: majorisation cannot be assembled *piecewise*
+across the cells of the decomposition — a fact about that route, not about
+majorisation. The tensor argument never decomposes, so it never meets the
+obstruction. Both proofs are kept; the tensor one is the one to publish.
+
+**Total maps were inside the proof all along.** Appendix F left the total-map
+class as a conjecture, on the stated grounds that its factor function "is not
+`1 + sum n_j^k`". That is the same error as the first one, made twice: the
+hypothesis was never the *shape* of the factor, only its log-convexity. The
+total-map factor `sum_j n_j^k` is a sum of exponentials, so the proof transfers
+verbatim, strictness included. **Promoted from conjecture to theorem at every
+arity** — and at arity 1 this is exactly the published `|T(X,P)|` of §G.2.
+
+## G.4 Idempotents: the one that stayed OPEN, and why that is now a result
+
+The audit agreed that idempotents are not covered, on the grounds that
+idempotence couples choices across blocks. That is checkable, so it was checked
+by deriving the count. An idempotent partial map has `Fix(t) ⊆ dom(t)` and
+`t(dom t) ⊆ Fix(t)`; a block carrying fixed points must target *itself*, while a
+fixed-point-free block may target any block that carries some. Hence
+
+```text
+sigma^idem(p) = sum over D and (s_i):  prod C(n_i, s_i)
+                * prod_{s_i >= 1} s_i^{n_i - s_i}
+                * prod_{s_i  = 0} ( sum_{j in D, s_j >= 1} s_j^{n_i} )
+```
+
+validated against brute-force enumeration on all 29 profiles with `n <= 6`.
+
+The last bracket is the obstruction, and it is explicit: a fixed-point-free
+block's factor depends on **which other blocks carry fixed points**. The count is
+a sum over configurations, not a product of per-block factors. There is no factor
+function, so there is nothing for log-convexity to be a property of, and the
+mechanism has no surface to act on.
+
+The lemma still holds empirically — 466 exchanges, `n <= 13`, zero failures — and
+is **not promoted**. It stays a conjecture at finite-test grade. The gain is that
+it is now a conjecture with a known reason for being hard, rather than an item
+nobody had looked at.
+
+## G.5 Revised status, final
+
+| Statement | Disposition | Grade |
+|---|---|---|
+| Exchange lemma, uniform partial-map prior, every arity `r >= 1` | **ONE(theorem)** | Written proof, independently audited |
+| Extremal law for `sigma_E`, every arity | **ONE(theorem)** | Written proof |
+| Extremal law for the **total-map** prior, every arity | **ONE(theorem)** | Written proof — promoted by the audit |
+| Extremal law for the published `T(X,P)` | **ONE(theorem)** | Same proof, `r = 1` case of the above |
+| Extremal law for the **idempotent** prior | **OPEN** | Finite test + written obstruction |
+| Extremal law under bijective or fixed-domain priors | **refuted** | Counterexamples retained |
+| Closed form `sigma_E` | **corollary of published work** | Sarkar–Singh Thm 6.1 + verified reduction |
+| The enabledness condition | **known as P-stability**, Fernandes 1998 | Definition quoted |
+| Priority of the extremal law | **none found after a real review** | Not a first-ness claim |
+| Nullary arity `r = 0` | **excluded** — `sigma_0 = n+1`, profile-independent | Audit's catch |
+
+Note the last row. The theorem needs `r >= 1`, because at nullary arity there is
+one input tuple and the count does not depend on the profile at all. Appendix F
+did not say so. It does now.
+
+## G.6 What to take from this
+
+Chapter 9 of this document criticised the project for the gap between what its
+documents claim and what its evidence supports. It would be poor form to exempt
+the chapter that was written last.
+
+So, plainly: Appendix F was written in one sitting, claimed a theorem, and got
+the theorem right and the surrounding explanation wrong in three places. Two
+adversaries — one reading the literature, one reading the proof — found all
+three within hours, plus two priority facts that a referee would have found in
+minutes. Nothing was lost that was load-bearing. But the ratio of *upheld* to
+*overturned* in §G.1 is six to two against the commentary, and the commentary is
+what a reader would have been most likely to repeat.
+
+The operating lesson is the one already in your own standing corrections, and it
+is the reason this appendix exists rather than a quiet edit: **the claim ceiling
+belongs at publication, and this document is the publication lane.** The theorem
+survived two adversaries. The prose around it did not, and saying so is cheaper
+than being corrected in public later.
+
+What I would now put in front of a stranger is one sentence, and it is stronger
+than the one I would have offered at midnight:
+
+> For a finite set partitioned into a fixed number of blocks, the number of
+> partition-respecting operations is strictly maximised by the most unequal shape
+> and strictly minimised by the balanced one — at every arity, for total maps and
+> for enabledness-respecting partial maps alike, because the relevant counting
+> function is a product of sums of exponentials and those are log-convex. Drop
+> the enabledness condition and the factor function acquires a subtracted
+> constant, loses log-convexity, and the law fails.
+
+That is checkable by anyone who works on transformation semigroups, it is about
+an object they already count, and the condition that makes it work is the one
+piece of RPRM a referee would have been most likely to call arbitrary.
+
+# Closing note
 
 William —
 
