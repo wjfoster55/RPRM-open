@@ -13,6 +13,9 @@ Reproduce everything here with
 python -I -B tools/fragility.py           closed form, brute force, n = 6 spectrum, search to n = 24
 python -I -B tools/fragility_hostile.py   five hostile cases, extended search to n = 45
 python -I -B tools/fragility_priority.py  prior-art separation, the enabledness price
+python -I -B tools/fragility_exchange.py  the exchange lemma, 5.7M exchanges to n = 40
+python -I -B tools/fragility_critical.py  targeted attack on the tightest exchange family
+python -I -B tools/fragility_limit.py     the cosh^2(1) asymptotic
 ```
 
 Integers and `fractions.Fraction` only. No floating point appears in any value
@@ -344,6 +347,107 @@ sharper upper bound or a direct exchange lemma: that moving one element from a
 smaller block to a larger one strictly increases `sigma_1`. The exhaustive search
 to `n = 45` is consistent with that lemma and does not establish it.
 
+## 8b. The exchange lemma — a sharper open problem, and where it is tightest
+
+The extremal law is awkward to prove directly because it is a statement about
+argmax and argmin over a whole poset. A single stronger statement implies both
+halves at once and is a far better thing to hand a combinatorialist.
+
+> **Exchange lemma (conjecture).** Let `C` have two blocks of sizes `a >= b` with
+> `b >= 2`, and let `C'` replace them by `a+1` and `b-1`, keeping `n` and `m`
+> fixed. Then `sigma_E(C') > sigma_E(C)` strictly.
+
+The exchange order on profiles of fixed `(n, m)` is exactly the majorisation
+order, whose unique maximum is `(n-m+1, 1, ..., 1)` and whose unique minimum is
+the balanced profile. So **the exchange lemma implies the extremal law**, and it
+is a local statement about two blocks rather than a global one about a poset.
+
+**One step of it is proved.** With `S_k = sum_j n_j^k`, the exchange gives
+`S'_k >= S_k` for every `k >= 1`, strictly for `k >= 2`: `(a+1, b-1)` majorises
+`(a, b)` and `x -> x^k` is convex, so Karamata applies. Consequently every factor
+of `sigma_E` indexed by an unchanged block weakly increases, and the factor for
+the grown block strictly increases. Checked on all 14,799 exchanges for
+`n <= 19`: zero violations, as it must be.
+
+**What is not proved** is that the single shrinking factor `(1 + S'_{b-1})`
+cannot lose more than everything else gains. The crude sandwich of Section 8 is
+lossy by a factor of `(1+m)^2` here, which is exactly the gap.
+
+**Evidence, and it is much stronger than the evidence for the extremal law
+itself.** Every valid exchange in every profile, `n = 4..40`:
+
+| Quantity | Value |
+|---|---:|
+| Exchanges tested | **5,686,463** |
+| Non-increases | **0** |
+| Tightest ratio observed | 1.000678, at `n = 40`, `(26,7,7) -> (26,8,6)` |
+| `m = 2` case pushed to `n = 400` | 39,601 exchanges, 0 failures |
+
+**Where it is tightest, and therefore where a proof must work.** The minimising
+exchange always has the same shape: a large spectator block, and two *equal*
+blocks being split apart.
+
+| n | tightest exchange | ratio |
+|---:|---|---:|
+| 6 | (2,2,2) → (3,2,1) | 1.768320 |
+| 12 | (6,3,3) → (6,4,2) | 1.286139 |
+| 18 | (10,4,4) → (10,5,3) | 1.079199 |
+| 24 | (14,5,5) → (14,6,4) | 1.023515 |
+| 30 | (18,6,6) → (18,7,5) | 1.006507 |
+
+The ratio falls toward 1. That is alarming enough to attack directly rather than
+extrapolate, so the family `(K, j, j) -> (K, j+1, j-1)` was stressed far beyond
+the general search: `j` up to 200, spectator `K` up to `100,000`, plus the
+three-equal-block variant, the all-equal-blocks variant with `m` up to 40, and
+the no-spectator variant to `j = 2000`.
+
+**Total refutations across every targeted family: 0.** The ratio approaches 1
+from above and does not cross it. Along `(2j, j, j) -> (2j, j+1, j-1)` the excess
+`ratio - 1` halves cleanly with each increment of `j`: the successive quotients
+run 1.995, 1.920, 1.868, 1.885, ... 1.9975 at `j = 40`, converging to **2**.
+
+*Evidence grade: finite test, complete enumeration for `n <= 40` plus targeted
+families far beyond it. Still a conjecture.*
+
+## 8c. An exact asymptotic: splitting a balanced pair multiplies survival by cosh²(1)
+
+The no-spectator exchange out of the balanced two-block profile does **not**
+approach 1. It approaches a constant, and the constant is identifiable.
+
+```text
+sigma_E(j, j)     = ( 1 + 2 j^j )^2                                  ~ 4 j^{2j}
+sigma_E(j+1, j-1) = ( 1 + (j+1)^{j+1} + (j-1)^{j+1} )
+                    ( 1 + (j+1)^{j-1} + (j-1)^{j-1} )                ~ (j+1)^{2j} (1 + e^{-2})^2
+```
+
+since `((j-1)/(j+1))^{j±1} -> e^{-2}`. Therefore
+
+```text
+sigma_E(j+1, j-1) / sigma_E(j, j)  ->  e^2 (1 + e^{-2})^2 / 4
+                                    =  ( e + e^{-1} )^2 / 4
+                                    =  cosh^2(1)  =  2.381097845541816...
+```
+
+The derivation was written before the numbers were printed. Exact-arithmetic
+check:
+
+| j | n | ratio | limit − ratio | j · (limit − ratio) |
+|---:|---:|---:|---:|---:|
+| 10 | 20 | 2.173595361539517 | 2.075e-01 | 2.0750 |
+| 100 | 200 | 2.357623065853014 | 2.347e-02 | 2.3475 |
+| 1,000 | 2,000 | 2.378720143406846 | 2.378e-03 | 2.3777 |
+| 20,000 | 40,000 | 2.380978799147820 | 1.190e-04 | 2.3809 |
+
+So `ratio = cosh^2(1) (1 - 1/j) + O(1/j^2)`, with the `1/j` coefficient itself
+converging to `cosh^2(1)`.
+
+**Reading.** The balanced two-block partition is not marginally worse than its
+neighbour. It is worse by a fixed factor of about 2.381 that does not wash out as
+the carrier grows. *Evidence grade: written derivation plus exact finite test.
+Disposition ONE(constant).* It does not prove the exchange lemma — the lemma also
+has to survive the spectator families where the ratio tends to 1, and that is
+where the open problem lives.
+
 ## 9. Dispositions
 
 | Statement | Disposition | Grade |
@@ -354,6 +458,9 @@ to `n = 45` is consistent with that lemma and does not establish it.
 | Enabledness price `rho(C)` | **ONE(rational)** per profile computed | Exact arithmetic |
 | Admissible domain sizes = subset sums of the profile | **ONE(characterisation)** | Written proof |
 | Extremal law for `sigma_E`, arities 1–3, total and idempotent classes | **OPEN** — conjecture, 0 counterexamples in 903 cells to `n = 45` | Finite test |
+| **Exchange lemma** (implies the extremal law) | **OPEN** — conjecture, 0 non-increases in **5,686,463** exchanges to `n = 40`, plus targeted attack on the tightest families with spectator up to 100,000 | Finite test |
+| Karamata step `S'_k >= S_k`, strict for `k >= 2` | **ONE(inequality)** | Written proof |
+| `sigma_E(j+1,j-1)/sigma_E(j,j) -> cosh^2(1)` | **ONE(constant)** | Written derivation + exact finite test to `j = 20,000` |
 | Extremal law under injective or permutation priors | **refuted for argmin**, 6 explicit counterexamples retained | Finite test |
 | Extremal law within a fixed domain size | **refuted**, `(2,2,2)` beats `(4,1,1)` at `n = 6, d = 4` | Finite test |
 | `sigma_blind` has no clean extremal law while `sigma_E` does | **ONE(comparison)** on `3 <= n <= 24`; general case **OPEN** | Finite test, complete enumeration |
@@ -365,9 +472,14 @@ to `n = 45` is consistent with that lemma and does not establish it.
 
 1. A real literature review for `sigma_E`, beyond one search pass. Until then no
    novelty is claimed.
-2. The exchange lemma, which would convert the extremal conjecture into a
-   theorem. Start at `m = 2`, where `sigma_E = (1 + a^a + b^a)(1 + a^b + b^b)`
-   with `a + b = n`.
+2. **The exchange lemma** (Section 8b) is now the single open problem worth
+   solving; it implies the extremal law and it is local. The Karamata step is
+   done. What remains is bounding the one shrinking factor `(1 + S'_{b-1})`
+   against everything else, in the regime where the ratio tends to 1: the family
+   `(K, j, j) -> (K, j+1, j-1)` with `K` large. The `m = 2` case
+   `sigma_E = (1 + a^a + b^a)(1 + a^b + b^b)` is comfortably true — tightest
+   ratio 1.79 at `(2,2) -> (3,1)` — so the difficulty is entirely in the
+   spectator blocks.
 3. A characterisation of `sigma_blind`'s 55 extremal exceptions. They are
    concentrated at large `m` with mostly-singleton profiles, which suggests a
    clean description exists.

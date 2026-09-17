@@ -52,6 +52,8 @@ fraction.
 | Closed form `sigma_1(C) = prod_i ( 1 + sum_j n_j^{n_i} )`, and the arity-`a` generalisation | Derived; confirmed by exhaustive brute force against **every** partial map for `n <= 5` at arity 1 and `n <= 3` at arity 2 |
 | Null control: discrete partition survives everything, `F = 0` | Declared before running; holds for `n = 1..8` |
 | Extremal law: for fixed block count `m`, `argmax = (n-m+1, 1, ..., 1)`, `argmin =` balanced | **Conjecture.** Exhaustive search `2 <= n <= 45`, every `m`, every profile — **903 cells, zero counterexamples** |
+| **Exchange lemma** — moving one element from a smaller block to a larger one strictly increases survival. Implies the extremal law, and is local rather than global | **Conjecture, and the open problem worth solving.** **5,686,463** exchanges to `n = 40`, zero non-increases, plus a targeted attack on the tightest family with spectator blocks up to 100,000. The Karamata step `S'_k >= S_k` is proved |
+| `sigma_E(j+1,j-1)/sigma_E(j,j) -> cosh^2(1) = 2.381097845...` | **ONE(constant).** Written derivation, then verified in exact arithmetic to `j = 20,000`. Splitting a balanced pair apart multiplies survival by a fixed factor that does not wash out |
 | Hostile cases: arity 2, arity 3, total-only, idempotent-only | All run. Survived: `n <= 12`, `n <= 10`, `n <= 18`, `n <= 7`. Zero failures |
 | Hostile case: **non-uniform priors** | **Bit.** The `argmin` half fails under injective-partial and permutation priors. The `argmax` half survives every class but one. Six counterexamples retained |
 | Fragility is **not monotone** in block count | Observed. At `n = 6`, total collapse `(6)` has `F = 0.603`; balanced `(2,2,2)` has `F = 0.981` |
@@ -107,6 +109,9 @@ python -I -B tools/fragility_hostile.py  all five hostile cases, restricted oper
                                          classes, fixed-domain slices, search to n = 45
 python -I -B tools/fragility_priority.py prior-art separation, enabledness price,
                                          two-monoid extremal comparison, subset sums
+python -I -B tools/fragility_exchange.py the exchange lemma, 5.7M exchanges to n = 40
+python -I -B tools/fragility_critical.py targeted attack on the tightest family
+python -I -B tools/fragility_limit.py    the cosh^2(1) asymptotic
 ```
 
 Integers and `fractions.Fraction` only. Raw outputs are retained beside the
