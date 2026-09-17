@@ -48,8 +48,10 @@ every partition of every machine in the existing 845-machine futures family.
 three-state example and its state relabelings. **The null is false.** The
 family contains MANY(72) ghost folds, of which 12 are that sink/jump pattern
 and 60 are other total constant-observation maps. The complete 72 are in
-`CENSUS.json`. That is the source-level yield: a complete unexpected family,
-kept beside the surviving O05/O09 identities, with no fitted repair.
+`CENSUS.json`. A 2×2 of `(sink|return)×(self|partner)` names all 72: 12+12+24+24,
+unclassified NONE. The one-type null for the leftover 60 is false; they
+are 12 `sink_partner`, 24 `return_self`, and 24 `return_partner`. See
+[THEORY.md](THEORY.md) §7.
 
 ## Why the runners-up lost
 

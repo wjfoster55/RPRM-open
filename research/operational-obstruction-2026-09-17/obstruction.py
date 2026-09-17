@@ -11,6 +11,7 @@ from rprm.core import atom, require, total_table
 from rprm.futures import Machine, shortest_witness, stable_refinement
 
 CLAUSES = ("observation", "enabledness", "successor")
+GHOST_SHAPES = ("sink_self", "sink_partner", "return_self", "return_partner")
 
 
 def require_machine(machine):
@@ -157,6 +158,56 @@ def is_future_sufficient(machine, summary):
 def is_ghost_fold(machine, summary):
     """Future-sufficient strict compression that still fails O05."""
     return is_future_sufficient(machine, summary) and not is_operational_fold(machine, summary)
+
+
+def _blocks(summary, states):
+    blocks = {}
+    for state in states:
+        blocks.setdefault(summary[state], []).append(state)
+    return tuple(tuple(block) for block in blocks.values())
+
+
+def ghost_shape(machine, summary):
+    """2×2 block-dynamics type of a ghost fold, or unclassified.
+
+    On a one-action total (2,1) ghost fold the merged pair has exactly one
+    stayer (image in the merged class) and one jumper (image the singleton).
+    The stayer is a self-loop or maps to its partner. The singleton is a
+    sink or returns into the merged class. Those two binary choices name
+    four ordinary types. Anything else, including a non-ghost, is
+    unclassified. No prestige vocabulary is used.
+    """
+    if not is_ghost_fold(machine, summary):
+        return "unclassified"
+    if len(machine.states) != 3 or len(machine.actions) != 1:
+        return "unclassified"
+    table = machine.transitions[machine.actions[0]]
+    if set(table) != set(machine.states):
+        return "unclassified"
+    parts = _blocks(summary, machine.states)
+    sizes = sorted(len(part) for part in parts)
+    if sizes != [1, 2]:
+        return "unclassified"
+    merged = next(part for part in parts if len(part) == 2)
+    singleton = next(part for part in parts if len(part) == 1)[0]
+    stayers = [state for state in merged if table[state] in merged]
+    jumpers = [state for state in merged if table[state] == singleton]
+    if len(stayers) != 1 or len(jumpers) != 1:
+        return "unclassified"
+    stayer = stayers[0]
+    if table[stayer] == stayer:
+        stay = "self"
+    elif table[stayer] in merged:
+        stay = "partner"
+    else:
+        return "unclassified"
+    if table[singleton] == singleton:
+        land = "sink"
+    elif table[singleton] in merged:
+        land = "return"
+    else:
+        return "unclassified"
+    return land + "_" + stay
 
 
 def min_repair_alphabet(states, summary, question):

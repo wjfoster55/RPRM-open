@@ -150,8 +150,6 @@ The scientific yield is the negative: treating the Manifesto `{p,q,r}` picture a
   a separate enabledness port). Overnight's relational/unknown-map count was
   not run; it stays OPEN.
 - `KERNEL` complete obstruction (pushforward mass, not support).
-- Classification of the 60 non-Manifesto ghost folds by a named graph shape
-  (the 72 are listed; a coarser isomorphism type is not claimed).
 - Applied `rho` of last night's count on one published reduced model of a
   partial system.
 - Characterisation of the cells where the classical successor-only monoid
@@ -162,9 +160,66 @@ The scientific yield is the negative: treating the Manifesto `{p,q,r}` picture a
 - Families with two or more actions at n=3: the futures census uses one
   action there, so this ghost count does not cover that slice.
 
-## 7. Disposition of the closed fiber
+## 7. Named types for the 72
+
+The 60 leftover maps are not a new vocabulary problem. On this family's
+ghost-fold slice the dynamics are forced, and four ordinary names suffice.
+
+**Definition (2×2 shape).** Let `C` be a ghost fold of a one-action total
+map on three states with block profile `(2,1)`. Write `M` for the merged
+pair and `s` for the singleton. Successor disagreement forces exactly one
+*stayer* `t∈M` with `T(t)∈M` and one *jumper* `j∈M` with `T(j)=s`. The
+stayer is `self` if `T(t)=t` and `partner` if `T(t)` is the other point of
+`M`. The singleton is `sink` if `T(s)=s` and `return` if `T(s)∈M`. The four
+labels are `sink_self`, `sink_partner`, `return_self`, `return_partner`.
+Anything else is `unclassified`.
+
+**Proposition (exhaustion on this slice).** Every such ghost fold receives
+exactly one of the four labels. Proof: `T` is total on a three-point
+carrier, so `T(s)` is `s` or a point of `M`. The stayer's image is itself
+or its partner. Those are the two binary choices.
+
+**Proposition (listing).** Choose the singleton (3), the jumper (2), the
+stayer kind (2), the image of `s` (3), and the constant observation bit
+(2). That product is `3·2·2·3·2=72`. Each such configuration is
+future-sufficient (total map, constant observation) and not operational
+(one jumper, one stayer). Cell sizes: `T(s)=s` and `self` gives 12;
+`T(s)=s` and `partner` gives 12; `T(s)∈M` and `self` gives 24;
+`T(s)∈M` and `partner` gives 24. So the listing is
+`(sink_self, sink_partner, return_self, return_partner) = (12, 12, 24, 24)`,
+with `unclassified=0`. `sink_self` is exactly the Manifesto sink/jump
+relabeling.
+
+**Shape null, declared before the shape census:**
+
+> After removing `sink_self`, the remaining ghost folds occupy exactly one
+> of the leftover named types `sink_partner`, `return_self`, `return_partner`.
+
+The listing is a written count, not a hope that the 60 are one type. The
+null asks the one-type question. Hostiles for the three leftover labels are
+the definitional maps in `verify.py`, built before the shape census, not
+sampled from `CENSUS.json`.
+
+**Readout.** The shape null is **false**. The listing holds. Unclassified
+is NONE.
+
+| Type | Count | What the singleton and the stayer do |
+|---|---:|---|
+| `sink_self` | 12 | Singleton stays; stayer is a self-loop (Manifesto) |
+| `sink_partner` | 12 | Singleton stays; stayer maps to its partner |
+| `return_self` | 24 | Singleton returns into the merged pair; stayer self-loops |
+| `return_partner` | 24 | Singleton returns into the merged pair; stayer maps to its partner |
+| unclassified | 0 | — |
+
+The 60 are MANY(3 leftover types), not one type and not a mess:
+`12+24+24`. `sink_self` agreed with the Manifesto-relabeling predicate on
+every row. Three leftover occupied types.
+
+## 8. Disposition of the closed fiber
 
 On the declared 845-machine family, the obstruction fiber of every
 partition is completely solved (NONE, ONE, or MANY). The ghost-fold
-subfiber is completely solved: MANY(72). The null of §3 is **false** on
-that family. It is not a theorem about other families.
+subfiber is completely solved: MANY(72). Those 72 are completely typed by
+the 2×2 of §7 (unclassified NONE on this slice). The null of §3 is **false**.
+The shape null of §7 is recorded in the census boolean; it is not a theorem
+about other families.

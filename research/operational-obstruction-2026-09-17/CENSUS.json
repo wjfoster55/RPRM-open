@@ -2,12 +2,19 @@
   "schema": "rprm-operational-obstruction/v1",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
+  "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
   "named": {
-    "named_hostiles": 8,
+    "named_hostiles": 12,
     "clauses": [
       "observation",
       "enabledness",
       "successor"
+    ],
+    "shapes": [
+      "sink_self",
+      "sink_partner",
+      "return_self",
+      "return_partner"
     ]
   },
   "census": {
@@ -40,6 +47,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 0,
@@ -68,6 +76,7 @@
         "singleton_fixed": true,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "sink_partner",
         "pairs": [
           {
             "left": 1,
@@ -96,6 +105,7 @@
         "singleton_fixed": true,
         "merged_self_loop": true,
         "manifesto_relabeling": true,
+        "shape": "sink_self",
         "pairs": [
           {
             "left": 1,
@@ -124,6 +134,7 @@
         "singleton_fixed": true,
         "merged_self_loop": true,
         "manifesto_relabeling": true,
+        "shape": "sink_self",
         "pairs": [
           {
             "left": 1,
@@ -152,6 +163,7 @@
         "singleton_fixed": true,
         "merged_self_loop": true,
         "manifesto_relabeling": true,
+        "shape": "sink_self",
         "pairs": [
           {
             "left": 0,
@@ -180,6 +192,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 0,
@@ -208,6 +221,7 @@
         "singleton_fixed": true,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "sink_partner",
         "pairs": [
           {
             "left": 1,
@@ -236,6 +250,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 0,
@@ -264,6 +279,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 0,
@@ -277,1014 +293,6 @@
           0,
           0,
           0
-        ],
-        "next": [
-          0,
-          2,
-          2
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": true,
-        "manifesto_relabeling": true,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          0,
-          0
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          0,
-          1
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          0,
-          2
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          0,
-          2
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          1,
-          0
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          1,
-          0
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          1,
-          2
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": true,
-        "manifesto_relabeling": true,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          2,
-          0
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          2,
-          0
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          2,
-          0
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          2,
-          1
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          2,
-          2
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          1,
-          2,
-          2
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          0,
-          0
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          0,
-          1
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          0,
-          1
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          0,
-          1
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          0,
-          2
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          0,
-          2
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          1,
-          0
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          1,
-          0
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          1,
-          1
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          1,
-          1
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          1,
-          2
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": true,
-        "manifesto_relabeling": true,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          2,
-          0
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          0,
-          0,
-          0
-        ],
-        "next": [
-          2,
-          2,
-          1
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          1,
-          1,
-          1
-        ],
-        "next": [
-          0,
-          0,
-          1
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          1,
-          1,
-          1
-        ],
-        "next": [
-          0,
-          0,
-          1
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          1,
-          1,
-          1
-        ],
-        "next": [
-          0,
-          0,
-          2
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": true,
-        "manifesto_relabeling": true,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          1,
-          1,
-          1
-        ],
-        "next": [
-          0,
-          1,
-          0
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": true,
-        "manifesto_relabeling": true,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          1,
-          1,
-          1
-        ],
-        "next": [
-          0,
-          1,
-          1
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": true,
-        "manifesto_relabeling": true,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          1,
-          1,
-          1
-        ],
-        "next": [
-          0,
-          2,
-          0
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          1,
-          1,
-          1
-        ],
-        "next": [
-          0,
-          2,
-          0
-        ],
-        "merged": [
-          1,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": true,
-        "merged_self_loop": false,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 1,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          1,
-          1,
-          1
-        ],
-        "next": [
-          0,
-          2,
-          1
-        ],
-        "merged": [
-          0,
-          1
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 1,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          1,
-          1,
-          1
-        ],
-        "next": [
-          0,
-          2,
-          1
-        ],
-        "merged": [
-          0,
-          2
-        ],
-        "total": true,
-        "constant_observation": true,
-        "singleton_fixed": false,
-        "merged_self_loop": true,
-        "manifesto_relabeling": false,
-        "pairs": [
-          {
-            "left": 0,
-            "right": 2,
-            "clause": "successor"
-          }
-        ]
-      },
-      {
-        "observation": [
-          1,
-          1,
-          1
         ],
         "next": [
           0,
@@ -1300,6 +308,1051 @@
         "singleton_fixed": true,
         "merged_self_loop": true,
         "manifesto_relabeling": true,
+        "shape": "sink_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          0,
+          0
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          0,
+          1
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          0,
+          2
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          0,
+          2
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          1,
+          0
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "sink_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          1,
+          0
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          1,
+          2
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": true,
+        "manifesto_relabeling": true,
+        "shape": "sink_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          2,
+          0
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          2,
+          0
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          2,
+          0
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          2,
+          1
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          2,
+          2
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "sink_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          1,
+          2,
+          2
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          0,
+          0
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          0,
+          1
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          0,
+          1
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          0,
+          1
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          0,
+          2
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "sink_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          0,
+          2
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          1,
+          0
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          1,
+          0
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          1,
+          1
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          1,
+          1
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "sink_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          1,
+          2
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": true,
+        "manifesto_relabeling": true,
+        "shape": "sink_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          2,
+          0
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": [
+          2,
+          2,
+          1
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "return_partner",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": [
+          0,
+          0,
+          1
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": [
+          0,
+          0,
+          1
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "sink_partner",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": [
+          0,
+          0,
+          2
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": true,
+        "manifesto_relabeling": true,
+        "shape": "sink_self",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": [
+          0,
+          1,
+          0
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": true,
+        "manifesto_relabeling": true,
+        "shape": "sink_self",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": [
+          0,
+          1,
+          1
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": true,
+        "manifesto_relabeling": true,
+        "shape": "sink_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": [
+          0,
+          2,
+          0
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": [
+          0,
+          2,
+          0
+        ],
+        "merged": [
+          1,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": false,
+        "manifesto_relabeling": false,
+        "shape": "sink_partner",
+        "pairs": [
+          {
+            "left": 1,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": [
+          0,
+          2,
+          1
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": [
+          0,
+          2,
+          1
+        ],
+        "merged": [
+          0,
+          2
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": false,
+        "merged_self_loop": true,
+        "manifesto_relabeling": false,
+        "shape": "return_self",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 2,
+            "clause": "successor"
+          }
+        ]
+      },
+      {
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": [
+          0,
+          2,
+          2
+        ],
+        "merged": [
+          0,
+          1
+        ],
+        "total": true,
+        "constant_observation": true,
+        "singleton_fixed": true,
+        "merged_self_loop": true,
+        "manifesto_relabeling": true,
+        "shape": "sink_self",
         "pairs": [
           {
             "left": 0,
@@ -1328,6 +1381,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 0,
@@ -1356,6 +1410,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 1,
@@ -1384,6 +1439,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 0,
@@ -1412,6 +1468,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 1,
@@ -1440,6 +1497,7 @@
         "singleton_fixed": true,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "sink_partner",
         "pairs": [
           {
             "left": 0,
@@ -1468,6 +1526,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 1,
@@ -1496,6 +1555,7 @@
         "singleton_fixed": true,
         "merged_self_loop": true,
         "manifesto_relabeling": true,
+        "shape": "sink_self",
         "pairs": [
           {
             "left": 0,
@@ -1524,6 +1584,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 0,
@@ -1552,6 +1613,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 0,
@@ -1580,6 +1642,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 1,
@@ -1608,6 +1671,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 0,
@@ -1636,6 +1700,7 @@
         "singleton_fixed": true,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "sink_partner",
         "pairs": [
           {
             "left": 0,
@@ -1664,6 +1729,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 0,
@@ -1692,6 +1758,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 0,
@@ -1720,6 +1787,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 0,
@@ -1748,6 +1816,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 0,
@@ -1776,6 +1845,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 1,
@@ -1804,6 +1874,7 @@
         "singleton_fixed": true,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "sink_partner",
         "pairs": [
           {
             "left": 0,
@@ -1832,6 +1903,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 1,
@@ -1860,6 +1932,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 0,
@@ -1888,6 +1961,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 1,
@@ -1916,6 +1990,7 @@
         "singleton_fixed": false,
         "merged_self_loop": true,
         "manifesto_relabeling": false,
+        "shape": "return_self",
         "pairs": [
           {
             "left": 0,
@@ -1944,6 +2019,7 @@
         "singleton_fixed": true,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "sink_partner",
         "pairs": [
           {
             "left": 0,
@@ -1972,6 +2048,7 @@
         "singleton_fixed": true,
         "merged_self_loop": true,
         "manifesto_relabeling": true,
+        "shape": "sink_self",
         "pairs": [
           {
             "left": 0,
@@ -2000,6 +2077,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 1,
@@ -2028,6 +2106,7 @@
         "singleton_fixed": false,
         "merged_self_loop": false,
         "manifesto_relabeling": false,
+        "shape": "return_partner",
         "pairs": [
           {
             "left": 0,
@@ -2050,11 +2129,28 @@
       "successor": 192
     },
     "null": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
-    "null_holds": false
+    "null_holds": false,
+    "shape_null": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
+    "shape_null_holds": false,
+    "shape_listing": {
+      "sink_self": 12,
+      "sink_partner": 12,
+      "return_self": 24,
+      "return_partner": 24,
+      "unclassified": 0
+    },
+    "shape_counts": {
+      "sink_self": 12,
+      "sink_partner": 12,
+      "return_self": 24,
+      "return_partner": 24,
+      "unclassified": 0
+    },
+    "leftover_occupied_types": 3
   },
   "source_hashes": {
-    "research/operational-obstruction-2026-09-17/obstruction.py": "0a668b47de525ddcaffd4cf755e3cccf0bdda3c0e9c755727b87cbaaf137a130",
-    "research/operational-obstruction-2026-09-17/verify.py": "02571823249fed84acc665ce5d4303490a4def5f5e60eed061daac168bc0c142",
+    "research/operational-obstruction-2026-09-17/obstruction.py": "00189b36b049a0bc95d7a40e16d629ef90f29dda11137fe89ffed95a6f0add74",
+    "research/operational-obstruction-2026-09-17/verify.py": "d74f47ec4c78c60f464315d45e6e022c39310243bc1770108be4c9d9b22f9989",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"

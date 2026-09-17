@@ -21,7 +21,9 @@ from rprm.core import AdmissionError, deterministic_quotient, stochastic_quotien
 from rprm.futures import Machine, future_quotient, shortest_witness
 from obstruction import (
     CLAUSES,
+    GHOST_SHAPES,
     ghost_fiber,
+    ghost_shape,
     is_ghost_fold,
     is_operational_fold,
     least_stable_repair,
@@ -40,6 +42,18 @@ NULL = (
     "the Manifesto three-state example (constant observation, a: 0->0, "
     "1->2, 2->2) and its state relabelings."
 )
+SHAPE_NULL = (
+    "After removing sink_self (the Manifesto sink/self-loop/jump pattern), "
+    "the remaining ghost folds in the 845-machine family occupy exactly one "
+    "of the leftover named types sink_partner, return_self, return_partner."
+)
+LISTING = {
+    "sink_self": 12,
+    "sink_partner": 12,
+    "return_self": 24,
+    "return_partner": 24,
+    "unclassified": 0,
+}
 
 
 def require(condition, message):
@@ -98,6 +112,26 @@ def check_named_hostiles():
     require(len(repaired["classes"]) == 3, "Least stable repair of the ghost is discrete")
     require(future_quotient(machine)["classes"] == ((0, 1, 2),),
             "Canonical future quotient is indiscrete")
+    require(ghost_shape(machine, summary) == "sink_self",
+            "Manifesto example is sink_self")
+
+    # Three leftover types, built from the 2×2 definition, not from the census.
+    sink_partner = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
+                           {"a": {0: 1, 1: 2, 2: 2}})
+    require(is_ghost_fold(sink_partner, summary), "sink_partner must be a ghost fold")
+    require(ghost_shape(sink_partner, summary) == "sink_partner", "Named sink_partner")
+    require(not is_manifesto_relabeling(sink_partner, summary),
+            "sink_partner is not the Manifesto relabeling")
+
+    return_self = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
+                          {"a": {0: 0, 1: 2, 2: 0}})
+    require(is_ghost_fold(return_self, summary), "return_self must be a ghost fold")
+    require(ghost_shape(return_self, summary) == "return_self", "Named return_self")
+
+    return_partner = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
+                             {"a": {0: 1, 1: 2, 2: 0}})
+    require(is_ghost_fold(return_partner, summary), "return_partner must be a ghost fold")
+    require(ghost_shape(return_partner, summary) == "return_partner", "Named return_partner")
 
     # First-witness core hides a second failing pair.
     two = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 1, 2: 0, 3: 1},
@@ -125,6 +159,8 @@ def check_named_hostiles():
             "Enabledness is visible to FIVE.future; not a ghost")
     require(shortest_witness(binary, 0, 1)["status"] == "ONE",
             "Enabledness mismatch has a distinguishing word")
+    require(ghost_shape(binary, indiscrete) == "unclassified",
+            "Non-ghost enabledness failure is unclassified")
 
     one_block = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0}, {"a": {0: 1, 1: 2, 2: 0}})
     require(ghost_fiber(one_block, {0: 0, 1: 0, 2: 0})["status"] == "NONE",
@@ -176,7 +212,7 @@ def check_named_hostiles():
         pass
     else:
         raise RuntimeError("Bool observation key must remain an admission error")
-    return {"named_hostiles": 8, "clauses": list(CLAUSES)}
+    return {"named_hostiles": 12, "clauses": list(CLAUSES), "shapes": list(GHOST_SHAPES)}
 
 
 def family_machines():
@@ -211,6 +247,7 @@ def ghost_record(machine, summary):
         "singleton_fixed": singleton_fixed,
         "merged_self_loop": merged_self_loop,
         "manifesto_relabeling": is_manifesto_relabeling(machine, summary),
+        "shape": ghost_shape(machine, summary),
         "pairs": list(ghost_fiber(machine, summary)["pairs"]),
     }
 
@@ -261,12 +298,24 @@ def check_census(null_text):
                 require(machine.states == (0, 1, 2) and machine.actions == ("a",),
                         "Ghost fold escaped the three-state one-action slice")
                 require(record["total"], "Ghost fold with a partial merged action")
+                require((record["shape"] == "sink_self") == record["manifesto_relabeling"],
+                        "sink_self must match the Manifesto relabeling predicate")
     require(ghosts_one_block == 0, "Single-block ghost fold appeared")
     require(ghosts_two_states == 0, "n<=2 ghost fold appeared")
     require(all(row["constant_observation"] for row in ghosts),
             "Ghost fold with non-constant observation in this family")
     relabelings = sum(1 for row in ghosts if row["manifesto_relabeling"])
     null_holds = len(ghosts) == relabelings
+    shape_counts = {name: 0 for name in GHOST_SHAPES}
+    shape_counts["unclassified"] = 0
+    for row in ghosts:
+        shape = row["shape"]
+        require(shape in shape_counts, "Unknown shape label")
+        shape_counts[shape] += 1
+    leftover = {name: shape_counts[name] for name in GHOST_SHAPES if name != "sink_self"}
+    leftover_occupied = sum(1 for count in leftover.values() if count)
+    shape_null_holds = leftover_occupied == 1
+    require(shape_counts == LISTING, "Census disagrees with the written 2×2 listing")
     return {
         "machines": len(machines),
         "machine_partition_cases": cases,
@@ -288,6 +337,11 @@ def check_census(null_text):
         "failing_pairs_by_clause": clause_hits,
         "null": null_text,
         "null_holds": null_holds,
+        "shape_null": SHAPE_NULL,
+        "shape_null_holds": shape_null_holds,
+        "shape_listing": LISTING,
+        "shape_counts": shape_counts,
+        "leftover_occupied_types": leftover_occupied,
     }
 
 
@@ -312,6 +366,7 @@ def main():
         "schema": "rprm-operational-obstruction/v1",
         "status": "PASS",
         "null_declared_before_census": NULL,
+        "shape_null_declared_before_shape_census": SHAPE_NULL,
         "named": named,
         "census": census,
         "source_hashes": source_hashes(),
