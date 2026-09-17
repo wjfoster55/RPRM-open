@@ -3,9 +3,10 @@
 **Opened** 17 September 2026, overnight shift following the catch-up synthesis.
 **Lane** typing and testing (wizard). Not abduction. Nulls declared before every
 run and printed in every output.
-**Status** the central extremal statement is, as of §8d, a **theorem for arity 1**
-with a written proof; arity `>= 2` remains a conjecture with exhaustive finite
-evidence; priority is **settled for one half and OPEN for the other**.
+**Status** the central extremal statement is, as of §8d and §8e, a **theorem at
+every arity** for the uniform partial-map prior, with a written proof. It remains
+a conjecture for the total-map and idempotent classes, and is **false** for the
+bijective ones. Priority is **settled for one half and OPEN for the other**.
 
 Reproduce everything here with
 
@@ -17,6 +18,7 @@ python -I -B tools/fragility_exchange.py  the exchange lemma, 5.7M exchanges to 
 python -I -B tools/fragility_critical.py  targeted attack on the tightest exchange family
 python -I -B tools/fragility_limit.py     the cosh^2(1) asymptotic
 python -I -B tools/fragility_proof.py 30  every step of the §8d proof, exact
+python -I -B tools/fragility_arity.py     the §8e general-arity argument
 python -I -B tools/fragility_mechanism.py why the proof fails for sigma_blind
 ```
 
@@ -529,13 +531,77 @@ blocks up to `10^30`, where the direct ratio is numerically indistinguishable
 from 1; Step 2 holds there because the spectator enters it only through `S_k` and
 pushes the ratio toward 1 from above, never through it.
 
-**What is still not proved.** Arities `>= 2`. The same route should work — the
-exponent multiset `{prod of q_i}` majorises `{prod of p_i}` by the same
-convexity, and Step 2 generalises — but that majorisation is not written out
-here. Checked only: 1,609 exchanges at arity 2 (`n <= 16`) and 182 at arity 3
-(`n <= 11`), all strictly increasing. **Arity >= 2 remains OPEN.**
+**What §8d leaves open.** Arities `>= 2`, where the exponents are products rather
+than single block sizes. Section 8e closes that too.
 
-## 8e. Result 7 — why the same proof cannot work for the classical monoid
+## 8e. Result 7 — the same proof at every arity, via convex order
+
+At arity `r` the factors are indexed by **products** of block sizes:
+
+```text
+sigma_r(p) = prod over ordered r-tuples T of   f_p( prod_{i in T} p_i ) .
+```
+
+Step 1 is unchanged. Step 2 needs replacing, because there are now `m^r`
+evaluation points rather than two, and what must be shown is that for every
+convex `phi`
+
+```text
+sum_T phi(e'_T)  >=  sum_T phi(e_T)                                    (*)
+```
+
+where `e_T`, `e'_T` are the exponent products before and after the exchange.
+
+**Proof of (*).** Read a uniformly random ordered `r`-tuple as `r` independent
+coordinate draws, and condition on which coordinates land in the two changed
+blocks — call that set `U`, `|U| = s` — and on the spectator choices for the
+remaining `r - s` coordinates, whose product is a constant `P > 0`. Every tuple
+falls in exactly one cell. Inside a cell the exponent is `P` times a product of
+`s` independent draws, each uniform on `{a, b}` before and on `{a+1, b-1}` after.
+
+1. `{a+1, b-1}` majorises `{a, b}` at equal mean, so for the single draw
+   `X <=_cx X'` in the convex order.
+2. Convex order is closed under multiplication by an independent nonnegative
+   factor: for `y >= 0` the map `x -> phi(xy)` is convex, so conditioning and
+   integrating gives `XY <=_cx X'Y <=_cx X'Y'`. Induction on `s` gives
+   `prod X_i <=_cx prod X'_i`. All values are positive because `b >= 2`.
+3. Scaling by `P >= 0` preserves convex order, same reason.
+4. The inequality `sum phi >= sum phi` is **additive over cells**, so summing
+   over every `U` and every spectator assignment gives (*). ∎
+
+Note step 4 is why the argument is phrased in convex order rather than
+majorisation: majorisation is not additive over disjoint unions, but the
+`sum phi` inequality is, and the `sum phi` inequality is all Karamata was ever
+being used for.
+
+Then exactly as before, with `phi = log f_q` (convex, since `f_q` is log-convex):
+
+```text
+sigma_r(q) = prod_T f_q(e'_T) >= prod_T f_q(e_T) >= prod_T f_p(e_T) = sigma_r(p),
+```
+
+strictly, because `a >= 2` makes the factor at the all-`a` tuple — exponent
+`a^r >= 2` — strictly larger.
+
+**Theorem (exchange, all arities).** For every `r >= 1` and `a >= b >= 2`,
+`sigma_r(q) > sigma_r(p)`.
+**Corollary.** The extremal law holds for `sigma_r` at every arity.
+
+*Disposition ONE(theorem). Evidence grade: written proof.* Machine check:
+`python -I -B tools/fragility_arity.py`. The cell decomposition of step 4 was
+verified to reproduce the brute-force exponent multiset exactly; (*) was tested
+against six convex functions the proof never mentions, including `2^x` and two
+piecewise-linear hinges; and two concave controls were required to **reverse**
+the inequality, which they do. 963 exchanges at arities 2, 3 and 4.
+
+> A note on the null control, because it is the kind of thing worth keeping. The
+> first version of this test demanded that *every* concave `phi` reverse the
+> inequality **strictly**, and flagged 143 failures. The failures were mine:
+> `min(x, 12)` is concave but linear below the kink, so on exchanges whose
+> exponents all sit under it both sides are equal, which is correct behaviour.
+> The test was wrong, not the claim. Corrected, then rerun.
+
+## 8f. Result 8 — why the same proof cannot work for the classical monoid
 
 This is the mechanism behind Result 4, and it is one line.
 
@@ -586,8 +652,9 @@ identifiable rather than aesthetic.
 | Enabledness price `rho(C)` | **ONE(rational)** per profile computed | Exact arithmetic |
 | Admissible domain sizes = subset sums of the profile | **ONE(characterisation)** | Written proof |
 | **Exchange lemma, arity 1** | **ONE(theorem)** | **Written proof** (§8d); every step machine-checked on 128,121 exchanges to `n = 30` |
-| **Extremal law for `sigma_E`, arity 1** | **ONE(theorem)**, corollary of the above | **Written proof** |
-| Extremal law for `sigma_E`, arity `>= 2`, total and idempotent classes | **OPEN** — conjecture, 0 counterexamples in 903 cells to `n = 45`; arity-2/3 exchange also clean | Finite test |
+| **Exchange lemma, every arity** | **ONE(theorem)** | **Written proof** (§8e, convex order); decomposition and six convex test functions checked, concave controls reverse |
+| **Extremal law for `sigma_r`, every arity** | **ONE(theorem)**, corollary of the above | **Written proof** |
+| Extremal law under the total-map and idempotent-map classes | **OPEN** — conjecture, 0 counterexamples to `n = 18` / `n = 7`; the proof above does not cover them, since those classes are not the uniform partial-map prior | Finite test |
 | Karamata step `S'_k >= S_k`, strict for `k >= 2` | **ONE(inequality)** | Written proof |
 | `f_p(k) = 1 + sum_j n_j^k` is log-convex; `f_blind` is not | **ONE(separation)** | Written proof + 25,702-instance finite test |
 | `sigma_E(j+1,j-1)/sigma_E(j,j) -> cosh^2(1)` | **ONE(constant)** | Written derivation + exact finite test to `j = 20,000` |
@@ -602,12 +669,11 @@ identifiable rather than aesthetic.
 
 1. A real literature review for `sigma_E`, beyond one search pass. Until then no
    novelty is claimed.
-2. **Arity `>= 2`.** Arity 1 is closed (§8d). The obstruction is that the
-   exponents become products `n_{i_1} ... n_{i_r}`, so Step 2 needs the exponent
-   *multiset* of the exchanged profile to majorise the original. For `r = 2` this
-   is checkable by hand — the four exponents `(a+1)^2, (a+1)(b-1), (a+1)(b-1),
-   (b-1)^2` do majorise `a^2, ab, ab, b^2` at equal total `(a+b)^2` — but the
-   general `r` statement is not written. That is the next hour of real work.
+2. **The total-map and idempotent-map classes.** §8d and §8e prove the law for
+   the uniform prior over *partial* maps. The total-map class is a different
+   measure and the proof does not transfer: the factor function there is not
+   `1 + sum n_j^k`. The conjecture survived to `n = 18` and deserves the same
+   treatment — find its factor function and ask whether it is log-convex.
 3. A characterisation of `sigma_blind`'s 55 extremal exceptions. They are
    concentrated at large `m` with mostly-singleton profiles, which suggests a
    clean description exists.
@@ -624,8 +690,9 @@ the right prior is a modelling obligation that has not been discharged. It does
 not establish novelty — Section 8d proves a statement, which is a different thing
 from proving that nobody has proved it before.
 
-The extremal law is now a theorem **for arity 1, for the uniform prior over
-partial maps, and for nothing else**. Arity `>= 2` rests on `n <= 16`. The
-bijective and fixed-domain-size counterexamples of Section 5.2 are unaffected by
-the proof and still stand: they are statements about different operation classes,
-and in those classes the law is false.
+The extremal law is now a theorem **for every arity, for the uniform prior over
+partial maps, and for nothing else**. The bijective, injective-partial and
+fixed-domain-size counterexamples of Section 5.2 are unaffected by the proof and
+still stand: they are statements about different operation classes, and in those
+classes the law is false. A proof under one prior is not a proof under all
+priors, and the applied corollary still carries its regime.
