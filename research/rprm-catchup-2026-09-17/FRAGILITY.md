@@ -20,6 +20,7 @@ python -I -B tools/fragility_limit.py     the cosh^2(1) asymptotic
 python -I -B tools/fragility_proof.py 30  every step of the §8d proof, exact
 python -I -B tools/fragility_arity.py     the §8e general-arity argument
 python -I -B tools/fragility_mechanism.py why the proof fails for sigma_blind
+python -I -B tools/fragility_predict.py   log-convexity as the deciding condition
 ```
 
 Integers and `fractions.Fraction` only. No floating point appears in any value
@@ -642,6 +643,45 @@ This does **not** say enabledness is the right modelling choice. It says the two
 conditions cut out objects of different analytic character, and the difference is
 identifiable rather than aesthetic.
 
+## 8g. Result 9 — log-convexity is the deciding condition, not a coincidence
+
+Section 8f leaves a gap worth closing: "the failures sit in the same regime" is
+weaker than "the failures are caused by this." The proof of §8d has exactly two
+ingredients, so if `sigma_blind` loses an exchange, at least one of them must
+have failed for it. That is a checkable prediction, and it is also a check on
+§8d — an exchange failing with *both* steps intact would mean the proof is wrong.
+
+All 42,903 distinct exchanges over all partitions of `n <= 26`:
+
+| | `sigma_blind` (successor only) | `sigma_E` (enabledness) |
+|---|---:|---:|
+| Step 1, base inequality, failures | 0 | 0 |
+| Step 2, log-convexity at the exchanged exponents, failures | **3,871** (9.0%) | **0** |
+| Actual exchange failures | **66** | **0** |
+| **Failures with both steps intact** | **0** | **0** |
+| **Failures where Step 2 held** | **0** | **0** |
+
+> **Step 2 holding is sufficient.** Across every exchange audited, whenever the
+> factor function is log-convex at the two exchanged exponents, the exchange
+> holds. The classical monoid loses the extremal law exactly where the `-1` per
+> block costs it log-convexity; the enabledness-enforced monoid never loses it,
+> because a sum of exponentials is log-convex everywhere.
+
+**The honest qualifier, which is the reason to report the base rate.** Step-2
+failure is **necessary but not sufficient**: only 66 of the 3,871 Step-2 failures
+— 1.7% — actually break `sigma_blind`. A log-convexity failure at one exchanged
+pair can still be outweighed by the spectator factors. So the condition predicts
+where the law *can* break, not where it must, and it is not a characterisation of
+the 55 bad cells. That characterisation is still owed.
+
+The zero in the "both steps intact" row is also the strongest independent check
+on §8d available here: the two steps chain to a strict increase, so a
+counterexample in that row would have refuted the proof. There is none, in either
+monoid, in 85,806 audited exchanges.
+
+*Evidence grade: finite test, complete enumeration in the stated range.*
+Reproduce with `python -I -B tools/fragility_predict.py`.
+
 ## 9. Dispositions
 
 | Statement | Disposition | Grade |
@@ -657,6 +697,9 @@ identifiable rather than aesthetic.
 | Extremal law under the total-map and idempotent-map classes | **OPEN** — conjecture, 0 counterexamples to `n = 18` / `n = 7`; the proof above does not cover them, since those classes are not the uniform partial-map prior | Finite test |
 | Karamata step `S'_k >= S_k`, strict for `k >= 2` | **ONE(inequality)** | Written proof |
 | `f_p(k) = 1 + sum_j n_j^k` is log-convex; `f_blind` is not | **ONE(separation)** | Written proof + 25,702-instance finite test |
+| Log-convexity at the exchanged exponents is **sufficient** for the exchange; every `sigma_blind` failure has it broken | **ONE(implication)** on `n <= 26` | Finite test, 85,806 exchanges, both monoids |
+| Log-convexity failure is **not sufficient** for extremal failure — only 1.7% of them bite | **ONE(negative)** | Finite test |
+| Characterisation of `sigma_blind`'s 55 bad cells | **OPEN** — a necessary condition is now known, a characterisation is not | — |
 | `sigma_E(j+1,j-1)/sigma_E(j,j) -> cosh^2(1)` | **ONE(constant)** | Written derivation + exact finite test to `j = 20,000` |
 | Extremal law under injective or permutation priors | **refuted for argmin**, 6 explicit counterexamples retained | Finite test |
 | Extremal law within a fixed domain size | **refuted**, `(2,2,2)` beats `(4,1,1)` at `n = 6, d = 4` | Finite test |
@@ -674,9 +717,11 @@ identifiable rather than aesthetic.
    measure and the proof does not transfer: the factor function there is not
    `1 + sum n_j^k`. The conjecture survived to `n = 18` and deserves the same
    treatment — find its factor function and ask whether it is log-convex.
-3. A characterisation of `sigma_blind`'s 55 extremal exceptions. They are
-   concentrated at large `m` with mostly-singleton profiles, which suggests a
-   clean description exists.
+3. A characterisation of `sigma_blind`'s 55 extremal exceptions. §8g supplies a
+   **necessary** condition — the factor function must fail log-convexity at the
+   exchanged exponents — and rules that condition out as sufficient, since only
+   1.7% of such failures bite. What is missing is the second half: which of those
+   3,871 near-misses survive the spectator product and which do not.
 4. Arity-3 and total-map hostile cases pushed further than `n = 10` and `n = 18`.
 5. The applied lane: take a published finite reduced model of a partial system
    and compute its `rho`. That converts the instrument into a finding.
