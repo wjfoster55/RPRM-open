@@ -1,0 +1,99 @@
+{
+  "family": [
+    {
+      "id": "hostile_original",
+      "cells": [
+        [
+          30,
+          34
+        ],
+        [
+          31,
+          34
+        ]
+      ],
+      "n_water": 2,
+      "static": "UNRESOLVED",
+      "static_reason": "ISO:n_ge_2_support_injection_admitted",
+      "Qdyn": 1,
+      "firstBreach": 3,
+      "maxMonitored": 1
+    },
+    {
+      "id": "midair_near_divider",
+      "cells": [
+        [
+          30,
+          34
+        ],
+        [
+          31,
+          34
+        ]
+      ],
+      "n_water": 2,
+      "static": "UNRESOLVED",
+      "static_reason": "ISO:n_ge_2_support_injection_admitted",
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "maxMonitored": 0
+    },
+    {
+      "id": "shelf_two_far",
+      "cells": [
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          11
+        ]
+      ],
+      "n_water": 2,
+      "static": "UNRESOLVED",
+      "static_reason": "ISO:n_ge_2_support_injection_admitted",
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "maxMonitored": 0
+    },
+    {
+      "id": "ledge_end30_two_at_tip",
+      "cells": [
+        [
+          29,
+          35
+        ],
+        [
+          30,
+          35
+        ]
+      ],
+      "n_water": 2,
+      "static": "UNRESOLVED",
+      "static_reason": "ISO:n_ge_2_support_injection_admitted",
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "maxMonitored": 0
+    },
+    {
+      "id": "ledge_end28_two_at_tip",
+      "cells": [
+        [
+          27,
+          35
+        ],
+        [
+          28,
+          35
+        ]
+      ],
+      "n_water": 2,
+      "static": "UNRESOLVED",
+      "static_reason": "ISO:n_ge_2_support_injection_admitted",
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "maxMonitored": 0
+    }
+  ]
+}
