@@ -283,18 +283,28 @@ what this document recommends.
 
 Honest list. No search is claimed that was not run.
 
-- **ChatGPT threads — about three quarters missing, not all of it.** No
-  platform-native export exists on this machine; no `conversations.json`
-  anywhere under the profile; no ChatGPT desktop-app local store. But two real
-  artifacts survive and the earlier pass did not characterise them:
-  `Downloads\Investigate RPRM bridge families CHATLOG.txt` holds **279,537
-  words** of conversation, and `Downloads\RPRM_CHAT_EXPORT_FOR_GPT_2026-08-19.zip`
-  is a fidelity-labelled package you built yourself — 33 messages verbatim, a
-  transcribed recent span, a reconstructed middle, and a 156 KB message ledger
-  with a per-entry `fidelity` field. Its own README says *"This package does not
-  pretend otherwise."* Roughly 340,000 ChatGPT-side words against 1,150,000
-  Codex-side words: call it **23–25% coverage**, concentrated in two threads.
-  Full details in `04-coverage-gaps.md`. The only real fix is a platform export,
+- **ChatGPT threads — about 85% missing, and my first estimate of the rest was
+  wrong in both directions.** No platform-native export exists on this machine;
+  no `conversations.json` anywhere under the profile; no ChatGPT desktop-app
+  local store. What survives, after a second pass corrected the first:
+  `Downloads\QM_THEORY_DEVELOPMENT_CHAT_2_FULL_TRANSCRIPT_2026-08-19.md` is
+  **115,299 words, 42 of your messages and 41 replies**, a complete two-sided
+  thread — the only place your own ChatGPT prompts survive at length, dictation
+  included. `Downloads\RPRM_CHAT_EXPORT_FOR_GPT_2026-08-19.zip` is a
+  fidelity-labelled package you built yourself: 33 messages verbatim, a
+  transcribed recent span, a reconstructed middle, and a 156 KB ledger with a
+  per-entry `fidelity` field, whose README says *"This package does not pretend
+  otherwise."* Plus ~30,000 words of smaller pasted files.
+
+  **The correction.** My first pass counted
+  `Downloads\Investigate RPRM bridge families CHATLOG.txt` — 279,537 words — as
+  the largest ChatGPT artifact. It is not a ChatGPT thread. It opens with an
+  agent task prompt and an `Attachments:` block of local paths and proceeds as
+  tool-calling turns: it is a **Codex log**. Removing it and adding what I had
+  missed moves the estimate from ~340,000 words and 23–25% down to ~205,000
+  words and **roughly 15%** — a lower number but a better corpus, because the
+  largest surviving piece is two-sided rather than a one-sided paste. Full
+  details in `04-coverage-gaps.md`. The only real fix is a platform export,
   which only you can request.
 - **166 handoff zips in `Downloads\`, 10.24 GiB, opened by nobody.**
   `RPRM_SPARK_05_RESULTS_2026-09-16`, `BSD92_through81_review_and_factorization_gate`,
@@ -1893,7 +1903,7 @@ verify, verify without decoration. Ask which if it is not obvious — once.
 | BSD campaign | **On HOLD** at an exact contradiction: normalized toric expression ≡ 3 mod 5 versus retained U5 = 1. No fitted scalar repair admitted. Do not attempt a repair. |
 | Fermat | Unrestricted claim **withdrawn**. 14 restricted statements survive. |
 | Memory fabric | Populated: 115 blobs, 1,932 occurrences, 1,817 relations, **0 claims** |
-| ChatGPT corpus | No platform-native export exists. Two labelled artifacts survive (~340,000 words, ~23–25% of the lane): a 279,537-word bridge-families log and a fidelity-labelled August export package. 166 further handoff zips in `Downloads\` are uningested. |
+| ChatGPT corpus | No platform-native export exists. ~205,000 words survive, **roughly 15% of the lane**: a complete 115,299-word two-sided thread (42 user messages) plus a fidelity-labelled August export package plus smaller pasted files. A 279,537-word "CHATLOG" that an earlier pass counted here is a **Codex log, not ChatGPT**. 166 further handoff zips in `Downloads\` are uningested. |
 
 ## A.9 If you are asked to pick research
 

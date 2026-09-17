@@ -184,7 +184,7 @@ verify, verify without decoration. If it is not obvious which, ask once.
 | Fermat | Unrestricted claim **withdrawn**. 14 restricted statements survive |
 | YM2 | A connected cancellation result **through its stated order only**; explicitly *not* an all-order or universal theorem, and **not** a continuum mass-gap result |
 | Memory fabric (`rprm-alpha`) | Populated: 115 blobs, 1,932 occurrences, 1,817 relations, **0 claims**. It is a search index, not a claim ledger |
-| ChatGPT corpus | No platform-native export. ~340,000 words survive across two labelled artifacts (~23–25% of the lane). 166 handoff zips in `Downloads\` are uningested |
+| ChatGPT corpus | No platform-native export. ~205,000 words survive, **roughly 15% of the lane**: one complete 115,299-word two-sided thread (42 user messages) plus a fidelity-labelled export package plus smaller pasted files. A 279,537-word "CHATLOG" counted here by an earlier pass is a **Codex log, not ChatGPT**. 166 handoff zips in `Downloads\` are uningested |
 
 ## 9. If you are asked to pick research
 

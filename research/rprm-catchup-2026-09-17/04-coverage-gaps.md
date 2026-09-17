@@ -1,4 +1,4 @@
-﻿# 04 â€” Coverage gaps after the synthesis pass
+﻿# 04 — Coverage gaps after the synthesis pass
 
 **Date:** 17 September 2026
 **Author:** synthesis lane (fourth pass, after the three ingest lanes)
@@ -6,7 +6,7 @@
 unavailable. No search is claimed that was not run. Every path below was
 resolved on this machine.
 
-## 1. The ChatGPT gap â€” partially closed
+## 1. The ChatGPT gap — partially closed
 
 The process-history lane's largest declared hole was that ChatGPT was William's
 primary research partner and no local export was found. That is **half right**.
@@ -19,17 +19,20 @@ characterise.
 | Search | Method | Result |
 |---|---|---|
 | `conversations.json` anywhere under the user profile, depth 8 | recursive filename search | **none found** |
-| ChatGPT desktop app data under `AppData\Roaming` and `AppData\Local` | directory name match `*ChatGPT*` | **none found** â€” no desktop-app local store exists |
+| ChatGPT desktop app data under `AppData\Roaming` and `AppData\Local` | directory name match `*ChatGPT*` | **none found** — no desktop-app local store exists |
 | Chat/export archives in Downloads, Documents, Desktop | recursive, extension and name filter | **found**, see 1.2 |
 | `*CHATLOG*` / `*CHAT_EXPORT*` across the user profile | `dir /s /b` | **found**, see 1.2 |
 | OneDrive `ChatGPT\` project tree | full recursive inventory | **found, but not conversations**, see 1.3 |
 
-### 1.2 What exists: two real ChatGPT artifacts
+### 1.2 What exists: four classes of real ChatGPT artifact
+
+*Sections (c) and (d) were added on a second pass, and (b) was reclassified. The
+first pass of this file found two artifacts and miscounted one of them.*
 
 **(a) `%USERPROFILE%\Downloads\RPRM_CHAT_EXPORT_FOR_GPT_2026-08-19.zip`**
 
 A curated, fidelity-labelled export that William built on 2026-08-19 for exactly
-the purpose this corpus exists for â€” handing the thread to another model. 21
+the purpose this corpus exists for — handing the thread to another model. 21
 entries. Its own `MANIFEST.json` declares three fidelity classes: `verbatim`,
 `transcribed_visible_text`, `reconstructed_summary`.
 
@@ -63,21 +66,70 @@ reconstruction-grade.
 
 **(b) `%USERPROFILE%\Downloads\Investigate RPRM bridge families CHATLOG.txt`**
 
-1,838,190 bytes, **279,537 words** of ChatGPT conversation. This is the single
-largest ChatGPT artifact on the machine. It is also mirrored into the repository
-at `research/ym2_rail_closure/accepted/sources/ba3416025c_Investigate RPRM bridge
+1,838,190 bytes, **279,537 words**. The largest conversational artifact on the
+machine. It is mirrored into the repository at
+`research/ym2_rail_closure/accepted/sources/ba3416025c_Investigate RPRM bridge
 families CHATLOG.txt` and at the parallel `ym2-rail-20260912-delivery` path,
 where it is an *accepted source* for the YM2 rail-closure work.
 
+> **Correction, entered after a second pass.** An earlier revision of this file
+> called this "279,537 words of ChatGPT conversation." **It is not a ChatGPT
+> thread.** It opens with an agent task prompt, an `Attachments:` block listing
+> `~/Downloads/...` and `~/AppData/Local/Temp/...` paths, and proceeds as
+> tool-calling agent turns. It is a **Codex session log**. The error mattered,
+> because this was the single largest item in the "ChatGPT is partly covered"
+> estimate below, and it does not belong in that column at all.
+
 It is the only place in the corpus where "Dark World" appears alongside the
 master context guide, which is why Chapter 5 of the thesis-defence document
-grades that vocabulary as abduction-lane dialect.
+grades that vocabulary as abduction-lane dialect. That reading is unaffected by
+the correction above.
 
-**Revised estimate of available ChatGPT material:** roughly 280,000 words in the
-bridge-families log plus roughly 60,000 words across the August export package,
-against 1,150,000 words of Codex-side William speech. So the ChatGPT lane is
-**approximately 23-25% covered by volume**, concentrated in two threads, with
-explicit fidelity labels. It is not zero and it is not complete.
+**(c) `%USERPROFILE%\Downloads\QM_THEORY_DEVELOPMENT_CHAT_2_FULL_TRANSCRIPT_2026-08-19.md`**
+
+Missed by the first pass entirely, and it is the most valuable ChatGPT artifact
+on the machine. 766,213 bytes, **115,299 words**, structured with explicit
+`MESSAGE nnn START: USER` / `START: ASSISTANT` markers: **42 user messages and 41
+assistant messages**, in order.
+
+This matters more than its size. Every other ChatGPT artifact here is reply-side
+— William pasting what ChatGPT told him. **This one contains his own prompts,
+verbatim, at length**, including dictated ones. Its first user message is a
+2,000-character spoken-aloud instruction telling a model to read a prior thread
+end-to-start-to-end and *become* its successor, which is a direct sample of how
+he opens a research lane. The header states its own fidelity:
+
+> "Every visible user message and assistant response in this conversation, in
+> order... System messages, developer instructions, hidden reasoning, and tool
+> internals are excluded."
+
+A zip of the same export, `QM_THEORY_DEVELOPMENT_CHAT_2_FULL_EXPORT_2026-08-19.zip`
+(844,738 bytes), also carries `02_MESSAGES.jsonl` at 787,089 bytes.
+
+**(d) Smaller pasted ChatGPT files, also missed on the first pass**
+
+`chatgptpro6log.txt` (62,012 B, Navier–Stokes via RPRM),
+`# RPRM mathematics - canonical ChatGPT handoff.txt` (42,666 B),
+`chatgpt drumline context.txt` (31,587 B), `chatgpt_will_convo.txt` (16,227 B),
+`chatgpt vault review.txt` (10,904 B), and four smaller context files. Roughly
+185 KB in total, reply-side only.
+
+**Revised estimate, corrected twice.** The bridge-families log comes out of the
+ChatGPT column; the QM transcript and the smaller pasted files go in:
+
+| Source | Words | Contains William's own prompts? |
+|---|---:|---|
+| QM theory development chat 2, full transcript | ~115,000 | **Yes — 42 user messages** |
+| August export package (33 exact + reconstructed) | ~60,000 | Partly; exact for 33 messages |
+| Smaller pasted ChatGPT files in Downloads | ~30,000 | No, reply-side only |
+| Pasted text under `.codex\attachments\` | unmeasured | No, reply-side only |
+| ~~Bridge-families CHATLOG~~ | ~~279,537~~ | **Not ChatGPT — Codex log** |
+
+So roughly **205,000 words** of genuine ChatGPT material against 1,150,000 words
+of Codex-side William speech: **very roughly 15% by volume**, lower than the
+23–25% claimed before, but *qualitatively better*, because the largest single
+piece is a complete two-sided thread rather than a one-sided paste. The earlier
+figure was both too high and measuring the wrong thing.
 
 ### 1.3 The OneDrive `ChatGPT\` tree is a workspace, not an archive
 
@@ -126,11 +178,11 @@ after a platform export.
 A platform export from `chatgpt.com` â†’ Settings â†’ Data controls â†’ Export data.
 Only William can request it. Nothing on this machine substitutes for it.
 
-## 2. The memory fabric â€” closed
+## 2. The memory fabric — closed
 
 The process-history lane reported that the fabric could not be queried. It can.
-No `rprm-memory-fabric` MCP namespace is exposed to any of these sessions â€” that
-part was correct â€” but the skill points at a local implementation with a
+No `rprm-memory-fabric` MCP namespace is exposed to any of these sessions — that
+part was correct — but the skill points at a local implementation with a
 documented read-only CLI, and using that CLI is what the skill instructs.
 
 | Item | Resolved path |
@@ -157,10 +209,10 @@ Two `compile-context` calls with the canonical minimum receiver, namespace
 
 | Query keys | Packet | `match_fiber` | Members admitted |
 |---|---|---|---|
-| liar teacher Hamming simplex seven eight movable vacancy calibrated checks | `packet:58731cf9â€¦` | MANY(210) | 9 |
-| ternary cube second difference kernel vacant center graded scar Newton interpolation | `packet:041b7abcâ€¦` | MANY(293) | 9 |
+| liar teacher Hamming simplex seven eight movable vacancy calibrated checks | `packet:58731cf9…` | MANY(210) | 9 |
+| ternary cube second difference kernel vacant center graded scar Newton interpolation | `packet:041b7abc…` | MANY(293) | 9 |
 
-**The single most consequential thing it returned** â€” a grading William made in
+**The single most consequential thing it returned** — a grading William made in
 August that both ingest lanes missed, and that changed the synthesis lane's
 research recommendation:
 
@@ -203,12 +255,12 @@ occurrence-and-relation index, not a claim ledger.
    producer-declared fidelity labels (Section 1.2).
 3. The OneDrive `ChatGPT\` tree is 77.89 GiB, not 11.35, and contains no
    conversation archives (Section 1.3).
-4. `ChatGPT\RPRM-Spark` was written 2026-09-16 17:08 â€” the tree William said he
+4. `ChatGPT\RPRM-Spark` was written 2026-09-16 17:08 — the tree William said he
    had disabled is live.
 5. 166 handoff zips in Downloads are an uningested secondary corpus that no lane
    opened (Section 1.4).
 6. William's own August grading of the ternary-grid and graded-cube work as
-   *established, not a novelty* â€” which both ingest lanes recommended as research
+   *established, not a novelty* — which both ingest lanes recommended as research
    targets, and which the synthesis lane consequently rejected.
 7. Independent exact recomputation of the ternary-grid nullities, the withheld-
    centre determination table, the graded-cube kernels, and the 845-machine
