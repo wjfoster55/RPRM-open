@@ -2366,7 +2366,7 @@ That is the `(1+m)^2` that the sandwich was throwing away.
 
 **Exponents.** `f_q(k) = e^{k·0} + sum_j e^{k ln q_j}` is a sum of exponentials,
 hence **log-convex** in `k`. The constant `1` is the `e^{k·0}` term — it is not a
-nuisance, it is one of the exponentials, and the result is false without it. For
+nuisance, it is one of the exponentials. It is **not** required, though: deleting it leaves another sum of exponentials, equally log-convex. (Appendix G corrects an earlier sentence here which said the result is false without it. It is not.) For
 a convex `h = log f_q` and `a >= b`, the interval `[a, a+1]` lies weakly right of
 `[b-1, b]`, so `h(a+1) - h(a) >= h(b) - h(b-1)`. The exchange moves the two
 evaluation points apart at fixed sum, and log-convexity says that cannot decrease

@@ -573,9 +573,12 @@ Hence `f_q(k) >= f_p(k)` for all `k >= 1`, strictly for `k >= 2`.
 > **Step 2 (exponents).** `f_q` is log-convex, so
 > `f_q(a+1) f_q(b-1) >= f_q(a) f_q(b)`.
 >
-> *Proof.* `f_q(k) = e^{k·0} + sum_j e^{k ln q_j}` is a sum of log-convex
-> functions of `k`, hence log-convex; the constant `1` is the `e^{k·0}` term and
-> is what makes this work. Write `h = log f_q`, convex. Since `a >= b`, the
+> *Proof.* `f_q(k) = e^{k·0} + sum_j e^{k ln q_j}` is a **sum of exponentials**,
+> and every such sum is log-convex: `(log f_q)''(k)` is the weighted variance of
+> `{0, ln q_1, ..., ln q_m}`, hence `>= 0`. The constant `1` is simply the
+> `e^{k·0}` term; it is admitted for free, and it is **not** what makes this work
+> — deleting it leaves `sum_j q_j^k`, another sum of exponentials, equally
+> log-convex. (§8f, corrected under audit.) Write `h = log f_q`, convex. Since `a >= b`, the
 > interval `[a, a+1]` lies weakly to the right of `[b-1, b]`, and `h'` is
 > nondecreasing, so `h(a+1) - h(a) >= h(b) - h(b-1)`. Exponentiate. ∎
 

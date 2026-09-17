@@ -352,8 +352,10 @@ them. Let `q` be `p` with blocks `a >= b >= 2` replaced by `a+1, b-1`.
    `S_k(q) >= S_k(p)` for all `k >= 1`, strictly for `k >= 2` (Karamata). Hence
    `f_q >= f_p` **pointwise**, so the spectator factors need no bound at all.
 2. *Exponents.* `f_q(k) = e^{k·0} + sum_j e^{k ln q_j}` is a sum of exponentials,
-   hence **log-convex** in `k` — the constant `1` is the `e^{k·0}` term and the
-   result is false without it. For convex `h = log f_q` and `a >= b`, the
+   hence **log-convex** in `k`: `(log f_q)''` is the weighted variance of
+   `{0, ln q_1, ..., ln q_m}`. The constant `1` is just the `e^{k·0}` term — it is
+   free, and it is **not** required; deleting it leaves another sum of
+   exponentials. For convex `h = log f_q` and `a >= b`, the
    interval `[a, a+1]` lies weakly right of `[b-1, b]`, so
    `f_q(a+1) f_q(b-1) >= f_q(a) f_q(b)`.
 3. Chain: `sigma_E(q) >= (prod_c f_q(c)) f_q(a) f_q(b) > sigma_E(p)`, strict
