@@ -110,26 +110,70 @@ Confirmed against brute force over **every** map in the ambient class:
 operation, `sigma_1 = (n+1)^n`, `F = 0`. Held for `n = 1..8`: 2, 9, 64, 625,
 7776, 117649, 2097152, 43046721.
 
-## 4. Result 2 — priority. Disposition: ONE(citation) for half, NONE-after-search for the other half.
+## 4. Result 2 — priority. Disposition after a real review: the count is a corollary of published work.
 
-This is the part that changed overnight, and it changed in the project's favour.
+> **Superseded, 17 September, second overnight shift.** This section was written
+> after a **single search pass** and said so. A real review has since been done
+> and is in [`LITERATURE-sigma-E.md`](LITERATURE-sigma-E.md). It changed the
+> answer against us in two places. The corrections are folded in below; the
+> original optimistic framing is not preserved, because it was wrong rather than
+> merely incomplete.
 
 ### 4.1 What the literature already has
 
 The monoid of **total** transformations preserving a partition,
 `T(X,P) = { f : for every block C_i there is a block C_j with C_i f ⊆ C_j }`,
 was introduced by H. Pei and its cardinality for finite `X` and **arbitrary**
-partition is computed in *On certain Semigroups of Transformations that preserve
-a partition*, arXiv:2006.04242. The **partial** analogue for a **uniform**
-partition (`m` blocks of size `n`) is studied by Fernandes and Quinteiro,
-*Partial transformation monoids preserving a uniform partition*,
-arXiv:1210.4775, with published order
+partition is computed by **Sarkar and Singh**, *On certain Semigroups of
+Transformations that preserve a partition*, arXiv:2006.04242, *Comm. Algebra*
+49(1) 2021, 331–342, Theorem 6.1. The **partial** analogue for a **uniform**
+partition is **Cicalò, Fernandes and Schneider**, *Partial transformation monoids
+preserving a uniform partition*, arXiv:1210.4775, Theorem 1.1(i), with order
 
 ```text
 ( m (n+1)^n - m + 1 )^m
 ```
 
+> **Citation correction.** An earlier revision attributed arXiv:1210.4775 to
+> *Fernandes and Quinteiro*. It is **Cicalò–Fernandes–Schneider**. The
+> Fernandes–Quinteiro paper is a different one, BMMS 35(4) 2012, on **total**
+> maps with order and orientation constraints.
+
 **These are prior art and they must be cited.** Disposition: **ONE(citation)**.
+
+### 4.1b The count on our side is a corollary, not a new enumeration
+
+Regrouped over individual blocks, Sarkar–Singh Theorem 6.1 reads
+`|T(X,P)| = prod_i sum_j n_j^{n_i}` — which is `sigma_E` **with the `1 +` deleted
+from each factor**. And the `1 +` is exactly a sink:
+
+> Adjoin `*` as a new singleton block, `P' = P + {{*}}`. The bijection
+> "undefined ↦ `*`" carries Condition-B partial maps on `(X, P)` onto precisely
+> the total maps in `T(X + {*}, P')` that fix `*` — a block either maps into a
+> block of `P` or is sent wholesale to `*`, and `{*}` is itself a block, which is
+> what enabledness buys. Since `{*}` has `n+1` images and one fixes `*`,
+>
+> ```text
+> sigma_E(P) = |T(X + {*}, P + {{*}})| / (n + 1).
+> ```
+
+Verified, not assumed: the two forms of Theorem 6.1 agree on all 914 profiles
+with `n <= 16`; `|T(X,P)|` matches brute force over all total maps for `n <= 6`;
+and the identity above holds exactly on all 507 profiles with `n <= 14`. Example:
+`sigma_E(3,3) = 3025 = 21175 / 7 = |T(X+*, (3,3,1))| / 7`.
+
+> **Disposition: the closed form is a corollary of published work.** Cite
+> Sarkar–Singh for the count. "Apparently unwritten but immediate" is the
+> strongest admissible description, and it is not a novelty claim.
+
+### 4.1c The enabledness condition is also already named
+
+Fernandes (1998) calls it **P-stability**: "α is P-stable if `X_{i_x} ⊆ Dom(α)`
+and `X_{i_x}α = X_{i_xα}`, for all `x ∈ Dom(α)`". The first clause is exactly
+enabledness. It appears in the literature only for **injective, order-preserving**
+partial maps; for general partial maps with saturated domain, nothing was found.
+So the condition RPRM arrived at on modelling grounds has a 25-year-old name in
+semigroup theory, reached from a completely different direction.
 
 ### 4.2 What the literature condition actually is
 
@@ -153,12 +197,18 @@ published order. It does, exactly, in all 22 cases computed — including
 exhaustive brute force over every partial map for `n <= 6`, every profile, zero
 mismatches.
 
-So: the enabledness-blind count is published; **the enabledness-enforced count
-`sigma_E` was not located in this search.** Disposition for `sigma_E` priority:
-**NONE found after a stated search** — one web search of the transformation-
-semigroup literature on 2026-09-17, following the four results it returned. That
-is an admission of what was searched, **not** a novelty claim. A proper
-literature review is still owed.
+So: the enabledness-blind count is published for uniform partitions (CFS
+Theorem 1.1(i)); for **non-uniform** partitions no published count of
+`sigma_blind` was found either, though the object itself is in print (Pei–Zhou's
+`P_E(X)`, 2009, which studies Green's relations and regularity but gives no
+cardinality).
+
+**The literature review that was owed here has been done.** See
+[`LITERATURE-sigma-E.md`](LITERATURE-sigma-E.md). Its verdict on `sigma_E`
+priority is **not** the hoped-for one: the count is a corollary of Sarkar–Singh
+via §4.1b, and the condition is Fernandes's P-stability via §4.1c. What survived
+the review is the **extremal law**, §5 and §8d–8e, for which no published
+counterpart was found — see §5.4 for what that is and is not worth.
 
 ### 4.3 The enabledness price, exactly
 
@@ -280,7 +330,7 @@ Run both monoids side by side over the same 231 `(n, m)` cells, `3 <= n <= 24`:
 | Monoid | argmax law holds? | argmin law holds? |
 |---|---|---|
 | `sigma_E` — enabledness enforced (RPRM O05) | **yes, 0 failures in 903 cells to `n = 45`** | **yes, 0 failures** |
-| `sigma_blind` — successor only (Pei / Fernandes–Quinteiro) | **no, 14 failures in 231 cells** | **no, 41 failures** |
+| `sigma_blind` — successor only (Pei–Zhou / Cicalò–Fernandes–Schneider) | **no, 14 failures in 231 cells** | **no, 41 failures** |
 
 And where they disagree, they do not merely differ — they **invert**. The first
 disagreement is at `n = 11, m = 9`:
@@ -299,16 +349,40 @@ exceptions in 231 cells — while the submonoid cut out by adding RPRM's
 enabledness condition has an exact and apparently universal one, with zero
 exceptions in 903 cells up to `n = 45`.
 
-*Evidence grade: finite test, complete enumeration inside the stated ranges.*
-Not a theorem. The general statement is **OPEN** in both directions: it is open
-whether `sigma_E`'s law holds for all `n`, and open whether `sigma_blind`'s
-failures have their own characterisation.
+*Evidence grade at the time of writing: finite test.* **Superseded upward** by
+§8d–8e: the `sigma_E` half is now a written proof at every arity, and §8f–8g
+explain the `sigma_blind` half mechanically rather than merely reporting it.
+What stays OPEN is a characterisation of *which* cells `sigma_blind` fails in.
 
 This is the argument that RPRM's extra condition is mathematically load-bearing
 rather than merely fastidious. It is not an argument that the condition is
 *correct* — that is a modelling question — but it does mean the condition picks
 out a structurally better-behaved object, which is a reason to take it seriously
 that does not depend on agreeing with the framework's philosophy.
+
+### 6.1 The same law holds for the published total-map monoid
+
+Added after the literature review. The proof in §8d needs exactly one property of
+the factor function: that it is a sum of exponentials, hence log-convex.
+Sarkar–Singh's `|T(X,P)| = prod_i sum_j n_j^{n_i}` has factor function
+`sum_j n_j^k` — a sum of exponentials, with no `1 +`. So the identical argument
+applies, and the extremal law is a statement about an object that is **already in
+the literature and already counted**:
+
+| monoid | factor function | sum of exponentials? | exchange lemma |
+|---|---|---|---|
+| `T(X,P)` — Sarkar–Singh, **published** | `sum_j n_j^k` | yes | **holds**, 0 failures in 42,903 exchanges |
+| `sigma_E` — enabledness | `1 + sum_j n_j^k` | yes | **holds**, 0 failures |
+| `sigma_blind` — successor only | `sum_j (n_j+1)^k − (m−1)` | **no** | **fails**, 66 failures |
+
+This matters for positioning rather than for mathematics — the proof is
+unchanged. But a result about `T(X,P)` is checkable by anyone in that literature,
+whereas a result about an RPRM-internal count is not. The literature review found
+**no published extremal result for `T(X,P)` as a function of shape**: that
+literature studies *rank* as a function of shape, not *order*. That is a
+"none found after a recorded search", not a claim of first-ness.
+
+Verify with `python -I -B tools/fragility_literature.py`.
 
 ## 7. Result 5 — fragility is not monotone in compression
 
@@ -704,14 +778,21 @@ Reproduce with `python -I -B tools/fragility_predict.py`.
 | Extremal law under injective or permutation priors | **refuted for argmin**, 6 explicit counterexamples retained | Finite test |
 | Extremal law within a fixed domain size | **refuted**, `(2,2,2)` beats `(4,1,1)` at `n = 6, d = 4` | Finite test |
 | `sigma_blind` has no clean extremal law while `sigma_E` does | **ONE(comparison)** on `3 <= n <= 24`; general case **OPEN** | Finite test, complete enumeration |
-| Priority of `sigma_blind` | **ONE(citation)** — arXiv:1210.4775, arXiv:2006.04242 | Located |
-| Priority of `sigma_E` | **NONE found after a stated single-pass search** | Not a novelty claim |
+| Priority of `sigma_blind`, uniform partitions | **ONE(citation)** — Cicalò–Fernandes–Schneider, arXiv:1210.4775, Thm 1.1(i) | PDF read |
+| Priority of `sigma_blind`, non-uniform | **NONE found** — object in print (Pei–Zhou 2009) but no cardinality | Review, §4.1 |
+| Priority of the closed form `sigma_E` | **KNOWN in effect** — a one-line corollary of Sarkar–Singh Thm 6.1 via adjoin-a-sink, §4.1b | Written derivation + exact test, `n <= 14` |
+| Priority of the **enabledness condition** | **KNOWN** — it is Fernandes's *P-stability*, 1998, for injective order-preserving partial maps | Definition quoted, §4.1c |
+| Priority of the **extremal law**, `sigma_E` or `T(X,P)` | **NONE found after a real review** — that literature studies *rank* by shape, not *order* | [`LITERATURE-sigma-E.md`](LITERATURE-sigma-E.md); not a first-ness claim |
+| Extremal law holds for the **published** `T(X,P)` too | **ONE(theorem)**, same proof — factor `sum_j n_j^k` is a sum of exponentials | Written proof + 42,903-exchange test |
 | Applied corollary "uniform binning is worst" | **restricted**: holds under partial, total and idempotent priors; **fails** under bijective priors | Finite test |
 
 ## 10. What is owed next
 
-1. A real literature review for `sigma_E`, beyond one search pass. Until then no
-   novelty is claimed.
+1. ~~A real literature review for `sigma_E`, beyond one search pass.~~ **Done**,
+   [`LITERATURE-sigma-E.md`](LITERATURE-sigma-E.md). It cost us the count and the
+   condition and left the extremal law standing. Still owed from it: obtain
+   Pei–Zhou 2009 and Fernandes 1998 in the original rather than via restatement,
+   and check Sun, BMMS 36(1) 2013, which was not obtained.
 2. **The total-map and idempotent-map classes.** §8d and §8e prove the law for
    the uniform prior over *partial* maps. The total-map class is a different
    measure and the proof does not transfer: the factor function there is not
@@ -734,6 +815,16 @@ application; Section 5.2 shows the answer depends on the prior, and identifying
 the right prior is a modelling obligation that has not been discharged. It does
 not establish novelty — Section 8d proves a statement, which is a different thing
 from proving that nobody has proved it before.
+
+**And two things it used to claim, it no longer claims.** The closed form
+`sigma_E` is a corollary of a published theorem, not a new count (§4.1b). The
+enabledness condition is Fernandes's P-stability, named in 1998, not a new
+condition (§4.1c). Both were found by the review in
+[`LITERATURE-sigma-E.md`](LITERATURE-sigma-E.md), both were verified here rather
+than accepted on report, and both are recorded as corrections rather than
+quietly dropped. What the review left standing is the extremal law — and the
+correct phrasing for that remains *no published counterpart found after the
+search recorded in that file*.
 
 The extremal law is now a theorem **for every arity, for the uniform prior over
 partial maps, and for nothing else**. The bijective, injective-partial and

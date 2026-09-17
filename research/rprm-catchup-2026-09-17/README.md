@@ -70,9 +70,10 @@ fraction.
 
 ### Priority, and the result it produced
 
-The classical partition-preserving transformation monoid is Pei's, enumerated in
-arXiv:2006.04242 and — for the partial, uniform case — arXiv:1210.4775 with order
-`(m(n+1)^n - m + 1)^m`. **Its condition is successor agreement only, with no
+The classical partition-preserving transformation monoid is Pei's, enumerated for
+arbitrary finite partitions by **Sarkar–Singh**, arXiv:2006.04242, and — for the
+partial, uniform case — by **Cicalò–Fernandes–Schneider**, arXiv:1210.4775, with
+order `(m(n+1)^n - m + 1)^m`. **Its condition is successor agreement only, with no
 condition on the domain.** RPRM's enabledness condition cuts out a strictly
 smaller submonoid. Deriving the classical count independently reproduces the
 published order exactly in all 22 cases checked, which verifies the
@@ -86,16 +87,35 @@ And then the thing nobody planned. Over the same 231 `(n, m)` cells with
 `3 <= n <= 24`, the classical monoid has **no clean extremal shape — 14 argmax
 and 41 argmin exceptions** — while the enabledness-enforced submonoid has an
 exact one with **zero exceptions in 903 cells to `n = 45`**. Where they disagree
-the extremal profiles **invert**, first at `n = 11, m = 9`. *Finite test,
-complete enumeration in the stated range. Not a theorem; the general case is
-OPEN both ways.*
-
-`sigma_blind` priority: **ONE(citation)**. `sigma_E` priority: **NONE found after
-a stated single-pass search** — an admission of what was searched, not a novelty
-claim. A real review is still owed.
+the extremal profiles **invert**, first at `n = 11, m = 9`. *The `sigma_E` half is
+now a theorem; what stays OPEN is a characterisation of which cells the classical
+monoid fails in.*
 
 Reproduce with `python -I -B tools/fragility.py`,
 `tools/fragility_hostile.py`, `tools/fragility_priority.py`.
+
+### The literature review, and what it cost
+
+[`LITERATURE-sigma-E.md`](LITERATURE-sigma-E.md) is the real review that the
+single-pass search had left owed. **It went against us on two of four questions,
+and that is recorded rather than buried.**
+
+| Question | Verdict |
+|---|---|
+| Closed form `sigma_E` | **Not new.** A one-line corollary of Sarkar–Singh Thm 6.1: adjoin a sink `*` as a singleton block and `sigma_E(P) = \|T(X+{*}, P+{{*}})\| / (n+1)`. Verified exactly on all 507 profiles to `n = 14` |
+| The enabledness condition | **Not new.** It is Fernandes's **P-stability** (1998) — "if a point is in the domain, so is its whole block" — known for injective order-preserving partial maps |
+| `sigma_blind`, uniform | **Published**, CFS Thm 1.1(i). Non-uniform: object in print (Pei–Zhou 2009), no cardinality found |
+| The **extremal law** | **No published counterpart found.** That literature studies *rank* as a function of shape, never *order*. Not a first-ness claim — a recorded search |
+
+One correction it forced: arXiv:1210.4775 is **Cicalò–Fernandes–Schneider**, not
+Fernandes–Quinteiro, as earlier revisions here said.
+
+And one thing it gained. The proof needs only that the factor function is a sum
+of exponentials. Sarkar–Singh's `|T(X,P)| = prod_i sum_j n_j^{n_i}` has factor
+`sum_j n_j^k` — also a sum of exponentials. **So the same proof gives the extremal
+law for the published total-map monoid**, an object anyone in that literature can
+check, rather than only for an RPRM-internal count. Verify with
+`python -I -B tools/fragility_literature.py`.
 
 **Explicitly not picked**, with reasons given in Chapter 12: BSD (already
 committed elsewhere, and on HOLD at an exact contradiction); the enabledness
@@ -117,6 +137,9 @@ python -I -B tools/fragility_hostile.py  all five hostile cases, restricted oper
                                          classes, fixed-domain slices, search to n = 45
 python -I -B tools/fragility_priority.py prior-art separation, enabledness price,
                                          two-monoid extremal comparison, subset sums
+python -I -B tools/fragility_literature.py  the published reduction: Sarkar-Singh Thm 6.1
+                                         against brute force, the adjoin-a-sink identity,
+                                         and the exchange lemma on the published T(X,P)
 python -I -B tools/fragility_exchange.py the exchange lemma, 5.7M exchanges to n = 40
 python -I -B tools/fragility_critical.py targeted attack on the tightest family
 python -I -B tools/fragility_limit.py    the cosh^2(1) asymptotic
