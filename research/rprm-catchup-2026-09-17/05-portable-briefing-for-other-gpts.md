@@ -243,8 +243,9 @@ arity 1 and `n <= 3` at arity 2.
 **Null control, declared before running, and it held.** The discrete partition
 must give `sigma_1 = (n+1)^n` exactly, i.e. `F = 0`. Verified `n = 1..8`.
 
-**Open conjecture** — exhaustive search, `2 <= n <= 45`, every `m`, every
-profile, **903 cells, zero counterexamples**: for fixed `n` and block count `m`,
+**The extremal law.** First found by exhaustive search — `2 <= n <= 45`, every
+`m`, every profile, 903 cells, zero counterexamples — and **since proved** (the
+theorem is stated and proved further down). For fixed `n` and block count `m`,
 
 ```text
 argmax sigma_1 = (n-m+1, 1, 1, ..., 1)     maximally unequal
@@ -311,23 +312,52 @@ while `(3,1)` admits only 6. State the regime or do not state the corollary.
    `(2,2,2)` beats `(4,1,1)`. The law is about the aggregate over domain sizes,
    not about every slice.
 
-**The reduction, and the only open problem worth handing a combinatorialist.**
-The extremal law follows from one local statement:
+**The extremal law is a theorem. Here is the proof; it is short.** Write
+`S_k(p) = sum_j n_j^k` and `f_p(k) = 1 + S_k(p)`, so `sigma_E(p) = prod_i
+f_p(n_i)`. The profile plays two roles — it supplies the **bases** inside `f_p`
+and the **exponents** at which `f_p` is evaluated — and the proof is to separate
+them. Let `q` be `p` with blocks `a >= b >= 2` replaced by `a+1, b-1`.
 
-> **Exchange lemma (conjecture).** If `C` has blocks of sizes `a >= b` with
-> `b >= 2` and `C'` replaces them by `a+1, b-1`, then `sigma_E(C') > sigma_E(C)`.
+1. *Bases.* `(a+1, b-1)` majorises `(a, b)` and `x -> x^k` is convex, so
+   `S_k(q) >= S_k(p)` for all `k >= 1`, strictly for `k >= 2` (Karamata). Hence
+   `f_q >= f_p` **pointwise**, so the spectator factors need no bound at all.
+2. *Exponents.* `f_q(k) = e^{k·0} + sum_j e^{k ln q_j}` is a sum of exponentials,
+   hence **log-convex** in `k` — the constant `1` is the `e^{k·0}` term and the
+   result is false without it. For convex `h = log f_q` and `a >= b`, the
+   interval `[a, a+1]` lies weakly right of `[b-1, b]`, so
+   `f_q(a+1) f_q(b-1) >= f_q(a) f_q(b)`.
+3. Chain: `sigma_E(q) >= (prod_c f_q(c)) f_q(a) f_q(b) > sigma_E(p)`, strict
+   because `a >= 2`.
 
-The exchange order on profiles of fixed `(n, m)` is the majorisation order, whose
-unique max is `(n-m+1,1,...,1)` and unique min is balanced — so the lemma implies
-both halves at once. **Half is proved:** with `S_k = sum_j n_j^k`, Karamata gives
-`S'_k >= S_k`, strict for `k >= 2`, so every unchanged block's factor weakly
-increases and the grown block's strictly increases. What remains is bounding the
-one shrinking factor `(1 + S'_{b-1})`; the crude sandwich is lossy there by
-`(1+m)^2`. Evidence: **5,686,463 exchanges, `n = 4..40`, zero non-increases**,
-tightest ratio 1.000678 at `(26,7,7) -> (26,8,6)`. The tight family always has
-the same shape — a large spectator plus two *equal* blocks splitting — and was
-attacked directly to spectator size **100,000** with zero refutations. A proof
-must work in that regime.
+> **Theorem (exchange).** `sigma_E(q) > sigma_E(p)` strictly.
+> **Corollary (extremal law).** Unique max `(n-m+1,1,...,1)`, unique min balanced.
+
+The corollary needs no lattice theory: an unbalanced profile admits a reverse
+exchange that strictly decreases, a non-maximally-unequal one admits a forward
+exchange that strictly increases, and both iterations terminate.
+
+**Every arity, via convex order.** At arity `r` the exponents are products, so
+step 2 needs `sum_T phi(e'_T) >= sum_T phi(e_T)` for all convex `phi`.
+Majorisation is the wrong frame — it is not additive over disjoint unions, and
+the natural cell decomposition of the tuples *is* a disjoint union — but the
+`sum phi` inequality is additive. Read an `r`-tuple as `r` independent draws,
+condition on which coordinates hit the changed blocks and on the spectator
+product; each single draw moves up in convex order, convex order is closed under
+multiplication by independent nonnegative factors and under nonnegative scaling,
+and summing over cells finishes it. *ONE(theorem), written proof, all arities.*
+
+**Why the classical monoid lacks the law — the mechanism.** Its factor function
+is `sum_j (n_j+1)^k - (m-1)`: a sum of exponentials **minus a positive
+constant**, which is not log-convex. Step 2's hypothesis is simply false there.
+7,488 violations in 25,702 instances, worst ratio 0.1357, concentrated in exactly
+the many-block mostly-singleton profiles where `sigma_blind` breaks the extremal
+law. Enabledness removes the `-1` per block, and the `-1` per block is what was
+breaking it.
+
+**Coverage boundary, which matters.** This is a theorem about the **uniform prior
+over partial maps** and nothing else. Under bijective priors the argmin half is
+**false**; within a fixed domain size it is **false**; the total-map and
+idempotent classes are still conjectures the proof does not reach.
 
 **One exact asymptotic, ONE(constant).** `sigma_E(j+1,j-1)/sigma_E(j,j) ->
 cosh^2(1) = 2.381097845...`, since `((j-1)/(j+1))^{j±1} -> e^{-2}` gives
@@ -336,9 +366,8 @@ cosh^2(1) = 2.381097845...`, since `((j-1)/(j+1))^{j±1} -> e^{-2}` gives
 worse than its neighbour by a **fixed factor** that does not vanish as `n` grows.
 
 **Done conditions and current state.** ONE(formula) for `sigma_a`, all arities,
-written proof — **achieved**. ONE(profile) for each extremal — **still OPEN**,
-but now reduced to the exchange lemma above, with the Karamata half proved and
-the hard half isolated to one named family. Priority —
+written proof — **achieved**. ONE(profile) for each extremal — **achieved**, see
+the theorem above; the coverage boundary is the prior, not the arity. Priority —
 **ONE(citation)** for the classical monoid, **NONE-after-stated-search** for the
 enabledness-enforced one. A real literature review — **owed**. An applied `rho`
 computed for one published reduced model of a partial system — **owed**, and it

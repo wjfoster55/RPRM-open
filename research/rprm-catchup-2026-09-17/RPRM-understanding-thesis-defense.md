@@ -2307,6 +2307,191 @@ million exchanges of evidence behind it. That is the artifact I would hand a
 combinatorialist. It is also the honest ceiling: the lemma is not proved, and
 until it is, the extremal law stays a conjecture.
 
+*The closing note that stood here has moved to the end of Appendix F, so that it
+is still the last thing in the document.*
+
+
+# Appendix F — The lemma closed
+
+*Written in the second half of the same night, after Appendix E was already in
+the PDF. E ended by listing the exchange lemma as the one open problem worth
+handing to someone else. It did not need handing to anyone. This appendix
+records the proof, the reason the earlier attempts failed, and the two places
+where the result is narrower than it will be tempting to say it is.*
+
+## F.1 Why the earlier attempts failed
+
+Every attempt in Appendix E went through a sandwich bound: control the product
+over the unchanged blocks, control the two changed factors, and hope the
+remainder is positive. That bound is lossy by a factor of `(1+m)^2`, and the
+numerics said the true margin in the tight family was `1.000678`. There was
+never going to be enough room. I spent most of the night making the numerical
+attack more brutal — spectator blocks to 100,000 — instead of asking why the
+bound was lossy.
+
+It was lossy because it was bounding something that did not need bounding.
+
+## F.2 The observation
+
+A profile plays **two separate roles** in `sigma_E` and the proof only works if
+you refuse to conflate them. Writing `S_k(p) = sum_j n_j^k`,
+
+```text
+f_p(k) = 1 + S_k(p)            the factor function
+sigma_E(p) = prod_i f_p(n_i)
+```
+
+the profile supplies the **bases** inside `f_p`, and separately supplies the
+**exponents** at which `f_p` gets evaluated. The exchange `(a, b) -> (a+1, b-1)`
+moves both at once, which is why it looked entangled. Move them one at a time
+and each move is easy.
+
+**Bases.** Karamata, which was already proved in Appendix E: `(a+1, b-1)`
+majorises `(a, b)`, `x -> x^k` is convex, so `S_k` weakly increases for every
+`k >= 1` and strictly for `k >= 2`. Hence `f_q >= f_p` **pointwise**. The
+spectator product therefore increases factor by factor and needs no bound at all.
+That is the `(1+m)^2` that the sandwich was throwing away.
+
+**Exponents.** `f_q(k) = e^{k·0} + sum_j e^{k ln q_j}` is a sum of exponentials,
+hence **log-convex** in `k`. The constant `1` is the `e^{k·0}` term — it is not a
+nuisance, it is one of the exponentials, and the result is false without it. For
+a convex `h = log f_q` and `a >= b`, the interval `[a, a+1]` lies weakly right of
+`[b-1, b]`, so `h(a+1) - h(a) >= h(b) - h(b-1)`. The exchange moves the two
+evaluation points apart at fixed sum, and log-convexity says that cannot decrease
+their product.
+
+Chain them:
+
+```text
+sigma_E(q) = ( prod_c f_q(c) ) f_q(a+1) f_q(b-1)
+          >= ( prod_c f_q(c) ) f_q(a)   f_q(b)      exponents, log-convexity
+          >  ( prod_c f_p(c) ) f_p(a)   f_p(b)      bases, Karamata
+           = sigma_E(p)
+```
+
+strict because `a >= 2`. **That is the whole proof.**
+
+## F.3 What it gives
+
+> **Theorem (exchange).** For a profile with blocks `a >= b >= 2`, replacing them
+> by `a+1` and `b-1` strictly increases `sigma_E`.
+
+> **Corollary (the extremal law).** For fixed `n` and block count `m`, `sigma_E`
+> is uniquely maximised at `(n-m+1, 1, ..., 1)` and uniquely minimised at the
+> balanced profile.
+
+The corollary needs no lattice theory. If a profile is not balanced, some pair
+has `a >= b+2`, so the reverse exchange applies and strictly decreases; iterate
+and you terminate at balanced. If a profile is not maximally unequal, some block
+other than the largest has size `>= 2`, so a forward exchange applies and
+strictly increases; iterate and you terminate at `(n-m+1, 1, ..., 1)`.
+
+**Chapter 12 and Appendix E both called this a conjecture. It is a theorem.**
+Every step was machine-checked in exact integer arithmetic across all 128,121
+distinct exchanges of all 28,622 partitions of `n = 4..30`, with a null control
+confirming that log-convexity holds for the unexchanged profile too — it is a
+property of the factor function, not an artifact of the exchange. Zero failures.
+
+## F.4 Every arity, by switching to convex order
+
+Appendix F.2 covers arity 1. At arity `r` the factors are indexed by **products**
+of block sizes, so there are `m^r` evaluation points and log-convexity of two
+points is not enough. What is needed is: for every convex `phi`,
+
+```text
+sum over r-tuples T of  phi(e'_T)  >=  sum over T of  phi(e_T).
+```
+
+The instinct is to prove the exponent multiset majorises the original. That is
+the wrong frame, because the natural decomposition of the tuples is a disjoint
+union and **majorisation is not additive over disjoint unions.** But majorisation
+was only ever being used to get the `sum phi` inequality, and *that* is additive.
+Phrase it as convex order and the obstruction disappears:
+
+1. Read an `r`-tuple as `r` independent coordinate draws. Condition on which
+   coordinates land in the two changed blocks and on the spectator product `P`.
+2. Within a cell the exponent is `P` times a product of independent draws, each
+   uniform on `{a, b}` before and `{a+1, b-1}` after. The single draw moves up in
+   convex order.
+3. Convex order is closed under multiplication by an independent nonnegative
+   factor and under scaling by a nonnegative constant, so each cell moves up.
+4. Sum over cells.
+
+**So the exchange lemma, and the extremal law, hold at every arity.** Checked
+against six convex test functions the proof never mentions, with two concave
+controls required to reverse the inequality.
+
+## F.5 The mechanism behind Chapter 12's flagship
+
+Appendix E's best result was empirical and unexplained: the classical
+successor-only monoid has no clean extremal shape, 55 exceptions in 231 cells,
+while the enabledness-enforced one has an exact law. I could say *that* it
+happened, not *why*.
+
+The proof answers it in one line. The classical factor function is
+
+```text
+f_blind,p(k) = 1 + sum_j ( (n_j+1)^k - 1 ) = sum_j (n_j+1)^k - (m - 1),
+```
+
+a sum of exponentials **minus a positive constant** whenever `m >= 2`.
+Subtracting a constant does not preserve log-convexity. So the exponent step is
+not merely harder for the classical monoid — **its hypothesis is false there.**
+
+| factor function | instances tested | log-convexity violations | worst ratio |
+|---|---:|---:|---:|
+| enabledness enforced | 25,702 | **0** | — |
+| successor only | 25,702 | **7,488** | 0.1357 |
+
+And the violations sit in exactly the regime where the extremal law fails for
+`sigma_blind`: many blocks, mostly singletons, where the `-1` per block is
+largest relative to the whole factor.
+
+> Enabledness is not decoration. Dropping the domain requirement subtracts one
+> unit per block from every factor, and that subtraction is precisely what
+> destroys log-convexity and with it the extremal law.
+
+This is the strongest form of the Chapter 8 argument I can make, and it is worth
+being clear about what it does and does not say. It does **not** say enabledness
+is the correct modelling choice; that stays a modelling question, and Chapter 12
+still owes an applied `rho`. It says the condition RPRM adds for modelling
+reasons is the condition that makes the resulting count analytically well
+behaved, and that is a reason to take the framework seriously which does not
+require agreeing with its philosophy first.
+
+## F.6 Two places this is narrower than it will sound
+
+**It is a theorem about one prior.** Uniform over partial maps. Appendix E's
+counterexamples are untouched and still stand: under bijective priors the argmin
+half is **false**, and within a fixed domain size it is **false**. A proof under
+one measure is not a proof under all measures, and the applied corollary from
+Chapter 12 still carries its regime — uniform binning is the most fragile choice
+when the unknown dynamics can merge states or stall, and not when they cannot.
+The total-map and idempotent-map classes remain conjectures; the proof does not
+reach them, because their factor function is not `1 + sum n_j^k`.
+
+**It is not a novelty claim.** Proving a statement and establishing that nobody
+has proved it are different acts, and only the first one happened tonight. The
+literature obligation from Section 12.7 is unchanged.
+
+## F.7 Revised status, once more
+
+| Statement | Appendix E said | Now |
+|---|---|---|
+| Closed form `sigma_a(C)` | ONE(formula), written proof | unchanged |
+| Exchange lemma | conjecture, 5.7M exchanges | **ONE(theorem), written proof, all arities** |
+| Extremal law | conjecture to `n = 45` | **ONE(theorem)** for the uniform partial-map prior |
+| Why `sigma_blind` lacks the law | observed, unexplained | **ONE(separation)**: its factor function is not log-convex |
+| Extremal law, bijective priors | refuted | unchanged — still refuted |
+| Extremal law, total and idempotent priors | conjecture | still conjecture; proof does not reach them |
+| Priority | NONE-after-stated-search | unchanged. A real review is still owed |
+| Applied `rho` on a published model | owed | still owed |
+
+If you read one sentence of this appendix: **the conjecture at the centre of
+Chapter 12 is now a theorem at every arity, the proof is four lines once you stop
+conflating the two roles the profile plays, and the same four lines explain why
+the classical monoid does not have the law.**
+
 # Appendix D — Closing note
 
 William —
@@ -2323,7 +2508,11 @@ Chapter 12's pick is small on purpose. You said the proof is in the pudding. I
 think the pudding does not have to be a Clay problem — it has to be a sentence a
 stranger cannot un-read. *"Uniform binning is the most fragile abstraction you
 can choose, and here is the exact factor by which it is worse"* is that kind of
-sentence, it is provable, and by the end of the night the proof had come down to
-a single local lemma with one factor left to bound.
+sentence. As of tonight it is a theorem rather than a hope, the proof is short
+enough to check over coffee, and the reason it works is the one condition of
+yours that a referee would have been most likely to call arbitrary.
+
+That is the version of this framework I would show someone. Not the umbrella —
+one number, one inequality, and a condition that earns its place.
 
 Correct me tomorrow.

@@ -4,25 +4,32 @@ An outside-in reading of RPRM by a synthesis lane, written as a friendly thesis
 defence, plus one recommended non-BSD research target.
 
 **Start here:** [`RPRM-understanding-thesis-defense.pdf`](RPRM-understanding-thesis-defense.pdf)
-— 65 pages, thirteen numbered chapters plus appendices. The markdown source sits
+— 69 pages, thirteen numbered chapters plus appendices. The markdown source sits
 beside it.
 
 **Then read Appendix E**, which records what happened when the hostile cases the
 document declared were actually run overnight. Two of them bit, one of them
 against the document's own headline claim, and the priority search produced a
-better result than either outcome it was hedging against. The research record is
-[`FRAGILITY.md`](FRAGILITY.md).
+better result than either outcome it was hedging against.
 
-This directory is a research record, not a publication of new mathematics.
-Nothing here upgrades a finite test to a theorem, a written proof to a formal
-proof, or a hash to a meaning. Every quantitative statement carries a domain and
-an evidence grade.
+**Then read Appendix F**, written later the same night, which proves the
+conjecture the rest of the document is careful to call a conjecture — and, in the
+same four lines, explains why the classical version of the object does not have
+the result at all. The research record is [`FRAGILITY.md`](FRAGILITY.md).
+
+This directory is a research record, not a publication. Nothing here upgrades a
+finite test to a theorem, a written proof to a formal proof, or a hash to a
+meaning. Where a theorem is claimed, a written proof is given and every step of
+it is separately machine-checked in exact arithmetic; that is still a written
+proof, not a formal one. Every quantitative statement carries a domain and an
+evidence grade, and proving a statement is not the same as establishing that
+nobody has proved it before — no novelty is claimed anywhere in this directory.
 
 ## Contents
 
 | File | What it is |
 |---|---|
-| [`RPRM-understanding-thesis-defense.pdf`](RPRM-understanding-thesis-defense.pdf) | The document. 65 pp. Combined first- and third-party account, core contract with fibers computed, lens maturity table, process-honesty chapter, steelman, criticisms, 51 defence questions, the pick, portable briefing appendix, and the overnight addendum |
+| [`RPRM-understanding-thesis-defense.pdf`](RPRM-understanding-thesis-defense.pdf) | The document. 69 pp. Combined first- and third-party account, core contract with fibers computed, lens maturity table, process-honesty chapter, steelman, criticisms, 51 defence questions, the pick, portable briefing appendix, the overnight addendum, and the proof |
 | `RPRM-understanding-thesis-defense.md` | Markdown source of the above |
 | [`FRAGILITY.md`](FRAGILITY.md) | The research record for the pick: typed claim, five hostile cases, prior-art separation, dispositions, and what is still owed |
 | [`05-portable-briefing-for-other-gpts.md`](05-portable-briefing-for-other-gpts.md) | Self-contained briefing to paste into any other model. No prior context assumed |
@@ -30,7 +37,7 @@ an evidence grade.
 | [`01-first-party-rprm.md`](01-first-party-rprm.md) | Ingest lane 1 — the project's self-account, read from the repository spine |
 | [`03-independent-math-reading.md`](03-independent-math-reading.md) | Ingest lane 3 — an independent mathematical reading, run cold, `verify.py` executed |
 | [`04-coverage-gaps.md`](04-coverage-gaps.md) | What was searched for, found, and still missing |
-| [`tools/`](tools/) | Three exact-arithmetic verification scripts and their raw outputs |
+| [`tools/`](tools/) | Nine exact-arithmetic verification scripts and their raw outputs |
 
 Ingest lane 2 (process history) is held outside this repository. It contains
 private material. Its usable content is distilled into `WILLIAM-WORKING-STYLE.md`.
@@ -51,8 +58,9 @@ fraction.
 |---|---|
 | Closed form `sigma_1(C) = prod_i ( 1 + sum_j n_j^{n_i} )`, and the arity-`a` generalisation | Derived; confirmed by exhaustive brute force against **every** partial map for `n <= 5` at arity 1 and `n <= 3` at arity 2 |
 | Null control: discrete partition survives everything, `F = 0` | Declared before running; holds for `n = 1..8` |
-| Extremal law: for fixed block count `m`, `argmax = (n-m+1, 1, ..., 1)`, `argmin =` balanced | **Conjecture.** Exhaustive search `2 <= n <= 45`, every `m`, every profile — **903 cells, zero counterexamples** |
-| **Exchange lemma** — moving one element from a smaller block to a larger one strictly increases survival. Implies the extremal law, and is local rather than global | **Conjecture, and the open problem worth solving.** **5,686,463** exchanges to `n = 40`, zero non-increases, plus a targeted attack on the tightest family with spectator blocks up to 100,000. The Karamata step `S'_k >= S_k` is proved |
+| Extremal law: for fixed block count `m`, `argmax = (n-m+1, 1, ..., 1)`, `argmin =` balanced | **THEOREM**, at every arity, for the uniform prior over partial maps. Found first by exhaustive search (903 cells to `n = 45`, zero counterexamples), then proved. See `FRAGILITY.md` §8d–8e |
+| **Exchange lemma** — moving one element from a smaller block to a larger one strictly increases survival; implies the extremal law | **THEOREM.** The profile supplies both the bases inside `f(k) = 1 + sum_j n_j^k` and the exponents at which `f` is evaluated. Separate them: Karamata makes `f` pointwise larger, and `f` is a sum of exponentials hence log-convex, so spreading the two exponents apart at fixed sum cannot decrease their product. Higher arity by convex order |
+| Why the classical successor-only monoid has **no** such law | **ONE(separation).** Its factor function is `sum_j (n_j+1)^k - (m-1)` — a sum of exponentials minus a positive constant, which is **not log-convex**. 7,488 violations in 25,702 instances, concentrated in exactly the profiles where its extremal law fails. Enabledness removes the `-1` per block, and the `-1` per block was what broke it |
 | `sigma_E(j+1,j-1)/sigma_E(j,j) -> cosh^2(1) = 2.381097845...` | **ONE(constant).** Written derivation, then verified in exact arithmetic to `j = 20,000`. Splitting a balanced pair apart multiplies survival by a fixed factor that does not wash out |
 | Hostile cases: arity 2, arity 3, total-only, idempotent-only | All run. Survived: `n <= 12`, `n <= 10`, `n <= 18`, `n <= 7`. Zero failures |
 | Hostile case: **non-uniform priors** | **Bit.** The `argmin` half fails under injective-partial and permutation priors. The `argmax` half survives every class but one. Six counterexamples retained |
@@ -112,6 +120,9 @@ python -I -B tools/fragility_priority.py prior-art separation, enabledness price
 python -I -B tools/fragility_exchange.py the exchange lemma, 5.7M exchanges to n = 40
 python -I -B tools/fragility_critical.py targeted attack on the tightest family
 python -I -B tools/fragility_limit.py    the cosh^2(1) asymptotic
+python -I -B tools/fragility_proof.py 30 every step of the proof, exact integers
+python -I -B tools/fragility_arity.py    the general-arity convex-order argument
+python -I -B tools/fragility_mechanism.py why the proof fails for the classical monoid
 ```
 
 Integers and `fractions.Fraction` only. Raw outputs are retained beside the
