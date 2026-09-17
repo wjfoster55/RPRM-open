@@ -80,17 +80,43 @@ F3 keeps the two V=1 NOs and returns the multi-cell rows to UNRESOLVED plus
 limited exact. Their Q=0 observations remain; they are not a general V≥2
 certificate.
 
-## Remaining question (still OPEN)
+## Why V≥2 has no cheap static NO
 
-Can two or more cells walk toward a gap by repeated same-row injection
-without a wall catwalk, and can that travel be bounded before height is
-lost? The hostile scene shows that injection can create a one-cell bridge
-into the divider gap in three frames. A general V≥2 static NO is therefore
-a new proof obligation, not a corollary of isolation. Finite two-cell
-probes are recorded in `results/two_cell_travel.json` when tests run; they
-do not close F3-V2.
+A cheap certificate here means a cell-graph over-approximation: cells, not
+n-tuples of simultaneous occurrences. Two natural graphs were checked.
+
+**Full soup.** Close catwalk travel under wall-supported injection *and*
+water-as-floor (one soup cell standing on another). Token count is ignored,
+so two start cells generate the same stacking laterals as an unbounded
+column. On the admitted 64×48 divider container this soup meets `R_catwalk`
+for every frozen-panel scene with n≥2 and Layer A UNRESOLVED, and for the
+hostile pair, the midair pair, and the far-shelf pair. It is sound as a
+“might reach” test and therefore never yields CERTIFIED_NO. It is not a
+useful V≥2 bound.
+
+**Wall-only soup.** Same closure, but the injector must be wall-supported.
+The hostile pair still meets `R_catwalk` (distinguishing case stays
+UNRESOLVED). Isolated shelves miss `R_catwalk` and would look like NOs.
+Packed-column YES scenes miss it too: `A_w4_x26_V180` and `C_adj4_V60`
+have oracle Q=1, first breaches 31 and 15, and wall-only `meets=false`.
+Using that graph as CERTIFIED_NO is a false NO. Packed-column creep is
+water-as-floor, which this graph refuses to admit.
+
+Those two graphs exhaust the cheap occupancy-ignoring options that stay
+inside F2’s move set. Including water floors makes the soup too large to
+NO; excluding them makes it too small to be sound on the YES columns that
+already refute “gap-adjacent” and that Layer B never decided. A bound that
+tracked the actual two tokens would be a 2-body rollout, which is limited
+exact under another name, not a partial-description certificate.
+
+Therefore official F3 routing freezes: after Layer A, n≥2 is UNRESOLVED.
+The hostile extra-walls/water pair remains the distinguishing case that
+any later V=2 story must admit as UNRESOLVED-then-exact-YES.
 
 ## Failed candidates kept
 
 - F2 `failed_gap_adjacent` — unsound (F2 panel false NOs). Not used.
 - F2 Layer B `V < sill_need` — refuted by the two-cell scene. Not used.
+- F3 full injection soup — sound, never NOs on this container. Not official.
+- F3 wall-only injection soup — useful on shelves, false-NO on packed YES.
+  Not official.

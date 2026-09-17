@@ -14,7 +14,7 @@
       ],
       "n_water": 2,
       "static": "UNRESOLVED",
-      "static_reason": "ISO:n_ge_2_support_injection_admitted",
+      "static_reason": "ISO:n_ge_2_no_cheap_static_no",
       "Qdyn": 1,
       "firstBreach": 3,
       "maxMonitored": 1
@@ -33,7 +33,7 @@
       ],
       "n_water": 2,
       "static": "UNRESOLVED",
-      "static_reason": "ISO:n_ge_2_support_injection_admitted",
+      "static_reason": "ISO:n_ge_2_no_cheap_static_no",
       "Qdyn": 0,
       "firstBreach": -1,
       "maxMonitored": 0
@@ -52,7 +52,7 @@
       ],
       "n_water": 2,
       "static": "UNRESOLVED",
-      "static_reason": "ISO:n_ge_2_support_injection_admitted",
+      "static_reason": "ISO:n_ge_2_no_cheap_static_no",
       "Qdyn": 0,
       "firstBreach": -1,
       "maxMonitored": 0
@@ -71,7 +71,7 @@
       ],
       "n_water": 2,
       "static": "UNRESOLVED",
-      "static_reason": "ISO:n_ge_2_support_injection_admitted",
+      "static_reason": "ISO:n_ge_2_no_cheap_static_no",
       "Qdyn": 0,
       "firstBreach": -1,
       "maxMonitored": 0
@@ -90,7 +90,7 @@
       ],
       "n_water": 2,
       "static": "UNRESOLVED",
-      "static_reason": "ISO:n_ge_2_support_injection_admitted",
+      "static_reason": "ISO:n_ge_2_no_cheap_static_no",
       "Qdyn": 0,
       "firstBreach": -1,
       "maxMonitored": 0

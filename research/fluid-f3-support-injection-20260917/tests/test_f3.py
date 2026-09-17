@@ -96,12 +96,15 @@ class TestHostileCasePreserved(unittest.TestCase):
             scene["walls"], scene["mass"], scene["monitor"],
             scene["W"], scene["H"], scene["thresh"],
             dx=scene["dx"], crest_y=scene["crest_y"],
+            audit_soups=True,
         )
         self.assertEqual(f3["n_water"], 2)
         self.assertEqual(f3["static"], "UNRESOLVED")
         self.assertEqual(
-            f3["isolation"]["reason"], "n_ge_2_support_injection_admitted",
+            f3["isolation"]["reason"], "n_ge_2_no_cheap_static_no",
         )
+        self.assertTrue(f3["full_soup"]["meets_R_catwalk"])
+        self.assertTrue(f3["wall_soup"]["meets_R_catwalk"])
         oracle = run_oracle(scene, "cut_exit")
         self.assertEqual(oracle["Qdyn"], 1)
         self.assertEqual(oracle["firstBreach"], 3)
@@ -263,6 +266,75 @@ class TestPanelStaticSoundness(unittest.TestCase):
         # Multi-cell former B-only NOs must not be restored as official static NO.
         for sid in ("D_shelf_isolated", "E_stack10_adj", "E_blob9_far"):
             self.assertIn(sid, unresolved_former_b)
+
+
+class TestNoCheapV2StaticNO(unittest.TestCase):
+    """Cell-graph soups cannot give a useful sound V>=2 static NO.
+
+    Full soup (water floors allowed) meets R_catwalk on every n>=2
+    A-unresolved frozen-panel row, so it never certifies NO.
+    Wall-only soup leaves the hostile pair uncertified-NO but false-NOs
+    packed-column YES scenes. Official routing therefore keeps n>=2
+    UNRESOLVED after Layer A.
+    """
+
+    def test_full_soup_never_nos_panel_or_probes(self):
+        panel = scenes.build_panel()
+        for scene in panel:
+            f3 = evaluate_f3(
+                scene["walls"], scene["mass"], scene["monitor"],
+                scene["W"], scene["H"], scene["thresh"],
+                dx=scene["dx"], crest_y=scene["crest_y"],
+                audit_soups=True,
+            )
+            if f3["n_water"] >= 2 and f3["A"]["verdict"] == "UNRESOLVED":
+                self.assertIsNotNone(f3["full_soup"], scene["id"])
+                self.assertTrue(
+                    f3["full_soup"]["meets_R_catwalk"],
+                    scene["id"],
+                )
+                self.assertEqual(f3["static"], "UNRESOLVED", scene["id"])
+        for item in (
+            ("hostile", HOSTILE_WATER, HOSTILE_WALLS),
+            ("midair", [(30, 34), (31, 34)], None),
+            ("shelf2", [(5, 11), (6, 11)], [(x, 12) for x in range(1, 16)]),
+        ):
+            scene = two_cell_scene(item[1], extra_walls=item[2], scene_id=item[0])
+            f3 = evaluate_f3(
+                scene["walls"], scene["mass"], scene["monitor"],
+                scene["W"], scene["H"], scene["thresh"],
+                dx=scene["dx"], crest_y=scene["crest_y"],
+                audit_soups=True,
+            )
+            self.assertTrue(f3["full_soup"]["meets_R_catwalk"], item[0])
+            self.assertEqual(f3["static"], "UNRESOLVED", item[0])
+
+    def test_wall_only_false_nos_packed_yes(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        for sid in ("A_w4_x26_V180", "C_adj4_V60"):
+            scene = panel[sid]
+            f3 = evaluate_f3(
+                scene["walls"], scene["mass"], scene["monitor"],
+                scene["W"], scene["H"], scene["thresh"],
+                dx=scene["dx"], crest_y=scene["crest_y"],
+                audit_soups=True,
+            )
+            self.assertEqual(f3["A"]["verdict"], "UNRESOLVED", sid)
+            self.assertFalse(f3["wall_soup"]["meets_R_catwalk"], sid)
+            self.assertTrue(f3["full_soup"]["meets_R_catwalk"], sid)
+            self.assertEqual(f3["static"], "UNRESOLVED", sid)
+            oracle = run_oracle(scene, "yes_exit")
+            self.assertEqual(oracle["Qdyn"], 1, sid)
+
+    def test_official_never_uses_refuted_b(self):
+        scene = hostile_scene()
+        f3 = evaluate_f3(
+            scene["walls"], scene["mass"], scene["monitor"],
+            scene["W"], scene["H"], scene["thresh"],
+            dx=scene["dx"], crest_y=scene["crest_y"],
+        )
+        self.assertEqual(f3["B_refuted"]["verdict"], "CERTIFIED_NO")
+        self.assertFalse(f3["static_reason"].startswith("B:"))
 
 
 class TestTwoCellTravelFinite(unittest.TestCase):

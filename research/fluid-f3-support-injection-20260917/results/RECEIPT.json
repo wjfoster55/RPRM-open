@@ -3,12 +3,12 @@
   "command": "python -I -B tests/test_f3.py -v",
   "python": "3.14.5",
   "node": "24.18.0",
-  "tests": 12,
+  "tests": 15,
   "failures": 0,
-  "elapsed_s": 6.963,
+  "elapsed_s": 32.421,
   "hostile_Qdyn": 1,
   "hostile_first_breach": 3,
   "layer_B_status": "REFUTED_preserved",
   "f3_isolation_status": "LIVE_on_n_eq_1",
-  "f3_v2_status": "OPEN"
+  "f3_v2_status": "NO_CHEAP_CELL_GRAPH_NO"
 }
