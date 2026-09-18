@@ -1,32 +1,18 @@
-# Return to William — F3 V≥2 freeze
+# Return to William — F3 token-aware cut
 
-F1 stays closed. Layer B stays refuted. No paper.
+F1 stays closed. Layer B stays refuted. No paper. Isolation is still the
+only new *static* NO.
 
-## Theorem on a stated domain
+Token-aware occupancy counts (class T, budget 50000 configs) give a
+cheap NO on isolated two-cell shelf/midair probes and do **not** give a
+cheap NO on `D_ledge_end28/30` or `D_sill_end25` (cap hit, hostile pair
+still not T-NO). Cycle exact (class E) stops those three ledges at 111,
+99, and 52 frames with Q=0, cheaper than paying H=300; hostile YES at
+frame 3.
 
-**Carrier:** pinned model B, unit occupancy, static walls, no sand/inflow,
-F2 64×48 divider container (and the 96×64 scale pair).  
-**Cheap certificate class:** occupancy-ignoring cell graphs using catwalk
-moves plus same-frame injection, with or without water-as-floor, ignoring
-how many tokens actually exist.
-
-On that class there is **no** static NO for n≥2 that is both sound on
-packed-column YES and useful on isolated Q=0 scenes while leaving the
-original hostile pair uncertified-NO.
-
-- Full soup (water floors on) meets `R_catwalk` on every n≥2 A-unresolved
-  frozen-panel row and on the hostile / midair / shelf two-cell probes.
-  Never CERTIFIED_NO.
-- Wall-only soup leaves the hostile pair UNRESOLVED, but false-NOs
-  `A_w4_x26_V180` and `C_adj4_V60` (oracle Q=1).
-
-Official F3 rule: Layer A, then isolation NO at n=1, else UNRESOLVED and
-limited exact. Isolation is still the only new static NO.
-
-## Distinguishing case
-
-Extra walls `(29,36),(30,36)`, water `(30,34),(31,34)`: Layer B still says
-NO; F3 stays UNRESOLVED; oracle YES at frame 3.
+OPEN: whether a complete T search on the n=15/25 ledges would meet
+`R_catwalk` or exhaust; packed-column YES still needs exact; no static
+injection-carry lemma.
 
 ## Replay
 

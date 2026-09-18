@@ -1,0 +1,64 @@
+{
+  "rows": [
+    {
+      "id": "D_ledge_end28",
+      "token_aware": {
+        "n_water": 15,
+        "max_n": 32,
+        "max_states": 50000,
+        "meets_R_catwalk": false,
+        "exhausted": false,
+        "budget_hit": true,
+        "skipped": false,
+        "skip_reason": null,
+        "states_expanded": 50000,
+        "states_seen": 245075,
+        "witness_depth": null,
+        "verdict": "UNRESOLVED",
+        "reason": "budget_hit",
+        "search": "best_first"
+      },
+      "static": "UNRESOLVED"
+    },
+    {
+      "id": "D_ledge_end30",
+      "token_aware": {
+        "n_water": 15,
+        "max_n": 32,
+        "max_states": 50000,
+        "meets_R_catwalk": false,
+        "exhausted": false,
+        "budget_hit": true,
+        "skipped": false,
+        "skip_reason": null,
+        "states_expanded": 50000,
+        "states_seen": 245231,
+        "witness_depth": null,
+        "verdict": "UNRESOLVED",
+        "reason": "budget_hit",
+        "search": "best_first"
+      },
+      "static": "UNRESOLVED"
+    },
+    {
+      "id": "D_sill_end25",
+      "token_aware": {
+        "n_water": 25,
+        "max_n": 32,
+        "max_states": 50000,
+        "meets_R_catwalk": false,
+        "exhausted": false,
+        "budget_hit": true,
+        "skipped": false,
+        "skip_reason": null,
+        "states_expanded": 50000,
+        "states_seen": 134110,
+        "witness_depth": null,
+        "verdict": "UNRESOLVED",
+        "reason": "budget_hit",
+        "search": "best_first"
+      },
+      "static": "UNRESOLVED"
+    }
+  ]
+}

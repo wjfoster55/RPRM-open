@@ -1,0 +1,37 @@
+{
+  "rows": [
+    {
+      "id": "D_ledge_end28",
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "stepsRun": 111,
+      "stop": "occ_cycle",
+      "cutReason": "token_state_repeat",
+      "sumActive": 141888,
+      "tokenStatesSeen": 111,
+      "wall_ms": 82
+    },
+    {
+      "id": "D_ledge_end30",
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "stepsRun": 99,
+      "stop": "occ_cycle",
+      "cutReason": "token_state_repeat",
+      "sumActive": 126464,
+      "tokenStatesSeen": 99,
+      "wall_ms": 87
+    },
+    {
+      "id": "D_sill_end25",
+      "Qdyn": 0,
+      "firstBreach": -1,
+      "stepsRun": 52,
+      "stop": "occ_cycle",
+      "cutReason": "token_state_repeat",
+      "sumActive": 49152,
+      "tokenStatesSeen": 52,
+      "wall_ms": 54
+    }
+  ]
+}

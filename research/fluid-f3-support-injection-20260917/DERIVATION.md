@@ -105,13 +105,56 @@ water-as-floor, which this graph refuses to admit.
 Those two graphs exhaust the cheap occupancy-ignoring options that stay
 inside F2’s move set. Including water floors makes the soup too large to
 NO; excluding them makes it too small to be sound on the YES columns that
-already refute “gap-adjacent” and that Layer B never decided. A bound that
-tracked the actual two tokens would be a 2-body rollout, which is limited
-exact under another name, not a partial-description certificate.
+already refute “gap-adjacent” and that Layer B never decided.
 
-Therefore official F3 routing freezes: after Layer A, n≥2 is UNRESOLVED.
-The hostile extra-walls/water pair remains the distinguishing case that
-any later V=2 story must admit as UNRESOLVED-then-exact-YES.
+Class T below tracks the actual token count as an occupancy over-approx
+(not exact `stepB`). Exhaustion can NO isolated n=2 probes; it does not
+cheaply decide the n=15/25 horizon-pay ledges. Class E is limited exact
+with a token-state cycle stop.
+
+Therefore official F3 *static* routing freezes: after Layer A, n≥2 is
+UNRESOLVED. The hostile extra-walls/water pair remains the distinguishing
+case that any later V=2 story must admit as UNRESOLVED-then-exact-YES.
+
+## Token-aware occupancy (class T)
+
+Nulls were frozen in `NULLS.md` before this search.
+
+State: exactly `n` occupied cells. One token relocates per edge along an
+occupancy-respecting model-B move (fall if empty below; else splash).
+Frame, velocity, stamp, and scan order are ignored, so the graph
+over-approximates `stepB`. CERTIFIED_NO only if the graph is exhausted
+inside `MAX_STATES=50000` with no intersection with `R_catwalk`. A meet,
+a cap hit, or `n>32` is UNRESOLVED. Never YES.
+
+- Hostile pair: meets `R_catwalk` (T-H1). Not a false NO.
+- `D_ledge_end31`: already on `R_catwalk` at t=0 (T-H5).
+- Isolated n=2 shelf and midair: exhaust, T-NO (T-H4, extra midair).
+- Packed YES `A_w4_x26_V180`, `C_adj4_V60`: `n>MAX_N`, skipped (T-H3).
+- Horizon-pay `D_ledge_end28/30`, `D_sill_end25`: 50000 expansions, no
+  meet, not exhausted (T-H2). No cheap T-NO. Whether a complete T search
+  would meet (too coarse) or exhaust (a T-NO that is not cheap) is OPEN.
+
+Official static routing does not use T. This is not `sill_need`.
+
+## Token-state cycle exact (class E)
+
+Same pinned `stepB` bytes, F3 driver. After each frame hash occupancy,
+milli-quantized `vx,vy`, frame parity, and `dirtyNext`. Stop on monitor
+YES, Layer-A empty, exact token-state repeat, or `t=H`. A repeat with no
+prior breach is `Q=0` for this updater.
+
+On the three horizon-pay rows this is cheaper than paying H=300:
+
+| scene | stepsRun | stop | Q |
+|---|---|---|---|
+| `D_ledge_end28` | 111 | occ_cycle | 0 |
+| `D_ledge_end30` | 99 | occ_cycle | 0 |
+| `D_sill_end25` | 52 | occ_cycle | 0 |
+
+Hostile YES at frame 3; `D_ledge_end31` and `A_w4_x26_V180` YES before
+any cycle. E is the official F3 *continuation* after A+isolation, not a
+static certificate.
 
 ## Failed candidates kept
 
@@ -120,3 +163,5 @@ any later V=2 story must admit as UNRESOLVED-then-exact-YES.
 - F3 full injection soup — sound, never NOs on this container. Not official.
 - F3 wall-only injection soup — useful on shelves, false-NO on packed YES.
   Not official.
+- F3 class T on n=15/25 horizon-pay ledges — budgeted occupancy search
+  hits 50000 states without a NO. Not a cheap certificate for those rows.

@@ -409,5 +409,132 @@ class TestTwoCellTravelFinite(unittest.TestCase):
         out.write_text(json.dumps({"family": rows}, indent=2) + "\n", encoding="utf-8")
 
 
+class TestTokenAwareOccupancy(unittest.TestCase):
+    """Class T: n-token occupancy over-approx. Frozen nulls in NULLS.md.
+
+    Official static routing is unchanged: T is never a Layer-B revival
+    and never a free static NO.
+    """
+
+    def _t(self, scene):
+        return evaluate_f3(
+            scene["walls"], scene["mass"], scene["monitor"],
+            scene["W"], scene["H"], scene["thresh"],
+            dx=scene["dx"], crest_y=scene["crest_y"],
+            audit_token_aware=True,
+        )
+
+    def test_hostile_meets_not_t_no(self):
+        scene = hostile_scene()
+        f3 = self._t(scene)
+        self.assertEqual(f3["static"], "UNRESOLVED")
+        t = f3["token_aware"]
+        self.assertTrue(t["meets_R_catwalk"], t)
+        self.assertNotEqual(t["verdict"], "CERTIFIED_NO")
+
+    def test_end31_yes_meets(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        f3 = self._t(panel["D_ledge_end31"])
+        self.assertEqual(f3["static"], "UNRESOLVED")
+        t = f3["token_aware"]
+        self.assertTrue(t["meets_R_catwalk"], t)
+        self.assertNotEqual(t["verdict"], "CERTIFIED_NO")
+
+    def test_horizon_pay_ledges_no_cheap_t_no(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        rows = []
+        for sid in ("D_ledge_end28", "D_ledge_end30", "D_sill_end25"):
+            f3 = self._t(panel[sid])
+            t = f3["token_aware"]
+            rows.append({"id": sid, "token_aware": t, "static": f3["static"]})
+            self.assertEqual(f3["static"], "UNRESOLVED", sid)
+            self.assertNotEqual(t["verdict"], "CERTIFIED_NO", sid)
+            self.assertTrue(
+                t["meets_R_catwalk"] or t["budget_hit"] or t["skipped"],
+                sid,
+            )
+        RESULTS.mkdir(parents=True, exist_ok=True)
+        (RESULTS / "token_aware_ledges.json").write_text(
+            json.dumps({"rows": rows}, indent=2) + "\n", encoding="utf-8",
+        )
+
+    def test_packed_yes_not_t_no(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        for sid in ("A_w4_x26_V180", "C_adj4_V60"):
+            f3 = self._t(panel[sid])
+            t = f3["token_aware"]
+            self.assertEqual(f3["static"], "UNRESOLVED", sid)
+            self.assertNotEqual(t["verdict"], "CERTIFIED_NO", sid)
+
+    def test_shelf_two_far_t_no(self):
+        scene = two_cell_scene(
+            [(5, 11), (6, 11)],
+            extra_walls=[(x, 12) for x in range(1, 16)],
+            scene_id="shelf_two_far",
+        )
+        f3 = self._t(scene)
+        t = f3["token_aware"]
+        self.assertTrue(t["exhausted"], t)
+        self.assertFalse(t["meets_R_catwalk"], t)
+        self.assertEqual(t["verdict"], "CERTIFIED_NO")
+        self.assertEqual(f3["static"], "UNRESOLVED")
+        oracle = run_oracle(scene, "yes_exit")
+        self.assertEqual(oracle["Qdyn"], 0)
+
+    def test_midair_pair_t_no(self):
+        scene = two_cell_scene(
+            [(30, 34), (31, 34)], extra_walls=None, scene_id="midair",
+        )
+        f3 = self._t(scene)
+        t = f3["token_aware"]
+        self.assertTrue(t["exhausted"], t)
+        self.assertFalse(t["meets_R_catwalk"], t)
+        self.assertEqual(t["verdict"], "CERTIFIED_NO")
+        self.assertEqual(f3["static"], "UNRESOLVED")
+
+
+class TestCycleExact(unittest.TestCase):
+    """Class E: token-state cycle exact. Cheaper than H iff stepsRun < 300."""
+
+    def test_hostile_yes_not_cycle_no(self):
+        scene = hostile_scene()
+        out = run_oracle(scene, "cycle_exit")
+        self.assertEqual(out["Qdyn"], 1)
+        self.assertEqual(out["firstBreach"], 3)
+        self.assertNotEqual(out["stop"], "occ_cycle")
+
+    def test_horizon_pay_ledges_cycle_cheaper_than_h(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        rows = []
+        for sid in ("D_ledge_end28", "D_ledge_end30", "D_sill_end25"):
+            out = run_oracle(panel[sid], "cycle_exit")
+            rows.append({
+                "id": sid,
+                "Qdyn": int(out["Qdyn"]),
+                "firstBreach": out["firstBreach"],
+                "stepsRun": out["stepsRun"],
+                "stop": out["stop"],
+                "cutReason": out["cutReason"],
+                "sumActive": out["sumActive"],
+                "tokenStatesSeen": out.get("tokenStatesSeen"),
+                "wall_ms": out["wall_ms"],
+            })
+            self.assertEqual(out["Qdyn"], 0, sid)
+            self.assertLess(out["stepsRun"], 300, sid)
+            self.assertEqual(out["stop"], "occ_cycle", sid)
+        RESULTS.mkdir(parents=True, exist_ok=True)
+        (RESULTS / "cycle_exact_ledges.json").write_text(
+            json.dumps({"rows": rows}, indent=2) + "\n", encoding="utf-8",
+        )
+
+    def test_yes_rows_not_cycle_no(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        for sid in ("D_ledge_end31", "A_w4_x26_V180"):
+            out = run_oracle(panel[sid], "cycle_exit")
+            self.assertEqual(out["Qdyn"], 1, sid)
+            self.assertNotEqual(out["stop"], "occ_cycle", sid)
+            self.assertGreaterEqual(out["firstBreach"], 0, sid)
+
+
 if __name__ == "__main__":
     unittest.main()

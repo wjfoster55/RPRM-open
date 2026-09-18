@@ -5,16 +5,19 @@ static routing is:
 
 - Layer A on *unit-normalized* occupancy
 - Unit-isolation NO: exactly one water cell, not on R_catwalk
-- n >= 2: UNRESOLVED, then limited exact
+- n >= 2: UNRESOLVED statically, then F3 cycle exact (not Layer B)
 
-Pair-soup audits live here as failed cheap V>=2 candidates, not as
-official certificates. Evidence grades are in CLAIM.md.
+
+Pair-soup and n-token occupancy audits live here as failed or
+budgeted V>=2 candidates, not as official static certificates.
+Evidence grades are in CLAIM.md. Frozen nulls are in NULLS.md.
 """
 from __future__ import annotations
 
 from collections import deque
 
 from f2_import import bound
+from token_aware import token_aware_audit
 
 SPLASH = ((-1, 1), (1, 1), (-1, 0), (1, 0))
 
@@ -226,7 +229,8 @@ def soup_audit(walls, mass_n, monitor, W, H, allow_water_floor):
 
 
 def evaluate_f3(
-    walls, mass, monitor, W, H, theta, dx=None, crest_y=None, audit_soups=False,
+    walls, mass, monitor, W, H, theta, dx=None, crest_y=None,
+    audit_soups=False, audit_token_aware=False,
 ):
     mass_n = normalize_unit_occupancy(mass, walls)
     n_water = unit_water_count(mass_n, walls)
@@ -236,6 +240,7 @@ def evaluate_f3(
     iso = isolation_verdict(layers, n_water, theta)
     full_soup = None
     wall_soup = None
+    token_aware = None
     if (
         audit_soups
         and n_water >= 2
@@ -243,6 +248,12 @@ def evaluate_f3(
     ):
         full_soup = soup_audit(walls, mass_n, monitor, W, H, True)
         wall_soup = soup_audit(walls, mass_n, monitor, W, H, False)
+    if (
+        audit_token_aware
+        and n_water >= 2
+        and layers["A"]["verdict"] == "UNRESOLVED"
+    ):
+        token_aware = token_aware_audit(walls, mass_n, monitor, W, H)
     official, reason = official_static_verdict_f3(layers, iso)
     return {
         "normalized_mass": mass_n,
@@ -252,6 +263,7 @@ def evaluate_f3(
         "isolation": iso,
         "full_soup": full_soup,
         "wall_soup": wall_soup,
+        "token_aware": token_aware,
         "failed_gap_adjacent": layers["failed_gap_adjacent"],
         "stats": layers["stats"],
         "static": official,
