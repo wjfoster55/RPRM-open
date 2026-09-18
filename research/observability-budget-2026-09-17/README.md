@@ -11,7 +11,10 @@ Read in this order:
 3. [NULL-DUP.md](NULL-DUP.md) — duplication nulls, frozen at `f535cd0`
    before Q6–Q8 ran
 4. [CLAIM-DUP.md](CLAIM-DUP.md) / [THEOREM-DUP.md](THEOREM-DUP.md) /
-   [RESULT-DUP.md](RESULT-DUP.md)
+   [RESULT-DUP.md](RESULT-DUP.md) — 20-line kernel proof
+5. [NULL-TIME.md](NULL-TIME.md) — time/port nulls, frozen at `784f27a`
+6. [CLAIM-TIME.md](CLAIM-TIME.md) / [THEOREM-TIME.md](THEOREM-TIME.md) /
+   [RESULT-TIME.md](RESULT-TIME.md)
 
 Replay:
 
@@ -42,6 +45,15 @@ L-trials. **THEOREM restricted** ([THEOREM-DUP.md](THEOREM-DUP.md)).
 sufficient — **ONE(`N_look_copy`)**.
 
 **Q8.** `{R,R2}` tick-horizon 3 stays **NONE**.
+
+**Q9–Q10.** All 31 nonempty L-panels descend under `tick`; extra
+tick-time never refines (**NONE**). **THEOREM restricted**.
+
+**Q11.** `X` is independent of `{R}` and `{R,X}` is sufficient —
+**ONE(`N_port_indep`)**.
+
+**Q12–Q13.** Hostile shift: `{Y}` does not descend; horizon 2 of `Y`
+makes `Q=c` constant — **ONE(`N_shift_time`)**.
 
 Adjacent written source: `docs/relational-layer.md` four-state example.
 AD-R3 remains the linear row-space ancestry, not this census.

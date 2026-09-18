@@ -75,7 +75,10 @@ Frozen after this census, in [NULL-DUP.md](NULL-DUP.md) at `f535cd0`.
 A value-copy never repaired an insufficient L-panel (**NONE** of 80).
 That is a [restricted theorem](THEOREM-DUP.md), not a new control law.
 Hostile machine M: `{A,A2}` still splits on `{0,1}`; `{A,B}` does not,
-because `B` is not a duplicate. See [RESULT-DUP.md](RESULT-DUP.md).
+because `B` is not a duplicate. See [RESULT-DUP.md](RESULT-DUP.md). Extra time versus an independent
+port is [RESULT-TIME.md](RESULT-TIME.md): all 31 L-panels descend;
+horizon 3 never refines; `{R,X}` does; hostile shift `{Y}` does not
+descend and horizon 2 repairs.
 
 ## What remains OPEN
 

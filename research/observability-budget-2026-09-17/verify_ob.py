@@ -20,6 +20,9 @@ COPY_BASE = {"H2": "H", "R3": "R", "X2": "X", "Z2": "Z"}
 M_STATES = (0, 1, 2)
 M_TABLE = {"A": (0, 0, 1), "A2": (0, 0, 1), "B": (0, 1, 1)}
 DUP_NULL_COMMIT = "f535cd051d814613f0f4e7530fe8b099e7f6c111"
+TIME_NULL_COMMIT = "784f27a72929b924324c04027407a58d069e32ed"
+N_STATES = tuple((a, b, c) for a in (0, 1) for b in (0, 1) for c in (0, 1))
+SHIFT_WORDS = ((), ("shift",), ("shift", "shift"))
 
 
 def q_hidden(state):
@@ -63,6 +66,59 @@ def question_constant(family, question):
     for members in family.values():
         if len({question(state) for state in members}) > 1:
             return False
+    return True
+
+
+def n_question(state):
+    return state[2]
+
+
+def n_port(name, state):
+    if name != "Y":
+        raise ValueError("unknown_n_port")
+    return state[0]
+
+
+def n_shift(state):
+    a, b, c = state
+    return (b, c, 0)
+
+
+def n_execute(state, word):
+    current = state
+    for action in word:
+        require(action == "shift", "n_shift_only")
+        current = n_shift(current)
+    return current
+
+
+def descends(states, panel, value_fn, act):
+    successor = {}
+    for state in states:
+        code = tuple(value_fn(name, state) for name in panel)
+        nxt = tuple(value_fn(name, act(state)) for name in panel)
+        if code in successor and successor[code] != nxt:
+            return False
+        successor[code] = nxt
+    return True
+
+
+def function_of(states, panel, value_fn, query):
+    seen = {}
+    for state in states:
+        code = tuple(value_fn(name, state) for name in panel)
+        value = query(state)
+        if code in seen and seen[code] != value:
+            return False
+        seen[code] = value
+    return True
+
+
+def same_partition(states, left_code, right_code):
+    for i, x in enumerate(states):
+        for y in states[i + 1:]:
+            if (left_code(x) == left_code(y)) != (right_code(x) == right_code(y)):
+                return False
     return True
 
 
@@ -289,6 +345,62 @@ def main():
     require(q3_null == "N_layer" and not tick_ok, "q3_disposition_unchanged")
     require(q4_null == "N_pairs_HX" and q4_count == 6, "q4_disposition_unchanged")
     require(q5_null == "N_reveal_separates" and reveal_ok, "q5_disposition_unchanged")
+    require(q6_null == "N_dup_never" and not repairs, "q6_disposition_unchanged")
+    require(q7_null == "N_look_copy", "q7_disposition_unchanged")
+    require(q8_null == "N_trace_copy_never" and not r_r2_trace, "q8_disposition_unchanged")
+
+    descending = []
+    time_refinements = []
+    for panel in nonempty:
+        closed = descends(STATES, panel, port_value, tick)
+        if closed:
+            descending.append(panel)
+        static_ok = question_constant(coded_fibers(STATES, panel, port_value), q_hidden)
+        trace_ok = question_constant(
+            fibers(panel, lambda current, state: trace_code(current, state, TICK_WORDS)), q_hidden)
+        same = same_partition(
+            STATES,
+            lambda state, current=panel: static_code(current, state),
+            lambda state, current=panel: trace_code(current, state, TICK_WORDS),
+        )
+        if closed:
+            require(same, "descending_panel_time_refined_kernel")
+            if (not static_ok) and (not same or trace_ok != static_ok):
+                time_refinements.append(list(panel))
+        require("reveal" not in "".join(action for word in TICK_WORDS for action in word),
+                "q9_tick_only")
+    q9_count = len(descending)
+    q9_null = {31: "N_all31", 5: "N_sing5", 0: "N_none"}.get(q9_count, "UNNAMED_COUNT")
+    q10_null = "N_time_closed_sometimes" if time_refinements else "N_time_closed_never"
+
+    x_of_r = function_of(STATES, ("R",), port_value, lambda state: port_value("X", state))
+    rx_ok = question_constant(coded_fibers(STATES, ("R", "X"), port_value), q_hidden)
+    if (not x_of_r) and rx_ok:
+        q11_null = "N_port_indep"
+    elif x_of_r and rx_ok:
+        q11_null = "N_port_dep"
+    elif (not x_of_r) and (not rx_ok):
+        q11_null = "N_port_fail"
+    else:
+        q11_null = "UNNAMED_PORT"
+
+    require(len(N_STATES) == 8, "eight_shift_states")
+    n_static = question_constant(coded_fibers(N_STATES, ("Y",), n_port), n_question)
+    n_trace_family = {}
+    for state in N_STATES:
+        key = tuple(n_port("Y", n_execute(state, word)) for word in SHIFT_WORDS)
+        n_trace_family.setdefault(key, []).append(state)
+    n_trace_ok = question_constant(n_trace_family, n_question)
+    if (not n_static) and n_trace_ok:
+        q12_null = "N_shift_time"
+    elif (not n_static) and (not n_trace_ok):
+        q12_null = "N_shift_none"
+    elif n_static and n_trace_ok:
+        q12_null = "N_shift_already"
+    else:
+        q12_null = "UNNAMED_SHIFT"
+    n_closed = descends(N_STATES, ("Y",), n_port, n_shift)
+    q13_null = "N_shift_closed" if n_closed else "N_shift_open"
 
     receipt = {
         "status": "PASS",
@@ -379,10 +491,47 @@ def main():
             "surviving_null": q8_null,
             "disposition": "NONE" if not r_r2_trace else "ONE(yes)",
         },
+        "Q9": {
+            "question": "how many of 31 nonempty L-panels descend under tick",
+            "count": q9_count,
+            "surviving_null": q9_null,
+            "disposition": f"ONE({q9_count})" if q9_count else "NONE",
+            "time_null_commit": TIME_NULL_COMMIT,
+        },
+        "Q10": {
+            "question": "does horizon-3 refine ker C_S for any descending insufficient L-panel",
+            "refinements": time_refinements,
+            "surviving_null": q10_null,
+            "disposition": "NONE" if not time_refinements else f"ONE({len(time_refinements)})",
+            "grade": "THEOREM_RESTRICTED" if q10_null == "N_time_closed_never" and q9_null == "N_all31" else "FINITE_CHECK",
+        },
+        "Q11": {
+            "question": "is X a function of {R}, and is {R,X} sufficient",
+            "X_of_R": x_of_r,
+            "RX_sufficient": rx_ok,
+            "surviving_null": q11_null,
+            "disposition": "ONE(N_port_indep)" if q11_null == "N_port_indep" else f"ONE({q11_null})",
+        },
+        "Q12": {
+            "question": "shift machine N: static {Y} vs horizon-2 {Y}",
+            "static_sufficient": n_static,
+            "horizon2_sufficient": n_trace_ok,
+            "surviving_null": q12_null,
+            "disposition": "ONE(N_shift_time)" if q12_null == "N_shift_time" else f"ONE({q12_null})",
+            "splitting_static": [[list(a), list(b)] for a, b in question_splits(
+                coded_fibers(N_STATES, ("Y",), n_port), n_question)],
+        },
+        "Q13": {
+            "question": "does {Y} descend under shift",
+            "descends": n_closed,
+            "surviving_null": q13_null,
+            "disposition": "NONE" if n_closed else "ONE(open)",
+        },
         "limits": (
             "Complete census of five named ports on the four-state relational-layer "
-            "machine, plus 80 value-copy trials and one three-state lookalike. "
-            "Not AD-R3, not Kalman rank, not a general soundness proof of this script."
+            "machine, plus 80 value-copy trials, one three-state lookalike, and one "
+            "eight-state shift. Not AD-R3, not Kalman rank, not a general soundness "
+            "proof of this script."
         ),
     }
     (HERE / "CENSUS.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")

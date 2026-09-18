@@ -687,5 +687,137 @@
     "surviving_null": "N_trace_copy_never",
     "disposition": "NONE"
   },
-  "limits": "Complete census of five named ports on the four-state relational-layer machine, plus 80 value-copy trials and one three-state lookalike. Not AD-R3, not Kalman rank, not a general soundness proof of this script."
+  "Q9": {
+    "question": "how many of 31 nonempty L-panels descend under tick",
+    "count": 31,
+    "surviving_null": "N_all31",
+    "disposition": "ONE(31)",
+    "time_null_commit": "784f27a72929b924324c04027407a58d069e32ed"
+  },
+  "Q10": {
+    "question": "does horizon-3 refine ker C_S for any descending insufficient L-panel",
+    "refinements": [],
+    "surviving_null": "N_time_closed_never",
+    "disposition": "NONE",
+    "grade": "THEOREM_RESTRICTED"
+  },
+  "Q11": {
+    "question": "is X a function of {R}, and is {R,X} sufficient",
+    "X_of_R": false,
+    "RX_sufficient": true,
+    "surviving_null": "N_port_indep",
+    "disposition": "ONE(N_port_indep)"
+  },
+  "Q12": {
+    "question": "shift machine N: static {Y} vs horizon-2 {Y}",
+    "static_sufficient": false,
+    "horizon2_sufficient": true,
+    "surviving_null": "N_shift_time",
+    "disposition": "ONE(N_shift_time)",
+    "splitting_static": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ]
+  },
+  "Q13": {
+    "question": "does {Y} descend under shift",
+    "descends": false,
+    "surviving_null": "N_shift_open",
+    "disposition": "ONE(open)"
+  },
+  "limits": "Complete census of five named ports on the four-state relational-layer machine, plus 80 value-copy trials, one three-state lookalike, and one eight-state shift. Not AD-R3, not Kalman rank, not a general soundness proof of this script."
 }
