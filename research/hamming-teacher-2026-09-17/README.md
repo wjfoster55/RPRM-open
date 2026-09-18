@@ -17,3 +17,6 @@ python -I -B research/hamming-teacher-2026-09-17/verify_ht28.py
 
 Does not import `research/liar-teacher-formalization-2026-09-12/verify_panels.py`.
 Does not run the SAT pilot.
+
+**Result:** Q1 is **ONE(28)**. The historical “any of those seven” null is
+**NONE**. The seven failures are the Hamming lines `{a,b,a⊕b}`.

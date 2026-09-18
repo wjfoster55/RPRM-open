@@ -1,0 +1,185 @@
+{
+  "status": "PASS",
+  "evidence_grade": "FINITE_EXHAUSTIVE_CENSUS",
+  "claim": "HT-28",
+  "Q1": {
+    "question": "how many of 35 triples are injective",
+    "count": 28,
+    "failing": 7,
+    "surviving_null": "N_p5",
+    "rejected_nulls": [
+      "N_any",
+      "N_lines",
+      "N_pairs"
+    ],
+    "disposition": "ONE(28)"
+  },
+  "Q2": {
+    "question": "Fail equals {{a,b,a XOR b} : distinct nonzero a,b}",
+    "surviving_null": "N_q2_yes",
+    "disposition": "ONE(yes)",
+    "failing_triples": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        4,
+        5
+      ],
+      [
+        1,
+        6,
+        7
+      ],
+      [
+        2,
+        4,
+        6
+      ],
+      [
+        2,
+        5,
+        7
+      ],
+      [
+        3,
+        4,
+        7
+      ],
+      [
+        3,
+        5,
+        6
+      ]
+    ]
+  },
+  "Q3": {
+    "SWAP_XOR": {
+      "panel": [
+        1,
+        2,
+        5
+      ],
+      "injective": true,
+      "rank": 3,
+      "fiber_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "fibers": {
+        "000": [
+          0
+        ],
+        "101": [
+          1
+        ],
+        "010": [
+          2
+        ],
+        "111": [
+          3
+        ],
+        "001": [
+          4
+        ],
+        "100": [
+          5
+        ],
+        "011": [
+          6
+        ],
+        "110": [
+          7
+        ]
+      }
+    },
+    "SWAP_SUM": {
+      "panel": [
+        1,
+        2,
+        3
+      ],
+      "injective": false,
+      "rank": 2,
+      "fiber_sizes": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "fibers": {
+        "000": [
+          0,
+          4
+        ],
+        "101": [
+          1,
+          5
+        ],
+        "011": [
+          2,
+          6
+        ],
+        "110": [
+          3,
+          7
+        ]
+      }
+    },
+    "HOSTILE_LINE": {
+      "panel": [
+        1,
+        2,
+        3
+      ],
+      "injective": false,
+      "rank": 2,
+      "fiber_sizes": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "fibers": {
+        "000": [
+          0,
+          4
+        ],
+        "101": [
+          1,
+          5
+        ],
+        "011": [
+          2,
+          6
+        ],
+        "110": [
+          3,
+          7
+        ]
+      }
+    },
+    "hostile_shared_000": [
+      0,
+      4
+    ],
+    "surviving_null": "N_p6",
+    "disposition": "ONE(N_p6)"
+  },
+  "Q4": {
+    "question": "Fail equals Hamming-7 weight-three supports",
+    "surviving_null": "N_q4_yes",
+    "disposition": "ONE(yes)",
+    "hamming_codewords": 16
+  },
+  "limits": "Complete census of linear checks on F_2^3 only. Not SAT, not Hamming-8, not a free source toggle, not a general soundness proof of this script."
+}

@@ -33,12 +33,14 @@ written before this packet's enumerator ran.
    after the 35-element census is complete. Q2 and Q4 are ONE(yes) or
    NONE after comparing two explicitly listed 7-sets.
 6. **Coverage, hostile case, evidence grade.** Coverage: all 35 triples,
-   all 8 sources, all 8 answer words. Hostile case: `HOSTILE_LINE = {1,2,3}`
-   (`{001,010,011}`), the THEORY P6 line that identifies `000` with `001`.
-   Distinguishing control: `SWAP_XOR = {1,2,5}` must not be silently
-   treated as the same panel. Grade: **finite exhaustive test** of this
-   carrier. Written proof already exists as THEORY P4–P6 / P9; this packet
-   does not replace it and does not add a Lean declaration.
+   all 8 sources, all 8 answer words.    Hostile case: `HOSTILE_LINE = {1,2,3}`
+   (`{001,010,011}`). The identified source pair is a census readout, not
+   a frozen prediction; THEORY P6's printed `{100,010,110}` is a different
+   line of the same family. Distinguishing control: `SWAP_XOR = {1,2,5}`
+   must not be silently treated as the same panel. Grade: **finite
+   exhaustive test** of this carrier. Written proof already exists as
+   THEORY P4–P6 / P9; this packet does not replace it and does not add a
+   Lean declaration.
 
 ## Claim
 
