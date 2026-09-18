@@ -169,6 +169,13 @@ NONDET_FIVE_AGREE_NULL = (
     "FIVE.future would agree with the NONDET obstruction disposition on "
     "every machine-partition pair in that family."
 )
+# Frozen before the 72 FIVE ghosts are classified. Not the 845 lift.
+NONDET_GHOST_NULL = (
+    "The 72 FIVE ghosts on the bounded n=2,3 NONDET family are all "
+    "ONE(successor_blocks) of one pair-kind and one PARTIAL 2x2 "
+    "ghost-fold type, analogous to the 845 family's 24 late_enabledness "
+    "delayed pairs (one obstruction class, one kind)."
+)
 NONDET_FAMILY_SLICES = (
     {"name": "two_state_one_action", "n": 2, "machines": 100, "cases": 200},
     {"name": "three_state_one_action", "n": 3, "machines": 4096, "cases": 20480},
@@ -190,6 +197,15 @@ NONDET_CLASS_READOUT = {
     "MANY:observation+enabledness": 672,
     "MANY:observation+successor_blocks": 576,
     "MANY:enabledness+successor_blocks": 72,
+}
+# Ghost-fiber readout, locked after the first classification. Not a premise of the null.
+NONDET_GHOST_CLASS_READOUT = {"ONE:successor_blocks": 72}
+NONDET_GHOST_KIND_READOUT = {"singletons": 72}
+NONDET_GHOST_TYPE_READOUT = {
+    "sink_self": 12,
+    "sink_partner": 12,
+    "return_self": 24,
+    "return_partner": 24,
 }
 LIFT_SLICES = (
     {"name": "four_state_one_action", "n": 4, "actions": ("a",)},
@@ -800,6 +816,10 @@ def check_nondet_census():
     five_agree = 0
     five_disagree = 0
     five_ghosts = 0
+    ghost_classes = {}
+    ghost_kinds = {}
+    ghost_types = {}
+    ghost_n = {}
     collision_pairs = 0
     slices = []
     seen_collision = False
@@ -860,6 +880,13 @@ def check_nondet_census():
                         slice_five_disagree += 1
                         if five_ok and not nondet_ok:
                             five_ghosts += 1
+                            ghost_classes[name] = ghost_classes.get(name, 0) + 1
+                            ghost_n[len(machine.states)] = ghost_n.get(len(machine.states), 0) + 1
+                            for row in fiber["pairs"]:
+                                kind = pair_kind_nondet(machine, row["left"], row["right"], summary)
+                                ghost_kinds[kind] = ghost_kinds.get(kind, 0) + 1
+                            ghost_type = lifted_ghost_type(partial, summary)
+                            ghost_types[ghost_type] = ghost_types.get(ghost_type, 0) + 1
         require(slice_cases == spec["cases"],
                 "NONDET case count changed for " + spec["name"])
         slices.append({
@@ -894,11 +921,27 @@ def check_nondet_census():
 
     collision_null_holds = collision_pairs == 0
     five_agree_null_holds = five_unadmitted == 0 and five_disagree == 0
+    occupied_ghost_classes = [name for name, count in ghost_classes.items() if count]
+    occupied_ghost_kinds = [kind for kind, count in ghost_kinds.items() if count]
+    occupied_ghost_types = [name for name in GHOST_SHAPES if ghost_types.get(name)]
+    occupied_ghost_types.extend(name for name in ghost_types if name not in GHOST_SHAPES)
+    ghost_null_holds = (
+        occupied_ghost_classes == ["ONE:successor_blocks"]
+        and len(occupied_ghost_kinds) == 1
+        and len(occupied_ghost_types) == 1
+    )
     require(not collision_null_holds, "Collision null should be occupied")
     require(not five_agree_null_holds, "FIVE-agree null should fail")
+    require(not ghost_null_holds, "Ghost null should fail: more than one 2x2 type")
+    require(sum(ghost_classes.values()) == five_ghosts, "Ghost class counts miss cases")
+    require(five_disagree == five_ghosts, "FIVE disagreement escaped the ghost fiber")
+    require(ghost_classes == NONDET_GHOST_CLASS_READOUT, "Ghost class occupancy changed")
+    require(ghost_kinds == NONDET_GHOST_KIND_READOUT, "Ghost kind occupancy changed")
+    require(ghost_types == NONDET_GHOST_TYPE_READOUT, "Ghost type occupancy changed")
+    require(ghost_n == {3: 72}, "Ghost escaped the three-state slice")
 
     return {
-        "schema": "rprm-operational-obstruction-nondet/v1",
+        "schema": "rprm-operational-obstruction-nondet/v2",
         "status": "PASS",
         "contract": NONDET_CONTRACT,
         "evidence_grade": "finite_test",
@@ -910,6 +953,8 @@ def check_nondet_census():
         "collision_null_holds": collision_null_holds,
         "five_agree_null": NONDET_FIVE_AGREE_NULL,
         "five_agree_null_holds": five_agree_null_holds,
+        "ghost_null": NONDET_GHOST_NULL,
+        "ghost_null_holds": ghost_null_holds,
         "census_lift_null": NONDET_CENSUS_LIFT_NULL,
         "census_lift_null_holds": "OPEN",
         "named_hostile": (
@@ -928,6 +973,15 @@ def check_nondet_census():
         "five_agree": five_agree,
         "five_disagree": five_disagree,
         "five_ghosts": five_ghosts,
+        "ghost_classes": ghost_classes,
+        "ghost_kinds": ghost_kinds,
+        "ghost_types": ghost_types,
+        "ghost_n": {str(n): count for n, count in ghost_n.items()},
+        "ghost_mix": {
+            "classes": occupied_ghost_classes,
+            "kinds": occupied_ghost_kinds,
+            "types": occupied_ghost_types,
+        },
         "slices": slices,
         "coverage": (
             "Every partition of every machine in the declared n=2,3 "
@@ -1398,7 +1452,7 @@ def main():
     census = check_census(NULL)
     lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v9",
+        "schema": "rprm-operational-obstruction/v10",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
@@ -1415,6 +1469,7 @@ def main():
         "nondet_census_lift_null_declared_before_looking": NONDET_CENSUS_LIFT_NULL,
         "nondet_collision_null_declared_before_census": NONDET_COLLISION_NULL,
         "nondet_five_agree_null_declared_before_census": NONDET_FIVE_AGREE_NULL,
+        "nondet_ghost_null_declared_before_looking": NONDET_GHOST_NULL,
         "named": named,
         "board": {
             "schema": board["schema"],
@@ -1464,6 +1519,11 @@ def main():
             "five_unadmitted": nondet_census["five_unadmitted"],
             "five_disagree": nondet_census["five_disagree"],
             "five_ghosts": nondet_census["five_ghosts"],
+            "ghost_null_holds": nondet_census["ghost_null_holds"],
+            "ghost_classes": nondet_census["ghost_classes"],
+            "ghost_kinds": nondet_census["ghost_kinds"],
+            "ghost_types": nondet_census["ghost_types"],
+            "ghost_mix": nondet_census["ghost_mix"],
         },
         "census": census,
         "lift_census": lift,
@@ -1537,6 +1597,9 @@ def main():
         "nondet_five_agree_null_holds": nondet_census["five_agree_null_holds"],
         "nondet_deadlock_disabled_pairs": nondet_census["deadlock_disabled_pairs"],
         "nondet_five_ghosts": nondet_census["five_ghosts"],
+        "nondet_ghost_null_holds": nondet_census["ghost_null_holds"],
+        "nondet_ghost_mix": nondet_census["ghost_mix"],
+        "nondet_ghost_types": nondet_census["ghost_types"],
         "board_cells": board["board"]["names"],
         "board_generality": board["generality"],
         "shape_counts_845": census["shape_counts"],

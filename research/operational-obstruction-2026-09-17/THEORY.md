@@ -859,3 +859,15 @@ NONE 6 190, ONE 10 830, MANY 3 660. Classes occupied: observation,
 enabledness, `successor_blocks`, and the mixed MANY combinations
 including `enabledness+successor_blocks` (72). The 845 lift remains
 OPEN. Frozen receipt: [NONDET_CENSUS.json](NONDET_CENSUS.json).
+
+**Null, frozen before classifying the 72 FIVE ghosts:**
+
+> The 72 FIVE ghosts are all ONE(`successor_blocks`) of one pair-kind
+> and one PARTIAL 2×2 ghost-fold type, analogous to the 24
+> `late_enabledness` delayed pairs.
+
+**Readout.** The null is **false**. All 72 are n=3, ONE(`successor_blocks`),
+kind `singletons` — not deadlock, not `late_enabledness`. The type mix
+is the PARTIAL 2×2: 12 `sink_self` + 12 `sink_partner` + 24
+`return_self` + 24 `return_partner`. That occupancy is a readout on
+this family, not a claim that the 845 lift holds.

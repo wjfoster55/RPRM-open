@@ -1,5 +1,5 @@
 {
-  "schema": "rprm-operational-obstruction/v9",
+  "schema": "rprm-operational-obstruction/v10",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
   "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
@@ -16,6 +16,7 @@
   "nondet_census_lift_null_declared_before_looking": "The 845-family PARTIAL ghost-fold occupancy lifts unchanged to this NONDET-LTS contract.",
   "nondet_collision_null_declared_before_census": "On the declared 2- and 3-state one-action NONDET family with successor sets of size 0, 1, or 2 (plus disabled), deadlock/disabled collisions are unoccupied as an earliest clause.",
   "nondet_five_agree_null_declared_before_census": "FIVE.future would agree with the NONDET obstruction disposition on every machine-partition pair in that family.",
+  "nondet_ghost_null_declared_before_looking": "The 72 FIVE ghosts on the bounded n=2,3 NONDET family are all ONE(successor_blocks) of one pair-kind and one PARTIAL 2x2 ghost-fold type, analogous to the 845 family's 24 late_enabledness delayed pairs (one obstruction class, one kind).",
   "named": {
     "named_hostiles": 21,
     "clauses": [
@@ -246,7 +247,7 @@
     "coverage": "Named hostiles. The 845-family PARTIAL occupancy is not lifted. The bounded n=2,3 census is a separate fiber."
   },
   "nondet_census": {
-    "schema": "rprm-operational-obstruction-nondet/v1",
+    "schema": "rprm-operational-obstruction-nondet/v2",
     "status": "PASS",
     "machines": 4196,
     "cases": 20680,
@@ -284,7 +285,34 @@
     "deadlock_disabled_pairs": 388,
     "five_unadmitted": 18048,
     "five_disagree": 72,
-    "five_ghosts": 72
+    "five_ghosts": 72,
+    "ghost_null_holds": false,
+    "ghost_classes": {
+      "ONE:successor_blocks": 72
+    },
+    "ghost_kinds": {
+      "singletons": 72
+    },
+    "ghost_types": {
+      "return_self": 24,
+      "sink_partner": 12,
+      "sink_self": 12,
+      "return_partner": 24
+    },
+    "ghost_mix": {
+      "classes": [
+        "ONE:successor_blocks"
+      ],
+      "kinds": [
+        "singletons"
+      ],
+      "types": [
+        "sink_self",
+        "sink_partner",
+        "return_self",
+        "return_partner"
+      ]
+    }
   },
   "census": {
     "machines": 845,
@@ -4143,7 +4171,7 @@
     "research/operational-obstruction-2026-09-17/board.py": "586523a30b28e56fe04cc1d00f168ce777d512f156e0ef1b4cb1fa4093a2ce25",
     "research/operational-obstruction-2026-09-17/nondet.py": "77633d775847f7215629db866a65a028c19d6c183ee1dc3c616cecd54fdee880",
     "research/operational-obstruction-2026-09-17/CONTRACT-NONDET.md": "c85cc4c3e5fc8e8e11c6dd617fb8b1bdefc29998878d0dc45677b972356bb0de",
-    "research/operational-obstruction-2026-09-17/verify.py": "8e401869f087139a2ca891720baa02ae6aeb3af575babaf2ae01193f8fdc5e9a",
+    "research/operational-obstruction-2026-09-17/verify.py": "c95631278477f6ad4140c13ba6884666ff41232e90be991947fead90f8261e5b",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"
