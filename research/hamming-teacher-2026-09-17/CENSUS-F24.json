@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "claim": "F24-LIFT",
+  "surviving_null": "N_rank",
+  "injective_four_sets": 840,
+  "total_four_sets": 1365,
+  "unordered_bases_formula": 840,
+  "hostile": {
+    "panel": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "injective": false,
+    "rank": 3,
+    "zero_fiber": [
+      0,
+      8
+    ]
+  },
+  "padding": true,
+  "stop": true,
+  "limits": "Same rank identity as HT-28. Not a new theorem."
+}
