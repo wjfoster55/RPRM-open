@@ -1,7 +1,9 @@
 """Finite checks for complete O05 obstruction fibers.
 
 The census null is declared and recorded before any enumeration of the
-845-machine family. Counts are not premises; they are the readout.
+845-machine family. The 2×2 lift nulls are declared before the four-state
+and two-action families are enumerated. Counts are not premises; they are
+the readout.
 """
 from __future__ import annotations
 
@@ -22,11 +24,17 @@ from rprm.futures import Machine, future_quotient, shortest_witness
 from obstruction import (
     CLAUSES,
     GHOST_SHAPES,
+    LIFT_TYPES,
+    block_profile,
+    classify_ghost_fold,
     ghost_fiber,
+    ghost_fold_detail,
     ghost_shape,
+    is_future_sufficient,
     is_ghost_fold,
     is_operational_fold,
     least_stable_repair,
+    lifted_ghost_type,
     merged_pairs,
     min_repair_alphabet,
     obstruction_fiber,
@@ -52,6 +60,58 @@ LISTING = {
     "sink_partner": 12,
     "return_self": 24,
     "return_partner": 24,
+    "unclassified": 0,
+}
+LIFT_NULL = (
+    "On the four-state one-action family and the three-state two-action "
+    "family (binary observations, all partial maps, all set-partitions; the "
+    "same constructor as the 845-machine futures family), every ghost fold "
+    "still receives one of the four names sink_self, sink_partner, "
+    "return_self, return_partner."
+)
+LIFT_EXHAUSTION_NULL = (
+    "On those two families, every ghost fold receives a name in the a priori "
+    "lift vocabulary {sink_self, sink_partner, return_self, return_partner, "
+    "split, escape, crowd, multi, mixed, partial_land, wide_landing}; "
+    "unclassified is NONE."
+)
+SLICE_NULL = (
+    "On the four-state one-action family and the three-state two-action "
+    "family, every ghost fold whose block profile has exactly one size-2 "
+    "class and no larger class still receives one of the four names "
+    "sink_self, sink_partner, return_self, return_partner."
+)
+LIFT_SLICES = (
+    {"name": "four_state_one_action", "n": 4, "actions": ("a",)},
+    {"name": "three_state_two_action", "n": 3, "actions": ("a", "b")},
+)
+# Census readout, locked after the first lift enumeration. Not a premise of the nulls.
+FOUR_STATE_READOUT = {
+    "sink_self": 480,
+    "sink_partner": 480,
+    "return_self": 960,
+    "return_partner": 960,
+    "split": 624,
+    "escape": 384,
+    "crowd": 1152,
+    "multi": 1152,
+    "mixed": 0,
+    "partial_land": 0,
+    "wide_landing": 0,
+    "unclassified": 0,
+}
+TWO_ACTION_READOUT = {
+    "sink_self": 408,
+    "sink_partner": 408,
+    "return_self": 864,
+    "return_partner": 864,
+    "split": 0,
+    "escape": 0,
+    "crowd": 0,
+    "multi": 0,
+    "mixed": 624,
+    "partial_land": 0,
+    "wide_landing": 0,
     "unclassified": 0,
 }
 
@@ -133,6 +193,62 @@ def check_named_hostiles():
     require(is_ghost_fold(return_partner, summary), "return_partner must be a ghost fold")
     require(ghost_shape(return_partner, summary) == "return_partner", "Named return_partner")
 
+    # Lift hostiles. Built from the 2×2 failure modes, not from a census.
+    idle = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
+                   {"a": {0: 0, 1: 2, 2: 2, 3: 3}})
+    idle_c = {0: 0, 1: 0, 2: 1, 3: 2}
+    require(is_ghost_fold(idle, idle_c), "Idle extra singleton is still a ghost fold")
+    require(ghost_shape(idle, idle_c) == "unclassified",
+            "The n=3 2x2 classifier does not name n=4")
+    require(lifted_ghost_type(idle, idle_c) == "sink_self",
+            "Lift recovers sink_self on a unique size-2 block at n=4")
+
+    split_m = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
+                      {"a": {0: 2, 1: 3, 2: 2, 3: 3}})
+    split_c = {0: 0, 1: 0, 2: 1, 3: 2}
+    require(is_ghost_fold(split_m, split_c), "split must be a ghost fold")
+    require(lifted_ghost_type(split_m, split_c) == "split", "Named split")
+
+    escape_m = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
+                       {"a": {0: 0, 1: 2, 2: 3, 3: 3}})
+    escape_c = {0: 0, 1: 0, 2: 1, 3: 2}
+    require(is_ghost_fold(escape_m, escape_c), "escape must be a ghost fold")
+    require(lifted_ghost_type(escape_m, escape_c) == "escape", "Named escape")
+
+    crowd_m = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
+                      {"a": {0: 0, 1: 0, 2: 3, 3: 3}})
+    crowd_c = {0: 0, 1: 0, 2: 0, 3: 1}
+    require(is_ghost_fold(crowd_m, crowd_c), "crowd must be a ghost fold")
+    require(lifted_ghost_type(crowd_m, crowd_c) == "crowd", "Named crowd")
+    require(ghost_fold_detail(crowd_m, crowd_c, "crowd") == "crowd_one_jumper",
+            "Definitional crowd has one jumper out of the triple")
+
+    multi_m = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
+                      {"a": {0: 0, 1: 2, 2: 2, 3: 3}})
+    multi_c = {0: 0, 1: 0, 2: 1, 3: 1}
+    require(is_ghost_fold(multi_m, multi_c), "multi must be a ghost fold")
+    require(lifted_ghost_type(multi_m, multi_c) == "multi", "Named multi")
+    require(ghost_fold_detail(multi_m, multi_c, "multi") == "multi_one",
+            "Definitional multi has one witnessing pair")
+
+    mixed_m = Machine((0, 1, 2), ("a", "b"), {0: 0, 1: 0, 2: 0},
+                      {"a": {0: 0, 1: 2, 2: 2}, "b": {0: 0, 1: 2, 2: 0}})
+    mixed_c = {0: 0, 1: 0, 2: 1}
+    require(is_ghost_fold(mixed_m, mixed_c), "mixed must be a ghost fold")
+    require(lifted_ghost_type(mixed_m, mixed_c) == "mixed", "Named mixed")
+    require(ghost_shape(mixed_m, mixed_c) == "unclassified",
+            "The one-action 2x2 classifier does not name two actions")
+
+    partial_m = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
+                        {"a": {0: 0, 1: 2}})
+    partial_c = {0: 0, 1: 0, 2: 1}
+    require(not is_ghost_fold(partial_m, partial_c),
+            "partial_land is FIVE-visible FAIL vs OK, not a ghost")
+    require(classify_ghost_fold(partial_m, partial_c) == "partial_land",
+            "Named partial_land")
+    require(shortest_witness(partial_m, 0, 1)["status"] == "ONE",
+            "partial_land has a distinguishing word")
+
     # First-witness core hides a second failing pair.
     two = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 1, 2: 0, 3: 1},
                   {"a": {0: 0, 1: 1, 2: 2, 3: 3}})
@@ -212,20 +328,50 @@ def check_named_hostiles():
         pass
     else:
         raise RuntimeError("Bool observation key must remain an admission error")
-    return {"named_hostiles": 12, "clauses": list(CLAUSES), "shapes": list(GHOST_SHAPES)}
+    return {
+        "named_hostiles": 19,
+        "clauses": list(CLAUSES),
+        "shapes": list(GHOST_SHAPES),
+        "lift_types": list(LIFT_TYPES),
+    }
+
+
+def slice_machines(n, actions):
+    """Same constructor as checks/futures.py: binary observations, all partial maps."""
+    states = tuple(range(n))
+    machines = []
+    for observations in it.product((0, 1), repeat=n):
+        observation = dict(zip(states, observations))
+        for flat in it.product(tuple(range(-1, n)), repeat=n * len(actions)):
+            tables = {a: {x: flat[j * n + x] for x in states if flat[j * n + x] != -1}
+                      for j, a in enumerate(actions)}
+            machines.append(Machine(states, actions, observation, tables))
+    return machines
 
 
 def family_machines():
     machines = []
     for n, actions in ((0, ("a",)), (1, ("a", "b")), (2, ("a", "b")), (3, ("a",))):
-        states = tuple(range(n))
-        for observations in it.product((0, 1), repeat=n):
-            observation = dict(zip(states, observations))
-            for flat in it.product(tuple(range(-1, n)), repeat=n * len(actions)):
-                tables = {a: {x: flat[j * n + x] for x in states if flat[j * n + x] != -1}
-                          for j, a in enumerate(actions)}
-                machines.append(Machine(states, actions, observation, tables))
+        machines.extend(slice_machines(n, actions))
     return machines
+
+
+def compact_ghost(machine, summary, lift_type):
+    tables = {
+        action: [machine.transitions[action][state] if state in machine.transitions[action] else -1
+                 for state in machine.states]
+        for action in machine.actions
+    }
+    return {
+        "states": list(machine.states),
+        "actions": list(machine.actions),
+        "observation": [machine.observation[state] for state in machine.states],
+        "next": tables,
+        "summary": [summary[state] for state in machine.states],
+        "profile": list(block_profile(summary, machine.states)),
+        "lift_type": lift_type,
+        "detail": ghost_fold_detail(machine, summary, lift_type),
+    }
 
 
 def ghost_record(machine, summary):
@@ -300,6 +446,8 @@ def check_census(null_text):
                 require(record["total"], "Ghost fold with a partial merged action")
                 require((record["shape"] == "sink_self") == record["manifesto_relabeling"],
                         "sink_self must match the Manifesto relabeling predicate")
+                require(lifted_ghost_type(machine, summary) == record["shape"],
+                        "Lift type must recover the 2x2 on the 845 slice")
     require(ghosts_one_block == 0, "Single-block ghost fold appeared")
     require(ghosts_two_states == 0, "n<=2 ghost fold appeared")
     require(all(row["constant_observation"] for row in ghosts),
@@ -345,6 +493,125 @@ def check_census(null_text):
     }
 
 
+def check_one_lift_slice(spec):
+    n = spec["n"]
+    actions = spec["actions"]
+    expected = (2 ** n) * ((n + 1) ** (n * len(actions)))
+    machines = slice_machines(n, actions)
+    require(len(machines) == expected, spec["name"] + " family size changed")
+    partitions = tuple(set_partitions(tuple(range(n))))
+    counts = {name: 0 for name in LIFT_TYPES}
+    details = {}
+    profiles = {}
+    examples = {}
+    cases = 0
+    folds = 0
+    ghosts = 0
+    ghosts_one_block = 0
+    unique_pair_ghosts = 0
+    unique_pair_two_by_two = 0
+    total = len(machines)
+    for index, machine in enumerate(machines):
+        if index % 2000 == 0:
+            print(f"{spec['name']} {index}/{total} ghosts={ghosts}", file=sys.stderr)
+        for summary in partitions:
+            cases += 1
+            fiber = obstruction_fiber(machine, summary)
+            if fiber["status"] == "NONE":
+                folds += 1
+                continue
+            if fiber["by_clause"]["observation"] or fiber["by_clause"]["enabledness"]:
+                continue
+            if not is_future_sufficient(machine, summary):
+                continue
+            require(fiber["by_clause"]["successor"] >= 1,
+                    "Ghost fold with no successor failure")
+            ghosts += 1
+            if len(set(summary.values())) == 1:
+                ghosts_one_block += 1
+            name = lifted_ghost_type(machine, summary)
+            require(name in counts, "Unknown lift label")
+            counts[name] += 1
+            detail = ghost_fold_detail(machine, summary, name)
+            details[detail] = details.get(detail, 0) + 1
+            profile = "+".join(str(size) for size in block_profile(summary, machine.states))
+            profiles[profile] = profiles.get(profile, 0) + 1
+            sizes = block_profile(summary, machine.states)
+            unique_pair = (
+                sum(1 for size in sizes if size == 2) == 1
+                and all(size < 3 for size in sizes)
+            )
+            if unique_pair:
+                unique_pair_ghosts += 1
+                if name in GHOST_SHAPES:
+                    unique_pair_two_by_two += 1
+            if name not in examples:
+                examples[name] = compact_ghost(machine, summary, name)
+    print(f"{spec['name']} {total}/{total} ghosts={ghosts}", file=sys.stderr)
+    require(ghosts_one_block == 0, spec["name"] + ": one-block ghost fold appeared")
+    two_by_two = sum(counts[name] for name in GHOST_SHAPES)
+    return {
+        "name": spec["name"],
+        "n": n,
+        "actions": list(actions),
+        "machines": len(machines),
+        "machine_partition_cases": cases,
+        "operational_folds": folds,
+        "ghost_folds": ghosts,
+        "lift_counts": counts,
+        "detail_counts": details,
+        "profile_counts": profiles,
+        "two_by_two_ghosts": two_by_two,
+        "residue_ghosts": ghosts - two_by_two,
+        "unclassified": counts["unclassified"],
+        "unique_pair_ghosts": unique_pair_ghosts,
+        "unique_pair_two_by_two": unique_pair_two_by_two,
+        "lift_null_holds": two_by_two == ghosts,
+        "slice_null_holds": unique_pair_ghosts == unique_pair_two_by_two,
+        "exhaustion_null_holds": counts["unclassified"] == 0,
+        "examples": examples,
+    }
+
+
+def check_lift_census():
+    slices = [check_one_lift_slice(spec) for spec in LIFT_SLICES]
+    totals = {name: 0 for name in LIFT_TYPES}
+    ghosts = 0
+    unique_pair_ghosts = 0
+    unique_pair_two_by_two = 0
+    for row in slices:
+        ghosts += row["ghost_folds"]
+        unique_pair_ghosts += row["unique_pair_ghosts"]
+        unique_pair_two_by_two += row["unique_pair_two_by_two"]
+        for name, count in row["lift_counts"].items():
+            totals[name] += count
+    two_by_two = sum(totals[name] for name in GHOST_SHAPES)
+    require(slices[0]["lift_counts"] == FOUR_STATE_READOUT,
+            "Four-state lift census disagrees with the locked readout")
+    require(slices[1]["lift_counts"] == TWO_ACTION_READOUT,
+            "Two-action lift census disagrees with the locked readout")
+    require(slices[0]["profile_counts"] == {"1+1+2": 3888, "1+3": 1152, "2+2": 1152},
+            "Four-state ghost profiles changed")
+    require(slices[1]["profile_counts"] == {"1+2": 3168},
+            "Two-action ghost profiles changed")
+    return {
+        "lift_null": LIFT_NULL,
+        "lift_null_holds": two_by_two == ghosts,
+        "slice_null": SLICE_NULL,
+        "slice_null_holds": unique_pair_ghosts == unique_pair_two_by_two,
+        "exhaustion_null": LIFT_EXHAUSTION_NULL,
+        "exhaustion_null_holds": totals["unclassified"] == 0,
+        "ghost_folds": ghosts,
+        "two_by_two_ghosts": two_by_two,
+        "residue_ghosts": ghosts - two_by_two,
+        "unclassified": totals["unclassified"],
+        "unique_pair_ghosts": unique_pair_ghosts,
+        "unique_pair_two_by_two": unique_pair_two_by_two,
+        "lift_counts": totals,
+        "slices": slices,
+    }
+
+
 def source_hashes():
     names = (
         "research/operational-obstruction-2026-09-17/obstruction.py",
@@ -359,26 +626,58 @@ def source_hashes():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=HERE / "CENSUS.json")
+    parser.add_argument("--lift-output", type=Path, default=HERE / "LIFT_CENSUS.json")
     args = parser.parse_args()
     named = check_named_hostiles()
     census = check_census(NULL)
+    lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v1",
+        "schema": "rprm-operational-obstruction/v2",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
+        "lift_null_declared_before_census": LIFT_NULL,
+        "slice_null_declared_before_census": SLICE_NULL,
+        "lift_exhaustion_null_declared_before_census": LIFT_EXHAUSTION_NULL,
         "named": named,
         "census": census,
+        "lift_census": lift,
         "source_hashes": source_hashes(),
         "coverage": (
             "Named hostiles plus every partition of every machine in the "
-            "checks/futures.py 845-machine family. Not a theorem about arbitrary "
-            "infinite carriers, nondeterministic operations, or kernels."
+            "checks/futures.py 845-machine family, plus the four-state "
+            "one-action family and the three-state two-action family with "
+            "the same constructor. Not a theorem about arbitrary infinite "
+            "carriers, nondeterministic operations, or kernels."
         ),
     }
     payload = json.dumps(result, indent=2) + "\n"
     args.output.write_text(payload, encoding="utf-8")
-    print(payload)
+    args.lift_output.write_text(json.dumps(lift, indent=2) + "\n", encoding="utf-8")
+    summary = {
+        "status": "PASS",
+        "ghost_folds_845": census["ghost_folds"],
+        "shape_counts_845": census["shape_counts"],
+        "lift_null_holds": lift["lift_null_holds"],
+        "slice_null_holds": lift["slice_null_holds"],
+        "exhaustion_null_holds": lift["exhaustion_null_holds"],
+        "lift_ghost_folds": lift["ghost_folds"],
+        "lift_counts": lift["lift_counts"],
+        "slices": [
+            {
+                "name": row["name"],
+                "machines": row["machines"],
+                "ghost_folds": row["ghost_folds"],
+                "lift_counts": row["lift_counts"],
+                "profile_counts": row["profile_counts"],
+                "lift_null_holds": row["lift_null_holds"],
+                "slice_null_holds": row["slice_null_holds"],
+                "exhaustion_null_holds": row["exhaustion_null_holds"],
+            }
+            for row in lift["slices"]
+        ],
+    }
+    print(json.dumps(summary, indent=2))
 
 
 if __name__ == "__main__":

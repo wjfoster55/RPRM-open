@@ -3,7 +3,7 @@
 GitHub `CreatePullRequest` was blocked for this account. Open by hand from
 https://github.com/wjfoster55/RPRM-open/compare/main...research/new-project-operational-obstruction?expand=1
 
-**Title.** Complete O05 obstruction fibers and a 2×2 ghost-fold classification
+**Title.** Complete O05 obstruction fibers; the ghost-fold 2×2 does not lift
 
 ## Summary
 
@@ -11,13 +11,15 @@ https://github.com/wjfoster55/RPRM-open/compare/main...research/new-project-oper
 - Closed fiber on the existing 845-machine futures family (3217 partitions): 1239 operational folds; FIVE.future cannot see successor-update failures.
 - Declared null before the first census: ghost folds are only the Manifesto three-state example and its relabelings. **False.** MANY(72).
 - Declared shape null before typing the leftover 60: they occupy exactly one leftover named type. **False.** They are 12 `sink_partner` + 24 `return_self` + 24 `return_partner`. All 72 sit in a 2×2 of `(sink|return)×(self|partner)` with unclassified NONE, matching the written listing 12+12+24+24.
+- Hostile next cut, null frozen before looking: that 2×2 still names every ghost fold on the four-state one-action family (10 000 machines) and the three-state two-action family (32 768 machines). **False.** MANY(9360). 5424 keep a 2×2 name; 3936 are `split`/`escape`/`crowd`/`multi`/`mixed`. Unclassified NONE. Unique-pair slice also fails (1632 split/escape/mixed). Replacement: the a priori lift vocabulary.
 
 ## Test plan
 
 - [x] `python -I -B research/operational-obstruction-2026-09-17/verify.py`
 - [ ] Does not change default `verify.py` 20-job suite, Manifesto, or the catch-up PDF
 - [ ] Spot-check Manifesto `{p,q,r}` is `sink_self`, and the three definitional leftover maps keep their names
+- [ ] Spot-check definitional split/escape/crowd/multi/mixed hostiles, and that `partial_land` is FIVE-visible
 
 ## OPEN
 
-NONDET/KERNEL obstruction, applied overnight `rho`, classical-monoid exception cells, Lean trichotomy, Tile/Board using this as a Tile, two-action machines at n=3.
+NONDET/KERNEL obstruction, applied overnight `rho`, classical-monoid exception cells, Lean trichotomy, Tile/Board using this as a Tile, n=4 two-action (6.25 million machines), n≥5.

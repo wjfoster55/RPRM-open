@@ -1,10 +1,13 @@
 {
-  "schema": "rprm-operational-obstruction/v1",
+  "schema": "rprm-operational-obstruction/v2",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
   "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
+  "lift_null_declared_before_census": "On the four-state one-action family and the three-state two-action family (binary observations, all partial maps, all set-partitions; the same constructor as the 845-machine futures family), every ghost fold still receives one of the four names sink_self, sink_partner, return_self, return_partner.",
+  "slice_null_declared_before_census": "On the four-state one-action family and the three-state two-action family, every ghost fold whose block profile has exactly one size-2 class and no larger class still receives one of the four names sink_self, sink_partner, return_self, return_partner.",
+  "lift_exhaustion_null_declared_before_census": "On those two families, every ghost fold receives a name in the a priori lift vocabulary {sink_self, sink_partner, return_self, return_partner, split, escape, crowd, multi, mixed, partial_land, wide_landing}; unclassified is NONE.",
   "named": {
-    "named_hostiles": 12,
+    "named_hostiles": 19,
     "clauses": [
       "observation",
       "enabledness",
@@ -15,6 +18,20 @@
       "sink_partner",
       "return_self",
       "return_partner"
+    ],
+    "lift_types": [
+      "sink_self",
+      "sink_partner",
+      "return_self",
+      "return_partner",
+      "split",
+      "escape",
+      "crowd",
+      "multi",
+      "mixed",
+      "partial_land",
+      "wide_landing",
+      "unclassified"
     ]
   },
   "census": {
@@ -2148,12 +2165,637 @@
     },
     "leftover_occupied_types": 3
   },
+  "lift_census": {
+    "lift_null": "On the four-state one-action family and the three-state two-action family (binary observations, all partial maps, all set-partitions; the same constructor as the 845-machine futures family), every ghost fold still receives one of the four names sink_self, sink_partner, return_self, return_partner.",
+    "lift_null_holds": false,
+    "slice_null": "On the four-state one-action family and the three-state two-action family, every ghost fold whose block profile has exactly one size-2 class and no larger class still receives one of the four names sink_self, sink_partner, return_self, return_partner.",
+    "slice_null_holds": false,
+    "exhaustion_null": "On those two families, every ghost fold receives a name in the a priori lift vocabulary {sink_self, sink_partner, return_self, return_partner, split, escape, crowd, multi, mixed, partial_land, wide_landing}; unclassified is NONE.",
+    "exhaustion_null_holds": true,
+    "ghost_folds": 9360,
+    "two_by_two_ghosts": 5424,
+    "residue_ghosts": 3936,
+    "unclassified": 0,
+    "unique_pair_ghosts": 7056,
+    "unique_pair_two_by_two": 5424,
+    "lift_counts": {
+      "sink_self": 888,
+      "sink_partner": 888,
+      "return_self": 1824,
+      "return_partner": 1824,
+      "split": 624,
+      "escape": 384,
+      "crowd": 1152,
+      "multi": 1152,
+      "mixed": 624,
+      "partial_land": 0,
+      "wide_landing": 0,
+      "unclassified": 0
+    },
+    "slices": [
+      {
+        "name": "four_state_one_action",
+        "n": 4,
+        "actions": [
+          "a"
+        ],
+        "machines": 10000,
+        "machine_partition_cases": 150000,
+        "operational_folds": 22206,
+        "ghost_folds": 6192,
+        "lift_counts": {
+          "sink_self": 480,
+          "sink_partner": 480,
+          "return_self": 960,
+          "return_partner": 960,
+          "split": 624,
+          "escape": 384,
+          "crowd": 1152,
+          "multi": 1152,
+          "mixed": 0,
+          "partial_land": 0,
+          "wide_landing": 0,
+          "unclassified": 0
+        },
+        "detail_counts": {
+          "split": 624,
+          "return_self": 960,
+          "sink_partner": 480,
+          "sink_self": 480,
+          "return_partner": 960,
+          "crowd_one_jumper": 864,
+          "multi_one": 768,
+          "crowd_two_jumpers": 288,
+          "multi_both": 384,
+          "escape": 384
+        },
+        "profile_counts": {
+          "1+1+2": 3888,
+          "1+3": 1152,
+          "2+2": 1152
+        },
+        "two_by_two_ghosts": 2880,
+        "residue_ghosts": 3312,
+        "unclassified": 0,
+        "unique_pair_ghosts": 3888,
+        "unique_pair_two_by_two": 2880,
+        "lift_null_holds": false,
+        "slice_null_holds": false,
+        "exhaustion_null_holds": true,
+        "examples": {
+          "split": {
+            "states": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "actions": [
+              "a"
+            ],
+            "observation": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                -1,
+                -1,
+                0,
+                1
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              2,
+              2
+            ],
+            "profile": [
+              1,
+              1,
+              2
+            ],
+            "lift_type": "split",
+            "detail": "split"
+          },
+          "return_self": {
+            "states": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "actions": [
+              "a"
+            ],
+            "observation": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                -1,
+                1,
+                1,
+                2
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              2,
+              1
+            ],
+            "profile": [
+              1,
+              1,
+              2
+            ],
+            "lift_type": "return_self",
+            "detail": "return_self"
+          },
+          "sink_partner": {
+            "states": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "actions": [
+              "a"
+            ],
+            "observation": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                -1,
+                1,
+                1,
+                2
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              2,
+              2
+            ],
+            "profile": [
+              1,
+              1,
+              2
+            ],
+            "lift_type": "sink_partner",
+            "detail": "sink_partner"
+          },
+          "sink_self": {
+            "states": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "actions": [
+              "a"
+            ],
+            "observation": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                -1,
+                1,
+                1,
+                3
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              2,
+              2
+            ],
+            "profile": [
+              1,
+              1,
+              2
+            ],
+            "lift_type": "sink_self",
+            "detail": "sink_self"
+          },
+          "return_partner": {
+            "states": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "actions": [
+              "a"
+            ],
+            "observation": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                -1,
+                2,
+                1,
+                1
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              2,
+              1
+            ],
+            "profile": [
+              1,
+              1,
+              2
+            ],
+            "lift_type": "return_partner",
+            "detail": "return_partner"
+          },
+          "crowd": {
+            "states": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "actions": [
+              "a"
+            ],
+            "observation": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "profile": [
+              1,
+              3
+            ],
+            "lift_type": "crowd",
+            "detail": "crowd_one_jumper"
+          },
+          "multi": {
+            "states": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "actions": [
+              "a"
+            ],
+            "observation": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "profile": [
+              2,
+              2
+            ],
+            "lift_type": "multi",
+            "detail": "multi_one"
+          },
+          "escape": {
+            "states": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "actions": [
+              "a"
+            ],
+            "observation": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                0,
+                0,
+                1,
+                2
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              2,
+              0
+            ],
+            "profile": [
+              1,
+              1,
+              2
+            ],
+            "lift_type": "escape",
+            "detail": "escape"
+          }
+        }
+      },
+      {
+        "name": "three_state_two_action",
+        "n": 3,
+        "actions": [
+          "a",
+          "b"
+        ],
+        "machines": 32768,
+        "machine_partition_cases": 163840,
+        "operational_folds": 41248,
+        "ghost_folds": 3168,
+        "lift_counts": {
+          "sink_self": 408,
+          "sink_partner": 408,
+          "return_self": 864,
+          "return_partner": 864,
+          "split": 0,
+          "escape": 0,
+          "crowd": 0,
+          "multi": 0,
+          "mixed": 624,
+          "partial_land": 0,
+          "wide_landing": 0,
+          "unclassified": 0
+        },
+        "detail_counts": {
+          "return_self": 864,
+          "sink_partner": 408,
+          "sink_self": 408,
+          "return_partner": 864,
+          "mixed": 624
+        },
+        "profile_counts": {
+          "1+2": 3168
+        },
+        "two_by_two_ghosts": 2544,
+        "residue_ghosts": 624,
+        "unclassified": 0,
+        "unique_pair_ghosts": 3168,
+        "unique_pair_two_by_two": 2544,
+        "lift_null_holds": false,
+        "slice_null_holds": false,
+        "exhaustion_null_holds": true,
+        "examples": {
+          "return_self": {
+            "states": [
+              0,
+              1,
+              2
+            ],
+            "actions": [
+              "a",
+              "b"
+            ],
+            "observation": [
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                -1,
+                -1,
+                -1
+              ],
+              "b": [
+                0,
+                0,
+                1
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              0
+            ],
+            "profile": [
+              1,
+              2
+            ],
+            "lift_type": "return_self",
+            "detail": "return_self"
+          },
+          "sink_partner": {
+            "states": [
+              0,
+              1,
+              2
+            ],
+            "actions": [
+              "a",
+              "b"
+            ],
+            "observation": [
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                -1,
+                -1,
+                -1
+              ],
+              "b": [
+                0,
+                0,
+                1
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              1
+            ],
+            "profile": [
+              1,
+              2
+            ],
+            "lift_type": "sink_partner",
+            "detail": "sink_partner"
+          },
+          "sink_self": {
+            "states": [
+              0,
+              1,
+              2
+            ],
+            "actions": [
+              "a",
+              "b"
+            ],
+            "observation": [
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                -1,
+                -1,
+                -1
+              ],
+              "b": [
+                0,
+                0,
+                2
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              1
+            ],
+            "profile": [
+              1,
+              2
+            ],
+            "lift_type": "sink_self",
+            "detail": "sink_self"
+          },
+          "return_partner": {
+            "states": [
+              0,
+              1,
+              2
+            ],
+            "actions": [
+              "a",
+              "b"
+            ],
+            "observation": [
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                -1,
+                -1,
+                -1
+              ],
+              "b": [
+                1,
+                0,
+                0
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              0
+            ],
+            "profile": [
+              1,
+              2
+            ],
+            "lift_type": "return_partner",
+            "detail": "return_partner"
+          },
+          "mixed": {
+            "states": [
+              0,
+              1,
+              2
+            ],
+            "actions": [
+              "a",
+              "b"
+            ],
+            "observation": [
+              0,
+              0,
+              0
+            ],
+            "next": {
+              "a": [
+                0,
+                0,
+                1
+              ],
+              "b": [
+                0,
+                0,
+                2
+              ]
+            },
+            "summary": [
+              0,
+              1,
+              1
+            ],
+            "profile": [
+              1,
+              2
+            ],
+            "lift_type": "mixed",
+            "detail": "mixed"
+          }
+        }
+      }
+    ]
+  },
   "source_hashes": {
-    "research/operational-obstruction-2026-09-17/obstruction.py": "00189b36b049a0bc95d7a40e16d629ef90f29dda11137fe89ffed95a6f0add74",
-    "research/operational-obstruction-2026-09-17/verify.py": "d74f47ec4c78c60f464315d45e6e022c39310243bc1770108be4c9d9b22f9989",
+    "research/operational-obstruction-2026-09-17/obstruction.py": "44bc2c60844b006b6fa817d0aaf18bb369721cd27f72fe7461c8c4daf05f3cd7",
+    "research/operational-obstruction-2026-09-17/verify.py": "c0d6ceb2441c319de1a8e8e74ef59299b4ed02a2d593a1341b040e7d726bd618",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"
   },
-  "coverage": "Named hostiles plus every partition of every machine in the checks/futures.py 845-machine family. Not a theorem about arbitrary infinite carriers, nondeterministic operations, or kernels."
+  "coverage": "Named hostiles plus every partition of every machine in the checks/futures.py 845-machine family, plus the four-state one-action family and the three-state two-action family with the same constructor. Not a theorem about arbitrary infinite carriers, nondeterministic operations, or kernels."
 }

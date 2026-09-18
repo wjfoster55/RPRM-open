@@ -31,10 +31,11 @@ number. Not last night's `T(X,P)` count.
 6. **Coverage, hostile case, evidence grade.** Coverage: written trichotomy
    for every finite deterministic partial machine; exhaustive census of every
    set-partition of every machine in the `checks/futures.py` 845-machine
-   family. Hostile cases in §4. Grade: written proof of the pair trichotomy
-   and of FIVE-visibility of the first two clauses; finite test for the
-   census and for O09 kernel agreement. Unbounded carriers, `NONDET`, and
-   `KERNEL` remain OPEN.
+   family, plus the four-state one-action and three-state two-action lift
+   families of §9. Hostile cases in §4 and the lift hostiles of §9. Grade:
+   written proof of the pair trichotomy and of FIVE-visibility of the first
+   two clauses; finite test for the censuses and for O09 kernel agreement.
+   Unbounded carriers, `NONDET`, `KERNEL`, and n=4 two-action remain OPEN.
 
 ## 2. Closed claim
 
@@ -157,8 +158,12 @@ The scientific yield is the negative: treating the Manifesto `{p,q,r}` picture a
 - Lean of the pair trichotomy (the 20 declarations are not enlarged here).
 - One Tile/Board instance that uses this oracle as a Tile without
   preinstalling the center.
-- Families with two or more actions at n=3: the futures census uses one
-  action there, so this ghost count does not cover that slice.
+- Four-state two-action machines with the same constructor: 2^4·5^8 =
+  6 250 000 machines, too large for this cut.
+- n≥5 one-action, and n=4 with a larger action alphabet.
+
+The n=3 two-action slice named as OPEN in the first cut is closed as a
+finite test in §9.
 
 ## 7. Named types for the 72
 
@@ -222,4 +227,143 @@ partition is completely solved (NONE, ONE, or MANY). The ghost-fold
 subfiber is completely solved: MANY(72). Those 72 are completely typed by
 the 2×2 of §7 (unclassified NONE on this slice). The null of §3 is **false**.
 The shape null of §7 is recorded in the census boolean; it is not a theorem
-about other families.
+about other families. The 2×2 does **not** lift to the four-state one-action
+or three-state two-action families of §9. Those families are exhausted by
+the a priori lift vocabulary (unclassified NONE), not by the four names.
+
+## 9. Hostile cut: does the 2×2 lift?
+
+The 2×2 of §7 is a three-state one-action fact. The next hostile is whether
+those four names remain a complete typing after one extra state or one extra
+action. Same constructor as `checks/futures.py`: binary observations, all
+partial maps, all set-partitions.
+
+1. **Carrier.** Four-state one-action machines: 2^4·5^4 = 10_000. Three-state
+   two-action machines: 2^3·4^6 = 32_768. Partitions: Bell(4)=15 and
+   Bell(3)=5, hence 150_000 and 163_840 machine–partition cases.
+2. **Ports.** Supplied: those two families. Missing: the occupancy of each
+   a priori lift name on the ghost-fold subfiber. Readout: NONE/ONE/MANY is
+   not used per machine; the solved fiber is the complete occupancy table.
+3. **Operation.** `PARTIAL`, diagnostic, same O05 clauses as §1.
+4. **Receiver.** Same O05 / FIVE.future split. The 2×2 names are a receiver
+   on unique size-2 stay-jump-to-singleton blocks. Residues are named from
+   the failure modes of that picture, before occupancy is read.
+5. **Fiber.** Every ghost fold in the two families is classified. Disposition
+   of unclassified is NONE or MANY only after that enumeration.
+6. **Coverage, hostile, grade.** Coverage: exhaustive on the two declared
+   families. Hostiles in `verify.py` (idle n=4 `sink_self`, split, escape,
+   crowd, multi, mixed, and FIVE-visible `partial_land`) were built from the
+   definitions, not sampled from the census. Grade: written propositions for
+   which residues can occur on which slice, and for the 2 880 = 72·40
+   embedding of the old 2×2 into n=4; finite test for occupancy.
+
+**Definition (lift vocabulary).** For a known ghost fold:
+
+- a block of size ≥3 is `crowd`;
+- two or more size-2 blocks is `multi`;
+- otherwise, on the unique size-2 block, each successor-witnessing action is
+  typed as in §7, or `split` if both points leave to different blocks, or
+  `escape` if the jumper's singleton leaves to a third class, or
+  `partial_land` if that singleton is not in the action's domain, or
+  `wide_landing` if the landing class is not a singleton;
+- distinct witnessing names across actions are `mixed`;
+- anything else is `unclassified`.
+
+Occupancy is a census readout, not a premise.
+
+**Proposition (n=3 forbids split, escape, crowd-ghosts, and multi).** On three
+states the only merged profiles that can be ghost folds are `(2,1)`. Proof:
+`(3)` is one-block, so successor agreement is automatic; discrete has no
+merged pair. On `(2,1)` there is one outside point, so both merged states
+cannot jump to *different* blocks (`split`), and the singleton's image is
+itself or a point of the merged pair (`escape` is impossible). `multi`
+needs two pairs. `crowd` as a ghost needs a size-≥3 block that is not the
+whole carrier.
+
+**Proposition (`mixed` needs two actions).** One action supplies at most one
+witnessing name.
+
+**Proposition (`partial_land` is FIVE-visible).** If the unique merged pair
+has a stayer and a jumper whose landing is undefined, then a one-letter
+continuation is `OK` from the stayer and `FAIL` from the jumper. So
+`partial_land` cannot be a ghost fold. Grade: written.
+
+**Proposition (`wide_landing` is unreachable after profile-first).** Unique
+size-2 plus no larger class forces every other class to be a singleton, so
+the landing class has size 1. A larger landing class is already `crowd` or
+`multi`. Grade: written.
+
+**Proposition (n=4 one-action 2×2 count).** Each of the 72 three-state
+ghost folds, together with a choice of which of four labeled states is the
+extra singleton, an extra observation bit, and an extra image in
+`{-1,0,1,2,3}`, yields 72·4·2·5 = 2 880 distinct n=4 ghosts of 2×2 type.
+The complementary three-set is invariant under the old map (the jumper
+lands on the old singleton, which sinks or returns into the merged pair),
+so the merged pair never sees the extra state; the restriction is exactly
+a §7 ghost. Conversely every n=4 2×2 ghost has profile `(2,1,1)` and
+restricts to one of the 72. Grade: written listing; finite test agrees.
+
+Three nulls, frozen before the lift enumeration:
+
+> On the four-state one-action family and the three-state two-action family,
+> every ghost fold still receives one of the four names `sink_self`,
+> `sink_partner`, `return_self`, `return_partner`.
+
+> On those families, every ghost fold whose block profile has exactly one
+> size-2 class and no larger class still receives one of those four names.
+
+> On those families, every ghost fold receives a name in the a priori lift
+> vocabulary; unclassified is NONE.
+
+**Readout.** The first two nulls are **false**. The exhaustion null is
+**true**. Unclassified is NONE. The 2×2 is a special case of a unique
+size-2 stay-jump-land, not a complete typing of the larger families.
+
+| Family | Machines | Cases | Operational folds | Ghost folds |
+|---|---:|---:|---:|---:|
+| Four-state one-action | 10 000 | 150 000 | 22 206 | 6 192 |
+| Three-state two-action | 32 768 | 163 840 | 41 248 | 3 168 |
+| Combined | 42 768 | 313 840 | 63 454 | 9 360 |
+
+Four-state one-action occupancy:
+
+| Type | Count | Profile |
+|---|---:|---|
+| `sink_self` | 480 | `(2,1,1)`; 72·40 embedding |
+| `sink_partner` | 480 | `(2,1,1)` |
+| `return_self` | 960 | `(2,1,1)` |
+| `return_partner` | 960 | `(2,1,1)` |
+| `split` | 624 | `(2,1,1)`; both leave to different classes |
+| `escape` | 384 | `(2,1,1)`; landing leaves to a third class |
+| `crowd` | 1 152 | `(3,1)`; 864 one jumper, 288 two jumpers |
+| `multi` | 1 152 | `(2,2)`; 768 one witnessing pair, 384 both |
+| `mixed` | 0 | one action |
+| `partial_land` | 0 | FIVE-visible |
+| `wide_landing` | 0 | unreachable |
+| unclassified | 0 | — |
+
+`(2,1,1)` unique-pair ghosts: 3 888 = 2 880 + 624 + 384. The local 2×2
+does not exhaust even that slice.
+
+Three-state two-action occupancy, all profile `(2,1)`:
+
+| Type | Count |
+|---|---:|
+| `sink_self` | 408 |
+| `sink_partner` | 408 |
+| `return_self` | 864 |
+| `return_partner` | 864 |
+| `mixed` | 624 |
+| split, escape, crowd, multi | 0 |
+| `partial_land`, `wide_landing`, unclassified | 0 |
+
+2×2 names occupy 2 544 of 3 168. The leftover 624 are `mixed`: two actions
+witness different stay-jump-land names, and FIVE.future still NONE.
+
+Combined 9 360 = 5 424 of type 2×2 + 3 936 residues
+(`split`+`escape`+`crowd`+`multi`+`mixed` = 624+384+1 152+1 152+624).
+
+The replacement of the 2×2 is this lift vocabulary, not a fifth binary
+bit. Evidence grade: finite test on the two families; not a theorem about
+n=4 two-action machines (OPEN: 6.25 million machines) or unbounded
+carriers. Frozen receipt: [LIFT_CENSUS.json](LIFT_CENSUS.json).

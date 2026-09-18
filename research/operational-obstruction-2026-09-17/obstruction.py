@@ -12,6 +12,17 @@ from rprm.futures import Machine, shortest_witness, stable_refinement
 
 CLAUSES = ("observation", "enabledness", "successor")
 GHOST_SHAPES = ("sink_self", "sink_partner", "return_self", "return_partner")
+# A priori lift vocabulary. Occupancy is a census readout, not a premise.
+LIFT_TYPES = GHOST_SHAPES + (
+    "split",
+    "escape",
+    "crowd",
+    "multi",
+    "mixed",
+    "partial_land",
+    "wide_landing",
+    "unclassified",
+)
 
 
 def require_machine(machine):
@@ -208,6 +219,133 @@ def ghost_shape(machine, summary):
     else:
         return "unclassified"
     return land + "_" + stay
+
+
+def block_profile(summary, states):
+    return tuple(sorted(len(part) for part in _blocks(summary, states)))
+
+
+def _local_action_shape(machine, merged, summary, action):
+    """Stay-jump readout of one action on one size-2 block, or a residue tag.
+
+    `agree` means the action is enabled at both points and preserves C-blocks.
+    `not_successor` means it cannot be an O05 successor witness.
+    """
+    table = machine.transitions[action]
+    left, right = merged
+    enabled_left = left in table
+    enabled_right = right in table
+    if enabled_left != enabled_right or not enabled_left:
+        return "not_successor"
+    if summary[table[left]] == summary[table[right]]:
+        return "agree"
+    stayers = [state for state in merged if table[state] in merged]
+    jumpers = [state for state in merged if table[state] not in merged]
+    if len(jumpers) == 2:
+        return "split"
+    if len(stayers) != 1 or len(jumpers) != 1:
+        return "unclassified"
+    stayer = stayers[0]
+    jumper = jumpers[0]
+    if table[stayer] == stayer:
+        stay = "self"
+    elif table[stayer] in merged:
+        stay = "partner"
+    else:
+        return "unclassified"
+    land = table[jumper]
+    land_size = sum(1 for state in machine.states if summary[state] == summary[land])
+    if land_size != 1:
+        return "wide_landing"
+    if land not in table:
+        return "partial_land"
+    if table[land] == land:
+        kind = "sink"
+    elif table[land] in merged:
+        kind = "return"
+    else:
+        return "escape"
+    return kind + "_" + stay
+
+
+def classify_ghost_fold(machine, summary):
+    """Lift type of a known ghost fold. Not a name for a non-ghost.
+
+    Profile is first: a block of size ≥3 is `crowd`; two or more size-2
+    blocks is `multi`. On a unique size-2 block the original 2×2 is tried
+    on every successor-witnessing action. Split, escape, partial landing,
+    and wide landing are the one-pair residues. Distinct witnessing names
+    across actions are `mixed`.
+    """
+    require_summary(machine, summary)
+    parts = _blocks(summary, machine.states)
+    sizes = sorted(len(part) for part in parts)
+    if any(size >= 3 for size in sizes):
+        return "crowd"
+    twos = sum(1 for size in sizes if size == 2)
+    if twos >= 2:
+        return "multi"
+    if twos != 1:
+        return "unclassified"
+    merged = next(part for part in parts if len(part) == 2)
+    labels = []
+    for action in machine.actions:
+        tag = _local_action_shape(machine, merged, summary, action)
+        if tag in ("agree", "not_successor"):
+            continue
+        labels.append(tag)
+    if not labels:
+        return "unclassified"
+    uniq = set(labels)
+    if len(uniq) > 1:
+        return "mixed"
+    name = next(iter(uniq))
+    if name in LIFT_TYPES:
+        return name
+    return "unclassified"
+
+
+def lifted_ghost_type(machine, summary):
+    """2×2 name or lift residue of a ghost fold; unclassified if not a ghost."""
+    if not is_ghost_fold(machine, summary):
+        return "unclassified"
+    return classify_ghost_fold(machine, summary)
+
+
+def ghost_fold_detail(machine, summary, lift_type):
+    """Occupancy subtype inside crowd/multi. Not a replacement invariant."""
+    parts = _blocks(summary, machine.states)
+    if lift_type == "crowd":
+        triple = next(part for part in parts if len(part) == 3)
+        tags = []
+        for action in machine.actions:
+            table = machine.transitions[action]
+            if any(state not in table for state in triple):
+                tags.append("crowd_partial")
+                continue
+            jumpers = sum(1 for state in triple if table[state] not in triple)
+            if jumpers == 1:
+                tags.append("crowd_one_jumper")
+            elif jumpers == 2:
+                tags.append("crowd_two_jumpers")
+            else:
+                tags.append("crowd_other")
+        if len(set(tags)) == 1:
+            return tags[0]
+        return "crowd_mixed"
+    if lift_type == "multi":
+        pairs = [part for part in parts if len(part) == 2]
+        witnessed = 0
+        for part in pairs:
+            if any(_local_action_shape(machine, part, summary, action)
+                   not in ("agree", "not_successor") for action in machine.actions):
+                witnessed += 1
+        if witnessed >= 2:
+            return "multi_both"
+        if witnessed == 1:
+            return "multi_one"
+        return "multi_other"
+    return lift_type
 
 
 def min_repair_alphabet(states, summary, question):

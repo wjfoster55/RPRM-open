@@ -53,6 +53,17 @@ unclassified NONE. The one-type null for the leftover 60 is false; they
 are 12 `sink_partner`, 24 `return_self`, and 24 `return_partner`. See
 [THEORY.md](THEORY.md) §7.
 
+**Hostile next cut, declared before looking:** that 2×2 still names every
+ghost fold on the four-state one-action family and the three-state
+two-action family (same constructor as the 845). **The null is false.**
+The families contain MANY(9360) ghost folds: 5424 keep a 2×2 name and 3936
+do not. Five new occupied types (`split`, `escape`, `crowd`, `multi`,
+`mixed`); `partial_land` and `wide_landing` occupy 0 among ghosts;
+unclassified NONE. The local unique-pair slice is also not a 2×2: 7056
+unique-pair ghosts, of which 1632 are `split`/`escape`/`mixed`. The
+replacement is the a priori lift vocabulary, not a fifth binary bit. See
+[THEORY.md](THEORY.md) §9 and [LIFT_CENSUS.json](LIFT_CENSUS.json).
+
 ## Why the runners-up lost
 
 | Candidate | Why not this cut |
@@ -85,3 +96,4 @@ python -I -B research/operational-obstruction-2026-09-17/verify.py
 
 Typed claim, null, hostiles, census, and OPEN list: [THEORY.md](THEORY.md).
 Oracle: [obstruction.py](obstruction.py). Frozen receipt: [CENSUS.json](CENSUS.json).
+Lift census: [LIFT_CENSUS.json](LIFT_CENSUS.json).
