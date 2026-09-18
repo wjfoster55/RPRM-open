@@ -14,7 +14,7 @@ https://github.com/wjfoster55/RPRM-open/compare/main...research/new-project-oper
 - Hostile next cut, null frozen before looking: that 2×2 still names every ghost fold on the four-state one-action family (10 000 machines) and the three-state two-action family (32 768 machines). **False.** MANY(9360). 5424 keep a 2×2 name; 3936 are `split`/`escape`/`crowd`/`multi`/`mixed`. Those five names are typed definitions; match null against the census is **true.** Unclassified NONE. Unique-pair slice also fails (1632 split/escape/mixed). Replacement: the a priori lift vocabulary.
 - The oracle is now a Tile on a three-cell Board (Manifesto `{p,q,r}`, unique-pair split, 2×2 `sink_self`) with withheld versus revealed ports. Not an Atlas. Generality OPEN.
 - Dual Rank-1 instrument: shortest O05 distinguishing witnesses. Null, frozen before looking: FIVE.future NONE on those three cells implies the O05 witness fiber is NONE. **False.** Each cell is ONE successor word `("a",)`. On the 845 family, FIVE.future ONE equals the O05 word except 24 successor pairs (`("a","a")` vs `("a",)`). Those 24 are not a 2×2 ghost type: successor `partial_land`, delay `late_enabledness`, ghost-fold type NONE.
-- Contract NONDET-LTS-01: finite LTS as partial functions into nonempty successor sets, plus explicit empty-set deadlock. Clauses observation / enabledness / `successor_blocks`. Null “deadlock and disabled share a clause” **false**. Null “845 PARTIAL occupancy lifts” **OPEN**, not run. Bounded n=2,3 census (4 196 machines, 20 680 partitions): collision unoccupied **false** (388); FIVE would agree **false** (72 ghosts). Those 72: null “one class, one kind, one 2×2 type, like the 24 `late_enabledness` pairs” **false**. All ONE(`successor_blocks`) / `singletons` on n=3; type mix 12+12+24+24. Not deadlock, not the 845 lift.
+- Contract NONDET-LTS-01: finite LTS as partial functions into nonempty successor sets, plus explicit empty-set deadlock. Clauses observation / enabledness / `successor_blocks`. Null “deadlock and disabled share a clause” **false**. Null “845 PARTIAL occupancy lifts” **OPEN**, not run. Bounded n=2,3 census (4 196 machines, 20 680 partitions): collision unoccupied **false** (388); FIVE would agree **false** (72 ghosts). Those 72: null “one class, one kind, one 2×2 type” **false** (mix 12+12+24+24). Null “exactly the image of the 72 PARTIAL 845 ghosts under singleton-or-absent embedding” **true**: ONE(identification); extra/missing/different C NONE. Not an n=4 occupancy lift.
 
 ## Test plan
 
@@ -27,7 +27,7 @@ https://github.com/wjfoster55/RPRM-open/compare/main...research/new-project-oper
 - [ ] Spot-check the 24: successor `partial_land`, `late_enabledness`, not a 2×2 ghost
 - [ ] Spot-check NONDET-LTS-01: PARTIAL oracle rejects `NondetMachine`; Manifesto-as-nondet is ONE(`successor_blocks`); deadlock versus singleton is `successor_blocks`; deadlock versus disabled is `enabledness`; FIVE.future is OPEN_NEW_CARRIER; 845 census is not lifted
 - [ ] Spot-check bounded NONDET census: 4196 machines, 20680 cases, 388 deadlock/disabled pairs, 72 FIVE ghosts; both census nulls false
-- [ ] Spot-check the 72: ONE(`successor_blocks`), kind `singletons`, types 12+12+24+24; ghost null false; not late_enabledness
+- [ ] Spot-check the 72: ONE(`successor_blocks`), kind `singletons`, types 12+12+24+24; ghost null false; image null true (ONE identification)
 
 ## OPEN
 

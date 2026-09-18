@@ -81,12 +81,13 @@ states. `shortest_witness` requires `Machine`. Grade: written.
 > The 845-family PARTIAL ghost-fold occupancy lifts unchanged to this
 > NONDET-LTS contract.
 
-The first null is decided by the named hostiles. The second is **not
-run** this cut: no 845 NONDET census is claimed or performed.
+The first null is decided by the named hostiles. The second (n=4
+occupancy) stays OPEN. The 72 FIVE ghosts identify with the 72 PARTIAL
+845 ghosts under singleton-or-absent embedding; that is not the n=4 lift.
 
 ## 4. What this does not claim
 
-Not the 845 PARTIAL lift. Not FIVE.future. Not Lean. Not that empty-set
+Not an n=4 occupancy lift. Not FIVE.future. Not Lean. Not that empty-set
 deadlock is a nonempty subset. Not that the PARTIAL 2×2 or residue
 types classify nondet machines. Not n≥4 or two actions.
 

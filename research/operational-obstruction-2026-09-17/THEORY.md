@@ -871,3 +871,14 @@ kind `singletons` — not deadlock, not `late_enabledness`. The type mix
 is the PARTIAL 2×2: 12 `sink_self` + 12 `sink_partner` + 24
 `return_self` + 24 `return_partner`. That occupancy is a readout on
 this family, not a claim that the 845 lift holds.
+
+**Null, frozen before the image comparison:**
+
+> The 72 FIVE ghosts are exactly the image of the 72 PARTIAL ghost folds
+> on the 845-machine family under the embedding that sends a partial
+> function to the singleton-or-absent LTS.
+
+**Readout.** The null is **true**. Identification is ONE: 72 = 72, extra
+NONE, missing NONE, different `C` NONE. The embedding is a retraction on
+those 72 PARTIAL ghosts. This identifies two named 72-pair fibers. It
+does not lift the 2×2 to n=4 or two actions.

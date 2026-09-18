@@ -106,8 +106,9 @@ kernel equal-support hostile is retained as out-of-carrier for this fiber).
 Not Lean. Not a 21st default `verify.py` job. Not an eight-Tile Board or
 Atlas theorem; the three-cell instance is a finite test. Contract
 NONDET-LTS-01 is written; the bounded n=2,3 one-action census is closed
-and the 845 PARTIAL occupancy is not lifted. The 72 FIVE ghosts are the
-PARTIAL 2×2 mix, not one type and not `late_enabledness`.
+and the 845 PARTIAL occupancy is not lifted to n=4. The 72 FIVE ghosts
+are ONE(identification) with the 72 PARTIAL 845 ghosts under the
+singleton-or-absent embedding.
 
 ## Reproduce
 

@@ -27,9 +27,12 @@ from nondet import (
     NONDET_CLAUSES,
     PAIR_KINDS,
     NondetMachine,
+    as_nondet_machine,
     as_partial_machine,
+    case_key_nondet,
     encodes_as_partial,
     is_operational_fold_nondet,
+    machine_key_nondet,
     nondet_family,
     obstruction_class,
     obstruction_fiber_nondet,
@@ -175,6 +178,13 @@ NONDET_GHOST_NULL = (
     "ONE(successor_blocks) of one pair-kind and one PARTIAL 2x2 "
     "ghost-fold type, analogous to the 845 family's 24 late_enabledness "
     "delayed pairs (one obstruction class, one kind)."
+)
+# Frozen before the 72-pair image comparison is read.
+NONDET_IMAGE_NULL = (
+    "The 72 FIVE ghosts on the bounded n=2,3 NONDET family are exactly "
+    "the image of the 72 PARTIAL ghost folds on the checks/futures.py "
+    "845-machine family under the embedding that sends a partial function "
+    "to the singleton-or-absent LTS."
 )
 NONDET_FAMILY_SLICES = (
     {"name": "two_state_one_action", "n": 2, "machines": 100, "cases": 200},
@@ -820,6 +830,7 @@ def check_nondet_census():
     ghost_kinds = {}
     ghost_types = {}
     ghost_n = {}
+    ghost_keys = set()
     collision_pairs = 0
     slices = []
     seen_collision = False
@@ -887,6 +898,7 @@ def check_nondet_census():
                                 ghost_kinds[kind] = ghost_kinds.get(kind, 0) + 1
                             ghost_type = lifted_ghost_type(partial, summary)
                             ghost_types[ghost_type] = ghost_types.get(ghost_type, 0) + 1
+                            ghost_keys.add(case_key_nondet(machine, summary))
         require(slice_cases == spec["cases"],
                 "NONDET case count changed for " + spec["name"])
         slices.append({
@@ -940,8 +952,44 @@ def check_nondet_census():
     require(ghost_types == NONDET_GHOST_TYPE_READOUT, "Ghost type occupancy changed")
     require(ghost_n == {3: 72}, "Ghost escaped the three-state slice")
 
+    partial_keys = set()
+    for machine in family_machines():
+        for summary in set_partitions(machine.states):
+            if is_ghost_fold(machine, summary):
+                embedded = as_nondet_machine(machine)
+                require(encodes_as_partial(embedded),
+                        "PARTIAL ghost embedding left the singleton carrier")
+                recovered = as_partial_machine(embedded)
+                require(
+                    recovered.states == machine.states
+                    and recovered.actions == machine.actions
+                    and dict(recovered.observation) == dict(machine.observation)
+                    and all(dict(recovered.transitions[action]) == dict(machine.transitions[action])
+                            for action in machine.actions),
+                    "Embedding is not a retraction on a PARTIAL ghost")
+                partial_keys.add(case_key_nondet(embedded, summary))
+    require(len(partial_keys) == 72, "PARTIAL ghost count on the 845 family changed")
+    extra = ghost_keys - partial_keys
+    missing = partial_keys - ghost_keys
+    extra_machines = {machine_key_nondet(key) for key in extra} - {
+        machine_key_nondet(key) for key in partial_keys
+    }
+    missing_machines = {machine_key_nondet(key) for key in missing} - {
+        machine_key_nondet(key) for key in ghost_keys
+    }
+    different_c = {machine_key_nondet(key) for key in extra} & {
+        machine_key_nondet(key) for key in missing
+    }
+    image_null_holds = not extra and not missing
+    image_status = "ONE" if image_null_holds else "NONE"
+    require(image_null_holds and image_status == "ONE",
+            "NONDET ghosts are not the embedded 845 ghost fiber")
+    require(len(extra_machines) == 0 and len(missing_machines) == 0
+            and len(different_c) == 0,
+            "Embedded identification acquired extra machines or a different C")
+
     return {
-        "schema": "rprm-operational-obstruction-nondet/v2",
+        "schema": "rprm-operational-obstruction-nondet/v3",
         "status": "PASS",
         "contract": NONDET_CONTRACT,
         "evidence_grade": "finite_test",
@@ -955,6 +1003,18 @@ def check_nondet_census():
         "five_agree_null_holds": five_agree_null_holds,
         "ghost_null": NONDET_GHOST_NULL,
         "ghost_null_holds": ghost_null_holds,
+        "image_null": NONDET_IMAGE_NULL,
+        "image_null_holds": image_null_holds,
+        "image_fiber": {
+            "status": image_status,
+            "partial_ghosts": len(partial_keys),
+            "nondet_ghosts": len(ghost_keys),
+            "extra": len(extra),
+            "missing": len(missing),
+            "extra_machines": len(extra_machines),
+            "missing_machines": len(missing_machines),
+            "different_C": len(different_c),
+        },
         "census_lift_null": NONDET_CENSUS_LIFT_NULL,
         "census_lift_null_holds": "OPEN",
         "named_hostile": (
@@ -1452,7 +1512,7 @@ def main():
     census = check_census(NULL)
     lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v10",
+        "schema": "rprm-operational-obstruction/v11",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
@@ -1470,6 +1530,7 @@ def main():
         "nondet_collision_null_declared_before_census": NONDET_COLLISION_NULL,
         "nondet_five_agree_null_declared_before_census": NONDET_FIVE_AGREE_NULL,
         "nondet_ghost_null_declared_before_looking": NONDET_GHOST_NULL,
+        "nondet_image_null_declared_before_looking": NONDET_IMAGE_NULL,
         "named": named,
         "board": {
             "schema": board["schema"],
@@ -1524,6 +1585,8 @@ def main():
             "ghost_kinds": nondet_census["ghost_kinds"],
             "ghost_types": nondet_census["ghost_types"],
             "ghost_mix": nondet_census["ghost_mix"],
+            "image_null_holds": nondet_census["image_null_holds"],
+            "image_fiber": nondet_census["image_fiber"],
         },
         "census": census,
         "lift_census": lift,
@@ -1600,6 +1663,8 @@ def main():
         "nondet_ghost_null_holds": nondet_census["ghost_null_holds"],
         "nondet_ghost_mix": nondet_census["ghost_mix"],
         "nondet_ghost_types": nondet_census["ghost_types"],
+        "nondet_image_null_holds": nondet_census["image_null_holds"],
+        "nondet_image_fiber": nondet_census["image_fiber"],
         "board_cells": board["board"]["names"],
         "board_generality": board["generality"],
         "shape_counts_845": census["shape_counts"],

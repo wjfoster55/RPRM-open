@@ -1,5 +1,5 @@
 {
-  "schema": "rprm-operational-obstruction/v10",
+  "schema": "rprm-operational-obstruction/v11",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
   "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
@@ -17,6 +17,7 @@
   "nondet_collision_null_declared_before_census": "On the declared 2- and 3-state one-action NONDET family with successor sets of size 0, 1, or 2 (plus disabled), deadlock/disabled collisions are unoccupied as an earliest clause.",
   "nondet_five_agree_null_declared_before_census": "FIVE.future would agree with the NONDET obstruction disposition on every machine-partition pair in that family.",
   "nondet_ghost_null_declared_before_looking": "The 72 FIVE ghosts on the bounded n=2,3 NONDET family are all ONE(successor_blocks) of one pair-kind and one PARTIAL 2x2 ghost-fold type, analogous to the 845 family's 24 late_enabledness delayed pairs (one obstruction class, one kind).",
+  "nondet_image_null_declared_before_looking": "The 72 FIVE ghosts on the bounded n=2,3 NONDET family are exactly the image of the 72 PARTIAL ghost folds on the checks/futures.py 845-machine family under the embedding that sends a partial function to the singleton-or-absent LTS.",
   "named": {
     "named_hostiles": 21,
     "clauses": [
@@ -247,7 +248,7 @@
     "coverage": "Named hostiles. The 845-family PARTIAL occupancy is not lifted. The bounded n=2,3 census is a separate fiber."
   },
   "nondet_census": {
-    "schema": "rprm-operational-obstruction-nondet/v2",
+    "schema": "rprm-operational-obstruction-nondet/v3",
     "status": "PASS",
     "machines": 4196,
     "cases": 20680,
@@ -312,6 +313,17 @@
         "return_self",
         "return_partner"
       ]
+    },
+    "image_null_holds": true,
+    "image_fiber": {
+      "status": "ONE",
+      "partial_ghosts": 72,
+      "nondet_ghosts": 72,
+      "extra": 0,
+      "missing": 0,
+      "extra_machines": 0,
+      "missing_machines": 0,
+      "different_C": 0
     }
   },
   "census": {
@@ -4169,9 +4181,9 @@
   "source_hashes": {
     "research/operational-obstruction-2026-09-17/obstruction.py": "d8dc2c6bf6c1707d87fb28806719f6364a58972cd3f90ee18ecc070f1d8738bf",
     "research/operational-obstruction-2026-09-17/board.py": "586523a30b28e56fe04cc1d00f168ce777d512f156e0ef1b4cb1fa4093a2ce25",
-    "research/operational-obstruction-2026-09-17/nondet.py": "77633d775847f7215629db866a65a028c19d6c183ee1dc3c616cecd54fdee880",
-    "research/operational-obstruction-2026-09-17/CONTRACT-NONDET.md": "c85cc4c3e5fc8e8e11c6dd617fb8b1bdefc29998878d0dc45677b972356bb0de",
-    "research/operational-obstruction-2026-09-17/verify.py": "c95631278477f6ad4140c13ba6884666ff41232e90be991947fead90f8261e5b",
+    "research/operational-obstruction-2026-09-17/nondet.py": "030c0b540e5082396f16bf163002441291dcbed2c0a75049591f8ee8e0fc279a",
+    "research/operational-obstruction-2026-09-17/CONTRACT-NONDET.md": "b26d3d39b9c27d64f94d279b95b92f58e5f6ffcc75e4870ee4b0c2ae5c2ae31b",
+    "research/operational-obstruction-2026-09-17/verify.py": "a0449d7a1ff0c3d837f15b5f62b0fe146d284d7487abbb6eb277b7ea27b23237",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"

@@ -198,6 +198,42 @@ def encodes_as_partial(machine):
     return True
 
 
+def as_nondet_machine(machine):
+    """Embedding: partial function to singleton-or-absent LTS.
+
+    Defined sources become singleton successor sets. Absent sources stay
+    disabled. Not a claim that this is the 845 lift until the image fiber
+    is compared.
+    """
+    require(type(machine) is Machine, "Machine required")
+    tables = {}
+    for action in machine.actions:
+        table = {}
+        for source, target in machine.transitions[action].items():
+            table[source] = frozenset({target})
+        tables[action] = table
+    return NondetMachine(machine.states, machine.actions, dict(machine.observation), tables)
+
+
+def case_key_nondet(machine, summary):
+    """Exact identity of one (NondetMachine, C) pair."""
+    require_nondet_summary(machine, summary)
+    tables = []
+    for action in machine.actions:
+        rows = tuple(sorted(
+            (source, frozenset(landing))
+            for source, landing in machine.transitions[action].items()
+        ))
+        tables.append((action, rows))
+    observation = tuple(machine.observation[state] for state in machine.states)
+    labels = tuple(summary[state] for state in machine.states)
+    return (machine.states, machine.actions, observation, tuple(tables), labels)
+
+
+def machine_key_nondet(key):
+    return key[:-1]
+
+
 def successor_choices(states, max_size=2):
     """Disabled, deadlock, then nonempty subsets of size 1..max_size."""
     choices = [DISABLED, frozenset()]

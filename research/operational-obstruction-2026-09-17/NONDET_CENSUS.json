@@ -1,5 +1,5 @@
 {
-  "schema": "rprm-operational-obstruction-nondet/v2",
+  "schema": "rprm-operational-obstruction-nondet/v3",
   "status": "PASS",
   "contract": "NONDET-LTS-01",
   "evidence_grade": "finite_test",
@@ -10,6 +10,18 @@
   "five_agree_null_holds": false,
   "ghost_null": "The 72 FIVE ghosts on the bounded n=2,3 NONDET family are all ONE(successor_blocks) of one pair-kind and one PARTIAL 2x2 ghost-fold type, analogous to the 845 family's 24 late_enabledness delayed pairs (one obstruction class, one kind).",
   "ghost_null_holds": false,
+  "image_null": "The 72 FIVE ghosts on the bounded n=2,3 NONDET family are exactly the image of the 72 PARTIAL ghost folds on the checks/futures.py 845-machine family under the embedding that sends a partial function to the singleton-or-absent LTS.",
+  "image_null_holds": true,
+  "image_fiber": {
+    "status": "ONE",
+    "partial_ghosts": 72,
+    "nondet_ghosts": 72,
+    "extra": 0,
+    "missing": 0,
+    "extra_machines": 0,
+    "missing_machines": 0,
+    "different_C": 0
+  },
   "census_lift_null": "The 845-family PARTIAL ghost-fold occupancy lifts unchanged to this NONDET-LTS contract.",
   "census_lift_null_holds": "OPEN",
   "named_hostile": "Two-state constant-observation deadlock versus disabled is ONE enabledness, kind deadlock_disabled. Manifesto-as-nondet is ONE successor_blocks and FIVE-future-sufficient.",
