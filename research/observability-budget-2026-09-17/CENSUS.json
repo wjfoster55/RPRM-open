@@ -650,5 +650,42 @@
       ]
     }
   },
-  "limits": "Complete census of five named ports on the four-state relational-layer machine only. Not AD-R3, not Kalman rank, not a general soundness proof of this script."
+  "Q6": {
+    "question": "does a value-copy ever repair an insufficient L panel",
+    "trials": 80,
+    "repairs": [],
+    "surviving_null": "N_dup_never",
+    "disposition": "NONE",
+    "grade": "THEOREM_RESTRICTED",
+    "dup_null_commit": "f535cd051d814613f0f4e7530fe8b099e7f6c111"
+  },
+  "Q7": {
+    "question": "lookalike machine M: {A} vs {A,A2} vs {A,B}",
+    "A": false,
+    "A_A2": false,
+    "A_B": true,
+    "surviving_null": "N_look_copy",
+    "disposition": "ONE(N_look_copy)",
+    "splitting_A": [
+      [
+        0,
+        1
+      ]
+    ],
+    "splitting_A_A2": [
+      [
+        0,
+        1
+      ]
+    ],
+    "splitting_A_B": []
+  },
+  "Q8": {
+    "question": "does {R,R2} tick-horizon 3 determine h if {R} does not",
+    "R_sufficient": false,
+    "R_R2_sufficient": false,
+    "surviving_null": "N_trace_copy_never",
+    "disposition": "NONE"
+  },
+  "limits": "Complete census of five named ports on the four-state relational-layer machine, plus 80 value-copy trials and one three-state lookalike. Not AD-R3, not Kalman rank, not a general soundness proof of this script."
 }

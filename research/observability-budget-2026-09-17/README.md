@@ -8,6 +8,10 @@ Read in this order:
 1. [NULL.md](NULL.md) — OB-k nulls, frozen before the enumerator ran
    (commit `e758dd3`)
 2. [CLAIM.md](CLAIM.md) / [RESULT.md](RESULT.md) / [CENSUS.json](CENSUS.json)
+3. [NULL-DUP.md](NULL-DUP.md) — duplication nulls, frozen at `f535cd0`
+   before Q6–Q8 ran
+4. [CLAIM-DUP.md](CLAIM-DUP.md) / [THEOREM-DUP.md](THEOREM-DUP.md) /
+   [RESULT-DUP.md](RESULT-DUP.md)
 
 Replay:
 
@@ -30,6 +34,14 @@ does not.
 
 **Q5.** Keep port `{R}` and admit `reveal`: **ONE(yes)**. The
 intervention family changed; the sensor count did not.
+
+**Q6.** Value-copy of an already-supplied port: **NONE** repairs on 80
+L-trials. **THEOREM restricted** ([THEOREM-DUP.md](THEOREM-DUP.md)).
+
+**Q7.** Hostile lookalike M: `{A}` and `{A,A2}` insufficient, `{A,B}`
+sufficient — **ONE(`N_look_copy`)**.
+
+**Q8.** `{R,R2}` tick-horizon 3 stays **NONE**.
 
 Adjacent written source: `docs/relational-layer.md` four-state example.
 AD-R3 remains the linear row-space ancestry, not this census.

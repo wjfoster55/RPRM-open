@@ -15,6 +15,11 @@ PORT_NAMES = ("H", "R", "R2", "X", "Z")
 HOSTILE_MORE = ("R", "R2", "Z")
 TICK_WORDS = ((), ("tick",), ("tick", "tick"), ("tick", "tick", "tick"))
 REVEAL_WORDS = ((), ("reveal",), ("tick",))
+FRESH_COPY = {"H": "H2", "R": "R3", "R2": "R3", "X": "X2", "Z": "Z2"}
+COPY_BASE = {"H2": "H", "R3": "R", "X2": "X", "Z2": "Z"}
+M_STATES = (0, 1, 2)
+M_TABLE = {"A": (0, 0, 1), "A2": (0, 0, 1), "B": (0, 1, 1)}
+DUP_NULL_COMMIT = "f535cd051d814613f0f4e7530fe8b099e7f6c111"
 
 
 def q_hidden(state):
@@ -24,15 +29,51 @@ def q_hidden(state):
 
 def port_value(name, state):
     r, h = state
-    if name == "H":
+    base = COPY_BASE.get(name, name)
+    if base == "H":
         return h
-    if name == "R" or name == "R2":
+    if base in ("R", "R2"):
         return r
-    if name == "X":
+    if base == "X":
         return r ^ h
-    if name == "Z":
+    if base == "Z":
         return 0
     raise ValueError("unknown_port")
+
+
+def m_question(state):
+    return 1 if state == 1 else 0
+
+
+def m_port(name, state):
+    if name not in M_TABLE:
+        raise ValueError("unknown_m_port")
+    return M_TABLE[name][state]
+
+
+def coded_fibers(states, panel, value_fn):
+    buckets = {}
+    for state in states:
+        key = tuple(value_fn(name, state) for name in panel)
+        buckets.setdefault(key, []).append(state)
+    return buckets
+
+
+def question_constant(family, question):
+    for members in family.values():
+        if len({question(state) for state in members}) > 1:
+            return False
+    return True
+
+
+def question_splits(family, question):
+    pairs = []
+    for members in family.values():
+        for i, left in enumerate(members):
+            for right in members[i + 1:]:
+                if question(left) != question(right):
+                    pairs.append((left, right))
+    return tuple(pairs)
 
 
 def tick(state):
@@ -109,8 +150,14 @@ def classify_pair_count(count):
     return names.get(count, "UNNAMED_COUNT")
 
 
+def port_order(name):
+    if name in PORT_NAMES:
+        return (0, PORT_NAMES.index(name))
+    return (1, name)
+
+
 def panel_key(panel):
-    return tuple(sorted(panel, key=PORT_NAMES.index))
+    return tuple(sorted(panel, key=port_order))
 
 
 def main():
@@ -181,6 +228,68 @@ def main():
                 "each_singleton_covers_all_sources")
         require(record["sufficient"] == (not record["splitting_pairs"]), "sufficient_iff_no_split")
 
+    nonempty = [panel_key(panel) for n in range(1, 6) for panel in combinations(PORT_NAMES, n)]
+    require(len(nonempty) == 31, "complete_nonempty_L_panels")
+    dup_trials = []
+    repairs = []
+    for panel in nonempty:
+        before = question_constant(coded_fibers(STATES, panel, port_value), q_hidden)
+        for source_port in panel:
+            fresh = FRESH_COPY[source_port]
+            require(fresh not in panel, "fresh_copy_not_already_in_S")
+            require(all(port_value(fresh, state) == port_value(source_port, state) for state in STATES),
+                    "fresh_copy_agrees_everywhere")
+            enlarged = panel_key(panel + (fresh,))
+            after = question_constant(coded_fibers(STATES, enlarged, port_value), q_hidden)
+            trial = {
+                "panel": list(panel),
+                "copied": source_port,
+                "fresh": fresh,
+                "before": before,
+                "after": after,
+            }
+            dup_trials.append(trial)
+            if after and not before:
+                repairs.append(trial)
+            require(after == before, "duplicate_changes_sufficiency")
+    require(len(dup_trials) == 80, "eighty_L_duplication_trials")
+    q6_null = "N_dup_repairs" if repairs else "N_dup_never"
+
+    m_panels = {
+        "A": ("A",),
+        "A_A2": ("A", "A2"),
+        "A_B": ("A", "B"),
+    }
+    m_ok = {
+        name: question_constant(coded_fibers(M_STATES, panel, m_port), m_question)
+        for name, panel in m_panels.items()
+    }
+    require(m_port("A", 0) == m_port("A2", 0) and m_port("A", 1) == m_port("A2", 1)
+            and m_port("A", 2) == m_port("A2", 2), "A2_duplicates_A")
+    require(m_port("B", 1) != m_port("A", 1), "B_differs_on_live_ghost")
+    if (not m_ok["A"]) and (not m_ok["A_A2"]) and m_ok["A_B"]:
+        q7_null = "N_look_copy"
+    elif (not m_ok["A"]) and m_ok["A_A2"] and m_ok["A_B"]:
+        q7_null = "N_look_any_second"
+    elif (not m_ok["A"]) and (not m_ok["A_A2"]) and (not m_ok["A_B"]):
+        q7_null = "N_look_none"
+    else:
+        q7_null = "UNNAMED_LOOK"
+
+    r_trace = question_constant(
+        fibers(("R",), lambda panel, state: trace_code(panel, state, TICK_WORDS)), q_hidden)
+    r_r2_trace = question_constant(
+        fibers(("R", "R2"), lambda panel, state: trace_code(panel, state, TICK_WORDS)), q_hidden)
+    require(r_trace == tick_ok, "q8_r_trace_matches_q3")
+    q8_null = "N_trace_copy_helps" if (r_r2_trace and not r_trace) else "N_trace_copy_never"
+    require(r_trace == r_r2_trace, "trace_duplicate_changes_sufficiency")
+
+    require(q1_null == "N_H" and q1_count == 1, "q1_disposition_unchanged")
+    require(q2_null == "N_redundant" and not hostile_ok, "q2_disposition_unchanged")
+    require(q3_null == "N_layer" and not tick_ok, "q3_disposition_unchanged")
+    require(q4_null == "N_pairs_HX" and q4_count == 6, "q4_disposition_unchanged")
+    require(q5_null == "N_reveal_separates" and reveal_ok, "q5_disposition_unchanged")
+
     receipt = {
         "status": "PASS",
         "evidence_grade": "FINITE_EXHAUSTIVE_CENSUS",
@@ -240,10 +349,40 @@ def main():
             "splitting_pairs": [[list(a), list(b)] for a, b in splitting_pairs(reveal_family)],
             "fibers": {str(key): [list(s) for s in members] for key, members in reveal_family.items()},
         },
+        "Q6": {
+            "question": "does a value-copy ever repair an insufficient L panel",
+            "trials": 80,
+            "repairs": repairs,
+            "surviving_null": q6_null,
+            "disposition": "NONE" if not repairs else f"ONE({len(repairs)})",
+            "grade": "THEOREM_RESTRICTED" if q6_null == "N_dup_never" else "COUNTEREXAMPLE",
+            "dup_null_commit": DUP_NULL_COMMIT,
+        },
+        "Q7": {
+            "question": "lookalike machine M: {A} vs {A,A2} vs {A,B}",
+            "A": m_ok["A"],
+            "A_A2": m_ok["A_A2"],
+            "A_B": m_ok["A_B"],
+            "surviving_null": q7_null,
+            "disposition": "ONE(N_look_copy)" if q7_null == "N_look_copy" else f"ONE({q7_null})",
+            "splitting_A": [[a, b] for a, b in question_splits(
+                coded_fibers(M_STATES, ("A",), m_port), m_question)],
+            "splitting_A_A2": [[a, b] for a, b in question_splits(
+                coded_fibers(M_STATES, ("A", "A2"), m_port), m_question)],
+            "splitting_A_B": [[a, b] for a, b in question_splits(
+                coded_fibers(M_STATES, ("A", "B"), m_port), m_question)],
+        },
+        "Q8": {
+            "question": "does {R,R2} tick-horizon 3 determine h if {R} does not",
+            "R_sufficient": r_trace,
+            "R_R2_sufficient": r_r2_trace,
+            "surviving_null": q8_null,
+            "disposition": "NONE" if not r_r2_trace else "ONE(yes)",
+        },
         "limits": (
             "Complete census of five named ports on the four-state relational-layer "
-            "machine only. Not AD-R3, not Kalman rank, not a general soundness proof "
-            "of this script."
+            "machine, plus 80 value-copy trials and one three-state lookalike. "
+            "Not AD-R3, not Kalman rank, not a general soundness proof of this script."
         ),
     }
     (HERE / "CENSUS.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
