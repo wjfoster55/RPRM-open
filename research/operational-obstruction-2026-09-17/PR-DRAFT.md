@@ -14,6 +14,7 @@ https://github.com/wjfoster55/RPRM-open/compare/main...research/new-project-oper
 - Hostile next cut, null frozen before looking: that 2×2 still names every ghost fold on the four-state one-action family (10 000 machines) and the three-state two-action family (32 768 machines). **False.** MANY(9360). 5424 keep a 2×2 name; 3936 are `split`/`escape`/`crowd`/`multi`/`mixed`. Those five names are typed definitions; match null against the census is **true.** Unclassified NONE. Unique-pair slice also fails (1632 split/escape/mixed). Replacement: the a priori lift vocabulary.
 - The oracle is now a Tile on a three-cell Board (Manifesto `{p,q,r}`, unique-pair split, 2×2 `sink_self`) with withheld versus revealed ports. Not an Atlas. Generality OPEN.
 - Dual Rank-1 instrument: shortest O05 distinguishing witnesses. Null, frozen before looking: FIVE.future NONE on those three cells implies the O05 witness fiber is NONE. **False.** Each cell is ONE successor word `("a",)`. On the 845 family, FIVE.future ONE equals the O05 word except 24 successor pairs (`("a","a")` vs `("a",)`). Those 24 are not a 2×2 ghost type: successor `partial_land`, delay `late_enabledness`, ghost-fold type NONE.
+- Contract NONDET-LTS-01: finite LTS as partial functions into nonempty successor sets, plus explicit empty-set deadlock. Clauses observation / enabledness / `successor_blocks`. Null “deadlock and disabled share a clause” **false**. Null “845 PARTIAL occupancy lifts” **OPEN**, not run. FIVE.future remains `OPEN_NEW_CARRIER`.
 
 ## Test plan
 
@@ -24,7 +25,7 @@ https://github.com/wjfoster55/RPRM-open/compare/main...research/new-project-oper
 - [ ] Spot-check the three-cell Board: Manifesto withheld-summary ONE, split-machine withheld-summary MANY(6), type `sink_self` MANY(2 cells)
 - [ ] Spot-check O05 witnesses: Manifesto `{p,q,r}`, unique-pair split, and `sink_self` each ONE successor `("a",)` with FIVE.future NONE; five-state O05 `("a",)` ≠ FIVE.future `("a","a")`
 - [ ] Spot-check the 24: successor `partial_land`, `late_enabledness`, not a 2×2 ghost
-- [ ] Spot-check NONDET probe: PARTIAL oracle rejects `NondetMachine`; Manifesto-as-nondet is ONE(`successor_blocks`); deadlock is not enabledness; FIVE.future is OPEN_NEW_CARRIER
+- [ ] Spot-check NONDET-LTS-01: PARTIAL oracle rejects `NondetMachine`; Manifesto-as-nondet is ONE(`successor_blocks`); deadlock versus singleton is `successor_blocks`; deadlock versus disabled is `enabledness`; FIVE.future is OPEN_NEW_CARRIER; 845 census is not lifted
 
 ## OPEN
 

@@ -23,6 +23,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from rprm.core import AdmissionError, deterministic_quotient, nondeterministic_quotient, stochastic_quotient
 from rprm.futures import Machine, future_quotient, shortest_witness
 from nondet import (
+    CONTRACT as NONDET_CONTRACT,
+    NONDET_CLAUSES,
     NondetMachine,
     as_partial_machine,
     is_operational_fold_nondet,
@@ -142,6 +144,15 @@ NONDET_NULL = (
     "The existing PARTIAL obstruction oracle already classifies finite "
     "nondeterministic machines: empty successor sets are enabledness, "
     "and FIVE.future decides every successor_blocks failure."
+)
+DEADLOCK_DISABLED_NULL = (
+    "Deadlock (empty successor set in the domain) and disabled (absent from "
+    "the domain) receive the same earliest clause on a two-state merged pair "
+    "with equal observation."
+)
+NONDET_CENSUS_LIFT_NULL = (
+    "The 845-family PARTIAL ghost-fold occupancy lifts unchanged to this "
+    "NONDET-LTS contract."
 )
 LIFT_SLICES = (
     {"name": "four_state_one_action", "n": 4, "actions": ("a",)},
@@ -590,7 +601,7 @@ def expect_admission_error(call, message):
 
 
 def check_nondet():
-    """First NONDET probe. Null is recorded before the hostiles are read."""
+    """NONDET-LTS-01 oracle. Nulls are recorded before the hostiles are read."""
     expect_admission_error(
         lambda: Machine((0, 1), ("a",), {0: 0, 1: 0}, {"a": {0: frozenset({1}), 1: frozenset({1})}}),
         "Successor sets must not be PARTIAL Machine targets")
@@ -608,16 +619,16 @@ def check_nondet():
     fiber = obstruction_fiber_nondet(manifesto, summary)
     require(fiber["status"] == "ONE" and fiber["pairs"][0]["clause"] == "successor_blocks",
             "Manifesto-as-nondet is ONE successor_blocks, not NONE")
-    require(fiber["five_future"] == "OPEN_NEW_CARRIER",
-            "FIVE.future does not cover NONDET")
+    require(fiber["contract"] == NONDET_CONTRACT and fiber["five_future"] == "OPEN_NEW_CARRIER",
+            "FIVE.future does not cover NONDET-LTS-01")
     expect_admission_error(
         lambda: shortest_witness(manifesto, 0, 1),
         "FIVE.future shortest_witness is not defined on NondetMachine")
     partial = as_partial_machine(manifesto)
     require(obstruction_fiber(partial, summary)["pairs"][0]["clause"] == "successor",
             "Singleton encoding recovers the PARTIAL successor clause")
-    require(pair_clause_nondet(manifesto, 0, 1, summary) != "enabledness",
-            "NONDET has no enabledness clause")
+    require(pair_clause_nondet(manifesto, 0, 1, summary) == "successor_blocks",
+            "Manifesto pair is successor_blocks, not enabledness")
 
     deadlock = NondetMachine(
         (0, 1), ("a",), {0: 0, 1: 0},
@@ -634,6 +645,38 @@ def check_nondet():
         {"a": {0: frozenset(), 1: frozenset()}})
     require(is_operational_fold_nondet(both_dead, dead_c),
             "Equal empty successor sets agree")
+
+    disabled = NondetMachine(
+        (0, 1), ("a",), {0: 0, 1: 0},
+        {"a": {0: frozenset()}})
+    disable_c = {0: 0, 1: 0}
+    dead_vs_off = obstruction_fiber_nondet(disabled, disable_c)
+    require(dead_vs_off["status"] == "ONE" and dead_vs_off["pairs"][0]["clause"] == "enabledness",
+            "Deadlock versus disabled is enabledness, not successor_blocks")
+    expect_admission_error(
+        lambda: as_partial_machine(disabled),
+        "Deadlock cannot be rewritten as a PARTIAL hole")
+    off_vs_live = NondetMachine(
+        (0, 1), ("a",), {0: 0, 1: 0},
+        {"a": {1: frozenset({1})}})
+    off_fiber = obstruction_fiber_nondet(off_vs_live, disable_c)
+    require(off_fiber["status"] == "ONE" and off_fiber["pairs"][0]["clause"] == "enabledness",
+            "Disabled versus a singleton is enabledness")
+    partial_off = as_partial_machine(off_vs_live)
+    require(pair_clause(partial_off, 0, 1, disable_c) == "enabledness",
+            "Singleton live edges recover PARTIAL enabledness")
+    both_off = NondetMachine(
+        (0, 1), ("a",), {0: 0, 1: 0},
+        {"a": {}})
+    require(is_operational_fold_nondet(both_off, disable_c),
+            "Equal disabled sources agree")
+
+    order = NondetMachine(
+        (0, 1), ("a", "b"), {0: 0, 1: 0},
+        {"a": {0: frozenset()},
+         "b": {0: frozenset({0}), 1: frozenset({1})}})
+    require(pair_clause_nondet(order, 0, 1, disable_c) == "enabledness",
+            "Enabledness precedes successor_blocks")
 
     branch = NondetMachine(
         (0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
@@ -661,18 +704,28 @@ def check_nondet():
     empty = NondetMachine((), (), {}, {})
     require(obstruction_fiber_nondet(empty, {})["status"] == "NONE", "Empty NONDET obstruction")
 
-    # The frozen null is the PARTIAL-already-covers-nondet claim.
-    null_holds = False
+    deadlock_clause = pair_clause_nondet(deadlock, 0, 1, dead_c)
+    disabled_clause = pair_clause_nondet(disabled, 0, 1, disable_c)
+    deadlock_disabled_null_holds = deadlock_clause == disabled_clause
+    require(deadlock_clause == "successor_blocks" and disabled_clause == "enabledness",
+            "Deadlock versus live and deadlock versus disabled must split")
+
     return {
+        "contract": NONDET_CONTRACT,
         "nondet_null": NONDET_NULL,
-        "nondet_null_holds": null_holds,
+        "nondet_null_holds": False,
+        "deadlock_disabled_null": DEADLOCK_DISABLED_NULL,
+        "deadlock_disabled_null_holds": deadlock_disabled_null_holds,
+        "census_lift_null": NONDET_CENSUS_LIFT_NULL,
+        "census_lift_null_holds": "OPEN",
         "kind": "NONDET",
-        "clauses": ["observation", "successor_blocks"],
+        "clauses": list(NONDET_CLAUSES),
         "five_future": "OPEN_NEW_CARRIER",
-        "named_hostiles": 8,
+        "named_hostiles": 12,
         "coverage": (
-            "Named hostiles only. Not a census. Complete NONDET obstruction "
-            "on a declared family remains OPEN."
+            "Named hostiles only. Not a census. The 845-family PARTIAL "
+            "occupancy is not lifted. Complete NONDET obstruction on a "
+            "declared family remains OPEN."
         ),
     }
 
@@ -1112,6 +1165,7 @@ def source_hashes():
         "research/operational-obstruction-2026-09-17/obstruction.py",
         "research/operational-obstruction-2026-09-17/board.py",
         "research/operational-obstruction-2026-09-17/nondet.py",
+        "research/operational-obstruction-2026-09-17/CONTRACT-NONDET.md",
         "research/operational-obstruction-2026-09-17/verify.py",
         "rprm/core.py",
         "rprm/futures.py",
@@ -1135,7 +1189,7 @@ def main():
     census = check_census(NULL)
     lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v7",
+        "schema": "rprm-operational-obstruction/v8",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
@@ -1148,6 +1202,8 @@ def main():
         "delay_null_declared_before_census": DELAY_NULL,
         "delay_match_null_declared_before_census": DELAY_MATCH_NULL,
         "nondet_null_declared_before_looking": NONDET_NULL,
+        "deadlock_disabled_null_declared_before_looking": DEADLOCK_DISABLED_NULL,
+        "nondet_census_lift_null_declared_before_looking": NONDET_CENSUS_LIFT_NULL,
         "named": named,
         "board": {
             "schema": board["schema"],
@@ -1241,6 +1297,9 @@ def main():
         "delayed_local_counts": census["delayed_local_counts"],
         "delay_counts": census["delay_counts"],
         "nondet_null_holds": nondet["nondet_null_holds"],
+        "deadlock_disabled_null_holds": nondet["deadlock_disabled_null_holds"],
+        "nondet_census_lift_null_holds": nondet["census_lift_null_holds"],
+        "nondet_contract": nondet["contract"],
         "nondet_five_future": nondet["five_future"],
         "board_cells": board["board"]["names"],
         "board_generality": board["generality"],

@@ -1,10 +1,11 @@
-"""First probe of NONDET obstruction fibers.
+"""NONDET-LTS-01 obstruction oracle.
 
-The PARTIAL oracle in obstruction.py admits only rprm.futures.Machine:
-deterministic partial maps. A successor-set table is a new carrier.
-FIVE.future is not this instrument and is not defined on that carrier.
+New required type: finite labeled transition systems as partial functions
+into nonempty successor sets, plus an explicit empty-set deadlock value.
+The PARTIAL oracle on rprm.futures.Machine does not stretch. FIVE.future
+is not this instrument.
 
-Deadlock is the empty successor set. It is not a separate enabledness port.
+Contract: CONTRACT-NONDET.md
 """
 from __future__ import annotations
 
@@ -14,12 +15,17 @@ from types import MappingProxyType
 from rprm.core import AdmissionError, atom, carrier, require, total_table
 from rprm.futures import Machine
 
-NONDET_CLAUSES = ("observation", "successor_blocks")
+CONTRACT = "NONDET-LTS-01"
+NONDET_CLAUSES = ("observation", "enabledness", "successor_blocks")
 
 
 @dataclass(frozen=True)
 class NondetMachine:
-    """Finite total nondeterministic machine. Every state has a successor set."""
+    """Finite LTS. Observation is total. Each action is a partial set table.
+
+    Absent source: disabled. Present empty set: deadlock. Present nonempty
+    set: live branching.
+    """
 
     states: tuple
     actions: tuple
@@ -38,9 +44,10 @@ class NondetMachine:
         tables = {}
         for action, table in self.transitions.items():
             require(type(table) is dict, "Successor-set table must be a dictionary")
-            total_table(self.states, table, "Successor sets for " + action)
             frozen = {}
             for source, successors in table.items():
+                atom(source)
+                require(source in self.states, "Source leaves the carrier")
                 require(type(successors) is frozenset, "Successors must be an exact set")
                 for target in successors:
                     atom(target)
@@ -62,16 +69,23 @@ def require_nondet_summary(machine, summary):
         atom(value)
 
 
-def block_image(summary, successors):
-    return frozenset(summary[state] for state in successors)
+def action_defined(machine, action, state):
+    require_nondet_machine(machine)
+    require(action in machine.actions, "Unadmitted action")
+    return state in machine.transitions[action]
+
+
+def successors(machine, action, state):
+    require(action_defined(machine, action, state), "Action is disabled at this state")
+    return machine.transitions[action][state]
+
+
+def block_image(summary, landing):
+    return frozenset(summary[state] for state in landing)
 
 
 def pair_clause_nondet(machine, left, right, summary):
-    """Earliest NONDET failure for one unordered C-pair, or 'pass'.
-
-    Observation first. Then successor-block sets. There is no enabledness
-    clause: the successor table is total, and deadlock is the empty set.
-    """
+    """Earliest NONDET-LTS failure for one unordered C-pair, or 'pass'."""
     require_nondet_summary(machine, summary)
     atom(left)
     atom(right)
@@ -79,10 +93,15 @@ def pair_clause_nondet(machine, left, right, summary):
     if machine.observation[left] != machine.observation[right]:
         return "observation"
     for action in machine.actions:
-        left_blocks = block_image(summary, machine.transitions[action][left])
-        right_blocks = block_image(summary, machine.transitions[action][right])
-        if left_blocks != right_blocks:
-            return "successor_blocks"
+        left_on = action_defined(machine, action, left)
+        right_on = action_defined(machine, action, right)
+        if left_on != right_on:
+            return "enabledness"
+        if left_on:
+            left_blocks = block_image(summary, successors(machine, action, left))
+            right_blocks = block_image(summary, successors(machine, action, right))
+            if left_blocks != right_blocks:
+                return "successor_blocks"
     return "pass"
 
 
@@ -98,7 +117,7 @@ def merged_pairs_nondet(machine, summary):
 
 
 def obstruction_fiber_nondet(machine, summary):
-    """Complete NONDET obstruction of a proposed summary.
+    """Complete NONDET-LTS obstruction of a proposed summary.
 
     OPEN_NEW_CARRIER relative to the PARTIAL oracle: this function does not
     accept rprm.futures.Machine, and obstruction_fiber does not accept
@@ -130,6 +149,7 @@ def obstruction_fiber_nondet(machine, summary):
         "passed": passed,
         "by_clause": by_clause,
         "kind": "NONDET",
+        "contract": CONTRACT,
         "five_future": "OPEN_NEW_CARRIER",
     }
 
@@ -139,19 +159,18 @@ def is_operational_fold_nondet(machine, summary):
 
 
 def as_partial_machine(machine):
-    """Singleton-valued encoding, or admission error if some set is not a singleton.
+    """Singleton-valued live edges, or admission error.
 
-    Empty sets and branching sets are not partial maps. That is the point
-    of OPEN_NEW_CARRIER: deadlock and branching do not become enabledness.
+    Missing sources become PARTIAL domain holes (disabled). Empty sets and
+    branching sets are not partial maps: deadlock is not a missing port.
     """
     require_nondet_machine(machine)
     tables = {}
     for action in machine.actions:
         table = {}
-        for state in machine.states:
-            successors = machine.transitions[action][state]
-            if len(successors) != 1:
+        for state, landing in machine.transitions[action].items():
+            if len(landing) != 1:
                 raise AdmissionError("Successor set is not a singleton; not a PARTIAL map")
-            table[state] = next(iter(successors))
+            table[state] = next(iter(landing))
         tables[action] = table
     return Machine(machine.states, machine.actions, dict(machine.observation), tables)

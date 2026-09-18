@@ -122,11 +122,7 @@ bisimulation or Moore refinement. O05 is the ordinary operational-fold
 test for deterministic partial systems; the work is the complete fiber,
 the ghost census, and the separation from FIVE.future.
 
-`KERNEL` complete obstruction remains OPEN. `NONDET` has a first probe:
-new carrier `NondetMachine`, clauses observation / `successor_blocks`
-(deadlock is the empty set, not enabledness). The PARTIAL oracle rejects
-that carrier (`OPEN_NEW_CARRIER`). FIVE.future is not defined on it.
-A family census remains OPEN.
+`KERNEL` complete obstruction remains OPEN. First NONDET-LTS contract: `research/operational-obstruction-2026-09-17/CONTRACT-NONDET.md` (observation / enabledness / `successor_blocks`; deadlock is not disabled; the 845 census does not lift).
 
 ## Receipts
 

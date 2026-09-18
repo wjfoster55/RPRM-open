@@ -36,8 +36,10 @@ number. Not last night's `T(X,P)` count.
    written proof of the pair trichotomy and of FIVE-visibility of the first
    two clauses; finite test for the censuses, for O09 kernel agreement, and
    for agreement of the §9 occupancy with the §10 typed residue definitions.
-   Unbounded carriers, `NONDET`, `KERNEL`, n=4 two-action, and eight-Tile
-   Board/Atlas remain OPEN. The three-cell Board of §11 is a finite test.
+   Unbounded carriers, a `NONDET` family census, `KERNEL`, n=4 two-action,
+   and eight-Tile Board/Atlas remain OPEN. Contract NONDET-LTS-01 is
+   written in §15; it is not a family census. The three-cell Board of
+   §11 is a finite test.
    The dual O05 witness fiber of §12 is a finite test on those cells and
    the 845 family; it is not FIVE.future.
 
@@ -151,9 +153,11 @@ The scientific yield is the negative: treating the Manifesto `{p,q,r}` picture a
 
 ## 6. OPEN
 
-- `NONDET` complete obstruction on a declared family. §14 is a first probe
-  (new carrier, handful of hostiles). Overnight's relational/unknown-map
-  count was not run; it stays OPEN.
+- `NONDET` complete obstruction on a declared family. Contract
+  NONDET-LTS-01 (§15, [CONTRACT-NONDET.md](CONTRACT-NONDET.md)) is the
+  written trichotomy and named hostiles. The 845-family PARTIAL occupancy
+  is not lifted. Overnight's relational/unknown-map count was not run;
+  it stays OPEN. §14 is the superseded total-table probe.
 - `KERNEL` complete obstruction (pushforward mass, not support).
 - Applied `rho` of last night's count on one published reduced model of a
   partial system.
@@ -771,4 +775,58 @@ transition targets to be admitted states, not successor sets.
 **Readout.** The null is **false**. The PARTIAL oracle rejects
 `NondetMachine` (`OPEN_NEW_CARRIER`). Deadlock is `successor_blocks`.
 FIVE.future is `OPEN_NEW_CARRIER` on this carrier. Manifesto-as-nondet is
-ONE(`successor_blocks`). Oracle: [nondet.py](nondet.py).
+ONE(`successor_blocks`). Oracle at the time: [nondet.py](nondet.py).
+Superseded by §15: this probe had no enabledness port.
+
+## 15. Contract NONDET-LTS-01
+
+New required type. The PARTIAL oracle does not stretch. The §14 total
+table could not host deadlock versus disabled. Full six-point record:
+[CONTRACT-NONDET.md](CONTRACT-NONDET.md).
+
+1. **Carrier.** Finite labeled transition systems. Observation is total.
+   Each action is a *partial* function from states to frozensets. Absent
+   source: disabled. Present empty set: deadlock. Present nonempty set:
+   live branching. Live edges are partial functions into nonempty
+   subsets. Deadlock is an explicit empty value in the domain, not a
+   missing port.
+2. **Ports.** Supplied: the nondet machine and `C`. Missing: the complete
+   obstruction against this contract. Readout: `observation`,
+   `enabledness`, or `successor_blocks`, or `pass`.
+3. **Operation.** `NONDET`, diagnostic. Enabledness is domain membership.
+   Deadlock is a successor-set value.
+4. **Receiver.** Observation, enabledness, and successor *sets of
+   C-blocks*. Not FIVE.future. Not PARTIAL one-step labels.
+5. **Fiber.** Complete set of failing merged pairs. NONE/ONE/MANY after
+   that enumeration. This cut enumerates named hostiles, not a family.
+6. **Coverage, hostile, grade.** Coverage: written trichotomy; named
+   hostiles in `verify.py`. Hostile: deadlock versus disabled on a
+   two-state merged pair. Grade: written trichotomy; finite tests. The
+   845-family PARTIAL census does **not** lift; that null is frozen and
+   not run.
+
+**Definition (NONDET-LTS earliest clause).** Observation if present
+answers differ. Else `enabledness` if some action is defined at exactly
+one of the two states. Else `successor_blocks` if some action defined
+at both has `C[N_a(x)] ≠ C[N_a(y)]`. Else `pass`. `C[∅] = ∅`.
+
+**Proposition (trichotomy).** These four labels partition the merged-pair
+carrier. Grade: written from the definition.
+
+**Proposition (deadlock is not disabled).** Empty set in the domain versus
+a missing source is `enabledness`. Empty set versus a nonempty landing,
+both in the domain, is `successor_blocks` once observation agrees.
+
+**Nulls, frozen before the hostiles:**
+
+> Deadlock (empty successor set in the domain) and disabled (absent from
+> the domain) receive the same earliest clause on a two-state merged pair
+> with equal observation.
+
+> The 845-family PARTIAL ghost-fold occupancy lifts unchanged to this
+> NONDET-LTS contract.
+
+**Readout.** The first null is **false**: deadlock versus a singleton is
+`successor_blocks`; deadlock versus disabled is `enabledness`. The second
+null is **OPEN** and was not run. FIVE.future remains `OPEN_NEW_CARRIER`.
+Oracle: [nondet.py](nondet.py).
