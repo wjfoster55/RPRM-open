@@ -9,11 +9,13 @@ Read in this order:
 1. [NULL.md](NULL.md) — frozen before the enumerator (commit `0256331`)
 2. [CLAIM.md](CLAIM.md) / [RESULT.md](RESULT.md) / [CENSUS.json](CENSUS.json)
 3. [MEASUREMENT-CONTRACT-NOTE.md](MEASUREMENT-CONTRACT-NOTE.md) — standalone for tomorrow
+4. [IDENTIFICATION.md](IDENTIFICATION.md) — Count2 fiber of 1 **is** XOR=1
 
 Replay:
 
 ```powershell
 python -I -B research/measurement-contract-2026-09-17/verify_mc.py
+python -I -B research/measurement-contract-2026-09-17/verify_id.py
 ```
 
 Does not import `rprm` or the other tonight trees.
@@ -41,6 +43,9 @@ Bernoulli of XOR (`1/2` is in the image).
 
 **Q12.** Count2 is not a CAR. The contract that looks identified has
 fiber **MANY** at count `1`.
+
+**Identification.** That MANY family is the XOR=1 inverse fiber:
+`Count2^{-1}(1) = XOR^{-1}(1) = ((0,1),(1,0))`. Not a thirteenth null.
 
 Adjacent written source: Manifesto III.7 count/density and Proposition
 III.7.2. Discrete census stops here.

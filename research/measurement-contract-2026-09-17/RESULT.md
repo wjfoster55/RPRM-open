@@ -56,3 +56,10 @@ Rank-8 machine-readable units/calibration/source-identity contracts,
 prospective use on a real pipeline, Lean. This packet does not
 establish its own general soundness beyond Count2, Mean2, and
 FourState on Bits2.
+
+## Identification (not a new census)
+
+`Count2^{-1}(1) = XOR^{-1}(1) = ((0,1),(1,0))`. Replay
+`verify_id.py`. MC-k Q3 MANY is IF-k Q3 MANY as sets. Decoder
+`h(0)=0`, `h(1)=1`, `h(2)=0` is XOR as a function of count. The mean
+numeral is still not XOR.

@@ -3,11 +3,12 @@
 17 September 2026. Standalone note for tomorrow. Not BSD. Not a
 laboratory calibration. Not a physical law.
 
-Branch `research/measurement-contract-2026-09-17` in worktree
+Branch `research/measurement-contract-2026-09-17` @ `6e4b028` in worktree
 `C:\github\RPRM-open-measurement-contract`. Replay:
 
 ```powershell
 python -I -B research/measurement-contract-2026-09-17/verify_mc.py
+python -I -B research/measurement-contract-2026-09-17/verify_id.py
 ```
 
 Nulls were frozen at `0256331` before the enumerator. Evidence grade is
@@ -66,6 +67,10 @@ Hostile: Count2 looks identified (three singleton codes) and the pair
 fiber at count `1` is still MANY. Independent bits reconstruct the
 wrong pairs. The slogan “sample mean of two bits estimates XOR” fails
 as a numeral and succeeds as a nonlinear decoder.
+
+**Identification.** `Count2^{-1}(1) = XOR^{-1}(1) = ((0,1),(1,0))`.
+The measurement MANY at count `1` is the XOR=1 inverse fiber. Not a
+new census. See [IDENTIFICATION.md](IDENTIFICATION.md).
 
 ---
 
