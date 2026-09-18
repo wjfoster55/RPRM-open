@@ -104,7 +104,8 @@ Not a new minimization theory. Not a count of unknown maps. Not an operational
 quotient for relations or kernels (those kinds have different clauses; the
 kernel equal-support hostile is retained as out-of-carrier for this fiber).
 Not Lean. Not a 21st default `verify.py` job. Not an eight-Tile Board or
-Atlas theorem; the three-cell instance is a finite test.
+Atlas theorem; the three-cell instance is a finite test. A first NONDET
+probe exists as a new carrier; a family census remains OPEN.
 
 ## Reproduce
 
@@ -120,3 +121,4 @@ Lift census: [LIFT_CENSUS.json](LIFT_CENSUS.json).
 Three-cell Board: [BOARD.json](BOARD.json).
 O05 distinguishing witnesses: [WITNESS.json](WITNESS.json).
 Delayed FIVE pairs: [DELAYED.json](DELAYED.json).
+First NONDET probe: [nondet.py](nondet.py). Short note: [SHORT-NOTE.md](SHORT-NOTE.md).

@@ -24,6 +24,7 @@ https://github.com/wjfoster55/RPRM-open/compare/main...research/new-project-oper
 - [ ] Spot-check the three-cell Board: Manifesto withheld-summary ONE, split-machine withheld-summary MANY(6), type `sink_self` MANY(2 cells)
 - [ ] Spot-check O05 witnesses: Manifesto `{p,q,r}`, unique-pair split, and `sink_self` each ONE successor `("a",)` with FIVE.future NONE; five-state O05 `("a",)` ≠ FIVE.future `("a","a")`
 - [ ] Spot-check the 24: successor `partial_land`, `late_enabledness`, not a 2×2 ghost
+- [ ] Spot-check NONDET probe: PARTIAL oracle rejects `NondetMachine`; Manifesto-as-nondet is ONE(`successor_blocks`); deadlock is not enabledness; FIVE.future is OPEN_NEW_CARRIER
 
 ## OPEN
 

@@ -151,9 +151,9 @@ The scientific yield is the negative: treating the Manifesto `{p,q,r}` picture a
 
 ## 6. OPEN
 
-- `NONDET` complete obstruction (successor *sets* of blocks; deadlock is not
-  a separate enabledness port). Overnight's relational/unknown-map count was
-  not run; it stays OPEN.
+- `NONDET` complete obstruction on a declared family. §14 is a first probe
+  (new carrier, handful of hostiles). Overnight's relational/unknown-map
+  count was not run; it stays OPEN.
 - `KERNEL` complete obstruction (pushforward mass, not support).
 - Applied `rho` of last night's count on one published reduced model of a
   partial system.
@@ -723,3 +723,52 @@ FIVE delay is `late_enabledness` on all 24.
 This Board Tile now carries the witness port. Frozen receipts:
 [WITNESS.json](WITNESS.json) and the `o05_witness` field of
 [BOARD.json](BOARD.json).
+
+## 14. First NONDET probe
+
+The §1 oracle's domain is `rprm.futures.Machine`: deterministic partial
+maps. A successor-set table is a new required type. That is
+`OPEN_NEW_CARRIER`, not a stretch of the PARTIAL trichotomy. FIVE.future
+is not defined on that carrier and does not decide set-valued descent.
+
+1. **Carrier.** Finite total nondeterministic machines: every state has a
+   successor set, possibly empty. Equality of states is the declared state
+   equality. A proposed summary `C` is as in §1.
+2. **Ports.** Supplied: the nondet machine and `C`. Missing: the complete
+   obstruction against set-valued O05. Readout: observation or
+   `successor_blocks`, or `pass`. There is no enabledness clause.
+3. **Operation.** `NONDET`, diagnostic. Deadlock is the empty successor
+   set, not a missing domain.
+4. **Receiver.** Observation and successor *sets of C-blocks*, as in
+   `docs/operations.md`. Not tagged-word FIVE.future.
+5. **Fiber.** Complete set of failing merged pairs. NONE/ONE/MANY after
+   that enumeration. This cut enumerates only named hostiles, not a family.
+6. **Coverage, hostile, grade.** Coverage: written admission boundary of
+   the PARTIAL oracle, plus eight named hostiles. Hostile: Manifesto as
+   singleton-valued nondet is ONE(`successor_blocks`) while FIVE.future
+   cannot run; deadlock versus a singleton is `successor_blocks`, not
+   enabledness. Grade: written `OPEN_NEW_CARRIER` for the old domain;
+   finite test for the hostiles. A complete family census remains OPEN.
+
+**Definition (NondetMachine).** States, actions, total observation, and a
+total table of frozensets. Empty set admitted. Branching admitted.
+
+**Definition (NONDET earliest clause).** Observation if present answers
+differ. Else `successor_blocks` if some action has `C[N_a(x)] ≠ C[N_a(y)]`.
+Else `pass`.
+
+**Proposition (PARTIAL oracle does not admit this carrier).**
+`obstruction_fiber` requires `type is Machine`. `Machine` requires
+transition targets to be admitted states, not successor sets.
+`shortest_witness` requires `Machine`. Grade: written from the constructors.
+
+**Null, frozen before the hostiles:**
+
+> The existing PARTIAL obstruction oracle already classifies finite
+> nondeterministic machines: empty successor sets are enabledness, and
+> FIVE.future decides every `successor_blocks` failure.
+
+**Readout.** The null is **false**. The PARTIAL oracle rejects
+`NondetMachine` (`OPEN_NEW_CARRIER`). Deadlock is `successor_blocks`.
+FIVE.future is `OPEN_NEW_CARRIER` on this carrier. Manifesto-as-nondet is
+ONE(`successor_blocks`). Oracle: [nondet.py](nondet.py).

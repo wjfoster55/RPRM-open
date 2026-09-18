@@ -8,6 +8,7 @@ Lift census: [LIFT_CENSUS.json](LIFT_CENSUS.json).
 Three-cell Board: [BOARD.json](BOARD.json).
 O05 distinguishing witnesses: [WITNESS.json](WITNESS.json).
 Delayed FIVE pairs: [DELAYED.json](DELAYED.json).
+First NONDET probe: [nondet.py](nondet.py). Short note: [SHORT-NOTE.md](SHORT-NOTE.md).
 
 ```powershell
 python -I -B research/operational-obstruction-2026-09-17/verify.py

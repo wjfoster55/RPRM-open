@@ -1,5 +1,5 @@
 {
-  "schema": "rprm-operational-obstruction/v6",
+  "schema": "rprm-operational-obstruction/v7",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
   "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
@@ -11,6 +11,7 @@
   "five_coincides_null_declared_before_census": "On the checks/futures.py 845-machine family, for every failing merged pair with FIVE.future ONE, the FIVE.future word equals the shortlex-least O05 clause-witness.",
   "delay_null_declared_before_census": "The 24 FIVE.future/O05 disagreements on the checks/futures.py 845-machine family are all successor-class ghost folds of one 2x2 type sink_self, sink_partner, return_self, or return_partner.",
   "delay_match_null_declared_before_census": "On the 845-machine family, every delayed FIVE successor pair has obstruction class successor, is not a ghost fold, has unique-pair local name partial_land, and has FIVE delay late_enabledness. Unclassified delay is NONE.",
+  "nondet_null_declared_before_looking": "The existing PARTIAL obstruction oracle already classifies finite nondeterministic machines: empty successor sets are enabledness, and FIVE.future decides every successor_blocks failure.",
   "named": {
     "named_hostiles": 21,
     "clauses": [
@@ -221,6 +222,18 @@
       "late_observation": 0,
       "late_other": 0
     }
+  },
+  "nondet": {
+    "nondet_null": "The existing PARTIAL obstruction oracle already classifies finite nondeterministic machines: empty successor sets are enabledness, and FIVE.future decides every successor_blocks failure.",
+    "nondet_null_holds": false,
+    "kind": "NONDET",
+    "clauses": [
+      "observation",
+      "successor_blocks"
+    ],
+    "five_future": "OPEN_NEW_CARRIER",
+    "named_hostiles": 8,
+    "coverage": "Named hostiles only. Not a census. Complete NONDET obstruction on a declared family remains OPEN."
   },
   "census": {
     "machines": 845,
@@ -4077,7 +4090,8 @@
   "source_hashes": {
     "research/operational-obstruction-2026-09-17/obstruction.py": "d8dc2c6bf6c1707d87fb28806719f6364a58972cd3f90ee18ecc070f1d8738bf",
     "research/operational-obstruction-2026-09-17/board.py": "586523a30b28e56fe04cc1d00f168ce777d512f156e0ef1b4cb1fa4093a2ce25",
-    "research/operational-obstruction-2026-09-17/verify.py": "bce2bdc2d7d3516876d405b9499d67550a988cfc3d31b1e031fd3e35f1d371ae",
+    "research/operational-obstruction-2026-09-17/nondet.py": "d500a3f2f952d8106dda3561f996d9012294af9572aee4f604c076887f62e844",
+    "research/operational-obstruction-2026-09-17/verify.py": "a00dcd19b3d530dee2dd7e0f2caa716380315683cc703733bf3f323c97f02fd6",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"

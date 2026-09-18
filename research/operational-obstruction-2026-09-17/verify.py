@@ -20,8 +20,15 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from rprm.core import AdmissionError, deterministic_quotient, stochastic_quotient
+from rprm.core import AdmissionError, deterministic_quotient, nondeterministic_quotient, stochastic_quotient
 from rprm.futures import Machine, future_quotient, shortest_witness
+from nondet import (
+    NondetMachine,
+    as_partial_machine,
+    is_operational_fold_nondet,
+    obstruction_fiber_nondet,
+    pair_clause_nondet,
+)
 from board import (
     check_board,
     compact_witness_fiber,
@@ -130,6 +137,11 @@ DELAY_MATCH_NULL = (
     "obstruction class successor, is not a ghost fold, has unique-pair "
     "local name partial_land, and has FIVE delay late_enabledness. "
     "Unclassified delay is NONE."
+)
+NONDET_NULL = (
+    "The existing PARTIAL obstruction oracle already classifies finite "
+    "nondeterministic machines: empty successor sets are enabledness, "
+    "and FIVE.future decides every successor_blocks failure."
 )
 LIFT_SLICES = (
     {"name": "four_state_one_action", "n": 4, "actions": ("a",)},
@@ -569,6 +581,102 @@ def check_witnesses():
     }
 
 
+def expect_admission_error(call, message):
+    try:
+        call()
+    except AdmissionError:
+        return
+    raise RuntimeError(message)
+
+
+def check_nondet():
+    """First NONDET probe. Null is recorded before the hostiles are read."""
+    expect_admission_error(
+        lambda: Machine((0, 1), ("a",), {0: 0, 1: 0}, {"a": {0: frozenset({1}), 1: frozenset({1})}}),
+        "Successor sets must not be PARTIAL Machine targets")
+    expect_admission_error(
+        lambda: obstruction_fiber(
+            NondetMachine((0, 1), ("a",), {0: 0, 1: 0},
+                          {"a": {0: frozenset({0}), 1: frozenset({1})}}),
+            {0: 0, 1: 0}),
+        "PARTIAL oracle must reject NondetMachine: OPEN_NEW_CARRIER")
+
+    manifesto = NondetMachine(
+        (0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
+        {"a": {0: frozenset({0}), 1: frozenset({2}), 2: frozenset({2})}})
+    summary = {0: 0, 1: 0, 2: 1}
+    fiber = obstruction_fiber_nondet(manifesto, summary)
+    require(fiber["status"] == "ONE" and fiber["pairs"][0]["clause"] == "successor_blocks",
+            "Manifesto-as-nondet is ONE successor_blocks, not NONE")
+    require(fiber["five_future"] == "OPEN_NEW_CARRIER",
+            "FIVE.future does not cover NONDET")
+    expect_admission_error(
+        lambda: shortest_witness(manifesto, 0, 1),
+        "FIVE.future shortest_witness is not defined on NondetMachine")
+    partial = as_partial_machine(manifesto)
+    require(obstruction_fiber(partial, summary)["pairs"][0]["clause"] == "successor",
+            "Singleton encoding recovers the PARTIAL successor clause")
+    require(pair_clause_nondet(manifesto, 0, 1, summary) != "enabledness",
+            "NONDET has no enabledness clause")
+
+    deadlock = NondetMachine(
+        (0, 1), ("a",), {0: 0, 1: 0},
+        {"a": {0: frozenset(), 1: frozenset({1})}})
+    dead_c = {0: 0, 1: 0}
+    dead = obstruction_fiber_nondet(deadlock, dead_c)
+    require(dead["status"] == "ONE" and dead["pairs"][0]["clause"] == "successor_blocks",
+            "Deadlock versus a singleton is successor_blocks, not enabledness")
+    expect_admission_error(
+        lambda: as_partial_machine(deadlock),
+        "Empty successor set is not a PARTIAL domain hole")
+    both_dead = NondetMachine(
+        (0, 1), ("a",), {0: 0, 1: 0},
+        {"a": {0: frozenset(), 1: frozenset()}})
+    require(is_operational_fold_nondet(both_dead, dead_c),
+            "Equal empty successor sets agree")
+
+    branch = NondetMachine(
+        (0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
+        {"a": {0: frozenset({0, 2}), 1: frozenset({2}), 2: frozenset({2})}})
+    branch_c = {0: 0, 1: 0, 2: 1}
+    require(obstruction_fiber_nondet(branch, branch_c)["status"] == "ONE",
+            "Branching versus a singleton landing is successor_blocks")
+    expect_admission_error(
+        lambda: as_partial_machine(branch),
+        "Branching sets are not PARTIAL maps")
+
+    two = NondetMachine(
+        (0, 1, 2, 3), ("a",), {0: 0, 1: 1, 2: 0, 3: 1},
+        {"a": {0: frozenset({0}), 1: frozenset({1}), 2: frozenset({2}), 3: frozenset({3})}})
+    collapsed = {0: 0, 1: 0, 2: 1, 3: 1}
+    many = obstruction_fiber_nondet(two, collapsed)
+    require(many["status"] == "MANY" and many["by_clause"]["observation"] == 2,
+            "Two observation failures remain MANY")
+    core = nondeterministic_quotient(
+        two.states, collapsed, dict(two.observation),
+        {state: two.transitions["a"][state] for state in two.states})
+    require(core["status"] == "REJECT" and core["reason"] == "observation",
+            "Core first-witness still rejects")
+
+    empty = NondetMachine((), (), {}, {})
+    require(obstruction_fiber_nondet(empty, {})["status"] == "NONE", "Empty NONDET obstruction")
+
+    # The frozen null is the PARTIAL-already-covers-nondet claim.
+    null_holds = False
+    return {
+        "nondet_null": NONDET_NULL,
+        "nondet_null_holds": null_holds,
+        "kind": "NONDET",
+        "clauses": ["observation", "successor_blocks"],
+        "five_future": "OPEN_NEW_CARRIER",
+        "named_hostiles": 8,
+        "coverage": (
+            "Named hostiles only. Not a census. Complete NONDET obstruction "
+            "on a declared family remains OPEN."
+        ),
+    }
+
+
 def slice_machines(n, actions):
     """Same constructor as checks/futures.py: binary observations, all partial maps."""
     states = tuple(range(n))
@@ -1003,6 +1111,7 @@ def source_hashes():
     names = (
         "research/operational-obstruction-2026-09-17/obstruction.py",
         "research/operational-obstruction-2026-09-17/board.py",
+        "research/operational-obstruction-2026-09-17/nondet.py",
         "research/operational-obstruction-2026-09-17/verify.py",
         "rprm/core.py",
         "rprm/futures.py",
@@ -1022,10 +1131,11 @@ def main():
     named = check_named_hostiles()
     board = check_board()
     witnesses = check_witnesses()
+    nondet = check_nondet()
     census = check_census(NULL)
     lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v6",
+        "schema": "rprm-operational-obstruction/v7",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
@@ -1037,6 +1147,7 @@ def main():
         "five_coincides_null_declared_before_census": FIVE_COINCIDES_NULL,
         "delay_null_declared_before_census": DELAY_NULL,
         "delay_match_null_declared_before_census": DELAY_MATCH_NULL,
+        "nondet_null_declared_before_looking": NONDET_NULL,
         "named": named,
         "board": {
             "schema": board["schema"],
@@ -1070,6 +1181,7 @@ def main():
             "delayed_local_counts": census["delayed_local_counts"],
             "delay_counts": census["delay_counts"],
         },
+        "nondet": nondet,
         "census": census,
         "lift_census": lift,
         "source_hashes": source_hashes(),
@@ -1128,6 +1240,8 @@ def main():
         "delay_match_null_holds": census["delay_match_null_holds"],
         "delayed_local_counts": census["delayed_local_counts"],
         "delay_counts": census["delay_counts"],
+        "nondet_null_holds": nondet["nondet_null_holds"],
+        "nondet_five_future": nondet["five_future"],
         "board_cells": board["board"]["names"],
         "board_generality": board["generality"],
         "shape_counts_845": census["shape_counts"],
