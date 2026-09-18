@@ -132,8 +132,14 @@ a cap hit, or `n>32` is UNRESOLVED. Never YES.
 - Isolated n=2 shelf and midair: exhaust, T-NO (T-H4, extra midair).
 - Packed YES `A_w4_x26_V180`, `C_adj4_V60`: `n>MAX_N`, skipped (T-H3).
 - Horizon-pay `D_ledge_end28/30`, `D_sill_end25`: 50000 expansions, no
-  meet, not exhausted (T-H2). No cheap T-NO. Whether a complete T search
-  would meet (too coarse) or exhaust (a T-NO that is not cheap) is OPEN.
+  meet, not exhausted (T-H2). A **complete** T search **MEETS**:
+  constructive occupancy-count paths of length 48/24/49 into the gap
+  column, replayed on the T graph (`NULLS_COMPLETE_T.md` T-C1–C3).
+  The 50k cap missed those paths because it wandered the ledge
+  rearrangements. T is therefore too coarse to NO these rows (same
+  usefulness failure as full soup, with token count enforced). Actual
+  `stepB` still has Q=0; the T path uses scan-order/phase freedom that
+  the updater does not grant.
 
 Official static routing does not use T. This is not `sill_need`.
 
@@ -163,5 +169,6 @@ static certificate.
 - F3 full injection soup — sound, never NOs on this container. Not official.
 - F3 wall-only injection soup — useful on shelves, false-NO on packed YES.
   Not official.
-- F3 class T on n=15/25 horizon-pay ledges — budgeted occupancy search
-  hits 50000 states without a NO. Not a cheap certificate for those rows.
+- F3 class T on n=15/25 horizon-pay ledges — 50000-state search hits
+  the cap; complete T MEETS `R_catwalk`. Not a cheap or complete NO
+  on those rows.

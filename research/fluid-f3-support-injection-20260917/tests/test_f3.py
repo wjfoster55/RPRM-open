@@ -16,9 +16,10 @@ F3 = HERE.parent
 SRC = F3 / "src"
 sys.path.insert(0, str(SRC))
 
-from bound_f3 import evaluate_f3  # noqa: E402
+from bound_f3 import evaluate_f3, normalize_unit_occupancy  # noqa: E402
 from f2_import import F2_PINNED, bound, scenes  # noqa: E402
 from oracle_driver import run_oracle  # noqa: E402
+from t_complete import complete_t  # noqa: E402
 
 HOSTILE_WATER = [(30, 34), (31, 34)]
 HOSTILE_WALLS = [(29, 36), (30, 36)]
@@ -534,6 +535,58 @@ class TestCycleExact(unittest.TestCase):
             self.assertEqual(out["Qdyn"], 1, sid)
             self.assertNotEqual(out["stop"], "occ_cycle", sid)
             self.assertGreaterEqual(out["firstBreach"], 0, sid)
+
+
+class TestCompleteTLedges(unittest.TestCase):
+    """Complete T on horizon-pay rows: MEETS (frozen NULLS_COMPLETE_T.md)."""
+
+    def test_complete_t_meets_horizon_ledges(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        jobs = (
+            ("D_ledge_end28", 28, 21, 32),
+            ("D_ledge_end30", 30, 21, 32),
+            ("D_sill_end25", 25, 35, 32),
+        )
+        rows = []
+        for sid, tip, row, gap in jobs:
+            scene = panel[sid]
+            mass_n = normalize_unit_occupancy(scene["mass"], scene["walls"])
+            out = complete_t(
+                scene["walls"], mass_n, scene["monitor"],
+                scene["W"], scene["H"], tip, row, gap,
+            )
+            rows.append({
+                "id": sid,
+                "meets_R_catwalk": out["meets_R_catwalk"],
+                "method": out.get("method"),
+                "witness_len": out.get("witness_len"),
+                "replay_ok": out.get("replay_ok"),
+                "path": out.get("path"),
+                "static": evaluate_f3(
+                    scene["walls"], scene["mass"], scene["monitor"],
+                    scene["W"], scene["H"], scene["thresh"],
+                    dx=scene["dx"], crest_y=scene["crest_y"],
+                )["static"],
+            })
+            self.assertTrue(out["meets_R_catwalk"], sid)
+            self.assertTrue(out.get("replay_ok"), sid)
+            self.assertEqual(rows[-1]["static"], "UNRESOLVED", sid)
+        RESULTS.mkdir(parents=True, exist_ok=True)
+        (RESULTS / "complete_t_ledges.json").write_text(
+            json.dumps({"rows": rows}, indent=2) + "\n", encoding="utf-8",
+        )
+
+    def test_complete_t_hostile_still_meets(self):
+        scene = hostile_scene()
+        f3 = evaluate_f3(
+            scene["walls"], scene["mass"], scene["monitor"],
+            scene["W"], scene["H"], scene["thresh"],
+            dx=scene["dx"], crest_y=scene["crest_y"],
+            audit_token_aware=True,
+        )
+        self.assertTrue(f3["token_aware"]["meets_R_catwalk"])
+        self.assertNotEqual(f3["token_aware"]["verdict"], "CERTIFIED_NO")
+        self.assertEqual(f3["static"], "UNRESOLVED")
 
 
 if __name__ == "__main__":

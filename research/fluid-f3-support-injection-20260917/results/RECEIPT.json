@@ -3,15 +3,21 @@
   "command": "python -I -B tests/test_f3.py -v",
   "python": "3.14.5",
   "node": "24.18.0",
-  "tests": 24,
+  "tests": 26,
   "failures": 0,
-  "elapsed_s": 60.296,
+  "elapsed_s": 54.029,
   "hostile_Qdyn": 1,
   "hostile_first_breach": 3,
   "layer_B_status": "REFUTED_preserved",
   "f3_isolation_status": "LIVE_on_n_eq_1",
   "f3_v2_status": "NO_CHEAP_CELL_GRAPH_NO",
   "f3_token_aware_status": "T_NO_on_n2_probes_budget_hit_on_horizon_ledges",
+  "f3_complete_t": {
+    "D_ledge_end28": "MEETS_len_48",
+    "D_ledge_end30": "MEETS_len_24",
+    "D_sill_end25": "MEETS_len_49",
+    "hostile": "MEETS_not_T_NO"
+  },
   "f3_cycle_exact": {
     "D_ledge_end28_stepsRun": 111,
     "D_ledge_end30_stepsRun": 99,
@@ -19,6 +25,6 @@
     "hostile_stop": "yes",
     "hostile_firstBreach": 3
   },
-  "nulls": "NULLS.md",
+  "nulls": ["NULLS.md", "NULLS_COMPLETE_T.md"],
   "official_static": "A_plus_isolation"
 }

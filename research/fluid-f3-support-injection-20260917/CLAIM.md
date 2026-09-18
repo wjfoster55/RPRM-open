@@ -34,12 +34,13 @@
 | F3-V2-CHEAP | On this admitted container, no occupancy-ignoring cell-graph certificate (catwalk + injection, with or without water floors, ignoring token count) is both sound on packed-column YES and useful as a V≥2 NO while leaving the hostile pair uncertified-NO. | Written proof + finite tests | LIVE |
 | F3-T | Class T (exactly n occupied cells, occupancy-respecting one-token moves, ignore frame/`vx`/`vy`/stamp): NO only on exhaustion inside `MAX_N=32`, `MAX_STATES=50000`. Hostile pair meets `R_catwalk` (not T-NO). Isolated n=2 shelf and midair exhaust as T-NO. Packed YES rows are skipped (`n>MAX_N`) and are not T-NO. | Finite tests after frozen nulls | LIVE |
 | F3-T-LEDGE | On `D_ledge_end28`, `D_ledge_end30`, `D_sill_end25`, class T neither meets `R_catwalk` nor exhausts inside 50000 expansions (budget hit). No cheap T-NO on those horizon-pay rows. | Finite tests after frozen nulls | LIVE |
+| F3-T-COMPLETE | Complete T on those three rows **MEETS** `R_catwalk`: legal occupancy-count paths of length 48/24/49, each replayed on the T graph. Hostile pair still MEETS (not T-NO). So a finished T search would not EXHAUST and cannot certify NO here. | Finite tests after `NULLS_COMPLETE_T.md` | LIVE |
 | F3-E | Pinned `stepB` with a hash of occupancy, milli `vx,vy`, frame parity, and `dirtyNext`: the three horizon-pay ledges cycle-exit with `stepsRun` 111/99/52, `Qdyn=0`. Hostile YES at frame 3. `D_ledge_end31` and `A_w4_x26_V180` YES before cycle. | Finite tests after frozen nulls | LIVE |
 | F2-B | General Layer B CERTIFIED_NO via `V < sill_need`. | — | **REFUTED** (keep beside survivors) |
 
 F3-V2 as “a cheap static NO for some n≥2 family” is closed as NONE for the occupancy-ignoring cell-graph class. Class T is not that class and is not official static. Class E is exact evolution with an early stop, not a free static NO.
 
-Frozen nulls: `NULLS.md`. Outcomes: `results/token_aware_ledges.json`, `results/cycle_exact_ledges.json`.
+Frozen nulls: `NULLS.md`, `NULLS_COMPLETE_T.md`. Outcomes: `results/token_aware_ledges.json`, `results/cycle_exact_ledges.json`, `results/complete_t_ledges.json`.
 
 ## What this is not
 

@@ -9,7 +9,7 @@
       "cutReason": "token_state_repeat",
       "sumActive": 141888,
       "tokenStatesSeen": 111,
-      "wall_ms": 82
+      "wall_ms": 84
     },
     {
       "id": "D_ledge_end30",
@@ -20,7 +20,7 @@
       "cutReason": "token_state_repeat",
       "sumActive": 126464,
       "tokenStatesSeen": 99,
-      "wall_ms": 87
+      "wall_ms": 74
     },
     {
       "id": "D_sill_end25",

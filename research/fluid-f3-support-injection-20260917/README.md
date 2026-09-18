@@ -21,7 +21,8 @@ under `../fluid-f2-review-20260912/input/fluid_dynamic_frontier_02/`.
 
 n≥2 has no cheap occupancy-ignoring cell-graph NO on this container.
 Token-aware class T is budgeted, not static; see CLAIM.md F3-T / F3-T-LEDGE.
-Class E cycle-exits the three horizon-pay ledges before H=300.
+Complete T on the horizon-pay ledges **MEETS** `R_catwalk` (F3-T-COMPLETE).
+Class E cycle-exits those three ledges before H=300.
 
 ## Layout
 
@@ -29,6 +30,8 @@ Class E cycle-exits the three horizon-pay ledges before H=300.
 |---|---|
 | `CLAIM.md` | Typed claims, grades, hostile case |
 | `NULLS.md` | Frozen token-aware / cycle hypotheses |
+| `NULLS_COMPLETE_T.md` | Frozen complete-T MEETS/EXHAUST nulls |
+| `src/t_complete.py` | Constructive complete-T witness + replay |
 | `DERIVATION.md` | Isolation argument + V≥2 dichotomy + T/E |
 | `src/bound_f3.py` | Official routing + soup audits |
 | `src/token_aware.py` | Class T occupancy-count search |
