@@ -181,5 +181,11 @@
     "disposition": "ONE(yes)",
     "hamming_codewords": 16
   },
+  "lemma": {
+    "statement": "injective iff rank 3 iff not a line {a,b,a XOR b}",
+    "grade": "WRITTEN_PLUS_EXACT_CHECK",
+    "hostile_123": "dependent line, not injective",
+    "padding": false
+  },
   "limits": "Complete census of linear checks on F_2^3 only. Not SAT, not Hamming-8, not a free source toggle, not a general soundness proof of this script."
 }

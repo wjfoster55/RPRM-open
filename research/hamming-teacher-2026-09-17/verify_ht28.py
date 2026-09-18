@@ -115,11 +115,19 @@ def main():
     q1_null = classify_count(q1_count)
     q2_yes = fail_sets == frozen_dependent_family()
     q4_yes = fail_sets == hamming_weight_three_supports()
+    lines = frozen_dependent_family()
+    for record in records:
+        panel = tuple(record['panel'])
+        dependent = record['rank'] < 3
+        require(record['injective'] == (record['rank'] == 3), 'lemma_injective_iff_full_rank')
+        require(dependent == (frozenset(panel) in lines), 'lemma_dependent_iff_line')
 
     swap_xor = panel_record(SWAP_XOR)
     swap_sum = panel_record(SWAP_SUM)
     hostile = panel_record(HOSTILE_LINE)
     require(tuple(swap_sum['panel']) == tuple(hostile['panel']), 'hostile_is_named_sum_swap')
+    require((not hostile['injective']) and hostile['rank'] == 2, 'lemma_hostile_123_dependent')
+    require(frozenset(HOSTILE_LINE) in lines, 'lemma_hostile_123_is_line')
 
     if swap_xor['injective'] and not swap_sum['injective']:
         q3_null = 'N_p6'
@@ -164,6 +172,12 @@ def main():
             'surviving_null': 'N_q4_yes' if q4_yes else 'N_q4_no',
             'disposition': 'ONE(yes)' if q4_yes else 'NONE',
             'hamming_codewords': sum(1 for word in range(128) if error_syndrome(word) == 0),
+        },
+        'lemma': {
+            'statement': 'injective iff rank 3 iff not a line {a,b,a XOR b}',
+            'grade': 'WRITTEN_PLUS_EXACT_CHECK',
+            'hostile_123': 'dependent line, not injective',
+            'padding': False,
         },
         'limits': (
             'Complete census of linear checks on F_2^3 only. Not SAT, not Hamming-8, '
