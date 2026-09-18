@@ -1,45 +1,43 @@
 # Inverse design with complete ambiguity families
 
-17 September 2026. Independent-math Rank 7, smallest typed cut. Not BSD,
-not fluid, not Hamming, not O05, not observability, not Markov padding.
+17 September 2026. Independent-math Rank 7. Not BSD, not fluid, not
+Hamming, not O05, not observability, not Markov padding. Not a physics
+law.
 
 Read in this order:
 
-1. [NULL.md](NULL.md) — frozen before the enumerator (commit `3127680`)
+1. [NULL.md](NULL.md) — IF-k frozen before the enumerator (`3127680`)
 2. [CLAIM.md](CLAIM.md) / [RESULT.md](RESULT.md) / [CENSUS.json](CENSUS.json)
-3. [INVERSE-FIBER-NOTE.md](INVERSE-FIBER-NOTE.md) — standalone for tomorrow
+3. [NULL-JOINT.md](NULL-JOINT.md) — IF-j frozen at `bd28533`
+4. [CLAIM-JOINT.md](CLAIM-JOINT.md) / [RESULT-JOINT.md](RESULT-JOINT.md) /
+   [CENSUS-JOINT.json](CENSUS-JOINT.json)
+5. [NULL-VIEW.md](NULL-VIEW.md) — IF-v frozen at `14c5b8a`
+6. [CLAIM-VIEW.md](CLAIM-VIEW.md) / [RESULT-VIEW.md](RESULT-VIEW.md) /
+   [CENSUS-VIEW.json](CENSUS-VIEW.json)
+7. [INVERSE-FIBER-NOTE.md](INVERSE-FIBER-NOTE.md) — standalone for tomorrow
 
 Replay:
 
 ```powershell
 python -I -B research/inverse-fiber-2026-09-17/verify_if.py
+python -I -B research/inverse-fiber-2026-09-17/verify_joint.py
+python -I -B research/inverse-fiber-2026-09-17/verify_view.py
 ```
 
 Does not import `rprm` or the other tonight trees.
 
-**Q1.** AND=1: **ONE((1,1))**.
+**IF-k.** Complete joint preimages. Representative ≠ fiber. Stopped
+search OPEN. Frozen NONE for sum 4 died as **ONE((2,2))**.
 
-**Q2.** AND=0: **MANY((0,0),(0,1),(1,0))**. A representative is not a
-fiber.
+**IF-j.** XOR=1 is not `{0,1}×{0,1}`: extras are the XOR=0 fiber.
+C=(0,0) and C=(1,1) each add six illegal triples. Complementary XOR
+fibers share one product. AND=1 **does** equal `{1}×{1}`. All eight
+names matched.
 
-**Q3.** XOR=1: **MANY((0,1),(1,0))**. Order is load-bearing.
+**IF-v.** On XOR=1, exactly `FST` and `SND` split to ONE; AND/OR/EQ
+do not. `FST=0` leaves **ONE((0,1))**. On C=(0,0), exactly
+`X,Y,Z,PARITY,AND3` split to ONE; already-supplied `C0` does not.
+`X=0` leaves **ONE((0,0,0))**. All eight names matched.
 
-**Q4.** NAND=0: **ONE((1,1))**.
-
-**Q5.** CONST0=1: **NONE**.
-
-**Q6.** AND=0 product of marginals: **NONE** of equality.
-
-**Q7–Q8.** 3-to-2 readout `C(x,y,z)=(x⊕y,x⊕z)`: **MANY(2)** at `(0,0)`
-and at `(1,1)`.
-
-**Q9.** Stopped AND=0 scan: **OPEN**, not `MANY` of the found pair.
-
-**Q10.** Add3, `c=2`: **MANY((0,2),(1,1),(2,0))**.
-
-**Q11.** Frozen NONE for sum 4 **died**: complete fiber **ONE((2,2))**.
-
-**Q12.** XOR=0: **MANY((0,0),(1,1))**.
-
-Adjacent written source: handbook §3; README `a+b=c` table; core.md §5.
-Not a new physics law. Discrete census stops here.
+Certified approximate families and a min-view search over all Boolean
+functions remain OPEN. Discrete census on these menus stops here.

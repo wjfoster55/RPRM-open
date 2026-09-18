@@ -1,0 +1,105 @@
+{
+  "and_constant_on_xor1": true,
+  "c00_splitters": [
+    "X",
+    "Y",
+    "Z",
+    "PARITY",
+    "AND3"
+  ],
+  "c00_values": {
+    "AND3": [
+      0,
+      1
+    ],
+    "C0": [
+      0,
+      0
+    ],
+    "PARITY": [
+      0,
+      1
+    ],
+    "X": [
+      0,
+      1
+    ],
+    "Y": [
+      0,
+      1
+    ],
+    "Z": [
+      0,
+      1
+    ]
+  },
+  "c0_constant_on_c00": true,
+  "const0_constant_on_xor1": true,
+  "eq_constant_on_xor1": true,
+  "frozen": {
+    "QV1": "N_xor1_fst_snd",
+    "QV2": "N_and_const",
+    "QV3": "N_or_const",
+    "QV4": "N_fst_one",
+    "QV5": "N_fst0_one",
+    "QV6": "N_c00_xyzpa",
+    "QV7": "N_c0_const",
+    "QV8": "N_x0_one"
+  },
+  "fst0": [
+    [
+      0,
+      1
+    ]
+  ],
+  "match": true,
+  "names": {
+    "QV1": "N_xor1_fst_snd",
+    "QV2": "N_and_const",
+    "QV3": "N_or_const",
+    "QV4": "N_fst_one",
+    "QV5": "N_fst0_one",
+    "QV6": "N_c00_xyzpa",
+    "QV7": "N_c0_const",
+    "QV8": "N_x0_one"
+  },
+  "null_commit": "14c5b8a60584897ccb07e5642b34edddb05f2e69",
+  "or_constant_on_xor1": true,
+  "x0": [
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "xor1_splitters": [
+    "FST",
+    "SND"
+  ],
+  "xor1_values": {
+    "AND": [
+      0,
+      0
+    ],
+    "CONST0": [
+      0,
+      0
+    ],
+    "EQ": [
+      0,
+      0
+    ],
+    "FST": [
+      0,
+      1
+    ],
+    "OR": [
+      1,
+      1
+    ],
+    "SND": [
+      1,
+      0
+    ]
+  }
+}
