@@ -32,9 +32,10 @@ number. Not last night's `T(X,P)` count.
    for every finite deterministic partial machine; exhaustive census of every
    set-partition of every machine in the `checks/futures.py` 845-machine
    family, plus the four-state one-action and three-state two-action lift
-   families of §9. Hostile cases in §4 and the lift hostiles of §9. Grade:
+   families of §9. Hostile cases in §4 and the lift hostiles of §9–§10. Grade:
    written proof of the pair trichotomy and of FIVE-visibility of the first
-   two clauses; finite test for the censuses and for O09 kernel agreement.
+   two clauses; finite test for the censuses, for O09 kernel agreement, and
+   for agreement of the §9 occupancy with the §10 typed residue definitions.
    Unbounded carriers, `NONDET`, `KERNEL`, and n=4 two-action remain OPEN.
 
 ## 2. Closed claim
@@ -160,7 +161,9 @@ The scientific yield is the negative: treating the Manifesto `{p,q,r}` picture a
   preinstalling the center.
 - Four-state two-action machines with the same constructor: 2^4·5^8 =
   6 250 000 machines, too large for this cut.
-- n≥5 one-action, and n=4 with a larger action alphabet.
+- n≥5 one-action, and n=4 with a larger action alphabet. Occupancy is OPEN.
+  The §10 types already partition every finite profile, so n=5 does not
+  force a new name.
 
 The n=3 two-action slice named as OPEN in the first cut is closed as a
 finite test in §9.
@@ -230,6 +233,9 @@ The shape null of §7 is recorded in the census boolean; it is not a theorem
 about other families. The 2×2 does **not** lift to the four-state one-action
 or three-state two-action families of §9. Those families are exhausted by
 the a priori lift vocabulary (unclassified NONE), not by the four names.
+The five occupied residue names are typed in §10: the §9 census occupancy
+matches those definitions, rather than the names being fitted after
+browsing.
 
 ## 9. Hostile cut: does the 2×2 lift?
 
@@ -269,7 +275,9 @@ partial maps, all set-partitions.
 - distinct witnessing names across actions are `mixed`;
 - anything else is `unclassified`.
 
-Occupancy is a census readout, not a premise.
+Occupancy is a census readout, not a premise. The five occupied names are
+typed in §10; jumper-count splits of `crowd` and one-vs-both splits of
+`multi` are occupancy readouts, not further names.
 
 **Proposition (n=3 forbids split, escape, crowd-ghosts, and multi).** On three
 states the only merged profiles that can be ghost folds are `(2,1)`. Proof:
@@ -366,4 +374,104 @@ Combined 9 360 = 5 424 of type 2×2 + 3 936 residues
 The replacement of the 2×2 is this lift vocabulary, not a fifth binary
 bit. Evidence grade: finite test on the two families; not a theorem about
 n=4 two-action machines (OPEN: 6.25 million machines) or unbounded
-carriers. Frozen receipt: [LIFT_CENSUS.json](LIFT_CENSUS.json).
+carriers. Frozen receipt: [LIFT_CENSUS.json](LIFT_CENSUS.json). The five
+occupied residue names are typed in §10 against a match null.
+
+## 10. Typed residue definitions
+
+The five names `split`, `escape`, `crowd`, `multi`, `mixed` are types of
+ghost fold, not leftover buckets from browsing the §9 census. Profile is a
+first-class port. The 2×2 of §7 is the unique-pair stay-jump-land case of
+the same lattice.
+
+1. **Carrier.** Ghost folds of finite deterministic partial machines, as in
+   §1. Equality of states is the declared state equality. A ghost fold is a
+   pair `(machine, C)`.
+2. **Ports.** Supplied: that pair. Missing: which residue type, if any.
+   Readout: one of the five names, or a §7 2×2 name, or `unclassified`.
+3. **Operation.** `PARTIAL`, diagnostic. Residue types live only on
+   successor ghosts; observation and enabledness failures are FIVE-visible.
+4. **Receiver.** O05 successor disagreement on merged pairs, the block-size
+   profile of `C`, and the set of local witnessing names of actions on a
+   unique size-2 block.
+5. **Fiber.** Each type is the complete preimage of that name. Inverse: the
+   flags are pairwise exclusive, so a named ghost determines a unique type.
+   NONE/ONE/MANY is not used per machine; the solved fiber is occupancy.
+6. **Coverage, hostile, grade.** Coverage: the two lift families of §9.
+   Hostile: the unique-pair slice still occupies 1632 `split`/`escape`/`mixed`
+   ghosts. Grade: written definitions and exclusion; finite test that the
+   §9 occupancy equals those fibers. n=5 occupancy is OPEN; it is not a
+   missing name.
+
+**Definition (profile kind).** Let `π` be the sorted block-size tuple of `C`.
+
+- `crowd` if some part has size ≥3;
+- else `multi` if at least two parts have size 2;
+- else `unique_pair` if exactly one part has size 2;
+- else `other`.
+
+These four labels partition every finite partition.
+
+**Definition (local witnessing name).** For a size-2 block `M={x,y}` and an
+action `a`: if `a` is not enabled at both points, `not_successor`; if
+`C(T_a x)=C(T_a y)`, `agree`; else `a` is a *witness*. A witness with both
+images outside `M` is `split`. A witness with exactly one stayer in `M` and
+one jumper landing on a size-1 class `s` is: `partial_land` if `a` is
+undefined at `s`; `sink_*` / `return_*` as in §7 if `T_a s` is `s` or in
+`M`; `escape` if `T_a s` is defined and in a third class; `wide_landing` if
+the landing class is not size 1. Anything else is `unclassified`.
+
+**Definition (crowd).** A ghost fold whose profile kind is `crowd`.
+
+**Definition (multi).** A ghost fold whose profile kind is `multi`.
+
+**Definition (split).** A ghost fold of unique-pair profile whose set of
+witnessing names is exactly `{split}`.
+
+**Definition (escape).** A ghost fold of unique-pair profile whose set of
+witnessing names is exactly `{escape}`.
+
+**Definition (mixed).** A ghost fold of unique-pair profile whose set of
+witnessing names has cardinality at least 2.
+
+The four 2×2 names are the unique-pair ghosts whose witnessing set is a
+singleton in `{sink_self, sink_partner, return_self, return_partner}`.
+
+**Proposition (pairwise exclusive).** Profile kinds are exclusive, so
+crowd, multi, and unique-pair types are exclusive. On unique-pair, mixed
+is a witnessing set of size ≥2 and is exclusive from every singleton
+label, including split, escape, and the 2×2. Grade: written.
+
+**Proposition (unique-pair ghost has a witness).** A unique-pair ghost has
+exactly one merged pair, which fails successor, so some action is a
+witness. Grade: written.
+
+**Proposition (crowd jumpers on n=4 one-action).** Profile `(4)` is
+one-block, hence not a ghost. The only crowd profile on four states is
+`(3,1)`. All-stay and all-jump into the unique outside class give successor
+agreement, hence are not ghosts. So every n=4 one-action crowd ghost has
+jumper count 1 or 2. Grade: written; finite test. This is a corollary, not
+a new name.
+
+**Proposition (no definitional hole at n=5).** Every finite profile is
+crowd, multi, unique-pair, or other. A ghost needs a merged pair, so a
+block of size ≥2. Size ≥3 is crowd; several size-2 and no larger is multi;
+one size-2 and no larger is unique-pair. So n=5 occupancy is OPEN but not a
+missing name. Grade: written.
+
+**Match null, frozen against the §9 census:**
+
+> On the four-state one-action family and the three-state two-action
+> family, every ghost fold named `split`, `escape`, `crowd`, `multi`, or
+> `mixed` satisfies the typed definition of that name, and every ghost fold
+> satisfying one of those five definitions receives that name. The five
+> definitions are pairwise exclusive. Unclassified is NONE.
+
+**Readout.** The match null is **true**. Occupancy is unchanged from §9:
+`(split, escape, crowd, multi, mixed) = (624, 384, 1152, 1152, 624)`.
+Unique-pair hostile: 7056 unique-pair ghosts, of which 1632 are
+`split`/`escape`/`mixed` (624+384+624). The 2×2 failure is not only
+crowd/multi. Hostiles for two-jumper crowd and both-pair multi were built
+from the definitions: both remain crowd and multi, not split or mixed.
+Do not subtype `mixed` by browsing. Frozen receipt:
+[LIFT_CENSUS.json](LIFT_CENSUS.json).

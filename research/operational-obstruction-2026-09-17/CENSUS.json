@@ -1,13 +1,14 @@
 {
-  "schema": "rprm-operational-obstruction/v2",
+  "schema": "rprm-operational-obstruction/v3",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
   "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
   "lift_null_declared_before_census": "On the four-state one-action family and the three-state two-action family (binary observations, all partial maps, all set-partitions; the same constructor as the 845-machine futures family), every ghost fold still receives one of the four names sink_self, sink_partner, return_self, return_partner.",
   "slice_null_declared_before_census": "On the four-state one-action family and the three-state two-action family, every ghost fold whose block profile has exactly one size-2 class and no larger class still receives one of the four names sink_self, sink_partner, return_self, return_partner.",
   "lift_exhaustion_null_declared_before_census": "On those two families, every ghost fold receives a name in the a priori lift vocabulary {sink_self, sink_partner, return_self, return_partner, split, escape, crowd, multi, mixed, partial_land, wide_landing}; unclassified is NONE.",
+  "match_null_declared_before_census": "On the four-state one-action family and the three-state two-action family, every ghost fold named split, escape, crowd, multi, or mixed satisfies the typed definition of that name, and every ghost fold satisfying one of those five definitions receives that name. The five definitions are pairwise exclusive. Unclassified is NONE.",
   "named": {
-    "named_hostiles": 19,
+    "named_hostiles": 21,
     "clauses": [
       "observation",
       "enabledness",
@@ -18,6 +19,13 @@
       "sink_partner",
       "return_self",
       "return_partner"
+    ],
+    "residue_types": [
+      "split",
+      "escape",
+      "crowd",
+      "multi",
+      "mixed"
     ],
     "lift_types": [
       "sink_self",
@@ -2172,12 +2180,15 @@
     "slice_null_holds": false,
     "exhaustion_null": "On those two families, every ghost fold receives a name in the a priori lift vocabulary {sink_self, sink_partner, return_self, return_partner, split, escape, crowd, multi, mixed, partial_land, wide_landing}; unclassified is NONE.",
     "exhaustion_null_holds": true,
+    "match_null": "On the four-state one-action family and the three-state two-action family, every ghost fold named split, escape, crowd, multi, or mixed satisfies the typed definition of that name, and every ghost fold satisfying one of those five definitions receives that name. The five definitions are pairwise exclusive. Unclassified is NONE.",
+    "match_null_holds": true,
     "ghost_folds": 9360,
     "two_by_two_ghosts": 5424,
     "residue_ghosts": 3936,
     "unclassified": 0,
     "unique_pair_ghosts": 7056,
     "unique_pair_two_by_two": 5424,
+    "unique_pair_residues": 1632,
     "lift_counts": {
       "sink_self": 888,
       "sink_partner": 888,
@@ -2239,9 +2250,11 @@
         "unclassified": 0,
         "unique_pair_ghosts": 3888,
         "unique_pair_two_by_two": 2880,
+        "unique_pair_residues": 1008,
         "lift_null_holds": false,
         "slice_null_holds": false,
         "exhaustion_null_holds": true,
+        "match_null_holds": true,
         "examples": {
           "split": {
             "states": [
@@ -2587,9 +2600,11 @@
         "unclassified": 0,
         "unique_pair_ghosts": 3168,
         "unique_pair_two_by_two": 2544,
+        "unique_pair_residues": 624,
         "lift_null_holds": false,
         "slice_null_holds": false,
         "exhaustion_null_holds": true,
+        "match_null_holds": true,
         "examples": {
           "return_self": {
             "states": [
@@ -2791,8 +2806,8 @@
     ]
   },
   "source_hashes": {
-    "research/operational-obstruction-2026-09-17/obstruction.py": "44bc2c60844b006b6fa817d0aaf18bb369721cd27f72fe7461c8c4daf05f3cd7",
-    "research/operational-obstruction-2026-09-17/verify.py": "c0d6ceb2441c319de1a8e8e74ef59299b4ed02a2d593a1341b040e7d726bd618",
+    "research/operational-obstruction-2026-09-17/obstruction.py": "e420455efc83bc6ac9cd982aaef3ea13ac349f9cffce68e38b14beefe3a4f98b",
+    "research/operational-obstruction-2026-09-17/verify.py": "f6e29791b295960cfa8e3901f24b1ddae948717e81cfb6444fa4e35439ce39c5",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"

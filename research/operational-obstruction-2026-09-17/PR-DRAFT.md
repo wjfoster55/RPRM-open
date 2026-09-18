@@ -11,7 +11,7 @@ https://github.com/wjfoster55/RPRM-open/compare/main...research/new-project-oper
 - Closed fiber on the existing 845-machine futures family (3217 partitions): 1239 operational folds; FIVE.future cannot see successor-update failures.
 - Declared null before the first census: ghost folds are only the Manifesto three-state example and its relabelings. **False.** MANY(72).
 - Declared shape null before typing the leftover 60: they occupy exactly one leftover named type. **False.** They are 12 `sink_partner` + 24 `return_self` + 24 `return_partner`. All 72 sit in a 2×2 of `(sink|return)×(self|partner)` with unclassified NONE, matching the written listing 12+12+24+24.
-- Hostile next cut, null frozen before looking: that 2×2 still names every ghost fold on the four-state one-action family (10 000 machines) and the three-state two-action family (32 768 machines). **False.** MANY(9360). 5424 keep a 2×2 name; 3936 are `split`/`escape`/`crowd`/`multi`/`mixed`. Unclassified NONE. Unique-pair slice also fails (1632 split/escape/mixed). Replacement: the a priori lift vocabulary.
+- Hostile next cut, null frozen before looking: that 2×2 still names every ghost fold on the four-state one-action family (10 000 machines) and the three-state two-action family (32 768 machines). **False.** MANY(9360). 5424 keep a 2×2 name; 3936 are `split`/`escape`/`crowd`/`multi`/`mixed`. Those five names are typed definitions; match null against the census is **true.** Unclassified NONE. Unique-pair slice also fails (1632 split/escape/mixed). Replacement: the a priori lift vocabulary.
 
 ## Test plan
 

@@ -12,17 +12,16 @@ from rprm.futures import Machine, shortest_witness, stable_refinement
 
 CLAUSES = ("observation", "enabledness", "successor")
 GHOST_SHAPES = ("sink_self", "sink_partner", "return_self", "return_partner")
+# Occupied residue types of a ghost fold. Occupancy is a census readout, not
+# a premise. Each name has an independent typed flag in structural_lift_flags.
+RESIDUE_TYPES = ("split", "escape", "crowd", "multi", "mixed")
 # A priori lift vocabulary. Occupancy is a census readout, not a premise.
-LIFT_TYPES = GHOST_SHAPES + (
-    "split",
-    "escape",
-    "crowd",
-    "multi",
-    "mixed",
+LIFT_TYPES = GHOST_SHAPES + RESIDUE_TYPES + (
     "partial_land",
     "wide_landing",
     "unclassified",
 )
+PROFILE_KINDS = ("crowd", "multi", "unique_pair", "other")
 
 
 def require_machine(machine):
@@ -225,6 +224,31 @@ def block_profile(summary, states):
     return tuple(sorted(len(part) for part in _blocks(summary, states)))
 
 
+def profile_kind(summary, states):
+    """Partition of block-size profiles. Independent of occupancy.
+
+    crowd: some block has size ≥3.
+    multi: no such block, and at least two blocks of size 2.
+    unique_pair: exactly one block of size 2, and no larger block.
+    other: no merged pair of size 2 or more that those three names cover.
+    """
+    sizes = block_profile(summary, states)
+    if any(size >= 3 for size in sizes):
+        return "crowd"
+    twos = sum(1 for size in sizes if size == 2)
+    if twos >= 2:
+        return "multi"
+    if twos == 1:
+        return "unique_pair"
+    return "other"
+
+
+def unique_pair_block(summary, states):
+    if profile_kind(summary, states) != "unique_pair":
+        return None
+    return next(part for part in _blocks(summary, states) if len(part) == 2)
+
+
 def _local_action_shape(machine, merged, summary, action):
     """Stay-jump readout of one action on one size-2 block, or a residue tag.
 
@@ -268,6 +292,24 @@ def _local_action_shape(machine, merged, summary, action):
     return kind + "_" + stay
 
 
+def unique_pair_witness_set(machine, summary):
+    """Set of local witnessing names on the unique size-2 block, or None.
+
+    None means the profile is not unique-pair. The empty set means unique-pair
+    with no successor-witnessing action.
+    """
+    require_summary(machine, summary)
+    merged = unique_pair_block(summary, machine.states)
+    if merged is None:
+        return None
+    labels = []
+    for action in machine.actions:
+        tag = _local_action_shape(machine, merged, summary, action)
+        if tag not in ("agree", "not_successor"):
+            labels.append(tag)
+    return frozenset(labels)
+
+
 def classify_ghost_fold(machine, summary):
     """Lift type of a known ghost fold. Not a name for a non-ghost.
 
@@ -303,6 +345,45 @@ def classify_ghost_fold(machine, summary):
     if name in LIFT_TYPES:
         return name
     return "unclassified"
+
+
+def structural_lift_flags(machine, summary):
+    """Independent typed flags for the lift vocabulary. Not occupancy buckets.
+
+    Exactly one flag must hold on a classified ghost fold. Crowd and multi
+    are profile types. Split, escape, mixed, the 2×2, partial_land, and
+    wide_landing are unique-pair witness-set types. Mixed is a set of size
+    at least two; it is not a split or escape flag.
+    """
+    require_summary(machine, summary)
+    flags = {name: False for name in LIFT_TYPES if name != "unclassified"}
+    kind = profile_kind(summary, machine.states)
+    flags["crowd"] = kind == "crowd"
+    flags["multi"] = kind == "multi"
+    witnesses = unique_pair_witness_set(machine, summary)
+    if kind == "unique_pair" and witnesses is not None:
+        flags["mixed"] = len(witnesses) > 1
+        if len(witnesses) == 1:
+            only = next(iter(witnesses))
+            if only in flags:
+                flags[only] = True
+    return flags
+
+
+def structural_lift_type(machine, summary):
+    """Name from the typed flags, or unclassified if none or several fire."""
+    hits = [name for name, bit in structural_lift_flags(machine, summary).items() if bit]
+    if len(hits) == 1:
+        return hits[0]
+    return "unclassified"
+
+
+def is_typed_residue(machine, summary, name):
+    """True iff this is a ghost fold of the named residue type."""
+    require(name in RESIDUE_TYPES, "Residue type required")
+    if not is_ghost_fold(machine, summary):
+        return False
+    return structural_lift_type(machine, summary) == name
 
 
 def lifted_ghost_type(machine, summary):

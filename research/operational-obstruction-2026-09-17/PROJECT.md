@@ -57,12 +57,13 @@ are 12 `sink_partner`, 24 `return_self`, and 24 `return_partner`. See
 ghost fold on the four-state one-action family and the three-state
 two-action family (same constructor as the 845). **The null is false.**
 The families contain MANY(9360) ghost folds: 5424 keep a 2×2 name and 3936
-do not. Five new occupied types (`split`, `escape`, `crowd`, `multi`,
-`mixed`); `partial_land` and `wide_landing` occupy 0 among ghosts;
-unclassified NONE. The local unique-pair slice is also not a 2×2: 7056
-unique-pair ghosts, of which 1632 are `split`/`escape`/`mixed`. The
+do not. Five occupied residue types (`split`, `escape`, `crowd`, `multi`,
+`mixed`) are typed definitions, not leftover buckets; `partial_land` and
+`wide_landing` occupy 0 among ghosts; unclassified NONE. Match null against
+those definitions: **true.** The local unique-pair slice is also not a 2×2:
+7056 unique-pair ghosts, of which 1632 are `split`/`escape`/`mixed`. The
 replacement is the a priori lift vocabulary, not a fifth binary bit. See
-[THEORY.md](THEORY.md) §9 and [LIFT_CENSUS.json](LIFT_CENSUS.json).
+[THEORY.md](THEORY.md) §9–§10 and [LIFT_CENSUS.json](LIFT_CENSUS.json).
 
 ## Why the runners-up lost
 

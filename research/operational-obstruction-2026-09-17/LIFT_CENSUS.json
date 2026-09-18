@@ -5,12 +5,15 @@
   "slice_null_holds": false,
   "exhaustion_null": "On those two families, every ghost fold receives a name in the a priori lift vocabulary {sink_self, sink_partner, return_self, return_partner, split, escape, crowd, multi, mixed, partial_land, wide_landing}; unclassified is NONE.",
   "exhaustion_null_holds": true,
+  "match_null": "On the four-state one-action family and the three-state two-action family, every ghost fold named split, escape, crowd, multi, or mixed satisfies the typed definition of that name, and every ghost fold satisfying one of those five definitions receives that name. The five definitions are pairwise exclusive. Unclassified is NONE.",
+  "match_null_holds": true,
   "ghost_folds": 9360,
   "two_by_two_ghosts": 5424,
   "residue_ghosts": 3936,
   "unclassified": 0,
   "unique_pair_ghosts": 7056,
   "unique_pair_two_by_two": 5424,
+  "unique_pair_residues": 1632,
   "lift_counts": {
     "sink_self": 888,
     "sink_partner": 888,
@@ -72,9 +75,11 @@
       "unclassified": 0,
       "unique_pair_ghosts": 3888,
       "unique_pair_two_by_two": 2880,
+      "unique_pair_residues": 1008,
       "lift_null_holds": false,
       "slice_null_holds": false,
       "exhaustion_null_holds": true,
+      "match_null_holds": true,
       "examples": {
         "split": {
           "states": [
@@ -420,9 +425,11 @@
       "unclassified": 0,
       "unique_pair_ghosts": 3168,
       "unique_pair_two_by_two": 2544,
+      "unique_pair_residues": 624,
       "lift_null_holds": false,
       "slice_null_holds": false,
       "exhaustion_null_holds": true,
+      "match_null_holds": true,
       "examples": {
         "return_self": {
           "states": [

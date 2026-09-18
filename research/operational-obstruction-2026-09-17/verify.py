@@ -25,6 +25,7 @@ from obstruction import (
     CLAUSES,
     GHOST_SHAPES,
     LIFT_TYPES,
+    RESIDUE_TYPES,
     block_profile,
     classify_ghost_fold,
     ghost_fiber,
@@ -33,14 +34,19 @@ from obstruction import (
     is_future_sufficient,
     is_ghost_fold,
     is_operational_fold,
+    is_typed_residue,
     least_stable_repair,
     lifted_ghost_type,
     merged_pairs,
     min_repair_alphabet,
     obstruction_fiber,
     pair_clause,
+    profile_kind,
     repaired_kernel_matches,
     set_partitions,
+    structural_lift_flags,
+    structural_lift_type,
+    unique_pair_witness_set,
 )
 
 HERE = Path(__file__).resolve().parent
@@ -81,6 +87,13 @@ SLICE_NULL = (
     "class and no larger class still receives one of the four names "
     "sink_self, sink_partner, return_self, return_partner."
 )
+MATCH_NULL = (
+    "On the four-state one-action family and the three-state two-action "
+    "family, every ghost fold named split, escape, crowd, multi, or mixed "
+    "satisfies the typed definition of that name, and every ghost fold "
+    "satisfying one of those five definitions receives that name. The five "
+    "definitions are pairwise exclusive. Unclassified is NONE."
+)
 LIFT_SLICES = (
     {"name": "four_state_one_action", "n": 4, "actions": ("a",)},
     {"name": "three_state_two_action", "n": 3, "actions": ("a", "b")},
@@ -114,11 +127,25 @@ TWO_ACTION_READOUT = {
     "wide_landing": 0,
     "unclassified": 0,
 }
+# Unique-pair hostile readout: split+escape+mixed on the unique-pair slice.
+UNIQUE_PAIR_RESIDUE_READOUT = 1632
 
 
 def require(condition, message):
     if not condition:
         raise RuntimeError(message)
+
+
+def require_structural_name(machine, summary, name):
+    """Classifier and typed flags name the same unique lift type."""
+    require(classify_ghost_fold(machine, summary) == name,
+            "Classifier missed " + name)
+    require(structural_lift_type(machine, summary) == name,
+            "Typed flags missed " + name)
+    flags = structural_lift_flags(machine, summary)
+    require(sum(1 for bit in flags.values() if bit) == 1,
+            "Typed flags must be pairwise exclusive on " + name)
+    require(flags[name], "Typed flag " + name + " must fire")
 
 
 def manifesto_machine():
@@ -174,12 +201,16 @@ def check_named_hostiles():
             "Canonical future quotient is indiscrete")
     require(ghost_shape(machine, summary) == "sink_self",
             "Manifesto example is sink_self")
+    require_structural_name(machine, summary, "sink_self")
+    require(all(not is_typed_residue(machine, summary, name) for name in RESIDUE_TYPES),
+            "Manifesto 2x2 is not a residue type")
 
     # Three leftover types, built from the 2×2 definition, not from the census.
     sink_partner = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
                            {"a": {0: 1, 1: 2, 2: 2}})
     require(is_ghost_fold(sink_partner, summary), "sink_partner must be a ghost fold")
     require(ghost_shape(sink_partner, summary) == "sink_partner", "Named sink_partner")
+    require_structural_name(sink_partner, summary, "sink_partner")
     require(not is_manifesto_relabeling(sink_partner, summary),
             "sink_partner is not the Manifesto relabeling")
 
@@ -187,11 +218,13 @@ def check_named_hostiles():
                           {"a": {0: 0, 1: 2, 2: 0}})
     require(is_ghost_fold(return_self, summary), "return_self must be a ghost fold")
     require(ghost_shape(return_self, summary) == "return_self", "Named return_self")
+    require_structural_name(return_self, summary, "return_self")
 
     return_partner = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
                              {"a": {0: 1, 1: 2, 2: 0}})
     require(is_ghost_fold(return_partner, summary), "return_partner must be a ghost fold")
     require(ghost_shape(return_partner, summary) == "return_partner", "Named return_partner")
+    require_structural_name(return_partner, summary, "return_partner")
 
     # Lift hostiles. Built from the 2×2 failure modes, not from a census.
     idle = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
@@ -202,42 +235,92 @@ def check_named_hostiles():
             "The n=3 2x2 classifier does not name n=4")
     require(lifted_ghost_type(idle, idle_c) == "sink_self",
             "Lift recovers sink_self on a unique size-2 block at n=4")
+    require_structural_name(idle, idle_c, "sink_self")
+    require(profile_kind(idle_c, idle.states) == "unique_pair",
+            "Idle extra singleton is unique-pair")
 
     split_m = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
                       {"a": {0: 2, 1: 3, 2: 2, 3: 3}})
     split_c = {0: 0, 1: 0, 2: 1, 3: 2}
     require(is_ghost_fold(split_m, split_c), "split must be a ghost fold")
     require(lifted_ghost_type(split_m, split_c) == "split", "Named split")
+    require_structural_name(split_m, split_c, "split")
+    require(is_typed_residue(split_m, split_c, "split"), "Typed split")
+    require(unique_pair_witness_set(split_m, split_c) == frozenset(["split"]),
+            "split is the singleton witness set {split}")
+    require(all(not is_typed_residue(split_m, split_c, name)
+                for name in RESIDUE_TYPES if name != "split"),
+            "split is not escape/crowd/multi/mixed")
 
     escape_m = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
                        {"a": {0: 0, 1: 2, 2: 3, 3: 3}})
     escape_c = {0: 0, 1: 0, 2: 1, 3: 2}
     require(is_ghost_fold(escape_m, escape_c), "escape must be a ghost fold")
     require(lifted_ghost_type(escape_m, escape_c) == "escape", "Named escape")
+    require_structural_name(escape_m, escape_c, "escape")
+    require(is_typed_residue(escape_m, escape_c, "escape"), "Typed escape")
+    require(unique_pair_witness_set(escape_m, escape_c) == frozenset(["escape"]),
+            "escape is the singleton witness set {escape}")
 
     crowd_m = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
                       {"a": {0: 0, 1: 0, 2: 3, 3: 3}})
     crowd_c = {0: 0, 1: 0, 2: 0, 3: 1}
     require(is_ghost_fold(crowd_m, crowd_c), "crowd must be a ghost fold")
     require(lifted_ghost_type(crowd_m, crowd_c) == "crowd", "Named crowd")
+    require_structural_name(crowd_m, crowd_c, "crowd")
+    require(is_typed_residue(crowd_m, crowd_c, "crowd"), "Typed crowd")
     require(ghost_fold_detail(crowd_m, crowd_c, "crowd") == "crowd_one_jumper",
             "Definitional crowd has one jumper out of the triple")
+    require(unique_pair_witness_set(crowd_m, crowd_c) is None,
+            "crowd is not a unique-pair type")
+    require(not is_typed_residue(crowd_m, crowd_c, "split"),
+            "A merged triple is crowd, not split")
+
+    crowd_two = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
+                        {"a": {0: 3, 1: 3, 2: 2, 3: 3}})
+    require(is_ghost_fold(crowd_two, crowd_c), "two-jumper crowd must be a ghost fold")
+    require_structural_name(crowd_two, crowd_c, "crowd")
+    require(is_typed_residue(crowd_two, crowd_c, "crowd"), "Typed two-jumper crowd")
+    require(ghost_fold_detail(crowd_two, crowd_c, "crowd") == "crowd_two_jumpers",
+            "Two jumpers out of the triple is still crowd")
+    require(not is_typed_residue(crowd_two, crowd_c, "split"),
+            "Two jumpers from a triple are not unique-pair split")
 
     multi_m = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
                       {"a": {0: 0, 1: 2, 2: 2, 3: 3}})
     multi_c = {0: 0, 1: 0, 2: 1, 3: 1}
     require(is_ghost_fold(multi_m, multi_c), "multi must be a ghost fold")
     require(lifted_ghost_type(multi_m, multi_c) == "multi", "Named multi")
+    require_structural_name(multi_m, multi_c, "multi")
+    require(is_typed_residue(multi_m, multi_c, "multi"), "Typed multi")
     require(ghost_fold_detail(multi_m, multi_c, "multi") == "multi_one",
             "Definitional multi has one witnessing pair")
+    require(not is_typed_residue(multi_m, multi_c, "mixed"),
+            "Two merged pairs are multi, not mixed")
+
+    multi_both = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 0, 2: 0, 3: 0},
+                         {"a": {0: 0, 1: 2, 2: 2, 3: 0}})
+    require(is_ghost_fold(multi_both, multi_c), "both-pair multi must be a ghost fold")
+    require_structural_name(multi_both, multi_c, "multi")
+    require(is_typed_residue(multi_both, multi_c, "multi"), "Typed both-pair multi")
+    require(ghost_fold_detail(multi_both, multi_c, "multi") == "multi_both",
+            "Two witnessing pairs is still multi")
+    require(not is_typed_residue(multi_both, multi_c, "mixed"),
+            "Two witnessing pairs are not unique-pair mixed")
 
     mixed_m = Machine((0, 1, 2), ("a", "b"), {0: 0, 1: 0, 2: 0},
                       {"a": {0: 0, 1: 2, 2: 2}, "b": {0: 0, 1: 2, 2: 0}})
     mixed_c = {0: 0, 1: 0, 2: 1}
     require(is_ghost_fold(mixed_m, mixed_c), "mixed must be a ghost fold")
     require(lifted_ghost_type(mixed_m, mixed_c) == "mixed", "Named mixed")
+    require_structural_name(mixed_m, mixed_c, "mixed")
+    require(is_typed_residue(mixed_m, mixed_c, "mixed"), "Typed mixed")
     require(ghost_shape(mixed_m, mixed_c) == "unclassified",
             "The one-action 2x2 classifier does not name two actions")
+    require(len(unique_pair_witness_set(mixed_m, mixed_c)) > 1,
+            "mixed is a unique-pair witness set of size at least two")
+    require(not is_typed_residue(mixed_m, mixed_c, "split"),
+            "mixed is not split")
 
     partial_m = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
                         {"a": {0: 0, 1: 2}})
@@ -246,8 +329,11 @@ def check_named_hostiles():
             "partial_land is FIVE-visible FAIL vs OK, not a ghost")
     require(classify_ghost_fold(partial_m, partial_c) == "partial_land",
             "Named partial_land")
+    require_structural_name(partial_m, partial_c, "partial_land")
     require(shortest_witness(partial_m, 0, 1)["status"] == "ONE",
             "partial_land has a distinguishing word")
+    require(not is_typed_residue(partial_m, partial_c, "escape"),
+            "FAIL-vs-OK landing is not a ghost residue")
 
     # First-witness core hides a second failing pair.
     two = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 1, 2: 0, 3: 1},
@@ -329,9 +415,10 @@ def check_named_hostiles():
     else:
         raise RuntimeError("Bool observation key must remain an admission error")
     return {
-        "named_hostiles": 19,
+        "named_hostiles": 21,
         "clauses": list(CLAUSES),
         "shapes": list(GHOST_SHAPES),
+        "residue_types": list(RESIDUE_TYPES),
         "lift_types": list(LIFT_TYPES),
     }
 
@@ -448,6 +535,8 @@ def check_census(null_text):
                         "sink_self must match the Manifesto relabeling predicate")
                 require(lifted_ghost_type(machine, summary) == record["shape"],
                         "Lift type must recover the 2x2 on the 845 slice")
+                require(structural_lift_type(machine, summary) == record["shape"],
+                        "Typed flags must recover the 2x2 on the 845 slice")
     require(ghosts_one_block == 0, "Single-block ghost fold appeared")
     require(ghosts_two_states == 0, "n<=2 ghost fold appeared")
     require(all(row["constant_observation"] for row in ghosts),
@@ -510,6 +599,8 @@ def check_one_lift_slice(spec):
     ghosts_one_block = 0
     unique_pair_ghosts = 0
     unique_pair_two_by_two = 0
+    unique_pair_residues = 0
+    match_ok = True
     total = len(machines)
     for index, machine in enumerate(machines):
         if index % 2000 == 0:
@@ -529,27 +620,61 @@ def check_one_lift_slice(spec):
             ghosts += 1
             if len(set(summary.values())) == 1:
                 ghosts_one_block += 1
-            name = lifted_ghost_type(machine, summary)
+            name = classify_ghost_fold(machine, summary)
+            typed = structural_lift_type(machine, summary)
+            flags = structural_lift_flags(machine, summary)
+            if name != typed or sum(1 for bit in flags.values() if bit) != 1:
+                match_ok = False
+            require(name == typed, spec["name"] + ": classifier disagrees with typed definition")
+            require(sum(1 for bit in flags.values() if bit) == 1,
+                    spec["name"] + ": typed flags were not exclusive")
             require(name in counts, "Unknown lift label")
             counts[name] += 1
             detail = ghost_fold_detail(machine, summary, name)
             details[detail] = details.get(detail, 0) + 1
             profile = "+".join(str(size) for size in block_profile(summary, machine.states))
             profiles[profile] = profiles.get(profile, 0) + 1
-            sizes = block_profile(summary, machine.states)
-            unique_pair = (
-                sum(1 for size in sizes if size == 2) == 1
-                and all(size < 3 for size in sizes)
-            )
+            kind = profile_kind(summary, machine.states)
+            if kind == "crowd":
+                require(name == "crowd", spec["name"] + ": crowd profile was not named crowd")
+            elif kind == "multi":
+                require(name == "multi", spec["name"] + ": multi profile was not named multi")
+            elif kind == "unique_pair":
+                witnesses = unique_pair_witness_set(machine, summary)
+                require(witnesses is not None and len(witnesses) >= 1,
+                        spec["name"] + ": unique-pair ghost had an empty witness set")
+                if name in GHOST_SHAPES:
+                    require(witnesses == frozenset([name]),
+                            spec["name"] + ": 2x2 name disagrees with witness set")
+                elif name == "split":
+                    require(witnesses == frozenset(["split"]),
+                            spec["name"] + ": split name disagrees with witness set")
+                elif name == "escape":
+                    require(witnesses == frozenset(["escape"]),
+                            spec["name"] + ": escape name disagrees with witness set")
+                elif name == "mixed":
+                    require(len(witnesses) > 1,
+                            spec["name"] + ": mixed name has a singleton witness set")
+            unique_pair = kind == "unique_pair"
             if unique_pair:
                 unique_pair_ghosts += 1
                 if name in GHOST_SHAPES:
                     unique_pair_two_by_two += 1
+                elif name in ("split", "escape", "mixed"):
+                    unique_pair_residues += 1
             if name not in examples:
                 examples[name] = compact_ghost(machine, summary, name)
     print(f"{spec['name']} {total}/{total} ghosts={ghosts}", file=sys.stderr)
     require(ghosts_one_block == 0, spec["name"] + ": one-block ghost fold appeared")
     two_by_two = sum(counts[name] for name in GHOST_SHAPES)
+    if spec["n"] == 4:
+        require(details.get("crowd_one_jumper", 0) + details.get("crowd_two_jumpers", 0)
+                == counts["crowd"],
+                "n=4 crowd ghosts must have jumper count 1 or 2")
+        require(details.get("multi_one", 0) + details.get("multi_both", 0) == counts["multi"],
+                "n=4 multi ghosts must have one or both pairs witnessing")
+        require(details.get("crowd_other", 0) == 0 and details.get("multi_other", 0) == 0,
+                "n=4 crowd/multi corollary leftover appeared")
     return {
         "name": spec["name"],
         "n": n,
@@ -566,9 +691,11 @@ def check_one_lift_slice(spec):
         "unclassified": counts["unclassified"],
         "unique_pair_ghosts": unique_pair_ghosts,
         "unique_pair_two_by_two": unique_pair_two_by_two,
+        "unique_pair_residues": unique_pair_residues,
         "lift_null_holds": two_by_two == ghosts,
         "slice_null_holds": unique_pair_ghosts == unique_pair_two_by_two,
         "exhaustion_null_holds": counts["unclassified"] == 0,
+        "match_null_holds": match_ok and counts["unclassified"] == 0,
         "examples": examples,
     }
 
@@ -579,13 +706,19 @@ def check_lift_census():
     ghosts = 0
     unique_pair_ghosts = 0
     unique_pair_two_by_two = 0
+    unique_pair_residues = 0
+    match_ok = True
     for row in slices:
         ghosts += row["ghost_folds"]
         unique_pair_ghosts += row["unique_pair_ghosts"]
         unique_pair_two_by_two += row["unique_pair_two_by_two"]
+        unique_pair_residues += row["unique_pair_residues"]
+        match_ok = match_ok and row["match_null_holds"]
         for name, count in row["lift_counts"].items():
             totals[name] += count
     two_by_two = sum(totals[name] for name in GHOST_SHAPES)
+    residue_from_names = sum(totals[name] for name in RESIDUE_TYPES)
+    unique_pair_from_names = totals["split"] + totals["escape"] + totals["mixed"]
     require(slices[0]["lift_counts"] == FOUR_STATE_READOUT,
             "Four-state lift census disagrees with the locked readout")
     require(slices[1]["lift_counts"] == TWO_ACTION_READOUT,
@@ -594,6 +727,16 @@ def check_lift_census():
             "Four-state ghost profiles changed")
     require(slices[1]["profile_counts"] == {"1+2": 3168},
             "Two-action ghost profiles changed")
+    require(unique_pair_residues == UNIQUE_PAIR_RESIDUE_READOUT,
+            "Unique-pair residue hostile count changed")
+    require(unique_pair_from_names == UNIQUE_PAIR_RESIDUE_READOUT,
+            "split+escape+mixed is not the unique-pair residue fiber")
+    require(unique_pair_ghosts - unique_pair_two_by_two == UNIQUE_PAIR_RESIDUE_READOUT,
+            "Unique-pair ghosts minus 2x2 is not the residue hostile")
+    require(residue_from_names == ghosts - two_by_two,
+            "Residue occupancy is not the five typed fibers")
+    require(match_ok and totals["unclassified"] == 0,
+            "Typed definitions failed to match the classifier")
     return {
         "lift_null": LIFT_NULL,
         "lift_null_holds": two_by_two == ghosts,
@@ -601,12 +744,15 @@ def check_lift_census():
         "slice_null_holds": unique_pair_ghosts == unique_pair_two_by_two,
         "exhaustion_null": LIFT_EXHAUSTION_NULL,
         "exhaustion_null_holds": totals["unclassified"] == 0,
+        "match_null": MATCH_NULL,
+        "match_null_holds": match_ok and totals["unclassified"] == 0,
         "ghost_folds": ghosts,
         "two_by_two_ghosts": two_by_two,
         "residue_ghosts": ghosts - two_by_two,
         "unclassified": totals["unclassified"],
         "unique_pair_ghosts": unique_pair_ghosts,
         "unique_pair_two_by_two": unique_pair_two_by_two,
+        "unique_pair_residues": unique_pair_residues,
         "lift_counts": totals,
         "slices": slices,
     }
@@ -632,13 +778,14 @@ def main():
     census = check_census(NULL)
     lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v2",
+        "schema": "rprm-operational-obstruction/v3",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
         "lift_null_declared_before_census": LIFT_NULL,
         "slice_null_declared_before_census": SLICE_NULL,
         "lift_exhaustion_null_declared_before_census": LIFT_EXHAUSTION_NULL,
+        "match_null_declared_before_census": MATCH_NULL,
         "named": named,
         "census": census,
         "lift_census": lift,
@@ -661,8 +808,10 @@ def main():
         "lift_null_holds": lift["lift_null_holds"],
         "slice_null_holds": lift["slice_null_holds"],
         "exhaustion_null_holds": lift["exhaustion_null_holds"],
+        "match_null_holds": lift["match_null_holds"],
         "lift_ghost_folds": lift["ghost_folds"],
         "lift_counts": lift["lift_counts"],
+        "unique_pair_residues": lift["unique_pair_residues"],
         "slices": [
             {
                 "name": row["name"],
@@ -673,6 +822,8 @@ def main():
                 "lift_null_holds": row["lift_null_holds"],
                 "slice_null_holds": row["slice_null_holds"],
                 "exhaustion_null_holds": row["exhaustion_null_holds"],
+                "match_null_holds": row["match_null_holds"],
+                "unique_pair_residues": row["unique_pair_residues"],
             }
             for row in lift["slices"]
         ],
