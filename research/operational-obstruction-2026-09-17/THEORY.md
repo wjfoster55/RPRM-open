@@ -242,7 +242,8 @@ The five occupied residue names are typed in §10: the §9 census occupancy
 matches those definitions, rather than the names being fitted after
 browsing. The three-cell Board of §11 uses this oracle as a Tile; it is
 not an Atlas. The dual O05 witness fiber of §12 is closed on those
-cells and on the 845 family; FIVE.future NONE is not that fiber.
+cells and on the 845 family; FIVE.future NONE is not that fiber. The 24
+delayed FIVE pairs of §13 are successor `partial_land`, not a 2×2 ghost.
 
 ## 9. Hostile cut: does the 2×2 lift?
 
@@ -660,6 +661,64 @@ while the O05 witness is `("a",)`. The remaining 72 failing successor
 pairs are the ghosts: FIVE.future NONE, O05 word still `("a",)`.
 Returning the longer FIVE.future word, or NONE, as the O05 witness is
 the same error on two sides of successor.
+
+## 13. The 24 delayed FIVE successor pairs
+
+The 24 pairs of §12 are a complete fiber. They are not a leftover bucket
+and they are not ghost folds.
+
+1. **Carrier.** Delayed FIVE successor pairs on the 845-machine family: a
+   merged pair whose earliest O05 clause is successor, FIVE.future is ONE,
+   and the FIVE.future word is not among the O05 clause-witness words.
+2. **Ports.** Supplied: those 24 pairs. Missing: obstruction class,
+   ghost-fold type, unique-pair local name, and FIVE delay reason.
+3. **Operation.** `PARTIAL`, diagnostic. Same O05 clauses as §1.
+4. **Receiver.** O05 successor versus FIVE.future. A delay reason records
+   why the future word is longer, not a new O05 clause.
+5. **Fiber.** Complete occupancy of the a priori names below. NONE/ONE/MANY
+   is used only for the solved occupancy of each name.
+6. **Coverage, hostile, grade.** Coverage: the 845 family. Hostile: the
+   named `partial_land` machine is delayed and not a ghost; Manifesto
+   `{p,q,r}` is a ghost and not delayed; the five-state O08R pair is
+   delayed by `late_observation`, so that reason is not missing, only
+   unoccupied on this family. Grade: written exclusion of ghost/2×2;
+   finite test for occupancy.
+
+**Definition (late enabledness).** After the first letter of the FIVE.future
+word the tagged observations still agree, and the next letter distinguishes
+by `FAIL` versus `OK`.
+
+**Definition (late observation).** After that first letter the tagged
+observations still agree, and the next letter distinguishes by two
+successful observations.
+
+**Proposition (delayed pairs are not ghosts).** A delayed FIVE successor
+pair has FIVE.future ONE, so it is not a ghost pair and `(machine, C)` is
+not a ghost fold. The 2×2 names of §7 apply only to ghost folds, so the
+ghost-fold type is unclassified. Grade: written.
+
+**Null, frozen before classifying the 24:**
+
+> The 24 FIVE.future/O05 disagreements on the 845-machine family are all
+> successor-class ghost folds of one 2×2 type `sink_self`, `sink_partner`,
+> `return_self`, or `return_partner`.
+
+**Readout.** The null is **false**. Obstruction class is successor on all
+24. Ghost-fold type is NONE: 0 ghosts, 2×2 names occupy 0, unclassified
+24. They are the already typed unique-pair name `partial_land`, and the
+FIVE delay is `late_enabledness` on all 24.
+
+**Match null, frozen against that occupancy:**
+
+> On the 845-machine family, every delayed FIVE successor pair has
+> obstruction class successor, is not a ghost fold, has unique-pair local
+> name `partial_land`, and has FIVE delay `late_enabledness`. Unclassified
+> delay is NONE.
+
+**Readout.** The match null is **true**. Occupancy
+`(partial_land, late_enabledness) = (24, 24)`. `late_observation` occupies
+0 on this family and is occupied by the five-state hostile. Frozen receipt:
+[DELAYED.json](DELAYED.json).
 
 This Board Tile now carries the witness port. Frozen receipts:
 [WITNESS.json](WITNESS.json) and the `o05_witness` field of

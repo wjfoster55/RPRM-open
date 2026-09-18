@@ -39,8 +39,11 @@ from obstruction import (
     RESIDUE_TYPES,
     block_profile,
     classify_ghost_fold,
+    DELAY_REASONS,
     distinguishing_witness_fiber,
+    delayed_pair_record,
     ghost_fiber,
+    is_delayed_five_successor,
     ghost_fold_detail,
     ghost_shape,
     is_future_sufficient,
@@ -117,6 +120,17 @@ FIVE_COINCIDES_NULL = (
     "pair with FIVE.future ONE, the FIVE.future word equals the shortlex-least "
     "O05 clause-witness."
 )
+DELAY_NULL = (
+    "The 24 FIVE.future/O05 disagreements on the checks/futures.py "
+    "845-machine family are all successor-class ghost folds of one 2x2 type "
+    "sink_self, sink_partner, return_self, or return_partner."
+)
+DELAY_MATCH_NULL = (
+    "On the 845-machine family, every delayed FIVE successor pair has "
+    "obstruction class successor, is not a ghost fold, has unique-pair "
+    "local name partial_land, and has FIVE delay late_enabledness. "
+    "Unclassified delay is NONE."
+)
 LIFT_SLICES = (
     {"name": "four_state_one_action", "n": 4, "actions": ("a",)},
     {"name": "three_state_two_action", "n": 3, "actions": ("a", "b")},
@@ -154,6 +168,13 @@ TWO_ACTION_READOUT = {
 UNIQUE_PAIR_RESIDUE_READOUT = 1632
 # 845-family readout: FIVE.future ONE words that are not the O05 witness.
 FIVE_DIFFERS_READOUT = 24
+# Locked after the first delayed-pair classification. Not a premise of DELAY_NULL.
+DELAY_LOCAL_READOUT = {"partial_land": 24}
+DELAY_REASON_READOUT = {
+    "late_enabledness": 24,
+    "late_observation": 0,
+    "late_other": 0,
+}
 
 
 def require(condition, message):
@@ -236,6 +257,8 @@ def check_named_hostiles():
             "Manifesto FIVE.future stays NONE")
     require(not manifesto_w["pairs"][0]["five_word_is_o05_witness"],
             "FIVE.future NONE must not be treated as the O05 witness")
+    require(not is_delayed_five_successor(machine, 0, 1, summary),
+            "Manifesto ghost is FIVE.future NONE, not a delayed FIVE pair")
 
     # Three leftover types, built from the 2×2 definition, not from the census.
     sink_partner = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
@@ -378,6 +401,15 @@ def check_named_hostiles():
             "partial_land FIVE.future is (a,a), a different receiver")
     require(not partial_w["pairs"][0]["five_word_is_o05_witness"],
             "Must not pretend FIVE.future (a,a) is the O05 successor witness")
+    require(is_delayed_five_successor(partial_m, 0, 1, partial_c),
+            "partial_land is the definitional delayed FIVE successor")
+    partial_delay = delayed_pair_record(partial_m, 0, 1, partial_c)
+    require(partial_delay["clause"] == "successor", "partial_land obstruction class is successor")
+    require(partial_delay["ghost_fold"] is False and partial_delay["ghost_shape"] == "unclassified",
+            "partial_land is not a 2x2 ghost fold")
+    require(partial_delay["local_name"] == "partial_land", "Definitional local name is partial_land")
+    require(partial_delay["delay"] == "late_enabledness",
+            "Definitional delay is FAIL vs OK after the O05 letter")
 
     # First-witness core hides a second failing pair.
     two = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 1, 2: 0, 3: 1},
@@ -452,6 +484,15 @@ def check_named_hostiles():
             "Five-state O05 witness is (a,), FIVE.future is (a,a)")
     require(not pq["five_word_is_o05_witness"],
             "Must not pretend the FIVE.future word (a,a) is the O05 successor witness")
+    require(is_delayed_five_successor(five, "p", "q", repaired_tags),
+            "Five-state pair is delayed FIVE, not a ghost")
+    five_delay = delayed_pair_record(five, "p", "q", repaired_tags)
+    require(five_delay["delay"] == "late_observation",
+            "Five-state delay is OK(1) vs OK(0), not FAIL vs OK")
+    require(five_delay["ghost_fold"] is False,
+            "Five-state delayed pair is not a ghost fold")
+    require(five_delay["local_name"] != "partial_land",
+            "late_observation hostile is not the 845 partial_land type")
 
     # Empty carrier: O08R is 0; obstruction NONE.
     empty = Machine((), (), {}, {})
@@ -487,6 +528,7 @@ def check_named_hostiles():
         "residue_types": list(RESIDUE_TYPES),
         "lift_types": list(LIFT_TYPES),
         "witness_null": WITNESS_NULL,
+        "delay_reasons": list(DELAY_REASONS),
     }
 
 
@@ -602,6 +644,7 @@ def check_census(null_text):
     five_one_equals_o05 = 0
     five_one_differs_from_o05 = 0
     o05_witnessed_pairs = 0
+    delayed = []
     for machine in machines:
         for summary in set_partitions(machine.states):
             cases += 1
@@ -634,6 +677,7 @@ def check_census(null_text):
                             five_one_equals_o05 += 1
                         else:
                             five_one_differs_from_o05 += 1
+                            delayed.append(delayed_pair_record(machine, left, right, summary))
                     else:
                         require(clause == "successor", "FIVE.future NONE on a failing pair is successor")
                         require(witness["words"], "Ghost pair still has an O05 successor word")
@@ -680,6 +724,60 @@ def check_census(null_text):
     require(five_one_differs_from_o05 == FIVE_DIFFERS_READOUT,
             "845 FIVE.future/O05 disagreement count changed")
     five_coincides_null_holds = five_one_differs_from_o05 == 0
+    require(len(delayed) == FIVE_DIFFERS_READOUT, "Delayed pair fiber size changed")
+    delay_counts = {name: 0 for name in DELAY_REASONS}
+    local_counts = {}
+    ghost_shape_on_delayed = {name: 0 for name in GHOST_SHAPES}
+    ghost_shape_on_delayed["unclassified"] = 0
+    delayed_ghost_folds = 0
+    delayed_clauses = {clause: 0 for clause in CLAUSES}
+    for row in delayed:
+        require(row["clause"] == "successor", "Delayed pair escaped successor")
+        require(row["ghost_pair"] is False, "Delayed pair cannot be a ghost pair")
+        require(row["delay"] in delay_counts, "Unknown delay reason")
+        delay_counts[row["delay"]] += 1
+        local_counts[row["local_name"]] = local_counts.get(row["local_name"], 0) + 1
+        ghost_shape_on_delayed[row["ghost_shape"]] = ghost_shape_on_delayed.get(row["ghost_shape"], 0) + 1
+        delayed_clauses[row["clause"]] += 1
+        if row["ghost_fold"]:
+            delayed_ghost_folds += 1
+    occupied_two_by_two = sum(1 for name in GHOST_SHAPES if ghost_shape_on_delayed[name])
+    delay_null_holds = (
+        delayed_ghost_folds == len(delayed)
+        and occupied_two_by_two == 1
+        and ghost_shape_on_delayed["unclassified"] == 0
+    )
+    delay_match_ok = (
+        delayed_ghost_folds == 0
+        and all(row["local_name"] == "partial_land" for row in delayed)
+        and delay_counts["late_enabledness"] == len(delayed)
+        and delay_counts["late_other"] == 0
+    )
+    require(not delay_null_holds, "Delay null should be the false 2x2-ghost identification")
+    require(delay_match_ok, "Delayed pairs escaped the typed partial_land/late_enabledness fiber")
+    require(local_counts == DELAY_LOCAL_READOUT, "Delayed local-name occupancy changed")
+    require(delay_counts == DELAY_REASON_READOUT, "Delayed FIVE-reason occupancy changed")
+    compact_delayed = []
+    for row in delayed:
+        compact_delayed.append({
+            "states": list(row["states"]),
+            "observation": list(row["observation"]),
+            "next": {action: list(images) for action, images in row["next"].items()},
+            "summary": list(row["summary"]),
+            "left": row["left"],
+            "right": row["right"],
+            "clause": row["clause"],
+            "ghost_fold": row["ghost_fold"],
+            "ghost_shape": row["ghost_shape"],
+            "profile_kind": row["profile_kind"],
+            "local_name": row["local_name"],
+            "structural_name": row["structural_name"],
+            "delay": row["delay"],
+            "o05_word": list(row["o05_word"]),
+            "five_word": list(row["five_word"]),
+            "n": row["n"],
+            "actions": list(row["actions"]),
+        })
     return {
         "machines": len(machines),
         "machine_partition_cases": cases,
@@ -711,6 +809,17 @@ def check_census(null_text):
         "o05_witnessed_pairs": o05_witnessed_pairs,
         "five_one_equals_o05": five_one_equals_o05,
         "five_one_differs_from_o05": five_one_differs_from_o05,
+        "delay_null": DELAY_NULL,
+        "delay_null_holds": delay_null_holds,
+        "delay_match_null": DELAY_MATCH_NULL,
+        "delay_match_null_holds": delay_match_ok,
+        "delayed_pairs": compact_delayed,
+        "delayed_count": len(delayed),
+        "delayed_ghost_folds": delayed_ghost_folds,
+        "delayed_clauses": delayed_clauses,
+        "delay_counts": delay_counts,
+        "delayed_local_counts": local_counts,
+        "delayed_ghost_shapes": ghost_shape_on_delayed,
     }
 
 
@@ -908,6 +1017,7 @@ def main():
     parser.add_argument("--lift-output", type=Path, default=HERE / "LIFT_CENSUS.json")
     parser.add_argument("--board-output", type=Path, default=HERE / "BOARD.json")
     parser.add_argument("--witness-output", type=Path, default=HERE / "WITNESS.json")
+    parser.add_argument("--delayed-output", type=Path, default=HERE / "DELAYED.json")
     args = parser.parse_args()
     named = check_named_hostiles()
     board = check_board()
@@ -915,7 +1025,7 @@ def main():
     census = check_census(NULL)
     lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v5",
+        "schema": "rprm-operational-obstruction/v6",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
@@ -925,6 +1035,8 @@ def main():
         "match_null_declared_before_census": MATCH_NULL,
         "witness_null_declared_before_looking": WITNESS_NULL,
         "five_coincides_null_declared_before_census": FIVE_COINCIDES_NULL,
+        "delay_null_declared_before_census": DELAY_NULL,
+        "delay_match_null_declared_before_census": DELAY_MATCH_NULL,
         "named": named,
         "board": {
             "schema": board["schema"],
@@ -953,6 +1065,10 @@ def main():
             "o05_witnessed_pairs": census["o05_witnessed_pairs"],
             "five_one_equals_o05": census["five_one_equals_o05"],
             "five_one_differs_from_o05": census["five_one_differs_from_o05"],
+            "delay_null_holds": census["delay_null_holds"],
+            "delay_match_null_holds": census["delay_match_null_holds"],
+            "delayed_local_counts": census["delayed_local_counts"],
+            "delay_counts": census["delay_counts"],
         },
         "census": census,
         "lift_census": lift,
@@ -982,12 +1098,36 @@ def main():
         "five_one_equals_o05": census["five_one_equals_o05"],
         "five_one_differs_from_o05": census["five_one_differs_from_o05"],
     }, indent=2) + "\n", encoding="utf-8")
+    args.delayed_output.write_text(json.dumps({
+        "schema": "rprm-operational-obstruction-delayed/v1",
+        "status": "PASS",
+        "evidence_grade": "finite_test",
+        "delay_null": census["delay_null"],
+        "delay_null_holds": census["delay_null_holds"],
+        "delay_match_null": census["delay_match_null"],
+        "delay_match_null_holds": census["delay_match_null_holds"],
+        "delayed_count": census["delayed_count"],
+        "delayed_ghost_folds": census["delayed_ghost_folds"],
+        "delayed_clauses": census["delayed_clauses"],
+        "delay_counts": census["delay_counts"],
+        "delayed_local_counts": census["delayed_local_counts"],
+        "delayed_ghost_shapes": census["delayed_ghost_shapes"],
+        "pairs": census["delayed_pairs"],
+        "coverage": (
+            "Complete delayed FIVE successor fiber on the 845-machine family. "
+            "Not a theorem about n>=4 or two-action machines."
+        ),
+    }, indent=2) + "\n", encoding="utf-8")
     summary = {
         "status": "PASS",
         "ghost_folds_845": census["ghost_folds"],
         "witness_null_holds": witnesses["witness_null_holds"],
         "five_coincides_null_holds": census["five_coincides_null_holds"],
         "five_one_differs_from_o05": census["five_one_differs_from_o05"],
+        "delay_null_holds": census["delay_null_holds"],
+        "delay_match_null_holds": census["delay_match_null_holds"],
+        "delayed_local_counts": census["delayed_local_counts"],
+        "delay_counts": census["delay_counts"],
         "board_cells": board["board"]["names"],
         "board_generality": board["generality"],
         "shape_counts_845": census["shape_counts"],

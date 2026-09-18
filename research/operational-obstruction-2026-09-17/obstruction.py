@@ -8,7 +8,7 @@ complete classified pair fiber, then NONE/ONE/MANY.
 from __future__ import annotations
 
 from rprm.core import atom, require, total_table
-from rprm.futures import Machine, shortest_witness, stable_refinement
+from rprm.futures import Machine, observe_word, shortest_witness, stable_refinement
 
 CLAUSES = ("observation", "enabledness", "successor")
 GHOST_SHAPES = ("sink_self", "sink_partner", "return_self", "return_partner")
@@ -22,6 +22,9 @@ LIFT_TYPES = GHOST_SHAPES + RESIDUE_TYPES + (
     "unclassified",
 )
 PROFILE_KINDS = ("crowd", "multi", "unique_pair", "other")
+# Why a FIVE.future word can be longer than the O05 successor witness.
+# Occupancy is a census readout, not a premise.
+DELAY_REASONS = ("late_enabledness", "late_observation", "late_other")
 
 
 def require_machine(machine):
@@ -251,6 +254,83 @@ def distinguishing_witness_fiber(machine, summary):
         "ghost_pairs": sum(1 for row in rows if row["five_future"] == "NONE"),
         "five_visible_pairs": sum(1 for row in rows if row["five_future"] == "ONE"),
         "five_word_differs": sum(1 for row in rows if not row["five_word_is_o05_witness"]),
+    }
+
+
+def is_delayed_five_successor(machine, left, right, summary):
+    """True iff O05 successor witness exists and FIVE.future is a longer word."""
+    witness = pair_witness_words(machine, left, right, summary)
+    if witness["clause"] != "successor":
+        return False
+    five = shortest_witness(machine, left, right)
+    return five["status"] == "ONE" and five["word"] not in witness["words"]
+
+
+def five_delay_reason(machine, left, right, five_word):
+    """Why FIVE.future needed a longer word than the one-step O05 successor.
+
+    After the first FIVE letter the tagged observations still agree, or the
+    word would have been length 1 and coincided with the O05 witness. The
+    next letter then distinguishes by FAIL versus OK, or by OK observations.
+    Anything else is late_other.
+    """
+    require(type(five_word) is tuple and len(five_word) >= 2, "Delayed FIVE word required")
+    first = observe_word(machine, left, five_word[:1])
+    second = observe_word(machine, right, five_word[:1])
+    require(first == second, "Length-1 FIVE should already have distinguished")
+    later_left = observe_word(machine, left, five_word[:2])
+    later_right = observe_word(machine, right, five_word[:2])
+    require(later_left != later_right, "Length-2 FIVE prefix must distinguish")
+    fail_left = later_left[0] == "FAIL"
+    fail_right = later_right[0] == "FAIL"
+    if fail_left != fail_right:
+        return "late_enabledness"
+    return "late_observation"
+
+
+def delayed_pair_record(machine, left, right, summary):
+    """Typed readout of one delayed FIVE successor pair.
+
+    Obstruction class is successor. Ghost-fold type is unclassified: FIVE.future
+    ONE on the pair means the fold is not future-sufficient. The local unique-pair
+    name, if any, is the existing lift vocabulary on C, not a 2×2 ghost name.
+    """
+    require(is_delayed_five_successor(machine, left, right, summary),
+            "Delayed FIVE successor pair required")
+    five = shortest_witness(machine, left, right)
+    witness = pair_witness_words(machine, left, right, summary)
+    kind = profile_kind(summary, machine.states)
+    local = unique_pair_witness_set(machine, summary)
+    if kind == "unique_pair" and local is not None and len(local) == 1:
+        local_name = next(iter(local))
+    elif kind == "unique_pair" and local is not None and len(local) > 1:
+        local_name = "mixed"
+    else:
+        local_name = kind
+    delay = five_delay_reason(machine, left, right, five["word"])
+    return {
+        "left": left,
+        "right": right,
+        "clause": "successor",
+        "ghost_fold": is_ghost_fold(machine, summary),
+        "ghost_pair": False,
+        "ghost_shape": ghost_shape(machine, summary),
+        "profile_kind": kind,
+        "local_name": local_name,
+        "structural_name": structural_lift_type(machine, summary),
+        "delay": delay,
+        "o05_word": witness["words"][0],
+        "five_word": five["word"],
+        "n": len(machine.states),
+        "actions": machine.actions,
+        "states": machine.states,
+        "observation": tuple(machine.observation[state] for state in machine.states),
+        "next": {
+            action: tuple(machine.transitions[action][state] if state in machine.transitions[action] else -1
+                          for state in machine.states)
+            for action in machine.actions
+        },
+        "summary": tuple(summary[state] for state in machine.states),
     }
 
 

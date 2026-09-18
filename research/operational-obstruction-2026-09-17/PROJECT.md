@@ -78,8 +78,10 @@ those three declared cells implies the O05 witness fiber is NONE. **False.**
 Each cell is ONE successor word `("a",)`. FIVE.future NONE is not the
 witness. On the 845 family a second frozen null — FIVE.future ONE words
 equal the O05 witness — is also **false**: 24 successor pairs have
-FIVE.future `("a","a")` against O05 `("a",)`. See [THEORY.md](THEORY.md)
-§12 and [WITNESS.json](WITNESS.json).
+FIVE.future `("a","a")` against O05 `("a",)`. Those 24 are not one 2×2
+ghost type. They are successor `partial_land` with FIVE delay
+`late_enabledness`; ghost-fold type NONE. See [THEORY.md](THEORY.md)
+§12–§13, [WITNESS.json](WITNESS.json), and [DELAYED.json](DELAYED.json).
 
 ## Why the runners-up lost
 
@@ -117,3 +119,4 @@ Oracle: [obstruction.py](obstruction.py). Frozen receipt: [CENSUS.json](CENSUS.j
 Lift census: [LIFT_CENSUS.json](LIFT_CENSUS.json).
 Three-cell Board: [BOARD.json](BOARD.json).
 O05 distinguishing witnesses: [WITNESS.json](WITNESS.json).
+Delayed FIVE pairs: [DELAYED.json](DELAYED.json).

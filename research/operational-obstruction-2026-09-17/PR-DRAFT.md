@@ -13,7 +13,7 @@ https://github.com/wjfoster55/RPRM-open/compare/main...research/new-project-oper
 - Declared shape null before typing the leftover 60: they occupy exactly one leftover named type. **False.** They are 12 `sink_partner` + 24 `return_self` + 24 `return_partner`. All 72 sit in a 2×2 of `(sink|return)×(self|partner)` with unclassified NONE, matching the written listing 12+12+24+24.
 - Hostile next cut, null frozen before looking: that 2×2 still names every ghost fold on the four-state one-action family (10 000 machines) and the three-state two-action family (32 768 machines). **False.** MANY(9360). 5424 keep a 2×2 name; 3936 are `split`/`escape`/`crowd`/`multi`/`mixed`. Those five names are typed definitions; match null against the census is **true.** Unclassified NONE. Unique-pair slice also fails (1632 split/escape/mixed). Replacement: the a priori lift vocabulary.
 - The oracle is now a Tile on a three-cell Board (Manifesto `{p,q,r}`, unique-pair split, 2×2 `sink_self`) with withheld versus revealed ports. Not an Atlas. Generality OPEN.
-- Dual Rank-1 instrument: shortest O05 distinguishing witnesses. Null, frozen before looking: FIVE.future NONE on those three cells implies the O05 witness fiber is NONE. **False.** Each cell is ONE successor word `("a",)`. On the 845 family, FIVE.future ONE equals the O05 word except 24 successor pairs (`("a","a")` vs `("a",)`). FIVE.future NONE is not the witness.
+- Dual Rank-1 instrument: shortest O05 distinguishing witnesses. Null, frozen before looking: FIVE.future NONE on those three cells implies the O05 witness fiber is NONE. **False.** Each cell is ONE successor word `("a",)`. On the 845 family, FIVE.future ONE equals the O05 word except 24 successor pairs (`("a","a")` vs `("a",)`). Those 24 are not a 2×2 ghost type: successor `partial_land`, delay `late_enabledness`, ghost-fold type NONE.
 
 ## Test plan
 
@@ -23,6 +23,7 @@ https://github.com/wjfoster55/RPRM-open/compare/main...research/new-project-oper
 - [ ] Spot-check definitional split/escape/crowd/multi/mixed hostiles, and that `partial_land` is FIVE-visible
 - [ ] Spot-check the three-cell Board: Manifesto withheld-summary ONE, split-machine withheld-summary MANY(6), type `sink_self` MANY(2 cells)
 - [ ] Spot-check O05 witnesses: Manifesto `{p,q,r}`, unique-pair split, and `sink_self` each ONE successor `("a",)` with FIVE.future NONE; five-state O05 `("a",)` ≠ FIVE.future `("a","a")`
+- [ ] Spot-check the 24: successor `partial_land`, `late_enabledness`, not a 2×2 ghost
 
 ## OPEN
 

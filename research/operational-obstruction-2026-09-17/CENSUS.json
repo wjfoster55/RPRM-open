@@ -1,5 +1,5 @@
 {
-  "schema": "rprm-operational-obstruction/v5",
+  "schema": "rprm-operational-obstruction/v6",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
   "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
@@ -9,6 +9,8 @@
   "match_null_declared_before_census": "On the four-state one-action family and the three-state two-action family, every ghost fold named split, escape, crowd, multi, or mixed satisfies the typed definition of that name, and every ghost fold satisfying one of those five definitions receives that name. The five definitions are pairwise exclusive. Unclassified is NONE.",
   "witness_null_declared_before_looking": "On Manifesto {p,q,r}, unique-pair split, and numeric 2x2 sink_self, FIVE.future is NONE on the declared merged pair, therefore the O05 distinguishing-witness fiber of each declared C is also NONE.",
   "five_coincides_null_declared_before_census": "On the checks/futures.py 845-machine family, for every failing merged pair with FIVE.future ONE, the FIVE.future word equals the shortlex-least O05 clause-witness.",
+  "delay_null_declared_before_census": "The 24 FIVE.future/O05 disagreements on the checks/futures.py 845-machine family are all successor-class ghost folds of one 2x2 type sink_self, sink_partner, return_self, or return_partner.",
+  "delay_match_null_declared_before_census": "On the 845-machine family, every delayed FIVE successor pair has obstruction class successor, is not a ghost fold, has unique-pair local name partial_land, and has FIVE delay late_enabledness. Unclassified delay is NONE.",
   "named": {
     "named_hostiles": 21,
     "clauses": [
@@ -43,7 +45,12 @@
       "wide_landing",
       "unclassified"
     ],
-    "witness_null": "On Manifesto {p,q,r}, unique-pair split, and numeric 2x2 sink_self, FIVE.future is NONE on the declared merged pair, therefore the O05 distinguishing-witness fiber of each declared C is also NONE."
+    "witness_null": "On Manifesto {p,q,r}, unique-pair split, and numeric 2x2 sink_self, FIVE.future is NONE on the declared merged pair, therefore the O05 distinguishing-witness fiber of each declared C is also NONE.",
+    "delay_reasons": [
+      "late_enabledness",
+      "late_observation",
+      "late_other"
+    ]
   },
   "board": {
     "schema": "rprm-operational-obstruction-board/v1",
@@ -203,7 +210,17 @@
     },
     "o05_witnessed_pairs": 2578,
     "five_one_equals_o05": 2482,
-    "five_one_differs_from_o05": 24
+    "five_one_differs_from_o05": 24,
+    "delay_null_holds": false,
+    "delay_match_null_holds": true,
+    "delayed_local_counts": {
+      "partial_land": 24
+    },
+    "delay_counts": {
+      "late_enabledness": 24,
+      "late_observation": 0,
+      "late_other": 0
+    }
   },
   "census": {
     "machines": 845,
@@ -2339,7 +2356,1091 @@
     "five_coincides_null_holds": false,
     "o05_witnessed_pairs": 2578,
     "five_one_equals_o05": 2482,
-    "five_one_differs_from_o05": 24
+    "five_one_differs_from_o05": 24,
+    "delay_null": "The 24 FIVE.future/O05 disagreements on the checks/futures.py 845-machine family are all successor-class ghost folds of one 2x2 type sink_self, sink_partner, return_self, or return_partner.",
+    "delay_null_holds": false,
+    "delay_match_null": "On the 845-machine family, every delayed FIVE successor pair has obstruction class successor, is not a ghost fold, has unique-pair local name partial_land, and has FIVE delay late_enabledness. Unclassified delay is NONE.",
+    "delay_match_null_holds": true,
+    "delayed_pairs": [
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          1
+        ],
+        "left": 1,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            -1,
+            0,
+            2
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          1
+        ],
+        "left": 1,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            -1,
+            1,
+            0
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          1
+        ],
+        "left": 1,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            -1,
+            2,
+            0
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          1
+        ],
+        "left": 1,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            0,
+            -1,
+            1
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          0
+        ],
+        "left": 0,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            0,
+            2,
+            -1
+          ]
+        },
+        "summary": [
+          0,
+          0,
+          1
+        ],
+        "left": 0,
+        "right": 1,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            1,
+            -1,
+            0
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          0
+        ],
+        "left": 0,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            1,
+            -1,
+            2
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          0
+        ],
+        "left": 0,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            1,
+            2,
+            -1
+          ]
+        },
+        "summary": [
+          0,
+          0,
+          1
+        ],
+        "left": 0,
+        "right": 1,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            2,
+            -1,
+            1
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          0
+        ],
+        "left": 0,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            2,
+            0,
+            -1
+          ]
+        },
+        "summary": [
+          0,
+          0,
+          1
+        ],
+        "left": 0,
+        "right": 1,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          0,
+          0,
+          0
+        ],
+        "next": {
+          "a": [
+            2,
+            1,
+            -1
+          ]
+        },
+        "summary": [
+          0,
+          0,
+          1
+        ],
+        "left": 0,
+        "right": 1,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          1
+        ],
+        "left": 1,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            -1,
+            0,
+            2
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          1
+        ],
+        "left": 1,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            -1,
+            1,
+            0
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          1
+        ],
+        "left": 1,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            -1,
+            2,
+            0
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          1
+        ],
+        "left": 1,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            0,
+            -1,
+            1
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          0
+        ],
+        "left": 0,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            0,
+            2,
+            -1
+          ]
+        },
+        "summary": [
+          0,
+          0,
+          1
+        ],
+        "left": 0,
+        "right": 1,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            1,
+            -1,
+            0
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          0
+        ],
+        "left": 0,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            1,
+            -1,
+            2
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          0
+        ],
+        "left": 0,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            1,
+            2,
+            -1
+          ]
+        },
+        "summary": [
+          0,
+          0,
+          1
+        ],
+        "left": 0,
+        "right": 1,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            2,
+            -1,
+            1
+          ]
+        },
+        "summary": [
+          0,
+          1,
+          0
+        ],
+        "left": 0,
+        "right": 2,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            2,
+            0,
+            -1
+          ]
+        },
+        "summary": [
+          0,
+          0,
+          1
+        ],
+        "left": 0,
+        "right": 1,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      },
+      {
+        "states": [
+          0,
+          1,
+          2
+        ],
+        "observation": [
+          1,
+          1,
+          1
+        ],
+        "next": {
+          "a": [
+            2,
+            1,
+            -1
+          ]
+        },
+        "summary": [
+          0,
+          0,
+          1
+        ],
+        "left": 0,
+        "right": 1,
+        "clause": "successor",
+        "ghost_fold": false,
+        "ghost_shape": "unclassified",
+        "profile_kind": "unique_pair",
+        "local_name": "partial_land",
+        "structural_name": "partial_land",
+        "delay": "late_enabledness",
+        "o05_word": [
+          "a"
+        ],
+        "five_word": [
+          "a",
+          "a"
+        ],
+        "n": 3,
+        "actions": [
+          "a"
+        ]
+      }
+    ],
+    "delayed_count": 24,
+    "delayed_ghost_folds": 0,
+    "delayed_clauses": {
+      "observation": 0,
+      "enabledness": 0,
+      "successor": 24
+    },
+    "delay_counts": {
+      "late_enabledness": 24,
+      "late_observation": 0,
+      "late_other": 0
+    },
+    "delayed_local_counts": {
+      "partial_land": 24
+    },
+    "delayed_ghost_shapes": {
+      "sink_self": 0,
+      "sink_partner": 0,
+      "return_self": 0,
+      "return_partner": 0,
+      "unclassified": 24
+    }
   },
   "lift_census": {
     "lift_null": "On the four-state one-action family and the three-state two-action family (binary observations, all partial maps, all set-partitions; the same constructor as the 845-machine futures family), every ghost fold still receives one of the four names sink_self, sink_partner, return_self, return_partner.",
@@ -2974,9 +4075,9 @@
     ]
   },
   "source_hashes": {
-    "research/operational-obstruction-2026-09-17/obstruction.py": "88b16bbbee29a726dbcad2c8231e075f19f1466938c234e4639785e995903488",
+    "research/operational-obstruction-2026-09-17/obstruction.py": "d8dc2c6bf6c1707d87fb28806719f6364a58972cd3f90ee18ecc070f1d8738bf",
     "research/operational-obstruction-2026-09-17/board.py": "586523a30b28e56fe04cc1d00f168ce777d512f156e0ef1b4cb1fa4093a2ce25",
-    "research/operational-obstruction-2026-09-17/verify.py": "17ecb857642f1bf3eeb0eb125afbfa66dbcb3d313c728f1da0aba374673d1c43",
+    "research/operational-obstruction-2026-09-17/verify.py": "bce2bdc2d7d3516876d405b9499d67550a988cfc3d31b1e031fd3e35f1d371ae",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"
