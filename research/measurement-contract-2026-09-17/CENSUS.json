@@ -1,0 +1,225 @@
+{
+  "X": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "and_const": true,
+  "both_ports": "1/2",
+  "c4_0": [
+    [
+      0,
+      0
+    ]
+  ],
+  "c4_1": [
+    [
+      1,
+      0
+    ]
+  ],
+  "c4_2": [
+    [
+      0,
+      1
+    ]
+  ],
+  "c4_3": [
+    [
+      1,
+      1
+    ]
+  ],
+  "count_is_car": false,
+  "dispositions": {
+    "Q11": {
+      "family": [],
+      "kind": "DISABLED"
+    },
+    "Q12": {
+      "family": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "kind": "MANY"
+    },
+    "Q3": {
+      "family": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "kind": "MANY"
+    },
+    "Q6": {
+      "family": [
+        [
+          1,
+          0
+        ]
+      ],
+      "kind": "ONE"
+    },
+    "Q7": {
+      "family": [
+        [
+          0,
+          1
+        ]
+      ],
+      "kind": "ONE"
+    },
+    "Q8": {
+      "family": [
+        [
+          0,
+          0
+        ]
+      ],
+      "kind": "ONE"
+    }
+  },
+  "four_is_car": true,
+  "frozen": {
+    "Q1": "N_xor_const",
+    "Q10": "N_unit_count",
+    "Q11": "N_en_disabled",
+    "Q12": "N_count_fold",
+    "Q2": "N_mean_not_xor",
+    "Q3": "N_sum1_many",
+    "Q4": "N_sum1_joint",
+    "Q5": "N_fst_split",
+    "Q6": "N_c4_1_one",
+    "Q7": "N_c4_2_one",
+    "Q8": "N_sum0_one",
+    "Q9": "N_same_kernel"
+  },
+  "fst_const": false,
+  "hostile_rejected": {
+    "Q10": true,
+    "Q11": true,
+    "Q12": true,
+    "Q2": true,
+    "Q3": true,
+    "Q4": true,
+    "Q5": true
+  },
+  "match": true,
+  "mean_eq_xor": false,
+  "mean_image": [
+    "0",
+    "1/2",
+    "1"
+  ],
+  "mean_is_sure_bernoulli": false,
+  "missing_b": "disabled",
+  "names": {
+    "Q1": "N_xor_const",
+    "Q10": "N_unit_count",
+    "Q11": "N_en_disabled",
+    "Q12": "N_count_fold",
+    "Q2": "N_mean_not_xor",
+    "Q3": "N_sum1_many",
+    "Q4": "N_sum1_joint",
+    "Q5": "N_fst_split",
+    "Q6": "N_c4_1_one",
+    "Q7": "N_c4_2_one",
+    "Q8": "N_sum0_one",
+    "Q9": "N_same_kernel"
+  },
+  "null_commit": "0256331836de226ae5b5e6534c462e45e128403c",
+  "pointwise_mean_vs_xor": {
+    "[0, 0]": {
+      "mean": "0",
+      "xor": 0
+    },
+    "[0, 1]": {
+      "mean": "1/2",
+      "xor": 1
+    },
+    "[1, 0]": {
+      "mean": "1/2",
+      "xor": 1
+    },
+    "[1, 1]": {
+      "mean": "1",
+      "xor": 0
+    }
+  },
+  "same_kernel": true,
+  "sum0": [
+    [
+      0,
+      0
+    ]
+  ],
+  "sum1": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "sum1_product": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "sum2": [
+    [
+      1,
+      1
+    ]
+  ],
+  "xor_const": true,
+  "xor_decoder_on_count2": {
+    "0": 0,
+    "1": 1,
+    "2": 0
+  },
+  "xor_decoder_on_mean2": {
+    "0": 0,
+    "1": 0,
+    "1/2": 1
+  }
+}
