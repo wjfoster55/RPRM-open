@@ -1,0 +1,144 @@
+{
+  "C_AB_lumpable_on_P": true,
+  "C_diag_lumpable_on_P": true,
+  "Q1": {
+    "enabledness": true,
+    "fail": null,
+    "lumpable": true,
+    "operational": true,
+    "q_constant": true
+  },
+  "Q10": {
+    "K_a_B": "1/4",
+    "K_b_B": "0",
+    "enter_B_match": false
+  },
+  "Q11": {
+    "K_a_B": "1/4",
+    "K_b_B": "3/4",
+    "enter_B_match": true
+  },
+  "Q12": {
+    "K_a_B": "1/4",
+    "K_b_B": "3/4",
+    "enabledness": true,
+    "fail": "not_lumpable",
+    "lumpable": false,
+    "operational": false,
+    "q_constant": true
+  },
+  "Q2": {
+    "enabledness": true,
+    "fail": "q_not_constant",
+    "lumpable": true,
+    "operational": false,
+    "q_constant": false
+  },
+  "Q3": {
+    "enabledness": false,
+    "fail": "enabledness",
+    "lumpable": true,
+    "operational": false,
+    "q_constant": true
+  },
+  "Q4": {
+    "enter_L_match": false,
+    "rate_D": "0",
+    "rate_L": "1/2"
+  },
+  "Q5": {
+    "enabledness": true,
+    "fail": null,
+    "lumpable": true,
+    "operational": true,
+    "q_constant": true
+  },
+  "Q6": {
+    "enabledness": true,
+    "fail": "q_not_constant",
+    "lumpable": true,
+    "operational": false,
+    "q_constant": false
+  },
+  "Q7": {
+    "K_c": [
+      [
+        "B",
+        "3/4"
+      ],
+      [
+        "a",
+        "1/4"
+      ],
+      [
+        "b",
+        "0"
+      ]
+    ],
+    "K_d": [
+      [
+        "B",
+        "3/4"
+      ],
+      [
+        "a",
+        "0"
+      ],
+      [
+        "b",
+        "1/4"
+      ]
+    ],
+    "enabledness": false,
+    "fail": "not_lumpable",
+    "lumpable": false,
+    "operational": false,
+    "q_constant": true
+  },
+  "Q8": {
+    "enabledness": true,
+    "fail": "q_not_constant",
+    "lumpable": true,
+    "operational": false,
+    "q_constant": false
+  },
+  "Q9": {
+    "K_a_B": "1/4",
+    "K_b_B": "0",
+    "enabledness": false,
+    "fail": "not_lumpable",
+    "lumpable": false,
+    "operational": false,
+    "q_constant": true
+  },
+  "frozen": {
+    "Q1": "N_fair_yes",
+    "Q10": "N_pt_en_no",
+    "Q11": "N_sk_en_yes",
+    "Q12": "N_sk_mass",
+    "Q2": "N_fair_qfail",
+    "Q3": "N_abs_mass",
+    "Q4": "N_abs_en_no",
+    "Q5": "N_p_yes",
+    "Q6": "N_p_qfail",
+    "Q7": "N_fine_mass",
+    "Q8": "N_diag_qfail",
+    "Q9": "N_pt_mass"
+  },
+  "match": true,
+  "names": {
+    "Q1": "N_fair_yes",
+    "Q10": "N_pt_en_no",
+    "Q11": "N_sk_en_yes",
+    "Q12": "N_sk_mass",
+    "Q2": "N_fair_qfail",
+    "Q3": "N_abs_mass",
+    "Q4": "N_abs_en_no",
+    "Q5": "N_p_yes",
+    "Q6": "N_p_qfail",
+    "Q7": "N_fine_mass",
+    "Q8": "N_diag_qfail",
+    "Q9": "N_pt_mass"
+  },
+  "null_commit": "f191077e1e8032b3ae4c21537157d9547a5abdb1"
+}
