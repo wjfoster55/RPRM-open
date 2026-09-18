@@ -21,6 +21,7 @@ M_STATES = (0, 1, 2)
 M_TABLE = {"A": (0, 0, 1), "A2": (0, 0, 1), "B": (0, 1, 1)}
 DUP_NULL_COMMIT = "f535cd051d814613f0f4e7530fe8b099e7f6c111"
 TIME_NULL_COMMIT = "784f27a72929b924324c04027407a58d069e32ed"
+IFF_NULL_COMMIT = "4aa1c13ce2355e438f24cc24090ac80a1fcbf713"
 N_STATES = tuple((a, b, c) for a in (0, 1) for b in (0, 1) for c in (0, 1))
 SHIFT_WORDS = ((), ("shift",), ("shift", "shift"))
 
@@ -112,6 +113,16 @@ def function_of(states, panel, value_fn, query):
             return False
         seen[code] = value
     return True
+
+
+def weakly_refines_q(states, question, present_code, later_code):
+    for i, left in enumerate(states):
+        for right in states[i + 1:]:
+            if present_code(left) != present_code(right) or question(left) == question(right):
+                continue
+            if later_code(left) != later_code(right):
+                return True
+    return False
 
 
 def same_partition(states, left_code, right_code):
@@ -402,6 +413,45 @@ def main():
     n_closed = descends(N_STATES, ("Y",), n_port, n_shift)
     q13_null = "N_shift_closed" if n_closed else "N_shift_open"
 
+    l_refine = []
+    for panel in nonempty:
+        present = lambda state, current=panel: static_code(current, state)
+        refined = False
+        for word in TICK_WORDS:
+            later = lambda state, current=panel, w=word: static_code(current, execute(state, w))
+            if weakly_refines_q(STATES, q_hidden, present, later):
+                refined = True
+                break
+        if refined:
+            l_refine.append(list(panel))
+    q14_count = len(l_refine)
+    q14_null = "N_l_none" if q14_count == 0 else "N_l_some"
+
+    def m_id(state):
+        return state
+
+    m_present = lambda state: (m_port("A", state),)
+    m_later = lambda state: (m_port("A", m_id(state)),)
+    m_refine = weakly_refines_q(M_STATES, m_question, m_present, m_later)
+    q15_null = "N_m_id_yes" if m_refine else "N_m_id_none"
+
+    y_present = lambda state: (n_port("Y", state),)
+    y_h1 = lambda state: (n_port("Y", n_shift(state)),)
+    y_h2 = lambda state: (n_port("Y", n_execute(state, ("shift", "shift"))),)
+    y1_refine = weakly_refines_q(N_STATES, n_question, y_present, y_h1)
+    y2_refine = weakly_refines_q(N_STATES, n_question, y_present, y_h2)
+    y2_repair = (not n_static) and n_trace_ok
+    if (not y1_refine) and y2_repair:
+        q16_null = "N_y_delay"
+    elif y1_refine and y2_repair:
+        q16_null = "N_y_immediate"
+    elif (not y1_refine) and (not y2_repair):
+        q16_null = "N_y_never"
+    else:
+        q16_null = "UNNAMED_Y"
+    require(q9_null == "N_all31" and q10_null == "N_time_closed_never", "q9_q10_unchanged")
+    require(q12_null == "N_shift_time" and q13_null == "N_shift_open", "q12_q13_unchanged")
+
     receipt = {
         "status": "PASS",
         "evidence_grade": "FINITE_EXHAUSTIVE_CENSUS",
@@ -526,6 +576,34 @@ def main():
             "descends": n_closed,
             "surviving_null": q13_null,
             "disposition": "NONE" if n_closed else "ONE(open)",
+        },
+        "Q14": {
+            "question": "how many nonempty L-panels weakly refine Q=h under tick horizon 3",
+            "count": q14_count,
+            "panels": l_refine,
+            "surviving_null": q14_null,
+            "disposition": "NONE" if q14_count == 0 else f"ONE({q14_count})",
+            "iff_null_commit": IFF_NULL_COMMIT,
+        },
+        "Q15": {
+            "question": "does identity time on M panel {A} weakly refine Q",
+            "refines": m_refine,
+            "surviving_null": q15_null,
+            "disposition": "NONE" if not m_refine else "ONE(yes)",
+        },
+        "Q16": {
+            "question": "hostile {Y}: horizon-1 refine Q vs horizon-2 repair Q",
+            "horizon1_refines_Q": y1_refine,
+            "horizon2_refines_Q": y2_refine,
+            "horizon2_repairs_Q": y2_repair,
+            "surviving_null": q16_null,
+            "disposition": f"ONE({q16_null})",
+            "ghost_000_001": {
+                "present_Y": [n_port("Y", (0, 0, 0)), n_port("Y", (0, 0, 1))],
+                "after1_Y": [n_port("Y", n_shift((0, 0, 0))), n_port("Y", n_shift((0, 0, 1)))],
+                "after2_Y": [n_port("Y", n_execute((0, 0, 0), ("shift", "shift"))),
+                             n_port("Y", n_execute((0, 0, 1), ("shift", "shift")))],
+            },
         },
         "limits": (
             "Complete census of five named ports on the four-state relational-layer "

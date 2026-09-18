@@ -819,5 +819,41 @@
     "surviving_null": "N_shift_open",
     "disposition": "ONE(open)"
   },
+  "Q14": {
+    "question": "how many nonempty L-panels weakly refine Q=h under tick horizon 3",
+    "count": 0,
+    "panels": [],
+    "surviving_null": "N_l_none",
+    "disposition": "NONE",
+    "iff_null_commit": "4aa1c13ce2355e438f24cc24090ac80a1fcbf713"
+  },
+  "Q15": {
+    "question": "does identity time on M panel {A} weakly refine Q",
+    "refines": false,
+    "surviving_null": "N_m_id_none",
+    "disposition": "NONE"
+  },
+  "Q16": {
+    "question": "hostile {Y}: horizon-1 refine Q vs horizon-2 repair Q",
+    "horizon1_refines_Q": true,
+    "horizon2_refines_Q": true,
+    "horizon2_repairs_Q": true,
+    "surviving_null": "N_y_immediate",
+    "disposition": "ONE(N_y_immediate)",
+    "ghost_000_001": {
+      "present_Y": [
+        0,
+        0
+      ],
+      "after1_Y": [
+        0,
+        0
+      ],
+      "after2_Y": [
+        0,
+        1
+      ]
+    }
+  },
   "limits": "Complete census of five named ports on the four-state relational-layer machine, plus 80 value-copy trials, one three-state lookalike, and one eight-state shift. Not AD-R3, not Kalman rank, not a general soundness proof of this script."
 }

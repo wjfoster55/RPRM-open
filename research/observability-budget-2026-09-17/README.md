@@ -15,6 +15,9 @@ Read in this order:
 5. [NULL-TIME.md](NULL-TIME.md) — time/port nulls, frozen at `784f27a`
 6. [CLAIM-TIME.md](CLAIM-TIME.md) / [THEOREM-TIME.md](THEOREM-TIME.md) /
    [RESULT-TIME.md](RESULT-TIME.md)
+7. [NULL-IFF.md](NULL-IFF.md) / [THEOREM-IFF.md](THEOREM-IFF.md) /
+   [RESULT-IFF.md](RESULT-IFF.md) — last typed cut
+8. [OBSERVABILITY-NOTE.md](OBSERVABILITY-NOTE.md) — standalone for tomorrow
 
 Replay:
 
@@ -54,6 +57,10 @@ tick-time never refines (**NONE**). **THEOREM restricted**.
 
 **Q12–Q13.** Hostile shift: `{Y}` does not descend; horizon 2 of `Y`
 makes `Q=c` constant — **ONE(`N_shift_time`)**.
+
+**Q14–Q16.** Extra time refines Q iff a later reading splits a present
+Q-ghost. L **NONE**, M identity **NONE**, hostile `{Y}`
+**ONE(`N_y_immediate`)** — frozen `N_y_delay` died. Stop padding.
 
 Adjacent written source: `docs/relational-layer.md` four-state example.
 AD-R3 remains the linear row-space ancestry, not this census.
