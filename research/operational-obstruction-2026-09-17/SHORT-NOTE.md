@@ -115,6 +115,23 @@ the 845 family.
 test on the three cells, the 845 family, and the 24-pair fiber. FIVE.future
 does not decide operationality.
 
+## NONDET-LTS-01
+
+Contract NONDET-LTS-01 exists: finite LTS as partial functions into nonempty
+successor sets, plus explicit empty-set deadlock. Clauses observation /
+enabledness / `successor_blocks`. Deadlock is not disabled. The PARTIAL
+oracle does not stretch. Written in `CONTRACT-NONDET.md`. Bounded n=2,3
+one-action census is closed. Not an n=4 occupancy lift.
+
+**Null, frozen before the image comparison:** the 72 NONDET FIVE ghosts are
+exactly the 72 PARTIAL 845 ghosts under the singleton-or-absent embedding.
+**True.** Identification is ONE.
+
+**Null, frozen before classifying the 388 `deadlock_disabled` pairs:** they
+are all n=3, all one block-shape, and all enabledness-class only. **False.**
+4 on n=2, 384 on n=3; shapes `2` / `3` / `2+1`; mixed ONE/MANY; all
+`enabledness`; never `successor_blocks` versus a live landing.
+
 ## What this does not claim
 
 Not a new minimization theory. Not Lean. Not a first-ness claim about
@@ -122,10 +139,11 @@ bisimulation or Moore refinement. O05 is the ordinary operational-fold
 test for deterministic partial systems; the work is the complete fiber,
 the ghost census, and the separation from FIVE.future.
 
-`KERNEL` complete obstruction remains OPEN. The 388 `deadlock_disabled` pairs are not one n or shape: 4 on n=2 plus 384 on n=3 (`2`/`3`/`2+1`); all `enabledness`, never `successor_blocks`.
+`KERNEL` complete obstruction remains OPEN. The 845 PARTIAL occupancy lift
+to NONDET remains OPEN.
 
 ## Receipts
 
 `CENSUS.json`, `LIFT_CENSUS.json`, `BOARD.json`, `WITNESS.json`,
-`DELAYED.json`, `NONDET_CENSUS.json` under
+`DELAYED.json`, `CONTRACT-NONDET.md`, `NONDET_CENSUS.json` under
 `research/operational-obstruction-2026-09-17/`.

@@ -10,7 +10,11 @@ O05 distinguishing witnesses: [WITNESS.json](WITNESS.json).
 Delayed FIVE pairs: [DELAYED.json](DELAYED.json).
 NONDET-LTS-01: [CONTRACT-NONDET.md](CONTRACT-NONDET.md).
 Oracle: [nondet.py](nondet.py). Bounded census: [NONDET_CENSUS.json](NONDET_CENSUS.json).
-Short note: [SHORT-NOTE.md](SHORT-NOTE.md).
+Short note: [SHORT-NOTE.md](SHORT-NOTE.md) (Desktop copy `C:\Users\bkbee\Desktop\O05-obstruction-short-note.md`).
+
+Desktop-only navigation (not in this tree):
+`C:\Users\bkbee\Desktop\O05-obstruction-ghost-folds.md`,
+`C:\Users\bkbee\Desktop\RPRM-tonight-scoreboard.md`.
 
 ```powershell
 python -I -B research/operational-obstruction-2026-09-17/verify.py
