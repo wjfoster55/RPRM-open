@@ -1,0 +1,654 @@
+{
+  "status": "PASS",
+  "evidence_grade": "FINITE_EXHAUSTIVE_CENSUS",
+  "claim": "OB-k",
+  "null_commit": "e758dd33b25384d9b7eaa13a57127c619b3f6256",
+  "Q1": {
+    "question": "how many of 5 singletons are sufficient for Q=h",
+    "count": 1,
+    "sufficient_panels": [
+      [
+        "H"
+      ]
+    ],
+    "surviving_null": "N_H",
+    "rejected_nulls": [
+      "N_all5",
+      "N_HX",
+      "N_none"
+    ],
+    "count_disposition": "ONE(1)",
+    "selection_disposition": "ONE",
+    "records": [
+      {
+        "panel": [
+          "H"
+        ],
+        "sufficient": true,
+        "splitting_pairs": [],
+        "fibers": {
+          "0": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "1": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "panel": [
+          "R"
+        ],
+        "sufficient": false,
+        "splitting_pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "fibers": {
+          "0": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "1": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "panel": [
+          "R2"
+        ],
+        "sufficient": false,
+        "splitting_pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "fibers": {
+          "0": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "1": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "panel": [
+          "X"
+        ],
+        "sufficient": false,
+        "splitting_pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "fibers": {
+          "0": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "1": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "panel": [
+          "Z"
+        ],
+        "sufficient": false,
+        "splitting_pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "fibers": {
+          "0": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "Q2": {
+    "question": "is HOSTILE_MORE={R,R2,Z} sufficient",
+    "panel": [
+      "R",
+      "R2",
+      "Z"
+    ],
+    "sufficient": false,
+    "surviving_null": "N_redundant",
+    "ghost_null": "N_ghost_other",
+    "disposition": "NONE",
+    "splitting_pairs": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "fibers": {
+      "000": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "110": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "Q3": {
+    "question": "does {R} with tick-only horizon 3 determine h",
+    "sufficient": false,
+    "surviving_null": "N_layer",
+    "disposition": "NONE",
+    "splitting_pairs": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "traces": [
+      {
+        "state": [
+          0,
+          0
+        ],
+        "readings": [
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "state": [
+          1,
+          0
+        ],
+        "readings": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "state": [
+          0,
+          1
+        ],
+        "readings": [
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "state": [
+          1,
+          1
+        ],
+        "readings": [
+          1,
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "Q4": {
+    "question": "how many of 10 pairs are sufficient for Q=h",
+    "count": 6,
+    "sufficient_panels": [
+      [
+        "H",
+        "R"
+      ],
+      [
+        "H",
+        "R2"
+      ],
+      [
+        "H",
+        "X"
+      ],
+      [
+        "H",
+        "Z"
+      ],
+      [
+        "R",
+        "X"
+      ],
+      [
+        "R2",
+        "X"
+      ]
+    ],
+    "surviving_null": "N_pairs_HX",
+    "rejected_nulls": [
+      "N_pairs_all",
+      "N_pairs_H",
+      "N_pairs_5"
+    ],
+    "count_disposition": "ONE(6)",
+    "selection_disposition": "MANY",
+    "records": [
+      {
+        "panel": [
+          "H",
+          "R"
+        ],
+        "sufficient": true,
+        "contains_H": true,
+        "splitting_pairs": []
+      },
+      {
+        "panel": [
+          "H",
+          "R2"
+        ],
+        "sufficient": true,
+        "contains_H": true,
+        "splitting_pairs": []
+      },
+      {
+        "panel": [
+          "H",
+          "X"
+        ],
+        "sufficient": true,
+        "contains_H": true,
+        "splitting_pairs": []
+      },
+      {
+        "panel": [
+          "H",
+          "Z"
+        ],
+        "sufficient": true,
+        "contains_H": true,
+        "splitting_pairs": []
+      },
+      {
+        "panel": [
+          "R",
+          "R2"
+        ],
+        "sufficient": false,
+        "contains_H": false,
+        "splitting_pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      },
+      {
+        "panel": [
+          "R",
+          "X"
+        ],
+        "sufficient": true,
+        "contains_H": false,
+        "splitting_pairs": []
+      },
+      {
+        "panel": [
+          "R",
+          "Z"
+        ],
+        "sufficient": false,
+        "contains_H": false,
+        "splitting_pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      },
+      {
+        "panel": [
+          "R2",
+          "X"
+        ],
+        "sufficient": true,
+        "contains_H": false,
+        "splitting_pairs": []
+      },
+      {
+        "panel": [
+          "R2",
+          "Z"
+        ],
+        "sufficient": false,
+        "contains_H": false,
+        "splitting_pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      },
+      {
+        "panel": [
+          "X",
+          "Z"
+        ],
+        "sufficient": false,
+        "contains_H": false,
+        "splitting_pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "Q5": {
+    "question": "does {R} with tick+reveal horizon 1 determine h",
+    "sufficient": true,
+    "surviving_null": "N_reveal_separates",
+    "disposition": "ONE(yes)",
+    "splitting_pairs": [],
+    "fibers": {
+      "((0,), (0,), (1,))": [
+        [
+          0,
+          0
+        ]
+      ],
+      "((1,), (0,), (0,))": [
+        [
+          1,
+          0
+        ]
+      ],
+      "((0,), (1,), (1,))": [
+        [
+          0,
+          1
+        ]
+      ],
+      "((1,), (1,), (0,))": [
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "limits": "Complete census of five named ports on the four-state relational-layer machine only. Not AD-R3, not Kalman rank, not a general soundness proof of this script."
+}
