@@ -1,0 +1,422 @@
+{
+  "Q6_joint_equals_product": false,
+  "X2": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "X3": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "add2": [
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      0
+    ]
+  ],
+  "add4": [
+    [
+      2,
+      2
+    ]
+  ],
+  "and0": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "and0_product": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "and1": [
+    [
+      1,
+      1
+    ]
+  ],
+  "c00": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "c00_product": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "c11": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "const0_1": [],
+  "dispositions": {
+    "Q1": {
+      "family": [
+        [
+          1,
+          1
+        ]
+      ],
+      "kind": "ONE"
+    },
+    "Q10": {
+      "family": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "kind": "MANY"
+    },
+    "Q11": {
+      "family": [
+        [
+          2,
+          2
+        ]
+      ],
+      "kind": "ONE"
+    },
+    "Q12": {
+      "family": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "kind": "MANY"
+    },
+    "Q2": {
+      "family": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "kind": "MANY"
+    },
+    "Q3": {
+      "family": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "kind": "MANY"
+    },
+    "Q4": {
+      "family": [
+        [
+          1,
+          1
+        ]
+      ],
+      "kind": "ONE"
+    },
+    "Q5": {
+      "family": [],
+      "kind": "NONE"
+    },
+    "Q7": {
+      "family": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "kind": "MANY"
+    },
+    "Q8": {
+      "family": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "kind": "MANY"
+    },
+    "Q9": {
+      "family": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "kind": "OPEN"
+    }
+  },
+  "documented_dead": {
+    "Q11": {
+      "got": "N_add4_one",
+      "wanted": "N_add4_none"
+    }
+  },
+  "frozen": {
+    "Q1": "N_and1_one",
+    "Q10": "N_add2_many",
+    "Q11": "N_add4_none",
+    "Q12": "N_xor0_many",
+    "Q2": "N_and0_many3",
+    "Q3": "N_xor1_many",
+    "Q4": "N_nand0_one",
+    "Q5": "N_c0_none",
+    "Q6": "N_and0_joint",
+    "Q7": "N_c00_many",
+    "Q8": "N_c11_many",
+    "Q9": "N_partial_open"
+  },
+  "hostile_representative_rejected": {
+    "Q10": true,
+    "Q12": true,
+    "Q2": true,
+    "Q3": true,
+    "Q7": true,
+    "Q8": true,
+    "Q9": true
+  },
+  "match": false,
+  "match_surviving": true,
+  "names": {
+    "Q1": "N_and1_one",
+    "Q10": "N_add2_many",
+    "Q11": "N_add4_one",
+    "Q12": "N_xor0_many",
+    "Q2": "N_and0_many3",
+    "Q3": "N_xor1_many",
+    "Q4": "N_nand0_one",
+    "Q5": "N_c0_none",
+    "Q6": "N_and0_joint",
+    "Q7": "N_c00_many",
+    "Q8": "N_c11_many",
+    "Q9": "N_partial_open"
+  },
+  "nand0": [
+    [
+      1,
+      1
+    ]
+  ],
+  "null_commit": "3127680b33e65f1b825b3e690791621f91a5cf7a",
+  "partial": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "partial_complete": false,
+  "partial_scanned": 2,
+  "surviving": {
+    "Q1": "N_and1_one",
+    "Q10": "N_add2_many",
+    "Q11": "N_add4_one",
+    "Q12": "N_xor0_many",
+    "Q2": "N_and0_many3",
+    "Q3": "N_xor1_many",
+    "Q4": "N_nand0_one",
+    "Q5": "N_c0_none",
+    "Q6": "N_and0_joint",
+    "Q7": "N_c00_many",
+    "Q8": "N_c11_many",
+    "Q9": "N_partial_open"
+  },
+  "xor0": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "xor1": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ]
+}
