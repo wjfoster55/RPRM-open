@@ -58,6 +58,34 @@ def unit_scene(x, y, extra_walls=None, scene_id="unit"):
     )
 
 
+def floor_sitting_column(x0, width, V, extra_walls=None, scene_id="floor_col"):
+    """Hole-free rectangle sitting on y=floor, filled from the floor up."""
+    geo = scenes.make_container(64, 48, 10, extra_walls=extra_walls)
+    mass = scenes.empty_mass(64, 48)
+    cells = []
+    for y in range(geo["floor"], 0, -1):
+        for x in range(x0, x0 + width):
+            cells.append((y, x))
+    scenes.fill_cells(mass, geo["walls"], 64, cells, V)
+    return scenes.spec_of(
+        geo, mass, scene_id, "packed_yes_probe",
+        f"floor-sitting w={width} x0={x0} V={V}",
+    )
+
+
+def hanging_column(x0, width, V, extra_walls=None, scene_id="hang_col"):
+    """Hole-free rectangle filled from y=1 down (panel packed-column order)."""
+    geo = scenes.make_container(64, 48, 10, extra_walls=extra_walls)
+    mass = scenes.empty_mass(64, 48)
+    scenes.fill_cells(
+        mass, geo["walls"], 64, scenes.column_cells(geo, x0, width), V,
+    )
+    return scenes.spec_of(
+        geo, mass, scene_id, "packed_yes_probe",
+        f"hanging w={width} x0={x0} V={V}",
+    )
+
+
 def two_cell_scene(cells, extra_walls=None, scene_id="two"):
     geo = scenes.make_container(64, 48, 10, extra_walls=extra_walls)
     mass = scenes.empty_mass(64, 48)
@@ -674,6 +702,142 @@ class TestCarryLemma(unittest.TestCase):
         oracle = run_oracle(scene, "cut_exit")
         self.assertEqual(oracle["Qdyn"], 1)
         self.assertEqual(oracle["firstBreach"], 3)
+
+
+class TestPackedYesY1Y2(unittest.TestCase):
+    """Y1/Y2 occupancy YES predicates; both killed (NULLS_PACKED_YES.md)."""
+
+    def _q_ref(self):
+        rows_path = (
+            F3.parent
+            / "fluid-f2-review-20260912"
+            / "input"
+            / "fluid_dynamic_frontier_02"
+            / "results"
+            / "rows.jsonl"
+        )
+        stored = {}
+        for line in rows_path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            stored[row["id"]] = int(row["Q_ref"])
+        return stored
+
+    def test_y1_killed_by_floor_sitting_probe(self):
+        scene = floor_sitting_column(26, 4, 60, scene_id="probe_w4_x26_V60")
+        f3 = evaluate_f3(
+            scene["walls"], scene["mass"], scene["monitor"],
+            scene["W"], scene["H"], scene["thresh"],
+            dx=scene["dx"], crest_y=scene["crest_y"], floor=scene["floor"],
+        )
+        self.assertTrue(f3["y1_match"], f3["packed_rectangle"])
+        self.assertNotEqual(f3["static"], "CERTIFIED_YES")
+        out = run_oracle(scene, "yes_exit")
+        self.assertEqual(out["Qdyn"], 0)
+        RESULTS.mkdir(parents=True, exist_ok=True)
+        payload = {
+            "y1": "FALSE",
+            "probe_w4_x26_V60": {
+                "Qdyn": int(out["Qdyn"]),
+                "firstBreach": out["firstBreach"],
+                "stepsRun": out["stepsRun"],
+                "stop": out["stop"],
+                "shape": f3["packed_rectangle"],
+                "static": f3["static"],
+            },
+        }
+        prior = {}
+        dest = RESULTS / "packed_yes.json"
+        if dest.exists():
+            prior = json.loads(dest.read_text(encoding="utf-8"))
+        prior.update(payload)
+        dest.write_text(json.dumps(prior, indent=2) + "\n", encoding="utf-8")
+
+    def test_y2_killed_by_hang_probe(self):
+        scene = hanging_column(26, 4, 60, scene_id="probe_hang_w4_x26_V60")
+        f3 = evaluate_f3(
+            scene["walls"], scene["mass"], scene["monitor"],
+            scene["W"], scene["H"], scene["thresh"],
+            dx=scene["dx"], crest_y=scene["crest_y"], floor=scene["floor"],
+        )
+        self.assertTrue(f3["y2_match"], f3["packed_rectangle"])
+        self.assertFalse(f3["y1_match"])
+        self.assertNotEqual(f3["static"], "CERTIFIED_YES")
+        out = run_oracle(scene, "yes_exit")
+        self.assertEqual(out["Qdyn"], 0)
+        RESULTS.mkdir(parents=True, exist_ok=True)
+        dest = RESULTS / "packed_yes.json"
+        prior = {}
+        if dest.exists():
+            prior = json.loads(dest.read_text(encoding="utf-8"))
+        prior["y2"] = "FALSE"
+        prior["probe_hang_w4_x26_V60"] = {
+            "Qdyn": int(out["Qdyn"]),
+            "firstBreach": out["firstBreach"],
+            "stepsRun": out["stepsRun"],
+            "stop": out["stop"],
+            "shape": f3["packed_rectangle"],
+            "static": f3["static"],
+        }
+        dest.write_text(json.dumps(prior, indent=2) + "\n", encoding="utf-8")
+
+    def test_panel_y1_empty_y2_matches_are_q_ref_1(self):
+        stored = self._q_ref()
+        y1_ids = []
+        y2_rows = []
+        for scene in scenes.build_panel():
+            if scene["W"] != 64 or scene["H"] != 48:
+                continue
+            f3 = evaluate_f3(
+                scene["walls"], scene["mass"], scene["monitor"],
+                scene["W"], scene["H"], scene["thresh"],
+                dx=scene["dx"], crest_y=scene["crest_y"], floor=scene["floor"],
+            )
+            if f3["y1_match"]:
+                y1_ids.append(scene["id"])
+            if f3["y2_match"]:
+                y2_rows.append({
+                    "id": scene["id"],
+                    "Q_ref": stored[scene["id"]],
+                    "shape": f3["packed_rectangle"],
+                })
+                self.assertEqual(stored[scene["id"]], 1, scene["id"])
+        self.assertEqual(y1_ids, [])
+        self.assertIn("A_w4_x26_V180", [r["id"] for r in y2_rows])
+        self.assertIn("C_adj4_V60", [r["id"] for r in y2_rows])
+        RESULTS.mkdir(parents=True, exist_ok=True)
+        dest = RESULTS / "packed_yes.json"
+        prior = {}
+        if dest.exists():
+            prior = json.loads(dest.read_text(encoding="utf-8"))
+        prior["panel_y1_matches"] = y1_ids
+        prior["panel_y2_matches"] = y2_rows
+        dest.write_text(json.dumps(prior, indent=2) + "\n", encoding="utf-8")
+
+    def test_known_packed_looking_q0_do_not_match(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        for sid in ("C_adj4_V20", "C_adj4_V40", "A_w4_x24_V180"):
+            scene = panel[sid]
+            f3 = evaluate_f3(
+                scene["walls"], scene["mass"], scene["monitor"],
+                scene["W"], scene["H"], scene["thresh"],
+                dx=scene["dx"], crest_y=scene["crest_y"], floor=scene["floor"],
+            )
+            self.assertFalse(f3["y1_match"], sid)
+            self.assertFalse(f3["y2_match"], sid)
+
+    def test_hostile_not_y1_y2_not_official_yes(self):
+        scene = hostile_scene()
+        f3 = evaluate_f3(
+            scene["walls"], scene["mass"], scene["monitor"],
+            scene["W"], scene["H"], scene["thresh"],
+            dx=scene["dx"], crest_y=scene["crest_y"], floor=scene["floor"],
+        )
+        self.assertFalse(f3["y1_match"])
+        self.assertFalse(f3["y2_match"])
+        self.assertNotEqual(f3["static"], "CERTIFIED_YES")
+        self.assertEqual(f3["static"], "UNRESOLVED")
 
 
 if __name__ == "__main__":

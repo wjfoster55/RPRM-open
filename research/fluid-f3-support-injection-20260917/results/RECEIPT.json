@@ -3,9 +3,9 @@
   "command": "python -I -B tests/test_f3.py -v",
   "python": "3.14.5",
   "node": "24.18.0",
-  "tests": 30,
+  "tests": 35,
   "failures": 0,
-  "elapsed_s": 58.135,
+  "elapsed_s": 64.825,
   "hostile_Qdyn": 1,
   "hostile_first_breach": 3,
   "layer_B_status": "REFUTED_preserved",
@@ -20,5 +20,7 @@
     "hostile": "MEETS_not_T_NO"
   },
   "official_static": "A_plus_isolation_plus_one_high",
-  "nulls": ["NULLS.md", "NULLS_COMPLETE_T.md", "NULLS_CARRY.md"]
+  "f3_y1": "FALSE_probe_w4_x26_V60_Q0",
+  "f3_y2": "FALSE_probe_hang_w4_x26_V60_Q0",
+  "nulls": ["NULLS.md", "NULLS_COMPLETE_T.md", "NULLS_CARRY.md", "NULLS_PACKED_YES.md"]
 }

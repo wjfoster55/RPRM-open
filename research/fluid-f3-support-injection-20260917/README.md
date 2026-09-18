@@ -25,6 +25,8 @@ n≥2 has no cheap occupancy-ignoring cell-graph NO on this container.
 Token-aware class T is budgeted, not static; see CLAIM.md F3-T / F3-T-LEDGE.
 Complete T on the horizon-pay ledges **MEETS** `R_catwalk` (F3-T-COMPLETE).
 Class E cycle-exits those three ledges before H=300.
+Packed-column occupancy YES predicates Y1 (floor-sitting) and Y2
+(ceiling-hanging) are both false; those YES rows stay exact.
 
 ## Layout
 
@@ -34,6 +36,7 @@ Class E cycle-exits those three ledges before H=300.
 | `NULLS.md` | Frozen token-aware / cycle hypotheses |
 | `NULLS_COMPLETE_T.md` | Frozen complete-T MEETS/EXHAUST nulls |
 | `NULLS_CARRY.md` | Frozen cheap-vs-1-high carry nulls |
+| `NULLS_PACKED_YES.md` | Frozen packed-column YES predicates (Y1/Y2 both false) |
 | `src/t_complete.py` | Constructive complete-T witness + replay |
 | `DERIVATION.md` | Isolation argument + V≥2 dichotomy + T/E |
 | `src/bound_f3.py` | Official routing + soup audits |

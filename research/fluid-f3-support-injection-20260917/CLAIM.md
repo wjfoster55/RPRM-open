@@ -21,6 +21,7 @@
    - Static NO: unique unit cell not on `R_catwalk`.
    - Cheap V≥2 cell-graph NO: none. Scan-order-ignoring carry lemma: none (F3-CARRY-CHEAP).
    - Restricted 1-high static NO when every water cell is wall-supported and catwalk misses `R_catwalk` (F3-1HIGH).
+   - Packed-column static YES: Y1 (floor-sitting w≥4, x_r≥29, V≥60) and Y2 (ceiling-hanging same bounds) are both false.
    - Token-aware class T: occupancy-count over-approx, budgeted, not static.
    - Class E: pinned `stepB` with token-state cycle exit, still exact.
 
@@ -39,11 +40,13 @@
 | F3-E | Pinned `stepB` with a hash of occupancy, milli `vx,vy`, frame parity, and `dirtyNext`: the three horizon-pay ledges cycle-exit with `stepsRun` 111/99/52, `Qdyn=0`. Hostile YES at frame 3. `D_ledge_end31` and `A_w4_x26_V180` YES before cycle. | Finite tests after frozen nulls | LIVE |
 | F3-CARRY-CHEAP | No scan-order-ignoring cheap carry lemma is sound on packed-column YES (must admit water-as-floor), useful as NO on the three horizon-pay ledges, and not a false NO on the hostile pair. Wall-only false-NOs packed YES; soup/T with water floors MEET those ledges. | Written proof + finite tests | LIVE |
 | F3-1HIGH | If every unit water cell is wall-supported and the catwalk closure of the occupied set misses `R_catwalk`, then `Q_H = 0`. Domain excludes packed columns and the hostile pair. Recovers the three horizon-pay ledges and `D_shelf_isolated` as static NO. 1-high Q=1 rows meet the catwalk and stay UNRESOLVED. | Written proof + finite tests after `NULLS_CARRY.md` | LIVE |
+| F3-Y1 | Hole-free floor-sitting rectangle `w≥4`, `x_r≥29`, `V≥60` ⇒ `Q_H=1`. | Finite kill after `NULLS_PACKED_YES.md` | **FALSE** (`probe_w4_x26_V60` matches and `Qdyn=0`) |
+| F3-Y2 | Hole-free ceiling-hanging rectangle `y_top=1`, `w≥4`, `x_r≥29`, `V≥60` ⇒ `Q_H=1`. Matches `A_w4_x26_V180` and `C_adj4_V60` on the panel (those rows are Q=1) but not in general. | Finite kill after `NULLS_PACKED_YES.md` | **FALSE** (`probe_hang_w4_x26_V60` matches and `Qdyn=0`) |
 | F2-B | General Layer B CERTIFIED_NO via `V < sill_need`. | — | **REFUTED** (keep beside survivors) |
 
 F3-V2 as “a cheap static NO for some n≥2 family” is closed as NONE for the occupancy-ignoring cell-graph class. Class T is not that class and is not official static. Class E is exact evolution with an early stop, not a free static NO.
 
-Frozen nulls: `NULLS.md`, `NULLS_COMPLETE_T.md`, `NULLS_CARRY.md`. Outcomes: `results/token_aware_ledges.json`, `results/cycle_exact_ledges.json`, `results/complete_t_ledges.json`, `results/carry_lemma.json`.
+Frozen nulls: `NULLS.md`, `NULLS_COMPLETE_T.md`, `NULLS_CARRY.md`, `NULLS_PACKED_YES.md`. Outcomes: `results/token_aware_ledges.json`, `results/cycle_exact_ledges.json`, `results/complete_t_ledges.json`, `results/carry_lemma.json`, `results/packed_yes.json`.
 
 ## What this is not
 

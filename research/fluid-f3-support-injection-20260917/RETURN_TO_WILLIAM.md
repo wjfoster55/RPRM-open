@@ -1,13 +1,12 @@
-# Return to William — F3 carry lemma
+# Return to William — F3 packed-column YES
 
-F1 stays closed. Layer B stays refuted. Hostile pair stays exact-YES.
+F1 stays closed. Layer B stays refuted. Hostile pair stays exact-YES,
+not a static YES. 1-high NO is already official.
 
-**THEOREM:** no cheap scan-order-ignoring carry lemma is sound on packed
-YES, useful on the horizon-pay ledges, and safe on the hostile pair.
-**THEOREM (restricted):** if every water cell is wall-supported and the
-catwalk closure misses `R_catwalk`, then `Q_H = 0`. That NOs
-`D_ledge_end28/30`, `D_sill_end25`, and `D_shelf_isolated`. Packed-column
-YES stays exact.
+**FALSE:** floor-sitting Y1 (`w≥4`, `x_r≥29`, `V≥60`) is killed by
+`probe_w4_x26_V60` (`Qdyn=0`). **FALSE:** ceiling-hanging Y2 (same
+bounds, `y_top=1`) matches the named packed YES rows but is killed by
+`probe_hang_w4_x26_V60` (`Qdyn=0`). No official packed YES.
 
 ## Replay
 

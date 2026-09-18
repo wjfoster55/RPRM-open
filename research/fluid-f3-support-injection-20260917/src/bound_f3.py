@@ -279,12 +279,83 @@ def soup_audit(walls, mass_n, monitor, W, H, allow_water_floor):
     }
 
 
+def packed_rectangle(walls, mass_n, W, H, floor):
+    """Hole-free occupied bounding rectangle, or None if empty."""
+    cells = []
+    for i, m in enumerate(mass_n):
+        if walls[i] or m <= 0:
+            continue
+        cells.append((i % W, i // W))
+    if not cells:
+        return None
+    xs = [c[0] for c in cells]
+    ys = [c[1] for c in cells]
+    x0, xr = min(xs), max(xs)
+    yt, yb = min(ys), max(ys)
+    w = xr - x0 + 1
+    h = yb - yt + 1
+    occ = set(cells)
+    hole_free = len(occ) == w * h
+    if hole_free:
+        for y in range(yt, yb + 1):
+            for x in range(x0, xr + 1):
+                if (x, y) not in occ:
+                    hole_free = False
+                    break
+    return {
+        "x0": x0,
+        "x_r": xr,
+        "y_top": yt,
+        "y_bot": yb,
+        "w": w,
+        "h": h,
+        "V": len(occ),
+        "hole_free": hole_free,
+        "floor_sitting": yb == floor,
+    }
+
+
+def y1_packed_yes(shape, dx=32, vmin=60, xr_min=29, wmin=4):
+    """Frozen Y1 match. Not an official certificate. Killed: see CLAIM."""
+    if not shape:
+        return False
+    return (
+        shape["hole_free"]
+        and shape["floor_sitting"]
+        and shape["w"] >= wmin
+        and shape["x_r"] >= xr_min
+        and shape["V"] >= vmin
+        and shape["x_r"] < dx
+    )
+
+
+def y2_packed_yes(shape, dx=32, vmin=60, xr_min=29, wmin=4):
+    """Frozen Y2 match (ceiling-hanging). Not an official certificate."""
+    if not shape:
+        return False
+    return (
+        shape["hole_free"]
+        and shape["y_top"] == 1
+        and shape["w"] >= wmin
+        and shape["x_r"] >= xr_min
+        and shape["V"] >= vmin
+        and shape["x_r"] < dx
+    )
+
+
 def evaluate_f3(
     walls, mass, monitor, W, H, theta, dx=None, crest_y=None,
-    audit_soups=False, audit_token_aware=False,
+    floor=None, audit_soups=False, audit_token_aware=False,
 ):
     mass_n = normalize_unit_occupancy(mass, walls)
     n_water = unit_water_count(mass_n, walls)
+    if floor is None:
+        floor = H - 2
+    if dx is None:
+        dx = W // 2
+    packed = packed_rectangle(walls, mass_n, W, H, floor)
+    y1 = y1_packed_yes(packed, dx=dx)
+    y2 = y2_packed_yes(packed, dx=dx)
     layers = bound.evaluate_layers(
         walls, mass_n, monitor, W, H, theta, dx=dx, crest_y=crest_y,
     )
@@ -317,6 +388,9 @@ def evaluate_f3(
         "full_soup": full_soup,
         "wall_soup": wall_soup,
         "token_aware": token_aware,
+        "packed_rectangle": packed,
+        "y1_match": y1,
+        "y2_match": y2,
         "failed_gap_adjacent": layers["failed_gap_adjacent"],
         "stats": layers["stats"],
         "static": official,

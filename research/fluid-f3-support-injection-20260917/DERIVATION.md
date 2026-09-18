@@ -209,6 +209,31 @@ Hostile YES at frame 3; `D_ledge_end31` and `A_w4_x26_V180` YES before
 any cycle. E is the official F3 *continuation* after A+isolation, not a
 static certificate.
 
+## Packed-column static YES is empty for the frozen predicates
+
+Nulls: `NULLS_PACKED_YES.md`, Y1 frozen before any probe; Y2 frozen after
+Y1 died and before the hanging probe.
+
+**Y1.** Floor-sitting hole-free rectangle `w≥4`, `x_r≥29`, `V≥60`. No
+64×48 panel row matches (panel packed columns are top-filled from
+`y=1` and miss the floor). The cheapest match
+`probe_w4_x26_V60` (`x=26..29`, `y=32..46`) has oracle `Qdyn=0` at
+horizon 300. Y1 is false. Hostile pair does not match; official static
+stays UNRESOLVED (not a false YES).
+
+**Y2.** Ceiling-hanging hole-free rectangle `y_top=1`, `w≥4`,
+`x_r≥29`, `V≥60`. This is the panel packed-column shape: it matches
+`A_w4_x26_V180`, `C_adj4_V60`, and kin, all with stored `Q_ref=1`.
+The cheapest extra match `probe_hang_w4_x26_V60` (same bounds, `V=60`,
+`y=1..15`) has oracle `Qdyn=0`. So “packed-looking and near the
+divider with `V≥60`” does not force breach: `C_adj4_V60` is against
+the divider (`x_r=31`) and YESes; the same volume three cells left
+does not. Y2 is false. Hostile pair does not match; official static
+is not CERTIFIED_YES.
+
+Neither predicate is wired into official routing. Packed-column YES
+rows stay UNRESOLVED-then-exact. 1-high NO stays official.
+
 ## Failed candidates kept
 
 - F2 `failed_gap_adjacent` — unsound (F2 panel false NOs). Not used.
@@ -219,3 +244,5 @@ static certificate.
 - F3 class T on n=15/25 horizon-pay ledges — 50000-state search hits
   the cap; complete T MEETS `R_catwalk`. Not a cheap or complete NO
   on those rows.
+- F3-Y1 floor-sitting packed YES — killed by `probe_w4_x26_V60` Q=0.
+- F3-Y2 ceiling-hanging packed YES — killed by `probe_hang_w4_x26_V60` Q=0.
