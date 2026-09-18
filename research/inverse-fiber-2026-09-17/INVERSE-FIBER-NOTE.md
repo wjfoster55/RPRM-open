@@ -41,6 +41,11 @@ product is all eight triples and adds six illegal words.
 AND=1 **does** equal `{1}×{1}`. Complementary XOR fibers share one
 product, so the product does not select the law.
 
+On Bits2, `XOR(a,b)=1` if and only if `a+b=1`. So this XOR=1 fiber
+**is** the Count2 fiber of 1. Same MANY family, not a new census.
+Executable identification lives in the measurement worktree
+`verify_id.py`; this inverse census stays STOP.
+
 ---
 
 ## 3. Discriminating view (IF-v)

@@ -19,6 +19,10 @@ Read in this order:
    [CENSUS-ALL.json](CENSUS-ALL.json)
 9. [INVERSE-FIBER-NOTE.md](INVERSE-FIBER-NOTE.md) — standalone for tomorrow
 
+On Bits2, XOR=1 is Count2⁻¹(1). That identification is `verify_id.py`
+in the measurement worktree, not a new inverse census. This census
+stays STOP.
+
 Replay:
 
 ```powershell
