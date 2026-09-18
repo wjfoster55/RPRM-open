@@ -5,7 +5,9 @@ static routing is:
 
 - Layer A on *unit-normalized* occupancy
 - Unit-isolation NO: exactly one water cell, not on R_catwalk
-- n >= 2: UNRESOLVED statically, then F3 cycle exact (not Layer B)
+- 1-high carry NO: every water cell wall-supported and catwalk
+  closure misses R_catwalk (not Layer B, not a cheap soup)
+- else n >= 2: UNRESOLVED statically, then F3 cycle exact
 
 
 Pair-soup and n-token occupancy audits live here as failed or
@@ -93,6 +95,55 @@ def isolation_verdict(layers, n_water, theta):
         "verdict": "CERTIFIED_NO",
         "reason": "unique_cell_not_on_R_catwalk",
         "n_water": 1,
+    }
+
+
+def one_high_verdict(walls, mass_n, monitor, W, H, n_water):
+    """Restricted carry: all water wall-supported, Cat(S) misses R_catwalk.
+
+    Midair water-as-floor cannot persist under bottom-to-top scan (floor
+    is lower, processed first, falls). Same-frame stamp blocks a second
+    splash into the gap. Packed columns and the hostile pair are outside
+    this domain (some cell is not wall-supported).
+    """
+    if n_water < 1:
+        return {
+            "verdict": "UNRESOLVED",
+            "reason": "no_water",
+            "n_water": n_water,
+            "all_wall_supported": False,
+            "cat_meets_R_catwalk": None,
+        }
+    starts = water_indices(mass_n, walls)
+    for i in starts:
+        x, y = i % W, i // W
+        if not bound.wall_supported(walls, x, y, W, H):
+            return {
+                "verdict": "UNRESOLVED",
+                "reason": "not_all_wall_supported",
+                "n_water": n_water,
+                "all_wall_supported": False,
+                "cat_meets_R_catwalk": None,
+            }
+    R_cat = bound.reverse_reachable(
+        walls, monitor, W, H, bound.forward_moves_catwalk,
+    )
+    F = catwalk_forward_from(walls, starts, W, H)
+    meets = bool(F & R_cat)
+    if meets:
+        return {
+            "verdict": "UNRESOLVED",
+            "reason": "one_high_cat_meets_R_catwalk",
+            "n_water": n_water,
+            "all_wall_supported": True,
+            "cat_meets_R_catwalk": True,
+        }
+    return {
+        "verdict": "CERTIFIED_NO",
+        "reason": "one_high_catwalk_miss",
+        "n_water": n_water,
+        "all_wall_supported": True,
+        "cat_meets_R_catwalk": False,
     }
 
 
@@ -238,6 +289,7 @@ def evaluate_f3(
         walls, mass_n, monitor, W, H, theta, dx=dx, crest_y=crest_y,
     )
     iso = isolation_verdict(layers, n_water, theta)
+    one_high = one_high_verdict(walls, mass_n, monitor, W, H, n_water)
     full_soup = None
     wall_soup = None
     token_aware = None
@@ -254,13 +306,14 @@ def evaluate_f3(
         and layers["A"]["verdict"] == "UNRESOLVED"
     ):
         token_aware = token_aware_audit(walls, mass_n, monitor, W, H)
-    official, reason = official_static_verdict_f3(layers, iso)
+    official, reason = official_static_verdict_f3(layers, iso, one_high)
     return {
         "normalized_mass": mass_n,
         "n_water": n_water,
         "A": layers["A"],
         "B_refuted": layers["B"],
         "isolation": iso,
+        "one_high": one_high,
         "full_soup": full_soup,
         "wall_soup": wall_soup,
         "token_aware": token_aware,
@@ -272,12 +325,14 @@ def evaluate_f3(
     }
 
 
-def official_static_verdict_f3(layers, iso):
-    """A first; isolation NO; never B sill_need; never a V>=2 cell-graph NO."""
+def official_static_verdict_f3(layers, iso, one_high):
+    """A first; isolation NO; 1-high catwalk-miss NO; never B sill_need."""
     if layers["A"]["verdict"] == "CERTIFIED_YES":
         return "CERTIFIED_YES", "A:" + layers["A"]["reason"]
     if layers["A"]["verdict"] == "CERTIFIED_NO":
         return "CERTIFIED_NO", "A:" + layers["A"]["reason"]
     if iso["verdict"] == "CERTIFIED_NO":
         return "CERTIFIED_NO", "ISO:" + iso["reason"]
+    if one_high["verdict"] == "CERTIFIED_NO":
+        return "CERTIFIED_NO", "1HIGH:" + one_high["reason"]
     return "UNRESOLVED", "ISO:" + iso["reason"]

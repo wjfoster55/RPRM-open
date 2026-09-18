@@ -1,15 +1,13 @@
-# Return to William — F3 complete T
+# Return to William — F3 carry lemma
 
-F1 stays closed. Layer B stays refuted. Isolation is still the only new
-*static* NO. Hostile pair stays exact-YES, not a T-NO.
+F1 stays closed. Layer B stays refuted. Hostile pair stays exact-YES.
 
-Complete T on `D_ledge_end28/30` and `D_sill_end25` **MEETS**
-`R_catwalk` (replayed paths of length 48/24/49). A finished occupancy-
-count search would not exhaust and cannot cheap-NO those rows. Cycle
-exact still stops them at 111/99/52 with Q=0.
-
-OPEN: packed-column YES still needs exact; no static injection-carry
-lemma (T-meet is an over-approx path, not a `stepB` crossing).
+**THEOREM:** no cheap scan-order-ignoring carry lemma is sound on packed
+YES, useful on the horizon-pay ledges, and safe on the hostile pair.
+**THEOREM (restricted):** if every water cell is wall-supported and the
+catwalk closure misses `R_catwalk`, then `Q_H = 0`. That NOs
+`D_ledge_end28/30`, `D_sill_end25`, and `D_shelf_isolated`. Packed-column
+YES stays exact.
 
 ## Replay
 

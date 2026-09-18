@@ -112,9 +112,56 @@ Class T below tracks the actual token count as an occupancy over-approx
 cheaply decide the n=15/25 horizon-pay ledges. Class E is limited exact
 with a token-state cycle stop.
 
-Therefore official F3 *static* routing freezes: after Layer A, n≥2 is
-UNRESOLVED. The hostile extra-walls/water pair remains the distinguishing
-case that any later V=2 story must admit as UNRESOLVED-then-exact-YES.
+Therefore official F3 *static* routing after A and isolation uses the
+1-high rule below, then UNRESOLVED. The hostile extra-walls/water pair
+stays outside that domain (UNRESOLVED-then-exact-YES).
+
+## Cheap carry is empty; 1-high carry is a theorem
+
+Nulls: `NULLS_CARRY.md`, frozen before these checks.
+
+**Cheap class.** Scan-order-ignoring over-approx (cell graphs or n-token
+occupancy, fall/splash shapes only). Packed-column YES
+(`A_w4_x26_V180`, `C_adj4_V60`) uses water-as-floor: wall-only soup
+misses `R_catwalk` while the oracle is Q=1, so any cheap rule that
+forbids water floors is a false NO. Any cheap rule that *allows* water
+floors contains the T graph (or full soup). Complete T already MEETS
+`R_catwalk` on `D_ledge_end28/30` and `D_sill_end25`, so that class
+cannot NO those rows. The hostile pair also MEETS. There is therefore
+no cheap static injection-carry lemma that is sound, useful on the
+horizon-pay ledges, and not a false NO on the hostile pair.
+
+**Restricted 1-high.** Assume every water cell is wall-supported, and
+let `Cat(S)` be the catwalk forward closure of the occupied set. If
+`Cat(S)` meets `R_catwalk`, stop (UNRESOLVED): a wall-supported splash
+into the gap is already a catwalk edge (`D_ledge_end31`, `D_sill_end31`,
+`D_ledge_to_gap`).
+
+If `Cat(S)` misses `R_catwalk`, then `Q_H = 0`.
+
+Proof. Splash from a wall-supported cell is a catwalk edge, so no
+wall-supported cell can splash directly into `R_catwalk`. A token
+leaves the wall only into the one-move fringe. That fringe cell is not
+in `R_catwalk` (else `Cat(S)` would meet). From a midair fringe cell,
+`stepB` falls if the cell below is empty and does not splash that
+frame. Fall dests are catwalk edges, hence also miss `R_catwalk`.
+
+A partner can use a newly planted midair floor in the *same* frame
+(bottom-to-top: the planter moves first from the wall row; a later
+same-row cell can splash onto or beside that floor). Stamp then blocks
+a second move. The next frame processes the lower midair floor first;
+it falls; the cell above now has empty below and falls. Midair
+water-as-floor does not persist. Chaining a second air column while
+staying high would need that second splash after the floor is gone, or
+a double move in one frame, both forbidden.
+
+Packed columns and the original hostile pair have a cell that is not
+wall-supported, so they are outside the domain. Hostile YES uses
+same-frame injection from a *non*-1-high start already adjacent to the
+gap; the 1-high miss hypothesis does not apply.
+
+This is not `sill_need` and not occupancy-ignoring soup. It NOs the
+three horizon-pay ledges and `D_shelf_isolated`.
 
 ## Token-aware occupancy (class T)
 

@@ -18,7 +18,7 @@
         "reason": "budget_hit",
         "search": "best_first"
       },
-      "static": "UNRESOLVED"
+      "static": "CERTIFIED_NO"
     },
     {
       "id": "D_ledge_end30",
@@ -38,7 +38,7 @@
         "reason": "budget_hit",
         "search": "best_first"
       },
-      "static": "UNRESOLVED"
+      "static": "CERTIFIED_NO"
     },
     {
       "id": "D_sill_end25",
@@ -58,7 +58,7 @@
         "reason": "budget_hit",
         "search": "best_first"
       },
-      "static": "UNRESOLVED"
+      "static": "CERTIFIED_NO"
     }
   ]
 }

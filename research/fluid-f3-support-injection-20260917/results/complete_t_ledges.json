@@ -488,7 +488,7 @@
           ]
         ]
       ],
-      "static": "UNRESOLVED"
+      "static": "CERTIFIED_NO"
     },
     {
       "id": "D_ledge_end30",
@@ -738,7 +738,7 @@
           ]
         ]
       ],
-      "static": "UNRESOLVED"
+      "static": "CERTIFIED_NO"
     },
     {
       "id": "D_sill_end25",
@@ -1238,7 +1238,7 @@
           ]
         ]
       ],
-      "static": "UNRESOLVED"
+      "static": "CERTIFIED_NO"
     }
   ]
 }

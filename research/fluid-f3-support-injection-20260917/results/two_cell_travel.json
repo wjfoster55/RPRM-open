@@ -51,8 +51,8 @@
         ]
       ],
       "n_water": 2,
-      "static": "UNRESOLVED",
-      "static_reason": "ISO:n_ge_2_no_cheap_static_no",
+      "static": "CERTIFIED_NO",
+      "static_reason": "1HIGH:one_high_catwalk_miss",
       "Qdyn": 0,
       "firstBreach": -1,
       "maxMonitored": 0
@@ -70,8 +70,8 @@
         ]
       ],
       "n_water": 2,
-      "static": "UNRESOLVED",
-      "static_reason": "ISO:n_ge_2_no_cheap_static_no",
+      "static": "CERTIFIED_NO",
+      "static_reason": "1HIGH:one_high_catwalk_miss",
       "Qdyn": 0,
       "firstBreach": -1,
       "maxMonitored": 0
@@ -89,8 +89,8 @@
         ]
       ],
       "n_water": 2,
-      "static": "UNRESOLVED",
-      "static_reason": "ISO:n_ge_2_no_cheap_static_no",
+      "static": "CERTIFIED_NO",
+      "static_reason": "1HIGH:one_high_catwalk_miss",
       "Qdyn": 0,
       "firstBreach": -1,
       "maxMonitored": 0

@@ -203,7 +203,7 @@ class TestUnitIsolation(unittest.TestCase):
 
 
 class TestFormerBOnlyNotRestored(unittest.TestCase):
-    def test_v9_shelf_is_unresolved(self):
+    def test_v9_shelf_is_one_high_no_not_layer_b(self):
         panel = {s["id"]: s for s in scenes.build_panel()}
         scene = panel["D_shelf_isolated"]
         f3 = evaluate_f3(
@@ -212,9 +212,11 @@ class TestFormerBOnlyNotRestored(unittest.TestCase):
             dx=scene["dx"], crest_y=scene["crest_y"],
         )
         self.assertGreaterEqual(f3["n_water"], 2)
-        self.assertEqual(f3["static"], "UNRESOLVED")
+        self.assertEqual(f3["static"], "CERTIFIED_NO")
+        self.assertTrue(f3["static_reason"].startswith("1HIGH:"))
         self.assertEqual(f3["B_refuted"]["verdict"], "CERTIFIED_NO")
-        oracle = run_oracle(scene, "cut_exit")
+        self.assertFalse(f3["static_reason"].startswith("B:"))
+        oracle = run_oracle(scene, "yes_exit")
         self.assertEqual(oracle["Qdyn"], 0)
 
 
@@ -264,9 +266,11 @@ class TestPanelStaticSoundness(unittest.TestCase):
         # Isolation should recover the two genuine V=1 B-only panel NOs.
         self.assertIn("E_adjcell_y1", iso_no_ids)
         self.assertIn("E_adjcell_y35", iso_no_ids)
-        # Multi-cell former B-only NOs must not be restored as official static NO.
-        for sid in ("D_shelf_isolated", "E_stack10_adj", "E_blob9_far"):
+        # Stack/blob former B-only NOs stay unrestored. Isolated shelf is
+        # a 1-high catwalk-miss NO, not sill_need.
+        for sid in ("E_stack10_adj", "E_blob9_far"):
             self.assertIn(sid, unresolved_former_b)
+        self.assertNotIn("D_shelf_isolated", unresolved_former_b)
 
 
 class TestNoCheapV2StaticNO(unittest.TestCase):
@@ -294,7 +298,8 @@ class TestNoCheapV2StaticNO(unittest.TestCase):
                     f3["full_soup"]["meets_R_catwalk"],
                     scene["id"],
                 )
-                self.assertEqual(f3["static"], "UNRESOLVED", scene["id"])
+                if f3["one_high"]["verdict"] != "CERTIFIED_NO":
+                    self.assertEqual(f3["static"], "UNRESOLVED", scene["id"])
         for item in (
             ("hostile", HOSTILE_WATER, HOSTILE_WALLS),
             ("midair", [(30, 34), (31, 34)], None),
@@ -308,7 +313,8 @@ class TestNoCheapV2StaticNO(unittest.TestCase):
                 audit_soups=True,
             )
             self.assertTrue(f3["full_soup"]["meets_R_catwalk"], item[0])
-            self.assertEqual(f3["static"], "UNRESOLVED", item[0])
+            if f3["one_high"]["verdict"] != "CERTIFIED_NO":
+                self.assertEqual(f3["static"], "UNRESOLVED", item[0])
 
     def test_wall_only_false_nos_packed_yes(self):
         panel = {s["id"]: s for s in scenes.build_panel()}
@@ -399,12 +405,14 @@ class TestTwoCellTravelFinite(unittest.TestCase):
                 "maxMonitored": oracle["maxMonitored"],
             }
             rows.append(row)
-            self.assertEqual(f3["static"], "UNRESOLVED", item["id"])
-            if item["expect_Q"] is not None:
-                self.assertEqual(row["Qdyn"], item["expect_Q"], item["id"])
-            # Isolation must never false-NO a two-cell YES.
             if row["Qdyn"] == 1:
                 self.assertNotEqual(f3["static"], "CERTIFIED_NO", item["id"])
+            elif f3["one_high"]["verdict"] == "CERTIFIED_NO":
+                self.assertEqual(f3["static"], "CERTIFIED_NO", item["id"])
+            else:
+                self.assertEqual(f3["static"], "UNRESOLVED", item["id"])
+            if item["expect_Q"] is not None:
+                self.assertEqual(row["Qdyn"], item["expect_Q"], item["id"])
         RESULTS.mkdir(parents=True, exist_ok=True)
         out = RESULTS / "two_cell_travel.json"
         out.write_text(json.dumps({"family": rows}, indent=2) + "\n", encoding="utf-8")
@@ -448,7 +456,8 @@ class TestTokenAwareOccupancy(unittest.TestCase):
             f3 = self._t(panel[sid])
             t = f3["token_aware"]
             rows.append({"id": sid, "token_aware": t, "static": f3["static"]})
-            self.assertEqual(f3["static"], "UNRESOLVED", sid)
+            self.assertEqual(f3["static"], "CERTIFIED_NO", sid)
+            self.assertTrue(f3["static_reason"].startswith("1HIGH:"), sid)
             self.assertNotEqual(t["verdict"], "CERTIFIED_NO", sid)
             self.assertTrue(
                 t["meets_R_catwalk"] or t["budget_hit"] or t["skipped"],
@@ -478,7 +487,8 @@ class TestTokenAwareOccupancy(unittest.TestCase):
         self.assertTrue(t["exhausted"], t)
         self.assertFalse(t["meets_R_catwalk"], t)
         self.assertEqual(t["verdict"], "CERTIFIED_NO")
-        self.assertEqual(f3["static"], "UNRESOLVED")
+        self.assertEqual(f3["static"], "CERTIFIED_NO")
+        self.assertTrue(f3["static_reason"].startswith("1HIGH:"))
         oracle = run_oracle(scene, "yes_exit")
         self.assertEqual(oracle["Qdyn"], 0)
 
@@ -570,7 +580,7 @@ class TestCompleteTLedges(unittest.TestCase):
             })
             self.assertTrue(out["meets_R_catwalk"], sid)
             self.assertTrue(out.get("replay_ok"), sid)
-            self.assertEqual(rows[-1]["static"], "UNRESOLVED", sid)
+            self.assertEqual(rows[-1]["static"], "CERTIFIED_NO", sid)
         RESULTS.mkdir(parents=True, exist_ok=True)
         (RESULTS / "complete_t_ledges.json").write_text(
             json.dumps({"rows": rows}, indent=2) + "\n", encoding="utf-8",
@@ -587,6 +597,83 @@ class TestCompleteTLedges(unittest.TestCase):
         self.assertTrue(f3["token_aware"]["meets_R_catwalk"])
         self.assertNotEqual(f3["token_aware"]["verdict"], "CERTIFIED_NO")
         self.assertEqual(f3["static"], "UNRESOLVED")
+        self.assertEqual(f3["one_high"]["reason"], "not_all_wall_supported")
+
+
+class TestCarryLemma(unittest.TestCase):
+    """Restricted 1-high carry; cheap scan-order-ignoring class stays empty."""
+
+    def test_horizon_ledges_one_high_no(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        rows = []
+        for sid in ("D_ledge_end28", "D_ledge_end30", "D_sill_end25"):
+            scene = panel[sid]
+            f3 = evaluate_f3(
+                scene["walls"], scene["mass"], scene["monitor"],
+                scene["W"], scene["H"], scene["thresh"],
+                dx=scene["dx"], crest_y=scene["crest_y"],
+            )
+            rows.append({
+                "id": sid,
+                "static": f3["static"],
+                "static_reason": f3["static_reason"],
+                "one_high": f3["one_high"],
+            })
+            self.assertTrue(f3["one_high"]["all_wall_supported"], sid)
+            self.assertFalse(f3["one_high"]["cat_meets_R_catwalk"], sid)
+            self.assertEqual(f3["static"], "CERTIFIED_NO", sid)
+            self.assertTrue(f3["static_reason"].startswith("1HIGH:"), sid)
+            oracle = run_oracle(scene, "yes_exit")
+            self.assertEqual(oracle["Qdyn"], 0, sid)
+        RESULTS.mkdir(parents=True, exist_ok=True)
+        (RESULTS / "carry_lemma.json").write_text(
+            json.dumps({"horizon_ledges": rows}, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
+    def test_one_high_yes_rows_cat_meets(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        for sid in ("D_ledge_end31", "D_sill_end31", "D_ledge_to_gap"):
+            scene = panel[sid]
+            f3 = evaluate_f3(
+                scene["walls"], scene["mass"], scene["monitor"],
+                scene["W"], scene["H"], scene["thresh"],
+                dx=scene["dx"], crest_y=scene["crest_y"],
+            )
+            self.assertTrue(f3["one_high"]["all_wall_supported"], sid)
+            self.assertTrue(f3["one_high"]["cat_meets_R_catwalk"], sid)
+            self.assertNotEqual(f3["static"], "CERTIFIED_NO", sid)
+            oracle = run_oracle(scene, "yes_exit")
+            self.assertEqual(oracle["Qdyn"], 1, sid)
+
+    def test_packed_yes_outside_one_high(self):
+        panel = {s["id"]: s for s in scenes.build_panel()}
+        for sid in ("A_w4_x26_V180", "C_adj4_V60"):
+            scene = panel[sid]
+            f3 = evaluate_f3(
+                scene["walls"], scene["mass"], scene["monitor"],
+                scene["W"], scene["H"], scene["thresh"],
+                dx=scene["dx"], crest_y=scene["crest_y"],
+                audit_soups=True,
+            )
+            self.assertFalse(f3["one_high"]["all_wall_supported"], sid)
+            self.assertEqual(f3["static"], "UNRESOLVED", sid)
+            self.assertFalse(f3["wall_soup"]["meets_R_catwalk"], sid)
+            oracle = run_oracle(scene, "yes_exit")
+            self.assertEqual(oracle["Qdyn"], 1, sid)
+
+    def test_hostile_outside_one_high(self):
+        scene = hostile_scene()
+        f3 = evaluate_f3(
+            scene["walls"], scene["mass"], scene["monitor"],
+            scene["W"], scene["H"], scene["thresh"],
+            dx=scene["dx"], crest_y=scene["crest_y"],
+        )
+        self.assertFalse(f3["one_high"]["all_wall_supported"])
+        self.assertEqual(f3["static"], "UNRESOLVED")
+        oracle = run_oracle(scene, "cut_exit")
+        self.assertEqual(oracle["Qdyn"], 1)
+        self.assertEqual(oracle["firstBreach"], 3)
 
 
 if __name__ == "__main__":

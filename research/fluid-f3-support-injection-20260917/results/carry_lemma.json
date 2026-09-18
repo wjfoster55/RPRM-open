@@ -1,0 +1,40 @@
+{
+  "horizon_ledges": [
+    {
+      "id": "D_ledge_end28",
+      "static": "CERTIFIED_NO",
+      "static_reason": "1HIGH:one_high_catwalk_miss",
+      "one_high": {
+        "verdict": "CERTIFIED_NO",
+        "reason": "one_high_catwalk_miss",
+        "n_water": 15,
+        "all_wall_supported": true,
+        "cat_meets_R_catwalk": false
+      }
+    },
+    {
+      "id": "D_ledge_end30",
+      "static": "CERTIFIED_NO",
+      "static_reason": "1HIGH:one_high_catwalk_miss",
+      "one_high": {
+        "verdict": "CERTIFIED_NO",
+        "reason": "one_high_catwalk_miss",
+        "n_water": 15,
+        "all_wall_supported": true,
+        "cat_meets_R_catwalk": false
+      }
+    },
+    {
+      "id": "D_sill_end25",
+      "static": "CERTIFIED_NO",
+      "static_reason": "1HIGH:one_high_catwalk_miss",
+      "one_high": {
+        "verdict": "CERTIFIED_NO",
+        "reason": "one_high_catwalk_miss",
+        "n_water": 25,
+        "all_wall_supported": true,
+        "cat_meets_R_catwalk": false
+      }
+    }
+  ]
+}

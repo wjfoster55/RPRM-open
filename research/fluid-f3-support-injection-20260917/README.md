@@ -17,7 +17,9 @@ under `../fluid-f2-review-20260912/input/fluid_dynamic_frontier_02/`.
 1. Unit-normalize occupancy (same map as `normalizeForModel(B)`).
 2. Layer A YES or NO decides.
 3. Else if exactly one water cell is not on `R_catwalk`: CERTIFIED_NO.
-4. Else UNRESOLVED → F3 cycle exact (`cycle_exit`), not F2 Layer B.
+4. Else if every water cell is wall-supported and catwalk misses
+   `R_catwalk`: CERTIFIED_NO (1-high carry; not Layer B).
+5. Else UNRESOLVED → F3 cycle exact (`cycle_exit`), not F2 Layer B.
 
 n≥2 has no cheap occupancy-ignoring cell-graph NO on this container.
 Token-aware class T is budgeted, not static; see CLAIM.md F3-T / F3-T-LEDGE.
@@ -31,6 +33,7 @@ Class E cycle-exits those three ledges before H=300.
 | `CLAIM.md` | Typed claims, grades, hostile case |
 | `NULLS.md` | Frozen token-aware / cycle hypotheses |
 | `NULLS_COMPLETE_T.md` | Frozen complete-T MEETS/EXHAUST nulls |
+| `NULLS_CARRY.md` | Frozen cheap-vs-1-high carry nulls |
 | `src/t_complete.py` | Constructive complete-T witness + replay |
 | `DERIVATION.md` | Isolation argument + V≥2 dichotomy + T/E |
 | `src/bound_f3.py` | Official routing + soup audits |
