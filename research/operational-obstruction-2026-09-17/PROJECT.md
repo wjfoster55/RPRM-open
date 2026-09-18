@@ -108,7 +108,8 @@ Atlas theorem; the three-cell instance is a finite test. Contract
 NONDET-LTS-01 is written; the bounded n=2,3 one-action census is closed
 and the 845 PARTIAL occupancy is not lifted to n=4. The 72 FIVE ghosts
 are ONE(identification) with the 72 PARTIAL 845 ghosts under the
-singleton-or-absent embedding.
+singleton-or-absent embedding. The 388 `deadlock_disabled` pairs mix n
+and block-shape; they stay `enabledness`, not `successor_blocks`.
 
 ## Reproduce
 

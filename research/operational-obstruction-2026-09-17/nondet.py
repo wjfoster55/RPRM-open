@@ -234,6 +234,17 @@ def machine_key_nondet(key):
     return key[:-1]
 
 
+def partition_shape(states, summary):
+    """Block-size profile of C, largest part first. Not a 2x2 ghost type."""
+    require(type(states) is tuple, "Carrier enumeration must be a tuple")
+    require(type(summary) is dict and set(summary) == set(states), "Summary misses the carrier")
+    sizes = {}
+    for state in states:
+        label = summary[state]
+        sizes[label] = sizes.get(label, 0) + 1
+    return "+".join(str(size) for size in sorted(sizes.values(), reverse=True))
+
+
 def successor_choices(states, max_size=2):
     """Disabled, deadlock, then nonempty subsets of size 1..max_size."""
     choices = [DISABLED, frozenset()]

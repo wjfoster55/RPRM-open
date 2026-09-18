@@ -882,3 +882,15 @@ this family, not a claim that the 845 lift holds.
 NONE, missing NONE, different `C` NONE. The embedding is a retraction on
 those 72 PARTIAL ghosts. This identifies two named 72-pair fibers. It
 does not lift the 2×2 to n=4 or two actions.
+
+**Null, frozen before classifying the 388 `deadlock_disabled` pairs:**
+
+> Those 388 pairs are all n=3, all one block-shape, and all
+> enabledness-class only.
+
+**Readout.** The null is **false**. Occupancy: n=2 has 4, n=3 has 384.
+Shapes: `2` 4, `3` 192, `2+1` 192. Classes: ONE(`enabledness`) 196,
+MANY(`enabledness`) 24, MANY(`enabledness+successor_blocks`) 72,
+MANY(`observation+enabledness`) 96. Every pair clause is `enabledness`.
+Hostile holds: deadlock versus disabled is not
+`successor_blocks`-versus-live-landing.

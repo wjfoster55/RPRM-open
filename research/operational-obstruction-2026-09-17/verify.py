@@ -38,6 +38,7 @@ from nondet import (
     obstruction_fiber_nondet,
     pair_clause_nondet,
     pair_kind_nondet,
+    partition_shape,
 )
 from board import (
     check_board,
@@ -186,6 +187,11 @@ NONDET_IMAGE_NULL = (
     "845-machine family under the embedding that sends a partial function "
     "to the singleton-or-absent LTS."
 )
+# Frozen before the 388 deadlock_disabled pairs are classified.
+NONDET_COLLISION_SHAPE_NULL = (
+    "The 388 deadlock_disabled pairs on the bounded n=2,3 NONDET family "
+    "are all n=3, all one block-shape, and all enabledness-class only."
+)
 NONDET_FAMILY_SLICES = (
     {"name": "two_state_one_action", "n": 2, "machines": 100, "cases": 200},
     {"name": "three_state_one_action", "n": 3, "machines": 4096, "cases": 20480},
@@ -216,6 +222,15 @@ NONDET_GHOST_TYPE_READOUT = {
     "sink_partner": 12,
     "return_self": 24,
     "return_partner": 24,
+}
+# Collision-fiber readout, locked after the first classification.
+NONDET_COLLISION_N_READOUT = {2: 4, 3: 384}
+NONDET_COLLISION_SHAPE_READOUT = {"2": 4, "3": 192, "2+1": 192}
+NONDET_COLLISION_CLASS_READOUT = {
+    "ONE:enabledness": 196,
+    "MANY:enabledness": 24,
+    "MANY:enabledness+successor_blocks": 72,
+    "MANY:observation+enabledness": 96,
 }
 LIFT_SLICES = (
     {"name": "four_state_one_action", "n": 4, "actions": ("a",)},
@@ -832,6 +847,10 @@ def check_nondet_census():
     ghost_n = {}
     ghost_keys = set()
     collision_pairs = 0
+    collision_n = {}
+    collision_shapes = {}
+    collision_classes = {}
+    collision_clauses = {}
     slices = []
     seen_collision = False
     seen_manifesto = False
@@ -876,8 +895,17 @@ def check_nondet_census():
                     kind_pairs[kind] += 1
                     slice_kinds[kind] += 1
                     if kind == "deadlock_disabled":
+                        require(row["clause"] == "enabledness",
+                                "deadlock_disabled pair escaped enabledness")
+                        require(row["clause"] != "successor_blocks",
+                                "deadlock versus disabled collapsed into successor_blocks")
                         collision_pairs += 1
                         slice_collisions += 1
+                        collision_n[len(machine.states)] = collision_n.get(len(machine.states), 0) + 1
+                        shape = partition_shape(machine.states, summary)
+                        collision_shapes[shape] = collision_shapes.get(shape, 0) + 1
+                        collision_classes[name] = collision_classes.get(name, 0) + 1
+                        collision_clauses[row["clause"]] = collision_clauses.get(row["clause"], 0) + 1
                 if partial is None:
                     five_unadmitted += 1
                     slice_five_unadmitted += 1
@@ -988,8 +1016,30 @@ def check_nondet_census():
             and len(different_c) == 0,
             "Embedded identification acquired extra machines or a different C")
 
+    occupied_collision_n = [n for n, count in collision_n.items() if count]
+    occupied_collision_shapes = [shape for shape, count in collision_shapes.items() if count]
+    occupied_collision_classes = [name for name, count in collision_classes.items() if count]
+    collision_shape_null_holds = (
+        occupied_collision_n == [3]
+        and len(occupied_collision_shapes) == 1
+        and occupied_collision_classes == ["ONE:enabledness"]
+    )
+    require(collision_clauses == {"enabledness": collision_pairs},
+            "deadlock_disabled pair left enabledness")
+    require(kind_pairs["deadlock_live"] > 0,
+            "successor_blocks-versus-live-landing vanished")
+    require("successor_blocks" not in collision_clauses,
+            "deadlock versus disabled mixed with successor_blocks")
+    require(not collision_shape_null_holds,
+            "Collision-shape null should fail: n, shape, and class mix")
+    require(collision_n == NONDET_COLLISION_N_READOUT, "Collision n occupancy changed")
+    require(collision_shapes == NONDET_COLLISION_SHAPE_READOUT,
+            "Collision shape occupancy changed")
+    require(collision_classes == NONDET_COLLISION_CLASS_READOUT,
+            "Collision class occupancy changed")
+
     return {
-        "schema": "rprm-operational-obstruction-nondet/v3",
+        "schema": "rprm-operational-obstruction-nondet/v4",
         "status": "PASS",
         "contract": NONDET_CONTRACT,
         "evidence_grade": "finite_test",
@@ -1029,6 +1079,17 @@ def check_nondet_census():
         "clause_pairs": clause_pairs,
         "kind_pairs": kind_pairs,
         "deadlock_disabled_pairs": collision_pairs,
+        "collision_shape_null": NONDET_COLLISION_SHAPE_NULL,
+        "collision_shape_null_holds": collision_shape_null_holds,
+        "collision_n": {str(n): count for n, count in collision_n.items()},
+        "collision_shapes": collision_shapes,
+        "collision_classes": collision_classes,
+        "collision_clauses": collision_clauses,
+        "collision_mix": {
+            "n": occupied_collision_n,
+            "shapes": occupied_collision_shapes,
+            "classes": occupied_collision_classes,
+        },
         "five_unadmitted": five_unadmitted,
         "five_agree": five_agree,
         "five_disagree": five_disagree,
@@ -1512,7 +1573,7 @@ def main():
     census = check_census(NULL)
     lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v11",
+        "schema": "rprm-operational-obstruction/v12",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
@@ -1531,6 +1592,7 @@ def main():
         "nondet_five_agree_null_declared_before_census": NONDET_FIVE_AGREE_NULL,
         "nondet_ghost_null_declared_before_looking": NONDET_GHOST_NULL,
         "nondet_image_null_declared_before_looking": NONDET_IMAGE_NULL,
+        "nondet_collision_shape_null_declared_before_looking": NONDET_COLLISION_SHAPE_NULL,
         "named": named,
         "board": {
             "schema": board["schema"],
@@ -1587,6 +1649,11 @@ def main():
             "ghost_mix": nondet_census["ghost_mix"],
             "image_null_holds": nondet_census["image_null_holds"],
             "image_fiber": nondet_census["image_fiber"],
+            "collision_shape_null_holds": nondet_census["collision_shape_null_holds"],
+            "collision_n": nondet_census["collision_n"],
+            "collision_shapes": nondet_census["collision_shapes"],
+            "collision_classes": nondet_census["collision_classes"],
+            "collision_mix": nondet_census["collision_mix"],
         },
         "census": census,
         "lift_census": lift,
@@ -1665,6 +1732,9 @@ def main():
         "nondet_ghost_types": nondet_census["ghost_types"],
         "nondet_image_null_holds": nondet_census["image_null_holds"],
         "nondet_image_fiber": nondet_census["image_fiber"],
+        "nondet_collision_shape_null_holds": nondet_census["collision_shape_null_holds"],
+        "nondet_collision_mix": nondet_census["collision_mix"],
+        "nondet_collision_classes": nondet_census["collision_classes"],
         "board_cells": board["board"]["names"],
         "board_generality": board["generality"],
         "shape_counts_845": census["shape_counts"],

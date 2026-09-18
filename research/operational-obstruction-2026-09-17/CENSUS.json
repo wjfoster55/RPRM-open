@@ -1,5 +1,5 @@
 {
-  "schema": "rprm-operational-obstruction/v11",
+  "schema": "rprm-operational-obstruction/v12",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
   "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
@@ -18,6 +18,7 @@
   "nondet_five_agree_null_declared_before_census": "FIVE.future would agree with the NONDET obstruction disposition on every machine-partition pair in that family.",
   "nondet_ghost_null_declared_before_looking": "The 72 FIVE ghosts on the bounded n=2,3 NONDET family are all ONE(successor_blocks) of one pair-kind and one PARTIAL 2x2 ghost-fold type, analogous to the 845 family's 24 late_enabledness delayed pairs (one obstruction class, one kind).",
   "nondet_image_null_declared_before_looking": "The 72 FIVE ghosts on the bounded n=2,3 NONDET family are exactly the image of the 72 PARTIAL ghost folds on the checks/futures.py 845-machine family under the embedding that sends a partial function to the singleton-or-absent LTS.",
+  "nondet_collision_shape_null_declared_before_looking": "The 388 deadlock_disabled pairs on the bounded n=2,3 NONDET family are all n=3, all one block-shape, and all enabledness-class only.",
   "named": {
     "named_hostiles": 21,
     "clauses": [
@@ -248,7 +249,7 @@
     "coverage": "Named hostiles. The 845-family PARTIAL occupancy is not lifted. The bounded n=2,3 census is a separate fiber."
   },
   "nondet_census": {
-    "schema": "rprm-operational-obstruction-nondet/v3",
+    "schema": "rprm-operational-obstruction-nondet/v4",
     "status": "PASS",
     "machines": 4196,
     "cases": 20680,
@@ -324,6 +325,39 @@
       "extra_machines": 0,
       "missing_machines": 0,
       "different_C": 0
+    },
+    "collision_shape_null_holds": false,
+    "collision_n": {
+      "2": 4,
+      "3": 384
+    },
+    "collision_shapes": {
+      "2": 4,
+      "3": 192,
+      "2+1": 192
+    },
+    "collision_classes": {
+      "ONE:enabledness": 196,
+      "MANY:enabledness": 24,
+      "MANY:enabledness+successor_blocks": 72,
+      "MANY:observation+enabledness": 96
+    },
+    "collision_mix": {
+      "n": [
+        2,
+        3
+      ],
+      "shapes": [
+        "2",
+        "3",
+        "2+1"
+      ],
+      "classes": [
+        "ONE:enabledness",
+        "MANY:enabledness",
+        "MANY:enabledness+successor_blocks",
+        "MANY:observation+enabledness"
+      ]
     }
   },
   "census": {
@@ -4181,9 +4215,9 @@
   "source_hashes": {
     "research/operational-obstruction-2026-09-17/obstruction.py": "d8dc2c6bf6c1707d87fb28806719f6364a58972cd3f90ee18ecc070f1d8738bf",
     "research/operational-obstruction-2026-09-17/board.py": "586523a30b28e56fe04cc1d00f168ce777d512f156e0ef1b4cb1fa4093a2ce25",
-    "research/operational-obstruction-2026-09-17/nondet.py": "030c0b540e5082396f16bf163002441291dcbed2c0a75049591f8ee8e0fc279a",
+    "research/operational-obstruction-2026-09-17/nondet.py": "2baac33947fc277dfbd73e2e4d8c8e6a63142840ec5c6976eb2239f7a7cb6df4",
     "research/operational-obstruction-2026-09-17/CONTRACT-NONDET.md": "b26d3d39b9c27d64f94d279b95b92f58e5f6ffcc75e4870ee4b0c2ae5c2ae31b",
-    "research/operational-obstruction-2026-09-17/verify.py": "a0449d7a1ff0c3d837f15b5f62b0fe146d284d7487abbb6eb277b7ea27b23237",
+    "research/operational-obstruction-2026-09-17/verify.py": "ce0f0db1507f419f6da5295cb99bf097722bfe38ef3c1ceb121a9c5cff200dfd",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"

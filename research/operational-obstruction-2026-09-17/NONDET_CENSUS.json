@@ -1,5 +1,5 @@
 {
-  "schema": "rprm-operational-obstruction-nondet/v3",
+  "schema": "rprm-operational-obstruction-nondet/v4",
   "status": "PASS",
   "contract": "NONDET-LTS-01",
   "evidence_grade": "finite_test",
@@ -61,6 +61,43 @@
     "pass": 0
   },
   "deadlock_disabled_pairs": 388,
+  "collision_shape_null": "The 388 deadlock_disabled pairs on the bounded n=2,3 NONDET family are all n=3, all one block-shape, and all enabledness-class only.",
+  "collision_shape_null_holds": false,
+  "collision_n": {
+    "2": 4,
+    "3": 384
+  },
+  "collision_shapes": {
+    "2": 4,
+    "3": 192,
+    "2+1": 192
+  },
+  "collision_classes": {
+    "ONE:enabledness": 196,
+    "MANY:enabledness": 24,
+    "MANY:enabledness+successor_blocks": 72,
+    "MANY:observation+enabledness": 96
+  },
+  "collision_clauses": {
+    "enabledness": 388
+  },
+  "collision_mix": {
+    "n": [
+      2,
+      3
+    ],
+    "shapes": [
+      "2",
+      "3",
+      "2+1"
+    ],
+    "classes": [
+      "ONE:enabledness",
+      "MANY:enabledness",
+      "MANY:enabledness+successor_blocks",
+      "MANY:observation+enabledness"
+    ]
+  },
   "five_unadmitted": 18048,
   "five_agree": 2560,
   "five_disagree": 72,
