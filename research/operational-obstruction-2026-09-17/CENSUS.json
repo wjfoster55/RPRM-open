@@ -1,5 +1,5 @@
 {
-  "schema": "rprm-operational-obstruction/v8",
+  "schema": "rprm-operational-obstruction/v9",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
   "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
@@ -14,6 +14,8 @@
   "nondet_null_declared_before_looking": "The existing PARTIAL obstruction oracle already classifies finite nondeterministic machines: empty successor sets are enabledness, and FIVE.future decides every successor_blocks failure.",
   "deadlock_disabled_null_declared_before_looking": "Deadlock (empty successor set in the domain) and disabled (absent from the domain) receive the same earliest clause on a two-state merged pair with equal observation.",
   "nondet_census_lift_null_declared_before_looking": "The 845-family PARTIAL ghost-fold occupancy lifts unchanged to this NONDET-LTS contract.",
+  "nondet_collision_null_declared_before_census": "On the declared 2- and 3-state one-action NONDET family with successor sets of size 0, 1, or 2 (plus disabled), deadlock/disabled collisions are unoccupied as an earliest clause.",
+  "nondet_five_agree_null_declared_before_census": "FIVE.future would agree with the NONDET obstruction disposition on every machine-partition pair in that family.",
   "named": {
     "named_hostiles": 21,
     "clauses": [
@@ -241,7 +243,48 @@
     ],
     "five_future": "OPEN_NEW_CARRIER",
     "named_hostiles": 12,
-    "coverage": "Named hostiles only. Not a census. The 845-family PARTIAL occupancy is not lifted. Complete NONDET obstruction on a declared family remains OPEN."
+    "coverage": "Named hostiles. The 845-family PARTIAL occupancy is not lifted. The bounded n=2,3 census is a separate fiber."
+  },
+  "nondet_census": {
+    "schema": "rprm-operational-obstruction-nondet/v1",
+    "status": "PASS",
+    "machines": 4196,
+    "cases": 20680,
+    "collision_null_holds": false,
+    "five_agree_null_holds": false,
+    "census_lift_null_holds": "OPEN",
+    "status_counts": {
+      "NONE": 6190,
+      "ONE": 10830,
+      "MANY": 3660
+    },
+    "class_counts": {
+      "NONE": 6190,
+      "ONE:enabledness": 1360,
+      "ONE:successor_blocks": 3276,
+      "ONE:observation": 6194,
+      "MANY:enabledness": 264,
+      "MANY:enabledness+successor_blocks": 72,
+      "MANY:successor_blocks": 252,
+      "MANY:observation": 1824,
+      "MANY:observation+enabledness": 672,
+      "MANY:observation+successor_blocks": 576
+    },
+    "kind_pairs": {
+      "observation": 12338,
+      "deadlock_disabled": 388,
+      "disabled_live": 2316,
+      "both_disabled": 0,
+      "both_deadlock": 0,
+      "deadlock_live": 2316,
+      "branching": 1728,
+      "singletons": 384,
+      "pass": 0
+    },
+    "deadlock_disabled_pairs": 388,
+    "five_unadmitted": 18048,
+    "five_disagree": 72,
+    "five_ghosts": 72
   },
   "census": {
     "machines": 845,
@@ -4098,12 +4141,12 @@
   "source_hashes": {
     "research/operational-obstruction-2026-09-17/obstruction.py": "d8dc2c6bf6c1707d87fb28806719f6364a58972cd3f90ee18ecc070f1d8738bf",
     "research/operational-obstruction-2026-09-17/board.py": "586523a30b28e56fe04cc1d00f168ce777d512f156e0ef1b4cb1fa4093a2ce25",
-    "research/operational-obstruction-2026-09-17/nondet.py": "4d4cfce4951f1d4422c4e6709df079c5add7305bdfd45d1d331e691853933a92",
-    "research/operational-obstruction-2026-09-17/CONTRACT-NONDET.md": "4352d78ee2340a31327fad1471ce0be443b97454bf106bd79453f13835c84470",
-    "research/operational-obstruction-2026-09-17/verify.py": "dc36bff03133a7b4826a52b62819b8c643215c96d7bc314fd7e9828773027d56",
+    "research/operational-obstruction-2026-09-17/nondet.py": "77633d775847f7215629db866a65a028c19d6c183ee1dc3c616cecd54fdee880",
+    "research/operational-obstruction-2026-09-17/CONTRACT-NONDET.md": "c85cc4c3e5fc8e8e11c6dd617fb8b1bdefc29998878d0dc45677b972356bb0de",
+    "research/operational-obstruction-2026-09-17/verify.py": "8e401869f087139a2ca891720baa02ae6aeb3af575babaf2ae01193f8fdc5e9a",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"
   },
-  "coverage": "Named hostiles plus every partition of every machine in the checks/futures.py 845-machine family, plus the four-state one-action family and the three-state two-action family with the same constructor, plus the three-cell Board that uses the oracle as a Tile, plus the O05 distinguishing-witness fiber. Not a theorem about arbitrary infinite carriers, nondeterministic operations, kernels, eight-Tile Boards, or Atlases."
+  "coverage": "Named hostiles plus every partition of every machine in the checks/futures.py 845-machine family, plus the four-state one-action family and the three-state two-action family with the same constructor, plus the three-cell Board that uses the oracle as a Tile, plus the O05 distinguishing-witness fiber, plus the bounded n=2,3 one-action NONDET-LTS census. Not a theorem about arbitrary infinite carriers, the 845 PARTIAL occupancy lifting, kernels, eight-Tile Boards, or Atlases."
 }

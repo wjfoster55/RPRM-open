@@ -32,13 +32,15 @@ port and could not host deadlock versus disabled.
    kernel pushforward mass.
 5. **Inverse / complete fiber.** The obstruction fiber is the complete
    set of merged pairs whose earliest clause is not `pass`. NONE, ONE, or
-   MANY only after that enumeration. An unfinished family census is OPEN.
+   MANY only after that enumeration. The bounded n=2,3 one-action census
+   is closed. The 845 PARTIAL lift remains OPEN.
 6. **Coverage, hostile, evidence grade.** Coverage: written trichotomy on
-   this carrier; named hostiles in `verify.py`. Hostile: deadlock versus
-   disabled on a two-state merged pair. Grade: written trichotomy;
-   finite tests for the hostiles. The 845-family PARTIAL census does
-   **not** lift; that claim is frozen as an unevaluated null and stays
-   OPEN. Unbounded carriers and `KERNEL` remain OPEN.
+   this carrier; named hostiles in `verify.py`; complete census of the
+   declared 2- and 3-state one-action family (successor sets of size
+   0, 1, or 2, plus disabled). Hostile: deadlock versus disabled on a
+   two-state merged pair. Grade: written trichotomy; finite tests; finite
+   census. The 845-family PARTIAL census does **not** lift; that claim
+   stays OPEN. Unbounded carriers and `KERNEL` remain OPEN.
 
 ## 2. Closed claim
 
@@ -84,8 +86,9 @@ run** this cut: no 845 NONDET census is claimed or performed.
 
 ## 4. What this does not claim
 
-Not a family census. Not FIVE.future. Not Lean. Not that empty-set
+Not the 845 PARTIAL lift. Not FIVE.future. Not Lean. Not that empty-set
 deadlock is a nonempty subset. Not that the PARTIAL 2×2 or residue
-types classify nondet machines.
+types classify nondet machines. Not n≥4 or two actions.
 
-Oracle: [nondet.py](nondet.py). Tests: `verify.py` `check_nondet`.
+Oracle: [nondet.py](nondet.py). Tests: `verify.py` `check_nondet`,
+`check_nondet_census`. Receipt: [NONDET_CENSUS.json](NONDET_CENSUS.json).

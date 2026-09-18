@@ -36,10 +36,10 @@ number. Not last night's `T(X,P)` count.
    written proof of the pair trichotomy and of FIVE-visibility of the first
    two clauses; finite test for the censuses, for O09 kernel agreement, and
    for agreement of the §9 occupancy with the §10 typed residue definitions.
-   Unbounded carriers, a `NONDET` family census, `KERNEL`, n=4 two-action,
-   and eight-Tile Board/Atlas remain OPEN. Contract NONDET-LTS-01 is
-   written in §15; it is not a family census. The three-cell Board of
-   §11 is a finite test.
+   Unbounded carriers, `NONDET` on n≥4 or two actions, `KERNEL`, n=4
+   two-action, and eight-Tile Board/Atlas remain OPEN. Contract
+   NONDET-LTS-01 is written in §15; the bounded n=2,3 census is §16
+   and is not the 845 lift. The three-cell Board of §11 is a finite test.
    The dual O05 witness fiber of §12 is a finite test on those cells and
    the 845 family; it is not FIVE.future.
 
@@ -153,11 +153,12 @@ The scientific yield is the negative: treating the Manifesto `{p,q,r}` picture a
 
 ## 6. OPEN
 
-- `NONDET` complete obstruction on a declared family. Contract
-  NONDET-LTS-01 (§15, [CONTRACT-NONDET.md](CONTRACT-NONDET.md)) is the
-  written trichotomy and named hostiles. The 845-family PARTIAL occupancy
-  is not lifted. Overnight's relational/unknown-map count was not run;
-  it stays OPEN. §14 is the superseded total-table probe.
+- `NONDET` complete obstruction on n≥4 or two actions. The bounded
+  n=2,3 one-action census is closed in §16. Contract NONDET-LTS-01
+  ([CONTRACT-NONDET.md](CONTRACT-NONDET.md)) is the written trichotomy.
+  The 845-family PARTIAL occupancy is not lifted. Overnight's
+  relational/unknown-map count was not run; it stays OPEN. §14 is the
+  superseded total-table probe.
 - `KERNEL` complete obstruction (pushforward mass, not support).
 - Applied `rho` of last night's count on one published reduced model of a
   partial system.
@@ -798,12 +799,12 @@ table could not host deadlock versus disabled. Full six-point record:
 4. **Receiver.** Observation, enabledness, and successor *sets of
    C-blocks*. Not FIVE.future. Not PARTIAL one-step labels.
 5. **Fiber.** Complete set of failing merged pairs. NONE/ONE/MANY after
-   that enumeration. This cut enumerates named hostiles, not a family.
+   that enumeration. The bounded n=2,3 census of §16 is that fiber on a
+   declared family. The 845 lift is not that fiber.
 6. **Coverage, hostile, grade.** Coverage: written trichotomy; named
-   hostiles in `verify.py`. Hostile: deadlock versus disabled on a
+   hostiles; the §16 census. Hostile: deadlock versus disabled on a
    two-state merged pair. Grade: written trichotomy; finite tests. The
-   845-family PARTIAL census does **not** lift; that null is frozen and
-   not run.
+   845-family PARTIAL census does **not** lift; that null stays OPEN.
 
 **Definition (NONDET-LTS earliest clause).** Observation if present
 answers differ. Else `enabledness` if some action is defined at exactly
@@ -829,4 +830,32 @@ both in the domain, is `successor_blocks` once observation agrees.
 **Readout.** The first null is **false**: deadlock versus a singleton is
 `successor_blocks`; deadlock versus disabled is `enabledness`. The second
 null is **OPEN** and was not run. FIVE.future remains `OPEN_NEW_CARRIER`.
-Oracle: [nondet.py](nondet.py).
+Oracle: [nondet.py](nondet.py). Bounded census: §16.
+
+## 16. Bounded NONDET-LTS census
+
+Declared family, frozen before looking: every 2-state and 3-state
+one-action machine with binary observation whose each source is
+disabled or a successor set of size 0, 1, or 2. 4 196 machines.
+20 680 partitions. This is not the 845 PARTIAL family.
+
+**Nulls, frozen before the enumeration:**
+
+> On this family, deadlock/disabled collisions are unoccupied as an
+> earliest clause.
+
+> FIVE.future would agree with the NONDET obstruction disposition on
+> every machine-partition pair in this family.
+
+**Named hostile.** Two-state constant observation, `0` deadlock, `1`
+disabled, merge `{0,1}`: ONE(`enabledness`), kind `deadlock_disabled`.
+Manifesto-as-nondet: ONE(`successor_blocks`) and FIVE-future-sufficient.
+
+**Readout.** Collision null **false**: 388 `deadlock_disabled` pairs.
+FIVE-agree null **false**: 18 048 machine-partition pairs FIVE cannot
+admit; 72 FIVE ghosts on PARTIAL encodings (FIVE.NONE, NONDET not NONE).
+Status:
+NONE 6 190, ONE 10 830, MANY 3 660. Classes occupied: observation,
+enabledness, `successor_blocks`, and the mixed MANY combinations
+including `enabledness+successor_blocks` (72). The 845 lift remains
+OPEN. Frozen receipt: [NONDET_CENSUS.json](NONDET_CENSUS.json).

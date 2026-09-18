@@ -1,0 +1,125 @@
+{
+  "schema": "rprm-operational-obstruction-nondet/v1",
+  "status": "PASS",
+  "contract": "NONDET-LTS-01",
+  "evidence_grade": "finite_test",
+  "family": "2- and 3-state one-action machines, binary observation, each source disabled or a successor set of size 0, 1, or 2",
+  "collision_null": "On the declared 2- and 3-state one-action NONDET family with successor sets of size 0, 1, or 2 (plus disabled), deadlock/disabled collisions are unoccupied as an earliest clause.",
+  "collision_null_holds": false,
+  "five_agree_null": "FIVE.future would agree with the NONDET obstruction disposition on every machine-partition pair in that family.",
+  "five_agree_null_holds": false,
+  "census_lift_null": "The 845-family PARTIAL ghost-fold occupancy lifts unchanged to this NONDET-LTS contract.",
+  "census_lift_null_holds": "OPEN",
+  "named_hostile": "Two-state constant-observation deadlock versus disabled is ONE enabledness, kind deadlock_disabled. Manifesto-as-nondet is ONE successor_blocks and FIVE-future-sufficient.",
+  "machines": 4196,
+  "cases": 20680,
+  "status_counts": {
+    "NONE": 6190,
+    "ONE": 10830,
+    "MANY": 3660
+  },
+  "class_counts": {
+    "NONE": 6190,
+    "ONE:enabledness": 1360,
+    "ONE:successor_blocks": 3276,
+    "ONE:observation": 6194,
+    "MANY:enabledness": 264,
+    "MANY:enabledness+successor_blocks": 72,
+    "MANY:successor_blocks": 252,
+    "MANY:observation": 1824,
+    "MANY:observation+enabledness": 672,
+    "MANY:observation+successor_blocks": 576
+  },
+  "clause_pairs": {
+    "observation": 12338,
+    "enabledness": 2704,
+    "successor_blocks": 4428
+  },
+  "kind_pairs": {
+    "observation": 12338,
+    "deadlock_disabled": 388,
+    "disabled_live": 2316,
+    "both_disabled": 0,
+    "both_deadlock": 0,
+    "deadlock_live": 2316,
+    "branching": 1728,
+    "singletons": 384,
+    "pass": 0
+  },
+  "deadlock_disabled_pairs": 388,
+  "five_unadmitted": 18048,
+  "five_agree": 2560,
+  "five_disagree": 72,
+  "five_ghosts": 72,
+  "slices": [
+    {
+      "name": "two_state_one_action",
+      "n": 2,
+      "machines": 100,
+      "cases": 200,
+      "status_counts": {
+        "NONE": 122,
+        "ONE": 78,
+        "MANY": 0
+      },
+      "class_counts": {
+        "NONE": 122,
+        "ONE:enabledness": 16,
+        "ONE:successor_blocks": 12,
+        "ONE:observation": 50
+      },
+      "kind_pairs": {
+        "observation": 50,
+        "deadlock_disabled": 4,
+        "disabled_live": 12,
+        "both_disabled": 0,
+        "both_deadlock": 0,
+        "deadlock_live": 12,
+        "branching": 0,
+        "singletons": 0,
+        "pass": 0
+      },
+      "deadlock_disabled_pairs": 4,
+      "five_unadmitted": 128,
+      "five_disagree": 0
+    },
+    {
+      "name": "three_state_one_action",
+      "n": 3,
+      "machines": 4096,
+      "cases": 20480,
+      "status_counts": {
+        "NONE": 6068,
+        "ONE": 10752,
+        "MANY": 3660
+      },
+      "class_counts": {
+        "NONE": 6068,
+        "MANY:enabledness": 264,
+        "ONE:enabledness": 1344,
+        "MANY:enabledness+successor_blocks": 72,
+        "ONE:successor_blocks": 3264,
+        "MANY:successor_blocks": 252,
+        "MANY:observation": 1824,
+        "ONE:observation": 6144,
+        "MANY:observation+enabledness": 672,
+        "MANY:observation+successor_blocks": 576
+      },
+      "kind_pairs": {
+        "observation": 12288,
+        "deadlock_disabled": 384,
+        "disabled_live": 2304,
+        "both_disabled": 0,
+        "both_deadlock": 0,
+        "deadlock_live": 2304,
+        "branching": 1728,
+        "singletons": 384,
+        "pass": 0
+      },
+      "deadlock_disabled_pairs": 384,
+      "five_unadmitted": 17920,
+      "five_disagree": 72
+    }
+  ],
+  "coverage": "Every partition of every machine in the declared n=2,3 one-action family. Not the 845-family PARTIAL lift. Not n>=4, not two actions, not KERNEL."
+}

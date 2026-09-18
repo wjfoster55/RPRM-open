@@ -1,4 +1,4 @@
-"""NONDET-LTS-01 obstruction oracle.
+"""NONDET-LTS-01 obstruction oracle and the bounded n=2,3 family.
 
 New required type: finite labeled transition systems as partial functions
 into nonempty successor sets, plus an explicit empty-set deadlock value.
@@ -12,11 +12,25 @@ from __future__ import annotations
 from dataclasses import dataclass
 from types import MappingProxyType
 
+import itertools as it
+
 from rprm.core import AdmissionError, atom, carrier, require, total_table
 from rprm.futures import Machine
 
 CONTRACT = "NONDET-LTS-01"
 NONDET_CLAUSES = ("observation", "enabledness", "successor_blocks")
+PAIR_KINDS = (
+    "observation",
+    "deadlock_disabled",
+    "disabled_live",
+    "both_disabled",
+    "both_deadlock",
+    "deadlock_live",
+    "branching",
+    "singletons",
+    "pass",
+)
+DISABLED = None
 
 
 @dataclass(frozen=True)
@@ -174,3 +188,91 @@ def as_partial_machine(machine):
             table[state] = next(iter(landing))
         tables[action] = table
     return Machine(machine.states, machine.actions, dict(machine.observation), tables)
+
+
+def encodes_as_partial(machine):
+    try:
+        as_partial_machine(machine)
+    except AdmissionError:
+        return False
+    return True
+
+
+def successor_choices(states, max_size=2):
+    """Disabled, deadlock, then nonempty subsets of size 1..max_size."""
+    choices = [DISABLED, frozenset()]
+    for size in range(1, max_size + 1):
+        for combo in it.combinations(states, size):
+            choices.append(frozenset(combo))
+    return tuple(choices)
+
+
+def nondet_family(n, actions=("a",), max_size=2, observations=(0, 1)):
+    """Bounded NONDET-LTS family. Not the 845 PARTIAL family."""
+    require(type(n) is int and n >= 0, "State count must be a finite integer")
+    states = tuple(range(n))
+    choices = successor_choices(states, max_size)
+    machines = []
+    for obs in it.product(observations, repeat=n):
+        observation = dict(zip(states, obs))
+        for flat in it.product(choices, repeat=n * len(actions)):
+            tables = {}
+            for j, action in enumerate(actions):
+                table = {}
+                for i, state in enumerate(states):
+                    landing = flat[j * n + i]
+                    if landing is not DISABLED:
+                        table[state] = landing
+                tables[action] = table
+            machines.append(NondetMachine(states, actions, observation, tables))
+    return tuple(machines)
+
+
+def landing_kind(machine, left, right, action):
+    """How two sources sit on one action, ignoring observation."""
+    left_on = action_defined(machine, action, left)
+    right_on = action_defined(machine, action, right)
+    if not left_on and not right_on:
+        return "both_disabled"
+    if left_on != right_on:
+        live = left if left_on else right
+        if len(successors(machine, action, live)) == 0:
+            return "deadlock_disabled"
+        return "disabled_live"
+    left_set = successors(machine, action, left)
+    right_set = successors(machine, action, right)
+    left_dead = len(left_set) == 0
+    right_dead = len(right_set) == 0
+    if left_dead and right_dead:
+        return "both_deadlock"
+    if left_dead or right_dead:
+        return "deadlock_live"
+    if len(left_set) > 1 or len(right_set) > 1:
+        return "branching"
+    return "singletons"
+
+
+def pair_kind_nondet(machine, left, right, summary):
+    """Kind of the witnessing action for the earliest NONDET-LTS clause."""
+    clause = pair_clause_nondet(machine, left, right, summary)
+    if clause == "observation":
+        return "observation"
+    if clause == "pass":
+        return "pass"
+    for action in machine.actions:
+        left_on = action_defined(machine, action, left)
+        right_on = action_defined(machine, action, right)
+        if clause == "enabledness" and left_on != right_on:
+            return landing_kind(machine, left, right, action)
+        if clause == "successor_blocks" and left_on and right_on:
+            if block_image(summary, successors(machine, action, left)) != block_image(
+                    summary, successors(machine, action, right)):
+                return landing_kind(machine, left, right, action)
+    raise AdmissionError("Earliest clause has no witnessing action")
+
+
+def obstruction_class(fiber):
+    if fiber["status"] == "NONE":
+        return "NONE"
+    occupied = "+".join(clause for clause in NONDET_CLAUSES if fiber["by_clause"][clause])
+    return fiber["status"] + ":" + occupied

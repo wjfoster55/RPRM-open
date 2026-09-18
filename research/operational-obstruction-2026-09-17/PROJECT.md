@@ -105,8 +105,8 @@ quotient for relations or kernels (those kinds have different clauses; the
 kernel equal-support hostile is retained as out-of-carrier for this fiber).
 Not Lean. Not a 21st default `verify.py` job. Not an eight-Tile Board or
 Atlas theorem; the three-cell instance is a finite test. Contract
-NONDET-LTS-01 is written; a family census remains OPEN and the 845
-PARTIAL occupancy is not lifted.
+NONDET-LTS-01 is written; the bounded n=2,3 one-action census is closed
+and the 845 PARTIAL occupancy is not lifted.
 
 ## Reproduce
 
@@ -123,4 +123,5 @@ Three-cell Board: [BOARD.json](BOARD.json).
 O05 distinguishing witnesses: [WITNESS.json](WITNESS.json).
 Delayed FIVE pairs: [DELAYED.json](DELAYED.json).
 NONDET-LTS-01: [CONTRACT-NONDET.md](CONTRACT-NONDET.md).
-Oracle: [nondet.py](nondet.py). Short note: [SHORT-NOTE.md](SHORT-NOTE.md).
+Oracle: [nondet.py](nondet.py). Bounded census: [NONDET_CENSUS.json](NONDET_CENSUS.json).
+Short note: [SHORT-NOTE.md](SHORT-NOTE.md).

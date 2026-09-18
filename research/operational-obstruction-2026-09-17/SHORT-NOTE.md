@@ -122,9 +122,10 @@ bisimulation or Moore refinement. O05 is the ordinary operational-fold
 test for deterministic partial systems; the work is the complete fiber,
 the ghost census, and the separation from FIVE.future.
 
-`KERNEL` complete obstruction remains OPEN. First NONDET-LTS contract: `research/operational-obstruction-2026-09-17/CONTRACT-NONDET.md` (observation / enabledness / `successor_blocks`; deadlock is not disabled; the 845 census does not lift).
+`KERNEL` complete obstruction remains OPEN. Bounded NONDET-LTS census (n=2,3; not the 845 lift): 20 680 cases, collision and FIVE-agree nulls both false; receipt `research/operational-obstruction-2026-09-17/NONDET_CENSUS.json`.
 
 ## Receipts
 
 `CENSUS.json`, `LIFT_CENSUS.json`, `BOARD.json`, `WITNESS.json`,
-`DELAYED.json` under `research/operational-obstruction-2026-09-17/`.
+`DELAYED.json`, `NONDET_CENSUS.json` under
+`research/operational-obstruction-2026-09-17/`.

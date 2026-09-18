@@ -25,11 +25,16 @@ from rprm.futures import Machine, future_quotient, shortest_witness
 from nondet import (
     CONTRACT as NONDET_CONTRACT,
     NONDET_CLAUSES,
+    PAIR_KINDS,
     NondetMachine,
     as_partial_machine,
+    encodes_as_partial,
     is_operational_fold_nondet,
+    nondet_family,
+    obstruction_class,
     obstruction_fiber_nondet,
     pair_clause_nondet,
+    pair_kind_nondet,
 )
 from board import (
     check_board,
@@ -154,6 +159,38 @@ NONDET_CENSUS_LIFT_NULL = (
     "The 845-family PARTIAL ghost-fold occupancy lifts unchanged to this "
     "NONDET-LTS contract."
 )
+# Frozen before the n=2,3 one-action census is enumerated. Not the 845 lift.
+NONDET_COLLISION_NULL = (
+    "On the declared 2- and 3-state one-action NONDET family with successor "
+    "sets of size 0, 1, or 2 (plus disabled), deadlock/disabled collisions "
+    "are unoccupied as an earliest clause."
+)
+NONDET_FIVE_AGREE_NULL = (
+    "FIVE.future would agree with the NONDET obstruction disposition on "
+    "every machine-partition pair in that family."
+)
+NONDET_FAMILY_SLICES = (
+    {"name": "two_state_one_action", "n": 2, "machines": 100, "cases": 200},
+    {"name": "three_state_one_action", "n": 3, "machines": 4096, "cases": 20480},
+)
+NONDET_FAMILY_MACHINES = 4196
+NONDET_FAMILY_CASES = 20680
+# Occupancy readout, locked after the first enumeration. Not a premise of the nulls.
+NONDET_STATUS_READOUT = {"NONE": 6190, "ONE": 10830, "MANY": 3660}
+NONDET_COLLISION_READOUT = 388
+NONDET_FIVE_GHOSTS_READOUT = 72
+NONDET_CLASS_READOUT = {
+    "NONE": 6190,
+    "ONE:observation": 6194,
+    "ONE:enabledness": 1360,
+    "ONE:successor_blocks": 3276,
+    "MANY:observation": 1824,
+    "MANY:enabledness": 264,
+    "MANY:successor_blocks": 252,
+    "MANY:observation+enabledness": 672,
+    "MANY:observation+successor_blocks": 576,
+    "MANY:enabledness+successor_blocks": 72,
+}
 LIFT_SLICES = (
     {"name": "four_state_one_action", "n": 4, "actions": ("a",)},
     {"name": "three_state_two_action", "n": 3, "actions": ("a", "b")},
@@ -723,9 +760,179 @@ def check_nondet():
         "five_future": "OPEN_NEW_CARRIER",
         "named_hostiles": 12,
         "coverage": (
-            "Named hostiles only. Not a census. The 845-family PARTIAL "
-            "occupancy is not lifted. Complete NONDET obstruction on a "
-            "declared family remains OPEN."
+            "Named hostiles. The 845-family PARTIAL occupancy is not "
+            "lifted. The bounded n=2,3 census is a separate fiber."
+        ),
+    }
+
+
+def check_nondet_census():
+    """Complete NONDET-LTS obstruction on the bounded n=2,3 family.
+
+    Nulls are the constants above. This is not the 845 PARTIAL lift.
+    """
+    collision = NondetMachine(
+        (0, 1), ("a",), {0: 0, 1: 0},
+        {"a": {0: frozenset()}})
+    collision_c = {0: 0, 1: 0}
+    require(pair_clause_nondet(collision, 0, 1, collision_c) == "enabledness",
+            "Named hostile: deadlock versus disabled is enabledness")
+    require(pair_kind_nondet(collision, 0, 1, collision_c) == "deadlock_disabled",
+            "Named hostile kind is deadlock_disabled")
+    require(not encodes_as_partial(collision),
+            "Deadlock/disabled collision is not a PARTIAL encoding")
+
+    manifesto = NondetMachine(
+        (0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
+        {"a": {0: frozenset({0}), 1: frozenset({2}), 2: frozenset({2})}})
+    manifesto_c = {0: 0, 1: 0, 2: 1}
+    require(encodes_as_partial(manifesto), "Manifesto-as-nondet encodes as PARTIAL")
+    require(obstruction_fiber_nondet(manifesto, manifesto_c)["status"] == "ONE",
+            "Manifesto-as-nondet is ONE successor_blocks")
+    require(is_future_sufficient(as_partial_machine(manifesto), manifesto_c),
+            "Manifesto remains FIVE-future-sufficient: FIVE would agree is false")
+
+    status_counts = {"NONE": 0, "ONE": 0, "MANY": 0}
+    class_counts = {}
+    clause_pairs = {clause: 0 for clause in NONDET_CLAUSES}
+    kind_pairs = {kind: 0 for kind in PAIR_KINDS}
+    five_unadmitted = 0
+    five_agree = 0
+    five_disagree = 0
+    five_ghosts = 0
+    collision_pairs = 0
+    slices = []
+    seen_collision = False
+    seen_manifesto = False
+    total_machines = 0
+    total_cases = 0
+
+    for spec in NONDET_FAMILY_SLICES:
+        machines = nondet_family(spec["n"])
+        require(len(machines) == spec["machines"],
+                "NONDET family size changed for " + spec["name"])
+        require(len(machines) != 845, "This census must not be the 845 family")
+        slice_status = {"NONE": 0, "ONE": 0, "MANY": 0}
+        slice_classes = {}
+        slice_kinds = {kind: 0 for kind in PAIR_KINDS}
+        slice_collisions = 0
+        slice_five_unadmitted = 0
+        slice_five_disagree = 0
+        slice_cases = 0
+        for machine in machines:
+            if (machine.states == collision.states
+                    and dict(machine.observation) == dict(collision.observation)
+                    and {action: dict(table) for action, table in machine.transitions.items()}
+                    == {action: dict(table) for action, table in collision.transitions.items()}):
+                seen_collision = True
+            if (machine.states == manifesto.states
+                    and dict(machine.observation) == dict(manifesto.observation)
+                    and {action: dict(table) for action, table in machine.transitions.items()}
+                    == {action: dict(table) for action, table in manifesto.transitions.items()}):
+                seen_manifesto = True
+            partial = as_partial_machine(machine) if encodes_as_partial(machine) else None
+            for summary in set_partitions(machine.states):
+                slice_cases += 1
+                fiber = obstruction_fiber_nondet(machine, summary)
+                status_counts[fiber["status"]] += 1
+                slice_status[fiber["status"]] += 1
+                name = obstruction_class(fiber)
+                class_counts[name] = class_counts.get(name, 0) + 1
+                slice_classes[name] = slice_classes.get(name, 0) + 1
+                for row in fiber["pairs"]:
+                    clause_pairs[row["clause"]] += 1
+                    kind = pair_kind_nondet(machine, row["left"], row["right"], summary)
+                    kind_pairs[kind] += 1
+                    slice_kinds[kind] += 1
+                    if kind == "deadlock_disabled":
+                        collision_pairs += 1
+                        slice_collisions += 1
+                if partial is None:
+                    five_unadmitted += 1
+                    slice_five_unadmitted += 1
+                else:
+                    five_ok = is_future_sufficient(partial, summary)
+                    nondet_ok = fiber["status"] == "NONE"
+                    if five_ok == nondet_ok:
+                        five_agree += 1
+                    else:
+                        five_disagree += 1
+                        slice_five_disagree += 1
+                        if five_ok and not nondet_ok:
+                            five_ghosts += 1
+        require(slice_cases == spec["cases"],
+                "NONDET case count changed for " + spec["name"])
+        slices.append({
+            "name": spec["name"],
+            "n": spec["n"],
+            "machines": spec["machines"],
+            "cases": slice_cases,
+            "status_counts": slice_status,
+            "class_counts": slice_classes,
+            "kind_pairs": slice_kinds,
+            "deadlock_disabled_pairs": slice_collisions,
+            "five_unadmitted": slice_five_unadmitted,
+            "five_disagree": slice_five_disagree,
+        })
+        total_machines += spec["machines"]
+        total_cases += slice_cases
+
+    require(seen_collision, "Named deadlock/disabled hostile left the family")
+    require(seen_manifesto, "Named Manifesto-as-nondet hostile left the family")
+    require(total_machines == NONDET_FAMILY_MACHINES, "NONDET family size changed")
+    require(total_cases == NONDET_FAMILY_CASES, "NONDET case count changed")
+    require(sum(status_counts.values()) == total_cases, "Status counts miss cases")
+    require(sum(class_counts.values()) == total_cases, "Class counts miss cases")
+    require(collision_pairs > 0, "Deadlock/disabled collisions vanished")
+    require(five_unadmitted > 0, "Every machine encoded as PARTIAL")
+    require(five_disagree > 0, "FIVE.future agreed on every PARTIAL encoding")
+    require(status_counts == NONDET_STATUS_READOUT, "NONDET status occupancy changed")
+    require(class_counts == NONDET_CLASS_READOUT, "NONDET class occupancy changed")
+    require(collision_pairs == NONDET_COLLISION_READOUT,
+            "Deadlock/disabled collision count changed")
+    require(five_ghosts == NONDET_FIVE_GHOSTS_READOUT, "NONDET FIVE-ghost count changed")
+
+    collision_null_holds = collision_pairs == 0
+    five_agree_null_holds = five_unadmitted == 0 and five_disagree == 0
+    require(not collision_null_holds, "Collision null should be occupied")
+    require(not five_agree_null_holds, "FIVE-agree null should fail")
+
+    return {
+        "schema": "rprm-operational-obstruction-nondet/v1",
+        "status": "PASS",
+        "contract": NONDET_CONTRACT,
+        "evidence_grade": "finite_test",
+        "family": (
+            "2- and 3-state one-action machines, binary observation, "
+            "each source disabled or a successor set of size 0, 1, or 2"
+        ),
+        "collision_null": NONDET_COLLISION_NULL,
+        "collision_null_holds": collision_null_holds,
+        "five_agree_null": NONDET_FIVE_AGREE_NULL,
+        "five_agree_null_holds": five_agree_null_holds,
+        "census_lift_null": NONDET_CENSUS_LIFT_NULL,
+        "census_lift_null_holds": "OPEN",
+        "named_hostile": (
+            "Two-state constant-observation deadlock versus disabled is "
+            "ONE enabledness, kind deadlock_disabled. Manifesto-as-nondet "
+            "is ONE successor_blocks and FIVE-future-sufficient."
+        ),
+        "machines": total_machines,
+        "cases": total_cases,
+        "status_counts": status_counts,
+        "class_counts": class_counts,
+        "clause_pairs": clause_pairs,
+        "kind_pairs": kind_pairs,
+        "deadlock_disabled_pairs": collision_pairs,
+        "five_unadmitted": five_unadmitted,
+        "five_agree": five_agree,
+        "five_disagree": five_disagree,
+        "five_ghosts": five_ghosts,
+        "slices": slices,
+        "coverage": (
+            "Every partition of every machine in the declared n=2,3 "
+            "one-action family. Not the 845-family PARTIAL lift. Not "
+            "n>=4, not two actions, not KERNEL."
         ),
     }
 
@@ -1181,15 +1388,17 @@ def main():
     parser.add_argument("--board-output", type=Path, default=HERE / "BOARD.json")
     parser.add_argument("--witness-output", type=Path, default=HERE / "WITNESS.json")
     parser.add_argument("--delayed-output", type=Path, default=HERE / "DELAYED.json")
+    parser.add_argument("--nondet-output", type=Path, default=HERE / "NONDET_CENSUS.json")
     args = parser.parse_args()
     named = check_named_hostiles()
     board = check_board()
     witnesses = check_witnesses()
     nondet = check_nondet()
+    nondet_census = check_nondet_census()
     census = check_census(NULL)
     lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v8",
+        "schema": "rprm-operational-obstruction/v9",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
@@ -1204,6 +1413,8 @@ def main():
         "nondet_null_declared_before_looking": NONDET_NULL,
         "deadlock_disabled_null_declared_before_looking": DEADLOCK_DISABLED_NULL,
         "nondet_census_lift_null_declared_before_looking": NONDET_CENSUS_LIFT_NULL,
+        "nondet_collision_null_declared_before_census": NONDET_COLLISION_NULL,
+        "nondet_five_agree_null_declared_before_census": NONDET_FIVE_AGREE_NULL,
         "named": named,
         "board": {
             "schema": board["schema"],
@@ -1238,6 +1449,22 @@ def main():
             "delay_counts": census["delay_counts"],
         },
         "nondet": nondet,
+        "nondet_census": {
+            "schema": nondet_census["schema"],
+            "status": nondet_census["status"],
+            "machines": nondet_census["machines"],
+            "cases": nondet_census["cases"],
+            "collision_null_holds": nondet_census["collision_null_holds"],
+            "five_agree_null_holds": nondet_census["five_agree_null_holds"],
+            "census_lift_null_holds": nondet_census["census_lift_null_holds"],
+            "status_counts": nondet_census["status_counts"],
+            "class_counts": nondet_census["class_counts"],
+            "kind_pairs": nondet_census["kind_pairs"],
+            "deadlock_disabled_pairs": nondet_census["deadlock_disabled_pairs"],
+            "five_unadmitted": nondet_census["five_unadmitted"],
+            "five_disagree": nondet_census["five_disagree"],
+            "five_ghosts": nondet_census["five_ghosts"],
+        },
         "census": census,
         "lift_census": lift,
         "source_hashes": source_hashes(),
@@ -1246,10 +1473,11 @@ def main():
             "checks/futures.py 845-machine family, plus the four-state "
             "one-action family and the three-state two-action family with "
             "the same constructor, plus the three-cell Board that uses the "
-            "oracle as a Tile, plus the O05 distinguishing-witness fiber. "
+            "oracle as a Tile, plus the O05 distinguishing-witness fiber, "
+            "plus the bounded n=2,3 one-action NONDET-LTS census. "
             "Not a theorem about arbitrary infinite carriers, "
-            "nondeterministic operations, kernels, eight-Tile Boards, or "
-            "Atlases."
+            "the 845 PARTIAL occupancy lifting, kernels, eight-Tile Boards, "
+            "or Atlases."
         ),
     }
     payload = json.dumps(result, indent=2) + "\n"
@@ -1286,6 +1514,7 @@ def main():
             "Not a theorem about n>=4 or two-action machines."
         ),
     }, indent=2) + "\n", encoding="utf-8")
+    args.nondet_output.write_text(json.dumps(nondet_census, indent=2) + "\n", encoding="utf-8")
     summary = {
         "status": "PASS",
         "ghost_folds_845": census["ghost_folds"],
@@ -1301,6 +1530,13 @@ def main():
         "nondet_census_lift_null_holds": nondet["census_lift_null_holds"],
         "nondet_contract": nondet["contract"],
         "nondet_five_future": nondet["five_future"],
+        "nondet_census_cases": nondet_census["cases"],
+        "nondet_status_counts": nondet_census["status_counts"],
+        "nondet_class_counts": nondet_census["class_counts"],
+        "nondet_collision_null_holds": nondet_census["collision_null_holds"],
+        "nondet_five_agree_null_holds": nondet_census["five_agree_null_holds"],
+        "nondet_deadlock_disabled_pairs": nondet_census["deadlock_disabled_pairs"],
+        "nondet_five_ghosts": nondet_census["five_ghosts"],
         "board_cells": board["board"]["names"],
         "board_generality": board["generality"],
         "shape_counts_845": census["shape_counts"],
