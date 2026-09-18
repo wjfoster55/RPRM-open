@@ -2,8 +2,9 @@
 
 The census null is declared and recorded before any enumeration of the
 845-machine family. The 2×2 lift nulls are declared before the four-state
-and two-action families are enumerated. Counts are not premises; they are
-the readout.
+and two-action families are enumerated. The O05 witness null is declared
+before the three Board cells' witness fibers are read. Counts are not
+premises; they are the readout.
 """
 from __future__ import annotations
 
@@ -21,7 +22,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from rprm.core import AdmissionError, deterministic_quotient, stochastic_quotient
 from rprm.futures import Machine, future_quotient, shortest_witness
-from board import check_board
+from board import (
+    check_board,
+    compact_witness_fiber,
+    manifesto_pqr_machine,
+    manifesto_pqr_summary,
+    sink_self_2x2_machine,
+    sink_self_2x2_summary,
+    unique_pair_split_machine,
+    unique_pair_split_summary,
+)
 from obstruction import (
     CLAUSES,
     GHOST_SHAPES,
@@ -29,6 +39,7 @@ from obstruction import (
     RESIDUE_TYPES,
     block_profile,
     classify_ghost_fold,
+    distinguishing_witness_fiber,
     ghost_fiber,
     ghost_fold_detail,
     ghost_shape,
@@ -42,6 +53,7 @@ from obstruction import (
     min_repair_alphabet,
     obstruction_fiber,
     pair_clause,
+    pair_witness_words,
     profile_kind,
     repaired_kernel_matches,
     set_partitions,
@@ -95,6 +107,16 @@ MATCH_NULL = (
     "satisfying one of those five definitions receives that name. The five "
     "definitions are pairwise exclusive. Unclassified is NONE."
 )
+WITNESS_NULL = (
+    "On Manifesto {p,q,r}, unique-pair split, and numeric 2x2 sink_self, "
+    "FIVE.future is NONE on the declared merged pair, therefore the O05 "
+    "distinguishing-witness fiber of each declared C is also NONE."
+)
+FIVE_COINCIDES_NULL = (
+    "On the checks/futures.py 845-machine family, for every failing merged "
+    "pair with FIVE.future ONE, the FIVE.future word equals the shortlex-least "
+    "O05 clause-witness."
+)
 LIFT_SLICES = (
     {"name": "four_state_one_action", "n": 4, "actions": ("a",)},
     {"name": "three_state_two_action", "n": 3, "actions": ("a", "b")},
@@ -130,6 +152,8 @@ TWO_ACTION_READOUT = {
 }
 # Unique-pair hostile readout: split+escape+mixed on the unique-pair slice.
 UNIQUE_PAIR_RESIDUE_READOUT = 1632
+# 845-family readout: FIVE.future ONE words that are not the O05 witness.
+FIVE_DIFFERS_READOUT = 24
 
 
 def require(condition, message):
@@ -205,6 +229,13 @@ def check_named_hostiles():
     require_structural_name(machine, summary, "sink_self")
     require(all(not is_typed_residue(machine, summary, name) for name in RESIDUE_TYPES),
             "Manifesto 2x2 is not a residue type")
+    manifesto_w = distinguishing_witness_fiber(machine, summary)
+    require(manifesto_w["status"] == "ONE" and manifesto_w["pairs"][0]["least"] == ("a",),
+            "Manifesto O05 witness is the successor word (a,), not FIVE.future NONE")
+    require(manifesto_w["pairs"][0]["five_future"] == "NONE",
+            "Manifesto FIVE.future stays NONE")
+    require(not manifesto_w["pairs"][0]["five_word_is_o05_witness"],
+            "FIVE.future NONE must not be treated as the O05 witness")
 
     # Three leftover types, built from the 2×2 definition, not from the census.
     sink_partner = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
@@ -322,6 +353,11 @@ def check_named_hostiles():
             "mixed is a unique-pair witness set of size at least two")
     require(not is_typed_residue(mixed_m, mixed_c, "split"),
             "mixed is not split")
+    mixed_w = pair_witness_words(mixed_m, 0, 1, mixed_c)
+    require(mixed_w["status"] == "MANY" and mixed_w["words"] == (("a",), ("b",)),
+            "mixed successor pair has two one-letter O05 words")
+    require(distinguishing_witness_fiber(mixed_m, mixed_c)["pairs"][0]["five_future"] == "NONE",
+            "mixed is still a ghost: FIVE.future NONE with a nonempty O05 word set")
 
     partial_m = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0},
                         {"a": {0: 0, 1: 2}})
@@ -335,6 +371,13 @@ def check_named_hostiles():
             "partial_land has a distinguishing word")
     require(not is_typed_residue(partial_m, partial_c, "escape"),
             "FAIL-vs-OK landing is not a ghost residue")
+    partial_w = distinguishing_witness_fiber(partial_m, partial_c)
+    require(partial_w["status"] == "ONE" and partial_w["pairs"][0]["least"] == ("a",),
+            "partial_land O05 witness is the successor letter (a,)")
+    require(partial_w["pairs"][0]["five_word"] == ("a", "a"),
+            "partial_land FIVE.future is (a,a), a different receiver")
+    require(not partial_w["pairs"][0]["five_word_is_o05_witness"],
+            "Must not pretend FIVE.future (a,a) is the O05 successor witness")
 
     # First-witness core hides a second failing pair.
     two = Machine((0, 1, 2, 3), ("a",), {0: 0, 1: 1, 2: 0, 3: 1},
@@ -350,6 +393,11 @@ def check_named_hostiles():
     witnessed = tuple(sorted(core["witness"]))
     require(any(tuple(sorted((row["left"], row["right"]))) == witnessed for row in many["pairs"]),
             "Core witness must lie in the complete fiber")
+    two_w = distinguishing_witness_fiber(two, collapsed)
+    require(two_w["status"] == "MANY" and two_w["by_clause"]["observation"] == 2,
+            "Two observation failures have two empty-word O05 witnesses")
+    require(all(row["least"] == () and row["five_word"] == () for row in two_w["pairs"]),
+            "Observation O05 witness is the empty word and coincides with FIVE.future")
 
     # n=2 indiscrete: successor is automatic; remaining failures are FIVE-visible.
     binary = Machine((0, 1), ("a",), {0: 0, 1: 0}, {"a": {0: 0}})
@@ -364,12 +412,19 @@ def check_named_hostiles():
             "Enabledness mismatch has a distinguishing word")
     require(ghost_shape(binary, indiscrete) == "unclassified",
             "Non-ghost enabledness failure is unclassified")
+    binary_w = distinguishing_witness_fiber(binary, indiscrete)
+    require(binary_w["status"] == "ONE" and binary_w["pairs"][0]["least"] == ("a",),
+            "Enabledness O05 witness is the mismatched one-letter word")
+    require(binary_w["pairs"][0]["five_word"] == ("a",),
+            "Enabledness FIVE.future word coincides with the O05 witness")
 
     one_block = Machine((0, 1, 2), ("a",), {0: 0, 1: 0, 2: 0}, {"a": {0: 1, 1: 2, 2: 0}})
     require(ghost_fiber(one_block, {0: 0, 1: 0, 2: 0})["status"] == "NONE",
             "A single block cannot ghost-fold: successor is automatic")
     require(is_operational_fold(one_block, {0: 0, 1: 0, 2: 0}),
             "Indiscrete constant-obs total map is operational")
+    require(distinguishing_witness_fiber(one_block, {0: 0, 1: 0, 2: 0})["status"] == "NONE",
+            "Operational fold has empty O05 witness fiber")
 
     # O08R repairs the present question while operational obstruction remains.
     five = Machine(("p", "q", "u", "v", "r"), ("a",),
@@ -389,11 +444,21 @@ def check_named_hostiles():
             "Question repair is not operational repair")
     require(shortest_witness(five, "p", "q")["word"] == ("a", "a"),
             "Five-state example is FIVE-visible, not a ghost")
+    five_w = distinguishing_witness_fiber(five, repaired_tags)
+    require(five_w["status"] == "MANY" and five_w["by_clause"]["successor"] >= 1,
+            "Five-state O05 witness fiber is the successor pairs, not the future word")
+    pq = next(row for row in five_w["pairs"] if {row["left"], row["right"]} == {"p", "q"})
+    require(pq["least"] == ("a",) and pq["five_word"] == ("a", "a"),
+            "Five-state O05 witness is (a,), FIVE.future is (a,a)")
+    require(not pq["five_word_is_o05_witness"],
+            "Must not pretend the FIVE.future word (a,a) is the O05 successor witness")
 
     # Empty carrier: O08R is 0; obstruction NONE.
     empty = Machine((), (), {}, {})
     require(min_repair_alphabet((), {}, {}) == 0, "Empty O08R")
     require(obstruction_fiber(empty, {})["status"] == "NONE", "Empty obstruction")
+    require(distinguishing_witness_fiber(empty, {})["status"] == "NONE",
+            "Empty O05 witness fiber")
     require(list(set_partitions(())) == [{}], "Empty partition family")
 
     # KERNEL equal support is not this module's PARTIAL trichotomy.
@@ -421,6 +486,44 @@ def check_named_hostiles():
         "shapes": list(GHOST_SHAPES),
         "residue_types": list(RESIDUE_TYPES),
         "lift_types": list(LIFT_TYPES),
+        "witness_null": WITNESS_NULL,
+    }
+
+
+def check_witnesses():
+    """Finite O05 witness checks. Nulls are recorded before the readout."""
+    cells = (
+        ("manifesto_pqr", manifesto_pqr_machine(), manifesto_pqr_summary(), "p", "q"),
+        ("unique_pair_split", unique_pair_split_machine(), unique_pair_split_summary(), 0, 1),
+        ("sink_self_2x2", sink_self_2x2_machine(), sink_self_2x2_summary(), 0, 1),
+    )
+    declared = {}
+    for name, machine, summary, left, right in cells:
+        fiber = distinguishing_witness_fiber(machine, summary)
+        five = shortest_witness(machine, left, right)
+        require(five["status"] == "NONE", name + ": FIVE.future must stay NONE")
+        require(fiber["status"] != "NONE", name + ": O05 witness fiber is not NONE")
+        require(fiber["status"] == "ONE", name + ": declared cell should be ONE pair")
+        row = fiber["pairs"][0]
+        require(row["clause"] == "successor" and row["least"] == ("a",),
+                name + ": O05 witness is the successor word (a,)")
+        require(row["five_future"] == "NONE" and row["five_word"] is None,
+                name + ": FIVE.future word is NONE")
+        require(not row["five_word_is_o05_witness"],
+                name + ": must not pretend FIVE.future NONE is the O05 witness")
+        declared[name] = compact_witness_fiber(fiber)
+    witness_null_holds = all(row["status"] == "NONE" for row in declared.values())
+    require(not witness_null_holds,
+            "Witness null was supposed to be the false FIVE.future identification")
+    return {
+        "witness_null": WITNESS_NULL,
+        "witness_null_holds": witness_null_holds,
+        "five_coincides_null": FIVE_COINCIDES_NULL,
+        "cells": declared,
+        "coverage": (
+            "Declared Board cells plus the named hostiles in check_named_hostiles. "
+            "Not a theorem about arbitrary machines."
+        ),
     }
 
 
@@ -496,6 +599,9 @@ def check_census(null_text):
     ghosts_two_states = 0
     clause_hits = {clause: 0 for clause in CLAUSES}
     ghost_successor_pairs = 0
+    five_one_equals_o05 = 0
+    five_one_differs_from_o05 = 0
+    o05_witnessed_pairs = 0
     for machine in machines:
         for summary in set_partitions(machine.states):
             cases += 1
@@ -512,10 +618,25 @@ def check_census(null_text):
             for left, right in merged_pairs(machine, summary):
                 clause = pair_clause(machine, left, right, summary)
                 word = shortest_witness(machine, left, right)
+                witness = pair_witness_words(machine, left, right, summary)
                 if clause in ("observation", "enabledness"):
                     require(word["status"] == "ONE", "Present/enabledness failure is FIVE-visible")
                 if fiber["status"] == "NONE":
                     require(word["status"] == "NONE", "Operational fold pairs are future-equivalent")
+                    require(witness["status"] == "NONE", "Operational fold pairs have no O05 word")
+                if clause != "pass":
+                    o05_witnessed_pairs += 1
+                    require(witness["status"] != "NONE" and witness["words"],
+                            "Failing pair must have a nonempty O05 word set")
+                    require(witness["clause"] == clause, "O05 word clause must match the pair clause")
+                    if word["status"] == "ONE":
+                        if word["word"] in witness["words"]:
+                            five_one_equals_o05 += 1
+                        else:
+                            five_one_differs_from_o05 += 1
+                    else:
+                        require(clause == "successor", "FIVE.future NONE on a failing pair is successor")
+                        require(witness["words"], "Ghost pair still has an O05 successor word")
             require(is_ghost_fold(machine, summary) == (
                 fiber["status"] != "NONE" and all(
                     shortest_witness(machine, left, right)["status"] == "NONE"
@@ -554,6 +675,11 @@ def check_census(null_text):
     leftover_occupied = sum(1 for count in leftover.values() if count)
     shape_null_holds = leftover_occupied == 1
     require(shape_counts == LISTING, "Census disagrees with the written 2×2 listing")
+    require(o05_witnessed_pairs == sum(clause_hits.values()),
+            "Every failing pair must contribute exactly one O05 word set")
+    require(five_one_differs_from_o05 == FIVE_DIFFERS_READOUT,
+            "845 FIVE.future/O05 disagreement count changed")
+    five_coincides_null_holds = five_one_differs_from_o05 == 0
     return {
         "machines": len(machines),
         "machine_partition_cases": cases,
@@ -580,6 +706,11 @@ def check_census(null_text):
         "shape_listing": LISTING,
         "shape_counts": shape_counts,
         "leftover_occupied_types": leftover_occupied,
+        "five_coincides_null": FIVE_COINCIDES_NULL,
+        "five_coincides_null_holds": five_coincides_null_holds,
+        "o05_witnessed_pairs": o05_witnessed_pairs,
+        "five_one_equals_o05": five_one_equals_o05,
+        "five_one_differs_from_o05": five_one_differs_from_o05,
     }
 
 
@@ -776,13 +907,15 @@ def main():
     parser.add_argument("--output", type=Path, default=HERE / "CENSUS.json")
     parser.add_argument("--lift-output", type=Path, default=HERE / "LIFT_CENSUS.json")
     parser.add_argument("--board-output", type=Path, default=HERE / "BOARD.json")
+    parser.add_argument("--witness-output", type=Path, default=HERE / "WITNESS.json")
     args = parser.parse_args()
     named = check_named_hostiles()
     board = check_board()
+    witnesses = check_witnesses()
     census = check_census(NULL)
     lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v4",
+        "schema": "rprm-operational-obstruction/v5",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
@@ -790,6 +923,8 @@ def main():
         "slice_null_declared_before_census": SLICE_NULL,
         "lift_exhaustion_null_declared_before_census": LIFT_EXHAUSTION_NULL,
         "match_null_declared_before_census": MATCH_NULL,
+        "witness_null_declared_before_looking": WITNESS_NULL,
+        "five_coincides_null_declared_before_census": FIVE_COINCIDES_NULL,
         "named": named,
         "board": {
             "schema": board["schema"],
@@ -809,6 +944,16 @@ def main():
                 for cell in board["board"]["cells_detail"]
             },
         },
+        "witness": {
+            "witness_null": witnesses["witness_null"],
+            "witness_null_holds": witnesses["witness_null_holds"],
+            "five_coincides_null": witnesses["five_coincides_null"],
+            "five_coincides_null_holds": census["five_coincides_null_holds"],
+            "cells": witnesses["cells"],
+            "o05_witnessed_pairs": census["o05_witnessed_pairs"],
+            "five_one_equals_o05": census["five_one_equals_o05"],
+            "five_one_differs_from_o05": census["five_one_differs_from_o05"],
+        },
         "census": census,
         "lift_census": lift,
         "source_hashes": source_hashes(),
@@ -817,18 +962,32 @@ def main():
             "checks/futures.py 845-machine family, plus the four-state "
             "one-action family and the three-state two-action family with "
             "the same constructor, plus the three-cell Board that uses the "
-            "oracle as a Tile. Not a theorem about arbitrary infinite "
-            "carriers, nondeterministic operations, kernels, eight-Tile "
-            "Boards, or Atlases."
+            "oracle as a Tile, plus the O05 distinguishing-witness fiber. "
+            "Not a theorem about arbitrary infinite carriers, "
+            "nondeterministic operations, kernels, eight-Tile Boards, or "
+            "Atlases."
         ),
     }
     payload = json.dumps(result, indent=2) + "\n"
     args.output.write_text(payload, encoding="utf-8")
     args.lift_output.write_text(json.dumps(lift, indent=2) + "\n", encoding="utf-8")
     args.board_output.write_text(json.dumps(board, indent=2) + "\n", encoding="utf-8")
+    args.witness_output.write_text(json.dumps({
+        "schema": "rprm-operational-obstruction-witness/v1",
+        "status": "PASS",
+        "evidence_grade": "finite_test",
+        **witnesses,
+        "five_coincides_null_holds": census["five_coincides_null_holds"],
+        "o05_witnessed_pairs": census["o05_witnessed_pairs"],
+        "five_one_equals_o05": census["five_one_equals_o05"],
+        "five_one_differs_from_o05": census["five_one_differs_from_o05"],
+    }, indent=2) + "\n", encoding="utf-8")
     summary = {
         "status": "PASS",
         "ghost_folds_845": census["ghost_folds"],
+        "witness_null_holds": witnesses["witness_null_holds"],
+        "five_coincides_null_holds": census["five_coincides_null_holds"],
+        "five_one_differs_from_o05": census["five_one_differs_from_o05"],
         "board_cells": board["board"]["names"],
         "board_generality": board["generality"],
         "shape_counts_845": census["shape_counts"],

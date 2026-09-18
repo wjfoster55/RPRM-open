@@ -72,6 +72,15 @@ the split machine is MANY(6) and still hosts `sink_self`. Not an eight-Tile
 Board or Atlas; generality OPEN. See [THEORY.md](THEORY.md) §11 and
 [BOARD.json](BOARD.json).
 
+The dual Rank-1 instrument is also closed as a finite test: shortest O05
+distinguishing witnesses. Null, frozen before looking: FIVE.future NONE on
+those three declared cells implies the O05 witness fiber is NONE. **False.**
+Each cell is ONE successor word `("a",)`. FIVE.future NONE is not the
+witness. On the 845 family a second frozen null — FIVE.future ONE words
+equal the O05 witness — is also **false**: 24 successor pairs have
+FIVE.future `("a","a")` against O05 `("a",)`. See [THEORY.md](THEORY.md)
+§12 and [WITNESS.json](WITNESS.json).
+
 ## Why the runners-up lost
 
 | Candidate | Why not this cut |
@@ -107,3 +116,4 @@ Typed claim, null, hostiles, census, and OPEN list: [THEORY.md](THEORY.md).
 Oracle: [obstruction.py](obstruction.py). Frozen receipt: [CENSUS.json](CENSUS.json).
 Lift census: [LIFT_CENSUS.json](LIFT_CENSUS.json).
 Three-cell Board: [BOARD.json](BOARD.json).
+O05 distinguishing witnesses: [WITNESS.json](WITNESS.json).

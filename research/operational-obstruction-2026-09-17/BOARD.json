@@ -15,10 +15,11 @@
       "lift_type",
       "profile_kind",
       "five_future",
+      "o05_witness",
       "o09_matches",
       "o09_classes"
     ],
-    "vacancy": "classified obstruction, ghost fiber, and lift type",
+    "vacancy": "classified obstruction, ghost fiber, lift type, and O05 witness fiber",
     "receipt": "closed_tile(machine, summary) agrees with the oracle functions"
   },
   "board": {
@@ -99,6 +100,37 @@
               "status": "NONE"
             }
           ],
+          "o05_witness": {
+            "status": "ONE",
+            "pairs": [
+              {
+                "left": "p",
+                "right": "q",
+                "clause": "successor",
+                "words": [
+                  [
+                    "a"
+                  ]
+                ],
+                "word_status": "ONE",
+                "length": 1,
+                "least": [
+                  "a"
+                ],
+                "five_future": "NONE",
+                "five_word": null,
+                "five_word_is_o05_witness": false
+              }
+            ],
+            "by_clause": {
+              "observation": 0,
+              "enabledness": 0,
+              "successor": 1
+            },
+            "ghost_pairs": 1,
+            "five_visible_pairs": 0,
+            "five_word_differs": 1
+          },
           "o09_matches": false,
           "o09_classes": 3,
           "future_classes": 1
@@ -186,6 +218,37 @@
               "status": "NONE"
             }
           ],
+          "o05_witness": {
+            "status": "ONE",
+            "pairs": [
+              {
+                "left": 0,
+                "right": 1,
+                "clause": "successor",
+                "words": [
+                  [
+                    "a"
+                  ]
+                ],
+                "word_status": "ONE",
+                "length": 1,
+                "least": [
+                  "a"
+                ],
+                "five_future": "NONE",
+                "five_word": null,
+                "five_word_is_o05_witness": false
+              }
+            ],
+            "by_clause": {
+              "observation": 0,
+              "enabledness": 0,
+              "successor": 1
+            },
+            "ghost_pairs": 1,
+            "five_visible_pairs": 0,
+            "five_word_differs": 1
+          },
           "o09_matches": false,
           "o09_classes": 4,
           "future_classes": 1
@@ -267,6 +330,55 @@
                   "status": "NONE"
                 }
               ],
+              "o05_witness": {
+                "status": "MANY",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 1,
+                    "clause": "successor",
+                    "words": [
+                      [
+                        "a"
+                      ]
+                    ],
+                    "word_status": "ONE",
+                    "length": 1,
+                    "least": [
+                      "a"
+                    ],
+                    "five_future": "NONE",
+                    "five_word": null,
+                    "five_word_is_o05_witness": false
+                  },
+                  {
+                    "left": 1,
+                    "right": 2,
+                    "clause": "successor",
+                    "words": [
+                      [
+                        "a"
+                      ]
+                    ],
+                    "word_status": "ONE",
+                    "length": 1,
+                    "least": [
+                      "a"
+                    ],
+                    "five_future": "NONE",
+                    "five_word": null,
+                    "five_word_is_o05_witness": false
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 2
+                },
+                "ghost_pairs": 2,
+                "five_visible_pairs": 0,
+                "five_word_differs": 2
+              },
               "o09_matches": false,
               "o09_classes": 3,
               "future_classes": 1
@@ -337,6 +449,55 @@
                   "status": "NONE"
                 }
               ],
+              "o05_witness": {
+                "status": "MANY",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 1,
+                    "clause": "successor",
+                    "words": [
+                      [
+                        "a"
+                      ]
+                    ],
+                    "word_status": "ONE",
+                    "length": 1,
+                    "least": [
+                      "a"
+                    ],
+                    "five_future": "NONE",
+                    "five_word": null,
+                    "five_word_is_o05_witness": false
+                  },
+                  {
+                    "left": 0,
+                    "right": 3,
+                    "clause": "successor",
+                    "words": [
+                      [
+                        "a"
+                      ]
+                    ],
+                    "word_status": "ONE",
+                    "length": 1,
+                    "least": [
+                      "a"
+                    ],
+                    "five_future": "NONE",
+                    "five_word": null,
+                    "five_word_is_o05_witness": false
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 2
+                },
+                "ghost_pairs": 2,
+                "five_visible_pairs": 0,
+                "five_word_differs": 2
+              },
               "o09_matches": false,
               "o09_classes": 3,
               "future_classes": 1
@@ -388,6 +549,37 @@
                   "status": "NONE"
                 }
               ],
+              "o05_witness": {
+                "status": "ONE",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 1,
+                    "clause": "successor",
+                    "words": [
+                      [
+                        "a"
+                      ]
+                    ],
+                    "word_status": "ONE",
+                    "length": 1,
+                    "least": [
+                      "a"
+                    ],
+                    "five_future": "NONE",
+                    "five_word": null,
+                    "five_word_is_o05_witness": false
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 1
+                },
+                "ghost_pairs": 1,
+                "five_visible_pairs": 0,
+                "five_word_differs": 1
+              },
               "o09_matches": false,
               "o09_classes": 4,
               "future_classes": 1
@@ -453,6 +645,55 @@
                   "status": "NONE"
                 }
               ],
+              "o05_witness": {
+                "status": "MANY",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 3,
+                    "clause": "successor",
+                    "words": [
+                      [
+                        "a"
+                      ]
+                    ],
+                    "word_status": "ONE",
+                    "length": 1,
+                    "least": [
+                      "a"
+                    ],
+                    "five_future": "NONE",
+                    "five_word": null,
+                    "five_word_is_o05_witness": false
+                  },
+                  {
+                    "left": 1,
+                    "right": 2,
+                    "clause": "successor",
+                    "words": [
+                      [
+                        "a"
+                      ]
+                    ],
+                    "word_status": "ONE",
+                    "length": 1,
+                    "least": [
+                      "a"
+                    ],
+                    "five_future": "NONE",
+                    "five_word": null,
+                    "five_word_is_o05_witness": false
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 2
+                },
+                "ghost_pairs": 2,
+                "five_visible_pairs": 0,
+                "five_word_differs": 2
+              },
               "o09_matches": false,
               "o09_classes": 4,
               "future_classes": 1
@@ -504,6 +745,37 @@
                   "status": "NONE"
                 }
               ],
+              "o05_witness": {
+                "status": "ONE",
+                "pairs": [
+                  {
+                    "left": 1,
+                    "right": 2,
+                    "clause": "successor",
+                    "words": [
+                      [
+                        "a"
+                      ]
+                    ],
+                    "word_status": "ONE",
+                    "length": 1,
+                    "least": [
+                      "a"
+                    ],
+                    "five_future": "NONE",
+                    "five_word": null,
+                    "five_word_is_o05_witness": false
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 1
+                },
+                "ghost_pairs": 1,
+                "five_visible_pairs": 0,
+                "five_word_differs": 1
+              },
               "o09_matches": false,
               "o09_classes": 4,
               "future_classes": 1
@@ -555,6 +827,37 @@
                   "status": "NONE"
                 }
               ],
+              "o05_witness": {
+                "status": "ONE",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 3,
+                    "clause": "successor",
+                    "words": [
+                      [
+                        "a"
+                      ]
+                    ],
+                    "word_status": "ONE",
+                    "length": 1,
+                    "least": [
+                      "a"
+                    ],
+                    "five_future": "NONE",
+                    "five_word": null,
+                    "five_word_is_o05_witness": false
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 1
+                },
+                "ghost_pairs": 1,
+                "five_visible_pairs": 0,
+                "five_word_differs": 1
+              },
               "o09_matches": false,
               "o09_classes": 4,
               "future_classes": 1
@@ -631,6 +934,37 @@
               "status": "NONE"
             }
           ],
+          "o05_witness": {
+            "status": "ONE",
+            "pairs": [
+              {
+                "left": 0,
+                "right": 1,
+                "clause": "successor",
+                "words": [
+                  [
+                    "a"
+                  ]
+                ],
+                "word_status": "ONE",
+                "length": 1,
+                "least": [
+                  "a"
+                ],
+                "five_future": "NONE",
+                "five_word": null,
+                "five_word_is_o05_witness": false
+              }
+            ],
+            "by_clause": {
+              "observation": 0,
+              "enabledness": 0,
+              "successor": 1
+            },
+            "ghost_pairs": 1,
+            "five_visible_pairs": 0,
+            "five_word_differs": 1
+          },
           "o09_matches": false,
           "o09_classes": 3,
           "future_classes": 1

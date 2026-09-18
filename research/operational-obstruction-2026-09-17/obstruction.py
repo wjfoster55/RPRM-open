@@ -170,6 +170,90 @@ def is_ghost_fold(machine, summary):
     return is_future_sufficient(machine, summary) and not is_operational_fold(machine, summary)
 
 
+def pair_witness_words(machine, left, right, summary):
+    """Complete shortest O05 clause-witness words for one merged pair.
+
+    This is not FIVE.future. Observation uses the empty word. Enabledness
+    and successor use every length-1 word that exhibits the earliest clause,
+    in the declared action order (shortlex at length 1). A successor word
+    may leave every tagged future observation equal.
+    """
+    clause = pair_clause(machine, left, right, summary)
+    if clause == "pass":
+        return {"clause": "pass", "status": "NONE", "words": (), "length": None}
+    if clause == "observation":
+        return {"clause": "observation", "status": "ONE", "words": ((),), "length": 0}
+    words = []
+    for action in machine.actions:
+        table = machine.transitions[action]
+        enabled_left = left in table
+        enabled_right = right in table
+        if clause == "enabledness":
+            if enabled_left != enabled_right:
+                words.append((action,))
+        elif enabled_left and enabled_right and summary[table[left]] != summary[table[right]]:
+            words.append((action,))
+    require(words, "Earliest O05 clause must have a witnessing word")
+    status = "ONE" if len(words) == 1 else "MANY"
+    return {"clause": clause, "status": status, "words": tuple(words), "length": 1}
+
+
+def distinguishing_witness_fiber(machine, summary):
+    """Complete O05 distinguishing-witness fiber of a proposed fold C.
+
+    Carrier: failing merged pairs, the same ones as obstruction_fiber.
+    Readout: earliest clause and the complete set of shortest words that
+    exhibit that clause. FIVE.future is attached and must not replace the
+    O05 words. NONE means C is operational, not that FIVE.future is NONE.
+    """
+    require_summary(machine, summary)
+    rows = []
+    for left, right in merged_pairs(machine, summary):
+        witness = pair_witness_words(machine, left, right, summary)
+        if witness["clause"] == "pass":
+            continue
+        five = shortest_witness(machine, left, right)
+        require(five["status"] in ("ONE", "NONE"), "Pair FIVE.future must be complete")
+        if witness["clause"] in ("observation", "enabledness"):
+            require(five["status"] == "ONE", "Present/enabledness O05 witness is FIVE-visible")
+            require(five["word"] in witness["words"],
+                    "FIVE.future word must be among the O05 words on the first two clauses")
+        if five["status"] == "NONE":
+            require(witness["clause"] == "successor",
+                    "FIVE.future NONE on a failing pair must be a successor ghost")
+            require(witness["words"], "Ghost pair still has an O05 successor word")
+        rows.append({
+            "left": left,
+            "right": right,
+            "clause": witness["clause"],
+            "words": witness["words"],
+            "word_status": witness["status"],
+            "length": witness["length"],
+            "least": witness["words"][0],
+            "five_future": five["status"],
+            "five_word": five["word"],
+            "five_word_is_o05_witness": five["word"] in witness["words"],
+        })
+    rows = tuple(rows)
+    if not rows:
+        status = "NONE"
+    elif len(rows) == 1:
+        status = "ONE"
+    else:
+        status = "MANY"
+    by_clause = {clause: 0 for clause in CLAUSES}
+    for row in rows:
+        by_clause[row["clause"]] += 1
+    return {
+        "status": status,
+        "pairs": rows,
+        "by_clause": by_clause,
+        "ghost_pairs": sum(1 for row in rows if row["five_future"] == "NONE"),
+        "five_visible_pairs": sum(1 for row in rows if row["five_future"] == "ONE"),
+        "five_word_differs": sum(1 for row in rows if not row["five_word_is_o05_witness"]),
+    }
+
+
 def _blocks(summary, states):
     blocks = {}
     for state in states:

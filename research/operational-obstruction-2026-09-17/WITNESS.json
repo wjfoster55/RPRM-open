@@ -1,0 +1,108 @@
+{
+  "schema": "rprm-operational-obstruction-witness/v1",
+  "status": "PASS",
+  "evidence_grade": "finite_test",
+  "witness_null": "On Manifesto {p,q,r}, unique-pair split, and numeric 2x2 sink_self, FIVE.future is NONE on the declared merged pair, therefore the O05 distinguishing-witness fiber of each declared C is also NONE.",
+  "witness_null_holds": false,
+  "five_coincides_null": "On the checks/futures.py 845-machine family, for every failing merged pair with FIVE.future ONE, the FIVE.future word equals the shortlex-least O05 clause-witness.",
+  "cells": {
+    "manifesto_pqr": {
+      "status": "ONE",
+      "pairs": [
+        {
+          "left": "p",
+          "right": "q",
+          "clause": "successor",
+          "words": [
+            [
+              "a"
+            ]
+          ],
+          "word_status": "ONE",
+          "length": 1,
+          "least": [
+            "a"
+          ],
+          "five_future": "NONE",
+          "five_word": null,
+          "five_word_is_o05_witness": false
+        }
+      ],
+      "by_clause": {
+        "observation": 0,
+        "enabledness": 0,
+        "successor": 1
+      },
+      "ghost_pairs": 1,
+      "five_visible_pairs": 0,
+      "five_word_differs": 1
+    },
+    "unique_pair_split": {
+      "status": "ONE",
+      "pairs": [
+        {
+          "left": 0,
+          "right": 1,
+          "clause": "successor",
+          "words": [
+            [
+              "a"
+            ]
+          ],
+          "word_status": "ONE",
+          "length": 1,
+          "least": [
+            "a"
+          ],
+          "five_future": "NONE",
+          "five_word": null,
+          "five_word_is_o05_witness": false
+        }
+      ],
+      "by_clause": {
+        "observation": 0,
+        "enabledness": 0,
+        "successor": 1
+      },
+      "ghost_pairs": 1,
+      "five_visible_pairs": 0,
+      "five_word_differs": 1
+    },
+    "sink_self_2x2": {
+      "status": "ONE",
+      "pairs": [
+        {
+          "left": 0,
+          "right": 1,
+          "clause": "successor",
+          "words": [
+            [
+              "a"
+            ]
+          ],
+          "word_status": "ONE",
+          "length": 1,
+          "least": [
+            "a"
+          ],
+          "five_future": "NONE",
+          "five_word": null,
+          "five_word_is_o05_witness": false
+        }
+      ],
+      "by_clause": {
+        "observation": 0,
+        "enabledness": 0,
+        "successor": 1
+      },
+      "ghost_pairs": 1,
+      "five_visible_pairs": 0,
+      "five_word_differs": 1
+    }
+  },
+  "coverage": "Declared Board cells plus the named hostiles in check_named_hostiles. Not a theorem about arbitrary machines.",
+  "five_coincides_null_holds": false,
+  "o05_witnessed_pairs": 2578,
+  "five_one_equals_o05": 2482,
+  "five_one_differs_from_o05": 24
+}

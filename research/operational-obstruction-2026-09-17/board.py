@@ -17,6 +17,7 @@ from rprm.futures import Machine, future_quotient, shortest_witness
 from obstruction import (
     GHOST_SHAPES,
     block_profile,
+    distinguishing_witness_fiber,
     ghost_fiber,
     ghost_shape,
     is_ghost_fold,
@@ -41,6 +42,7 @@ TILE_PORTS = (
     "lift_type",
     "profile_kind",
     "five_future",
+    "o05_witness",
     "o09_matches",
     "o09_classes",
 )
@@ -99,15 +101,43 @@ def compact_machine(machine):
     }
 
 
+def compact_witness_row(row):
+    return {
+        "left": row["left"],
+        "right": row["right"],
+        "clause": row["clause"],
+        "words": [list(word) for word in row["words"]],
+        "word_status": row["word_status"],
+        "length": row["length"],
+        "least": list(row["least"]),
+        "five_future": row["five_future"],
+        "five_word": None if row["five_word"] is None else list(row["five_word"]),
+        "five_word_is_o05_witness": row["five_word_is_o05_witness"],
+    }
+
+
+def compact_witness_fiber(fiber):
+    return {
+        "status": fiber["status"],
+        "pairs": [compact_witness_row(row) for row in fiber["pairs"]],
+        "by_clause": dict(fiber["by_clause"]),
+        "ghost_pairs": fiber["ghost_pairs"],
+        "five_visible_pairs": fiber["five_visible_pairs"],
+        "five_word_differs": fiber["five_word_differs"],
+    }
+
+
 def closed_tile(machine, summary):
     """Fill every Tile readout port from the obstruction oracle.
 
     Carrier: one declared (machine, summary). Vacancy: the classified
-    obstruction, ghost fiber, and lift type. The commuting receipt is that
-    these functions of (machine, summary) reproduce the closed artifact.
+    obstruction, ghost fiber, lift type, and O05 witness fiber. The
+    commuting receipt is that these functions of (machine, summary)
+    reproduce the closed artifact.
     """
     fiber = obstruction_fiber(machine, summary)
     ghosts = ghost_fiber(machine, summary)
+    witness = distinguishing_witness_fiber(machine, summary)
     five = []
     for left, right in merged_pairs(machine, summary):
         word = shortest_witness(machine, left, right)
@@ -129,6 +159,7 @@ def closed_tile(machine, summary):
         "n3_shape": ghost_shape(machine, summary),
         "profile_kind": profile_kind(summary, machine.states),
         "five_future": five,
+        "o05_witness": compact_witness_fiber(witness),
         "o09_matches": repaired_kernel_matches(machine, summary),
         "o09_classes": len(repaired["classes"]),
         "future_classes": len(future_quotient(machine)["classes"]),
@@ -183,6 +214,22 @@ def _require_ghost_tile(tile, lift_type, pair, n_states):
     require(tile["profile_kind"] == "unique_pair", "Named hostile is unique-pair")
     require(tile["five_future"] == [{"left": pair[0], "right": pair[1], "status": "NONE"}],
             "Named hostile FIVE.future is NONE")
+    require(tile["o05_witness"]["status"] == "ONE", "Named hostile O05 witness fiber is ONE")
+    require(tile["o05_witness"]["pairs"] == [{
+        "left": pair[0],
+        "right": pair[1],
+        "clause": "successor",
+        "words": [["a"]],
+        "word_status": "ONE",
+        "length": 1,
+        "least": ["a"],
+        "five_future": "NONE",
+        "five_word": None,
+        "five_word_is_o05_witness": False,
+    }], "Named hostile O05 witness is the successor word (a,), not FIVE.future NONE")
+    require(tile["o05_witness"]["ghost_pairs"] == 1, "Named hostile ghost pair still has an O05 word")
+    require(tile["o05_witness"]["five_word_differs"] == 1,
+            "FIVE.future NONE must not be counted as an O05 witness")
     require(tile["o09_matches"] is False, "O09 must split the ghost pair")
     require(tile["o09_classes"] == n_states, "Least stable repair is discrete")
     require(tile["future_classes"] == 1, "Canonical future quotient is indiscrete")
@@ -308,7 +355,7 @@ def check_board():
         "tile": {
             "capability": "O05 obstruction oracle on a declared machine and summary",
             "ports": list(TILE_PORTS),
-            "vacancy": "classified obstruction, ghost fiber, and lift type",
+            "vacancy": "classified obstruction, ghost fiber, lift type, and O05 witness fiber",
             "receipt": "closed_tile(machine, summary) agrees with the oracle functions",
         },
         "board": {

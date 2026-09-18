@@ -38,6 +38,8 @@ number. Not last night's `T(X,P)` count.
    for agreement of the §9 occupancy with the §10 typed residue definitions.
    Unbounded carriers, `NONDET`, `KERNEL`, n=4 two-action, and eight-Tile
    Board/Atlas remain OPEN. The three-cell Board of §11 is a finite test.
+   The dual O05 witness fiber of §12 is a finite test on those cells and
+   the 845 family; it is not FIVE.future.
 
 ## 2. Closed claim
 
@@ -160,6 +162,8 @@ The scientific yield is the negative: treating the Manifesto `{p,q,r}` picture a
 - Lean of the pair trichotomy (the 20 declarations are not enlarged here).
 - An eight-Tile Board or Atlas that uses this oracle as a Tile. The
   three-cell instance of §11 is a finite test, not that construction.
+- `NONDET`/`KERNEL` distinguishing-witness fibers. The §12 instrument is
+  `PARTIAL` only.
 - Four-state two-action machines with the same constructor: 2^4·5^8 =
   6 250 000 machines, too large for this cut.
 - n≥5 one-action, and n=4 with a larger action alphabet. Occupancy is OPEN.
@@ -237,7 +241,8 @@ the a priori lift vocabulary (unclassified NONE), not by the four names.
 The five occupied residue names are typed in §10: the §9 census occupancy
 matches those definitions, rather than the names being fitted after
 browsing. The three-cell Board of §11 uses this oracle as a Tile; it is
-not an Atlas.
+not an Atlas. The dual O05 witness fiber of §12 is closed on those
+cells and on the 845 family; FIVE.future NONE is not that fiber.
 
 ## 9. Hostile cut: does the 2×2 lift?
 
@@ -490,12 +495,13 @@ preinstalled eighth cell.
    a named such pair. This Board has three cells: Manifesto `{p,q,r}`,
    unique-pair `split`, and the numeric 2×2 `sink_self`.
 2. **Ports.** Tile ports: machine, summary, obstruction fiber, ghost
-   fiber, lift type, profile kind, FIVE.future on merged pairs, O09 kernel
-   agreement. Board apertures: (a) machine and summary revealed, diagnosis
-   withheld; (b) machine revealed, summary withheld among set-partitions;
-   (c) lift type revealed, cell identity withheld among the three closed
-   Tiles. Correlated missing ports stay joint: `split` is a fact of
-   `(machine, C)`, not of the machine alone.
+   fiber, lift type, profile kind, FIVE.future on merged pairs, O05
+   distinguishing-witness fiber, O09 kernel agreement. Board apertures:
+   (a) machine and summary revealed, diagnosis withheld; (b) machine
+   revealed, summary withheld among set-partitions; (c) lift type revealed,
+   cell identity withheld among the three closed Tiles. Correlated missing
+   ports stay joint: `split` is a fact of `(machine, C)`, not of the
+   machine alone.
 3. **Operation.** `PARTIAL`, diagnostic. Same O05 clauses. Enabledness is
    unchanged from §1.
 4. **Receiver.** The Tile receiver is the classified obstruction. The
@@ -517,9 +523,11 @@ preinstalled eighth cell.
 **Definition (Obstruction Tile).** For a declared finite deterministic
 partial machine and summary `C`, the closed Tile fills every readout port
 from `obstruction_fiber`, `ghost_fiber`, `lifted_ghost_type`,
-`shortest_witness` on merged pairs, and `stable_refinement`. The vacancy
-is those readouts. The commuting receipt is that substituting the filled
-ports reproduces the oracle.
+`distinguishing_witness_fiber`, `shortest_witness` on merged pairs, and
+`stable_refinement`. The vacancy is those readouts. The commuting receipt
+is that substituting the filled ports reproduces the oracle. FIVE.future
+`shortest_witness` is a second receiver and does not fill the O05 witness
+port.
 
 **Definition (three-cell Board).** Cells, as closed Tiles:
 
@@ -559,3 +567,100 @@ the same machine also hosts two `sink_self` ghost summaries.
 
 This Board does not close an Atlas and does not promote `Tile(X)` to `X`.
 Frozen receipt: [BOARD.json](BOARD.json).
+
+## 12. Shortest O05 distinguishing witnesses
+
+This is the dual of the §1 pair fiber: an enabled word, or finite set of
+words, that must exist when `C` is not operational. It is not FIVE.future.
+
+1. **Carrier, types, equality, admitted context.** Same machines and
+   summaries as §1. A word is a finite tuple of admitted actions. The empty
+   word is admitted and is the identity. Equality of words is tuple
+   equality. Bool/float atoms remain admission errors.
+2. **Supplied ports, missing ports, requested readout.** Supplied: the
+   machine and `C`. Missing: the complete O05 witness fiber. Readout: for
+   each failing merged pair, the earliest clause and the complete set of
+   shortest words that exhibit that clause. FIVE.future's word is a second,
+   non-interchangeable readout attached to the same pair.
+3. **Operation kind, direction, enabledness.** `PARTIAL`, diagnostic. A
+   word is enabled at a state when every prefix stays in the corresponding
+   action domain. Observation uses the empty word, which is always enabled.
+   Enabledness and successor use length-1 words: enabledness words are
+   enabled at exactly one of the pair; successor words are enabled at both.
+4. **Receiver.** O05 clauses, not tagged future observations. A successor
+   word exhibits `C(T_a x) ≠ C(T_a y)` even if every tagged future
+   observation agrees. FIVE.future is attached and must not replace the
+   O05 words.
+5. **Inverse / complete fiber.** The witness fiber is the complete set of
+   failing pairs with their shortest clause-witness words. NONE iff `C` is
+   operational. ONE/MANY after that enumeration. A FIVE.future NONE on a
+   successor pair is not this fiber being NONE. Per-pair word families may
+   themselves be ONE or MANY.
+6. **Coverage, hostile, grade.** Coverage: written existence from the §2
+   trichotomy; finite test on the three Board cells and every failing pair
+   in the 845 family. Hostile: ghost pair, FIVE.future NONE, update still
+   fails; also the five-state O08R example, where FIVE.future is
+   `("a","a")` and the O05 word is `("a",)`. Grade: written existence;
+   finite test for the cells and for non-coincidence with FIVE.future.
+   `NONDET`/`KERNEL` witness fibers remain OPEN.
+
+**Definition (clause-witness words).** For a merged pair with earliest
+clause `κ`:
+
+- if `κ = observation`, the unique shortest word is the empty word;
+- if `κ = enabledness`, the shortest words are the length-1 words `(a)`
+  where `a` is enabled at exactly one of the pair, in declared action
+  order;
+- if `κ = successor`, the shortest words are the length-1 words `(a)`
+  where `a` is enabled at both and `C(T_a x) ≠ C(T_a y)`, in declared
+  action order;
+- if `κ = pass`, the set is empty.
+
+**Definition (distinguishing-witness fiber of `C`).** The complete set of
+failing merged pairs together with those word sets. Status NONE/ONE/MANY
+follows the pair count, as in §1. The shortlex-least word of a pair is a
+derived readout and does not replace the set.
+
+**Proposition (existence).** The witness fiber is empty iff the
+obstruction fiber is empty iff `C` is an operational fold. Proof: each
+non-`pass` clause names a nonempty set of length-0 or length-1 words by
+the same checks as §2. Grade: written.
+
+**Proposition (FIVE.future is a different fiber).** Observation and
+enabledness clause-witnesses are FIVE.future ONE, and the shortlex-least
+words coincide. A successor clause-witness may have FIVE.future NONE
+(ghost) or FIVE.future ONE of a possibly longer word. Returning
+FIVE.future NONE as the distinguishing witness of a ghost pair, or
+returning a longer FIVE.future word as the O05 successor witness, is an
+error: those are a different receiver. Grade: written for the first two
+clauses (same as §2); finite test for successor.
+
+**Null, frozen before looking at the three cells' witness fibers:**
+
+> On Manifesto `{p,q,r}`, unique-pair split, and numeric `sink_self`,
+> FIVE.future is NONE on the declared merged pair, therefore the O05
+> distinguishing-witness fiber of each declared `C` is also NONE.
+
+**Readout.** The null is **false**. Each declared cell is ONE, clause
+`successor`, word family ONE(`("a",)`), FIVE.future NONE. The word
+`("a",)` exhibits the update failure and is not a FIVE.future word.
+
+**Second null, frozen before the 845 witness comparison:**
+
+> On the `checks/futures.py` 845-machine family, for every failing merged
+> pair with FIVE.future ONE, the FIVE.future word equals the shortlex-least
+> O05 clause-witness.
+
+**Readout.** The second null is **false**. On the 845 family there are
+2578 failing pairs, each with a nonempty O05 word set. FIVE.future ONE
+coincides with the O05 word on 2482 pairs (all 1698 observation, all 688
+enabledness, and 96 successor). It differs on 24 successor pairs: all
+are three-state one-action, and the FIVE.future word is `("a","a")`
+while the O05 witness is `("a",)`. The remaining 72 failing successor
+pairs are the ghosts: FIVE.future NONE, O05 word still `("a",)`.
+Returning the longer FIVE.future word, or NONE, as the O05 witness is
+the same error on two sides of successor.
+
+This Board Tile now carries the witness port. Frozen receipts:
+[WITNESS.json](WITNESS.json) and the `o05_witness` field of
+[BOARD.json](BOARD.json).

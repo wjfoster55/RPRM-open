@@ -1,5 +1,5 @@
 {
-  "schema": "rprm-operational-obstruction/v4",
+  "schema": "rprm-operational-obstruction/v5",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
   "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
@@ -7,6 +7,8 @@
   "slice_null_declared_before_census": "On the four-state one-action family and the three-state two-action family, every ghost fold whose block profile has exactly one size-2 class and no larger class still receives one of the four names sink_self, sink_partner, return_self, return_partner.",
   "lift_exhaustion_null_declared_before_census": "On those two families, every ghost fold receives a name in the a priori lift vocabulary {sink_self, sink_partner, return_self, return_partner, split, escape, crowd, multi, mixed, partial_land, wide_landing}; unclassified is NONE.",
   "match_null_declared_before_census": "On the four-state one-action family and the three-state two-action family, every ghost fold named split, escape, crowd, multi, or mixed satisfies the typed definition of that name, and every ghost fold satisfying one of those five definitions receives that name. The five definitions are pairwise exclusive. Unclassified is NONE.",
+  "witness_null_declared_before_looking": "On Manifesto {p,q,r}, unique-pair split, and numeric 2x2 sink_self, FIVE.future is NONE on the declared merged pair, therefore the O05 distinguishing-witness fiber of each declared C is also NONE.",
+  "five_coincides_null_declared_before_census": "On the checks/futures.py 845-machine family, for every failing merged pair with FIVE.future ONE, the FIVE.future word equals the shortlex-least O05 clause-witness.",
   "named": {
     "named_hostiles": 21,
     "clauses": [
@@ -40,7 +42,8 @@
       "partial_land",
       "wide_landing",
       "unclassified"
-    ]
+    ],
+    "witness_null": "On Manifesto {p,q,r}, unique-pair split, and numeric 2x2 sink_self, FIVE.future is NONE on the declared merged pair, therefore the O05 distinguishing-witness fiber of each declared C is also NONE."
   },
   "board": {
     "schema": "rprm-operational-obstruction-board/v1",
@@ -97,6 +100,110 @@
         }
       }
     }
+  },
+  "witness": {
+    "witness_null": "On Manifesto {p,q,r}, unique-pair split, and numeric 2x2 sink_self, FIVE.future is NONE on the declared merged pair, therefore the O05 distinguishing-witness fiber of each declared C is also NONE.",
+    "witness_null_holds": false,
+    "five_coincides_null": "On the checks/futures.py 845-machine family, for every failing merged pair with FIVE.future ONE, the FIVE.future word equals the shortlex-least O05 clause-witness.",
+    "five_coincides_null_holds": false,
+    "cells": {
+      "manifesto_pqr": {
+        "status": "ONE",
+        "pairs": [
+          {
+            "left": "p",
+            "right": "q",
+            "clause": "successor",
+            "words": [
+              [
+                "a"
+              ]
+            ],
+            "word_status": "ONE",
+            "length": 1,
+            "least": [
+              "a"
+            ],
+            "five_future": "NONE",
+            "five_word": null,
+            "five_word_is_o05_witness": false
+          }
+        ],
+        "by_clause": {
+          "observation": 0,
+          "enabledness": 0,
+          "successor": 1
+        },
+        "ghost_pairs": 1,
+        "five_visible_pairs": 0,
+        "five_word_differs": 1
+      },
+      "unique_pair_split": {
+        "status": "ONE",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor",
+            "words": [
+              [
+                "a"
+              ]
+            ],
+            "word_status": "ONE",
+            "length": 1,
+            "least": [
+              "a"
+            ],
+            "five_future": "NONE",
+            "five_word": null,
+            "five_word_is_o05_witness": false
+          }
+        ],
+        "by_clause": {
+          "observation": 0,
+          "enabledness": 0,
+          "successor": 1
+        },
+        "ghost_pairs": 1,
+        "five_visible_pairs": 0,
+        "five_word_differs": 1
+      },
+      "sink_self_2x2": {
+        "status": "ONE",
+        "pairs": [
+          {
+            "left": 0,
+            "right": 1,
+            "clause": "successor",
+            "words": [
+              [
+                "a"
+              ]
+            ],
+            "word_status": "ONE",
+            "length": 1,
+            "least": [
+              "a"
+            ],
+            "five_future": "NONE",
+            "five_word": null,
+            "five_word_is_o05_witness": false
+          }
+        ],
+        "by_clause": {
+          "observation": 0,
+          "enabledness": 0,
+          "successor": 1
+        },
+        "ghost_pairs": 1,
+        "five_visible_pairs": 0,
+        "five_word_differs": 1
+      }
+    },
+    "o05_witnessed_pairs": 2578,
+    "five_one_equals_o05": 2482,
+    "five_one_differs_from_o05": 24
   },
   "census": {
     "machines": 845,
@@ -2227,7 +2334,12 @@
       "return_partner": 24,
       "unclassified": 0
     },
-    "leftover_occupied_types": 3
+    "leftover_occupied_types": 3,
+    "five_coincides_null": "On the checks/futures.py 845-machine family, for every failing merged pair with FIVE.future ONE, the FIVE.future word equals the shortlex-least O05 clause-witness.",
+    "five_coincides_null_holds": false,
+    "o05_witnessed_pairs": 2578,
+    "five_one_equals_o05": 2482,
+    "five_one_differs_from_o05": 24
   },
   "lift_census": {
     "lift_null": "On the four-state one-action family and the three-state two-action family (binary observations, all partial maps, all set-partitions; the same constructor as the 845-machine futures family), every ghost fold still receives one of the four names sink_self, sink_partner, return_self, return_partner.",
@@ -2862,12 +2974,12 @@
     ]
   },
   "source_hashes": {
-    "research/operational-obstruction-2026-09-17/obstruction.py": "e420455efc83bc6ac9cd982aaef3ea13ac349f9cffce68e38b14beefe3a4f98b",
-    "research/operational-obstruction-2026-09-17/board.py": "b757750d73e5d84e9aa1cb04365229ad647bcd2dd3084497aaf418eb50fad545",
-    "research/operational-obstruction-2026-09-17/verify.py": "0a970520131db0809bc916aa7b6828840bd233571d577411e68b293574d0281f",
+    "research/operational-obstruction-2026-09-17/obstruction.py": "88b16bbbee29a726dbcad2c8231e075f19f1466938c234e4639785e995903488",
+    "research/operational-obstruction-2026-09-17/board.py": "586523a30b28e56fe04cc1d00f168ce777d512f156e0ef1b4cb1fa4093a2ce25",
+    "research/operational-obstruction-2026-09-17/verify.py": "17ecb857642f1bf3eeb0eb125afbfa66dbcb3d313c728f1da0aba374673d1c43",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"
   },
-  "coverage": "Named hostiles plus every partition of every machine in the checks/futures.py 845-machine family, plus the four-state one-action family and the three-state two-action family with the same constructor, plus the three-cell Board that uses the oracle as a Tile. Not a theorem about arbitrary infinite carriers, nondeterministic operations, kernels, eight-Tile Boards, or Atlases."
+  "coverage": "Named hostiles plus every partition of every machine in the checks/futures.py 845-machine family, plus the four-state one-action family and the three-state two-action family with the same constructor, plus the three-cell Board that uses the oracle as a Tile, plus the O05 distinguishing-witness fiber. Not a theorem about arbitrary infinite carriers, nondeterministic operations, kernels, eight-Tile Boards, or Atlases."
 }
