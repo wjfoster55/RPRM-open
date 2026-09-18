@@ -1,49 +1,19 @@
-# Restricted theorem — value-copy ports do not refine a panel
+# Duplicate ports: equal functions, not equal names
 
-Written after the Q6–Q8 census. Nulls were frozen in
-[NULL-DUP.md](NULL-DUP.md) at commit `f535cd0`.
+Let `X` be finite and `Q:X→D`. A port is a function `p:X→O`, not a
+string. A panel `S` is a finite family of such functions. Set
+`C_S(x)=(p(x))_{p∈S}`. The joint kernel is
+`ker C_S={(x,y):C_S(x)=C_S(y)}`. Then `Q` is constant on the `C_S`
+fibers if and only if `ker C_S ⊆ ker Q`.
 
-## Domain
+Let `p':X→O`. If `p'=p` as functions for some `p` already in `S`, then
+`C_{S∪{p'}}(x)=(C_S(x),p(x))`, so `ker C_{S∪{p'}}=ker C_S`. Hence `Q`
+is constant on the new fibers if and only if it was constant on the old.
 
-Finite nonempty state carrier `X`. Finite named ports, each a **total**
-map `X → B`. A panel `S` is a finite set of port names. The
-representation is `C_S(x) = (p(x) : p ∈ S)` in a fixed name order, or
-the same tuple after each word of a declared action alphabet. Question
-`Q: X → D` is a function of source state only.
+Names are not functions. The hostile case is a second function `g≠p`
+printed with the same **codename**. Then `ker C_{S∪{g}}` may strictly
+refine `ker C_S`. On machine M, `A=A2` as functions, so `{A,A2}` keeps
+ghost `{0,1}`; `B≠A` and `{A,B}` kills that ghost.
 
-Port `p'` **duplicates** `p ∈ S` when `p' ∉ S` and `p'(x) = p(x)` for
-every `x ∈ X`. Lookalikes, later-time readings, and interventions are
-outside this operation.
-
-## Theorem
-
-`C_{S ∪ {p'}}(x) = C_{S ∪ {p'}}(y)` if and only if `C_S(x) = C_S(y)`.
-Therefore `Q` is constant on the fibers of `C_{S ∪ {p'}}` if and only if
-it is constant on the fibers of `C_S`. In particular, a duplicate never
-makes a previously non-constant `Q` constant.
-
-## Proof
-
-Write `C_{S ∪ {p'}}(x) = (C_S(x), p'(x))`. Because `p'` duplicates `p`
-and `p ∈ S`, the coordinate `p'(x)` equals the already-recorded
-coordinate `p(x)` and is therefore a function of `C_S(x)`. So
-`(C_S(x), p'(x)) = (C_S(y), p'(y))` exactly when `C_S(x) = C_S(y)`.
-The source partitions agree. Constancy of `Q` is a property of that
-partition. The same argument applies wordwise to a trace representation:
-each word repeats an already-recorded coordinate.
-
-This is Manifesto II.2 / factorization applied to a representation that
-factors through the old panel. It is not a new observability principle.
-
-## Finite check
-
-On machine L, 80 of 80 nonempty-panel value-copy trials left sufficiency
-unchanged; repairs **NONE**. Tick-horizon 3 of `{R,R2}` stayed
-insufficient. On hostile machine M, `{A}` and `{A,A2}` share the ghost
-pair `{0,1}`; `{A,B}` is sufficient because `B(1) ≠ A(1)`, so `B` is
-not a duplicate.
-
-## What this does not cover
-
-Partial ports with unequal domains, occurrence-count receivers, noisy
-maps, infinite carriers, AD-R3 row spaces, Lean.
+This is factorization (Manifesto II.2). Not Lean. Not AD-R3.
+Eighty L-trials: repairs **NONE**. Same-codename ≠ same function.
