@@ -36,7 +36,8 @@ number. Not last night's `T(X,P)` count.
    written proof of the pair trichotomy and of FIVE-visibility of the first
    two clauses; finite test for the censuses, for O09 kernel agreement, and
    for agreement of the §9 occupancy with the §10 typed residue definitions.
-   Unbounded carriers, `NONDET`, `KERNEL`, and n=4 two-action remain OPEN.
+   Unbounded carriers, `NONDET`, `KERNEL`, n=4 two-action, and eight-Tile
+   Board/Atlas remain OPEN. The three-cell Board of §11 is a finite test.
 
 ## 2. Closed claim
 
@@ -157,8 +158,8 @@ The scientific yield is the negative: treating the Manifesto `{p,q,r}` picture a
 - Characterisation of the cells where the classical successor-only monoid
   fails last night's extremal law.
 - Lean of the pair trichotomy (the 20 declarations are not enlarged here).
-- One Tile/Board instance that uses this oracle as a Tile without
-  preinstalling the center.
+- An eight-Tile Board or Atlas that uses this oracle as a Tile. The
+  three-cell instance of §11 is a finite test, not that construction.
 - Four-state two-action machines with the same constructor: 2^4·5^8 =
   6 250 000 machines, too large for this cut.
 - n≥5 one-action, and n=4 with a larger action alphabet. Occupancy is OPEN.
@@ -235,7 +236,8 @@ or three-state two-action families of §9. Those families are exhausted by
 the a priori lift vocabulary (unclassified NONE), not by the four names.
 The five occupied residue names are typed in §10: the §9 census occupancy
 matches those definitions, rather than the names being fitted after
-browsing.
+browsing. The three-cell Board of §11 uses this oracle as a Tile; it is
+not an Atlas.
 
 ## 9. Hostile cut: does the 2×2 lift?
 
@@ -475,3 +477,85 @@ crowd/multi. Hostiles for two-jumper crowd and both-pair multi were built
 from the definitions: both remain crowd and multi, not split or mixed.
 Do not subtype `mixed` by browsing. Frozen receipt:
 [LIFT_CENSUS.json](LIFT_CENSUS.json).
+
+## 11. The oracle as a Tile, on a three-cell Board
+
+This is the smallest honest Board that uses the §1 oracle as a Tile. It is
+not an eight-Tile Board and not an Atlas. The withheld question is not a
+preinstalled eighth cell.
+
+1. **Carrier, types, equality, admitted context.** One Tile is a pair
+   `(machine, C)` as in §1, together with the oracle readouts of §1 and
+   §10. Equality of states is the declared state equality. A Board cell is
+   a named such pair. This Board has three cells: Manifesto `{p,q,r}`,
+   unique-pair `split`, and the numeric 2×2 `sink_self`.
+2. **Ports.** Tile ports: machine, summary, obstruction fiber, ghost
+   fiber, lift type, profile kind, FIVE.future on merged pairs, O09 kernel
+   agreement. Board apertures: (a) machine and summary revealed, diagnosis
+   withheld; (b) machine revealed, summary withheld among set-partitions;
+   (c) lift type revealed, cell identity withheld among the three closed
+   Tiles. Correlated missing ports stay joint: `split` is a fact of
+   `(machine, C)`, not of the machine alone.
+3. **Operation.** `PARTIAL`, diagnostic. Same O05 clauses. Enabledness is
+   unchanged from §1.
+4. **Receiver.** The Tile receiver is the classified obstruction. The
+   Board receiver is whether that diagnosis is determined by a proper
+   subset of the Tile ports. Future answers and operational updates remain
+   distinct, as in O05F versus O05.
+5. **Fiber.** Closed Tile: the oracle is a function of `(machine, C)`, so
+   aperture (a) is always ONE on a declared pair. Withheld-summary fiber:
+   complete set of set-partitions that are ghost folds. Type-among-cells
+   fiber: complete preimage of a lift type in the three-cell carrier.
+   NONE/ONE/MANY only after that enumeration.
+6. **Coverage, hostile, grade.** Coverage: these three machines and every
+   set-partition of each (Bell(3)=5, Bell(3)=5, Bell(4)=15). Hostile: the
+   unique-pair `split` machine has MANY(6) ghost summaries, including two
+   `sink_self`, so unique-pair plus ghost does not force a 2×2 name even
+   on one machine. Grade: written uniqueness for Manifesto `{p,q,r}`;
+   finite test for all three cells and both apertures. Generality OPEN.
+
+**Definition (Obstruction Tile).** For a declared finite deterministic
+partial machine and summary `C`, the closed Tile fills every readout port
+from `obstruction_fiber`, `ghost_fiber`, `lifted_ghost_type`,
+`shortest_witness` on merged pairs, and `stable_refinement`. The vacancy
+is those readouts. The commuting receipt is that substituting the filled
+ports reproduces the oracle.
+
+**Definition (three-cell Board).** Cells, as closed Tiles:
+
+| Cell | Machine | Declared `C` | Type |
+|---|---|---|---|
+| `manifesto_pqr` | `{p,q,r}`, `p→p`, `q→r`, `r→r`, constant observation 0 | `C(p)=C(q)≠C(r)` | `sink_self` |
+| `unique_pair_split` | `{0,1,2,3}`, `0→2`, `1→3`, `2→2`, `3→3`, constant 0 | `C(0)=C(1)`, `2` and `3` singleton | `split` |
+| `sink_self_2x2` | `{0,1,2}`, `0→0`, `1→2`, `2→2`, constant 0 | `C(0)=C(1)≠C(2)` | `sink_self` |
+
+The two `sink_self` cells have equal type and unequal pair names. Equal
+value is not equal occurrence.
+
+**Proposition (Manifesto machine determines its ghost summary).** On the
+Manifesto `{p,q,r}` machine, among the five set-partitions, exactly one is
+a ghost fold. Proof: discrete has no merged pair. Indiscrete is one-block,
+so successor agreement is automatic; constant observation and a total map
+make it operational. Merge `{p,r}` with singleton `q`: both `p` and `r`
+stay in the pair, so successor agrees. Merge `{q,r}` with singleton `p`:
+both stay. Merge `{p,q}` with singleton `r`: `p` stays, `q` jumps to `r`,
+`r` sinks, observations agree, enabledness agrees, FIVE.future NONE. That
+one partition is `sink_self`. Grade: written. The numeric 2×2 cell is the
+same argument on `{0,1,2}`.
+
+**Proposition (Tile commuting).** Filling the withheld-summary vacancy of
+either three-state cell recovers exactly the declared closed Tile. Grade:
+written from the previous proposition; finite test.
+
+**Readout, finite test.** Aperture (a): each declared cell is ONE
+successor ghost, O09 discrete, future quotient indiscrete, FIVE.future
+NONE. Aperture (b): Manifesto `{p,q,r}` and numeric `sink_self` are ONE
+(`sink_self`); the split machine is MANY(6) with occupancy
+`(crowd, split, multi, sink_self) = (2, 1, 1, 2)`. On that machine the
+summaries named `split` are still ONE, namely the declared cell. Aperture
+(c): type `sink_self` is MANY(2 cells); type `split` is ONE. Unique-pair
+does not force 2×2: the declared split cell is unique-pair `split`, and
+the same machine also hosts two `sink_self` ghost summaries.
+
+This Board does not close an Atlas and does not promote `Tile(X)` to `X`.
+Frozen receipt: [BOARD.json](BOARD.json).

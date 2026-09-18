@@ -21,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from rprm.core import AdmissionError, deterministic_quotient, stochastic_quotient
 from rprm.futures import Machine, future_quotient, shortest_witness
+from board import check_board
 from obstruction import (
     CLAUSES,
     GHOST_SHAPES,
@@ -761,6 +762,7 @@ def check_lift_census():
 def source_hashes():
     names = (
         "research/operational-obstruction-2026-09-17/obstruction.py",
+        "research/operational-obstruction-2026-09-17/board.py",
         "research/operational-obstruction-2026-09-17/verify.py",
         "rprm/core.py",
         "rprm/futures.py",
@@ -773,12 +775,14 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=HERE / "CENSUS.json")
     parser.add_argument("--lift-output", type=Path, default=HERE / "LIFT_CENSUS.json")
+    parser.add_argument("--board-output", type=Path, default=HERE / "BOARD.json")
     args = parser.parse_args()
     named = check_named_hostiles()
+    board = check_board()
     census = check_census(NULL)
     lift = check_lift_census()
     result = {
-        "schema": "rprm-operational-obstruction/v3",
+        "schema": "rprm-operational-obstruction/v4",
         "status": "PASS",
         "null_declared_before_census": NULL,
         "shape_null_declared_before_shape_census": SHAPE_NULL,
@@ -787,6 +791,24 @@ def main():
         "lift_exhaustion_null_declared_before_census": LIFT_EXHAUSTION_NULL,
         "match_null_declared_before_census": MATCH_NULL,
         "named": named,
+        "board": {
+            "schema": board["schema"],
+            "status": board["status"],
+            "evidence_grade": board["evidence_grade"],
+            "generality": board["generality"],
+            "eight_tile_board": board["eight_tile_board"],
+            "atlas": board["atlas"],
+            "cells": board["board"]["names"],
+            "type_fiber_among_cells": board["board"]["type_fiber_among_cells"],
+            "withhold_summary": {
+                cell["name"]: {
+                    "status": cell["withhold_summary"]["status"],
+                    "ghost_folds": cell["withhold_summary"]["ghost_folds"],
+                    "lift_counts": cell["withhold_summary"]["lift_counts"],
+                }
+                for cell in board["board"]["cells_detail"]
+            },
+        },
         "census": census,
         "lift_census": lift,
         "source_hashes": source_hashes(),
@@ -794,16 +816,21 @@ def main():
             "Named hostiles plus every partition of every machine in the "
             "checks/futures.py 845-machine family, plus the four-state "
             "one-action family and the three-state two-action family with "
-            "the same constructor. Not a theorem about arbitrary infinite "
-            "carriers, nondeterministic operations, or kernels."
+            "the same constructor, plus the three-cell Board that uses the "
+            "oracle as a Tile. Not a theorem about arbitrary infinite "
+            "carriers, nondeterministic operations, kernels, eight-Tile "
+            "Boards, or Atlases."
         ),
     }
     payload = json.dumps(result, indent=2) + "\n"
     args.output.write_text(payload, encoding="utf-8")
     args.lift_output.write_text(json.dumps(lift, indent=2) + "\n", encoding="utf-8")
+    args.board_output.write_text(json.dumps(board, indent=2) + "\n", encoding="utf-8")
     summary = {
         "status": "PASS",
         "ghost_folds_845": census["ghost_folds"],
+        "board_cells": board["board"]["names"],
+        "board_generality": board["generality"],
         "shape_counts_845": census["shape_counts"],
         "lift_null_holds": lift["lift_null_holds"],
         "slice_null_holds": lift["slice_null_holds"],

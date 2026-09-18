@@ -1,5 +1,5 @@
 {
-  "schema": "rprm-operational-obstruction/v3",
+  "schema": "rprm-operational-obstruction/v4",
   "status": "PASS",
   "null_declared_before_census": "In the checks/futures.py 845-machine family, every partition that is future-sufficient on its merged pairs is an operational fold, except the Manifesto three-state example (constant observation, a: 0->0, 1->2, 2->2) and its state relabelings.",
   "shape_null_declared_before_shape_census": "After removing sink_self (the Manifesto sink/self-loop/jump pattern), the remaining ghost folds in the 845-machine family occupy exactly one of the leftover named types sink_partner, return_self, return_partner.",
@@ -41,6 +41,62 @@
       "wide_landing",
       "unclassified"
     ]
+  },
+  "board": {
+    "schema": "rprm-operational-obstruction-board/v1",
+    "status": "PASS",
+    "evidence_grade": "finite_test",
+    "generality": "OPEN",
+    "eight_tile_board": false,
+    "atlas": false,
+    "cells": [
+      "manifesto_pqr",
+      "unique_pair_split",
+      "sink_self_2x2"
+    ],
+    "type_fiber_among_cells": {
+      "sink_self": {
+        "status": "MANY",
+        "count": 2,
+        "cells": [
+          "manifesto_pqr",
+          "sink_self_2x2"
+        ]
+      },
+      "split": {
+        "status": "ONE",
+        "count": 1,
+        "cells": [
+          "unique_pair_split"
+        ]
+      }
+    },
+    "withhold_summary": {
+      "manifesto_pqr": {
+        "status": "ONE",
+        "ghost_folds": 1,
+        "lift_counts": {
+          "sink_self": 1
+        }
+      },
+      "unique_pair_split": {
+        "status": "MANY",
+        "ghost_folds": 6,
+        "lift_counts": {
+          "crowd": 2,
+          "split": 1,
+          "multi": 1,
+          "sink_self": 2
+        }
+      },
+      "sink_self_2x2": {
+        "status": "ONE",
+        "ghost_folds": 1,
+        "lift_counts": {
+          "sink_self": 1
+        }
+      }
+    }
   },
   "census": {
     "machines": 845,
@@ -2807,10 +2863,11 @@
   },
   "source_hashes": {
     "research/operational-obstruction-2026-09-17/obstruction.py": "e420455efc83bc6ac9cd982aaef3ea13ac349f9cffce68e38b14beefe3a4f98b",
-    "research/operational-obstruction-2026-09-17/verify.py": "f6e29791b295960cfa8e3901f24b1ddae948717e81cfb6444fa4e35439ce39c5",
+    "research/operational-obstruction-2026-09-17/board.py": "b757750d73e5d84e9aa1cb04365229ad647bcd2dd3084497aaf418eb50fad545",
+    "research/operational-obstruction-2026-09-17/verify.py": "0a970520131db0809bc916aa7b6828840bd233571d577411e68b293574d0281f",
     "rprm/core.py": "a461bbeccd141caa10f3583b5cdb5c083d7032dbbd6793dd34a849efc69f3f0b",
     "rprm/futures.py": "98607f6f1d2e38024f5b147916a097bb9e5d9f726b2e993d898d56e75ecbd11d",
     "checks/futures.py": "01a67abc729a03fe3a963326efe0cdc06a61df138b518ec4c0232aecd86478c5"
   },
-  "coverage": "Named hostiles plus every partition of every machine in the checks/futures.py 845-machine family, plus the four-state one-action family and the three-state two-action family with the same constructor. Not a theorem about arbitrary infinite carriers, nondeterministic operations, or kernels."
+  "coverage": "Named hostiles plus every partition of every machine in the checks/futures.py 845-machine family, plus the four-state one-action family and the three-state two-action family with the same constructor, plus the three-cell Board that uses the oracle as a Tile. Not a theorem about arbitrary infinite carriers, nondeterministic operations, kernels, eight-Tile Boards, or Atlases."
 }

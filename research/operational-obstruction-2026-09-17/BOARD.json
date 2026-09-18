@@ -1,0 +1,667 @@
+{
+  "schema": "rprm-operational-obstruction-board/v1",
+  "status": "PASS",
+  "evidence_grade": "finite_test",
+  "generality": "OPEN",
+  "eight_tile_board": false,
+  "atlas": false,
+  "tile": {
+    "capability": "O05 obstruction oracle on a declared machine and summary",
+    "ports": [
+      "machine",
+      "summary",
+      "obstruction",
+      "ghost",
+      "lift_type",
+      "profile_kind",
+      "five_future",
+      "o09_matches",
+      "o09_classes"
+    ],
+    "vacancy": "classified obstruction, ghost fiber, and lift type",
+    "receipt": "closed_tile(machine, summary) agrees with the oracle functions"
+  },
+  "board": {
+    "cells": 3,
+    "names": [
+      "manifesto_pqr",
+      "unique_pair_split",
+      "sink_self_2x2"
+    ],
+    "withheld_question": "Whether a ghost-fold diagnosis is determined by a proper subset of the Tile ports. Not a preinstalled eighth Tile.",
+    "cells_detail": [
+      {
+        "name": "manifesto_pqr",
+        "machine": {
+          "states": [
+            "p",
+            "q",
+            "r"
+          ],
+          "actions": [
+            "a"
+          ],
+          "observation": [
+            0,
+            0,
+            0
+          ],
+          "next": {
+            "a": [
+              "p",
+              "r",
+              "r"
+            ]
+          }
+        },
+        "declared": {
+          "summary": [
+            0,
+            0,
+            1
+          ],
+          "profile": [
+            1,
+            2
+          ],
+          "obstruction": {
+            "status": "ONE",
+            "pairs": [
+              {
+                "left": "p",
+                "right": "q",
+                "clause": "successor"
+              }
+            ],
+            "by_clause": {
+              "observation": 0,
+              "enabledness": 0,
+              "successor": 1
+            }
+          },
+          "ghost": {
+            "status": "ONE",
+            "pairs": [
+              {
+                "left": "p",
+                "right": "q",
+                "clause": "successor"
+              }
+            ]
+          },
+          "lift_type": "sink_self",
+          "n3_shape": "sink_self",
+          "profile_kind": "unique_pair",
+          "five_future": [
+            {
+              "left": "p",
+              "right": "q",
+              "status": "NONE"
+            }
+          ],
+          "o09_matches": false,
+          "o09_classes": 3,
+          "future_classes": 1
+        },
+        "withhold_summary": {
+          "status": "ONE",
+          "ghost_folds": 1,
+          "lift_counts": {
+            "sink_self": 1
+          },
+          "partition_count": 5
+        }
+      },
+      {
+        "name": "unique_pair_split",
+        "machine": {
+          "states": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "actions": [
+            "a"
+          ],
+          "observation": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "next": {
+            "a": [
+              2,
+              3,
+              2,
+              3
+            ]
+          }
+        },
+        "declared": {
+          "summary": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "profile": [
+            1,
+            1,
+            2
+          ],
+          "obstruction": {
+            "status": "ONE",
+            "pairs": [
+              {
+                "left": 0,
+                "right": 1,
+                "clause": "successor"
+              }
+            ],
+            "by_clause": {
+              "observation": 0,
+              "enabledness": 0,
+              "successor": 1
+            }
+          },
+          "ghost": {
+            "status": "ONE",
+            "pairs": [
+              {
+                "left": 0,
+                "right": 1,
+                "clause": "successor"
+              }
+            ]
+          },
+          "lift_type": "split",
+          "n3_shape": "unclassified",
+          "profile_kind": "unique_pair",
+          "five_future": [
+            {
+              "left": 0,
+              "right": 1,
+              "status": "NONE"
+            }
+          ],
+          "o09_matches": false,
+          "o09_classes": 4,
+          "future_classes": 1
+        },
+        "withhold_summary": {
+          "status": "MANY",
+          "ghost_folds": 6,
+          "lift_counts": {
+            "crowd": 2,
+            "split": 1,
+            "multi": 1,
+            "sink_self": 2
+          },
+          "partition_count": 15,
+          "tiles": [
+            {
+              "summary": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "profile": [
+                1,
+                3
+              ],
+              "obstruction": {
+                "status": "MANY",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 1,
+                    "clause": "successor"
+                  },
+                  {
+                    "left": 1,
+                    "right": 2,
+                    "clause": "successor"
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 2
+                }
+              },
+              "ghost": {
+                "status": "MANY",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 1,
+                    "clause": "successor"
+                  },
+                  {
+                    "left": 1,
+                    "right": 2,
+                    "clause": "successor"
+                  }
+                ]
+              },
+              "lift_type": "crowd",
+              "n3_shape": "unclassified",
+              "profile_kind": "crowd",
+              "five_future": [
+                {
+                  "left": 0,
+                  "right": 1,
+                  "status": "NONE"
+                },
+                {
+                  "left": 0,
+                  "right": 2,
+                  "status": "NONE"
+                },
+                {
+                  "left": 1,
+                  "right": 2,
+                  "status": "NONE"
+                }
+              ],
+              "o09_matches": false,
+              "o09_classes": 3,
+              "future_classes": 1
+            },
+            {
+              "summary": [
+                0,
+                0,
+                1,
+                0
+              ],
+              "profile": [
+                1,
+                3
+              ],
+              "obstruction": {
+                "status": "MANY",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 1,
+                    "clause": "successor"
+                  },
+                  {
+                    "left": 0,
+                    "right": 3,
+                    "clause": "successor"
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 2
+                }
+              },
+              "ghost": {
+                "status": "MANY",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 1,
+                    "clause": "successor"
+                  },
+                  {
+                    "left": 0,
+                    "right": 3,
+                    "clause": "successor"
+                  }
+                ]
+              },
+              "lift_type": "crowd",
+              "n3_shape": "unclassified",
+              "profile_kind": "crowd",
+              "five_future": [
+                {
+                  "left": 0,
+                  "right": 1,
+                  "status": "NONE"
+                },
+                {
+                  "left": 0,
+                  "right": 3,
+                  "status": "NONE"
+                },
+                {
+                  "left": 1,
+                  "right": 3,
+                  "status": "NONE"
+                }
+              ],
+              "o09_matches": false,
+              "o09_classes": 3,
+              "future_classes": 1
+            },
+            {
+              "summary": [
+                0,
+                0,
+                1,
+                2
+              ],
+              "profile": [
+                1,
+                1,
+                2
+              ],
+              "obstruction": {
+                "status": "ONE",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 1,
+                    "clause": "successor"
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 1
+                }
+              },
+              "ghost": {
+                "status": "ONE",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 1,
+                    "clause": "successor"
+                  }
+                ]
+              },
+              "lift_type": "split",
+              "n3_shape": "unclassified",
+              "profile_kind": "unique_pair",
+              "five_future": [
+                {
+                  "left": 0,
+                  "right": 1,
+                  "status": "NONE"
+                }
+              ],
+              "o09_matches": false,
+              "o09_classes": 4,
+              "future_classes": 1
+            },
+            {
+              "summary": [
+                0,
+                1,
+                1,
+                0
+              ],
+              "profile": [
+                2,
+                2
+              ],
+              "obstruction": {
+                "status": "MANY",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 3,
+                    "clause": "successor"
+                  },
+                  {
+                    "left": 1,
+                    "right": 2,
+                    "clause": "successor"
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 2
+                }
+              },
+              "ghost": {
+                "status": "MANY",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 3,
+                    "clause": "successor"
+                  },
+                  {
+                    "left": 1,
+                    "right": 2,
+                    "clause": "successor"
+                  }
+                ]
+              },
+              "lift_type": "multi",
+              "n3_shape": "unclassified",
+              "profile_kind": "multi",
+              "five_future": [
+                {
+                  "left": 0,
+                  "right": 3,
+                  "status": "NONE"
+                },
+                {
+                  "left": 1,
+                  "right": 2,
+                  "status": "NONE"
+                }
+              ],
+              "o09_matches": false,
+              "o09_classes": 4,
+              "future_classes": 1
+            },
+            {
+              "summary": [
+                0,
+                1,
+                1,
+                2
+              ],
+              "profile": [
+                1,
+                1,
+                2
+              ],
+              "obstruction": {
+                "status": "ONE",
+                "pairs": [
+                  {
+                    "left": 1,
+                    "right": 2,
+                    "clause": "successor"
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 1
+                }
+              },
+              "ghost": {
+                "status": "ONE",
+                "pairs": [
+                  {
+                    "left": 1,
+                    "right": 2,
+                    "clause": "successor"
+                  }
+                ]
+              },
+              "lift_type": "sink_self",
+              "n3_shape": "unclassified",
+              "profile_kind": "unique_pair",
+              "five_future": [
+                {
+                  "left": 1,
+                  "right": 2,
+                  "status": "NONE"
+                }
+              ],
+              "o09_matches": false,
+              "o09_classes": 4,
+              "future_classes": 1
+            },
+            {
+              "summary": [
+                0,
+                1,
+                2,
+                0
+              ],
+              "profile": [
+                1,
+                1,
+                2
+              ],
+              "obstruction": {
+                "status": "ONE",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 3,
+                    "clause": "successor"
+                  }
+                ],
+                "by_clause": {
+                  "observation": 0,
+                  "enabledness": 0,
+                  "successor": 1
+                }
+              },
+              "ghost": {
+                "status": "ONE",
+                "pairs": [
+                  {
+                    "left": 0,
+                    "right": 3,
+                    "clause": "successor"
+                  }
+                ]
+              },
+              "lift_type": "sink_self",
+              "n3_shape": "unclassified",
+              "profile_kind": "unique_pair",
+              "five_future": [
+                {
+                  "left": 0,
+                  "right": 3,
+                  "status": "NONE"
+                }
+              ],
+              "o09_matches": false,
+              "o09_classes": 4,
+              "future_classes": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "sink_self_2x2",
+        "machine": {
+          "states": [
+            0,
+            1,
+            2
+          ],
+          "actions": [
+            "a"
+          ],
+          "observation": [
+            0,
+            0,
+            0
+          ],
+          "next": {
+            "a": [
+              0,
+              2,
+              2
+            ]
+          }
+        },
+        "declared": {
+          "summary": [
+            0,
+            0,
+            1
+          ],
+          "profile": [
+            1,
+            2
+          ],
+          "obstruction": {
+            "status": "ONE",
+            "pairs": [
+              {
+                "left": 0,
+                "right": 1,
+                "clause": "successor"
+              }
+            ],
+            "by_clause": {
+              "observation": 0,
+              "enabledness": 0,
+              "successor": 1
+            }
+          },
+          "ghost": {
+            "status": "ONE",
+            "pairs": [
+              {
+                "left": 0,
+                "right": 1,
+                "clause": "successor"
+              }
+            ]
+          },
+          "lift_type": "sink_self",
+          "n3_shape": "sink_self",
+          "profile_kind": "unique_pair",
+          "five_future": [
+            {
+              "left": 0,
+              "right": 1,
+              "status": "NONE"
+            }
+          ],
+          "o09_matches": false,
+          "o09_classes": 3,
+          "future_classes": 1
+        },
+        "withhold_summary": {
+          "status": "ONE",
+          "ghost_folds": 1,
+          "lift_counts": {
+            "sink_self": 1
+          },
+          "partition_count": 5
+        }
+      }
+    ],
+    "type_fiber_among_cells": {
+      "sink_self": {
+        "status": "MANY",
+        "count": 2,
+        "cells": [
+          "manifesto_pqr",
+          "sink_self_2x2"
+        ]
+      },
+      "split": {
+        "status": "ONE",
+        "count": 1,
+        "cells": [
+          "unique_pair_split"
+        ]
+      }
+    }
+  },
+  "coverage": "Three named hostiles as Tile instances, plus every set-partition of each host machine as the withheld-summary aperture. Not a theorem about eight-Tile Boards, Atlases, or arbitrary machines."
+}

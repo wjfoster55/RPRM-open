@@ -65,6 +65,13 @@ those definitions: **true.** The local unique-pair slice is also not a 2×2:
 replacement is the a priori lift vocabulary, not a fifth binary bit. See
 [THEORY.md](THEORY.md) §9–§10 and [LIFT_CENSUS.json](LIFT_CENSUS.json).
 
+The obstruction oracle is now one Tile. A three-cell Board runs it on
+Manifesto `{p,q,r}`, unique-pair `split`, and numeric 2×2 `sink_self`, with
+withheld versus revealed ports. Withholding the summary, Manifesto is ONE;
+the split machine is MANY(6) and still hosts `sink_self`. Not an eight-Tile
+Board or Atlas; generality OPEN. See [THEORY.md](THEORY.md) §11 and
+[BOARD.json](BOARD.json).
+
 ## Why the runners-up lost
 
 | Candidate | Why not this cut |
@@ -74,7 +81,7 @@ replacement is the a priori lift vocabulary, not a fifth binary bit. See
 | AD-R3 finite-budget linear repair | Independent Rank 2, already written in unreleased Paper 3, Petreczky ancestry explicit. Do not steal that draft. |
 | Ternary line kernels / graded scar cube | Independently recomputed 17 Sep; project's own grade is established finite-dimensional mathematics. Teaching exhibit, not a research target. |
 | YM2 finite lattice covering | Written proof exists; publication on hold; not continuum mass gap. |
-| Tile/Board/Atlas executed instance | First-party wants one, independent reviewer would move upward on one. Without a withheld center that is not hand-tailored, it is schema theater. This oracle is a candidate *Tile* for a later Board, not the Board. |
+| Tile/Board/Atlas executed instance | A three-cell Board now uses this oracle as a Tile (Manifesto `{p,q,r}`, unique-pair split, 2×2 `sink_self`; withheld vs revealed ports). An eight-Tile Board or Atlas remains OPEN; do not fake one. |
 | NKS local-constraint compiler | Already a complete derived fiber in the NKS report (`MANY(4)` iff `4\|N` else `NONE`). Packaging, not a new obstruction. |
 | Prestige / retained-access DAG | Paper 3 already models a restricted recipe graph. Third prestige type is OPEN; do not invent it. |
 | Fluid / F2 adjacency | Owned by another agent. |
@@ -85,7 +92,8 @@ replacement is the a priori lift vocabulary, not a fifth binary bit. See
 Not a new minimization theory. Not a count of unknown maps. Not an operational
 quotient for relations or kernels (those kinds have different clauses; the
 kernel equal-support hostile is retained as out-of-carrier for this fiber).
-Not Lean. Not a 21st default `verify.py` job.
+Not Lean. Not a 21st default `verify.py` job. Not an eight-Tile Board or
+Atlas theorem; the three-cell instance is a finite test.
 
 ## Reproduce
 
@@ -98,3 +106,4 @@ python -I -B research/operational-obstruction-2026-09-17/verify.py
 Typed claim, null, hostiles, census, and OPEN list: [THEORY.md](THEORY.md).
 Oracle: [obstruction.py](obstruction.py). Frozen receipt: [CENSUS.json](CENSUS.json).
 Lift census: [LIFT_CENSUS.json](LIFT_CENSUS.json).
+Three-cell Board: [BOARD.json](BOARD.json).
