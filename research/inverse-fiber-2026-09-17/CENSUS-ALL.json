@@ -1,0 +1,157 @@
+{
+  "affine_xor1_splitters": [
+    "y",
+    "y+1",
+    "x",
+    "x+1"
+  ],
+  "bits2_total": 16,
+  "bits3_total": 256,
+  "c00_const_count": 128,
+  "c00_equals_linear_duals": false,
+  "c00_split_count": 128,
+  "criterion": "D_splits_to_ONE_iff_D_differs_on_the_two_members",
+  "frozen": {
+    "QA1": "N_xor1_8",
+    "QA2": "N_xor1_not_lin",
+    "QA3": "N_par2_const",
+    "QA4": "N_c00_128",
+    "QA5": "N_c00_not_lin",
+    "QA6": "N_xor1_tables8",
+    "QA7": "N_const_half",
+    "QA8": "N_aff_xy_flips"
+  },
+  "linear_duals_c00_count": 4,
+  "linear_duals_xor1": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "match": true,
+  "names": {
+    "QA1": "N_xor1_8",
+    "QA2": "N_xor1_not_lin",
+    "QA3": "N_par2_const",
+    "QA4": "N_c00_128",
+    "QA5": "N_c00_not_lin",
+    "QA6": "N_xor1_tables8",
+    "QA7": "N_const_half",
+    "QA8": "N_aff_xy_flips"
+  },
+  "null_commit": "2069b6f6293c33923a28a4fa44d83a32c3c3d5c3",
+  "xor1_const_count": 8,
+  "xor1_const_tables": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "xor1_equals_linear_duals": false,
+  "xor1_split_count": 8,
+  "xor1_split_tables": [
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1
+    ]
+  ],
+  "xor_splits_xor1": false,
+  "xor_table": [
+    0,
+    1,
+    1,
+    0
+  ]
+}

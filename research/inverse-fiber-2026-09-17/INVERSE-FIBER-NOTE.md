@@ -10,11 +10,13 @@ Branch `research/inverse-fiber-2026-09-17` in worktree
 python -I -B research/inverse-fiber-2026-09-17/verify_if.py
 python -I -B research/inverse-fiber-2026-09-17/verify_joint.py
 python -I -B research/inverse-fiber-2026-09-17/verify_view.py
+python -I -B research/inverse-fiber-2026-09-17/verify_all.py
 ```
 
 IF-k nulls frozen at `3127680`. IF-j at `bd28533`. IF-v at `14c5b8a`.
-Evidence grade is exact enumeration of named finite maps, their
-marginal products, and two named view menus. Lean was not run.
+IF-a at `2069b6f`. Evidence grade is exact enumeration of named
+finite maps, their marginal products, two named view menus, and all
+16+256 Boolean extras. Lean was not run.
 
 ---
 
@@ -56,8 +58,23 @@ view.
 
 ---
 
-## 4. Stop
+## 4. All Boolean extras (IF-a)
 
-No inverse-graphics grid. No SAT. No min-view search over all Boolean
-functions. Rank-7 certified approximate families remain OPEN and are
-not this cut.
+On these two-point fibers, an extra Boolean readout splits MANY to
+ONE iff it differs on the two members. That is **8 of 16** on XOR=1
+and **128 of 256** on C=(0,0). The linear duals of the fiber
+direction are a proper subset (`x,y` on XOR=1; four odd-weight linear
+forms on C=(0,0)). Affine XOR=1 splitters are `x, y, x+1, y+1`.
+2-bit parity does not split XOR=1. Half the extras are constant on
+the fiber and are not discriminating. “Only a coordinate or parity”
+is dead.
+
+This is not just linear functionals dual to the fiber. Stop. No
+4-bit lift.
+
+---
+
+## 5. Stop
+
+No inverse-graphics grid. No SAT. No 4-bit tables. Rank-7 certified
+approximate families remain OPEN and are not this cut.
