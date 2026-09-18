@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "evidence_grade": "FINITE_EXHAUSTIVE_CENSUS",
+  "claim": "HT-78",
+  "Q1": {
+    "question": "how many distinct seven-teacher response words",
+    "count": 8,
+    "surviving_null": "N_s8",
+    "disposition": "ONE(8)",
+    "words": [
+      0,
+      30,
+      45,
+      51,
+      75,
+      85,
+      102,
+      120
+    ],
+    "weights": [
+      0,
+      4
+    ]
+  },
+  "Q2": {
+    "question": "S equals Hamming-7 orthogonal",
+    "surviving_null": "N_dual_yes",
+    "disposition": "ONE(yes)",
+    "hamming_codewords": 16,
+    "orthogonal_size": 8
+  },
+  "Q3": {
+    "question": "how many Hamming-8 codewords",
+    "count": 16,
+    "surviving_null": "N_ext16",
+    "disposition": "ONE(16)",
+    "rejected_free_bit": true
+  },
+  "Q4": {
+    "U": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "c_free": 4,
+    "c_hostile": 3,
+    "expanded_free": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expanded_hostile": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "surviving_null": "N_p9b",
+    "disposition": "ONE(N_p9b)",
+    "hostile_checks_vs_toggle": {
+      "check_panel": [
+        1,
+        2,
+        3
+      ],
+      "source_toggle": 3,
+      "same_typed_object": false
+    }
+  },
+  "Q5": {
+    "question": "are S, C8, and X_4 the same typed object",
+    "surviving_null": "N_three_eights",
+    "disposition": "NONE",
+    "cardinalities": {
+      "simplex_words": 8,
+      "hamming8_messages": 16,
+      "hamming8_positions": 8,
+      "free_toggle_roles": 8
+    }
+  },
+  "limits": "Finite linear census on F_2^3 / F_2^7 / F_2^8 only. Not double-error location, not SAT, not a ninth silent role."
+}
