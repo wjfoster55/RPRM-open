@@ -1,0 +1,23 @@
+#!/bin/sh
+# Git provides: local ref, local object ID, remote ref, remote object ID.
+set -eu
+root=$(git rev-parse --show-toplevel) || exit 1
+while IFS=' ' read -r local_ref local_oid remote_ref remote_oid || [ -n "${local_ref:-}" ]; do
+    case "$local_oid" in
+        ''|*[!0]*) ;;
+        *) continue ;; # A zero object ID is a deletion, in either hash format.
+    esac
+    if [ -z "$local_oid" ] || [ -z "$remote_oid" ]; then
+        echo 'Publication check received an incomplete ref record.' >&2
+        exit 1
+    fi
+    if command -v python3 >/dev/null 2>&1; then
+        python=python3
+    elif command -v python >/dev/null 2>&1; then
+        python=python
+    else
+        echo 'Publication check requires Python 3.' >&2
+        exit 1
+    fi
+    "$python" -I -B "$root/tools/check_publication.py" --ref "$local_oid" </dev/null || exit 1
+done

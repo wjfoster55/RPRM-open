@@ -36,3 +36,17 @@ law, or evidence of an unstated relation between unrelated systems.
 Forks may change these conventions under the repository's licenses. State
 changed contracts and keep examples reproducible. No maintenance response
 from the original release is assumed.
+
+## Filing and publication
+
+Read [PUBLICATION.md](PUBLICATION.md). This public repository is for released
+papers and reviewed code with their necessary supporting files. Keep new
+unpublished research, drafts, chat/source exports, review bundles, and backups
+in private working directories outside the checkout. Normal implementation
+edits stay in the documented modules; preserve existing authoritative roots.
+
+Stage explicit paths and review all outgoing commits, including files removed
+before the tip. Run `python -I -B tools/check_publication.py --ref <commit>`
+before publication. A backup request does not authorize a public push; do not
+use blanket add/commit/push autosync as backup. Hand off exact artifact paths,
+source provenance, and verification without nesting another bundle copy.

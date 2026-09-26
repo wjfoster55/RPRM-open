@@ -9,3 +9,17 @@ node_modules/
 
 # Local review bundles and research handoffs are not public release inputs.
 .local/
+.claude/
+research/
+tmp/
+recovered-concepts/
+experiments/
+RPRM-CORE-FORMALIZATION-01/
+**/papers/absolute-distinction/
+
+# Generated archives stay in private working directories.
+*.[zZ][iI][pP]
+*.7[zZ]
+*.[tT][aA][rR]
+*.[gG][zZ]
+*.[rR][aA][rR]
